@@ -4,7 +4,10 @@
   "description": "Simple Pokemon GO data generator with GitHub Actions",
   "main": "generate-data.ts",
   "scripts": {
-    "generate": "ts-node generate-data.ts"
+    "generate": "ts-node generate-data.ts",
+    "compare": "ts-node compare-data.ts",
+    "lint": "eslint . --ext .ts",
+    "build": "tsc"
   },
   "keywords": [
     "pokemon",
@@ -15,6 +18,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },

@@ -272,7 +272,6 @@ export class GameMasterParser {
       const goForm = this.getGoForm(pokemon.speciesName);
       
       // Calculate form for image URLs using the original logic
-      const urlDex = pokemon.dex.toString().padStart(3, '0');
       const idForIndexCalc = pokemon.speciesId.replace('_shadow', '');
       const repeatedDexs = allPokemon.filter(p => 
         this.isValidPokemon(p) && p.dex === pokemon.dex && !this.isShadowPokemon(p) && !p.aliasId
@@ -440,28 +439,6 @@ export class GameMasterParser {
     return `${this.pokemonBaseUrl}${dex}${formSuffix}.png`;
   }
 
-  private buildGoImageUrl(pokemon: PvPokePokemon, goForm: string): string {
-    const dex = pokemon.dex.toString();
-    
-    // Check for override mapping
-    if (this.goOverrideMappings.has(pokemon.speciesId)) {
-      return this.goOverrideMappings.get(pokemon.speciesId)!;
-    }
-    
-    return this.buildGoImageUrlHelper(dex, goForm);
-  }
-
-  private buildShinyGoImageUrl(pokemon: PvPokePokemon, goForm: string): string {
-    const dex = pokemon.dex.toString();
-    
-    // Check for override mapping
-    if (this.shinyGoOverrideMappings.has(pokemon.speciesId)) {
-      return this.shinyGoOverrideMappings.get(pokemon.speciesId)!;
-    }
-    
-    return this.buildShinyGoImageUrlHelper(dex, goForm);
-  }
-
   private applyManualCorrections(pokemonDictionary: GameMasterData): void {
     // Apply any manual corrections needed
     const gastrodon = pokemonDictionary['gastrodon'];
@@ -489,7 +466,7 @@ export class GameMasterParser {
     // Handle golisopodsh alias
     const golisopodsh = pokemonDictionary['golisopodsh'];
     if (golisopodsh) {
-      (golisopodsh as any).aliasId = 'golisopod';
+      golisopodsh.aliasId = 'golisopod';
     }
   }
 

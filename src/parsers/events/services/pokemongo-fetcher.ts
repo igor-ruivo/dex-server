@@ -6,8 +6,8 @@ export interface PokemonGoPost {
 }
 
 export class PokemonGoFetcher {
-    private baseUrl = 'https://pokemongo.com';
-    private newsUrl = 'https://pokemongo.com/news';
+    private baseUrl = 'https://pokemongolive.com';
+    private newsUrl = 'https://pokemongolive.com/news';
 
     public async fetchAllPosts(): Promise<PokemonGoPost[]> {
         try {
@@ -45,7 +45,18 @@ export class PokemonGoFetcher {
     }
 
     private async fetchPage(url: string): Promise<string> {
-        const response = await fetch(url);
+        // If the url is relative, prepend the baseUrl
+        let fullUrl = url;
+        if (url.startsWith('/')) {
+            fullUrl = this.baseUrl + url;
+        }
+        const response = await fetch(fullUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9'
+            }
+        });
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -55,14 +66,19 @@ export class PokemonGoFetcher {
     private extractPostLinks(html: string): Array<{ url: string; title: string }> {
         const links: Array<{ url: string; title: string }> = [];
         
-        // Extract links from the news page
-        // Look for links that contain /post/ or /news/
-        const linkRegex = /<a[^>]+href="([^"]*(?:\/post\/|\/news\/)[^"]*)"[^>]*>([^<]+)<\/a>/gi;
+        // Extract links from the news page using the correct selector
+        // Look for <a> tags with class containing "newsCard"
+        const linkRegex = /<a[^>]+href="([^"]*)"[^>]*class="[^"]*newsCard[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
         let match;
         
         while ((match = linkRegex.exec(html)) !== null) {
             const url = match[1];
-            const title = match[2].trim();
+            const linkContent = match[2];
+            
+            // Extract title from the link content
+            // Look for the heading text within the link
+            const titleMatch = linkContent.match(/<div[^>]*class="[^"]*size:heading[^"]*"[^>]*>([^<]+)<\/div>/i);
+            const title = titleMatch ? titleMatch[1].trim() : 'Untitled';
             
             // Skip if it's already in our list or if it's a season post
             if (!links.some(link => link.url === url) && 

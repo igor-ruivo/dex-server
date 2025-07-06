@@ -32,6 +32,7 @@ export interface IParsedEvent {
     description?: string;
     startDate: number;
     endDate: number;
+    dateRanges?: Array<{ start: number; end: number }>;
     imageUrl?: string;
     sourceUrl?: string;
     source: 'pokemongo' | 'leekduck';

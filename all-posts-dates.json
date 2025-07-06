@@ -1,0 +1,337 @@
+Fetching actual event list from news page...
+Fetching Pokemon GO news page...
+Extracting post links...
+Found 32 posts to fetch
+Fetching: Tatsugiri splashes into Pokémon GO during the Water Festival event!
+Fetching: Hisuian Lilligant makes its hearty Pokémon GO debut in a flowery Raid Day!
+Fetching: Honedge slashes into Pokémon GO during Ultra Unlock: Steel and Scales!
+Fetching: Hisuian Zorua emerges from the shadows for Ultra Unlock: Hisui Celebration!
+Fetching: Zapdos descends from the thunderclouds for GO Pass: July!
+Fetching: It’s not over yet. Prepare for Pokémon GO Fest 2025: Max Finale—coming in August.
+Fetching: Egg-cellent rewards await with Eggs-pedition Access and Reward Road this July!
+Fetching: Pokémon GO and Major League Baseball knock it out of the park with a new partnership!
+Fetching: Unleash the power of the sword and shield with two new Adventure Effects: Behemoth Blade and Behemoth Bash!
+Fetching: For the first time in Europe, the Pokémon GO Stamp Rally is coming to France!
+Fetching: Pokémon GO Fest 2025 details revealed: Ultra Unlock, habitat times, and more!
+Fetching: July 2025 Community Day: Quaxly
+Fetching: Celebrate nine years with Pokémon GO’s 9th Anniversary Party!
+Fetching: Pokémon GO Fest 2025: Global ticket holders get early access to event-themed 2 km and 5 km Eggs!
+Fetching: Pokémon GO Road Trip 2025—locations, times, and other details revealed!
+Fetching: Pokémon GO Fest 2025: Global is just around the corner!
+Fetching: Hyper Training, a new way to power up Pokémon, arrives during Ancients Recovered
+Fetching: Eevee stars in July Community Day Classic, and Community Day voting returns in August!
+Fetching: Yamper makes its paw-some debut during Yamper’s Paw Prints!
+Fetching: Articuno, the Lucky Trinket, and more return for GO Pass: June!
+Fetching: Egg-citing rewards await with Eggs-pedition Access and Reward Road this June!
+Fetching: June 2025 Community Day: Jangmo-o
+Fetching: GO Battle League: Delightful Days Update
+Fetching: An ancient discovery awaits! The legendary giants return ahead of Pokémon GO Fest 2025: Global.
+Fetching: Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!
+Fetching: Pikachu and friends are hitting the road!
+Fetching: Join together with Trainers to complete the Might and Mastery Finale: Strength in Numbers Global Challenge
+Fetching: Evolve your GO Fest experience in Jersey City with the all-new Premier Access add-on!
+Fetching: RSVP planner has arrived!
+Fetching: Unleash the power of Zacian and Zamazenta with new Crowned Sword and Crowned Shield Energy!
+Fetching: Say “yes” to love! Pokémon GO Fest 2025: Paris brings an opportunity to get engaged in the City of Love this summer
+Fetching: Updates to Pokémon GO’s Shadow Raids and Max Battles
+Successfully fetched 32 posts
+Found 32 total events.
+Found 24 POST events. Testing all of them...
+
+================================================================================
+Testing event: /en/post/water-festival-2025/
+================================================================================
+Fetched HTML length: 96932
+First <p> in ContainerBlock__body: Tuesday, July 15, at 10:00 a.m. to Sunday, July 20, 2025, at 8:00 p.m. local time
+Parsed title: Tatsugiri splashes into Pokémon GO during the Water Festival event!
+Extracted date range (Pattern 1): Tuesday, July 15, at 10:00 a.m. to Sunday, July 20, 2025, at 8:00 p.m.
+Parsed start date: 7/15/2025, 12:00:00 AM
+Parsed end date: 7/20/2025, 12:00:00 AM
+Raw start epoch: 1752534000000
+Raw end epoch: 1752966000000
+
+================================================================================
+Testing event: /en/post/ultra-unlock-steel-and-scales/
+================================================================================
+Fetched HTML length: 94254
+First <p> in ContainerBlock__body: Tuesday, July 22, at 10:00 a.m. to Sunday, July 27, 2025, at 8:00 p.m. local time
+Parsed title: Honedge slashes into Pokémon GO during Ultra Unlock: Steel and Scales!
+Extracted date range (Pattern 1): Tuesday, July 22, at 10:00 a.m. to Sunday, July 27, 2025, at 8:00 p.m.
+Parsed start date: 7/22/2025, 12:00:00 AM
+Parsed end date: 7/27/2025, 12:00:00 AM
+Raw start epoch: 1753138800000
+Raw end epoch: 1753570800000
+
+================================================================================
+Testing event: /en/post/ultra-unlock-hisui/
+================================================================================
+Fetched HTML length: 93793
+First <p> in ContainerBlock__body: Tuesday, July 8, at 10:00 a.m. to Sunday, July 13, 2025, at 8:00 p.m. local time
+Parsed title: Hisuian Zorua emerges from the shadows for Ultra Unlock: Hisui Celebration!
+Extracted date range (Pattern 1): Tuesday, July 8, at 10:00 a.m. to Sunday, July 13, 2025, at 8:00 p.m.
+Parsed start date: 7/8/2025, 12:00:00 AM
+Parsed end date: 7/13/2025, 12:00:00 AM
+Raw start epoch: 1751929200000
+Raw end epoch: 1752361200000
+
+================================================================================
+Testing event: /en/post/mlb-2025/
+================================================================================
+Fetched HTML length: 84557
+First <p> in ContainerBlock__body: Cheer on your team with exclusive in-game avatar items created in partnership with MLB! Starting Tuesday, June 24, 2025, at 1:00 p.m. PDT, Trainers can score the home team’s cap for their in-game avatar by spinning a PokéStop at a ballpark where a Pokémon GO–themed baseball game is taking place. These avatar items are available for a limited time!*
+Parsed title: Pokémon GO and Major League Baseball knock it out of the park with a new partnership!
+No date range matched in first <p>. Content starts with: Cheer on your team with exclusive in-game avatar i
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/adventure-effects-crowned-zacian-zamazenta/
+================================================================================
+Fetched HTML length: 92513
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Unleash the power of the sword and shield with two new Adventure Effects: Behemoth Blade and Behemoth Bash!
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/megaweek-2025/
+================================================================================
+Fetched HTML length: 83182
+Parsed title: For the first time in Europe, the Pokémon GO Stamp Rally is coming to France!
+No date range matched in first <p>. Content starts with: 
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/go-fest-2025-ultra-unlock-challenges/
+================================================================================
+Fetched HTML length: 102194
+First <p> in ContainerBlock__body: Saturday, June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m. local time each day
+Parsed title: Pokémon GO Fest 2025 details revealed: Ultra Unlock, habitat times, and more!
+Extracted date range (Pattern 3): Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m.
+Pattern 3 - Start date string: June 29, at 10:00 a.m. 2025
+Pattern 3 - End date string: June 29, at 6:00 p.m. 2025
+Pattern 3 - Start date result: 1751151600000
+Pattern 3 - End date result: 1751151600000
+Parsed start date: 6/29/2025, 12:00:00 AM
+Parsed end date: 6/29/2025, 12:00:00 AM
+Raw start epoch: 1751151600000
+Raw end epoch: 1751151600000
+
+================================================================================
+Testing event: /en/post/pokemongo-9th-anniversary/
+================================================================================
+Fetched HTML length: 101187
+First <p> in ContainerBlock__body: Tuesday, July 1, at 10:00 a.m. to Sunday, July 6, 2025, at 8:00 p.m. local time
+Parsed title: Celebrate nine years with Pokémon GO’s 9th Anniversary Party!
+Extracted date range (Pattern 1): Tuesday, July 1, at 10:00 a.m. to Sunday, July 6, 2025, at 8:00 p.m.
+Parsed start date: 7/1/2025, 12:00:00 AM
+Parsed end date: 7/6/2025, 12:00:00 AM
+Raw start epoch: 1751324400000
+Raw end epoch: 1751756400000
+
+================================================================================
+Testing event: /en/post/gofest-2025-global-eggs-early-access/
+================================================================================
+Fetched HTML length: 93444
+First <p> in ContainerBlock__body: Monday, June 23, at 10:00 a.m. local time to Sunday, June 29, 2025 at 11:59 p.m. local time
+Parsed title: Pokémon GO Fest 2025: Global ticket holders get early access to event-themed 2 km and 5 km Eggs!
+Extracted date range (Pattern 5): Monday, June 23, at 10:00 a.m. local time to Sunday, June 29, 2025 at 11:59 p.m.
+Parsed start date: 6/23/2025, 12:00:00 AM
+Parsed end date: 6/29/2025, 11:59:00 PM
+Raw start epoch: 1750633200000
+Raw end epoch: 1751237940000
+
+================================================================================
+Testing event: /en/post/pokemon-go-road-trip-2025-gameplay/
+================================================================================
+Fetched HTML length: 94736
+First <p> in ContainerBlock__body: Manchester, England
+Parsed title: Pokémon GO Road Trip 2025—locations, times, and other details revealed!
+No date range matched in first <p>. Content starts with: Manchester, England
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/uk-go-fest-global-2025-global-2025-meetups/
+================================================================================
+Fetched HTML length: 90240
+First <p> in ContainerBlock__body: UK:
+Parsed title: Pokémon GO Fest 2025: Global is just around the corner!
+No date range matched in first <p>. Content starts with: UK:
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/communitydayclassic-july-2025-eevee/
+================================================================================
+Fetched HTML length: 108737
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Eevee stars in July Community Day Classic, and Community Day voting returns in August!
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/yampers-paw-prints-2025/
+================================================================================
+Fetched HTML length: 95128
+First <p> in ContainerBlock__body: Friday, June 20, at 12:00 a.m. to Sunday, June 22, 2025, at 11:59 p.m. local time
+Parsed title: Yamper makes its paw-some debut during Yamper’s Paw Prints!
+Extracted date range (Pattern 1): Friday, June 20, at 12:00 a.m. to Sunday, June 22, 2025, at 11:59 p.m.
+Parsed start date: 6/20/2025, 12:00:00 AM
+Parsed end date: 6/22/2025, 12:00:00 AM
+Raw start epoch: 1750374000000
+Raw end epoch: 1750546800000
+
+================================================================================
+Testing event: /en/post/communityday-june-2025-jangmo-o/
+================================================================================
+Fetched HTML length: 103539
+First <p> in ContainerBlock__body: Saturday, June 21, 2025, from 2:00 p.m. to 5:00 p.m. local time
+Parsed title: June 2025 Community Day: Jangmo-o
+Extracted date range (Pattern 3): Saturday, June 21, 2025, from 2:00 p.m. to 5:00 p.m.
+Pattern 3 - Start date string: June 21, at 2:00 p.m. 2025
+Pattern 3 - End date string: June 21, at 5:00 p.m. 2025
+Pattern 3 - Start date result: 1750460400000
+Pattern 3 - End date result: 1750460400000
+Parsed start date: 6/21/2025, 12:00:00 AM
+Parsed end date: 6/21/2025, 12:00:00 AM
+Raw start epoch: 1750460400000
+Raw end epoch: 1750460400000
+
+================================================================================
+Testing event: /en/post/go-battle-league-delightful-days/
+================================================================================
+Fetched HTML length: 205495
+First <p> in ContainerBlock__body: GO Battle League: Delightful Days will start on Tuesday, June 3, 2025, at 1:00 p.m. PDT (GMT −7).
+Parsed title: GO Battle League: Delightful Days Update
+Extracted date range (Pattern 7): will start on Tuesday, June 3, 2025, at 1:00 p.m. PDT
+Parsed start date: 6/3/2025, 12:00:00 AM
+Parsed end date: 6/3/2025, 12:00:00 AM
+Raw start epoch: 1748905200000
+Raw end epoch: 1748905200000
+
+================================================================================
+Testing event: /en/post/2025-ancients-recovered/
+================================================================================
+Fetched HTML length: 97617
+First <p> in ContainerBlock__body: June 23 at 10:00 a.m. to June 27, 2025, at 8:00 p.m. local time
+Parsed title: An ancient discovery awaits! The legendary giants return ahead of Pokémon GO Fest 2025: Global.
+Extracted date range (Pattern 2): June 23 at 10:00 a.m. to June 27, 2025, at 8:00 p.m.
+Parsed start date: 6/23/2025, 12:00:00 AM
+Parsed end date: 6/27/2025, 12:00:00 AM
+Raw start epoch: 1750633200000
+Raw end epoch: 1750978800000
+
+================================================================================
+Testing event: /en/post/global-events-gofest2025-overlays/
+================================================================================
+Fetched HTML length: 118011
+First <p> in ContainerBlock__body: Friday, May 30, at 10:00 a.m. to Tuesday, June 3, 2025, at 8:00 p.m. local time
+Parsed title: Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!
+Extracted date range (Pattern 1): Friday, May 30, at 10:00 a.m. to Tuesday, June 3, 2025, at 8:00 p.m.
+Parsed start date: 5/30/2025, 12:00:00 AM
+Parsed end date: 6/3/2025, 12:00:00 AM
+Raw start epoch: 1748559600000
+Raw end epoch: 1748905200000
+
+================================================================================
+Testing event: /en/post/pokemon-go-road-trip-2025/
+================================================================================
+Fetched HTML length: 85105
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Pikachu and friends are hitting the road!
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/strength-in-numbers-global-challenge-2025/
+================================================================================
+Fetched HTML length: 91093
+First <p> in ContainerBlock__body: Tues, May 20, at 12:00 a.m. PDT to Thursday, May 22, at 12:00 p.m. PDT
+Parsed title: Join together with Trainers to complete the Might and Mastery Finale: Strength in Numbers Global Challenge
+Extracted date range (Pattern 4): Tues, May 20, at 12:00 a.m. PDT to Thursday, May 22, at 12:00 p.m. PDT
+Parsed start date: N/A
+Parsed end date: 5/22/2025, 12:00:00 AM
+Raw start epoch: NaN
+Raw end epoch: 1747868400000
+
+================================================================================
+Testing event: /en/post/gofest-2025-jersey-premier-access/
+================================================================================
+Fetched HTML length: 83685
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Evolve your GO Fest experience in Jersey City with the all-new Premier Access add-on!
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/rsvp-planner-launch-2025/
+================================================================================
+Fetched HTML length: 97812
+First <p> in ContainerBlock__body: The RSVP planner lets Trainers see on the map when and where other Trainers are planning to participate in upcoming raids.
+Parsed title: RSVP planner has arrived!
+No date range matched in first <p>. Content starts with: The RSVP planner lets Trainers see on the map when
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/crowned-energy-resource-zacian-zamazenta/
+================================================================================
+Fetched HTML length: 95857
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Unleash the power of Zacian and Zamazenta with new Crowned Sword and Crowned Shield Energy!
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/2025-go-fest-paris-engagements/
+================================================================================
+Fetched HTML length: 84692
+First <p> in ContainerBlock__body: Trainers,
+Parsed title: Say “yes” to love! Pokémon GO Fest 2025: Paris brings an opportunity to get engaged in the City of Love this summer
+No date range matched in first <p>. Content starts with: Trainers,
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+Testing event: /en/post/shadow-raid-max-battle-update/
+================================================================================
+Fetched HTML length: 91649
+Parsed title: Updates to Pokémon GO’s Shadow Raids and Max Battles
+No date range matched in first <p>. Content starts with: 
+Parsed start date: N/A
+Parsed end date: N/A
+Raw start epoch: 0
+Raw end epoch: 0
+
+================================================================================
+SUMMARY: 11/24 posts successfully parsed (46%)
+================================================================================

@@ -242,7 +242,6 @@ export interface ProcessingResult {
 
 // Configuration
 export interface AppConfig {
-  cronSchedule: string;
   outputDir: string;
   maxRetries: number;
   timeout: number;

@@ -42,7 +42,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
       message: 'Data aggregation completed successfully',
       timestamp: new Date().toISOString(),
       fileInfo,
-      nextRunTime: status.nextRunTime?.toISOString(),
+      info: {
+        message: 'Daily updates are handled by GitHub Actions',
+        nextUpdate: 'Daily at 6 AM UTC via GitHub Actions',
+      },
     });
     
   } catch (error) {

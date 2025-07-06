@@ -1,7 +1,6 @@
 import { AppConfig, DataSource } from '../types';
 
 export const config: AppConfig = {
-  cronSchedule: '0 6 * * *', // Daily at 6 AM
   outputDir: './public/data',
   maxRetries: 3,
   timeout: 30000, // 30 seconds

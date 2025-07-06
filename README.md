@@ -26,7 +26,7 @@ api/                 # Vercel serverless functions
 
 - **Multi-Source Data Aggregation**: Fetches data from Pokémon GO Live, Leek Duck, PokeMiners, and PvPoke
 - **Intelligent Parsing**: Custom parsers for each data source with native validation
-- **Scheduled Updates**: Daily cron-based data refresh
+- **Scheduled Updates**: Daily GitHub Actions-based data refresh
 - **Fault Tolerance**: Retry logic, error handling, and fallback mechanisms
 - **API Endpoints**: RESTful endpoints for data consumption
 - **Comprehensive Logging**: Structured logging with native console
@@ -82,13 +82,26 @@ The system is configured via `src/config/index.ts`:
 
 ```typescript
 export const config: AppConfig = {
-  cronSchedule: '0 6 * * *', // Daily at 6 AM UTC
   outputDir: './public/data',
   maxRetries: 3,
   timeout: 30000,
   sources: [/* ... */]
 };
 ```
+
+## ⏰ Scheduled Updates
+
+Daily data updates are handled by GitHub Actions:
+
+1. **Schedule**: Daily at 6 AM UTC
+2. **Trigger**: Calls `/api/trigger` endpoint
+3. **Verification**: Checks data files after update
+4. **Manual Trigger**: Available via GitHub Actions UI
+
+To set up:
+1. Update the Vercel URL in `.github/workflows/daily-update.yml`
+2. Push to GitHub to enable the workflow
+3. Monitor via GitHub Actions tab
 
 ## 📁 Output Structure
 
@@ -106,7 +119,7 @@ public/data/
 
 ## 🔄 Data Flow
 
-1. **Scheduler** triggers daily aggregation at 6 AM UTC
+1. **GitHub Actions** triggers daily aggregation at 6 AM UTC
 2. **Data Aggregator** fetches from all enabled sources using native fetch API
 3. **Parsers** process raw data into structured format using native DOMParser
 4. **File Manager** writes processed data to JSON files using native fs/promises

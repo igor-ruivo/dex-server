@@ -12,6 +12,12 @@
     },
     "api/trigger.ts": {
       "maxDuration": 60
+    },
+    "api/proxy.ts": {
+      "maxDuration": 30
+    },
+    "api/status.ts": {
+      "maxDuration": 10
     }
   }
-} 
+}

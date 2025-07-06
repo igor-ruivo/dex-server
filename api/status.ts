@@ -38,10 +38,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
     res.status(200).json({
       status: 'operational',
       timestamp: new Date().toISOString(),
-      scheduler: {
-        running: status.schedulerRunning,
-        nextRunTime: status.nextRunTime?.toISOString(),
-      },
       data: {
         files: fileInfo,
         totalFiles: Object.keys(fileInfo).length,
@@ -51,6 +47,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
         uptime: process.uptime(),
         memory: process.memoryUsage(),
         version: process.version,
+      },
+      info: {
+        message: 'Data updates are handled by GitHub Actions (daily at 6 AM UTC)',
+        triggerEndpoint: '/api/trigger',
+        dataEndpoint: '/api/data',
       },
     });
     

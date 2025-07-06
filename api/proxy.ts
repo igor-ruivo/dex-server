@@ -1,5 +1,4 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import axios from 'axios';
 
 export default async function handler(req: VercelRequest, res: VercelResponse): Promise<void> {
     const allowedOrigins = ['https://go-pokedex.com', 'http://localhost:3000'];
@@ -25,9 +24,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
             return;
         }
 
-        const response = await axios.get(targetUrl, { params: queryParams });
+        // Build URL with query parameters
+        const url = new URL(targetUrl);
+        Object.entries(queryParams).forEach(([key, value]) => {
+            if (typeof value === 'string') {
+                url.searchParams.append(key, value);
+            }
+        });
 
-        res.status(200).json(response.data);
+        const response = await fetch(url.toString());
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        res.status(200).json(data);
     } catch (error) {
         console.error('Error fetching data from external API:', error);
         res.status(500).json({ error: 'Error fetching data from the external API' });

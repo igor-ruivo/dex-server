@@ -3,7 +3,7 @@ name: Daily Data Update
 on:
   schedule:
     # Runs every minute for debug
-    - cron: '*/1 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:

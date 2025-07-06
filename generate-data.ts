@@ -45,7 +45,7 @@ async function generateData() {
       events: [
         {
           title: 'Community Day Event',
-          description: 'Monthlyyy community day event with featured Pokemon',
+          description: 'Monthly community day event with featured Pokemon',
           type: 'community-day',
           featured: true,
         },
@@ -112,7 +112,7 @@ async function generateData() {
     const files = [
       { name: 'events.json', data: data.events },
       { name: 'raid-bosses.json', data: data.raidBosses },
-      { name: 'game-master.json', data: data.gameMaster },
+      { name: 'game-master.json', data: pokemonDictionary },
       { name: 'metadata.json', data: data.metadata },
     ];
 

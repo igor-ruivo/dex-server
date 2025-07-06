@@ -63,8 +63,7 @@ async function compareData() {
     // Load current data
     const currentDataPath = path.join(process.cwd(), 'data', 'game-master.json');
     const currentDataRaw = await fs.readFile(currentDataPath, 'utf-8');
-    const currentData = JSON.parse(currentDataRaw) as { pokemon: PokemonData };
-    const currentPokemon = currentData.pokemon;
+    const currentPokemon = JSON.parse(currentDataRaw) as PokemonData;
     
     // Load old data
     const oldDataPath = path.join(process.cwd(), 'src', 'temp', 'old_source.json');

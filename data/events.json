@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Community Day Event",
+    "description": "Monthly community day event with featured Pokemon",
+    "type": "community-day",
+    "featured": true
+  },
+  {
+    "title": "Raid Day Event",
+    "description": "Special raid day with exclusive Pokemon",
+    "type": "raid-day",
+    "featured": true
+  },
+  {
+    "title": "Seasonal Event",
+    "description": "Current season event with bonuses",
+    "type": "season",
+    "featured": false
+  }
+]

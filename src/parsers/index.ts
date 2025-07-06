@@ -19,4 +19,7 @@ export * from './services/data-fetcher';
 export * from './factories/parser-factory';
 
 // Parsers
-export * from './game-master-parser'; 
+export * from './game-master-parser';
+
+// Event Parser System
+export * from './events'; 

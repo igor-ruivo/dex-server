@@ -1,0 +1,83 @@
+export interface IEntry {
+    speciesId: string;
+    shiny: boolean;
+    kind?: string;
+    comment?: string;
+}
+
+export interface IPostEntry {
+    title: string;
+    subtitle?: string;
+    imgUrl?: string;
+    date: number;
+    dateEnd?: number;
+    raids?: IEntry[];
+    wild?: IEntry[];
+    incenses?: IEntry[];
+    bonuses?: string;
+    researches?: IEntry[];
+    eggs?: IEntry[];
+    isSeason?: boolean;
+    comment?: string;
+    spotlightPokemons?: IEntry[];
+    spotlightBonus?: string;
+    isRelevant?: boolean;
+    rawUrl?: string;
+}
+
+export interface IParsedEvent {
+    id: string;
+    title: string;
+    subtitle?: string;
+    description?: string;
+    startDate: number;
+    endDate: number;
+    imageUrl?: string;
+    sourceUrl?: string;
+    source: 'pokemongo' | 'leekduck';
+    categories: EventCategory[];
+    pokemon: IPokemonEvent[];
+    bonuses?: string[];
+    isRelevant: boolean;
+    metadata: Record<string, any>;
+}
+
+export interface IPokemonEvent {
+    speciesId: string;
+    shiny: boolean;
+    category: EventCategory;
+    raidLevel?: string;
+    comment?: string;
+    source: string;
+}
+
+export enum EventCategory {
+    RAID = 'raid',
+    WILD = 'wild',
+    RESEARCH = 'research',
+    EGG = 'egg',
+    INCENSE = 'incense',
+    SPOTLIGHT = 'spotlight'
+}
+
+export interface IEventSource {
+    name: string;
+    baseUrl: string;
+    parseEvents(html: string, gameMasterPokemon: Record<string, any>): Promise<IParsedEvent[]>;
+}
+
+export interface IEventMatcher {
+    matchPokemon(pokemonName: string, gameMasterPokemon: Record<string, any>): string | null;
+}
+
+export interface IEventValidator {
+    validateEvent(event: IParsedEvent): boolean;
+}
+
+export interface IEventAggregator {
+    aggregateEvents(events: IParsedEvent[]): IParsedEvent[];
+}
+
+export interface IEventTransformer {
+    transformEvent(event: IParsedEvent): IParsedEvent;
+} 

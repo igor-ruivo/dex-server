@@ -10,6 +10,7 @@ export class Scheduler {
   private dataAggregator: DataAggregator;
   private fileManager: FileManager;
   private cronJob: cron.ScheduledTask | null = null;
+  private nextRunTime: Date | null = null;
 
   constructor() {
     this.dataAggregator = new DataAggregator();
@@ -21,11 +22,15 @@ export class Scheduler {
     
     this.cronJob = cron.schedule(config.cronSchedule, async () => {
       await this.runDataAggregation();
+      this.updateNextRunTime();
     }, {
       scheduled: true,
       timezone: 'UTC',
     });
 
+    // Calculate initial next run time
+    this.updateNextRunTime();
+    
     logger.info('Scheduler started successfully');
   }
 
@@ -33,6 +38,7 @@ export class Scheduler {
     if (this.cronJob) {
       this.cronJob.stop();
       this.cronJob = null;
+      this.nextRunTime = null;
       logger.info('Scheduler stopped');
     }
   }
@@ -74,15 +80,26 @@ export class Scheduler {
   }
 
   getNextRunTime(): Date | null {
-    if (!this.cronJob) return null;
-    
-    // Calculate next run time based on cron schedule
-    const now = new Date();
-    const nextRun = cron.getNextDate(config.cronSchedule, now);
-    return nextRun;
+    return this.nextRunTime;
   }
 
   isRunning(): boolean {
-    return this.cronJob !== null && this.cronJob.getStatus() === 'scheduled';
+    return this.cronJob !== null;
+  }
+
+  private updateNextRunTime(): void {
+    // Simple calculation for daily at 6 AM UTC
+    const now = new Date();
+    const nextRun = new Date(now);
+    
+    // Set to 6 AM UTC
+    nextRun.setUTCHours(6, 0, 0, 0);
+    
+    // If it's already past 6 AM today, set to tomorrow
+    if (nextRun <= now) {
+      nextRun.setUTCDate(nextRun.getUTCDate() + 1);
+    }
+    
+    this.nextRunTime = nextRun;
   }
 } 

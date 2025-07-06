@@ -38,7 +38,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const data = await response.json();
+        const data = await response.text();
         res.status(200).json(data);
     } catch (error) {
         console.error('Error fetching data from external API:', error);

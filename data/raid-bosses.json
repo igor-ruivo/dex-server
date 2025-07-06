@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Charizard",
+    "tier": "5",
+    "cp": {
+      "min": 2200,
+      "max": 2400
+    },
+    "shiny": true
+  },
+  {
+    "name": "Blastoise",
+    "tier": "5",
+    "cp": {
+      "min": 2100,
+      "max": 2300
+    },
+    "shiny": false
+  },
+  {
+    "name": "Venusaur",
+    "tier": "5",
+    "cp": {
+      "min": 2000,
+      "max": 2200
+    },
+    "shiny": true
+  },
+  {
+    "name": "Pikachu",
+    "tier": "1",
+    "cp": {
+      "min": 300,
+      "max": 500
+    },
+    "shiny": true
+  }
+]

@@ -45,7 +45,7 @@ async function generateData() {
       events: [
         {
           title: 'Community Day Event',
-          description: 'Monthly community day event with featured Pokemon',
+          description: 'Monthlyyy community day event with featured Pokemon',
           type: 'community-day',
           featured: true,
         },

@@ -1,23 +1,76 @@
-import * as cheerio from 'cheerio';
 import { BaseParser } from './base-parser';
-import { RaidBoss, RaidBossSchema } from '../types';
+import { RaidBoss, validateRaidBoss } from '../types';
+
+// Simple HTML parser using native DOMParser
+class SimpleHTMLParser {
+  private doc: Document;
+
+  constructor(html: string) {
+    const parser = new DOMParser();
+    this.doc = parser.parseFromString(html, 'text/html');
+  }
+
+  find(selector: string): SimpleHTMLElement[] {
+    const elements = this.doc.querySelectorAll(selector);
+    return Array.from(elements).map(el => new SimpleHTMLElement(el));
+  }
+
+  findOne(selector: string): SimpleHTMLElement | null {
+    const element = this.doc.querySelector(selector);
+    return element ? new SimpleHTMLElement(element) : null;
+  }
+}
+
+class SimpleHTMLElement {
+  private element: Element;
+
+  constructor(element: Element) {
+    this.element = element;
+  }
+
+  text(): string {
+    return this.element.textContent?.trim() || '';
+  }
+
+  attr(name: string): string | null {
+    return this.element.getAttribute(name);
+  }
+
+  find(selector: string): SimpleHTMLElement[] {
+    const elements = this.element.querySelectorAll(selector);
+    return Array.from(elements).map(el => new SimpleHTMLElement(el));
+  }
+
+  findOne(selector: string): SimpleHTMLElement | null {
+    const element = this.element.querySelector(selector);
+    return element ? new SimpleHTMLElement(element) : null;
+  }
+
+  hasClass(className: string): boolean {
+    return this.element.classList.contains(className);
+  }
+}
 
 export class LeekDuckRaidParser extends BaseParser {
-  protected async parseData(rawData: string): Promise<RaidBoss[]> {
-    const $ = cheerio.load(rawData);
+  protected async parseData(rawData: unknown): Promise<RaidBoss[]> {
+    if (typeof rawData !== 'string') {
+      throw new Error('Expected string data for HTML parsing');
+    }
+
+    const $ = new SimpleHTMLParser(rawData);
     const raidBosses: RaidBoss[] = [];
 
     // Parse raid bosses from Leek Duck website
-    $('.raid-boss, .boss-item, [data-tier]').each((index, element) => {
-      const $element = $(element);
-      
-      const name = $element.find('.pokemon-name, .name, h3, h4').first().text().trim();
-      const tierText = $element.find('.tier, [data-tier]').first().text().trim() || 
-                      $element.attr('data-tier') || 
-                      this.extractTierFromElement($element);
-      const cpText = $element.find('.cp, .cp-range').first().text().trim();
-      const shiny = $element.find('.shiny, [data-shiny]').length > 0 || 
-                   $element.text().toLowerCase().includes('shiny');
+    const bossItems = $.find('.raid-boss, .boss-item, [data-tier]');
+    
+    for (const element of bossItems) {
+      const name = element.findOne('.pokemon-name, .name, h3, h4')?.text() || '';
+      const tierText = element.findOne('.tier, [data-tier]')?.text() || 
+                      element.attr('data-tier') || 
+                      this.extractTierFromElement(element);
+      const cpText = element.findOne('.cp, .cp-range')?.text() || '';
+      const shiny = element.findOne('.shiny, [data-shiny]') !== null || 
+                   element.text().toLowerCase().includes('shiny');
       
       if (name && tierText) {
         const tier = this.normalizeTier(tierText);
@@ -28,23 +81,23 @@ export class LeekDuckRaidParser extends BaseParser {
           tier,
           cp,
           shiny,
-          types: this.extractTypes($element),
-          moves: this.extractMoves($element),
+          types: this.extractTypes(element),
+          moves: this.extractMoves(element),
         };
 
         raidBosses.push(raidBoss);
       }
-    });
+    }
 
     return raidBosses;
   }
 
-  protected validateData(data: any): boolean {
+  protected validateData(data: unknown): boolean {
     if (!Array.isArray(data)) return false;
     
     return data.every(boss => {
       try {
-        RaidBossSchema.parse(boss);
+        validateRaidBoss(boss);
         return true;
       } catch {
         return false;
@@ -52,8 +105,8 @@ export class LeekDuckRaidParser extends BaseParser {
     });
   }
 
-  private extractTierFromElement($element: cheerio.Cheerio<cheerio.Element>): string {
-    const classes = $element.attr('class') || '';
+  private extractTierFromElement(element: SimpleHTMLElement): string {
+    const classes = element.attr('class') || '';
     const tierMatch = classes.match(/tier-(\d+)/);
     return tierMatch ? tierMatch[1] : '1';
   }
@@ -99,21 +152,23 @@ export class LeekDuckRaidParser extends BaseParser {
     return name.replace(/[^\w\s-]/g, '').trim();
   }
 
-  private extractTypes($element: cheerio.Cheerio<cheerio.Element>): string[] {
+  private extractTypes(element: SimpleHTMLElement): string[] {
     const types: string[] = [];
-    $element.find('.type, [data-type]').each((_, typeElement) => {
-      const type = $element.find(typeElement).text().trim() || $element.find(typeElement).attr('data-type');
+    const typeElements = element.find('.type, [data-type]');
+    for (const typeElement of typeElements) {
+      const type = typeElement.text() || typeElement.attr('data-type');
       if (type) types.push(type.toLowerCase());
-    });
+    }
     return types;
   }
 
-  private extractMoves($element: cheerio.Cheerio<cheerio.Element>): string[] {
+  private extractMoves(element: SimpleHTMLElement): string[] {
     const moves: string[] = [];
-    $element.find('.move, [data-move]').each((_, moveElement) => {
-      const move = $element.find(moveElement).text().trim() || $element.find(moveElement).attr('data-move');
+    const moveElements = element.find('.move, [data-move]');
+    for (const moveElement of moveElements) {
+      const move = moveElement.text() || moveElement.attr('data-move');
       if (move) moves.push(move);
-    });
+    }
     return moves;
   }
 } 

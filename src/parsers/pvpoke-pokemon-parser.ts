@@ -1,8 +1,8 @@
 import { BaseParser } from './base-parser';
-import { GameMasterPokemon, GameMasterPokemonSchema } from '../types';
+import { GameMasterPokemon, validateGameMasterPokemon } from '../types';
 
 export class PvpokePokemonParser extends BaseParser {
-  protected async parseData(rawData: any): Promise<GameMasterPokemon[]> {
+  protected async parseData(rawData: unknown): Promise<GameMasterPokemon[]> {
     const pokemon: GameMasterPokemon[] = [];
     
     if (!Array.isArray(rawData)) {
@@ -10,39 +10,43 @@ export class PvpokePokemonParser extends BaseParser {
     }
 
     for (const item of rawData) {
-      try {
-        const parsedPokemon: GameMasterPokemon = {
-          dex: item.dex || 0,
-          speciesId: item.speciesId || '',
-          speciesName: item.speciesName || this.normalizeSpeciesName(item.speciesId || ''),
-          types: this.extractTypes(item),
-          fastMoves: item.fastMoves || [],
-          chargedMoves: item.chargedMoves || [],
-          stats: {
-            atk: item.stats?.atk || 0,
-            def: item.stats?.def || 0,
-            hp: item.stats?.hp || 0,
-          },
-          family: item.family || undefined,
-          evolutionBranch: this.extractEvolutionBranch(item),
-        };
+      if (item && typeof item === 'object') {
+        const pokemonData = item as Record<string, unknown>;
+        
+        try {
+          const parsedPokemon: GameMasterPokemon = {
+            dex: (pokemonData.dex as number) || 0,
+            speciesId: (pokemonData.speciesId as string) || '',
+            speciesName: (pokemonData.speciesName as string) || this.normalizeSpeciesName((pokemonData.speciesId as string) || ''),
+            types: this.extractTypes(pokemonData),
+            fastMoves: (pokemonData.fastMoves as string[]) || [],
+            chargedMoves: (pokemonData.chargedMoves as string[]) || [],
+            stats: {
+              atk: ((pokemonData.stats as Record<string, unknown>)?.atk as number) || 0,
+              def: ((pokemonData.stats as Record<string, unknown>)?.def as number) || 0,
+              hp: ((pokemonData.stats as Record<string, unknown>)?.hp as number) || 0,
+            },
+            family: (pokemonData.family as string) || undefined,
+            evolutionBranch: this.extractEvolutionBranch(pokemonData),
+          };
 
-        pokemon.push(parsedPokemon);
-      } catch (error) {
-        // Skip invalid entries
-        continue;
+          pokemon.push(parsedPokemon);
+        } catch (error) {
+          // Skip invalid entries
+          continue;
+        }
       }
     }
 
     return pokemon;
   }
 
-  protected validateData(data: any): boolean {
+  protected validateData(data: unknown): boolean {
     if (!Array.isArray(data)) return false;
     
     return data.every(pokemon => {
       try {
-        GameMasterPokemonSchema.parse(pokemon);
+        validateGameMasterPokemon(pokemon);
         return true;
       } catch {
         return false;
@@ -58,25 +62,26 @@ export class PvpokePokemonParser extends BaseParser {
       .join(' ');
   }
 
-  private extractTypes(pokemonData: any): string[] {
+  private extractTypes(pokemonData: Record<string, unknown>): string[] {
     const types: string[] = [];
     
     if (pokemonData.types && Array.isArray(pokemonData.types)) {
-      types.push(...pokemonData.types.map((type: string) => type.toLowerCase()));
+      types.push(...(pokemonData.types as string[]).map((type: string) => type.toLowerCase()));
     }
     
     return types;
   }
 
-  private extractEvolutionBranch(pokemonData: any): GameMasterPokemon['evolutionBranch'] {
+  private extractEvolutionBranch(pokemonData: Record<string, unknown>): GameMasterPokemon['evolutionBranch'] {
     if (!pokemonData.evolutionBranch || !Array.isArray(pokemonData.evolutionBranch)) {
       return undefined;
     }
     
-    return pokemonData.evolutionBranch.map((evolution: any) => ({
-      evolution: evolution.evolution || '',
-      candyCost: evolution.candyCost || 0,
-      itemCost: evolution.itemCost || undefined,
+    const evolutionBranch = pokemonData.evolutionBranch as Array<Record<string, unknown>>;
+    return evolutionBranch.map((evolution) => ({
+      evolution: (evolution.evolution as string) || '',
+      candyCost: (evolution.candyCost as number) || 0,
+      itemCost: (evolution.itemCost as string) || undefined,
     }));
   }
 } 

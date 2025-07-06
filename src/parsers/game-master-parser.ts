@@ -1,8 +1,8 @@
 import { BaseParser } from './base-parser';
-import { GameMasterPokemon, GameMasterPokemonSchema } from '../types';
+import { GameMasterPokemon, validateGameMasterPokemon } from '../types';
 
 export class PokeMinersGameMasterParser extends BaseParser {
-  protected async parseData(rawData: any): Promise<GameMasterPokemon[]> {
+  protected async parseData(rawData: unknown): Promise<GameMasterPokemon[]> {
     const pokemon: GameMasterPokemon[] = [];
     
     if (!Array.isArray(rawData)) {
@@ -10,30 +10,35 @@ export class PokeMinersGameMasterParser extends BaseParser {
     }
 
     for (const item of rawData) {
-      if (item.templateId && item.data && item.data.pokemonSettings) {
-        const pokemonData = item.data.pokemonSettings;
+      if (item && typeof item === 'object' && 'templateId' in item && 'data' in item) {
+        const itemData = item as Record<string, unknown>;
+        const pokemonData = itemData.data as Record<string, unknown>;
         
-        try {
-          const parsedPokemon: GameMasterPokemon = {
-            dex: pokemonData.pokedexNumber || 0,
-            speciesId: pokemonData.pokemonId || '',
-            speciesName: this.normalizeSpeciesName(pokemonData.pokemonId || ''),
-            types: this.extractTypes(pokemonData),
-            fastMoves: pokemonData.quickMoves || [],
-            chargedMoves: pokemonData.cinematicMoves || [],
-            stats: {
-              atk: pokemonData.stats?.baseAttack || 0,
-              def: pokemonData.stats?.baseDefense || 0,
-              hp: pokemonData.stats?.baseStamina || 0,
-            },
-            family: pokemonData.familyId || undefined,
-            evolutionBranch: this.extractEvolutionBranch(pokemonData),
-          };
+        if (pokemonData && typeof pokemonData === 'object' && 'pokemonSettings' in pokemonData) {
+          const settings = pokemonData.pokemonSettings as Record<string, unknown>;
+          
+          try {
+            const parsedPokemon: GameMasterPokemon = {
+              dex: (settings.pokedexNumber as number) || 0,
+              speciesId: (settings.pokemonId as string) || '',
+              speciesName: this.normalizeSpeciesName((settings.pokemonId as string) || ''),
+              types: this.extractTypes(settings),
+              fastMoves: (settings.quickMoves as string[]) || [],
+              chargedMoves: (settings.cinematicMoves as string[]) || [],
+              stats: {
+                atk: ((settings.stats as Record<string, unknown>)?.baseAttack as number) || 0,
+                def: ((settings.stats as Record<string, unknown>)?.baseDefense as number) || 0,
+                hp: ((settings.stats as Record<string, unknown>)?.baseStamina as number) || 0,
+              },
+              family: (settings.familyId as string) || undefined,
+              evolutionBranch: this.extractEvolutionBranch(settings),
+            };
 
-          pokemon.push(parsedPokemon);
-        } catch (error) {
-          // Skip invalid entries
-          continue;
+            pokemon.push(parsedPokemon);
+          } catch (error) {
+            // Skip invalid entries
+            continue;
+          }
         }
       }
     }
@@ -41,12 +46,12 @@ export class PokeMinersGameMasterParser extends BaseParser {
     return pokemon;
   }
 
-  protected validateData(data: any): boolean {
+  protected validateData(data: unknown): boolean {
     if (!Array.isArray(data)) return false;
     
     return data.every(pokemon => {
       try {
-        GameMasterPokemonSchema.parse(pokemon);
+        validateGameMasterPokemon(pokemon);
         return true;
       } catch {
         return false;
@@ -62,26 +67,27 @@ export class PokeMinersGameMasterParser extends BaseParser {
       .join(' ');
   }
 
-  private extractTypes(pokemonData: any): string[] {
+  private extractTypes(pokemonData: Record<string, unknown>): string[] {
     const types: string[] = [];
     
     if (pokemonData.type1) {
-      types.push(pokemonData.type1.toLowerCase());
+      types.push((pokemonData.type1 as string).toLowerCase());
     }
     if (pokemonData.type2) {
-      types.push(pokemonData.type2.toLowerCase());
+      types.push((pokemonData.type2 as string).toLowerCase());
     }
     
     return types;
   }
 
-  private extractEvolutionBranch(pokemonData: any): GameMasterPokemon['evolutionBranch'] {
+  private extractEvolutionBranch(pokemonData: Record<string, unknown>): GameMasterPokemon['evolutionBranch'] {
     if (!pokemonData.evolutionBranch) return undefined;
     
-    return pokemonData.evolutionBranch.map((evolution: any) => ({
-      evolution: evolution.evolution || '',
-      candyCost: evolution.candyCost || 0,
-      itemCost: evolution.itemCost || undefined,
+    const evolutionBranch = pokemonData.evolutionBranch as Array<Record<string, unknown>>;
+    return evolutionBranch.map((evolution) => ({
+      evolution: (evolution.evolution as string) || '',
+      candyCost: (evolution.candyCost as number) || 0,
+      itemCost: (evolution.itemCost as string) || undefined,
     }));
   }
 } 

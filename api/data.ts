@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import fs from 'fs-extra';
+import fs from 'fs/promises';
 import path from 'path';
 import { createChildLogger } from '../src/utils/logger';
 
@@ -27,7 +27,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
     
     // Determine which file to serve based on type parameter
     let filePath: string;
-    let contentType = 'application/json';
+    const contentType = 'application/json';
     
     switch (type) {
       case 'events':
@@ -52,7 +52,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
     }
 
     // Check if file exists
-    if (!await fs.pathExists(filePath)) {
+    try {
+      await fs.access(filePath);
+    } catch {
       logger.warn(`Requested data file not found: ${filePath}`);
       res.status(404).json({ 
         error: 'Data not found',
@@ -63,7 +65,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
     }
 
     // Read and serve the file
-    const data = await fs.readJson(filePath);
+    const data = JSON.parse(await fs.readFile(filePath, 'utf-8'));
     
     // Add cache headers for better performance
     res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache for 1 hour

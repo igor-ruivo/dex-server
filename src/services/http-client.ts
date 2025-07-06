@@ -1,67 +1,52 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { createChildLogger } from '../utils/logger';
 import { config } from '../config';
 
 const logger = createChildLogger('HttpClient');
 
 export class HttpClient {
-  private client: AxiosInstance;
-
-  constructor() {
-    this.client = axios.create({
-      timeout: config.timeout,
-      headers: {
-        'User-Agent': 'Pokemon-GO-Dex-Server/1.0.0',
-        'Accept': 'application/json, text/html, */*',
-      },
-    });
-
-    // Request interceptor for logging
-    this.client.interceptors.request.use(
-      (config) => {
-        logger.debug(`Making request to: ${config.url}`);
-        return config;
-      },
-      (error) => {
-        logger.error('Request error:', error);
-        return Promise.reject(error);
-      }
-    );
-
-    // Response interceptor for logging
-    this.client.interceptors.response.use(
-      (response) => {
-        logger.debug(`Response received from: ${response.config.url} (${response.status})`);
-        return response;
-      },
-      (error) => {
-        logger.error(`Response error from ${error.config?.url}:`, error.message);
-        return Promise.reject(error);
-      }
-    );
-  }
-
-  async get<T = any>(url: string, config?: AxiosRequestConfig): Promise<T> {
+  async get<T = unknown>(url: string, options?: RequestInit): Promise<T> {
     try {
-      const response: AxiosResponse<T> = await this.client.get(url, config);
-      return response.data;
+      logger.debug(`Making request to: ${url}`);
+      
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'User-Agent': 'Pokemon-GO-Dex-Server/1.0.0',
+          'Accept': 'application/json, text/html, */*',
+          ...options?.headers,
+        },
+        ...options,
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      logger.debug(`Response received from: ${url} (${response.status})`);
+      
+      const contentType = response.headers.get('content-type');
+      if (contentType?.includes('application/json')) {
+        return await response.json();
+      } else {
+        return await response.text() as T;
+      }
     } catch (error) {
       logger.error(`Failed to fetch ${url}:`, error);
       throw error;
     }
   }
 
-  async getWithRetry<T = any>(
+  async getWithRetry<T = unknown>(
     url: string,
     maxRetries: number = config.maxRetries,
-    requestConfig?: AxiosRequestConfig
+    options?: RequestInit
   ): Promise<T> {
-    let lastError: Error;
+    let lastError: Error | undefined;
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
         logger.debug(`Attempt ${attempt}/${maxRetries} for ${url}`);
-        return await this.get<T>(url, requestConfig);
+        return await this.get<T>(url, options);
       } catch (error) {
         lastError = error as Error;
         logger.warn(`Attempt ${attempt} failed for ${url}:`, error);
@@ -74,7 +59,7 @@ export class HttpClient {
     }
 
     logger.error(`All ${maxRetries} attempts failed for ${url}`);
-    throw lastError!;
+    throw lastError || new Error('Unknown error occurred');
   }
 
   private sleep(ms: number): Promise<void> {

@@ -1,6 +1,6 @@
 # Pokémon GO Data Aggregation Server
 
-A robust, scalable data aggregation system that fetches, processes, and serves Pokémon GO data from multiple sources daily. Built with TypeScript, following SOLID principles and modern engineering practices.
+A robust, scalable data aggregation system that fetches, processes, and serves Pokémon GO data from multiple sources daily. Built with TypeScript, following SOLID principles and modern engineering practices with **minimal dependencies**.
 
 ## 🏗️ Architecture Overview
 
@@ -8,9 +8,9 @@ The system follows a clean, modular architecture with clear separation of concer
 
 ```
 src/
-├── types/           # Type definitions and Zod schemas
+├── types/           # Type definitions and native validation
 ├── config/          # Configuration management
-├── utils/           # Shared utilities (logging, etc.)
+├── utils/           # Shared utilities (native logging)
 ├── parsers/         # Data parsing strategies
 ├── services/        # Core business logic
 └── index.ts         # Application entry point
@@ -25,12 +25,13 @@ api/                 # Vercel serverless functions
 ## 🚀 Features
 
 - **Multi-Source Data Aggregation**: Fetches data from Pokémon GO Live, Leek Duck, PokeMiners, and PvPoke
-- **Intelligent Parsing**: Custom parsers for each data source with validation
+- **Intelligent Parsing**: Custom parsers for each data source with native validation
 - **Scheduled Updates**: Daily cron-based data refresh
 - **Fault Tolerance**: Retry logic, error handling, and fallback mechanisms
 - **API Endpoints**: RESTful endpoints for data consumption
-- **Comprehensive Logging**: Structured logging with Winston
-- **Type Safety**: Full TypeScript implementation with Zod validation
+- **Comprehensive Logging**: Structured logging with native console
+- **Type Safety**: Full TypeScript implementation with native validation
+- **Minimal Dependencies**: Uses native Node.js APIs wherever possible
 
 ## 📊 Data Sources
 
@@ -106,9 +107,9 @@ public/data/
 ## 🔄 Data Flow
 
 1. **Scheduler** triggers daily aggregation at 6 AM UTC
-2. **Data Aggregator** fetches from all enabled sources
-3. **Parsers** process raw data into structured format
-4. **File Manager** writes processed data to JSON files
+2. **Data Aggregator** fetches from all enabled sources using native fetch API
+3. **Parsers** process raw data into structured format using native DOMParser
+4. **File Manager** writes processed data to JSON files using native fs/promises
 5. **API Endpoints** serve data to frontend applications
 
 ## 🧪 Testing
@@ -135,7 +136,7 @@ The system is designed for Vercel deployment:
 
 ## 📈 Monitoring
 
-- **Logs**: Structured logging to console and files
+- **Logs**: Structured logging to console with JSON format
 - **Status API**: Real-time system health checks
 - **File Monitoring**: Track data file sizes and timestamps
 - **Error Handling**: Comprehensive error tracking and reporting
@@ -143,9 +144,26 @@ The system is designed for Vercel deployment:
 ## 🔒 Security
 
 - **CORS**: Configured for specific origins
-- **Input Validation**: Zod schemas for all data
+- **Input Validation**: Native validation functions for all data
 - **Error Sanitization**: No sensitive data in error responses
 - **Rate Limiting**: Built into Vercel's infrastructure
+
+## 🎯 Native Solutions Used
+
+Instead of heavy dependencies, the system uses:
+
+- **fetch API** instead of axios
+- **DOMParser** instead of cheerio
+- **fs/promises** instead of fs-extra
+- **Native console** instead of winston
+- **Custom validation** instead of zod
+
+This results in:
+- ✅ **Smaller bundle size**
+- ✅ **Faster startup times**
+- ✅ **Fewer security vulnerabilities**
+- ✅ **Better maintainability**
+- ✅ **No external dependencies for core functionality**
 
 ## 🤝 Contributing
 
@@ -160,4 +178,4 @@ ISC License - see package.json for details
 
 ---
 
-**Built with ❤️ for the Pokémon GO community**
+**Built with ❤️ for the Pokémon GO community using minimal, native dependencies**

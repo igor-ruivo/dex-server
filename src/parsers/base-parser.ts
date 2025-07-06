@@ -1,15 +1,15 @@
 import { ProcessingResult } from '../types';
 
 export interface IParser {
-  parse(rawData: any): Promise<ProcessingResult>;
-  validate(data: any): boolean;
+  parse(rawData: unknown): Promise<ProcessingResult>;
+  validate(data: unknown): boolean;
 }
 
 export abstract class BaseParser implements IParser {
-  protected abstract parseData(rawData: any): Promise<any>;
-  protected abstract validateData(data: any): boolean;
+  protected abstract parseData(rawData: unknown): Promise<unknown>;
+  protected abstract validateData(data: unknown): boolean;
 
-  async parse(rawData: any): Promise<ProcessingResult> {
+  async parse(rawData: unknown): Promise<ProcessingResult> {
     const startTime = Date.now();
     
     try {
@@ -41,7 +41,7 @@ export abstract class BaseParser implements IParser {
     }
   }
 
-  validate(data: any): boolean {
+  validate(data: unknown): boolean {
     return this.validateData(data);
   }
 } 

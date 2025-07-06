@@ -7,8 +7,7 @@ import {
   PokemonEvent, 
   RaidBoss, 
   GameMasterPokemon, 
-  TeamRocket,
-  ProcessingResult 
+  TeamRocket
 } from '../types';
 
 const logger = createChildLogger('DataAggregator');
@@ -76,9 +75,10 @@ export class DataAggregator {
 
         const result = await parser.parse(rawData);
         
-        if (result.success && result.data) {
-          events.push(...result.data);
-          logger.debug(`Successfully parsed ${result.data.length} events from ${source.name}`);
+        if (result.success && result.data && Array.isArray(result.data)) {
+          const parsedEvents = result.data as PokemonEvent[];
+          events.push(...parsedEvents);
+          logger.debug(`Successfully parsed ${parsedEvents.length} events from ${source.name}`);
         } else {
           logger.warn(`Failed to parse events from ${source.name}: ${result.error}`);
         }
@@ -107,9 +107,10 @@ export class DataAggregator {
 
         const result = await parser.parse(rawData);
         
-        if (result.success && result.data) {
-          raidBosses.push(...result.data);
-          logger.debug(`Successfully parsed ${result.data.length} raid bosses from ${source.name}`);
+        if (result.success && result.data && Array.isArray(result.data)) {
+          const parsedRaidBosses = result.data as RaidBoss[];
+          raidBosses.push(...parsedRaidBosses);
+          logger.debug(`Successfully parsed ${parsedRaidBosses.length} raid bosses from ${source.name}`);
         } else {
           logger.warn(`Failed to parse raid bosses from ${source.name}: ${result.error}`);
         }
@@ -138,9 +139,10 @@ export class DataAggregator {
 
         const result = await parser.parse(rawData);
         
-        if (result.success && result.data) {
-          allPokemon.push(...result.data);
-          logger.debug(`Successfully parsed ${result.data.length} Pokemon from ${source.name}`);
+        if (result.success && result.data && Array.isArray(result.data)) {
+          const parsedPokemon = result.data as GameMasterPokemon[];
+          allPokemon.push(...parsedPokemon);
+          logger.debug(`Successfully parsed ${parsedPokemon.length} Pokemon from ${source.name}`);
         } else {
           logger.warn(`Failed to parse game master data from ${source.name}: ${result.error}`);
         }

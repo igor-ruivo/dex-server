@@ -1,4 +1,4 @@
-import fs from 'fs-extra';
+import fs from 'fs/promises';
 import path from 'path';
 import { createChildLogger } from '../utils/logger';
 import { config } from '../config';
@@ -15,7 +15,7 @@ export class FileManager {
 
   async ensureOutputDirectory(): Promise<void> {
     try {
-      await fs.ensureDir(this.outputDir);
+      await fs.mkdir(this.outputDir, { recursive: true });
       logger.debug(`Output directory ensured: ${this.outputDir}`);
     } catch (error) {
       logger.error('Failed to ensure output directory:', error);
@@ -29,7 +29,7 @@ export class FileManager {
       
       // Write main aggregated data file
       const mainDataPath = path.join(this.outputDir, 'aggregated-data.json');
-      await fs.writeJson(mainDataPath, data, { spaces: 2 });
+      await fs.writeFile(mainDataPath, JSON.stringify(data, null, 2));
       logger.info(`Main aggregated data written to: ${mainDataPath}`);
 
       // Write individual data files for easier consumption
@@ -67,14 +67,14 @@ export class FileManager {
 
     for (const file of files) {
       const filePath = path.join(this.outputDir, file.name);
-      await fs.writeJson(filePath, file.data, { spaces: 2 });
+      await fs.writeFile(filePath, JSON.stringify(file.data, null, 2));
       logger.debug(`Individual data file written: ${filePath}`);
     }
   }
 
   private async writeMetadata(metadata: AggregatedData['metadata']): Promise<void> {
     const metadataPath = path.join(this.outputDir, 'metadata.json');
-    await fs.writeJson(metadataPath, metadata, { spaces: 2 });
+    await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2));
     logger.debug(`Metadata written to: ${metadataPath}`);
   }
 
@@ -82,12 +82,14 @@ export class FileManager {
     try {
       const mainDataPath = path.join(this.outputDir, 'aggregated-data.json');
       
-      if (!await fs.pathExists(mainDataPath)) {
+      try {
+        await fs.access(mainDataPath);
+      } catch {
         logger.warn('No existing aggregated data found');
         return null;
       }
 
-      const data = await fs.readJson(mainDataPath);
+      const data = JSON.parse(await fs.readFile(mainDataPath, 'utf-8'));
       logger.debug('Successfully read existing aggregated data');
       return data;
     } catch (error) {
@@ -131,7 +133,7 @@ export class FileManager {
           const stats = await fs.stat(filePath);
           
           if (stats.mtime.getTime() < cutoffTime) {
-            await fs.remove(filePath);
+            await fs.unlink(filePath);
             logger.debug(`Cleaned up old file: ${file}`);
           }
         }

@@ -94,17 +94,11 @@ export class PokemonGoSource implements IEventSource {
 
             const allEventsArrays = await Promise.all(postPromises);
             const allEvents = allEventsArrays.flat();
-
-            const relevantEvents = this.filterRelevantEvents(allEvents);
-            return relevantEvents;
+            
+            return allEvents;
         } catch (error) {
             return [];
         }
-    }
-
-    private filterRelevantEvents(events: IParsedEvent[]): IParsedEvent[] {
-        // TEMP: Include all events, even if they have no bonuses or Pokémon
-        return events;
     }
 
     private parseSinglePost(post: PokemonGoPost, gameMasterPokemon: Record<string, GameMasterPokemon>): IParsedEvent[] {
@@ -174,103 +168,48 @@ export class PokemonGoSource implements IEventSource {
         const dom = new JSDOM(post.html);
         const document = dom.window.document;
         const blocks = this.extractContainerBlocks(document, true);
-        const parsedContents = this.parseEventBlocks(blocks, document, gameMasterPokemon);
-        const events: IParsedEvent[] = [];
-        for (const parsedContent of parsedContents) {
-            let eventTitle = post.title;
-            let eventStartDate = 0;
-            let eventEndDate = 0;
-            let eventDateRanges: { start: number, end: number }[] = [];
-            if (parsedContent.title && parsedContent.title !== UNKNOWN_EVENT_TITLE) {
-                eventTitle = parsedContent.title;
-                if (parsedContent.date) {
-                    const innerDateRanges = parseEventDateRange(parsedContent.date);
-                    if (innerDateRanges.length > 0) {
-                        eventDateRanges = innerDateRanges;
-                        eventStartDate = Math.min(...innerDateRanges.map(r => r.start));
-                        eventEndDate = Math.max(...innerDateRanges.map(r => r.end));
-                    }
-                }
-            } else {
-                if (eventDateRanges.length > 0) {
-                    eventStartDate = Math.min(...eventDateRanges.map(r => r.start));
-                    eventEndDate = Math.max(...eventDateRanges.map(r => r.end));
-                }
-            }
-            if (parsedContent.title && parsedContent.title !== UNKNOWN_EVENT_TITLE && eventDateRanges.length === 0) {
-                continue;
-            }
-            const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
-            const event: IParsedEvent = {
-                id: `pokemongo-news-${eventStartDate}`,
-                title: eventTitle,
-                subtitle: this.extractEventDescription(eventTitle),
-                startDate: eventStartDate,
-                endDate: eventEndDate,
-                dateRanges: eventDateRanges,
-                imageUrl,
-                sourceUrl: post.url,
-                source: 'pokemongo',
-                wild: parsedContent.wild,
-                raids: parsedContent.raids,
-                eggs: parsedContent.eggs,
-                research: parsedContent.research,
-                incenses: parsedContent.incenses,
-                bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined
-            };
-            events.push(event);
+        const dateString = Array.from(blocks[0].children)[1].textContent?.trim() || '';
+
+        if (!dateString) {
+            return [];
         }
-        return events;
+
+        const wildDomain = Object.values(gameMasterPokemon).filter(p => !p.isShadow && !p.isMega && !p.aliasId);
+        const raidDomain = wildDomain;
+        const eggDomain = wildDomain;
+        const researchDomain = wildDomain;
+        const incenseDomain = wildDomain;
+        const subtitle = Array.from(document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') || []).filter(a => Array.from(a.classList).some(c => c.includes('_containerBlock')))[0].querySelector('h2')?.textContent || '';
+        const dateRanges = parseEventDateRange(dateString);
+
+        const imageUrl = document.querySelector('article>div>div>picture>img')?.getAttribute('src') || '';
+        const startDate = Math.min(...dateRanges.map(r => r.start));
+        const endDate = Math.max(...dateRanges.map(r => r.end));
+
+        const eventBlock = this.parseInnerEvent(blocks, gameMasterPokemon, wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain, subtitle, dateString, imageUrl);
+            
+        const event: IParsedEvent = {
+            id: `pokemongo-news-${post.url}`,
+            title: post.title,
+            subtitle: subtitle,
+            startDate,
+            endDate,
+            dateRanges,
+            imageUrl,
+            sourceUrl: post.url,
+            source: 'pokemongo',
+            wild: eventBlock.wild,
+            raids: eventBlock.raids,
+            eggs: eventBlock.eggs,
+            research: eventBlock.research,
+            incenses: eventBlock.incenses,
+            bonuses: eventBlock.bonuses.length > 0 ? eventBlock.bonuses : undefined
+        };
+        return [event];
     }
 
     private generateEventId(): string {
         return `pokemongo-${Date.now()}-${Math.random()}`;
-    }
-
-    private extractDateStringsFromPost(html: string): string[] {
-        const dateStrings: string[] = [];
-        try {
-            const dom = new JSDOM(html);
-            const document = dom.window.document;
-
-            const blogPostBlocks = document.getElementsByClassName(DOM_SELECTORS.BLOG_POST_BLOCKS)[0];
-            if (!blogPostBlocks) {
-                return [];
-            }
-            const entries = Array.from(blogPostBlocks.children);
-            if (entries.length === 0) {
-                return [];
-            }
-            const bodyElements = entries[0].getElementsByClassName("ContainerBlock__body");
-            if (bodyElements.length > 0) {
-                const bodyElement = bodyElements[0] as unknown as HTMLElement;
-                const date = bodyElement?.textContent?.trim().split("\n")[0].trim();
-                if (date) {
-                    dateStrings.push(date);
-                }
-            }
-            
-            for (let k = 0; k < entries.length; k++) {
-                const containerBlock = entries[k].children[0];
-                if (!containerBlock) continue;
-                const innerEntries = containerBlock.getElementsByClassName(DOM_SELECTORS.CONTAINER_BLOCK);
-                if (innerEntries.length === 0) continue;
-                
-                const bodyElements = containerBlock.getElementsByClassName("ContainerBlock__body");
-                if (bodyElements.length > 0) {
-                    const bodyElement = bodyElements[0] as unknown as HTMLElement;
-                    const dateInner = bodyElement?.textContent?.trim().split("\n")[0].trim();
-                    if (dateInner) {
-                        dateStrings.push(dateInner);
-                    }
-                }
-            }
-            const uniqueDates = Array.from(new Set(dateStrings));
-            return uniqueDates;
-        } catch (error) {
-            // Intentionally empty: ignore errors and return dateStrings
-        }
-        return dateStrings;
     }
 
     private extractImageFromPost(html: string): string {
@@ -362,7 +301,7 @@ export class PokemonGoSource implements IEventSource {
         for (let i = 0; i < innerEntries.length; i++) {
             const entry = innerEntries[i];
             const title = entry.children[0] as unknown as HTMLElement;
-            const kind = (title?.textContent?.trim() || title?.innerText?.trim() || "") as string;
+            const kind = (title?.textContent?.trim() || title?.textContent?.trim() || "") as string;
             const contentBodies = Array.from(entry.children) as unknown as HTMLElement[];
             if (!kind) continue;
             if (this.isBonusSection(kind)) {
@@ -375,6 +314,7 @@ export class PokemonGoSource implements IEventSource {
             }
             this.processEventSection(kind, contentBodies, { raids, wild, eggs, research, incenses }, gameMasterPokemon, { wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain });
         }
+        
         return {
             title: subtitle || UNKNOWN_EVENT_TITLE,
             date: date || "",

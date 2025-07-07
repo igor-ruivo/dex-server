@@ -211,11 +211,6 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
 
     // Special handling for multi-day time ranges: handle both old and new formats
     if (date.includes(' and ') && date.includes(' from ') && date.includes(' to ')) {
-        // Much more flexible regex to handle various formats:
-        // 'Saturday, July 5, and Sunday, July 6, 2025 from 2:00 p.m. to 5:00 p.m. local time.'
-        // 'June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m.'
-        // 'Saturday, June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m.'
-        // 'Saturday, July 5, and Sunday, July 6, 2025 from 2:00 p.m. to 5:00 p.m. local time.'
         const multiDayMatch = date.match(/([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);
         if (multiDayMatch && multiDayMatch[1] && multiDayMatch[2] && multiDayMatch[4] && multiDayMatch[5]) {
             const year = multiDayMatch[3] || '2025';
@@ -223,8 +218,6 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
             const endDate = multiDayMatch[2] + ', ' + year;
             const startTime = multiDayMatch[4];
             const endTime = multiDayMatch[5];
-            
-            // Add null checks before calling parseSide
             if (startDate && endDate && startTime && endTime) {
                 const day1Start = parseSide(startDate + ', at ' + startTime);
                 const day1End = parseSide(startDate + ', at ' + endTime);
@@ -237,10 +230,6 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
                     ];
                 }
             }
-        } else {
-            // if (typeof console !== 'undefined' && console.warn) {
-            //   console.warn('[parseEventDateRange] Multi-day date string did not match or had missing groups:', date, multiDayMatch);
-            // }
         }
     }
 
@@ -266,21 +255,26 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
             parsedDate[i] = parsedDate[i].replace(' at', ', at');
         }
     }
+    // --- Patch: If second part is just a time, prepend date from first part ---
+    if (parsedDate.length === 2) {
+        const timeOnlyRegex = /^\s*(\d{1,2}:\d{2} [ap]m)\s*$/i;
+        if (timeOnlyRegex.test(parsedDate[1].trim())) {
+            // Extract date part from first side (before ', at')
+            const datePart = parsedDate[0].split(', at')[0];
+            parsedDate[1] = datePart + ', at ' + parsedDate[1].trim();
+        }
+    }
     // Parse each side
     function parseSide(side: string): number {
         if (!side || typeof side !== 'string') return NaN;
-        
         side = fixDateString(side.trim());
-        // Remove weekday if still present
         side = side.replace(/^[A-Za-z]+day,\s*/, '');
-        // Find year
         let year = new Date().getFullYear();
         const yearMatch = side.match(/, (\d{4})/);
         if (yearMatch) {
             year = Number(yearMatch[1]);
             side = side.replace(', ' + year, '');
         }
-        // Find time - FIXED: capture AM/PM properly with more flexible regex
         let timeMatch = side.match(/, at (\d{1,2}):(\d{2}) ([ap]m)/i);
         let hour = 0, minute = 0;
         if (timeMatch) {
@@ -290,7 +284,6 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
             if (ampm === 'pm' && hour !== 12) hour += 12;
             if (ampm === 'am' && hour === 12) hour = 0;
         } else {
-            // Try alternative pattern without "at"
             timeMatch = side.match(/(\d{1,2}):(\d{2}) ([ap]m)/i);
             if (timeMatch) {
                 hour = Number(timeMatch[1]);
@@ -300,9 +293,7 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
                 if (ampm === 'am' && hour === 12) hour = 0;
             }
         }
-        // Remove time for date parsing
         const datePart = side.split(', at')[0];
-        // Parse month and day
         const month = datePart.trim().split(' ')[0];
         const day = datePart.trim().split(' ')[1]?.replace(',', '');
         const monthIdx = toMonthIndex(month);

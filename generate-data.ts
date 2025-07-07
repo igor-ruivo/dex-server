@@ -65,23 +65,25 @@ async function generateData() {
     
     // Create aggregated data
     const data: AggregatedData = {
-      events: eventsData.events.map(event => ({
-        title: event.title,
-        description: event.subtitle || 'Pokemon GO event',
-        type: 'event' as const,
-        startDate: event.startDate,
-        endDate: event.endDate,
-        dateRanges: event.dateRanges,
-        imageUrl: event.imageUrl,
-        sourceUrl: event.sourceUrl,
-        source: event.source,
-        wild: event.wild,
-        raids: event.raids,
-        eggs: event.eggs,
-        research: event.research,
-        incenses: event.incenses,
-        bonuses: event.bonuses
-      })),
+      events: eventsData.events
+        .filter(event => Number.isFinite(event.startDate) && Number.isFinite(event.endDate) && event.startDate !== 0 && event.endDate !== 0 && event.startDate !== null && event.endDate !== null && event.startDate !== undefined && event.endDate !== undefined)
+        .map(event => ({
+          title: event.title,
+          description: event.subtitle || 'Pokemon GO event',
+          type: 'event' as const,
+          startDate: event.startDate,
+          endDate: event.endDate,
+          dateRanges: event.dateRanges,
+          imageUrl: event.imageUrl,
+          sourceUrl: event.sourceUrl,
+          source: event.source,
+          wild: event.wild,
+          raids: event.raids,
+          eggs: event.eggs,
+          research: event.research,
+          incenses: event.incenses,
+          bonuses: event.bonuses
+        })),
       raidBosses: [
         {
           name: 'Charizard',

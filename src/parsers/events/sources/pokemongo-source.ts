@@ -305,10 +305,12 @@ export class PokemonGoSource implements IEventSource {
             const contentBodies = Array.from(entry.children) as unknown as HTMLElement[];
             if (!kind) continue;
             if (this.isBonusSection(kind)) {
-                const bonusContainer = contentBodies[1] as unknown as Element;
-                if (bonusContainer) {
-                    const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
-                    bonusesArr.push(...visualBonuses);
+                for (let j = 1; j < contentBodies.length; j++) {
+                    const bonusContainer = contentBodies[j] as unknown as Element;
+                    if (bonusContainer) {
+                        const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
+                        bonusesArr.push(...visualBonuses);
+                    }
                 }
                 continue;
             }

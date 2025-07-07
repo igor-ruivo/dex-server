@@ -1,6 +1,3 @@
-// Main event parser
-export { EventParser } from './event-parser';
-
 // Sources
 export { PokemonGoSource } from './sources/pokemongo-source';
 

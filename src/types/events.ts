@@ -38,22 +38,12 @@ export interface IParsedEvent {
     imageUrl?: string;
     sourceUrl?: string;
     source: 'pokemongo' | 'leekduck';
-    categories: EventCategory[];
     wild?: IEntry[];
     raids?: IEntry[];
     eggs?: IEntry[];
     research?: IEntry[];
     incenses?: IEntry[];
     bonuses?: string[];
-}
-
-export enum EventCategory {
-    RAID = 'raid',
-    WILD = 'wild',
-    RESEARCH = 'research',
-    EGG = 'egg',
-    INCENSE = 'incense',
-    SPOTLIGHT = 'spotlight'
 }
 
 export interface IEventSource {

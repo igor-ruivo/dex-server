@@ -1,4 +1,4 @@
-import { IEventSource, IParsedEvent, EventCategory, IEntry } from '../../../types/events';
+import { IEventSource, IParsedEvent, IEntry } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../utils/normalization';
 import { PokemonGoFetcher, PokemonGoPost } from '../services/pokemongo-fetcher';
@@ -147,9 +147,6 @@ export class PokemonGoSource implements IEventSource {
                 continue;
             }
             const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
-            const categories = this.determineCategories([parsedContent]);
-            const currentTime = Date.now();
-            const isRelevant = eventEndDate > currentTime;
             const event: IParsedEvent = {
                 id: this.generateEventId(),
                 title: eventTitle,
@@ -160,7 +157,6 @@ export class PokemonGoSource implements IEventSource {
                 imageUrl,
                 sourceUrl: post.url,
                 source: 'pokemongo' as const,
-                categories,
                 wild: parsedContent.wild,
                 raids: parsedContent.raids,
                 eggs: parsedContent.eggs,
@@ -205,9 +201,6 @@ export class PokemonGoSource implements IEventSource {
                 continue;
             }
             const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
-            const categories = this.determineCategories([parsedContent]);
-            const currentTime = Date.now();
-            const isRelevant = eventEndDate > currentTime;
             const event: IParsedEvent = {
                 id: `pokemongo-news-${eventStartDate}`,
                 title: eventTitle,
@@ -218,7 +211,6 @@ export class PokemonGoSource implements IEventSource {
                 imageUrl,
                 sourceUrl: post.url,
                 source: 'pokemongo',
-                categories,
                 wild: parsedContent.wild,
                 raids: parsedContent.raids,
                 eggs: parsedContent.eggs,
@@ -389,20 +381,6 @@ export class PokemonGoSource implements IEventSource {
             imageUrl: imageUrl || '',
             raids, wild, eggs, research, incenses, bonuses: bonusesArr
         };
-    }
-
-    private determineCategories(parsedContent: EventBlock[]): EventCategory[] {
-        const categories: EventCategory[] = [];
-        
-        parsedContent.forEach(content => {
-            if (content.wild.length > 0) categories.push(EventCategory.WILD);
-            if (content.raids.length > 0) categories.push(EventCategory.RAID);
-            if (content.eggs.length > 0) categories.push(EventCategory.EGG);
-            if (content.research.length > 0) categories.push(EventCategory.RESEARCH);
-            if (content.incenses.length > 0) categories.push(EventCategory.INCENSE);
-        });
-        
-        return categories;
     }
 
     private extractBonusesVisualLines(bonusContainer: Element): string[] {

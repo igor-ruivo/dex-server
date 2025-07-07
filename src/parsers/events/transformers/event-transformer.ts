@@ -1,4 +1,4 @@
-import { IEventTransformer, IParsedEvent, EventCategory } from '../../../types/events';
+import { IEventTransformer, IParsedEvent } from '../../../types/events';
 
 export class EventTransformer implements IEventTransformer {
     public transformEvent(event: IParsedEvent): IParsedEvent {
@@ -7,7 +7,6 @@ export class EventTransformer implements IEventTransformer {
             title: this.normalizeTitle(event.title),
             subtitle: event.subtitle ? this.normalizeTitle(event.subtitle) : undefined,
             description: this.generateDescription(event),
-            categories: this.deduplicateCategories(event.categories),
             bonuses: this.normalizeBonuses(event.bonuses)
         };
     }
@@ -36,10 +35,6 @@ export class EventTransformer implements IEventTransformer {
         }
 
         return parts.join('. ');
-    }
-
-    private deduplicateCategories(categories: EventCategory[]): EventCategory[] {
-        return [...new Set(categories)];
     }
 
     private normalizeBonuses(bonuses?: string[]): string[] | undefined {

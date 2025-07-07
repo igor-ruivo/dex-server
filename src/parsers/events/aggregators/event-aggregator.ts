@@ -1,4 +1,4 @@
-import { IEventAggregator, IParsedEvent, EventCategory } from '../../../types/events';
+import { IEventAggregator, IParsedEvent } from '../../../types/events';
 
 export class EventAggregator implements IEventAggregator {
     public aggregateEvents(events: IParsedEvent[]): IParsedEvent[] {
@@ -116,8 +116,7 @@ export class EventAggregator implements IEventAggregator {
             subtitle: this.mergeSubtitles(events.map(e => e.subtitle).filter((s): s is string => Boolean(s))),
             startDate: Math.min(...events.map(e => e.startDate)),
             endDate: Math.max(...events.map(e => e.endDate)),
-            bonuses: this.mergeBonuses(events.map(e => e.bonuses).filter((b): b is string[] => Boolean(b))),
-            categories: this.mergeCategories(events.map(e => e.categories))
+            bonuses: this.mergeBonuses(events.map(e => e.bonuses).filter((b): b is string[] => Boolean(b)))
         };
     }
 
@@ -146,7 +145,6 @@ export class EventAggregator implements IEventAggregator {
         ];
         if (allPokemon.length > 0) score += allPokemon.length;
         if (event.bonuses && event.bonuses.length > 0) score += event.bonuses.length;
-        if (event.categories.length > 0) score += event.categories.length;
 
         return score;
     }
@@ -174,10 +172,5 @@ export class EventAggregator implements IEventAggregator {
         // Remove duplicates and combine
         const uniqueBonuses = [...new Set(allBonusTexts)];
         return uniqueBonuses;
-    }
-
-    private mergeCategories(allCategories: EventCategory[][]): EventCategory[] {
-        const allCats = allCategories.flat();
-        return [...new Set(allCats)] as EventCategory[];
     }
 } 

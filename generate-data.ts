@@ -13,7 +13,6 @@ interface PokemonEvent {
   imageUrl?: string;
   sourceUrl?: string;
   source?: string;
-  categories?: string[];
   wild?: unknown[];
   raids?: unknown[];
   eggs?: unknown[];
@@ -76,7 +75,6 @@ async function generateData() {
         imageUrl: event.imageUrl,
         sourceUrl: event.sourceUrl,
         source: event.source,
-        categories: event.categories,
         wild: event.wild,
         raids: event.raids,
         eggs: event.eggs,

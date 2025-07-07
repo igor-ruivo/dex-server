@@ -1,3 +1,5 @@
+import { JSDOM } from 'jsdom';
+
 export interface PokemonGoPost {
     url: string;
     title: string;
@@ -57,7 +59,6 @@ export class PokemonGoFetcher {
 
     private extractPostLinks(html: string): Array<{ url: string; title: string }> {
         const links: Array<{ url: string; title: string }> = [];
-        const { JSDOM } = require('jsdom');
         const dom = new JSDOM(html);
         const document = dom.window.document;
         // Select all <a> elements with href containing /en/post/ or /news/

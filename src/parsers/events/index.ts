@@ -3,7 +3,6 @@ export { EventParser } from './event-parser';
 
 // Sources
 export { PokemonGoSource } from './sources/pokemongo-source';
-export { LeekDuckSource } from './sources/leekduck-source';
 
 // Validators
 export { EventValidator } from './validators/event-validator';

@@ -59,9 +59,8 @@ export class EventValidator implements IEventValidator {
     private hasValidContent(event: IParsedEvent): boolean {
         // Event should have some meaningful content
         const hasPokemon = (event.wild && event.wild.length > 0) || (event.raids && event.raids.length > 0) || (event.eggs && event.eggs.length > 0) || (event.research && event.research.length > 0) || (event.incenses && event.incenses.length > 0);
-        const hasBonuses = event.bonuses && event.bonuses.length > 0;
-        const hasCategories = event.categories && event.categories.length > 0;
-        const hasContent = hasPokemon || hasBonuses || hasCategories;
+        const hasBonuses: boolean = (event.bonuses?.length ?? 0) > 0;
+        const hasContent = hasPokemon || hasBonuses;
 
         return hasContent;
     }

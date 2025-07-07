@@ -1,6 +1,5 @@
 import { IParsedEvent, IEventSource } from '../../types/events';
 import { PokemonGoSource } from './sources/pokemongo-source';
-import { LeekDuckSource } from './sources/leekduck-source';
 import { EventValidator } from './validators/event-validator';
 import { EventTransformer } from './transformers/event-transformer';
 import { EventAggregator } from './aggregators/event-aggregator';
@@ -14,8 +13,7 @@ export class EventParser {
 
     constructor() {
         this.sources = [
-            new PokemonGoSource(),
-            new LeekDuckSource()
+            new PokemonGoSource()
         ];
         this.validator = new EventValidator();
         this.transformer = new EventTransformer();
@@ -112,7 +110,6 @@ export class EventParser {
         const stats = {
             total: events.length,
             bySource: {} as Record<string, number>,
-            byCategory: {} as Record<string, number>,
             byDateRange: {
                 past: 0,
                 current: 0,
@@ -127,11 +124,6 @@ export class EventParser {
         for (const event of events) {
             // Count by source
             stats.bySource[event.source] = (stats.bySource[event.source] || 0) + 1;
-
-            // Count by category
-            for (const category of event.categories) {
-                stats.byCategory[category] = (stats.byCategory[category] || 0) + 1;
-            }
 
             // Count by date range
             if (event.endDate < now) {

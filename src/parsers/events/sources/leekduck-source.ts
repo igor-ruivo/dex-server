@@ -1,10 +1,27 @@
-import { IEventSource, IParsedEvent, EventCategory } from '../../../types/events';
+import { IEventSource, IParsedEvent, EventCategory, IEntry } from '../../../types/events';
+
+interface LeekDuckEventEntry {
+    id?: string;
+    title: string;
+    subtitle?: string;
+    date: number;
+    dateEnd?: number;
+    imgUrl?: string;
+    rawUrl?: string;
+    raids?: IEntry[];
+    wild?: IEntry[];
+    researches?: IEntry[];
+    eggs?: IEntry[];
+    incenses?: IEntry[];
+    bonuses?: string;
+    isRelevant?: boolean;
+}
 
 export class LeekDuckSource implements IEventSource {
     public name = 'leekduck';
     public baseUrl = 'https://leekduck.com';
 
-    public async parseEvents(html: string, gameMasterPokemon: Record<string, any>): Promise<IParsedEvent[]> {
+    public async parseEvents(): Promise<IParsedEvent[]> {
         // This is a placeholder implementation
         // In a real implementation, you would use JSDOM to parse the HTML
         // and extract the event data from LeekDuck's event pages
@@ -30,34 +47,34 @@ export class LeekDuckSource implements IEventSource {
     //     return null;
     // }
 
-    private transformToParsedEvent(entry: any): IParsedEvent {
+    private transformToParsedEvent(entry: LeekDuckEventEntry): IParsedEvent {
         const categories: EventCategory[] = [];
-        const pokemon: any[] = [];
+        const pokemon: IEntry[] = [];
 
         // Transform LeekDuck event format to our standard format
         if (entry.raids?.length) {
             categories.push(EventCategory.RAID);
-            pokemon.push(...entry.raids.map((p: any) => ({ ...p, category: EventCategory.RAID, source: 'leekduck' })));
+            pokemon.push(...entry.raids.map((p: IEntry) => ({ ...p, category: EventCategory.RAID, source: 'leekduck' })));
         }
 
         if (entry.wild?.length) {
             categories.push(EventCategory.WILD);
-            pokemon.push(...entry.wild.map((p: any) => ({ ...p, category: EventCategory.WILD, source: 'leekduck' })));
+            pokemon.push(...entry.wild.map((p: IEntry) => ({ ...p, category: EventCategory.WILD, source: 'leekduck' })));
         }
 
         if (entry.researches?.length) {
             categories.push(EventCategory.RESEARCH);
-            pokemon.push(...entry.researches.map((p: any) => ({ ...p, category: EventCategory.RESEARCH, source: 'leekduck' })));
+            pokemon.push(...entry.researches.map((p: IEntry) => ({ ...p, category: EventCategory.RESEARCH, source: 'leekduck' })));
         }
 
         if (entry.eggs?.length) {
             categories.push(EventCategory.EGG);
-            pokemon.push(...entry.eggs.map((p: any) => ({ ...p, category: EventCategory.EGG, source: 'leekduck' })));
+            pokemon.push(...entry.eggs.map((p: IEntry) => ({ ...p, category: EventCategory.EGG, source: 'leekduck' })));
         }
 
         if (entry.incenses?.length) {
             categories.push(EventCategory.INCENSE);
-            pokemon.push(...entry.incenses.map((p: any) => ({ ...p, category: EventCategory.INCENSE, source: 'leekduck' })));
+            pokemon.push(...entry.incenses.map((p: IEntry) => ({ ...p, category: EventCategory.INCENSE, source: 'leekduck' })));
         }
 
         return {

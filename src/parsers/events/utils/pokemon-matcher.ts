@@ -1,12 +1,13 @@
+import { GameMasterPokemon } from '../../../types/pokemon';
 import { IEntry } from '../../../types/events';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
 import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from './normalization';
 
 export class PokemonMatcher {
-    private gameMasterPokemon: Record<string, any>;
-    private domain: any[];
+    private gameMasterPokemon: Record<string, GameMasterPokemon>;
+    private domain: GameMasterPokemon[];
 
-    constructor(gameMasterPokemon: Record<string, any>, domain: any[]) {
+    constructor(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: GameMasterPokemon[]) {
         this.gameMasterPokemon = gameMasterPokemon;
         this.domain = domain;
     }
@@ -26,7 +27,6 @@ export class PokemonMatcher {
         let raidLevel = "";
         
         for (let j = 0; j < pkmwithNoClothes.length; j++) {
-            // const _isShiny = pkmwithNoClothes[j].includes("*");
             let isShadow = false;
             let isMega = false;
             let currP = ndfNormalized(normalizePokemonName(pkmwithNoClothes[j])).trim();
@@ -184,7 +184,7 @@ export class PokemonMatcher {
         return null;
     }
 
-    private matchPokemonWithForm(basePokemon: any, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
+    private matchPokemonWithForm(basePokemon: GameMasterPokemon, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
         const dex = basePokemon.dex;
         const availableForms = this.getAvailableForms(dex, isShadow, isMega, raidLevel);
 
@@ -261,7 +261,7 @@ export class PokemonMatcher {
         return null;
     }
 
-    private getAvailableForms(dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): any[] {
+    private getAvailableForms(dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): GameMasterPokemon[] {
         if (raidLevel.toLocaleLowerCase() !== "mega" || !isMega) {
             if (!isShadow) {
                 return this.domain.filter(formC => 
@@ -286,26 +286,26 @@ export class PokemonMatcher {
  * User's algorithm: DFS to collect all text nodes from an array of elements, then parse Pokémon names using the matcher.
  * Returns an array of IEntry (speciesId, shiny, etc.)
  */
-export function extractPokemonSpeciesIdsFromElements(elements: any[], matcher: PokemonMatcher): IEntry[] {
+export function extractPokemonSpeciesIdsFromElements(elements: Node[], matcher: PokemonMatcher): IEntry[] {
     const textes: string[] = [];
     const stack = [...elements];
     while (stack.length > 0) {
         const node = stack.pop();
-        if (!node || Array.from(node.classList ?? []).includes("ContainerBlock__headline")) {
-            continue;
-        }
-        if (node.nodeType === 3) { // TEXT_NODE
+        if (!node) continue;
+        if (node.nodeType === 1) { // ELEMENT_NODE
+            const el = node as Element;
+            if (Array.from(el.classList ?? []).includes("ContainerBlock__headline")) {
+                continue;
+            }
+            if (el.childNodes) {
+                for (let i = el.childNodes.length - 1; i >= 0; i--) {
+                    stack.push(el.childNodes[i]);
+                }
+            }
+        } else if (node.nodeType === 3) { // TEXT_NODE
             const actualText = node.textContent?.trim();
             if (actualText) {
                 textes.push(actualText);
-            }
-            continue;
-        }
-        if (node.nodeType === 1) { // ELEMENT_NODE
-            if (node.childNodes) {
-                for (let i = node.childNodes.length - 1; i >= 0; i--) {
-                    stack.push(node.childNodes[i]);
-                }
             }
         }
     }

@@ -4,6 +4,7 @@ import { LeekDuckSource } from './sources/leekduck-source';
 import { EventValidator } from './validators/event-validator';
 import { EventTransformer } from './transformers/event-transformer';
 import { EventAggregator } from './aggregators/event-aggregator';
+import { GameMasterPokemon } from '../../types/pokemon';
 
 export class EventParser {
     private sources: IEventSource[];
@@ -23,7 +24,7 @@ export class EventParser {
 
     public async parseEventsFromSources(
         sourceData: Array<{ source: string; html: string }>,
-        gameMasterPokemon: Record<string, any>
+        gameMasterPokemon: Record<string, GameMasterPokemon>
     ): Promise<IParsedEvent[]> {
         console.log('Starting event parsing from multiple sources...');
         
@@ -69,7 +70,7 @@ export class EventParser {
 
     public async parseEventsFromPokemonGo(
         html: string,
-        gameMasterPokemon: Record<string, any>
+        gameMasterPokemon: Record<string, GameMasterPokemon>
     ): Promise<IParsedEvent[]> {
         const pokemonGoSource = this.sources.find(s => s.name === 'pokemongo');
         if (!pokemonGoSource) {
@@ -85,7 +86,7 @@ export class EventParser {
 
     public async parseEventsFromLeekDuck(
         html: string,
-        gameMasterPokemon: Record<string, any>
+        gameMasterPokemon: Record<string, GameMasterPokemon>
     ): Promise<IParsedEvent[]> {
         const leekDuckSource = this.sources.find(s => s.name === 'leekduck');
         if (!leekDuckSource) {
@@ -107,7 +108,7 @@ export class EventParser {
         this.sources.push(source);
     }
 
-    public getEventStatistics(events: IParsedEvent[]): Record<string, any> {
+    public getEventStatistics(events: IParsedEvent[]): Record<string, unknown> {
         const stats = {
             total: events.length,
             bySource: {} as Record<string, number>,

@@ -14,11 +14,11 @@ interface PokemonEvent {
   sourceUrl?: string;
   source?: string;
   categories?: string[];
-  wild?: any[];
-  raids?: any[];
-  eggs?: any[];
-  research?: any[];
-  incenses?: any[];
+  wild?: unknown[];
+  raids?: unknown[];
+  eggs?: unknown[];
+  research?: unknown[];
+  incenses?: unknown[];
   bonuses?: string[];
   isRelevant?: boolean;
 }

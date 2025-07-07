@@ -1,3 +1,5 @@
+import { GameMasterPokemon } from '../types/pokemon';
+
 export interface IEntry {
     speciesId: string;
     shiny: boolean;
@@ -44,7 +46,7 @@ export interface IParsedEvent {
     incenses?: IEntry[];
     bonuses?: string[];
     isRelevant: boolean;
-    metadata: Record<string, any>;
+    metadata: Record<string, unknown>;
 }
 
 export enum EventCategory {
@@ -59,11 +61,11 @@ export enum EventCategory {
 export interface IEventSource {
     name: string;
     baseUrl: string;
-    parseEvents(html: string, gameMasterPokemon: Record<string, any>): Promise<IParsedEvent[]>;
+    parseEvents(html: string, gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
 }
 
 export interface IEventMatcher {
-    matchPokemon(pokemonName: string, gameMasterPokemon: Record<string, any>): string | null;
+    matchPokemon(pokemonName: string, gameMasterPokemon: Record<string, GameMasterPokemon>): string | null;
 }
 
 export interface IEventValidator {

@@ -1,4 +1,4 @@
-import { IEventAggregator, IParsedEvent } from '../../../types/events';
+import { IEventAggregator, IParsedEvent, EventCategory } from '../../../types/events';
 
 export class EventAggregator implements IEventAggregator {
     public aggregateEvents(events: IParsedEvent[]): IParsedEvent[] {
@@ -181,8 +181,8 @@ export class EventAggregator implements IEventAggregator {
         return uniqueBonuses;
     }
 
-    private mergeCategories(allCategories: any[][]): any[] {
+    private mergeCategories(allCategories: EventCategory[][]): EventCategory[] {
         const allCats = allCategories.flat();
-        return [...new Set(allCats)];
+        return [...new Set(allCats)] as EventCategory[];
     }
 } 

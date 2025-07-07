@@ -218,9 +218,9 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
         // 'Saturday, July 5, and Sunday, July 6, 2025 from 2:00 p.m. to 5:00 p.m. local time.'
         const multiDayMatch = date.match(/([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);
         if (multiDayMatch && multiDayMatch[1] && multiDayMatch[2] && multiDayMatch[4] && multiDayMatch[5]) {
-            let year = multiDayMatch[3] || '2025';
-            let startDate = multiDayMatch[1] + ', ' + year;
-            let endDate = multiDayMatch[2] + ', ' + year;
+            const year = multiDayMatch[3] || '2025';
+            const startDate = multiDayMatch[1] + ', ' + year;
+            const endDate = multiDayMatch[2] + ', ' + year;
             const startTime = multiDayMatch[4];
             const endTime = multiDayMatch[5];
             

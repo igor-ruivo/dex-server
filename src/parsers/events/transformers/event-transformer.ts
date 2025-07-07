@@ -1,4 +1,4 @@
-import { IEventTransformer, IParsedEvent, EventCategory } from '../../../types/events';
+import { IEventTransformer, IParsedEvent, EventCategory, IEntry } from '../../../types/events';
 
 export class EventTransformer implements IEventTransformer {
     public transformEvent(event: IParsedEvent): IParsedEvent {
@@ -47,7 +47,7 @@ export class EventTransformer implements IEventTransformer {
         return [...new Set(categories)];
     }
 
-    private deduplicatePokemon(wild: any[], raids: any[], eggs: any[], research: any[], incenses: any[]): any[] {
+    private deduplicatePokemon(wild: IEntry[], raids: IEntry[], eggs: IEntry[], research: IEntry[], incenses: IEntry[]): IEntry[] {
         const allPokemon = [
             ...(wild || []),
             ...(raids || []),
@@ -57,7 +57,7 @@ export class EventTransformer implements IEventTransformer {
         ];
         const seen = new Set<string>();
         return allPokemon.filter(p => {
-            const key = `${p.speciesId}-${p.category}-${p.shiny}`;
+            const key = `${p.speciesId}-${(p as { category?: string }).category ?? ''}-${p.shiny}`;
             if (seen.has(key)) {
                 return false;
             }

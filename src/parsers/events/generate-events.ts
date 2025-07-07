@@ -2,9 +2,10 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PokemonGoSource } from './sources/pokemongo-source';
 import { GameMasterData } from '../game-master-parser';
+import { IParsedEvent } from '../../types/events';
 
 interface EventsData {
-  events: any[];
+  events: IParsedEvent[];
   metadata: {
     lastFetch: string;
     version: string;
@@ -47,7 +48,7 @@ async function generateEvents(gameMasterData: GameMasterData) {
       // Remove any html fields at the top level if present
       const eventCopy = { ...event };
       if ('html' in eventCopy) {
-        delete (eventCopy as any).html;
+        delete (eventCopy as { html?: string }).html;
       }
       return eventCopy;
     });

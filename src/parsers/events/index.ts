@@ -10,9 +10,6 @@ export { EventValidator } from './validators/event-validator';
 // Transformers
 export { EventTransformer } from './transformers/event-transformer';
 
-// Aggregators
-export { EventAggregator } from './aggregators/event-aggregator';
-
 // Utils
 export { PokemonMatcher } from './utils/pokemon-matcher';
 export * from './utils/normalization';

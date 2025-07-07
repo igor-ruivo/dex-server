@@ -2,14 +2,12 @@ import { IParsedEvent, IEventSource } from '../../types/events';
 import { PokemonGoSource } from './sources/pokemongo-source';
 import { EventValidator } from './validators/event-validator';
 import { EventTransformer } from './transformers/event-transformer';
-import { EventAggregator } from './aggregators/event-aggregator';
 import { GameMasterPokemon } from '../../types/pokemon';
 
 export class EventParser {
     private sources: IEventSource[];
     private validator: EventValidator;
     private transformer: EventTransformer;
-    private aggregator: EventAggregator;
 
     constructor() {
         this.sources = [
@@ -17,57 +15,9 @@ export class EventParser {
         ];
         this.validator = new EventValidator();
         this.transformer = new EventTransformer();
-        this.aggregator = new EventAggregator();
-    }
-
-    public async parseEventsFromSources(
-        sourceData: Array<{ source: string; html: string }>,
-        gameMasterPokemon: Record<string, GameMasterPokemon>
-    ): Promise<IParsedEvent[]> {
-        console.log('Starting event parsing from multiple sources...');
-        
-        const allEvents: IParsedEvent[] = [];
-
-        // Parse events from each source
-        for (const { source, html } of sourceData) {
-            try {
-                const sourceParser = this.sources.find(s => s.name === source);
-                if (!sourceParser) {
-                    console.warn(`No parser found for source: ${source}`);
-                    continue;
-                }
-
-                console.log(`Parsing events from ${source}...`);
-                const events = await sourceParser.parseEvents(html, gameMasterPokemon);
-                console.log(`Found ${events.length} events from ${source}`);
-                
-                allEvents.push(...events);
-            } catch (error) {
-                console.error(`Error parsing events from ${source}:`, error);
-            }
-        }
-
-        console.log(`Total events found: ${allEvents.length}`);
-
-        // Validate events
-        console.log('Validating events...');
-        const validEvents = this.validator.validateEvents(allEvents);
-        console.log(`Valid events: ${validEvents.length}`);
-
-        // Transform events
-        console.log('Transforming events...');
-        const transformedEvents = this.transformer.transformEvents(validEvents);
-
-        // Aggregate events
-        console.log('Aggregating events...');
-        const aggregatedEvents = this.aggregator.aggregateEvents(transformedEvents);
-        console.log(`Final aggregated events: ${aggregatedEvents.length}`);
-
-        return aggregatedEvents;
     }
 
     public async parseEventsFromPokemonGo(
-        html: string,
         gameMasterPokemon: Record<string, GameMasterPokemon>
     ): Promise<IParsedEvent[]> {
         const pokemonGoSource = this.sources.find(s => s.name === 'pokemongo');
@@ -75,7 +25,7 @@ export class EventParser {
             throw new Error('PokemonGoSource not found');
         }
 
-        const events = await pokemonGoSource.parseEvents(html, gameMasterPokemon);
+        const events = await pokemonGoSource.parseEvents(gameMasterPokemon);
         const validEvents = this.validator.validateEvents(events);
         const transformedEvents = this.transformer.transformEvents(validEvents);
 
@@ -91,7 +41,7 @@ export class EventParser {
             throw new Error('LeekDuckSource not found');
         }
 
-        const events = await leekDuckSource.parseEvents(html, gameMasterPokemon);
+        const events = await leekDuckSource.parseEvents(gameMasterPokemon);
         const validEvents = this.validator.validateEvents(events);
         const transformedEvents = this.transformer.transformEvents(validEvents);
 

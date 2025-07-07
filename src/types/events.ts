@@ -57,10 +57,6 @@ export interface IEventValidator {
     validateEvent(event: IParsedEvent): boolean;
 }
 
-export interface IEventAggregator {
-    aggregateEvents(events: IParsedEvent[]): IParsedEvent[];
-}
-
 export interface IEventTransformer {
     transformEvent(event: IParsedEvent): IParsedEvent;
 } 

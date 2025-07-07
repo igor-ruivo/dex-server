@@ -167,21 +167,11 @@ export class PokemonMatcher {
             'zamazenta': 'zamazenta_hero',
             'morpeko': 'morpeko_full_belly',
             'pumpkaboo': 'pumpkaboo_average',
-            'gourgeist': 'gourgeist_average',
-            'farfetchd': 'farfetchd',
-            'farfetch': 'farfetchd'
+            'gourgeist': 'gourgeist_average'
         };
 
         for (const [key, value] of Object.entries(specialCases)) {
             if (currP.includes(key)) {
-                // Special handling for Galarian Farfetch'd
-                if (currP.includes('galarian') && key === 'farfetchd') {
-                    return {
-                        speciesId: 'farfetchd_galarian',
-                        shiny: false,
-                        kind: raidLevel
-                    };
-                }
                 return {
                     speciesId: value,
                     shiny: false,

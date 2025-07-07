@@ -20,7 +20,8 @@ export const normalizeSpeciesNameForId = (speciesName: string): string => {
     return speciesName
         .replaceAll("-", "_")
         .replaceAll(". ", "_")
-        .replaceAll(/[’‘‛′'`]/g, "")
+        .replaceAll("'", "")
+        .replaceAll("’", "")
         .replaceAll(" ", "_")
         .replaceAll(" (jr)", "_jr")
         .replaceAll('♂', '_male')
@@ -237,9 +238,9 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
                 }
             }
         } else {
-            if (typeof console !== 'undefined' && console.warn) {
-                console.warn('[parseEventDateRange] Multi-day date string did not match or had missing groups:', date, multiDayMatch);
-            }
+            // if (typeof console !== 'undefined' && console.warn) {
+            //   console.warn('[parseEventDateRange] Multi-day date string did not match or had missing groups:', date, multiDayMatch);
+            // }
         }
     }
 

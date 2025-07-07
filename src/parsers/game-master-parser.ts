@@ -109,7 +109,7 @@ export class GameMasterParser {
         isBeast: PokemonValidator.hasTag(pokemon, 'ultrabeast')
       };
     } catch (error) {
-      console.warn(`⚠️ Failed to transform Pokemon ${pokemon.speciesId}:`, error);
+      // console.warn(`⚠️ Failed to transform Pokemon ${pokemon.speciesId}:`, error);
       return null;
     }
   }

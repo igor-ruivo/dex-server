@@ -50,12 +50,19 @@ async function generateData() {
   const now = new Date().toISOString();
   
   try {
-    // Parse Game Master data
+    // Step 1: Parse Game Master data first
     const gameMasterParser = new GameMasterParser();
     const pokemonDictionary = await gameMasterParser.parse();
     
-    // Generate real events data
-    const eventsData = await generateEvents();
+    // Step 2: Generate events data using the fresh Game Master data
+    const eventsData = await generateEvents(pokemonDictionary);
+    
+    // Step 3: Save Game Master data to disk (after events are generated)
+    const dataDir = path.join(process.cwd(), 'data');
+    await fs.mkdir(dataDir, { recursive: true });
+    const gameMasterPath = path.join(dataDir, 'game-master.json');
+    await fs.writeFile(gameMasterPath, JSON.stringify(pokemonDictionary, null, 2));
+    console.log(`✅ Game Master data written to: ${gameMasterPath}`);
     
     // Create aggregated data
     const data: AggregatedData = {
@@ -115,20 +122,15 @@ async function generateData() {
       },
     };
 
-    // Create data directory in root (will be committed by GitHub Actions)
-    const dataDir = path.join(process.cwd(), 'data');
-    await fs.mkdir(dataDir, { recursive: true });
-    
     // Write main aggregated data file
     const mainDataPath = path.join(dataDir, 'aggregated-data.json');
     await fs.writeFile(mainDataPath, JSON.stringify(data, null, 2));
     console.log(`✅ Main data written to: ${mainDataPath}`);
 
-    // Write individual data files
+    // Write remaining individual data files
     const files = [
       { name: 'events.json', data: data.events },
       { name: 'raid-bosses.json', data: data.raidBosses },
-      { name: 'game-master.json', data: pokemonDictionary },
       { name: 'metadata.json', data: data.metadata },
     ];
 

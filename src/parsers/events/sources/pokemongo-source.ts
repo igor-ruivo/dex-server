@@ -46,48 +46,48 @@ export class PokemonGoSource implements IEventSource {
     public async parseEvents(html: string, gameMasterPokemon: Record<string, any>): Promise<IParsedEvent[]> {
         const now = () => new Date().toISOString();
         try {
-            console.log(`[${now()}] [parseEvents] Fetching all posts...`);
+            // console.log(`[${now()}] [parseEvents] Fetching all posts...`);
             const posts = await this.fetcher.fetchAllPosts();
-            console.log(`[${now()}] [parseEvents] Fetched ${posts.length} posts from Pokemon GO`);
+            // console.log(`[${now()}] [parseEvents] Fetched ${posts.length} posts from Pokemon GO`);
             
             // Fetch all individual post content in parallel
-            console.log(`[${now()}] [parseEvents] Fetching individual post content in parallel...`);
+            // console.log(`[${now()}] [parseEvents] Fetching individual post content in parallel...`);
             const fetchStart = Date.now();
             const postPromises = posts
                 .filter(post => post.type !== 'season' && post.type !== 'other')
                 .map(async (post, idx) => {
                     const t0 = Date.now();
-                    console.log(`[${now()}] [parseEvents] [${idx}] Fetching individual post: ${post.title}`);
+                    // console.log(`[${now()}] [parseEvents] [${idx}] Fetching individual post: ${post.title}`);
                     try {
                         const individualPost = await this.fetcher.fetchSinglePost(post.url);
                         const t1 = Date.now();
-                        console.log(`[${now()}] [parseEvents] [${idx}] Fetch complete (${t1-t0}ms): ${post.title}`);
+                        // console.log(`[${now()}] [parseEvents] [${idx}] Fetch complete (${t1-t0}ms): ${post.title}`);
                         if (individualPost) {
                             const parseT0 = Date.now();
                             const events = this.parseSinglePost(individualPost, gameMasterPokemon);
                             const parseT1 = Date.now();
-                            console.log(`[${now()}] [parseEvents] [${idx}] Parse complete (${parseT1-parseT0}ms): ${post.title}`);
+                            // console.log(`[${now()}] [parseEvents] [${idx}] Parse complete (${parseT1-parseT0}ms): ${post.title}`);
                             return events;
                         }
                         return [];
                     } catch (error) {
-                        console.error(`[${now()}] [parseEvents] [${idx}] Failed to fetch individual post ${post.url}:`, error);
+                        // console.error(`[${now()}] [parseEvents] [${idx}] Failed to fetch individual post ${post.url}:`, error);
                         return [];
                     }
                 });
 
             const allEventsArrays = await Promise.all(postPromises);
             const fetchEnd = Date.now();
-            console.log(`[${now()}] [parseEvents] All fetches and parses complete. Total time: ${fetchEnd-fetchStart}ms`);
+            // console.log(`[${now()}] [parseEvents] All fetches and parses complete. Total time: ${fetchEnd-fetchStart}ms`);
             const allEvents = allEventsArrays.flat();
-            console.log(`[${now()}] [parseEvents] Successfully parsed ${allEvents.length} events from individual posts`);
+            // console.log(`[${now()}] [parseEvents] Successfully parsed ${allEvents.length} events from individual posts`);
 
             // Filter out non-relevant events
             const relevantEvents = this.filterRelevantEvents(allEvents);
-            console.log(`[${now()}] [parseEvents] Filtered to ${relevantEvents.length} relevant events`);
+            // console.log(`[${now()}] [parseEvents] Filtered to ${relevantEvents.length} relevant events`);
             return relevantEvents;
         } catch (error) {
-            console.error(`[${now()}] [parseEvents] Failed to parse Pokemon GO events:`, error);
+            // console.error(`[${now()}] [parseEvents] Failed to parse Pokemon GO events:`, error);
             return [];
         }
     }
@@ -212,18 +212,18 @@ export class PokemonGoSource implements IEventSource {
     private extractDateStringsFromPost(html: string): string[] {
         const dateStrings: string[] = [];
         try {
+            // console.log(`[${now()}] [extractDateStringsFromPost] Start`);
             const dom = new JSDOM(html);
             const document = dom.window.document;
             const now = () => new Date().toISOString();
-            console.log(`[${now()}] [extractDateStringsFromPost] Start`);
 
             const blogPostBlocks = document.getElementsByClassName(DOM_SELECTORS.BLOG_POST_BLOCKS)[0];
             if (!blogPostBlocks) {
-                console.log(`[${now()}] [extractDateStringsFromPost] blogPost__post__blocks not found`);
+                // console.log(`[${now()}] [extractDateStringsFromPost] blogPost__post__blocks not found`);
                 return [];
             }
             const entries = Array.from(blogPostBlocks.children);
-            console.log(`[${now()}] [extractDateStringsFromPost] entries.length:`, entries.length);
+            // console.log(`[${now()}] [extractDateStringsFromPost] entries.length:`, entries.length);
             if (entries.length === 0) {
                 return [];
             }
@@ -233,7 +233,7 @@ export class PokemonGoSource implements IEventSource {
                 const bodyElement = bodyElements[0] as unknown as HTMLElement;
                 const date = bodyElement?.textContent?.trim().split("\n")[0].trim();
                 if (date) {
-                    console.log(`[${now()}] [extractDateStringsFromPost] Found date in entries[0]:`, date);
+                    // console.log(`[${now()}] [extractDateStringsFromPost] Found date in entries[0]:`, date);
                     dateStrings.push(date);
                 }
             }
@@ -251,17 +251,17 @@ export class PokemonGoSource implements IEventSource {
                     const bodyElement = bodyElements[0] as unknown as HTMLElement;
                     const dateInner = bodyElement?.textContent?.trim().split("\n")[0].trim();
                     if (dateInner) {
-                        console.log(`[${now()}] [extractDateStringsFromPost] Found date in innerEntries at k=${k}:`, dateInner);
+                        // console.log(`[${now()}] [extractDateStringsFromPost] Found date in innerEntries at k=${k}:`, dateInner);
                         dateStrings.push(dateInner);
                     }
                 }
             }
             // Remove duplicates
             const uniqueDates = Array.from(new Set(dateStrings));
-            console.log(`[${now()}] [extractDateStringsFromPost] Final dateStrings:`, uniqueDates);
+            // console.log(`[${now()}] [extractDateStringsFromPost] Final dateStrings:`, uniqueDates);
             return uniqueDates;
         } catch (error) {
-            console.warn('Failed to extract date strings using DOM approach:', error);
+            // console.warn('Failed to extract date strings using DOM approach:', error);
         }
         return dateStrings;
     }
@@ -390,7 +390,7 @@ export class PokemonGoSource implements IEventSource {
                 return events;
             }
         } catch (error) {
-            console.warn('Failed to parse event content using structured DOM approach:', error);
+            // console.warn('Failed to parse event content using structured DOM approach:', error);
             return [{
                 raids: [], wild: [], eggs: [], research: [], incenses: [], bonuses: []
             }];
@@ -478,7 +478,7 @@ export class PokemonGoSource implements IEventSource {
                 imageUrl
             };
         } catch (error) {
-            console.warn('Failed to extract event data using structured DOM approach:', error);
+            // console.warn('Failed to extract event data using structured DOM approach:', error);
             return {
                 title: '',
                 subtitle: '',

@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { PokemonGoSource } from './sources/pokemongo-source';
-import { GameMasterParser } from '../game-master-parser';
+import { GameMasterData } from '../game-master-parser';
 
 interface EventsData {
   events: any[];
@@ -16,21 +16,20 @@ interface EventsData {
   };
 }
 
-async function generateEvents() {
+async function generateEvents(gameMasterData: GameMasterData) {
   console.log('🔄 Starting Pokemon GO events generation...');
   
   const now = new Date().toISOString();
   
   try {
-    // Load game master data
-    console.log('📊 Loading game master data...');
-    const gameMasterParser = new GameMasterParser();
-    const gameMasterData = await gameMasterParser.parse();
+    // Use the provided fresh Game Master data
+    console.log('📊 Using fresh Game Master data from memory...');
+    const gameMaster = gameMasterData;
     
     // Parse all events
     console.log('📰 Fetching and parsing Pokemon GO events...');
     const source = new PokemonGoSource();
-    const events = await source.parseEvents('', gameMasterData);
+    const events = await source.parseEvents('', gameMaster);
     
     // Calculate statistics
     const totalBonuses = events.reduce((sum, event) => sum + (event.bonuses?.length || 0), 0);
@@ -66,11 +65,9 @@ async function generateEvents() {
       }
     };
 
-    // Create data directory
+    // Write events data file
     const dataDir = path.join(process.cwd(), 'data');
     await fs.mkdir(dataDir, { recursive: true });
-    
-    // Write events data file
     const eventsPath = path.join(dataDir, 'events.json');
     await fs.writeFile(eventsPath, JSON.stringify(eventsData, null, 2));
     
@@ -91,9 +88,10 @@ async function generateEvents() {
   }
 }
 
-// Run if called directly
+// Run if called directly (for testing/development)
 if (require.main === module) {
-  generateEvents().catch(console.error);
+  console.error('❌ generateEvents() requires GameMasterData parameter when run directly');
+  process.exit(1);
 }
 
 export { generateEvents }; 

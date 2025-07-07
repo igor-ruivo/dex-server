@@ -9,9 +9,9 @@ export class LeekDuckSource implements IEventSource {
         // In a real implementation, you would use JSDOM to parse the HTML
         // and extract the event data from LeekDuck's event pages
         
-        console.log('LeekDuckSource: HTML parsing not yet implemented');
-        console.log('HTML length:', html.length);
-        console.log('GameMaster Pokemon count:', Object.keys(gameMasterPokemon).length);
+        // console.log('LeekDuckSource: HTML parsing not yet implemented');
+        // console.log('HTML length:', html.length);
+        // console.log('GameMaster Pokemon count:', Object.keys(gameMasterPokemon).length);
         
         // Return empty array for now - this would be replaced with actual parsing logic
         return [];

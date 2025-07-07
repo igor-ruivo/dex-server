@@ -45,8 +45,6 @@ export interface IParsedEvent {
     research?: IEntry[];
     incenses?: IEntry[];
     bonuses?: string[];
-    isRelevant: boolean;
-    metadata: Record<string, unknown>;
 }
 
 export enum EventCategory {

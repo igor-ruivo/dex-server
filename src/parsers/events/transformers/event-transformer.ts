@@ -8,12 +8,7 @@ export class EventTransformer implements IEventTransformer {
             subtitle: event.subtitle ? this.normalizeTitle(event.subtitle) : undefined,
             description: this.generateDescription(event),
             categories: this.deduplicateCategories(event.categories),
-            bonuses: this.normalizeBonuses(event.bonuses),
-            metadata: {
-                ...event.metadata,
-                transformedAt: new Date().toISOString(),
-                source: event.source
-            }
+            bonuses: this.normalizeBonuses(event.bonuses)
         };
     }
 

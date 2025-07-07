@@ -43,15 +43,24 @@ async function generateEvents(gameMasterData: GameMasterData) {
     ]);
     const uniquePokemon = new Set(allPokemon.map(p => p.speciesId));
     
-    // Remove any raw HTML or originalPost fields from events
-    const publicEvents = events.map(event => {
-      // Remove any html fields at the top level if present
-      const eventCopy = { ...event };
-      if ('html' in eventCopy) {
-        delete (eventCopy as { html?: string }).html;
-      }
-      return eventCopy;
-    });
+    // Only include events that have at least one of bonuses, wild, raids, research, eggs, or incenses
+    const publicEvents = events
+      .filter(event => (
+        (event.bonuses && event.bonuses.length > 0) ||
+        (event.wild && event.wild.length > 0) ||
+        (event.raids && event.raids.length > 0) ||
+        (event.research && event.research.length > 0) ||
+        (event.eggs && event.eggs.length > 0) ||
+        (event.incenses && event.incenses.length > 0)
+      ))
+      .map(event => {
+        // Remove any html fields at the top level if present
+        const eventCopy = { ...event };
+        if ('html' in eventCopy) {
+          delete (eventCopy as { html?: string }).html;
+        }
+        return eventCopy;
+      });
 
     const eventsData: EventsData = {
       events: publicEvents,

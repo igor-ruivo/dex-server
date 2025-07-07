@@ -117,12 +117,7 @@ export class EventAggregator implements IEventAggregator {
             startDate: Math.min(...events.map(e => e.startDate)),
             endDate: Math.max(...events.map(e => e.endDate)),
             bonuses: this.mergeBonuses(events.map(e => e.bonuses).filter((b): b is string[] => Boolean(b))),
-            categories: this.mergeCategories(events.map(e => e.categories)),
-            metadata: {
-                ...baseEvent.metadata,
-                mergedFrom: events.map(e => e.id),
-                sources: events.map(e => e.source)
-            }
+            categories: this.mergeCategories(events.map(e => e.categories))
         };
     }
 

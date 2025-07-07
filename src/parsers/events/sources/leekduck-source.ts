@@ -14,7 +14,6 @@ interface LeekDuckEventEntry {
     eggs?: IEntry[];
     incenses?: IEntry[];
     bonuses?: string;
-    isRelevant?: boolean;
 }
 
 export class LeekDuckSource implements IEventSource {
@@ -87,11 +86,7 @@ export class LeekDuckSource implements IEventSource {
             sourceUrl: entry.rawUrl,
             source: 'leekduck' as const,
             categories,
-            bonuses: entry.bonuses ? [entry.bonuses] : undefined,
-            isRelevant: entry.isRelevant || false,
-            metadata: {
-                originalEntry: entry
-            }
+            bonuses: entry.bonuses ? [entry.bonuses] : undefined
         };
     }
 } 

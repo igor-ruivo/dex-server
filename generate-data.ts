@@ -82,8 +82,7 @@ async function generateData() {
         eggs: event.eggs,
         research: event.research,
         incenses: event.incenses,
-        bonuses: event.bonuses,
-        isRelevant: event.isRelevant,
+        bonuses: event.bonuses
       })),
       raidBosses: [
         {

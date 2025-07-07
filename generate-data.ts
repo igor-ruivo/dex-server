@@ -4,9 +4,9 @@ import { GameMasterParser, GameMasterData } from './src/parsers/game-master-pars
 import { generateEvents } from './src/parsers/events/generate-events';
 
 interface PokemonEvent {
+  id: string;
   title: string;
-  description: string;
-  type: 'event' | 'community-day' | 'raid-day' | 'go-fest' | 'season';
+  subtitle?: string;
   startDate?: number;
   endDate?: number;
   dateRanges?: Array<{ start: number; end: number }>;
@@ -68,14 +68,13 @@ async function generateData() {
       events: eventsData.events
         .filter(event => Number.isFinite(event.startDate) && Number.isFinite(event.endDate) && event.startDate !== 0 && event.endDate !== 0 && event.startDate !== null && event.endDate !== null && event.startDate !== undefined && event.endDate !== undefined)
         .map(event => ({
+          id: event.id,
           title: event.title,
-          description: event.subtitle || 'Pokemon GO event',
-          type: 'event' as const,
+          subtitle: event.subtitle,
           startDate: event.startDate,
           endDate: event.endDate,
           dateRanges: event.dateRanges,
           imageUrl: event.imageUrl,
-          sourceUrl: event.sourceUrl,
           source: event.source,
           wild: event.wild,
           raids: event.raids,

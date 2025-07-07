@@ -31,12 +31,10 @@ export interface IParsedEvent {
     id: string;
     title: string;
     subtitle?: string;
-    description?: string;
     startDate: number;
     endDate: number;
     dateRanges?: Array<{ start: number; end: number }>;
     imageUrl?: string;
-    sourceUrl?: string;
     source: 'pokemongo' | 'leekduck';
     wild?: IEntry[];
     raids?: IEntry[];

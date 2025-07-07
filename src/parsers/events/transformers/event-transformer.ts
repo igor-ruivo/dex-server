@@ -6,7 +6,6 @@ export class EventTransformer implements IEventTransformer {
             ...event,
             title: this.normalizeTitle(event.title),
             subtitle: event.subtitle ? this.normalizeTitle(event.subtitle) : undefined,
-            description: this.generateDescription(event),
             bonuses: this.normalizeBonuses(event.bonuses)
         };
     }

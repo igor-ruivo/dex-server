@@ -134,7 +134,6 @@ export class EventAggregator implements IEventAggregator {
         
         if (event.title) score += 1;
         if (event.subtitle) score += 1;
-        if (event.description) score += 1;
         if (event.imageUrl) score += 1;
         const allPokemon = [
             ...(event.wild || []),

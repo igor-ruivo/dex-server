@@ -117,12 +117,12 @@ export class PokemonGoSource implements IEventSource {
             if (hasChildEvents && (!parsedContent.title || parsedContent.title === UNKNOWN_EVENT_TITLE)) {
                 continue;
             }
-            let eventTitle = post.title;
+            let subtitle = '';
             let eventStartDate = 0;
             let eventEndDate = 0;
             let eventDateRanges: { start: number, end: number }[] = [];
             if (parsedContent.title && parsedContent.title !== UNKNOWN_EVENT_TITLE) {
-                eventTitle = parsedContent.title;
+                subtitle = parsedContent.title;
                 if (parsedContent.date) {
                     const innerDateRanges = parseEventDateRange(parsedContent.date);
                     if (innerDateRanges.length > 0) {
@@ -142,14 +142,13 @@ export class PokemonGoSource implements IEventSource {
             }
             const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
             const event: IParsedEvent = {
-                id: this.generateEventId(),
-                title: eventTitle,
-                subtitle: this.extractEventDescription(eventTitle),
+                id: (post.url.includes('/post/') ? post.url.split('/post/')[1] : post.url.split('/news/')[1]).replaceAll('/', ''),
+                title: post.title,
+                subtitle: this.extractEventDescription(subtitle),
                 startDate: eventStartDate,
                 endDate: eventEndDate,
                 dateRanges: eventDateRanges,
                 imageUrl,
-                sourceUrl: post.url,
                 source: 'pokemongo' as const,
                 wild: parsedContent.wild,
                 raids: parsedContent.raids,
@@ -189,14 +188,13 @@ export class PokemonGoSource implements IEventSource {
         const eventBlock = this.parseInnerEvent(blocks, gameMasterPokemon, wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain, subtitle, dateString, imageUrl);
             
         const event: IParsedEvent = {
-            id: `pokemongo-news-${post.url}`,
+            id: (post.url.includes('/post/') ? post.url.split('/post/')[1] : post.url.split('/news/')[1]).replaceAll('/', ''),
             title: post.title,
             subtitle: subtitle,
             startDate,
             endDate,
             dateRanges,
             imageUrl,
-            sourceUrl: post.url,
             source: 'pokemongo',
             wild: eventBlock.wild,
             raids: eventBlock.raids,
@@ -206,10 +204,6 @@ export class PokemonGoSource implements IEventSource {
             bonuses: eventBlock.bonuses.length > 0 ? eventBlock.bonuses : undefined
         };
         return [event];
-    }
-
-    private generateEventId(): string {
-        return `pokemongo-${Date.now()}-${Math.random()}`;
     }
 
     private extractImageFromPost(html: string): string {

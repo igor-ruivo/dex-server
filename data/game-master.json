@@ -47765,6 +47765,76 @@
     "isMythical": false,
     "isBeast": false
   },
+  "mudbray": {
+    "dex": 749,
+    "speciesId": "mudbray",
+    "speciesName": "Mudbray",
+    "types": [
+      "Ground"
+    ],
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/749.png",
+    "goImageUrl": "749.icon.png",
+    "shinyGoImageUrl": "749.s.icon.png",
+    "atk": 175,
+    "def": 121,
+    "hp": 172,
+    "fastMoves": [
+      "MUD_SLAP",
+      "ROCK_SMASH"
+    ],
+    "chargedMoves": [
+      "BULLDOZE",
+      "BODY_SLAM",
+      "EARTHQUAKE"
+    ],
+    "eliteMoves": [],
+    "legacyMoves": [],
+    "isShadow": false,
+    "isMega": false,
+    "familyId": "FAMILY_MUDBRAY",
+    "evolutions": [
+      "mudsdale"
+    ],
+    "form": "",
+    "isLegendary": false,
+    "isMythical": false,
+    "isBeast": false
+  },
+  "mudsdale": {
+    "dex": 750,
+    "speciesId": "mudsdale",
+    "speciesName": "Mudsdale",
+    "types": [
+      "Ground"
+    ],
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/750.png",
+    "goImageUrl": "750.icon.png",
+    "shinyGoImageUrl": "750.s.icon.png",
+    "atk": 214,
+    "def": 174,
+    "hp": 225,
+    "fastMoves": [
+      "MUD_SLAP",
+      "ROCK_SMASH"
+    ],
+    "chargedMoves": [
+      "BULLDOZE",
+      "BODY_SLAM",
+      "EARTHQUAKE",
+      "HEAVY_SLAM"
+    ],
+    "eliteMoves": [],
+    "legacyMoves": [],
+    "isShadow": false,
+    "isMega": false,
+    "familyId": "FAMILY_MUDBRAY",
+    "parent": "mudbray",
+    "evolutions": [],
+    "form": "",
+    "isLegendary": false,
+    "isMythical": false,
+    "isBeast": false
+  },
   "dewpider": {
     "dex": 751,
     "speciesId": "dewpider",

@@ -143,6 +143,7 @@ parser.addSource(new CustomSource());
 ```typescript
 interface IParsedEvent {
     id: string;
+    url: string;
     title: string;
     subtitle?: string;
     description?: string;
@@ -156,6 +157,7 @@ interface IParsedEvent {
     bonuses?: string[];
     isRelevant: boolean;
     metadata: Record<string, any>;
+    isEnglishVersion: boolean;
 }
 ```
 

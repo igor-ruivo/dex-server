@@ -29,6 +29,7 @@ export interface IPostEntry {
 
 export interface IParsedEvent {
     id: string;
+    url: string;
     title: string;
     subtitle?: string;
     startDate: number;
@@ -42,7 +43,14 @@ export interface IParsedEvent {
     research?: IEntry[];
     incenses?: IEntry[];
     bonuses?: string[];
+    isEnglishVersion: boolean;
 }
+
+export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'isEnglishVersion'> & {
+  title: { en: string; pt: string };
+  subtitle: { en: string | undefined; pt: string | undefined };
+  bonuses: { en: string[] | undefined; pt: string[] | undefined };
+};
 
 export interface IEventSource {
     name: string;

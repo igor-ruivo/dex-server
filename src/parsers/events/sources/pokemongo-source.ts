@@ -112,7 +112,8 @@ export class PokemonGoSource implements IEventSource {
         const parsedContents = this.parseEventBlocks(blocks, document, gameMasterPokemon);
         const events: IParsedEvent[] = [];
         const hasChildEvents = parsedContents.some(content => content.title && content.title !== UNKNOWN_EVENT_TITLE);
-        for (const parsedContent of parsedContents) {
+        for (let i = 0; i < parsedContents.length; i++) {
+            const parsedContent = parsedContents[i];
             if (hasChildEvents && (!parsedContent.title || parsedContent.title === UNKNOWN_EVENT_TITLE)) {
                 continue;
             }
@@ -136,12 +137,14 @@ export class PokemonGoSource implements IEventSource {
                     eventEndDate = Math.max(...eventDateRanges.map(r => r.end));
                 }
             }
-            if (parsedContent.title && parsedContent.title !== UNKNOWN_EVENT_TITLE && eventDateRanges.length === 0) {
+            if (parsedContent.title && parsedContent.title !== UNKNOWN_EVENT_TITLE && eventDateRanges.length === 0 && this.isEnglishVersion(post.url)) {
                 continue;
             }
             const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
+
             const event: IParsedEvent = {
-                id: (post.url.includes('/post/') ? post.url.split('/post/')[1] : post.url.split('/news/')[1]).replaceAll('/', ''),
+                id: (post.url.includes('/post/') ? post.url.split('/post/')[1] : post.url.split('/news/')[1]).replaceAll('/', '') + '-' + String(i),
+                url: post.url,
                 title: post.title,
                 subtitle: this.extractEventDescription(subtitle),
                 startDate: eventStartDate,
@@ -154,7 +157,8 @@ export class PokemonGoSource implements IEventSource {
                 eggs: parsedContent.eggs,
                 research: parsedContent.research,
                 incenses: parsedContent.incenses,
-                bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined
+                bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined,
+                isEnglishVersion: this.isEnglishVersion(post.url)
             };
             events.push(event);
         }
@@ -188,6 +192,7 @@ export class PokemonGoSource implements IEventSource {
             
         const event: IParsedEvent = {
             id: (post.url.includes('/post/') ? post.url.split('/post/')[1] : post.url.split('/news/')[1]).replaceAll('/', ''),
+            url: post.url,
             title: post.title,
             subtitle: subtitle,
             startDate,
@@ -200,7 +205,8 @@ export class PokemonGoSource implements IEventSource {
             eggs: eventBlock.eggs,
             research: eventBlock.research,
             incenses: eventBlock.incenses,
-            bonuses: eventBlock.bonuses.length > 0 ? eventBlock.bonuses : undefined
+            bonuses: eventBlock.bonuses.length > 0 ? eventBlock.bonuses : undefined,
+            isEnglishVersion: this.isEnglishVersion(post.url)
         };
         return [event];
     }
@@ -400,4 +406,6 @@ export class PokemonGoSource implements IEventSource {
             return Array.from(blogPostBlocks.children).map(e => e.children[0]).filter(Boolean);
         }
     }
+
+    private isEnglishVersion = (url: string) => !url.toLocaleLowerCase().includes('pt_br');
 } 

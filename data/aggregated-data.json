@@ -2,8 +2,15 @@
   "events": [
     {
       "id": "gigantamax-lapras-max-battle-day-2025",
-      "title": "Gigantamax Lapras graces the Water Festival with a Max Battle Day!",
-      "subtitle": "Gigantamax Lapras Max Battle Day",
+      "url": "https://pokemongo.com/news/gigantamax-lapras-max-battle-day-2025",
+      "title": {
+        "en": "Gigantamax Lapras graces the Water Festival with a Max Battle Day!",
+        "pt": "Lapras Gigamax ilumina o Festival Aquático com um Dia de Batalhas Max!"
+      },
+      "subtitle": {
+        "en": "Gigantamax Lapras Max Battle Day",
+        "pt": "Dia de Batalhas Max: Lapras Gigamax"
+      },
       "startDate": 1752930000000,
       "endDate": 1752940800000,
       "dateRanges": [
@@ -19,23 +26,44 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "The following bonuses will be active during the event.",
-        "Remote Raid Pass limit increased to 20 from Friday, July 18, at 5:00 p.m. to Saturday, July 19, 2025, at 8:00 p.m. PDT",
-        "Max Particle collection limit increased to 1,600",
-        "1/4 Adventuring distance to receive Max Particles*^",
-        "2× Max Particles from exploring^",
-        "Power Spots will refresh more frequently",
-        "8× Max Particles from Power Spots",
-        "Two additional Special Trades can be made.",
-        "*For this bonus to apply, Trainers must first collect all Max Particles available in the Nearby menu. Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect.",
-        "^While most bonuses are only active during the three-hour event period, these will be active from 12:00 a.m. to 5:00 p.m. local time."
-      ]
+      "bonuses": {
+        "en": [
+          "The following bonuses will be active during the event.",
+          "Remote Raid Pass limit increased to 20 from Friday, July 18, at 5:00 p.m. to Saturday, July 19, 2025, at 8:00 p.m. PDT",
+          "Max Particle collection limit increased to 1,600",
+          "1/4 Adventuring distance to receive Max Particles*^",
+          "2× Max Particles from exploring^",
+          "Power Spots will refresh more frequently",
+          "8× Max Particles from Power Spots",
+          "Two additional Special Trades can be made.",
+          "*For this bonus to apply, Trainers must first collect all Max Particles available in the Nearby menu. Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect.",
+          "^While most bonuses are only active during the three-hour event period, these will be active from 12:00 a.m. to 5:00 p.m. local time."
+        ],
+        "pt": [
+          "Os bônus a seguir serão ativados durante o evento.",
+          "Limite de Passe de Reide a Distância aumentado para 20 de sexta-feira, 18 de julho, às 17h (21h no horário de Brasília), a sábado, 19 de julho de 2025 às 20 PDT (0h do dia 20 de julho, horário de Brasília)",
+          "Aumento do limite de coleta de Partículas Max para 1.600",
+          "1/4 da distância de aventura para receber Partículas Max*^",
+          "2x mais Partículas Max ao explorar^",
+          "Atualização com mais frequência dos Pontos de Energia",
+          "8x mais Partículas Max de Pontos de Energia",
+          "Duas trocas especiais adicionais podem ser feitas",
+          "**Para que esse bônus seja ativado, as Treinadoras e os Treinadores precisam primeiro coletar todas as Partículas Max disponíveis no menu Proximidades. É possível coletar Partículas Max diariamente explorando o mundo com a ajuda do menu Proximidades. O Sincroaventura pode ajudar a garantir que sua distância seja contabilizada. Fiquem de olho no menu Proximidades para ver o ícone que indica quando as Partículas Max estão prontas para serem coletadas.",
+          "^Embora a maioria dos bônus esteja disponível apenas durante o evento de três horas, esses bônus específicos estarão ativos das 0h às 17h no horário local."
+        ]
+      }
     },
     {
-      "id": "water-festival-2025",
-      "title": "Tatsugiri splashes into Pokémon GO during the Water Festival event!",
-      "subtitle": "Water Festival",
+      "id": "water-festival-2025-0",
+      "url": "https://pokemongo.com/en/post/water-festival-2025/",
+      "title": {
+        "en": "Tatsugiri splashes into Pokémon GO during the Water Festival event!",
+        "pt": "Tatsugiri mergulha no Pokémon GO durante o evento Festival Aquático."
+      },
+      "subtitle": {
+        "en": "Water Festival",
+        "pt": "Festival Aquático"
+      },
       "startDate": 1752570000000,
       "endDate": 1753038000000,
       "dateRanges": [
@@ -163,17 +191,32 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "Rainy Lure Modules will last for two hours.",
-        "Increased Candy for Nice Throws or better.",
-        "Increased chance to encounter Shiny Staryu and Shiny Tirtouga.",
-        "Lapras wearing a scarf caught from raids may have a Seasonal special background—if you’re lucky!"
-      ]
+      "bonuses": {
+        "en": [
+          "Rainy Lure Modules will last for two hours.",
+          "Increased Candy for Nice Throws or better.",
+          "Increased chance to encounter Shiny Staryu and Shiny Tirtouga.",
+          "Lapras wearing a scarf caught from raids may have a Seasonal special background—if you’re lucky!"
+        ],
+        "pt": [
+          "Módulos Atrair Chuvosos durarão duas horas.",
+          "Mais doce por boas ou excelentes jogadas.",
+          "Maior chance de encontrar Staryu e Tirtouga, ambos Brilhantes.",
+          "Lapras vestindo um cachecol capturado em Reides poderá conter um fundo especial da Temporada, se tiverem sorte."
+        ]
+      }
     },
     {
       "id": "hisuian-lilligant-raid-day-2025",
-      "title": "Hisuian Lilligant makes its hearty Pokémon GO debut in a flowery Raid Day!",
-      "subtitle": "Hisuian Lilligant Raid Day",
+      "url": "https://pokemongo.com/news/hisuian-lilligant-raid-day-2025",
+      "title": {
+        "en": "Hisuian Lilligant makes its hearty Pokémon GO debut in a flowery Raid Day!",
+        "pt": "Lilligant de Hisui faz sua estreia vibrante no Pokémon GO em um florido dia de Reides!"
+      },
+      "subtitle": {
+        "en": "Hisuian Lilligant Raid Day",
+        "pt": "Dia de Reides com Liligant de Hisui"
+      },
       "startDate": 1752325200000,
       "endDate": 1752336000000,
       "dateRanges": [
@@ -189,16 +232,28 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "Remote Raid Pass limit increased to 20 from Friday, July 11, at 5:00 p.m. to Saturday, July 12, 2025, at 8:00 p.m. PDT.",
-        "Receive up to five additional free Raid Passes from spinning Gym Photo Discs (for a total of six).",
-        "Increased chance of encountering Shiny Hisuian Lilligant from raids."
-      ]
+      "bonuses": {
+        "en": [
+          "Remote Raid Pass limit increased to 20 from Friday, July 11, at 5:00 p.m. to Saturday, July 12, 2025, at 8:00 p.m. PDT.",
+          "Receive up to five additional free Raid Passes from spinning Gym Photo Discs (for a total of six).",
+          "Increased chance of encountering Shiny Hisuian Lilligant from raids."
+        ],
+        "pt": [
+          "O limite de Passe de Reide a Distância aumentará para 20, de sexta-feira, 11 de julho, às 17h PDT (21h, no horário de Brasília), a sábado, 12 de julho de 2025, às 20h PDT (meia-noite de domingo, 4 de maio, no horário de Brasília).* Receba até cinco Passes de Reide gratuitos adicionais ao girar fotodiscos em Ginásios (até um total de seis).* Maior chance de encontrar Lilligant de Hisui Brilhante em Reides."
+        ]
+      }
     },
     {
-      "id": "ultra-unlock-steel-and-scales",
-      "title": "Honedge slashes into Pokémon GO during Ultra Unlock: Steel and Scales!",
-      "subtitle": "Ultra Unlock: Steel and Scales",
+      "id": "ultra-unlock-steel-and-scales-0",
+      "url": "https://pokemongo.com/en/post/ultra-unlock-steel-and-scales/",
+      "title": {
+        "en": "Honedge slashes into Pokémon GO during Ultra Unlock: Steel and Scales!",
+        "pt": "Honedge chega com tudo no Pokémon GO durante o Ultrabônus: Aço e Escamas!"
+      },
+      "subtitle": {
+        "en": "Ultra Unlock: Steel and Scales",
+        "pt": "Ultrabônus: Aço e Escamas"
+      },
       "startDate": 1753174800000,
       "endDate": 1753642800000,
       "dateRanges": [
@@ -311,17 +366,32 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "4× XP for catching Pokémon.",
-        "4× Stardust for catching Pokémon.",
-        "Increased chance to encounter Shiny Bagon and Shiny Beldum.",
-        "Increased chance to encounter Shiny Unown U in raids."
-      ]
+      "bonuses": {
+        "en": [
+          "4× XP for catching Pokémon.",
+          "4× Stardust for catching Pokémon.",
+          "Increased chance to encounter Shiny Bagon and Shiny Beldum.",
+          "Increased chance to encounter Shiny Unown U in raids."
+        ],
+        "pt": [
+          "4x mais PE por capturar Pokémon.",
+          "4x mais Poeira Estelar por capturar Pokémon.",
+          "Maior chance de encontrar Bagon Brilhante e Beldum Brilhante.",
+          "Maior chance de encontrar Unown U Brilhante em Reides."
+        ]
+      }
     },
     {
-      "id": "ultra-unlock-hisui",
-      "title": "Hisuian Zorua emerges from the shadows for Ultra Unlock: Hisui Celebration!",
-      "subtitle": "Ultra Unlock: Hisui Celebration",
+      "id": "ultra-unlock-hisui-0",
+      "url": "https://pokemongo.com/en/post/ultra-unlock-hisui/",
+      "title": {
+        "en": "Hisuian Zorua emerges from the shadows for Ultra Unlock: Hisui Celebration!",
+        "pt": "Zorua de Hisui surgirá das sombras para o Ultrabônus: Celebração de Hisui!"
+      },
+      "subtitle": {
+        "en": "Ultra Unlock: Hisui Celebration",
+        "pt": "Ultrabônus: Celebração de Hisui"
+      },
       "startDate": 1751965200000,
       "endDate": 1752433200000,
       "dateRanges": [
@@ -439,18 +509,34 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "4× XP for catching Pokémon.",
-        "4× Stardust for catching Pokémon.",
-        "Increased chance to encounter Shiny Hisuian Voltorb and Shiny Hisuian Qwilfish.",
-        "Increased chance to encounter Shiny Unown U from raids.",
-        "A special Collection Challenge will be available starting during the event. You can complete it by catching Pokémon that appear from space-time anomalies."
-      ]
+      "bonuses": {
+        "en": [
+          "4× XP for catching Pokémon.",
+          "4× Stardust for catching Pokémon.",
+          "Increased chance to encounter Shiny Hisuian Voltorb and Shiny Hisuian Qwilfish.",
+          "Increased chance to encounter Shiny Unown U from raids.",
+          "A special Collection Challenge will be available starting during the event. You can complete it by catching Pokémon that appear from space-time anomalies."
+        ],
+        "pt": [
+          "4x mais PE por capturar Pokémon.",
+          "4x mais Poeira Estelar por capturar Pokémon.",
+          "Maior chance de encontrar Voltorb de Hisui Brilhante e Qwilfish de Hisui Brilhante.",
+          "Maior chance de encontrar Unown U Brilhante em Reides.",
+          "Um desafio de coleção especial estará disponível durante o evento. Vocês poderão completá-lo capturando Pokémon que aparecem em Anomalias Espaço-Temporais."
+        ]
+      }
     },
     {
-      "id": "go-fest-2025-ultra-unlock-challenges",
-      "title": "Pokémon GO Fest 2025 details revealed: Ultra Unlock, habitat times, and more!",
-      "subtitle": "Pokémon GO Fest 2025: Global",
+      "id": "go-fest-2025-ultra-unlock-challenges-0",
+      "url": "https://pokemongo.com/en/post/go-fest-2025-ultra-unlock-challenges/",
+      "title": {
+        "en": "Pokémon GO Fest 2025 details revealed: Ultra Unlock, habitat times, and more!",
+        "pt": "Detalhes do Festival de Pokémon GO 2025 revelados: Ultrabônus, horas de habitat e muito mais!"
+      },
+      "subtitle": {
+        "en": "Pokémon GO Fest 2025: Global",
+        "pt": "Festival de Pokémon GO 2025: Global"
+      },
       "startDate": 1751101200000,
       "endDate": 1751216400000,
       "dateRanges": [
@@ -550,12 +636,20 @@
       "raids": [],
       "eggs": [],
       "research": [],
-      "incenses": []
+      "incenses": [],
+      "bonuses": {}
     },
     {
       "id": "communityday-july-2025-quaxly",
-      "title": "July 2025 Community Day: Quaxly",
-      "subtitle": "July 2025 Community Day: Quaxly",
+      "url": "https://pokemongo.com/news/communityday-july-2025-quaxly",
+      "title": {
+        "en": "July 2025 Community Day: Quaxly",
+        "pt": "Dia Comunitário de julho de 2025: Quaxly"
+      },
+      "subtitle": {
+        "en": "July 2025 Community Day: Quaxly",
+        "pt": "Dia Comunitário de julho de 2025: Quaxly"
+      },
       "startDate": 1753016400000,
       "endDate": 1753027200000,
       "dateRanges": [
@@ -571,22 +665,42 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "3× Catch Stardust.",
-        "2× Candy for catching Pokémon.",
-        "2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
-        "Lure Modules activated during the event will last for three hours.",
-        "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
-        "Take a few snapshots during Community Day for a surprise!",
-        "One additional Special Trade can be made for a maximum of three for the day.*",
-        "Trades will require 50% less Stardust.*",
-        "*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 10:00 p.m. local time."
-      ]
+      "bonuses": {
+        "en": [
+          "3× Catch Stardust.",
+          "2× Candy for catching Pokémon.",
+          "2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
+          "Lure Modules activated during the event will last for three hours.",
+          "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+          "Take a few snapshots during Community Day for a surprise!",
+          "One additional Special Trade can be made for a maximum of three for the day.*",
+          "Trades will require 50% less Stardust.*",
+          "*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 10:00 p.m. local time."
+        ],
+        "pt": [
+          "3× Poeira Estelar por captura.",
+          "2× mais doces por capturar Pokémon.",
+          "2× mais chances de Treinadoras e Treinadores no nível 31 e acima receberem doces GG por capturar Pokémon.",
+          "Os Módulos Atrair ativados durante o evento durarão três horas.",
+          "O Incenso (exceto o Incenso de Aventura Diário) ativado durante o evento durará três horas.",
+          "Tirem fotos durante o Dia Comunitário para receberem uma surpresa!",
+          "Pode ser feita uma troca especial adicional (máximo de três por dia).*",
+          "As trocas exigirão 50% menos Poeira Estelar.*",
+          "*Embora a maioria dos bônus só fique ativa durante as três horas do evento, esses bônus estarão ativos das 14h às 22h, horário local."
+        ]
+      }
     },
     {
-      "id": "pokemongo-9th-anniversary",
-      "title": "Celebrate nine years with Pokémon GO’s 9th Anniversary Party!",
-      "subtitle": "Pokémon GO’s 9th Anniversary Party",
+      "id": "pokemongo-9th-anniversary-0",
+      "url": "https://pokemongo.com/en/post/pokemongo-9th-anniversary/",
+      "title": {
+        "en": "Celebrate nine years with Pokémon GO’s 9th Anniversary Party!",
+        "pt": "Vamos celebrar o 9º aniversário do Pokémon GO!"
+      },
+      "subtitle": {
+        "en": "Pokémon GO’s 9th Anniversary Party",
+        "pt": "Festa de 9º aniversário do Pokémon GO"
+      },
       "startDate": 1751360400000,
       "endDate": 1751828400000,
       "dateRanges": [
@@ -629,29 +743,56 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "Increased chance to become Lucky Friends.",
-        "Increased chance to get Lucky Pokémon in trades.",
-        "PokéStops may turn gold without a Golden Lure Module.",
-        "Increased chance to encounter Shiny Pikachu wearing a cake hat and Shiny Eevee wearing a party hat from raids.",
-        "Gimmighoul holding a 9th anniversary coin will have a 9th anniversary–themed Special Background!",
-        "Friendship levels will increase faster than normal through opening Gifts, trading Pokémon, or battling together in raids, Gyms, or Trainer Battles!",
-        "Chance of finding 9 or 99 (or maybe more!) Gimmighoul Coins when you spin a PokéStop with a Golden Lure Module.",
-        "During the 9th Anniversary Party, you may discover party hats in the wild. Tapping on them will award items, or encounters with event-themed Pokémon.",
-        "Also, for the first time in Pokémon GO, you might even encounter Shiny Gimmighoul—if you’re lucky!",
-        "In addition to the above, the 9th Anniversary Party will have special bonuses on certain days!",
-        "July 1 at 10:00 a.m. – July 3 at 10:00 a.m. local time",
-        "1/2 Egg Hatch Distance when Eggs are placed in an Incubator on these days.",
-        "July 3 at 10:00 a.m. – July 5 at 10:00 a.m. local time",
-        "2× XP for catching Pokémon.",
-        "July 5 at 10:00 a.m. – July 6 at 8:00 p.m. local time",
-        "2× Stardust for catching Pokémon."
-      ]
+      "bonuses": {
+        "en": [
+          "Increased chance to become Lucky Friends.",
+          "Increased chance to get Lucky Pokémon in trades.",
+          "PokéStops may turn gold without a Golden Lure Module.",
+          "Increased chance to encounter Shiny Pikachu wearing a cake hat and Shiny Eevee wearing a party hat from raids.",
+          "Gimmighoul holding a 9th anniversary coin will have a 9th anniversary–themed Special Background!",
+          "Friendship levels will increase faster than normal through opening Gifts, trading Pokémon, or battling together in raids, Gyms, or Trainer Battles!",
+          "Chance of finding 9 or 99 (or maybe more!) Gimmighoul Coins when you spin a PokéStop with a Golden Lure Module.",
+          "During the 9th Anniversary Party, you may discover party hats in the wild. Tapping on them will award items, or encounters with event-themed Pokémon.",
+          "Also, for the first time in Pokémon GO, you might even encounter Shiny Gimmighoul—if you’re lucky!",
+          "In addition to the above, the 9th Anniversary Party will have special bonuses on certain days!",
+          "July 1 at 10:00 a.m. – July 3 at 10:00 a.m. local time",
+          "1/2 Egg Hatch Distance when Eggs are placed in an Incubator on these days.",
+          "July 3 at 10:00 a.m. – July 5 at 10:00 a.m. local time",
+          "2× XP for catching Pokémon.",
+          "July 5 at 10:00 a.m. – July 6 at 8:00 p.m. local time",
+          "2× Stardust for catching Pokémon."
+        ],
+        "pt": [
+          "Maior chance de conquistar Amizades sortudas.",
+          "Maior chance de obter Pokémon sortudos em trocas.",
+          "As Poképaradas poderão ficar douradas sem um Módulo Atrair Dourado.",
+          "Maior chance de encontrar Pikachu Brilhante com chapéu de bolo e Eevee Brilhante com chapéu de festa de Reides.",
+          "Gimmighoul segurando uma moeda do 9º aniversário terá um Fundo Especial.",
+          "Os níveis de amizade aumentarão mais rápido que o normal por meio da abertura de Presentes, da troca de Pokémon ou de batalhas em conjunto em Reides, Ginásios ou batalhas de Treinadores!",
+          "Chance de encontrar 9 ou 99 (ou talvez mais) moedas de Gimmighoul ao girar uma Poképarada com um Módulo Atrair Dourado.",
+          "Durante o 9º aniversário, vocês poderão encontrar chapéus de festa na natureza. Toque neles para ganhar itens ou encontros com Pokémon com a temática do evento.",
+          "Além disso, com sorte, vocês encontrarão um Gimmighoul Brilhante pela primeira vez no Pokémon GO!",
+          "Além dos pontos acima, o 9º aniversário terá bônus especiais em alguns dias!",
+          "1º de julho, às 10h – 3 de julho, às 10h, horário local",
+          "1/2 da distância para chocar Ovos quando eles são colocados em Incubadoras nesses dias.",
+          "3 de julho, às 10h – 5 de julho, às 10h, horário local",
+          "2× mais PE por capturar Pokémon.",
+          "5 de julho, às 10h – 6 de julho, às 20h, horário local",
+          "2× mais Poeira Estelar por capturar Pokémon."
+        ]
+      }
     },
     {
-      "id": "communitydayclassic-july-2025-eevee",
-      "title": "Eevee stars in July Community Day Classic, and Community Day voting returns in August!",
-      "subtitle": "July Community Day Classic: Eevee",
+      "id": "communitydayclassic-july-2025-eevee-1",
+      "url": "https://pokemongo.com/en/post/communitydayclassic-july-2025-eevee/",
+      "title": {
+        "en": "Eevee stars in July Community Day Classic, and Community Day voting returns in August!",
+        "pt": "Eevee estreará no evento Clássicos do Dia Comunitário de julho, e a votação do Dia Comunitário retorna em agosto."
+      },
+      "subtitle": {
+        "en": "July Community Day Classic: Eevee",
+        "pt": "Clássicos do Dia Comunitário de julho: Eevee"
+      },
       "startDate": 1751720400000,
       "endDate": 1751817600000,
       "dateRanges": [
@@ -671,22 +812,42 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "Limited-time Evolution requirement: Evolve Eevee into Espeon after exploring 1 km with Eevee as your buddy.**",
-        "Limited-time Evolution requirement: Evolve Eevee into  Umbreon after exploring 1 km with Eevee as your buddy.**",
-        "Limited-time Evolution requirement: Evolve Eevee into Sylveon after earning seven hearts with Eevee as your buddy.**",
-        "Eevee will appear more frequently in the wild. If you’re lucky, you might encounter a Shiny one!",
-        "1/4 Egg Hatch Distance",
-        "Lure Modules activated during the event will last for three hours.",
-        "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
-        "Take a few snapshots during the Community Day Classic event for a surprise!",
-        "**This Evolution requirement will return to the usual requirement on Saturday, July 12, 2025, at 10:00 p.m. local time."
-      ]
+      "bonuses": {
+        "en": [
+          "Limited-time Evolution requirement: Evolve Eevee into Espeon after exploring 1 km with Eevee as your buddy.**",
+          "Limited-time Evolution requirement: Evolve Eevee into  Umbreon after exploring 1 km with Eevee as your buddy.**",
+          "Limited-time Evolution requirement: Evolve Eevee into Sylveon after earning seven hearts with Eevee as your buddy.**",
+          "Eevee will appear more frequently in the wild. If you’re lucky, you might encounter a Shiny one!",
+          "1/4 Egg Hatch Distance",
+          "Lure Modules activated during the event will last for three hours.",
+          "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+          "Take a few snapshots during the Community Day Classic event for a surprise!",
+          "**This Evolution requirement will return to the usual requirement on Saturday, July 12, 2025, at 10:00 p.m. local time."
+        ],
+        "pt": [
+          "Requisito de evolução por tempo limitado: evolua Eevee para Espeon após explorar 1 km com Eevee como seu companheiro.**",
+          "Requisito de evolução por tempo limitado: evolua Eevee para Umbreon após explorar 1 km com Eevee como seu companheiro.**",
+          "Requisito de evolução por tempo limitado: evolua Eevee para Sylveon após ganhar sete corações com Eevee como seu companheiro.**",
+          "Eevee aparecerá com mais frequência na natureza. Se tiver sorte, poderá encontrar um Brilhante!",
+          "1/4 da distância para chocar Ovo",
+          "Os Módulos Atrair ativados durante o evento durarão três horas.",
+          "Incenso (exceto Incenso de Aventura Diário) ativado durante o evento durará três horas.",
+          "Tire algumas fotos durante o evento Clássicos do Dia Comunitário para receber uma surpresa!",
+          "**Este requisito de Evolução retornará ao requisito normal no sábado, 12 de julho de 2025, às 22h, horário local."
+        ]
+      }
     },
     {
-      "id": "yampers-paw-prints-2025",
-      "title": "Yamper makes its paw-some debut during Yamper’s Paw Prints!",
-      "subtitle": "Yamper’s Paw Prints",
+      "id": "yampers-paw-prints-2025-0",
+      "url": "https://pokemongo.com/en/post/yampers-paw-prints-2025/",
+      "title": {
+        "en": "Yamper makes its paw-some debut during Yamper’s Paw Prints!",
+        "pt": "Yamper faz sua estreia esPATAcular durante Pegadas de Yamper."
+      },
+      "subtitle": {
+        "en": "Yamper’s Paw Prints",
+        "pt": "Pegadas de Yamper"
+      },
       "startDate": 1750374000000,
       "endDate": 1750633140000,
       "dateRanges": [
@@ -769,15 +930,28 @@
         }
       ],
       "incenses": [],
-      "bonuses": [
-        "2× Stardust for catching Pokémon.",
-        "Increased chance to encounter Shiny Snubbull, Shiny Poochyena, and Shiny Furfrou."
-      ]
+      "bonuses": {
+        "en": [
+          "2× Stardust for catching Pokémon.",
+          "Increased chance to encounter Shiny Snubbull, Shiny Poochyena, and Shiny Furfrou."
+        ],
+        "pt": [
+          "2× mais Poeira Estelar por capturar Pokémon.",
+          "Maior chance de encontrar Snubbull, Poochyena e Furfrou, todos Brilhantes."
+        ]
+      }
     },
     {
-      "id": "communityday-june-2025-jangmo-o",
-      "title": "June 2025 Community Day: Jangmo-o",
-      "subtitle": "June 2025 Community Day: Jangmo-o",
+      "id": "communityday-june-2025-jangmo-o-0",
+      "url": "https://pokemongo.com/en/post/communityday-june-2025-jangmo-o/",
+      "title": {
+        "en": "June 2025 Community Day: Jangmo-o",
+        "pt": "Dia Comunitário de junho de 2025: Jangmo-o"
+      },
+      "subtitle": {
+        "en": "June 2025 Community Day: Jangmo-o",
+        "pt": "Dia Comunitário de junho de 2025: Jangmo-o"
+      },
       "startDate": 1750510800000,
       "endDate": 1750521600000,
       "dateRanges": [
@@ -793,22 +967,42 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "3× XP for catching Pokemon.",
-        "2× Candy for catching Pokémon.",
-        "2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
-        "Lure Modules activated during the event will last for three hours.",
-        "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
-        "Take a few snapshots during Community Day for a surprise!",
-        "One additional Special Trade can be made for a maximum of three for the day.*",
-        "Trades will require 50% less Stardust.*",
-        "*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 10:00 p.m. local time."
-      ]
+      "bonuses": {
+        "en": [
+          "3× XP for catching Pokemon.",
+          "2× Candy for catching Pokémon.",
+          "2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
+          "Lure Modules activated during the event will last for three hours.",
+          "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+          "Take a few snapshots during Community Day for a surprise!",
+          "One additional Special Trade can be made for a maximum of three for the day.*",
+          "Trades will require 50% less Stardust.*",
+          "*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 10:00 p.m. local time."
+        ],
+        "pt": [
+          "3× mais PE por capturar Pokémon.",
+          "2× mais doces por capturar Pokémon.",
+          "2× mais chances de Treinadoras e Treinadores a partir do nível 31 receberem doces GG por capturar Pokémon.",
+          "Os Módulos Atrair ativados durante o evento durarão três horas.",
+          "O Incenso (exceto o Incenso de Aventura Diário) ativado durante o evento durará três horas.",
+          "Tirem fotos durante o Dia Comunitário para receberem uma surpresa!",
+          "Pode ser feita uma troca especial adicional (máximo de três por dia).*",
+          "As trocas exigirão 50% menos Poeira Estelar.*",
+          "*Embora a maioria dos bônus só fique ativa durante as três horas do evento, esses bônus estarão ativos das 14h às 22h, horário local."
+        ]
+      }
     },
     {
-      "id": "2025-ancients-recovered",
-      "title": "An ancient discovery awaits! The legendary giants return ahead of Pokémon GO Fest 2025: Global.",
-      "subtitle": "Ancients Recovered",
+      "id": "2025-ancients-recovered-0",
+      "url": "https://pokemongo.com/en/post/2025-ancients-recovered/",
+      "title": {
+        "en": "An ancient discovery awaits! The legendary giants return ahead of Pokémon GO Fest 2025: Global.",
+        "pt": "Uma descoberta ancestral aguarda você. Os gigantes lendários voltam antes do Festival de Pokémon GO 2025: Global."
+      },
+      "subtitle": {
+        "en": "Ancients Recovered",
+        "pt": "Retorno Ancestral"
+      },
       "startDate": 1750669200000,
       "endDate": 1751050800000,
       "dateRanges": [
@@ -855,17 +1049,32 @@
       "eggs": [],
       "research": [],
       "incenses": [],
-      "bonuses": [
-        "Remote Raid Pass limit increased to 30 from Monday, June 23, to Thursday, June 26, 2025.",
-        "No Remote Raid limit from Friday, June 27, to Sunday, June 29, 2025.",
-        "Trainers level 31 and up are guaranteed to receive Candy XL for trading Pokémon from June 23 at 10:00 a.m. local time to June 29 at 11:59 p.m. local time.",
-        "Trainers can receive special event stickers from PokéStops and Gifts."
-      ]
+      "bonuses": {
+        "en": [
+          "Remote Raid Pass limit increased to 30 from Monday, June 23, to Thursday, June 26, 2025.",
+          "No Remote Raid limit from Friday, June 27, to Sunday, June 29, 2025.",
+          "Trainers level 31 and up are guaranteed to receive Candy XL for trading Pokémon from June 23 at 10:00 a.m. local time to June 29 at 11:59 p.m. local time.",
+          "Trainers can receive special event stickers from PokéStops and Gifts."
+        ],
+        "pt": [
+          "Aumento do limite de Passes de Reide a Distância para 30 de segunda-feira, 23 de junho, a quinta-feira, 26 de junho de 2025.",
+          "Sem limite para Reides a Distância de sexta-feira, 27 de junho, a domingo, 29 de junho de 2025.",
+          "Treinadoras e Treinadores no nível 31 e superior receberão Doce GG ao trocar Pokémon de 23 de junho, às 10h, horário local, a 29 de junho, às 23h59, horário local.",
+          "Treinadoras e Treinadores poderão receber adesivos especiais do evento em Poképaradas e como presentes."
+        ]
+      }
     },
     {
-      "id": "global-events-gofest2025-overlays",
-      "title": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
-      "subtitle": "Serene Retreat",
+      "id": "global-events-gofest2025-overlays-0",
+      "url": "https://pokemongo.com/en/post/global-events-gofest2025-overlays/",
+      "title": {
+        "en": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
+        "pt": "A diversão está garantida nesta Temporada durante Retiro Sereno, Maravilhas Instrumentais e Ruínas Assombradas."
+      },
+      "subtitle": {
+        "en": "Serene Retreat",
+        "pt": "Retiro Sereno"
+      },
       "startDate": 1748595600000,
       "endDate": 1748977200000,
       "dateRanges": [
@@ -974,22 +1183,42 @@
         }
       ],
       "incenses": [],
-      "bonuses": [
-        "The following bonuses will be active from Friday, May 30, at 10:00 a.m. to Tuesday, June 3, at 8:00 p.m. local time.",
-        "1/2 Hatch Distance",
-        "1.5× Hatch XP",
-        "Max Particle collection limit increased to 1,600",
-        "8× Max Particles from Power Spots",
-        "Increased chance to hatch Shiny Munna and encounter Shiny Munna in research task rewards",
-        "Increased chance to encounter Shiny Morelull in the wild and in research task rewards",
-        "Trainers with a Serene Retreat ticket will also receive the following bonus for the duration of the event.",
-        "1.5× Hatch Stardust"
-      ]
+      "bonuses": {
+        "en": [
+          "The following bonuses will be active from Friday, May 30, at 10:00 a.m. to Tuesday, June 3, at 8:00 p.m. local time.",
+          "1/2 Hatch Distance",
+          "1.5× Hatch XP",
+          "Max Particle collection limit increased to 1,600",
+          "8× Max Particles from Power Spots",
+          "Increased chance to hatch Shiny Munna and encounter Shiny Munna in research task rewards",
+          "Increased chance to encounter Shiny Morelull in the wild and in research task rewards",
+          "Trainers with a Serene Retreat ticket will also receive the following bonus for the duration of the event.",
+          "1.5× Hatch Stardust"
+        ],
+        "pt": [
+          "Os seguintes bônus estarão ativos de sexta-feira, 30 de maio, às 10h, a terça-feira, 3 de junho, às 20h, horário local.",
+          "1/2 da distância para chocar Ovo",
+          "1,5× mais PE por chocar Ovos",
+          "Aumento do limite de coleta de Partículas Max para 1.600",
+          "8× mais Partículas Max de Pontos de Energia",
+          "Maior chance de chocar Munna Brilhante e encontrar Munna Brilhante em recompensas de tarefas de pesquisa",
+          "Maior chance de encontrar Morelull Brilhante na natureza e nas recompensas de tarefas de pesquisa",
+          "Treinadoras e Treinadores com um ingresso para Retiro Sereno também receberão o seguinte bônus durante o evento:",
+          "*1,5× mais Poeira Estelar por chocar Ovos"
+        ]
+      }
     },
     {
-      "id": "global-events-gofest2025-overlays",
-      "title": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
-      "subtitle": "Instrumental Wonders",
+      "id": "global-events-gofest2025-overlays-1",
+      "url": "https://pokemongo.com/en/post/global-events-gofest2025-overlays/",
+      "title": {
+        "en": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
+        "pt": "A diversão está garantida nesta Temporada durante Retiro Sereno, Maravilhas Instrumentais e Ruínas Assombradas."
+      },
+      "subtitle": {
+        "en": "Instrumental Wonders",
+        "pt": "Maravilhas Instrumentais"
+      },
       "startDate": 1749286800000,
       "endDate": 1749668400000,
       "dateRanges": [
@@ -1098,20 +1327,38 @@
         }
       ],
       "incenses": [],
-      "bonuses": [
-        "The following bonuses will be active from Saturday, June 7, at 10:00 a.m. to Wednesday, June 11, at 8:00 p.m. local time",
-        "Additional 5,000 XP awarded for successful raids",
-        "Max Particle collection limit increased to 1,600",
-        "8× Max Particles from Power Spots",
-        "Increased chance to encounter Shiny Ferroseed and Shiny Falinks",
-        "Trainers with an Instrumental Wonders ticket will also receive the following bonus for the duration of the event.",
-        "2× Raid Stardust"
-      ]
+      "bonuses": {
+        "en": [
+          "The following bonuses will be active from Saturday, June 7, at 10:00 a.m. to Wednesday, June 11, at 8:00 p.m. local time",
+          "Additional 5,000 XP awarded for successful raids",
+          "Max Particle collection limit increased to 1,600",
+          "8× Max Particles from Power Spots",
+          "Increased chance to encounter Shiny Ferroseed and Shiny Falinks",
+          "Trainers with an Instrumental Wonders ticket will also receive the following bonus for the duration of the event.",
+          "2× Raid Stardust"
+        ],
+        "pt": [
+          "Os seguintes bônus estarão ativos de sábado, 7 de junho, às 10h, a quarta-feira, 11 de junho, às 20h, horário local",
+          "5.000 PE adicionais por Reides concluídos",
+          "Aumento do limite de coleta de Partículas Max para 1.600",
+          "8× mais Partículas Max de Pontos de Energia",
+          "Maior chance de encontrar Ferroseed Brilhante e Falinks Brilhante",
+          "Treinadoras e Treinadores com um ingresso para Maravilhas Instrumentais também receberão o seguinte bônus durante o evento:",
+          "*2× mais Poeira Estelar por Reide"
+        ]
+      }
     },
     {
-      "id": "global-events-gofest2025-overlays",
-      "title": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
-      "subtitle": "Phantom Ruins",
+      "id": "global-events-gofest2025-overlays-2",
+      "url": "https://pokemongo.com/en/post/global-events-gofest2025-overlays/",
+      "title": {
+        "en": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
+        "pt": "A diversão está garantida nesta Temporada durante Retiro Sereno, Maravilhas Instrumentais e Ruínas Assombradas."
+      },
+      "subtitle": {
+        "en": "Phantom Ruins",
+        "pt": "Ruínas Assombradas"
+      },
       "startDate": 1749891600000,
       "endDate": 1750273200000,
       "dateRanges": [
@@ -1230,16 +1477,28 @@
           "kind": ""
         }
       ],
-      "bonuses": [
-        "The following bonuses will be active from Saturday, June 14, at 10:00 a.m. to Wednesday, June 18, at 8:00 p.m. local time",
-        "Incense will attract certain Pokémon more frequently",
-        "2× Catch XP",
-        "Max Particle collection limit increased to 1,600",
-        "8× Max Particles from Power Spots",
-        "Increased chance to encounter Shiny Gothita and Shiny Phantump",
-        "Trainers with a Phantom Ruins ticket will also receive the following bonus for the duration of the event.",
-        "2× Catch Stardust"
-      ]
+      "bonuses": {
+        "en": [
+          "The following bonuses will be active from Saturday, June 14, at 10:00 a.m. to Wednesday, June 18, at 8:00 p.m. local time",
+          "Incense will attract certain Pokémon more frequently",
+          "2× Catch XP",
+          "Max Particle collection limit increased to 1,600",
+          "8× Max Particles from Power Spots",
+          "Increased chance to encounter Shiny Gothita and Shiny Phantump",
+          "Trainers with a Phantom Ruins ticket will also receive the following bonus for the duration of the event.",
+          "2× Catch Stardust"
+        ],
+        "pt": [
+          "Os seguintes bônus estarão ativos de sábado, 14 de junho, às 10h, a quarta-feira, 18 de junho, às 20h, horário local.",
+          "O Incenso atrairá determinados Pokémon com mais frequência",
+          "2× mais PE por captura",
+          "Aumento do limite de coleta de Partícula Max para 1.600",
+          "8× mais Partículas Max de Pontos de Energia",
+          "Maior chance de encontrar Gothita Brilhante e Phantump Brilhante",
+          "Treinadoras e Treinadores com um ingresso para Ruínas Assombradas também receberão o seguinte bônus durante o evento:",
+          "*2× mais Poeira Estelar por captura"
+        ]
+      }
     }
   ],
   "raidBosses": [
@@ -55382,10 +55641,10 @@
         "isBeast": false
       }
     },
-    "lastUpdated": "2025-07-07T22:34:07.773Z"
+    "lastUpdated": "2025-07-07T23:30:17.124Z"
   },
   "metadata": {
-    "lastFetch": "2025-07-07T22:34:07.773Z",
+    "lastFetch": "2025-07-07T23:30:17.124Z",
     "version": "1.0.0",
     "sources": [
       "PvPoke Game Master",

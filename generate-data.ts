@@ -2,25 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { GameMasterParser, GameMasterData } from './src/parsers/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
-
-interface PokemonEvent {
-  id: string;
-  title: string;
-  subtitle?: string;
-  startDate?: number;
-  endDate?: number;
-  dateRanges?: Array<{ start: number; end: number }>;
-  imageUrl?: string;
-  sourceUrl?: string;
-  source?: string;
-  wild?: unknown[];
-  raids?: unknown[];
-  eggs?: unknown[];
-  research?: unknown[];
-  incenses?: unknown[];
-  bonuses?: string[];
-  isRelevant?: boolean;
-}
+import { PublicEvent } from './src/types/events';
 
 interface RaidBoss {
   name: string;
@@ -30,7 +12,7 @@ interface RaidBoss {
 }
 
 interface AggregatedData {
-  events: PokemonEvent[];
+  events: PublicEvent[];
   raidBosses: RaidBoss[];
   gameMaster: {
     pokemon: GameMasterData;
@@ -65,24 +47,7 @@ async function generateData() {
     
     // Create aggregated data
     const data: AggregatedData = {
-      events: eventsData.events
-        .filter(event => Number.isFinite(event.startDate) && Number.isFinite(event.endDate) && event.startDate !== 0 && event.endDate !== 0 && event.startDate !== null && event.endDate !== null && event.startDate !== undefined && event.endDate !== undefined)
-        .map(event => ({
-          id: event.id,
-          title: event.title,
-          subtitle: event.subtitle,
-          startDate: event.startDate,
-          endDate: event.endDate,
-          dateRanges: event.dateRanges,
-          imageUrl: event.imageUrl,
-          source: event.source,
-          wild: event.wild,
-          raids: event.raids,
-          eggs: event.eggs,
-          research: event.research,
-          incenses: event.incenses,
-          bonuses: event.bonuses
-        })),
+      events: eventsData,
       raidBosses: [
         {
           name: 'Charizard',

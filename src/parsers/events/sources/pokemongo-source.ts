@@ -16,7 +16,7 @@ const DOM_SELECTORS = {
 } as const;
 
 const EVENT_SECTION_TYPES = {
-    BONUSES: ['Bonuses', 'Bônus'],
+    BONUSES: ['Bonuses', 'Bônus', 'Event bonus', 'Event Bonus', 'Event bonuses', 'Event Bonuses', 'Bônus do evento', 'Bonuses'],
     WILD_ENCOUNTERS: ['Wild encounters', 'Wild Encounters', 'Event-themed Pokémon'],
     EGGS: ['Eggs'],
     RESEARCH: [
@@ -63,12 +63,6 @@ interface EventBlock {
   research: IEntry[];
   incenses: IEntry[];
   bonuses: string[];
-}
-
-interface EventDataStructured {
-  title: string;
-  subtitle: string;
-  imageUrl: string;
 }
 
 export class PokemonGoSource implements IEventSource {
@@ -411,34 +405,6 @@ export class PokemonGoSource implements IEventSource {
             imageUrl: imageUrl || '',
             raids, wild, eggs, research, incenses, bonuses: bonusesArr
         };
-    }
-
-    private extractEventDataStructured(html: string): EventDataStructured {
-        try {
-            const dom = new JSDOM(html);
-            const document = dom.window.document;
-            
-            const titleElement = document.getElementsByClassName(DOM_SELECTORS.BLOG_POST_TITLE)[0];
-            const title = titleElement && 'textContent' in titleElement ? (titleElement.textContent?.trim() ?? '') : '';
-            
-            const firstHeadline = document.querySelector(DOM_SELECTORS.CONTAINER_BLOCK_HEADLINE);
-            const subtitle = firstHeadline && 'textContent' in firstHeadline ? (firstHeadline.textContent?.trim() ?? '') : '';
-            
-            const firstImage = document.querySelector(DOM_SELECTORS.BLOG_POST_IMG);
-            const imageUrl = firstImage && 'src' in firstImage ? (firstImage.src as string) : '';
-            
-            return {
-                title,
-                subtitle,
-                imageUrl
-            };
-        } catch (error) {
-            return {
-                title: '',
-                subtitle: '',
-                imageUrl: ''
-            };
-        }
     }
 
     private determineCategories(parsedContent: EventBlock[]): EventCategory[] {

@@ -76,7 +76,7 @@ export class PokemonGoFetcher {
             
             if (!links.some(link => link.url === url) && 
                 !title.toLowerCase().includes('season') &&
-                !title.toLowerCase().includes('welcome to pokémon go')) {
+                !title.toLowerCase().includes('welcome to ')) {
                 links.push({ url, title });
             }
         }
@@ -92,7 +92,7 @@ export class PokemonGoFetcher {
             return 'news';
         }
         if (title.toLowerCase().includes('season') || 
-            title.toLowerCase().includes('welcome to pokémon go')) {
+            title.toLowerCase().includes('welcome to ')) {
             return 'season';
         }
         return 'other';

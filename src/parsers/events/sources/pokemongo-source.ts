@@ -94,7 +94,18 @@ export class PokemonGoSource implements IEventSource {
             console.log(`[${now()}] [parseEvents] All fetches and parses complete. Total time: ${fetchEnd-fetchStart}ms`);
             const allEvents = allEventsArrays.flat();
             console.log(`[${now()}] [parseEvents] Successfully parsed ${allEvents.length} events from individual posts`);
-            return allEvents;
+
+            // Filter out non-relevant events
+            const relevantEvents = allEvents.filter(event => {
+                return (event.bonuses && event.bonuses.length > 0)
+                    || (event.wild && event.wild.length > 0)
+                    || (event.raids && event.raids.length > 0)
+                    || (event.eggs && event.eggs.length > 0)
+                    || (event.research && event.research.length > 0)
+                    || (event.incenses && event.incenses.length > 0);
+            });
+            console.log(`[${now()}] [parseEvents] Filtered to ${relevantEvents.length} relevant events`);
+            return relevantEvents;
         } catch (error) {
             console.error(`[${now()}] [parseEvents] Failed to parse Pokemon GO events:`, error);
             return [];
@@ -105,51 +116,97 @@ export class PokemonGoSource implements IEventSource {
         // Parse date from the post HTML using the new robust date parsing logic
         const dateStrings = this.extractDateStringsFromPost(post.html);
         const dateRanges = dateStrings.flatMap(ds => parseEventDateRange(ds));
-        if (!dateRanges.length) {
-            console.warn(`No valid date found for post: ${post.url}`);
-            return [];
-        }
-        // Use the earliest start and latest end from all date ranges
-        const startDate = Math.min(...dateRanges.map(r => r.start));
-        const endDate = Math.max(...dateRanges.map(r => r.end));
-        
-        // Extract all event details using structured DOM parsing
-        const eventData = this.extractEventDataStructured(post.html);
-        const imageUrl = eventData.imageUrl || this.extractImageFromPost(post.html);
         
         // Parse the post content following the user's algorithm
-        const parsedContent = this.parseEventContent(post.html, gameMasterPokemon);
+        const parsedContents = this.parseEventContent(post.html, gameMasterPokemon);
         
-        const event: IParsedEvent = {
-            id: `pokemongo-${Date.now()}`,
-            title: eventData.title || post.title,
-            subtitle: eventData.subtitle || 'Event details parsed from post',
-            startDate,
-            endDate,
-            dateRanges,
-            imageUrl,
-            sourceUrl: post.url,
-            source: 'pokemongo' as const,
-            categories: this.determineCategories(parsedContent),
-            // Keep Pokémon separate by domain
-            wild: parsedContent.wild,
-            raids: parsedContent.raids,
-            eggs: parsedContent.eggs,
-            research: parsedContent.research,
-            incenses: parsedContent.incenses,
-            bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined,
-            isRelevant: true,
-            metadata: {
-                originalPost: post,
-                parsedAt: new Date().toISOString(),
-                wildCount: parsedContent.wild.length,
-                raidCount: parsedContent.raids.length,
-                eggCount: parsedContent.eggs.length,
-                researchCount: parsedContent.research.length,
-                incenseCount: parsedContent.incenses.length
+        const events: IParsedEvent[] = [];
+        
+        // Check if we have child events (events with specific titles)
+        const hasChildEvents = parsedContents.some(content => content.title && content.title !== "Unknown Event");
+        
+        for (const parsedContent of parsedContents) {
+            // If we have child events, only create events for the children, not the parent
+            if (hasChildEvents && (!parsedContent.title || parsedContent.title === "Unknown Event")) {
+                continue;
             }
-        };
-        return [event];
+            
+            // For inner events, use the subtitle as title and extract date from the content
+            let eventTitle = post.title;
+            let eventStartDate = 0;
+            let eventEndDate = 0;
+            let eventDateRanges: { start: number, end: number }[] = [];
+            
+            if (parsedContent.title && parsedContent.title !== "Unknown Event") {
+                // Use the child event's specific title
+                eventTitle = parsedContent.title;
+                // Try to parse date from the inner event
+                if (parsedContent.date) {
+                    const innerDateRanges = parseEventDateRange(parsedContent.date);
+                    if (innerDateRanges.length > 0) {
+                        eventDateRanges = innerDateRanges;
+                        eventStartDate = Math.min(...innerDateRanges.map(r => r.start));
+                        eventEndDate = Math.max(...innerDateRanges.map(r => r.end));
+                    }
+                }
+            } else {
+                // Use the main post dates only if no child events exist
+                if (dateRanges.length > 0) {
+                    eventDateRanges = dateRanges;
+                    eventStartDate = Math.min(...dateRanges.map(r => r.start));
+                    eventEndDate = Math.max(...dateRanges.map(r => r.end));
+                }
+            }
+            
+            // If this is a child event and has no valid date, skip it
+            if (parsedContent.title && parsedContent.title !== "Unknown Event" && eventDateRanges.length === 0) {
+                continue;
+            }
+            
+            // Extract image from the post or child event
+            const imageUrl = parsedContent.imageUrl || this.extractImageFromPost(post.html);
+            
+            // Determine categories based on content
+            const categories = this.determineCategories([parsedContent]);
+            
+            // Check if event is still relevant (hasn't ended yet)
+            const currentTime = Date.now();
+            const isRelevant = eventEndDate > currentTime;
+            
+            // Create the parsed event
+            const event: IParsedEvent = {
+                id: `pokemongo-${Date.now()}-${Math.random()}`,
+                title: eventTitle,
+                subtitle: this.extractEventDescription(eventTitle),
+                startDate: eventStartDate,
+                endDate: eventEndDate,
+                dateRanges: eventDateRanges,
+                imageUrl,
+                sourceUrl: post.url,
+                source: 'pokemongo' as const,
+                categories,
+                wild: parsedContent.wild,
+                raids: parsedContent.raids,
+                eggs: parsedContent.eggs,
+                research: parsedContent.research,
+                incenses: parsedContent.incenses,
+                bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined,
+                isRelevant,
+                metadata: {
+                    originalPost: post,
+                    parsedAt: new Date().toISOString(),
+                    wildCount: parsedContent.wild.length,
+                    raidCount: parsedContent.raids.length,
+                    eggCount: parsedContent.eggs.length,
+                    researchCount: parsedContent.research.length,
+                    incenseCount: parsedContent.incenses.length
+                }
+            };
+            
+            events.push(event);
+        }
+        
+        return events;
     }
 
     // Extract date strings using the user's DOM-based approach with detailed logs
@@ -223,7 +280,7 @@ export class PokemonGoSource implements IEventSource {
     }
 
     // Main parsing function following the user's algorithm
-    private parseEventContent(html: string, gameMasterPokemon: Record<string, any>): any {
+    private parseEventContent(html: string, gameMasterPokemon: Record<string, any>): any[] {
         try {
             const dom = new JSDOM(html);
             const document = dom.window.document;
@@ -235,13 +292,6 @@ export class PokemonGoSource implements IEventSource {
                 hasToComputeInnerEntries = false;
             }
 
-            const raids: IEntry[] = [];
-            const wild: IEntry[] = [];
-            const eggs: IEntry[] = [];
-            const research: IEntry[] = [];
-            const incenses: IEntry[] = [];
-            let bonus = "";
-
             const allPokemon = Object.values(gameMasterPokemon);
             const wildDomain = allPokemon.filter(p => !p.isShadow && !p.isMega && !p.aliasId);
             const raidDomain = wildDomain;
@@ -250,8 +300,19 @@ export class PokemonGoSource implements IEventSource {
             const incenseDomain = wildDomain;
 
             if (!hasToComputeInnerEntries) {
+                // Original logic for single event
+                const raids: IEntry[] = [];
+                const wild: IEntry[] = [];
+                const eggs: IEntry[] = [];
+                const research: IEntry[] = [];
+                const incenses: IEntry[] = [];
+                let bonus = "";
+
                 if (entries.length === 0) {
-                    return { raids, wild, eggs, research, incenses, bonuses: [bonus.trim()] };
+                    return [{
+                        raids, wild, eggs, research, incenses, 
+                        bonuses: [bonus.trim()].filter(b => b.length > 0)
+                    }];
                 }
 
                 for (let i = 0; i < entries.length; i++) {
@@ -298,85 +359,138 @@ export class PokemonGoSource implements IEventSource {
                             break;
                     }
                 }
+                
+                // Split bonuses into separate array elements
+                const splitBonuses = bonus.trim() 
+                    ? bonus.trim()
+                        .split(/\n\n+/)
+                        .map(b => b.trim())
+                        .filter(b => b.length > 0)
+                    : [];
+                
+                return [{
+                    raids, wild, eggs, research, incenses, bonuses: splitBonuses
+                }];
             } else {
+                // Handle multiple inner events - each becomes a separate event
+                const events: any[] = [];
                 for (let k = 0; k < entries.length; k++) {
                     const containerBlock = entries[k].children[0];
-                    const innerEntries = containerBlock.getElementsByClassName("ContainerBlock");
-                    if (innerEntries.length === 0) {
-                        continue;
-                    }
-                    for (let i = 0; i < innerEntries.length; i++) {
-                        const entry = innerEntries[i];
-                        const title = entry.children[0] as unknown as HTMLElement;
-                        const kind = title?.textContent?.trim() || title?.innerText?.trim();
-                        const contentBodies = Array.from(entry.children) as unknown as HTMLElement[];
-                        if (!kind) continue;
-                        if (kind.includes('Bonuses') || kind.includes('Bônus')) {
-                            const bonusContainer = contentBodies[1] as unknown as Element;
-                            if (bonusContainer) {
-                                const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
-                                bonus += visualBonuses.map(b => "\n\n" + b).join('');
+                    if (!containerBlock) continue;
+                    // Get the headline as the title
+                    const headlineEl = containerBlock.querySelector('.ContainerBlock__headline');
+                    const subtitle = headlineEl && headlineEl.textContent ? headlineEl.textContent.trim() : '';
+                    // Get the date from the first .ContainerBlock__body after the headline
+                    let date = '';
+                    let foundDate = false;
+                    for (let child of Array.from(containerBlock.children)) {
+                        if (foundDate) break;
+                        if (child.classList && Array.from(child.classList).includes('ContainerBlock__body')) {
+                            if (child.textContent) {
+                                date = child.textContent.trim().split("\n")[0].trim();
                             }
-                            continue;
+                            foundDate = true;
                         }
-                        switch(kind) {
-                            case "Wild encounters":
-                            case "Wild Encounters":
-                            case "Event-themed Pokémon":
-                                wild.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, wildDomain)));
-                                break;
-                            case "Eggs":
-                                eggs.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, eggDomain)));
-                                break;
-                            case "Field Research Task Rewards":
-                            case "Field Research Task Encounters":
-                            case "Field Research task encounters":
-                            case "Field Research task rewards":
-                            case "Field Research":
-                            case "Timed Research":
-                                research.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, researchDomain)));
-                                break;
-                            case "Raids":
-                            case "Shadow Raids":
-                            case "Shadow Raid debut":
-                                raids.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, raidDomain)));
-                                break;
-                            case "Incense Encounters":
-                            case "Increased Incense encounters":
-                                incenses.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, incenseDomain)));
-                                break;
-                            default:
-                                break;
+                    }
+                    // Find the first image after the date
+                    let imageUrl = '';
+                    let foundImg = false;
+                    for (let child of Array.from(containerBlock.children)) {
+                        if (foundImg) break;
+                        if (child.tagName && child.tagName.toUpperCase() === 'IMG') {
+                            imageUrl = child.getAttribute('src') || '';
+                            foundImg = true;
+                        } else if (child.querySelector) {
+                            const img = child.querySelector('img');
+                            if (img && img.getAttribute) {
+                                imageUrl = img.getAttribute('src') || '';
+                                foundImg = true;
+                            }
                         }
+                    }
+                    // Only parse the ContainerBlock children under this containerBlock
+                    const innerEntries = Array.from(containerBlock.getElementsByClassName("ContainerBlock"));
+                    // Parse this inner event as a separate event
+                    const innerEvent = this.parseInnerEvent(innerEntries, gameMasterPokemon, wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain, subtitle, date, imageUrl);
+                    if (innerEvent) {
+                        events.push(innerEvent);
                     }
                 }
+                return events;
             }
-            // Split bonuses into separate array elements (one per sentence/paragraph)
-            const splitBonuses = bonus.trim() 
-                ? bonus.trim()
-                    .split(/\n\n+/)
-                    .map(b => b.trim())
-                    .filter(b => b.length > 0)
-                : [];
-            return {
-                raids,
-                wild,
-                eggs,
-                research,
-                incenses,
-                bonuses: splitBonuses
-            };
         } catch (error) {
             console.warn('Failed to parse event content using structured DOM approach:', error);
-            return {
-                raids: [],
-                wild: [],
-                eggs: [],
-                research: [],
-                incenses: [],
-                bonuses: []
-            };
+            return [{
+                raids: [], wild: [], eggs: [], research: [], incenses: [], bonuses: []
+            }];
         }
+    }
+
+    private parseInnerEvent(innerEntries: Element[], gameMasterPokemon: Record<string, any>, wildDomain: any[], raidDomain: any[], eggDomain: any[], researchDomain: any[], incenseDomain: any[], subtitle: string, date: string, imageUrl?: string): any {
+        const raids: IEntry[] = [];
+        const wild: IEntry[] = [];
+        const eggs: IEntry[] = [];
+        const research: IEntry[] = [];
+        const incenses: IEntry[] = [];
+        let bonus = "";
+        // Only parse content for this child event
+        for (let i = 0; i < innerEntries.length; i++) {
+            const entry = innerEntries[i];
+            const title = entry.children[0] as unknown as HTMLElement;
+            const kind = (title?.textContent?.trim() || title?.innerText?.trim() || "") as string;
+            const contentBodies = Array.from(entry.children) as unknown as HTMLElement[];
+            if (!kind) continue;
+            if (kind.includes('Bonuses') || kind.includes('Bônus')) {
+                const bonusContainer = contentBodies[1] as unknown as Element;
+                if (bonusContainer) {
+                    const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
+                    bonus += visualBonuses.map(b => "\n\n" + b).join('');
+                }
+                continue;
+            }
+            switch(kind) {
+                case "Wild encounters":
+                case "Wild Encounters":
+                case "Event-themed Pokémon":
+                    wild.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, wildDomain)));
+                    break;
+                case "Eggs":
+                    eggs.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, eggDomain)));
+                    break;
+                case "Field Research Task Rewards":
+                case "Field Research Task Encounters":
+                case "Field Research task encounters":
+                case "Field Research task rewards":
+                case "Field Research":
+                case "Timed Research":
+                    research.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, researchDomain)));
+                    break;
+                case "Raids":
+                case "Shadow Raids":
+                case "Shadow Raid debut":
+                    raids.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, raidDomain)));
+                    break;
+                case "Incense Encounters":
+                case "Increased Incense encounters":
+                    incenses.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, incenseDomain)));
+                    break;
+                default:
+                    break;
+            }
+        }
+        // Split bonuses into separate array elements
+        const splitBonuses = bonus.trim() 
+            ? bonus.trim()
+                .split(/\n\n+/)
+                .map(b => b.trim())
+                .filter(b => b.length > 0)
+            : [];
+        return {
+            title: subtitle || "Unknown Event",
+            date: date || "",
+            imageUrl: imageUrl || '',
+            raids, wild, eggs, research, incenses, bonuses: splitBonuses
+        };
     }
 
     // Extract event data using structured DOM parsing
@@ -412,14 +526,16 @@ export class PokemonGoSource implements IEventSource {
         }
     }
 
-    private determineCategories(parsedContent: any): EventCategory[] {
+    private determineCategories(parsedContent: any[]): EventCategory[] {
         const categories: EventCategory[] = [];
         
-        if (parsedContent.wild.length > 0) categories.push(EventCategory.WILD);
-        if (parsedContent.raids.length > 0) categories.push(EventCategory.RAID);
-        if (parsedContent.eggs.length > 0) categories.push(EventCategory.EGG);
-        if (parsedContent.research.length > 0) categories.push(EventCategory.RESEARCH);
-        if (parsedContent.incenses.length > 0) categories.push(EventCategory.INCENSE);
+        parsedContent.forEach(content => {
+            if (content.wild.length > 0) categories.push(EventCategory.WILD);
+            if (content.raids.length > 0) categories.push(EventCategory.RAID);
+            if (content.eggs.length > 0) categories.push(EventCategory.EGG);
+            if (content.research.length > 0) categories.push(EventCategory.RESEARCH);
+            if (content.incenses.length > 0) categories.push(EventCategory.INCENSE);
+        });
         
         return categories;
     }
@@ -502,5 +618,10 @@ export class PokemonGoSource implements IEventSource {
         }
         
         return grouped;
+    }
+
+    private extractEventDescription(title: string): string {
+        // Extract a description from the title
+        return title.replace(/[!?]/g, '').trim();
     }
 } 

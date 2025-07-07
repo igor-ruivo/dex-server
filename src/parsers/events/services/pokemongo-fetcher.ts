@@ -10,46 +10,65 @@ export class PokemonGoFetcher {
     private newsUrl = 'https://pokemongolive.com/news';
 
     public async fetchAllPosts(): Promise<PokemonGoPost[]> {
+        const now = () => new Date().toISOString();
         try {
-            console.log('Fetching Pokemon GO news page...');
+            console.log(`[${now()}] [fetchAllPosts] Fetching Pokemon GO news page...`);
             const newsPageHtml = await this.fetchPage(this.newsUrl);
             
-            console.log('Extracting post links...');
+            console.log(`[${now()}] [fetchAllPosts] Extracting post links...`);
             const postLinks = this.extractPostLinks(newsPageHtml);
             
-            console.log(`Found ${postLinks.length} posts to fetch`);
+            console.log(`[${now()}] [fetchAllPosts] Found ${postLinks.length} posts to fetch`);
             
-            const posts: PokemonGoPost[] = [];
+            // Fetch all posts in parallel instead of sequentially
+            console.log(`[${now()}] [fetchAllPosts] Starting parallel fetches...`);
+            const fetchStart = Date.now();
             
-            for (const link of postLinks) {
+            const postPromises = postLinks.map(async (link, idx) => {
+                const t0 = Date.now();
+                console.log(`[${now()}] [fetchAllPosts] [${idx}] Starting fetch: ${link.title}`);
                 try {
-                    console.log(`Fetching: ${link.title}`);
                     const html = await this.fetchPage(link.url);
-                    posts.push({
+                    const t1 = Date.now();
+                    console.log(`[${now()}] [fetchAllPosts] [${idx}] Fetch complete (${t1-t0}ms): ${link.title}`);
+                    return {
                         url: link.url,
                         title: link.title,
                         type: this.determinePostType(link.url, link.title),
                         html
-                    });
+                    };
                 } catch (error) {
-                    console.error(`Failed to fetch ${link.url}:`, error);
+                    const t1 = Date.now();
+                    console.error(`[${now()}] [fetchAllPosts] [${idx}] Failed to fetch ${link.url} (${t1-t0}ms):`, error);
+                    return null;
                 }
-            }
+            });
             
-            console.log(`Successfully fetched ${posts.length} posts`);
+            const results = await Promise.all(postPromises);
+            const fetchEnd = Date.now();
+            console.log(`[${now()}] [fetchAllPosts] All fetches complete. Total time: ${fetchEnd-fetchStart}ms`);
+            
+            const posts = results.filter(post => post !== null) as PokemonGoPost[];
+            console.log(`[${now()}] [fetchAllPosts] Successfully fetched ${posts.length} posts`);
             return posts;
         } catch (error) {
-            console.error('Failed to fetch Pokemon GO posts:', error);
+            console.error(`[${now()}] [fetchAllPosts] Failed to fetch Pokemon GO posts:`, error);
             return [];
         }
     }
 
     private async fetchPage(url: string): Promise<string> {
+        const now = () => new Date().toISOString();
+        const t0 = Date.now();
+        
         // If the url is relative, prepend the baseUrl
         let fullUrl = url;
         if (url.startsWith('/')) {
             fullUrl = this.baseUrl + url;
         }
+        
+        console.log(`[${now()}] [fetchPage] Starting HTTP request to: ${fullUrl}`);
+        
         const response = await fetch(fullUrl, {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
@@ -57,10 +76,19 @@ export class PokemonGoFetcher {
                 'Accept-Language': 'en-US,en;q=0.9'
             }
         });
+        
+        const t1 = Date.now();
+        console.log(`[${now()}] [fetchPage] HTTP response received (${t1-t0}ms): ${response.status} ${response.statusText}`);
+        
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
-        return await response.text();
+        
+        const text = await response.text();
+        const t2 = Date.now();
+        console.log(`[${now()}] [fetchPage] Text downloaded (${t2-t1}ms), total time: ${t2-t0}ms, size: ${text.length} chars`);
+        
+        return text;
     }
 
     private extractPostLinks(html: string): Array<{ url: string; title: string }> {

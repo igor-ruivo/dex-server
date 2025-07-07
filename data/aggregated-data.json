@@ -1,22 +1,1224 @@
 {
   "events": [
     {
-      "title": "Community Day Event",
-      "description": "Monthly community day event with featured Pokemon",
-      "type": "community-day",
-      "featured": true
+      "title": "Tatsugiri splashes into Pokémon GO during the Water Festival event!",
+      "description": "Water Festival",
+      "type": "event",
+      "startDate": 1752570000000,
+      "endDate": 1753038000000,
+      "dateRanges": [
+        {
+          "start": 1752570000000,
+          "end": 1753038000000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/a11380dGS8sFqsgHoty0x1Wr5yTWs7HztKAyaptOa6CCmetA_GTleXTqyW5ZPPmnVwtg5H5W6h4_bjKWK7NubVD7ZI0dpaPLYZhqlUdR9jOmbA=w1440-e365",
+      "sourceUrl": "/en/post/water-festival-2025/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "raid"
+      ],
+      "wild": [
+        {
+          "speciesId": "squirtle",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "slowpoke",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "krabby",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "staryu",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "magikarp",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "marill",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "barboach",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "clamperl",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "buizel",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "finneon",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "wimpod",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "lanturn",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "feebas",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "palpitoad",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "tirtouga",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [
+        {
+          "speciesId": "shellder",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "ducklett",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "tatsugiri",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "kingler",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "gyarados",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "lapras",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "azumarill",
+          "shiny": true,
+          "kind": "3"
+        }
+      ],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "Rainy Lure Modules will last for two hours.",
+        "Increased Candy for Nice Throws or better.",
+        "Increased chance to encounter Shiny Staryu and Shiny Tirtouga.",
+        "Lapras wearing a scarf caught from raids may have a Seasonal special background—if you’re lucky!"
+      ],
+      "isRelevant": true
     },
     {
-      "title": "Raid Day Event",
-      "description": "Special raid day with exclusive Pokemon",
-      "type": "raid-day",
-      "featured": true
+      "title": "Honedge slashes into Pokémon GO during Ultra Unlock: Steel and Scales!",
+      "description": "Ultra Unlock: Steel and Scales",
+      "type": "event",
+      "startDate": 1753174800000,
+      "endDate": 1753642800000,
+      "dateRanges": [
+        {
+          "start": 1753174800000,
+          "end": 1753642800000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/LNJ8_5As3RG7VRa87VN8fFtEFB7xLwFm3z492WdIMhSlhww4Wx8HXSAUSkDcbJXLb5EhKT4sMLsnZ315sKZcoABnX1hWE5-vaY7bqnsBhYTttA=w1440-e365",
+      "sourceUrl": "/en/post/ultra-unlock-steel-and-scales/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "raid"
+      ],
+      "wild": [
+        {
+          "speciesId": "magnemite",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "dratini",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "aron",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "bagon",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "beldum",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "ferroseed",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "noibat",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "rookidee",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "axew",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "goomy",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [
+        {
+          "speciesId": "unown",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "gible",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "klink",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "deino",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "honedge",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "skarmory",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "bisharp",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "dragalge",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "turtonator",
+          "shiny": true,
+          "kind": "3"
+        }
+      ],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "4× XP for catching Pokémon.",
+        "4× Stardust for catching Pokémon.",
+        "Increased chance to encounter Shiny Bagon and Shiny Beldum.",
+        "Increased chance to encounter Shiny Unown U in raids."
+      ],
+      "isRelevant": true
     },
     {
-      "title": "Seasonal Event",
-      "description": "Current season event with bonuses",
-      "type": "season",
-      "featured": false
+      "title": "Hisuian Zorua emerges from the shadows for Ultra Unlock: Hisui Celebration!",
+      "description": "Ultra Unlock: Hisui Celebration",
+      "type": "event",
+      "startDate": 1751965200000,
+      "endDate": 1752433200000,
+      "dateRanges": [
+        {
+          "start": 1751965200000,
+          "end": 1752433200000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/0YjUjezdcrgqW-kM7QzKA71TZ8GftLVML3utqE0cly80kQUSlMKVSodiyLrOrAl9bDtAeS2q3o8m8OMUSMfnSgZs6vcoDzz62ZehmnEc0W8TKw=w1440-e365",
+      "sourceUrl": "/en/post/ultra-unlock-hisui/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "raid"
+      ],
+      "wild": [
+        {
+          "speciesId": "zubat",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "voltorb_hisuian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "magikarp",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "qwilfish_hisuian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "starly",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "croagunk",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "petilil",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "zorua_hisuian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "rufflet",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "bergmite",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "sneasel",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "larvitar",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "bagon",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [
+        {
+          "speciesId": "growlithe_hisuian",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "unown",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "sneasel_hisuian",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "braviary_hisuian",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "avalugg_hisuian",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "wyrdeer",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "kleavor",
+          "shiny": true,
+          "kind": "3"
+        }
+      ],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "4× XP for catching Pokémon.",
+        "4× Stardust for catching Pokémon.",
+        "Increased chance to encounter Shiny Hisuian Voltorb and Shiny Hisuian Qwilfish.",
+        "Increased chance to encounter Shiny Unown U from raids.",
+        "A special Collection Challenge will be available starting during the event. You can complete it by catching Pokémon that appear from space-time anomalies."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "Pokémon GO Fest 2025 details revealed: Ultra Unlock, habitat times, and more!",
+      "description": "Pokémon GO Fest 2025: Global",
+      "type": "event",
+      "startDate": 1751101200000,
+      "endDate": 1751216400000,
+      "dateRanges": [
+        {
+          "start": 1751101200000,
+          "end": 1751130000000
+        },
+        {
+          "start": 1751187600000,
+          "end": 1751216400000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/Lf-JxFGBcp_hXUDOPA9o8_XxCXaRMfzxTNrYajGVymEEl7IVgbI_Clw1z-I2KMtjm60tbm2PHxR41awtWBDAen1zI5-5g8RboVzkB2dEAmVvTis=w1440-e365",
+      "sourceUrl": "/en/post/go-fest-2025-ultra-unlock-challenges/",
+      "source": "pokemongo",
+      "categories": [
+        "wild"
+      ],
+      "wild": [
+        {
+          "speciesId": "chansey",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "skarmory",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "larvitar",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "shieldon",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "shelmet",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "vullaby",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "oranguru",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "goomy",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "farfetchd_galarian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "cubone",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "ralts",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "karrablast",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "pawniard",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "deino",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "passimian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "jangmo_o",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "isRelevant": true
+    },
+    {
+      "title": "Celebrate nine years with Pokémon GO’s 9th Anniversary Party!",
+      "description": "Pokémon GO’s 9th Anniversary Party",
+      "type": "event",
+      "startDate": 1751360400000,
+      "endDate": 1751828400000,
+      "dateRanges": [
+        {
+          "start": 1751360400000,
+          "end": 1751828400000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/lh6XMCXHsjASsciRnPdavTTKL6Mz2G3JST0AyTVZn4hbKzleVEFZE2sYrEEZo8od_-5DUbLQgOjBJoCdywEm2bhDt10YQnTeLsrmMKDdArDenQ=w1440-e365",
+      "sourceUrl": "/en/post/pokemongo-9th-anniversary/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "raid"
+      ],
+      "wild": [
+        {
+          "speciesId": "bulbasaur",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "charmander",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "squirtle",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [
+        {
+          "speciesId": "pikachu",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "eevee",
+          "shiny": true,
+          "kind": "1"
+        }
+      ],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "Increased chance to become Lucky Friends.",
+        "Increased chance to get Lucky Pokémon in trades.",
+        "PokéStops may turn gold without a Golden Lure Module.",
+        "Increased chance to encounter Shiny Pikachu wearing a cake hat and Shiny Eevee wearing a party hat from raids.",
+        "Gimmighoul holding a 9th anniversary coin will have a 9th anniversary–themed Special Background!",
+        "Friendship levels will increase faster than normal through opening Gifts, trading Pokémon, or battling together in raids, Gyms, or Trainer Battles!",
+        "Chance of finding 9 or 99 (or maybe more!) Gimmighoul Coins when you spin a PokéStop with a Golden Lure Module.",
+        "During the 9th Anniversary Party, you may discover party hats in the wild. Tapping on them will award items, or encounters with event-themed Pokémon.",
+        "Also, for the first time in Pokémon GO, you might even encounter Shiny Gimmighoul—if you’re lucky!",
+        "In addition to the above, the 9th Anniversary Party will have special bonuses on certain days!",
+        "July 1 at 10:00 a.m. – July 3 at 10:00 a.m. local time",
+        "1/2 Egg Hatch Distance when Eggs are placed in an Incubator on these days.",
+        "July 3 at 10:00 a.m. – July 5 at 10:00 a.m. local time",
+        "2× XP for catching Pokémon.",
+        "July 5 at 10:00 a.m. – July 6 at 8:00 p.m. local time",
+        "2× Stardust for catching Pokémon."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "Pokémon GO Fest 2025: Global ticket holders get early access to event-themed 2 km and 5 km Eggs!",
+      "description": "2 km Eggs",
+      "type": "event",
+      "startDate": 1750669200000,
+      "endDate": 1751237940000,
+      "dateRanges": [
+        {
+          "start": 1750669200000,
+          "end": 1751237940000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/CwRm63amV_vbHQkC-dzt4hbYiFoawAR4jPTEgakHLUFlux6Ot-c9ua2XeiiQBPZBA-UDKtSFcH7l5WihGPWziVWt_TabjxuSO8iPJlkk17CBkLo=w1440-e365",
+      "sourceUrl": "/en/post/gofest-2025-global-eggs-early-access/",
+      "source": "pokemongo",
+      "categories": [],
+      "wild": [],
+      "raids": [],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "isRelevant": true
+    },
+    {
+      "title": "Eevee stars in July Community Day Classic, and Community Day voting returns in August!",
+      "description": "July Community Day Classic: Eevee",
+      "type": "event",
+      "startDate": 1751720400000,
+      "endDate": 1751817600000,
+      "dateRanges": [
+        {
+          "start": 1751720400000,
+          "end": 1751731200000
+        },
+        {
+          "start": 1751806800000,
+          "end": 1751817600000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/jnoSaANb0-v-lf0GZqegVLDVB89cdLU7aUyg-VL6h2Sj7l6oCAlXPM_w58coKwfYWhe51DBJoOkNf1oc2MgMHt-yOCB-TJrX9Tgi8k0KPYTsHg=w1440-e365",
+      "sourceUrl": "/en/post/communitydayclassic-july-2025-eevee/",
+      "source": "pokemongo",
+      "categories": [],
+      "wild": [],
+      "raids": [],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "Limited-time Evolution requirement: Evolve Eevee into Espeon after exploring 1 km with Eevee as your buddy.**",
+        "Limited-time Evolution requirement: Evolve Eevee into  Umbreon after exploring 1 km with Eevee as your buddy.**",
+        "Limited-time Evolution requirement: Evolve Eevee into Sylveon after earning seven hearts with Eevee as your buddy.**",
+        "Eevee will appear more frequently in the wild. If you’re lucky, you might encounter a Shiny one!",
+        "1/4 Egg Hatch Distance",
+        "Lure Modules activated during the event will last for three hours.",
+        "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+        "Take a few snapshots during the Community Day Classic event for a surprise!",
+        "**This Evolution requirement will return to the usual requirement on Saturday, July 12, 2025, at 10:00 p.m. local time."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "Yamper makes its paw-some debut during Yamper’s Paw Prints!",
+      "description": "Yamper’s Paw Prints",
+      "type": "event",
+      "startDate": 1750374000000,
+      "endDate": 1750633140000,
+      "dateRanges": [
+        {
+          "start": 1750374000000,
+          "end": 1750633140000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/p2a2E8BCXzLmDQaTE8CBCdO1M3CH8XUftuolECvfhVr2Nug1hXnSwfC5rJcnpm_LHc7_RduUENnaeJT_7zfJNgRAwl0lj3eqEBygRVkq-Wl7=w1440-e365",
+      "sourceUrl": "/en/post/yampers-paw-prints-2025/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "research"
+      ],
+      "wild": [
+        {
+          "speciesId": "growlithe",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "snubbull",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "houndour",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "poochyena",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "electrike",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "lillipup",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "furfrou",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "fidough",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "growlithe_hisuian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "yamper",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [],
+      "eggs": [],
+      "research": [
+        {
+          "speciesId": "poochyena",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "furfrou",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "snubbull",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "incenses": [],
+      "bonuses": [
+        "2× Stardust for catching Pokémon.",
+        "Increased chance to encounter Shiny Snubbull, Shiny Poochyena, and Shiny Furfrou."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "June 2025 Community Day: Jangmo-o",
+      "description": "June 2025 Community Day: Jangmo-o",
+      "type": "event",
+      "startDate": 1750510800000,
+      "endDate": 1750521600000,
+      "dateRanges": [
+        {
+          "start": 1750510800000,
+          "end": 1750521600000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/vOI7qV5u7nD8sjzFANXSD1LxpXOSaHe7UiciXnhd41ROqPQICe33wR9wQpOOXpar8Zl0HOQytIvBbknuEOYBzlkmWUAcz9ppl4leKNOlt8d-=w1440-e365",
+      "sourceUrl": "/en/post/communityday-june-2025-jangmo-o/",
+      "source": "pokemongo",
+      "categories": [],
+      "wild": [],
+      "raids": [],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "3× XP for catching Pokemon.",
+        "2× Candy for catching Pokémon.",
+        "2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
+        "Lure Modules activated during the event will last for three hours.",
+        "Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+        "Take a few snapshots during Community Day for a surprise!",
+        "One additional Special Trade can be made for a maximum of three for the day.*",
+        "Trades will require 50% less Stardust.*",
+        "*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 10:00 p.m. local time."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "GO Battle League: Delightful Days Update",
+      "description": "GO Battle League: Delightful Days",
+      "type": "event",
+      "startDate": 1755212400000,
+      "endDate": 1755471540000,
+      "dateRanges": [
+        {
+          "start": 1755212400000,
+          "end": 1755471540000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/1rT3reEEZt-_xX4DrdPeVhWtK83W2lvkd9KrK_HZYFBafJcVuOa1bCUSGkpg9n43jBXMpFqzUIxc6jekGY7kWiE57XCbHKNTvRdQqM7jbAHV=w1440-e365",
+      "sourceUrl": "/en/post/go-battle-league-delightful-days/",
+      "source": "pokemongo",
+      "categories": [],
+      "wild": [],
+      "raids": [],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "4× Stardust from win rewards. (This does not include end-of-set rewards.)",
+        "The maximum number of sets you can play per day will increase from five to 20—for a total of 100 battles—from 12:00 a.m. to 11:59 p.m. local time.",
+        "Free battle-themed Timed Research will be available. Rewards include shoes for your avatar inspired by a powerful Battle Tower battler.",
+        "Pokémon encountered via GO Battle League rewards will have a wider variance of Attack, Defense, and HP."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "An ancient discovery awaits! The legendary giants return ahead of Pokémon GO Fest 2025: Global.",
+      "description": "Ancients Recovered",
+      "type": "event",
+      "startDate": 1750669200000,
+      "endDate": 1751050800000,
+      "dateRanges": [
+        {
+          "start": 1750669200000,
+          "end": 1751050800000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/FXrUWyOe1Sui9tB20NkX-iXmW1w-piKVrQ1H4CVjEyyTsWUI6kp-EWMMU93QSLHTqwItKNyu2Ax-mf8u7rAM9V5q1ShbmkRyQRf5tN7KyGQfnA=w1440-e365",
+      "sourceUrl": "/en/post/2025-ancients-recovered/",
+      "source": "pokemongo",
+      "categories": [
+        "raid"
+      ],
+      "wild": [],
+      "raids": [
+        {
+          "speciesId": "regirock",
+          "shiny": true,
+          "kind": "5"
+        },
+        {
+          "speciesId": "regice",
+          "shiny": true,
+          "kind": "5"
+        },
+        {
+          "speciesId": "registeel",
+          "shiny": true,
+          "kind": "5"
+        },
+        {
+          "speciesId": "regieleki",
+          "shiny": true,
+          "kind": "5"
+        },
+        {
+          "speciesId": "regidrago",
+          "shiny": true,
+          "kind": "5"
+        },
+        {
+          "speciesId": "regigigas",
+          "shiny": true,
+          "kind": "5"
+        }
+      ],
+      "eggs": [],
+      "research": [],
+      "incenses": [],
+      "bonuses": [
+        "Remote Raid Pass limit increased to 30 from Monday, June 23, to Thursday, June 26, 2025.",
+        "No Remote Raid limit from Friday, June 27, to Sunday, June 29, 2025.",
+        "Trainers level 31 and up are guaranteed to receive Candy XL for trading Pokémon from June 23 at 10:00 a.m. local time to June 29 at 11:59 p.m. local time.",
+        "Trainers can receive special event stickers from PokéStops and Gifts."
+      ],
+      "isRelevant": true
+    },
+    {
+      "title": "Join the merriment this summer during Serene Retreat, Instrumental Wonders, and Phantom Ruins!",
+      "description": "Serene Retreat",
+      "type": "event",
+      "startDate": 1748595600000,
+      "endDate": 1750273200000,
+      "dateRanges": [
+        {
+          "start": 1748595600000,
+          "end": 1748977200000
+        },
+        {
+          "start": 1749286800000,
+          "end": 1749668400000
+        },
+        {
+          "start": 1749891600000,
+          "end": 1750273200000
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/vrmagD1fdV_det-jVbf2OMPH0_0gR6ZBpSD37pWPy5A_ey0mO-CRTR-VsQw-BXnluIsn0jEZc1k7maoExD5CBD15OQgXfVTmQahjbGXn7Ri5RA=w1440-e365",
+      "sourceUrl": "/en/post/global-events-gofest2025-overlays/",
+      "source": "pokemongo",
+      "categories": [
+        "wild",
+        "raid",
+        "egg",
+        "research",
+        "incense"
+      ],
+      "wild": [
+        {
+          "speciesId": "chansey",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "marill",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "furfrou",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "cutiefly",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "morelull",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "komala",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "hatenna",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "snorlax",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "chimecho",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "meowth",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "hoppip",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "ferroseed",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "stunfisk_galarian",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "golett",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "tadbulb",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "chimecho",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "beldum",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "falinks",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "rhyhorn",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "duskull",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "skorupi",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "drilbur",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "archen",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "gothita",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "golett",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "phantump",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "sableye",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "chimecho",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "raids": [
+        {
+          "speciesId": "meowth",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "beldum",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "ferroseed",
+          "shiny": true,
+          "kind": "1"
+        },
+        {
+          "speciesId": "stunfisk_galarian",
+          "shiny": true,
+          "kind": "3"
+        },
+        {
+          "speciesId": "falinks",
+          "shiny": true,
+          "kind": "3"
+        }
+      ],
+      "eggs": [
+        {
+          "speciesId": "chingling",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "munna",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "spritzee",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "swirlix",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "research": [
+        {
+          "speciesId": "munna",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "cutiefly",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "morelull",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "komala",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "hatenna",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "meowth",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "chimecho",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "ferroseed",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "falinks",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "gothita",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "rufflet",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "phantump",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "greavard",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "incenses": [
+        {
+          "speciesId": "sableye",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "chimecho",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "gothita",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "rufflet",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "phantump",
+          "shiny": true,
+          "kind": ""
+        },
+        {
+          "speciesId": "greavard",
+          "shiny": true,
+          "kind": ""
+        }
+      ],
+      "bonuses": [
+        "The following bonuses will be active from Friday, May 30, at 10:00 a.m. to Tuesday, June 3, at 8:00 p.m. local time.",
+        "1/2 Hatch Distance",
+        "1.5× Hatch XP",
+        "Max Particle collection limit increased to 1,600",
+        "8× Max Particles from Power Spots",
+        "Increased chance to hatch Shiny Munna and encounter Shiny Munna in research task rewards",
+        "Increased chance to encounter Shiny Morelull in the wild and in research task rewards",
+        "Trainers with a Serene Retreat ticket will also receive the following bonus for the duration of the event.",
+        "1.5× Hatch Stardust",
+        "The following bonuses will be active from Saturday, June 7, at 10:00 a.m. to Wednesday, June 11, at 8:00 p.m. local time",
+        "Additional 5,000 XP awarded for successful raids",
+        "Max Particle collection limit increased to 1,600",
+        "8× Max Particles from Power Spots",
+        "Increased chance to encounter Shiny Ferroseed and Shiny Falinks",
+        "Trainers with an Instrumental Wonders ticket will also receive the following bonus for the duration of the event.",
+        "2× Raid Stardust",
+        "The following bonuses will be active from Saturday, June 14, at 10:00 a.m. to Wednesday, June 18, at 8:00 p.m. local time",
+        "Incense will attract certain Pokémon more frequently",
+        "2× Catch XP",
+        "Max Particle collection limit increased to 1,600",
+        "8× Max Particles from Power Spots",
+        "Increased chance to encounter Shiny Gothita and Shiny Phantump",
+        "Trainers with a Phantom Ruins ticket will also receive the following bonus for the duration of the event.",
+        "2× Catch Stardust"
+      ],
+      "isRelevant": true
     }
   ],
   "raidBosses": [
@@ -54089,14 +55291,14 @@
         "isBeast": false
       }
     },
-    "lastUpdated": "2025-07-06T20:37:40.380Z"
+    "lastUpdated": "2025-07-07T01:35:57.783Z"
   },
   "metadata": {
-    "lastFetch": "2025-07-06T20:37:40.380Z",
+    "lastFetch": "2025-07-07T01:35:57.783Z",
     "version": "1.0.0",
     "sources": [
       "PvPoke Game Master",
-      "Dummy Events Source",
+      "Pokemon GO Live News",
       "Dummy Raids Source"
     ]
   }

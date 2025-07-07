@@ -70,7 +70,6 @@ export class LeekDuckSource implements IEventSource {
             sourceUrl: entry.rawUrl,
             source: 'leekduck' as const,
             categories,
-            pokemon,
             bonuses: entry.bonuses ? [entry.bonuses] : undefined,
             isRelevant: entry.isRelevant || false,
             metadata: {

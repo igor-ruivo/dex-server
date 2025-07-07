@@ -142,8 +142,15 @@ export class EventParser {
             }
 
             // Count Pokemon
-            stats.pokemonCount += event.pokemon.length;
-            event.pokemon.forEach(p => stats.uniquePokemon.add(p.speciesId));
+            const allPokemon = [
+                ...(event.wild || []),
+                ...(event.raids || []),
+                ...(event.eggs || []),
+                ...(event.research || []),
+                ...(event.incenses || [])
+            ];
+            stats.pokemonCount += allPokemon.length;
+            allPokemon.forEach(p => stats.uniquePokemon.add(p.speciesId));
         }
 
         return {

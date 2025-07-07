@@ -1,12 +1,26 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { GameMasterParser, GameMasterData } from './src/parsers/game-master-parser';
+import { generateEvents } from './src/parsers/events/generate-events';
 
 interface PokemonEvent {
   title: string;
   description: string;
   type: 'event' | 'community-day' | 'raid-day' | 'go-fest' | 'season';
-  featured: boolean;
+  startDate?: number;
+  endDate?: number;
+  dateRanges?: Array<{ start: number; end: number }>;
+  imageUrl?: string;
+  sourceUrl?: string;
+  source?: string;
+  categories?: string[];
+  wild?: any[];
+  raids?: any[];
+  eggs?: any[];
+  research?: any[];
+  incenses?: any[];
+  bonuses?: string[];
+  isRelevant?: boolean;
 }
 
 interface RaidBoss {
@@ -40,28 +54,30 @@ async function generateData() {
     const gameMasterParser = new GameMasterParser();
     const pokemonDictionary = await gameMasterParser.parse();
     
-    // Create simple dummy data for other sources
+    // Generate real events data
+    const eventsData = await generateEvents();
+    
+    // Create aggregated data
     const data: AggregatedData = {
-      events: [
-        {
-          title: 'Community Day Event',
-          description: 'Monthly community day event with featured Pokemon',
-          type: 'community-day',
-          featured: true,
-        },
-        {
-          title: 'Raid Day Event',
-          description: 'Special raid day with exclusive Pokemon',
-          type: 'raid-day',
-          featured: true,
-        },
-        {
-          title: 'Seasonal Event',
-          description: 'Current season event with bonuses',
-          type: 'season',
-          featured: false,
-        },
-      ],
+      events: eventsData.events.map(event => ({
+        title: event.title,
+        description: event.subtitle || 'Pokemon GO event',
+        type: 'event' as const,
+        startDate: event.startDate,
+        endDate: event.endDate,
+        dateRanges: event.dateRanges,
+        imageUrl: event.imageUrl,
+        sourceUrl: event.sourceUrl,
+        source: event.source,
+        categories: event.categories,
+        wild: event.wild,
+        raids: event.raids,
+        eggs: event.eggs,
+        research: event.research,
+        incenses: event.incenses,
+        bonuses: event.bonuses,
+        isRelevant: event.isRelevant,
+      })),
       raidBosses: [
         {
           name: 'Charizard',
@@ -95,7 +111,7 @@ async function generateData() {
       metadata: {
         lastFetch: now,
         version: '1.0.0',
-        sources: ['PvPoke Game Master', 'Dummy Events Source', 'Dummy Raids Source'],
+        sources: ['PvPoke Game Master', 'Pokemon GO Live News', 'Dummy Raids Source'],
       },
     };
 

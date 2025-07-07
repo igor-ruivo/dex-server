@@ -8,7 +8,6 @@ export class EventTransformer implements IEventTransformer {
             subtitle: event.subtitle ? this.normalizeTitle(event.subtitle) : undefined,
             description: this.generateDescription(event),
             categories: this.deduplicateCategories(event.categories),
-            pokemon: this.deduplicatePokemon(event.pokemon),
             bonuses: this.normalizeBonuses(event.bonuses),
             metadata: {
                 ...event.metadata,
@@ -37,12 +36,6 @@ export class EventTransformer implements IEventTransformer {
             parts.push(event.subtitle);
         }
 
-        if (event.pokemon.length > 0) {
-            const pokemonCount = event.pokemon.length;
-            const categories = [...new Set(event.pokemon.map(p => p.category))];
-            parts.push(`Features ${pokemonCount} Pokémon across ${categories.length} categories`);
-        }
-
         if (event.bonuses && event.bonuses.length > 0) {
             parts.push(`Includes ${event.bonuses.length} bonus(es)`);
         }
@@ -54,9 +47,16 @@ export class EventTransformer implements IEventTransformer {
         return [...new Set(categories)];
     }
 
-    private deduplicatePokemon(pokemon: any[]): any[] {
+    private deduplicatePokemon(wild: any[], raids: any[], eggs: any[], research: any[], incenses: any[]): any[] {
+        const allPokemon = [
+            ...(wild || []),
+            ...(raids || []),
+            ...(eggs || []),
+            ...(research || []),
+            ...(incenses || [])
+        ];
         const seen = new Set<string>();
-        return pokemon.filter(p => {
+        return allPokemon.filter(p => {
             const key = `${p.speciesId}-${p.category}-${p.shiny}`;
             if (seen.has(key)) {
                 return false;

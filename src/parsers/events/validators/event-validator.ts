@@ -58,11 +58,12 @@ export class EventValidator implements IEventValidator {
 
     private hasValidContent(event: IParsedEvent): boolean {
         // Event should have some meaningful content
-        const hasPokemon = event.pokemon && event.pokemon.length > 0;
+        const hasPokemon = (event.wild && event.wild.length > 0) || (event.raids && event.raids.length > 0) || (event.eggs && event.eggs.length > 0) || (event.research && event.research.length > 0) || (event.incenses && event.incenses.length > 0);
         const hasBonuses = event.bonuses && event.bonuses.length > 0;
         const hasCategories = event.categories && event.categories.length > 0;
+        const hasContent = hasPokemon || hasBonuses || hasCategories;
 
-        return hasPokemon || hasBonuses || hasCategories;
+        return hasContent;
     }
 
     private isRelevant(event: IParsedEvent): boolean {
@@ -70,7 +71,7 @@ export class EventValidator implements IEventValidator {
         const now = new Date().getTime();
         const isFuture = event.startDate > now;
         const isRecent = event.endDate > now - (7 * 24 * 60 * 60 * 1000); // Within last 7 days
-        const hasContent = event.pokemon.length > 0 || (event.bonuses && event.bonuses.length > 0);
+        const hasContent = this.hasValidContent(event);
 
         return Boolean((isFuture || isRecent) && hasContent);
     }

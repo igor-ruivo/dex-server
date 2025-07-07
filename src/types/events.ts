@@ -37,19 +37,14 @@ export interface IParsedEvent {
     sourceUrl?: string;
     source: 'pokemongo' | 'leekduck';
     categories: EventCategory[];
-    pokemon: IPokemonEvent[];
+    wild?: IEntry[];
+    raids?: IEntry[];
+    eggs?: IEntry[];
+    research?: IEntry[];
+    incenses?: IEntry[];
     bonuses?: string[];
     isRelevant: boolean;
     metadata: Record<string, any>;
-}
-
-export interface IPokemonEvent {
-    speciesId: string;
-    shiny: boolean;
-    category: EventCategory;
-    raidLevel?: string;
-    comment?: string;
-    source: string;
 }
 
 export enum EventCategory {

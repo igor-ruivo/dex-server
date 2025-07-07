@@ -167,11 +167,21 @@ export class PokemonMatcher {
             'zamazenta': 'zamazenta_hero',
             'morpeko': 'morpeko_full_belly',
             'pumpkaboo': 'pumpkaboo_average',
-            'gourgeist': 'gourgeist_average'
+            'gourgeist': 'gourgeist_average',
+            'farfetchd': 'farfetchd',
+            'farfetch': 'farfetchd'
         };
 
         for (const [key, value] of Object.entries(specialCases)) {
             if (currP.includes(key)) {
+                // Special handling for Galarian Farfetch'd
+                if (currP.includes('galarian') && key === 'farfetchd') {
+                    return {
+                        speciesId: 'farfetchd_galarian',
+                        shiny: false,
+                        kind: raidLevel
+                    };
+                }
                 return {
                     speciesId: value,
                     shiny: false,
@@ -280,4 +290,52 @@ export class PokemonMatcher {
             );
         }
     }
+}
+
+/**
+ * User's algorithm: DFS to collect all text nodes from an array of elements, then parse Pokémon names using the matcher.
+ * Returns an array of IEntry (speciesId, shiny, etc.)
+ */
+export function extractPokemonSpeciesIdsFromElements(elements: any[], matcher: PokemonMatcher): IEntry[] {
+    const textes: string[] = [];
+    const stack = [...elements];
+    while (stack.length > 0) {
+        const node = stack.pop();
+        if (!node || Array.from(node.classList ?? []).includes("ContainerBlock__headline")) {
+            continue;
+        }
+        if (node.nodeType === 3) { // TEXT_NODE
+            const actualText = node.textContent?.trim();
+            if (actualText) {
+                textes.push(actualText);
+            }
+            continue;
+        }
+        if (node.nodeType === 1) { // ELEMENT_NODE
+            if (node.childNodes) {
+                for (let i = node.childNodes.length - 1; i >= 0; i--) {
+                    stack.push(node.childNodes[i]);
+                }
+            }
+        }
+    }
+    // Filtering and parsing as in user's parseFromString
+    const whitelist = ["(sunny)", "(rainy)", "(snowy)", "sunny form", "rainy form", "snowy form"];
+    const blackListedKeywords = ["some trainers", "the following", "appearing", "lucky, you m", " tms", "and more", "wild encounters", "sunny", "event-themed", "rainy", "snow", "partly cloudy", "cloudy", "windy", "fog", "will be available"];
+    const parsedPokemon = textes.filter(t => t !== "All" && t.split(" ").length <= 10 && (whitelist.some(k => t.toLocaleLowerCase().includes(k)) || !blackListedKeywords.some(k => t.toLocaleLowerCase().includes(k))));
+
+    // Detect shiny phrase in the text
+    const shinyPhraseRegex = /if you[’'`]?re lucky[^\n]*shiny/i;
+    const shinyByPhrase = textes.some(t => shinyPhraseRegex.test(t));
+
+    // Mark shiny by asterisk or by phrase
+    const results = matcher.matchPokemonFromText(parsedPokemon);
+    return results.map((entry, idx) => {
+        const originalText = parsedPokemon[idx] || '';
+        const isAsterisk = /\*$/.test(originalText.trim());
+        return {
+            ...entry,
+            shiny: isAsterisk || shinyByPhrase
+        };
+    });
 } 

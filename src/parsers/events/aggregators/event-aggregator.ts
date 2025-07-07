@@ -77,8 +77,23 @@ export class EventAggregator implements IEventAggregator {
     }
 
     private hasPokemonOverlap(event1: IParsedEvent, event2: IParsedEvent): boolean {
-        const pokemon1 = new Set(event1.pokemon.map(p => p.speciesId));
-        const pokemon2 = new Set(event2.pokemon.map(p => p.speciesId));
+        const allPokemon1 = [
+            ...(event1.wild || []),
+            ...(event1.raids || []),
+            ...(event1.eggs || []),
+            ...(event1.research || []),
+            ...(event1.incenses || [])
+        ];
+        const allPokemon2 = [
+            ...(event2.wild || []),
+            ...(event2.raids || []),
+            ...(event2.eggs || []),
+            ...(event2.research || []),
+            ...(event2.incenses || [])
+        ];
+        
+        const pokemon1 = new Set(allPokemon1.map(p => p.speciesId));
+        const pokemon2 = new Set(allPokemon2.map(p => p.speciesId));
         
         const intersection = new Set([...pokemon1].filter(x => pokemon2.has(x)));
         const union = new Set([...pokemon1, ...pokemon2]);
@@ -101,7 +116,6 @@ export class EventAggregator implements IEventAggregator {
             subtitle: this.mergeSubtitles(events.map(e => e.subtitle).filter((s): s is string => Boolean(s))),
             startDate: Math.min(...events.map(e => e.startDate)),
             endDate: Math.max(...events.map(e => e.endDate)),
-            pokemon: this.mergePokemon(events.map(e => e.pokemon)),
             bonuses: this.mergeBonuses(events.map(e => e.bonuses).filter((b): b is string[] => Boolean(b))),
             categories: this.mergeCategories(events.map(e => e.categories)),
             metadata: {
@@ -128,7 +142,14 @@ export class EventAggregator implements IEventAggregator {
         if (event.subtitle) score += 1;
         if (event.description) score += 1;
         if (event.imageUrl) score += 1;
-        if (event.pokemon.length > 0) score += event.pokemon.length;
+        const allPokemon = [
+            ...(event.wild || []),
+            ...(event.raids || []),
+            ...(event.eggs || []),
+            ...(event.research || []),
+            ...(event.incenses || [])
+        ];
+        if (allPokemon.length > 0) score += allPokemon.length;
         if (event.bonuses && event.bonuses.length > 0) score += event.bonuses.length;
         if (event.categories.length > 0) score += event.categories.length;
 
@@ -149,28 +170,6 @@ export class EventAggregator implements IEventAggregator {
         // Combine unique subtitles
         const uniqueSubtitles = [...new Set(subtitles)];
         return uniqueSubtitles.join(' / ');
-    }
-
-    private mergePokemon(allPokemon: any[][]): any[] {
-        const merged = new Map<string, any>();
-        
-        for (const pokemonList of allPokemon) {
-            for (const pokemon of pokemonList) {
-                const key = `${pokemon.speciesId}-${pokemon.category}`;
-                if (!merged.has(key)) {
-                    merged.set(key, pokemon);
-                } else {
-                    // Merge shiny information
-                    const existing = merged.get(key)!;
-                    merged.set(key, {
-                        ...existing,
-                        shiny: existing.shiny || pokemon.shiny
-                    });
-                }
-            }
-        }
-
-        return Array.from(merged.values());
     }
 
     private mergeBonuses(allBonuses: string[][]): string[] | undefined {

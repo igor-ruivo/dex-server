@@ -20,8 +20,7 @@ export const normalizeSpeciesNameForId = (speciesName: string): string => {
     return speciesName
         .replaceAll("-", "_")
         .replaceAll(". ", "_")
-        .replaceAll("'", "")
-        .replaceAll("'", "")
+        .replaceAll(/[’‘‛′'`]/g, "")
         .replaceAll(" ", "_")
         .replaceAll(" (jr)", "_jr")
         .replaceAll('♂', '_male')
@@ -31,7 +30,8 @@ export const normalizeSpeciesNameForId = (speciesName: string): string => {
 export const ndfNormalized = (str: string): string => {
     return str
         .toLocaleLowerCase()
-        .replaceAll("'", "'")
+        .replaceAll(/[’‘‛′`]/g, "'")
+        .replaceAll("'", "")
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
 };

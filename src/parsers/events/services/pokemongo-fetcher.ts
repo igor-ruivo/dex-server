@@ -8,8 +8,8 @@ export interface PokemonGoPost {
 }
 
 export class PokemonGoFetcher {
-    private baseUrl = 'https://pokemongolive.com';
-    private newsUrl = 'https://pokemongolive.com/news';
+    private baseUrl = 'https://pokemongo.com';
+    private newsUrl = 'https://pokemongo.com/news';
 
     public async fetchAllPosts(): Promise<PokemonGoPost[]> {
         try {
@@ -17,11 +17,10 @@ export class PokemonGoFetcher {
             const postLinks = this.extractPostLinks(newsPageHtml);
             const postPromises = postLinks.map(async (link) => {
                 try {
-                    const html = await this.fetchPage(link.url);
+                    const html = await this.fetchPage(link);
                     return {
-                        url: link.url,
-                        title: link.title,
-                        type: this.determinePostType(link.url, link.title),
+                        url: link,
+                        type: this.determinePostType(link),
                         html
                     };
                 } catch (error) {
@@ -41,7 +40,7 @@ export class PokemonGoFetcher {
         // Always fetch the real HTML from the live site
         let fullUrl = url;
         if (url.startsWith('/')) {
-            fullUrl = this.baseUrl + url;
+            fullUrl = this.baseUrl + '/' + url;
         }
         const response = await fetch(fullUrl, {
             headers: {
@@ -57,8 +56,8 @@ export class PokemonGoFetcher {
         return text;
     }
 
-    private extractPostLinks(html: string): Array<{ url: string; title: string }> {
-        const links: Array<{ url: string; title: string }> = [];
+    private extractPostLinks(html: string): Array<string> {
+        const links: Array<string> = [];
         const dom = new JSDOM(html);
         const document = dom.window.document;
         // Select all <a> elements with href containing /en/post/ or /news/
@@ -69,37 +68,27 @@ export class PokemonGoFetcher {
         });
         filteredLinks.forEach((a: Element) => {
             let url = a.getAttribute('href') || '';
-            if (url.startsWith('/')) url = 'https://pokemongolive.com' + url;
-            if (!url.startsWith('http')) url = 'https://pokemongolive.com/' + url.replace(/^\//, '');
-            // Try to extract the title from a heading inside the card
-            let title = 'Untitled';
-            const heading = a.querySelector('div, span, h1, h2, h3, h4, h5, h6');
-            if (heading && heading.textContent) {
-                title = heading.textContent.trim();
-            } else if (a.textContent) {
-                title = a.textContent.trim();
-            }
-            if (!links.some(link => link.url === url) &&
-                !title.toLowerCase().includes('season') &&
-                !title.toLowerCase().includes('welcome to ')) {
-                links.push({ url, title });
+            if (url.startsWith('/')) url = this.baseUrl + url;
+            if (!url.startsWith('http')) url = this.baseUrl + '/' + url.replace(/^\//, '');
+           
+            if (!links.some(link => link === url)) {
+                links.push(url);
+
+                const ptBRCounterpart = url.includes('/en/') ? url.replaceAll('/en/', '/pt_BR/') : url.replaceAll('/news/', '/pt_BR/news/');
+                links.push(ptBRCounterpart);
             }
         });
         // Debug: print all extracted links
-        console.log('Extracted event links:', links.map(l => l.url + ' | ' + l.title));
-        return links.slice(0, 32);
+        console.log('Extracted event links:', links);
+        return links;
     }
 
-    private determinePostType(url: string, title: string): 'post' | 'news' | 'season' | 'other' {
+    private determinePostType(url: string): 'post' | 'news' | 'season' | 'other' {
         if (url.includes('/post/')) {
             return 'post';
         }
         if (url.includes('/news/')) {
             return 'news';
-        }
-        if (title.toLowerCase().includes('season') || 
-            title.toLowerCase().includes('welcome to ')) {
-            return 'season';
         }
         return 'other';
     }
@@ -107,8 +96,8 @@ export class PokemonGoFetcher {
     public async fetchSinglePost(url: string): Promise<PokemonGoPost | null> {
         try {
             const html = await this.fetchPage(url);
-            const title = this.extractTitle(html);
-            const type = this.determinePostType(url, title);
+            const title = this.extractTitle(url, html);
+            const type = this.determinePostType(url);
             
             return {
                 url,
@@ -121,19 +110,16 @@ export class PokemonGoFetcher {
         }
     }
 
-    private extractTitle(html: string): string {
-        const titleSelectors = [
-            /<h1[^>]*>([^<]+)<\/h1>/i,
-            /<title[^>]*>([^<]+)<\/title>/i,
-            /<meta[^>]+property="og:title"[^>]+content="([^"]+)"/i,
-            /<meta[^>]+name="title"[^>]+content="([^"]+)"/i
-        ];
-        
-        for (const selector of titleSelectors) {
-            const match = html.match(selector);
-            if (match) {
-                return match[1].trim();
-            }
+    private extractTitle(url: string, html: string): string {
+        const dom = new JSDOM(html);
+        const document = dom.window.document;
+
+        if (url.includes('/news/')) {
+            return Array.from(document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') || []).filter(a => Array.from(a.classList).some(c => c.includes('_title_')))[0].textContent || '';
+        }
+
+        if (url.includes('/post/')) {
+            return document.querySelectorAll('h2.blogPost__title')[0].textContent || '';
         }
         
         return 'Untitled';

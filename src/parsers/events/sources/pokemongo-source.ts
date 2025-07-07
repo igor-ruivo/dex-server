@@ -67,14 +67,13 @@ interface EventBlock {
 
 export class PokemonGoSource implements IEventSource {
     public name = 'pokemongo';
-    public baseUrl = 'https://pokemongolive.com';
     private fetcher: PokemonGoFetcher;
 
     constructor() {
         this.fetcher = new PokemonGoFetcher();
     }
 
-    public async parseEvents(html: string, gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]> {
+    public async parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]> {
         try {
             const posts = await this.fetcher.fetchAllPosts();
             

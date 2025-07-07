@@ -46,8 +46,7 @@ export interface IParsedEvent {
 
 export interface IEventSource {
     name: string;
-    baseUrl: string;
-    parseEvents(html: string, gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
+    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
 }
 
 export interface IEventMatcher {

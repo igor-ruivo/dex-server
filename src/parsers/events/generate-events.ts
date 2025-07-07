@@ -30,7 +30,7 @@ async function generateEvents(gameMasterData: GameMasterData) {
     // Parse all events
     console.log('📰 Fetching and parsing Pokemon GO events...');
     const source = new PokemonGoSource();
-    const events = await source.parseEvents('', gameMaster);
+    const events = await source.parseEvents(gameMaster);
     
     // Calculate statistics
     const totalBonuses = events.reduce((sum, event) => sum + (event.bonuses?.length || 0), 0);

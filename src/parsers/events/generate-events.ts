@@ -2,7 +2,6 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PokemonGoSource } from './sources/pokemongo-source';
 import { GameMasterParser } from '../game-master-parser';
-import { IParsedEvent } from '../../types/events';
 
 interface EventsData {
   events: any[];
@@ -46,14 +45,8 @@ async function generateEvents() {
     
     // Remove any raw HTML or originalPost fields from events
     const publicEvents = events.map(event => {
-      const { metadata, ...rest } = event;
-      // Remove originalPost and any html from metadata
-      let cleanMetadata = {};
-      if (metadata && typeof metadata === 'object') {
-        cleanMetadata = Object.fromEntries(Object.entries(metadata).filter(([k]) => k !== 'originalPost' && k !== 'html'));
-      }
       // Remove any html fields at the top level if present
-      const eventCopy = { ...rest };
+      const eventCopy = { ...event };
       if ('html' in eventCopy) {
         delete (eventCopy as any).html;
       }

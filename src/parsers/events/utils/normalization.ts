@@ -208,26 +208,37 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
     // Remove weekday at start
     date = date.replace(/^[A-Za-z]+day,\s*/, '');
 
-    // Special handling for multi-day time ranges: "June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m."
+    // Special handling for multi-day time ranges: handle both old and new formats
     if (date.includes(' and ') && date.includes(' from ') && date.includes(' to ')) {
-        const andMatch = date.match(/([A-Za-z]+ \d{1,2}), and [A-Za-z]+day, ([A-Za-z]+ \d{1,2}, \d{4}),? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);
-        if (andMatch) {
-            const startDate = andMatch[1] + ', 2025';
-            const endDate = andMatch[2];
-            const startTime = andMatch[3];
-            const endTime = andMatch[4];
+        // Much more flexible regex to handle various formats:
+        // 'Saturday, July 5, and Sunday, July 6, 2025 from 2:00 p.m. to 5:00 p.m. local time.'
+        // 'June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m.'
+        // 'Saturday, June 28, and Sunday, June 29, 2025, from 10:00 a.m. to 6:00 p.m.'
+        // 'Saturday, July 5, and Sunday, July 6, 2025 from 2:00 p.m. to 5:00 p.m. local time.'
+        const multiDayMatch = date.match(/([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);
+        if (multiDayMatch && multiDayMatch[1] && multiDayMatch[2] && multiDayMatch[4] && multiDayMatch[5]) {
+            let year = multiDayMatch[3] || '2025';
+            let startDate = multiDayMatch[1] + ', ' + year;
+            let endDate = multiDayMatch[2] + ', ' + year;
+            const startTime = multiDayMatch[4];
+            const endTime = multiDayMatch[5];
             
-            // Create two separate ranges - one for each day
-            const day1Start = parseSide(startDate + ', at ' + startTime);
-            const day1End = parseSide(startDate + ', at ' + endTime);
-            const day2Start = parseSide(endDate + ', at ' + startTime);
-            const day2End = parseSide(endDate + ', at ' + endTime);
-            
-            if (!isNaN(day1Start) && !isNaN(day1End) && !isNaN(day2Start) && !isNaN(day2End)) {
-                return [
-                    { start: day1Start, end: day1End },
-                    { start: day2Start, end: day2End }
-                ];
+            // Add null checks before calling parseSide
+            if (startDate && endDate && startTime && endTime) {
+                const day1Start = parseSide(startDate + ', at ' + startTime);
+                const day1End = parseSide(startDate + ', at ' + endTime);
+                const day2Start = parseSide(endDate + ', at ' + startTime);
+                const day2End = parseSide(endDate + ', at ' + endTime);
+                if (!isNaN(day1Start) && !isNaN(day1End) && !isNaN(day2Start) && !isNaN(day2End)) {
+                    return [
+                        { start: day1Start, end: day1End },
+                        { start: day2Start, end: day2End }
+                    ];
+                }
+            }
+        } else {
+            if (typeof console !== 'undefined' && console.warn) {
+                console.warn('[parseEventDateRange] Multi-day date string did not match or had missing groups:', date, multiDayMatch);
             }
         }
     }
@@ -256,12 +267,14 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
     }
     // Parse each side
     function parseSide(side: string): number {
+        if (!side || typeof side !== 'string') return NaN;
+        
         side = fixDateString(side.trim());
         // Remove weekday if still present
         side = side.replace(/^[A-Za-z]+day,\s*/, '');
         // Find year
         let year = new Date().getFullYear();
-        let yearMatch = side.match(/, (\d{4})/);
+        const yearMatch = side.match(/, (\d{4})/);
         if (yearMatch) {
             year = Number(yearMatch[1]);
             side = side.replace(', ' + year, '');
@@ -287,10 +300,10 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
             }
         }
         // Remove time for date parsing
-        let datePart = side.split(', at')[0];
+        const datePart = side.split(', at')[0];
         // Parse month and day
-        let [month, day] = datePart.trim().split(' ');
-        day = day?.replace(',', '');
+        const month = datePart.trim().split(' ')[0];
+        const day = datePart.trim().split(' ')[1]?.replace(',', '');
         const monthIdx = toMonthIndex(month);
         if (monthIdx === -1 || !day) return NaN;
         return new Date(year, monthIdx, Number(day), hour, minute).valueOf();
@@ -348,13 +361,13 @@ export function parseMultiDayEvent(date: string): Array<{ start: number, end: nu
         side = side.replace(/^[A-Za-z]+day,\s*/, '');
         // Find year
         let year = new Date().getFullYear();
-        let yearMatch = side.match(/, (\d{4})/);
+        const yearMatch = side.match(/, (\d{4})/);
         if (yearMatch) {
             year = Number(yearMatch[1]);
             side = side.replace(', ' + year, '');
         }
         // Find time
-        let timeMatch = side.match(/, at (\d{1,2}):(\d{2}) ([ap]m)/i);
+        const timeMatch = side.match(/, at (\d{1,2}):(\d{2}) ([ap]m)/i);
         let hour = 0, minute = 0;
         if (timeMatch) {
             hour = Number(timeMatch[1]);
@@ -364,10 +377,10 @@ export function parseMultiDayEvent(date: string): Array<{ start: number, end: nu
             if (ampm === 'am' && hour === 12) hour = 0;
         }
         // Remove time for date parsing
-        let datePart = side.split(', at')[0];
+        const datePart = side.split(', at')[0];
         // Parse month and day
-        let [month, day] = datePart.trim().split(' ');
-        day = day?.replace(',', '');
+        const month = datePart.trim().split(' ')[0];
+        const day = datePart.trim().split(' ')[1].replace(',', '');
         const monthIdx = toMonthIndex(month);
         if (monthIdx === -1 || !day) return NaN;
         return new Date(year, monthIdx, Number(day), hour, minute).valueOf();

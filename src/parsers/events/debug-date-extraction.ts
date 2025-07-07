@@ -1,14 +1,10 @@
 import { PokemonGoSource } from './sources/pokemongo-source';
-import { GameMasterParser } from '../game-master-parser';
+import { JSDOM } from 'jsdom';
 
 async function debugDateExtraction() {
     console.log('🔍 Debugging date extraction...');
     
     try {
-        // Load game master data
-        const gameMasterParser = new GameMasterParser();
-        const gameMasterData = await gameMasterParser.parse();
-        
         // Create source and fetcher
         const source = new PokemonGoSource();
         const fetcher = (source as any).fetcher;
@@ -29,7 +25,7 @@ async function debugDateExtraction() {
             
             if (dateStrings.length === 0) {
                 console.log('\n=== Debugging HTML Structure ===');
-                const dom = new (require('jsdom').JSDOM)(individualPost.html);
+                const dom = new JSDOM(individualPost.html);
                 const document = dom.window.document;
                 
                 // Check if blogPost__post__blocks exists

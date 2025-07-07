@@ -64,8 +64,6 @@ export const BLACKLISTED_KEYWORDS = [
     "will be available"
 ];
 
-export const CORS_PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
-
 export const POKEMON_OVERRIDES: Record<string, string> = {
     'palkida': 'palkia',
     'darmanitan': 'darmanitan_standard',

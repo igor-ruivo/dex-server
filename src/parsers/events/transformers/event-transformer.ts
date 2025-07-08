@@ -22,20 +22,6 @@ export class EventTransformer implements IEventTransformer {
             .substring(0, 200); // Limit length
     }
 
-    private generateDescription(event: IParsedEvent): string {
-        const parts: string[] = [];
-
-        if (event.subtitle) {
-            parts.push(event.subtitle);
-        }
-
-        if (event.bonuses && event.bonuses.length > 0) {
-            parts.push(`Includes ${event.bonuses.length} bonus(es)`);
-        }
-
-        return parts.join('. ');
-    }
-
     private normalizeBonuses(bonuses?: string[]): string[] | undefined {
         if (!bonuses || bonuses.length === 0) {
             return undefined;

@@ -5,7 +5,6 @@
   "main": "generate-data.ts",
   "scripts": {
     "generate": "ts-node generate-data.ts",
-    "compare": "ts-node compare-data.ts",
     "lint": "eslint . --ext .ts",
     "build": "tsc"
   },

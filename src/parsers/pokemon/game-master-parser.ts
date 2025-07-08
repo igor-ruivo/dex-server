@@ -2,13 +2,13 @@ import {
   BasePokemon, 
   GameMasterPokemon, 
   GameMasterData 
-} from '../types/pokemon';
+} from '../../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
 import { PokemonValidator } from './utils/pokemon-validator';
 import { PokemonTransformer } from './utils/pokemon-transformer';
 import { ImageUrlBuilder } from './utils/image-url-builder';
-import { DataFetcher, HttpDataFetcher } from './services/data-fetcher';
+import { DataFetcher, HttpDataFetcher } from '../services/data-fetcher';
 
 export class GameMasterParser {
   private readonly dataFetcher: DataFetcher;
@@ -146,4 +146,4 @@ export class GameMasterParser {
   }
 }
 
-export { GameMasterData } from '../types/pokemon'; 
+export { GameMasterData } from '../../types/pokemon'; 

@@ -1,4 +1,4 @@
-import { BasePokemon } from '../../types/pokemon';
+import { BasePokemon } from '../../../types/pokemon';
 import { POKEMON_CONFIG } from '../config/pokemon-config';
 
 export class PokemonValidator {

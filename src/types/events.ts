@@ -57,10 +57,6 @@ export interface IEventSource {
     parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
 }
 
-export interface IEventMatcher {
-    matchPokemon(pokemonName: string, gameMasterPokemon: Record<string, GameMasterPokemon>): string | null;
-}
-
 export interface IEventValidator {
     validateEvent(event: IParsedEvent): boolean;
 }

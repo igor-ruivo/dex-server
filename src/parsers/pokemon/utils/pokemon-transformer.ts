@@ -1,4 +1,4 @@
-import { PokemonTypes, PokemonForms } from '../../types/pokemon';
+import { PokemonTypes, PokemonForms } from '../../../types/pokemon';
 import { POKEMON_CONFIG } from '../config/pokemon-config';
 
 export class PokemonTransformer {

@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { GameMasterParser, GameMasterData } from './src/parsers/game-master-parser';
+import { GameMasterParser, GameMasterData } from './src/parsers/pokemon/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
 import { PublicEvent } from './src/types/events';
 

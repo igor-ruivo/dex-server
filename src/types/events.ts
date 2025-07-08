@@ -56,11 +56,3 @@ export interface IEventSource {
     name: string;
     parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
 }
-
-export interface IEventValidator {
-    validateEvent(event: IParsedEvent): boolean;
-}
-
-export interface IEventTransformer {
-    transformEvent(event: IParsedEvent): IParsedEvent;
-} 

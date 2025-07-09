@@ -2,6 +2,7 @@ import { IEntry } from '../../../types/events';
 import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
+import { parseDateFromString } from '../../utils/normalization';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -18,7 +19,7 @@ export interface ILeekduckEvent {
     rawUrl?: string;
 }
 
-export class LeekduckEventsParser {
+export class EventsParser {
     async parse(gameMasterPokemon: Record<string, any>): Promise<ILeekduckEvent[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_EVENTS_URL);
@@ -55,8 +56,9 @@ export class LeekduckEventsParser {
         const title = htmlDoc.getElementsByClassName('page-title')[0]?.textContent?.replace(/\s/g, ' ').trim() ?? '';
         const dateCont = (htmlDoc.getElementById('event-date-start')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-start')?.textContent?.trim()).replaceAll('  ', ' ');
         const endCont = (htmlDoc.getElementById('event-date-end')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-end')?.textContent?.trim()).replaceAll('  ', ' ');
-        const date = Date.parse(dateCont);
-        const dateEnd = Date.parse(endCont);
+        
+        const date = parseDateFromString(dateCont);
+        const dateEnd = parseDateFromString(endCont);
         if (!title || !date || !dateEnd) {
             return { title: '', date: 0, dateEnd: 0 };
         }

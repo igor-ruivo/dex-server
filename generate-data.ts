@@ -2,10 +2,10 @@ import fs from 'fs/promises';
 import path from 'path';
 import { GameMasterParser } from './src/parsers/pokemon/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
-import { LeekduckEventsParser } from './src/parsers/events/providers/leekduck/LeekduckEventsParser';
-import { LeekduckBossesParser } from './src/parsers/events/providers/leekduck/LeekduckBossesParser';
-import { LeekduckEggsParser } from './src/parsers/events/providers/leekduck/LeekduckEggsParser';
-import { LeekduckRocketLineupsParser } from './src/parsers/events/providers/leekduck/LeekduckRocketLineupsParser';
+import { EventsParser } from './src/parsers/events/providers/leekduck/EventsParser';
+import { BossesParser } from './src/parsers/events/providers/leekduck/BossesParser';
+import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
+import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/RocketLineupsParser';
 import { IRocketGrunt, IEntry, ISpotlightHourEvent, ILeekduckSpecialRaidBossEvent } from './src/parsers/types/events';
 
 
@@ -27,10 +27,10 @@ const generateData = async () => {
     // const seasonDomain = Object.values(pokemonDictionary).filter(p => !p.isShadow && !p.isMega && !p.aliasId); // Unused, remove to fix linter error
     
     // Step 3: LeekDuck integration
-    const leekduckEventsParser = new LeekduckEventsParser();
-    const leekduckBossesParser = new LeekduckBossesParser();
-    const leekduckEggsParser = new LeekduckEggsParser();
-    const leekduckRocketLineupsParser = new LeekduckRocketLineupsParser();
+    const leekduckEventsParser = new EventsParser();
+    const leekduckBossesParser = new BossesParser();
+    const leekduckEggsParser = new EggsParser();
+    const leekduckRocketLineupsParser = new RocketLineupsParser();
 
     // Fetch LeekDuck events (Spotlight Hour and raid events)
     const leekduckEvents = await leekduckEventsParser.parse(pokemonDictionary);

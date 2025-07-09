@@ -5,7 +5,7 @@ import { JSDOM } from 'jsdom';
 
 const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 
-export class LeekduckEggsParser {
+export class EggsParser {
     async parse(gameMasterPokemon: Record<string, any>): Promise<IEntry[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_EGGS_URL);

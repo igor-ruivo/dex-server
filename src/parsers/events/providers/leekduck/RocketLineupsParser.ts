@@ -5,7 +5,7 @@ import { JSDOM } from 'jsdom';
 
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 
-export class LeekduckRocketLineupsParser {
+export class RocketLineupsParser {
     async parse(gameMasterPokemon: Record<string, any>): Promise<IRocketGrunt[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_ROCKET_URL);

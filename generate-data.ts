@@ -3,6 +3,7 @@ import path from 'path';
 import { GameMasterParser, GameMasterData } from './src/parsers/pokemon/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
 import { PublicEvent } from './src/parsers/types/events';
+import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
 
 interface RaidBoss {
   name: string;
@@ -37,6 +38,11 @@ const generateData = async () => {
     
     // Step 2: Generate events data using the fresh Game Master data
     const eventsData = await generateEvents(pokemonDictionary);
+
+    // Step 2.5: Generate season data using the fresh Game Master data
+    // Reuse the getDomains logic from PokemongoSource
+    const seasonDomain = Object.values(pokemonDictionary).filter(p => !p.isShadow && !p.isMega && !p.aliasId);
+    const seasonData = await fetchSeasonData(pokemonDictionary, seasonDomain);
     
     // Step 3: Save Game Master data to disk (after events are generated)
     const dataDir = path.join(process.cwd(), 'data');
@@ -44,6 +50,11 @@ const generateData = async () => {
     const gameMasterPath = path.join(dataDir, 'game-master.json');
     await fs.writeFile(gameMasterPath, JSON.stringify(pokemonDictionary, null, 2));
     console.log(`✅ Game Master data written to: ${gameMasterPath}`);
+
+    // Write season data file
+    const seasonPath = path.join(dataDir, 'season.json');
+    await fs.writeFile(seasonPath, JSON.stringify(seasonData, null, 2));
+    console.log(`✅ Season data written to: ${seasonPath}`);
     
     // Create aggregated data
     const data: AggregatedData = {
@@ -112,12 +123,12 @@ const generateData = async () => {
     console.log('- data/raid-bosses.json');
     console.log('- data/game-master.json');
     console.log('- data/metadata.json');
+    console.log('- data/season.json');
     console.log('');
     console.log(`⏰ Last updated: ${now}`);
     console.log(`📊 Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
     console.log('');
     console.log('💡 Note: These files will be committed by GitHub Actions');
-    
   } catch (error) {
     console.error('❌ Data generation failed:', error);
     process.exit(1);
@@ -129,4 +140,4 @@ if (require.main === module) {
   generateData();
 }
 
-export { generateData }; 
+export { generateData };

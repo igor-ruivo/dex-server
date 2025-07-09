@@ -190,6 +190,11 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
     // Remove weekday at start
     date = date.replace(/^[A-Za-z]+day,\s*/, '');
 
+    // --- Patch: Normalize hyphens (– or -) to ' to ' for season date strings ---
+    if (!date.includes(' to ')) {
+        date = date.replace(/[\u2013\u2014\u2012\u2011\u2010-]/g, 'to ');
+    }
+
     // Special handling for multi-day time ranges: handle both old and new formats
     if (date.includes(' and ') && date.includes(' from ') && date.includes(' to ')) {
         const multiDayMatch = date.match(/([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);

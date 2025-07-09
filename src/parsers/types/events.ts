@@ -7,26 +7,6 @@ export interface IEntry {
     comment?: string;
 }
 
-export interface IPostEntry {
-    title: string;
-    subtitle?: string;
-    imgUrl?: string;
-    date: number;
-    dateEnd?: number;
-    raids?: IEntry[];
-    wild?: IEntry[];
-    incenses?: IEntry[];
-    bonuses?: string;
-    researches?: IEntry[];
-    eggs?: IEntry[];
-    isSeason?: boolean;
-    comment?: string;
-    spotlightPokemons?: IEntry[];
-    spotlightBonus?: string;
-    isRelevant?: boolean;
-    rawUrl?: string;
-}
-
 export interface IParsedEvent {
     id: string;
     url: string;
@@ -40,10 +20,11 @@ export interface IParsedEvent {
     wild?: IEntry[];
     raids?: IEntry[];
     eggs?: IEntry[];
-    research?: IEntry[];
+    researches?: IEntry[];
     incenses?: IEntry[];
     bonuses?: string[];
     isEnglishVersion: boolean;
+    isSeason?: boolean;
 }
 
 export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'isEnglishVersion'> & {
@@ -87,7 +68,7 @@ export interface EventData {
   raids: IEntry[];
   wild: IEntry[];
   eggs: IEntry[];
-  research: IEntry[];
+  researches: IEntry[];
   incenses: IEntry[];
 }
 

@@ -90,7 +90,7 @@ const buildEventObject = (
         wild: parsedContent.wild,
         raids: parsedContent.raids,
         eggs: parsedContent.eggs,
-        research: parsedContent.research,
+        researches: parsedContent.researches,
         incenses: parsedContent.incenses,
         bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined,
         isEnglishVersion: !post.url.toLocaleLowerCase().includes(LANGUAGE_PT_BR)
@@ -185,7 +185,7 @@ export class PokemonGoSource implements IEventSource {
             return;
         }
         if (EVENT_SECTION_TYPES.RESEARCH.some(x => x === sectionType)) {
-            eventData.research.push(...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domains.researchDomain)));
+            eventData.researches.push(...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domains.researchDomain)));
             return;
         }
         if (EVENT_SECTION_TYPES.RAIDS.some(x => x === sectionType)) {
@@ -212,7 +212,7 @@ export class PokemonGoSource implements IEventSource {
         const raids: IEntry[] = [];
         const wild: IEntry[] = [];
         const eggs: IEntry[] = [];
-        const research: IEntry[] = [];
+        const researches: IEntry[] = [];
         const incenses: IEntry[] = [];
         const bonusesArr: string[] = [];
         for (const sectionElement of sectionElements) {
@@ -232,10 +232,10 @@ export class PokemonGoSource implements IEventSource {
                 }
                 continue;
             }
-            this.processEventSection(sectionType, sectionBodies, { raids, wild, eggs, research, incenses }, gameMasterPokemon, { wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain });
+            this.processEventSection(sectionType, sectionBodies, { raids, wild, eggs, researches, incenses }, gameMasterPokemon, { wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain });
         }
         return {
-            raids, wild, eggs, research, incenses, bonuses: bonusesArr
+            raids, wild, eggs, researches, incenses, bonuses: bonusesArr
         };
     };
 

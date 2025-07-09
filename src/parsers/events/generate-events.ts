@@ -25,7 +25,7 @@ const generateEvents = async (gameMasterData: GameMasterData) => {
         (event.bonuses && event.bonuses.length > 0) ||
         (event.wild && event.wild.length > 0) ||
         (event.raids && event.raids.length > 0) ||
-        (event.research && event.research.length > 0) ||
+        (event.researches && event.researches.length > 0) ||
         (event.eggs && event.eggs.length > 0) ||
         (event.incenses && event.incenses.length > 0)
       ) && event.dateRanges && event.dateRanges.length > 0;
@@ -56,7 +56,7 @@ const generateEvents = async (gameMasterData: GameMasterData) => {
       wild: event.wild,
       raids: event.raids,
       eggs: event.eggs,
-      research: event.research,
+      researches: event.researches,
       incenses: event.incenses,
       bonuses: {
         en: event.bonuses,

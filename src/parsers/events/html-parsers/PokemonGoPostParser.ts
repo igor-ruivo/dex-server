@@ -1,4 +1,4 @@
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser, PokemonGoPostKind } from "../../../types/events";
+import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../types/events";
 import { JSDOM } from 'jsdom';
 
 class PokemonGoPostParser implements IPokemonGoHtmlParser {
@@ -6,10 +6,8 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
 
     constructor(html: string) {
         const dom = new JSDOM(html);
-        this.document = dom.window.document
-    };
-
-    getKind = () => PokemonGoPostKind.Post;
+        this.document = dom.window.document;
+    }
 
     getTitle = () => this.document.querySelectorAll('h2.blogPost__title')[0]?.textContent ?? '';
 

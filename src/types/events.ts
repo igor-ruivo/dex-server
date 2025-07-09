@@ -70,8 +70,33 @@ export interface IPokemonGoEventBlockParser {
 }
 
 export interface IPokemonGoHtmlParser {
-    getKind: () => PokemonGoPostKind;
     getTitle: () => string;
     getImgUrl: () => string;
     getSubEvents: () => Array<IPokemonGoEventBlockParser>;
+}
+
+export interface Domains {
+  wildDomain: GameMasterPokemon[];
+  raidDomain: GameMasterPokemon[];
+  eggDomain: GameMasterPokemon[];
+  researchDomain: GameMasterPokemon[];
+  incenseDomain: GameMasterPokemon[];
+}
+
+export interface EventData {
+  raids: IEntry[];
+  wild: IEntry[];
+  eggs: IEntry[];
+  research: IEntry[];
+  incenses: IEntry[];
+}
+
+export type EventBlock = EventData & {
+  bonuses: string[];
+}
+
+export interface PokemonGoPost {
+    url: string;
+    type: 'post' | 'news';
+    html: string;
 }

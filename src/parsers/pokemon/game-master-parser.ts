@@ -8,12 +8,12 @@ import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
 import { PokemonValidator } from './utils/pokemon-validator';
 import { PokemonTransformer } from './utils/pokemon-transformer';
 import { ImageUrlBuilder } from './utils/image-url-builder';
-import { DataFetcher, HttpDataFetcher } from '../services/data-fetcher';
+import { IDataFetcher, HttpDataFetcher } from '../services/data-fetcher';
 
 export class GameMasterParser {
-  private readonly dataFetcher: DataFetcher;
+  private readonly dataFetcher: IDataFetcher;
 
-  constructor(dataFetcher: DataFetcher = new HttpDataFetcher()) {
+  constructor(dataFetcher: IDataFetcher = new HttpDataFetcher()) {
     this.dataFetcher = dataFetcher;
   }
 
@@ -21,7 +21,7 @@ export class GameMasterParser {
     console.log('🔄 Fetching Pokemon Game Master data...');
     
     try {
-      const rawData = await this.dataFetcher.fetch<BasePokemon[]>(POKEMON_CONFIG.SOURCE_URL);
+      const rawData = await this.dataFetcher.fetchJson<BasePokemon[]>(POKEMON_CONFIG.SOURCE_URL);
       console.log(`📊 Found ${rawData.length} Pokemon in source data`);
       
       // Combine source data with synthetic Pokemon

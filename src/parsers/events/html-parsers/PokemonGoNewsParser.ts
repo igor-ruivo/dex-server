@@ -1,4 +1,4 @@
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser, PokemonGoPostKind } from "../../../types/events";
+import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../types/events";
 import { JSDOM } from 'jsdom';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
@@ -6,10 +6,8 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 
     constructor(html: string) {
         const dom = new JSDOM(html);
-        this.document = dom.window.document
-    };
-
-    getKind = () => PokemonGoPostKind.News;
+        this.document = dom.window.document;
+    }
 
     getTitle = () => {
         const allArticleNewsDescendants = this.document.querySelector('article[aria-labelledby=news-title]')

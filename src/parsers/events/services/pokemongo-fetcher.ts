@@ -1,11 +1,6 @@
 import { JSDOM } from 'jsdom';
-
-export interface PokemonGoPost {
-    url: string;
-    title: string;
-    type: 'post' | 'news' | 'season' | 'other';
-    html: string;
-}
+import { PokemonGoPost } from '../../../types/events';
+import { HttpDataFetcher } from '../../services/data-fetcher';
 
 export class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
@@ -36,23 +31,14 @@ export class PokemonGoFetcher {
     }
 
     private async fetchPage(url: string): Promise<string> {
-        // Remove static HTML injection for /news/ events
-        // Always fetch the real HTML from the live site
         let fullUrl = url;
         if (url.startsWith('/')) {
             fullUrl = this.baseUrl + '/' + url;
         }
-        const response = await fetch(fullUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.9'
-            }
-        });
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        const text = await response.text();
+
+        const dataFetcher = new HttpDataFetcher();
+
+        const text = await dataFetcher.fetchText(fullUrl);
         return text;
     }
 
@@ -78,50 +64,29 @@ export class PokemonGoFetcher {
                 links.push(ptBRCounterpart);
             }
         });
-        // Debug: print all extracted links
-        console.log('Extracted event links:', links);
         return links;
     }
 
-    private determinePostType(url: string): 'post' | 'news' | 'season' | 'other' {
+    private determinePostType(url: string): 'post' | 'news' {
         if (url.includes('/post/')) {
             return 'post';
         }
-        if (url.includes('/news/')) {
-            return 'news';
-        }
-        return 'other';
+        
+        return 'news';
     }
 
     public async fetchSinglePost(url: string): Promise<PokemonGoPost | null> {
         try {
             const html = await this.fetchPage(url);
-            const title = this.extractTitle(url, html);
             const type = this.determinePostType(url);
             
             return {
                 url,
-                title,
                 type,
                 html
             };
         } catch (error) {
             return null;
         }
-    }
-
-    private extractTitle(url: string, html: string): string {
-        const dom = new JSDOM(html);
-        const document = dom.window.document;
-
-        if (url.includes('/news/')) {
-            return Array.from(document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') || []).filter(a => Array.from(a.classList).some(c => c.includes('_title_')))[0].textContent || '';
-        }
-
-        if (url.includes('/post/')) {
-            return document.querySelectorAll('h2.blogPost__title')[0].textContent || '';
-        }
-        
-        return 'Untitled';
     }
 } 

@@ -1,81 +1,64 @@
-# Pokemon GO Data Generator
+# Pokémon GO Data Generator
 
-A simple data generator that creates Pokemon GO JSON files daily via GitHub Actions.
+## Motivation
 
-## How It Works
+This project provides a robust, extensible, and maintainable pipeline for scraping, normalizing, and aggregating Pokémon GO data (Pokémon, events, forms, etc.) for use in frontend applications and analytics. The goal is to deliver high-quality, up-to-date, and multi-language data.
 
-1. **GitHub Actions** runs daily at 6 AM UTC
-2. **TypeScript script** generates dummy Pokemon GO data with current timestamps
-3. **JSON files** are committed to the repository by the workflow
-4. **Clients** fetch data directly from GitHub
+## Key Features
+- **Multi-provider event scraping** (e.g., official Pokémon GO, LeekDuck, etc.)
+- **Multi-language support** (currently EN and PT/BR, easily extensible)
+- **Unified normalization and matching utilities** for Pokémon names, forms, and event parsing
+- **Extensible architecture**: add new event providers, languages, or normalization logic with minimal effort
 
-## Files Generated
+## Architecture Overview
 
 ```
-data/
-├── aggregated-data.json    # Complete dataset
-├── events.json            # Events only
-├── raid-bosses.json       # Raid bosses only
-├── game-master.json       # Game master data
-└── metadata.json          # System metadata
+/parsers
+  /events
+    /providers
+      /pokemongo
+        PokemongoSource.ts
+        PokemongoFetcher.ts
+        /html-parsers
+    /utils
+      normalization.ts
+      pokemon-matcher.ts
+    /config
+  /pokemon
+    /utils
+      pokemon-transformer.ts
+      image-url-builder.ts
+      pokemon-validator.ts
+    /config
+  /utils
+    normalization.ts   # Shared normalization logic
+  /services
+    data-fetcher.ts
+/types
+  events.ts
+  pokemon.ts
+/data (root)
+  aggregated-data.json
+  events.json
+  game-master.json
+  metadata.json
+  raid-bosses.json
 ```
 
-## Local Testing
+## Extending the Pipeline
 
-```bash
-# Install dependencies
-npm install
+### Adding a New Event Provider
+1. Implement the `IEventSource` interface in `/parsers/events/providers/yourprovider/YourProviderSource.ts`.
+2. Add your provider to the providers array in `generate-events.ts`.
+3. Use the shared normalization utilities for all name and form matching.
 
-# Generate data locally
-npm run generate
-```
+### Adding a New Language
+1. Add the language code to the languages array in `generate-events.ts`.
+2. Ensure your provider supports that language in its parsing logic.
 
-## Client Access
+### Improving Normalization or Matching
+- Update or add to `/parsers/utils/normalization.ts` for any new normalization rules.
+- All event and Pokémon pipelines will automatically use the improved logic.
 
-Fetch JSON files directly from GitHub:
-
-```javascript
-// Raw GitHub URLs
-fetch('https://raw.githubusercontent.com/your-username/your-repo/main/data/aggregated-data.json')
-
-// Or via GitHub Pages (if enabled)
-fetch('https://your-username.github.io/your-repo/data/aggregated-data.json')
-```
-
-## GitHub Actions
-
-The workflow runs:
-- **Daily at 6 AM UTC** (automatically)
-- **Manually** via GitHub Actions UI
-- **On every push** (for testing)
-
-## Data Structure
-
-Each JSON file contains:
-- **Current timestamp** in ISO format
-- **Dummy Pokemon GO data** (events, raid bosses, game master)
-- **Metadata** with version and sources
-
-## Benefits
-
-- ✅ **Zero hosting costs** (GitHub only)
-- ✅ **Always fresh data** (daily updates)
-- ✅ **Version controlled** (full history)
-- ✅ **Simple and reliable** (minimal dependencies)
-- ✅ **Direct file access** (no API needed)
-
-## Setup
-
-1. **Fork this repository**
-2. **Enable GitHub Actions** in your fork
-3. **Push to trigger** the first data generation
-4. **Monitor** the Actions tab for updates
-
-## Architecture
-
-- **Local development**: Files generated in `data/` directory
-- **GitHub Actions**: Runs script, commits files to repo
-- **Client access**: Direct GitHub raw URLs
-- **No hosting needed**: GitHub serves files directly
-
-That's it! Your Pokemon GO data will be updated daily and available via GitHub.
+## License
+MIT

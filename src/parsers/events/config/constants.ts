@@ -1,3 +1,9 @@
+/**
+ * Constants for language codes used in event parsing.
+ */
+export const LANGUAGE_PT_BR = 'pt_br';
+export const LANGUAGE_EN = 'en';
+
 export const KNOWN_FORMS = new Set([
     "Mow",
     "Alolan",

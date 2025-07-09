@@ -1,9 +1,19 @@
-import { MONTHS, POKEMON_OVERRIDES } from '../config/constants';
+/**
+ * Shared normalization utilities for date, string, and Pokémon name normalization.
+ * Used by both event and Pokémon pipelines for consistent parsing and matching.
+ */
+import { MONTHS } from '../config/constants';
 
+/**
+ * Converts a month name to its index (0-based).
+ */
 export const toMonthIndex = (month: string): number => {
     return MONTHS.indexOf(month);
 };
 
+/**
+ * Removes leading and trailing asterisks from a string.
+ */
 export const removeLeadingAndTrailingAsterisks = (plainText: string): string => {
     if (plainText.startsWith('*')) {
         plainText = plainText.substring(1);
@@ -16,27 +26,10 @@ export const removeLeadingAndTrailingAsterisks = (plainText: string): string => 
     return plainText;
 };
 
-export const normalizeSpeciesNameForId = (speciesName: string): string => {
-    return speciesName
-        .replaceAll("-", "_")
-        .replaceAll(". ", "_")
-        .replaceAll("'", "")
-        .replaceAll("’", "")
-        .replaceAll(" ", "_")
-        .replaceAll(" (jr)", "_jr")
-        .replaceAll('♂', '_male')
-        .replaceAll('♀', '_female');
-};
-
-export const ndfNormalized = (str: string): string => {
-    return str
-        .toLocaleLowerCase()
-        .replaceAll(/[’‘‛′`]/g, "'")
-        .replaceAll("'", "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-};
-
+/**
+ * Parses a date string and returns its timestamp (ms since epoch).
+ * Handles a variety of Pokémon GO event date formats.
+ */
 export const fetchDateFromString = (date: string): number => {
     try {
         const trimmedDate = date
@@ -170,27 +163,15 @@ export const fetchDateFromString = (date: string): number => {
     }
 };
 
-export const normalizePokemonName = (pokemonName: string): string => {
-    let normalized = pokemonName
-        .replace("*", "")
-        .replace(" Forme", "")
-        .trim()
-        .replaceAll("(normal)", "")
-        .replaceAll(' cloak', '')
-        .trim();
-
-    // Apply overrides
-    for (const [key, value] of Object.entries(POKEMON_OVERRIDES)) {
-        if (normalized.includes(key)) {
-            normalized = normalized.replace(key, value);
-        }
-    }
-
-    return normalized;
-};
-
+/**
+ * Normalizes a date string for easier parsing (e.g., removes weekday).
+ */
 export const fixDateString = (dateString: string) => dateString.replace(/(\b[A-Za-z]+), (\d{1,2})/, "$1 $2");
 
+/**
+ * Parses a date range string and returns an array of {start, end} timestamps.
+ * Handles multi-day and single-day event formats.
+ */
 export function parseEventDateRange(date: string): Array<{ start: number, end: number }> {
     if (!date) return [];
     // Remove trailing period
@@ -306,7 +287,10 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
     return [{ start, end }];
 }
 
-// New function for multi-day events with multiple time ranges
+/**
+ * Parses a multi-day event date string and returns an array of {start, end} timestamps.
+ * Handles special multi-day formats and falls back to parseEventDateRange.
+ */
 export function parseMultiDayEvent(date: string): Array<{ start: number, end: number }> {
     if (!date) return [];
     // Remove trailing period

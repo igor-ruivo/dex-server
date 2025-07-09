@@ -1,7 +1,14 @@
 import { PokemonTypes, PokemonForms } from '../../types/pokemon';
 import { POKEMON_CONFIG } from '../config/pokemon-config';
 
+/**
+ * Utility for transforming, cleaning, and extracting information from Pokémon data.
+ * Used in the Pokémon pipeline for type, move, and form normalization.
+ */
 export class PokemonTransformer {
+  /**
+   * Transforms an array of type strings into PokemonTypes enums, filtering out 'none'.
+   */
   static transformTypes = (types: string[]): PokemonTypes[] => {
     return types
       .filter(type => type !== 'none')
@@ -12,6 +19,9 @@ export class PokemonTransformer {
       .filter(type => type !== undefined);
   };
 
+  /**
+   * Cleans a list of moves, replacing all hidden powers with 'HIDDEN_POWER' if present.
+   */
   static cleanMoves = (moves: string[]): string[] => {
     if (!moves) return [];
     
@@ -23,16 +33,26 @@ export class PokemonTransformer {
     return moves;
   };
 
+  /**
+   * Cleans the species name for special cases (e.g., Darmanitan).
+   */
   static cleanSpeciesName = (name: string): string => {
     return name.replaceAll('Darmanitan (Standard)', 'Darmanitan');
   };
 
+  /**
+   * Converts 'Male'/'Female' in a name to their respective symbols.
+   */
   static sexConverter = (name: string): string => {
     return name
       .replace("Male", "♂")
       .replace("Female", "♀");
   };
 
+  /**
+   * Extracts the form from a Pokémon name, if present in parentheses.
+   * Logs warnings for multiple forms or missing forms.
+   */
   static getForm = (name: string): string => {
     name = name.replaceAll("(Shadow)", "");
     name = name.replaceAll("Shadow", "");
@@ -58,26 +78,38 @@ export class PokemonTransformer {
     return form;
   };
 
+  /**
+   * Returns the GO form string for a given Pokémon name.
+   * Uses a mapping object for known forms for maintainability.
+   * Falls back to extracting the form from parentheses if not found in the mapping.
+   */
   static getGoForm = (pokemonName: string): string => {
-    if (pokemonName.includes('(Alolan)')) return 'ALOLA';
-    if (pokemonName.includes('(Mega X)')) return 'MEGA_X';
-    if (pokemonName.includes('(Mega Y)')) return 'MEGA_Y';
-    if (pokemonName.includes('(Armored)')) return 'A';
-    if (pokemonName.includes('(Paldean)')) return 'PALDEA';
-    if (pokemonName.includes('(Sunshine)')) return 'SUNNY';
-    if (pokemonName.includes('(10% Forme)')) return 'TEN_PERCENT';
-    if (pokemonName.includes('(50% Forme)')) return 'FIFTY_PERCENT';
-    if (pokemonName.includes('(Complete Forme)')) return 'COMPLETE';
-    if (pokemonName.includes("(Pa'u)")) return 'PAU';
-    if (pokemonName.includes('(Pom-Pom)')) return 'POMPOM';
-    if (pokemonName.includes('(Dawn Wings)')) return 'DAWN_WINGS';
-    if (pokemonName.includes('(Dusk Mane)')) return 'DUSK_MANE';
-    if (pokemonName.includes('(Full Belly)')) return 'FULL_BELLY';
-    if (pokemonName.includes('(Crowned Sword)')) return 'CROWNED_SWORD';
-    if (pokemonName.includes('(Crowned Shield)')) return 'CROWNED_SHIELD';
-    if (pokemonName.includes('(Rapid Strike)')) return 'RAPID_STRIKE';
-    if (pokemonName.includes('(Single Strike)')) return 'SINGLE_STRIKE';
-
+    const FORM_MAPPINGS: Record<string, string> = {
+      '(Alolan)': 'ALOLA',
+      '(Mega X)': 'MEGA_X',
+      '(Mega Y)': 'MEGA_Y',
+      '(Armored)': 'A',
+      '(Paldean)': 'PALDEA',
+      '(Sunshine)': 'SUNNY',
+      '(10% Forme)': 'TEN_PERCENT',
+      '(50% Forme)': 'FIFTY_PERCENT',
+      '(Complete Forme)': 'COMPLETE',
+      "(Pa'u)": 'PAU',
+      '(Pom-Pom)': 'POMPOM',
+      '(Dawn Wings)': 'DAWN_WINGS',
+      '(Dusk Mane)': 'DUSK_MANE',
+      '(Full Belly)': 'FULL_BELLY',
+      '(Crowned Sword)': 'CROWNED_SWORD',
+      '(Crowned Shield)': 'CROWNED_SHIELD',
+      '(Rapid Strike)': 'RAPID_STRIKE',
+      '(Single Strike)': 'SINGLE_STRIKE',
+    };
+    for (const [key, value] of Object.entries(FORM_MAPPINGS)) {
+      if (pokemonName.includes(key)) {
+        return value;
+      }
+    }
+    // Fallback: extract form from parentheses if present
     if ((pokemonName.length - pokemonName.replaceAll('(', '').length === 1) && 
         !pokemonName.includes('Shadow') && !pokemonName.includes('Jr')) {
       const form = pokemonName.substring(pokemonName.indexOf('(') + 1, pokemonName.indexOf(')'));
@@ -86,11 +118,9 @@ export class PokemonTransformer {
       }
       return form.toUpperCase();
     }
-
     if (pokemonName.includes('(') && !pokemonName.includes('Shadow') && !pokemonName.includes('Jr')) {
       console.log('Missing form conversion for pokémon go asset ' + pokemonName);
     }
-
     return '';
   };
 } 

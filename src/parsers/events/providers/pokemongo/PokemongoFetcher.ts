@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 import { PokemonGoPost } from '../../../types/events';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
+import { LANGUAGE_EN, LANGUAGE_PT_BR } from '../../config/constants';
 
 export class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
@@ -60,7 +61,7 @@ export class PokemonGoFetcher {
             if (!links.some(link => link === url)) {
                 links.push(url);
 
-                const ptBRCounterpart = url.includes('/en/') ? url.replaceAll('/en/', '/pt_BR/') : url.replaceAll('/news/', '/pt_BR/news/');
+                const ptBRCounterpart = url.includes(`/${LANGUAGE_EN}/`) ? url.replaceAll(`/${LANGUAGE_EN}/`, `/${LANGUAGE_PT_BR}/`) : url.replaceAll('/news/', `/${LANGUAGE_PT_BR}/news/`);
                 links.push(ptBRCounterpart);
             }
         });

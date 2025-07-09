@@ -1,40 +1,47 @@
 import { GameMasterPokemon } from '../../types/pokemon';
 import { IEntry } from '../../types/events';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
-import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from './normalization';
+import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from '../../utils/normalization';
 
+/**
+ * Utility for matching Pokémon names and forms to Game Master data in the event pipeline.
+ * Handles normalization, form detection, and special cases for event parsing.
+ */
 export class PokemonMatcher {
     private gameMasterPokemon: Record<string, GameMasterPokemon>;
     private domain: GameMasterPokemon[];
 
+    /**
+     * Constructs a new PokemonMatcher.
+     * @param gameMasterPokemon - The full Game Master Pokémon dictionary.
+     * @param domain - The subset of Pokémon relevant for this context.
+     */
     constructor(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: GameMasterPokemon[]) {
         this.gameMasterPokemon = gameMasterPokemon;
         this.domain = domain;
     }
 
+    /**
+     * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.
+     */
     public matchPokemonFromText = (texts: string[]): IEntry[] => {
         const wildEncounters: IEntry[] = [];
         const seen = new Set<string>();
-
-        const pkmwithNoClothes = texts.map(pp => {
+        const pkmWithNoClothes = texts.map(pp => {
             const idx = pp.indexOf(" wearing");
             if (idx !== -1) {
                 return pp.substring(0, idx);
             }
             return pp;
         });
-
         let raidLevel = "";
-        
-        for (let j = 0; j < pkmwithNoClothes.length; j++) {
+        for (const rawName of pkmWithNoClothes) {
             let isShadow = false;
             let isMega = false;
-            let currP = ndfNormalized(normalizePokemonName(pkmwithNoClothes[j])).trim();
-
+            let currP = ndfNormalized(normalizePokemonName(rawName)).trim();
             if (currP.toLocaleLowerCase().includes(' candy') || currP.toLocaleLowerCase().includes('dynamax')) {
                 continue;
             }
-
             const raidLIndex = currP.indexOf(" raids");
             if (raidLIndex !== -1) {
                 raidLevel = currP.substring(0, raidLIndex);
@@ -43,31 +50,28 @@ export class PokemonMatcher {
                 }
                 continue;
             }
-
             let words = currP.split(" ");
-
             if (words.includes("shadow")) {
                 isShadow = true;
                 words = words.filter(word => word !== "shadow");
             }
-
             if (words.includes("mega")) {
                 isMega = true;
                 words = words.filter(word => word !== "mega");
             }
-
             currP = words.join(" ").trim();
-
             const match = this.matchPokemon(currP, isShadow, isMega, raidLevel);
             if (match && !seen.has(match.speciesId)) {
                 seen.add(match.speciesId);
                 wildEncounters.push(match);
             }
         }
-
         return wildEncounters;
-    }
+    };
 
+    /**
+     * Matches a single Pokémon name (with form, shadow, mega, raid level) to an IEntry.
+     */
     private matchPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         // Direct indexing (90% hits)
         const match = this.gameMasterPokemon[normalizeSpeciesNameForId(currP)];
@@ -78,54 +82,48 @@ export class PokemonMatcher {
                 kind: raidLevel
             };
         }
-
-        // Find base Pokemon name
+        // Find base Pokémon name in domain
         const isolatedPkmName = this.domain.filter(domainP => {
             const normalizedDomainPSpeciesName = domainP.speciesName.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             const pattern = new RegExp(`\\b${normalizedDomainPSpeciesName}\\b`, "i");
             return pattern.test(currP);
         });
-
         if (isolatedPkmName.length === 0) {
             return this.handleFormOnlyPokemon(currP, isShadow, isMega, raidLevel);
         }
-
         if (isolatedPkmName.length > 1) {
             console.error("Couldn't isolate the base pokémon name of " + currP);
             return null;
         }
-
         return this.matchPokemonWithForm(isolatedPkmName[0], currP, isShadow, isMega, raidLevel);
-    }
+    };
 
+    /**
+     * Handles Pokémon names that only specify a form (e.g., Oricorio).
+     */
     private handleFormOnlyPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const formCandidate = currP
             .replaceAll('(', '')
             .replaceAll(')', '')
             .split(" ")
             .filter(f => Array.from(KNOWN_FORMS).some(e => ndfNormalized(e) === f));
-
         if (formCandidate.length === 0) {
             return this.handleSpecialCases(currP, isShadow, isMega, raidLevel);
         }
-
         if (formCandidate.length > 1) {
             console.error("Multiple forms for " + currP);
             return null;
         }
-
         const form = formCandidate[0];
         const finalResults = this.domain.filter(wd => 
             ndfNormalized(wd.speciesName).includes("(" + form + ")") && 
             wd.isShadow === isShadow && 
             wd.isMega === isMega
         );
-
         if (finalResults.length === 0) {
             console.error("Couldn't find Form in gamemaster.");
             return null;
         }
-
         if (finalResults.length === 1) {
             return {
                 speciesId: finalResults[0].speciesId,
@@ -133,7 +131,6 @@ export class PokemonMatcher {
                 kind: raidLevel
             };
         }
-
         // Handle multiple forms (e.g., Oricorio)
         const pkmNameWithoutForm = currP.replaceAll(form, "").trim();
         const ans = this.domain.filter(wff => 
@@ -142,12 +139,10 @@ export class PokemonMatcher {
             wff.isShadow === isShadow && 
             wff.isMega === isMega
         );
-
         if (ans.length === 0) {
             console.error("No match found for " + currP);
             return null;
         }
-
         if (ans.length === 1) {
             return {
                 speciesId: ans[0].speciesId,
@@ -155,11 +150,13 @@ export class PokemonMatcher {
                 kind: raidLevel
             };
         }
-
         console.error("Multiple matches for " + currP);
         return null;
-    }
+    };
 
+    /**
+     * Handles special-case Pokémon names that don't match standard forms.
+     */
     private handleSpecialCases = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const specialCases: Record<string, string> = {
             'giratina': 'giratina_altered',
@@ -169,7 +166,6 @@ export class PokemonMatcher {
             'pumpkaboo': 'pumpkaboo_average',
             'gourgeist': 'gourgeist_average'
         };
-
         for (const [key, value] of Object.entries(specialCases)) {
             if (currP.includes(key)) {
                 return {
@@ -179,15 +175,16 @@ export class PokemonMatcher {
                 };
             }
         }
-
         console.error("(0) Couldn't map form for " + currP);
         return null;
-    }
+    };
 
+    /**
+     * Matches a Pokémon with a specific form, shadow, or mega status.
+     */
     private matchPokemonWithForm = (basePokemon: GameMasterPokemon, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const dex = basePokemon.dex;
         const availableForms = this.getAvailableForms(dex, isShadow, isMega, raidLevel);
-
         if (availableForms.length === 1) {
             return {
                 speciesId: availableForms[0].speciesId,
@@ -195,7 +192,6 @@ export class PokemonMatcher {
                 kind: raidLevel
             };
         }
-
         // Handle Mega Charizard X/Y
         if ((raidLevel === "Mega" || isMega) && dex === 6) {
             const words = currP.split(" ");
@@ -214,7 +210,6 @@ export class PokemonMatcher {
                 };
             }
         }
-
         if (availableForms.length === 0) {
             if (isMega) {
                 console.log("Domain didn't cover Megas while computing " + currP);
@@ -223,14 +218,12 @@ export class PokemonMatcher {
             }
             return null;
         }
-
         const mappedForm = availableForms.filter(af => 
             Array.from(KNOWN_FORMS).some(e => 
                 ndfNormalized(af.speciesName).includes(ndfNormalized(e)) && 
                 currP.includes(ndfNormalized(e))
             )
         );
-
         if (mappedForm.length === 0) {
             if (isShadow) {
                 const guess = Object.values(this.gameMasterPokemon).filter(g => 
@@ -248,7 +241,6 @@ export class PokemonMatcher {
             console.error("Couldn't map form for " + currP);
             return null;
         }
-
         if (mappedForm.length === 1) {
             return {
                 speciesId: mappedForm[0].speciesId,
@@ -256,11 +248,13 @@ export class PokemonMatcher {
                 kind: raidLevel
             };
         }
-
-        console.error("Multiple forms for " + currP);
+        console.error("Multiple mapped forms for " + currP);
         return null;
-    }
+    };
 
+    /**
+     * Gets all available forms for a given dex number and status.
+     */
     private getAvailableForms = (dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): GameMasterPokemon[] => {
         if (raidLevel.toLocaleLowerCase() !== "mega" || !isMega) {
             if (!isShadow) {
@@ -279,14 +273,13 @@ export class PokemonMatcher {
                 l.isMega && l.dex === dex && !l.aliasId && !l.isShadow
             );
         }
-    }
+    };
 }
 
 /**
- * DFS to collect all text nodes from an array of elements, then parse Pokémon names using the matcher.
- * Returns an array of IEntry (speciesId, shiny, etc.)
+ * Extracts Pokémon species IDs from a list of HTML elements using a PokemonMatcher.
  */
-export function extractPokemonSpeciesIdsFromElements(elements: Node[], matcher: PokemonMatcher): IEntry[] {
+export const extractPokemonSpeciesIdsFromElements = (elements: Node[], matcher: PokemonMatcher): IEntry[] => {
     const textes: string[] = [];
     const stack = [...elements];
     while (stack.length > 0) {
@@ -328,4 +321,4 @@ export function extractPokemonSpeciesIdsFromElements(elements: Node[], matcher: 
             shiny: isAsterisk || shinyByPhrase
         };
     });
-} 
+}; 

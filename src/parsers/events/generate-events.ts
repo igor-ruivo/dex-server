@@ -3,6 +3,7 @@ import path from 'path';
 import { PokemonGoSource } from './providers/pokemongo/PokemongoSource';
 import { GameMasterData } from '../pokemon/game-master-parser';
 import { IParsedEvent, PublicEvent } from '../types/events';
+import { LANGUAGE_PT_BR } from './config/constants'
 
 const generateEvents = async (gameMasterData: GameMasterData) => {
   console.log('🔄 Starting Pokemon GO events generation...');
@@ -65,7 +66,7 @@ const generateEvents = async (gameMasterData: GameMasterData) => {
     
     // Process Portuguese events to merge with English counterparts
     const portugueseEvents = events.filter(event => 
-      event.url.toLocaleLowerCase().includes('/pt_br/')
+      event.url.toLocaleLowerCase().includes(`/${LANGUAGE_PT_BR}/`)
     );
     
     for (const ptEvent of portugueseEvents) {

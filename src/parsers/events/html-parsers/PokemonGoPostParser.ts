@@ -19,7 +19,7 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
                 subTitle: e.querySelector('h2.ContainerBlock__headline>span.ContainerBlock__headline__title')?.textContent ?? '',
                 imgUrl: e.querySelector('.ImageBlock>img')?.getAttribute('src') ?? '',
                 dateString: e.querySelector(':scope>div.ContainerBlock>div.ContainerBlock__body')?.textContent ?? '',
-                getEventBlocks: () => Array.from(e.getElementsByClassName('block--ContainerBlock'))
+                getEventBlocks: () => Array.from(e.getElementsByClassName('block--ContainerBlock')).map(b => b.children[0])
             }));
 
         return subEvents;

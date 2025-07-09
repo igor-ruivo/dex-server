@@ -80,6 +80,11 @@ export class PokemonGoSource implements IEventSource {
             const dateString = subEvent.dateString;
 
             const dateRanges = parseEventDateRange(dateString);
+
+            if (dateRanges.length === 0 && this.isEnglishVersion(post.url)) {
+                continue;
+            }
+
             const startDate = Math.min(...dateRanges.map(r => r.start));
             const endDate = Math.max(...dateRanges.map(r => r.end));
 

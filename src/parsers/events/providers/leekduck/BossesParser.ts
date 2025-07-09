@@ -2,11 +2,12 @@ import { IEntry } from '../../../types/events';
 import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
+import { GameMasterPokemon } from '../../../types/pokemon';
 
 const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 
 export class BossesParser {
-    async parse(gameMasterPokemon: Record<string, any>): Promise<IEntry[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IEntry[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_BOSS_URL);
         const dom = new JSDOM(html);

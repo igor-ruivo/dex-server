@@ -2,18 +2,19 @@ import { IRocketGrunt } from '../../../types/events';
 import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
+import { GameMasterPokemon } from '../../../types/pokemon';
 
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 
 export class RocketLineupsParser {
-    async parse(gameMasterPokemon: Record<string, any>): Promise<IRocketGrunt[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IRocketGrunt[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_ROCKET_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
         const entries = Array.from(doc.getElementsByClassName('rocket-profile'));
         const answer: IRocketGrunt[] = [];
-        const shadowDomain = Object.values(gameMasterPokemon).filter((v: any) => !v.aliasId && !v.isShadow && !v.isMega);
+        const shadowDomain = Object.values(gameMasterPokemon).filter((v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega);
         for (let i = 0; i < entries.length; i++) {
             const e = entries[i];
             const trainerId = (e.getElementsByClassName('name')[0] as HTMLElement)?.textContent?.trim() ?? '';

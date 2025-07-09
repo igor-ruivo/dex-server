@@ -2,11 +2,12 @@ import { IEntry } from '../../../types/events';
 import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
+import { GameMasterPokemon } from '../../../types/pokemon';
 
 const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 
 export class EggsParser {
-    async parse(gameMasterPokemon: Record<string, any>): Promise<IEntry[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IEntry[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_EGGS_URL);
         const dom = new JSDOM(html);
@@ -15,7 +16,7 @@ export class EggsParser {
         const pokemons: IEntry[] = [];
         let km = '';
         let comment = '';
-        const normalDomain = Object.values(gameMasterPokemon).filter((v: any) => !v.aliasId && !v.isShadow && !v.isMega);
+        const normalDomain = Object.values(gameMasterPokemon).filter((v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega);
         for (let i = 0; i < entries.length; i++) {
             const e = entries[i];
             if (e.tagName === 'H2') {

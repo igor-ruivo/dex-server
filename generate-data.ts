@@ -37,22 +37,22 @@ const generateData = async () => {
 
     // Spotlight Hour events
     const leekduckSpotlightEvents: ISpotlightHourEvent[] = leekduckEvents
-      .filter(e => (e as any).spotlightPokemons && (e as any).spotlightPokemons.length > 0)
+      .filter(e => e.spotlightPokemons && e.spotlightPokemons.length > 0)
       .map(e => ({
-        bonus: (e as any).spotlightBonus || '',
-        pokemon: ((e as any).spotlightPokemons || []).map((p: any) => p.speciesId),
-        dateStart: (e as any).date,
-        dateEnd: (e as any).dateEnd
+        bonus: e.spotlightBonus || '',
+        pokemon: (e.spotlightPokemons || []).map((p: IEntry) => p.speciesId),
+        dateStart: e.date,
+        dateEnd: e.dateEnd
       }));
 
     // 5-star, Mega, and Shadow raid bosses as special DTOs
     const leekduckSpecialRaidBossEvents: ILeekduckSpecialRaidBossEvent[] = leekduckEvents
-      .filter(e => (e as any).raids && (e as any).raids.length > 0)
+      .filter(e => e.raids && e.raids.length > 0)
       .map(e => ({
-        dateStart: (e as any).date,
-        dateEnd: (e as any).dateEnd,
-        pokemon: (e as any).raids || [],
-        title: (e as any).title
+        dateStart: e.date,
+        dateEnd: e.dateEnd,
+        pokemon: e.raids || [],
+        title: e.title
       }));
 
     // Fetch LeekDuck bosses (excluding 5-star and mega)

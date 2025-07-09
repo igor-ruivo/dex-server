@@ -3,6 +3,7 @@ import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
 import { parseDateFromString } from '../../utils/normalization';
+import { GameMasterPokemon } from '../../../types/pokemon';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -20,7 +21,7 @@ export interface ILeekduckEvent {
 }
 
 export class EventsParser {
-    async parse(gameMasterPokemon: Record<string, any>): Promise<ILeekduckEvent[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<ILeekduckEvent[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_EVENTS_URL);
         const dom = new JSDOM(html);
@@ -50,7 +51,7 @@ export class EventsParser {
         return results;
     }
 
-    private mapLeekNews(data: string, gameMasterPokemon: Record<string, any>): ILeekduckEvent {
+    private mapLeekNews(data: string, gameMasterPokemon: Record<string, GameMasterPokemon>): ILeekduckEvent {
         const dom = new JSDOM(data);
         const htmlDoc = dom.window.document;
         const title = htmlDoc.getElementsByClassName('page-title')[0]?.textContent?.replace(/\s/g, ' ').trim() ?? '';
@@ -74,17 +75,17 @@ export class EventsParser {
             rawPkmName = parts[0];
             raidType = parts[1] ?? '';
         }
-        let domainToUse: any[] = [];
+        let domainToUse: GameMasterPokemon[] = [];
         const isShadow = raidType.includes('Shadow') || rawPkmName.includes('Shadow');
         if (isShadow) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: any) => !p.isMega && !p.aliasId);
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isMega && !p.aliasId);
         }
         const isMega = raidType.includes('Mega') || raidType.includes('Elite');
         if (isMega) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: any) => !p.isShadow && !p.aliasId);
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isShadow && !p.aliasId);
         }
         if (!isShadow && !isMega) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: any) => !p.isShadow && !p.isMega && !p.aliasId);
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isShadow && !p.isMega && !p.aliasId);
         }
         const finalEntries: IEntry[] = [];
         const multiplePkms = rawPkmName.replaceAll(', ', ',').replaceAll(' and ', ',').split(',');

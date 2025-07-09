@@ -1,4 +1,4 @@
-import { BasePokemon } from '../../../types/pokemon';
+import { BasePokemon } from '../../types/pokemon';
 
 export const SYNTHETIC_POKEMON: BasePokemon[] = [
   {

@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom';
-import { PokemonGoPost } from '../../../../types/events';
+import { PokemonGoPost } from '../../../types/events';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 
 export class PokemonGoFetcher {

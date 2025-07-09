@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { GameMasterParser, GameMasterData } from './src/parsers/pokemon/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
-import { PublicEvent } from './src/types/events';
+import { PublicEvent } from './src/parsers/types/events';
 
 interface RaidBoss {
   name: string;
@@ -25,7 +25,7 @@ interface AggregatedData {
   };
 }
 
-async function generateData() {
+const generateData = async () => {
   console.log('🚀 Starting Pokemon GO data generation...');
   
   const now = new Date().toISOString();
@@ -122,7 +122,7 @@ async function generateData() {
     console.error('❌ Data generation failed:', error);
     process.exit(1);
   }
-}
+};
 
 // Run if called directly
 if (require.main === module) {

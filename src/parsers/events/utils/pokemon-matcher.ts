@@ -1,5 +1,5 @@
-import { GameMasterPokemon } from '../../../types/pokemon';
-import { IEntry } from '../../../types/events';
+import { GameMasterPokemon } from '../../types/pokemon';
+import { IEntry } from '../../types/events';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
 import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from './normalization';
 
@@ -12,7 +12,7 @@ export class PokemonMatcher {
         this.domain = domain;
     }
 
-    public matchPokemonFromText(texts: string[]): IEntry[] {
+    public matchPokemonFromText = (texts: string[]): IEntry[] => {
         const wildEncounters: IEntry[] = [];
         const seen = new Set<string>();
 
@@ -68,7 +68,7 @@ export class PokemonMatcher {
         return wildEncounters;
     }
 
-    private matchPokemon(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
+    private matchPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         // Direct indexing (90% hits)
         const match = this.gameMasterPokemon[normalizeSpeciesNameForId(currP)];
         if (match && !isShadow && !isMega) {
@@ -98,7 +98,7 @@ export class PokemonMatcher {
         return this.matchPokemonWithForm(isolatedPkmName[0], currP, isShadow, isMega, raidLevel);
     }
 
-    private handleFormOnlyPokemon(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
+    private handleFormOnlyPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const formCandidate = currP
             .replaceAll('(', '')
             .replaceAll(')', '')
@@ -160,7 +160,7 @@ export class PokemonMatcher {
         return null;
     }
 
-    private handleSpecialCases(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
+    private handleSpecialCases = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const specialCases: Record<string, string> = {
             'giratina': 'giratina_altered',
             'zacian': 'zacian_hero',
@@ -184,7 +184,7 @@ export class PokemonMatcher {
         return null;
     }
 
-    private matchPokemonWithForm(basePokemon: GameMasterPokemon, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
+    private matchPokemonWithForm = (basePokemon: GameMasterPokemon, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
         const dex = basePokemon.dex;
         const availableForms = this.getAvailableForms(dex, isShadow, isMega, raidLevel);
 
@@ -261,7 +261,7 @@ export class PokemonMatcher {
         return null;
     }
 
-    private getAvailableForms(dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): GameMasterPokemon[] {
+    private getAvailableForms = (dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): GameMasterPokemon[] => {
         if (raidLevel.toLocaleLowerCase() !== "mega" || !isMega) {
             if (!isShadow) {
                 return this.domain.filter(formC => 
@@ -283,7 +283,7 @@ export class PokemonMatcher {
 }
 
 /**
- * User's algorithm: DFS to collect all text nodes from an array of elements, then parse Pokémon names using the matcher.
+ * DFS to collect all text nodes from an array of elements, then parse Pokémon names using the matcher.
  * Returns an array of IEntry (speciesId, shiny, etc.)
  */
 export function extractPokemonSpeciesIdsFromElements(elements: Node[], matcher: PokemonMatcher): IEntry[] {

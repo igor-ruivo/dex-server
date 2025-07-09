@@ -1,8 +1,8 @@
-import { PokemonTypes, PokemonForms } from '../../../types/pokemon';
+import { PokemonTypes, PokemonForms } from '../../types/pokemon';
 import { POKEMON_CONFIG } from '../config/pokemon-config';
 
 export class PokemonTransformer {
-  static transformTypes(types: string[]): PokemonTypes[] {
+  static transformTypes = (types: string[]): PokemonTypes[] => {
     return types
       .filter(type => type !== 'none')
       .map(type => {
@@ -10,9 +10,9 @@ export class PokemonTransformer {
         return PokemonTypes[typeName as keyof typeof PokemonTypes];
       })
       .filter(type => type !== undefined);
-  }
+  };
 
-  static cleanMoves(moves: string[]): string[] {
+  static cleanMoves = (moves: string[]): string[] => {
     if (!moves) return [];
     
     const hasHiddenPower = moves.some(move => POKEMON_CONFIG.HIDDEN_POWERS.has(move));
@@ -21,19 +21,19 @@ export class PokemonTransformer {
     }
     
     return moves;
-  }
+  };
 
-  static cleanSpeciesName(name: string): string {
+  static cleanSpeciesName = (name: string): string => {
     return name.replaceAll('Darmanitan (Standard)', 'Darmanitan');
-  }
+  };
 
-  static sexConverter(name: string): string {
+  static sexConverter = (name: string): string => {
     return name
       .replace("Male", "♂")
       .replace("Female", "♀");
-  }
+  };
 
-  static getForm(name: string): string {
+  static getForm = (name: string): string => {
     name = name.replaceAll("(Shadow)", "");
     name = name.replaceAll("Shadow", "");
     
@@ -56,9 +56,9 @@ export class PokemonTransformer {
       console.log(`pokemon id: ${name}`);
     }
     return form;
-  }
+  };
 
-  static getGoForm(pokemonName: string): string {
+  static getGoForm = (pokemonName: string): string => {
     if (pokemonName.includes('(Alolan)')) return 'ALOLA';
     if (pokemonName.includes('(Mega X)')) return 'MEGA_X';
     if (pokemonName.includes('(Mega Y)')) return 'MEGA_Y';
@@ -92,5 +92,5 @@ export class PokemonTransformer {
     }
 
     return '';
-  }
+  };
 } 

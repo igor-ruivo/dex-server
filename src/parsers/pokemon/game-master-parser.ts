@@ -2,7 +2,7 @@ import {
   BasePokemon, 
   GameMasterPokemon, 
   GameMasterData 
-} from '../../types/pokemon';
+} from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
 import { PokemonValidator } from './utils/pokemon-validator';
@@ -62,7 +62,7 @@ export class GameMasterParser {
     return pokemonDictionary;
   }
 
-  private transformPokemon(pokemon: BasePokemon, allPokemon: BasePokemon[]): GameMasterPokemon | null {
+  private transformPokemon = (pokemon: BasePokemon, allPokemon: BasePokemon[]): GameMasterPokemon | null => {
     try {
       const isShadow = PokemonValidator.isShadowPokemon(pokemon);
       const isMega = PokemonValidator.isMegaPokemon(pokemon);
@@ -146,4 +146,4 @@ export class GameMasterParser {
   }
 }
 
-export { GameMasterData } from '../../types/pokemon'; 
+export { GameMasterData } from '../types/pokemon'; 

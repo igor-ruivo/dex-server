@@ -2,9 +2,9 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PokemonGoSource } from './providers/pokemongo/PokemongoSource';
 import { GameMasterData } from '../pokemon/game-master-parser';
-import { IParsedEvent, PublicEvent } from '../../types/events';
+import { IParsedEvent, PublicEvent } from '../types/events';
 
-async function generateEvents(gameMasterData: GameMasterData) {
+const generateEvents = async (gameMasterData: GameMasterData) => {
   console.log('🔄 Starting Pokemon GO events generation...');
   
   const now = new Date().toISOString();
@@ -20,13 +20,15 @@ async function generateEvents(gameMasterData: GameMasterData) {
     const events = await source.parseEvents(gameMaster);
 
     const eventIsRelevant = (event: IParsedEvent) => {
-      return ((event.bonuses && event.bonuses.length > 0) ||
-      (event.wild && event.wild.length > 0) ||
-      (event.raids && event.raids.length > 0) ||
-      (event.research && event.research.length > 0) ||
-      (event.eggs && event.eggs.length > 0) ||
-      (event.incenses && event.incenses.length > 0)) && event.dateRanges && event.dateRanges.length > 0;
-    }
+      return (
+        (event.bonuses && event.bonuses.length > 0) ||
+        (event.wild && event.wild.length > 0) ||
+        (event.raids && event.raids.length > 0) ||
+        (event.research && event.research.length > 0) ||
+        (event.eggs && event.eggs.length > 0) ||
+        (event.incenses && event.incenses.length > 0)
+      ) && event.dateRanges && event.dateRanges.length > 0;
+    };
 
     const relevantEnglishEvents = events.filter(event => eventIsRelevant(event) && event.isEnglishVersion);
     
@@ -113,7 +115,7 @@ async function generateEvents(gameMasterData: GameMasterData) {
     console.error('❌ Events generation failed:', error);
     throw error;
   }
-}
+};
 
 // Run if called directly (for testing/development)
 if (require.main === module) {

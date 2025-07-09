@@ -1,4 +1,4 @@
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../../../types/events";
+import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../../types/events";
 import { JSDOM } from 'jsdom';
 
 class PokemonGoPostParser implements IPokemonGoHtmlParser {

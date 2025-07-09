@@ -1,5 +1,5 @@
-import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost } from '../../../../types/events';
-import { GameMasterPokemon } from '../../../../types/pokemon';
+import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost } from '../../../types/events';
+import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 import PokemonGoPostParser from './html-parsers/PostParser';
@@ -115,11 +115,9 @@ export class PokemonGoSource implements IEventSource {
         return events;
     }
 
-    private isBonusSection(kind: string): boolean {
-        return EVENT_SECTION_TYPES.BONUSES.some(bonusType => kind.includes(bonusType));
-    }
+    private isBonusSection = (kind: string): boolean => EVENT_SECTION_TYPES.BONUSES.some(bonusType => kind.includes(bonusType));
 
-    private processEventSection(kind: string, contentBodies: HTMLElement[], eventData: EventData, gameMasterPokemon: Record<string, GameMasterPokemon>, domains: Domains): void {
+    private processEventSection = (kind: string, contentBodies: HTMLElement[], eventData: EventData, gameMasterPokemon: Record<string, GameMasterPokemon>, domains: Domains): void => {
         if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some(x => x === kind)) {
             eventData.wild.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, domains.wildDomain)));
         } else if (EVENT_SECTION_TYPES.EGGS.some(x => x === kind)) {
@@ -131,9 +129,9 @@ export class PokemonGoSource implements IEventSource {
         } else if (EVENT_SECTION_TYPES.INCENSE.some(x => x === kind)) {
             eventData.incenses.push(...extractPokemonSpeciesIdsFromElements(contentBodies, new PokemonMatcher(gameMasterPokemon, domains.incenseDomain)));
         }
-    }
+    };
 
-    private parseInnerEvent(innerEntries: Element[], gameMasterPokemon: Record<string, GameMasterPokemon>, wildDomain: GameMasterPokemon[], raidDomain: GameMasterPokemon[], eggDomain: GameMasterPokemon[], researchDomain: GameMasterPokemon[], incenseDomain: GameMasterPokemon[]): EventBlock {
+    private parseInnerEvent = (innerEntries: Element[], gameMasterPokemon: Record<string, GameMasterPokemon>, wildDomain: GameMasterPokemon[], raidDomain: GameMasterPokemon[], eggDomain: GameMasterPokemon[], researchDomain: GameMasterPokemon[], incenseDomain: GameMasterPokemon[]): EventBlock => {
         const raids: IEntry[] = [];
         const wild: IEntry[] = [];
         const eggs: IEntry[] = [];
@@ -162,9 +160,9 @@ export class PokemonGoSource implements IEventSource {
         return {
             raids, wild, eggs, research, incenses, bonuses: bonusesArr
         };
-    }
+    };
 
-    private extractBonusesVisualLines(bonusContainer: Element): string[] {
+    private extractBonusesVisualLines = (bonusContainer: Element): string[] => {
         const bonuses: string[] = [];
         let current = '';
         const pushLines = (text: string) => {
@@ -205,7 +203,7 @@ export class PokemonGoSource implements IEventSource {
             pushLines(current.trim());
         }
         return bonuses.filter(Boolean);
-    }
+    };
 
     private isEnglishVersion = (url: string) => !url.toLocaleLowerCase().includes('pt_br');
 } 

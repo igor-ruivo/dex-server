@@ -37904,6 +37904,42 @@
     "isMythical": false,
     "isBeast": false
   },
+  "lilligant_hisuian": {
+    "dex": 549,
+    "speciesId": "lilligant_hisuian",
+    "speciesName": "Lilligant (Hisuian)",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/549_f2.png",
+    "goImageUrl": "549.fHISUIAN.icon.png",
+    "shinyGoImageUrl": "549.fHISUIAN.s.icon.png",
+    "atk": 208,
+    "def": 159,
+    "hp": 172,
+    "fastMoves": [
+      "MAGICAL_LEAF",
+      "BULLET_SEED"
+    ],
+    "chargedMoves": [
+      "PETAL_BLIZZARD",
+      "CLOSE_COMBAT",
+      "SOLAR_BEAM",
+      "UPPER_HAND"
+    ],
+    "eliteMoves": [],
+    "legacyMoves": [],
+    "isShadow": false,
+    "isMega": false,
+    "familyId": "FAMILY_PETILIL",
+    "parent": "petilil",
+    "evolutions": [],
+    "form": "Hisuian",
+    "isLegendary": false,
+    "isMythical": false,
+    "isBeast": false
+  },
   "basculin": {
     "dex": 550,
     "speciesId": "basculin",

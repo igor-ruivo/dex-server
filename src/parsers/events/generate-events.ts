@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { PokemonGoSource } from './sources/pokemongo-source';
+import { PokemonGoSource } from './providers/pokemongo/PokemongoSource';
 import { GameMasterData } from '../pokemon/game-master-parser';
 import { IParsedEvent, PublicEvent } from '../../types/events';
 

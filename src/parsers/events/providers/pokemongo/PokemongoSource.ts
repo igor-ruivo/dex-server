@@ -1,10 +1,10 @@
-import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
-import { parseEventDateRange } from '../utils/normalization';
-import { PokemonGoFetcher } from '../services/pokemongo-fetcher';
-import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../utils/pokemon-matcher';
-import PokemonGoPostParser from '../html-parsers/PokemonGoPostParser';
-import PokemonGoNewsParser from '../html-parsers/PokemonGoNewsParser';
+import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost } from '../../../../types/events';
+import { GameMasterPokemon } from '../../../../types/pokemon';
+import { parseEventDateRange } from '../../utils/normalization';
+import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
+import PokemonGoPostParser from './html-parsers/PostParser';
+import PokemonGoNewsParser from './html-parsers/NewsParser';
+import { PokemonGoFetcher } from './PokemongoFetcher';
 
 const EVENT_SECTION_TYPES = {
     BONUSES: ['Bonuses', 'Bônus', 'Event bonus', 'Event Bonus', 'Event bonuses', 'Event Bonuses', 'Bônus do evento', 'Bonuses'],

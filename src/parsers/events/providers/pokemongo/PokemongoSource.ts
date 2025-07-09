@@ -2,8 +2,8 @@ import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Do
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
-import PokemonGoPostParser from './html-parsers/PostParser';
-import PokemonGoNewsParser from './html-parsers/NewsParser';
+import PokemonGoPostParser from './news-parsers/PostParser';
+import PokemonGoNewsParser from './news-parsers/NewsParser';
 import { PokemonGoFetcher } from './PokemongoFetcher';
 import { LANGUAGE_PT_BR } from '../../config/constants';
 

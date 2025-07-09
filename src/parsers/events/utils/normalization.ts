@@ -4,6 +4,25 @@
  */
 import { MONTHS } from '../config/constants';
 
+const dateWithoutTimezone = (date: string) => {
+    return date
+        .replaceAll('local time', '')
+        .replaceAll('PDT', '').replaceAll('PST', '').replaceAll('EDT', '').replaceAll('EST', '').replaceAll('UTC', '').replaceAll('GMT', '')
+        .trim();
+}
+
+const dateModifierNormalization = (date: string) => {
+    return date
+        .trim()
+        .replaceAll("  ", " ")
+        .replaceAll(/\u00A0/g, " ")
+        .replaceAll("  ", " ")
+        .replaceAll("a.m.", "am")
+        .replaceAll("A.M.", "am")
+        .replaceAll("p.m.", "pm")
+        .replaceAll("P.M.", "pm");
+}
+
 /**
  * Converts a month name to its index (0-based).
  */
@@ -32,15 +51,7 @@ export const removeLeadingAndTrailingAsterisks = (plainText: string): string => 
  */
 export const fetchDateFromString = (date: string): number => {
     try {
-        const trimmedDate = date
-            .trim()
-            .replaceAll("  ", " ")
-            .replaceAll(/\u00A0/g, " ")
-            .replaceAll("  ", " ")
-            .replaceAll("a.m.", "am")
-            .replaceAll("A.M.", "am")
-            .replaceAll("p.m.", "pm")
-            .replaceAll("P.M.", "pm");
+        const trimmedDate = dateModifierNormalization(date);
 
         // Remove weekdays from the beginning of the string
         let cleanDate = trimmedDate.replace(/^[A-Za-z]+day,\s*/, '');
@@ -177,16 +188,7 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
     // Remove trailing period
     if (date.endsWith('.')) date = date.slice(0, -1);
     // Normalize spaces and time suffixes
-    date = date
-        .replaceAll(/\u00A0/g, ' ')
-        .replaceAll('  ', ' ')
-        .replaceAll('a.m.', 'am')
-        .replaceAll('A.M.', 'am')
-        .replaceAll('p.m.', 'pm')
-        .replaceAll('P.M.', 'pm')
-        .replaceAll('local time', '')
-        .replaceAll('PDT', '').replaceAll('PST', '').replaceAll('EDT', '').replaceAll('EST', '').replaceAll('UTC', '').replaceAll('GMT', '')
-        .trim();
+    date = dateWithoutTimezone(dateModifierNormalization(date));
     // Remove weekday at start
     date = date.replace(/^[A-Za-z]+day,\s*/, '');
 
@@ -301,16 +303,7 @@ export function parseMultiDayEvent(date: string): Array<{ start: number, end: nu
     // Remove trailing period
     if (date.endsWith('.')) date = date.slice(0, -1);
     // Normalize spaces and time suffixes
-    date = date
-        .replaceAll(/\u00A0/g, ' ')
-        .replaceAll('  ', ' ')
-        .replaceAll('a.m.', 'am')
-        .replaceAll('A.M.', 'am')
-        .replaceAll('p.m.', 'pm')
-        .replaceAll('P.M.', 'pm')
-        .replaceAll('local time', '')
-        .replaceAll('PDT', '').replaceAll('PST', '').replaceAll('EDT', '').replaceAll('EST', '').replaceAll('UTC', '').replaceAll('GMT', '')
-        .trim();
+    date = dateWithoutTimezone(dateModifierNormalization(date));
     // Remove weekday at start
     date = date.replace(/^[A-Za-z]+day,\s*/, '');
 

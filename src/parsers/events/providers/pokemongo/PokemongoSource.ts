@@ -92,7 +92,7 @@ const buildEventObject = (
         eggs: parsedContent.eggs,
         researches: parsedContent.researches,
         incenses: parsedContent.incenses,
-        bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : undefined,
+        bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : [],
         isEnglishVersion: !post.url.toLocaleLowerCase().includes(LANGUAGE_PT_BR)
     };
 };

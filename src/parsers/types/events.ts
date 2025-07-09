@@ -4,10 +4,10 @@ export interface IEntry {
     speciesId: string;
     shiny: boolean;
     kind?: string;
-    comment?: string;
+    comment?: { en: string; pt: string };
 }
 
-export interface IParsedEvent {
+export type IParsedEvent = EventBlock & {
     id: string;
     url: string;
     title: string;
@@ -17,12 +17,6 @@ export interface IParsedEvent {
     dateRanges?: Array<{ start: number; end: number }>;
     imageUrl?: string;
     source: 'pokemongo' | 'leekduck';
-    wild?: IEntry[];
-    raids?: IEntry[];
-    eggs?: IEntry[];
-    researches?: IEntry[];
-    incenses?: IEntry[];
-    bonuses?: string[];
     isEnglishVersion: boolean;
     isSeason?: boolean;
 }

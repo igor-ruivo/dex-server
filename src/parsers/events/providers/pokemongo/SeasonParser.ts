@@ -48,38 +48,69 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
         .map(a => a.textContent?.trim() ?? '')
         .filter(Boolean)
 
-    // Wild spawns by zone (grouped lists)
+    // Wild spawns by zone (grouped lists, legacy order)
     const wild: IEntry[] = [];
-    const wildSections = Array.from(enDoc.querySelectorAll('h3')).filter(e => /cities|forests|mountains|beaches|northern hemisphere|southern hemisphere/i.test(e.textContent ?? ''));
-    wildSections.forEach((header, i) => {
-        const list = header.nextElementSibling;
-        if (list) {
-            const entries = extractPokemonSpeciesIdsFromElements(Array.from(list.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)).map(f => ({ ...f, kind: String(i) }));
+    const appearing = Array.from(enDoc.getElementById('different-pokemon-appearing')?.querySelectorAll('[role=list]') ?? []);
+    const wildGroups = [
+        appearing[0], // city
+        appearing[1], // forest
+        appearing[2], // mountain
+        appearing[3], // beach
+        appearing[4], // north
+        appearing[5]  // south
+    ];
+    wildGroups.forEach((group, i) => {
+        if (group) {
+            const entries = extractPokemonSpeciesIdsFromElements(Array.from(group.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)).map(f => ({ ...f, kind: String(i) }));
             wild.push(...entries);
         }
     });
 
-    // Eggs by distance (grouped lists)
+    // Eggs by distance/type (legacy order and comments, with correct index mapping)
     const eggs: IEntry[] = [];
-    const eggHeaders = Array.from(enDoc.querySelectorAll('h3')).filter(e => /\d+ km eggs?/i.test(e.textContent ?? ''));
-    eggHeaders.forEach((header, i) => {
-        const list = header.nextElementSibling;
-        if (list) {
-            const kindMatch = header.textContent?.match(/(\d+) km/i);
-            const kind = kindMatch ? kindMatch[1] : String(i);
-            const entries = extractPokemonSpeciesIdsFromElements(Array.from(list.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)).map(f => ({ ...f, kind }));
+    const eggsElement = Array.from(enDoc.getElementById('eggs')?.querySelectorAll('[role=list]') ?? []);
+    // Legacy index mapping:
+    // 0: 2km, 1: 5km, 2: 5km (Adventure Sync), 3: 7km, 4: 7km (Route), 5: 10km, 6: 10km (Adventure Sync)
+    const eggGroups = [
+        eggsElement[0], // 2km
+        eggsElement[1], // 5km
+        eggsElement[3], // 7km
+        eggsElement[5], // 10km
+        eggsElement[2], // 5km (Adventure Sync)
+        eggsElement[4], // 7km (Route)
+        eggsElement[6]  // 10km (Adventure Sync)
+    ];
+    const eggKindMap = ["2", "5", "7", "10", "5", "7", "10"];
+
+    // Helper to extract egg comments from a document
+    const extractEggComments = (doc: Document): string[] =>
+        Array.from(doc.getElementById('eggs')?.querySelectorAll('[role=figure] > div:first-child > div:first-child') ?? [])
+            .filter(el => {
+                const figure = el.closest('[role=figure]');
+                const prev = figure?.previousElementSibling;
+                return prev && [...prev.classList].some(cls => cls.includes('groupDivider'));
+            })
+            .map(el => el.textContent?.trim() ?? '');
+
+    const commentsEn = extractEggComments(enDoc);
+    const commentsPt = extractEggComments(ptDoc);
+
+    eggGroups.forEach((group, i) => {
+        if (group) {
+            // For indexes 4, 5, 6 use the parsed comments array, otherwise undefined
+            const comment = (i >= 4)
+                ? { en: commentsEn[i - 4] || '', pt: commentsPt[i - 4] || '' }
+                : undefined;
+            const entries = extractPokemonSpeciesIdsFromElements(Array.from(group.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)).map(f => ({ ...f, kind: eggKindMap[i], comment }));
             eggs.push(...entries);
         }
     });
 
     // Research encounters (Field Research)
     const researches: IEntry[] = [];
-    const researchHeader = Array.from(enDoc.querySelectorAll('h3')).find(e => /research breakthrough/i.test(e.textContent ?? ''));
-    if (researchHeader) {
-        const list = researchHeader.nextElementSibling;
-        if (list) {
-            researches.push(...extractPokemonSpeciesIdsFromElements(Array.from(list.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)));
-        }
+    const researchList = enDoc.getElementById('encounter-pokemon');
+    if (researchList) {
+        researches.push(...extractPokemonSpeciesIdsFromElements(Array.from(researchList.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)));
     }
 
     // Compose output
@@ -99,6 +130,8 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
         startDate,
         endDate,
         wild,
+        raids: [],
+        incenses: [],
         eggs,
         researches,
         bonuses: {

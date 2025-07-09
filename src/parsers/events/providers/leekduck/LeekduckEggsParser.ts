@@ -1,0 +1,40 @@
+import { IEntry } from '../../../types/events';
+import { PokemonMatcher } from '../../utils/pokemon-matcher';
+import { HttpDataFetcher } from '../../../services/data-fetcher';
+import { JSDOM } from 'jsdom';
+
+const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
+
+export class LeekduckEggsParser {
+    async parse(gameMasterPokemon: Record<string, any>): Promise<IEntry[]> {
+        const fetcher = new HttpDataFetcher();
+        const html = await fetcher.fetchText(LEEKDUCK_EGGS_URL);
+        const dom = new JSDOM(html);
+        const doc = dom.window.document;
+        const entries = Array.from(doc.querySelector('.page-content')?.children ?? []);
+        const pokemons: IEntry[] = [];
+        let km = '';
+        let comment = '';
+        const normalDomain = Object.values(gameMasterPokemon).filter((v: any) => !v.aliasId && !v.isShadow && !v.isMega);
+        for (let i = 0; i < entries.length; i++) {
+            const e = entries[i];
+            if (e.tagName === 'H2') {
+                const txt = (e as HTMLElement).textContent?.trim() ?? '';
+                km = txt.split(' ')[0];
+                if (txt.includes('(')) {
+                    comment = txt.substring(txt.indexOf('('));
+                } else {
+                    comment = '';
+                }
+                continue;
+            }
+            if (e.classList.contains('egg-list-flex')) {
+                const pkmList = Array.from(e.children).map(c => (c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement).textContent?.trim() ?? '');
+                const matcher = new PokemonMatcher(gameMasterPokemon, normalDomain);
+                const parsedPkm = matcher.matchPokemonFromText(pkmList).map(r => { return { ...r, kind: km, comment: { en: comment, pt: '' } }; });
+                pokemons.push(...parsedPkm);
+            }
+        }
+        return pokemons;
+    }
+} 

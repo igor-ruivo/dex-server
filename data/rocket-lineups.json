@@ -1,0 +1,575 @@
+[
+  {
+    "phrase": "I will not tolerate your interference.",
+    "trainerId": "Giovanni",
+    "tier1": [
+      "persian"
+    ],
+    "tier2": [
+      "kangaskhan",
+      "rhyperior",
+      "nidoking"
+    ],
+    "tier3": [
+      "dialga"
+    ],
+    "catchableTiers": [
+      2
+    ]
+  },
+  {
+    "phrase": "My strength comes from my loyalty to Team GO Rocket.",
+    "trainerId": "Cliff",
+    "tier1": [
+      "gible"
+    ],
+    "tier2": [
+      "annihilape",
+      "honchkrow",
+      "skarmory"
+    ],
+    "tier3": [
+      "tyranitar",
+      "machamp",
+      "luxray"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "It's time to learn your place in the world.",
+    "trainerId": "Arlo",
+    "tier1": [
+      "horsea"
+    ],
+    "tier2": [
+      "steelix",
+      "slowbro",
+      "crobat"
+    ],
+    "tier3": [
+      "scizor",
+      "alakazam",
+      "muk_alolan"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "I envy you—you get to battle me!",
+    "trainerId": "Sierra",
+    "tier1": [
+      "trapinch"
+    ],
+    "tier2": [
+      "mismagius",
+      "staraptor",
+      "ferrothorn"
+    ],
+    "tier3": [
+      "houndoom",
+      "camerupt",
+      "drapion"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Normal does not mean weak.",
+    "type": "normal",
+    "trainerId": "Normal-type Male Grunt",
+    "tier1": [
+      "slakoth",
+      "bidoof",
+      "bunnelby"
+    ],
+    "tier2": [
+      "rattata",
+      "meowth",
+      "diggersby"
+    ],
+    "tier3": [
+      "raticate",
+      "ursaring",
+      "exploud"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Do you know how hot Pokémon fire breath can get?",
+    "type": "fire",
+    "trainerId": "Fire-type Female Grunt",
+    "tier1": [
+      "darumaka",
+      "numel",
+      "tepig"
+    ],
+    "tier2": [
+      "houndoom",
+      "ninetales",
+      "pignite"
+    ],
+    "tier3": [
+      "houndoom",
+      "emboar"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "These waters are treacherous!",
+    "type": "water",
+    "trainerId": "Water-type Female Grunt",
+    "tier1": [
+      "oshawott",
+      "spheal",
+      "barboach"
+    ],
+    "tier2": [
+      "dewott",
+      "seadra"
+    ],
+    "tier3": [
+      "carracosta",
+      "samurott",
+      "whiscash"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "These waters are treacherous!",
+    "type": "water",
+    "trainerId": "Water-type Male Grunt",
+    "tier1": [
+      "magikarp"
+    ],
+    "tier2": [
+      "magikarp"
+    ],
+    "tier3": [
+      "magikarp",
+      "gyarados"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Get ready to be shocked!",
+    "type": "electric",
+    "trainerId": "Electric-type Female Grunt",
+    "tier1": [
+      "joltik",
+      "mareep",
+      "magnemite"
+    ],
+    "tier2": [
+      "voltorb",
+      "electabuzz",
+      "geodude_alolan"
+    ],
+    "tier3": [
+      "luxray",
+      "ampharos",
+      "galvantula"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Don't tangle with us!",
+    "type": "grass",
+    "trainerId": "Grass-type Male Grunt",
+    "tier1": [
+      "hoppip",
+      "seedot",
+      "snivy"
+    ],
+    "tier2": [
+      "ferrothorn",
+      "lileep",
+      "servine"
+    ],
+    "tier3": [
+      "cacturne",
+      "vileplume",
+      "serperior"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "You're gonna be frozen in your tracks.",
+    "type": "ice",
+    "trainerId": "Ice-type Female Grunt",
+    "tier1": [
+      "amaura",
+      "sneasel",
+      "swinub"
+    ],
+    "tier2": [
+      "ninetales_alolan",
+      "froslass",
+      "sealeo"
+    ],
+    "tier3": [
+      "glalie",
+      "aurorus",
+      "froslass"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "This buff physique isn't just for show!",
+    "type": "fighting",
+    "trainerId": "Fighting-type Female Grunt",
+    "tier1": [
+      "machop",
+      "makuhita",
+      "mankey"
+    ],
+    "tier2": [
+      "hitmonlee",
+      "hitmonchan",
+      "gurdurr"
+    ],
+    "tier3": [
+      "toxicroak",
+      "infernape",
+      "conkeldurr"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Coiled and ready to strike!",
+    "type": "poison",
+    "trainerId": "Poison-type Female Grunt",
+    "tier1": [
+      "tentacool",
+      "skorupi",
+      "trubbish"
+    ],
+    "tier2": [
+      "nidorino",
+      "nidorina"
+    ],
+    "tier3": [
+      "weezing",
+      "toxicroak",
+      "amoonguss"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "You'll be defeated into the ground!",
+    "type": "ground",
+    "trainerId": "Ground-type Male Grunt",
+    "tier1": [
+      "sandshrew",
+      "gligar",
+      "drilbur"
+    ],
+    "tier2": [
+      "rhyhorn",
+      "donphan",
+      "vibrava"
+    ],
+    "tier3": [
+      "whiscash",
+      "flygon",
+      "torterra"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Battle against my Flying-type Pokémon!",
+    "type": "flying",
+    "trainerId": "Flying-type Female Grunt",
+    "tier1": [
+      "pidgey",
+      "taillow",
+      "zubat"
+    ],
+    "tier2": [
+      "zubat",
+      "swellow",
+      "gligar"
+    ],
+    "tier3": [
+      "dragonite",
+      "pidgeot",
+      "archeops"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Are you scared of psychics that use unseen power?",
+    "type": "psychic",
+    "trainerId": "Psychic-type Male Grunt",
+    "tier1": [
+      "ralts",
+      "inkay"
+    ],
+    "tier2": [
+      "drowzee",
+      "duosion",
+      "wobbuffet"
+    ],
+    "tier3": [
+      "malamar",
+      "reuniclus",
+      "gallade"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Go, my super bug Pokémon!",
+    "type": "bug",
+    "trainerId": "Bug-type Male Grunt",
+    "tier1": [
+      "pineco",
+      "ledyba",
+      "scyther"
+    ],
+    "tier2": [
+      "karrablast",
+      "shelmet",
+      "anorith"
+    ],
+    "tier3": [
+      "beedrill",
+      "scizor",
+      "forretress"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Let's rock and roll!",
+    "type": "rock",
+    "trainerId": "Rock-type Male Grunt",
+    "tier1": [
+      "amaura",
+      "tyrunt",
+      "roggenrola"
+    ],
+    "tier2": [
+      "graveler",
+      "shieldon",
+      "cranidos"
+    ],
+    "tier3": [
+      "golem",
+      "aurorus",
+      "tyrantrum"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Ke...ke...ke...ke...ke...ke!",
+    "type": "ghost",
+    "trainerId": "Ghost-type Male Grunt",
+    "tier1": [
+      "gastly",
+      "golett",
+      "duskull"
+    ],
+    "tier2": [
+      "dusclops",
+      "haunter",
+      "sableye"
+    ],
+    "tier3": [
+      "gengar",
+      "froslass",
+      "marowak_alolan"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "ROAR! ...How'd that sound?",
+    "type": "dragon",
+    "trainerId": "Dragon-type Female Grunt",
+    "tier1": [
+      "dratini",
+      "bagon",
+      "tyrunt"
+    ],
+    "tier2": [
+      "dragonair",
+      "exeggutor_alolan"
+    ],
+    "tier3": [
+      "dragonite",
+      "salamence",
+      "tyrantrum"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Wherever there is light, there is also shadow.",
+    "type": "dark",
+    "trainerId": "Dark-type Female Grunt",
+    "tier1": [
+      "rattata_alolan",
+      "cacnea",
+      "carvanha"
+    ],
+    "tier2": [
+      "raticate_alolan",
+      "muk_alolan"
+    ],
+    "tier3": [
+      "muk_alolan",
+      "skuntank"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "You're no match for my iron will!",
+    "type": "steel",
+    "trainerId": "Steel-type Male Grunt",
+    "tier1": [
+      "sandshrew_alolan",
+      "diglett_alolan",
+      "beldum"
+    ],
+    "tier2": [
+      "metang",
+      "skarmory",
+      "lairon"
+    ],
+    "tier3": [
+      "aggron",
+      "scizor",
+      "sandslash_alolan"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Check out my cute Pokémon!",
+    "type": "fairy",
+    "trainerId": "Fairy-type Female Grunt",
+    "tier1": [
+      "snubbull",
+      "mawile",
+      "vulpix_alolan"
+    ],
+    "tier2": [
+      "snubbull",
+      "weezing_galarian",
+      "kirlia"
+    ],
+    "tier3": [
+      "ninetales_alolan",
+      "weezing_galarian",
+      "gardevoir"
+    ],
+    "catchableTiers": [
+      0,
+      1
+    ]
+  },
+  {
+    "phrase": "Winning is for winners.",
+    "trainerId": "Male Grunt",
+    "tier1": [
+      "bulbasaur",
+      "charmander",
+      "squirtle"
+    ],
+    "tier2": [
+      "ivysaur",
+      "charmeleon",
+      "wartortle"
+    ],
+    "tier3": [
+      "venusaur",
+      "charizard",
+      "blastoise"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Winning is for winners.",
+    "trainerId": "Female Grunt",
+    "tier1": [
+      "snorlax"
+    ],
+    "tier2": [
+      "poliwrath",
+      "gardevoir",
+      "snorlax"
+    ],
+    "tier3": [
+      "gyarados",
+      "dragonite",
+      "snorlax"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  },
+  {
+    "phrase": "Fooled ya, twerp.",
+    "trainerId": "Decoy Female Grunt",
+    "tier1": [
+      "bellsprout"
+    ],
+    "tier2": [
+      "raticate",
+      "weepinbell"
+    ],
+    "tier3": [
+      "raticate",
+      "snorlax"
+    ],
+    "catchableTiers": [
+      0
+    ]
+  }
+]

@@ -75,3 +75,29 @@ export interface PokemonGoPost {
     type: 'post' | 'news';
     html: string;
 }
+
+export interface IRocketGrunt {
+    trainerId: string;
+    type: string | undefined;
+    phrase: string;
+    tier1: string[];
+    tier2: string[];
+    tier3: string[];
+    catchableTiers: number[];
+}
+
+// LeekDuck Spotlight Hour output DTO
+export interface ISpotlightHourEvent {
+    bonus: string;
+    pokemon: string[];
+    dateStart: number;
+    dateEnd: number;
+}
+
+// LeekDuck 5-star and Mega Raid Bosses output DTO
+export interface ILeekduckSpecialRaidBossEvent {
+    dateStart: number;
+    dateEnd: number;
+    pokemon: IEntry[];
+    title: string;
+} 

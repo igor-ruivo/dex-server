@@ -38,7 +38,7 @@ export class PokemonMatcher {
         for (const rawName of pkmWithNoClothes) {
             let isShadow = false;
             let isMega = false;
-            let currP = ndfNormalized(normalizePokemonName(rawName)).trim();
+            let currP = normalizePokemonName(rawName);
             if (currP.toLocaleLowerCase().includes(' candy') || currP.toLocaleLowerCase().includes('dynamax')) {
                 continue;
             }

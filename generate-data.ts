@@ -1,30 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { GameMasterParser, GameMasterData } from './src/parsers/pokemon/game-master-parser';
+import { GameMasterParser } from './src/parsers/pokemon/game-master-parser';
 import { generateEvents } from './src/parsers/events/generate-events';
-import { PublicEvent } from './src/parsers/types/events';
 import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
 
-interface RaidBoss {
-  name: string;
-  tier: '1' | '3' | '5' | 'mega';
-  cp: { min: number; max: number };
-  shiny: boolean;
-}
-
-interface AggregatedData {
-  events: PublicEvent[];
-  raidBosses: RaidBoss[];
-  gameMaster: {
-    pokemon: GameMasterData;
-    lastUpdated: string;
-  };
-  metadata: {
-    lastFetch: string;
-    version: string;
-    sources: string[];
-  };
-}
 
 const generateData = async () => {
   console.log('🚀 Starting Pokemon GO data generation...');
@@ -56,57 +35,10 @@ const generateData = async () => {
     await fs.writeFile(seasonPath, JSON.stringify(seasonData, null, 2));
     console.log(`✅ Season data written to: ${seasonPath}`);
     
-    // Create aggregated data
-    const data: AggregatedData = {
-      events: eventsData,
-      raidBosses: [
-        {
-          name: 'Charizard',
-          tier: '5',
-          cp: { min: 2200, max: 2400 },
-          shiny: true,
-        },
-        {
-          name: 'Blastoise',
-          tier: '5',
-          cp: { min: 2100, max: 2300 },
-          shiny: false,
-        },
-        {
-          name: 'Venusaur',
-          tier: '5',
-          cp: { min: 2000, max: 2200 },
-          shiny: true,
-        },
-        {
-          name: 'Pikachu',
-          tier: '1',
-          cp: { min: 300, max: 500 },
-          shiny: true,
-        },
-      ],
-      gameMaster: {
-        pokemon: pokemonDictionary,
-        lastUpdated: now,
-      },
-      metadata: {
-        lastFetch: now,
-        version: '1.0.0',
-        sources: ['PvPoke Game Master', 'Pokemon GO Live News', 'Dummy Raids Source'],
-      },
-    };
-
-    // Write main aggregated data file
-    const mainDataPath = path.join(dataDir, 'aggregated-data.json');
-    await fs.writeFile(mainDataPath, JSON.stringify(data, null, 2));
-    console.log(`✅ Main data written to: ${mainDataPath}`);
 
     // Write remaining individual data files
     const files = [
-      { name: 'events.json', data: data.events },
-      { name: 'raid-bosses.json', data: data.raidBosses },
-      { name: 'metadata.json', data: data.metadata },
-    ];
+      { name: 'events.json', data: eventsData } ];
 
     for (const file of files) {
       const filePath = path.join(dataDir, file.name);
@@ -118,11 +50,8 @@ const generateData = async () => {
     console.log('🎉 Data generation completed successfully!');
     console.log('');
     console.log('📁 Generated files:');
-    console.log('- data/aggregated-data.json');
     console.log('- data/events.json');
-    console.log('- data/raid-bosses.json');
     console.log('- data/game-master.json');
-    console.log('- data/metadata.json');
     console.log('- data/season.json');
     console.log('');
     console.log(`⏰ Last updated: ${now}`);

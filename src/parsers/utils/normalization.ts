@@ -13,14 +13,14 @@ export const normalizeSpeciesNameForId = (speciesName: string): string => {
 };
 
 export const normalizePokemonName = (pokemonName: string): string => {
-    const normalized = pokemonName
+    return ndfNormalized(pokemonName
         .replace("*", "")
         .replace(" Forme", "")
         .trim()
+    )
         .replaceAll("(normal)", "")
         .replaceAll(' cloak', '')
-        .trim();
-    return normalized;
+        .trim()
 };
 
 export const sexConverter = (name: string): string => {

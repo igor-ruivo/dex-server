@@ -56,3 +56,22 @@ export interface IEventSource {
     name: string;
     parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
 }
+
+export enum PokemonGoPostKind {
+    News,
+    Post
+}
+
+export interface IPokemonGoEventBlockParser {
+    subTitle: string;
+    imgUrl: string;
+    dateString: string;
+    getEventBlocks: () => Array<Element>;
+}
+
+export interface IPokemonGoHtmlParser {
+    getKind: () => PokemonGoPostKind;
+    getTitle: () => string;
+    getImgUrl: () => string;
+    getSubEvents: () => Array<IPokemonGoEventBlockParser>;
+}

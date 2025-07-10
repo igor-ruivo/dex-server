@@ -179,4 +179,43 @@ export interface GameMasterPokemon {
 
 export interface GameMasterData {
   [speciesId: string]: GameMasterPokemon;
-} 
+}
+
+export interface IGameMasterMove {
+  moveId: string;
+  vId: string;
+  type: string;
+  isFast: boolean;
+  pvpPower: number;
+  pvePower: number;
+  pvpEnergyDelta: number;
+  pveEnergyDelta: number;
+  pvpDuration: number;
+  pveDuration: number;
+  pvpBuffs?: {
+    chance: number;
+    buffs: Array<{ buff: string; quantity: number }>;
+  };
+  moveName: { en: string; pt: string };
+}
+
+export type PvPMove = {
+  moveId: string,
+  vId: string,
+  type: string,
+  isFast: boolean,
+  pvpPower: number,
+  pvpEnergy: number,
+  pvpCooldown: number,
+  buffs: any
+};
+
+export type PvEMove = {
+  moveId: string,
+  vId: string,
+  type: string,
+  isFast: boolean,
+  pvePower: number,
+  pveEnergy: number,
+  pveCooldown: number
+};

@@ -1,0 +1,5794 @@
+{
+  "WRAP": {
+    "moveId": "WRAP",
+    "vId": "0013",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Wrap",
+      "pt": "Embrulho"
+    }
+  },
+  "HYPER_BEAM": {
+    "moveId": "HYPER_BEAM",
+    "vId": "0014",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 150,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "moveName": {
+      "en": "Hyper Beam",
+      "pt": "Hiper-raio"
+    }
+  },
+  "DARK_PULSE": {
+    "moveId": "DARK_PULSE",
+    "vId": "0016",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 80,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Dark Pulse",
+      "pt": "Pulso Sombrio"
+    }
+  },
+  "SLUDGE": {
+    "moveId": "SLUDGE",
+    "vId": "0018",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Sludge",
+      "pt": "Ataque de Lama"
+    }
+  },
+  "VICE_GRIP": {
+    "moveId": "VICE_GRIP",
+    "vId": "0020",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 35,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Vice Grip",
+      "pt": "Agarramento Compressor"
+    }
+  },
+  "FLAME_WHEEL": {
+    "moveId": "FLAME_WHEEL",
+    "vId": "0021",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 55,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Flame Wheel",
+      "pt": "Roda de Fogo"
+    }
+  },
+  "MEGAHORN": {
+    "moveId": "MEGAHORN",
+    "vId": "0022",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 105,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Megahorn",
+      "pt": "Megachifre"
+    }
+  },
+  "FLAMETHROWER": {
+    "moveId": "FLAMETHROWER",
+    "vId": "0024",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 65,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Flamethrower",
+      "pt": "Lança-chamas"
+    }
+  },
+  "DIG": {
+    "moveId": "DIG",
+    "vId": "0026",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 100,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 4.5,
+    "moveName": {
+      "en": "Dig",
+      "pt": "Cavar"
+    }
+  },
+  "CROSS_CHOP": {
+    "moveId": "CROSS_CHOP",
+    "vId": "0028",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Cross Chop",
+      "pt": "Golpe Cruzado"
+    }
+  },
+  "PSYBEAM": {
+    "moveId": "PSYBEAM",
+    "vId": "0030",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 65,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Psybeam",
+      "pt": "Feixe Psíquico"
+    }
+  },
+  "EARTHQUAKE": {
+    "moveId": "EARTHQUAKE",
+    "vId": "0031",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 140,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Earthquake",
+      "pt": "Terremoto"
+    }
+  },
+  "STONE_EDGE": {
+    "moveId": "STONE_EDGE",
+    "vId": "0032",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 105,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Stone Edge",
+      "pt": "Gume de Pedra"
+    }
+  },
+  "ICE_PUNCH": {
+    "moveId": "ICE_PUNCH",
+    "vId": "0033",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Ice Punch",
+      "pt": "Soco de Gelo"
+    }
+  },
+  "HEART_STAMP": {
+    "moveId": "HEART_STAMP",
+    "vId": "0034",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 40,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Heart Stamp",
+      "pt": "Estampa de Coração"
+    }
+  },
+  "DISCHARGE": {
+    "moveId": "DISCHARGE",
+    "vId": "0035",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 65,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Discharge",
+      "pt": "Descarga"
+    }
+  },
+  "FLASH_CANNON": {
+    "moveId": "FLASH_CANNON",
+    "vId": "0036",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 100,
+    "pvpEnergyDelta": -70,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Flash Cannon",
+      "pt": "Canhão de Flash"
+    }
+  },
+  "DRILL_PECK": {
+    "moveId": "DRILL_PECK",
+    "vId": "0038",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 70,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Drill Peck",
+      "pt": "Bico Broca"
+    }
+  },
+  "ICE_BEAM": {
+    "moveId": "ICE_BEAM",
+    "vId": "0039",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 95,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Ice Beam",
+      "pt": "Raio Congelante"
+    }
+  },
+  "BLIZZARD": {
+    "moveId": "BLIZZARD",
+    "vId": "0040",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 140,
+    "pvePower": 130,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Blizzard",
+      "pt": "Nevasca"
+    }
+  },
+  "HEAT_WAVE": {
+    "moveId": "HEAT_WAVE",
+    "vId": "0042",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 95,
+    "pvePower": 95,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Heat Wave",
+      "pt": "Onda de Calor"
+    }
+  },
+  "AERIAL_ACE": {
+    "moveId": "AERIAL_ACE",
+    "vId": "0045",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Aerial Ace",
+      "pt": "Ás dos Ares"
+    }
+  },
+  "DRILL_RUN": {
+    "moveId": "DRILL_RUN",
+    "vId": "0046",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 85,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Drill Run",
+      "pt": "Furação"
+    }
+  },
+  "PETAL_BLIZZARD": {
+    "moveId": "PETAL_BLIZZARD",
+    "vId": "0047",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 110,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Petal Blizzard",
+      "pt": "Nevasca de Pétalas"
+    }
+  },
+  "MEGA_DRAIN": {
+    "moveId": "MEGA_DRAIN",
+    "vId": "0048",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 25,
+    "pvePower": 25,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Mega Drain",
+      "pt": "Megadreno"
+    }
+  },
+  "BUG_BUZZ": {
+    "moveId": "BUG_BUZZ",
+    "vId": "0049",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 95,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Bug Buzz",
+      "pt": "Zumbido de Inseto"
+    }
+  },
+  "POISON_FANG": {
+    "moveId": "POISON_FANG",
+    "vId": "0050",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 30,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Poison Fang",
+      "pt": "Presa Venenosa"
+    }
+  },
+  "NIGHT_SLASH": {
+    "moveId": "NIGHT_SLASH",
+    "vId": "0051",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Night Slash",
+      "pt": "Talho Noturno"
+    }
+  },
+  "BUBBLE_BEAM": {
+    "moveId": "BUBBLE_BEAM",
+    "vId": "0053",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 25,
+    "pvePower": 45,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Bubble Beam",
+      "pt": "Jato de Bolhas"
+    }
+  },
+  "SUBMISSION": {
+    "moveId": "SUBMISSION",
+    "vId": "0054",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 55,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Submission",
+      "pt": "Submissão"
+    }
+  },
+  "LOW_SWEEP": {
+    "moveId": "LOW_SWEEP",
+    "vId": "0056",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 40,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Low Sweep",
+      "pt": "Movimento Baixo"
+    }
+  },
+  "AQUA_JET": {
+    "moveId": "AQUA_JET",
+    "vId": "0057",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 45,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Aqua Jet",
+      "pt": "Aqua Jato"
+    }
+  },
+  "AQUA_TAIL": {
+    "moveId": "AQUA_TAIL",
+    "vId": "0058",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Aqua Tail",
+      "pt": "Aqua Cauda"
+    }
+  },
+  "SEED_BOMB": {
+    "moveId": "SEED_BOMB",
+    "vId": "0059",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 55,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Seed Bomb",
+      "pt": "Bomba de Sementes"
+    }
+  },
+  "PSYSHOCK": {
+    "moveId": "PSYSHOCK",
+    "vId": "0060",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 60,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Psyshock",
+      "pt": "Choque Psíquico"
+    }
+  },
+  "ANCIENT_POWER": {
+    "moveId": "ANCIENT_POWER",
+    "vId": "0062",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 70,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        },
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Ancient Power",
+      "pt": "Poder Ancestral"
+    }
+  },
+  "ROCK_TOMB": {
+    "moveId": "ROCK_TOMB",
+    "vId": "0063",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 65,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Rock Tomb",
+      "pt": "Tumba de Rochas"
+    }
+  },
+  "ROCK_SLIDE": {
+    "moveId": "ROCK_SLIDE",
+    "vId": "0064",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 75,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Rock Slide",
+      "pt": "Deslize de Pedras"
+    }
+  },
+  "POWER_GEM": {
+    "moveId": "POWER_GEM",
+    "vId": "0065",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 80,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Power Gem",
+      "pt": "Gema Poderosa"
+    }
+  },
+  "SHADOW_SNEAK": {
+    "moveId": "SHADOW_SNEAK",
+    "vId": "0066",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Shadow Sneak",
+      "pt": "Furtividade nas Sombras"
+    }
+  },
+  "SHADOW_PUNCH": {
+    "moveId": "SHADOW_PUNCH",
+    "vId": "0067",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 35,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Shadow Punch",
+      "pt": "Soco Sombrio"
+    }
+  },
+  "OMINOUS_WIND": {
+    "moveId": "OMINOUS_WIND",
+    "vId": "0069",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 55,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        },
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Ominous Wind",
+      "pt": "Vento Ominoso"
+    }
+  },
+  "SHADOW_BALL": {
+    "moveId": "SHADOW_BALL",
+    "vId": "0070",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Shadow Ball",
+      "pt": "Bola Sombria"
+    }
+  },
+  "MAGNET_BOMB": {
+    "moveId": "MAGNET_BOMB",
+    "vId": "0072",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 75,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Magnet Bomb",
+      "pt": "Bomba Ímã"
+    }
+  },
+  "IRON_HEAD": {
+    "moveId": "IRON_HEAD",
+    "vId": "0074",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 60,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Iron Head",
+      "pt": "Cabeça de Ferro"
+    }
+  },
+  "PARABOLIC_CHARGE": {
+    "moveId": "PARABOLIC_CHARGE",
+    "vId": "0075",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.66,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Parabolic Charge",
+      "pt": "Ataque Parabólico"
+    }
+  },
+  "THUNDER_PUNCH": {
+    "moveId": "THUNDER_PUNCH",
+    "vId": "0077",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Thunder Punch",
+      "pt": "Soco Trovoada"
+    }
+  },
+  "THUNDER": {
+    "moveId": "THUNDER",
+    "vId": "0078",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Thunder",
+      "pt": "Trovão"
+    }
+  },
+  "THUNDERBOLT": {
+    "moveId": "THUNDERBOLT",
+    "vId": "0079",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 80,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Thunderbolt",
+      "pt": "Relâmpago"
+    }
+  },
+  "TWISTER": {
+    "moveId": "TWISTER",
+    "vId": "0080",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 50,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Twister",
+      "pt": "Twister"
+    }
+  },
+  "DRAGON_PULSE": {
+    "moveId": "DRAGON_PULSE",
+    "vId": "0082",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Dragon Pulse",
+      "pt": "Pulso do Dragão"
+    }
+  },
+  "DRAGON_CLAW": {
+    "moveId": "DRAGON_CLAW",
+    "vId": "0083",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Dragon Claw",
+      "pt": "Garra de Dragão"
+    }
+  },
+  "DISARMING_VOICE": {
+    "moveId": "DISARMING_VOICE",
+    "vId": "0084",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "moveName": {
+      "en": "Disarming Voice",
+      "pt": "Voz Desarmante"
+    }
+  },
+  "DRAINING_KISS": {
+    "moveId": "DRAINING_KISS",
+    "vId": "0085",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Draining Kiss",
+      "pt": "Beijo Drenante"
+    }
+  },
+  "DAZZLING_GLEAM": {
+    "moveId": "DAZZLING_GLEAM",
+    "vId": "0086",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 100,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Dazzling Gleam",
+      "pt": "Clarão Deslumbrante"
+    }
+  },
+  "MOONBLAST": {
+    "moveId": "MOONBLAST",
+    "vId": "0087",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 130,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Moonblast",
+      "pt": "Explosão Lunar"
+    }
+  },
+  "PLAY_ROUGH": {
+    "moveId": "PLAY_ROUGH",
+    "vId": "0088",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Play Rough",
+      "pt": "Jogo Duro"
+    }
+  },
+  "CROSS_POISON": {
+    "moveId": "CROSS_POISON",
+    "vId": "0089",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 40,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Cross Poison",
+      "pt": "Corte-veneno"
+    }
+  },
+  "SLUDGE_BOMB": {
+    "moveId": "SLUDGE_BOMB",
+    "vId": "0090",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 85,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Sludge Bomb",
+      "pt": "Bomba de Lodo"
+    }
+  },
+  "SLUDGE_WAVE": {
+    "moveId": "SLUDGE_WAVE",
+    "vId": "0091",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 105,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Sludge Wave",
+      "pt": "Onda de Lama"
+    }
+  },
+  "GUNK_SHOT": {
+    "moveId": "GUNK_SHOT",
+    "vId": "0092",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 130,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Gunk Shot",
+      "pt": "Tiro de Sujeira"
+    }
+  },
+  "BONE_CLUB": {
+    "moveId": "BONE_CLUB",
+    "vId": "0094",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 40,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Bone Club",
+      "pt": "Bastão de Osso"
+    }
+  },
+  "BULLDOZE": {
+    "moveId": "BULLDOZE",
+    "vId": "0095",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 80,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Bulldoze",
+      "pt": "Tremor"
+    }
+  },
+  "MUD_BOMB": {
+    "moveId": "MUD_BOMB",
+    "vId": "0096",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Mud Bomb",
+      "pt": "Bomba de Lama"
+    }
+  },
+  "SIGNAL_BEAM": {
+    "moveId": "SIGNAL_BEAM",
+    "vId": "0099",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 75,
+    "pvePower": 75,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.2,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        },
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Signal Beam",
+      "pt": "Feixe Sinalizador"
+    }
+  },
+  "X_SCISSOR": {
+    "moveId": "X_SCISSOR",
+    "vId": "0100",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 45,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "X Scissor",
+      "pt": "Tesoura X"
+    }
+  },
+  "FLAME_CHARGE": {
+    "moveId": "FLAME_CHARGE",
+    "vId": "0101",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 70,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Flame Charge",
+      "pt": "Ataque de Chamas"
+    }
+  },
+  "FLAME_BURST": {
+    "moveId": "FLAME_BURST",
+    "vId": "0102",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Flame Burst",
+      "pt": "Rajada de Chamas"
+    }
+  },
+  "FIRE_BLAST": {
+    "moveId": "FIRE_BLAST",
+    "vId": "0103",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 140,
+    "pvePower": 140,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "moveName": {
+      "en": "Fire Blast",
+      "pt": "Rajada de Fogo"
+    }
+  },
+  "BRINE": {
+    "moveId": "BRINE",
+    "vId": "0104",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 65,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Brine",
+      "pt": "Salmoura"
+    }
+  },
+  "WATER_PULSE": {
+    "moveId": "WATER_PULSE",
+    "vId": "0105",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 65,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Water Pulse",
+      "pt": "Pulso d'Água"
+    }
+  },
+  "SCALD": {
+    "moveId": "SCALD",
+    "vId": "0106",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 75,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Scald",
+      "pt": "Escaldada"
+    }
+  },
+  "HYDRO_PUMP": {
+    "moveId": "HYDRO_PUMP",
+    "vId": "0107",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 135,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Hydro Pump",
+      "pt": "Jato d'Água"
+    }
+  },
+  "PSYCHIC": {
+    "moveId": "PSYCHIC",
+    "vId": "0108",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 75,
+    "pvePower": 95,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Psychic",
+      "pt": "Psíquico"
+    }
+  },
+  "PSYSTRIKE": {
+    "moveId": "PSYSTRIKE",
+    "vId": "0109",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 95,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Psystrike",
+      "pt": "Golpe Psíquico"
+    }
+  },
+  "ICY_WIND": {
+    "moveId": "ICY_WIND",
+    "vId": "0111",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 65,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Icy Wind",
+      "pt": "Vento Congelante"
+    }
+  },
+  "GIGA_DRAIN": {
+    "moveId": "GIGA_DRAIN",
+    "vId": "0114",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "moveName": {
+      "en": "Giga Drain",
+      "pt": "Gigadreno"
+    }
+  },
+  "FIRE_PUNCH": {
+    "moveId": "FIRE_PUNCH",
+    "vId": "0115",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Fire Punch",
+      "pt": "Soco de Fogo"
+    }
+  },
+  "SOLAR_BEAM": {
+    "moveId": "SOLAR_BEAM",
+    "vId": "0116",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 180,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 5,
+    "moveName": {
+      "en": "Solar Beam",
+      "pt": "Raio Solar"
+    }
+  },
+  "LEAF_BLADE": {
+    "moveId": "LEAF_BLADE",
+    "vId": "0117",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Leaf Blade",
+      "pt": "Lâmina de Folha"
+    }
+  },
+  "POWER_WHIP": {
+    "moveId": "POWER_WHIP",
+    "vId": "0118",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Power Whip",
+      "pt": "Chicote Poderoso"
+    }
+  },
+  "AIR_CUTTER": {
+    "moveId": "AIR_CUTTER",
+    "vId": "0121",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Air Cutter",
+      "pt": "Cortador de Ar"
+    }
+  },
+  "HURRICANE": {
+    "moveId": "HURRICANE",
+    "vId": "0122",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 105,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Hurricane",
+      "pt": "Furacão"
+    }
+  },
+  "BRICK_BREAK": {
+    "moveId": "BRICK_BREAK",
+    "vId": "0123",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 40,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Brick Break",
+      "pt": "Quebra-telha"
+    }
+  },
+  "SWIFT": {
+    "moveId": "SWIFT",
+    "vId": "0125",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 65,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Swift",
+      "pt": "Ataque Veloz"
+    }
+  },
+  "HORN_ATTACK": {
+    "moveId": "HORN_ATTACK",
+    "vId": "0126",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Horn Attack",
+      "pt": "Ataque de Chifre"
+    }
+  },
+  "STOMP": {
+    "moveId": "STOMP",
+    "vId": "0127",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Stomp",
+      "pt": "Pisotear"
+    }
+  },
+  "HYPER_FANG": {
+    "moveId": "HYPER_FANG",
+    "vId": "0129",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 80,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Hyper Fang",
+      "pt": "Hiperpresa"
+    }
+  },
+  "BODY_SLAM": {
+    "moveId": "BODY_SLAM",
+    "vId": "0131",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Body Slam",
+      "pt": "Pancada Corporal"
+    }
+  },
+  "REST": {
+    "moveId": "REST",
+    "vId": "0132",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Rest",
+      "pt": "Descansar"
+    }
+  },
+  "STRUGGLE": {
+    "moveId": "STRUGGLE",
+    "vId": "0133",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 35,
+    "pvePower": 35,
+    "pvpEnergyDelta": -100,
+    "pveEnergyDelta": 0,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Struggle",
+      "pt": "Insistência"
+    }
+  },
+  "SCALD_BLASTOISE": {
+    "moveId": "SCALD_BLASTOISE",
+    "vId": "0134",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4.5,
+    "moveName": {
+      "en": "Scald Blastoise",
+      "pt": "Escaldada"
+    }
+  },
+  "HYDRO_PUMP_BLASTOISE": {
+    "moveId": "HYDRO_PUMP_BLASTOISE",
+    "vId": "0135",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4.5,
+    "moveName": {
+      "en": "Hydro Pump Blastoise",
+      "pt": "Jato d'Água"
+    }
+  },
+  "WRAP_GREEN": {
+    "moveId": "WRAP_GREEN",
+    "vId": "0136",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 25,
+    "pvePower": 25,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Wrap Green",
+      "pt": "Embrulho"
+    }
+  },
+  "WRAP_PINK": {
+    "moveId": "WRAP_PINK",
+    "vId": "0137",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 25,
+    "pvePower": 25,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Wrap Pink",
+      "pt": "Embrulho"
+    }
+  },
+  "FURY_CUTTER": {
+    "moveId": "FURY_CUTTER",
+    "vId": "0200",
+    "type": "bug",
+    "isFast": true,
+    "pvpPower": 2,
+    "pvePower": 4,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Fury Cutter",
+      "pt": "Cortador de Fúria"
+    }
+  },
+  "BUG_BITE": {
+    "moveId": "BUG_BITE",
+    "vId": "0201",
+    "type": "bug",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 5,
+    "pvpEnergyDelta": 3,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Bug Bite",
+      "pt": "Picada"
+    }
+  },
+  "BITE": {
+    "moveId": "BITE",
+    "vId": "0202",
+    "type": "dark",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 6,
+    "pvpEnergyDelta": 2,
+    "pveEnergyDelta": 4,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Bite",
+      "pt": "Mordida"
+    }
+  },
+  "SUCKER_PUNCH": {
+    "moveId": "SUCKER_PUNCH",
+    "vId": "0203",
+    "type": "dark",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 5,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Sucker Punch",
+      "pt": "Soco Enganador"
+    }
+  },
+  "DRAGON_BREATH": {
+    "moveId": "DRAGON_BREATH",
+    "vId": "0204",
+    "type": "dragon",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 6,
+    "pvpEnergyDelta": 3,
+    "pveEnergyDelta": 4,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Dragon Breath",
+      "pt": "Sopro do Dragão"
+    }
+  },
+  "THUNDER_SHOCK": {
+    "moveId": "THUNDER_SHOCK",
+    "vId": "0205",
+    "type": "electric",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 4,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Thunder Shock",
+      "pt": "Trovoada de Choques"
+    }
+  },
+  "SPARK": {
+    "moveId": "SPARK",
+    "vId": "0206",
+    "type": "electric",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 4,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Spark",
+      "pt": "Faísca"
+    }
+  },
+  "LOW_KICK": {
+    "moveId": "LOW_KICK",
+    "vId": "0207",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 5,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Low Kick",
+      "pt": "Rasteira"
+    }
+  },
+  "KARATE_CHOP": {
+    "moveId": "KARATE_CHOP",
+    "vId": "0208",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 10,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Karate Chop",
+      "pt": "Golpe de Caratê"
+    }
+  },
+  "EMBER": {
+    "moveId": "EMBER",
+    "vId": "0209",
+    "type": "fire",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 10,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Ember",
+      "pt": "Brasa"
+    }
+  },
+  "WING_ATTACK": {
+    "moveId": "WING_ATTACK",
+    "vId": "0210",
+    "type": "flying",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 10,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 11,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Wing Attack",
+      "pt": "Ataque de Asa"
+    }
+  },
+  "PECK": {
+    "moveId": "PECK",
+    "vId": "0211",
+    "type": "flying",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 10,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Peck",
+      "pt": "Bicada"
+    }
+  },
+  "LICK": {
+    "moveId": "LICK",
+    "vId": "0212",
+    "type": "ghost",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 5,
+    "pvpEnergyDelta": 3,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Lick",
+      "pt": "Lambida"
+    }
+  },
+  "SHADOW_CLAW": {
+    "moveId": "SHADOW_CLAW",
+    "vId": "0213",
+    "type": "ghost",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 6,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 4,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Shadow Claw",
+      "pt": "Garra Sombria"
+    }
+  },
+  "VINE_WHIP": {
+    "moveId": "VINE_WHIP",
+    "vId": "0214",
+    "type": "grass",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 6,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Vine Whip",
+      "pt": "Chicote de Vinha"
+    }
+  },
+  "RAZOR_LEAF": {
+    "moveId": "RAZOR_LEAF",
+    "vId": "0215",
+    "type": "grass",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 13,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Razor Leaf",
+      "pt": "Folha Navalha"
+    }
+  },
+  "MUD_SHOT": {
+    "moveId": "MUD_SHOT",
+    "vId": "0216",
+    "type": "ground",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 4,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Mud Shot",
+      "pt": "Tiro de Lama"
+    }
+  },
+  "ICE_SHARD": {
+    "moveId": "ICE_SHARD",
+    "vId": "0217",
+    "type": "ice",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 10,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Ice Shard",
+      "pt": "Caco de Gelo"
+    }
+  },
+  "FROST_BREATH": {
+    "moveId": "FROST_BREATH",
+    "vId": "0218",
+    "type": "ice",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 11,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Frost Breath",
+      "pt": "Respiração de Gelo"
+    }
+  },
+  "QUICK_ATTACK": {
+    "moveId": "QUICK_ATTACK",
+    "vId": "0219",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 10,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Quick Attack",
+      "pt": "Ataque Rápido"
+    }
+  },
+  "SCRATCH": {
+    "moveId": "SCRATCH",
+    "vId": "0220",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 6,
+    "pvpEnergyDelta": 2,
+    "pveEnergyDelta": 4,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Scratch",
+      "pt": "Arranhão"
+    }
+  },
+  "TACKLE": {
+    "moveId": "TACKLE",
+    "vId": "0221",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 5,
+    "pvpEnergyDelta": 3,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Tackle",
+      "pt": "Investida"
+    }
+  },
+  "POUND": {
+    "moveId": "POUND",
+    "vId": "0222",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 6,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Pound",
+      "pt": "Pancada"
+    }
+  },
+  "CUT": {
+    "moveId": "CUT",
+    "vId": "0223",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 5,
+    "pvpEnergyDelta": 2,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Cut",
+      "pt": "Cortar"
+    }
+  },
+  "POISON_JAB": {
+    "moveId": "POISON_JAB",
+    "vId": "0224",
+    "type": "poison",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 13,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Poison Jab",
+      "pt": "Golpe Envenenado"
+    }
+  },
+  "ACID": {
+    "moveId": "ACID",
+    "vId": "0225",
+    "type": "poison",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 11,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Acid",
+      "pt": "Ácido"
+    }
+  },
+  "PSYCHO_CUT": {
+    "moveId": "PSYCHO_CUT",
+    "vId": "0226",
+    "type": "psychic",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 4,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Psycho Cut",
+      "pt": "Corte Psíquico"
+    }
+  },
+  "ROCK_THROW": {
+    "moveId": "ROCK_THROW",
+    "vId": "0227",
+    "type": "rock",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 13,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Rock Throw",
+      "pt": "Lançamento de Rocha"
+    }
+  },
+  "METAL_CLAW": {
+    "moveId": "METAL_CLAW",
+    "vId": "0228",
+    "type": "steel",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 6,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Metal Claw",
+      "pt": "Garra de Metal"
+    }
+  },
+  "BULLET_PUNCH": {
+    "moveId": "BULLET_PUNCH",
+    "vId": "0229",
+    "type": "steel",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 10,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 11,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Bullet Punch",
+      "pt": "Soco Projétil"
+    }
+  },
+  "WATER_GUN": {
+    "moveId": "WATER_GUN",
+    "vId": "0230",
+    "type": "water",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 5,
+    "pvpEnergyDelta": 3,
+    "pveEnergyDelta": 5,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Water Gun",
+      "pt": "Revólver d'Água"
+    }
+  },
+  "SPLASH": {
+    "moveId": "SPLASH",
+    "vId": "0231",
+    "type": "water",
+    "isFast": true,
+    "pvpPower": 0,
+    "pvePower": 0,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 17,
+    "pvpDuration": 2,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Splash",
+      "pt": "Borrifada"
+    }
+  },
+  "WATER_GUN_FAST_BLASTOISE": {
+    "moveId": "WATER_GUN_FAST_BLASTOISE",
+    "vId": "0232",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 6,
+    "pvePower": 10,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 0,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Water Gun Fast Blastoise",
+      "pt": "Revólver d'Água"
+    }
+  },
+  "MUD_SLAP": {
+    "moveId": "MUD_SLAP",
+    "vId": "0233",
+    "type": "ground",
+    "isFast": true,
+    "pvpPower": 12,
+    "pvePower": 19,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Mud Slap",
+      "pt": "Tapa de Lama"
+    }
+  },
+  "ZEN_HEADBUTT": {
+    "moveId": "ZEN_HEADBUTT",
+    "vId": "0234",
+    "type": "psychic",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 11,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Zen Headbutt",
+      "pt": "Cabeçada Zen"
+    }
+  },
+  "CONFUSION": {
+    "moveId": "CONFUSION",
+    "vId": "0235",
+    "type": "psychic",
+    "isFast": true,
+    "pvpPower": 16,
+    "pvePower": 19,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 14,
+    "pvpDuration": 2,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Confusion",
+      "pt": "Confusão"
+    }
+  },
+  "POISON_STING": {
+    "moveId": "POISON_STING",
+    "vId": "0236",
+    "type": "poison",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 4,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Poison Sting",
+      "pt": "Ferrão Venenoso"
+    }
+  },
+  "BUBBLE": {
+    "moveId": "BUBBLE",
+    "vId": "0237",
+    "type": "water",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 10,
+    "pvpEnergyDelta": 11,
+    "pveEnergyDelta": 12,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Bubble",
+      "pt": "Bolha"
+    }
+  },
+  "FEINT_ATTACK": {
+    "moveId": "FEINT_ATTACK",
+    "vId": "0238",
+    "type": "dark",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 11,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Feint Attack",
+      "pt": "Ataque Dissimulado"
+    }
+  },
+  "STEEL_WING": {
+    "moveId": "STEEL_WING",
+    "vId": "0239",
+    "type": "steel",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 14,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Steel Wing",
+      "pt": "Asa de Aço"
+    }
+  },
+  "FIRE_FANG": {
+    "moveId": "FIRE_FANG",
+    "vId": "0240",
+    "type": "fire",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 13,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Fire Fang",
+      "pt": "Presas de Fogo"
+    }
+  },
+  "ROCK_SMASH": {
+    "moveId": "ROCK_SMASH",
+    "vId": "0241",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 17,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 12,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Rock Smash",
+      "pt": "Esmagamento de Pedras"
+    }
+  },
+  "TRANSFORM": {
+    "moveId": "TRANSFORM",
+    "vId": "0242",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 0,
+    "pvePower": 0,
+    "pvpEnergyDelta": 0,
+    "pveEnergyDelta": 0,
+    "pvpDuration": 1.5,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Transform",
+      "pt": "Transformação"
+    }
+  },
+  "COUNTER": {
+    "moveId": "COUNTER",
+    "vId": "0243",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 13,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Counter",
+      "pt": "Contra-atacar"
+    }
+  },
+  "POWDER_SNOW": {
+    "moveId": "POWDER_SNOW",
+    "vId": "0244",
+    "type": "ice",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 6,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 15,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Powder Snow",
+      "pt": "Neve em Pó"
+    }
+  },
+  "CLOSE_COMBAT": {
+    "moveId": "CLOSE_COMBAT",
+    "vId": "0245",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 105,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Close Combat",
+      "pt": "Corpo-a-corpo"
+    }
+  },
+  "DYNAMIC_PUNCH": {
+    "moveId": "DYNAMIC_PUNCH",
+    "vId": "0246",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 85,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Dynamic Punch",
+      "pt": "Soco Dinâmico"
+    }
+  },
+  "FOCUS_BLAST": {
+    "moveId": "FOCUS_BLAST",
+    "vId": "0247",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 140,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Focus Blast",
+      "pt": "Explosão Focalizada"
+    }
+  },
+  "AURORA_BEAM": {
+    "moveId": "AURORA_BEAM",
+    "vId": "0248",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 80,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Aurora Beam",
+      "pt": "Raio Aurora"
+    }
+  },
+  "CHARGE_BEAM": {
+    "moveId": "CHARGE_BEAM",
+    "vId": "0249",
+    "type": "electric",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 7,
+    "pvpEnergyDelta": 11,
+    "pveEnergyDelta": 14,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Charge Beam",
+      "pt": "Carga de Raio"
+    }
+  },
+  "VOLT_SWITCH": {
+    "moveId": "VOLT_SWITCH",
+    "vId": "0250",
+    "type": "electric",
+    "isFast": true,
+    "pvpPower": 12,
+    "pvePower": 13,
+    "pvpEnergyDelta": 16,
+    "pveEnergyDelta": 20,
+    "pvpDuration": 2,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Volt Switch",
+      "pt": "Troca Elétrica"
+    }
+  },
+  "WILD_CHARGE": {
+    "moveId": "WILD_CHARGE",
+    "vId": "0251",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 90,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Wild Charge",
+      "pt": "Ataque Selvagem"
+    }
+  },
+  "ZAP_CANNON": {
+    "moveId": "ZAP_CANNON",
+    "vId": "0252",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 140,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.33,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Zap Cannon",
+      "pt": "Canhão Zap"
+    }
+  },
+  "DRAGON_TAIL": {
+    "moveId": "DRAGON_TAIL",
+    "vId": "0253",
+    "type": "dragon",
+    "isFast": true,
+    "pvpPower": 13,
+    "pvePower": 14,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Dragon Tail",
+      "pt": "Cauda do Dragão"
+    }
+  },
+  "AVALANCHE": {
+    "moveId": "AVALANCHE",
+    "vId": "0254",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 85,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Avalanche",
+      "pt": "Avalanche"
+    }
+  },
+  "AIR_SLASH": {
+    "moveId": "AIR_SLASH",
+    "vId": "0255",
+    "type": "flying",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 12,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Air Slash",
+      "pt": "Golpe de Ar"
+    }
+  },
+  "BRAVE_BIRD": {
+    "moveId": "BRAVE_BIRD",
+    "vId": "0256",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 130,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -3
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Brave Bird",
+      "pt": "Pássaro Bravo"
+    }
+  },
+  "SKY_ATTACK": {
+    "moveId": "SKY_ATTACK",
+    "vId": "0257",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 80,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Sky Attack",
+      "pt": "Ataque do Céu"
+    }
+  },
+  "SAND_TOMB": {
+    "moveId": "SAND_TOMB",
+    "vId": "0258",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 25,
+    "pvePower": 60,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Sand Tomb",
+      "pt": "Fosso de Areia"
+    }
+  },
+  "ROCK_BLAST": {
+    "moveId": "ROCK_BLAST",
+    "vId": "0259",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Rock Blast",
+      "pt": "Explosão de Rocha"
+    }
+  },
+  "INFESTATION": {
+    "moveId": "INFESTATION",
+    "vId": "0260",
+    "type": "bug",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 9,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Infestation",
+      "pt": "Infestação"
+    }
+  },
+  "STRUGGLE_BUG": {
+    "moveId": "STRUGGLE_BUG",
+    "vId": "0261",
+    "type": "bug",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 15,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 15,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Struggle Bug",
+      "pt": "Ira de Inseto"
+    }
+  },
+  "SILVER_WIND": {
+    "moveId": "SILVER_WIND",
+    "vId": "0262",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 65,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        },
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Silver Wind",
+      "pt": "Vento Prateado"
+    }
+  },
+  "ASTONISH": {
+    "moveId": "ASTONISH",
+    "vId": "0263",
+    "type": "ghost",
+    "isFast": true,
+    "pvpPower": 12,
+    "pvePower": 7,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Astonish",
+      "pt": "Abismar"
+    }
+  },
+  "HEX": {
+    "moveId": "HEX",
+    "vId": "0264",
+    "type": "ghost",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 8,
+    "pvpEnergyDelta": 13,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Hex",
+      "pt": "Feitiço"
+    }
+  },
+  "NIGHT_SHADE": {
+    "moveId": "NIGHT_SHADE",
+    "vId": "0265",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 60,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Night Shade",
+      "pt": "Sombra Noturna"
+    }
+  },
+  "IRON_TAIL": {
+    "moveId": "IRON_TAIL",
+    "vId": "0266",
+    "type": "steel",
+    "isFast": true,
+    "pvpPower": 10,
+    "pvePower": 14,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Iron Tail",
+      "pt": "Cauda de Ferro"
+    }
+  },
+  "GYRO_BALL": {
+    "moveId": "GYRO_BALL",
+    "vId": "0267",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 85,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Gyro Ball",
+      "pt": "Girobola"
+    }
+  },
+  "HEAVY_SLAM": {
+    "moveId": "HEAVY_SLAM",
+    "vId": "0268",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Heavy Slam",
+      "pt": "Golpe Pesado"
+    }
+  },
+  "FIRE_SPIN": {
+    "moveId": "FIRE_SPIN",
+    "vId": "0269",
+    "type": "fire",
+    "isFast": true,
+    "pvpPower": 11,
+    "pvePower": 13,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 9,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Fire Spin",
+      "pt": "Chama Furacão"
+    }
+  },
+  "OVERHEAT": {
+    "moveId": "OVERHEAT",
+    "vId": "0270",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 160,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Overheat",
+      "pt": "Superaquecimento"
+    }
+  },
+  "BULLET_SEED": {
+    "moveId": "BULLET_SEED",
+    "vId": "0271",
+    "type": "grass",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 7,
+    "pvpEnergyDelta": 13,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Bullet Seed",
+      "pt": "Projétil de Semente"
+    }
+  },
+  "GRASS_KNOT": {
+    "moveId": "GRASS_KNOT",
+    "vId": "0272",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Grass Knot",
+      "pt": "Nó de Grama"
+    }
+  },
+  "ENERGY_BALL": {
+    "moveId": "ENERGY_BALL",
+    "vId": "0273",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Energy Ball",
+      "pt": "Bola de Energia"
+    }
+  },
+  "EXTRASENSORY": {
+    "moveId": "EXTRASENSORY",
+    "vId": "0274",
+    "type": "psychic",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 11,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 11,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Extrasensory",
+      "pt": "Extrassensorial"
+    }
+  },
+  "FUTURE_SIGHT": {
+    "moveId": "FUTURE_SIGHT",
+    "vId": "0275",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 115,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Future Sight",
+      "pt": "Visão do Futuro"
+    }
+  },
+  "MIRROR_COAT": {
+    "moveId": "MIRROR_COAT",
+    "vId": "0276",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Mirror Coat",
+      "pt": "Casaco Espelhado"
+    }
+  },
+  "OUTRAGE": {
+    "moveId": "OUTRAGE",
+    "vId": "0277",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 110,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "moveName": {
+      "en": "Outrage",
+      "pt": "Ultraje"
+    }
+  },
+  "SNARL": {
+    "moveId": "SNARL",
+    "vId": "0278",
+    "type": "dark",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 11,
+    "pvpEnergyDelta": 13,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Snarl",
+      "pt": "Rosnado"
+    }
+  },
+  "CRUNCH": {
+    "moveId": "CRUNCH",
+    "vId": "0279",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 65,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Crunch",
+      "pt": "Mastigada"
+    }
+  },
+  "FOUL_PLAY": {
+    "moveId": "FOUL_PLAY",
+    "vId": "0280",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 70,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Foul Play",
+      "pt": "Jogo Sujo"
+    }
+  },
+  "HIDDEN_POWER": {
+    "moveId": "HIDDEN_POWER",
+    "vId": "0281",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 9,
+    "pvePower": 15,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 15,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Hidden Power",
+      "pt": "Poder Oculto"
+    }
+  },
+  "TAKE_DOWN": {
+    "moveId": "TAKE_DOWN",
+    "vId": "0282",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 5,
+    "pvePower": 7,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 8,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Take Down",
+      "pt": "Desmantelar"
+    }
+  },
+  "WATERFALL": {
+    "moveId": "WATERFALL",
+    "vId": "0283",
+    "type": "water",
+    "isFast": true,
+    "pvpPower": 12,
+    "pvePower": 13,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Waterfall",
+      "pt": "Cachoeira"
+    }
+  },
+  "SURF": {
+    "moveId": "SURF",
+    "vId": "0284",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 75,
+    "pvePower": 60,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Surf",
+      "pt": "Surfar"
+    }
+  },
+  "DRACO_METEOR": {
+    "moveId": "DRACO_METEOR",
+    "vId": "0285",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 150,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Draco Meteor",
+      "pt": "Meteoro do Dragão"
+    }
+  },
+  "DOOM_DESIRE": {
+    "moveId": "DOOM_DESIRE",
+    "vId": "0286",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 75,
+    "pvePower": 65,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Doom Desire",
+      "pt": "Desejo Cruel"
+    }
+  },
+  "YAWN": {
+    "moveId": "YAWN",
+    "vId": "0287",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 0,
+    "pvePower": 0,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 2,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Yawn",
+      "pt": "Bocejo"
+    }
+  },
+  "PSYCHO_BOOST": {
+    "moveId": "PSYCHO_BOOST",
+    "vId": "0288",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 4,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Psycho Boost",
+      "pt": "Impulso Psíquico"
+    }
+  },
+  "ORIGIN_PULSE": {
+    "moveId": "ORIGIN_PULSE",
+    "vId": "0289",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 120,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Origin Pulse",
+      "pt": "Pulso Original"
+    }
+  },
+  "PRECIPICE_BLADES": {
+    "moveId": "PRECIPICE_BLADES",
+    "vId": "0290",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 120,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Precipice Blades",
+      "pt": "Lâmina Abissal"
+    }
+  },
+  "PRESENT": {
+    "moveId": "PRESENT",
+    "vId": "0291",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 6,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 23,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Present",
+      "pt": "Presente"
+    }
+  },
+  "WEATHER_BALL_FIRE": {
+    "moveId": "WEATHER_BALL_FIRE",
+    "vId": "0292",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Weather Ball Fire",
+      "pt": "Esfera Climática"
+    }
+  },
+  "WEATHER_BALL_ICE": {
+    "moveId": "WEATHER_BALL_ICE",
+    "vId": "0293",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Weather Ball Ice",
+      "pt": "Esfera Climática"
+    }
+  },
+  "WEATHER_BALL_ROCK": {
+    "moveId": "WEATHER_BALL_ROCK",
+    "vId": "0294",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Weather Ball Rock",
+      "pt": "Esfera Climática"
+    }
+  },
+  "WEATHER_BALL_WATER": {
+    "moveId": "WEATHER_BALL_WATER",
+    "vId": "0295",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Weather Ball Water",
+      "pt": "Esfera Climática"
+    }
+  },
+  "FRENZY_PLANT": {
+    "moveId": "FRENZY_PLANT",
+    "vId": "0296",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Frenzy Plant",
+      "pt": "Planta Mortal"
+    }
+  },
+  "SMACK_DOWN": {
+    "moveId": "SMACK_DOWN",
+    "vId": "0297",
+    "type": "rock",
+    "isFast": true,
+    "pvpPower": 11,
+    "pvePower": 13,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Smack Down",
+      "pt": "Derrubada"
+    }
+  },
+  "BLAST_BURN": {
+    "moveId": "BLAST_BURN",
+    "vId": "0298",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 120,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Blast Burn",
+      "pt": "Queimadura Explosiva"
+    }
+  },
+  "HYDRO_CANNON": {
+    "moveId": "HYDRO_CANNON",
+    "vId": "0299",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 90,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Hydro Cannon",
+      "pt": "Hidro Canhão"
+    }
+  },
+  "LAST_RESORT": {
+    "moveId": "LAST_RESORT",
+    "vId": "0300",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Last Resort",
+      "pt": "Último Recurso"
+    }
+  },
+  "METEOR_MASH": {
+    "moveId": "METEOR_MASH",
+    "vId": "0301",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Meteor Mash",
+      "pt": "Meteoro Esmagador"
+    }
+  },
+  "SKULL_BASH": {
+    "moveId": "SKULL_BASH",
+    "vId": "0302",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 130,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Skull Bash",
+      "pt": "Quebra-crânio"
+    }
+  },
+  "ACID_SPRAY": {
+    "moveId": "ACID_SPRAY",
+    "vId": "0303",
+    "type": "poison",
+    "isFast": false,
+    "pvpPower": 20,
+    "pvePower": 20,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Acid Spray",
+      "pt": "Spray Ácido"
+    }
+  },
+  "EARTH_POWER": {
+    "moveId": "EARTH_POWER",
+    "vId": "0304",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 100,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Earth Power",
+      "pt": "Poder da Terra"
+    }
+  },
+  "CRABHAMMER": {
+    "moveId": "CRABHAMMER",
+    "vId": "0305",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 85,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Crabhammer",
+      "pt": "Martelo Caranguejo"
+    }
+  },
+  "LUNGE": {
+    "moveId": "LUNGE",
+    "vId": "0306",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 55,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Lunge",
+      "pt": "Estocada"
+    }
+  },
+  "OCTAZOOKA": {
+    "moveId": "OCTAZOOKA",
+    "vId": "0308",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 55,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Octazooka",
+      "pt": "Polvo-canhão"
+    }
+  },
+  "MIRROR_SHOT": {
+    "moveId": "MIRROR_SHOT",
+    "vId": "0309",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 35,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Mirror Shot",
+      "pt": "Tiro no Espelho"
+    }
+  },
+  "SUPER_POWER": {
+    "moveId": "SUPER_POWER",
+    "vId": "0310",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 85,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": -1
+        },
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Super Power",
+      "pt": "Superpoder"
+    }
+  },
+  "FELL_STINGER": {
+    "moveId": "FELL_STINGER",
+    "vId": "0311",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 20,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Fell Stinger",
+      "pt": "Ferrão Letal"
+    }
+  },
+  "LEAF_TORNADO": {
+    "moveId": "LEAF_TORNADO",
+    "vId": "0312",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 45,
+    "pvePower": 45,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Leaf Tornado",
+      "pt": "Tornado de Folhas"
+    }
+  },
+  "DRAIN_PUNCH": {
+    "moveId": "DRAIN_PUNCH",
+    "vId": "0314",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 20,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Drain Punch",
+      "pt": "Soco Dreno"
+    }
+  },
+  "SHADOW_BONE": {
+    "moveId": "SHADOW_BONE",
+    "vId": "0315",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 85,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.2,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Shadow Bone",
+      "pt": "Osso Sombrio"
+    }
+  },
+  "MUDDY_WATER": {
+    "moveId": "MUDDY_WATER",
+    "vId": "0316",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 35,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Muddy Water",
+      "pt": "Água Barrenta"
+    }
+  },
+  "BLAZE_KICK": {
+    "moveId": "BLAZE_KICK",
+    "vId": "0317",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 40,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Blaze Kick",
+      "pt": "Chute Labareda"
+    }
+  },
+  "RAZOR_SHELL": {
+    "moveId": "RAZOR_SHELL",
+    "vId": "0318",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 35,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Razor Shell",
+      "pt": "Concha Navalha"
+    }
+  },
+  "POWER_UP_PUNCH": {
+    "moveId": "POWER_UP_PUNCH",
+    "vId": "0319",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 20,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Power Up Punch",
+      "pt": "Soco Empoderador"
+    }
+  },
+  "CHARM": {
+    "moveId": "CHARM",
+    "vId": "0320",
+    "type": "fairy",
+    "isFast": true,
+    "pvpPower": 15,
+    "pvePower": 20,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 11,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Charm",
+      "pt": "Encantar"
+    }
+  },
+  "GIGA_IMPACT": {
+    "moveId": "GIGA_IMPACT",
+    "vId": "0321",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 200,
+    "pvpEnergyDelta": -80,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 4.5,
+    "moveName": {
+      "en": "Giga Impact",
+      "pt": "Gigaimpacto"
+    }
+  },
+  "FRUSTRATION": {
+    "moveId": "FRUSTRATION",
+    "vId": "0322",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 10,
+    "pvePower": 10,
+    "pvpEnergyDelta": -70,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Frustration",
+      "pt": "Frustração"
+    }
+  },
+  "RETURN": {
+    "moveId": "RETURN",
+    "vId": "0323",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 25,
+    "pvpEnergyDelta": -70,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Return",
+      "pt": "Retorno"
+    }
+  },
+  "SYNCHRONOISE": {
+    "moveId": "SYNCHRONOISE",
+    "vId": "0324",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 80,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Synchronoise",
+      "pt": "Barulho Sincronizado"
+    }
+  },
+  "LOCK_ON": {
+    "moveId": "LOCK_ON",
+    "vId": "0325",
+    "type": "normal",
+    "isFast": true,
+    "pvpPower": 1,
+    "pvePower": 2,
+    "pvpEnergyDelta": 5,
+    "pveEnergyDelta": 10,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Lock On",
+      "pt": "Mirar"
+    }
+  },
+  "THUNDER_FANG": {
+    "moveId": "THUNDER_FANG",
+    "vId": "0326",
+    "type": "electric",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 10,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Thunder Fang",
+      "pt": "Presa Trovejante"
+    }
+  },
+  "ICE_FANG": {
+    "moveId": "ICE_FANG",
+    "vId": "0327",
+    "type": "ice",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 12,
+    "pvpEnergyDelta": 6,
+    "pveEnergyDelta": 20,
+    "pvpDuration": 1,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Ice Fang",
+      "pt": "Presa de Gelo"
+    }
+  },
+  "SACRED_SWORD": {
+    "moveId": "SACRED_SWORD",
+    "vId": "0330",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 50,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Sacred Sword",
+      "pt": "Espada Sagrada"
+    }
+  },
+  "FLYING_PRESS": {
+    "moveId": "FLYING_PRESS",
+    "vId": "0331",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 115,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Flying Press",
+      "pt": "Aperto Voador"
+    }
+  },
+  "AURA_SPHERE": {
+    "moveId": "AURA_SPHERE",
+    "vId": "0332",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Aura Sphere",
+      "pt": "Aura Esférica"
+    }
+  },
+  "PAYBACK": {
+    "moveId": "PAYBACK",
+    "vId": "0333",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 95,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Payback",
+      "pt": "Revide"
+    }
+  },
+  "ROCK_WRECKER": {
+    "moveId": "ROCK_WRECKER",
+    "vId": "0334",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 110,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Rock Wrecker",
+      "pt": "Demolidor de Pedras"
+    }
+  },
+  "AEROBLAST": {
+    "moveId": "AEROBLAST",
+    "vId": "0335",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 170,
+    "pvePower": 180,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Aeroblast",
+      "pt": "Explosão Aérea"
+    }
+  },
+  "TECHNO_BLAST_NORMAL": {
+    "moveId": "TECHNO_BLAST_NORMAL",
+    "vId": "0336",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast Normal",
+      "pt": "Rajada Tecnológica"
+    }
+  },
+  "TECHNO_BLAST_BURN": {
+    "moveId": "TECHNO_BLAST_BURN",
+    "vId": "0337",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast Burn",
+      "pt": "Rajada Tecnológica"
+    }
+  },
+  "TECHNO_BLAST_CHILL": {
+    "moveId": "TECHNO_BLAST_CHILL",
+    "vId": "0338",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast Chill",
+      "pt": "Rajada Tecnológica"
+    }
+  },
+  "TECHNO_BLAST_DOUSE": {
+    "moveId": "TECHNO_BLAST_DOUSE",
+    "vId": "0339",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast Douse",
+      "pt": "Rajada Tecnológica"
+    }
+  },
+  "TECHNO_BLAST_SHOCK": {
+    "moveId": "TECHNO_BLAST_SHOCK",
+    "vId": "0340",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast Shock",
+      "pt": "Rajada Tecnológica"
+    }
+  },
+  "FLY": {
+    "moveId": "FLY",
+    "vId": "0341",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 90,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Fly",
+      "pt": "Voar"
+    }
+  },
+  "V_CREATE": {
+    "moveId": "V_CREATE",
+    "vId": "0342",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 95,
+    "pvePower": 105,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -3
+        }
+      ]
+    },
+    "moveName": {
+      "en": "V Create",
+      "pt": "Criação V"
+    }
+  },
+  "LEAF_STORM": {
+    "moveId": "LEAF_STORM",
+    "vId": "0343",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 130,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Leaf Storm",
+      "pt": "Tempestade de Folhas"
+    }
+  },
+  "TRI_ATTACK": {
+    "moveId": "TRI_ATTACK",
+    "vId": "0344",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 75,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        },
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Tri Attack",
+      "pt": "Triataque"
+    }
+  },
+  "GUST": {
+    "moveId": "GUST",
+    "vId": "0345",
+    "type": "flying",
+    "isFast": true,
+    "pvpPower": 16,
+    "pvePower": 25,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 20,
+    "pvpDuration": 2,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Gust",
+      "pt": "Lufada de Vento"
+    }
+  },
+  "INCINERATE": {
+    "moveId": "INCINERATE",
+    "vId": "0346",
+    "type": "fire",
+    "isFast": true,
+    "pvpPower": 20,
+    "pvePower": 32,
+    "pvpEnergyDelta": 20,
+    "pveEnergyDelta": 22,
+    "pvpDuration": 2.5,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Incinerate",
+      "pt": "Incinerar"
+    }
+  },
+  "FEATHER_DANCE": {
+    "moveId": "FEATHER_DANCE",
+    "vId": "0348",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 35,
+    "pvePower": 35,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Feather Dance",
+      "pt": "Dança das Penas"
+    }
+  },
+  "FAIRY_WIND": {
+    "moveId": "FAIRY_WIND",
+    "vId": "0350",
+    "type": "fairy",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 9,
+    "pvpEnergyDelta": 9,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Fairy Wind",
+      "pt": "Vento de Fada"
+    }
+  },
+  "WEATHER_BALL_NORMAL": {
+    "moveId": "WEATHER_BALL_NORMAL",
+    "vId": "0352",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 55,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Weather Ball Normal",
+      "pt": "Esfera Climática"
+    }
+  },
+  "PSYCHIC_FANGS": {
+    "moveId": "PSYCHIC_FANGS",
+    "vId": "0353",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 40,
+    "pvePower": 25,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Psychic Fangs",
+      "pt": "Caninos Psíquicos"
+    }
+  },
+  "DOUBLE_KICK": {
+    "moveId": "DOUBLE_KICK",
+    "vId": "0356",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 8,
+    "pvePower": 10,
+    "pvpEnergyDelta": 12,
+    "pveEnergyDelta": 13,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Double Kick",
+      "pt": "Chute Duplo"
+    }
+  },
+  "MAGICAL_LEAF": {
+    "moveId": "MAGICAL_LEAF",
+    "vId": "0357",
+    "type": "grass",
+    "isFast": true,
+    "pvpPower": 10,
+    "pvePower": 17,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 17,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Magical Leaf",
+      "pt": "Folha Mágica"
+    }
+  },
+  "SACRED_FIRE": {
+    "moveId": "SACRED_FIRE",
+    "vId": "0358",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 120,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Sacred Fire",
+      "pt": "Fogo Sagrado"
+    }
+  },
+  "ICICLE_SPEAR": {
+    "moveId": "ICICLE_SPEAR",
+    "vId": "0359",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 55,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Icicle Spear",
+      "pt": "Lança Congelada"
+    }
+  },
+  "AEROBLAST_PLUS": {
+    "moveId": "AEROBLAST_PLUS",
+    "vId": "0360",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 170,
+    "pvePower": 200,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Aeroblast Plus",
+      "pt": "Explosão Aérea+"
+    }
+  },
+  "AEROBLAST_PLUS_PLUS": {
+    "moveId": "AEROBLAST_PLUS_PLUS",
+    "vId": "0361",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 170,
+    "pvePower": 225,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 0.125,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Aeroblast Plus Plus",
+      "pt": "Explosão Aérea++"
+    }
+  },
+  "SACRED_FIRE_PLUS": {
+    "moveId": "SACRED_FIRE_PLUS",
+    "vId": "0362",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 135,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Sacred Fire Plus",
+      "pt": "Fogo Sagrado+"
+    }
+  },
+  "SACRED_FIRE_PLUS_PLUS": {
+    "moveId": "SACRED_FIRE_PLUS_PLUS",
+    "vId": "0363",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 155,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Sacred Fire Plus Plus",
+      "pt": "Fogo Sagrado++"
+    }
+  },
+  "ACROBATICS": {
+    "moveId": "ACROBATICS",
+    "vId": "0364",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 100,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Acrobatics",
+      "pt": "Acrobático"
+    }
+  },
+  "LUSTER_PURGE": {
+    "moveId": "LUSTER_PURGE",
+    "vId": "0365",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 100,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Luster Purge",
+      "pt": "Purga de Esplendor"
+    }
+  },
+  "MIST_BALL": {
+    "moveId": "MIST_BALL",
+    "vId": "0366",
+    "type": "psychic",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 105,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Mist Ball",
+      "pt": "Bola de Névoa"
+    }
+  },
+  "BRUTAL_SWING": {
+    "moveId": "BRUTAL_SWING",
+    "vId": "0367",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 55,
+    "pvePower": 65,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Brutal Swing",
+      "pt": "Balanço Violento"
+    }
+  },
+  "ROLLOUT": {
+    "moveId": "ROLLOUT",
+    "vId": "0368",
+    "type": "rock",
+    "isFast": true,
+    "pvpPower": 7,
+    "pvePower": 15,
+    "pvpEnergyDelta": 13,
+    "pveEnergyDelta": 19,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Rollout",
+      "pt": "Rolagem"
+    }
+  },
+  "SEED_FLARE": {
+    "moveId": "SEED_FLARE",
+    "vId": "0369",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 130,
+    "pvePower": 115,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.4,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -2
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Seed Flare",
+      "pt": "Semente Ofuscante"
+    }
+  },
+  "OBSTRUCT": {
+    "moveId": "OBSTRUCT",
+    "vId": "0370",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 15,
+    "pvePower": 20,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": 1
+        },
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Obstruct",
+      "pt": "Obstruir"
+    }
+  },
+  "SHADOW_FORCE": {
+    "moveId": "SHADOW_FORCE",
+    "vId": "0371",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 140,
+    "pvpEnergyDelta": -90,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Shadow Force",
+      "pt": "Força das Sombras"
+    }
+  },
+  "METEOR_BEAM": {
+    "moveId": "METEOR_BEAM",
+    "vId": "0372",
+    "type": "rock",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 140,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Meteor Beam",
+      "pt": "Raio Meteórico"
+    }
+  },
+  "WATER_SHURIKEN": {
+    "moveId": "WATER_SHURIKEN",
+    "vId": "0373",
+    "type": "water",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 9,
+    "pvpEnergyDelta": 14,
+    "pveEnergyDelta": 14,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Water Shuriken",
+      "pt": "Estrela Ninja de Água"
+    }
+  },
+  "FUSION_BOLT": {
+    "moveId": "FUSION_BOLT",
+    "vId": "0374",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 140,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Fusion Bolt",
+      "pt": "Raio de Fusão"
+    }
+  },
+  "FUSION_FLARE": {
+    "moveId": "FUSION_FLARE",
+    "vId": "0375",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 140,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Fusion Flare",
+      "pt": "Chama da Fusão"
+    }
+  },
+  "POLTERGEIST": {
+    "moveId": "POLTERGEIST",
+    "vId": "0376",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 140,
+    "pvpEnergyDelta": -75,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Poltergeist",
+      "pt": "Poltergeist"
+    }
+  },
+  "HIGH_HORSEPOWER": {
+    "moveId": "HIGH_HORSEPOWER",
+    "vId": "0377",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 105,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "High Horsepower",
+      "pt": "Potência Equina"
+    }
+  },
+  "GLACIATE": {
+    "moveId": "GLACIATE",
+    "vId": "0378",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 160,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Glaciate",
+      "pt": "Glaciar"
+    }
+  },
+  "BREAKING_SWIPE": {
+    "moveId": "BREAKING_SWIPE",
+    "vId": "0379",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 45,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 1,
+    "pvpBuffs": {
+      "chance": 0.5,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Breaking Swipe",
+      "pt": "Golpe Deslizante"
+    }
+  },
+  "BOOMBURST": {
+    "moveId": "BOOMBURST",
+    "vId": "0380",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 150,
+    "pvpEnergyDelta": -70,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Boomburst",
+      "pt": "Rajada Explosiva"
+    }
+  },
+  "DOUBLE_IRON_BASH": {
+    "moveId": "DOUBLE_IRON_BASH",
+    "vId": "0381",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 70,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Double Iron Bash",
+      "pt": "Pancada de Ferro Dupla"
+    }
+  },
+  "MYSTICAL_FIRE": {
+    "moveId": "MYSTICAL_FIRE",
+    "vId": "0382",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Mystical Fire",
+      "pt": "Fogo Místico"
+    }
+  },
+  "LIQUIDATION": {
+    "moveId": "LIQUIDATION",
+    "vId": "0383",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 70,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Liquidation",
+      "pt": "Aquaríete"
+    }
+  },
+  "DRAGON_ASCENT": {
+    "moveId": "DRAGON_ASCENT",
+    "vId": "0384",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 140,
+    "pvpEnergyDelta": -70,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Dragon Ascent",
+      "pt": "Ascenção do Dragão"
+    }
+  },
+  "LEAFAGE": {
+    "moveId": "LEAFAGE",
+    "vId": "0385",
+    "type": "grass",
+    "isFast": true,
+    "pvpPower": 6,
+    "pvePower": 6,
+    "pvpEnergyDelta": 7,
+    "pveEnergyDelta": 4,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Leafage",
+      "pt": "Folhagem"
+    }
+  },
+  "MAGMA_STORM": {
+    "moveId": "MAGMA_STORM",
+    "vId": "0386",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 75,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Magma Storm",
+      "pt": "Tempestade de Magma"
+    }
+  },
+  "GEOMANCY": {
+    "moveId": "GEOMANCY",
+    "vId": "0387",
+    "type": "fairy",
+    "isFast": true,
+    "pvpPower": 4,
+    "pvePower": 20,
+    "pvpEnergyDelta": 13,
+    "pveEnergyDelta": 14,
+    "pvpDuration": 1.5,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Geomancy",
+      "pt": "Geomancia"
+    }
+  },
+  "SPACIAL_REND": {
+    "moveId": "SPACIAL_REND",
+    "vId": "0388",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 95,
+    "pvePower": 160,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Spacial Rend",
+      "pt": "Laceração Espacial"
+    }
+  },
+  "OBLIVION_WING": {
+    "moveId": "OBLIVION_WING",
+    "vId": "0389",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 85,
+    "pvePower": 85,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Oblivion Wing",
+      "pt": "Asa do Esquecimento"
+    }
+  },
+  "NATURES_MADNESS": {
+    "moveId": "NATURES_MADNESS",
+    "vId": "0390",
+    "type": "fairy",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 90,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Natures Madness",
+      "pt": "Ira da Natureza"
+    }
+  },
+  "TRIPLE_AXEL": {
+    "moveId": "TRIPLE_AXEL",
+    "vId": "0391",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 60,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Triple Axel",
+      "pt": "Pinote Triplo"
+    }
+  },
+  "TRAILBLAZE": {
+    "moveId": "TRAILBLAZE",
+    "vId": "0392",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 65,
+    "pvePower": 65,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Trailblaze",
+      "pt": "Desbravar"
+    }
+  },
+  "SCORCHING_SANDS": {
+    "moveId": "SCORCHING_SANDS",
+    "vId": "0393",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 90,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Scorching Sands",
+      "pt": "Areias Ardentes"
+    }
+  },
+  "ROAR_OF_TIME": {
+    "moveId": "ROAR_OF_TIME",
+    "vId": "0394",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 150,
+    "pvePower": 160,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Roar Of Time",
+      "pt": "Rugido do Tempo"
+    }
+  },
+  "BLEAKWIND_STORM": {
+    "moveId": "BLEAKWIND_STORM",
+    "vId": "0395",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 150,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Bleakwind Storm",
+      "pt": "Tempestade Álgida"
+    }
+  },
+  "SANDSEAR_STORM": {
+    "moveId": "SANDSEAR_STORM",
+    "vId": "0396",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 150,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Sandsear Storm",
+      "pt": "Tempestade Saibrosa"
+    }
+  },
+  "WILDBOLT_STORM": {
+    "moveId": "WILDBOLT_STORM",
+    "vId": "0397",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 60,
+    "pvePower": 150,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Wildbolt Storm",
+      "pt": "Tempestade Chocante"
+    }
+  },
+  "SPIRIT_SHACKLE": {
+    "moveId": "SPIRIT_SHACKLE",
+    "vId": "0398",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 70,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "pvpBuffs": {
+      "chance": 0.33,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Spirit Shackle",
+      "pt": "Manilha Sombria"
+    }
+  },
+  "VOLT_TACKLE": {
+    "moveId": "VOLT_TACKLE",
+    "vId": "0399",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 90,
+    "pvePower": 90,
+    "pvpEnergyDelta": -50,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Volt Tackle",
+      "pt": "Investida Trovão"
+    }
+  },
+  "DARKEST_LARIAT": {
+    "moveId": "DARKEST_LARIAT",
+    "vId": "0400",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 80,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Darkest Lariat",
+      "pt": "Lariat Escuro"
+    }
+  },
+  "PSYWAVE": {
+    "moveId": "PSYWAVE",
+    "vId": "0401",
+    "type": "psychic",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 4,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Psywave",
+      "pt": "Onda Psíquica"
+    }
+  },
+  "METAL_SOUND": {
+    "moveId": "METAL_SOUND",
+    "vId": "0402",
+    "type": "steel",
+    "isFast": true,
+    "pvpPower": 3,
+    "pvePower": 4,
+    "pvpEnergyDelta": 8,
+    "pveEnergyDelta": 6,
+    "pvpDuration": 1,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Metal Sound",
+      "pt": "Som de Metal"
+    }
+  },
+  "SAND_ATTACK": {
+    "moveId": "SAND_ATTACK",
+    "vId": "0403",
+    "type": "ground",
+    "isFast": true,
+    "pvpPower": 2,
+    "pvePower": 4,
+    "pvpEnergyDelta": 4,
+    "pveEnergyDelta": 7,
+    "pvpDuration": 0.5,
+    "pveDuration": 0.5,
+    "moveName": {
+      "en": "Sand Attack",
+      "pt": "Ataque de Areia"
+    }
+  },
+  "SUNSTEEL_STRIKE": {
+    "moveId": "SUNSTEEL_STRIKE",
+    "vId": "0404",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 135,
+    "pvePower": 230,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Sunsteel Strike",
+      "pt": "Ataque Solaraço"
+    }
+  },
+  "MOONGEIST_BEAM": {
+    "moveId": "MOONGEIST_BEAM",
+    "vId": "0405",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 135,
+    "pvePower": 230,
+    "pvpEnergyDelta": -65,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Moongeist Beam",
+      "pt": "Feixe Espectral"
+    }
+  },
+  "AURA_WHEEL_ELECTRIC": {
+    "moveId": "AURA_WHEEL_ELECTRIC",
+    "vId": "0406",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -45,
+    "pvpDuration": 0,
+    "pveDuration": 2.7,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Aura Wheel Electric",
+      "pt": "Roda de Aura"
+    }
+  },
+  "AURA_WHEEL_DARK": {
+    "moveId": "AURA_WHEEL_DARK",
+    "vId": "0407",
+    "type": "dark",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 100,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -45,
+    "pvpDuration": 0,
+    "pveDuration": 2.7,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Aura Wheel Dark",
+      "pt": "Roda de Aura"
+    }
+  },
+  "HIGH_JUMP_KICK": {
+    "moveId": "HIGH_JUMP_KICK",
+    "vId": "0408",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 110,
+    "pvePower": 90,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 0.1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -4
+        }
+      ]
+    },
+    "moveName": {
+      "en": "High Jump Kick",
+      "pt": "Chute de Pulo Alto"
+    }
+  },
+  "FORCE_PALM": {
+    "moveId": "FORCE_PALM",
+    "vId": "0462",
+    "type": "fighting",
+    "isFast": true,
+    "pvpPower": 13,
+    "pvePower": 10,
+    "pvpEnergyDelta": 10,
+    "pveEnergyDelta": 16,
+    "pvpDuration": 1.5,
+    "pveDuration": 1,
+    "moveName": {
+      "en": "Force Palm",
+      "pt": "Palma da Força"
+    }
+  },
+  "SPARKLING_ARIA": {
+    "moveId": "SPARKLING_ARIA",
+    "vId": "0463",
+    "type": "water",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 85,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Sparkling Aria",
+      "pt": "Aria Cintilante"
+    }
+  },
+  "RAGE_FIST": {
+    "moveId": "RAGE_FIST",
+    "vId": "0464",
+    "type": "ghost",
+    "isFast": false,
+    "pvpPower": 50,
+    "pvePower": 100,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Rage Fist",
+      "pt": "Punho Feroz"
+    }
+  },
+  "FLOWER_TRICK": {
+    "moveId": "FLOWER_TRICK",
+    "vId": "0465",
+    "type": "grass",
+    "isFast": false,
+    "pvpPower": 30,
+    "pvePower": 75,
+    "pvpEnergyDelta": -35,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2.7,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Flower Trick",
+      "pt": "Flower Trick"
+    }
+  },
+  "FREEZE_SHOCK": {
+    "moveId": "FREEZE_SHOCK",
+    "vId": "0466",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 160,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetAttackStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Freeze Shock",
+      "pt": "Freeze Shock"
+    }
+  },
+  "ICE_BURN": {
+    "moveId": "ICE_BURN",
+    "vId": "0467",
+    "type": "ice",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 90,
+    "pvpEnergyDelta": -60,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Ice Burn",
+      "pt": "Ice Burn"
+    }
+  },
+  "TORCH_SONG": {
+    "moveId": "TORCH_SONG",
+    "vId": "0468",
+    "type": "fire",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 100,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerAttackStatStageChange",
+          "quantity": 1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Torch Song",
+      "pt": "Torch Song"
+    }
+  },
+  "BEHEMOTH_BLADE": {
+    "moveId": "BEHEMOTH_BLADE",
+    "vId": "0469",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 100,
+    "pvePower": 200,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 3.5,
+    "moveName": {
+      "en": "Behemoth Blade",
+      "pt": "Behemoth Blade"
+    }
+  },
+  "BEHEMOTH_BASH": {
+    "moveId": "BEHEMOTH_BASH",
+    "vId": "0470",
+    "type": "steel",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 125,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 1.5,
+    "moveName": {
+      "en": "Behemoth Bash",
+      "pt": "Behemoth Bash"
+    }
+  },
+  "UPPER_HAND": {
+    "moveId": "UPPER_HAND",
+    "vId": "0471",
+    "type": "fighting",
+    "isFast": false,
+    "pvpPower": 70,
+    "pvePower": 50,
+    "pvpEnergyDelta": -40,
+    "pveEnergyDelta": -33,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "pvpBuffs": {
+      "chance": 0.3,
+      "buffs": [
+        {
+          "buff": "targetDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Upper Hand",
+      "pt": "Upper Hand"
+    }
+  },
+  "THUNDER_CAGE": {
+    "moveId": "THUNDER_CAGE",
+    "vId": "0472",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 1,
+    "pvePower": 1,
+    "pvpEnergyDelta": -1,
+    "pveEnergyDelta": -1,
+    "pvpDuration": 0,
+    "pveDuration": 3.3,
+    "moveName": {
+      "en": "Thunder Cage",
+      "pt": "Thunder Cage"
+    }
+  },
+  "CRUSH_GRIP": {
+    "moveId": "CRUSH_GRIP",
+    "vId": "0485",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 1,
+    "pvePower": 1,
+    "pvpEnergyDelta": -1,
+    "pveEnergyDelta": -1,
+    "pvpDuration": 0,
+    "pveDuration": 1.8,
+    "moveName": {
+      "en": "Crush Grip",
+      "pt": "Crush Grip"
+    }
+  },
+  "DRAGON_ENERGY": {
+    "moveId": "DRAGON_ENERGY",
+    "vId": "0486",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 1,
+    "pvePower": 1,
+    "pvpEnergyDelta": -1,
+    "pveEnergyDelta": -1,
+    "pvpDuration": 0,
+    "pveDuration": 3.3,
+    "moveName": {
+      "en": "Dragon Energy",
+      "pt": "Dragon Energy"
+    }
+  },
+  "CRUSH_CLAW": {
+    "moveId": "CRUSH_CLAW",
+    "vId": "0307",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 0,
+    "pvePower": 0,
+    "pvpEnergyDelta": 0,
+    "pveEnergyDelta": 0,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Crush Claw",
+      "pt": "Garra Esmagadora"
+    }
+  },
+  "LEECH_LIFE": {
+    "moveId": "LEECH_LIFE",
+    "vId": "0313",
+    "type": "bug",
+    "isFast": false,
+    "pvpPower": 0,
+    "pvePower": 0,
+    "pvpEnergyDelta": 0,
+    "pveEnergyDelta": 0,
+    "pvpDuration": 0,
+    "pveDuration": 2.5,
+    "moveName": {
+      "en": "Leech Life",
+      "pt": "Suga-vidas"
+    }
+  },
+  "HORN_DRILL": {
+    "moveId": "HORN_DRILL",
+    "vId": "0328",
+    "type": "normal",
+    "isFast": false,
+    "pvpPower": 0,
+    "pvePower": 9000,
+    "pvpEnergyDelta": 0,
+    "pveEnergyDelta": -25,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Horn Drill",
+      "pt": "Chifre Broca"
+    }
+  },
+  "FISSURE": {
+    "moveId": "FISSURE",
+    "vId": "0329",
+    "type": "ground",
+    "isFast": false,
+    "pvpPower": 0,
+    "pvePower": 9001,
+    "pvpEnergyDelta": 0,
+    "pveEnergyDelta": -25,
+    "pvpDuration": 0,
+    "pveDuration": 3,
+    "moveName": {
+      "en": "Fissure",
+      "pt": "Fissura"
+    }
+  },
+  "CLANGING_SCALES": {
+    "moveId": "CLANGING_SCALES",
+    "vId": "-1",
+    "type": "dragon",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 500,
+    "pveDuration": 3.3,
+    "pvpBuffs": {
+      "chance": 1,
+      "buffs": [
+        {
+          "buff": "attackerDefenseStatStageChange",
+          "quantity": -1
+        }
+      ]
+    },
+    "moveName": {
+      "en": "Clanging Scales",
+      "pt": "Clanging Scales"
+    }
+  }
+}

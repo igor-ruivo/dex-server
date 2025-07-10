@@ -8,6 +8,7 @@ import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
 import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/RocketLineupsParser';
 import { IRocketGrunt, IEntry, ISpotlightHourEvent, ILeekduckSpecialRaidBossEvent } from './src/parsers/types/events';
 import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
+import { MovesProvider } from './src/parsers/events/providers/pokemongo/MovesProvider';
 
 
 const generateData = async () => {
@@ -133,6 +134,9 @@ const generateData = async () => {
       return { ...entry, phrase: { en: entry.phrase.en, pt } };
     });
 
+    const movesProvider = new MovesProvider();
+    const moves = await movesProvider.fetchMoves();
+
     // Write outputs
     const dataDir = path.join(process.cwd(), 'data');
     await fs.mkdir(dataDir, { recursive: true });
@@ -144,6 +148,7 @@ const generateData = async () => {
     await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(eventsData, null, 2));
     await fs.writeFile(path.join(dataDir, 'game-master.json'), JSON.stringify(pokemonDictionary, null, 2));
     await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, 2));
+    await fs.writeFile(path.join(dataDir, 'moves.json'), JSON.stringify(moves, null, 2));
     console.log('✅ All LeekDuck and main data written to disk.');
     console.log('');
     console.log('📁 Generated files:');
@@ -155,9 +160,10 @@ const generateData = async () => {
     console.log('- data/rocket-lineups.json');
     console.log('- data/game-master.json');
     console.log('- data/season.json');
+    console.log('- data/moves.json');
     console.log('');
     console.log(`⏰ Last updated: ${now}`);
-    console.log(`📊 Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
+    console.log(`�� Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
     console.log('');
     console.log('💡 Note: These files will be committed by GitHub Actions');
   } catch (error) {

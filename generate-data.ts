@@ -7,6 +7,7 @@ import { BossesParser } from './src/parsers/events/providers/leekduck/BossesPars
 import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
 import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/RocketLineupsParser';
 import { IRocketGrunt, IEntry, ISpotlightHourEvent, ILeekduckSpecialRaidBossEvent } from './src/parsers/types/events';
+import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
 
 
 const generateData = async () => {
@@ -24,7 +25,8 @@ const generateData = async () => {
 
     // Step 2.5: Generate season data using the fresh Game Master data
     // Reuse the getDomains logic from PokemongoSource
-    // const seasonDomain = Object.values(pokemonDictionary).filter(p => !p.isShadow && !p.isMega && !p.aliasId); // Unused, remove to fix linter error
+    const seasonDomain = Object.values(pokemonDictionary).filter(p => !p.isShadow && !p.isMega && !p.aliasId);
+    const seasonData = await fetchSeasonData(pokemonDictionary, seasonDomain);
     
     // Step 3: LeekDuck integration
     const leekduckEventsParser = new EventsParser();
@@ -74,6 +76,7 @@ const generateData = async () => {
     await fs.writeFile(path.join(dataDir, 'rocket-lineups.json'), JSON.stringify(leekduckRocketLineups, null, 2));
     await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(eventsData, null, 2));
     await fs.writeFile(path.join(dataDir, 'game-master.json'), JSON.stringify(pokemonDictionary, null, 2));
+    await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, 2));
     console.log('✅ All LeekDuck and main data written to disk.');
     console.log('');
     console.log('📁 Generated files:');

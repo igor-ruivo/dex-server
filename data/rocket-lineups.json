@@ -1,6 +1,9 @@
 [
   {
-    "phrase": "I will not tolerate your interference.",
+    "phrase": {
+      "en": "I will not tolerate your interference.",
+      "pt": "Não tolerarei a sua interferência."
+    },
     "trainerId": "Giovanni",
     "tier1": [
       "persian"
@@ -18,7 +21,10 @@
     ]
   },
   {
-    "phrase": "My strength comes from my loyalty to Team GO Rocket.",
+    "phrase": {
+      "en": "My strength comes from my loyalty to Team GO Rocket.",
+      "pt": "Minha força vem da minha lealdade à Equipe GO Rocket."
+    },
     "trainerId": "Cliff",
     "tier1": [
       "gible"
@@ -38,7 +44,10 @@
     ]
   },
   {
-    "phrase": "It's time to learn your place in the world.",
+    "phrase": {
+      "en": "It's time to learn your place in the world.",
+      "pt": "Está na hora de você aprender o seu lugar no mundo."
+    },
     "trainerId": "Arlo",
     "tier1": [
       "horsea"
@@ -58,7 +67,10 @@
     ]
   },
   {
-    "phrase": "I envy you—you get to battle me!",
+    "phrase": {
+      "en": "I envy you—you get to battle me!",
+      "pt": "Tenho inveja de você, porque você tem a chance de batalhar contra mim!"
+    },
     "trainerId": "Sierra",
     "tier1": [
       "trapinch"
@@ -78,7 +90,10 @@
     ]
   },
   {
-    "phrase": "Normal does not mean weak.",
+    "phrase": {
+      "en": "Normal does not mean weak.",
+      "pt": "Normal e fraco são duas coisas bem diferentes."
+    },
     "type": "normal",
     "trainerId": "Normal-type Male Grunt",
     "tier1": [
@@ -101,7 +116,10 @@
     ]
   },
   {
-    "phrase": "Do you know how hot Pokémon fire breath can get?",
+    "phrase": {
+      "en": "Do you know how hot Pokémon fire breath can get?",
+      "pt": "Você tem ideia do quão quente é o bafo de fogo de um Pokémon?"
+    },
     "type": "fire",
     "trainerId": "Fire-type Female Grunt",
     "tier1": [
@@ -123,7 +141,10 @@
     ]
   },
   {
-    "phrase": "These waters are treacherous!",
+    "phrase": {
+      "en": "These waters are treacherous!",
+      "pt": "Estas águas são traiçoeiras!"
+    },
     "type": "water",
     "trainerId": "Water-type Female Grunt",
     "tier1": [
@@ -145,7 +166,10 @@
     ]
   },
   {
-    "phrase": "These waters are treacherous!",
+    "phrase": {
+      "en": "These waters are treacherous!",
+      "pt": "Estas águas são traiçoeiras!"
+    },
     "type": "water",
     "trainerId": "Water-type Male Grunt",
     "tier1": [
@@ -164,7 +188,10 @@
     ]
   },
   {
-    "phrase": "Get ready to be shocked!",
+    "phrase": {
+      "en": "Get ready to be shocked!",
+      "pt": "Prepare-se para um choque e tanto!"
+    },
     "type": "electric",
     "trainerId": "Electric-type Female Grunt",
     "tier1": [
@@ -187,7 +214,10 @@
     ]
   },
   {
-    "phrase": "Don't tangle with us!",
+    "phrase": {
+      "en": "Don't tangle with us!",
+      "pt": "Não se mete com a gente!"
+    },
     "type": "grass",
     "trainerId": "Grass-type Male Grunt",
     "tier1": [
@@ -210,7 +240,10 @@
     ]
   },
   {
-    "phrase": "You're gonna be frozen in your tracks.",
+    "phrase": {
+      "en": "You're gonna be frozen in your tracks.",
+      "pt": "Eu vou te congelar de medo!"
+    },
     "type": "ice",
     "trainerId": "Ice-type Female Grunt",
     "tier1": [
@@ -233,7 +266,10 @@
     ]
   },
   {
-    "phrase": "This buff physique isn't just for show!",
+    "phrase": {
+      "en": "This buff physique isn't just for show!",
+      "pt": "Este físico bombado não é só pra agradar aos olhos!"
+    },
     "type": "fighting",
     "trainerId": "Fighting-type Female Grunt",
     "tier1": [
@@ -257,7 +293,10 @@
     ]
   },
   {
-    "phrase": "Coiled and ready to strike!",
+    "phrase": {
+      "en": "Coiled and ready to strike!",
+      "pt": "Estou pronto pra dar o bote!"
+    },
     "type": "poison",
     "trainerId": "Poison-type Female Grunt",
     "tier1": [
@@ -280,7 +319,10 @@
     ]
   },
   {
-    "phrase": "You'll be defeated into the ground!",
+    "phrase": {
+      "en": "You'll be defeated into the ground!",
+      "pt": "Eu vou te humilhar!"
+    },
     "type": "ground",
     "trainerId": "Ground-type Male Grunt",
     "tier1": [
@@ -304,7 +346,10 @@
     ]
   },
   {
-    "phrase": "Battle against my Flying-type Pokémon!",
+    "phrase": {
+      "en": "Battle against my Flying-type Pokémon!",
+      "pt": "Chegou a hora de batalhar contra meus Pokémon de tipo Voador!"
+    },
     "type": "flying",
     "trainerId": "Flying-type Female Grunt",
     "tier1": [
@@ -328,7 +373,10 @@
     ]
   },
   {
-    "phrase": "Are you scared of psychics that use unseen power?",
+    "phrase": {
+      "en": "Are you scared of psychics that use unseen power?",
+      "pt": "Você tem medo de poderes psíquicos ocultos?"
+    },
     "type": "psychic",
     "trainerId": "Psychic-type Male Grunt",
     "tier1": [
@@ -350,7 +398,10 @@
     ]
   },
   {
-    "phrase": "Go, my super bug Pokémon!",
+    "phrase": {
+      "en": "Go, my super bug Pokémon!",
+      "pt": "Vamos, meu poderoso Pokémon inseto!"
+    },
     "type": "bug",
     "trainerId": "Bug-type Male Grunt",
     "tier1": [
@@ -374,7 +425,10 @@
     ]
   },
   {
-    "phrase": "Let's rock and roll!",
+    "phrase": {
+      "en": "Let's rock and roll!",
+      "pt": "Vamos botar pra quebrar!"
+    },
     "type": "rock",
     "trainerId": "Rock-type Male Grunt",
     "tier1": [
@@ -398,7 +452,10 @@
     ]
   },
   {
-    "phrase": "Ke...ke...ke...ke...ke...ke!",
+    "phrase": {
+      "en": "Ke...ke...ke...ke...ke...ke!",
+      "pt": "Bú...bú...bú......bú...bú!"
+    },
     "type": "ghost",
     "trainerId": "Ghost-type Male Grunt",
     "tier1": [
@@ -422,7 +479,10 @@
     ]
   },
   {
-    "phrase": "ROAR! ...How'd that sound?",
+    "phrase": {
+      "en": "ROAR! ...How'd that sound?",
+      "pt": "GRRRR! ...Se ligou no rugido?"
+    },
     "type": "dragon",
     "trainerId": "Dragon-type Female Grunt",
     "tier1": [
@@ -445,7 +505,10 @@
     ]
   },
   {
-    "phrase": "Wherever there is light, there is also shadow.",
+    "phrase": {
+      "en": "Wherever there is light, there is also shadow.",
+      "pt": "Onde há luz, há também escuridão."
+    },
     "type": "dark",
     "trainerId": "Dark-type Female Grunt",
     "tier1": [
@@ -466,7 +529,10 @@
     ]
   },
   {
-    "phrase": "You're no match for my iron will!",
+    "phrase": {
+      "en": "You're no match for my iron will!",
+      "pt": "Você não pode contra a minha determinação de aço!"
+    },
     "type": "steel",
     "trainerId": "Steel-type Male Grunt",
     "tier1": [
@@ -489,7 +555,10 @@
     ]
   },
   {
-    "phrase": "Check out my cute Pokémon!",
+    "phrase": {
+      "en": "Check out my cute Pokémon!",
+      "pt": "Se liga no meu Pokémon fofinho!"
+    },
     "type": "fairy",
     "trainerId": "Fairy-type Female Grunt",
     "tier1": [
@@ -513,7 +582,10 @@
     ]
   },
   {
-    "phrase": "Winning is for winners.",
+    "phrase": {
+      "en": "Winning is for winners.",
+      "pt": "Vencer é pros vencedores."
+    },
     "trainerId": "Male Grunt",
     "tier1": [
       "bulbasaur",
@@ -535,7 +607,10 @@
     ]
   },
   {
-    "phrase": "Winning is for winners.",
+    "phrase": {
+      "en": "Winning is for winners.",
+      "pt": "Vencer é pros vencedores."
+    },
     "trainerId": "Female Grunt",
     "tier1": [
       "snorlax"
@@ -555,7 +630,10 @@
     ]
   },
   {
-    "phrase": "Fooled ya, twerp.",
+    "phrase": {
+      "en": "Fooled ya, twerp.",
+      "pt": "Te enganei, pivete!"
+    },
     "trainerId": "Decoy Female Grunt",
     "tier1": [
       "bellsprout"

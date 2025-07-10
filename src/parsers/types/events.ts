@@ -79,7 +79,7 @@ export interface PokemonGoPost {
 export interface IRocketGrunt {
     trainerId: string;
     type: string | undefined;
-    phrase: string;
+    phrase: { en: string; pt: string };
     tier1: string[];
     tier2: string[];
     tier3: string[];
@@ -88,7 +88,7 @@ export interface IRocketGrunt {
 
 // LeekDuck Spotlight Hour output DTO
 export interface ISpotlightHourEvent {
-    bonus: string;
+    bonus: { en: string; pt: string };
     pokemon: string[];
     dateStart: number;
     dateEnd: number;

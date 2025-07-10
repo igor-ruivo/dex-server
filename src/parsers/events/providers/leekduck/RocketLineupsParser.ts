@@ -30,7 +30,7 @@ export class RocketLineupsParser {
             const tier3Pkms = matcher.matchPokemonFromText(tier3).map(e => e.speciesId);
             const catchableTiers = Array.from(e.getElementsByClassName('lineup-info')[0].children).map((c: Element, i: number) => c.classList.contains('encounter') ? i : undefined).filter(e => e !== undefined) as number[];
             answer.push({
-                phrase: phrase.replace(/\s/g, ' ').trim(),
+                phrase: { en: phrase.replace(/\s/g, ' ').trim(), pt: '' },
                 type: type?.replace(/\s/g, ' ').trim(),
                 trainerId: trainerId.replace(/\s/g, ' ').trim(),
                 tier1: tier1Pkms,

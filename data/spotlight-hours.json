@@ -1,6 +1,9 @@
 [
   {
-    "bonus": "2× Catch Candy",
+    "bonus": {
+      "en": "2× Catch Candy",
+      "pt": "2× Doces ao capturar"
+    },
     "pokemon": [
       "feebas"
     ],
@@ -8,7 +11,10 @@
     "dateEnd": 1752534000000
   },
   {
-    "bonus": "2× Transfer Candy",
+    "bonus": {
+      "en": "2× Transfer Candy",
+      "pt": "2× Doces ao transferir"
+    },
     "pokemon": [
       "jigglypuff"
     ],
@@ -16,7 +22,10 @@
     "dateEnd": 1753138800000
   },
   {
-    "bonus": "2× Evolution XP",
+    "bonus": {
+      "en": "2× Evolution XP",
+      "pt": "2× XP ao evoluir"
+    },
     "pokemon": [
       "roggenrola"
     ],

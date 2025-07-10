@@ -199,6 +199,29 @@ export interface IGameMasterMove {
   moveName: { en: string; pt: string };
 }
 
+type BuffsType = {
+  buffActivationChance: number,
+  [key: string]: number
+}
+
+type MoveSettingsType = {
+  pokemonType: string,
+  type: string,
+  power: number,
+  energyDelta: number,
+  durationTurns: number,
+  durationMs: number,
+  buffs: BuffsType
+}
+
+export type GameMasterMovesType = {
+  data: {
+    templateId: string,
+    moveSettings: MoveSettingsType,
+    combatMove: MoveSettingsType
+  }
+}
+
 export type PvPMove = {
   moveId: string,
   vId: string,
@@ -207,7 +230,7 @@ export type PvPMove = {
   pvpPower: number,
   pvpEnergy: number,
   pvpCooldown: number,
-  buffs: any
+  buffs: BuffsType
 };
 
 export type PvEMove = {

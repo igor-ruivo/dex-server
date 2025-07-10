@@ -1,4 +1,4 @@
-import { IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
+import { GameMasterMovesType, IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import path from 'path';
 import fs from 'fs/promises';
@@ -17,13 +17,13 @@ export class MovesProvider {
   private readonly fetcher = new HttpDataFetcher();
 
   async fetchMoves(): Promise<Record<string, IGameMasterMove>> {
-    const gmData = await this.fetcher.fetchJson<any[]>(this.GAME_MASTER_URL);
-    const ptTranslationData = await this.fetcher.fetchJson<any>(PT_TRANSLATION_URL);
+    const gmData = await this.fetcher.fetchJson<Array<GameMasterMovesType>>(this.GAME_MASTER_URL);
+    const ptTranslationData = await this.fetcher.fetchJson<{data: string}>(PT_TRANSLATION_URL);
     // Build PT move name dictionary
     const translatedMovesDictionary: Record<string, string> = {};
     const arr = Array.from(ptTranslationData.data);
     const term = 'move_name_';
-    (arr as any[]).forEach((t: string, index: number) => {
+    arr.forEach((t: string, index: number) => {
       if (t.startsWith(term)) {
         const vid = t.substring(term.length);
         const moveName = arr[index + 1];
@@ -37,7 +37,7 @@ export class MovesProvider {
       FUTURESIGHT: 'FUTURE_SIGHT',
       TECHNO_BLAST_WATER: 'TECHNO_BLAST_DOUSE',
     };
-    (Array.from(gmData) as any[])
+    gmData
       .filter(entry => !entry.data.templateId?.startsWith('VN_BM_') && (entry.data?.moveSettings || entry.data?.combatMove))
       .forEach(entry => {
         const isPvP = !!entry.data.combatMove;
@@ -92,10 +92,10 @@ export class MovesProvider {
         pvpDuration: move.pvpCooldown ?? 0,
         pveDuration: pveCounterpart?.pveCooldown ?? 0,
         pvpBuffs: move?.buffs ? {
-          chance: move.buffs.buffActivationChance as number,
+          chance: move.buffs.buffActivationChance,
           buffs: Object.entries(move.buffs).filter(e => e[0] !== 'buffActivationChance').map(e => ({
             buff: e[0],
-            quantity: e[1] as number
+            quantity: e[1]
           })),
         } : undefined,
         moveName: { en: enName, pt: ptName }
@@ -119,10 +119,10 @@ export class MovesProvider {
         pvpDuration: pvpCounterpart?.pvpCooldown ?? 0,
         pveDuration: move.pveCooldown ?? 0,
         pvpBuffs: pvpCounterpart?.buffs ? {
-          chance: pvpCounterpart.buffs.buffActivationChance as number,
+          chance: pvpCounterpart.buffs.buffActivationChance,
           buffs: Object.entries(pvpCounterpart.buffs).filter(e => e[0] !== 'buffActivationChance').map(e => ({
             buff: e[0],
-            quantity: e[1] as number
+            quantity: e[1]
           })),
         } : undefined,
         moveName: { en: enName, pt: ptName }

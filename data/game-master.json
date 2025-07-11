@@ -33890,6 +33890,39 @@
     "isMythical": false,
     "isBeast": false
   },
+  "rotom_fan": {
+    "dex": 479,
+    "speciesId": "rotom_fan",
+    "speciesName": "Rotom (Fan)",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f2.png",
+    "goImageUrl": "479.fFAN.icon.png",
+    "shinyGoImageUrl": "479.fFAN.s.icon.png",
+    "atk": 204,
+    "def": 219,
+    "hp": 137,
+    "fastMoves": [
+      "AIR_SLASH",
+      "ASTONISH"
+    ],
+    "chargedMoves": [
+      "OMINOUS_WIND",
+      "THUNDER",
+      "THUNDERBOLT"
+    ],
+    "eliteMoves": [],
+    "legacyMoves": [],
+    "isShadow": false,
+    "isMega": false,
+    "evolutions": [],
+    "form": "Fan",
+    "isLegendary": false,
+    "isMythical": false,
+    "isBeast": false
+  },
   "rotom_frost": {
     "dex": 479,
     "speciesId": "rotom_frost",
@@ -33931,7 +33964,7 @@
       "Electric",
       "Fire"
     ],
-    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f3.png",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f4.png",
     "goImageUrl": "479.fHEAT.icon.png",
     "shinyGoImageUrl": "479.fHEAT.s.icon.png",
     "atk": 204,
@@ -44455,7 +44488,7 @@
     "hp": 128,
     "fastMoves": [
       "TACKLE",
-      "FURY_CUTTER"
+      "PSYCHO_CUT"
     ],
     "chargedMoves": [
       "IRON_HEAD",
@@ -44490,7 +44523,7 @@
     "hp": 153,
     "fastMoves": [
       "PSYCHO_CUT",
-      "FURY_CUTTER"
+      "TACKLE"
     ],
     "chargedMoves": [
       "IRON_HEAD",
@@ -44526,7 +44559,7 @@
     "hp": 155,
     "fastMoves": [
       "PSYCHO_CUT",
-      "FURY_CUTTER"
+      "AIR_SLASH"
     ],
     "chargedMoves": [
       "FLASH_CANNON",

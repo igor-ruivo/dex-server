@@ -10,27 +10,30 @@
         "shiny": false
       }
     ],
-    "dateStart": 1752537600000,
-    "dateEnd": 1752537600000
-  },
-  {
-    "bonus": {
-      "en": "2× Transfer Candy",
-      "pt": "2× Doces ao transferir"
-    },
-    "pokemon": [
-      "jigglypuff"
-    ],
-    "dateStart": 1753142400000,
-    "dateEnd": 1753142400000
-  },
-  {
     "bonus": {
       "en": "2× Evolution XP",
       "pt_br": "2× Evolution XP"
     },
     "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
     "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-29/"
+  },
+  {
+    "title": "Feebas Spotlight Hour",
+    "date": 1752534000000,
+    "dateEnd": 1752534000000,
+    "pokemons": [
+      {
+        "speciesId": "feebas",
+        "kind": "5",
+        "shiny": false
+      }
+    ],
+    "bonus": {
+      "en": "2× Catch Candy",
+      "pt_br": "2× Catch Candy"
+    },
+    "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+    "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-15/"
   },
   {
     "title": "Jigglypuff Spotlight Hour",
@@ -43,7 +46,11 @@
         "shiny": false
       }
     ],
-    "dateStart": 1753747200000,
-    "dateEnd": 1753747200000
+    "bonus": {
+      "en": "2× Transfer Candy",
+      "pt_br": "2× Transfer Candy"
+    },
+    "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+    "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-22/"
   }
 ]

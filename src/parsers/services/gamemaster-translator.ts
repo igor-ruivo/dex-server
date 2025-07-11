@@ -223,8 +223,24 @@ class GameMasterTranslator {
     return this.parsedSources[locale].translatedMovesDictionary[moveID];
   };
 
-  public getTranslationForRocketPhrase = (locale: AvailableLocales, phrase: string) => {
-    return this.parsedSources[locale].translatedPhrasesDictionary[phrase];
+  public getTranslationForRocketPhrase = (locale: AvailableLocales, trainerId: string, type?: string): string => {
+    const phrases = this.parsedSources[locale]?.translatedPhrasesDictionary;
+    if (!phrases) {
+      return '';
+    }
+
+    if (trainerId && phrases[trainerId]) {
+      return phrases[trainerId];
+    }
+
+    if (type) {
+      const typeKey = `_${type}__male_speaker`;
+      if (phrases[typeKey]) {
+        return phrases[typeKey];
+      }
+    }
+
+    return '';
   };
 }
 

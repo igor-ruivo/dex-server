@@ -13,17 +13,17 @@
     "rawUrl": "https://leekduck.com/events/mega-charizard-x-in-mega-raids-july-2025/"
   },
   {
-    "title": "Solgaleo in 5-star Raid Battles",
-    "date": 1751929200000,
-    "dateEnd": 1752447600000,
+    "title": "Lunala in 5-star Raid Battles",
+    "date": 1753138800000,
+    "dateEnd": 1753657200000,
     "raids": [
       {
-        "speciesId": "solgaleo",
+        "speciesId": "lunala",
         "kind": "5",
         "shiny": false
       }
     ],
-    "rawUrl": "https://leekduck.com/events/solgaleo-in-5-star-raid-battles-july-2025/"
+    "rawUrl": "https://leekduck.com/events/lunala-in-5-star-raid-battles-july-2025/"
   },
   {
     "title": "Terrakion in 5-star Raid Battles",
@@ -39,6 +39,19 @@
     "rawUrl": "https://leekduck.com/events/terrakion-in-5-star-raid-battles-july-2025/"
   },
   {
+    "title": "Mega Aerodactyl in Mega Raids",
+    "date": 1753657200000,
+    "dateEnd": 1754262000000,
+    "raids": [
+      {
+        "speciesId": "aerodactyl_mega",
+        "kind": "mega",
+        "shiny": false
+      }
+    ],
+    "rawUrl": "https://leekduck.com/events/mega-aerodactyl-in-mega-raids-july-august-2025/"
+  },
+  {
     "title": "Shadow Registeel in Shadow Raids",
     "date": 1751670000000,
     "dateEnd": 1754175600000,
@@ -52,17 +65,30 @@
     "rawUrl": "https://leekduck.com/events/shadow-registeel-in-shadow-raids-july-august-2025/"
   },
   {
-    "title": "Mega Venusaur in Mega Raids",
-    "date": 1753138800000,
-    "dateEnd": 1753657200000,
+    "title": "Virizion in 5-star Raid Battles",
+    "date": 1753657200000,
+    "dateEnd": 1754262000000,
     "raids": [
       {
-        "speciesId": "venusaur_mega",
-        "kind": "mega",
+        "speciesId": "virizion",
+        "kind": "5",
         "shiny": false
       }
     ],
-    "rawUrl": "https://leekduck.com/events/mega-venusaur-in-mega-raids-july-2025/"
+    "rawUrl": "https://leekduck.com/events/virizion-in-5-star-raid-battles-july-august-2025/"
+  },
+  {
+    "title": "Solgaleo in 5-star Raid Battles",
+    "date": 1751929200000,
+    "dateEnd": 1752447600000,
+    "raids": [
+      {
+        "speciesId": "solgaleo",
+        "kind": "5",
+        "shiny": false
+      }
+    ],
+    "rawUrl": "https://leekduck.com/events/solgaleo-in-5-star-raid-battles-july-2025/"
   },
   {
     "title": "Mega Blastoise in Mega Raids",
@@ -78,42 +104,16 @@
     "rawUrl": "https://leekduck.com/events/mega-blastoise-in-mega-raids-july-2025/"
   },
   {
-    "title": "Mega Aerodactyl in Mega Raids",
-    "date": 1753657200000,
-    "dateEnd": 1754262000000,
-    "raids": [
-      {
-        "speciesId": "aerodactyl_mega",
-        "kind": "mega",
-        "shiny": false
-      }
-    ],
-    "rawUrl": "https://leekduck.com/events/mega-aerodactyl-in-mega-raids-july-august-2025/"
-  },
-  {
-    "title": "Lunala in 5-star Raid Battles",
+    "title": "Mega Venusaur in Mega Raids",
     "date": 1753138800000,
     "dateEnd": 1753657200000,
     "raids": [
       {
-        "speciesId": "lunala",
-        "kind": "5",
+        "speciesId": "venusaur_mega",
+        "kind": "mega",
         "shiny": false
       }
     ],
-    "rawUrl": "https://leekduck.com/events/lunala-in-5-star-raid-battles-july-2025/"
-  },
-  {
-    "title": "Virizion in 5-star Raid Battles",
-    "date": 1753657200000,
-    "dateEnd": 1754262000000,
-    "raids": [
-      {
-        "speciesId": "virizion",
-        "kind": "5",
-        "shiny": false
-      }
-    ],
-    "rawUrl": "https://leekduck.com/events/virizion-in-5-star-raid-battles-july-august-2025/"
+    "rawUrl": "https://leekduck.com/events/mega-venusaur-in-mega-raids-july-2025/"
   }
 ]

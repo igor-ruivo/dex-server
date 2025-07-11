@@ -1,4 +1,4 @@
-import { PokemonTypes, PokemonForms } from '../../types/pokemon';
+import { PokemonForms,PokemonTypes } from '../../types/pokemon';
 import { POKEMON_CONFIG } from '../config/pokemon-config';
 
 /**
@@ -9,7 +9,7 @@ export class PokemonTransformer {
   /**
    * Transforms an array of type strings into PokemonTypes enums, filtering out 'none'.
    */
-  static transformTypes = (types: string[]): PokemonTypes[] => {
+  static transformTypes = (types: Array<string>): Array<PokemonTypes> => {
     return types
       .filter(type => type !== 'none')
       .map(type => {
@@ -22,7 +22,7 @@ export class PokemonTransformer {
   /**
    * Cleans a list of moves, replacing all hidden powers with 'HIDDEN_POWER' if present.
    */
-  static cleanMoves = (moves: string[]): string[] => {
+  static cleanMoves = (moves: Array<string>): Array<string> => {
     if (!moves) return [];
     
     const hasHiddenPower = moves.some(move => POKEMON_CONFIG.HIDDEN_POWERS.has(move));

@@ -1,13 +1,14 @@
 import { JSDOM } from 'jsdom';
-import { PokemonGoPost } from '../../../types/events';
+
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
+import { PokemonGoPost } from '../../../types/events';
 
 export class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
     private newsUrl = 'https://pokemongo.com/news';
 
-    public async fetchAllPosts(): Promise<PokemonGoPost[]> {
+    public async fetchAllPosts(): Promise<Array<PokemonGoPost>> {
         try {
             const newsPageHtml = await this.fetchPage(this.newsUrl);
             const postLinks = this.extractPostLinks(newsPageHtml);
@@ -20,13 +21,15 @@ export class PokemonGoFetcher {
                         html
                     };
                 } catch (error) {
+                    console.error(error);
                     return null;
                 }
             });
             const results = await Promise.all(postPromises);
-            const posts = results.filter(post => post !== null) as PokemonGoPost[];
+            const posts = results.filter(post => post !== null) as Array<PokemonGoPost>;
             return posts;
         } catch (error) {
+            console.error(error);
             return [];
         }
     }
@@ -48,13 +51,13 @@ export class PokemonGoFetcher {
         const dom = new JSDOM(html);
         const document = dom.window.document;
         // Select all <a> elements with href containing /en/post/ or /news/
-        const cardLinks = Array.from(document.querySelectorAll('a')) as Element[];
+        const cardLinks = Array.from(document.querySelectorAll('a')) as Array<Element>;
         const filteredLinks = cardLinks.filter((a: Element) => {
-            const href = a.getAttribute('href') || '';
-            return /\/en\/post\//.test(href) || /\/news\//.test(href);
+            const href = a.getAttribute('href') ?? '';
+            return href.includes('/en/post/') || href.includes('/news/');
         });
         filteredLinks.forEach((a: Element) => {
-            let url = a.getAttribute('href') || '';
+            let url = a.getAttribute('href') ?? '';
             if (url.startsWith('/')) url = this.baseUrl + url;
             if (!url.startsWith('http')) url = this.baseUrl + '/' + url.replace(/^\//, '');
            
@@ -102,6 +105,7 @@ export class PokemonGoFetcher {
                 html
             };
         } catch (error) {
+            console.error(error);
             return null;
         }
     }

@@ -1,15 +1,15 @@
+import { HttpDataFetcher,IDataFetcher } from '../services/data-fetcher';
 import { 
   BasePokemon, 
-  GameMasterPokemon, 
   GameMasterData, 
+  GameMasterPokemon, 
   IGameMasterMove
 } from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
-import { PokemonValidator } from './utils/pokemon-validator';
-import { PokemonTransformer } from './utils/pokemon-transformer';
 import { ImageUrlBuilder } from './utils/image-url-builder';
-import { IDataFetcher, HttpDataFetcher } from '../services/data-fetcher';
+import { PokemonTransformer } from './utils/pokemon-transformer';
+import { PokemonValidator } from './utils/pokemon-validator';
 
 export class GameMasterParser {
   private readonly dataFetcher: IDataFetcher;
@@ -22,7 +22,7 @@ export class GameMasterParser {
     console.log('🔄 Fetching Pokemon Game Master data...');
     
     try {
-      const rawData = await this.dataFetcher.fetchJson<BasePokemon[]>(POKEMON_CONFIG.SOURCE_URL);
+      const rawData = await this.dataFetcher.fetchJson<Array<BasePokemon>>(POKEMON_CONFIG.SOURCE_URL);
       console.log(`📊 Found ${rawData.length} Pokemon in source data`);
       
       // Combine source data with synthetic Pokemon
@@ -39,7 +39,7 @@ export class GameMasterParser {
     }
   }
 
-  private transformData(rawData: BasePokemon[], knownMoves: Record<string, IGameMasterMove>): GameMasterData {
+  private transformData(rawData: Array<BasePokemon>, knownMoves: Record<string, IGameMasterMove>): GameMasterData {
     const seenSpecies = new Set<string>();
     const pokemonDictionary: GameMasterData = {};
 
@@ -79,7 +79,7 @@ export class GameMasterParser {
     }
   }
 
-  private transformPokemon = (pokemon: BasePokemon, allPokemon: BasePokemon[]): GameMasterPokemon | null => {
+  private transformPokemon = (pokemon: BasePokemon, allPokemon: Array<BasePokemon>): GameMasterPokemon | null => {
     try {
       const isShadow = PokemonValidator.isShadowPokemon(pokemon);
       const isMega = PokemonValidator.isMegaPokemon(pokemon);
@@ -112,13 +112,13 @@ export class GameMasterParser {
         hp: pokemon.baseStats.hp,
         fastMoves: PokemonTransformer.cleanMoves(pokemon.fastMoves),
         chargedMoves: PokemonTransformer.cleanMoves(pokemon.chargedMoves),
-        eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves || []),
-        legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves || []),
+        eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves ?? []),
+        legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves ?? []),
         isShadow,
         isMega,
         familyId: pokemon.family?.id,
         parent: pokemon.speciesId === 'darmanitan_standard_shadow' ? 'darumaka_shadow' : pokemon.family?.parent,
-        evolutions: pokemon.family?.evolutions || [],
+        evolutions: pokemon.family?.evolutions ?? [],
         aliasId: pokemon.aliasId,
         form: PokemonTransformer.getForm(pokemon.speciesName),
         isLegendary: PokemonValidator.hasTag(pokemon, 'legendary'),
@@ -126,41 +126,41 @@ export class GameMasterParser {
         isBeast: PokemonValidator.hasTag(pokemon, 'ultrabeast')
       };
     } catch (error) {
-      // console.warn(`⚠️ Failed to transform Pokemon ${pokemon.speciesId}:`, error);
+      console.error(error);
       return null;
     }
   }
 
   private applyManualCorrections(pokemonDictionary: GameMasterData): void {
     // Apply any manual corrections needed
-    const gastrodon = pokemonDictionary['gastrodon'];
+    const gastrodon = pokemonDictionary.gastrodon;
     if (gastrodon) {
       gastrodon.familyId = 'FAMILY_SHELLOS';
       gastrodon.parent = 'shellos';
     }
 
-    const cursola = pokemonDictionary['cursola'];
+    const cursola = pokemonDictionary.cursola;
     if (cursola) {
       cursola.parent = 'corsola_galarian';
     }
 
-    const corsola = pokemonDictionary['corsola'];
+    const corsola = pokemonDictionary.corsola;
     if (corsola) {
       corsola.familyId = 'FAMILY_CORSOLA';
     }
 
-    const corsolaGalarian = pokemonDictionary['corsola_galarian'];
+    const corsolaGalarian = pokemonDictionary.corsola_galarian;
     if (corsolaGalarian) {
       corsolaGalarian.familyId = 'FAMILY_CORSOLA';
       corsolaGalarian.evolutions = ['cursola'];
     }
 
     // Handle golisopodsh alias
-    const golisopodsh = pokemonDictionary['golisopodsh'];
+    const golisopodsh = pokemonDictionary.golisopodsh;
     if (golisopodsh) {
       golisopodsh.aliasId = 'golisopod';
     }
   }
 }
 
-export { GameMasterData } from '../types/pokemon'; 
+export type { GameMasterData } from '../types/pokemon'; 

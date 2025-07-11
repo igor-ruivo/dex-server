@@ -39204,7 +39204,7 @@
     "isMega": false,
     "familyId": "FAMILY_ZORUA",
     "evolutions": [
-      "zoroark"
+      "zoroark_hisuian"
     ],
     "form": "Hisuian",
     "isLegendary": false,
@@ -42080,7 +42080,9 @@
     "isMega": false,
     "familyId": "FAMILY_PAWNIARD",
     "parent": "pawniard",
-    "evolutions": [],
+    "evolutions": [
+      "kingambit"
+    ],
     "form": "",
     "isLegendary": false,
     "isMythical": false,

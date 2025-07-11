@@ -1,10 +1,11 @@
-import { PublicEvent, IEntry, IParsedEvent } from '../../../types/events';
-import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
-import { parseEventDateRange } from '../../utils/normalization';
-import { GameMasterPokemon } from '../../../types/pokemon';
+
+import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
+import { IEntry, IParsedEvent,PublicEvent } from '../../../types/events';
+import { GameMasterPokemon } from '../../../types/pokemon';
+import { parseEventDateRange } from '../../utils/normalization';
+import { extractPokemonSpeciesIdsFromElements,PokemonMatcher } from '../../utils/pokemon-matcher';
 
 // Helper to extract text content from a selector
 const getText = (doc: Document, selector: string) => doc.querySelector(selector)?.textContent?.trim() ?? '';
@@ -43,7 +44,7 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
             .filter(Boolean)
 
         // Wild spawns by zone (grouped lists, legacy order)
-        const wild: IEntry[] = [];
+        const wild: Array<IEntry> = [];
         const appearing = Array.from(doc.getElementById('different-pokemon-appearing')?.querySelectorAll('[role=list]') ?? []);
         const wildGroups = [
             appearing[0], // city
@@ -61,7 +62,7 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
         });
 
         // Eggs by distance/type (legacy order and comments, with correct index mapping)
-        const eggs: IEntry[] = [];
+        const eggs: Array<IEntry> = [];
         const eggsElement = Array.from(doc.getElementById('eggs')?.querySelectorAll('[role=list]') ?? []);
         // Legacy index mapping:
         // 0: 2km, 1: 5km, 2: 5km (Adventure Sync), 3: 7km, 4: 7km (Route), 5: 10km, 6: 10km (Adventure Sync)
@@ -77,7 +78,7 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
         const eggKindMap = ["2", "5", "7", "10", "5", "7", "10"];
 
         // Helper to extract egg comments from a document
-        const extractEggComments = (doc: Document): string[] =>
+        const extractEggComments = (doc: Document): Array<string> =>
             Array.from(doc.getElementById('eggs')?.querySelectorAll('[role=figure] > div:first-child > div:first-child') ?? [])
                 .filter(el => {
                     const figure = el.closest('[role=figure]');
@@ -100,7 +101,7 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
         });
 
         // Research encounters (Field Research)
-        const researches: IEntry[] = [];
+        const researches: Array<IEntry> = [];
         const researchList = doc.getElementById('encounter-pokemon');
         if (researchList) {
             researches.push(...extractPokemonSpeciesIdsFromElements(Array.from(researchList.querySelectorAll('[role=listitem]')), new PokemonMatcher(gameMasterPokemon, domain)));
@@ -120,6 +121,7 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
             incenses: [],
             eggs,
             researches,
+            lures: [],
             bonuses: bonuses,
             isSeason: true,
             locale: season.locale

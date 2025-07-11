@@ -1,10 +1,11 @@
-import { IEntry } from '../../../types/events';
-import { PokemonMatcher } from '../../utils/pokemon-matcher';
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
-import { parseDateFromString } from '../../utils/normalization';
-import { GameMasterPokemon } from '../../../types/pokemon';
+
+import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales, getSpotlightHourBonusTranslation } from '../../../services/gamemaster-translator';
+import { IEntry } from '../../../types/events';
+import { GameMasterPokemon } from '../../../types/pokemon';
+import { parseDateFromString } from '../../utils/normalization';
+import { PokemonMatcher } from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -13,7 +14,7 @@ export interface ILeekduckSpotlightHour {
     title: string;
     date: number;
     dateEnd: number;
-    pokemons: IEntry[];
+    pokemons: Array<IEntry>;
     bonus?: Partial<Record<AvailableLocales, string>>;
     imgUrl?: string;
     rawUrl?: string;
@@ -23,14 +24,14 @@ export interface ILeekduckSpecialRaidBoss {
     title: string;
     date: number;
     dateEnd: number;
-    raids: IEntry[];
+    raids: Array<IEntry>;
     imgUrl?: string;
     rawUrl?: string;
 }
 
 export interface ILeekduckEventsResult {
-    spotlightHours: ILeekduckSpotlightHour[];
-    specialRaidBosses: ILeekduckSpecialRaidBoss[];
+    spotlightHours: Array<ILeekduckSpotlightHour>;
+    specialRaidBosses: Array<ILeekduckSpecialRaidBoss>;
 }
 
 type ParsedEventCommon = {
@@ -62,8 +63,8 @@ export class EventsParser {
             return e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e;
         });
 
-        const spotlightHours: ILeekduckSpotlightHour[] = [];
-        const specialRaidBosses: ILeekduckSpecialRaidBoss[] = [];
+        const spotlightHours: Array<ILeekduckSpotlightHour> = [];
+        const specialRaidBosses: Array<ILeekduckSpecialRaidBoss> = [];
 
         const eventPromises = urls.map(async (url) => {
             try {
@@ -83,8 +84,8 @@ export class EventsParser {
                         specialRaidBosses.push(specialRaidBoss);
                     }
                 }
-            } catch (_err) {
-                // Ignore failed events
+            } catch (err) {
+                console.error(err);
             }
         });
 
@@ -162,8 +163,8 @@ export class EventsParser {
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         isShadow: boolean,
         isMega: boolean
-    ): IEntry[] => {
-        let domainToUse: GameMasterPokemon[] = [];
+    ): Array<IEntry> => {
+        let domainToUse: Array<GameMasterPokemon> = [];
         if (isShadow) {
             domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
                 return !p.isMega && !p.aliasId;
@@ -179,10 +180,10 @@ export class EventsParser {
         }
 
         const names = rawPkmName.replaceAll(', ', ',').replaceAll(' and ', ',').split(',');
-        const entries: IEntry[] = [];
+        const entries: Array<IEntry> = [];
 
-        for (let i = 0; i < names.length; i++) {
-            const p = names[i].trim();
+        for (const name of names) {
+            const p = name.trim();
             if (!p) {
                 continue;
             }

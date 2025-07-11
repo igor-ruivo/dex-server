@@ -55,8 +55,8 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
 
     // Special handling for multi-day time ranges: handle both old and new formats
     if (date.includes(' and ') && date.includes(' from ') && date.includes(' to ')) {
-        const multiDayMatch = date.match(/([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i);
-        if (multiDayMatch && multiDayMatch[1] && multiDayMatch[2] && multiDayMatch[4] && multiDayMatch[5]) {
+        const multiDayMatch = /([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i.exec(date);
+        if (multiDayMatch?.[1] && multiDayMatch?.[2] && multiDayMatch?.[4] && multiDayMatch?.[5]) {
             const year = multiDayMatch[3] || '2025';
             const startDate = multiDayMatch[1] + ', ' + year;
             const endDate = multiDayMatch[2] + ', ' + year;
@@ -120,12 +120,12 @@ export function parseDateFromString(side: string): number {
     side = fixDateString(side.trim());
     side = side.replace(/^[A-Za-z]+day,\s*/, '');
     let year = new Date().getFullYear();
-    const yearMatch = side.match(/, (\d{4})/);
+    const yearMatch = /, (\d{4})/.exec(side);
     if (yearMatch) {
         year = Number(yearMatch[1]);
         side = side.replace(', ' + year, '');
     }
-    let timeMatch = side.match(/, at (\d{1,2}):(\d{2}) ([ap]m)/i);
+    let timeMatch = /, at (\d{1,2}):(\d{2}) ([ap]m)/i.exec(side);
     let hour = 0, minute = 0;
     if (timeMatch) {
         hour = Number(timeMatch[1]);
@@ -134,7 +134,7 @@ export function parseDateFromString(side: string): number {
         if (ampm === 'pm' && hour !== 12) hour += 12;
         if (ampm === 'am' && hour === 12) hour = 0;
     } else {
-        timeMatch = side.match(/(\d{1,2}):(\d{2}) ([ap]m)/i);
+        timeMatch = /(\d{1,2}):(\d{2}) ([ap]m)/i.exec(side);
         if (timeMatch) {
             hour = Number(timeMatch[1]);
             minute = Number(timeMatch[2]);

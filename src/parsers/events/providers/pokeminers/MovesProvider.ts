@@ -1,6 +1,6 @@
-import { GameMasterMovesType, IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
+import { GameMasterMovesType, IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
 
 function normalizedMoveName(moveName: string) {
   return moveName
@@ -144,8 +144,8 @@ export class MovesProvider {
     Object.values(AvailableLocales).forEach(locale => {
       upperHandMoveName[locale] = normalizedMoveName('UPPER_HAND');
     });
-    if (!movesDictionary['UPPER_HAND']) {
-      movesDictionary['UPPER_HAND'] = {
+    if (!movesDictionary.UPPER_HAND) {
+      movesDictionary.UPPER_HAND = {
         moveId: 'UPPER_HAND',
         vId: '-1',
         type: 'fighting',
@@ -168,8 +168,8 @@ export class MovesProvider {
     Object.values(AvailableLocales).forEach(locale => {
       clangingScalesMoveName[locale] = normalizedMoveName('CLANGING_SCALES');
     });
-    if (!movesDictionary['CLANGING_SCALES']) {
-      movesDictionary['CLANGING_SCALES'] = {
+    if (!movesDictionary.CLANGING_SCALES) {
+      movesDictionary.CLANGING_SCALES = {
         moveId: 'CLANGING_SCALES',
         vId: '-1',
         type: 'dragon',

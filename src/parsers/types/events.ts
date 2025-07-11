@@ -34,7 +34,7 @@ export type PublicEvent = Omit<
 
 export interface IEventSource {
     name: string;
-    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<PublicEvent[]>;
+    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<PublicEvent>>;
 }
 
 export enum PokemonGoPostKind {
@@ -56,23 +56,25 @@ export interface IPokemonGoHtmlParser {
 }
 
 export interface Domains {
-  wildDomain: GameMasterPokemon[];
-  raidDomain: GameMasterPokemon[];
-  eggDomain: GameMasterPokemon[];
-  researchDomain: GameMasterPokemon[];
-  incenseDomain: GameMasterPokemon[];
+  wildDomain: Array<GameMasterPokemon>;
+  raidDomain: Array<GameMasterPokemon>;
+  eggDomain: Array<GameMasterPokemon>;
+  researchDomain: Array<GameMasterPokemon>;
+  incenseDomain: Array<GameMasterPokemon>;
+  luresDomain: Array<GameMasterPokemon>;
 }
 
 export interface EventData {
-  raids: IEntry[];
-  wild: IEntry[];
-  eggs: IEntry[];
-  researches: IEntry[];
-  incenses: IEntry[];
+  raids: Array<IEntry>;
+  wild: Array<IEntry>;
+  eggs: Array<IEntry>;
+  researches: Array<IEntry>;
+  incenses: Array<IEntry>;
+  lures: Array<IEntry>;
 }
 
 export type EventBlock = EventData & {
-  bonuses: string[];
+  bonuses: Array<string>;
 }
 
 export interface PokemonGoPost {
@@ -85,16 +87,16 @@ export interface IRocketGrunt {
     trainerId: string;
     type: string | undefined;
     phrase: Partial<Record<AvailableLocales, string>>;
-    tier1: string[];
-    tier2: string[];
-    tier3: string[];
-    catchableTiers: number[];
+    tier1: Array<string>;
+    tier2: Array<string>;
+    tier3: Array<string>;
+    catchableTiers: Array<number>;
 }
 
 // LeekDuck Spotlight Hour output DTO
 export interface ISpotlightHourEvent {
     bonus: Partial<Record<AvailableLocales, string>>;
-    pokemon: string[];
+    pokemon: Array<string>;
     dateStart: number;
     dateEnd: number;
 }
@@ -103,6 +105,6 @@ export interface ISpotlightHourEvent {
 export interface ILeekduckSpecialRaidBossEvent {
     dateStart: number;
     dateEnd: number;
-    pokemon: IEntry[];
+    pokemon: Array<IEntry>;
     title: string;
 } 

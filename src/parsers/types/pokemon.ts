@@ -125,7 +125,7 @@ export interface PokemonStats {
 export interface PokemonFamily {
   id: string;
   parent?: string;
-  evolutions?: string[];
+  evolutions?: Array<string>;
 }
 
 export interface PokemonTags {
@@ -141,37 +141,37 @@ export interface BasePokemon {
   speciesId: string;
   speciesName: string;
   baseStats: PokemonStats;
-  types: string[];
-  fastMoves: string[];
-  chargedMoves: string[];
-  eliteMoves?: string[];
-  legacyMoves?: string[];
+  types: Array<string>;
+  fastMoves: Array<string>;
+  chargedMoves: Array<string>;
+  eliteMoves?: Array<string>;
+  legacyMoves?: Array<string>;
   family?: PokemonFamily;
   aliasId?: string;
   released: boolean;
-  tags?: string[];
+  tags?: Array<string>;
 }
 
 export interface GameMasterPokemon {
   dex: number;
   speciesId: string;
   speciesName: string;
-  types: PokemonTypes[];
+  types: Array<PokemonTypes>;
   imageUrl: string;
   goImageUrl: string;
   shinyGoImageUrl: string;
   atk: number;
   def: number;
   hp: number;
-  fastMoves: string[];
-  chargedMoves: string[];
-  eliteMoves?: string[];
-  legacyMoves?: string[];
+  fastMoves: Array<string>;
+  chargedMoves: Array<string>;
+  eliteMoves?: Array<string>;
+  legacyMoves?: Array<string>;
   isShadow: boolean;
   isMega: boolean;
   familyId?: string;
   parent?: string;
-  evolutions: string[];
+  evolutions: Array<string>;
   aliasId?: string;
   form: string;
   isLegendary: boolean;
@@ -179,9 +179,7 @@ export interface GameMasterPokemon {
   isBeast: boolean;
 }
 
-export interface GameMasterData {
-  [speciesId: string]: GameMasterPokemon;
-}
+export type GameMasterData = Record<string, GameMasterPokemon>;
 
 export interface IGameMasterMove {
   moveId: string;

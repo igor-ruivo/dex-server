@@ -6,10 +6,10 @@ export enum AvailableLocales {
   ptbr = 'pt_br'
 }
 
-type ParsedSources = Record<AvailableLocales, {
+type ParsedSources = Partial<Record<AvailableLocales, {
     readonly translatedMovesDictionary: Record<string, string>;
     readonly translatedPhrasesDictionary: Record<string, string>;
-}>
+}>>
 
 const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
   [AvailableLocales.en]: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_english.json',
@@ -54,7 +54,7 @@ const EGG_COMMENT_TRANSLATIONS: Record<AvailableLocales, Record<string, string>>
 
 export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhrase: string) => {
   const dict = SPOTLIGHT_HOUR_BONUS_TRANSLATIONS[locale];
-  if (dict && dict[enPhrase]) {
+  if (dict?.[enPhrase]) {
     return dict[enPhrase];
   }
 
@@ -63,16 +63,16 @@ export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhr
 
 export const getEggCommentTranslation = (locale: AvailableLocales, enPhrase: string) => {
   const dict = EGG_COMMENT_TRANSLATIONS[locale];
-  if (dict && dict[enPhrase]) {
+  if (dict?.[enPhrase]) {
     return dict[enPhrase];
   }
 
   return enPhrase;
 };
 
-export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[] => {
+export const pairEventTranslations = (events: Array<IParsedEvent>): Array<PublicEvent> => {
   // Get all unique locales from AvailableLocales enum
-  const locales: AvailableLocales[] = Object.values(AvailableLocales);
+  const locales: Array<AvailableLocales> = Object.values(AvailableLocales);
 
   // Group events by id and then by locale
   const eventsById: Record<string, Partial<Record<AvailableLocales, IParsedEvent>>> = {};
@@ -84,7 +84,7 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[
     eventsById[event.id][event.locale] = event;
   }
 
-  const publicEvents: PublicEvent[] = [];
+  const publicEvents: Array<PublicEvent> = [];
 
   for (const [, localeEvents] of Object.entries(eventsById)) {
     // Always require an English event as the base
@@ -96,7 +96,7 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[
     // Build title, subtitle, and bonuses objects for all locales
     const title: Partial<Record<AvailableLocales, string>> = {};
     const subtitle: Partial<Record<AvailableLocales, string>> = {};
-    const bonuses: Partial<Record<AvailableLocales, string[]>> = {};
+    const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
 
     for (const locale of locales) {
       const localeEvent = localeEvents[locale];
@@ -133,6 +133,7 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[
       eggs: enEvent.eggs,
       researches: enEvent.researches,
       incenses: enEvent.incenses,
+      lures: enEvent.lures,
       bonuses
     });
   }
@@ -141,12 +142,12 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[
 };
 
 class GameMasterTranslator {
-  private readonly fetcher;
+  private readonly fetcher: HttpDataFetcher;
   private parsedSources: ParsedSources;
 
   constructor() {
     this.fetcher = new HttpDataFetcher();
-    this.parsedSources = {} as ParsedSources;
+    this.parsedSources = {};
   }
 
   private tryParseMove = (translatedMovesDictionary: Record<string, string>, dataEntry: string, expectedValue: string) => {
@@ -168,16 +169,16 @@ class GameMasterTranslator {
 
     switch (dataEntry) {
       case 'combat_giovanni_quote#1':
-        translatedPhrasesDictionary['Giovanni'] = expectedValue;
+        translatedPhrasesDictionary.Giovanni = expectedValue;
         break;
       case 'combat_cliff_quote#1':
-        translatedPhrasesDictionary['Cliff'] = expectedValue;
+        translatedPhrasesDictionary.Cliff = expectedValue;
         break;
       case 'combat_arlo_quote#1':
-        translatedPhrasesDictionary['Arlo'] = expectedValue;
+        translatedPhrasesDictionary.Arlo = expectedValue;
         break;
       case 'combat_sierra_quote#1':
-        translatedPhrasesDictionary['Sierra'] = expectedValue;
+        translatedPhrasesDictionary.Sierra = expectedValue;
         break;
       case 'combat_grunt_decoy_quote#1':
         translatedPhrasesDictionary['Decoy Female Grunt'] = expectedValue;
@@ -191,8 +192,11 @@ class GameMasterTranslator {
     }
   };
 
-  public setupGameMasterSources = async () => {
-    const results = await Promise.all(
+  public setupGameMasterSources = async (): Promise<void> => {
+    const results: Array<[AvailableLocales, {
+      translatedMovesDictionary: Record<string, string>;
+      translatedPhrasesDictionary: Record<string, string>;
+    }]> = await Promise.all(
       Object.entries(LOCALE_GAME_MASTER_FILES)
         .map(async ([locale, url]) => {
           const translationData = await this.fetcher.fetchJson<{ data: Array<string> }>(url);
@@ -205,9 +209,10 @@ class GameMasterTranslator {
             this.tryParseMove(translatedMovesDictionary, t, value);
             this.tryParseRocketPhrase(translatedPhrasesDictionary, t, value);
           });
-          
+
+          // Cast locale to AvailableLocales to ensure type safety
           return [
-            locale,
+            locale as AvailableLocales,
             {
               translatedMovesDictionary,
               translatedPhrasesDictionary
@@ -216,11 +221,16 @@ class GameMasterTranslator {
         })
     );
 
-    this.parsedSources = Object.fromEntries(results);
+    // Build the parsedSources object in a type-safe way
+    const parsedSources: ParsedSources = {};
+    for (const [locale, dicts] of results) {
+      parsedSources[locale] = dicts;
+    }
+    this.parsedSources = parsedSources;
   };
 
   public getTranslationForMoveName = (locale: AvailableLocales, moveID: string) => {
-    return this.parsedSources[locale].translatedMovesDictionary[moveID];
+    return this.parsedSources[locale]?.translatedMovesDictionary[moveID] ?? '';
   };
 
   public getTranslationForRocketPhrase = (locale: AvailableLocales, trainerId: string, type?: string): string => {

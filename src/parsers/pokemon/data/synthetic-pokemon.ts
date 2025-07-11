@@ -1,6 +1,6 @@
 import { BasePokemon } from '../../types/pokemon';
 
-export const SYNTHETIC_POKEMON: BasePokemon[] = [
+export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
   {
     dex: 554,
     speciesId: 'darumaka_shadow',

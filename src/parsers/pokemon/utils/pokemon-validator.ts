@@ -21,7 +21,7 @@ export class PokemonValidator {
    */
   static isShadowPokemon = (pokemon: BasePokemon): boolean => {
     return (
-      (pokemon.tags && pokemon.tags.includes('shadow')) ||
+      (pokemon.tags?.includes('shadow')) ??
       pokemon.speciesName.toLowerCase().includes('(shadow)')
     );
   };
@@ -31,7 +31,7 @@ export class PokemonValidator {
    */
   static isMegaPokemon = (pokemon: BasePokemon): boolean => {
     return (
-      (pokemon.tags && pokemon.tags.includes('mega')) ||
+      (pokemon.tags?.includes('mega')) ??
       pokemon.speciesName.toLowerCase().includes('(mega)')
     );
   };

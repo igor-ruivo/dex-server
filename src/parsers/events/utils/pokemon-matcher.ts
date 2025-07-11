@@ -1,7 +1,7 @@
-import { GameMasterPokemon } from '../../types/pokemon';
 import { IEntry } from '../../types/events';
+import { GameMasterPokemon } from '../../types/pokemon';
+import { ndfNormalized, normalizePokemonName,normalizeSpeciesNameForId } from '../../utils/normalization';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
-import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from '../../utils/normalization';
 
 /**
  * Utility for matching Pokémon names and forms to Game Master data in the event pipeline.
@@ -9,14 +9,14 @@ import { ndfNormalized, normalizeSpeciesNameForId, normalizePokemonName } from '
  */
 export class PokemonMatcher {
     private gameMasterPokemon: Record<string, GameMasterPokemon>;
-    private domain: GameMasterPokemon[];
+    private domain: Array<GameMasterPokemon>;
 
     /**
      * Constructs a new PokemonMatcher.
      * @param gameMasterPokemon - The full Game Master Pokémon dictionary.
      * @param domain - The subset of Pokémon relevant for this context.
      */
-    constructor(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: GameMasterPokemon[]) {
+    constructor(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: Array<GameMasterPokemon>) {
         this.gameMasterPokemon = gameMasterPokemon;
         this.domain = domain;
     }
@@ -24,8 +24,8 @@ export class PokemonMatcher {
     /**
      * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.
      */
-    public matchPokemonFromText = (texts: string[]): IEntry[] => {
-        const wildEncounters: IEntry[] = [];
+    public matchPokemonFromText = (texts: Array<string>): Array<IEntry> => {
+        const wildEncounters: Array<IEntry> = [];
         const seen = new Set<string>();
         const pkmWithNoClothes = texts.map(pp => {
             const idx = pp.indexOf(" wearing");
@@ -255,7 +255,7 @@ export class PokemonMatcher {
     /**
      * Gets all available forms for a given dex number and status.
      */
-    private getAvailableForms = (dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): GameMasterPokemon[] => {
+    private getAvailableForms = (dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): Array<GameMasterPokemon> => {
         if (raidLevel.toLocaleLowerCase() !== "mega" || !isMega) {
             if (!isShadow) {
                 return this.domain.filter(formC => 
@@ -279,8 +279,8 @@ export class PokemonMatcher {
 /**
  * Extracts Pokémon species IDs from a list of HTML elements using a PokemonMatcher.
  */
-export const extractPokemonSpeciesIdsFromElements = (elements: Node[], matcher: PokemonMatcher): IEntry[] => {
-    const textes: string[] = [];
+export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matcher: PokemonMatcher): Array<IEntry> => {
+    const textes: Array<string> = [];
     const stack = [...elements];
     while (stack.length > 0) {
         const node = stack.pop();
@@ -315,7 +315,7 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Node[], matcher: 
     const results = matcher.matchPokemonFromText(parsedPokemon);
     return results.map((entry, idx) => {
         const originalText = parsedPokemon[idx] || '';
-        const isAsterisk = /\*$/.test(originalText.trim());
+        const isAsterisk = originalText.trim().endsWith("*");
         return {
             ...entry,
             shiny: isAsterisk || shinyByPhrase

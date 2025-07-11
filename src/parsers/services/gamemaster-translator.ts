@@ -11,13 +11,21 @@ type ParsedSources = Record<AvailableLocales, {
     readonly translatedPhrasesDictionary: Record<string, string>;
 }>
 
-const LOCALE_GAME_MASTER_FILES = {
+const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
   [AvailableLocales.en]: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_english.json',
   [AvailableLocales.ptbr]: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_brazilianportuguese.json'
 };
 
 const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<AvailableLocales, Record<string, string>> = {
-  [AvailableLocales.en]: {}, // The source of truth is already in en
+   // The source of truth is already in en
+  [AvailableLocales.en]: {
+    'Catch XP': 'Catch XP',
+    'Catch Candy': 'Catch Candy',
+    'Transfer Candy': 'Transfer Candy',
+    'Evolution XP': 'Evolution XP',
+    'Catch Stardust': 'Catch Stardust'
+  },
+
   [AvailableLocales.ptbr]: {
     'Catch XP': 'XP ao capturar',
     'Catch Candy': 'Doces ao capturar',
@@ -28,7 +36,13 @@ const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<AvailableLocales, Record<string,
 };
 
 const EGG_COMMENT_TRANSLATIONS: Record<AvailableLocales, Record<string, string>> = {
-  [AvailableLocales.en]: {}, // The source of truth is already in en
+   // The source of truth is already in en
+  [AvailableLocales.en]: {
+    'Adventure Sync Rewards': 'Adventure Sync Rewards',
+    'Route Rewards': 'Route Rewards',
+    '7 km Eggs from Mateo\'s Gift Exchange': '7 km Eggs from Mateo\'s Gift Exchange'
+  },
+
   [AvailableLocales.ptbr]: {
     'Adventure Sync Rewards': 'Recompensas de Sincroaventura',
     'Route Rewards': 'Recompensas de Rota',
@@ -87,6 +101,19 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): PublicEvent[
       title[locale] = localeEvent ? localeEvent.title : '';
       subtitle[locale] = localeEvent ? localeEvent.subtitle : '';
       bonuses[locale] = localeEvent ? localeEvent.bonuses : [];
+
+      if (locale === AvailableLocales.en) {
+        continue;
+      }
+
+      enEvent.eggs.forEach(egg => {
+        if (!egg.comment?.en) {
+          return;
+        }
+
+        const translatedComment = getEggCommentTranslation(locale, egg.comment.en);
+        egg.comment[locale] = translatedComment;
+      });
     }
 
     publicEvents.push({

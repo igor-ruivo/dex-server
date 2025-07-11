@@ -54,9 +54,8 @@ export class GameMasterParser {
       const transformed = this.transformPokemon(pokemon, rawData);
       if (transformed) {
         pokemonDictionary[pokemon.speciesId] = transformed;
+        this.checkPokemonMoves(transformed, knownMoves);
       }
-
-      this.checkPokemonMoves(pokemon, knownMoves);
     }
 
     // Apply manual corrections
@@ -65,8 +64,14 @@ export class GameMasterParser {
     return pokemonDictionary;
   }
 
-  private checkPokemonMoves = (pokemon: BasePokemon, knownMoves: Record<string, IGameMasterMove>) => {
-    const allPokemonMoves = new Set([...pokemon.eliteMoves, ...pokemon.fastMoves, ...pokemon.chargedMoves, ...pokemon.legacyMoves]);
+  private checkPokemonMoves = (pokemon: GameMasterPokemon, knownMoves: Record<string, IGameMasterMove>) => {
+    const allPokemonMoves = new Set([
+      ...(pokemon.eliteMoves ?? []),
+      ...pokemon.fastMoves,
+      ...pokemon.chargedMoves,
+      ...(pokemon.legacyMoves ?? [])
+    ]);
+
     for (const move of allPokemonMoves) {
       if (!knownMoves[move]) {
         console.error(`${move} isn't a known move! (Pokémon species: ${pokemon.speciesId})`);

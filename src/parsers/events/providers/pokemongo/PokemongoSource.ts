@@ -1,11 +1,11 @@
-import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost, IPokemonGoEventBlockParser } from '../../../types/events';
+import { IEventSource, IParsedEvent, IEntry, IPokemonGoHtmlParser, EventData, Domains, EventBlock, PokemonGoPost, IPokemonGoEventBlockParser, PublicEvent } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 import PokemonGoPostParser from './news-parsers/PostParser';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import { PokemonGoFetcher } from './PokemongoFetcher';
-import { AvailableLocales } from '../../../services/gamemaster-translator';
+import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 
 /**
  * Constants for event section types.
@@ -129,7 +129,7 @@ export class PokemonGoSource implements IEventSource {
     /**
      * Parses all events from the provider using the given Game Master data.
      */
-    public async parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]> {
+    public async parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<PublicEvent[]> {
         try {
             const posts = await this.fetcher.fetchAllPosts();
             const postPromises = posts.map(async (post) => {
@@ -144,7 +144,7 @@ export class PokemonGoSource implements IEventSource {
                 }
             });
             const allEventsArrays = await Promise.all(postPromises);
-            return allEventsArrays.flat();
+            return pairEventTranslations(allEventsArrays.flat());
         } catch {
             return [];
         }

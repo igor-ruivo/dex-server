@@ -144,8 +144,8 @@ export interface BasePokemon {
   types: string[];
   fastMoves: string[];
   chargedMoves: string[];
-  eliteMoves: string[];
-  legacyMoves: string[];
+  eliteMoves?: string[];
+  legacyMoves?: string[];
   family?: PokemonFamily;
   aliasId?: string;
   released: boolean;
@@ -165,8 +165,8 @@ export interface GameMasterPokemon {
   hp: number;
   fastMoves: string[];
   chargedMoves: string[];
-  eliteMoves: string[];
-  legacyMoves: string[];
+  eliteMoves?: string[];
+  legacyMoves?: string[];
   isShadow: boolean;
   isMega: boolean;
   familyId?: string;

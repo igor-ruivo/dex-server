@@ -5,7 +5,7 @@ export interface IEntry {
     speciesId: string;
     shiny: boolean;
     kind?: string;
-    comment?: { en: string; pt: string };
+    comment?: Partial<Record<AvailableLocales, string>>;
 }
 
 export type IParsedEvent = EventBlock & {
@@ -22,7 +22,10 @@ export type IParsedEvent = EventBlock & {
     isSeason?: boolean;
 }
 
-export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'locale'> & {
+export type PublicEvent = Omit<
+  IParsedEvent,
+  'title' | 'subtitle' | 'bonuses' | 'locale'
+> & {
   title: Partial<Record<AvailableLocales, string>>;
   subtitle: Partial<Record<AvailableLocales, string>>;
   bonuses: Partial<Record<AvailableLocales, Array<string>>>;
@@ -30,7 +33,7 @@ export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 
 
 export interface IEventSource {
     name: string;
-    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IParsedEvent[]>;
+    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<PublicEvent[]>;
 }
 
 export enum PokemonGoPostKind {
@@ -80,7 +83,7 @@ export interface PokemonGoPost {
 export interface IRocketGrunt {
     trainerId: string;
     type: string | undefined;
-    phrase: { en: string; pt: string };
+    phrase: Partial<Record<AvailableLocales, string>>;
     tier1: string[];
     tier2: string[];
     tier3: string[];
@@ -89,7 +92,7 @@ export interface IRocketGrunt {
 
 // LeekDuck Spotlight Hour output DTO
 export interface ISpotlightHourEvent {
-    bonus: { en: string; pt: string };
+    bonus: Partial<Record<AvailableLocales, string>>;
     pokemon: string[];
     dateStart: number;
     dateEnd: number;

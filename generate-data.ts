@@ -1,7 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { GameMasterParser } from './src/parsers/pokemon/game-master-parser';
-import { generateEvents } from './src/parsers/events/generate-events';
 import { EventsParser } from './src/parsers/events/providers/leekduck/EventsParser';
 import { BossesParser } from './src/parsers/events/providers/leekduck/BossesParser';
 import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
@@ -10,7 +9,7 @@ import { IRocketGrunt, IEntry, ISpotlightHourEvent, ILeekduckSpecialRaidBossEven
 import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
 import { MovesProvider } from './src/parsers/events/providers/pokeminers/MovesProvider';
 import GameMasterTranslator from './src/parsers/services/gamemaster-translator';
-
+import { PokemonGoSource } from './src/parsers/events/providers/pokemongo/PokemongoSource';
 
 const generateData = async () => {
   console.log('🚀 Starting Pokemon GO data generation...');
@@ -30,15 +29,15 @@ const generateData = async () => {
     const gameMasterParser = new GameMasterParser();
     const pokemonDictionary = await gameMasterParser.parse(moves);
     
-    // Step 4: Generate events data using the fresh Game Master data
-    const eventsData = await generateEvents(pokemonDictionary);
+    // Step 4: Generate events
+    const source = new PokemonGoSource();
+    const events = await source.parseEvents(pokemonDictionary);
 
-    // Step 2.5: Generate season data using the fresh Game Master data
-    // Reuse the getDomains logic from PokemongoSource
+    // Step 5: Generate season data
     const seasonDomain = Object.values(pokemonDictionary).filter(p => !p.isShadow && !p.isMega && !p.aliasId);
     const seasonData = await fetchSeasonData(pokemonDictionary, seasonDomain);
-    
-    // Step 3: LeekDuck integration
+    /*
+    // Step 6: LeekDuck integration
     const leekduckEventsParser = new EventsParser();
     const leekduckBossesParser = new BossesParser();
     const leekduckEggsParser = new EggsParser();
@@ -142,16 +141,16 @@ const generateData = async () => {
       }
       return { ...entry, phrase: { en: entry.phrase.en, pt } };
     });
-
+*/
     // Write outputs
     const dataDir = path.join(process.cwd(), 'data');
     await fs.mkdir(dataDir, { recursive: true });
-    await fs.writeFile(path.join(dataDir, 'spotlight-hours.json'), JSON.stringify(leekduckSpotlightEvents, null, 2));
+    /*await fs.writeFile(path.join(dataDir, 'spotlight-hours.json'), JSON.stringify(leekduckSpotlightEvents, null, 2));
     await fs.writeFile(path.join(dataDir, 'leekduck-special-raid-bosses.json'), JSON.stringify(leekduckSpecialRaidBossEvents, null, 2));
     await fs.writeFile(path.join(dataDir, 'leekduck-raid-bosses.json'), JSON.stringify(leekduckBossEntries, null, 2));
     await fs.writeFile(path.join(dataDir, 'leekduck-eggs.json'), JSON.stringify(leekduckEggEntries, null, 2));
-    await fs.writeFile(path.join(dataDir, 'rocket-lineups.json'), JSON.stringify(leekduckRocketLineups, null, 2));
-    await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(eventsData, null, 2));
+    await fs.writeFile(path.join(dataDir, 'rocket-lineups.json'), JSON.stringify(leekduckRocketLineups, null, 2));*/
+    await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(events, null, 2));
     await fs.writeFile(path.join(dataDir, 'game-master.json'), JSON.stringify(pokemonDictionary, null, 2));
     await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, 2));
     await fs.writeFile(path.join(dataDir, 'moves.json'), JSON.stringify(moves, null, 2));

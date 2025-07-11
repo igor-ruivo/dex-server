@@ -3,11 +3,12 @@ import { PokemonMatcher } from '../../utils/pokemon-matcher';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
 import { GameMasterPokemon } from '../../../types/pokemon';
+import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
 
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 
 export class RocketLineupsParser {
-    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<IRocketGrunt[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>, translator: GameMasterTranslator): Promise<IRocketGrunt[]> {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_ROCKET_URL);
         const dom = new JSDOM(html);
@@ -29,8 +30,13 @@ export class RocketLineupsParser {
             const tier2Pkms = matcher.matchPokemonFromText(tier2).map(e => e.speciesId);
             const tier3Pkms = matcher.matchPokemonFromText(tier3).map(e => e.speciesId);
             const catchableTiers = Array.from(e.getElementsByClassName('lineup-info')[0].children).map((c: Element, i: number) => c.classList.contains('encounter') ? i : undefined).filter(e => e !== undefined) as number[];
+            
+            const translatedPhrases: Partial<Record<AvailableLocales, string>> = {};
+            Object.values(AvailableLocales)
+                .forEach(locale => translatedPhrases[locale] = translator.getTranslationForRocketPhrase(locale, phrase.replace(/\s/g, ' ').trim()));
+            
             answer.push({
-                phrase: { en: phrase.replace(/\s/g, ' ').trim(), pt: '' },
+                phrase: translatedPhrases,
                 type: type?.replace(/\s/g, ' ').trim(),
                 trainerId: trainerId.replace(/\s/g, ' ').trim(),
                 tier1: tier1Pkms,

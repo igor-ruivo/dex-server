@@ -4,111 +4,221 @@ import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { JSDOM } from 'jsdom';
 import { parseDateFromString } from '../../utils/normalization';
 import { GameMasterPokemon } from '../../../types/pokemon';
+import { AvailableLocales, getSpotlightHourBonusTranslation } from '../../../services/gamemaster-translator';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
 
-// Replace EventData with a local DTO for LeekDuck events
-export interface ILeekduckEvent {
+export interface ILeekduckSpotlightHour {
     title: string;
     date: number;
     dateEnd: number;
-    raids?: IEntry[];
-    spotlightPokemons?: IEntry[];
-    spotlightBonus?: string;
+    pokemons: IEntry[];
+    bonus?: Partial<Record<AvailableLocales, string>>;
     imgUrl?: string;
     rawUrl?: string;
 }
 
+export interface ILeekduckSpecialRaidBoss {
+    title: string;
+    date: number;
+    dateEnd: number;
+    raids: IEntry[];
+    imgUrl?: string;
+    rawUrl?: string;
+}
+
+export interface ILeekduckEventsResult {
+    spotlightHours: ILeekduckSpotlightHour[];
+    specialRaidBosses: ILeekduckSpecialRaidBoss[];
+}
+
+type ParsedEventCommon = {
+    title: string;
+    date: number;
+    dateEnd: number;
+    htmlDoc: Document;
+};
+
 export class EventsParser {
-    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<ILeekduckEvent[]> {
+    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>) {
         const fetcher = new HttpDataFetcher();
         const html = await fetcher.fetchText(LEEKDUCK_EVENTS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
         // Get all event links for raid and spotlight hour events
-        const raidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper raid-battles')).map(e => (e.parentElement as HTMLAnchorElement).href);
-        const eliteRaidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper elite-raids')).map(e => (e.parentElement as HTMLAnchorElement).href);
-        const spotlightUrls = Array.from(doc.getElementsByClassName('event-item-wrapper pokémon-spotlight-hour')).map(e => (e.parentElement as HTMLAnchorElement).href);
+        const raidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper raid-battles')).map(e => {
+            return (e.parentElement as HTMLAnchorElement).href;
+        });
+        const eliteRaidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper elite-raids')).map(e => {
+            return (e.parentElement as HTMLAnchorElement).href;
+        });
+        const spotlightUrls = Array.from(doc.getElementsByClassName('event-item-wrapper pokémon-spotlight-hour')).map(e => {
+            return (e.parentElement as HTMLAnchorElement).href;
+        });
         const postUrls = Array.from(new Set([...raidUrls, ...eliteRaidUrls, ...spotlightUrls]));
-        const urls = postUrls.map(e => e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e);
+        const urls = postUrls.map(e => {
+            return e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e;
+        });
 
-        // Fetch and parse each event
-        const results: ILeekduckEvent[] = [];
-        for (const url of urls) {
+        const spotlightHours: ILeekduckSpotlightHour[] = [];
+        const specialRaidBosses: ILeekduckSpecialRaidBoss[] = [];
+
+        const eventPromises = urls.map(async (url) => {
             try {
                 const eventHtml = await fetcher.fetchText(url);
-                const event = this.mapLeekNews(eventHtml, gameMasterPokemon);
-                if (event && event.title) {
-                    event.rawUrl = url;
-                    results.push(event);
+                const parsed = this.parseCommonEventFields(eventHtml);
+                if (!parsed) {
+                    return;
                 }
-            } catch (err) {
+                if (parsed.title.includes('Spotlight')) {
+                    const spotlightHour = this.parseSpotlightHourEvent(parsed, gameMasterPokemon, url);
+                    if (spotlightHour) {
+                        spotlightHours.push(spotlightHour);
+                    }
+                } else {
+                    const specialRaidBoss = this.parseSpecialRaidBossEvent(parsed, gameMasterPokemon, url);
+                    if (specialRaidBoss) {
+                        specialRaidBosses.push(specialRaidBoss);
+                    }
+                }
+            } catch (_err) {
                 // Ignore failed events
             }
-        }
-        return results;
+        });
+
+        await Promise.all(eventPromises);
+
+        return {
+            spotlightHours,
+            specialRaidBosses
+        };
     }
 
-    private mapLeekNews(data: string, gameMasterPokemon: Record<string, GameMasterPokemon>): ILeekduckEvent {
-        const dom = new JSDOM(data);
+    private parseCommonEventFields = (eventHtml: string): ParsedEventCommon | undefined => {
+        const dom = new JSDOM(eventHtml);
         const htmlDoc = dom.window.document;
         const title = htmlDoc.getElementsByClassName('page-title')[0]?.textContent?.replace(/\s/g, ' ').trim() ?? '';
         const dateCont = (htmlDoc.getElementById('event-date-start')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-start')?.textContent?.trim()).replaceAll('  ', ' ');
         const endCont = (htmlDoc.getElementById('event-date-end')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-end')?.textContent?.trim()).replaceAll('  ', ' ');
-        
+
         const date = parseDateFromString(dateCont);
         const dateEnd = parseDateFromString(endCont);
+
         if (!title || !date || !dateEnd) {
-            return { title: '', date: 0, dateEnd: 0 };
+            return undefined;
         }
-        let rawPkmName = '';
-        let isSpotlight = false;
-        if (title.includes('Spotlight')) {
-            isSpotlight = true;
-            rawPkmName = title.split('Spotlight')[0].trim();
-        }
-        const parts = title.split(' in ');
-        let raidType = '';
-        if (!isSpotlight) {
-            rawPkmName = parts[0];
-            raidType = parts[1] ?? '';
-        }
-        let domainToUse: GameMasterPokemon[] = [];
+
+        return { title, date, dateEnd, htmlDoc };
+    };
+
+    private parseSpotlightHourEvent = (
+        parsed: ParsedEventCommon,
+        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        url: string
+    ): ILeekduckSpotlightHour | undefined => {
+        const rawPkmName = parsed.title.split('Spotlight')[0].trim();
+        const pokemons = this.matchPokemonEntries(rawPkmName, gameMasterPokemon, false, false);
+        const bonus = this.extractSpotlightBonus(parsed.htmlDoc);
+
+        return {
+            title: parsed.title,
+            date: parsed.date,
+            dateEnd: parsed.dateEnd,
+            pokemons,
+            bonus,
+            imgUrl: 'https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg',
+            rawUrl: url
+        };
+    };
+
+    private parseSpecialRaidBossEvent = (
+        parsed: ParsedEventCommon,
+        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        url: string
+    ): ILeekduckSpecialRaidBoss | undefined => {
+        const parts = parsed.title.split(' in ');
+        const rawPkmName = parts[0];
+        const raidType = parts[1] ?? '';
         const isShadow = raidType.includes('Shadow') || rawPkmName.includes('Shadow');
-        if (isShadow) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isMega && !p.aliasId);
-        }
         const isMega = raidType.includes('Mega') || raidType.includes('Elite');
-        if (isMega) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isShadow && !p.aliasId);
+        const pokemons = this.matchPokemonEntries(rawPkmName, gameMasterPokemon, isShadow, isMega);
+        if (pokemons.length === 0) {
+            return undefined;
         }
-        if (!isShadow && !isMega) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => !p.isShadow && !p.isMega && !p.aliasId);
+        return {
+            title: parsed.title,
+            date: parsed.date,
+            dateEnd: parsed.dateEnd,
+            raids: pokemons,
+            imgUrl: undefined,
+            rawUrl: url
+        };
+    };
+
+    private matchPokemonEntries = (
+        rawPkmName: string,
+        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        isShadow: boolean,
+        isMega: boolean
+    ): IEntry[] => {
+        let domainToUse: GameMasterPokemon[] = [];
+        if (isShadow) {
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
+                return !p.isMega && !p.aliasId;
+            });
+        } else if (isMega) {
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
+                return !p.isShadow && !p.aliasId;
+            });
+        } else {
+            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
+                return !p.isShadow && !p.isMega && !p.aliasId;
+            });
         }
-        const finalEntries: IEntry[] = [];
-        const multiplePkms = rawPkmName.replaceAll(', ', ',').replaceAll(' and ', ',').split(',');
-        for (let i = 0; i < multiplePkms.length; i++) {
-            const p = multiplePkms[i].trim();
+
+        const names = rawPkmName.replaceAll(', ', ',').replaceAll(' and ', ',').split(',');
+        const entries: IEntry[] = [];
+
+        for (let i = 0; i < names.length; i++) {
+            const p = names[i].trim();
+            if (!p) {
+                continue;
+            }
             const matcher = new PokemonMatcher(gameMasterPokemon, domainToUse);
             const entry = matcher.matchPokemonFromText([p])[0];
             if (entry?.speciesId) {
-                finalEntries.push({
+                entries.push({
                     speciesId: entry.speciesId,
                     kind: isMega ? 'mega' : '5',
                     shiny: false
                 });
             }
         }
-        return {
-            title,
-            date,
-            dateEnd,
-            raids: !isSpotlight ? finalEntries : undefined,
-            imgUrl: isSpotlight ? '/images/spotlight.png' : undefined,
-            spotlightBonus: isSpotlight ? (htmlDoc.getElementsByClassName('event-description')[0] as HTMLElement)?.textContent?.trim().split('bonus is')[1]?.split('.')[0].trim() : undefined,
-            spotlightPokemons: isSpotlight ? finalEntries : undefined
-        };
-    }
-} 
+        return entries;
+    };
+
+    private extractSpotlightBonus = (htmlDoc: Document) => {
+        const desc = htmlDoc.getElementsByClassName('event-description')[0] as HTMLElement | undefined;
+        if (!desc) {
+            return undefined;
+        }
+        const text = desc.textContent?.trim() ?? '';
+        if (!text.includes('bonus is')) {
+            return undefined;
+        }
+        const afterBonus = text.split('bonus is')[1];
+        if (!afterBonus) {
+            return undefined;
+        }
+        const bonus = afterBonus.split('.')[0].trim();
+
+        const translatedBonuses: Partial<Record<AvailableLocales, string>> = {};
+        Object.values(AvailableLocales).forEach((locale) => {
+            translatedBonuses[locale] = getSpotlightHourBonusTranslation(locale, bonus);
+        });
+
+        return translatedBonuses;
+    };
+}

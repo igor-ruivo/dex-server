@@ -40,12 +40,14 @@ const EGG_COMMENT_TRANSLATIONS: Record<AvailableLocales, Record<string, string>>
   [AvailableLocales.en]: {
     'Adventure Sync Rewards': 'Adventure Sync Rewards',
     'Route Rewards': 'Route Rewards',
+    'From Route Gift': 'Route Rewards',
     '7 km Eggs from Mateo\'s Gift Exchange': '7 km Eggs from Mateo\'s Gift Exchange'
   },
 
   [AvailableLocales.ptbr]: {
     'Adventure Sync Rewards': 'Recompensas de Sincroaventura',
     'Route Rewards': 'Recompensas de Rota',
+    'From Route Gift': 'Recompensas de Rota',
     '7 km Eggs from Mateo\'s Gift Exchange': 'Ovos de 7 km da Troca de presentes de Mateo'
   }
 };

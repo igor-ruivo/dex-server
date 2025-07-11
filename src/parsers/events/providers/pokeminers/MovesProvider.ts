@@ -17,8 +17,6 @@ export class MovesProvider {
   async fetchMoves(): Promise<Record<string, IGameMasterMove>> {
     const gmData = await this.fetcher.fetchJson<Array<GameMasterMovesType>>(this.GAME_MASTER_URL);
     
-    const translatedMovesDictionary: Record<string, string> = {};
-    
     const pvpMoves: Record<string, PvPMove> = {};
     const pveMoves: Record<string, PvEMove> = {};
 

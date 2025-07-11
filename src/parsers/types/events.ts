@@ -6,6 +6,7 @@ export interface IEntry {
     shiny: boolean;
     kind?: string;
     comment?: Partial<Record<AvailableLocales, string>>;
+    shadow?: boolean;
 }
 
 export type IParsedEvent = EventBlock & {

@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 import { PokemonGoPost } from '../../../types/events';
 import { HttpDataFetcher } from '../../../services/data-fetcher';
-import { LANGUAGE_EN, LANGUAGE_PT_BR } from '../../config/constants';
+import { AvailableLocales } from '../../../services/gamemaster-translator';
 
 export class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
@@ -61,8 +61,23 @@ export class PokemonGoFetcher {
             if (!links.some(link => link === url)) {
                 links.push(url);
 
-                const ptBRCounterpart = url.includes(`/${LANGUAGE_EN}/`) ? url.replaceAll(`/${LANGUAGE_EN}/`, `/${LANGUAGE_PT_BR}/`) : url.replaceAll('/news/', `/${LANGUAGE_PT_BR}/news/`);
-                links.push(ptBRCounterpart);
+                // Add links for all AvailableLocales except the one already present in the URL
+                const availableLocales = Object.values(AvailableLocales);
+                availableLocales.forEach((locale) => {
+                    if (locale === AvailableLocales.en) {
+                        return;
+                    }
+
+                    let localeUrl: string;
+                    if (url.includes(`/${AvailableLocales.en}/`)) {
+                        localeUrl = url.replaceAll(`/${AvailableLocales.en}/`, `/${locale}/`);
+                    } else {
+                        localeUrl = url.replace('/news/', `/${locale}/news/`);
+                    }
+                    if (!links.includes(localeUrl)) {
+                        links.push(localeUrl);
+                    }
+                });
             }
         });
         return links;

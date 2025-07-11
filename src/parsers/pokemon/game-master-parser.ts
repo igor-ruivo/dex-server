@@ -1,7 +1,8 @@
 import { 
   BasePokemon, 
   GameMasterPokemon, 
-  GameMasterData 
+  GameMasterData, 
+  IGameMasterMove
 } from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
@@ -17,7 +18,7 @@ export class GameMasterParser {
     this.dataFetcher = dataFetcher;
   }
 
-  async parse(): Promise<GameMasterData> {
+  async parse(moves: Record<string, IGameMasterMove>): Promise<GameMasterData> {
     console.log('🔄 Fetching Pokemon Game Master data...');
     
     try {
@@ -27,7 +28,7 @@ export class GameMasterParser {
       // Combine source data with synthetic Pokemon
       const allPokemon = [...rawData, ...SYNTHETIC_POKEMON];
       
-      const pokemonDictionary = this.transformData(allPokemon);
+      const pokemonDictionary = this.transformData(allPokemon, moves);
       console.log(`✅ Successfully parsed ${Object.keys(pokemonDictionary).length} Pokemon`);
       
       return pokemonDictionary;
@@ -38,7 +39,7 @@ export class GameMasterParser {
     }
   }
 
-  private transformData(rawData: BasePokemon[]): GameMasterData {
+  private transformData(rawData: BasePokemon[], knownMoves: Record<string, IGameMasterMove>): GameMasterData {
     const seenSpecies = new Set<string>();
     const pokemonDictionary: GameMasterData = {};
 
@@ -54,12 +55,23 @@ export class GameMasterParser {
       if (transformed) {
         pokemonDictionary[pokemon.speciesId] = transformed;
       }
+
+      this.checkPokemonMoves(pokemon, knownMoves);
     }
 
     // Apply manual corrections
     this.applyManualCorrections(pokemonDictionary);
 
     return pokemonDictionary;
+  }
+
+  private checkPokemonMoves = (pokemon: BasePokemon, knownMoves: Record<string, IGameMasterMove>) => {
+    const allPokemonMoves = new Set([...pokemon.eliteMoves, ...pokemon.fastMoves, ...pokemon.chargedMoves, ...pokemon.legacyMoves]);
+    for (const move of allPokemonMoves) {
+      if (!knownMoves[move]) {
+        console.error(`${move} isn't a known move! (Pokémon species: ${pokemon.speciesId})`);
+      }
+    }
   }
 
   private transformPokemon = (pokemon: BasePokemon, allPokemon: BasePokemon[]): GameMasterPokemon | null => {

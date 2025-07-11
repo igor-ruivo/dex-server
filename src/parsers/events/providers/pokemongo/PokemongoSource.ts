@@ -5,7 +5,7 @@ import { PokemonMatcher, extractPokemonSpeciesIdsFromElements } from '../../util
 import PokemonGoPostParser from './news-parsers/PostParser';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import { PokemonGoFetcher } from './PokemongoFetcher';
-import { LANGUAGE_PT_BR } from '../../config/constants';
+import { AvailableLocales } from '../../../services/gamemaster-translator';
 
 /**
  * Constants for event section types.
@@ -61,8 +61,25 @@ const buildEventId = (post: PokemonGoPost, index: number): string => {
  * Determines if an event should be skipped based on date ranges and language.
  */
 const shouldSkipEvent = (dateRanges: Array<{ start: number, end: number }>, url: string): boolean => {
-    return dateRanges.length === 0 && !url.toLocaleLowerCase().includes(LANGUAGE_PT_BR);
+    return dateRanges.length === 0 && extractLocaleFromPath(url) === AvailableLocales.en;
 };
+
+/**
+ * Extracts the locale from the event's url path.
+ */
+const extractLocaleFromPath = (path: string): AvailableLocales => {
+    const url = path.toLocaleLowerCase();
+    const match = url.match(/\/([a-z_]{1,5})\/news\//);
+    if (match && match[1]) {
+        return match[1] as AvailableLocales;
+    }
+    
+    const parts = url.split('/');
+    if (parts.length > 3 && parts[3] && parts[3] !== 'news' && parts[3] !== 'post') {
+        return parts[3] as AvailableLocales;
+    }
+    return AvailableLocales.en;
+}
 
 /**
  * Builds the IParsedEvent object for a subevent.
@@ -93,7 +110,7 @@ const buildEventObject = (
         researches: parsedContent.researches,
         incenses: parsedContent.incenses,
         bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : [],
-        isEnglishVersion: !post.url.toLocaleLowerCase().includes(LANGUAGE_PT_BR)
+        locale: extractLocaleFromPath(post.url),
     };
 };
 
@@ -140,23 +157,40 @@ export class PokemonGoSource implements IEventSource {
         const parser: IPokemonGoHtmlParser = post.type === 'post'
             ? new PokemonGoPostParser(post.html)
             : new PokemonGoNewsParser(post.html);
+
         const events: IParsedEvent[] = [];
         const subEvents = parser.getSubEvents();
         const domains = getDomains(gameMasterPokemon);
+
         for (let i = 0; i < subEvents.length; i++) {
             const subEvent: IPokemonGoEventBlockParser = subEvents[i];
             const dateRanges = parseEventDateRange(subEvent.dateString);
             if (shouldSkipEvent(dateRanges, post.url)) {
                 continue;
             }
+
             const startDate = Math.min(...dateRanges.map(r => r.start));
             const endDate = Math.max(...dateRanges.map(r => r.end));
             const sectionElements = subEvent.getEventBlocks();
             const parsedContent = this.parseInnerEvent(sectionElements, gameMasterPokemon, domains.wildDomain, domains.raidDomain, domains.eggDomain, domains.researchDomain, domains.incenseDomain);
             const event = buildEventObject(post, parser, subEvent, startDate, endDate, dateRanges, parsedContent, i);
-            events.push(event);
+           
+            if (this.eventIsRelevant(event)) {
+                events.push(event);
+            }
         }
         return events;
+    };
+
+    private eventIsRelevant = (event: IParsedEvent) => {
+      return event.locale !== AvailableLocales.en || ((
+        (event.bonuses && event.bonuses.length > 0) ||
+        (event.wild && event.wild.length > 0) ||
+        (event.raids && event.raids.length > 0) ||
+        (event.researches && event.researches.length > 0) ||
+        (event.eggs && event.eggs.length > 0) ||
+        (event.incenses && event.incenses.length > 0)
+      ) && event.dateRanges && event.dateRanges.length > 0);
     };
 
     /**

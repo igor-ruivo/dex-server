@@ -8,7 +8,8 @@ import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
 import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/RocketLineupsParser';
 import { IRocketGrunt, IEntry, ISpotlightHourEvent, ILeekduckSpecialRaidBossEvent } from './src/parsers/types/events';
 import { fetchSeasonData } from './src/parsers/events/providers/pokemongo/SeasonParser';
-import { MovesProvider } from './src/parsers/events/providers/pokemongo/MovesProvider';
+import { MovesProvider } from './src/parsers/events/providers/pokeminers/MovesProvider';
+import GameMasterTranslator from './src/parsers/services/gamemaster-translator';
 
 
 const generateData = async () => {
@@ -17,11 +18,19 @@ const generateData = async () => {
   const now = new Date().toISOString();
   
   try {
-    // Step 1: Parse Game Master data first
+    // Step 1: Initiate the translator
+    const translatorService = new GameMasterTranslator();
+    await translatorService.setupGameMasterSources();
+
+    // Step 2: Instantiate the moves provider
+    const movesProvider = new MovesProvider(translatorService);
+    const moves = await movesProvider.fetchMoves();
+
+    // Step 3: Parse Game Master data first
     const gameMasterParser = new GameMasterParser();
-    const pokemonDictionary = await gameMasterParser.parse();
+    const pokemonDictionary = await gameMasterParser.parse(moves);
     
-    // Step 2: Generate events data using the fresh Game Master data
+    // Step 4: Generate events data using the fresh Game Master data
     const eventsData = await generateEvents(pokemonDictionary);
 
     // Step 2.5: Generate season data using the fresh Game Master data
@@ -133,9 +142,6 @@ const generateData = async () => {
       }
       return { ...entry, phrase: { en: entry.phrase.en, pt } };
     });
-
-    const movesProvider = new MovesProvider();
-    const moves = await movesProvider.fetchMoves();
 
     // Write outputs
     const dataDir = path.join(process.cwd(), 'data');

@@ -3,7 +3,7 @@ import path from 'path';
 import { PokemonGoSource } from './providers/pokemongo/PokemongoSource';
 import { GameMasterData } from '../pokemon/game-master-parser';
 import { IParsedEvent, PublicEvent } from '../types/events';
-import { LANGUAGE_PT_BR } from './config/constants'
+import { AvailableLocales } from '../services/gamemaster-translator';
 
 const generateEvents = async (gameMasterData: GameMasterData) => {
   console.log('🔄 Starting Pokemon GO events generation...');
@@ -31,7 +31,7 @@ const generateEvents = async (gameMasterData: GameMasterData) => {
       ) && event.dateRanges && event.dateRanges.length > 0;
     };
 
-    const relevantEnglishEvents = events.filter(event => eventIsRelevant(event) && event.isEnglishVersion);
+    const relevantEnglishEvents = events.filter(event => eventIsRelevant(event) && event.locale === AvailableLocales.en);
     
     // Create a map of English events by ID for quick lookup
     const englishEventsMap = new Map(relevantEnglishEvents.map(event => [event.id, event]));

@@ -1,3 +1,4 @@
+import { AvailableLocales } from '../services/gamemaster-translator';
 import { GameMasterPokemon } from '../types/pokemon';
 
 export interface IEntry {
@@ -11,20 +12,20 @@ export type IParsedEvent = EventBlock & {
     id: string;
     url: string;
     title: string;
-    subtitle?: string;
+    subtitle: string;
     startDate: number;
     endDate: number;
     dateRanges?: Array<{ start: number; end: number }>;
     imageUrl?: string;
     source: 'pokemongo' | 'leekduck';
-    isEnglishVersion: boolean;
+    locale: AvailableLocales;
     isSeason?: boolean;
 }
 
-export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'isEnglishVersion'> & {
-  title: { en: string; pt: string };
-  subtitle: { en: string | undefined; pt: string | undefined };
-  bonuses: { en: string[] | undefined; pt: string[] | undefined };
+export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'locale'> & {
+  title: Partial<Record<AvailableLocales, string>>;
+  subtitle: Partial<Record<AvailableLocales, string>>;
+  bonuses: Partial<Record<AvailableLocales, Array<string>>>;
 };
 
 export interface IEventSource {

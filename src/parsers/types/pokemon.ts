@@ -1,3 +1,5 @@
+import { AvailableLocales } from "../services/gamemaster-translator";
+
 export enum PokemonTypes {
   Water = 'Water',
   Fire = 'Fire',
@@ -142,8 +144,8 @@ export interface BasePokemon {
   types: string[];
   fastMoves: string[];
   chargedMoves: string[];
-  eliteMoves?: string[];
-  legacyMoves?: string[];
+  eliteMoves: string[];
+  legacyMoves: string[];
   family?: PokemonFamily;
   aliasId?: string;
   released: boolean;
@@ -196,7 +198,7 @@ export interface IGameMasterMove {
     chance: number;
     buffs: Array<{ buff: string; quantity: number }>;
   };
-  moveName: { en: string; pt: string };
+  moveName: Partial<Record<AvailableLocales, string>>;
 }
 
 type BuffsType = {

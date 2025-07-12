@@ -19,7 +19,7 @@ console.log(prettierCommand);
 const prettierResult = spawnSync(prettierCommand, { env: process.env, shell: true, stdio: "inherit" });
 
 if (prettierResult.status === 0) {
-    console.log('Done.\n');
+	console.log('Done.\n');
 } else {
-    console.log('Execution failed.\n');
+	console.log('Execution failed.\n');
 }

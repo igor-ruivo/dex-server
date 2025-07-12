@@ -28,7 +28,7 @@ console.log(lintCommand);
 const lintResult = spawnSync(lintCommand, { env: process.env, shell: true, stdio: "inherit" });
 
 if (lintResult.status === 0) {
-    console.log('Done.\n');
+	console.log('Done.\n');
 } else {
-    console.log('Execution failed.\n');
+	console.log('Execution failed.\n');
 }

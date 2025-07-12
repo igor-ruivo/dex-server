@@ -54,11 +54,17 @@ const EGG_COMMENT_TRANSLATIONS: Record<AvailableLocales, Record<string, string>>
 
 export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhrase: string) => {
   const dict = SPOTLIGHT_HOUR_BONUS_TRANSLATIONS[locale];
-  if (dict?.[enPhrase]) {
-    return dict[enPhrase];
+  if (!dict) {
+    return enPhrase;
   }
-
-  return enPhrase;
+  
+  let translated = enPhrase;
+  for (const [key, value] of Object.entries(dict)) {
+    if (key && value) {
+      translated = translated.replaceAll(key, value);
+    }
+  }
+  return translated;
 };
 
 export const getEggCommentTranslation = (locale: AvailableLocales, enPhrase: string) => {

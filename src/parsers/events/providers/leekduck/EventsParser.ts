@@ -92,8 +92,8 @@ export class EventsParser {
         await Promise.all(eventPromises);
 
         return {
-            spotlightHours,
-            specialRaidBosses
+            spotlightHours: spotlightHours.sort((s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => s1.date - s2.date),
+            specialRaidBosses: specialRaidBosses.sort((s1: ILeekduckSpecialRaidBoss, s2: ILeekduckSpecialRaidBoss) => s1.date - s2.date)
         };
     }
 

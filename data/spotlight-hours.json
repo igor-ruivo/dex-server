@@ -1,23 +1,5 @@
 [
   {
-    "title": "Roggenrola Spotlight Hour",
-    "date": 1753743600000,
-    "dateEnd": 1753743600000,
-    "pokemons": [
-      {
-        "speciesId": "roggenrola",
-        "kind": "5",
-        "shiny": false
-      }
-    ],
-    "bonus": {
-      "en": "2× Evolution XP",
-      "pt_br": "2× Evolution XP"
-    },
-    "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-    "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-29/"
-  },
-  {
     "title": "Feebas Spotlight Hour",
     "date": 1752534000000,
     "dateEnd": 1752534000000,
@@ -30,7 +12,7 @@
     ],
     "bonus": {
       "en": "2× Catch Candy",
-      "pt_br": "2× Catch Candy"
+      "pt_br": "2× Doces ao capturar"
     },
     "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
     "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-15/"
@@ -48,9 +30,27 @@
     ],
     "bonus": {
       "en": "2× Transfer Candy",
-      "pt_br": "2× Transfer Candy"
+      "pt_br": "2× Doces ao transferir"
     },
     "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
     "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-22/"
+  },
+  {
+    "title": "Roggenrola Spotlight Hour",
+    "date": 1753743600000,
+    "dateEnd": 1753743600000,
+    "pokemons": [
+      {
+        "speciesId": "roggenrola",
+        "kind": "5",
+        "shiny": false
+      }
+    ],
+    "bonus": {
+      "en": "2× Evolution XP",
+      "pt_br": "2× XP ao evoluir"
+    },
+    "imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+    "rawUrl": "https://leekduck.com/events/pokemonspotlighthour2025-07-29/"
   }
 ]

@@ -25,7 +25,7 @@ export type IParsedEvent = EventBlock & {
 
 export type PublicEvent = Omit<
   IParsedEvent,
-  'title' | 'subtitle' | 'bonuses' | 'locale'
+  'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
 > & {
   title: Partial<Record<AvailableLocales, string>>;
   subtitle: Partial<Record<AvailableLocales, string>>;
@@ -75,12 +75,17 @@ export interface EventData {
 
 export type EventBlock = EventData & {
   bonuses: Array<string>;
+  bonusSectionIndex: number;
 }
 
-export interface PokemonGoPost {
-    url: string;
-    type: 'post' | 'news';
+export type PokemonGoPost = ExtractedPostLink & {
     html: string;
+    type: 'post' | 'news';
+}
+
+export interface ExtractedPostLink {
+    url: string,
+    locale: AvailableLocales
 }
 
 export interface IRocketGrunt {

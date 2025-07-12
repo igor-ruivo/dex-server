@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "tsx generate-data.ts",
     "lint": "node scripts/run-linter-wrapper.js",
-    "build": "pnpm run lint && tsc"
+    "build": "pnpm run lint && tsc",
+    "debug": "npx tsx --inspect-brk ./generate-data.ts"
   },
   "keywords": [
     "pokemon",

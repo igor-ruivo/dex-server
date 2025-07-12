@@ -2,7 +2,7 @@ import { JSDOM } from 'jsdom';
 
 import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
-import { PokemonGoPost } from '../../../types/events';
+import { ExtractedPostLink, PokemonGoPost } from '../../../types/events';
 
 export class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
@@ -14,11 +14,12 @@ export class PokemonGoFetcher {
             const postLinks = this.extractPostLinks(newsPageHtml);
             const postPromises = postLinks.map(async (link) => {
                 try {
-                    const html = await this.fetchPage(link);
+                    const html = await this.fetchPage(link.url);
                     return {
-                        url: link,
-                        type: this.determinePostType(link),
-                        html
+                        url: link.url,
+                        type: this.determinePostType(link.url),
+                        html,
+                        locale: link.locale
                     };
                 } catch (error) {
                     console.error(error);
@@ -46,8 +47,8 @@ export class PokemonGoFetcher {
         return text;
     }
 
-    private extractPostLinks(html: string): Array<string> {
-        const links: Array<string> = [];
+    private extractPostLinks(html: string): Array<ExtractedPostLink> {
+        const links: Array<ExtractedPostLink> = [];
         const dom = new JSDOM(html);
         const document = dom.window.document;
         // Select all <a> elements with href containing /en/post/ or /news/
@@ -61,8 +62,11 @@ export class PokemonGoFetcher {
             if (url.startsWith('/')) url = this.baseUrl + url;
             if (!url.startsWith('http')) url = this.baseUrl + '/' + url.replace(/^\//, '');
            
-            if (!links.some(link => link === url)) {
-                links.push(url);
+            if (!links.some(link => link.url === url)) {
+                links.push({
+                    url: url,
+                    locale: AvailableLocales.en
+                });
 
                 // Add links for all AvailableLocales except the one already present in the URL
                 const availableLocales = Object.values(AvailableLocales);
@@ -77,8 +81,11 @@ export class PokemonGoFetcher {
                     } else {
                         localeUrl = url.replace('/news/', `/${locale}/news/`);
                     }
-                    if (!links.includes(localeUrl)) {
-                        links.push(localeUrl);
+                    if (!links.some(l => l.url === localeUrl)) {
+                        links.push({
+                            url: localeUrl,
+                            locale
+                        });
                     }
                 });
             }
@@ -92,21 +99,5 @@ export class PokemonGoFetcher {
         }
         
         return 'news';
-    }
-
-    public async fetchSinglePost(url: string): Promise<PokemonGoPost | null> {
-        try {
-            const html = await this.fetchPage(url);
-            const type = this.determinePostType(url);
-            
-            return {
-                url,
-                type,
-                html
-            };
-        } catch (error) {
-            console.error(error);
-            return null;
-        }
     }
 } 

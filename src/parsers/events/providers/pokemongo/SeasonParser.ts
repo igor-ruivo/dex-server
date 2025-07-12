@@ -124,7 +124,8 @@ export async function fetchSeasonData(gameMasterPokemon: Record<string, GameMast
             lures: [],
             bonuses: bonuses,
             isSeason: true,
-            locale: season.locale
+            locale: season.locale,
+            bonusSectionIndex: -1
         });
     }
 

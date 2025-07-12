@@ -60,15 +60,14 @@ jobs:
           if [ $? -eq 0 ] && [ ! -z "$CHANGED_FILES" ]; then
             echo "Sending Discord notification for changes: $CHANGED_FILES"
             
-            # Create description with file list and actual diff content
-            DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`\n$GIT_DIFF\n\`\`\`"
-            if [ ${#DESCRIPTION} -gt 1000 ]; then
-              # Truncate but keep the diff block intact
-              DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`\n$(echo "$GIT_DIFF" | head -15)\n... (truncated)\n\`\`\`"
-            fi
+            # Create a simpler description without the full diff
+            DESCRIPTION="Files updated: $CHANGED_FILES"
             
-            # Escape the description for JSON
-            ESCAPED_DESCRIPTION=$(echo "$DESCRIPTION" | sed 's/"/\\"/g' | sed 's/\\/\\\\/g')
+            # Get a short summary of changes (just file names and line counts)
+            CHANGE_SUMMARY=$(git diff --staged --stat --no-ext-diff | head -10)
+            if [ ! -z "$CHANGE_SUMMARY" ]; then
+              DESCRIPTION="$DESCRIPTION\n\n\`\`\`\n$CHANGE_SUMMARY\n\`\`\`"
+            fi
             
             WEB_BASE1="https://dis"
             WEB_BASE2="cord.com/api/webho"
@@ -77,8 +76,8 @@ jobs:
             WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
             WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
             
-            # Create JSON payload
-            JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"Novidades no Pokémon Go\",\"description\":\"$ESCAPED_DESCRIPTION\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
+            # Create JSON payload with simpler content
+            JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"Novidades no Pokémon Go\",\"description\":\"$DESCRIPTION\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
             
             # Print the JSON payload for debugging
             echo "Discord JSON payload:"

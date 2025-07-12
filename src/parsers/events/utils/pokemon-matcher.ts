@@ -36,6 +36,7 @@ export class PokemonMatcher {
         });
         let raidLevel = "";
         for (const rawName of pkmWithNoClothes) {
+            const isShiny =  rawName.includes("*");
             let isShadow = false;
             let isMega = false;
             let currP = normalizePokemonName(rawName);
@@ -60,6 +61,34 @@ export class PokemonMatcher {
                 words = words.filter(word => word !== "mega");
             }
             currP = words.join(" ").trim();
+
+            // Edge case for Darmanitan -> it has a form (Standard) on the id but not on the name...
+            if (currP === "darmanitan") {
+                if (isShadow) { //darmanitan_standard_shadow // darmanitan_standard
+                    if (!seen.has("darmanitan_standard_shadow")) {
+                        seen.add("darmanitan_standard_shadow");
+
+                        wildEncounters.push({
+                            speciesId: "darmanitan_standard_shadow",
+                            shiny: isShiny,
+                            kind: raidLevel
+                        });
+                    }
+                    continue;
+                }
+
+                if (!seen.has("darmanitan_standard")) {
+                    seen.add("darmanitan_standard");
+
+                    wildEncounters.push({
+                        speciesId: "darmanitan_standard",
+                        shiny: isShiny,
+                        kind: raidLevel
+                    });
+                }
+                continue;
+            }
+
             const match = this.matchPokemon(currP, isShadow, isMega, raidLevel);
             if (match && !seen.has(match.speciesId)) {
                 seen.add(match.speciesId);

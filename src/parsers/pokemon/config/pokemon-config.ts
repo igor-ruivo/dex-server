@@ -40,6 +40,8 @@ export const POKEMON_CONFIG = {
     ['rotom_frost', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f4.png'],
     ['rotom_mow', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f6.png'],
     ['rotom_wash', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f3.png'],
+    ['rotom_fan', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f5.png'],
+    ['rotom_heat', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/479_f2.png'],
     ['darmanitan_galarian_standard', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/555_f2.png'],
     ['darmanitan_galarian_standard_shadow', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/555_f2.png'],
     ['darmanitan_standard', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/555.png'],

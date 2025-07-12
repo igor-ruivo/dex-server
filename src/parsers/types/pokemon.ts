@@ -53,6 +53,7 @@ export enum PokemonForms {
   Mow = "Mow",
   Heat = "Heat",
   Wash = "Wash",
+  Fan = "Fan",
   Altered = "Altered",
   Origin = "Origin",
   Land = "Land",

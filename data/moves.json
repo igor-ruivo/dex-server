@@ -4117,6 +4117,36 @@
     "pveDuration": 2,
     "moveName": {
       "en": "Techno Blast",
+      "pt_br": "Rajada Tecnológica"
+    }
+  },
+  "TECHNO_BLAST_SHOCK": {
+    "moveId": "TECHNO_BLAST_SHOCK",
+    "vId": "0340",
+    "type": "electric",
+    "isFast": false,
+    "pvpPower": 120,
+    "pvePower": 120,
+    "pvpEnergyDelta": -55,
+    "pveEnergyDelta": -100,
+    "pvpDuration": 0,
+    "pveDuration": 2,
+    "moveName": {
+      "en": "Techno Blast",
+      "pt_br": "Rajada Tecnológica"
+    }
+  },
+  "FLY": {
+    "moveId": "FLY",
+    "vId": "0341",
+    "type": "flying",
+    "isFast": false,
+    "pvpPower": 80,
+    "pvePower": 90,
+    "pvpEnergyDelta": -45,
+    "pveEnergyDelta": -50,
+    "pvpDuration": 0,
+    "pveDuration": 2,
     "moveName": {
       "en": "Fly",
       "pt_br": "Voar"

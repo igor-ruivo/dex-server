@@ -3,50 +3,50 @@ import { JSDOM } from 'jsdom';
 import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from '../../../../types/events';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
-	private document: Document;
+    private document: Document;
 
-	constructor(html: string) {
-		const dom = new JSDOM(html);
-		this.document = dom.window.document;
-	}
+    constructor(html: string) {
+        const dom = new JSDOM(html);
+        this.document = dom.window.document;
+    }
 
-	getTitle = () => {
-		const allArticleNewsDescendants =
-			this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
+    getTitle = () => {
+        const allArticleNewsDescendants =
+            this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
-		const descendantsWithTitleClass = Array.from(allArticleNewsDescendants).filter((a) =>
-			Array.from(a.classList).some((c) => c.includes('_title_'))
-		);
+        const descendantsWithTitleClass = Array.from(allArticleNewsDescendants).filter((a) =>
+            Array.from(a.classList).some((c) => c.includes('_title_'))
+        );
 
-		return descendantsWithTitleClass[0]?.textContent ?? '';
-	};
+        return descendantsWithTitleClass[0]?.textContent ?? '';
+    };
 
-	getImgUrl = () => this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
+    getImgUrl = () => this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
 
-	getSubEvents: () => Array<IPokemonGoEventBlockParser> = () => {
-		const allArticleNewsDescendants =
-			this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
+    getSubEvents: () => Array<IPokemonGoEventBlockParser> = () => {
+        const allArticleNewsDescendants =
+            this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
-		const containerBlocks = Array.from(allArticleNewsDescendants).filter((a) =>
-			Array.from(a.classList).some((c) => c.includes('_containerBlock'))
-		);
+        const containerBlocks = Array.from(allArticleNewsDescendants).filter((a) =>
+            Array.from(a.classList).some((c) => c.includes('_containerBlock'))
+        );
 
-		const subTitle = containerBlocks[0].querySelector('h2')?.textContent ?? '';
+        const subTitle = containerBlocks[0].querySelector('h2')?.textContent ?? '';
 
-		const imgUrl = this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
+        const imgUrl = this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
 
-		const dateString = Array.from(containerBlocks[0].children)[1].textContent?.trim() ?? '';
+        const dateString = Array.from(containerBlocks[0].children)[1].textContent?.trim() ?? '';
 
-		// Assuming (for now) that events only have 1 sub-event (itself) at most.
-		return [
-			{
-				subTitle,
-				imgUrl,
-				dateString,
-				getEventBlocks: () => containerBlocks,
-			},
-		];
-	};
+        // Assuming (for now) that events only have 1 sub-event (itself) at most.
+        return [
+            {
+                subTitle,
+                imgUrl,
+                dateString,
+                getEventBlocks: () => containerBlocks,
+            },
+        ];
+    };
 }
 
 export default PokemonGoNewsParser;

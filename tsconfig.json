@@ -1,15 +1,15 @@
 {
-	"extends": "@ti-platform/aide-build-tools/tsconfig.base.json",
-	"compilerOptions": {
-		"sourceMap": true,
-		"baseUrl": "./",
-		"outDir": "dist",
-		"module": "ESNext",
-		"target": "ESNext",
-		"paths": {
-			"@src/*": ["./src/*"]
-		}
-	},
-	"include": ["*.ts", "src/**/*.ts"],
-	"exclude": ["node_modules"]
+    "extends": "@ti-platform/aide-build-tools/tsconfig.base.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "baseUrl": "./",
+        "outDir": "dist",
+        "module": "ESNext",
+        "target": "ESNext",
+        "paths": {
+            "@src/*": ["./src/*"]
+        }
+    },
+    "include": ["*.ts", "src/**/*.ts"],
+    "exclude": ["node_modules"]
 }

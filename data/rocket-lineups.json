@@ -1,654 +1,654 @@
 [
-  {
-    "phrase": {
-      "en": "I will not tolerate your interference.",
-      "pt_br": "Não tolerarei a sua interferência."
-    },
-    "trainerId": "Giovanni",
-    "tier1": [
-      "persian"
-    ],
-    "tier2": [
-      "kangaskhan",
-      "rhyperior",
-      "nidoking"
-    ],
-    "tier3": [
-      "dialga"
-    ],
-    "catchableTiers": [
-      2
-    ]
-  },
-  {
-    "phrase": {
-      "en": "My strength comes from my loyalty to Team GO Rocket.",
-      "pt_br": "Minha força vem da minha lealdade à Equipe GO Rocket."
-    },
-    "trainerId": "Cliff",
-    "tier1": [
-      "gible"
-    ],
-    "tier2": [
-      "annihilape",
-      "honchkrow",
-      "skarmory"
-    ],
-    "tier3": [
-      "tyranitar",
-      "machamp",
-      "luxray"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "It’s time to learn your place in the world.",
-      "pt_br": "Está na hora de você aprender o seu lugar no mundo."
-    },
-    "trainerId": "Arlo",
-    "tier1": [
-      "horsea"
-    ],
-    "tier2": [
-      "steelix",
-      "slowbro",
-      "crobat"
-    ],
-    "tier3": [
-      "scizor",
-      "alakazam",
-      "muk_alolan"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "I envy you—you get to battle me!",
-      "pt_br": "Tenho inveja de você, porque você tem a chance de batalhar contra mim!"
-    },
-    "trainerId": "Sierra",
-    "tier1": [
-      "trapinch"
-    ],
-    "tier2": [
-      "mismagius",
-      "staraptor",
-      "ferrothorn"
-    ],
-    "tier3": [
-      "houndoom",
-      "camerupt",
-      "drapion"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Normal does not mean weak.",
-      "pt_br": "Normal e fraco são duas coisas bem diferentes."
-    },
-    "type": "normal",
-    "trainerId": "Normal-type Male Grunt",
-    "tier1": [
-      "slakoth",
-      "bidoof",
-      "bunnelby"
-    ],
-    "tier2": [
-      "rattata",
-      "meowth",
-      "diggersby"
-    ],
-    "tier3": [
-      "raticate",
-      "ursaring",
-      "exploud"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Do you know how hot Pokémon fire breath can get?",
-      "pt_br": "Você tem ideia do quão quente é o bafo de fogo de um Pokémon?"
-    },
-    "type": "fire",
-    "trainerId": "Fire-type Female Grunt",
-    "tier1": [
-      "darumaka",
-      "numel",
-      "tepig"
-    ],
-    "tier2": [
-      "houndoom",
-      "ninetales",
-      "pignite"
-    ],
-    "tier3": [
-      "houndoom",
-      "darmanitan_standard",
-      "emboar"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "These waters are treacherous!",
-      "pt_br": "Estas águas são traiçoeiras!"
-    },
-    "type": "water",
-    "trainerId": "Water-type Female Grunt",
-    "tier1": [
-      "oshawott",
-      "spheal",
-      "barboach"
-    ],
-    "tier2": [
-      "dewott",
-      "seadra"
-    ],
-    "tier3": [
-      "carracosta",
-      "samurott",
-      "whiscash"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "These waters are treacherous!",
-      "pt_br": "Estas águas são traiçoeiras!"
-    },
-    "type": "water",
-    "trainerId": "Water-type Male Grunt",
-    "tier1": [
-      "magikarp"
-    ],
-    "tier2": [
-      "magikarp"
-    ],
-    "tier3": [
-      "magikarp",
-      "gyarados"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Get ready to be shocked!",
-      "pt_br": "Prepare-se para um choque e tanto!"
-    },
-    "type": "electric",
-    "trainerId": "Electric-type Female Grunt",
-    "tier1": [
-      "joltik",
-      "mareep",
-      "magnemite"
-    ],
-    "tier2": [
-      "voltorb",
-      "electabuzz",
-      "geodude_alolan"
-    ],
-    "tier3": [
-      "luxray",
-      "ampharos",
-      "galvantula"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Don’t tangle with us!",
-      "pt_br": "Não se mete com a gente!"
-    },
-    "type": "grass",
-    "trainerId": "Grass-type Male Grunt",
-    "tier1": [
-      "hoppip",
-      "seedot",
-      "snivy"
-    ],
-    "tier2": [
-      "ferrothorn",
-      "lileep",
-      "servine"
-    ],
-    "tier3": [
-      "cacturne",
-      "vileplume",
-      "serperior"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "You’re gonna be frozen in your tracks.",
-      "pt_br": "Eu vou te congelar de medo!"
-    },
-    "type": "ice",
-    "trainerId": "Ice-type Female Grunt",
-    "tier1": [
-      "amaura",
-      "sneasel",
-      "swinub"
-    ],
-    "tier2": [
-      "ninetales_alolan",
-      "froslass",
-      "sealeo"
-    ],
-    "tier3": [
-      "glalie",
-      "aurorus",
-      "froslass"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "This buff physique isn’t just for show!",
-      "pt_br": "Este físico bombado não é só pra agradar aos olhos!"
-    },
-    "type": "fighting",
-    "trainerId": "Fighting-type Female Grunt",
-    "tier1": [
-      "machop",
-      "makuhita",
-      "mankey"
-    ],
-    "tier2": [
-      "hitmonlee",
-      "hitmonchan",
-      "gurdurr"
-    ],
-    "tier3": [
-      "toxicroak",
-      "infernape",
-      "conkeldurr"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Coiled and ready to strike!",
-      "pt_br": "Estou pronto pra dar o bote!"
-    },
-    "type": "poison",
-    "trainerId": "Poison-type Female Grunt",
-    "tier1": [
-      "tentacool",
-      "skorupi",
-      "trubbish"
-    ],
-    "tier2": [
-      "nidorino",
-      "nidorina"
-    ],
-    "tier3": [
-      "weezing",
-      "toxicroak",
-      "amoonguss"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "You’ll be defeated into the ground!",
-      "pt_br": "Eu vou te humilhar!"
-    },
-    "type": "ground",
-    "trainerId": "Ground-type Male Grunt",
-    "tier1": [
-      "sandshrew",
-      "gligar",
-      "drilbur"
-    ],
-    "tier2": [
-      "rhyhorn",
-      "donphan",
-      "vibrava"
-    ],
-    "tier3": [
-      "whiscash",
-      "flygon",
-      "torterra"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Battle against my Flying-type Pokémon!",
-      "pt_br": "Chegou a hora de batalhar contra meus Pokémon de tipo Voador!"
-    },
-    "type": "flying",
-    "trainerId": "Flying-type Female Grunt",
-    "tier1": [
-      "pidgey",
-      "taillow",
-      "zubat"
-    ],
-    "tier2": [
-      "zubat",
-      "swellow",
-      "gligar"
-    ],
-    "tier3": [
-      "dragonite",
-      "pidgeot",
-      "archeops"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Are you scared of psychics that use unseen power?",
-      "pt_br": "Você tem medo de poderes psíquicos ocultos?"
-    },
-    "type": "psychic",
-    "trainerId": "Psychic-type Male Grunt",
-    "tier1": [
-      "ralts",
-      "inkay"
-    ],
-    "tier2": [
-      "drowzee",
-      "duosion",
-      "wobbuffet"
-    ],
-    "tier3": [
-      "malamar",
-      "reuniclus",
-      "gallade"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Go, my super bug Pokémon!",
-      "pt_br": "Vamos, meu poderoso Pokémon inseto!"
-    },
-    "type": "bug",
-    "trainerId": "Bug-type Male Grunt",
-    "tier1": [
-      "pineco",
-      "ledyba",
-      "scyther"
-    ],
-    "tier2": [
-      "karrablast",
-      "shelmet",
-      "anorith"
-    ],
-    "tier3": [
-      "beedrill",
-      "scizor",
-      "forretress"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Let’s rock and roll!",
-      "pt_br": "Vamos botar pra quebrar!"
-    },
-    "type": "rock",
-    "trainerId": "Rock-type Male Grunt",
-    "tier1": [
-      "amaura",
-      "tyrunt",
-      "roggenrola"
-    ],
-    "tier2": [
-      "graveler",
-      "shieldon",
-      "cranidos"
-    ],
-    "tier3": [
-      "golem",
-      "aurorus",
-      "tyrantrum"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Ke...ke...ke...ke...ke...ke!",
-      "pt_br": "Bú...bú...bú......bú...bú!"
-    },
-    "type": "ghost",
-    "trainerId": "Ghost-type Male Grunt",
-    "tier1": [
-      "gastly",
-      "golett",
-      "duskull"
-    ],
-    "tier2": [
-      "dusclops",
-      "haunter",
-      "sableye"
-    ],
-    "tier3": [
-      "gengar",
-      "froslass",
-      "marowak_alolan"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "ROAR! ...How’d that sound?",
-      "pt_br": "GRRRR! ...Se ligou no rugido?"
-    },
-    "type": "dragon",
-    "trainerId": "Dragon-type Female Grunt",
-    "tier1": [
-      "dratini",
-      "bagon",
-      "tyrunt"
-    ],
-    "tier2": [
-      "dragonair",
-      "exeggutor_alolan"
-    ],
-    "tier3": [
-      "dragonite",
-      "salamence",
-      "tyrantrum"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Wherever there is light, there is also shadow.",
-      "pt_br": "Onde há luz, há também escuridão."
-    },
-    "type": "dark",
-    "trainerId": "Dark-type Female Grunt",
-    "tier1": [
-      "rattata_alolan",
-      "cacnea",
-      "carvanha"
-    ],
-    "tier2": [
-      "raticate_alolan",
-      "muk_alolan"
-    ],
-    "tier3": [
-      "muk_alolan",
-      "skuntank"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "You’re no match for my iron will!",
-      "pt_br": "Você não pode contra a minha determinação de aço!"
-    },
-    "type": "steel",
-    "trainerId": "Steel-type Male Grunt",
-    "tier1": [
-      "sandshrew_alolan",
-      "diglett_alolan",
-      "beldum"
-    ],
-    "tier2": [
-      "metang",
-      "skarmory",
-      "lairon"
-    ],
-    "tier3": [
-      "aggron",
-      "scizor",
-      "sandslash_alolan"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Check out my cute Pokémon!",
-      "pt_br": "Se liga no meu Pokémon fofinho!"
-    },
-    "type": "fairy",
-    "trainerId": "Fairy-type Female Grunt",
-    "tier1": [
-      "snubbull",
-      "mawile",
-      "vulpix_alolan"
-    ],
-    "tier2": [
-      "snubbull",
-      "weezing_galarian",
-      "kirlia"
-    ],
-    "tier3": [
-      "ninetales_alolan",
-      "weezing_galarian",
-      "gardevoir"
-    ],
-    "catchableTiers": [
-      0,
-      1
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Winning is for winners.",
-      "pt_br": "Vencer é pros vencedores."
-    },
-    "trainerId": "Male Grunt",
-    "tier1": [
-      "bulbasaur",
-      "charmander",
-      "squirtle"
-    ],
-    "tier2": [
-      "ivysaur",
-      "charmeleon",
-      "wartortle"
-    ],
-    "tier3": [
-      "venusaur",
-      "charizard",
-      "blastoise"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Winning is for winners.",
-      "pt_br": "Vencer é pros vencedores."
-    },
-    "trainerId": "Female Grunt",
-    "tier1": [
-      "snorlax"
-    ],
-    "tier2": [
-      "poliwrath",
-      "gardevoir",
-      "snorlax"
-    ],
-    "tier3": [
-      "gyarados",
-      "dragonite",
-      "snorlax"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  },
-  {
-    "phrase": {
-      "en": "Fooled ya, twerp.",
-      "pt_br": "Te enganei, pivete!"
-    },
-    "trainerId": "Decoy Female Grunt",
-    "tier1": [
-      "bellsprout"
-    ],
-    "tier2": [
-      "raticate",
-      "weepinbell"
-    ],
-    "tier3": [
-      "raticate",
-      "snorlax"
-    ],
-    "catchableTiers": [
-      0
-    ]
-  }
+	{
+		"phrase": {
+			"en": "I will not tolerate your interference.",
+			"pt_br": "Não tolerarei a sua interferência."
+		},
+		"trainerId": "Giovanni",
+		"tier1": [
+			"persian"
+		],
+		"tier2": [
+			"kangaskhan",
+			"rhyperior",
+			"nidoking"
+		],
+		"tier3": [
+			"dialga"
+		],
+		"catchableTiers": [
+			2
+		]
+	},
+	{
+		"phrase": {
+			"en": "My strength comes from my loyalty to Team GO Rocket.",
+			"pt_br": "Minha força vem da minha lealdade à Equipe GO Rocket."
+		},
+		"trainerId": "Cliff",
+		"tier1": [
+			"gible"
+		],
+		"tier2": [
+			"annihilape",
+			"honchkrow",
+			"skarmory"
+		],
+		"tier3": [
+			"tyranitar",
+			"machamp",
+			"luxray"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "It’s time to learn your place in the world.",
+			"pt_br": "Está na hora de você aprender o seu lugar no mundo."
+		},
+		"trainerId": "Arlo",
+		"tier1": [
+			"horsea"
+		],
+		"tier2": [
+			"steelix",
+			"slowbro",
+			"crobat"
+		],
+		"tier3": [
+			"scizor",
+			"alakazam",
+			"muk_alolan"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "I envy you—you get to battle me!",
+			"pt_br": "Tenho inveja de você, porque você tem a chance de batalhar contra mim!"
+		},
+		"trainerId": "Sierra",
+		"tier1": [
+			"trapinch"
+		],
+		"tier2": [
+			"mismagius",
+			"staraptor",
+			"ferrothorn"
+		],
+		"tier3": [
+			"houndoom",
+			"camerupt",
+			"drapion"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Normal does not mean weak.",
+			"pt_br": "Normal e fraco são duas coisas bem diferentes."
+		},
+		"type": "normal",
+		"trainerId": "Normal-type Male Grunt",
+		"tier1": [
+			"slakoth",
+			"bidoof",
+			"bunnelby"
+		],
+		"tier2": [
+			"rattata",
+			"meowth",
+			"diggersby"
+		],
+		"tier3": [
+			"raticate",
+			"ursaring",
+			"exploud"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Do you know how hot Pokémon fire breath can get?",
+			"pt_br": "Você tem ideia do quão quente é o bafo de fogo de um Pokémon?"
+		},
+		"type": "fire",
+		"trainerId": "Fire-type Female Grunt",
+		"tier1": [
+			"darumaka",
+			"numel",
+			"tepig"
+		],
+		"tier2": [
+			"houndoom",
+			"ninetales",
+			"pignite"
+		],
+		"tier3": [
+			"houndoom",
+			"darmanitan_standard",
+			"emboar"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "These waters are treacherous!",
+			"pt_br": "Estas águas são traiçoeiras!"
+		},
+		"type": "water",
+		"trainerId": "Water-type Female Grunt",
+		"tier1": [
+			"oshawott",
+			"spheal",
+			"barboach"
+		],
+		"tier2": [
+			"dewott",
+			"seadra"
+		],
+		"tier3": [
+			"carracosta",
+			"samurott",
+			"whiscash"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "These waters are treacherous!",
+			"pt_br": "Estas águas são traiçoeiras!"
+		},
+		"type": "water",
+		"trainerId": "Water-type Male Grunt",
+		"tier1": [
+			"magikarp"
+		],
+		"tier2": [
+			"magikarp"
+		],
+		"tier3": [
+			"magikarp",
+			"gyarados"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Get ready to be shocked!",
+			"pt_br": "Prepare-se para um choque e tanto!"
+		},
+		"type": "electric",
+		"trainerId": "Electric-type Female Grunt",
+		"tier1": [
+			"joltik",
+			"mareep",
+			"magnemite"
+		],
+		"tier2": [
+			"voltorb",
+			"electabuzz",
+			"geodude_alolan"
+		],
+		"tier3": [
+			"luxray",
+			"ampharos",
+			"galvantula"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Don’t tangle with us!",
+			"pt_br": "Não se mete com a gente!"
+		},
+		"type": "grass",
+		"trainerId": "Grass-type Male Grunt",
+		"tier1": [
+			"hoppip",
+			"seedot",
+			"snivy"
+		],
+		"tier2": [
+			"ferrothorn",
+			"lileep",
+			"servine"
+		],
+		"tier3": [
+			"cacturne",
+			"vileplume",
+			"serperior"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "You’re gonna be frozen in your tracks.",
+			"pt_br": "Eu vou te congelar de medo!"
+		},
+		"type": "ice",
+		"trainerId": "Ice-type Female Grunt",
+		"tier1": [
+			"amaura",
+			"sneasel",
+			"swinub"
+		],
+		"tier2": [
+			"ninetales_alolan",
+			"froslass",
+			"sealeo"
+		],
+		"tier3": [
+			"glalie",
+			"aurorus",
+			"froslass"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "This buff physique isn’t just for show!",
+			"pt_br": "Este físico bombado não é só pra agradar aos olhos!"
+		},
+		"type": "fighting",
+		"trainerId": "Fighting-type Female Grunt",
+		"tier1": [
+			"machop",
+			"makuhita",
+			"mankey"
+		],
+		"tier2": [
+			"hitmonlee",
+			"hitmonchan",
+			"gurdurr"
+		],
+		"tier3": [
+			"toxicroak",
+			"infernape",
+			"conkeldurr"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Coiled and ready to strike!",
+			"pt_br": "Estou pronto pra dar o bote!"
+		},
+		"type": "poison",
+		"trainerId": "Poison-type Female Grunt",
+		"tier1": [
+			"tentacool",
+			"skorupi",
+			"trubbish"
+		],
+		"tier2": [
+			"nidorino",
+			"nidorina"
+		],
+		"tier3": [
+			"weezing",
+			"toxicroak",
+			"amoonguss"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "You’ll be defeated into the ground!",
+			"pt_br": "Eu vou te humilhar!"
+		},
+		"type": "ground",
+		"trainerId": "Ground-type Male Grunt",
+		"tier1": [
+			"sandshrew",
+			"gligar",
+			"drilbur"
+		],
+		"tier2": [
+			"rhyhorn",
+			"donphan",
+			"vibrava"
+		],
+		"tier3": [
+			"whiscash",
+			"flygon",
+			"torterra"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Battle against my Flying-type Pokémon!",
+			"pt_br": "Chegou a hora de batalhar contra meus Pokémon de tipo Voador!"
+		},
+		"type": "flying",
+		"trainerId": "Flying-type Female Grunt",
+		"tier1": [
+			"pidgey",
+			"taillow",
+			"zubat"
+		],
+		"tier2": [
+			"zubat",
+			"swellow",
+			"gligar"
+		],
+		"tier3": [
+			"dragonite",
+			"pidgeot",
+			"archeops"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Are you scared of psychics that use unseen power?",
+			"pt_br": "Você tem medo de poderes psíquicos ocultos?"
+		},
+		"type": "psychic",
+		"trainerId": "Psychic-type Male Grunt",
+		"tier1": [
+			"ralts",
+			"inkay"
+		],
+		"tier2": [
+			"drowzee",
+			"duosion",
+			"wobbuffet"
+		],
+		"tier3": [
+			"malamar",
+			"reuniclus",
+			"gallade"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Go, my super bug Pokémon!",
+			"pt_br": "Vamos, meu poderoso Pokémon inseto!"
+		},
+		"type": "bug",
+		"trainerId": "Bug-type Male Grunt",
+		"tier1": [
+			"pineco",
+			"ledyba",
+			"scyther"
+		],
+		"tier2": [
+			"karrablast",
+			"shelmet",
+			"anorith"
+		],
+		"tier3": [
+			"beedrill",
+			"scizor",
+			"forretress"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Let’s rock and roll!",
+			"pt_br": "Vamos botar pra quebrar!"
+		},
+		"type": "rock",
+		"trainerId": "Rock-type Male Grunt",
+		"tier1": [
+			"amaura",
+			"tyrunt",
+			"roggenrola"
+		],
+		"tier2": [
+			"graveler",
+			"shieldon",
+			"cranidos"
+		],
+		"tier3": [
+			"golem",
+			"aurorus",
+			"tyrantrum"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Ke...ke...ke...ke...ke...ke!",
+			"pt_br": "Bú...bú...bú......bú...bú!"
+		},
+		"type": "ghost",
+		"trainerId": "Ghost-type Male Grunt",
+		"tier1": [
+			"gastly",
+			"golett",
+			"duskull"
+		],
+		"tier2": [
+			"dusclops",
+			"haunter",
+			"sableye"
+		],
+		"tier3": [
+			"gengar",
+			"froslass",
+			"marowak_alolan"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "ROAR! ...How’d that sound?",
+			"pt_br": "GRRRR! ...Se ligou no rugido?"
+		},
+		"type": "dragon",
+		"trainerId": "Dragon-type Female Grunt",
+		"tier1": [
+			"dratini",
+			"bagon",
+			"tyrunt"
+		],
+		"tier2": [
+			"dragonair",
+			"exeggutor_alolan"
+		],
+		"tier3": [
+			"dragonite",
+			"salamence",
+			"tyrantrum"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Wherever there is light, there is also shadow.",
+			"pt_br": "Onde há luz, há também escuridão."
+		},
+		"type": "dark",
+		"trainerId": "Dark-type Female Grunt",
+		"tier1": [
+			"rattata_alolan",
+			"cacnea",
+			"carvanha"
+		],
+		"tier2": [
+			"raticate_alolan",
+			"muk_alolan"
+		],
+		"tier3": [
+			"muk_alolan",
+			"skuntank"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "You’re no match for my iron will!",
+			"pt_br": "Você não pode contra a minha determinação de aço!"
+		},
+		"type": "steel",
+		"trainerId": "Steel-type Male Grunt",
+		"tier1": [
+			"sandshrew_alolan",
+			"diglett_alolan",
+			"beldum"
+		],
+		"tier2": [
+			"metang",
+			"skarmory",
+			"lairon"
+		],
+		"tier3": [
+			"aggron",
+			"scizor",
+			"sandslash_alolan"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Check out my cute Pokémon!",
+			"pt_br": "Se liga no meu Pokémon fofinho!"
+		},
+		"type": "fairy",
+		"trainerId": "Fairy-type Female Grunt",
+		"tier1": [
+			"snubbull",
+			"mawile",
+			"vulpix_alolan"
+		],
+		"tier2": [
+			"snubbull",
+			"weezing_galarian",
+			"kirlia"
+		],
+		"tier3": [
+			"ninetales_alolan",
+			"weezing_galarian",
+			"gardevoir"
+		],
+		"catchableTiers": [
+			0,
+			1
+		]
+	},
+	{
+		"phrase": {
+			"en": "Winning is for winners.",
+			"pt_br": "Vencer é pros vencedores."
+		},
+		"trainerId": "Male Grunt",
+		"tier1": [
+			"bulbasaur",
+			"charmander",
+			"squirtle"
+		],
+		"tier2": [
+			"ivysaur",
+			"charmeleon",
+			"wartortle"
+		],
+		"tier3": [
+			"venusaur",
+			"charizard",
+			"blastoise"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Winning is for winners.",
+			"pt_br": "Vencer é pros vencedores."
+		},
+		"trainerId": "Female Grunt",
+		"tier1": [
+			"snorlax"
+		],
+		"tier2": [
+			"poliwrath",
+			"gardevoir",
+			"snorlax"
+		],
+		"tier3": [
+			"gyarados",
+			"dragonite",
+			"snorlax"
+		],
+		"catchableTiers": [
+			0
+		]
+	},
+	{
+		"phrase": {
+			"en": "Fooled ya, twerp.",
+			"pt_br": "Te enganei, pivete!"
+		},
+		"trainerId": "Decoy Female Grunt",
+		"tier1": [
+			"bellsprout"
+		],
+		"tier2": [
+			"raticate",
+			"weepinbell"
+		],
+		"tier3": [
+			"raticate",
+			"snorlax"
+		],
+		"catchableTiers": [
+			0
+		]
+	}
 ]

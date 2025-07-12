@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../../types/events";
+import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from '../../../../types/events';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
     private document: Document;
@@ -11,33 +11,29 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
     }
 
     getTitle = () => {
-        const allArticleNewsDescendants = this.document.querySelector('article[aria-labelledby=news-title]')
-            ?.querySelectorAll('*') ?? [];
+        const allArticleNewsDescendants =
+            this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
-        const descendantsWithTitleClass = Array.from(allArticleNewsDescendants)
-            .filter(a => Array.from(a.classList)
-                .some(c => c.includes('_title_'))
-            );
+        const descendantsWithTitleClass = Array.from(allArticleNewsDescendants).filter((a) =>
+            Array.from(a.classList).some((c) => c.includes('_title_'))
+        );
 
         return descendantsWithTitleClass[0]?.textContent ?? '';
-    }
+    };
 
-    getImgUrl = () => this.document.querySelector('article>div>div>picture>img')
-        ?.getAttribute('src') ?? '';
+    getImgUrl = () => this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
 
     getSubEvents: () => Array<IPokemonGoEventBlockParser> = () => {
-        const allArticleNewsDescendants = this.document.querySelector('article[aria-labelledby=news-title]')
-            ?.querySelectorAll('*') ?? [];
+        const allArticleNewsDescendants =
+            this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
-        const containerBlocks = Array.from(allArticleNewsDescendants)
-            .filter(a => Array.from(a.classList)
-                .some(c => c.includes('_containerBlock'))
-            );
-            
+        const containerBlocks = Array.from(allArticleNewsDescendants).filter((a) =>
+            Array.from(a.classList).some((c) => c.includes('_containerBlock'))
+        );
+
         const subTitle = containerBlocks[0].querySelector('h2')?.textContent ?? '';
 
-        const imgUrl = this.document.querySelector('article>div>div>picture>img')
-            ?.getAttribute('src') ?? '';
+        const imgUrl = this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
 
         const dateString = Array.from(containerBlocks[0].children)[1].textContent?.trim() ?? '';
 
@@ -47,10 +43,10 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
                 subTitle,
                 imgUrl,
                 dateString,
-                getEventBlocks: () => containerBlocks
-            }
+                getEventBlocks: () => containerBlocks,
+            },
         ];
-    }
+    };
 }
 
 export default PokemonGoNewsParser;

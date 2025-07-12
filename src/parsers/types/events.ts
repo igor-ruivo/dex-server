@@ -21,12 +21,9 @@ export type IParsedEvent = EventBlock & {
     source: 'pokemongo' | 'leekduck';
     locale: AvailableLocales;
     isSeason?: boolean;
-}
+};
 
-export type PublicEvent = Omit<
-    IParsedEvent,
-    'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
-    > & {
+export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'> & {
     title: Partial<Record<AvailableLocales, string>>;
     subtitle: Partial<Record<AvailableLocales, string>>;
     bonuses: Partial<Record<AvailableLocales, Array<string>>>;
@@ -39,7 +36,7 @@ export interface IEventSource {
 
 export enum PokemonGoPostKind {
     News,
-    Post
+    Post,
 }
 
 export interface IPokemonGoEventBlockParser {
@@ -76,16 +73,16 @@ export interface EventData {
 export type EventBlock = EventData & {
     bonuses: Array<string>;
     bonusSectionIndex: number;
-}
+};
 
 export type PokemonGoPost = ExtractedPostLink & {
     html: string;
     type: 'post' | 'news';
-}
+};
 
 export interface ExtractedPostLink {
-    url: string,
-    locale: AvailableLocales
+    url: string;
+    locale: AvailableLocales;
 }
 
 export interface IRocketGrunt {
@@ -112,4 +109,4 @@ export interface ILeekduckSpecialRaidBossEvent {
     dateEnd: number;
     pokemon: Array<IEntry>;
     title: string;
-} 
+}

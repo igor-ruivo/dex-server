@@ -19,14 +19,14 @@ export class PokemonGoFetcher {
                         url: link.url,
                         type: this.determinePostType(link.url),
                         html,
-                        locale: link.locale
+                        locale: link.locale,
                     };
                 } catch {
                     return null;
                 }
             });
             const results = await Promise.all(postPromises);
-            const posts = results.filter(post => post !== null) as Array<PokemonGoPost>;
+            const posts = results.filter((post) => post !== null) as Array<PokemonGoPost>;
             return posts;
         } catch (error) {
             console.error(error);
@@ -56,16 +56,16 @@ export class PokemonGoFetcher {
             const href = a.getAttribute('href') ?? '';
             return href.includes('/en/post/') || href.includes('/news/');
         });
-        
+
         filteredLinks.forEach((a: Element) => {
             let url = a.getAttribute('href') ?? '';
             if (url.startsWith('/')) url = this.baseUrl + url;
             if (!url.startsWith('http')) url = this.baseUrl + '/' + url.replace(/^\//, '');
-           
-            if (!links.some(link => link.url === url)) {
+
+            if (!links.some((link) => link.url === url)) {
                 links.push({
                     url: url,
-                    locale: AvailableLocales.en
+                    locale: AvailableLocales.en,
                 });
 
                 // Add links for all AvailableLocales except the one already present in the URL
@@ -81,10 +81,10 @@ export class PokemonGoFetcher {
                     } else {
                         localeUrl = url.replace('/news/', `/${locale}/news/`);
                     }
-                    if (!links.some(l => l.url === localeUrl)) {
+                    if (!links.some((l) => l.url === localeUrl)) {
                         links.push({
                             url: localeUrl,
-                            locale
+                            locale,
                         });
                     }
                 });
@@ -97,7 +97,7 @@ export class PokemonGoFetcher {
         if (url.includes('/post/')) {
             return 'post';
         }
-        
+
         return 'news';
     }
-} 
+}

@@ -1,6 +1,6 @@
 import { IEntry } from '../../types/events';
 import { GameMasterPokemon } from '../../types/pokemon';
-import { ndfNormalized, normalizePokemonName,normalizeSpeciesNameForId } from '../../utils/normalization';
+import { ndfNormalized, normalizePokemonName, normalizeSpeciesNameForId } from '../../utils/normalization';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
 
 /**
@@ -27,23 +27,23 @@ export class PokemonMatcher {
     public matchPokemonFromText = (texts: Array<string>): Array<IEntry> => {
         const wildEncounters: Array<IEntry> = [];
         const seen = new Set<string>();
-        const pkmWithNoClothes = texts.map(pp => {
-            const idx = pp.indexOf(" wearing");
+        const pkmWithNoClothes = texts.map((pp) => {
+            const idx = pp.indexOf(' wearing');
             if (idx !== -1) {
                 return pp.substring(0, idx);
             }
             return pp;
         });
-        let raidLevel = "";
+        let raidLevel = '';
         for (const rawName of pkmWithNoClothes) {
-            const isShiny =  rawName.includes("*");
+            const isShiny = rawName.includes('*');
             let isShadow = false;
             let isMega = false;
             let currP = normalizePokemonName(rawName);
             if (currP.toLocaleLowerCase().includes(' candy') || currP.toLocaleLowerCase().includes('dynamax')) {
                 continue;
             }
-            const raidLIndex = currP.indexOf(" raids");
+            const raidLIndex = currP.indexOf(' raids');
             if (raidLIndex !== -1) {
                 raidLevel = currP.substring(0, raidLIndex);
                 for (const [key, value] of Object.entries(RAID_LEVEL_MAPPINGS)) {
@@ -51,39 +51,40 @@ export class PokemonMatcher {
                 }
                 continue;
             }
-            let words = currP.split(" ");
-            if (words.includes("shadow")) {
+            let words = currP.split(' ');
+            if (words.includes('shadow')) {
                 isShadow = true;
-                words = words.filter(word => word !== "shadow");
+                words = words.filter((word) => word !== 'shadow');
             }
-            if (words.includes("mega")) {
+            if (words.includes('mega')) {
                 isMega = true;
-                words = words.filter(word => word !== "mega");
+                words = words.filter((word) => word !== 'mega');
             }
-            currP = words.join(" ").trim();
+            currP = words.join(' ').trim();
 
             // Edge case for Darmanitan -> it has a form (Standard) on the id but not on the name...
-            if (currP === "darmanitan") {
-                if (isShadow) { //darmanitan_standard_shadow // darmanitan_standard
-                    if (!seen.has("darmanitan_standard_shadow")) {
-                        seen.add("darmanitan_standard_shadow");
+            if (currP === 'darmanitan') {
+                if (isShadow) {
+                    //darmanitan_standard_shadow // darmanitan_standard
+                    if (!seen.has('darmanitan_standard_shadow')) {
+                        seen.add('darmanitan_standard_shadow');
 
                         wildEncounters.push({
-                            speciesId: "darmanitan_standard_shadow",
+                            speciesId: 'darmanitan_standard_shadow',
                             shiny: isShiny,
-                            kind: raidLevel
+                            kind: raidLevel,
                         });
                     }
                     continue;
                 }
 
-                if (!seen.has("darmanitan_standard")) {
-                    seen.add("darmanitan_standard");
+                if (!seen.has('darmanitan_standard')) {
+                    seen.add('darmanitan_standard');
 
                     wildEncounters.push({
-                        speciesId: "darmanitan_standard",
+                        speciesId: 'darmanitan_standard',
                         shiny: isShiny,
-                        kind: raidLevel
+                        kind: raidLevel,
                     });
                 }
                 continue;
@@ -108,13 +109,16 @@ export class PokemonMatcher {
             return {
                 speciesId: match.speciesId,
                 shiny: false,
-                kind: raidLevel
+                kind: raidLevel,
             };
         }
         // Find base Pokémon name in domain
-        const isolatedPkmName = this.domain.filter(domainP => {
-            const normalizedDomainPSpeciesName = domainP.speciesName.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            const pattern = new RegExp(`\\b${normalizedDomainPSpeciesName}\\b`, "i");
+        const isolatedPkmName = this.domain.filter((domainP) => {
+            const normalizedDomainPSpeciesName = domainP.speciesName
+                .toLocaleLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+            const pattern = new RegExp(`\\b${normalizedDomainPSpeciesName}\\b`, 'i');
             return pattern.test(currP);
         });
         if (isolatedPkmName.length === 0) {
@@ -130,24 +134,30 @@ export class PokemonMatcher {
     /**
      * Handles Pokémon names that only specify a form (e.g., Oricorio).
      */
-    private handleFormOnlyPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
+    private handleFormOnlyPokemon = (
+        currP: string,
+        isShadow: boolean,
+        isMega: boolean,
+        raidLevel: string
+    ): IEntry | null => {
         const formCandidate = currP
             .replaceAll('(', '')
             .replaceAll(')', '')
-            .split(" ")
-            .filter(f => Array.from(KNOWN_FORMS).some(e => ndfNormalized(e) === f));
+            .split(' ')
+            .filter((f) => Array.from(KNOWN_FORMS).some((e) => ndfNormalized(e) === f));
         if (formCandidate.length === 0) {
             return this.handleSpecialCases(currP, isShadow, isMega, raidLevel);
         }
         if (formCandidate.length > 1) {
-            console.error("Multiple forms for " + currP);
+            console.error('Multiple forms for ' + currP);
             return null;
         }
         const form = formCandidate[0];
-        const finalResults = this.domain.filter(wd => 
-            ndfNormalized(wd.speciesName).includes("(" + form + ")") && 
-            wd.isShadow === isShadow && 
-            wd.isMega === isMega
+        const finalResults = this.domain.filter(
+            (wd) =>
+                ndfNormalized(wd.speciesName).includes('(' + form + ')') &&
+                wd.isShadow === isShadow &&
+                wd.isMega === isMega
         );
         if (finalResults.length === 0) {
             console.error("Couldn't find Form in gamemaster.");
@@ -157,50 +167,56 @@ export class PokemonMatcher {
             return {
                 speciesId: finalResults[0].speciesId,
                 shiny: false,
-                kind: raidLevel
+                kind: raidLevel,
             };
         }
         // Handle multiple forms (e.g., Oricorio)
-        const pkmNameWithoutForm = currP.replaceAll(form, "").trim();
-        const ans = this.domain.filter(wff => 
-            pkmNameWithoutForm.split(" ").some(s => ndfNormalized(wff.speciesName).includes(s)) && 
-            ndfNormalized(wff.speciesName).includes(form) && 
-            wff.isShadow === isShadow && 
-            wff.isMega === isMega
+        const pkmNameWithoutForm = currP.replaceAll(form, '').trim();
+        const ans = this.domain.filter(
+            (wff) =>
+                pkmNameWithoutForm.split(' ').some((s) => ndfNormalized(wff.speciesName).includes(s)) &&
+                ndfNormalized(wff.speciesName).includes(form) &&
+                wff.isShadow === isShadow &&
+                wff.isMega === isMega
         );
         if (ans.length === 0) {
-            console.error("No match found for " + currP);
+            console.error('No match found for ' + currP);
             return null;
         }
         if (ans.length === 1) {
             return {
                 speciesId: ans[0].speciesId,
                 shiny: false,
-                kind: raidLevel
+                kind: raidLevel,
             };
         }
-        console.error("Multiple matches for " + currP);
+        console.error('Multiple matches for ' + currP);
         return null;
     };
 
     /**
      * Handles special-case Pokémon names that don't match standard forms.
      */
-    private handleSpecialCases = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
+    private handleSpecialCases = (
+        currP: string,
+        isShadow: boolean,
+        isMega: boolean,
+        raidLevel: string
+    ): IEntry | null => {
         const specialCases: Record<string, string> = {
-            'giratina': 'giratina_altered',
-            'zacian': 'zacian_hero',
-            'zamazenta': 'zamazenta_hero',
-            'morpeko': 'morpeko_full_belly',
-            'pumpkaboo': 'pumpkaboo_average',
-            'gourgeist': 'gourgeist_average'
+            giratina: 'giratina_altered',
+            zacian: 'zacian_hero',
+            zamazenta: 'zamazenta_hero',
+            morpeko: 'morpeko_full_belly',
+            pumpkaboo: 'pumpkaboo_average',
+            gourgeist: 'gourgeist_average',
         };
         for (const [key, value] of Object.entries(specialCases)) {
             if (currP.includes(key)) {
                 return {
                     speciesId: value,
                     shiny: false,
-                    kind: raidLevel
+                    kind: raidLevel,
                 };
             }
         }
@@ -211,31 +227,37 @@ export class PokemonMatcher {
     /**
      * Matches a Pokémon with a specific form, shadow, or mega status.
      */
-    private matchPokemonWithForm = (basePokemon: GameMasterPokemon, currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
+    private matchPokemonWithForm = (
+        basePokemon: GameMasterPokemon,
+        currP: string,
+        isShadow: boolean,
+        isMega: boolean,
+        raidLevel: string
+    ): IEntry | null => {
         const dex = basePokemon.dex;
         const availableForms = this.getAvailableForms(dex, isShadow, isMega, raidLevel);
         if (availableForms.length === 1) {
             return {
                 speciesId: availableForms[0].speciesId,
                 shiny: false,
-                kind: raidLevel
+                kind: raidLevel,
             };
         }
         // Handle Mega Charizard X/Y
-        if ((raidLevel === "Mega" || isMega) && dex === 6) {
-            const words = currP.split(" ");
-            if (words.includes("x")) {
+        if ((raidLevel === 'Mega' || isMega) && dex === 6) {
+            const words = currP.split(' ');
+            if (words.includes('x')) {
                 return {
-                    speciesId: "charizard_mega_x",
+                    speciesId: 'charizard_mega_x',
                     shiny: false,
-                    kind: raidLevel
+                    kind: raidLevel,
                 };
             }
-            if (words.includes("y")) {
+            if (words.includes('y')) {
                 return {
-                    speciesId: "charizard_mega_y",
+                    speciesId: 'charizard_mega_y',
                     shiny: false,
-                    kind: raidLevel
+                    kind: raidLevel,
                 };
             }
         }
@@ -247,23 +269,25 @@ export class PokemonMatcher {
             }
             return null;
         }
-        const mappedForm = availableForms.filter(af => 
-            Array.from(KNOWN_FORMS).some(e => 
-                ndfNormalized(af.speciesName).includes(ndfNormalized(e)) && 
-                currP.includes(ndfNormalized(e))
+        const mappedForm = availableForms.filter((af) =>
+            Array.from(KNOWN_FORMS).some(
+                (e) => ndfNormalized(af.speciesName).includes(ndfNormalized(e)) && currP.includes(ndfNormalized(e))
             )
         );
         if (mappedForm.length === 0) {
             if (isShadow) {
-                const guess = Object.values(this.gameMasterPokemon).filter(g => 
-                    !g.aliasId && g.isShadow && dex === g.dex && 
-                    !Array.from(KNOWN_FORMS).some(f => ndfNormalized(g.speciesName).includes(ndfNormalized(f)))
+                const guess = Object.values(this.gameMasterPokemon).filter(
+                    (g) =>
+                        !g.aliasId &&
+                        g.isShadow &&
+                        dex === g.dex &&
+                        !Array.from(KNOWN_FORMS).some((f) => ndfNormalized(g.speciesName).includes(ndfNormalized(f)))
                 );
                 if (guess.length === 1) {
                     return {
                         speciesId: guess[0].speciesId,
                         shiny: false,
-                        kind: raidLevel
+                        kind: raidLevel,
                     };
                 }
             }
@@ -274,32 +298,35 @@ export class PokemonMatcher {
             return {
                 speciesId: mappedForm[0].speciesId,
                 shiny: false,
-                kind: raidLevel
+                kind: raidLevel,
             };
         }
-        console.error("Multiple mapped forms for " + currP);
+        console.error('Multiple mapped forms for ' + currP);
         return null;
     };
 
     /**
      * Gets all available forms for a given dex number and status.
      */
-    private getAvailableForms = (dex: number, isShadow: boolean, isMega: boolean, raidLevel: string): Array<GameMasterPokemon> => {
-        if (raidLevel.toLocaleLowerCase() !== "mega" || !isMega) {
+    private getAvailableForms = (
+        dex: number,
+        isShadow: boolean,
+        isMega: boolean,
+        raidLevel: string
+    ): Array<GameMasterPokemon> => {
+        if (raidLevel.toLocaleLowerCase() !== 'mega' || !isMega) {
             if (!isShadow) {
-                return this.domain.filter(formC => 
-                    formC.dex === dex && 
-                    formC.isShadow === isShadow && 
-                    formC.isMega === isMega
+                return this.domain.filter(
+                    (formC) => formC.dex === dex && formC.isShadow === isShadow && formC.isMega === isMega
                 );
             } else {
-                return Object.values(this.gameMasterPokemon).filter(l => 
-                    !l.isMega && l.dex === dex && !l.aliasId && l.isShadow
+                return Object.values(this.gameMasterPokemon).filter(
+                    (l) => !l.isMega && l.dex === dex && !l.aliasId && l.isShadow
                 );
             }
         } else {
-            return Object.values(this.gameMasterPokemon).filter(l => 
-                l.isMega && l.dex === dex && !l.aliasId && !l.isShadow
+            return Object.values(this.gameMasterPokemon).filter(
+                (l) => l.isMega && l.dex === dex && !l.aliasId && !l.isShadow
             );
         }
     };
@@ -314,9 +341,10 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matc
     while (stack.length > 0) {
         const node = stack.pop();
         if (!node) continue;
-        if (node.nodeType === 1) { // ELEMENT_NODE
+        if (node.nodeType === 1) {
+            // ELEMENT_NODE
             const el = node as Element;
-            if (Array.from(el.classList ?? []).includes("ContainerBlock__headline")) {
+            if (Array.from(el.classList ?? []).includes('ContainerBlock__headline')) {
                 continue;
             }
             if (el.childNodes) {
@@ -324,7 +352,8 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matc
                     stack.push(el.childNodes[i]);
                 }
             }
-        } else if (node.nodeType === 3) { // TEXT_NODE
+        } else if (node.nodeType === 3) {
+            // TEXT_NODE
             const actualText = node.textContent?.trim();
             if (actualText) {
                 textes.push(actualText);
@@ -332,22 +361,45 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matc
         }
     }
     // Filtering and parsing as in user's parseFromString
-    const whitelist = ["(sunny)", "(rainy)", "(snowy)", "sunny form", "rainy form", "snowy form"];
-    const blackListedKeywords = ["some trainers", "the following", "appearing", "lucky, you m", " tms", "and more", "wild encounters", "sunny", "event-themed", "rainy", "snow", "partly cloudy", "cloudy", "windy", "fog", "will be available"];
-    const parsedPokemon = textes.filter(t => t !== "All" && t.split(" ").length <= 10 && (whitelist.some(k => t.toLocaleLowerCase().includes(k)) || !blackListedKeywords.some(k => t.toLocaleLowerCase().includes(k))));
+    const whitelist = ['(sunny)', '(rainy)', '(snowy)', 'sunny form', 'rainy form', 'snowy form'];
+    const blackListedKeywords = [
+        'some trainers',
+        'the following',
+        'appearing',
+        'lucky, you m',
+        ' tms',
+        'and more',
+        'wild encounters',
+        'sunny',
+        'event-themed',
+        'rainy',
+        'snow',
+        'partly cloudy',
+        'cloudy',
+        'windy',
+        'fog',
+        'will be available',
+    ];
+    const parsedPokemon = textes.filter(
+        (t) =>
+            t !== 'All' &&
+            t.split(' ').length <= 10 &&
+            (whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
+                !blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
+    );
 
     // Detect shiny phrase in the text
     const shinyPhraseRegex = /if you[’'`]?re lucky[^\n]*shiny/i;
-    const shinyByPhrase = textes.some(t => shinyPhraseRegex.test(t));
+    const shinyByPhrase = textes.some((t) => shinyPhraseRegex.test(t));
 
     // Mark shiny by asterisk or by phrase
     const results = matcher.matchPokemonFromText(parsedPokemon);
     return results.map((entry, idx) => {
         const originalText = parsedPokemon[idx] || '';
-        const isAsterisk = originalText.trim().endsWith("*");
+        const isAsterisk = originalText.trim().endsWith('*');
         return {
             ...entry,
-            shiny: isAsterisk || shinyByPhrase
+            shiny: isAsterisk || shinyByPhrase,
         };
     });
-}; 
+};

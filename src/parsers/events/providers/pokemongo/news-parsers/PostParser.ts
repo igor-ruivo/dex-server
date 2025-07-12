@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from "../../../../types/events";
+import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from '../../../../types/events';
 
 class PokemonGoPostParser implements IPokemonGoHtmlParser {
     private document: Document;
@@ -15,16 +15,19 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
     getImgUrl = () => this.document.getElementsByClassName('image__image')[0]?.getAttribute('src') ?? '';
 
     getSubEvents = () => {
-        const subEvents: Array<IPokemonGoEventBlockParser> = Array.from(this.document.querySelectorAll('.blogPost__post__blocks>.block--ContainerBlock'))
-            .map(e => ({
-                subTitle: e.querySelector('h2.ContainerBlock__headline>span.ContainerBlock__headline__title')?.textContent ?? '',
-                imgUrl: e.querySelector('.ImageBlock>img')?.getAttribute('src') ?? '',
-                dateString: e.querySelector(':scope>div.ContainerBlock>div.ContainerBlock__body')?.textContent ?? '',
-                getEventBlocks: () => Array.from(e.getElementsByClassName('block--ContainerBlock')).map(b => b.children[0])
-            }));
+        const subEvents: Array<IPokemonGoEventBlockParser> = Array.from(
+            this.document.querySelectorAll('.blogPost__post__blocks>.block--ContainerBlock')
+        ).map((e) => ({
+            subTitle:
+                e.querySelector('h2.ContainerBlock__headline>span.ContainerBlock__headline__title')?.textContent ?? '',
+            imgUrl: e.querySelector('.ImageBlock>img')?.getAttribute('src') ?? '',
+            dateString: e.querySelector(':scope>div.ContainerBlock>div.ContainerBlock__body')?.textContent ?? '',
+            getEventBlocks: () =>
+                Array.from(e.getElementsByClassName('block--ContainerBlock')).map((b) => b.children[0]),
+        }));
 
         return subEvents;
-    }
+    };
 }
 
 export default PokemonGoPostParser;

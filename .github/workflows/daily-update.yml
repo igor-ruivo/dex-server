@@ -1,72 +1,72 @@
 name: Daily Data Update
 
 on:
-  schedule:
-    # Runs daily at 2 PM UTC
-    - cron: '0 14 * * *'
-  workflow_dispatch: # Allows manual trigger
+    schedule:
+        # Runs daily at 2 PM UTC
+        - cron: '0 14 * * *'
+    workflow_dispatch: # Allows manual trigger
 
 permissions:
-  contents: write
-  pull-requests: write
+    contents: write
+    pull-requests: write
 
 jobs:
-  update-data:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+    update-data:
+        runs-on: ubuntu-latest
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: latest
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
 
-    - name: Install dependencies
-      run: pnpm install
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: latest
 
-    - name: Generate data files
-      run: pnpm run generate
-      id: generate-data
+            - name: Install dependencies
+              run: pnpm install
 
-    - name: Commit and push data files
-      run: |
-        git config --local user.email "igor.ruivo.97@gmail.com"
-        git config --local user.name "Igor Ruivo"
-        git add data/*.json || true
-        
-        # Check if there are staged changes
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          # Commit and push changes
-          git commit -m "Update Pokemon GO data - $(date)"
-          git push
-        fi
+            - name: Generate data files
+              run: pnpm run generate
+              id: generate-data
 
-    - name: Send Discord notification on failure
-      if: failure() && steps.generate-data.outcome == 'failure'
-      run: |
-        echo "Sending Discord notification for generate-data failure"
-        
-        WEB_BASE1="https://dis"
-        WEB_BASE2="cord.com/api/webho"
-        WEB_BASE3="oks/1393406874296127650"
-        WEB_TOK1="v-OSrwbxLyZfsKHuNMkEwhfKavenpXCiA"
-        WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
-        WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
-        
-        # Create JSON payload for failure notification
-        JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"❌ Pokemon GO Data Generation Failed\",\"description\":\"The daily data generation script failed to run successfully. Please check the GitHub Actions logs for details.\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
-        
-        curl -X POST "$WEB_URL" \
-          -H "Content-Type: application/json" \
-          -d "$JSON_PAYLOAD" 
+            - name: Commit and push data files
+              run: |
+                  git config --local user.email "igor.ruivo.97@gmail.com"
+                  git config --local user.name "Igor Ruivo"
+                  git add data/*.json || true
+
+                  # Check if there are staged changes
+                  if git diff --staged --quiet; then
+                    echo "No changes to commit"
+                  else
+                    # Commit and push changes
+                    git commit -m "Update Pokemon GO data - $(date)"
+                    git push
+                  fi
+
+            - name: Send Discord notification on failure
+              if: failure() && steps.generate-data.outcome == 'failure'
+              run: |
+                  echo "Sending Discord notification for generate-data failure"
+
+                  WEB_BASE1="https://dis"
+                  WEB_BASE2="cord.com/api/webho"
+                  WEB_BASE3="oks/1393406874296127650"
+                  WEB_TOK1="v-OSrwbxLyZfsKHuNMkEwhfKavenpXCiA"
+                  WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
+                  WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
+
+                  # Create JSON payload for failure notification
+                  JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"❌ Pokemon GO Data Generation Failed\",\"description\":\"The daily data generation script failed to run successfully. Please check the GitHub Actions logs for details.\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
+
+                  curl -X POST "$WEB_URL" \
+                    -H "Content-Type: application/json" \
+                    -d "$JSON_PAYLOAD"

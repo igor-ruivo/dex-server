@@ -7,21 +7,26 @@ import { MONTHS } from '../config/constants';
 const dateWithoutTimezone = (date: string) => {
     return date
         .replaceAll('local time', '')
-        .replaceAll('PDT', '').replaceAll('PST', '').replaceAll('EDT', '').replaceAll('EST', '').replaceAll('UTC', '').replaceAll('GMT', '')
+        .replaceAll('PDT', '')
+        .replaceAll('PST', '')
+        .replaceAll('EDT', '')
+        .replaceAll('EST', '')
+        .replaceAll('UTC', '')
+        .replaceAll('GMT', '')
         .trim();
-}
+};
 
 const dateModifierNormalization = (date: string) => {
     return date
         .trim()
-        .replaceAll("  ", " ")
-        .replaceAll(/\u00A0/g, " ")
-        .replaceAll("  ", " ")
-        .replaceAll("a.m.", "am")
-        .replaceAll("A.M.", "am")
-        .replaceAll("p.m.", "pm")
-        .replaceAll("P.M.", "pm");
-}
+        .replaceAll('  ', ' ')
+        .replaceAll(/\u00A0/g, ' ')
+        .replaceAll('  ', ' ')
+        .replaceAll('a.m.', 'am')
+        .replaceAll('A.M.', 'am')
+        .replaceAll('p.m.', 'pm')
+        .replaceAll('P.M.', 'pm');
+};
 
 /**
  * Converts a month name to its index (0-based).
@@ -33,13 +38,13 @@ export const toMonthIndex = (month: string): number => {
 /**
  * Normalizes a date string for easier parsing (e.g., removes weekday).
  */
-export const fixDateString = (dateString: string) => dateString.replace(/(\b[A-Za-z]+), (\d{1,2})/, "$1 $2");
+export const fixDateString = (dateString: string) => dateString.replace(/(\b[A-Za-z]+), (\d{1,2})/, '$1 $2');
 
 /**
  * Parses a date range string and returns an array of {start, end} timestamps.
  * Handles multi-day and single-day event formats.
  */
-export function parseEventDateRange(date: string): Array<{ start: number, end: number }> {
+export function parseEventDateRange(date: string): Array<{ start: number; end: number }> {
     if (!date) return [];
     // Remove trailing period
     if (date.endsWith('.')) date = date.slice(0, -1);
@@ -55,7 +60,10 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
 
     // Special handling for multi-day time ranges: handle both old and new formats
     if (date.includes(' and ') && date.includes(' from ') && date.includes(' to ')) {
-        const multiDayMatch = /([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i.exec(date);
+        const multiDayMatch =
+            /([A-Za-z]+ \d{1,2}),? and (?:[A-Za-z]+day, )?([A-Za-z]+ \d{1,2})(?:, (\d{4}))?,? from (\d{1,2}:\d{2} [ap]m) to (\d{1,2}:\d{2} [ap]m)/i.exec(
+                date
+            );
         if (multiDayMatch?.[1] && multiDayMatch?.[2] && multiDayMatch?.[4] && multiDayMatch?.[5]) {
             const year = multiDayMatch[3] || '2025';
             const startDate = multiDayMatch[1] + ', ' + year;
@@ -70,7 +78,7 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
                 if (!isNaN(day1Start) && !isNaN(day1End) && !isNaN(day2Start) && !isNaN(day2End)) {
                     return [
                         { start: day1Start, end: day1End },
-                        { start: day2Start, end: day2End }
+                        { start: day2Start, end: day2End },
                     ];
                 }
             }
@@ -108,7 +116,7 @@ export function parseEventDateRange(date: string): Array<{ start: number, end: n
             parsedDate[1] = datePart + ', at ' + parsedDate[1].trim();
         }
     }
-    
+
     const start = parseDateFromString(parsedDate[0]);
     const end = parsedDate[1] ? parseDateFromString(parsedDate[1]) : start;
     if (isNaN(start) || isNaN(end)) return [];
@@ -126,7 +134,8 @@ export function parseDateFromString(side: string): number {
         side = side.replace(', ' + year, '');
     }
     let timeMatch = /, at (\d{1,2}):(\d{2}) ([ap]m)/i.exec(side);
-    let hour = 0, minute = 0;
+    let hour = 0,
+        minute = 0;
     if (timeMatch) {
         hour = Number(timeMatch[1]);
         minute = Number(timeMatch[2]);

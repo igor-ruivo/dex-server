@@ -1,28 +1,34 @@
 #!/usr/bin/env node
-const { spawn } = require("child_process");
+const { spawnSync } = require("child_process");
 
 const isWin = process.platform === "win32";
-const debugEnv = "DEBUG=eslint:eslint";
+const debugEnv = "DEBUG=eslint:cli-engine";
 
-// Comando a executar: npx eslint --fix ...
 const eslintArgs = [
 	"eslint",
 	"--fix",
 	"--ext",
 	".ts",
+	"./*.ts",
 	"./src",
+	"./.eslintrc.cjs",
 	"./package.json",
 	"./prettier.config.cjs",
 	"./tsconfig.json",
 ];
 
-// Se for Windows, usa 'cross-env' para definir a variável DEBUG
 const cmd = isWin ? "npx" : "env";
 const args = isWin
 	? ["cross-env", debugEnv, "npx", ...eslintArgs]
 	: [debugEnv, "npx", ...eslintArgs];
 
-// Usar shell: true para funcionar bem no Windows e Unix
-const child = spawn(cmd, args, { shell: true, stdio: "inherit" });
+const lintCommand = `${cmd} ${args.join(' ')} 2>&1`;
 
-child.on("exit", (code) => process.exit(code));
+console.log(lintCommand);
+const lintResult = spawnSync(lintCommand, { env: process.env, shell: true, stdio: "inherit" });
+
+if (lintResult.status === 0) {
+    console.log('Done.\n');
+} else {
+    console.log('Execution failed.\n');
+}

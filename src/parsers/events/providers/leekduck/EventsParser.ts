@@ -49,17 +49,19 @@ export class EventsParser {
         const doc = dom.window.document;
 
         // Get all event links for raid and spotlight hour events
-        const raidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper raid-battles')).map(e => {
+        const raidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper raid-battles')).map((e) => {
             return (e.parentElement as HTMLAnchorElement).href;
         });
-        const eliteRaidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper elite-raids')).map(e => {
+        const eliteRaidUrls = Array.from(doc.getElementsByClassName('event-item-wrapper elite-raids')).map((e) => {
             return (e.parentElement as HTMLAnchorElement).href;
         });
-        const spotlightUrls = Array.from(doc.getElementsByClassName('event-item-wrapper pokémon-spotlight-hour')).map(e => {
-            return (e.parentElement as HTMLAnchorElement).href;
-        });
+        const spotlightUrls = Array.from(doc.getElementsByClassName('event-item-wrapper pokémon-spotlight-hour')).map(
+            (e) => {
+                return (e.parentElement as HTMLAnchorElement).href;
+            }
+        );
         const postUrls = Array.from(new Set([...raidUrls, ...eliteRaidUrls, ...spotlightUrls]));
-        const urls = postUrls.map(e => {
+        const urls = postUrls.map((e) => {
             return e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e;
         });
 
@@ -106,7 +108,7 @@ export class EventsParser {
                 } else {
                     return s1.rawUrl.localeCompare(s2.rawUrl);
                 }
-            })
+            }),
         };
     }
 
@@ -114,8 +116,16 @@ export class EventsParser {
         const dom = new JSDOM(eventHtml);
         const htmlDoc = dom.window.document;
         const title = htmlDoc.getElementsByClassName('page-title')[0]?.textContent?.replace(/\s/g, ' ').trim() ?? '';
-        const dateCont = (htmlDoc.getElementById('event-date-start')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-start')?.textContent?.trim()).replaceAll('  ', ' ');
-        const endCont = (htmlDoc.getElementById('event-date-end')?.textContent?.trim() + ' ' + htmlDoc.getElementById('event-time-end')?.textContent?.trim()).replaceAll('  ', ' ');
+        const dateCont = (
+            htmlDoc.getElementById('event-date-start')?.textContent?.trim() +
+            ' ' +
+            htmlDoc.getElementById('event-time-start')?.textContent?.trim()
+        ).replaceAll('  ', ' ');
+        const endCont = (
+            htmlDoc.getElementById('event-date-end')?.textContent?.trim() +
+            ' ' +
+            htmlDoc.getElementById('event-time-end')?.textContent?.trim()
+        ).replaceAll('  ', ' ');
 
         const date = parseDateFromString(dateCont);
         const dateEnd = parseDateFromString(endCont);
@@ -143,7 +153,7 @@ export class EventsParser {
             pokemons,
             bonus,
             imgUrl: 'https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg',
-            rawUrl: url
+            rawUrl: url,
         };
     };
 
@@ -167,7 +177,7 @@ export class EventsParser {
             dateEnd: parsed.dateEnd,
             raids: pokemons,
             imgUrl: undefined,
-            rawUrl: url
+            rawUrl: url,
         };
     };
 
@@ -206,7 +216,7 @@ export class EventsParser {
                 entries.push({
                     speciesId: entry.speciesId,
                     kind: isMega ? 'mega' : '5',
-                    shiny: false
+                    shiny: false,
                 });
             }
         }

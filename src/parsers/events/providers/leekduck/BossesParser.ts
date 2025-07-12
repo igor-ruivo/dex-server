@@ -14,82 +14,89 @@ export class BossesParser {
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
-        const entries = Array.from(doc.getElementsByClassName("list")[0].children);
-        const shadowEntries = Array.from(doc.getElementsByClassName("list")[1].children);
+        const entries = Array.from(doc.getElementsByClassName('list')[0].children);
+        const shadowEntries = Array.from(doc.getElementsByClassName('list')[1].children);
 
         const pokemons: Array<IEntry> = [];
 
-        let tier = "";
+        let tier = '';
 
-        const shadowDomain = Object.values(gameMasterPokemon).filter(v => !v.aliasId && !v.isMega);
-        const megaDomain = Object.values(gameMasterPokemon).filter(v => !v.aliasId && !v.isShadow);
-        const normalDomain = Object.values(gameMasterPokemon).filter(v => !v.aliasId && !v.isShadow && !v.isMega);
+        const shadowDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isMega);
+        const megaDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow);
+        const normalDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow && !v.isMega);
 
         const normalMatcher = new PokemonMatcher(gameMasterPokemon, normalDomain);
         const megaMatcher = new PokemonMatcher(gameMasterPokemon, megaDomain);
         const shadowMatcher = new PokemonMatcher(gameMasterPokemon, shadowDomain);
 
         for (const entry of entries) {
-            if (Array.from(entry.classList).includes("header-li")) {
+            if (Array.from(entry.classList).includes('header-li')) {
                 const newTier = (entry as HTMLElement).textContent?.trim() ?? '';
-                if (newTier.split(" ").length === 2) {
-                    tier = newTier.split(" ")[1].toLocaleLowerCase();
+                if (newTier.split(' ').length === 2) {
+                    tier = newTier.split(' ')[1].toLocaleLowerCase();
                 }
 
-                if (newTier.split(" ").length === 1) {
+                if (newTier.split(' ').length === 1) {
                     tier = newTier.toLocaleLowerCase();
                 }
                 continue;
             }
 
-            if (!Array.from(entry.classList).includes("boss-item")) {
+            if (!Array.from(entry.classList).includes('boss-item')) {
                 continue;
             }
 
-            const bossName = (entry.getElementsByClassName("boss-name")[0] as HTMLElement).textContent?.trim() ?? '';
-            const parsedPkm = tier === "mega" ?
-                megaMatcher.matchPokemonFromText([bossName]): 
-                normalMatcher.matchPokemonFromText([bossName]);
-            
-            if (parsedPkm[0] && tier !== "5" && tier !== "mega") {
+            const bossName = (entry.getElementsByClassName('boss-name')[0] as HTMLElement).textContent?.trim() ?? '';
+            const parsedPkm =
+                tier === 'mega'
+                    ? megaMatcher.matchPokemonFromText([bossName])
+                    : normalMatcher.matchPokemonFromText([bossName]);
+
+            if (parsedPkm[0] && tier !== '5' && tier !== 'mega') {
                 pokemons.push({
                     shiny: parsedPkm[0].shiny,
                     speciesId: parsedPkm[0].speciesId,
-                    kind: tier
+                    kind: tier,
                 });
             }
         }
 
         for (const entry of shadowEntries) {
-            if (Array.from(entry.classList).includes("header-li")) {
-                const newTier = (entry as HTMLElement).textContent?.trim().replaceAll('Shadow', '').replaceAll('shadow', '').trim() ?? '';
-                if (newTier.split(" ").length === 2) {
-                    tier = newTier.split(" ")[1].toLocaleLowerCase();
+            if (Array.from(entry.classList).includes('header-li')) {
+                const newTier =
+                    (entry as HTMLElement).textContent
+                        ?.trim()
+                        .replaceAll('Shadow', '')
+                        .replaceAll('shadow', '')
+                        .trim() ?? '';
+                if (newTier.split(' ').length === 2) {
+                    tier = newTier.split(' ')[1].toLocaleLowerCase();
                 }
 
-                if (newTier.split(" ").length === 1) {
+                if (newTier.split(' ').length === 1) {
                     tier = newTier.toLocaleLowerCase();
                 }
                 continue;
             }
 
-            if (!Array.from(entry.classList).includes("boss-item")) {
+            if (!Array.from(entry.classList).includes('boss-item')) {
                 continue;
             }
 
-            const bossName = 'Shadow ' + ((entry.getElementsByClassName("boss-name")[0] as HTMLElement).textContent?.trim() ?? '');
+            const bossName =
+                'Shadow ' + ((entry.getElementsByClassName('boss-name')[0] as HTMLElement).textContent?.trim() ?? '');
             const parsedPkm = shadowMatcher.matchPokemonFromText([bossName]);
-            
-            if (parsedPkm[0] && tier !== "5" && tier !== "mega") {
+
+            if (parsedPkm[0] && tier !== '5' && tier !== 'mega') {
                 pokemons.push({
                     shiny: parsedPkm[0].shiny,
                     speciesId: parsedPkm[0].speciesId,
                     kind: tier,
-                    shadow: true
+                    shadow: true,
                 });
             }
         }
 
         return pokemons;
     }
-} 
+}

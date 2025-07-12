@@ -17,7 +17,9 @@ export class EggsParser {
         const entries = Array.from(doc.querySelector('.page-content')?.children ?? []);
         const pokemons: Array<IEntry> = [];
         let km = '';
-        const normalDomain = Object.values(gameMasterPokemon).filter((v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega);
+        const normalDomain = Object.values(gameMasterPokemon).filter(
+            (v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega
+        );
 
         let currentRawComment = '';
         const comment: Partial<Record<AvailableLocales, string>> = {};
@@ -27,22 +29,26 @@ export class EggsParser {
                 km = txt.split(' ')[0];
                 if (txt.includes('(')) {
                     currentRawComment = txt.substring(txt.indexOf('(') + 1, txt.lastIndexOf(')')).trim();
-                    Object.values(AvailableLocales)
-                        .forEach(locale => comment[locale] = getEggCommentTranslation(locale, currentRawComment));
+                    Object.values(AvailableLocales).forEach(
+                        (locale) => (comment[locale] = getEggCommentTranslation(locale, currentRawComment))
+                    );
                 } else {
                     currentRawComment = '';
-                    Object.values(AvailableLocales)
-                        .forEach(locale => comment[locale] = '');
+                    Object.values(AvailableLocales).forEach((locale) => (comment[locale] = ''));
                 }
                 continue;
             }
             if (entry.classList.contains('egg-list-flex')) {
-                const pkmList = Array.from(entry.children).map(c => (c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement).textContent?.trim() ?? '');
+                const pkmList = Array.from(entry.children).map(
+                    (c) => (c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement).textContent?.trim() ?? ''
+                );
                 const matcher = new PokemonMatcher(gameMasterPokemon, normalDomain);
-                const parsedPkm = matcher.matchPokemonFromText(pkmList).map(r => { return { ...r, kind: km, comment: {...comment} }; });
+                const parsedPkm = matcher.matchPokemonFromText(pkmList).map((r) => {
+                    return { ...r, kind: km, comment: { ...comment } };
+                });
                 pokemons.push(...parsedPkm);
             }
         }
         return pokemons;
     }
-} 
+}

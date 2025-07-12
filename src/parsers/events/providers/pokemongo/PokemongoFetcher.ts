@@ -21,8 +21,7 @@ export class PokemonGoFetcher {
                         html,
                         locale: link.locale
                     };
-                } catch (error) {
-                    console.error(error);
+                } catch {
                     return null;
                 }
             });

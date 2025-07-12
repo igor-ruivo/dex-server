@@ -40,7 +40,7 @@ const generateData = async () => {
     // Step 6: LeekDuck integration
     const leekduckEventsParser = new EventsParser();
     const leekduckEvents = await leekduckEventsParser.parse(pokemonDictionary);
-
+throw new Error('');
     const leekduckBossesParser = new BossesParser();
     const leekduckBossEntries: IEntry[] = await leekduckBossesParser.parse(pokemonDictionary);
     

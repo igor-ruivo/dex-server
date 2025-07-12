@@ -39386,41 +39386,6 @@
     "isMythical": false,
     "isBeast": false
   },
-  "gothita_shadow": {
-    "dex": 574,
-    "speciesId": "gothita_shadow",
-    "speciesName": "Gothita (Shadow)",
-    "types": [
-      "Psychic"
-    ],
-    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/574.png",
-    "goImageUrl": "574.icon.png",
-    "shinyGoImageUrl": "574.s.icon.png",
-    "atk": 98,
-    "def": 112,
-    "hp": 128,
-    "fastMoves": [
-      "POUND",
-      "CONFUSION"
-    ],
-    "chargedMoves": [
-      "PSYBEAM",
-      "PSYSHOCK",
-      "PSYCHIC"
-    ],
-    "eliteMoves": [],
-    "legacyMoves": [],
-    "isShadow": true,
-    "isMega": false,
-    "familyId": "FAMILY_GOTHITA",
-    "evolutions": [
-      "gothorita_shadow"
-    ],
-    "form": "",
-    "isLegendary": false,
-    "isMythical": false,
-    "isBeast": false
-  },
   "gothorita": {
     "dex": 575,
     "speciesId": "gothorita",
@@ -52482,7 +52447,6 @@
     ],
     "chargedMoves": [
       "AQUA_JET",
-      "AERIAL_ACE",
       "LIQUIDATION"
     ],
     "eliteMoves": [],

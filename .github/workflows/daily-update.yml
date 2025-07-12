@@ -49,22 +49,22 @@ jobs:
           # Get list of changed files
           CHANGED_FILES=$(git diff --staged --name-only | grep 'data/.*\.json' | sed 's|data/||' | tr '\n' ', ' | sed 's/, $//')
           
-          # Commit changes
+          # Get git diff for notification (before committing)
+          GIT_DIFF=$(git diff --staged --no-ext-diff | head -20)
+          
+          # Commit and push changes
           git commit -m "Update Pokemon GO data - $(date)"
           git push
           
-          # Send Discord notification
-          if [ ! -z "$CHANGED_FILES" ]; then
+          # Only send Discord notification if git operations succeeded
+          if [ $? -eq 0 ] && [ ! -z "$CHANGED_FILES" ]; then
             echo "Sending Discord notification for changes: $CHANGED_FILES"
             
-            # Get actual git diff content (not just stats)
-            GIT_DIFF=$(git diff --staged --no-ext-diff | head -20)
-            
             # Create description with file list and actual diff content
-            DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`diff\n$GIT_DIFF\n\`\`\`"
+            DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`\n$GIT_DIFF\n\`\`\`"
             if [ ${#DESCRIPTION} -gt 1000 ]; then
               # Truncate but keep the diff block intact
-              DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`diff\n$(echo "$GIT_DIFF" | head -15)\n... (truncated)\n\`\`\`"
+              DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`\n$(echo "$GIT_DIFF" | head -15)\n... (truncated)\n\`\`\`"
             fi
             
             WEB_BASE1="https://dis"
@@ -85,5 +85,7 @@ jobs:
                   \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"
                 }]
               }"
+          else
+            echo "Git operations failed or no changes detected, skipping Discord notification"
           fi
         fi 

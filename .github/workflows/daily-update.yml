@@ -67,6 +67,9 @@ jobs:
               DESCRIPTION="Files updated: $CHANGED_FILES\n\n\`\`\`\n$(echo "$GIT_DIFF" | head -15)\n... (truncated)\n\`\`\`"
             fi
             
+            # Escape the description for JSON
+            ESCAPED_DESCRIPTION=$(echo "$DESCRIPTION" | sed 's/"/\\"/g' | sed 's/\\/\\\\/g')
+            
             WEB_BASE1="https://dis"
             WEB_BASE2="cord.com/api/webho"
             WEB_BASE3="oks/1393406874296127650"
@@ -74,17 +77,16 @@ jobs:
             WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
             WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
             
+            # Create JSON payload
+            JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"Novidades no Pokémon Go\",\"description\":\"$ESCAPED_DESCRIPTION\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
+            
+            # Print the JSON payload for debugging
+            echo "Discord JSON payload:"
+            echo "$JSON_PAYLOAD"
+            
             curl -X POST "$WEB_URL" \
               -H "Content-Type: application/json" \
-              -d "{
-                \"content\": \"<@&1393406141777838151>\",
-                \"embeds\": [{
-                  \"title\": \"Novidades no Pokémon Go\",
-                  \"description\": \"$DESCRIPTION\",
-                  \"color\": 16711680,
-                  \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"
-                }]
-              }"
+              -d "$JSON_PAYLOAD"
           else
             echo "Git operations failed or no changes detected, skipping Discord notification"
           fi

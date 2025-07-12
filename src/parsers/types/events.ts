@@ -24,12 +24,12 @@ export type IParsedEvent = EventBlock & {
 }
 
 export type PublicEvent = Omit<
-  IParsedEvent,
-  'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
-> & {
-  title: Partial<Record<AvailableLocales, string>>;
-  subtitle: Partial<Record<AvailableLocales, string>>;
-  bonuses: Partial<Record<AvailableLocales, Array<string>>>;
+    IParsedEvent,
+    'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
+    > & {
+    title: Partial<Record<AvailableLocales, string>>;
+    subtitle: Partial<Record<AvailableLocales, string>>;
+    bonuses: Partial<Record<AvailableLocales, Array<string>>>;
 };
 
 export interface IEventSource {
@@ -56,26 +56,26 @@ export interface IPokemonGoHtmlParser {
 }
 
 export interface Domains {
-  wildDomain: Array<GameMasterPokemon>;
-  raidDomain: Array<GameMasterPokemon>;
-  eggDomain: Array<GameMasterPokemon>;
-  researchDomain: Array<GameMasterPokemon>;
-  incenseDomain: Array<GameMasterPokemon>;
-  luresDomain: Array<GameMasterPokemon>;
+    wildDomain: Array<GameMasterPokemon>;
+    raidDomain: Array<GameMasterPokemon>;
+    eggDomain: Array<GameMasterPokemon>;
+    researchDomain: Array<GameMasterPokemon>;
+    incenseDomain: Array<GameMasterPokemon>;
+    luresDomain: Array<GameMasterPokemon>;
 }
 
 export interface EventData {
-  raids: Array<IEntry>;
-  wild: Array<IEntry>;
-  eggs: Array<IEntry>;
-  researches: Array<IEntry>;
-  incenses: Array<IEntry>;
-  lures: Array<IEntry>;
+    raids: Array<IEntry>;
+    wild: Array<IEntry>;
+    eggs: Array<IEntry>;
+    researches: Array<IEntry>;
+    incenses: Array<IEntry>;
+    lures: Array<IEntry>;
 }
 
 export type EventBlock = EventData & {
-  bonuses: Array<string>;
-  bonusSectionIndex: number;
+    bonuses: Array<string>;
+    bonusSectionIndex: number;
 }
 
 export type PokemonGoPost = ExtractedPostLink & {

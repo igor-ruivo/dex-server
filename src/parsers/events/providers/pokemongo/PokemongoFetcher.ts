@@ -56,6 +56,7 @@ export class PokemonGoFetcher {
             const href = a.getAttribute('href') ?? '';
             return href.includes('/en/post/') || href.includes('/news/');
         });
+        
         filteredLinks.forEach((a: Element) => {
             let url = a.getAttribute('href') ?? '';
             if (url.startsWith('/')) url = this.baseUrl + url;

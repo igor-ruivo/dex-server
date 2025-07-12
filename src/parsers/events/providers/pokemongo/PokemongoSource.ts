@@ -25,7 +25,7 @@ const EVENT_SECTION_TYPES = {
     ],
     RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut'],
     INCENSE: ['Incense Encounters', 'Increased Incense encounters']
-} as const;
+};
 
 /**
  * Constants for block level HTML elements.

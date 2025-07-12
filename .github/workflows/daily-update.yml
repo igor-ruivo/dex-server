@@ -60,14 +60,11 @@ jobs:
           if [ $? -eq 0 ] && [ ! -z "$CHANGED_FILES" ]; then
             echo "Sending Discord notification for changes: $CHANGED_FILES"
             
-            # Create a simpler description without the full diff
-            DESCRIPTION="Files updated: $CHANGED_FILES"
+            # Get a proper git diff with line breaks and formatting
+            CHANGE_SUMMARY=$(git diff --staged --stat --no-ext-diff)
             
-            # Get a short summary of changes (just file names and line counts)
-            CHANGE_SUMMARY=$(git diff --staged --stat --no-ext-diff | head -10)
-            if [ ! -z "$CHANGE_SUMMARY" ]; then
-              DESCRIPTION="$DESCRIPTION\n\n\`\`\`\n$CHANGE_SUMMARY\n\`\`\`"
-            fi
+            # Create description with proper formatting
+            DESCRIPTION="Files updated:\n$CHANGED_FILES\n\n\`\`\`\n$CHANGE_SUMMARY\n\`\`\`"
             
             WEB_BASE1="https://dis"
             WEB_BASE2="cord.com/api/webho"
@@ -76,7 +73,7 @@ jobs:
             WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
             WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
             
-            # Create JSON payload with simpler content
+            # Create JSON payload with proper formatting
             JSON_PAYLOAD="{\"content\":\"<@&1393406141777838151>\",\"embeds\":[{\"title\":\"Novidades no Pokémon Go\",\"description\":\"$DESCRIPTION\",\"color\":16711680,\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%S.000Z)\"}]}"
             
             # Print the JSON payload for debugging

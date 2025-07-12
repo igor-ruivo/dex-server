@@ -72,9 +72,9 @@ jobs:
             WEB_BASE3="oks/1393406874296127650"
             WEB_TOK1="v-OSrwbxLyZfsKHuNMkEwhfKavenpXCiA"
             WEB_TOK2="shmTjlIS0DuqihZMFzrepoUhSZhVf3tF3D3"
-            WEB_URL="$WEB_BASE1/$WEB_BASE2/$WEB_BASE3/$WEB_TOK1/$WEB_TOK2"
+            WEB_URL="$WEB_BASE1$WEB_BASE2$WEB_BASE3/$WEB_TOK1$WEB_TOK2"
             
-            curl -X POST "$WEBHOOK_URL" \
+            curl -X POST "$WEB_URL" \
               -H "Content-Type: application/json" \
               -d "{
                 \"content\": \"<@&1393406141777838151>\",

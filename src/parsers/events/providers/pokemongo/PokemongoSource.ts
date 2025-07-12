@@ -1,5 +1,5 @@
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
-import { Domains, EventBlock, EventData, IEntry, IEventSource, IParsedEvent, IPokemonGoEventBlockParser, IPokemonGoHtmlParser, PokemonGoPost, PublicEvent } from '../../../types/events';
+import { Domains, EventBlock, IEventSource, IParsedEvent, IPokemonGoEventBlockParser, IPokemonGoHtmlParser, PokemonGoPost, PublicEvent } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import { extractPokemonSpeciesIdsFromElements,PokemonMatcher } from '../../utils/pokemon-matcher';
@@ -137,64 +137,144 @@ export class PokemonGoSource implements IEventSource {
     public async parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<PublicEvent>> {
         try {
             const posts = await this.fetcher.fetchAllPosts();
-            const originalPostPromises = posts.filter(p => p.locale === AvailableLocales.en).map((post) => {
-                try {
-                    return this.parseSinglePost(post, gameMasterPokemon);
-                } catch {
-                    return [];
-                }
-            });
-            const allOriginalEventsArrays = (await Promise.all(originalPostPromises)).flat();
-
-            const translatedPostPromises = posts.filter(p => p.locale !== AvailableLocales.en).map((post) => {
-                try {
-                    const originalEvent = allOriginalEventsArrays.find(e => this.getShorterUrlVersion(e.url) === this.getShorterUrlVersion(post.url));
-                    if (!originalEvent) {
-                        return [];
-                    }
-
-                    return this.parsePostForTranslations(post, originalEvent.bonusSectionIndex);
-                } catch {
-                    return [];
-                }
-            });
-            const translatedEventsArrays = (await Promise.all(translatedPostPromises)).flat();
-
-            return pairEventTranslations([...allOriginalEventsArrays, ...translatedEventsArrays]);
+            const originalEvents = await this.parseOriginalPosts(posts, gameMasterPokemon);
+            const translatedEvents = await this.parseTranslatedPosts(posts, originalEvents);
+            
+            return pairEventTranslations([...originalEvents, ...translatedEvents]);
         } catch {
             return [];
         }
     }
 
-    private parsePostForTranslations = (post: PokemonGoPost, bonusSectionindex: number): Array<IParsedEvent> => {
+    /**
+     * Parses original English posts to extract full event data.
+     */
+    private parseOriginalPosts = async (
+        posts: Array<PokemonGoPost>, 
+        gameMasterPokemon: Record<string, GameMasterPokemon>
+    ): Promise<Array<IParsedEvent>> => {
+        const originalPosts = posts.filter(p => p.locale === AvailableLocales.en);
+        const postPromises = originalPosts.map((post) => {
+            try {
+                return this.parseSinglePost(post, gameMasterPokemon);
+            } catch {
+                return [];
+            }
+        });
+        
+        return (await Promise.all(postPromises)).flat();
+    };
+
+    /**
+     * Parses translated posts to extract bonus information only.
+     */
+    private parseTranslatedPosts = async (
+        posts: Array<PokemonGoPost>, 
+        originalEvents: Array<IParsedEvent>
+    ): Promise<Array<IParsedEvent>> => {
+        const translatedPosts = posts.filter(p => p.locale !== AvailableLocales.en);
+        const postPromises = translatedPosts.map((post) => {
+            try {
+                const originalEvent = this.findMatchingOriginalEvent(post, originalEvents);
+                if (!originalEvent) {
+                    return [];
+                }
+
+                return this.parsePostForTranslations(post, originalEvent.bonusSectionIndex);
+            } catch {
+                return [];
+            }
+        });
+        
+        return (await Promise.all(postPromises)).flat();
+    };
+
+    /**
+     * Finds the matching original event for a translated post.
+     */
+    private findMatchingOriginalEvent = (post: PokemonGoPost, originalEvents: Array<IParsedEvent>): IParsedEvent | undefined => {
+        return originalEvents.find(e => this.getShorterUrlVersion(e.url) === this.getShorterUrlVersion(post.url));
+    };
+
+    /**
+     * Common logic for creating parser and iterating through subevents.
+     */
+    private createParserAndGetSubEvents = (post: PokemonGoPost) => {
         const parser: IPokemonGoHtmlParser = post.type === 'post'
             ? new PokemonGoPostParser(post.html)
             : new PokemonGoNewsParser(post.html);
         
+        return { parser, subEvents: parser.getSubEvents() };
+    };
+
+    private parsePostForTranslations = (post: PokemonGoPost, bonusSectionindex: number): Array<IParsedEvent> => {
+        const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
-        const subEvents = parser.getSubEvents();
 
         for (let i = 0; i < subEvents.length; i++) {
             const subEvent: IPokemonGoEventBlockParser = subEvents[i];
             const sectionElements = subEvent.getEventBlocks();
             const parsedContent = this.parseTranslatedBonusFromPost(sectionElements, bonusSectionindex);
             const event = buildEventObject(post, parser, subEvent, 0, 0, [], parsedContent, i);
-           
+            
             events.push(event);
         }
         return events;
     }
 
     /**
+     * Creates an empty EventBlock with default values.
+     */
+    private createEmptyEventBlock = (bonusSectionIndex = -1): EventBlock => {
+        return {
+            raids: [],
+            wild: [],
+            eggs: [],
+            researches: [],
+            incenses: [],
+            lures: [],
+            bonuses: [],
+            bonusSectionIndex
+        };
+    };
+
+    /**
+     * Parses bonus content from a section element.
+     */
+    private parseBonusContent = (sectionElement: Element): Array<string> => {
+        const bonusesArr: Array<string> = [];
+        const sectionBodies = Array.from(sectionElement.children) as Array<HTMLElement>;
+        
+        for (let j = 1; j < sectionBodies.length; j++) {
+            const bonusContainer = sectionBodies[j];
+            if (bonusContainer) {
+                const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
+                bonusesArr.push(...visualBonuses);
+            }
+        }
+        
+        return bonusesArr;
+    };
+
+    private parseTranslatedBonusFromPost = (sectionElements: Array<Element>, bonusSectionIndex: number): EventBlock => {
+        const eventBlock = this.createEmptyEventBlock(bonusSectionIndex);
+
+        if (bonusSectionIndex === -1 || sectionElements.length < bonusSectionIndex + 1) {
+            return eventBlock;
+        }
+
+        const sectionElement = sectionElements[bonusSectionIndex];
+        eventBlock.bonuses = this.parseBonusContent(sectionElement);
+
+        return eventBlock;
+    }
+
+    /**
      * Parses a single post and returns all subevents as IParsedEvent objects.
      */
     private parseSinglePost = (post: PokemonGoPost, gameMasterPokemon: Record<string, GameMasterPokemon>): Array<IParsedEvent> => {
-        const parser: IPokemonGoHtmlParser = post.type === 'post'
-            ? new PokemonGoPostParser(post.html)
-            : new PokemonGoNewsParser(post.html);
-
+        const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
-        const subEvents = parser.getSubEvents();
         const domains = getDomains(gameMasterPokemon);
 
         for (let i = 0; i < subEvents.length; i++) {
@@ -209,7 +289,7 @@ export class PokemonGoSource implements IEventSource {
             const sectionElements = subEvent.getEventBlocks();
             const parsedContent = this.parseInnerEvent(sectionElements, gameMasterPokemon, domains.wildDomain, domains.raidDomain, domains.eggDomain, domains.researchDomain, domains.incenseDomain, domains.luresDomain);
             const event = buildEventObject(post, parser, subEvent, startDate, endDate, dateRanges, parsedContent, i);
-           
+            
             if (this.eventIsRelevant(event)) {
                 events.push(event);
             }
@@ -241,7 +321,7 @@ export class PokemonGoSource implements IEventSource {
     private processEventSection = (
         sectionType: string,
         sectionBodies: Array<HTMLElement>,
-        eventData: EventData,
+        eventData: EventBlock,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         domains: Domains
     ): void => {
@@ -269,37 +349,6 @@ export class PokemonGoSource implements IEventSource {
         }
     };
 
-    private parseTranslatedBonusFromPost = (sectionElements: Array<Element>, bonusSectionIndex: number): EventBlock => {
-        const raids: Array<IEntry> = [];
-        const wild: Array<IEntry> = [];
-        const eggs: Array<IEntry> = [];
-        const researches: Array<IEntry> = [];
-        const incenses: Array<IEntry> = [];
-        const lures: Array<IEntry> = [];
-        const bonusesArr: Array<string> = [];
-
-        if (bonusSectionIndex === -1 || sectionElements.length < bonusSectionIndex + 1) {
-            return {
-                raids, wild, eggs, researches, incenses, lures, bonuses: bonusesArr, bonusSectionIndex
-            };
-        }
-
-        const sectionElement = sectionElements[bonusSectionIndex];
-        const sectionBodies = Array.from(sectionElement.children) as Array<HTMLElement>;
-        
-        for (let j = 1; j < sectionBodies.length; j++) {
-            const bonusContainer = sectionBodies[j];
-            if (bonusContainer) {
-                const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
-                bonusesArr.push(...visualBonuses);
-            }
-        }
-
-        return {
-            raids, wild, eggs, researches, incenses, lures, bonuses: bonusesArr, bonusSectionIndex
-        };
-    }
-
     /**
      * Parses all inner event sections and returns the aggregated EventBlock.
      */
@@ -313,38 +362,34 @@ export class PokemonGoSource implements IEventSource {
         incenseDomain: Array<GameMasterPokemon>,
         luresDomain: Array<GameMasterPokemon>
     ): EventBlock => {
-        const raids: Array<IEntry> = [];
-        const wild: Array<IEntry> = [];
-        const eggs: Array<IEntry> = [];
-        const researches: Array<IEntry> = [];
-        const incenses: Array<IEntry> = [];
-        const lures: Array<IEntry> = [];
-        const bonusesArr: Array<string> = [];
-        let bonusSectionIndex = -1;
+        const eventBlock = this.createEmptyEventBlock();
+        
         for (let i = 0; i < sectionElements.length; i++) {
             const sectionElement = sectionElements[i];
             const sectionTitle = sectionElement.children[0];
             const sectionType = (sectionTitle.textContent?.trim() ?? "");
             const sectionBodies = Array.from(sectionElement.children) as Array<HTMLElement>;
+            
             if (!sectionType) {
                 continue;
             }
+            
             if (this.isBonusSection(sectionType)) {
-                bonusSectionIndex = i;
-                for (let j = 1; j < sectionBodies.length; j++) {
-                    const bonusContainer = sectionBodies[j];
-                    if (bonusContainer) {
-                        const visualBonuses = this.extractBonusesVisualLines(bonusContainer);
-                        bonusesArr.push(...visualBonuses);
-                    }
-                }
+                eventBlock.bonusSectionIndex = i;
+                eventBlock.bonuses = this.parseBonusContent(sectionElement);
                 continue;
             }
-            this.processEventSection(sectionType, sectionBodies, { raids, wild, eggs, researches, incenses, lures }, gameMasterPokemon, { wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain, luresDomain });
+            
+            this.processEventSection(
+                sectionType, 
+                sectionBodies, 
+                eventBlock, 
+                gameMasterPokemon, 
+                { wildDomain, raidDomain, eggDomain, researchDomain, incenseDomain, luresDomain }
+            );
         }
-        return {
-            raids, wild, eggs, researches, incenses, lures, bonuses: bonusesArr, bonusSectionIndex
-        };
+        
+        return eventBlock;
     };
 
     /**

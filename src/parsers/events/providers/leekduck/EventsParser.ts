@@ -17,7 +17,7 @@ export interface ILeekduckSpotlightHour {
     pokemons: Array<IEntry>;
     bonus?: Partial<Record<AvailableLocales, string>>;
     imgUrl?: string;
-    rawUrl?: string;
+    rawUrl: string;
 }
 
 export interface ILeekduckSpecialRaidBoss {
@@ -26,7 +26,7 @@ export interface ILeekduckSpecialRaidBoss {
     dateEnd: number;
     raids: Array<IEntry>;
     imgUrl?: string;
-    rawUrl?: string;
+    rawUrl: string;
 }
 
 export interface ILeekduckEventsResult {
@@ -92,8 +92,21 @@ export class EventsParser {
         await Promise.all(eventPromises);
 
         return {
-            spotlightHours: spotlightHours.sort((s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => s1.date - s2.date),
-            specialRaidBosses: specialRaidBosses.sort((s1: ILeekduckSpecialRaidBoss, s2: ILeekduckSpecialRaidBoss) => s1.date - s2.date)
+            spotlightHours: spotlightHours.sort((s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => {
+                if (s1.date !== s2.date) {
+                    return s1.date - s2.date;
+                } else {
+                    return s1.rawUrl.localeCompare(s2.rawUrl);
+                }
+            }),
+
+            specialRaidBosses: specialRaidBosses.sort((s1: ILeekduckSpecialRaidBoss, s2: ILeekduckSpecialRaidBoss) => {
+                if (s1.date !== s2.date) {
+                    return s1.date - s2.date;
+                } else {
+                    return s1.rawUrl.localeCompare(s2.rawUrl);
+                }
+            })
         };
     }
 

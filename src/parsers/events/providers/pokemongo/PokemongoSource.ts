@@ -2,7 +2,6 @@ import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
 
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 import {
-    Domains,
     EventBlock,
     IEventSource,
     IParsedEvent,
@@ -81,21 +80,6 @@ const BLOCK_LEVEL_ELEMENTS: Array<string> = [
 ];
 
 /**
- * Returns all relevant domains (wild, raid, egg, research, incense) from the Game Master data.
- */
-const getDomains = (gameMasterPokemon: Record<string, GameMasterPokemon>) => {
-    const domain = Object.values(gameMasterPokemon).filter((p) => !p.isShadow && !p.isMega && !p.aliasId);
-    return {
-        wildDomain: domain,
-        raidDomain: domain,
-        eggDomain: domain,
-        researchDomain: domain,
-        incenseDomain: domain,
-        luresDomain: domain,
-    };
-};
-
-/**
  * Builds a unique event ID from the post URL and subevent index.
  */
 const buildEventId = (post: PokemonGoPost, index: number): string => {
@@ -165,7 +149,8 @@ export class PokemonGoSource implements IEventSource {
 
     constructor(
         readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly domain: Array<GameMasterPokemon>
     ) {
         this.fetcher = new PokemonGoFetcher(dataFetcher);
     }
@@ -327,7 +312,6 @@ export class PokemonGoSource implements IEventSource {
     ): Array<IParsedEvent> {
         const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
-        const domains = getDomains(gameMasterPokemon);
 
         for (let i = 0; i < subEvents.length; i++) {
             const subEvent: IPokemonGoEventBlockParser = subEvents[i];
@@ -339,16 +323,7 @@ export class PokemonGoSource implements IEventSource {
             const startDate = Math.min(...dateRanges.map((r) => r.start));
             const endDate = Math.max(...dateRanges.map((r) => r.end));
             const sectionElements = subEvent.getEventBlocks();
-            const parsedContent = this.parseInnerEvent(
-                sectionElements,
-                gameMasterPokemon,
-                domains.wildDomain,
-                domains.raidDomain,
-                domains.eggDomain,
-                domains.researchDomain,
-                domains.incenseDomain,
-                domains.luresDomain
-            );
+            const parsedContent = this.parseInnerEvent(sectionElements, gameMasterPokemon, this.domain);
             const event = buildEventObject(post, parser, subEvent, startDate, endDate, dateRanges, parsedContent, i);
 
             if (this.eventIsRelevant(event)) {
@@ -387,58 +362,40 @@ export class PokemonGoSource implements IEventSource {
         sectionBodies: Array<HTMLElement>,
         eventData: EventBlock,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
-        domains: Domains
+        domain: Array<GameMasterPokemon>
     ): void {
         if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
             eventData.wild.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.wildDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
             return;
         }
         if (EVENT_SECTION_TYPES.EGGS.some((x) => x === sectionType)) {
             eventData.eggs.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.eggDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
             return;
         }
         if (EVENT_SECTION_TYPES.RESEARCH.some((x) => x === sectionType)) {
             eventData.researches.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.researchDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
             return;
         }
         if (EVENT_SECTION_TYPES.RAIDS.some((x) => x === sectionType)) {
             eventData.raids.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.raidDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
             return;
         }
         if (EVENT_SECTION_TYPES.INCENSE.some((x) => x === sectionType)) {
             eventData.incenses.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.incenseDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
         }
         if (EVENT_SECTION_TYPES.LURES.some((x) => x === sectionType)) {
             eventData.lures.push(
-                ...extractPokemonSpeciesIdsFromElements(
-                    sectionBodies,
-                    new PokemonMatcher(gameMasterPokemon, domains.luresDomain)
-                )
+                ...extractPokemonSpeciesIdsFromElements(sectionBodies, new PokemonMatcher(gameMasterPokemon, domain))
             );
         }
     }
@@ -449,12 +406,7 @@ export class PokemonGoSource implements IEventSource {
     private parseInnerEvent(
         sectionElements: Array<Element>,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
-        wildDomain: Array<GameMasterPokemon>,
-        raidDomain: Array<GameMasterPokemon>,
-        eggDomain: Array<GameMasterPokemon>,
-        researchDomain: Array<GameMasterPokemon>,
-        incenseDomain: Array<GameMasterPokemon>,
-        luresDomain: Array<GameMasterPokemon>
+        domain: Array<GameMasterPokemon>
     ): EventBlock {
         const eventBlock = this.createEmptyEventBlock();
 
@@ -474,14 +426,7 @@ export class PokemonGoSource implements IEventSource {
                 continue;
             }
 
-            this.processEventSection(sectionType, sectionBodies, eventBlock, gameMasterPokemon, {
-                wildDomain,
-                raidDomain,
-                eggDomain,
-                researchDomain,
-                incenseDomain,
-                luresDomain,
-            });
+            this.processEventSection(sectionType, sectionBodies, eventBlock, gameMasterPokemon, domain);
         }
 
         return eventBlock;

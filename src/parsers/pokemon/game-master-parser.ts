@@ -6,6 +6,31 @@ import { ImageUrlBuilder } from './utils/image-url-builder';
 import { PokemonTransformer } from './utils/pokemon-transformer';
 import { PokemonValidator } from './utils/pokemon-validator';
 
+export interface IPokemonDomains {
+    normalDomain: Array<GameMasterPokemon>;
+    nonShadowDomain: Array<GameMasterPokemon>;
+    nonMegaDomain: Array<GameMasterPokemon>;
+    nonMegaNonShadowDomain: Array<GameMasterPokemon>;
+}
+
+/**
+ * Returns all relevant domains from the Game Master data.
+ */
+export const getDomains = (gameMasterPokemon: Record<string, GameMasterPokemon>): IPokemonDomains => {
+    const nonShadowDomain = Object.values(gameMasterPokemon).filter((p) => !p.isShadow && !p.aliasId);
+    const nonMegaDomain = Object.values(gameMasterPokemon).filter((p) => !p.isMega && !p.aliasId);
+
+    const nonMegaNonShadowDomain = nonShadowDomain.filter((p) => !p.isMega);
+    const normalDomain = nonMegaNonShadowDomain.filter((p) => !(p.isBeast || p.isLegendary || p.isMythical));
+
+    return {
+        normalDomain,
+        nonMegaDomain,
+        nonShadowDomain,
+        nonMegaNonShadowDomain,
+    };
+};
+
 export class GameMasterParser {
     constructor(
         private readonly dataFetcher: IDataFetcher,

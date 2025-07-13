@@ -11,7 +11,7 @@ import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/Roc
 import { MovesProvider } from './src/parsers/events/providers/pokeminers/MovesProvider';
 import { PokemonGoSource } from './src/parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from './src/parsers/events/providers/pokemongo/SeasonParser';
-import { GameMasterParser } from './src/parsers/pokemon/game-master-parser';
+import { GameMasterParser, getDomains } from './src/parsers/pokemon/game-master-parser';
 import GameMasterTranslator from './src/parsers/services/gamemaster-translator';
 import { IEntry } from './src/parsers/types/events';
 
@@ -34,30 +34,37 @@ const generateData = async () => {
         const gameMasterParser = new GameMasterParser(dataFetcher, moves);
         const pokemonDictionary = await gameMasterParser.parse();
 
+        // Initialize domains
+        const domains = getDomains(pokemonDictionary);
+
         // Step 4: Parse PvP Data
         const pvpParser = new PvPParser(dataFetcher, pokemonDictionary, moves);
         const pvpData = await pvpParser.parse();
 
         // Step 5: Generate events
-        const source = new PokemonGoSource(dataFetcher, pokemonDictionary);
+        const source = new PokemonGoSource(dataFetcher, pokemonDictionary, domains.normalDomain);
         const events = await source.parseEvents();
 
         // Step 6: Generate season data
-        const seasonParser = new SeasonParser(dataFetcher);
-        const seasonDomain = Object.values(pokemonDictionary).filter((p) => !p.isShadow && !p.isMega && !p.aliasId);
-        const seasonData = await seasonParser.fetchSeasonData(pokemonDictionary, seasonDomain);
+        const seasonParser = new SeasonParser(dataFetcher, domains.normalDomain);
+        const seasonData = await seasonParser.fetchSeasonData(pokemonDictionary);
 
         // Step 7: LeekDuck integration
-        const leekduckEventsParser = new EventsParser(dataFetcher, pokemonDictionary);
+        const leekduckEventsParser = new EventsParser(dataFetcher, pokemonDictionary, domains);
         const leekduckEvents = await leekduckEventsParser.parse();
 
-        const leekduckBossesParser = new BossesParser(dataFetcher, pokemonDictionary);
+        const leekduckBossesParser = new BossesParser(dataFetcher, pokemonDictionary, domains);
         const leekduckBossEntries: Array<IEntry> = await leekduckBossesParser.parse();
 
-        const leekduckEggsParser = new EggsParser(dataFetcher, pokemonDictionary);
+        const leekduckEggsParser = new EggsParser(dataFetcher, pokemonDictionary, domains.normalDomain);
         const leekduckEggEntries = await leekduckEggsParser.parse();
 
-        const leekduckRocketLineupsParser = new RocketLineupsParser(dataFetcher, pokemonDictionary, translatorService);
+        const leekduckRocketLineupsParser = new RocketLineupsParser(
+            dataFetcher,
+            pokemonDictionary,
+            translatorService,
+            domains.nonMegaNonShadowDomain // The domain isn't as restrictive as it could, because the current PokemonMatcher requires all the entries.
+        );
         const leekduckRocketLineups = await leekduckRocketLineupsParser.parse();
 
         // Write outputs

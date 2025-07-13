@@ -1,3 +1,4 @@
+import { IPokemonDomains } from '@src/parsers/pokemon/game-master-parser';
 import { JSDOM } from 'jsdom';
 
 import { HttpDataFetcher } from '../../../services/data-fetcher';
@@ -10,7 +11,8 @@ const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 export class BossesParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly domains: IPokemonDomains
     ) {}
     async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_BOSS_URL);
@@ -24,15 +26,10 @@ export class BossesParser {
 
         let tier = '';
 
-        const shadowDomain = Object.values(this.gameMasterPokemon).filter((v) => !v.aliasId && !v.isMega);
-        const megaDomain = Object.values(this.gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow);
-        const normalDomain = Object.values(this.gameMasterPokemon).filter(
-            (v) => !v.aliasId && !v.isShadow && !v.isMega
-        );
+        const normalMatcher = new PokemonMatcher(this.gameMasterPokemon, this.domains.normalDomain);
 
-        const normalMatcher = new PokemonMatcher(this.gameMasterPokemon, normalDomain);
-        const megaMatcher = new PokemonMatcher(this.gameMasterPokemon, megaDomain);
-        const shadowMatcher = new PokemonMatcher(this.gameMasterPokemon, shadowDomain);
+        // The domain isn't as restrictive as it could, because the current PokemonMatcher requires all the entries.
+        const shadowMatcher = new PokemonMatcher(this.gameMasterPokemon, this.domains.nonMegaNonShadowDomain);
 
         for (const entry of entries) {
             if (Array.from(entry.classList).includes('header-li')) {
@@ -47,17 +44,18 @@ export class BossesParser {
                 continue;
             }
 
+            if (tier === 'mega' || tier === '5') {
+                continue;
+            }
+
             if (!Array.from(entry.classList).includes('boss-item')) {
                 continue;
             }
 
             const bossName = (entry.getElementsByClassName('boss-name')[0] as HTMLElement).textContent?.trim() ?? '';
-            const parsedPkm =
-                tier === 'mega'
-                    ? megaMatcher.matchPokemonFromText([bossName])
-                    : normalMatcher.matchPokemonFromText([bossName]);
+            const parsedPkm = normalMatcher.matchPokemonFromText([bossName]);
 
-            if (parsedPkm[0] && tier !== '5' && tier !== 'mega') {
+            if (parsedPkm[0]) {
                 pokemons.push({
                     shiny: parsedPkm[0].shiny,
                     speciesId: parsedPkm[0].speciesId,
@@ -84,6 +82,10 @@ export class BossesParser {
                 continue;
             }
 
+            if (tier === 'mega' || tier === '5') {
+                continue;
+            }
+
             if (!Array.from(entry.classList).includes('boss-item')) {
                 continue;
             }
@@ -92,7 +94,7 @@ export class BossesParser {
                 'Shadow ' + ((entry.getElementsByClassName('boss-name')[0] as HTMLElement).textContent?.trim() ?? '');
             const parsedPkm = shadowMatcher.matchPokemonFromText([bossName]);
 
-            if (parsedPkm[0] && tier !== '5' && tier !== 'mega') {
+            if (parsedPkm[0]) {
                 pokemons.push({
                     shiny: parsedPkm[0].shiny,
                     speciesId: parsedPkm[0].speciesId,

@@ -11,7 +11,8 @@ const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 export class EggsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly domain: Array<GameMasterPokemon>
     ) {}
     async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_EGGS_URL);
@@ -20,9 +21,6 @@ export class EggsParser {
         const entries = Array.from(doc.querySelector('.page-content')?.children ?? []);
         const pokemons: Array<IEntry> = [];
         let km = '';
-        const normalDomain = Object.values(this.gameMasterPokemon).filter(
-            (v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega
-        );
 
         let currentRawComment = '';
         const comment: Partial<Record<AvailableLocales, string>> = {};
@@ -45,7 +43,7 @@ export class EggsParser {
                 const pkmList = Array.from(entry.children).map(
                     (c) => (c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement).textContent?.trim() ?? ''
                 );
-                const matcher = new PokemonMatcher(this.gameMasterPokemon, normalDomain);
+                const matcher = new PokemonMatcher(this.gameMasterPokemon, this.domain);
                 const parsedPkm = matcher.matchPokemonFromText(pkmList).map((r) => {
                     return { ...r, kind: km, comment: { ...comment } };
                 });

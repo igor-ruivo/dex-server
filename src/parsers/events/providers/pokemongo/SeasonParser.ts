@@ -11,9 +11,12 @@ import { extractPokemonSpeciesIdsFromElements, PokemonMatcher } from '../../util
 const getText = (doc: Document, selector: string) => doc.querySelector(selector)?.textContent?.trim() ?? '';
 
 class SeasonParser {
-    constructor(private readonly dataFetcher: HttpDataFetcher) {}
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly domain: Array<GameMasterPokemon>
+    ) {}
 
-    async fetchSeasonData(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: Array<GameMasterPokemon>) {
+    async fetchSeasonData(gameMasterPokemon: Record<string, GameMasterPokemon>) {
         const seasonUrlBuilder = (locale: AvailableLocales) => `https://pokemongo.com/${locale}/seasons`;
         const seasonsHtmls = await Promise.all(
             Object.values(AvailableLocales).map(async (locale) => ({
@@ -87,7 +90,7 @@ class SeasonParser {
                 if (group) {
                     const entries = extractPokemonSpeciesIdsFromElements(
                         Array.from(group.querySelectorAll('[role=listitem]')),
-                        new PokemonMatcher(gameMasterPokemon, domain)
+                        new PokemonMatcher(gameMasterPokemon, this.domain)
                     ).map((f) => ({ ...f, kind: String(i) }));
                     wild.push(...entries);
                 }
@@ -100,7 +103,7 @@ class SeasonParser {
                 researches.push(
                     ...extractPokemonSpeciesIdsFromElements(
                         Array.from(researchList.querySelectorAll('[role=listitem]')),
-                        new PokemonMatcher(gameMasterPokemon, domain)
+                        new PokemonMatcher(gameMasterPokemon, this.domain)
                     )
                 );
             }
@@ -142,7 +145,7 @@ class SeasonParser {
                     const comment = i >= 4 ? { [AvailableLocales.en]: comments[i - 4] || '' } : undefined;
                     const entries = extractPokemonSpeciesIdsFromElements(
                         Array.from(group.querySelectorAll('[role=listitem]')),
-                        new PokemonMatcher(gameMasterPokemon, domain)
+                        new PokemonMatcher(gameMasterPokemon, this.domain)
                     ).map((f) => ({ ...f, kind: eggKindMap[i], comment }));
                     eggs.push(...entries);
                 }

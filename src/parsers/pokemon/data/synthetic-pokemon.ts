@@ -18,4 +18,21 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
         },
         tags: ['shadow'],
     },
+    {
+        dex: 115,
+        speciesId: 'kangaskhan_shadow',
+        speciesName: 'Kangaskhan (Shadow)',
+        baseStats: {
+            atk: 181,
+            def: 165,
+            hp: 233,
+        },
+        types: ['normal', 'none'],
+        fastMoves: ['LOW_KICK', 'MUD_SLAP'],
+        chargedMoves: ['BRICK_BREAK', 'CRUNCH', 'EARTHQUAKE', 'OUTRAGE', 'STOMP', 'POWER_UP_PUNCH'],
+        eliteMoves: ['BRICK_BREAK', 'STOMP'],
+        legacyMoves: [],
+        released: true,
+        tags: ['shadow'],
+    },
 ];

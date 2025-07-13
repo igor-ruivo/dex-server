@@ -1,3 +1,4 @@
+import { IPokemonDomains } from '@src/parsers/pokemon/game-master-parser';
 import { JSDOM } from 'jsdom';
 
 import { HttpDataFetcher } from '../../../services/data-fetcher';
@@ -44,7 +45,8 @@ type ParsedEventCommon = {
 export class EventsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly domains: IPokemonDomains
     ) {}
     async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_EVENTS_URL);
@@ -169,7 +171,7 @@ export class EventsParser {
         const rawPkmName = parts[0];
         const raidType = parts[1] ?? '';
         const isShadow = raidType.includes('Shadow') || rawPkmName.includes('Shadow');
-        const isMega = raidType.includes('Mega') || raidType.includes('Elite');
+        const isMega = raidType.includes('Mega') || rawPkmName.includes('Mega');
         const pokemons = this.matchPokemonEntries(rawPkmName, gameMasterPokemon, isShadow, isMega);
         if (pokemons.length === 0) {
             return undefined;
@@ -190,19 +192,14 @@ export class EventsParser {
         isShadow: boolean,
         isMega: boolean
     ): Array<IEntry> {
+        // The following domains aren't as restrictive as they could, because the current PokemonMatcher requires all the entries.
         let domainToUse: Array<GameMasterPokemon> = [];
         if (isShadow) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
-                return !p.isMega && !p.aliasId;
-            });
+            domainToUse = this.domains.nonMegaDomain;
         } else if (isMega) {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
-                return !p.isShadow && !p.aliasId;
-            });
+            domainToUse = this.domains.nonShadowDomain;
         } else {
-            domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
-                return !p.isShadow && !p.isMega && !p.aliasId;
-            });
+            domainToUse = this.domains.nonMegaNonShadowDomain;
         }
 
         const names = rawPkmName.replaceAll(', ', ',').replaceAll(' and ', ',').split(',');

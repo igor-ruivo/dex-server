@@ -52,15 +52,6 @@ export interface IPokemonGoHtmlParser {
     getSubEvents: () => Array<IPokemonGoEventBlockParser>;
 }
 
-export interface Domains {
-    wildDomain: Array<GameMasterPokemon>;
-    raidDomain: Array<GameMasterPokemon>;
-    eggDomain: Array<GameMasterPokemon>;
-    researchDomain: Array<GameMasterPokemon>;
-    incenseDomain: Array<GameMasterPokemon>;
-    luresDomain: Array<GameMasterPokemon>;
-}
-
 export interface EventData {
     raids: Array<IEntry>;
     wild: Array<IEntry>;

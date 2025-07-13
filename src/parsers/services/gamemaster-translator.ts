@@ -155,11 +155,9 @@ export const pairEventTranslations = (events: Array<IParsedEvent>): Array<Public
 };
 
 class GameMasterTranslator {
-    private readonly fetcher: HttpDataFetcher;
     private parsedSources: ParsedSources;
 
-    constructor() {
-        this.fetcher = new HttpDataFetcher();
+    constructor(private readonly dataFetcher: HttpDataFetcher) {
         this.parsedSources = {};
     }
 
@@ -224,7 +222,7 @@ class GameMasterTranslator {
             ]
         > = await Promise.all(
             Object.entries(LOCALE_GAME_MASTER_FILES).map(async ([locale, url]) => {
-                const translationData = await this.fetcher.fetchJson<{ data: Array<string> }>(url);
+                const translationData = await this.dataFetcher.fetchJson<{ data: Array<string> }>(url);
                 const translatedPhrasesDictionary: Record<string, string> = {};
                 const translatedMovesDictionary: Record<string, string> = {};
 

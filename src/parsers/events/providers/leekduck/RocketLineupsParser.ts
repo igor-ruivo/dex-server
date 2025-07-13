@@ -9,17 +9,18 @@ import { PokemonMatcher } from '../../utils/pokemon-matcher';
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 
 export class RocketLineupsParser {
-    async parse(
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
-        translator: GameMasterTranslator
-    ): Promise<Array<IRocketGrunt>> {
-        const fetcher = new HttpDataFetcher();
-        const html = await fetcher.fetchText(LEEKDUCK_ROCKET_URL);
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly translator: GameMasterTranslator
+    ) {}
+    parse = async () => {
+        const html = await this.dataFetcher.fetchText(LEEKDUCK_ROCKET_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
         const entries = Array.from(doc.getElementsByClassName('rocket-profile'));
         const answer: Array<IRocketGrunt> = [];
-        const shadowDomain = Object.values(gameMasterPokemon).filter(
+        const shadowDomain = Object.values(this.gameMasterPokemon).filter(
             (v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega
         );
         for (const entry of entries) {
@@ -38,7 +39,7 @@ export class RocketLineupsParser {
             const tier3 = Array.from(
                 entry.getElementsByClassName('lineup-info')[0].children[2].getElementsByClassName('shadow-pokemon')
             ).map((p) => (p as HTMLElement)?.getAttribute('data-pokemon')?.trim() ?? '');
-            const matcher = new PokemonMatcher(gameMasterPokemon, shadowDomain);
+            const matcher = new PokemonMatcher(this.gameMasterPokemon, shadowDomain);
             const tier1Pkms = matcher.matchPokemonFromText(tier1).map((e) => e.speciesId);
             const tier2Pkms = matcher.matchPokemonFromText(tier2).map((e) => e.speciesId);
             const tier3Pkms = matcher.matchPokemonFromText(tier3).map((e) => e.speciesId);
@@ -49,7 +50,7 @@ export class RocketLineupsParser {
             const translatedPhrases: Partial<Record<AvailableLocales, string>> = {};
             Object.values(AvailableLocales).forEach(
                 (locale) =>
-                    (translatedPhrases[locale] = translator.getTranslationForRocketPhrase(locale, trainerId, type))
+                    (translatedPhrases[locale] = this.translator.getTranslationForRocketPhrase(locale, trainerId, type))
             );
 
             answer.push({
@@ -63,5 +64,5 @@ export class RocketLineupsParser {
             });
         }
         return answer;
-    }
+    };
 }

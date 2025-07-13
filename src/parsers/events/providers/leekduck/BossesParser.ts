@@ -8,9 +8,12 @@ import { PokemonMatcher } from '../../utils/pokemon-matcher';
 const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 
 export class BossesParser {
-    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<IEntry>> {
-        const fetcher = new HttpDataFetcher();
-        const html = await fetcher.fetchText(LEEKDUCK_BOSS_URL);
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+    ) {}
+    parse = async () => {
+        const html = await this.dataFetcher.fetchText(LEEKDUCK_BOSS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
@@ -21,13 +24,15 @@ export class BossesParser {
 
         let tier = '';
 
-        const shadowDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isMega);
-        const megaDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow);
-        const normalDomain = Object.values(gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow && !v.isMega);
+        const shadowDomain = Object.values(this.gameMasterPokemon).filter((v) => !v.aliasId && !v.isMega);
+        const megaDomain = Object.values(this.gameMasterPokemon).filter((v) => !v.aliasId && !v.isShadow);
+        const normalDomain = Object.values(this.gameMasterPokemon).filter(
+            (v) => !v.aliasId && !v.isShadow && !v.isMega
+        );
 
-        const normalMatcher = new PokemonMatcher(gameMasterPokemon, normalDomain);
-        const megaMatcher = new PokemonMatcher(gameMasterPokemon, megaDomain);
-        const shadowMatcher = new PokemonMatcher(gameMasterPokemon, shadowDomain);
+        const normalMatcher = new PokemonMatcher(this.gameMasterPokemon, normalDomain);
+        const megaMatcher = new PokemonMatcher(this.gameMasterPokemon, megaDomain);
+        const shadowMatcher = new PokemonMatcher(this.gameMasterPokemon, shadowDomain);
 
         for (const entry of entries) {
             if (Array.from(entry.classList).includes('header-li')) {
@@ -98,5 +103,5 @@ export class BossesParser {
         }
 
         return pokemons;
-    }
+    };
 }

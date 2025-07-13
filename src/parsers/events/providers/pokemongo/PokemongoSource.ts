@@ -1,3 +1,5 @@
+import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
+
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 import {
     Domains,
@@ -7,7 +9,6 @@ import {
     IPokemonGoEventBlockParser,
     IPokemonGoHtmlParser,
     PokemonGoPost,
-    PublicEvent,
 } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
@@ -162,8 +163,11 @@ export class PokemonGoSource implements IEventSource {
     public name = 'pokemongo';
     private fetcher: PokemonGoFetcher;
 
-    constructor() {
-        this.fetcher = new PokemonGoFetcher();
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+    ) {
+        this.fetcher = new PokemonGoFetcher(dataFetcher);
     }
 
     private getShorterUrlVersion = (url: string) => {
@@ -177,17 +181,17 @@ export class PokemonGoSource implements IEventSource {
     /**
      * Parses all events from the provider using the given Game Master data.
      */
-    public async parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<PublicEvent>> {
+    parseEvents = async () => {
         try {
             const posts = await this.fetcher.fetchAllPosts();
-            const originalEvents = await this.parseOriginalPosts(posts, gameMasterPokemon);
+            const originalEvents = await this.parseOriginalPosts(posts, this.gameMasterPokemon);
             const translatedEvents = await this.parseTranslatedPosts(posts, originalEvents);
 
             return pairEventTranslations([...originalEvents, ...translatedEvents]);
         } catch {
             return [];
         }
-    }
+    };
 
     /**
      * Parses original English posts to extract full event data.

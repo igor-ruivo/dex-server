@@ -10,13 +10,15 @@ function normalizedMoveName(moveName: string) {
 }
 
 export class MovesProvider {
-    constructor(private translatorService: GameMasterTranslator) {}
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private translatorService: GameMasterTranslator
+    ) {}
     private readonly GAME_MASTER_URL =
         'https://raw.githubusercontent.com/PokeMiners/game_masters/master/latest/latest.json';
-    private readonly fetcher = new HttpDataFetcher();
 
-    async fetchMoves(): Promise<Record<string, IGameMasterMove>> {
-        const gmData = await this.fetcher.fetchJson<Array<GameMasterMovesType>>(this.GAME_MASTER_URL);
+    fetchMoves = async (): Promise<Record<string, IGameMasterMove>> => {
+        const gmData = await this.dataFetcher.fetchJson<Array<GameMasterMovesType>>(this.GAME_MASTER_URL);
 
         const pvpMoves: Record<string, PvPMove> = {};
         const pveMoves: Record<string, PvEMove> = {};
@@ -184,5 +186,5 @@ export class MovesProvider {
             };
         }
         return movesDictionary;
-    }
+    };
 }

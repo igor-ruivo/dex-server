@@ -24,7 +24,7 @@ export class PokemonMatcher {
     /**
      * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.
      */
-    public matchPokemonFromText = (texts: Array<string>): Array<IEntry> => {
+    matchPokemonFromText = (texts: Array<string>): Array<IEntry> => {
         const wildEncounters: Array<IEntry> = [];
         const seen = new Set<string>();
         const pkmWithNoClothes = texts.map((pp) => {

@@ -9,15 +9,18 @@ import { PokemonMatcher } from '../../utils/pokemon-matcher';
 const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 
 export class EggsParser {
-    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<IEntry>> {
-        const fetcher = new HttpDataFetcher();
-        const html = await fetcher.fetchText(LEEKDUCK_EGGS_URL);
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+    ) {}
+    parse = async () => {
+        const html = await this.dataFetcher.fetchText(LEEKDUCK_EGGS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
         const entries = Array.from(doc.querySelector('.page-content')?.children ?? []);
         const pokemons: Array<IEntry> = [];
         let km = '';
-        const normalDomain = Object.values(gameMasterPokemon).filter(
+        const normalDomain = Object.values(this.gameMasterPokemon).filter(
             (v: GameMasterPokemon) => !v.aliasId && !v.isShadow && !v.isMega
         );
 
@@ -42,7 +45,7 @@ export class EggsParser {
                 const pkmList = Array.from(entry.children).map(
                     (c) => (c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement).textContent?.trim() ?? ''
                 );
-                const matcher = new PokemonMatcher(gameMasterPokemon, normalDomain);
+                const matcher = new PokemonMatcher(this.gameMasterPokemon, normalDomain);
                 const parsedPkm = matcher.matchPokemonFromText(pkmList).map((r) => {
                     return { ...r, kind: km, comment: { ...comment } };
                 });
@@ -50,5 +53,5 @@ export class EggsParser {
             }
         }
         return pokemons;
-    }
+    };
 }

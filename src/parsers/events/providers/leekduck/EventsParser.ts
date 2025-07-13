@@ -42,9 +42,12 @@ type ParsedEventCommon = {
 };
 
 export class EventsParser {
-    async parse(gameMasterPokemon: Record<string, GameMasterPokemon>) {
-        const fetcher = new HttpDataFetcher();
-        const html = await fetcher.fetchText(LEEKDUCK_EVENTS_URL);
+    constructor(
+        private readonly dataFetcher: HttpDataFetcher,
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
+    ) {}
+    parse = async () => {
+        const html = await this.dataFetcher.fetchText(LEEKDUCK_EVENTS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
@@ -70,18 +73,18 @@ export class EventsParser {
 
         const eventPromises = urls.map(async (url) => {
             try {
-                const eventHtml = await fetcher.fetchText(url);
+                const eventHtml = await this.dataFetcher.fetchText(url);
                 const parsed = this.parseCommonEventFields(eventHtml);
                 if (!parsed) {
                     return;
                 }
                 if (parsed.title.includes('Spotlight')) {
-                    const spotlightHour = this.parseSpotlightHourEvent(parsed, gameMasterPokemon, url);
+                    const spotlightHour = this.parseSpotlightHourEvent(parsed, this.gameMasterPokemon, url);
                     if (spotlightHour) {
                         spotlightHours.push(spotlightHour);
                     }
                 } else {
-                    const specialRaidBoss = this.parseSpecialRaidBossEvent(parsed, gameMasterPokemon, url);
+                    const specialRaidBoss = this.parseSpecialRaidBossEvent(parsed, this.gameMasterPokemon, url);
                     if (specialRaidBoss) {
                         specialRaidBosses.push(specialRaidBoss);
                     }
@@ -110,7 +113,7 @@ export class EventsParser {
                 }
             }),
         };
-    }
+    };
 
     private parseCommonEventFields = (eventHtml: string): ParsedEventCommon | undefined => {
         const dom = new JSDOM(eventHtml);

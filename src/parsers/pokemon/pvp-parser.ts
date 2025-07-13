@@ -11,7 +11,7 @@ export class PvPParser {
         private readonly moves: Record<string, IGameMasterMove>
     ) {}
 
-    async parse(): Promise<Record<LeagueKey, Record<string, PvPEntry>>> {
+    parse = async (): Promise<Record<LeagueKey, Record<string, PvPEntry>>> => {
         try {
             const leagueEntries = await Promise.all(
                 (Object.keys(Leagues) as Array<LeagueKey>).map(async (leagueKey) => {
@@ -35,7 +35,7 @@ export class PvPParser {
             console.error('❌ Failed to parse Game Master data:', error);
             throw error;
         }
-    }
+    };
 
     private parseLeague = (pvpEntries: Array<BasePvPEntry>): Record<string, PvPEntry> => {
         const rankedPokemonDictionary: Record<string, PvPEntry> = {};

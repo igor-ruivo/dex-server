@@ -1,4 +1,4 @@
-import { HttpDataFetcher, IDataFetcher } from '../services/data-fetcher';
+import { IDataFetcher } from '../services/data-fetcher';
 import { BasePokemon, GameMasterData, GameMasterPokemon, IGameMasterMove } from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
@@ -7,13 +7,12 @@ import { PokemonTransformer } from './utils/pokemon-transformer';
 import { PokemonValidator } from './utils/pokemon-validator';
 
 export class GameMasterParser {
-    private readonly dataFetcher: IDataFetcher;
+    constructor(
+        private readonly dataFetcher: IDataFetcher,
+        private readonly moves: Record<string, IGameMasterMove>
+    ) {}
 
-    constructor(dataFetcher: IDataFetcher = new HttpDataFetcher()) {
-        this.dataFetcher = dataFetcher;
-    }
-
-    async parse(moves: Record<string, IGameMasterMove>): Promise<GameMasterData> {
+    parse = async (): Promise<GameMasterData> => {
         console.log('🔄 Fetching Pokemon Game Master data...');
 
         try {
@@ -23,7 +22,7 @@ export class GameMasterParser {
             // Combine source data with synthetic Pokemon
             const allPokemon = [...rawData, ...SYNTHETIC_POKEMON];
 
-            const pokemonDictionary = this.transformData(allPokemon, moves);
+            const pokemonDictionary = this.transformData(allPokemon, this.moves);
             console.log(`✅ Successfully parsed ${Object.keys(pokemonDictionary).length} Pokemon`);
 
             return pokemonDictionary;
@@ -31,9 +30,12 @@ export class GameMasterParser {
             console.error('❌ Failed to parse Game Master data:', error);
             throw error;
         }
-    }
+    };
 
-    private transformData(rawData: Array<BasePokemon>, knownMoves: Record<string, IGameMasterMove>): GameMasterData {
+    private transformData = (
+        rawData: Array<BasePokemon>,
+        knownMoves: Record<string, IGameMasterMove>
+    ): GameMasterData => {
         const seenSpecies = new Set<string>();
         const pokemonDictionary: GameMasterData = {};
 
@@ -56,7 +58,7 @@ export class GameMasterParser {
         this.applyManualCorrections(pokemonDictionary);
 
         return pokemonDictionary;
-    }
+    };
 
     private checkPokemonMoves = (pokemon: GameMasterPokemon, knownMoves: Record<string, IGameMasterMove>) => {
         const allPokemonMoves = new Set([
@@ -127,7 +129,7 @@ export class GameMasterParser {
         }
     };
 
-    private applyManualCorrections(pokemonDictionary: GameMasterData): void {
+    private applyManualCorrections = (pokemonDictionary: GameMasterData): void => {
         // Apply any manual corrections needed
         const gastrodon = pokemonDictionary.gastrodon;
         if (gastrodon?.family) {
@@ -161,7 +163,7 @@ export class GameMasterParser {
         if (golisopodsh) {
             golisopodsh.aliasId = 'golisopod';
         }
-    }
+    };
 }
 
 export type { GameMasterData } from '../types/pokemon';

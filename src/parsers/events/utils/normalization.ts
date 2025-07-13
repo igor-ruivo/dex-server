@@ -44,7 +44,7 @@ export const fixDateString = (dateString: string) => dateString.replace(/(\b[A-Z
  * Parses a date range string and returns an array of {start, end} timestamps.
  * Handles multi-day and single-day event formats.
  */
-export function parseEventDateRange(date: string): Array<{ start: number; end: number }> {
+export const parseEventDateRange = (date: string): Array<{ start: number; end: number }> => {
     if (!date) return [];
     // Remove trailing period
     if (date.endsWith('.')) date = date.slice(0, -1);
@@ -121,9 +121,9 @@ export function parseEventDateRange(date: string): Array<{ start: number; end: n
     const end = parsedDate[1] ? parseDateFromString(parsedDate[1]) : start;
     if (isNaN(start) || isNaN(end)) return [];
     return [{ start, end }];
-}
+};
 
-export function parseDateFromString(side: string): number {
+export const parseDateFromString = (side: string) => {
     if (!side || typeof side !== 'string') return NaN;
     side = fixDateString(side.trim());
     side = side.replace(/^[A-Za-z]+day,\s*/, '');
@@ -158,4 +158,4 @@ export function parseDateFromString(side: string): number {
     const monthIdx = toMonthIndex(month);
     if (monthIdx === -1 || !day) return NaN;
     return new Date(year, monthIdx, Number(day), hour, minute).valueOf();
-}
+};

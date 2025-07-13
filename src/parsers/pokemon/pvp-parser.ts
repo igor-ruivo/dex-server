@@ -4,7 +4,7 @@ import { Leagues, POKEMON_CONFIG } from './config/pokemon-config';
 
 type LeagueKey = keyof typeof Leagues;
 
-export class PvPParser {
+class PvPParser {
     constructor(
         private readonly dataFetcher: IDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
@@ -97,4 +97,4 @@ export class PvPParser {
     }
 }
 
-export type { GameMasterData } from '../types/pokemon';
+export default PvPParser;

@@ -1,11 +1,11 @@
 import { JSDOM } from 'jsdom';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 import { IEntry, IParsedEvent } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
-import { extractPokemonSpeciesIdsFromElements, PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher, { extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 
 // Helper to extract text content from a selector
 const getText = (doc: Document, selector: string) => doc.querySelector(selector)?.textContent?.trim() ?? '';

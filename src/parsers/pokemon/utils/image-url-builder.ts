@@ -5,7 +5,7 @@ import { POKEMON_CONFIG } from '../config/pokemon-config';
  * Utility for building image URLs for Pokémon and their forms for use in the Pokémon pipeline.
  * Supports standard, GO, and shiny asset URLs.
  */
-export class ImageUrlBuilder {
+class ImageUrlBuilder {
     /**
      * Builds the main image URL for a Pokémon and form.
      */
@@ -65,3 +65,5 @@ export class ImageUrlBuilder {
         return this.buildShinyGoImageUrlHelper(dex, goForm);
     }
 }
+
+export default ImageUrlBuilder;

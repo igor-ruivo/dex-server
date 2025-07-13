@@ -1,10 +1,10 @@
 import { JSDOM } from 'jsdom';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
 import { ExtractedPostLink, PokemonGoPost } from '../../../types/events';
 
-export class PokemonGoFetcher {
+class PokemonGoFetcher {
     private baseUrl = 'https://pokemongo.com';
     private newsUrl = 'https://pokemongo.com/news';
 
@@ -101,3 +101,5 @@ export class PokemonGoFetcher {
         return 'news';
     }
 }
+
+export default PokemonGoFetcher;

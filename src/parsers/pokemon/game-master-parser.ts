@@ -2,10 +2,9 @@ import { IDataFetcher } from '../services/data-fetcher';
 import { BasePokemon, GameMasterData, GameMasterPokemon, IGameMasterMove } from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
-import { ImageUrlBuilder } from './utils/image-url-builder';
-import { PokemonTransformer } from './utils/pokemon-transformer';
-import { PokemonValidator } from './utils/pokemon-validator';
-
+import ImageUrlBuilder from './utils/image-url-builder';
+import PokemonTransformer from './utils/pokemon-transformer';
+import PokemonValidator from './utils/pokemon-validator';
 export interface IPokemonDomains {
     normalDomain: Array<GameMasterPokemon>;
     nonShadowDomain: Array<GameMasterPokemon>;
@@ -31,7 +30,7 @@ export const getDomains = (gameMasterPokemon: Record<string, GameMasterPokemon>)
     };
 };
 
-export class GameMasterParser {
+class GameMasterParser {
     constructor(
         private readonly dataFetcher: IDataFetcher,
         private readonly moves: Record<string, IGameMasterMove>
@@ -188,4 +187,4 @@ export class GameMasterParser {
     }
 }
 
-export type { GameMasterData } from '../types/pokemon';
+export default GameMasterParser;

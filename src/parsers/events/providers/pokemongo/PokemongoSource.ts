@@ -1,4 +1,4 @@
-import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 import {
@@ -11,10 +11,10 @@ import {
 } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
-import { extractPokemonSpeciesIdsFromElements, PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher, { extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import PokemonGoPostParser from './news-parsers/PostParser';
-import { PokemonGoFetcher } from './PokemongoFetcher';
+import PokemonGoFetcher from './PokemongoFetcher';
 
 /**
  * Constants for event section types.
@@ -143,7 +143,7 @@ const buildEventObject = (
  * Event source for parsing Pokémon GO events from the official website.
  * Implements the IEventSource interface.
  */
-export class PokemonGoSource implements IEventSource {
+class PokemonGoSource implements IEventSource {
     public name = 'pokemongo';
     private fetcher: PokemonGoFetcher;
 
@@ -481,3 +481,5 @@ export class PokemonGoSource implements IEventSource {
         return bonuses.filter(Boolean);
     }
 }
+
+export default PokemonGoSource;

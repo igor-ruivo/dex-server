@@ -1,5 +1,5 @@
 import { IParsedEvent, PublicEvent } from '../types/events';
-import { HttpDataFetcher } from './data-fetcher';
+import HttpDataFetcher from './data-fetcher';
 
 export enum AvailableLocales {
     en = 'en',

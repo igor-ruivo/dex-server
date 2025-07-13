@@ -5,7 +5,7 @@ import { POKEMON_CONFIG } from '../config/pokemon-config';
  * Utility for validating Pokémon data and tags for use in the Pokémon pipeline.
  * Checks for released, shadow, mega, and tag status.
  */
-export class PokemonValidator {
+class PokemonValidator {
     /**
      * Checks if a Pokémon is valid (released and not blacklisted).
      */
@@ -37,3 +37,5 @@ export class PokemonValidator {
         return pokemon.tags ? pokemon.tags.includes(tag) : false;
     }
 }
+
+export default PokemonValidator;

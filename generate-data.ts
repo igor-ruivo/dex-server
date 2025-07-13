@@ -1,17 +1,17 @@
-import { Leagues } from '@src/parsers/pokemon/config/pokemon-config';
-import { PvPParser } from '@src/parsers/pokemon/pvp-parser';
-import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
 import fs from 'fs/promises';
 import path from 'path';
+import BossesParser from 'src/parsers/events/providers/leekduck/BossesParser';
+import EggsParser from 'src/parsers/events/providers/leekduck/EggsParser';
+import EventsParser from 'src/parsers/events/providers/leekduck/EventsParser';
+import RocketLineupsParser from 'src/parsers/events/providers/leekduck/RocketLineupsParser';
+import MovesProvider from 'src/parsers/events/providers/pokeminers/MovesProvider';
+import PokemonGoSource from 'src/parsers/events/providers/pokemongo/PokemongoSource';
+import { Leagues } from 'src/parsers/pokemon/config/pokemon-config';
+import GameMasterParser, { getDomains } from 'src/parsers/pokemon/game-master-parser';
+import PvPParser from 'src/parsers/pokemon/pvp-parser';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { BossesParser } from './src/parsers/events/providers/leekduck/BossesParser';
-import { EggsParser } from './src/parsers/events/providers/leekduck/EggsParser';
-import { EventsParser } from './src/parsers/events/providers/leekduck/EventsParser';
-import { RocketLineupsParser } from './src/parsers/events/providers/leekduck/RocketLineupsParser';
-import { MovesProvider } from './src/parsers/events/providers/pokeminers/MovesProvider';
-import { PokemonGoSource } from './src/parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from './src/parsers/events/providers/pokemongo/SeasonParser';
-import { GameMasterParser, getDomains } from './src/parsers/pokemon/game-master-parser';
 import GameMasterTranslator from './src/parsers/services/gamemaster-translator';
 import { IEntry } from './src/parsers/types/events';
 
@@ -105,9 +105,6 @@ const generateData = async () => {
     }
 };
 
-// Run if called directly
-if (require.main === module) {
-    void generateData();
-}
+void generateData();
 
-export { generateData };
+export default generateData;

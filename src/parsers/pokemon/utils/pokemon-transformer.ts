@@ -5,7 +5,7 @@ import { POKEMON_CONFIG } from '../config/pokemon-config';
  * Utility for transforming, cleaning, and extracting information from Pokémon data.
  * Used in the Pokémon pipeline for type, move, and form normalization.
  */
-export class PokemonTransformer {
+class PokemonTransformer {
     /**
      * Transforms an array of type strings into PokemonTypes enums, filtering out 'none'.
      */
@@ -136,3 +136,5 @@ export class PokemonTransformer {
         return '';
     }
 }
+
+export default PokemonTransformer;

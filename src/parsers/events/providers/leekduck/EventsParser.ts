@@ -1,12 +1,12 @@
-import { IPokemonDomains } from '@src/parsers/pokemon/game-master-parser';
 import { JSDOM } from 'jsdom';
+import { IPokemonDomains } from 'src/parsers/pokemon/game-master-parser';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales, getSpotlightHourBonusTranslation } from '../../../services/gamemaster-translator';
 import { IEntry } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
 import { parseDateFromString } from '../../utils/normalization';
-import { PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -42,7 +42,7 @@ type ParsedEventCommon = {
     htmlDoc: Document;
 };
 
-export class EventsParser {
+class EventsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
@@ -246,3 +246,5 @@ export class EventsParser {
         return translatedBonuses;
     }
 }
+
+export default EventsParser;

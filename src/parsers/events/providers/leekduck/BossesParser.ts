@@ -1,14 +1,14 @@
-import { IPokemonDomains } from '@src/parsers/pokemon/game-master-parser';
 import { JSDOM } from 'jsdom';
+import { IPokemonDomains } from 'src/parsers/pokemon/game-master-parser';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { IEntry } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
-import { PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 
-export class BossesParser {
+class BossesParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
@@ -107,3 +107,5 @@ export class BossesParser {
         return pokemons;
     }
 }
+
+export default BossesParser;

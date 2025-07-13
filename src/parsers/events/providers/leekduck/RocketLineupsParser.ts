@@ -1,14 +1,14 @@
 import { JSDOM } from 'jsdom';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
 import { IRocketGrunt } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
-import { PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 
-export class RocketLineupsParser {
+class RocketLineupsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
@@ -79,3 +79,5 @@ export class RocketLineupsParser {
         return shadowId;
     }
 }
+
+export default RocketLineupsParser;

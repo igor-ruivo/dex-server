@@ -1,14 +1,14 @@
 import { JSDOM } from 'jsdom';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { HttpDataFetcher } from '../../../services/data-fetcher';
 import { AvailableLocales, getEggCommentTranslation } from '../../../services/gamemaster-translator';
 import { IEntry } from '../../../types/events';
 import { GameMasterPokemon } from '../../../types/pokemon';
-import { PokemonMatcher } from '../../utils/pokemon-matcher';
+import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 
-export class EggsParser {
+class EggsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
@@ -53,3 +53,5 @@ export class EggsParser {
         return pokemons;
     }
 }
+
+export default EggsParser;

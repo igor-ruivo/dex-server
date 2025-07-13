@@ -1,4 +1,5 @@
-import { HttpDataFetcher } from '../../../services/data-fetcher';
+import HttpDataFetcher from 'src/parsers/services/data-fetcher';
+
 import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
 import { GameMasterMovesType, IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
 
@@ -9,7 +10,7 @@ const normalizedMoveName = (moveName: string) => {
         .join(' ');
 };
 
-export class MovesProvider {
+class MovesProvider {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
         private translatorService: GameMasterTranslator
@@ -188,3 +189,5 @@ export class MovesProvider {
         return movesDictionary;
     }
 }
+
+export default MovesProvider;

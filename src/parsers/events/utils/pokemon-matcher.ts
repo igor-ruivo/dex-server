@@ -7,7 +7,7 @@ import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
  * Utility for matching Pokémon names and forms to Game Master data in the event pipeline.
  * Handles normalization, form detection, and special cases for event parsing.
  */
-export class PokemonMatcher {
+class PokemonMatcher {
     private gameMasterPokemon: Record<string, GameMasterPokemon>;
     private domain: Array<GameMasterPokemon>;
 
@@ -393,3 +393,5 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matc
         };
     });
 };
+
+export default PokemonMatcher;

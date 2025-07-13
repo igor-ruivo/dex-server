@@ -1,3 +1,5 @@
+import { PvPParser } from '@src/parsers/pokemon/pvp-parser';
+import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -18,6 +20,9 @@ const generateData = async () => {
     const now = new Date().toISOString();
 
     try {
+        // Initialize dependencies
+        const dataFetcher = new HttpDataFetcher();
+
         // Step 1: Initiate the translator
         const translatorService = new GameMasterTranslator();
         await translatorService.setupGameMasterSources();
@@ -30,15 +35,19 @@ const generateData = async () => {
         const gameMasterParser = new GameMasterParser();
         const pokemonDictionary = await gameMasterParser.parse(moves);
 
-        // Step 4: Generate events
+        // Step 4: Parse PvP Data
+        const pvpParser = new PvPParser(dataFetcher, pokemonDictionary, moves);
+        const pvpData = await pvpParser.parse();
+
+        // Step 5: Generate events
         const source = new PokemonGoSource();
         const events = await source.parseEvents(pokemonDictionary);
 
-        // Step 5: Generate season data
+        // Step 6: Generate season data
         const seasonDomain = Object.values(pokemonDictionary).filter((p) => !p.isShadow && !p.isMega && !p.aliasId);
         const seasonData = await fetchSeasonData(pokemonDictionary, seasonDomain);
 
-        // Step 6: LeekDuck integration
+        // Step 7: LeekDuck integration
         const leekduckEventsParser = new EventsParser();
         const leekduckEvents = await leekduckEventsParser.parse(pokemonDictionary);
 
@@ -73,6 +82,9 @@ const generateData = async () => {
         );
         await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(events, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'game-master.json'), JSON.stringify(pokemonDictionary, null, '\t'));
+        await fs.writeFile(path.join(dataDir, 'great-league-pvp.json'), JSON.stringify(pvpData.GREAT, null, '\t'));
+        await fs.writeFile(path.join(dataDir, 'ultra-league-pvp.json'), JSON.stringify(pvpData.ULTRA, null, '\t'));
+        await fs.writeFile(path.join(dataDir, 'master-league-pvp.json'), JSON.stringify(pvpData.MASTER, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'moves.json'), JSON.stringify(moves, null, '\t'));
         console.log('✅ All LeekDuck and main data written to disk.');

@@ -137,68 +137,68 @@ export interface PokemonTags {
     mega?: boolean;
 }
 
+export interface BasePvPEntry {
+    speciesId: string;
+    moveset: Array<string>;
+    score: number;
+    scores: Array<number>;
+    matchups: Array<MatchUp>;
+    counters: Array<MatchUp>;
+}
+
+export type PvPEntry = Omit<BasePvPEntry, 'scores'> & {
+    rank: number;
+    rankChange: number;
+    lead: number;
+    switch: number;
+    charger: number;
+    closer: number;
+    consistency: number;
+    attacker: number;
+};
+
+export type MatchUp = {
+    opponent: string;
+    rating: number;
+    opRating?: number;
+};
+
 export interface BasePokemon {
     dex: number;
     speciesId: string;
     speciesName: string;
-    baseStats: PokemonStats;
     types: Array<string>;
     fastMoves: Array<string>;
     chargedMoves: Array<string>;
     eliteMoves?: Array<string>;
     legacyMoves?: Array<string>;
+    baseStats: PokemonStats;
     family?: PokemonFamily;
     aliasId?: string;
     released: boolean;
     tags?: Array<string>;
 }
 
-export interface GameMasterPokemon {
-    dex: number;
-    speciesId: string;
-    speciesName: string;
+export type GameMasterPokemon = Omit<BasePokemon, 'types' | 'released' | 'tags'> & {
     types: Array<PokemonTypes>;
     imageUrl: string;
     goImageUrl: string;
     shinyGoImageUrl: string;
-    atk: number;
-    def: number;
-    hp: number;
-    fastMoves: Array<string>;
-    chargedMoves: Array<string>;
-    eliteMoves?: Array<string>;
-    legacyMoves?: Array<string>;
     isShadow: boolean;
     isMega: boolean;
-    familyId?: string;
-    parent?: string;
-    evolutions: Array<string>;
-    aliasId?: string;
     form: string;
     isLegendary: boolean;
     isMythical: boolean;
     isBeast: boolean;
-}
+};
 
 export type GameMasterData = Record<string, GameMasterPokemon>;
 
-export interface IGameMasterMove {
-    moveId: string;
-    vId: string;
-    type: string;
-    isFast: boolean;
-    pvpPower: number;
-    pvePower: number;
-    pvpEnergyDelta: number;
-    pveEnergyDelta: number;
-    pvpDuration: number;
-    pveDuration: number;
-    pvpBuffs?: {
-        chance: number;
-        buffs: Array<{ buff: string; quantity: number }>;
+export type IGameMasterMove = BaseMove &
+    PvPMove &
+    PvEMove & {
+        moveName: Partial<Record<AvailableLocales, string>>;
     };
-    moveName: Partial<Record<AvailableLocales, string>>;
-}
 
 type BuffsType = {
     buffActivationChance: number;
@@ -223,22 +223,21 @@ export type GameMasterMovesType = {
     };
 };
 
-export type PvPMove = {
+interface BaseMove {
     moveId: string;
     vId: string;
     type: string;
     isFast: boolean;
+}
+
+export type PvPMove = BaseMove & {
     pvpPower: number;
     pvpEnergy: number;
     pvpCooldown: number;
     buffs: BuffsType;
 };
 
-export type PvEMove = {
-    moveId: string;
-    vId: string;
-    type: string;
-    isFast: boolean;
+export type PvEMove = BaseMove & {
     pvePower: number;
     pveEnergy: number;
     pveCooldown: number;

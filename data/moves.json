@@ -6,10 +6,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Wrap",
 			"pt_br": "Embrulho"
@@ -22,10 +22,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 150,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
 		"moveName": {
 			"en": "Hyper Beam",
 			"pt_br": "Hiper-raio"
@@ -38,10 +38,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 80,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Dark Pulse",
 			"pt_br": "Pulso Sombrio"
@@ -54,10 +54,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Sludge",
 			"pt_br": "Ataque de Lama"
@@ -70,10 +70,10 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 35,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Vise Grip",
 			"pt_br": "Agarramento Compressor"
@@ -86,10 +86,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 55,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Flame Wheel",
 			"pt_br": "Roda de Fogo"
@@ -102,10 +102,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 105,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Megahorn",
 			"pt_br": "Megachifre"
@@ -118,10 +118,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 65,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Flamethrower",
 			"pt_br": "Lança-chamas"
@@ -134,10 +134,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 100,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 4.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 4.5,
 		"moveName": {
 			"en": "Dig",
 			"pt_br": "Cavar"
@@ -150,10 +150,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Cross Chop",
 			"pt_br": "Golpe Cruzado"
@@ -166,10 +166,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 65,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Psybeam",
 			"pt_br": "Feixe Psíquico"
@@ -182,10 +182,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 140,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Earthquake",
 			"pt_br": "Terremoto"
@@ -198,10 +198,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 105,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Stone Edge",
 			"pt_br": "Gume de Pedra"
@@ -214,10 +214,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Ice Punch",
 			"pt_br": "Soco de Gelo"
@@ -230,10 +230,10 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 40,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Heart Stamp",
 			"pt_br": "Estampa de Coração"
@@ -246,10 +246,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 65,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Discharge",
 			"pt_br": "Descarga"
@@ -262,10 +262,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 100,
-		"pvpEnergyDelta": -70,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -70,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Flash Cannon",
 			"pt_br": "Canhão de Flash"
@@ -278,10 +278,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 70,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Drill Peck",
 			"pt_br": "Bico Broca"
@@ -294,10 +294,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 95,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Ice Beam",
 			"pt_br": "Raio Congelante"
@@ -310,10 +310,10 @@
 		"isFast": false,
 		"pvpPower": 140,
 		"pvePower": 130,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Blizzard",
 			"pt_br": "Nevasca"
@@ -326,10 +326,10 @@
 		"isFast": false,
 		"pvpPower": 95,
 		"pvePower": 95,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Heat Wave",
 			"pt_br": "Onda de Calor"
@@ -342,10 +342,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Aerial Ace",
 			"pt_br": "Ás dos Ares"
@@ -358,10 +358,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 85,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Drill Run",
 			"pt_br": "Furação"
@@ -374,10 +374,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 110,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Petal Blizzard",
 			"pt_br": "Nevasca de Pétalas"
@@ -390,10 +390,10 @@
 		"isFast": false,
 		"pvpPower": 25,
 		"pvePower": 25,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Mega Drain",
 			"pt_br": "Megadreno"
@@ -406,18 +406,13 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 95,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Bug Buzz",
@@ -431,18 +426,13 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 30,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Poison Fang",
@@ -456,18 +446,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Night Slash",
@@ -481,18 +466,13 @@
 		"isFast": false,
 		"pvpPower": 25,
 		"pvePower": 45,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Bubble Beam",
@@ -506,10 +486,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 55,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Submission",
 			"pt_br": "Submissão"
@@ -522,10 +502,10 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 40,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Low Sweep",
 			"pt_br": "Movimento Baixo"
@@ -538,10 +518,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 45,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Aqua Jet",
 			"pt_br": "Aqua Jato"
@@ -554,10 +534,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Aqua Tail",
 			"pt_br": "Aqua Cauda"
@@ -570,10 +550,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 55,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Seed Bomb",
 			"pt_br": "Bomba de Sementes"
@@ -586,10 +566,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 60,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Psyshock",
 			"pt_br": "Choque Psíquico"
@@ -602,22 +582,14 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 70,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				},
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Ancient Power",
@@ -631,18 +603,13 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 65,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Rock Tomb",
@@ -656,10 +623,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 75,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Rock Slide",
 			"pt_br": "Deslize de Pedras"
@@ -672,10 +639,10 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 80,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Power Gem",
 			"pt_br": "Gema Poderosa"
@@ -688,10 +655,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Shadow Sneak",
 			"pt_br": "Furtividade nas Sombras"
@@ -704,10 +671,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 35,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Shadow Punch",
 			"pt_br": "Soco Sombrio"
@@ -720,22 +687,14 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 55,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				},
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Ominous Wind",
@@ -749,10 +708,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Shadow Ball",
 			"pt_br": "Bola Sombria"
@@ -765,10 +724,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 75,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Magnet Bomb",
 			"pt_br": "Bomba Ímã"
@@ -781,10 +740,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 60,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Iron Head",
 			"pt_br": "Cabeça de Ferro"
@@ -797,18 +756,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.66,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 0.66
 		},
 		"moveName": {
 			"en": "Parabolic Charge",
@@ -822,10 +776,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Thunder Punch",
 			"pt_br": "Soco Trovoada"
@@ -838,10 +792,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Thunder",
 			"pt_br": "Trovão"
@@ -854,10 +808,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 80,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Thunderbolt",
 			"pt_br": "Relâmpago"
@@ -870,10 +824,10 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 50,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Twister",
 			"pt_br": "Twister"
@@ -886,10 +840,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Dragon Pulse",
 			"pt_br": "Pulso do Dragão"
@@ -902,10 +856,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Dragon Claw",
 			"pt_br": "Garra de Dragão"
@@ -918,10 +872,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 4,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
 		"moveName": {
 			"en": "Disarming Voice",
 			"pt_br": "Voz Desarmante"
@@ -934,10 +888,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Draining Kiss",
 			"pt_br": "Beijo Drenante"
@@ -950,10 +904,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 100,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Dazzling Gleam",
 			"pt_br": "Clarão Deslumbrante"
@@ -966,18 +920,13 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 130,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Moonblast",
@@ -991,10 +940,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Play Rough",
 			"pt_br": "Jogo Duro"
@@ -1007,18 +956,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 40,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Cross Poison",
@@ -1032,10 +976,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 85,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Sludge Bomb",
 			"pt_br": "Bomba de Lodo"
@@ -1048,10 +992,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 105,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Sludge Wave",
 			"pt_br": "Onda de Lama"
@@ -1064,10 +1008,10 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 130,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Gunk Shot",
 			"pt_br": "Tiro de Sujeira"
@@ -1080,10 +1024,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 40,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Bone Club",
 			"pt_br": "Bastão de Osso"
@@ -1096,18 +1040,13 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 80,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Bulldoze",
@@ -1121,10 +1060,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Mud Bomb",
 			"pt_br": "Bomba de Lama"
@@ -1137,22 +1076,14 @@
 		"isFast": false,
 		"pvpPower": 75,
 		"pvePower": 75,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.2,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				},
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.2
 		},
 		"moveName": {
 			"en": "Signal Beam",
@@ -1166,10 +1097,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 45,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "X-Scissor",
 			"pt_br": "Tesoura X"
@@ -1182,18 +1113,13 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 70,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Flame Charge",
@@ -1207,10 +1133,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Flame Burst",
 			"pt_br": "Rajada de Chamas"
@@ -1223,10 +1149,10 @@
 		"isFast": false,
 		"pvpPower": 140,
 		"pvePower": 140,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
 		"moveName": {
 			"en": "Fire Blast",
 			"pt_br": "Rajada de Fogo"
@@ -1239,10 +1165,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 65,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Brine",
 			"pt_br": "Salmoura"
@@ -1255,10 +1181,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 65,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Water Pulse",
 			"pt_br": "Pulso d'Água"
@@ -1271,18 +1197,13 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 75,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Scald",
@@ -1296,10 +1217,10 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 135,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Hydro Pump",
 			"pt_br": "Jato d'Água"
@@ -1312,18 +1233,13 @@
 		"isFast": false,
 		"pvpPower": 75,
 		"pvePower": 95,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Psychic",
@@ -1337,10 +1253,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 95,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Psystrike",
 			"pt_br": "Golpe Psíquico"
@@ -1353,18 +1269,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 65,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Icy Wind",
@@ -1378,10 +1289,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
 		"moveName": {
 			"en": "Giga Drain",
 			"pt_br": "Gigadreno"
@@ -1394,10 +1305,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Fire Punch",
 			"pt_br": "Soco de Fogo"
@@ -1410,10 +1321,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 180,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 5,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 5,
 		"moveName": {
 			"en": "Solar Beam",
 			"pt_br": "Raio Solar"
@@ -1426,10 +1337,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Leaf Blade",
 			"pt_br": "Lâmina de Folha"
@@ -1442,10 +1353,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Power Whip",
 			"pt_br": "Chicote Poderoso"
@@ -1458,18 +1369,13 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Air Cutter",
@@ -1483,10 +1389,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 105,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Hurricane",
 			"pt_br": "Furacão"
@@ -1499,18 +1405,13 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 40,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Brick Break",
@@ -1524,10 +1425,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 65,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Swift",
 			"pt_br": "Ataque Veloz"
@@ -1540,10 +1441,10 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Horn Attack",
 			"pt_br": "Ataque de Chifre"
@@ -1556,10 +1457,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Stomp",
 			"pt_br": "Pisotear"
@@ -1572,10 +1473,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 80,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Hyper Fang",
 			"pt_br": "Hiperpresa"
@@ -1588,10 +1489,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Body Slam",
 			"pt_br": "Pancada Corporal"
@@ -1604,10 +1505,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Rest",
 			"pt_br": "Descansar"
@@ -1620,10 +1521,10 @@
 		"isFast": false,
 		"pvpPower": 35,
 		"pvePower": 35,
-		"pvpEnergyDelta": -100,
-		"pveEnergyDelta": 0,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -100,
+		"pveEnergy": 0,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Struggle",
 			"pt_br": "Insistência"
@@ -1636,10 +1537,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4.5,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4.5,
 		"moveName": {
 			"en": "Scald",
 			"pt_br": "Escaldada"
@@ -1652,10 +1553,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4.5,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4.5,
 		"moveName": {
 			"en": "Hydro Pump",
 			"pt_br": "Jato d'Água"
@@ -1668,10 +1569,10 @@
 		"isFast": false,
 		"pvpPower": 25,
 		"pvePower": 25,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Wrap",
 			"pt_br": "Embrulho"
@@ -1684,10 +1585,10 @@
 		"isFast": false,
 		"pvpPower": 25,
 		"pvePower": 25,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Wrap",
 			"pt_br": "Embrulho"
@@ -1700,10 +1601,10 @@
 		"isFast": true,
 		"pvpPower": 2,
 		"pvePower": 4,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 4,
+		"pveEnergy": 8,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Fury Cutter",
 			"pt_br": "Cortador de Fúria"
@@ -1716,10 +1617,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 5,
-		"pvpEnergyDelta": 3,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 3,
+		"pveEnergy": 6,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Bug Bite",
 			"pt_br": "Picada"
@@ -1732,10 +1633,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 6,
-		"pvpEnergyDelta": 2,
-		"pveEnergyDelta": 4,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 2,
+		"pveEnergy": 4,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Bite",
 			"pt_br": "Mordida"
@@ -1748,10 +1649,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 5,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 7,
+		"pveEnergy": 6,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Sucker Punch",
 			"pt_br": "Soco Enganador"
@@ -1764,10 +1665,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 6,
-		"pvpEnergyDelta": 3,
-		"pveEnergyDelta": 4,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 3,
+		"pveEnergy": 4,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Dragon Breath",
 			"pt_br": "Sopro do Dragão"
@@ -1780,10 +1681,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 4,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 9,
+		"pveEnergy": 7,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Thunder Shock",
 			"pt_br": "Trovoada de Choques"
@@ -1796,10 +1697,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 4,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 7,
+		"pveEnergy": 6,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Spark",
 			"pt_br": "Faísca"
@@ -1812,10 +1713,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 5,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 5,
+		"pveEnergy": 5,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Low Kick",
 			"pt_br": "Rasteira"
@@ -1828,10 +1729,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 10,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 9,
+		"pveEnergy": 13,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Karate Chop",
 			"pt_br": "Golpe de Caratê"
@@ -1844,10 +1745,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 10,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 10,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Ember",
 			"pt_br": "Brasa"
@@ -1860,10 +1761,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 10,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 11,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 7,
+		"pveEnergy": 11,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Wing Attack",
 			"pt_br": "Ataque de Asa"
@@ -1876,10 +1777,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 10,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 5,
+		"pveEnergy": 10,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Peck",
 			"pt_br": "Bicada"
@@ -1892,10 +1793,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 5,
-		"pvpEnergyDelta": 3,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 3,
+		"pveEnergy": 6,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Lick",
 			"pt_br": "Lambida"
@@ -1908,10 +1809,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 6,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 4,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 4,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Shadow Claw",
 			"pt_br": "Garra Sombria"
@@ -1924,10 +1825,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 6,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 5,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Vine Whip",
 			"pt_br": "Chicote de Vinha"
@@ -1940,10 +1841,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 13,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 4,
+		"pveEnergy": 7,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Razor Leaf",
 			"pt_br": "Folha Navalha"
@@ -1956,10 +1857,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 4,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 6,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Mud Shot",
 			"pt_br": "Tiro de Lama"
@@ -1972,10 +1873,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 10,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 10,
+		"pveEnergy": 10,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Ice Shard",
 			"pt_br": "Caco de Gelo"
@@ -1988,10 +1889,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 11,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 5,
+		"pveEnergy": 9,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Frost Breath",
 			"pt_br": "Respiração de Gelo"
@@ -2004,10 +1905,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 10,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 8,
+		"pveEnergy": 13,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Quick Attack",
 			"pt_br": "Ataque Rápido"
@@ -2020,10 +1921,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 6,
-		"pvpEnergyDelta": 2,
-		"pveEnergyDelta": 4,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 2,
+		"pveEnergy": 4,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Scratch",
 			"pt_br": "Arranhão"
@@ -2036,10 +1937,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 5,
-		"pvpEnergyDelta": 3,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 3,
+		"pveEnergy": 5,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Tackle",
 			"pt_br": "Investida"
@@ -2052,10 +1953,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 6,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 4,
+		"pveEnergy": 5,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Pound",
 			"pt_br": "Pancada"
@@ -2068,10 +1969,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 5,
-		"pvpEnergyDelta": 2,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 2,
+		"pveEnergy": 5,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Cut",
 			"pt_br": "Cortar"
@@ -2084,10 +1985,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 13,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 7,
+		"pveEnergy": 9,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Poison Jab",
 			"pt_br": "Golpe Envenenado"
@@ -2100,10 +2001,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 11,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 5,
+		"pveEnergy": 10,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Acid",
 			"pt_br": "Ácido"
@@ -2116,10 +2017,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 4,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 9,
+		"pveEnergy": 7,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Psycho Cut",
 			"pt_br": "Corte Psíquico"
@@ -2132,10 +2033,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 13,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 5,
+		"pveEnergy": 8,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Rock Throw",
 			"pt_br": "Lançamento de Rocha"
@@ -2148,10 +2049,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 6,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 7,
+		"pveEnergy": 5,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Metal Claw",
 			"pt_br": "Garra de Metal"
@@ -2164,10 +2065,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 10,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 11,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 7,
+		"pveEnergy": 11,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Bullet Punch",
 			"pt_br": "Soco Projétil"
@@ -2180,10 +2081,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 5,
-		"pvpEnergyDelta": 3,
-		"pveEnergyDelta": 5,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 3,
+		"pveEnergy": 5,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Water Gun",
 			"pt_br": "Revólver d'Água"
@@ -2196,10 +2097,10 @@
 		"isFast": true,
 		"pvpPower": 0,
 		"pvePower": 0,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 17,
-		"pvpDuration": 2,
-		"pveDuration": 1.5,
+		"pvpEnergy": 12,
+		"pveEnergy": 17,
+		"pvpCooldown": 2,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Splash",
 			"pt_br": "Borrifada"
@@ -2212,10 +2113,10 @@
 		"isFast": false,
 		"pvpPower": 6,
 		"pvePower": 10,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 0,
-		"pveDuration": 1,
+		"pvpEnergy": 4,
+		"pveEnergy": 6,
+		"pvpCooldown": 0,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Water Gun",
 			"pt_br": "Revólver d'Água"
@@ -2228,10 +2129,10 @@
 		"isFast": true,
 		"pvpPower": 12,
 		"pvePower": 19,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 10,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Mud-Slap",
 			"pt_br": "Tapa de Lama"
@@ -2244,10 +2145,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 11,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 9,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Zen Headbutt",
 			"pt_br": "Cabeçada Zen"
@@ -2260,10 +2161,10 @@
 		"isFast": true,
 		"pvpPower": 16,
 		"pvePower": 19,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 14,
-		"pvpDuration": 2,
-		"pveDuration": 1.5,
+		"pvpEnergy": 12,
+		"pveEnergy": 14,
+		"pvpCooldown": 2,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Confusion",
 			"pt_br": "Confusão"
@@ -2276,10 +2177,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 4,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 9,
+		"pveEnergy": 6,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Poison Sting",
 			"pt_br": "Ferrão Venenoso"
@@ -2292,10 +2193,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 10,
-		"pvpEnergyDelta": 11,
-		"pveEnergyDelta": 12,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 11,
+		"pveEnergy": 12,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Bubble",
 			"pt_br": "Bolha"
@@ -2308,10 +2209,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 11,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 10,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Feint Attack",
 			"pt_br": "Ataque Dissimulado"
@@ -2324,10 +2225,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 14,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 8,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Steel Wing",
 			"pt_br": "Asa de Aço"
@@ -2340,10 +2241,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 13,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 9,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Fire Fang",
 			"pt_br": "Presas de Fogo"
@@ -2356,10 +2257,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 17,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 12,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 7,
+		"pveEnergy": 12,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Rock Smash",
 			"pt_br": "Esmagamento de Pedras"
@@ -2372,10 +2273,10 @@
 		"isFast": true,
 		"pvpPower": 0,
 		"pvePower": 0,
-		"pvpEnergyDelta": 0,
-		"pveEnergyDelta": 0,
-		"pvpDuration": 1.5,
-		"pveDuration": 2,
+		"pvpEnergy": 0,
+		"pveEnergy": 0,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Transform",
 			"pt_br": "Transformação"
@@ -2388,10 +2289,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 13,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 9,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Counter",
 			"pt_br": "Contra-atacar"
@@ -2404,10 +2305,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 6,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 15,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 8,
+		"pveEnergy": 15,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Powder Snow",
 			"pt_br": "Neve em Pó"
@@ -2420,18 +2321,13 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 105,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Close Combat",
@@ -2445,10 +2341,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 85,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Dynamic Punch",
 			"pt_br": "Soco Dinâmico"
@@ -2461,10 +2357,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 140,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Focus Blast",
 			"pt_br": "Explosão Focalizada"
@@ -2477,10 +2373,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 80,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Aurora Beam",
 			"pt_br": "Raio Aurora"
@@ -2493,10 +2389,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 7,
-		"pvpEnergyDelta": 11,
-		"pveEnergyDelta": 14,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 11,
+		"pveEnergy": 14,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Charge Beam",
 			"pt_br": "Carga de Raio"
@@ -2509,10 +2405,10 @@
 		"isFast": true,
 		"pvpPower": 12,
 		"pvePower": 13,
-		"pvpEnergyDelta": 16,
-		"pveEnergyDelta": 20,
-		"pvpDuration": 2,
-		"pveDuration": 1.5,
+		"pvpEnergy": 16,
+		"pveEnergy": 20,
+		"pvpCooldown": 2,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Volt Switch",
 			"pt_br": "Troca Elétrica"
@@ -2525,18 +2421,13 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 90,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Wild Charge",
@@ -2550,18 +2441,13 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 140,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.33,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.33
 		},
 		"moveName": {
 			"en": "Zap Cannon",
@@ -2575,10 +2461,10 @@
 		"isFast": true,
 		"pvpPower": 13,
 		"pvePower": 14,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 9,
+		"pveEnergy": 8,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Dragon Tail",
 			"pt_br": "Cauda do Dragão"
@@ -2591,10 +2477,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 85,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Avalanche",
 			"pt_br": "Avalanche"
@@ -2607,10 +2493,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 12,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 9,
+		"pveEnergy": 8,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
@@ -2623,18 +2509,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 130,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -3
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerDefenseStatStageChange": -3,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Brave Bird",
@@ -2648,10 +2529,10 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 80,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Sky Attack",
 			"pt_br": "Ataque do Céu"
@@ -2664,18 +2545,13 @@
 		"isFast": false,
 		"pvpPower": 25,
 		"pvePower": 60,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Sand Tomb",
@@ -2689,10 +2565,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Rock Blast",
 			"pt_br": "Explosão de Rocha"
@@ -2705,10 +2581,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 9,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 12,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Infestation",
 			"pt_br": "Infestação"
@@ -2721,10 +2597,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 15,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 15,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 15,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Struggle Bug",
 			"pt_br": "Ira de Inseto"
@@ -2737,22 +2613,14 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 65,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				},
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Silver Wind",
@@ -2766,10 +2634,10 @@
 		"isFast": true,
 		"pvpPower": 12,
 		"pvePower": 7,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 10,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Astonish",
 			"pt_br": "Abismar"
@@ -2782,10 +2650,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 8,
-		"pvpEnergyDelta": 13,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 13,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Hex",
 			"pt_br": "Feitiço"
@@ -2798,10 +2666,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 60,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Night Shade",
 			"pt_br": "Sombra Noturna"
@@ -2814,10 +2682,10 @@
 		"isFast": true,
 		"pvpPower": 10,
 		"pvePower": 14,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 7,
+		"pveEnergy": 6,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Iron Tail",
 			"pt_br": "Cauda de Ferro"
@@ -2830,10 +2698,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 85,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Gyro Ball",
 			"pt_br": "Girobola"
@@ -2846,10 +2714,10 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Heavy Slam",
 			"pt_br": "Golpe Pesado"
@@ -2862,10 +2730,10 @@
 		"isFast": true,
 		"pvpPower": 11,
 		"pvePower": 13,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 9,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 10,
+		"pveEnergy": 9,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Fire Spin",
 			"pt_br": "Chama Furacão"
@@ -2878,18 +2746,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 160,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"attackerAttackStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Overheat",
@@ -2903,10 +2766,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 7,
-		"pvpEnergyDelta": 13,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 13,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Bullet Seed",
 			"pt_br": "Projétil de Semente"
@@ -2919,10 +2782,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Grass Knot",
 			"pt_br": "Nó de Grama"
@@ -2935,18 +2798,13 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Energy Ball",
@@ -2960,10 +2818,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 11,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 11,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 10,
+		"pveEnergy": 11,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Extrasensory",
 			"pt_br": "Extrassensorial"
@@ -2976,10 +2834,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 115,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Future Sight",
 			"pt_br": "Visão do Futuro"
@@ -2992,10 +2850,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Mirror Coat",
 			"pt_br": "Casaco Espelhado"
@@ -3008,10 +2866,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 110,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 4,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
 		"moveName": {
 			"en": "Outrage",
 			"pt_br": "Ultraje"
@@ -3024,10 +2882,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 11,
-		"pvpEnergyDelta": 13,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 13,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Snarl",
 			"pt_br": "Rosnado"
@@ -3040,18 +2898,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 65,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Crunch",
@@ -3065,10 +2918,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 70,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Foul Play",
 			"pt_br": "Jogo Sujo"
@@ -3081,10 +2934,10 @@
 		"isFast": true,
 		"pvpPower": 9,
 		"pvePower": 15,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 15,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 15,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Hidden Power",
 			"pt_br": "Poder Oculto"
@@ -3097,10 +2950,10 @@
 		"isFast": true,
 		"pvpPower": 5,
 		"pvePower": 7,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 8,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 8,
+		"pveEnergy": 8,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Take Down",
 			"pt_br": "Desmantelar"
@@ -3113,10 +2966,10 @@
 		"isFast": true,
 		"pvpPower": 12,
 		"pvePower": 13,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 8,
+		"pveEnergy": 7,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Waterfall",
 			"pt_br": "Cachoeira"
@@ -3129,10 +2982,10 @@
 		"isFast": false,
 		"pvpPower": 75,
 		"pvePower": 60,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Surf",
 			"pt_br": "Surfar"
@@ -3145,18 +2998,13 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 150,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Draco Meteor",
@@ -3170,10 +3018,10 @@
 		"isFast": false,
 		"pvpPower": 75,
 		"pvePower": 65,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Doom Desire",
 			"pt_br": "Desejo Cruel"
@@ -3186,10 +3034,10 @@
 		"isFast": true,
 		"pvpPower": 0,
 		"pvePower": 0,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 2,
-		"pveDuration": 1.5,
+		"pvpEnergy": 12,
+		"pveEnergy": 13,
+		"pvpCooldown": 2,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Yawn",
 			"pt_br": "Bocejo"
@@ -3202,18 +3050,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 4,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"attackerAttackStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Psycho Boost",
@@ -3227,10 +3070,10 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 120,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Origin Pulse",
 			"pt_br": "Pulso Original"
@@ -3243,10 +3086,10 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 120,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Precipice Blades",
 			"pt_br": "Lâmina Abissal"
@@ -3259,10 +3102,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 6,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 23,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 12,
+		"pveEnergy": 23,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Present",
 			"pt_br": "Presente"
@@ -3275,10 +3118,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3291,10 +3134,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3307,10 +3150,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3323,10 +3166,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3339,10 +3182,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Frenzy Plant",
 			"pt_br": "Planta Mortal"
@@ -3355,10 +3198,10 @@
 		"isFast": true,
 		"pvpPower": 11,
 		"pvePower": 13,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 8,
+		"pveEnergy": 7,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Smack Down",
 			"pt_br": "Derrubada"
@@ -3371,10 +3214,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 120,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Blast Burn",
 			"pt_br": "Queimadura Explosiva"
@@ -3387,10 +3230,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 90,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Hydro Cannon",
 			"pt_br": "Hidro Canhão"
@@ -3403,10 +3246,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Last Resort",
 			"pt_br": "Último Recurso"
@@ -3419,10 +3262,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Meteor Mash",
 			"pt_br": "Meteoro Esmagador"
@@ -3435,18 +3278,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 130,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Skull Bash",
@@ -3460,18 +3298,13 @@
 		"isFast": false,
 		"pvpPower": 20,
 		"pvePower": 20,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Acid Spray",
@@ -3485,18 +3318,13 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 100,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "Earth Power",
@@ -3510,18 +3338,13 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 85,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Crabhammer",
@@ -3535,18 +3358,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 55,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Lunge",
@@ -3560,18 +3378,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 55,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -2,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Octazooka",
@@ -3585,18 +3398,13 @@
 		"isFast": false,
 		"pvpPower": 35,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Mirror Shot",
@@ -3610,22 +3418,14 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 85,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": -1
-				},
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"attackerAttackStatStageChange": -1,
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Superpower",
@@ -3639,18 +3439,13 @@
 		"isFast": false,
 		"pvpPower": 20,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Fell Stinger",
@@ -3664,18 +3459,13 @@
 		"isFast": false,
 		"pvpPower": 45,
 		"pvePower": 45,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -2,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Leaf Tornado",
@@ -3689,18 +3479,13 @@
 		"isFast": false,
 		"pvpPower": 20,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Drain Punch",
@@ -3714,18 +3499,13 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 85,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.2,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.2
 		},
 		"moveName": {
 			"en": "Shadow Bone",
@@ -3739,18 +3519,13 @@
 		"isFast": false,
 		"pvpPower": 35,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Muddy Water",
@@ -3764,10 +3539,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 40,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Blaze Kick",
 			"pt_br": "Chute Labareda"
@@ -3780,18 +3555,13 @@
 		"isFast": false,
 		"pvpPower": 35,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Razor Shell",
@@ -3805,18 +3575,13 @@
 		"isFast": false,
 		"pvpPower": 20,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Power-Up Punch",
@@ -3830,10 +3595,10 @@
 		"isFast": true,
 		"pvpPower": 15,
 		"pvePower": 20,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 11,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 6,
+		"pveEnergy": 11,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Charm",
 			"pt_br": "Encantar"
@@ -3846,10 +3611,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 200,
-		"pvpEnergyDelta": -80,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 4.5,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4.5,
 		"moveName": {
 			"en": "Giga Impact",
 			"pt_br": "Gigaimpacto"
@@ -3862,10 +3627,10 @@
 		"isFast": false,
 		"pvpPower": 10,
 		"pvePower": 10,
-		"pvpEnergyDelta": -70,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -70,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Frustration",
 			"pt_br": "Frustração"
@@ -3878,10 +3643,10 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 25,
-		"pvpEnergyDelta": -70,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 0.5,
+		"pvpEnergy": -70,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Return",
 			"pt_br": "Retorno"
@@ -3894,10 +3659,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 80,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Synchronoise",
 			"pt_br": "Barulho Sincronizado"
@@ -3910,10 +3675,10 @@
 		"isFast": true,
 		"pvpPower": 1,
 		"pvePower": 2,
-		"pvpEnergyDelta": 5,
-		"pveEnergyDelta": 10,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 5,
+		"pveEnergy": 10,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Lock-On",
 			"pt_br": "Mirar"
@@ -3926,10 +3691,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 10,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 6,
+		"pveEnergy": 13,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Thunder Fang",
 			"pt_br": "Presa Trovejante"
@@ -3942,10 +3707,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 12,
-		"pvpEnergyDelta": 6,
-		"pveEnergyDelta": 20,
-		"pvpDuration": 1,
-		"pveDuration": 1.5,
+		"pvpEnergy": 6,
+		"pveEnergy": 20,
+		"pvpCooldown": 1,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Ice Fang",
 			"pt_br": "Presa de Gelo"
@@ -3958,10 +3723,10 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 50,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Sacred Sword",
 			"pt_br": "Espada Sagrada"
@@ -3974,10 +3739,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 115,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Flying Press",
 			"pt_br": "Aperto Voador"
@@ -3990,10 +3755,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Aura Sphere",
 			"pt_br": "Aura Esférica"
@@ -4006,10 +3771,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 95,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Payback",
 			"pt_br": "Revide"
@@ -4022,10 +3787,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 110,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Rock Wrecker",
 			"pt_br": "Demolidor de Pedras"
@@ -4038,18 +3803,13 @@
 		"isFast": false,
 		"pvpPower": 170,
 		"pvePower": 180,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Aeroblast",
@@ -4063,10 +3823,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -4079,10 +3839,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -4095,10 +3855,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -4111,10 +3871,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -4127,10 +3887,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -4143,10 +3903,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 90,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Fly",
 			"pt_br": "Voar"
@@ -4159,18 +3919,13 @@
 		"isFast": false,
 		"pvpPower": 95,
 		"pvePower": 105,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -3
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"attackerDefenseStatStageChange": -3,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "V-create",
@@ -4184,18 +3939,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 130,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"attackerAttackStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Leaf Storm",
@@ -4209,22 +3959,14 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 75,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				},
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Tri Attack",
@@ -4238,10 +3980,10 @@
 		"isFast": true,
 		"pvpPower": 16,
 		"pvePower": 25,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 20,
-		"pvpDuration": 2,
-		"pveDuration": 2,
+		"pvpEnergy": 12,
+		"pveEnergy": 20,
+		"pvpCooldown": 2,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Gust",
 			"pt_br": "Lufada de Vento"
@@ -4254,10 +3996,10 @@
 		"isFast": true,
 		"pvpPower": 20,
 		"pvePower": 32,
-		"pvpEnergyDelta": 20,
-		"pveEnergyDelta": 22,
-		"pvpDuration": 2.5,
-		"pveDuration": 2.5,
+		"pvpEnergy": 20,
+		"pveEnergy": 22,
+		"pvpCooldown": 2.5,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Incinerate",
 			"pt_br": "Incinerar"
@@ -4270,18 +4012,13 @@
 		"isFast": false,
 		"pvpPower": 35,
 		"pvePower": 35,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -2,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Feather Dance",
@@ -4295,10 +4032,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 9,
-		"pvpEnergyDelta": 9,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1,
-		"pveDuration": 1,
+		"pvpEnergy": 9,
+		"pveEnergy": 13,
+		"pvpCooldown": 1,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Fairy Wind",
 			"pt_br": "Vento de Fada"
@@ -4311,10 +4048,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 55,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -4327,18 +4064,13 @@
 		"isFast": false,
 		"pvpPower": 40,
 		"pvePower": 25,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Psychic Fangs",
@@ -4352,10 +4084,10 @@
 		"isFast": true,
 		"pvpPower": 8,
 		"pvePower": 10,
-		"pvpEnergyDelta": 12,
-		"pveEnergyDelta": 13,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 12,
+		"pveEnergy": 13,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Double Kick",
 			"pt_br": "Chute Duplo"
@@ -4368,10 +4100,10 @@
 		"isFast": true,
 		"pvpPower": 10,
 		"pvePower": 17,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 17,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 10,
+		"pveEnergy": 17,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Magical Leaf",
 			"pt_br": "Folha Mágica"
@@ -4384,18 +4116,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 120,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Sacred Fire",
@@ -4409,10 +4136,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 55,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Icicle Spear",
 			"pt_br": "Lança Congelada"
@@ -4425,18 +4152,13 @@
 		"isFast": false,
 		"pvpPower": 170,
 		"pvePower": 200,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Aeroblast+",
@@ -4450,18 +4172,13 @@
 		"isFast": false,
 		"pvpPower": 170,
 		"pvePower": 225,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 0.125,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 2
-				}
-			]
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
 		},
 		"moveName": {
 			"en": "Aeroblast++",
@@ -4475,18 +4192,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 135,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Sacred Fire+",
@@ -4500,18 +4212,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 155,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Sacred Fire++",
@@ -4525,10 +4232,10 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 100,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Acrobatics",
 			"pt_br": "Acrobático"
@@ -4541,18 +4248,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 100,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Luster Purge",
@@ -4566,18 +4268,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 105,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Mist Ball",
@@ -4591,10 +4288,10 @@
 		"isFast": false,
 		"pvpPower": 55,
 		"pvePower": 65,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Brutal Swing",
 			"pt_br": "Balanço Violento"
@@ -4607,10 +4304,10 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 15,
-		"pvpEnergyDelta": 13,
-		"pveEnergyDelta": 19,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 13,
+		"pveEnergy": 19,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Rollout",
 			"pt_br": "Rolagem"
@@ -4623,18 +4320,13 @@
 		"isFast": false,
 		"pvpPower": 130,
 		"pvePower": 115,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.4,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -2
-				}
-			]
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -2,
+			"buffActivationChance": 0.4
 		},
 		"moveName": {
 			"en": "Seed Flare",
@@ -4648,22 +4340,14 @@
 		"isFast": false,
 		"pvpPower": 15,
 		"pvePower": 20,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": 1
-				},
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": 1,
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Obstruct",
@@ -4677,10 +4361,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 140,
-		"pvpEnergyDelta": -90,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -90,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Shadow Force",
 			"pt_br": "Força das Sombras"
@@ -4693,18 +4377,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 140,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Meteor Beam",
@@ -4718,10 +4397,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 9,
-		"pvpEnergyDelta": 14,
-		"pveEnergyDelta": 14,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 14,
+		"pveEnergy": 14,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Water Shuriken",
 			"pt_br": "Estrela Ninja de Água"
@@ -4734,10 +4413,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 140,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Fusion Bolt",
 			"pt_br": "Raio de Fusão"
@@ -4750,10 +4429,10 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 140,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Fusion Flare",
 			"pt_br": "Chama da Fusão"
@@ -4766,10 +4445,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 140,
-		"pvpEnergyDelta": -75,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -75,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Poltergeist",
 			"pt_br": "Poltergeist"
@@ -4782,10 +4461,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 105,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "High Horsepower",
 			"pt_br": "Potência Equina"
@@ -4798,18 +4477,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 160,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Glaciate",
@@ -4823,18 +4497,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 45,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 1,
-		"pvpBuffs": {
-			"chance": 0.5,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 1,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.5
 		},
 		"moveName": {
 			"en": "Breaking Swipe",
@@ -4848,10 +4517,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 150,
-		"pvpEnergyDelta": -70,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -70,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Boomburst",
 			"pt_br": "Rajada Explosiva"
@@ -4864,10 +4533,10 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 70,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Double Iron Bash",
 			"pt_br": "Pancada de Ferro Dupla"
@@ -4880,18 +4549,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Mystical Fire",
@@ -4905,18 +4569,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Liquidation",
@@ -4930,18 +4589,13 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 140,
-		"pvpEnergyDelta": -70,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -70,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Dragon Ascent",
@@ -4955,10 +4609,10 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 6,
-		"pvpEnergyDelta": 7,
-		"pveEnergyDelta": 4,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 7,
+		"pveEnergy": 4,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Leafage",
 			"pt_br": "Folhagem"
@@ -4971,10 +4625,10 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 75,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Magma Storm",
 			"pt_br": "Tempestade de Magma"
@@ -4987,10 +4641,10 @@
 		"isFast": true,
 		"pvpPower": 4,
 		"pvePower": 20,
-		"pvpEnergyDelta": 13,
-		"pveEnergyDelta": 14,
-		"pvpDuration": 1.5,
-		"pveDuration": 1.5,
+		"pvpEnergy": 13,
+		"pveEnergy": 14,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Geomancy",
 			"pt_br": "Geomancia"
@@ -5003,10 +4657,10 @@
 		"isFast": false,
 		"pvpPower": 95,
 		"pvePower": 160,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": -50,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Spacial Rend",
 			"pt_br": "Laceração Espacial"
@@ -5019,10 +4673,10 @@
 		"isFast": false,
 		"pvpPower": 85,
 		"pvePower": 85,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Oblivion Wing",
 			"pt_br": "Asa do Esquecimento"
@@ -5035,18 +4689,13 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 90,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Nature’s Madness",
@@ -5060,18 +4709,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 60,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Triple Axel",
@@ -5085,18 +4729,13 @@
 		"isFast": false,
 		"pvpPower": 65,
 		"pvePower": 65,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Trailblaze",
@@ -5110,18 +4749,13 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 90,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Scorching Sands",
@@ -5135,10 +4769,10 @@
 		"isFast": false,
 		"pvpPower": 150,
 		"pvePower": 160,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Roar of Time",
 			"pt_br": "Rugido do Tempo"
@@ -5151,18 +4785,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 150,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Bleakwind Storm",
@@ -5176,18 +4805,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 150,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Sandsear Storm",
@@ -5201,18 +4825,13 @@
 		"isFast": false,
 		"pvpPower": 60,
 		"pvePower": 150,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Wildbolt Storm",
@@ -5226,18 +4845,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 70,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
-		"pvpBuffs": {
-			"chance": 0.33,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.33
 		},
 		"moveName": {
 			"en": "Spirit Shackle",
@@ -5251,18 +4865,13 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 90,
-		"pvpEnergyDelta": -50,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -50,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Volt Tackle",
@@ -5276,10 +4885,10 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 80,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Darkest Lariat",
 			"pt_br": "Lariat Escuro"
@@ -5292,10 +4901,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 4,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 4,
+		"pveEnergy": 7,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Psywave",
 			"pt_br": "Onda Psíquica"
@@ -5308,10 +4917,10 @@
 		"isFast": true,
 		"pvpPower": 3,
 		"pvePower": 4,
-		"pvpEnergyDelta": 8,
-		"pveEnergyDelta": 6,
-		"pvpDuration": 1,
-		"pveDuration": 0.5,
+		"pvpEnergy": 8,
+		"pveEnergy": 6,
+		"pvpCooldown": 1,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Metal Sound",
 			"pt_br": "Som de Metal"
@@ -5324,10 +4933,10 @@
 		"isFast": true,
 		"pvpPower": 2,
 		"pvePower": 4,
-		"pvpEnergyDelta": 4,
-		"pveEnergyDelta": 7,
-		"pvpDuration": 0.5,
-		"pveDuration": 0.5,
+		"pvpEnergy": 4,
+		"pveEnergy": 7,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 0.5,
 		"moveName": {
 			"en": "Sand Attack",
 			"pt_br": "Ataque de Areia"
@@ -5340,10 +4949,10 @@
 		"isFast": false,
 		"pvpPower": 135,
 		"pvePower": 230,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Sunsteel Strike",
 			"pt_br": "Ataque Solaraço"
@@ -5356,10 +4965,10 @@
 		"isFast": false,
 		"pvpPower": 135,
 		"pvePower": 230,
-		"pvpEnergyDelta": -65,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -65,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Moongeist Beam",
 			"pt_br": "Feixe Espectral"
@@ -5372,18 +4981,13 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -45,
-		"pvpDuration": 0,
-		"pveDuration": 2.7,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -45,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.7,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Aura Wheel",
@@ -5397,18 +5001,13 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -45,
-		"pvpDuration": 0,
-		"pveDuration": 2.7,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -45,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.7,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Aura Wheel",
@@ -5422,18 +5021,13 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 90,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 0.1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -4
-				}
-			]
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -4,
+			"buffActivationChance": 0.1
 		},
 		"moveName": {
 			"en": "High Jump Kick",
@@ -5447,10 +5041,10 @@
 		"isFast": true,
 		"pvpPower": 13,
 		"pvePower": 10,
-		"pvpEnergyDelta": 10,
-		"pveEnergyDelta": 16,
-		"pvpDuration": 1.5,
-		"pveDuration": 1,
+		"pvpEnergy": 10,
+		"pveEnergy": 16,
+		"pvpCooldown": 1.5,
+		"pveCooldown": 1,
 		"moveName": {
 			"en": "Force Palm",
 			"pt_br": "Palma da Força"
@@ -5463,10 +5057,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 85,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Sparkling Aria",
 			"pt_br": "Aria Cintilante"
@@ -5479,18 +5073,13 @@
 		"isFast": false,
 		"pvpPower": 50,
 		"pvePower": 100,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Rage Fist",
@@ -5504,18 +5093,13 @@
 		"isFast": false,
 		"pvpPower": 30,
 		"pvePower": 75,
-		"pvpEnergyDelta": -35,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2.7,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.7,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Flower Trick",
@@ -5529,18 +5113,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 160,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetAttackStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Freeze Shock",
@@ -5554,18 +5133,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 90,
-		"pvpEnergyDelta": -60,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -60,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Ice Burn",
@@ -5579,18 +5153,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 100,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerAttackStatStageChange",
-					"quantity": 1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Torch Song",
@@ -5604,10 +5173,10 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 200,
-		"pvpEnergyDelta": -55,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 0,
-		"pveDuration": 3.5,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Behemoth Blade",
 			"pt_br": "Behemoth Blade"
@@ -5620,10 +5189,10 @@
 		"isFast": false,
 		"pvpPower": 80,
 		"pvePower": 125,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -50,
-		"pvpDuration": 0,
-		"pveDuration": 1.5,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
 		"moveName": {
 			"en": "Behemoth Bash",
 			"pt_br": "Behemoth Bash"
@@ -5636,18 +5205,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 50,
-		"pvpEnergyDelta": -40,
-		"pveEnergyDelta": -33,
-		"pvpDuration": 0,
-		"pveDuration": 2,
-		"pvpBuffs": {
-			"chance": 0.3,
-			"buffs": [
-				{
-					"buff": "targetDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
 		},
 		"moveName": {
 			"en": "Upper Hand",
@@ -5661,10 +5225,10 @@
 		"isFast": false,
 		"pvpPower": 1,
 		"pvePower": 1,
-		"pvpEnergyDelta": -1,
-		"pveEnergyDelta": -1,
-		"pvpDuration": 0,
-		"pveDuration": 3.3,
+		"pvpEnergy": -1,
+		"pveEnergy": -1,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.3,
 		"moveName": {
 			"en": "Thunder Cage",
 			"pt_br": "Thunder Cage"
@@ -5677,10 +5241,10 @@
 		"isFast": false,
 		"pvpPower": 1,
 		"pvePower": 1,
-		"pvpEnergyDelta": -1,
-		"pveEnergyDelta": -1,
-		"pvpDuration": 0,
-		"pveDuration": 1.8,
+		"pvpEnergy": -1,
+		"pveEnergy": -1,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.8,
 		"moveName": {
 			"en": "Crush Grip",
 			"pt_br": "Crush Grip"
@@ -5693,10 +5257,10 @@
 		"isFast": false,
 		"pvpPower": 1,
 		"pvePower": 1,
-		"pvpEnergyDelta": -1,
-		"pveEnergyDelta": -1,
-		"pvpDuration": 0,
-		"pveDuration": 3.3,
+		"pvpEnergy": -1,
+		"pveEnergy": -1,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.3,
 		"moveName": {
 			"en": "Dragon Energy",
 			"pt_br": "Dragon Energy"
@@ -5709,10 +5273,10 @@
 		"isFast": false,
 		"pvpPower": 0,
 		"pvePower": 0,
-		"pvpEnergyDelta": 0,
-		"pveEnergyDelta": 0,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": 0,
+		"pveEnergy": 0,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Crush Claw",
 			"pt_br": "Garra Esmagadora"
@@ -5725,10 +5289,10 @@
 		"isFast": false,
 		"pvpPower": 0,
 		"pvePower": 0,
-		"pvpEnergyDelta": 0,
-		"pveEnergyDelta": 0,
-		"pvpDuration": 0,
-		"pveDuration": 2.5,
+		"pvpEnergy": 0,
+		"pveEnergy": 0,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
 		"moveName": {
 			"en": "Leech Life",
 			"pt_br": "Suga-vidas"
@@ -5741,10 +5305,10 @@
 		"isFast": false,
 		"pvpPower": 0,
 		"pvePower": 9000,
-		"pvpEnergyDelta": 0,
-		"pveEnergyDelta": -25,
-		"pvpDuration": 0,
-		"pveDuration": 2,
+		"pvpEnergy": 0,
+		"pveEnergy": -25,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Horn Drill",
 			"pt_br": "Chifre Broca"
@@ -5757,10 +5321,10 @@
 		"isFast": false,
 		"pvpPower": 0,
 		"pvePower": 9001,
-		"pvpEnergyDelta": 0,
-		"pveEnergyDelta": -25,
-		"pvpDuration": 0,
-		"pveDuration": 3,
+		"pvpEnergy": 0,
+		"pveEnergy": -25,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
 		"moveName": {
 			"en": "Fissure",
 			"pt_br": "Fissura"
@@ -5773,18 +5337,13 @@
 		"isFast": false,
 		"pvpPower": 120,
 		"pvePower": 120,
-		"pvpEnergyDelta": -45,
-		"pveEnergyDelta": -100,
-		"pvpDuration": 500,
-		"pveDuration": 3.3,
-		"pvpBuffs": {
-			"chance": 1,
-			"buffs": [
-				{
-					"buff": "attackerDefenseStatStageChange",
-					"quantity": -1
-				}
-			]
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 500,
+		"pveCooldown": 3.3,
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerDefenseStatStageChange": -1
 		},
 		"moveName": {
 			"en": "Clanging Scales",

@@ -68,7 +68,7 @@ export class GameMasterParser {
 
         for (const move of allPokemonMoves) {
             if (!knownMoves[move]) {
-                console.error(`${move} isn't a known move! (Pokémon species: ${pokemon.speciesId})`);
+                throw new Error(`${move} isn't a known move! (Pokémon species: ${pokemon.speciesId})`);
             }
         }
     };
@@ -107,18 +107,14 @@ export class GameMasterParser {
                 imageUrl: ImageUrlBuilder.buildImageUrl(pokemon, imageForm),
                 goImageUrl: ImageUrlBuilder.buildGoImageUrlForPokemon(pokemon, goForm),
                 shinyGoImageUrl: ImageUrlBuilder.buildShinyGoImageUrlForPokemon(pokemon, goForm),
-                atk: pokemon.baseStats.atk,
-                def: pokemon.baseStats.def,
-                hp: pokemon.baseStats.hp,
+                baseStats: pokemon.baseStats,
                 fastMoves: PokemonTransformer.cleanMoves(pokemon.fastMoves),
                 chargedMoves: PokemonTransformer.cleanMoves(pokemon.chargedMoves),
                 eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves ?? []),
                 legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves ?? []),
                 isShadow,
                 isMega,
-                familyId: pokemon.family?.id,
-                parent: pokemon.speciesId === 'darmanitan_standard_shadow' ? 'darumaka_shadow' : pokemon.family?.parent,
-                evolutions: pokemon.family?.evolutions ?? [],
+                family: pokemon.family,
                 aliasId: pokemon.aliasId,
                 form: PokemonTransformer.getForm(pokemon.speciesName),
                 isLegendary: PokemonValidator.hasTag(pokemon, 'legendary'),
@@ -134,25 +130,30 @@ export class GameMasterParser {
     private applyManualCorrections(pokemonDictionary: GameMasterData): void {
         // Apply any manual corrections needed
         const gastrodon = pokemonDictionary.gastrodon;
-        if (gastrodon) {
-            gastrodon.familyId = 'FAMILY_SHELLOS';
-            gastrodon.parent = 'shellos';
+        if (gastrodon?.family) {
+            gastrodon.family.id = 'FAMILY_SHELLOS';
+            gastrodon.family.parent = 'shellos';
         }
 
         const cursola = pokemonDictionary.cursola;
-        if (cursola) {
-            cursola.parent = 'corsola_galarian';
+        if (cursola?.family) {
+            cursola.family.parent = 'corsola_galarian';
         }
 
         const corsola = pokemonDictionary.corsola;
-        if (corsola) {
-            corsola.familyId = 'FAMILY_CORSOLA';
+        if (corsola?.family) {
+            corsola.family.id = 'FAMILY_CORSOLA';
         }
 
         const corsolaGalarian = pokemonDictionary.corsola_galarian;
-        if (corsolaGalarian) {
-            corsolaGalarian.familyId = 'FAMILY_CORSOLA';
-            corsolaGalarian.evolutions = ['cursola'];
+        if (corsolaGalarian?.family) {
+            corsolaGalarian.family.id = 'FAMILY_CORSOLA';
+            corsolaGalarian.family.evolutions = ['cursola'];
+        }
+
+        const darmanitanShadow = pokemonDictionary.darmanitan_standard_shadow;
+        if (darmanitanShadow?.family) {
+            darmanitanShadow.family.parent = 'darumaka_shadow';
         }
 
         // Handle golisopodsh alias

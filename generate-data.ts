@@ -1,3 +1,4 @@
+import { Leagues } from '@src/parsers/pokemon/config/pokemon-config';
 import { PvPParser } from '@src/parsers/pokemon/pvp-parser';
 import { HttpDataFetcher } from '@src/parsers/services/data-fetcher';
 import fs from 'fs/promises';
@@ -16,8 +17,6 @@ import { IEntry } from './src/parsers/types/events';
 
 const generateData = async () => {
     console.log('🚀 Starting Pokemon GO data generation...');
-
-    const now = new Date().toISOString();
 
     try {
         // Initialize dependencies
@@ -82,28 +81,16 @@ const generateData = async () => {
         );
         await fs.writeFile(path.join(dataDir, 'events.json'), JSON.stringify(events, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'game-master.json'), JSON.stringify(pokemonDictionary, null, '\t'));
-        await fs.writeFile(path.join(dataDir, 'great-league-pvp.json'), JSON.stringify(pvpData.GREAT, null, '\t'));
-        await fs.writeFile(path.join(dataDir, 'ultra-league-pvp.json'), JSON.stringify(pvpData.ULTRA, null, '\t'));
-        await fs.writeFile(path.join(dataDir, 'master-league-pvp.json'), JSON.stringify(pvpData.MASTER, null, '\t'));
+        for (const key of Object.keys(Leagues)) {
+            const fileName = `${key.toLocaleLowerCase()}-league-pvp.json`;
+            const filePath = path.join(dataDir, fileName);
+            await fs.writeFile(filePath, JSON.stringify(pvpData[key], null, '\t'));
+        }
         await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'moves.json'), JSON.stringify(moves, null, '\t'));
-        console.log('✅ All LeekDuck and main data written to disk.');
-        console.log('');
-        console.log('📁 Generated files:');
-        console.log('- data/events.json');
-        console.log('- data/spotlight-hours.json');
-        console.log('- data/leekduck-special-raid-bosses.json');
-        console.log('- data/leekduck-raid-bosses.json');
-        console.log('- data/leekduck-eggs.json');
-        console.log('- data/rocket-lineups.json');
-        console.log('- data/game-master.json');
-        console.log('- data/season.json');
-        console.log('- data/moves.json');
-        console.log('');
-        console.log(`⏰ Last updated: ${now}`);
+
+        console.log('✅ All data written to disk.');
         console.log(`�� Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
-        console.log('');
-        console.log('💡 Note: These files will be committed by GitHub Actions');
     } catch (error) {
         console.error('❌ Data generation failed:', error);
         process.exit(1);

@@ -2,12 +2,12 @@ import { HttpDataFetcher } from '../../../services/data-fetcher';
 import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
 import { GameMasterMovesType, IGameMasterMove, PvEMove, PvPMove } from '../../../types/pokemon';
 
-function normalizedMoveName(moveName: string) {
+const normalizedMoveName = (moveName: string) => {
     return moveName
         .split('_')
         .map((p) => p.substring(0, 1).toLocaleUpperCase() + p.substring(1).toLocaleLowerCase())
         .join(' ');
-}
+};
 
 export class MovesProvider {
     constructor(
@@ -17,7 +17,7 @@ export class MovesProvider {
     private readonly GAME_MASTER_URL =
         'https://raw.githubusercontent.com/PokeMiners/game_masters/master/latest/latest.json';
 
-    fetchMoves = async (): Promise<Record<string, IGameMasterMove>> => {
+    async fetchMoves(): Promise<Record<string, IGameMasterMove>> {
         const gmData = await this.dataFetcher.fetchJson<Array<GameMasterMovesType>>(this.GAME_MASTER_URL);
 
         const pvpMoves: Record<string, PvPMove> = {};
@@ -186,5 +186,5 @@ export class MovesProvider {
             };
         }
         return movesDictionary;
-    };
+    }
 }

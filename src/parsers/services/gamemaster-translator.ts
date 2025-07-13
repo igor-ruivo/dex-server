@@ -161,24 +161,20 @@ class GameMasterTranslator {
         this.parsedSources = {};
     }
 
-    private tryParseMove = (
-        translatedMovesDictionary: Record<string, string>,
-        dataEntry: string,
-        expectedValue: string
-    ) => {
+    private tryParseMove(translatedMovesDictionary: Record<string, string>, dataEntry: string, expectedValue: string) {
         const moveTerm = 'move_name_';
 
         if (dataEntry.startsWith(moveTerm)) {
             const key = dataEntry.substring(moveTerm.length);
             translatedMovesDictionary[key] = expectedValue;
         }
-    };
+    }
 
-    private tryParseRocketPhrase = (
+    private tryParseRocketPhrase(
         translatedPhrasesDictionary: Record<string, string>,
         dataEntry: string,
         expectedValue: string
-    ) => {
+    ) {
         const gruntTerm = 'combat_grunt_quote';
 
         if (dataEntry.startsWith(gruntTerm)) {
@@ -209,9 +205,9 @@ class GameMasterTranslator {
             default:
                 return;
         }
-    };
+    }
 
-    public setupGameMasterSources = async (): Promise<void> => {
+    async setupGameMasterSources(): Promise<void> {
         const results: Array<
             [
                 AvailableLocales,
@@ -250,13 +246,13 @@ class GameMasterTranslator {
             parsedSources[locale] = dicts;
         }
         this.parsedSources = parsedSources;
-    };
+    }
 
-    public getTranslationForMoveName = (locale: AvailableLocales, moveID: string) => {
+    getTranslationForMoveName(locale: AvailableLocales, moveID: string) {
         return this.parsedSources[locale]?.translatedMovesDictionary[moveID] ?? '';
-    };
+    }
 
-    public getTranslationForRocketPhrase = (locale: AvailableLocales, trainerId: string, type?: string): string => {
+    getTranslationForRocketPhrase(locale: AvailableLocales, trainerId: string, type?: string): string {
         const phrases = this.parsedSources[locale]?.translatedPhrasesDictionary;
         if (!phrases) {
             return '';
@@ -274,7 +270,7 @@ class GameMasterTranslator {
         }
 
         return '';
-    };
+    }
 }
 
 export default GameMasterTranslator;

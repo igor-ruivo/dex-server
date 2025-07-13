@@ -10,11 +10,15 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
         this.document = dom.window.document;
     }
 
-    getTitle = () => this.document.querySelectorAll('h2.blogPost__title')[0]?.textContent ?? '';
+    getTitle() {
+        return this.document.querySelectorAll('h2.blogPost__title')[0]?.textContent ?? '';
+    }
 
-    getImgUrl = () => this.document.getElementsByClassName('image__image')[0]?.getAttribute('src') ?? '';
+    getImgUrl() {
+        return this.document.getElementsByClassName('image__image')[0]?.getAttribute('src') ?? '';
+    }
 
-    getSubEvents = () => {
+    getSubEvents() {
         const subEvents: Array<IPokemonGoEventBlockParser> = Array.from(
             this.document.querySelectorAll('.blogPost__post__blocks>.block--ContainerBlock')
         ).map((e) => ({
@@ -27,7 +31,7 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
         }));
 
         return subEvents;
-    };
+    }
 }
 
 export default PokemonGoPostParser;

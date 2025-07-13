@@ -9,7 +9,7 @@ export class PokemonTransformer {
     /**
      * Transforms an array of type strings into PokemonTypes enums, filtering out 'none'.
      */
-    static transformTypes = (types: Array<string>): Array<PokemonTypes> => {
+    static transformTypes(types: Array<string>): Array<PokemonTypes> {
         return types
             .filter((type) => type !== 'none')
             .map((type) => {
@@ -17,12 +17,12 @@ export class PokemonTransformer {
                 return PokemonTypes[typeName as keyof typeof PokemonTypes];
             })
             .filter((type) => type !== undefined);
-    };
+    }
 
     /**
      * Cleans a list of moves, replacing all hidden powers with 'HIDDEN_POWER' if present.
      */
-    static cleanMoves = (moves: Array<string>): Array<string> => {
+    static cleanMoves(moves: Array<string>): Array<string> {
         if (!moves) return [];
 
         const hasHiddenPower = moves.some((move) => POKEMON_CONFIG.HIDDEN_POWERS.has(move));
@@ -31,27 +31,27 @@ export class PokemonTransformer {
         }
 
         return moves;
-    };
+    }
 
     /**
      * Cleans the species name for special cases (e.g., Darmanitan).
      */
-    static cleanSpeciesName = (name: string): string => {
+    static cleanSpeciesName(name: string): string {
         return name.replaceAll('Darmanitan (Standard)', 'Darmanitan');
-    };
+    }
 
     /**
      * Converts 'Male'/'Female' in a name to their respective symbols.
      */
-    static sexConverter = (name: string): string => {
+    static sexConverter(name: string): string {
         return name.replace('Male', '♂').replace('Female', '♀');
-    };
+    }
 
     /**
      * Extracts the form from a Pokémon name, if present in parentheses.
      * Logs warnings for multiple forms or missing forms.
      */
-    static getForm = (name: string): string => {
+    static getForm(name: string): string {
         name = name.replaceAll('(Shadow)', '');
         name = name.replaceAll('Shadow', '');
 
@@ -79,14 +79,14 @@ export class PokemonTransformer {
             console.log(`pokemon id: ${name}`);
         }
         return form;
-    };
+    }
 
     /**
      * Returns the GO form string for a given Pokémon name.
      * Uses a mapping object for known forms for maintainability.
      * Falls back to extracting the form from parentheses if not found in the mapping.
      */
-    static getGoForm = (pokemonName: string): string => {
+    static getGoForm(pokemonName: string): string {
         const FORM_MAPPINGS: Record<string, string> = {
             '(Alolan)': 'ALOLA',
             '(Mega X)': 'MEGA_X',
@@ -134,5 +134,5 @@ export class PokemonTransformer {
         }
 
         return '';
-    };
+    }
 }

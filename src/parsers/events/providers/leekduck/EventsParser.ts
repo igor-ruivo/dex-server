@@ -46,7 +46,7 @@ export class EventsParser {
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
     ) {}
-    parse = async () => {
+    async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_EVENTS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
@@ -113,9 +113,9 @@ export class EventsParser {
                 }
             }),
         };
-    };
+    }
 
-    private parseCommonEventFields = (eventHtml: string): ParsedEventCommon | undefined => {
+    private parseCommonEventFields(eventHtml: string): ParsedEventCommon | undefined {
         const dom = new JSDOM(eventHtml);
         const htmlDoc = dom.window.document;
         const title = htmlDoc.getElementsByClassName('page-title')[0]?.textContent?.replace(/\s/g, ' ').trim() ?? '';
@@ -138,13 +138,13 @@ export class EventsParser {
         }
 
         return { title, date, dateEnd, htmlDoc };
-    };
+    }
 
-    private parseSpotlightHourEvent = (
+    private parseSpotlightHourEvent(
         parsed: ParsedEventCommon,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         url: string
-    ): ILeekduckSpotlightHour | undefined => {
+    ): ILeekduckSpotlightHour | undefined {
         const rawPkmName = parsed.title.split('Spotlight')[0].trim();
         const pokemons = this.matchPokemonEntries(rawPkmName, gameMasterPokemon, false, false);
         const bonus = this.extractSpotlightBonus(parsed.htmlDoc);
@@ -158,13 +158,13 @@ export class EventsParser {
             imgUrl: 'https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg',
             rawUrl: url,
         };
-    };
+    }
 
-    private parseSpecialRaidBossEvent = (
+    private parseSpecialRaidBossEvent(
         parsed: ParsedEventCommon,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         url: string
-    ): ILeekduckSpecialRaidBoss | undefined => {
+    ): ILeekduckSpecialRaidBoss | undefined {
         const parts = parsed.title.split(' in ');
         const rawPkmName = parts[0];
         const raidType = parts[1] ?? '';
@@ -182,14 +182,14 @@ export class EventsParser {
             imgUrl: undefined,
             rawUrl: url,
         };
-    };
+    }
 
-    private matchPokemonEntries = (
+    private matchPokemonEntries(
         rawPkmName: string,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         isShadow: boolean,
         isMega: boolean
-    ): Array<IEntry> => {
+    ): Array<IEntry> {
         let domainToUse: Array<GameMasterPokemon> = [];
         if (isShadow) {
             domainToUse = Object.values(gameMasterPokemon).filter((p: GameMasterPokemon) => {
@@ -224,9 +224,9 @@ export class EventsParser {
             }
         }
         return entries;
-    };
+    }
 
-    private extractSpotlightBonus = (htmlDoc: Document) => {
+    private extractSpotlightBonus(htmlDoc: Document) {
         const desc = htmlDoc.getElementsByClassName('event-description')[0] as HTMLElement | undefined;
         if (!desc) {
             return undefined;
@@ -247,5 +247,5 @@ export class EventsParser {
         });
 
         return translatedBonuses;
-    };
+    }
 }

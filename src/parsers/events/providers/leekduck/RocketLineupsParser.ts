@@ -14,7 +14,7 @@ export class RocketLineupsParser {
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
         private readonly translator: GameMasterTranslator
     ) {}
-    parse = async () => {
+    async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_ROCKET_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
@@ -64,5 +64,5 @@ export class RocketLineupsParser {
             });
         }
         return answer;
-    };
+    }
 }

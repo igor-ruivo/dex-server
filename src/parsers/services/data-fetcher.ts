@@ -11,7 +11,7 @@ export class HttpDataFetcher implements IDataFetcher {
         'Accept-Language': 'en-US,en;q=0.9',
     };
 
-    fetchJson = async <T>(url: string) => {
+    async fetchJson<T>(url: string) {
         const response = await fetch(url, {
             headers: this.headers,
         });
@@ -21,9 +21,9 @@ export class HttpDataFetcher implements IDataFetcher {
         }
 
         return response.json() as T;
-    };
+    }
 
-    fetchText = async (url: string) => {
+    async fetchText(url: string) {
         const response = await fetch(url, {
             headers: this.headers,
         });
@@ -33,5 +33,5 @@ export class HttpDataFetcher implements IDataFetcher {
         }
 
         return response.text();
-    };
+    }
 }

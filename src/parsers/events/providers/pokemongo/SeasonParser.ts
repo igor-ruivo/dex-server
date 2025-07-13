@@ -13,10 +13,7 @@ const getText = (doc: Document, selector: string) => doc.querySelector(selector)
 class SeasonParser {
     constructor(private readonly dataFetcher: HttpDataFetcher) {}
 
-    fetchSeasonData = async (
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
-        domain: Array<GameMasterPokemon>
-    ) => {
+    async fetchSeasonData(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: Array<GameMasterPokemon>) {
         const seasonUrlBuilder = (locale: AvailableLocales) => `https://pokemongo.com/${locale}/seasons`;
         const seasonsHtmls = await Promise.all(
             Object.values(AvailableLocales).map(async (locale) => ({
@@ -175,7 +172,7 @@ class SeasonParser {
 
         const translatedSeason = pairEventTranslations(parsedSeasons);
         return translatedSeason[0];
-    };
+    }
 }
 
 export default SeasonParser;

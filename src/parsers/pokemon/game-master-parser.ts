@@ -12,7 +12,7 @@ export class GameMasterParser {
         private readonly moves: Record<string, IGameMasterMove>
     ) {}
 
-    parse = async (): Promise<GameMasterData> => {
+    async parse() {
         console.log('🔄 Fetching Pokemon Game Master data...');
 
         try {
@@ -30,12 +30,9 @@ export class GameMasterParser {
             console.error('❌ Failed to parse Game Master data:', error);
             throw error;
         }
-    };
+    }
 
-    private transformData = (
-        rawData: Array<BasePokemon>,
-        knownMoves: Record<string, IGameMasterMove>
-    ): GameMasterData => {
+    private transformData(rawData: Array<BasePokemon>, knownMoves: Record<string, IGameMasterMove>): GameMasterData {
         const seenSpecies = new Set<string>();
         const pokemonDictionary: GameMasterData = {};
 
@@ -58,9 +55,9 @@ export class GameMasterParser {
         this.applyManualCorrections(pokemonDictionary);
 
         return pokemonDictionary;
-    };
+    }
 
-    private checkPokemonMoves = (pokemon: GameMasterPokemon, knownMoves: Record<string, IGameMasterMove>) => {
+    private checkPokemonMoves(pokemon: GameMasterPokemon, knownMoves: Record<string, IGameMasterMove>) {
         const allPokemonMoves = new Set([
             ...(pokemon.eliteMoves ?? []),
             ...pokemon.fastMoves,
@@ -73,9 +70,9 @@ export class GameMasterParser {
                 throw new Error(`${move} isn't a known move! (Pokémon species: ${pokemon.speciesId})`);
             }
         }
-    };
+    }
 
-    private transformPokemon = (pokemon: BasePokemon, allPokemon: Array<BasePokemon>): GameMasterPokemon | null => {
+    private transformPokemon(pokemon: BasePokemon, allPokemon: Array<BasePokemon>): GameMasterPokemon | null {
         try {
             const isShadow = PokemonValidator.isShadowPokemon(pokemon);
             const isMega = PokemonValidator.isMegaPokemon(pokemon);
@@ -127,9 +124,9 @@ export class GameMasterParser {
             console.error(error);
             return null;
         }
-    };
+    }
 
-    private applyManualCorrections = (pokemonDictionary: GameMasterData): void => {
+    private applyManualCorrections(pokemonDictionary: GameMasterData): void {
         // Apply any manual corrections needed
         const gastrodon = pokemonDictionary.gastrodon;
         if (gastrodon?.family) {
@@ -163,7 +160,7 @@ export class GameMasterParser {
         if (golisopodsh) {
             golisopodsh.aliasId = 'golisopod';
         }
-    };
+    }
 }
 
 export type { GameMasterData } from '../types/pokemon';

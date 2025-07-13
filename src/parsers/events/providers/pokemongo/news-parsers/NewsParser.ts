@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from '../../../../types/events';
+import { IPokemonGoHtmlParser } from '../../../../types/events';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
     private document: Document;
@@ -10,7 +10,7 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
         this.document = dom.window.document;
     }
 
-    getTitle = () => {
+    getTitle() {
         const allArticleNewsDescendants =
             this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
@@ -19,11 +19,13 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
         );
 
         return descendantsWithTitleClass[0]?.textContent ?? '';
-    };
+    }
 
-    getImgUrl = () => this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
+    getImgUrl() {
+        return this.document.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
+    }
 
-    getSubEvents: () => Array<IPokemonGoEventBlockParser> = () => {
+    getSubEvents() {
         const allArticleNewsDescendants =
             this.document.querySelector('article[aria-labelledby=news-title]')?.querySelectorAll('*') ?? [];
 
@@ -46,7 +48,7 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
                 getEventBlocks: () => containerBlocks,
             },
         ];
-    };
+    }
 }
 
 export default PokemonGoNewsParser;

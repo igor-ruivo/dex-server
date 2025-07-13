@@ -164,24 +164,24 @@ export class PokemonGoSource implements IEventSource {
     private fetcher: PokemonGoFetcher;
 
     constructor(
-        private readonly dataFetcher: HttpDataFetcher,
+        readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
     ) {
         this.fetcher = new PokemonGoFetcher(dataFetcher);
     }
 
-    private getShorterUrlVersion = (url: string) => {
+    private getShorterUrlVersion(url: string) {
         if (url.includes('/news/')) {
             return url.split('/news/')[1];
         }
 
         return url.split('/post/')[1];
-    };
+    }
 
     /**
      * Parses all events from the provider using the given Game Master data.
      */
-    parseEvents = async () => {
+    async parseEvents() {
         try {
             const posts = await this.fetcher.fetchAllPosts();
             const originalEvents = await this.parseOriginalPosts(posts, this.gameMasterPokemon);
@@ -191,15 +191,15 @@ export class PokemonGoSource implements IEventSource {
         } catch {
             return [];
         }
-    };
+    }
 
     /**
      * Parses original English posts to extract full event data.
      */
-    private parseOriginalPosts = async (
+    private async parseOriginalPosts(
         posts: Array<PokemonGoPost>,
         gameMasterPokemon: Record<string, GameMasterPokemon>
-    ): Promise<Array<IParsedEvent>> => {
+    ): Promise<Array<IParsedEvent>> {
         const originalPosts = posts.filter((p) => p.locale === AvailableLocales.en);
         const postPromises = originalPosts.map((post) => {
             try {
@@ -210,15 +210,15 @@ export class PokemonGoSource implements IEventSource {
         });
 
         return (await Promise.all(postPromises)).flat();
-    };
+    }
 
     /**
      * Parses translated posts to extract bonus information only.
      */
-    private parseTranslatedPosts = async (
+    private async parseTranslatedPosts(
         posts: Array<PokemonGoPost>,
         originalEvents: Array<IParsedEvent>
-    ): Promise<Array<IParsedEvent>> => {
+    ): Promise<Array<IParsedEvent>> {
         const translatedPosts = posts.filter((p) => p.locale !== AvailableLocales.en);
         const postPromises = translatedPosts.map((post) => {
             try {
@@ -234,29 +234,29 @@ export class PokemonGoSource implements IEventSource {
         });
 
         return (await Promise.all(postPromises)).flat();
-    };
+    }
 
     /**
      * Finds the matching original event for a translated post.
      */
-    private findMatchingOriginalEvent = (
+    private findMatchingOriginalEvent(
         post: PokemonGoPost,
         originalEvents: Array<IParsedEvent>
-    ): IParsedEvent | undefined => {
+    ): IParsedEvent | undefined {
         return originalEvents.find((e) => this.getShorterUrlVersion(e.url) === this.getShorterUrlVersion(post.url));
-    };
+    }
 
     /**
      * Common logic for creating parser and iterating through subevents.
      */
-    private createParserAndGetSubEvents = (post: PokemonGoPost) => {
+    private createParserAndGetSubEvents(post: PokemonGoPost) {
         const parser: IPokemonGoHtmlParser =
             post.type === 'post' ? new PokemonGoPostParser(post.html) : new PokemonGoNewsParser(post.html);
 
         return { parser, subEvents: parser.getSubEvents() };
-    };
+    }
 
-    private parsePostForTranslations = (post: PokemonGoPost, bonusSectionindex: number): Array<IParsedEvent> => {
+    private parsePostForTranslations(post: PokemonGoPost, bonusSectionindex: number): Array<IParsedEvent> {
         const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
 
@@ -269,12 +269,12 @@ export class PokemonGoSource implements IEventSource {
             events.push(event);
         }
         return events;
-    };
+    }
 
     /**
      * Creates an empty EventBlock with default values.
      */
-    private createEmptyEventBlock = (bonusSectionIndex = -1): EventBlock => {
+    private createEmptyEventBlock(bonusSectionIndex = -1): EventBlock {
         return {
             raids: [],
             wild: [],
@@ -285,12 +285,12 @@ export class PokemonGoSource implements IEventSource {
             bonuses: [],
             bonusSectionIndex,
         };
-    };
+    }
 
     /**
      * Parses bonus content from a section element.
      */
-    private parseBonusContent = (sectionElement: Element): Array<string> => {
+    private parseBonusContent(sectionElement: Element): Array<string> {
         const bonusesArr: Array<string> = [];
         const sectionBodies = Array.from(sectionElement.children) as Array<HTMLElement>;
 
@@ -303,9 +303,9 @@ export class PokemonGoSource implements IEventSource {
         }
 
         return bonusesArr;
-    };
+    }
 
-    private parseTranslatedBonusFromPost = (sectionElements: Array<Element>, bonusSectionIndex: number): EventBlock => {
+    private parseTranslatedBonusFromPost(sectionElements: Array<Element>, bonusSectionIndex: number): EventBlock {
         const eventBlock = this.createEmptyEventBlock(bonusSectionIndex);
 
         if (bonusSectionIndex === -1 || sectionElements.length < bonusSectionIndex + 1) {
@@ -316,15 +316,15 @@ export class PokemonGoSource implements IEventSource {
         eventBlock.bonuses = this.parseBonusContent(sectionElement);
 
         return eventBlock;
-    };
+    }
 
     /**
      * Parses a single post and returns all subevents as IParsedEvent objects.
      */
-    private parseSinglePost = (
+    private parseSinglePost(
         post: PokemonGoPost,
         gameMasterPokemon: Record<string, GameMasterPokemon>
-    ): Array<IParsedEvent> => {
+    ): Array<IParsedEvent> {
         const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
         const domains = getDomains(gameMasterPokemon);
@@ -356,9 +356,9 @@ export class PokemonGoSource implements IEventSource {
             }
         }
         return events;
-    };
+    }
 
-    private eventIsRelevant = (event: IParsedEvent) => {
+    private eventIsRelevant(event: IParsedEvent) {
         return (
             event.locale !== AvailableLocales.en ||
             (((event.bonuses && event.bonuses.length > 0) ||
@@ -370,25 +370,25 @@ export class PokemonGoSource implements IEventSource {
                 event.dateRanges &&
                 event.dateRanges.length > 0)
         );
-    };
+    }
 
     /**
      * Checks if a section is a bonus section by its type.
      */
-    private isBonusSection = (sectionType: string): boolean => {
+    private isBonusSection(sectionType: string): boolean {
         return EVENT_SECTION_TYPES.BONUSES.some((bonusType) => sectionType.includes(bonusType));
-    };
+    }
 
     /**
      * Processes a section of the event and updates the eventData object accordingly.
      */
-    private processEventSection = (
+    private processEventSection(
         sectionType: string,
         sectionBodies: Array<HTMLElement>,
         eventData: EventBlock,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         domains: Domains
-    ): void => {
+    ): void {
         if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
             eventData.wild.push(
                 ...extractPokemonSpeciesIdsFromElements(
@@ -441,12 +441,12 @@ export class PokemonGoSource implements IEventSource {
                 )
             );
         }
-    };
+    }
 
     /**
      * Parses all inner event sections and returns the aggregated EventBlock.
      */
-    private parseInnerEvent = (
+    private parseInnerEvent(
         sectionElements: Array<Element>,
         gameMasterPokemon: Record<string, GameMasterPokemon>,
         wildDomain: Array<GameMasterPokemon>,
@@ -455,7 +455,7 @@ export class PokemonGoSource implements IEventSource {
         researchDomain: Array<GameMasterPokemon>,
         incenseDomain: Array<GameMasterPokemon>,
         luresDomain: Array<GameMasterPokemon>
-    ): EventBlock => {
+    ): EventBlock {
         const eventBlock = this.createEmptyEventBlock();
 
         for (let i = 0; i < sectionElements.length; i++) {
@@ -485,12 +485,12 @@ export class PokemonGoSource implements IEventSource {
         }
 
         return eventBlock;
-    };
+    }
 
     /**
      * Extracts bonus lines from a bonus container element.
      */
-    private extractBonusesVisualLines = (bonusContainer: Element): Array<string> => {
+    private extractBonusesVisualLines(bonusContainer: Element): Array<string> {
         const bonuses: Array<string> = [];
         let current = '';
         const pushLines = (text: string) => {
@@ -534,5 +534,5 @@ export class PokemonGoSource implements IEventSource {
             pushLines(current.trim());
         }
         return bonuses.filter(Boolean);
-    };
+    }
 }

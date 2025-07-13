@@ -24,7 +24,7 @@ export class PokemonMatcher {
     /**
      * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.
      */
-    matchPokemonFromText = (texts: Array<string>): Array<IEntry> => {
+    matchPokemonFromText(texts: Array<string>): Array<IEntry> {
         const wildEncounters: Array<IEntry> = [];
         const seen = new Set<string>();
         const pkmWithNoClothes = texts.map((pp) => {
@@ -97,12 +97,12 @@ export class PokemonMatcher {
             }
         }
         return wildEncounters;
-    };
+    }
 
     /**
      * Matches a single Pokémon name (with form, shadow, mega, raid level) to an IEntry.
      */
-    private matchPokemon = (currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null => {
+    private matchPokemon(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
         // Direct indexing (90% hits)
         const match = this.gameMasterPokemon[normalizeSpeciesNameForId(currP)];
         if (match && !isShadow && !isMega) {
@@ -129,17 +129,12 @@ export class PokemonMatcher {
             return null;
         }
         return this.matchPokemonWithForm(isolatedPkmName[0], currP, isShadow, isMega, raidLevel);
-    };
+    }
 
     /**
      * Handles Pokémon names that only specify a form (e.g., Oricorio).
      */
-    private handleFormOnlyPokemon = (
-        currP: string,
-        isShadow: boolean,
-        isMega: boolean,
-        raidLevel: string
-    ): IEntry | null => {
+    private handleFormOnlyPokemon(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
         const formCandidate = currP
             .replaceAll('(', '')
             .replaceAll(')', '')
@@ -192,17 +187,12 @@ export class PokemonMatcher {
         }
         console.error('Multiple matches for ' + currP);
         return null;
-    };
+    }
 
     /**
      * Handles special-case Pokémon names that don't match standard forms.
      */
-    private handleSpecialCases = (
-        currP: string,
-        isShadow: boolean,
-        isMega: boolean,
-        raidLevel: string
-    ): IEntry | null => {
+    private handleSpecialCases(currP: string, isShadow: boolean, isMega: boolean, raidLevel: string): IEntry | null {
         const specialCases: Record<string, string> = {
             giratina: 'giratina_altered',
             zacian: 'zacian_hero',
@@ -222,18 +212,18 @@ export class PokemonMatcher {
         }
         console.error("(0) Couldn't map form for " + currP);
         return null;
-    };
+    }
 
     /**
      * Matches a Pokémon with a specific form, shadow, or mega status.
      */
-    private matchPokemonWithForm = (
+    private matchPokemonWithForm(
         basePokemon: GameMasterPokemon,
         currP: string,
         isShadow: boolean,
         isMega: boolean,
         raidLevel: string
-    ): IEntry | null => {
+    ): IEntry | null {
         const dex = basePokemon.dex;
         const availableForms = this.getAvailableForms(dex, isShadow, isMega, raidLevel);
         if (availableForms.length === 1) {
@@ -303,17 +293,17 @@ export class PokemonMatcher {
         }
         console.error('Multiple mapped forms for ' + currP);
         return null;
-    };
+    }
 
     /**
      * Gets all available forms for a given dex number and status.
      */
-    private getAvailableForms = (
+    private getAvailableForms(
         dex: number,
         isShadow: boolean,
         isMega: boolean,
         raidLevel: string
-    ): Array<GameMasterPokemon> => {
+    ): Array<GameMasterPokemon> {
         if (raidLevel.toLocaleLowerCase() !== 'mega' || !isMega) {
             if (!isShadow) {
                 return this.domain.filter(
@@ -329,7 +319,7 @@ export class PokemonMatcher {
                 (l) => l.isMega && l.dex === dex && !l.aliasId && !l.isShadow
             );
         }
-    };
+    }
 }
 
 /**

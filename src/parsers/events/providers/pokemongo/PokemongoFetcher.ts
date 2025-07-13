@@ -10,7 +10,7 @@ export class PokemonGoFetcher {
 
     constructor(private readonly dataFetcher: HttpDataFetcher) {}
 
-    fetchAllPosts = async (): Promise<Array<PokemonGoPost>> => {
+    async fetchAllPosts(): Promise<Array<PokemonGoPost>> {
         try {
             const newsPageHtml = await this.fetchPage(this.newsUrl);
             const postLinks = this.extractPostLinks(newsPageHtml);
@@ -34,9 +34,9 @@ export class PokemonGoFetcher {
             console.error(error);
             return [];
         }
-    };
+    }
 
-    private fetchPage = async (url: string) => {
+    private async fetchPage(url: string) {
         let fullUrl = url;
         if (url.startsWith('/')) {
             fullUrl = this.baseUrl + '/' + url;
@@ -44,9 +44,9 @@ export class PokemonGoFetcher {
 
         const text = await this.dataFetcher.fetchText(fullUrl);
         return text;
-    };
+    }
 
-    private extractPostLinks = (html: string): Array<ExtractedPostLink> => {
+    private extractPostLinks(html: string): Array<ExtractedPostLink> {
         const links: Array<ExtractedPostLink> = [];
         const dom = new JSDOM(html);
         const document = dom.window.document;
@@ -91,13 +91,13 @@ export class PokemonGoFetcher {
             }
         });
         return links;
-    };
+    }
 
-    private determinePostType = (url: string): 'post' | 'news' => {
+    private determinePostType(url: string): 'post' | 'news' {
         if (url.includes('/post/')) {
             return 'post';
         }
 
         return 'news';
-    };
+    }
 }

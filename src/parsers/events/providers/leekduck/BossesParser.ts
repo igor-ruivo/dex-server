@@ -12,7 +12,7 @@ export class BossesParser {
         private readonly dataFetcher: HttpDataFetcher,
         private readonly gameMasterPokemon: Record<string, GameMasterPokemon>
     ) {}
-    parse = async () => {
+    async parse() {
         const html = await this.dataFetcher.fetchText(LEEKDUCK_BOSS_URL);
         const dom = new JSDOM(html);
         const doc = dom.window.document;
@@ -103,5 +103,5 @@ export class BossesParser {
         }
 
         return pokemons;
-    };
+    }
 }

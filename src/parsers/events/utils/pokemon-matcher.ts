@@ -8,18 +8,15 @@ import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
  * Handles normalization, form detection, and special cases for event parsing.
  */
 class PokemonMatcher {
-    private gameMasterPokemon: Record<string, GameMasterPokemon>;
-    private domain: Array<GameMasterPokemon>;
-
     /**
      * Constructs a new PokemonMatcher.
      * @param gameMasterPokemon - The full Game Master Pokémon dictionary.
      * @param domain - The subset of Pokémon relevant for this context.
      */
-    constructor(gameMasterPokemon: Record<string, GameMasterPokemon>, domain: Array<GameMasterPokemon>) {
-        this.gameMasterPokemon = gameMasterPokemon;
-        this.domain = domain;
-    }
+    constructor(
+        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly domain: Array<GameMasterPokemon>
+    ) {}
 
     /**
      * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.

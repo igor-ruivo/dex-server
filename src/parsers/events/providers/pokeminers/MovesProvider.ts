@@ -13,7 +13,7 @@ const normalizedMoveName = (moveName: string) => {
 class MovesProvider {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private translatorService: GameMasterTranslator
+        private readonly translatorService: GameMasterTranslator
     ) {}
     private readonly GAME_MASTER_URL =
         'https://raw.githubusercontent.com/PokeMiners/game_masters/master/latest/latest.json';

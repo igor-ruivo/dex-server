@@ -5,7 +5,7 @@ import { IPokemonGoEventBlockParser, IPokemonGoHtmlParser } from '../../../../ty
 class PokemonGoPostParser implements IPokemonGoHtmlParser {
     private document: Document;
 
-    constructor(html: string) {
+    constructor(readonly html: string) {
         const dom = new JSDOM(html);
         this.document = dom.window.document;
     }

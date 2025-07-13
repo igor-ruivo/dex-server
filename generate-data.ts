@@ -1,5 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
+import RaidDpsCalculator from 'src/computations/raid-dps-calculator';
 import BossesParser from 'src/parsers/events/providers/leekduck/BossesParser';
 import EggsParser from 'src/parsers/events/providers/leekduck/EggsParser';
 import EventsParser from 'src/parsers/events/providers/leekduck/EventsParser';
@@ -67,6 +68,10 @@ const generateData = async () => {
         );
         const leekduckRocketLineups = await leekduckRocketLineupsParser.parse();
 
+        // Step 8: DPS calculations
+        const raidDpsCalculator = new RaidDpsCalculator(pokemonDictionary, moves);
+        const dpsData = raidDpsCalculator.compute();
+
         // Write outputs
         const dataDir = path.join(process.cwd(), 'data');
         await fs.mkdir(dataDir, { recursive: true });
@@ -96,6 +101,11 @@ const generateData = async () => {
         }
         await fs.writeFile(path.join(dataDir, 'season.json'), JSON.stringify(seasonData, null, '\t'));
         await fs.writeFile(path.join(dataDir, 'moves.json'), JSON.stringify(moves, null, '\t'));
+        for (const type of Object.keys(dpsData)) {
+            const fileName = `${type.toLocaleLowerCase() || 'default'}-raid-dps-rank.json`;
+            const filePath = path.join(dataDir, fileName);
+            await fs.writeFile(filePath, JSON.stringify(dpsData[type], null, '\t'));
+        }
 
         console.log('✅ All data written to disk.');
         console.log(`�� Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);

@@ -1,5 +1,5 @@
 import { AvailableLocales } from '../services/gamemaster-translator';
-import { GameMasterPokemon } from '../types/pokemon';
+import { GameMasterData } from '../types/pokemon';
 
 export interface IEntry {
     speciesId: string;
@@ -31,7 +31,7 @@ export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 
 
 export interface IEventSource {
     name: string;
-    parseEvents(gameMasterPokemon: Record<string, GameMasterPokemon>): Promise<Array<PublicEvent>>;
+    parseEvents(gameMasterPokemon: GameMasterData): Promise<Array<PublicEvent>>;
 }
 
 export enum PokemonGoPostKind {

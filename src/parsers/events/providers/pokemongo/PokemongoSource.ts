@@ -9,7 +9,7 @@ import {
     IPokemonGoHtmlParser,
     PokemonGoPost,
 } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, { extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
@@ -149,7 +149,7 @@ class PokemonGoSource implements IEventSource {
 
     constructor(
         readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly domain: Array<GameMasterPokemon>
     ) {
         this.fetcher = new PokemonGoFetcher(dataFetcher);
@@ -183,7 +183,7 @@ class PokemonGoSource implements IEventSource {
      */
     private async parseOriginalPosts(
         posts: Array<PokemonGoPost>,
-        gameMasterPokemon: Record<string, GameMasterPokemon>
+        gameMasterPokemon: GameMasterData
     ): Promise<Array<IParsedEvent>> {
         const originalPosts = posts.filter((p) => p.locale === AvailableLocales.en);
         const postPromises = originalPosts.map((post) => {
@@ -306,10 +306,7 @@ class PokemonGoSource implements IEventSource {
     /**
      * Parses a single post and returns all subevents as IParsedEvent objects.
      */
-    private parseSinglePost(
-        post: PokemonGoPost,
-        gameMasterPokemon: Record<string, GameMasterPokemon>
-    ): Array<IParsedEvent> {
+    private parseSinglePost(post: PokemonGoPost, gameMasterPokemon: GameMasterData): Array<IParsedEvent> {
         const { parser, subEvents } = this.createParserAndGetSubEvents(post);
         const events: Array<IParsedEvent> = [];
 
@@ -361,7 +358,7 @@ class PokemonGoSource implements IEventSource {
         sectionType: string,
         sectionBodies: Array<HTMLElement>,
         eventData: EventBlock,
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        gameMasterPokemon: GameMasterData,
         domain: Array<GameMasterPokemon>
     ): void {
         if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
@@ -405,7 +402,7 @@ class PokemonGoSource implements IEventSource {
      */
     private parseInnerEvent(
         sectionElements: Array<Element>,
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        gameMasterPokemon: GameMasterData,
         domain: Array<GameMasterPokemon>
     ): EventBlock {
         const eventBlock = this.createEmptyEventBlock();

@@ -3,7 +3,7 @@ import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import GameMasterTranslator, { AvailableLocales } from '../../../services/gamemaster-translator';
 import { IRocketGrunt } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
@@ -11,7 +11,7 @@ const LEEKDUCK_ROCKET_URL = 'https://leekduck.com/rocket-lineups/';
 class RocketLineupsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly translator: GameMasterTranslator,
         private readonly domain: Array<GameMasterPokemon>
     ) {}
@@ -70,7 +70,7 @@ class RocketLineupsParser {
         return answer;
     }
 
-    private convertToShadowVersion(pokemonId: string, gameMasterPokemon: Record<string, GameMasterPokemon>) {
+    private convertToShadowVersion(pokemonId: string, gameMasterPokemon: GameMasterData) {
         const shadowId = `${pokemonId}_shadow`;
         if (!gameMasterPokemon[shadowId]) {
             throw new Error(`${shadowId} doesn't exist in gamemaster data!`);

@@ -3,7 +3,7 @@ import { IPokemonDomains } from 'src/parsers/pokemon/game-master-parser';
 import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import { IEntry } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData } from '../../../types/pokemon';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
@@ -11,7 +11,7 @@ const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 class BossesParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly domains: IPokemonDomains
     ) {}
     async parse() {

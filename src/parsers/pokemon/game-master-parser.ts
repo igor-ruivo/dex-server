@@ -15,7 +15,7 @@ export interface IPokemonDomains {
 /**
  * Returns all relevant domains from the Game Master data.
  */
-export const getDomains = (gameMasterPokemon: Record<string, GameMasterPokemon>): IPokemonDomains => {
+export const getDomains = (gameMasterPokemon: GameMasterData): IPokemonDomains => {
     const nonShadowDomain = Object.values(gameMasterPokemon).filter((p) => !p.isShadow && !p.aliasId);
     const nonMegaDomain = Object.values(gameMasterPokemon).filter((p) => !p.isMega && !p.aliasId);
 
@@ -96,6 +96,38 @@ class GameMasterParser {
         }
     }
 
+    private isNormalPokemonAndHasShadowVersion(pokemon: BasePokemon, allPokemon: Array<BasePokemon>) {
+        if (PokemonValidator.isShadowPokemon(pokemon)) {
+            return false;
+        }
+
+        if (PokemonValidator.isMegaPokemon(pokemon)) {
+            const megaTerm = '_mega';
+            const primalTerm = '_primal';
+            if (!pokemon.speciesId.includes(megaTerm) && !pokemon.speciesId.includes(primalTerm)) {
+                throw new Error(`${pokemon.speciesId} doesn't have a well defined id for base type!`);
+            }
+
+            const baseVersionId = pokemon.speciesId.split(megaTerm)[0].split(primalTerm)[0];
+            const basePkm = allPokemon.find((a) => a.speciesId === baseVersionId);
+            if (!basePkm) {
+                throw new Error(`${baseVersionId} doesn't exist in game master!`);
+            }
+
+            pokemon = basePkm;
+        }
+
+        return allPokemon.some(
+            (p) =>
+                p.speciesId !== pokemon.speciesId &&
+                !p.aliasId &&
+                p.dex === pokemon.dex &&
+                PokemonValidator.isShadowPokemon(p) &&
+                p.types.length === pokemon.types.length &&
+                p.types.every((t) => pokemon.types.includes(t))
+        );
+    }
+
     private transformPokemon(pokemon: BasePokemon, allPokemon: Array<BasePokemon>): GameMasterPokemon | null {
         try {
             const isShadow = PokemonValidator.isShadowPokemon(pokemon);
@@ -132,7 +164,14 @@ class GameMasterParser {
                 shinyGoImageUrl: ImageUrlBuilder.buildShinyGoImageUrlForPokemon(pokemon, goForm),
                 baseStats: pokemon.baseStats,
                 fastMoves: PokemonTransformer.cleanMoves(pokemon.fastMoves),
-                chargedMoves: PokemonTransformer.cleanMoves(pokemon.chargedMoves),
+                chargedMoves: [
+                    ...PokemonTransformer.cleanMoves(pokemon.chargedMoves),
+                    ...(isShadow
+                        ? ['FRUSTRATION']
+                        : this.isNormalPokemonAndHasShadowVersion(pokemon, allPokemon)
+                          ? ['RETURN']
+                          : []),
+                ],
                 eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves ?? []),
                 legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves ?? []),
                 isShadow,

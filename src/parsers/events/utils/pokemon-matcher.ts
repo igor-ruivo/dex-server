@@ -1,5 +1,5 @@
 import { IEntry } from '../../types/events';
-import { GameMasterPokemon } from '../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../types/pokemon';
 import { ndfNormalized, normalizePokemonName, normalizeSpeciesNameForId } from '../../utils/normalization';
 import { KNOWN_FORMS, RAID_LEVEL_MAPPINGS } from '../config/constants';
 
@@ -14,7 +14,7 @@ class PokemonMatcher {
      * @param domain - The subset of Pokémon relevant for this context.
      */
     constructor(
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly domain: Array<GameMasterPokemon>
     ) {}
 

@@ -3,7 +3,7 @@ import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import { AvailableLocales, pairEventTranslations } from '../../../services/gamemaster-translator';
 import { IEntry, IParsedEvent } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, { extractPokemonSpeciesIdsFromElements } from '../../utils/pokemon-matcher';
 
@@ -16,7 +16,7 @@ class SeasonParser {
         private readonly domain: Array<GameMasterPokemon>
     ) {}
 
-    async fetchSeasonData(gameMasterPokemon: Record<string, GameMasterPokemon>) {
+    async fetchSeasonData(gameMasterPokemon: GameMasterData) {
         const seasonUrlBuilder = (locale: AvailableLocales) => `https://pokemongo.com/${locale}/seasons`;
         const seasonsHtmls = await Promise.all(
             Object.values(AvailableLocales).map(async (locale) => ({

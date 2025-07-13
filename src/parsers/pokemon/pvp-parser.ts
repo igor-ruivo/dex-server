@@ -1,5 +1,5 @@
 import { IDataFetcher } from '../services/data-fetcher';
-import { BasePvPEntry, GameMasterPokemon, IGameMasterMove, PvPEntry } from '../types/pokemon';
+import { BasePvPEntry, GameMasterData, IGameMasterMove, PvPEntry } from '../types/pokemon';
 import { Leagues, POKEMON_CONFIG } from './config/pokemon-config';
 
 type LeagueKey = keyof typeof Leagues;
@@ -7,7 +7,7 @@ type LeagueKey = keyof typeof Leagues;
 class PvPParser {
     constructor(
         private readonly dataFetcher: IDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly moves: Record<string, IGameMasterMove>
     ) {}
 

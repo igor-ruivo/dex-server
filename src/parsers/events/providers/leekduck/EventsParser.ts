@@ -4,7 +4,7 @@ import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import { AvailableLocales, getSpotlightHourBonusTranslation } from '../../../services/gamemaster-translator';
 import { IEntry } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import { parseDateFromString } from '../../utils/normalization';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
@@ -45,7 +45,7 @@ type ParsedEventCommon = {
 class EventsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly domains: IPokemonDomains
     ) {}
     async parse() {
@@ -144,7 +144,7 @@ class EventsParser {
 
     private parseSpotlightHourEvent(
         parsed: ParsedEventCommon,
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        gameMasterPokemon: GameMasterData,
         url: string
     ): ILeekduckSpotlightHour | undefined {
         const rawPkmName = parsed.title.split('Spotlight')[0].trim();
@@ -164,7 +164,7 @@ class EventsParser {
 
     private parseSpecialRaidBossEvent(
         parsed: ParsedEventCommon,
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        gameMasterPokemon: GameMasterData,
         url: string
     ): ILeekduckSpecialRaidBoss | undefined {
         const parts = parsed.title.split(' in ');
@@ -188,7 +188,7 @@ class EventsParser {
 
     private matchPokemonEntries(
         rawPkmName: string,
-        gameMasterPokemon: Record<string, GameMasterPokemon>,
+        gameMasterPokemon: GameMasterData,
         isShadow: boolean,
         isMega: boolean
     ): Array<IEntry> {

@@ -3,7 +3,7 @@ import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
 import { AvailableLocales, getEggCommentTranslation } from '../../../services/gamemaster-translator';
 import { IEntry } from '../../../types/events';
-import { GameMasterPokemon } from '../../../types/pokemon';
+import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
@@ -11,7 +11,7 @@ const LEEKDUCK_EGGS_URL = 'https://leekduck.com/eggs/';
 class EggsParser {
     constructor(
         private readonly dataFetcher: HttpDataFetcher,
-        private readonly gameMasterPokemon: Record<string, GameMasterPokemon>,
+        private readonly gameMasterPokemon: GameMasterData,
         private readonly domain: Array<GameMasterPokemon>
     ) {}
     async parse() {

@@ -23,6 +23,19 @@ const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
         'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_brazilianportuguese.json',
 };
 
+const SPOTLIGHT_HOUR_TITLE_TRANSLATIONS: Record<AvailableLocales, Record<string, string>> = {
+    // The source of truth is already in en
+    [AvailableLocales.en]: {
+        ' Spotlight Hour': ' Spotlight Hour',
+        ' and ': ' and ',
+    },
+
+    [AvailableLocales.ptbr]: {
+        ' Spotlight Hour': ': Hora do Holofote',
+        ' and ': ' e ',
+    },
+};
+
 const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<AvailableLocales, Record<string, string>> = {
     // The source of truth is already in en
     [AvailableLocales.en]: {
@@ -59,8 +72,7 @@ const EGG_COMMENT_TRANSLATIONS: Record<AvailableLocales, Record<string, string>>
     },
 };
 
-export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhrase: string) => {
-    const dict = SPOTLIGHT_HOUR_BONUS_TRANSLATIONS[locale];
+const replaceLocalizedStringComponents = (dict: Record<string, string>, enPhrase: string) => {
     if (!dict) {
         return enPhrase;
     }
@@ -72,6 +84,14 @@ export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhr
         }
     }
     return translated;
+};
+
+export const getSpotlightHourTranslation = (locale: AvailableLocales, enPhrase: string) => {
+    return replaceLocalizedStringComponents(SPOTLIGHT_HOUR_TITLE_TRANSLATIONS[locale], enPhrase);
+};
+
+export const getSpotlightHourBonusTranslation = (locale: AvailableLocales, enPhrase: string) => {
+    return replaceLocalizedStringComponents(SPOTLIGHT_HOUR_BONUS_TRANSLATIONS[locale], enPhrase);
 };
 
 export const getEggCommentTranslation = (locale: AvailableLocales, enPhrase: string) => {

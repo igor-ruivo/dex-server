@@ -194,8 +194,7 @@ export type GameMasterPokemon = Omit<BasePokemon, 'types' | 'released' | 'tags'>
 
 export type GameMasterData = Record<string, GameMasterPokemon>;
 
-export type IGameMasterMove = BaseMove &
-    PvPMove &
+export type IGameMasterMove = PvPMove &
     PvEMove & {
         moveName: Partial<Record<AvailableLocales, string>>;
     };

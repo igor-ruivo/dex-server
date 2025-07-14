@@ -6,16 +6,20 @@
 			"CRUNCH",
 			"AQUA_TAIL"
 		],
-		"lead": 98.7,
+		"lead": 98.8,
 		"switch": 88.3,
 		"charger": 89.1,
 		"closer": 83,
 		"consistency": 83,
-		"attacker": 98.2,
-		"score": 94.4,
+		"attacker": 97.4,
+		"score": 94.3,
 		"rank": 1,
 		"rankChange": 0,
 		"matchups": [
+			{
+				"opponent": "gallade_shadow",
+				"rating": 918
+			},
 			{
 				"opponent": "dusknoir_shadow",
 				"rating": 816
@@ -27,10 +31,6 @@
 			{
 				"opponent": "gliscor",
 				"rating": 623
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 585
 			},
 			{
 				"opponent": "abomasnow_shadow",
@@ -67,13 +67,13 @@
 			"CRUNCH",
 			"AQUA_TAIL"
 		],
-		"lead": 97.4,
-		"switch": 96.7,
-		"charger": 97.4,
+		"lead": 97.6,
+		"switch": 96.9,
+		"charger": 97.5,
 		"closer": 84,
 		"consistency": 83,
-		"attacker": 88.8,
-		"score": 93.7,
+		"attacker": 88.5,
+		"score": 93.8,
 		"rank": 2,
 		"rankChange": 0,
 		"matchups": [
@@ -128,12 +128,12 @@
 			"DYNAMIC_PUNCH",
 			"SHADOW_PUNCH"
 		],
-		"lead": 96.5,
+		"lead": 96.6,
 		"switch": 76.8,
 		"charger": 100,
-		"closer": 76.9,
+		"closer": 76.7,
 		"consistency": 92.4,
-		"attacker": 76.5,
+		"attacker": 76.3,
 		"score": 92.7,
 		"rank": 3,
 		"rankChange": 0,
@@ -182,67 +182,6 @@
 			}
 		]
 	},
-	"spiritomb": {
-		"speciesId": "spiritomb",
-		"moveset": [
-			"SUCKER_PUNCH",
-			"ROCK_TOMB",
-			"SHADOW_BALL"
-		],
-		"lead": 91.8,
-		"switch": 95.4,
-		"charger": 88.4,
-		"closer": 83.6,
-		"consistency": 89.8,
-		"attacker": 88,
-		"score": 92,
-		"rank": 4,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 706
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 706
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 562
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 528
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 509
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 338
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 366
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 381
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 426
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 449
-			}
-		]
-	},
 	"gastrodon": {
 		"speciesId": "gastrodon",
 		"moveset": [
@@ -250,14 +189,14 @@
 			"BODY_SLAM",
 			"EARTH_POWER"
 		],
-		"lead": 92.1,
-		"switch": 65.7,
-		"charger": 80.1,
+		"lead": 92.5,
+		"switch": 66,
+		"charger": 80.2,
 		"closer": 78.6,
 		"consistency": 85.6,
 		"attacker": 100,
-		"score": 91.9,
-		"rank": 5,
+		"score": 92,
+		"rank": 4,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -304,6 +243,67 @@
 			}
 		]
 	},
+	"spiritomb": {
+		"speciesId": "spiritomb",
+		"moveset": [
+			"SUCKER_PUNCH",
+			"ROCK_TOMB",
+			"SHADOW_BALL"
+		],
+		"lead": 91.8,
+		"switch": 95.4,
+		"charger": 88.4,
+		"closer": 83.8,
+		"consistency": 89.8,
+		"attacker": 87.8,
+		"score": 92,
+		"rank": 5,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 706
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 706
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 562
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 528
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 509
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 338
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 366
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 381
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 426
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 449
+			}
+		]
+	},
 	"qwilfish_hisuian": {
 		"speciesId": "qwilfish_hisuian",
 		"moveset": [
@@ -311,13 +311,13 @@
 			"AQUA_TAIL",
 			"SHADOW_BALL"
 		],
-		"lead": 93.7,
-		"switch": 98.1,
+		"lead": 93.5,
+		"switch": 97.9,
 		"charger": 92.2,
 		"closer": 75.6,
 		"consistency": 85.6,
-		"attacker": 81.4,
-		"score": 91.4,
+		"attacker": 81.2,
+		"score": 91.3,
 		"rank": 6,
 		"rankChange": 0,
 		"matchups": [
@@ -365,67 +365,6 @@
 			}
 		]
 	},
-	"overqwil": {
-		"speciesId": "overqwil",
-		"moveset": [
-			"POISON_STING",
-			"AQUA_TAIL",
-			"SHADOW_BALL"
-		],
-		"lead": 93.5,
-		"switch": 96.5,
-		"charger": 92.1,
-		"closer": 74.6,
-		"consistency": 85.6,
-		"attacker": 80.9,
-		"score": 90.5,
-		"rank": 7,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 880
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 830
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 764
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 665
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 648
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gliscor",
-				"rating": 336
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 344
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 413
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 437
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 490
-			}
-		]
-	},
 	"gliscor_shadow": {
 		"speciesId": "gliscor_shadow",
 		"moveset": [
@@ -433,14 +372,14 @@
 			"EARTHQUAKE",
 			"AERIAL_ACE"
 		],
-		"lead": 94.4,
-		"switch": 92.8,
-		"charger": 88.5,
+		"lead": 94.6,
+		"switch": 92.7,
+		"charger": 88.6,
 		"closer": 82.6,
 		"consistency": 85,
-		"attacker": 82.4,
+		"attacker": 82.2,
 		"score": 90.4,
-		"rank": 8,
+		"rank": 7,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -487,6 +426,67 @@
 			}
 		]
 	},
+	"overqwil": {
+		"speciesId": "overqwil",
+		"moveset": [
+			"POISON_STING",
+			"AQUA_TAIL",
+			"SHADOW_BALL"
+		],
+		"lead": 93.3,
+		"switch": 96.5,
+		"charger": 92.2,
+		"closer": 74.7,
+		"consistency": 85.6,
+		"attacker": 80.2,
+		"score": 90.4,
+		"rank": 8,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 880
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 830
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 764
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 665
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 648
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gliscor",
+				"rating": 336
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 344
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 413
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 437
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 490
+			}
+		]
+	},
 	"gliscor": {
 		"speciesId": "gliscor",
 		"moveset": [
@@ -494,12 +494,12 @@
 			"EARTHQUAKE",
 			"AERIAL_ACE"
 		],
-		"lead": 91.8,
-		"switch": 89.2,
-		"charger": 87.1,
-		"closer": 79.6,
+		"lead": 91.9,
+		"switch": 89.5,
+		"charger": 87.2,
+		"closer": 79.5,
 		"consistency": 85,
-		"attacker": 92.1,
+		"attacker": 91.6,
 		"score": 89.9,
 		"rank": 9,
 		"rankChange": 0,
@@ -555,13 +555,13 @@
 			"DYNAMIC_PUNCH",
 			"SHADOW_PUNCH"
 		],
-		"lead": 94.9,
+		"lead": 95.1,
 		"switch": 70.3,
 		"charger": 88.9,
 		"closer": 78.1,
 		"consistency": 92.4,
-		"attacker": 80.6,
-		"score": 89.6,
+		"attacker": 80.9,
+		"score": 89.7,
 		"rank": 10,
 		"rankChange": 0,
 		"matchups": [
@@ -616,13 +616,13 @@
 			"CLOSE_COMBAT",
 			"LEAF_BLADE"
 		],
-		"lead": 93,
-		"switch": 83.5,
-		"charger": 94.2,
-		"closer": 92.3,
+		"lead": 93.2,
+		"switch": 83.4,
+		"charger": 94.3,
+		"closer": 92.4,
 		"consistency": 79.6,
-		"attacker": 63.3,
-		"score": 89.6,
+		"attacker": 63.4,
+		"score": 89.7,
 		"rank": 11,
 		"rankChange": 0,
 		"matchups": [
@@ -678,12 +678,12 @@
 			"POWER_GEM"
 		],
 		"lead": 90.7,
-		"switch": 89.5,
+		"switch": 89.3,
 		"charger": 88.1,
-		"closer": 77.5,
+		"closer": 77.3,
 		"consistency": 95.2,
-		"attacker": 89,
-		"score": 89.4,
+		"attacker": 88.5,
+		"score": 89.2,
 		"rank": 12,
 		"rankChange": 0,
 		"matchups": [
@@ -738,13 +738,13 @@
 			"ICICLE_SPEAR",
 			"HIGH_HORSEPOWER"
 		],
-		"lead": 95.1,
+		"lead": 94.9,
 		"switch": 77.5,
 		"charger": 91.5,
-		"closer": 84.3,
+		"closer": 84.1,
 		"consistency": 91.1,
-		"attacker": 58.7,
-		"score": 88.8,
+		"attacker": 58.6,
+		"score": 88.7,
 		"rank": 13,
 		"rankChange": 0,
 		"matchups": [
@@ -799,12 +799,12 @@
 			"WEATHER_BALL_ICE",
 			"ENERGY_BALL"
 		],
-		"lead": 92.7,
+		"lead": 93,
 		"switch": 85.8,
 		"charger": 91,
-		"closer": 81.5,
+		"closer": 81.3,
 		"consistency": 89.7,
-		"attacker": 70.7,
+		"attacker": 70.3,
 		"score": 88.4,
 		"rank": 14,
 		"rankChange": 0,
@@ -853,67 +853,6 @@
 			}
 		]
 	},
-	"drifblim": {
-		"speciesId": "drifblim",
-		"moveset": [
-			"HEX",
-			"ICY_WIND",
-			"SHADOW_BALL"
-		],
-		"lead": 87.1,
-		"switch": 77.7,
-		"charger": 90.4,
-		"closer": 73,
-		"consistency": 79.3,
-		"attacker": 92.1,
-		"score": 88.2,
-		"rank": 15,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gliscor",
-				"rating": 790
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 742
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 737
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 701
-			},
-			{
-				"opponent": "vespiquen",
-				"rating": 656
-			}
-		],
-		"counters": [
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 171
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 271
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 316
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 337
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 437
-			}
-		]
-	},
 	"sneasler": {
 		"speciesId": "sneasler",
 		"moveset": [
@@ -921,14 +860,14 @@
 			"CLOSE_COMBAT",
 			"AERIAL_ACE"
 		],
-		"lead": 83.8,
+		"lead": 83.9,
 		"switch": 100,
 		"charger": 93.7,
-		"closer": 84.9,
+		"closer": 85,
 		"consistency": 76.4,
-		"attacker": 59.2,
-		"score": 88.1,
-		"rank": 16,
+		"attacker": 59.3,
+		"score": 88.2,
+		"rank": 15,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -982,14 +921,14 @@
 			"ICE_PUNCH",
 			"WILD_CHARGE"
 		],
-		"lead": 87.7,
+		"lead": 87.8,
 		"switch": 82.5,
 		"charger": 93.1,
 		"closer": 100,
 		"consistency": 75.9,
-		"attacker": 40.4,
+		"attacker": 40.3,
 		"score": 88,
-		"rank": 17,
+		"rank": 16,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1043,14 +982,14 @@
 			"ROCK_TOMB",
 			"DIG"
 		],
-		"lead": 82.2,
-		"switch": 88,
+		"lead": 82.3,
+		"switch": 88.2,
 		"charger": 85.8,
 		"closer": 78.7,
 		"consistency": 100,
-		"attacker": 90,
+		"attacker": 89.8,
 		"score": 88,
-		"rank": 18,
+		"rank": 17,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1097,6 +1036,67 @@
 			}
 		]
 	},
+	"drifblim": {
+		"speciesId": "drifblim",
+		"moveset": [
+			"HEX",
+			"ICY_WIND",
+			"SHADOW_BALL"
+		],
+		"lead": 87,
+		"switch": 77.7,
+		"charger": 90.1,
+		"closer": 73,
+		"consistency": 79.3,
+		"attacker": 91.6,
+		"score": 87.9,
+		"rank": 18,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gliscor",
+				"rating": 790
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 742
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 737
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 701
+			},
+			{
+				"opponent": "vespiquen",
+				"rating": 656
+			}
+		],
+		"counters": [
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 171
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 271
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 316
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 337
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 437
+			}
+		]
+	},
 	"heatran_shadow": {
 		"speciesId": "heatran_shadow",
 		"moveset": [
@@ -1104,13 +1104,13 @@
 			"MAGMA_STORM",
 			"STONE_EDGE"
 		],
-		"lead": 93.5,
+		"lead": 93.7,
 		"switch": 65,
 		"charger": 88.1,
 		"closer": 77.8,
 		"consistency": 89.6,
-		"attacker": 74,
-		"score": 87.7,
+		"attacker": 74.1,
+		"score": 87.8,
 		"rank": 19,
 		"rankChange": 0,
 		"matchups": [
@@ -1165,13 +1165,13 @@
 			"HYDRO_CANNON",
 			"DRILL_PECK"
 		],
-		"lead": 87.2,
-		"switch": 67.8,
+		"lead": 87.4,
+		"switch": 67.9,
 		"charger": 91.4,
 		"closer": 86.1,
 		"consistency": 100,
-		"attacker": 63.1,
-		"score": 87.6,
+		"attacker": 63.4,
+		"score": 87.7,
 		"rank": 20,
 		"rankChange": 0,
 		"matchups": [
@@ -1226,13 +1226,13 @@
 			"AERIAL_ACE",
 			"WATER_PULSE"
 		],
-		"lead": 92.6,
-		"switch": 77.1,
+		"lead": 92.9,
+		"switch": 77.2,
 		"charger": 79.5,
 		"closer": 78.4,
 		"consistency": 91.2,
-		"attacker": 86,
-		"score": 87.6,
+		"attacker": 85.5,
+		"score": 87.7,
 		"rank": 21,
 		"rankChange": 0,
 		"matchups": [
@@ -1288,11 +1288,11 @@
 			"SWIFT"
 		],
 		"lead": 100,
-		"switch": 88.2,
-		"charger": 89.5,
-		"closer": 81.5,
+		"switch": 87.1,
+		"charger": 89.4,
+		"closer": 81.3,
 		"consistency": 71.4,
-		"attacker": 73.5,
+		"attacker": 73.3,
 		"score": 87.4,
 		"rank": 22,
 		"rankChange": 0,
@@ -1341,67 +1341,6 @@
 			}
 		]
 	},
-	"samurott_hisuian": {
-		"speciesId": "samurott_hisuian",
-		"moveset": [
-			"FURY_CUTTER",
-			"DARK_PULSE",
-			"ICY_WIND"
-		],
-		"lead": 89.7,
-		"switch": 89.5,
-		"charger": 89.8,
-		"closer": 76,
-		"consistency": 86.5,
-		"attacker": 82.4,
-		"score": 87.2,
-		"rank": 23,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 856
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 723
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 636
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 609
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 545
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gliscor",
-				"rating": 202
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 213
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 278
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 398
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 398
-			}
-		]
-	},
 	"hippowdon": {
 		"speciesId": "hippowdon",
 		"moveset": [
@@ -1409,14 +1348,14 @@
 			"WEATHER_BALL_ROCK",
 			"SCORCHING_SANDS"
 		],
-		"lead": 89.3,
-		"switch": 90.5,
-		"charger": 84.4,
-		"closer": 80.9,
+		"lead": 89.6,
+		"switch": 90.9,
+		"charger": 84.5,
+		"closer": 80.7,
 		"consistency": 77.8,
-		"attacker": 81.6,
-		"score": 87,
-		"rank": 24,
+		"attacker": 81.4,
+		"score": 87.2,
+		"rank": 23,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1470,14 +1409,14 @@
 			"WEATHER_BALL_ROCK",
 			"SCORCHING_SANDS"
 		],
-		"lead": 89.1,
-		"switch": 92.8,
-		"charger": 88.3,
+		"lead": 89.4,
+		"switch": 93.1,
+		"charger": 88.5,
 		"closer": 79.2,
 		"consistency": 77.8,
-		"attacker": 75.3,
-		"score": 87,
-		"rank": 25,
+		"attacker": 75.1,
+		"score": 87.2,
+		"rank": 24,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1524,6 +1463,128 @@
 			}
 		]
 	},
+	"samurott_hisuian": {
+		"speciesId": "samurott_hisuian",
+		"moveset": [
+			"FURY_CUTTER",
+			"DARK_PULSE",
+			"ICY_WIND"
+		],
+		"lead": 89.9,
+		"switch": 89.5,
+		"charger": 89.8,
+		"closer": 76,
+		"consistency": 86.5,
+		"attacker": 81.9,
+		"score": 87.2,
+		"rank": 25,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 856
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 723
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 636
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 609
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 545
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gliscor",
+				"rating": 202
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 213
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 278
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 398
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 398
+			}
+		]
+	},
+	"rhyperior_shadow": {
+		"speciesId": "rhyperior_shadow",
+		"moveset": [
+			"MUD_SLAP",
+			"BREAKING_SWIPE",
+			"ROCK_WRECKER"
+		],
+		"lead": 89.7,
+		"switch": 61.4,
+		"charger": 96.3,
+		"closer": 74.9,
+		"consistency": 67.8,
+		"attacker": 75.1,
+		"score": 87,
+		"rank": 26,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "sneasler",
+				"rating": 837
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 825
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 594
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 571
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 553
+			}
+		],
+		"counters": [
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 213
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 254
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 274
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 365
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 452
+			}
+		]
+	},
 	"electivire": {
 		"speciesId": "electivire",
 		"moveset": [
@@ -1532,13 +1593,13 @@
 			"WILD_CHARGE"
 		],
 		"lead": 90.5,
-		"switch": 88.3,
+		"switch": 87.9,
 		"charger": 93.5,
-		"closer": 96.1,
+		"closer": 96,
 		"consistency": 75.9,
-		"attacker": 39.6,
+		"attacker": 39.5,
 		"score": 86.7,
-		"rank": 26,
+		"rank": 27,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1585,6 +1646,67 @@
 			}
 		]
 	},
+	"drifblim_shadow": {
+		"speciesId": "drifblim_shadow",
+		"moveset": [
+			"ASTONISH",
+			"ICY_WIND",
+			"SHADOW_BALL"
+		],
+		"lead": 86.9,
+		"switch": 65.3,
+		"charger": 80,
+		"closer": 67.8,
+		"consistency": 82.2,
+		"attacker": 93.4,
+		"score": 86.6,
+		"rank": 28,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gallade_shadow",
+				"rating": 879
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 822
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 713
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 682
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 509
+			}
+		],
+		"counters": [
+			{
+				"opponent": "drapion_shadow",
+				"rating": 209
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 275
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 293
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 318
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 461
+			}
+		]
+	},
 	"mamoswine_shadow": {
 		"speciesId": "mamoswine_shadow",
 		"moveset": [
@@ -1592,14 +1714,14 @@
 			"ICICLE_SPEAR",
 			"HIGH_HORSEPOWER"
 		],
-		"lead": 80,
-		"switch": 82,
+		"lead": 79.8,
+		"switch": 81.9,
 		"charger": 92.7,
-		"closer": 87.2,
+		"closer": 87,
 		"consistency": 91.1,
-		"attacker": 55.2,
-		"score": 85.7,
-		"rank": 27,
+		"attacker": 54.8,
+		"score": 85.6,
+		"rank": 29,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1653,14 +1775,14 @@
 			"BODY_SLAM",
 			"EARTHQUAKE"
 		],
-		"lead": 89.6,
-		"switch": 78,
-		"charger": 83,
-		"closer": 77.6,
+		"lead": 89.7,
+		"switch": 78.1,
+		"charger": 83.1,
+		"closer": 77.8,
 		"consistency": 90.5,
-		"attacker": 78.8,
-		"score": 85.4,
-		"rank": 28,
+		"attacker": 78.9,
+		"score": 85.5,
+		"rank": 30,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1707,67 +1829,6 @@
 			}
 		]
 	},
-	"togekiss": {
-		"speciesId": "togekiss",
-		"moveset": [
-			"CHARM",
-			"PSYSHOCK",
-			"AURA_SPHERE"
-		],
-		"lead": 85.2,
-		"switch": 66.5,
-		"charger": 66.7,
-		"closer": 67.2,
-		"consistency": 95.7,
-		"attacker": 94.4,
-		"score": 85.2,
-		"rank": 29,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gallade_shadow",
-				"rating": 872
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 837
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 776
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 688
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 688
-			}
-		],
-		"counters": [
-			{
-				"opponent": "bastiodon",
-				"rating": 177
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 335
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 387
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 448
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 494
-			}
-		]
-	},
 	"empoleon": {
 		"speciesId": "empoleon",
 		"moveset": [
@@ -1775,14 +1836,14 @@
 			"HYDRO_CANNON",
 			"DRILL_PECK"
 		],
-		"lead": 85.2,
-		"switch": 75.8,
-		"charger": 87.3,
-		"closer": 78.7,
+		"lead": 85.5,
+		"switch": 75.9,
+		"charger": 87.4,
+		"closer": 78.9,
 		"consistency": 100,
-		"attacker": 72,
-		"score": 85,
-		"rank": 30,
+		"attacker": 72.3,
+		"score": 85.2,
+		"rank": 31,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1829,64 +1890,64 @@
 			}
 		]
 	},
-	"rhyperior_shadow": {
-		"speciesId": "rhyperior_shadow",
+	"togekiss": {
+		"speciesId": "togekiss",
 		"moveset": [
-			"MUD_SLAP",
-			"BREAKING_SWIPE",
-			"ROCK_WRECKER"
+			"CHARM",
+			"PSYSHOCK",
+			"AURA_SPHERE"
 		],
-		"lead": 89.4,
-		"switch": 61.1,
-		"charger": 96.3,
-		"closer": 74.9,
-		"consistency": 67.8,
-		"attacker": 75,
-		"score": 84.8,
-		"rank": 31,
+		"lead": 85.1,
+		"switch": 66.3,
+		"charger": 66.7,
+		"closer": 67,
+		"consistency": 95.7,
+		"attacker": 94.1,
+		"score": 85,
+		"rank": 32,
 		"rankChange": 0,
 		"matchups": [
 			{
-				"opponent": "sneasler",
-				"rating": 837
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 825
+				"opponent": "gallade_shadow",
+				"rating": 872
 			},
 			{
 				"opponent": "spiritomb",
-				"rating": 594
+				"rating": 837
 			},
 			{
-				"opponent": "dusknoir_shadow",
-				"rating": 571
+				"opponent": "sneasler",
+				"rating": 776
 			},
 			{
 				"opponent": "gliscor",
-				"rating": 553
+				"rating": 688
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 688
 			}
 		],
 		"counters": [
 			{
-				"opponent": "abomasnow_shadow",
-				"rating": 213
+				"opponent": "bastiodon",
+				"rating": 177
 			},
 			{
-				"opponent": "gastrodon",
-				"rating": 254
+				"opponent": "abomasnow_shadow",
+				"rating": 335
 			},
 			{
 				"opponent": "drifblim",
-				"rating": 274
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 365
+				"rating": 387
 			},
 			{
 				"opponent": "drapion_shadow",
-				"rating": 452
+				"rating": 448
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 494
 			}
 		]
 	},
@@ -1897,14 +1958,14 @@
 			"CLOSE_COMBAT",
 			"AERIAL_ACE"
 		],
-		"lead": 84.2,
+		"lead": 84.4,
 		"switch": 78.7,
 		"charger": 91,
-		"closer": 88.4,
+		"closer": 88.6,
 		"consistency": 76.4,
-		"attacker": 55.9,
-		"score": 84.8,
-		"rank": 32,
+		"attacker": 56,
+		"score": 84.9,
+		"rank": 33,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -1958,14 +2019,14 @@
 			"DYNAMIC_PUNCH",
 			"SHADOW_BALL"
 		],
-		"lead": 78.1,
+		"lead": 78.4,
 		"switch": 70.1,
 		"charger": 93.5,
-		"closer": 85.2,
+		"closer": 85.3,
 		"consistency": 96.8,
-		"attacker": 47.8,
-		"score": 84.7,
-		"rank": 33,
+		"attacker": 47.7,
+		"score": 84.8,
+		"rank": 34,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -2012,128 +2073,6 @@
 			}
 		]
 	},
-	"wormadam_trash": {
-		"speciesId": "wormadam_trash",
-		"moveset": [
-			"BUG_BITE",
-			"BUG_BUZZ",
-			"IRON_HEAD"
-		],
-		"lead": 80.9,
-		"switch": 64.7,
-		"charger": 72,
-		"closer": 84.3,
-		"consistency": 85,
-		"attacker": 88.5,
-		"score": 84.6,
-		"rank": 34,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 776
-			},
-			{
-				"opponent": "lickilicky",
-				"rating": 626
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 611
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 593
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 552
-			}
-		],
-		"counters": [
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 316
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 360
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 374
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 384
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 414
-			}
-		]
-	},
-	"heatran": {
-		"speciesId": "heatran",
-		"moveset": [
-			"FIRE_SPIN",
-			"MAGMA_STORM",
-			"STONE_EDGE"
-		],
-		"lead": 89.7,
-		"switch": 62.2,
-		"charger": 86.8,
-		"closer": 69.8,
-		"consistency": 89.6,
-		"attacker": 72.7,
-		"score": 84.5,
-		"rank": 35,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 940
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 754
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 595
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 568
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 550
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 86
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 316
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 350
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 423
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 461
-			}
-		]
-	},
 	"bronzong": {
 		"speciesId": "bronzong",
 		"moveset": [
@@ -2141,14 +2080,14 @@
 			"PSYSHOCK",
 			"PAYBACK"
 		],
-		"lead": 88.8,
-		"switch": 86,
+		"lead": 89.2,
+		"switch": 86.1,
 		"charger": 85.1,
-		"closer": 74.4,
+		"closer": 74.6,
 		"consistency": 94.2,
-		"attacker": 67.6,
-		"score": 84.3,
-		"rank": 36,
+		"attacker": 67.7,
+		"score": 84.6,
+		"rank": 35,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -2195,6 +2134,128 @@
 			}
 		]
 	},
+	"heatran": {
+		"speciesId": "heatran",
+		"moveset": [
+			"FIRE_SPIN",
+			"MAGMA_STORM",
+			"STONE_EDGE"
+		],
+		"lead": 89.9,
+		"switch": 62.2,
+		"charger": 86.9,
+		"closer": 69.8,
+		"consistency": 89.6,
+		"attacker": 73,
+		"score": 84.6,
+		"rank": 36,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 940
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 754
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 595
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 568
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 86
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 316
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 350
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 423
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 461
+			}
+		]
+	},
+	"wormadam_trash": {
+		"speciesId": "wormadam_trash",
+		"moveset": [
+			"BUG_BITE",
+			"BUG_BUZZ",
+			"IRON_HEAD"
+		],
+		"lead": 81.2,
+		"switch": 64.9,
+		"charger": 72,
+		"closer": 84.4,
+		"consistency": 85,
+		"attacker": 88.3,
+		"score": 84.6,
+		"rank": 37,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 776
+			},
+			{
+				"opponent": "lickilicky",
+				"rating": 626
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 611
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 593
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 552
+			}
+		],
+		"counters": [
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 316
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 360
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 374
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 384
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 414
+			}
+		]
+	},
 	"bibarel_shadow": {
 		"speciesId": "bibarel_shadow",
 		"moveset": [
@@ -2202,14 +2263,14 @@
 			"SURF",
 			"HYPER_FANG"
 		],
-		"lead": 84.7,
+		"lead": 85,
 		"switch": 75.2,
-		"charger": 91.6,
+		"charger": 91.8,
 		"closer": 74.1,
 		"consistency": 94,
-		"attacker": 58.5,
-		"score": 84.2,
-		"rank": 37,
+		"attacker": 58.6,
+		"score": 84.4,
+		"rank": 38,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -2256,67 +2317,6 @@
 			}
 		]
 	},
-	"drifblim_shadow": {
-		"speciesId": "drifblim_shadow",
-		"moveset": [
-			"HEX",
-			"ICY_WIND",
-			"SHADOW_BALL"
-		],
-		"lead": 81.7,
-		"switch": 69.1,
-		"charger": 88.6,
-		"closer": 68.3,
-		"consistency": 79.3,
-		"attacker": 84.9,
-		"score": 84.2,
-		"rank": 38,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gastrodon",
-				"rating": 870
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 742
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 711
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 649
-			},
-			{
-				"opponent": "lickilicky",
-				"rating": 548
-			}
-		],
-		"counters": [
-			{
-				"opponent": "drapion_shadow",
-				"rating": 132
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 201
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 255
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 315
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 466
-			}
-		]
-	},
 	"palkia_shadow": {
 		"speciesId": "palkia_shadow",
 		"moveset": [
@@ -2324,13 +2324,13 @@
 			"AQUA_TAIL",
 			"DRACO_METEOR"
 		],
-		"lead": 81.4,
-		"switch": 87.1,
+		"lead": 81.7,
+		"switch": 87,
 		"charger": 91.9,
-		"closer": 74,
+		"closer": 74.1,
 		"consistency": 81.4,
-		"attacker": 70.9,
-		"score": 83.9,
+		"attacker": 70.8,
+		"score": 84,
 		"rank": 39,
 		"rankChange": 0,
 		"matchups": [
@@ -2378,67 +2378,6 @@
 			}
 		]
 	},
-	"abomasnow": {
-		"speciesId": "abomasnow",
-		"moveset": [
-			"POWDER_SNOW",
-			"ICY_WIND",
-			"ENERGY_BALL"
-		],
-		"lead": 80.6,
-		"switch": 76.2,
-		"charger": 83.3,
-		"closer": 72,
-		"consistency": 88,
-		"attacker": 85.7,
-		"score": 83.3,
-		"rank": 40,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gastrodon",
-				"rating": 727
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 720
-			},
-			{
-				"opponent": "hippowdon",
-				"rating": 702
-			},
-			{
-				"opponent": "bibarel",
-				"rating": 569
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 559
-			}
-		],
-		"counters": [
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 272
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 322
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 461
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 469
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 491
-			}
-		]
-	},
 	"rhyperior": {
 		"speciesId": "rhyperior",
 		"moveset": [
@@ -2446,14 +2385,14 @@
 			"BREAKING_SWIPE",
 			"ROCK_WRECKER"
 		],
-		"lead": 85.5,
-		"switch": 70,
+		"lead": 85.8,
+		"switch": 70.3,
 		"charger": 95.4,
 		"closer": 72.3,
 		"consistency": 67.8,
-		"attacker": 73.5,
-		"score": 83.2,
-		"rank": 41,
+		"attacker": 73.6,
+		"score": 83.3,
+		"rank": 40,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -2500,6 +2439,67 @@
 			}
 		]
 	},
+	"abomasnow": {
+		"speciesId": "abomasnow",
+		"moveset": [
+			"POWDER_SNOW",
+			"ICY_WIND",
+			"ENERGY_BALL"
+		],
+		"lead": 80.7,
+		"switch": 76.4,
+		"charger": 83.3,
+		"closer": 72,
+		"consistency": 88,
+		"attacker": 85.2,
+		"score": 83.1,
+		"rank": 41,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gastrodon",
+				"rating": 727
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 720
+			},
+			{
+				"opponent": "hippowdon",
+				"rating": 702
+			},
+			{
+				"opponent": "bibarel",
+				"rating": 569
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 559
+			}
+		],
+		"counters": [
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 272
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 322
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 461
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 469
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 491
+			}
+		]
+	},
 	"bastiodon": {
 		"speciesId": "bastiodon",
 		"moveset": [
@@ -2507,9 +2507,9 @@
 			"STONE_EDGE",
 			"FLAMETHROWER"
 		],
-		"lead": 78.6,
-		"switch": 44.9,
-		"charger": 63,
+		"lead": 78.8,
+		"switch": 45.1,
+		"charger": 63.1,
 		"closer": 76.3,
 		"consistency": 100,
 		"attacker": 89.3,
@@ -2568,13 +2568,13 @@
 			"THUNDER_PUNCH",
 			"SHADOW_BALL"
 		],
-		"lead": 86.3,
-		"switch": 68.4,
-		"charger": 81.5,
-		"closer": 70.7,
+		"lead": 86.6,
+		"switch": 68.5,
+		"charger": 81.6,
+		"closer": 70.9,
 		"consistency": 90.5,
-		"attacker": 78.3,
-		"score": 82.9,
+		"attacker": 78.6,
+		"score": 83.1,
 		"rank": 43,
 		"rankChange": 0,
 		"matchups": [
@@ -2622,67 +2622,6 @@
 			}
 		]
 	},
-	"pachirisu": {
-		"speciesId": "pachirisu",
-		"moveset": [
-			"VOLT_SWITCH",
-			"THUNDER_PUNCH",
-			"THUNDERBOLT"
-		],
-		"lead": 82.2,
-		"switch": 58.9,
-		"charger": 67.9,
-		"closer": 75,
-		"consistency": 95.7,
-		"attacker": 86.5,
-		"score": 82.7,
-		"rank": 44,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 750
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 711
-			},
-			{
-				"opponent": "vespiquen",
-				"rating": 690
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 570
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 542
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gliscor",
-				"rating": 189
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 191
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 365
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 487
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 488
-			}
-		]
-	},
 	"hippopotas_shadow": {
 		"speciesId": "hippopotas_shadow",
 		"moveset": [
@@ -2690,14 +2629,14 @@
 			"ROCK_TOMB",
 			"DIG"
 		],
-		"lead": 78.4,
-		"switch": 72.7,
+		"lead": 78.7,
+		"switch": 72.9,
 		"charger": 86,
-		"closer": 72.9,
+		"closer": 73,
 		"consistency": 100,
-		"attacker": 76.8,
+		"attacker": 76.6,
 		"score": 82.6,
-		"rank": 45,
+		"rank": 44,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -2744,6 +2683,67 @@
 			}
 		]
 	},
+	"pachirisu": {
+		"speciesId": "pachirisu",
+		"moveset": [
+			"VOLT_SWITCH",
+			"THUNDER_PUNCH",
+			"THUNDERBOLT"
+		],
+		"lead": 82.3,
+		"switch": 58.9,
+		"charger": 67.8,
+		"closer": 75.2,
+		"consistency": 95.7,
+		"attacker": 86.2,
+		"score": 82.6,
+		"rank": 45,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 750
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 711
+			},
+			{
+				"opponent": "vespiquen",
+				"rating": 690
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 570
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gliscor",
+				"rating": 189
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 191
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 365
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 487
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 488
+			}
+		]
+	},
 	"froslass_shadow": {
 		"speciesId": "froslass_shadow",
 		"moveset": [
@@ -2752,12 +2752,12 @@
 			"SHADOW_BALL"
 		],
 		"lead": 76.2,
-		"switch": 75.6,
-		"charger": 94.9,
-		"closer": 77.3,
+		"switch": 75.4,
+		"charger": 94.8,
+		"closer": 77.2,
 		"consistency": 94.3,
-		"attacker": 44,
-		"score": 82.4,
+		"attacker": 43.9,
+		"score": 82.3,
 		"rank": 46,
 		"rankChange": 0,
 		"matchups": [
@@ -2812,13 +2812,13 @@
 			"DYNAMIC_PUNCH",
 			"SHADOW_BALL"
 		],
-		"lead": 80.3,
+		"lead": 80.7,
 		"switch": 81.6,
-		"charger": 85.4,
-		"closer": 82.1,
+		"charger": 85.3,
+		"closer": 82.4,
 		"consistency": 96.8,
-		"attacker": 56.4,
-		"score": 81.9,
+		"attacker": 56.5,
+		"score": 82,
 		"rank": 47,
 		"rankChange": 0,
 		"matchups": [
@@ -2873,13 +2873,13 @@
 			"AVALANCHE",
 			"SHADOW_BALL"
 		],
-		"lead": 81.2,
-		"switch": 86.1,
-		"charger": 86.4,
-		"closer": 81.3,
+		"lead": 81.1,
+		"switch": 86,
+		"charger": 86.3,
+		"closer": 81.2,
 		"consistency": 94.3,
-		"attacker": 50.8,
-		"score": 81.5,
+		"attacker": 51,
+		"score": 81.4,
 		"rank": 48,
 		"rankChange": 0,
 		"matchups": [
@@ -2934,13 +2934,13 @@
 			"BUG_BUZZ",
 			"BULLDOZE"
 		],
-		"lead": 76.8,
-		"switch": 59.3,
+		"lead": 77.1,
+		"switch": 59.5,
 		"charger": 72,
 		"closer": 79.3,
 		"consistency": 69.7,
-		"attacker": 87.7,
-		"score": 81.2,
+		"attacker": 87.3,
+		"score": 81.1,
 		"rank": 49,
 		"rankChange": 0,
 		"matchups": [
@@ -2988,67 +2988,6 @@
 			}
 		]
 	},
-	"drifloon": {
-		"speciesId": "drifloon",
-		"moveset": [
-			"HEX",
-			"ICY_WIND",
-			"SHADOW_BALL"
-		],
-		"lead": 78.9,
-		"switch": 58,
-		"charger": 81.5,
-		"closer": 65.8,
-		"consistency": 79.3,
-		"attacker": 84.2,
-		"score": 80.8,
-		"rank": 50,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gliscor",
-				"rating": 766
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 723
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 704
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 696
-			},
-			{
-				"opponent": "vespiquen",
-				"rating": 653
-			}
-		],
-		"counters": [
-			{
-				"opponent": "bastiodon",
-				"rating": 264
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 277
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 307
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 389
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 418
-			}
-		]
-	},
 	"bastiodon_shadow": {
 		"speciesId": "bastiodon_shadow",
 		"moveset": [
@@ -3056,14 +2995,14 @@
 			"STONE_EDGE",
 			"FLAMETHROWER"
 		],
-		"lead": 74.3,
+		"lead": 74.6,
 		"switch": 46.1,
 		"charger": 60.8,
-		"closer": 71.8,
+		"closer": 72,
 		"consistency": 100,
 		"attacker": 88,
-		"score": 80.5,
-		"rank": 51,
+		"score": 80.6,
+		"rank": 50,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3110,6 +3049,67 @@
 			}
 		]
 	},
+	"drifloon": {
+		"speciesId": "drifloon",
+		"moveset": [
+			"HEX",
+			"ICY_WIND",
+			"SHADOW_BALL"
+		],
+		"lead": 79,
+		"switch": 57.9,
+		"charger": 81.4,
+		"closer": 65.6,
+		"consistency": 79.3,
+		"attacker": 83.7,
+		"score": 80.5,
+		"rank": 51,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gliscor",
+				"rating": 766
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 723
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 704
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 696
+			},
+			{
+				"opponent": "vespiquen",
+				"rating": 653
+			}
+		],
+		"counters": [
+			{
+				"opponent": "bastiodon",
+				"rating": 264
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 277
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 307
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 389
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 418
+			}
+		]
+	},
 	"kricketune": {
 		"speciesId": "kricketune",
 		"moveset": [
@@ -3117,13 +3117,13 @@
 			"X_SCISSOR",
 			"AERIAL_ACE"
 		],
-		"lead": 83,
-		"switch": 72.3,
+		"lead": 83.1,
+		"switch": 72.6,
 		"charger": 76.9,
 		"closer": 75.5,
 		"consistency": 100,
-		"attacker": 70.2,
-		"score": 80.4,
+		"attacker": 70,
+		"score": 80.5,
 		"rank": 52,
 		"rankChange": 0,
 		"matchups": [
@@ -3171,67 +3171,6 @@
 			}
 		]
 	},
-	"zoroark_hisuian": {
-		"speciesId": "zoroark_hisuian",
-		"moveset": [
-			"SHADOW_CLAW",
-			"SHADOW_BALL",
-			"FOUL_PLAY"
-		],
-		"lead": 81.9,
-		"switch": 66.3,
-		"charger": 87.3,
-		"closer": 72,
-		"consistency": 82.4,
-		"attacker": 55.4,
-		"score": 80.2,
-		"rank": 53,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 814
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 814
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 737
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 685
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 510
-			}
-		],
-		"counters": [
-			{
-				"opponent": "spiritomb",
-				"rating": 177
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 196
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 409
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 428
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 456
-			}
-		]
-	},
 	"gallade": {
 		"speciesId": "gallade",
 		"moveset": [
@@ -3239,14 +3178,14 @@
 			"CLOSE_COMBAT",
 			"LEAF_BLADE"
 		],
-		"lead": 81.7,
+		"lead": 82,
 		"switch": 47.7,
 		"charger": 81.5,
-		"closer": 79.8,
+		"closer": 80,
 		"consistency": 79.6,
-		"attacker": 67.9,
-		"score": 80,
-		"rank": 54,
+		"attacker": 68,
+		"score": 80.2,
+		"rank": 53,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3293,6 +3232,67 @@
 			}
 		]
 	},
+	"zoroark_hisuian": {
+		"speciesId": "zoroark_hisuian",
+		"moveset": [
+			"SHADOW_CLAW",
+			"SHADOW_BALL",
+			"FOUL_PLAY"
+		],
+		"lead": 82,
+		"switch": 66.3,
+		"charger": 87.3,
+		"closer": 71.8,
+		"consistency": 82.4,
+		"attacker": 55.3,
+		"score": 80.2,
+		"rank": 54,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 814
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 814
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 737
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 685
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 510
+			}
+		],
+		"counters": [
+			{
+				"opponent": "spiritomb",
+				"rating": 177
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 196
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 409
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 428
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 456
+			}
+		]
+	},
 	"munchlax": {
 		"speciesId": "munchlax",
 		"moveset": [
@@ -3300,13 +3300,13 @@
 			"BODY_SLAM",
 			"BULLDOZE"
 		],
-		"lead": 79.8,
-		"switch": 72.1,
+		"lead": 80,
+		"switch": 72.3,
 		"charger": 74.5,
 		"closer": 69,
 		"consistency": 89.1,
-		"attacker": 82.6,
-		"score": 80,
+		"attacker": 82.4,
+		"score": 79.9,
 		"rank": 55,
 		"rankChange": 0,
 		"matchups": [
@@ -3361,13 +3361,13 @@
 			"FIRE_PUNCH",
 			"THUNDERBOLT"
 		],
-		"lead": 80.1,
+		"lead": 80.6,
 		"switch": 61.4,
 		"charger": 88.8,
 		"closer": 71.2,
 		"consistency": 93.6,
-		"attacker": 42.4,
-		"score": 79.5,
+		"attacker": 42.3,
+		"score": 79.6,
 		"rank": 56,
 		"rankChange": 0,
 		"matchups": [
@@ -3415,67 +3415,6 @@
 			}
 		]
 	},
-	"dialga_shadow": {
-		"speciesId": "dialga_shadow",
-		"moveset": [
-			"DRAGON_BREATH",
-			"IRON_HEAD",
-			"DRACO_METEOR"
-		],
-		"lead": 83.4,
-		"switch": 69.8,
-		"charger": 65.1,
-		"closer": 64.1,
-		"consistency": 79.6,
-		"attacker": 83.9,
-		"score": 79.4,
-		"rank": 57,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gallade_shadow",
-				"rating": 883
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 700
-			},
-			{
-				"opponent": "bibarel",
-				"rating": 630
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 598
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 579
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 305
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 370
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 418
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 431
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 494
-			}
-		]
-	},
 	"magnezone": {
 		"speciesId": "magnezone",
 		"moveset": [
@@ -3483,14 +3422,14 @@
 			"WILD_CHARGE",
 			"MIRROR_SHOT"
 		],
-		"lead": 89.7,
-		"switch": 68.7,
+		"lead": 89.9,
+		"switch": 68.5,
 		"charger": 87.7,
 		"closer": 76.7,
 		"consistency": 60.2,
-		"attacker": 63.6,
-		"score": 79.3,
-		"rank": 58,
+		"attacker": 63.9,
+		"score": 79.5,
+		"rank": 57,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3537,6 +3476,67 @@
 			}
 		]
 	},
+	"dialga_shadow": {
+		"speciesId": "dialga_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"IRON_HEAD",
+			"DRACO_METEOR"
+		],
+		"lead": 83.6,
+		"switch": 69.8,
+		"charger": 65.1,
+		"closer": 64,
+		"consistency": 79.6,
+		"attacker": 83.7,
+		"score": 79.4,
+		"rank": 58,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gallade_shadow",
+				"rating": 883
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 700
+			},
+			{
+				"opponent": "bibarel",
+				"rating": 630
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 598
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 579
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 305
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 370
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 418
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 431
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 494
+			}
+		]
+	},
 	"magnezone_shadow": {
 		"speciesId": "magnezone_shadow",
 		"moveset": [
@@ -3544,13 +3544,13 @@
 			"WILD_CHARGE",
 			"MIRROR_SHOT"
 		],
-		"lead": 91.5,
+		"lead": 91.6,
 		"switch": 66.3,
 		"charger": 88.7,
-		"closer": 76.3,
+		"closer": 76.4,
 		"consistency": 60.2,
-		"attacker": 59,
-		"score": 79.3,
+		"attacker": 59.1,
+		"score": 79.4,
 		"rank": 59,
 		"rankChange": 0,
 		"matchups": [
@@ -3598,6 +3598,67 @@
 			}
 		]
 	},
+	"cresselia": {
+		"speciesId": "cresselia",
+		"moveset": [
+			"PSYCHO_CUT",
+			"GRASS_KNOT",
+			"MOONBLAST"
+		],
+		"lead": 77.1,
+		"switch": 68.7,
+		"charger": 69.5,
+		"closer": 78.3,
+		"consistency": 92.2,
+		"attacker": 80.2,
+		"score": 79.2,
+		"rank": 60,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gastrodon",
+				"rating": 751
+			},
+			{
+				"opponent": "sneasler",
+				"rating": 674
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 628
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 598
+			},
+			{
+				"opponent": "bibarel",
+				"rating": 570
+			}
+		],
+		"counters": [
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 138
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 276
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 344
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 355
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 384
+			}
+		]
+	},
 	"skuntank": {
 		"speciesId": "skuntank",
 		"moveset": [
@@ -3605,14 +3666,14 @@
 			"CRUNCH",
 			"TRAILBLAZE"
 		],
-		"lead": 72.6,
+		"lead": 72.7,
 		"switch": 59.8,
 		"charger": 78.1,
 		"closer": 79.6,
 		"consistency": 97.2,
-		"attacker": 75.5,
+		"attacker": 75.6,
 		"score": 79.2,
-		"rank": 60,
+		"rank": 61,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3666,14 +3727,14 @@
 			"TRIPLE_AXEL",
 			"FOCUS_BLAST"
 		],
-		"lead": 74.5,
+		"lead": 74.8,
 		"switch": 58.9,
 		"charger": 72.7,
 		"closer": 68,
 		"consistency": 76.5,
 		"attacker": 86.5,
 		"score": 79.1,
-		"rank": 61,
+		"rank": 62,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3720,128 +3781,6 @@
 			}
 		]
 	},
-	"cresselia": {
-		"speciesId": "cresselia",
-		"moveset": [
-			"PSYCHO_CUT",
-			"GRASS_KNOT",
-			"MOONBLAST"
-		],
-		"lead": 76.7,
-		"switch": 68.2,
-		"charger": 69.4,
-		"closer": 78.1,
-		"consistency": 92.2,
-		"attacker": 80.1,
-		"score": 79,
-		"rank": 62,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gastrodon",
-				"rating": 751
-			},
-			{
-				"opponent": "sneasler",
-				"rating": 674
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 628
-			},
-			{
-				"opponent": "togekiss",
-				"rating": 598
-			},
-			{
-				"opponent": "bibarel",
-				"rating": 570
-			}
-		],
-		"counters": [
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 138
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 276
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 344
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 355
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 384
-			}
-		]
-	},
-	"staravia": {
-		"speciesId": "staravia",
-		"moveset": [
-			"QUICK_ATTACK",
-			"BRAVE_BIRD",
-			"FLY"
-		],
-		"lead": 71.6,
-		"switch": 62.2,
-		"charger": 86.7,
-		"closer": 78.6,
-		"consistency": 86.3,
-		"attacker": 51.6,
-		"score": 79,
-		"rank": 63,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gastrodon",
-				"rating": 696
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 603
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 600
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 574
-			},
-			{
-				"opponent": "lickilicky",
-				"rating": 559
-			}
-		],
-		"counters": [
-			{
-				"opponent": "bastiodon",
-				"rating": 108
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 239
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 288
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 461
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 495
-			}
-		]
-	},
 	"bibarel": {
 		"speciesId": "bibarel",
 		"moveset": [
@@ -3849,14 +3788,14 @@
 			"SURF",
 			"HYPER_FANG"
 		],
-		"lead": 84.5,
-		"switch": 66.8,
+		"lead": 84.8,
+		"switch": 66.9,
 		"charger": 78.8,
 		"closer": 68.3,
 		"consistency": 94,
-		"attacker": 58.5,
-		"score": 78.8,
-		"rank": 64,
+		"attacker": 58.6,
+		"score": 79,
+		"rank": 63,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -3903,6 +3842,67 @@
 			}
 		]
 	},
+	"staravia": {
+		"speciesId": "staravia",
+		"moveset": [
+			"QUICK_ATTACK",
+			"BRAVE_BIRD",
+			"FLY"
+		],
+		"lead": 71.9,
+		"switch": 62.1,
+		"charger": 86.4,
+		"closer": 78.6,
+		"consistency": 86.3,
+		"attacker": 51.2,
+		"score": 78.9,
+		"rank": 64,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gastrodon",
+				"rating": 696
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 603
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 600
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 574
+			},
+			{
+				"opponent": "lickilicky",
+				"rating": 559
+			}
+		],
+		"counters": [
+			{
+				"opponent": "bastiodon",
+				"rating": 108
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 239
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 288
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 461
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 495
+			}
+		]
+	},
 	"drifloon_shadow": {
 		"speciesId": "drifloon_shadow",
 		"moveset": [
@@ -3910,13 +3910,13 @@
 			"ICY_WIND",
 			"SHADOW_BALL"
 		],
-		"lead": 76.2,
+		"lead": 76.3,
 		"switch": 57.2,
-		"charger": 81.6,
+		"charger": 81.4,
 		"closer": 62.1,
 		"consistency": 79.3,
-		"attacker": 78.1,
-		"score": 78,
+		"attacker": 77.6,
+		"score": 77.9,
 		"rank": 65,
 		"rankChange": 0,
 		"matchups": [
@@ -3964,6 +3964,67 @@
 			}
 		]
 	},
+	"avalugg_hisuian": {
+		"speciesId": "avalugg_hisuian",
+		"moveset": [
+			"POWDER_SNOW",
+			"ICY_WIND",
+			"ROCK_SLIDE"
+		],
+		"lead": 79.8,
+		"switch": 69.7,
+		"charger": 76.6,
+		"closer": 64.9,
+		"consistency": 100,
+		"attacker": 71,
+		"score": 77.7,
+		"rank": 66,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 768
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 719
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 677
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 665
+			},
+			{
+				"opponent": "vespiquen",
+				"rating": 661
+			}
+		],
+		"counters": [
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 272
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 297
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 359
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 423
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 487
+			}
+		]
+	},
 	"giratina_origin": {
 		"speciesId": "giratina_origin",
 		"moveset": [
@@ -3973,12 +4034,12 @@
 		],
 		"lead": 79.2,
 		"switch": 59.6,
-		"charger": 76.2,
+		"charger": 76.1,
 		"closer": 77.2,
 		"consistency": 77.8,
-		"attacker": 73.7,
+		"attacker": 73.6,
 		"score": 77.7,
-		"rank": 66,
+		"rank": 67,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4032,14 +4093,14 @@
 			"BRAVE_BIRD",
 			"FLY"
 		],
-		"lead": 68.7,
+		"lead": 68.9,
 		"switch": 57.4,
-		"charger": 89,
+		"charger": 88.8,
 		"closer": 76.3,
 		"consistency": 86.3,
-		"attacker": 40.4,
+		"attacker": 40.3,
 		"score": 77.4,
-		"rank": 67,
+		"rank": 68,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4093,14 +4154,14 @@
 			"AERIAL_ACE",
 			"THUNDER"
 		],
-		"lead": 78.6,
+		"lead": 78.5,
 		"switch": 66.6,
-		"charger": 81.2,
+		"charger": 81,
 		"closer": 70.7,
 		"consistency": 86.9,
-		"attacker": 56.9,
-		"score": 77.1,
-		"rank": 68,
+		"attacker": 56.8,
+		"score": 77,
+		"rank": 69,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4154,14 +4215,14 @@
 			"WEATHER_BALL_FIRE",
 			"LEAF_STORM"
 		],
-		"lead": 94.3,
+		"lead": 94.6,
 		"switch": 86.7,
-		"charger": 92.3,
-		"closer": 62.4,
+		"charger": 92.4,
+		"closer": 62.3,
 		"consistency": 68.1,
-		"attacker": 43,
-		"score": 76.8,
-		"rank": 69,
+		"attacker": 42.8,
+		"score": 76.9,
+		"rank": 70,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4215,14 +4276,14 @@
 			"CRUNCH",
 			"TRAILBLAZE"
 		],
-		"lead": 75.4,
+		"lead": 75.5,
 		"switch": 67.5,
 		"charger": 80.9,
 		"closer": 67.5,
 		"consistency": 97.2,
-		"attacker": 59,
+		"attacker": 58.8,
 		"score": 76.6,
-		"rank": 70,
+		"rank": 71,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4276,14 +4337,14 @@
 			"FIRE_PUNCH",
 			"WILD_CHARGE"
 		],
-		"lead": 74.2,
-		"switch": 55.3,
-		"charger": 83,
-		"closer": 75.2,
+		"lead": 74.1,
+		"switch": 55.1,
+		"charger": 82.7,
+		"closer": 75,
 		"consistency": 88,
-		"attacker": 44.5,
-		"score": 76.3,
-		"rank": 71,
+		"attacker": 44.4,
+		"score": 76.1,
+		"rank": 72,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4337,14 +4398,14 @@
 			"FLY",
 			"CLOSE_COMBAT"
 		],
-		"lead": 70.2,
+		"lead": 70.7,
 		"switch": 57.9,
 		"charger": 82.2,
-		"closer": 72.3,
+		"closer": 72.4,
 		"consistency": 100,
-		"attacker": 48.8,
-		"score": 75.9,
-		"rank": 72,
+		"attacker": 48.7,
+		"score": 76,
+		"rank": 73,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4398,14 +4459,14 @@
 			"GRASS_KNOT",
 			"MOONBLAST"
 		],
-		"lead": 72.3,
-		"switch": 61.4,
-		"charger": 67.4,
+		"lead": 72.7,
+		"switch": 61.5,
+		"charger": 67.5,
 		"closer": 79.2,
 		"consistency": 92.2,
-		"attacker": 68.1,
-		"score": 75.7,
-		"rank": 73,
+		"attacker": 68.2,
+		"score": 75.8,
+		"rank": 74,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4459,14 +4520,14 @@
 			"FLY",
 			"CLOSE_COMBAT"
 		],
-		"lead": 66.6,
+		"lead": 67,
 		"switch": 55.4,
 		"charger": 84.2,
 		"closer": 75.2,
 		"consistency": 100,
-		"attacker": 40.2,
+		"attacker": 39.8,
 		"score": 75.7,
-		"rank": 74,
+		"rank": 75,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4520,14 +4581,14 @@
 			"X_SCISSOR",
 			"TRAILBLAZE"
 		],
-		"lead": 68.8,
-		"switch": 77,
-		"charger": 76.3,
+		"lead": 69.1,
+		"switch": 77.1,
+		"charger": 76.4,
 		"closer": 74.3,
 		"consistency": 99.4,
-		"attacker": 61.5,
+		"attacker": 61.1,
 		"score": 75.2,
-		"rank": 75,
+		"rank": 76,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4574,67 +4635,6 @@
 			}
 		]
 	},
-	"weavile": {
-		"speciesId": "weavile",
-		"moveset": [
-			"SNARL",
-			"AVALANCHE",
-			"FOUL_PLAY"
-		],
-		"lead": 74,
-		"switch": 66,
-		"charger": 85.7,
-		"closer": 69,
-		"consistency": 85,
-		"attacker": 38.1,
-		"score": 75.2,
-		"rank": 76,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 863
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 698
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 632
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 613
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 547
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gliscor",
-				"rating": 125
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 177
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 192
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 422
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 461
-			}
-		]
-	},
 	"prinplup": {
 		"speciesId": "prinplup",
 		"moveset": [
@@ -4642,12 +4642,12 @@
 			"ICY_WIND",
 			"HYDRO_PUMP"
 		],
-		"lead": 76.4,
-		"switch": 63.7,
+		"lead": 76.5,
+		"switch": 63.9,
 		"charger": 75.7,
 		"closer": 68.9,
 		"consistency": 76.1,
-		"attacker": 73.5,
+		"attacker": 73.3,
 		"score": 75.1,
 		"rank": 77,
 		"rankChange": 0,
@@ -4696,6 +4696,67 @@
 			}
 		]
 	},
+	"weavile": {
+		"speciesId": "weavile",
+		"moveset": [
+			"SNARL",
+			"AVALANCHE",
+			"FOUL_PLAY"
+		],
+		"lead": 74,
+		"switch": 65.9,
+		"charger": 85.4,
+		"closer": 68.9,
+		"consistency": 85,
+		"attacker": 37.8,
+		"score": 75,
+		"rank": 78,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 863
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 698
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 632
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 613
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 547
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gliscor",
+				"rating": 125
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 177
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 192
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 422
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 461
+			}
+		]
+	},
 	"magmortar": {
 		"speciesId": "magmortar",
 		"moveset": [
@@ -4703,14 +4764,14 @@
 			"FIRE_PUNCH",
 			"THUNDERBOLT"
 		],
-		"lead": 78.1,
-		"switch": 64.9,
-		"charger": 80.4,
+		"lead": 78.4,
+		"switch": 65,
+		"charger": 80.3,
 		"closer": 63.6,
 		"consistency": 93.6,
-		"attacker": 48.6,
+		"attacker": 48.4,
 		"score": 74.9,
-		"rank": 78,
+		"rank": 79,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4764,14 +4825,14 @@
 			"AERIAL_ACE",
 			"THUNDER"
 		],
-		"lead": 77.5,
-		"switch": 78.3,
-		"charger": 79,
+		"lead": 77.6,
+		"switch": 78.1,
+		"charger": 78.9,
 		"closer": 63,
 		"consistency": 86.9,
-		"attacker": 59.5,
+		"attacker": 59.3,
 		"score": 74.8,
-		"rank": 79,
+		"rank": 80,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4825,14 +4886,14 @@
 			"WATER_PULSE",
 			"SILVER_WIND"
 		],
-		"lead": 67.9,
-		"switch": 57.7,
-		"charger": 64.9,
+		"lead": 68.1,
+		"switch": 57.9,
+		"charger": 65,
 		"closer": 73.8,
 		"consistency": 89.2,
-		"attacker": 76.5,
-		"score": 74.4,
-		"rank": 80,
+		"attacker": 76.6,
+		"score": 74.5,
+		"rank": 81,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -4879,67 +4940,6 @@
 			}
 		]
 	},
-	"weavile_shadow": {
-		"speciesId": "weavile_shadow",
-		"moveset": [
-			"SNARL",
-			"AVALANCHE",
-			"FOUL_PLAY"
-		],
-		"lead": 65.5,
-		"switch": 44.9,
-		"charger": 88.6,
-		"closer": 68.6,
-		"consistency": 85,
-		"attacker": 36.8,
-		"score": 74.2,
-		"rank": 81,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 830
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 665
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 655
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 599
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 566
-			}
-		],
-		"counters": [
-			{
-				"opponent": "drapion_shadow",
-				"rating": 89
-			},
-			{
-				"opponent": "qwilfish_hisuian",
-				"rating": 120
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 155
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 199
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 235
-			}
-		]
-	},
 	"torterra_shadow": {
 		"speciesId": "torterra_shadow",
 		"moveset": [
@@ -4947,12 +4947,12 @@
 			"FRENZY_PLANT",
 			"STONE_EDGE"
 		],
-		"lead": 72.6,
-		"switch": 50.6,
+		"lead": 72.9,
+		"switch": 50.8,
 		"charger": 57.4,
 		"closer": 51.3,
 		"consistency": 93.6,
-		"attacker": 83.4,
+		"attacker": 83.2,
 		"score": 74.1,
 		"rank": 82,
 		"rankChange": 0,
@@ -5001,6 +5001,67 @@
 			}
 		]
 	},
+	"weavile_shadow": {
+		"speciesId": "weavile_shadow",
+		"moveset": [
+			"SNARL",
+			"AVALANCHE",
+			"FOUL_PLAY"
+		],
+		"lead": 65.5,
+		"switch": 44.9,
+		"charger": 88.5,
+		"closer": 68.6,
+		"consistency": 85,
+		"attacker": 36.5,
+		"score": 74.1,
+		"rank": 83,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 830
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 665
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 655
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 599
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 566
+			}
+		],
+		"counters": [
+			{
+				"opponent": "drapion_shadow",
+				"rating": 89
+			},
+			{
+				"opponent": "qwilfish_hisuian",
+				"rating": 120
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 155
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 199
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 235
+			}
+		]
+	},
 	"ambipom_shadow": {
 		"speciesId": "ambipom_shadow",
 		"moveset": [
@@ -5008,14 +5069,14 @@
 			"AERIAL_ACE",
 			"LOW_SWEEP"
 		],
-		"lead": 74,
-		"switch": 55,
+		"lead": 74.3,
+		"switch": 55.1,
 		"charger": 77,
 		"closer": 63.3,
 		"consistency": 100,
-		"attacker": 56.4,
+		"attacker": 56,
 		"score": 73.7,
-		"rank": 83,
+		"rank": 84,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5069,14 +5130,14 @@
 			"FLAMETHROWER",
 			"LOW_SWEEP"
 		],
-		"lead": 72.9,
+		"lead": 73.3,
 		"switch": 71.7,
-		"charger": 76.1,
-		"closer": 69.2,
+		"charger": 76.2,
+		"closer": 69.3,
 		"consistency": 77.4,
 		"attacker": 66.4,
-		"score": 73.5,
-		"rank": 84,
+		"score": 73.7,
+		"rank": 85,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5130,14 +5191,14 @@
 			"SAND_TOMB",
 			"OUTRAGE"
 		],
-		"lead": 75.1,
+		"lead": 75.2,
 		"switch": 66,
-		"charger": 71.6,
+		"charger": 71.5,
 		"closer": 58.9,
 		"consistency": 65.2,
-		"attacker": 77.3,
-		"score": 73.3,
-		"rank": 85,
+		"attacker": 77.1,
+		"score": 73.2,
+		"rank": 86,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5191,14 +5252,14 @@
 			"CLOSE_COMBAT",
 			"AERIAL_ACE"
 		],
-		"lead": 69.4,
+		"lead": 69.6,
 		"switch": 49.4,
-		"charger": 75.6,
-		"closer": 71,
+		"charger": 75.7,
+		"closer": 71.2,
 		"consistency": 79.5,
-		"attacker": 59.5,
-		"score": 72.4,
-		"rank": 86,
+		"attacker": 59.3,
+		"score": 72.5,
+		"rank": 87,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5252,14 +5313,14 @@
 			"FLAMETHROWER",
 			"LOW_SWEEP"
 		],
-		"lead": 75,
+		"lead": 75.2,
 		"switch": 62.2,
-		"charger": 72.6,
-		"closer": 65.3,
+		"charger": 72.7,
+		"closer": 65.6,
 		"consistency": 77.4,
-		"attacker": 65.3,
-		"score": 72.2,
-		"rank": 87,
+		"attacker": 65.4,
+		"score": 72.4,
+		"rank": 88,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5313,14 +5374,14 @@
 			"CLOSE_COMBAT",
 			"AERIAL_ACE"
 		],
-		"lead": 66.1,
+		"lead": 66.2,
 		"switch": 54,
-		"charger": 74.8,
-		"closer": 72.4,
+		"charger": 75,
+		"closer": 72.6,
 		"consistency": 79.5,
-		"attacker": 60.5,
-		"score": 71.9,
-		"rank": 88,
+		"attacker": 60.4,
+		"score": 72.1,
+		"rank": 89,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5374,14 +5435,14 @@
 			"CLOSE_COMBAT",
 			"BLAST_BURN"
 		],
-		"lead": 68.7,
+		"lead": 68.9,
 		"switch": 50.8,
 		"charger": 68.4,
 		"closer": 73.3,
 		"consistency": 91.6,
-		"attacker": 63.1,
+		"attacker": 62.9,
 		"score": 71.8,
-		"rank": 89,
+		"rank": 90,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5435,14 +5496,14 @@
 			"FRENZY_PLANT",
 			"STONE_EDGE"
 		],
-		"lead": 67.9,
-		"switch": 46.1,
-		"charger": 50.4,
+		"lead": 68.1,
+		"switch": 46.2,
+		"charger": 50.5,
 		"closer": 51.3,
 		"consistency": 93.6,
-		"attacker": 83.4,
+		"attacker": 83.2,
 		"score": 71.6,
-		"rank": 90,
+		"rank": 91,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5489,67 +5550,6 @@
 			}
 		]
 	},
-	"grotle_shadow": {
-		"speciesId": "grotle_shadow",
-		"moveset": [
-			"RAZOR_LEAF",
-			"BODY_SLAM",
-			"ENERGY_BALL"
-		],
-		"lead": 69.6,
-		"switch": 48.3,
-		"charger": 56.4,
-		"closer": 50.1,
-		"consistency": 89.4,
-		"attacker": 79.8,
-		"score": 71.3,
-		"rank": 91,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gastrodon",
-				"rating": 894
-			},
-			{
-				"opponent": "bibarel",
-				"rating": 887
-			},
-			{
-				"opponent": "electivire_shadow",
-				"rating": 880
-			},
-			{
-				"opponent": "hippowdon",
-				"rating": 695
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 688
-			}
-		],
-		"counters": [
-			{
-				"opponent": "drapion_shadow",
-				"rating": 235
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 242
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 306
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 394
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 475
-			}
-		]
-	},
 	"shellos": {
 		"speciesId": "shellos",
 		"moveset": [
@@ -5557,13 +5557,13 @@
 			"MUD_BOMB",
 			"BODY_SLAM"
 		],
-		"lead": 72.1,
-		"switch": 51.3,
-		"charger": 64.2,
-		"closer": 62,
+		"lead": 72.5,
+		"switch": 51.6,
+		"charger": 64.3,
+		"closer": 62.3,
 		"consistency": 93.4,
-		"attacker": 71.5,
-		"score": 71.2,
+		"attacker": 71.8,
+		"score": 71.5,
 		"rank": 92,
 		"rankChange": 0,
 		"matchups": [
@@ -5611,6 +5611,67 @@
 			}
 		]
 	},
+	"grotle_shadow": {
+		"speciesId": "grotle_shadow",
+		"moveset": [
+			"RAZOR_LEAF",
+			"BODY_SLAM",
+			"ENERGY_BALL"
+		],
+		"lead": 69.9,
+		"switch": 48.4,
+		"charger": 56.6,
+		"closer": 50.1,
+		"consistency": 89.4,
+		"attacker": 79.6,
+		"score": 71.3,
+		"rank": 93,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gastrodon",
+				"rating": 894
+			},
+			{
+				"opponent": "bibarel",
+				"rating": 887
+			},
+			{
+				"opponent": "electivire_shadow",
+				"rating": 880
+			},
+			{
+				"opponent": "hippowdon",
+				"rating": 695
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 688
+			}
+		],
+		"counters": [
+			{
+				"opponent": "drapion_shadow",
+				"rating": 235
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 242
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 306
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 394
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 475
+			}
+		]
+	},
 	"ursaluna": {
 		"speciesId": "ursaluna",
 		"moveset": [
@@ -5618,14 +5679,14 @@
 			"ICE_PUNCH",
 			"SWIFT"
 		],
-		"lead": 73.5,
-		"switch": 62.7,
-		"charger": 72.3,
-		"closer": 60.9,
+		"lead": 73.7,
+		"switch": 62.5,
+		"charger": 72.2,
+		"closer": 60.7,
 		"consistency": 97,
-		"attacker": 56.4,
+		"attacker": 56.3,
 		"score": 71.2,
-		"rank": 93,
+		"rank": 94,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5679,14 +5740,14 @@
 			"BODY_SLAM",
 			"ENERGY_BALL"
 		],
-		"lead": 63.6,
-		"switch": 44.6,
-		"charger": 50.8,
+		"lead": 63.9,
+		"switch": 44.8,
+		"charger": 50.9,
 		"closer": 56.7,
 		"consistency": 89.4,
-		"attacker": 82.4,
+		"attacker": 82.2,
 		"score": 71,
-		"rank": 94,
+		"rank": 95,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5740,14 +5801,14 @@
 			"ENERGY_BALL",
 			"BUG_BUZZ"
 		],
-		"lead": 67.1,
-		"switch": 45.4,
+		"lead": 67.2,
+		"switch": 45.5,
 		"charger": 53.6,
-		"closer": 65,
+		"closer": 65.2,
 		"consistency": 89.1,
-		"attacker": 75.8,
+		"attacker": 75.6,
 		"score": 70.9,
-		"rank": 95,
+		"rank": 96,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5801,14 +5862,14 @@
 			"AVALANCHE",
 			"ICY_WIND"
 		],
-		"lead": 66.5,
-		"switch": 53.1,
-		"charger": 75.9,
-		"closer": 60,
+		"lead": 66.6,
+		"switch": 52.9,
+		"charger": 75.8,
+		"closer": 59.8,
 		"consistency": 100,
-		"attacker": 55.9,
-		"score": 70.8,
-		"rank": 96,
+		"attacker": 55.5,
+		"score": 70.7,
+		"rank": 97,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5862,14 +5923,14 @@
 			"CRUNCH",
 			"TRAILBLAZE"
 		],
-		"lead": 73.2,
-		"switch": 57.9,
-		"charger": 60.2,
+		"lead": 73.3,
+		"switch": 57.7,
+		"charger": 60.1,
 		"closer": 45.5,
 		"consistency": 97.2,
 		"attacker": 74.8,
 		"score": 70.6,
-		"rank": 97,
+		"rank": 98,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5923,14 +5984,14 @@
 			"SWIFT",
 			"FIRE_PUNCH"
 		],
-		"lead": 70.4,
+		"lead": 70.5,
 		"switch": 72,
-		"charger": 73,
+		"charger": 73.1,
 		"closer": 61.8,
 		"consistency": 96.3,
-		"attacker": 54.7,
-		"score": 70.4,
-		"rank": 98,
+		"attacker": 54.5,
+		"score": 70.5,
+		"rank": 99,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -5984,14 +6045,14 @@
 			"SAND_TOMB",
 			"OUTRAGE"
 		],
-		"lead": 74,
-		"switch": 67.3,
+		"lead": 74.1,
+		"switch": 67.2,
 		"charger": 71.2,
 		"closer": 56,
 		"consistency": 65.2,
-		"attacker": 71.7,
+		"attacker": 71.5,
 		"score": 70.4,
-		"rank": 99,
+		"rank": 100,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6045,14 +6106,14 @@
 			"ROCK_SLIDE",
 			"FLAMETHROWER"
 		],
-		"lead": 69.8,
+		"lead": 69.9,
 		"switch": 48.9,
 		"charger": 73.4,
 		"closer": 62.9,
 		"consistency": 87.5,
-		"attacker": 54.9,
+		"attacker": 54.8,
 		"score": 70.2,
-		"rank": 100,
+		"rank": 101,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6106,14 +6167,14 @@
 			"LEAF_BLADE",
 			"LAST_RESORT"
 		],
-		"lead": 69.1,
-		"switch": 58.6,
-		"charger": 71.9,
+		"lead": 69.4,
+		"switch": 58.9,
+		"charger": 72,
 		"closer": 60.9,
 		"consistency": 94.8,
-		"attacker": 61.5,
-		"score": 70.1,
-		"rank": 101,
+		"attacker": 61.4,
+		"score": 70.2,
+		"rank": 102,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6169,12 +6230,12 @@
 		],
 		"lead": 69.9,
 		"switch": 66.3,
-		"charger": 82.7,
-		"closer": 66.7,
+		"charger": 82.6,
+		"closer": 66.9,
 		"consistency": 63.6,
-		"attacker": 49.1,
+		"attacker": 48.9,
 		"score": 70.1,
-		"rank": 102,
+		"rank": 103,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6228,14 +6289,14 @@
 			"ROCK_SLIDE",
 			"ZAP_CANNON"
 		],
-		"lead": 69.3,
+		"lead": 69.4,
 		"switch": 39.3,
 		"charger": 62.2,
-		"closer": 65.2,
+		"closer": 65.3,
 		"consistency": 86.9,
-		"attacker": 70.9,
+		"attacker": 70.8,
 		"score": 70,
-		"rank": 103,
+		"rank": 104,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6289,14 +6350,14 @@
 			"AQUA_JET",
 			"SWIFT"
 		],
-		"lead": 63.8,
+		"lead": 64,
 		"switch": 65.9,
 		"charger": 74.1,
 		"closer": 64.4,
 		"consistency": 82.9,
-		"attacker": 59,
-		"score": 69.4,
-		"rank": 104,
+		"attacker": 59.1,
+		"score": 69.5,
+		"rank": 105,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6350,14 +6411,14 @@
 			"WILD_CHARGE",
 			"PSYCHIC_FANGS"
 		],
-		"lead": 65.7,
-		"switch": 59,
-		"charger": 89.3,
+		"lead": 65.5,
+		"switch": 58.8,
+		"charger": 89.1,
 		"closer": 72,
 		"consistency": 60.3,
-		"attacker": 36.3,
-		"score": 69.3,
-		"rank": 105,
+		"attacker": 36,
+		"score": 69.1,
+		"rank": 106,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6411,14 +6472,14 @@
 			"ROCK_SLIDE",
 			"ZAP_CANNON"
 		],
-		"lead": 70.9,
+		"lead": 71.1,
 		"switch": 38.4,
 		"charger": 61.6,
 		"closer": 64.4,
 		"consistency": 86.9,
-		"attacker": 65.6,
-		"score": 68.9,
-		"rank": 106,
+		"attacker": 65.7,
+		"score": 69,
+		"rank": 107,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6465,67 +6526,6 @@
 			}
 		]
 	},
-	"stunky": {
-		"speciesId": "stunky",
-		"moveset": [
-			"BITE",
-			"CRUNCH",
-			"TRAILBLAZE"
-		],
-		"lead": 68.5,
-		"switch": 52.2,
-		"charger": 55.1,
-		"closer": 48.9,
-		"consistency": 97.2,
-		"attacker": 74,
-		"score": 68.7,
-		"rank": 107,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "dusknoir",
-				"rating": 806
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 758
-			},
-			{
-				"opponent": "electivire_shadow",
-				"rating": 758
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 663
-			},
-			{
-				"opponent": "froslass",
-				"rating": 527
-			}
-		],
-		"counters": [
-			{
-				"opponent": "drapion_shadow",
-				"rating": 226
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 275
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 384
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 387
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 418
-			}
-		]
-	},
 	"prinplup_shadow": {
 		"speciesId": "prinplup_shadow",
 		"moveset": [
@@ -6533,13 +6533,13 @@
 			"ICY_WIND",
 			"HYDRO_PUMP"
 		],
-		"lead": 70.7,
-		"switch": 57.3,
+		"lead": 71,
+		"switch": 57.6,
 		"charger": 71,
-		"closer": 59.8,
+		"closer": 60,
 		"consistency": 76.1,
-		"attacker": 60,
-		"score": 68.5,
+		"attacker": 60.1,
+		"score": 68.6,
 		"rank": 108,
 		"rankChange": 0,
 		"matchups": [
@@ -6587,64 +6587,64 @@
 			}
 		]
 	},
-	"infernape_shadow": {
-		"speciesId": "infernape_shadow",
+	"stunky": {
+		"speciesId": "stunky",
 		"moveset": [
-			"FIRE_SPIN",
-			"CLOSE_COMBAT",
-			"BLAST_BURN"
+			"BITE",
+			"CRUNCH",
+			"TRAILBLAZE"
 		],
-		"lead": 69.8,
-		"switch": 50,
-		"charger": 64.3,
-		"closer": 59.5,
-		"consistency": 91.6,
-		"attacker": 65.3,
-		"score": 68.4,
+		"lead": 68.6,
+		"switch": 52.2,
+		"charger": 55.1,
+		"closer": 48.9,
+		"consistency": 97.2,
+		"attacker": 73.8,
+		"score": 68.6,
 		"rank": 109,
 		"rankChange": 0,
 		"matchups": [
 			{
-				"opponent": "abomasnow_shadow",
-				"rating": 889
+				"opponent": "dusknoir",
+				"rating": 806
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 758
+			},
+			{
+				"opponent": "electivire_shadow",
+				"rating": 758
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 663
 			},
 			{
 				"opponent": "froslass",
-				"rating": 766
-			},
-			{
-				"opponent": "magnezone_shadow",
-				"rating": 754
-			},
-			{
-				"opponent": "bastiodon",
-				"rating": 635
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 614
+				"rating": 527
 			}
 		],
 		"counters": [
 			{
-				"opponent": "gastrodon",
-				"rating": 137
+				"opponent": "drapion_shadow",
+				"rating": 226
 			},
 			{
-				"opponent": "drapion_shadow",
-				"rating": 282
+				"opponent": "gastrodon",
+				"rating": 275
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 384
 			},
 			{
 				"opponent": "gliscor",
-				"rating": 306
+				"rating": 387
 			},
 			{
-				"opponent": "dusknoir_shadow",
-				"rating": 338
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 346
+				"opponent": "spiritomb",
+				"rating": 418
 			}
 		]
 	},
@@ -6655,13 +6655,13 @@
 			"ROCK_TOMB",
 			"ROCK_SLIDE"
 		],
-		"lead": 69.6,
+		"lead": 69.9,
 		"switch": 55,
 		"charger": 57.7,
-		"closer": 48.1,
+		"closer": 48.3,
 		"consistency": 99.2,
 		"attacker": 71.5,
-		"score": 68.3,
+		"score": 68.4,
 		"rank": 110,
 		"rankChange": 0,
 		"matchups": [
@@ -6709,6 +6709,67 @@
 			}
 		]
 	},
+	"infernape_shadow": {
+		"speciesId": "infernape_shadow",
+		"moveset": [
+			"FIRE_SPIN",
+			"CLOSE_COMBAT",
+			"BLAST_BURN"
+		],
+		"lead": 69.7,
+		"switch": 50.2,
+		"charger": 64.3,
+		"closer": 59.5,
+		"consistency": 91.6,
+		"attacker": 65.2,
+		"score": 68.3,
+		"rank": 111,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 889
+			},
+			{
+				"opponent": "froslass",
+				"rating": 766
+			},
+			{
+				"opponent": "magnezone_shadow",
+				"rating": 754
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 635
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 614
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 137
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 282
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 306
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 338
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 346
+			}
+		]
+	},
 	"ambipom": {
 		"speciesId": "ambipom",
 		"moveset": [
@@ -6716,14 +6777,14 @@
 			"AERIAL_ACE",
 			"RETURN"
 		],
-		"lead": 71.2,
+		"lead": 71.3,
 		"switch": 55.3,
-		"charger": 67.3,
+		"charger": 67.1,
 		"closer": 58.9,
 		"consistency": 79.6,
-		"attacker": 59.5,
+		"attacker": 59.6,
 		"score": 67.9,
-		"rank": 111,
+		"rank": 112,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6777,14 +6838,14 @@
 			"WILD_CHARGE",
 			"ROCK_SLIDE"
 		],
-		"lead": 68.8,
+		"lead": 68.9,
 		"switch": 49.6,
 		"charger": 65.5,
-		"closer": 52.9,
+		"closer": 53,
 		"consistency": 100,
-		"attacker": 64.6,
+		"attacker": 64.4,
 		"score": 67.9,
-		"rank": 112,
+		"rank": 113,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6796,8 +6857,8 @@
 				"rating": 901
 			},
 			{
-				"opponent": "froslass",
-				"rating": 803
+				"opponent": "magnezone_shadow",
+				"rating": 807
 			},
 			{
 				"opponent": "togekiss",
@@ -6838,14 +6899,14 @@
 			"BRAVE_BIRD",
 			"DARK_PULSE"
 		],
-		"lead": 49,
+		"lead": 49.4,
 		"switch": 34,
-		"charger": 76,
-		"closer": 78.7,
+		"charger": 75.9,
+		"closer": 78.6,
 		"consistency": 84.1,
 		"attacker": 30.2,
 		"score": 67.7,
-		"rank": 113,
+		"rank": 114,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6899,14 +6960,14 @@
 			"AERIAL_ACE",
 			"ANCIENT_POWER"
 		],
-		"lead": 63.3,
-		"switch": 41.4,
-		"charger": 59.8,
+		"lead": 63.4,
+		"switch": 41.6,
+		"charger": 60.1,
 		"closer": 62.1,
 		"consistency": 97.7,
-		"attacker": 69.4,
+		"attacker": 69.2,
 		"score": 67.7,
-		"rank": 114,
+		"rank": 115,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -6953,67 +7014,6 @@
 			}
 		]
 	},
-	"rotom": {
-		"speciesId": "rotom",
-		"moveset": [
-			"ASTONISH",
-			"THUNDERBOLT",
-			"OMINOUS_WIND"
-		],
-		"lead": 67.1,
-		"switch": 50.6,
-		"charger": 67.8,
-		"closer": 60,
-		"consistency": 81.5,
-		"attacker": 62,
-		"score": 67,
-		"rank": 115,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "gallade_shadow",
-				"rating": 857
-			},
-			{
-				"opponent": "froslass",
-				"rating": 686
-			},
-			{
-				"opponent": "electrode_hisuian",
-				"rating": 647
-			},
-			{
-				"opponent": "electivire_shadow",
-				"rating": 593
-			},
-			{
-				"opponent": "gliscor_shadow",
-				"rating": 578
-			}
-		],
-		"counters": [
-			{
-				"opponent": "drapion_shadow",
-				"rating": 183
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 275
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 394
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 485
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 495
-			}
-		]
-	},
 	"decidueye_hisuian": {
 		"speciesId": "decidueye_hisuian",
 		"moveset": [
@@ -7021,13 +7021,13 @@
 			"AERIAL_ACE",
 			"AURA_SPHERE"
 		],
-		"lead": 69.8,
-		"switch": 52.9,
-		"charger": 71.1,
+		"lead": 70.2,
+		"switch": 53.2,
+		"charger": 71.4,
 		"closer": 57.6,
 		"consistency": 76,
-		"attacker": 48,
-		"score": 66.8,
+		"attacker": 48.2,
+		"score": 67,
 		"rank": 116,
 		"rankChange": 0,
 		"matchups": [
@@ -7075,6 +7075,67 @@
 			}
 		]
 	},
+	"rotom": {
+		"speciesId": "rotom",
+		"moveset": [
+			"ASTONISH",
+			"THUNDERBOLT",
+			"OMINOUS_WIND"
+		],
+		"lead": 67,
+		"switch": 50.5,
+		"charger": 67.8,
+		"closer": 60.1,
+		"consistency": 81.5,
+		"attacker": 61.9,
+		"score": 67,
+		"rank": 117,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "gallade_shadow",
+				"rating": 857
+			},
+			{
+				"opponent": "froslass",
+				"rating": 686
+			},
+			{
+				"opponent": "electrode_hisuian",
+				"rating": 647
+			},
+			{
+				"opponent": "electivire_shadow",
+				"rating": 593
+			},
+			{
+				"opponent": "gliscor_shadow",
+				"rating": 578
+			}
+		],
+		"counters": [
+			{
+				"opponent": "drapion_shadow",
+				"rating": 183
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 275
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 394
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 485
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 495
+			}
+		]
+	},
 	"rotom_heat": {
 		"speciesId": "rotom_heat",
 		"moveset": [
@@ -7082,14 +7143,14 @@
 			"OVERHEAT",
 			"THUNDERBOLT"
 		],
-		"lead": 61.9,
+		"lead": 62.2,
 		"switch": 39.1,
-		"charger": 74.8,
+		"charger": 74.7,
 		"closer": 75.3,
 		"consistency": 73.6,
-		"attacker": 37.4,
+		"attacker": 37.3,
 		"score": 66.6,
-		"rank": 117,
+		"rank": 118,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7143,14 +7204,14 @@
 			"SWIFT",
 			"FUTURE_SIGHT"
 		],
-		"lead": 66.9,
+		"lead": 67.2,
 		"switch": 51.3,
 		"charger": 58,
 		"closer": 65.2,
 		"consistency": 80.2,
-		"attacker": 65.3,
-		"score": 66.4,
-		"rank": 118,
+		"attacker": 65.4,
+		"score": 66.6,
+		"rank": 119,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7204,14 +7265,14 @@
 			"THUNDERBOLT",
 			"OMINOUS_WIND"
 		],
-		"lead": 66,
+		"lead": 66.1,
 		"switch": 47,
-		"charger": 67.3,
+		"charger": 67.2,
 		"closer": 61.5,
 		"consistency": 76.4,
-		"attacker": 61,
-		"score": 66.2,
-		"rank": 119,
+		"attacker": 60.9,
+		"score": 66.1,
+		"rank": 120,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7265,14 +7326,14 @@
 			"POWER_WHIP",
 			"ROCK_SLIDE"
 		],
-		"lead": 57,
-		"switch": 48.4,
+		"lead": 57.4,
+		"switch": 48.6,
 		"charger": 67.6,
 		"closer": 64.9,
 		"consistency": 83,
-		"attacker": 61.5,
+		"attacker": 61.4,
 		"score": 66.1,
-		"rank": 120,
+		"rank": 121,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7326,14 +7387,14 @@
 			"SHADOW_BALL",
 			"DARK_PULSE"
 		],
-		"lead": 55.6,
+		"lead": 55.7,
 		"switch": 40,
-		"charger": 68.6,
-		"closer": 69.6,
+		"charger": 68.5,
+		"closer": 69.5,
 		"consistency": 87.5,
-		"attacker": 40.7,
-		"score": 65.4,
-		"rank": 121,
+		"attacker": 40.6,
+		"score": 65.3,
+		"rank": 122,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7380,6 +7441,67 @@
 			}
 		]
 	},
+	"luxio": {
+		"speciesId": "luxio",
+		"moveset": [
+			"SPARK",
+			"WILD_CHARGE",
+			"CRUNCH"
+		],
+		"lead": 52.1,
+		"switch": 40.3,
+		"charger": 69.7,
+		"closer": 67,
+		"consistency": 96.7,
+		"attacker": 41.1,
+		"score": 65,
+		"rank": 123,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "mantyke",
+				"rating": 682
+			},
+			{
+				"opponent": "bronzong",
+				"rating": 620
+			},
+			{
+				"opponent": "drapion",
+				"rating": 605
+			},
+			{
+				"opponent": "electivire",
+				"rating": 594
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 569
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 134
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 239
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 250
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 326
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 370
+			}
+		]
+	},
 	"mismagius": {
 		"speciesId": "mismagius",
 		"moveset": [
@@ -7387,14 +7509,14 @@
 			"SHADOW_BALL",
 			"DARK_PULSE"
 		],
-		"lead": 61.9,
+		"lead": 62,
 		"switch": 41.4,
-		"charger": 67.6,
-		"closer": 67,
+		"charger": 67.4,
+		"closer": 66.9,
 		"consistency": 87.5,
-		"attacker": 39.9,
-		"score": 65.1,
-		"rank": 122,
+		"attacker": 39.8,
+		"score": 65,
+		"rank": 124,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7448,14 +7570,14 @@
 			"AERIAL_ACE",
 			"BUG_BUZZ"
 		],
-		"lead": 61.7,
-		"switch": 41.6,
-		"charger": 58.5,
+		"lead": 61.8,
+		"switch": 41.7,
+		"charger": 58.4,
 		"closer": 56.9,
 		"consistency": 86.7,
-		"attacker": 67.6,
-		"score": 65.1,
-		"rank": 123,
+		"attacker": 67.5,
+		"score": 65,
+		"rank": 125,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7502,67 +7624,6 @@
 			}
 		]
 	},
-	"luxio": {
-		"speciesId": "luxio",
-		"moveset": [
-			"SPARK",
-			"WILD_CHARGE",
-			"CRUNCH"
-		],
-		"lead": 51.8,
-		"switch": 40.4,
-		"charger": 69.9,
-		"closer": 67,
-		"consistency": 96.7,
-		"attacker": 41.2,
-		"score": 65,
-		"rank": 124,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "mantyke",
-				"rating": 682
-			},
-			{
-				"opponent": "bronzong",
-				"rating": 620
-			},
-			{
-				"opponent": "drapion",
-				"rating": 605
-			},
-			{
-				"opponent": "electivire",
-				"rating": 594
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 569
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 134
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 239
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 250
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 326
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 370
-			}
-		]
-	},
 	"tangrowth_shadow": {
 		"speciesId": "tangrowth_shadow",
 		"moveset": [
@@ -7570,14 +7631,14 @@
 			"POWER_WHIP",
 			"ROCK_SLIDE"
 		],
-		"lead": 55.3,
-		"switch": 44.5,
-		"charger": 72.6,
+		"lead": 55.7,
+		"switch": 44.6,
+		"charger": 72.7,
 		"closer": 58.1,
 		"consistency": 83,
-		"attacker": 50.3,
-		"score": 64.9,
-		"rank": 125,
+		"attacker": 50.2,
+		"score": 65,
+		"rank": 126,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7631,14 +7692,14 @@
 			"WEATHER_BALL_FIRE",
 			"SOLAR_BEAM"
 		],
-		"lead": 64.1,
-		"switch": 45.2,
-		"charger": 69.2,
+		"lead": 64.2,
+		"switch": 45.4,
+		"charger": 69.3,
 		"closer": 54.7,
 		"consistency": 72.6,
-		"attacker": 54.9,
-		"score": 64.4,
-		"rank": 126,
+		"attacker": 54.8,
+		"score": 64.5,
+		"rank": 127,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7692,14 +7753,14 @@
 			"GRASS_KNOT",
 			"SEED_FLARE"
 		],
-		"lead": 55.1,
+		"lead": 55.2,
 		"switch": 37.5,
-		"charger": 48.7,
+		"charger": 48.8,
 		"closer": 63.5,
 		"consistency": 94.3,
-		"attacker": 67.1,
+		"attacker": 67,
 		"score": 64.3,
-		"rank": 127,
+		"rank": 128,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7746,67 +7807,6 @@
 			}
 		]
 	},
-	"rampardos_shadow": {
-		"speciesId": "rampardos_shadow",
-		"moveset": [
-			"SMACK_DOWN",
-			"ROCK_SLIDE",
-			"FLAMETHROWER"
-		],
-		"lead": 67.1,
-		"switch": 44.6,
-		"charger": 51,
-		"closer": 41.6,
-		"consistency": 95.9,
-		"attacker": 64.3,
-		"score": 63.1,
-		"rank": 128,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "drifblim",
-				"rating": 756
-			},
-			{
-				"opponent": "abomasnow_shadow",
-				"rating": 756
-			},
-			{
-				"opponent": "froslass",
-				"rating": 736
-			},
-			{
-				"opponent": "vespiquen",
-				"rating": 716
-			},
-			{
-				"opponent": "electivire_shadow",
-				"rating": 675
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 131
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 333
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 346
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 366
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 384
-			}
-		]
-	},
 	"lilligant_hisuian": {
 		"speciesId": "lilligant_hisuian",
 		"moveset": [
@@ -7814,13 +7814,13 @@
 			"PETAL_BLIZZARD",
 			"UPPER_HAND"
 		],
-		"lead": 55.5,
-		"switch": 39.3,
-		"charger": 66.8,
-		"closer": 58.1,
+		"lead": 55.9,
+		"switch": 39.4,
+		"charger": 66.9,
+		"closer": 58.4,
 		"consistency": 84.9,
-		"attacker": 53.1,
-		"score": 62.9,
+		"attacker": 53,
+		"score": 63,
 		"rank": 129,
 		"rankChange": 0,
 		"matchups": [
@@ -7868,6 +7868,67 @@
 			}
 		]
 	},
+	"rampardos_shadow": {
+		"speciesId": "rampardos_shadow",
+		"moveset": [
+			"SMACK_DOWN",
+			"ROCK_SLIDE",
+			"FLAMETHROWER"
+		],
+		"lead": 67,
+		"switch": 44.5,
+		"charger": 50.9,
+		"closer": 41.6,
+		"consistency": 95.9,
+		"attacker": 64.2,
+		"score": 63,
+		"rank": 130,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "drifblim",
+				"rating": 756
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 756
+			},
+			{
+				"opponent": "froslass",
+				"rating": 736
+			},
+			{
+				"opponent": "vespiquen",
+				"rating": 716
+			},
+			{
+				"opponent": "electivire_shadow",
+				"rating": 675
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 131
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 333
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 346
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 366
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 384
+			}
+		]
+	},
 	"gabite": {
 		"speciesId": "gabite",
 		"moveset": [
@@ -7875,14 +7936,14 @@
 			"DIG",
 			"FLAMETHROWER"
 		],
-		"lead": 61,
-		"switch": 38.7,
-		"charger": 60.9,
+		"lead": 61.1,
+		"switch": 39,
+		"charger": 61.1,
 		"closer": 61.6,
 		"consistency": 92.1,
-		"attacker": 52.9,
-		"score": 62.5,
-		"rank": 130,
+		"attacker": 53,
+		"score": 62.6,
+		"rank": 131,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7936,14 +7997,14 @@
 			"POWER_WHIP",
 			"CRUNCH"
 		],
-		"lead": 55.6,
-		"switch": 41.3,
-		"charger": 65.7,
-		"closer": 59.8,
+		"lead": 56.2,
+		"switch": 41.4,
+		"charger": 66,
+		"closer": 59.6,
 		"consistency": 84.1,
-		"attacker": 48.8,
-		"score": 62.4,
-		"rank": 131,
+		"attacker": 48.7,
+		"score": 62.5,
+		"rank": 132,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -7997,14 +8058,14 @@
 			"WILD_CHARGE",
 			"STOMP"
 		],
-		"lead": 62.2,
+		"lead": 62.3,
 		"switch": 44.5,
 		"charger": 56.4,
 		"closer": 59.5,
 		"consistency": 89.6,
-		"attacker": 58.2,
+		"attacker": 58.1,
 		"score": 62.2,
-		"rank": 132,
+		"rank": 133,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8058,14 +8119,14 @@
 			"THUNDERBOLT",
 			"HYDRO_PUMP"
 		],
-		"lead": 46.8,
+		"lead": 47.2,
 		"switch": 36.6,
 		"charger": 71.1,
-		"closer": 61.2,
+		"closer": 61.3,
 		"consistency": 90.6,
-		"attacker": 34.8,
+		"attacker": 34.7,
 		"score": 62.1,
-		"rank": 133,
+		"rank": 134,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8119,14 +8180,14 @@
 			"THUNDERBOLT",
 			"BLIZZARD"
 		],
-		"lead": 42.2,
+		"lead": 42.5,
 		"switch": 35.9,
-		"charger": 73.6,
-		"closer": 60.1,
+		"charger": 73.3,
+		"closer": 60,
 		"consistency": 88.3,
-		"attacker": 33,
+		"attacker": 33.2,
 		"score": 61.4,
-		"rank": 134,
+		"rank": 135,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8142,11 +8203,11 @@
 				"rating": 629
 			},
 			{
-				"opponent": "skuntank_shadow",
-				"rating": 575
+				"opponent": "spiritomb",
+				"rating": 510
 			},
 			{
-				"opponent": "spiritomb",
+				"opponent": "drifblim_shadow",
 				"rating": 510
 			}
 		],
@@ -8180,14 +8241,14 @@
 			"THUNDERBOLT",
 			"OMINOUS_WIND"
 		],
-		"lead": 55.1,
+		"lead": 55.2,
 		"switch": 46.4,
-		"charger": 69.5,
-		"closer": 54.9,
+		"charger": 69.4,
+		"closer": 54.7,
 		"consistency": 73.3,
-		"attacker": 41.2,
+		"attacker": 41.3,
 		"score": 60.4,
-		"rank": 135,
+		"rank": 136,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8241,14 +8302,14 @@
 			"BRAVE_BIRD",
 			"DARK_PULSE"
 		],
-		"lead": 44.4,
-		"switch": 27.9,
-		"charger": 67.1,
+		"lead": 44.7,
+		"switch": 27.8,
+		"charger": 66.8,
 		"closer": 67,
 		"consistency": 84.1,
-		"attacker": 30.5,
+		"attacker": 30.4,
 		"score": 60.2,
-		"rank": 136,
+		"rank": 137,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8302,14 +8363,14 @@
 			"AQUA_TAIL",
 			"CROSS_POISON"
 		],
-		"lead": 60.6,
+		"lead": 60.7,
 		"switch": 53.2,
 		"charger": 54.9,
 		"closer": 55.3,
 		"consistency": 100,
-		"attacker": 53.9,
-		"score": 60.1,
-		"rank": 137,
+		"attacker": 53.8,
+		"score": 60.2,
+		"rank": 138,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8356,67 +8417,6 @@
 			}
 		]
 	},
-	"braviary_hisuian": {
-		"speciesId": "braviary_hisuian",
-		"moveset": [
-			"AIR_SLASH",
-			"BRAVE_BIRD",
-			"FLY"
-		],
-		"lead": 57.5,
-		"switch": 38.2,
-		"charger": 50.6,
-		"closer": 57.6,
-		"consistency": 88.3,
-		"attacker": 58.7,
-		"score": 59.4,
-		"rank": 138,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "sneasler",
-				"rating": 632
-			},
-			{
-				"opponent": "gallade",
-				"rating": 599
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 572
-			},
-			{
-				"opponent": "gallade_shadow",
-				"rating": 559
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 513
-			}
-		],
-		"counters": [
-			{
-				"opponent": "bastiodon",
-				"rating": 123
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 206
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 209
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 238
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 240
-			}
-		]
-	},
 	"gabite_shadow": {
 		"speciesId": "gabite_shadow",
 		"moveset": [
@@ -8424,12 +8424,12 @@
 			"DIG",
 			"FLAMETHROWER"
 		],
-		"lead": 49.8,
-		"switch": 32.3,
-		"charger": 57.4,
+		"lead": 50,
+		"switch": 32.4,
+		"charger": 57.5,
 		"closer": 60,
 		"consistency": 92.1,
-		"attacker": 53.4,
+		"attacker": 53.5,
 		"score": 59.4,
 		"rank": 139,
 		"rankChange": 0,
@@ -8437,6 +8437,10 @@
 			{
 				"opponent": "magnezone_shadow",
 				"rating": 939
+			},
+			{
+				"opponent": "magnezone",
+				"rating": 936
 			},
 			{
 				"opponent": "pachirisu",
@@ -8449,10 +8453,6 @@
 			{
 				"opponent": "electrode_hisuian",
 				"rating": 706
-			},
-			{
-				"opponent": "drapion",
-				"rating": 669
 			}
 		],
 		"counters": [
@@ -8485,12 +8485,12 @@
 			"ICE_BEAM",
 			"ENERGY_BALL"
 		],
-		"lead": 51.8,
+		"lead": 51.9,
 		"switch": 34.4,
 		"charger": 52.1,
 		"closer": 63.6,
 		"consistency": 100,
-		"attacker": 45.8,
+		"attacker": 45.6,
 		"score": 59.4,
 		"rank": 140,
 		"rankChange": 0,
@@ -8539,6 +8539,67 @@
 			}
 		]
 	},
+	"braviary_hisuian": {
+		"speciesId": "braviary_hisuian",
+		"moveset": [
+			"AIR_SLASH",
+			"BRAVE_BIRD",
+			"FLY"
+		],
+		"lead": 57.4,
+		"switch": 38.1,
+		"charger": 50.6,
+		"closer": 57.6,
+		"consistency": 88.3,
+		"attacker": 58.6,
+		"score": 59.3,
+		"rank": 141,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "sneasler",
+				"rating": 632
+			},
+			{
+				"opponent": "gallade",
+				"rating": 599
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 572
+			},
+			{
+				"opponent": "gallade_shadow",
+				"rating": 559
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "bastiodon",
+				"rating": 123
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 206
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 209
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 238
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 240
+			}
+		]
+	},
 	"skorupi_shadow": {
 		"speciesId": "skorupi_shadow",
 		"moveset": [
@@ -8546,14 +8607,14 @@
 			"AQUA_TAIL",
 			"CROSS_POISON"
 		],
-		"lead": 53.1,
+		"lead": 53.3,
 		"switch": 54.4,
 		"charger": 58.9,
 		"closer": 54.9,
 		"consistency": 100,
-		"attacker": 48.8,
+		"attacker": 48.7,
 		"score": 58.5,
-		"rank": 141,
+		"rank": 142,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8607,14 +8668,14 @@
 			"ROCK_SLIDE",
 			"FLAMETHROWER"
 		],
-		"lead": 61.4,
-		"switch": 41.4,
+		"lead": 61.5,
+		"switch": 41.3,
 		"charger": 47,
 		"closer": 37,
 		"consistency": 95.9,
-		"attacker": 58,
+		"attacker": 57.8,
 		"score": 57.8,
-		"rank": 142,
+		"rank": 143,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8668,14 +8729,14 @@
 			"DRILL_PECK",
 			"ICY_WIND"
 		],
-		"lead": 53.4,
-		"switch": 46.2,
-		"charger": 59.7,
+		"lead": 53.5,
+		"switch": 46.4,
+		"charger": 59.8,
 		"closer": 48.7,
 		"consistency": 99.1,
-		"attacker": 44.7,
-		"score": 57.3,
-		"rank": 143,
+		"attacker": 44.9,
+		"score": 57.4,
+		"rank": 144,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8722,67 +8783,6 @@
 			}
 		]
 	},
-	"chatot": {
-		"speciesId": "chatot",
-		"moveset": [
-			"STEEL_WING",
-			"SKY_ATTACK",
-			"NIGHT_SHADE"
-		],
-		"lead": 57.7,
-		"switch": 43.3,
-		"charger": 55.5,
-		"closer": 47.8,
-		"consistency": 90.8,
-		"attacker": 50.8,
-		"score": 57.2,
-		"rank": 144,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "rhyperior_shadow",
-				"rating": 803
-			},
-			{
-				"opponent": "giratina_origin",
-				"rating": 689
-			},
-			{
-				"opponent": "rhyperior",
-				"rating": 648
-			},
-			{
-				"opponent": "gliscor",
-				"rating": 568
-			},
-			{
-				"opponent": "drifblim",
-				"rating": 527
-			}
-		],
-		"counters": [
-			{
-				"opponent": "bastiodon",
-				"rating": 155
-			},
-			{
-				"opponent": "drapion_shadow",
-				"rating": 260
-			},
-			{
-				"opponent": "spiritomb",
-				"rating": 331
-			},
-			{
-				"opponent": "dusknoir_shadow",
-				"rating": 338
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 479
-			}
-		]
-	},
 	"piplup_shadow": {
 		"speciesId": "piplup_shadow",
 		"moveset": [
@@ -8790,13 +8790,13 @@
 			"DRILL_PECK",
 			"ICY_WIND"
 		],
-		"lead": 50.9,
-		"switch": 41.7,
-		"charger": 62.1,
+		"lead": 51.1,
+		"switch": 41.9,
+		"charger": 62.2,
 		"closer": 48.6,
 		"consistency": 99.1,
-		"attacker": 40.4,
-		"score": 57.2,
+		"attacker": 40.3,
+		"score": 57.3,
 		"rank": 145,
 		"rankChange": 0,
 		"matchups": [
@@ -8844,6 +8844,67 @@
 			}
 		]
 	},
+	"chatot": {
+		"speciesId": "chatot",
+		"moveset": [
+			"STEEL_WING",
+			"SKY_ATTACK",
+			"NIGHT_SHADE"
+		],
+		"lead": 57.7,
+		"switch": 43.5,
+		"charger": 55.7,
+		"closer": 47.6,
+		"consistency": 90.8,
+		"attacker": 50.7,
+		"score": 57.2,
+		"rank": 146,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "rhyperior_shadow",
+				"rating": 803
+			},
+			{
+				"opponent": "giratina_origin",
+				"rating": 689
+			},
+			{
+				"opponent": "rhyperior",
+				"rating": 648
+			},
+			{
+				"opponent": "gliscor",
+				"rating": 568
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 527
+			}
+		],
+		"counters": [
+			{
+				"opponent": "bastiodon",
+				"rating": 155
+			},
+			{
+				"opponent": "drapion_shadow",
+				"rating": 260
+			},
+			{
+				"opponent": "spiritomb",
+				"rating": 331
+			},
+			{
+				"opponent": "dusknoir_shadow",
+				"rating": 338
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 479
+			}
+		]
+	},
 	"mesprit": {
 		"speciesId": "mesprit",
 		"moveset": [
@@ -8851,14 +8912,14 @@
 			"SWIFT",
 			"FUTURE_SIGHT"
 		],
-		"lead": 58.3,
+		"lead": 58.5,
 		"switch": 42.9,
-		"charger": 52.5,
+		"charger": 52.7,
 		"closer": 52.9,
 		"consistency": 80.2,
-		"attacker": 51.9,
-		"score": 56.9,
-		"rank": 146,
+		"attacker": 51.7,
+		"score": 57,
+		"rank": 147,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8912,14 +8973,14 @@
 			"TRI_ATTACK",
 			"ZAP_CANNON"
 		],
-		"lead": 50.3,
+		"lead": 50.5,
 		"switch": 45.4,
-		"charger": 77.7,
-		"closer": 50.1,
+		"charger": 77.6,
+		"closer": 50,
 		"consistency": 69.9,
-		"attacker": 22.6,
-		"score": 56.3,
-		"rank": 147,
+		"attacker": 22.3,
+		"score": 56.2,
+		"rank": 148,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -8973,14 +9034,14 @@
 			"WILD_CHARGE",
 			"CRUNCH"
 		],
-		"lead": 47.4,
-		"switch": 34.6,
+		"lead": 47.5,
+		"switch": 34.7,
 		"charger": 59.5,
-		"closer": 51.5,
+		"closer": 51.6,
 		"consistency": 96.7,
-		"attacker": 41.2,
-		"score": 56,
-		"rank": 148,
+		"attacker": 41.1,
+		"score": 56.1,
+		"rank": 149,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9034,14 +9095,14 @@
 			"TRI_ATTACK",
 			"ZAP_CANNON"
 		],
-		"lead": 50.7,
-		"switch": 41,
-		"charger": 70.2,
+		"lead": 50.8,
+		"switch": 40.7,
+		"charger": 70.1,
 		"closer": 51.5,
 		"consistency": 69.9,
-		"attacker": 23.6,
-		"score": 54.7,
-		"rank": 149,
+		"attacker": 23.8,
+		"score": 54.8,
+		"rank": 150,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9053,16 +9114,16 @@
 				"rating": 821
 			},
 			{
+				"opponent": "drifblim_shadow",
+				"rating": 760
+			},
+			{
 				"opponent": "toxicroak_shadow",
 				"rating": 734
 			},
 			{
 				"opponent": "drifblim",
 				"rating": 660
-			},
-			{
-				"opponent": "overqwil",
-				"rating": 508
 			}
 		],
 		"counters": [
@@ -9095,23 +9156,23 @@
 			"ICE_BEAM",
 			"ENERGY_BALL"
 		],
-		"lead": 50.6,
+		"lead": 50.7,
 		"switch": 36.6,
 		"charger": 49.2,
-		"closer": 54.1,
+		"closer": 54,
 		"consistency": 100,
-		"attacker": 45,
+		"attacker": 44.6,
 		"score": 54.2,
-		"rank": 150,
+		"rank": 151,
 		"rankChange": 0,
 		"matchups": [
 			{
-				"opponent": "shellos",
-				"rating": 669
+				"opponent": "torterra_shadow",
+				"rating": 718
 			},
 			{
-				"opponent": "garchomp",
-				"rating": 658
+				"opponent": "shellos",
+				"rating": 669
 			},
 			{
 				"opponent": "garchomp_shadow",
@@ -9157,13 +9218,13 @@
 			"FUTURE_SIGHT"
 		],
 		"lead": 54.4,
-		"switch": 41.9,
-		"charger": 49.5,
+		"switch": 41.7,
+		"charger": 49.4,
 		"closer": 50.6,
 		"consistency": 80.2,
-		"attacker": 50.8,
+		"attacker": 50.7,
 		"score": 54.1,
-		"rank": 151,
+		"rank": 152,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9217,14 +9278,14 @@
 			"GRASS_KNOT",
 			"ENERGY_BALL"
 		],
-		"lead": 49.5,
-		"switch": 33.1,
-		"charger": 45,
-		"closer": 44.6,
+		"lead": 49.7,
+		"switch": 33.3,
+		"charger": 45.1,
+		"closer": 44.7,
 		"consistency": 100,
-		"attacker": 55.7,
+		"attacker": 55.5,
 		"score": 53.9,
-		"rank": 152,
+		"rank": 153,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9278,16 +9339,20 @@
 			"CRUSH_GRIP",
 			"THUNDER"
 		],
-		"lead": 54.5,
+		"lead": 54.6,
 		"switch": 37.8,
 		"charger": 41.7,
-		"closer": 36,
+		"closer": 35.8,
 		"consistency": 99.9,
-		"attacker": 55.7,
-		"score": 53.6,
-		"rank": 153,
+		"attacker": 55.5,
+		"score": 53.5,
+		"rank": 154,
 		"rankChange": 0,
 		"matchups": [
+			{
+				"opponent": "drifblim_shadow",
+				"rating": 743
+			},
 			{
 				"opponent": "giratina_origin",
 				"rating": 734
@@ -9299,10 +9364,6 @@
 			{
 				"opponent": "gliscor_shadow",
 				"rating": 707
-			},
-			{
-				"opponent": "garchomp",
-				"rating": 639
 			},
 			{
 				"opponent": "drifblim",
@@ -9339,14 +9400,14 @@
 			"CRUSH_GRIP",
 			"THUNDER"
 		],
-		"lead": 45.4,
+		"lead": 45.5,
 		"switch": 34.4,
-		"charger": 36.8,
+		"charger": 36.7,
 		"closer": 38.3,
 		"consistency": 99.9,
-		"attacker": 51.9,
+		"attacker": 51.7,
 		"score": 49.1,
-		"rank": 154,
+		"rank": 155,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9367,7 +9428,7 @@
 			},
 			{
 				"opponent": "drifblim_shadow",
-				"rating": 618
+				"rating": 504
 			}
 		],
 		"counters": [
@@ -9400,14 +9461,14 @@
 			"DAZZLING_GLEAM",
 			"SOLAR_BEAM"
 		],
-		"lead": 42.4,
-		"switch": 23.7,
+		"lead": 42.6,
+		"switch": 23.8,
 		"charger": 45.1,
-		"closer": 48.4,
+		"closer": 48.6,
 		"consistency": 82.3,
-		"attacker": 41.9,
-		"score": 48,
-		"rank": 155,
+		"attacker": 41.8,
+		"score": 48.1,
+		"rank": 156,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9462,13 +9523,13 @@
 			"SEED_BOMB"
 		],
 		"lead": 44.8,
-		"switch": 32.3,
+		"switch": 32.4,
 		"charger": 44.1,
 		"closer": 46,
 		"consistency": 83,
-		"attacker": 44,
+		"attacker": 43.9,
 		"score": 47.3,
-		"rank": 156,
+		"rank": 157,
 		"rankChange": 0,
 		"matchups": [
 			{
@@ -9522,14 +9583,14 @@
 			"BODY_SLAM",
 			"SEED_BOMB"
 		],
-		"lead": 44.9,
-		"switch": 33.9,
-		"charger": 46.7,
+		"lead": 45,
+		"switch": 34,
+		"charger": 46.8,
 		"closer": 38.9,
 		"consistency": 83,
-		"attacker": 37.6,
+		"attacker": 37.3,
 		"score": 46.2,
-		"rank": 157,
+		"rank": 158,
 		"rankChange": 0,
 		"matchups": [
 			{

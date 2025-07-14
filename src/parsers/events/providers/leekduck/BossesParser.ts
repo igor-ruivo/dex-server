@@ -99,7 +99,6 @@ class BossesParser {
                     shiny: parsedPkm[0].shiny,
                     speciesId: parsedPkm[0].speciesId,
                     kind: tier,
-                    shadow: true,
                 });
             }
         }

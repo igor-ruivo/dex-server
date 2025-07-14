@@ -2,7 +2,11 @@ import { JSDOM } from 'jsdom';
 import { IPokemonDomains } from 'src/parsers/pokemon/game-master-parser';
 import HttpDataFetcher from 'src/parsers/services/data-fetcher';
 
-import { AvailableLocales, getSpotlightHourBonusTranslation } from '../../../services/gamemaster-translator';
+import {
+    AvailableLocales,
+    getSpotlightHourBonusTranslation,
+    getSpotlightHourTranslation,
+} from '../../../services/gamemaster-translator';
 import { IEntry } from '../../../types/events';
 import { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import { parseDateFromString } from '../../utils/normalization';
@@ -12,7 +16,7 @@ const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
 
 export interface ILeekduckSpotlightHour {
-    title: string;
+    title: Partial<Record<AvailableLocales, string>>;
     date: number;
     dateEnd: number;
     pokemons: Array<IEntry>;
@@ -22,11 +26,10 @@ export interface ILeekduckSpotlightHour {
 }
 
 export interface ILeekduckSpecialRaidBoss {
-    title: string;
+    title: Partial<Record<AvailableLocales, string>>;
     date: number;
     dateEnd: number;
     raids: Array<IEntry>;
-    imgUrl?: string;
     rawUrl: string;
 }
 
@@ -151,8 +154,13 @@ class EventsParser {
         const pokemons = this.matchPokemonEntries(rawPkmName, gameMasterPokemon, false, false);
         const bonus = this.extractSpotlightBonus(parsed.htmlDoc);
 
+        const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
+        Object.values(AvailableLocales).forEach((locale) => {
+            translatedTitles[locale] = getSpotlightHourTranslation(locale, parsed.title);
+        });
+
         return {
-            title: parsed.title,
+            title: translatedTitles,
             date: parsed.date,
             dateEnd: parsed.dateEnd,
             pokemons,
@@ -176,12 +184,17 @@ class EventsParser {
         if (pokemons.length === 0) {
             return undefined;
         }
+
+        const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
+        Object.values(AvailableLocales).forEach((locale) => {
+            translatedTitles[locale] = parsed.title;
+        });
+
         return {
-            title: parsed.title,
+            title: translatedTitles,
             date: parsed.date,
             dateEnd: parsed.dateEnd,
             raids: pokemons,
-            imgUrl: undefined,
             rawUrl: url,
         };
     }

@@ -1322,15 +1322,6 @@
 		"chargedMoveDmg": 47,
 		"rank": 147
 	},
-	"aegislash_shield": {
-		"fastMove": "FURY_CUTTER",
-		"chargedMove": "FLASH_CANNON",
-		"dps": 9.028571428571428,
-		"speciesId": "aegislash_shield",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 54,
-		"rank": 148
-	},
 	"cetoddle": {
 		"fastMove": "POWDER_SNOW",
 		"chargedMove": "HEAVY_SLAM",
@@ -1338,7 +1329,7 @@
 		"speciesId": "cetoddle",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 38,
-		"rank": 149
+		"rank": 148
 	},
 	"tinkatuff": {
 		"fastMove": "FAIRY_WIND",
@@ -1347,7 +1338,7 @@
 		"speciesId": "tinkatuff",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 60,
-		"rank": 150
+		"rank": 149
 	},
 	"voltorb_shadow": {
 		"fastMove": "SPARK",
@@ -1356,7 +1347,7 @@
 		"speciesId": "voltorb_shadow",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 51,
-		"rank": 151
+		"rank": 150
 	},
 	"shieldon": {
 		"fastMove": "IRON_TAIL",
@@ -1365,7 +1356,7 @@
 		"speciesId": "shieldon",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 31,
-		"rank": 152
+		"rank": 151
 	},
 	"chespin": {
 		"fastMove": "VINE_WHIP",
@@ -1374,6 +1365,15 @@
 		"speciesId": "chespin",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 43,
+		"rank": 152
+	},
+	"aegislash_shield": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "FLASH_CANNON",
+		"dps": 8.562962962962963,
+		"speciesId": "aegislash_shield",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 54,
 		"rank": 153
 	},
 	"ferroseed": {

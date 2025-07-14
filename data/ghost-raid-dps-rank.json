@@ -1241,15 +1241,6 @@
 		"chargedMoveDmg": 38,
 		"rank": 138
 	},
-	"aegislash_shield": {
-		"fastMove": "FURY_CUTTER",
-		"chargedMove": "SHADOW_BALL",
-		"dps": 10.857142857142858,
-		"speciesId": "aegislash_shield",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 54,
-		"rank": 139
-	},
 	"snorunt_shadow": {
 		"fastMove": "HEX",
 		"chargedMove": "SHADOW_BALL",
@@ -1257,7 +1248,7 @@
 		"speciesId": "snorunt_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 53,
-		"rank": 140
+		"rank": 139
 	},
 	"chatot": {
 		"fastMove": "STEEL_WING",
@@ -1266,7 +1257,7 @@
 		"speciesId": "chatot",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 48,
-		"rank": 141
+		"rank": 140
 	},
 	"solosis": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -1275,6 +1266,15 @@
 		"speciesId": "solosis",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 45,
+		"rank": 141
+	},
+	"aegislash_shield": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "SHADOW_BALL",
+		"dps": 10.391304347826088,
+		"speciesId": "aegislash_shield",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 54,
 		"rank": 142
 	},
 	"kecleon": {

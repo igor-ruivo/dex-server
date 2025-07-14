@@ -76,16 +76,26 @@ class PvPParser {
 
         // Compute if any rank has changed using uniqueEntries
         let anyRankChanged = false;
-        for (let i = 0; i < uniqueEntries.length; i++) {
-            const entry = uniqueEntries[i];
-            const pokemon = this.gameMasterPokemon[entry.speciesId];
-            const computedId = pokemon.aliasId ?? pokemon.speciesId;
-            const prevRank = previousRankings[computedId]?.rank;
-            const currentRank = i + 1;
-            if (prevRank !== undefined && prevRank !== currentRank) {
-                anyRankChanged = true;
-                break;
+        if (Object.keys(previousRankings).length !== uniqueEntries.length) {
+            anyRankChanged = true;
+        } else {
+            for (let i = 0; i < uniqueEntries.length; i++) {
+                const entry = uniqueEntries[i];
+                const pokemon = this.gameMasterPokemon[entry.speciesId];
+                const computedId = pokemon.aliasId ?? pokemon.speciesId;
+                const prevRank = previousRankings[computedId]?.rank;
+                const currentRank = i + 1;
+                if (!prevRank || prevRank !== currentRank) {
+                    anyRankChanged = true;
+                    break;
+                }
             }
+        }
+
+        if (anyRankChanged) {
+            console.warn(`Detected rank changes in ${leagueKey}`);
+        } else {
+            console.log(`No changes in ranking for ${leagueKey}`);
         }
 
         uniqueEntries.forEach((entry, index) => {
@@ -93,10 +103,12 @@ class PvPParser {
             const computedId = pokemon.aliasId ?? pokemon.speciesId;
             const computedRank = index + 1;
 
-            let rankChange = 0;
+            let rankChange = previousRankings[computedId]?.rankChange ?? 0;
             if (previousRankings && anyRankChanged) {
                 const prevRank = previousRankings[computedId]?.rank;
-                rankChange = prevRank !== undefined ? prevRank - computedRank : 0;
+                if (prevRank) {
+                    rankChange = prevRank - computedRank;
+                }
             }
             rankedPokemonDictionary[computedId] = {
                 speciesId: computedId,

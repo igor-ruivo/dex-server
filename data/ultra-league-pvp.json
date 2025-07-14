@@ -7913,15 +7913,17 @@
 			},
 			{
 				"opponent": "talonflame",
-				"rating": 241
-			},
+				"rating": 519
+			}
+		],
+		"counters": [
 			{
 				"opponent": "tentacruel",
 				"rating": 349
 			},
 			{
 				"opponent": "skeledirge",
-				"rating": 358
+				"rating": 350
 			},
 			{
 				"opponent": "corviknight",
@@ -17545,6 +17547,10 @@
 			}
 		],
 		"counters": [
+			{
+				"opponent": "skeledirge",
+				"rating": 147
+			},
 			{
 				"opponent": "giratina_altered",
 				"rating": 225
@@ -27383,6 +27389,14 @@
 				"rating": 323
 			},
 			{
+				"opponent": "giratina_altered",
+				"rating": 324
+			},
+			{
+				"opponent": "tentacruel",
+				"rating": 363
+			},
+			{
 				"opponent": "skeledirge",
 				"rating": 372
 			}
@@ -35379,12 +35393,12 @@
 			}
 		]
 	},
-	"revavroom": {
-		"speciesId": "revavroom",
+	"toxapex": {
+		"speciesId": "toxapex",
 		"moveset": [
-			"METAL_SOUND",
-			"GUNK_SHOT",
-			"GYRO_BALL"
+			"POISON_JAB",
+			"BRINE",
+			"SLUDGE_WAVE"
 		],
 		"lead": 56.9,
 		"switch": 37.4,
@@ -36233,12 +36247,12 @@
 			}
 		]
 	},
-	"mesprit": {
-		"speciesId": "mesprit",
+	"oricorio_baile": {
+		"speciesId": "oricorio_baile",
 		"moveset": [
-			"CONFUSION",
-			"SWIFT",
-			"FUTURE_SIGHT"
+			"AIR_SLASH",
+			"AIR_CUTTER",
+			"AERIAL_ACE"
 		],
 		"lead": 64.4,
 		"switch": 54,

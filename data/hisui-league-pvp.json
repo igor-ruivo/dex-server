@@ -1341,12 +1341,12 @@
 			}
 		]
 	},
-	"hippowdon": {
-		"speciesId": "hippowdon",
+	"drifblim_shadow": {
+		"speciesId": "drifblim_shadow",
 		"moveset": [
-			"SAND_ATTACK",
-			"WEATHER_BALL_ROCK",
-			"SCORCHING_SANDS"
+			"ASTONISH",
+			"ICY_WIND",
+			"SHADOW_BALL"
 		],
 		"lead": 90.9,
 		"switch": 91.1,
@@ -1381,8 +1381,8 @@
 		],
 		"counters": [
 			{
-				"opponent": "gliscor",
-				"rating": 245
+				"opponent": "drapion_shadow",
+				"rating": 207
 			},
 			{
 				"opponent": "gallade_shadow",
@@ -1398,7 +1398,15 @@
 			},
 			{
 				"opponent": "spiritomb",
-				"rating": 418
+				"rating": 293
+			},
+			{
+				"opponent": "abomasnow_shadow",
+				"rating": 318
+			},
+			{
+				"opponent": "drifblim",
+				"rating": 459
 			}
 		]
 	},

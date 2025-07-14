@@ -4165,6 +4165,128 @@
 		"rankChange": 5,
 		"matchups": [
 			{
+				"opponent": "talonflame",
+				"rating": 857
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 673
+			},
+			{
+				"opponent": "diggersby",
+				"rating": 665
+			},
+			{
+				"opponent": "clodsiresb",
+				"rating": 653
+			},
+			{
+				"opponent": "golisopod",
+				"rating": 507
+			}
+		],
+		"counters": [
+			{
+				"opponent": "cradily",
+				"rating": 315
+			},
+			{
+				"opponent": "dedenne",
+				"rating": 319
+			},
+			{
+				"opponent": "jellicent",
+				"rating": 403
+			},
+			{
+				"opponent": "primeape",
+				"rating": 443
+			},
+			{
+				"opponent": "marowak_shadow",
+				"rating": 488
+			}
+		]
+	},
+	"grumpig_shadow": {
+		"speciesId": "grumpig_shadow",
+		"moveset": [
+			"PSYWAVE",
+			"DYNAMIC_PUNCH",
+			"SHADOW_BALL"
+		],
+		"lead": 86.2,
+		"switch": 84.9,
+		"charger": 92.6,
+		"closer": 86.9,
+		"consistency": 94.9,
+		"attacker": 66.5,
+		"score": 88.1,
+		"rank": 68,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "lapras",
+				"rating": 821
+			},
+			{
+				"opponent": "diggersby",
+				"rating": 651
+			},
+			{
+				"opponent": "clodsiresb",
+				"rating": 640
+			},
+			{
+				"opponent": "cradily",
+				"rating": 556
+			},
+			{
+				"opponent": "dedenne",
+				"rating": 549
+			}
+		],
+		"counters": [
+			{
+				"opponent": "jellicent",
+				"rating": 243
+			},
+			{
+				"opponent": "marowak_shadow",
+				"rating": 268
+			},
+			{
+				"opponent": "golisopod",
+				"rating": 296
+			},
+			{
+				"opponent": "talonflame",
+				"rating": 448
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 458
+			}
+		]
+	},
+	"marowak_alolan": {
+		"speciesId": "marowak_alolan",
+		"moveset": [
+			"FIRE_SPIN",
+			"BONE_CLUB",
+			"SHADOW_BONE"
+		],
+		"lead": 92.3,
+		"switch": 81.7,
+		"charger": 85.9,
+		"closer": 81,
+		"consistency": 84,
+		"attacker": 85.3,
+		"score": 88.1,
+		"rank": 69,
+		"rankChange": 0,
+		"matchups": [
+			{
 				"opponent": "scizor_shadow",
 				"rating": 876
 			},
@@ -5553,9 +5675,9 @@
 	"victreebel": {
 		"speciesId": "victreebel",
 		"moveset": [
-			"ACID",
-			"LEAF_BLADE",
-			"SLUDGE_BOMB"
+			"KARATE_CHOP",
+			"CROSS_CHOP",
+			"STONE_EDGE"
 		],
 		"lead": 89.8,
 		"switch": 81.4,
@@ -37197,11 +37319,11 @@
 			},
 			{
 				"opponent": "clodsiresb",
-				"rating": 74
+				"rating": 264
 			},
 			{
-				"opponent": "dedenne",
-				"rating": 345
+				"opponent": "azumarill",
+				"rating": 290
 			},
 			{
 				"opponent": "talonflame",
@@ -47396,12 +47518,12 @@
 			}
 		]
 	},
-	"geodude": {
-		"speciesId": "geodude",
+	"flapple": {
+		"speciesId": "flapple",
 		"moveset": [
-			"ROCK_THROW",
-			"ROCK_TOMB",
-			"ROCK_SLIDE"
+			"DRAGON_BREATH",
+			"FLY",
+			"SEED_BOMB"
 		],
 		"lead": 68.2,
 		"switch": 51,
@@ -47414,12 +47536,20 @@
 		"rankChange": -3,
 		"matchups": [
 			{
-				"opponent": "talonflame",
-				"rating": 867
+				"opponent": "annihilape_shadow",
+				"rating": 821
+			},
+			{
+				"opponent": "annihilape",
+				"rating": 821
+			},
+			{
+				"opponent": "forretress",
+				"rating": 663
 			},
 			{
 				"opponent": "typhlosion_shadow",
-				"rating": 823
+				"rating": 510
 			},
 			{
 				"opponent": "morpeko_full_belly",

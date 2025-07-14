@@ -157,5 +157,5 @@ export const parseDateFromString = (side: string) => {
     const day = datePart.trim().split(' ')[1]?.replace(',', '');
     const monthIdx = toMonthIndex(month);
     if (monthIdx === -1 || !day) return NaN;
-    return new Date(year, monthIdx, Number(day), hour, minute).valueOf();
+    return new Date(Date.UTC(year, monthIdx, Number(day), hour, minute)).valueOf();
 };

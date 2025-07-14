@@ -1,3 +1,6 @@
+import fs from 'fs/promises';
+import path from 'path';
+
 import { IDataFetcher } from '../services/data-fetcher';
 import { BasePvPEntry, GameMasterData, IGameMasterMove, PvPEntry } from '../types/pokemon';
 import { Leagues, POKEMON_CONFIG } from './config/pokemon-config';
@@ -17,7 +20,7 @@ class PvPParser {
                 (Object.keys(Leagues) as Array<LeagueKey>).map(async (leagueKey) => {
                     const url = Leagues[leagueKey];
                     const sourceJson = await this.dataFetcher.fetchJson<Array<BasePvPEntry>>(url);
-                    const parsedLeague = this.parseLeague(sourceJson);
+                    const parsedLeague = await this.parseLeague(leagueKey, sourceJson);
                     return [leagueKey, parsedLeague] as [LeagueKey, Record<string, PvPEntry>];
                 })
             );
@@ -37,11 +40,27 @@ class PvPParser {
         }
     }
 
-    private parseLeague(pvpEntries: Array<BasePvPEntry>) {
+    private async parseLeague(leagueKey: LeagueKey, pvpEntries: Array<BasePvPEntry>) {
         const rankedPokemonDictionary: Record<string, PvPEntry> = {};
-        const observedPokemon = new Set<string>();
 
-        pvpEntries.forEach((entry) => {
+        const dataDir = path.join(process.cwd(), 'data');
+        const filePath = path.join(dataDir, `${leagueKey.toLocaleLowerCase()}-league-pvp.json`);
+        const fileContent = await fs.readFile(filePath, 'utf-8');
+        const previousRankings = JSON.parse(fileContent) as Record<string, PvPEntry>;
+
+        // Filter to unique computedIds (no alias duplicates)
+        const uniqueEntries: Array<BasePvPEntry> = [];
+        const seenIds = new Set<string>();
+        for (const entry of pvpEntries) {
+            const pokemon = this.gameMasterPokemon[entry.speciesId];
+            const computedId = pokemon.aliasId ?? pokemon.speciesId;
+            if (!seenIds.has(computedId)) {
+                seenIds.add(computedId);
+                uniqueEntries.push(entry);
+            }
+        }
+
+        uniqueEntries.forEach((entry) => {
             const pokemon = this.gameMasterPokemon[entry.speciesId];
             if (!pokemon) {
                 throw new Error(`${entry.speciesId} doesn't exist in pokémon game master!`);
@@ -55,43 +74,50 @@ class PvPParser {
             });
         });
 
-        pvpEntries
-            .filter((entry) => {
-                const pokemon = this.gameMasterPokemon[entry.speciesId];
-                const computedId = pokemon.aliasId ?? pokemon.speciesId;
-                if (observedPokemon.has(computedId)) {
-                    return false;
-                } else {
-                    observedPokemon.add(computedId);
-                    return true;
-                }
-            })
-            .forEach((entry, index) => {
-                const pokemon = this.gameMasterPokemon[entry.speciesId];
-                const computedId = pokemon.aliasId ?? pokemon.speciesId;
-                const computedRank = index + 1;
+        // Compute if any rank has changed using uniqueEntries
+        let anyRankChanged = false;
+        for (let i = 0; i < uniqueEntries.length; i++) {
+            const entry = uniqueEntries[i];
+            const pokemon = this.gameMasterPokemon[entry.speciesId];
+            const computedId = pokemon.aliasId ?? pokemon.speciesId;
+            const prevRank = previousRankings[computedId]?.rank;
+            const currentRank = i + 1;
+            if (prevRank !== undefined && prevRank !== currentRank) {
+                anyRankChanged = true;
+                break;
+            }
+        }
 
-                const parsedRankChange = 0; //TODO -> read file from disk, parse/load, check same speciesId in there and calc the rank delta (should only do it if file exists and it's metadata is recent (<24h))
-                rankedPokemonDictionary[computedId] = {
-                    speciesId: computedId,
-                    moveset: entry.moveset,
-                    lead: entry.scores[0],
-                    switch: entry.scores[2],
-                    charger: entry.scores[3],
-                    closer: entry.scores[1],
-                    consistency: entry.scores[5],
-                    attacker: entry.scores[4],
-                    score: entry.score,
-                    rank: computedRank,
-                    rankChange: parsedRankChange,
-                    matchups: entry.matchups.map(({ opRating: _, ...rest }) => {
-                        return rest;
-                    }),
-                    counters: entry.counters.map(({ opRating: _, ...rest }) => {
-                        return rest;
-                    }),
-                };
-            });
+        uniqueEntries.forEach((entry, index) => {
+            const pokemon = this.gameMasterPokemon[entry.speciesId];
+            const computedId = pokemon.aliasId ?? pokemon.speciesId;
+            const computedRank = index + 1;
+
+            let rankChange = 0;
+            if (previousRankings && anyRankChanged) {
+                const prevRank = previousRankings[computedId]?.rank;
+                rankChange = prevRank !== undefined ? prevRank - computedRank : 0;
+            }
+            rankedPokemonDictionary[computedId] = {
+                speciesId: computedId,
+                moveset: entry.moveset,
+                lead: entry.scores[0],
+                switch: entry.scores[2],
+                charger: entry.scores[3],
+                closer: entry.scores[1],
+                consistency: entry.scores[5],
+                attacker: entry.scores[4],
+                score: entry.score,
+                rank: computedRank,
+                rankChange,
+                matchups: entry.matchups.map(({ opRating: _, ...rest }) => {
+                    return rest;
+                }),
+                counters: entry.counters.map(({ opRating: _, ...rest }) => {
+                    return rest;
+                }),
+            };
+        });
 
         return rankedPokemonDictionary;
     }

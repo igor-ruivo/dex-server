@@ -18,8 +18,6 @@
     "license": "ISC",
     "dependencies": {
         "@types/jsdom": "^21.1.7",
-        "@types/node-fetch": "^2.6.12",
-        "@vercel/node": "^5.3.5",
         "jsdom": "^26.1.0"
     },
     "devDependencies": {

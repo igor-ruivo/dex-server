@@ -115,6 +115,9 @@ export enum PokemonForms {
     SingleStrike = 'Single Strike',
     Blade = 'Blade',
     Shield = 'Shield',
+    Curly = 'Curly',
+    Droopy = 'Droopy',
+    Stretchy = 'Stretchy',
 }
 
 export interface PokemonStats {

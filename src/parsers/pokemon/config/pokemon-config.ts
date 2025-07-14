@@ -22,7 +22,6 @@ export const POKEMON_CONFIG = {
         'hattrem',
         'hatterene',
         'morpeko_full_belly',
-        'morpeko_hangry',
         'mawile_mega',
         'spewpa',
         'toxel',
@@ -49,7 +48,6 @@ export const POKEMON_CONFIG = {
         'doublade',
         'aegislash_blade',
         'aegislash_shield',
-        'tatsugiri',
     ]),
 
     // Pokemon that should be excluded

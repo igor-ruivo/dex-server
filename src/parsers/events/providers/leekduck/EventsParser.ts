@@ -128,12 +128,18 @@ class EventsParser {
             htmlDoc.getElementById('event-date-start')?.textContent?.trim() +
             ' ' +
             htmlDoc.getElementById('event-time-start')?.textContent?.trim()
-        ).replaceAll('  ', ' ');
+        )
+            .replaceAll('  ', ' ')
+            .replaceAll(/&nbsp;|\u00A0/g, ' ')
+            .trim();
         const endCont = (
             htmlDoc.getElementById('event-date-end')?.textContent?.trim() +
             ' ' +
             htmlDoc.getElementById('event-time-end')?.textContent?.trim()
-        ).replaceAll('  ', ' ');
+        )
+            .replaceAll('  ', ' ')
+            .replaceAll(/&nbsp;|\u00A0/g, ' ')
+            .trim();
 
         const date = parseDateFromString(dateCont);
         const dateEnd = parseDateFromString(endCont);

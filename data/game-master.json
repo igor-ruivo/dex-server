@@ -56599,42 +56599,6 @@
 		"isMythical": false,
 		"isBeast": false
 	},
-	"morpeko_hangry": {
-		"dex": 877,
-		"speciesId": "morpeko_hangry",
-		"speciesName": "Morpeko (Hangry)",
-		"types": [
-			"Electric",
-			"Dark"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/877_f2.png",
-		"goImageUrl": "877.fHANGRY.icon.png",
-		"shinyGoImageUrl": "877.fHANGRY.s.icon.png",
-		"baseStats": {
-			"atk": 192,
-			"def": 121,
-			"hp": 151
-		},
-		"fastMoves": [
-			"CHARGE_BEAM",
-			"BITE",
-			"THUNDER_SHOCK"
-		],
-		"chargedMoves": [
-			"SEED_BOMB",
-			"OUTRAGE",
-			"PSYCHIC_FANGS",
-			"AURA_WHEEL_DARK"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"form": "Hangry",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
 	"dreepy": {
 		"dex": 885,
 		"speciesId": "dreepy",
@@ -59154,17 +59118,17 @@
 		"isMythical": false,
 		"isBeast": false
 	},
-	"tatsugiri": {
+	"tatsugiri_curly": {
 		"dex": 978,
-		"speciesId": "tatsugiri",
-		"speciesName": "Tatsugiri",
+		"speciesId": "tatsugiri_curly",
+		"speciesName": "Tatsugiri (Curly)",
 		"types": [
 			"Dragon",
 			"Water"
 		],
 		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/978.png",
-		"goImageUrl": "978.icon.png",
-		"shinyGoImageUrl": "978.s.icon.png",
+		"goImageUrl": "978.fCURLY.icon.png",
+		"shinyGoImageUrl": "978.fCURLY.s.icon.png",
 		"baseStats": {
 			"atk": 226,
 			"def": 166,
@@ -59184,7 +59148,77 @@
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
-		"form": "",
+		"form": "Curly",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"tatsugiri_droopy": {
+		"dex": 978,
+		"speciesId": "tatsugiri_droopy",
+		"speciesName": "Tatsugiri (Droopy)",
+		"types": [
+			"Dragon",
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/978_f2.png",
+		"goImageUrl": "978.fDROOPY.icon.png",
+		"shinyGoImageUrl": "978.fDROOPY.s.icon.png",
+		"baseStats": {
+			"atk": 226,
+			"def": 166,
+			"hp": 169
+		},
+		"fastMoves": [
+			"TAKE_DOWN",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"OUTRAGE",
+			"SURF",
+			"HYDRO_PUMP",
+			"MUDDY_WATER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Droopy",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"tatsugiri_stretchy": {
+		"dex": 978,
+		"speciesId": "tatsugiri_stretchy",
+		"speciesName": "Tatsugiri (Stretchy)",
+		"types": [
+			"Dragon",
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/978_f3.png",
+		"goImageUrl": "978.fSTRETCHY.icon.png",
+		"shinyGoImageUrl": "978.fSTRETCHY.s.icon.png",
+		"baseStats": {
+			"atk": 226,
+			"def": 166,
+			"hp": 169
+		},
+		"fastMoves": [
+			"TAKE_DOWN",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"OUTRAGE",
+			"SURF",
+			"HYDRO_PUMP",
+			"MUDDY_WATER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Stretchy",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

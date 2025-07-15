@@ -348,7 +348,7 @@ export const extractPokemonSpeciesIdsFromElements = (elements: Array<Node>, matc
         }
     }
     // Filtering and parsing as in user's parseFromString
-    const whitelist = ['(sunny)', '(rainy)', '(snowy)', 'sunny form', 'rainy form', 'snowy form'];
+    const whitelist = ['(sunny)', '(rainy)', '(snowy)', 'sunny form', 'rainy form', 'snowy form', 'to encounter'];
     const blackListedKeywords = [
         'some trainers',
         'the following',

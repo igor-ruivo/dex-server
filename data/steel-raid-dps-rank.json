@@ -251,15 +251,6 @@
 		"chargedMoveDmg": 92,
 		"rank": 28
 	},
-	"aegislash_blade": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "GYRO_BALL",
-		"dps": 21.71717171717172,
-		"speciesId": "aegislash_blade",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 125,
-		"rank": 29
-	},
 	"bisharp": {
 		"fastMove": "METAL_CLAW",
 		"chargedMove": "IRON_HEAD",
@@ -267,7 +258,7 @@
 		"speciesId": "bisharp",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 71,
-		"rank": 30
+		"rank": 29
 	},
 	"machamp_shadow": {
 		"fastMove": "BULLET_PUNCH",
@@ -276,7 +267,7 @@
 		"speciesId": "machamp_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 84,
-		"rank": 31
+		"rank": 30
 	},
 	"jirachi": {
 		"fastMove": "CHARGE_BEAM",
@@ -285,7 +276,7 @@
 		"speciesId": "jirachi",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 70,
-		"rank": 32
+		"rank": 31
 	},
 	"empoleon": {
 		"fastMove": "STEEL_WING",
@@ -294,7 +285,7 @@
 		"speciesId": "empoleon",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 108,
-		"rank": 33
+		"rank": 32
 	},
 	"aerodactyl_shadow": {
 		"fastMove": "STEEL_WING",
@@ -303,7 +294,7 @@
 		"speciesId": "aerodactyl_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 68,
-		"rank": 34
+		"rank": 33
 	},
 	"steelix_mega": {
 		"fastMove": "IRON_TAIL",
@@ -312,7 +303,7 @@
 		"speciesId": "steelix_mega",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 76,
-		"rank": 35
+		"rank": 34
 	},
 	"hariyama_shadow": {
 		"fastMove": "FORCE_PALM",
@@ -321,7 +312,7 @@
 		"speciesId": "hariyama_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 75,
-		"rank": 36
+		"rank": 35
 	},
 	"kyurem_black": {
 		"fastMove": "DRAGON_TAIL",
@@ -330,7 +321,7 @@
 		"speciesId": "kyurem_black",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 78,
-		"rank": 37
+		"rank": 36
 	},
 	"necrozma_dawn_wings": {
 		"fastMove": "METAL_CLAW",
@@ -339,7 +330,7 @@
 		"speciesId": "necrozma_dawn_wings",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 70,
-		"rank": 38
+		"rank": 37
 	},
 	"lucario": {
 		"fastMove": "BULLET_PUNCH",
@@ -348,7 +339,7 @@
 		"speciesId": "lucario",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 120,
-		"rank": 39
+		"rank": 38
 	},
 	"magneton": {
 		"fastMove": "METAL_SOUND",
@@ -357,6 +348,15 @@
 		"speciesId": "magneton",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 86,
+		"rank": 39
+	},
+	"aegislash_blade": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "GYRO_BALL",
+		"dps": 19.575757575757578,
+		"speciesId": "aegislash_blade",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 117,
 		"rank": 40
 	},
 	"durant": {

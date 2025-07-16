@@ -1619,6 +1619,15 @@
 		"chargedMoveDmg": 59,
 		"rank": 180
 	},
+	"toedscruel": {
+		"fastMove": "MUD_SLAP",
+		"chargedMove": "ACID_SPRAY",
+		"dps": 7.333333333333333,
+		"speciesId": "toedscruel",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 15,
+		"rank": 181
+	},
 	"joltik": {
 		"fastMove": "SUCKER_PUNCH",
 		"chargedMove": "CROSS_POISON",
@@ -1626,7 +1635,7 @@
 		"speciesId": "joltik",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 20,
-		"rank": 181
+		"rank": 182
 	},
 	"tympole": {
 		"fastMove": "MUD_SHOT",
@@ -1635,7 +1644,7 @@
 		"speciesId": "tympole",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 48,
-		"rank": 182
+		"rank": 183
 	},
 	"poochyena_shadow": {
 		"fastMove": "SNARL",
@@ -1644,7 +1653,7 @@
 		"speciesId": "poochyena_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 16,
-		"rank": 183
+		"rank": 184
 	},
 	"scrafty": {
 		"fastMove": "COUNTER",
@@ -1653,7 +1662,7 @@
 		"speciesId": "scrafty",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 15,
-		"rank": 184
+		"rank": 185
 	},
 	"goomy": {
 		"fastMove": "WATER_GUN",
@@ -1662,7 +1671,7 @@
 		"speciesId": "goomy",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 49,
-		"rank": 185
+		"rank": 186
 	},
 	"venonat": {
 		"fastMove": "BUG_BITE",
@@ -1671,7 +1680,7 @@
 		"speciesId": "venonat",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 17,
-		"rank": 186
+		"rank": 187
 	},
 	"poochyena": {
 		"fastMove": "SNARL",
@@ -1680,7 +1689,7 @@
 		"speciesId": "poochyena",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 14,
-		"rank": 187
+		"rank": 188
 	},
 	"scraggy": {
 		"fastMove": "ROCK_SMASH",
@@ -1689,7 +1698,7 @@
 		"speciesId": "scraggy",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 12,
-		"rank": 188
+		"rank": 189
 	},
 	"smeargle": {
 		"fastMove": "LOCK_ON",
@@ -1698,6 +1707,6 @@
 		"speciesId": "smeargle",
 		"fastMoveDmg": 1,
 		"chargedMoveDmg": 29,
-		"rank": 189
+		"rank": 190
 	}
 }

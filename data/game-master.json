@@ -49183,7 +49183,7 @@
 		"goImageUrl": "681.fBLADE.icon.png",
 		"shinyGoImageUrl": "681.fBLADE.s.icon.png",
 		"baseStats": {
-			"atk": 291,
+			"atk": 272,
 			"def": 97,
 			"hp": 155
 		},
@@ -49222,7 +49222,7 @@
 		"shinyGoImageUrl": "681.fSHIELD.s.icon.png",
 		"baseStats": {
 			"atk": 97,
-			"def": 291,
+			"def": 272,
 			"hp": 155
 		},
 		"fastMoves": [
@@ -58647,6 +58647,85 @@
 		"family": {
 			"id": "FAMILY_SHROODLE",
 			"parent": "shroodle"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"toedscool": {
+		"dex": 948,
+		"speciesId": "toedscool",
+		"speciesName": "Toedscool",
+		"types": [
+			"Ground",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/948.png",
+		"goImageUrl": "948.icon.png",
+		"shinyGoImageUrl": "948.s.icon.png",
+		"baseStats": {
+			"atk": 97,
+			"def": 149,
+			"hp": 120
+		},
+		"fastMoves": [
+			"MUD_SLAP",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"EARTH_POWER",
+			"SEED_BOMB",
+			"WRAP"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_TOEDSCOOL",
+			"evolutions": [
+				"toedscruel"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"toedscruel": {
+		"dex": 949,
+		"speciesId": "toedscruel",
+		"speciesName": "Toedscruel",
+		"types": [
+			"Ground",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/949.png",
+		"goImageUrl": "949.icon.png",
+		"shinyGoImageUrl": "949.s.icon.png",
+		"baseStats": {
+			"atk": 166,
+			"def": 209,
+			"hp": 190
+		},
+		"fastMoves": [
+			"MUD_SLAP",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"EARTH_POWER",
+			"SEED_BOMB",
+			"ACID_SPRAY",
+			"WRAP"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_TOEDSCOOL",
+			"parent": "toedscool"
 		},
 		"form": "",
 		"isLegendary": false,

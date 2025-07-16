@@ -48,6 +48,8 @@ export const POKEMON_CONFIG = {
         'doublade',
         'aegislash_blade',
         'aegislash_shield',
+        'toedscool',
+        'toedscruel'
     ]),
 
     // Pokemon that should be excluded

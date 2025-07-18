@@ -5349,5 +5349,25 @@
 			"en": "Clanging Scales",
 			"pt_br": "Clanging Scales"
 		}
+	},
+	"AQUA_STEP": {
+		"moveId": "AQUA_STEP",
+		"vId": "-1",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 55,
+		"pvePower": 55,
+		"pvpEnergy": -40,
+		"pveEnergy": -40,
+		"pvpCooldown": 500,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerAttackStatStageChange": 1
+		},
+		"moveName": {
+			"en": "Aqua Step",
+			"pt_br": "Aqua Step"
+		}
 	}
 }

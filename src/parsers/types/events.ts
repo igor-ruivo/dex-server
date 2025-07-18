@@ -1,102 +1,105 @@
-import { AvailableLocales } from '../services/gamemaster-translator';
-import { GameMasterData } from '../types/pokemon';
+import type { AvailableLocales } from '../services/gamemaster-translator';
+import type { GameMasterData } from '../types/pokemon';
 
 export interface IEntry {
-    speciesId: string;
-    shiny: boolean;
-    kind?: string;
-    comment?: Partial<Record<AvailableLocales, string>>;
+	speciesId: string;
+	shiny: boolean;
+	kind?: string;
+	comment?: Partial<Record<AvailableLocales, string>> | undefined;
 }
 
 export type IParsedEvent = EventBlock & {
-    id: string;
-    url: string;
-    title: string;
-    subtitle: string;
-    startDate: number;
-    endDate: number;
-    dateRanges?: Array<{ start: number; end: number }>;
-    imageUrl?: string;
-    source: 'pokemongo' | 'leekduck';
-    locale: AvailableLocales;
-    isSeason?: boolean;
+	id: string;
+	url: string;
+	title: string;
+	subtitle: string;
+	startDate: number;
+	endDate: number;
+	dateRanges?: Array<{ start: number; end: number }> | undefined;
+	imageUrl?: string | undefined;
+	source: 'pokemongo' | 'leekduck';
+	locale: AvailableLocales;
+	isSeason?: boolean;
 };
 
-export type PublicEvent = Omit<IParsedEvent, 'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'> & {
-    title: Partial<Record<AvailableLocales, string>>;
-    subtitle: Partial<Record<AvailableLocales, string>>;
-    bonuses: Partial<Record<AvailableLocales, Array<string>>>;
+export type PublicEvent = Omit<
+	IParsedEvent,
+	'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
+> & {
+	title: Partial<Record<AvailableLocales, string>>;
+	subtitle: Partial<Record<AvailableLocales, string>>;
+	bonuses: Partial<Record<AvailableLocales, Array<string>>>;
 };
 
 export interface IEventSource {
-    name: string;
-    parseEvents(gameMasterPokemon: GameMasterData): Promise<Array<PublicEvent>>;
+	name: string;
+	parseEvents(gameMasterPokemon: GameMasterData): Promise<Array<PublicEvent>>;
 }
 
 export enum PokemonGoPostKind {
-    News,
-    Post,
+	News,
+	Post,
 }
 
 export interface IPokemonGoEventBlockParser {
-    subTitle: string;
-    imgUrl: string;
-    dateString: string;
-    getEventBlocks: () => Array<Element>;
+	subTitle: string;
+	imgUrl: string;
+	dateString: string;
+	getEventBlocks: () => Array<Element>;
 }
 
 export interface IPokemonGoHtmlParser {
-    getTitle: () => string;
-    getImgUrl: () => string;
-    getSubEvents: () => Array<IPokemonGoEventBlockParser>;
+	getTitle: () => string;
+	getImgUrl: () => string;
+	getSubEvents: () => Array<IPokemonGoEventBlockParser>;
 }
 
 export interface EventData {
-    raids: Array<IEntry>;
-    wild: Array<IEntry>;
-    eggs: Array<IEntry>;
-    researches: Array<IEntry>;
-    incenses: Array<IEntry>;
-    lures: Array<IEntry>;
+	raids: Array<IEntry>;
+	wild: Array<IEntry>;
+	eggs: Array<IEntry>;
+	researches: Array<IEntry>;
+	incenses: Array<IEntry>;
+	lures: Array<IEntry>;
 }
 
 export type EventBlock = EventData & {
-    bonuses: Array<string>;
-    bonusSectionIndex: number;
+	bonuses: Array<string>;
+	bonusSectionIndex: number;
 };
 
 export type PokemonGoPost = ExtractedPostLink & {
-    html: string;
-    type: 'post' | 'news';
+	html: string;
+	type: 'post' | 'news';
 };
 
 export interface ExtractedPostLink {
-    url: string;
-    locale: AvailableLocales;
+	url: string;
+	locale: AvailableLocales;
 }
 
 export interface IRocketGrunt {
-    trainerId: string;
-    type: string | undefined;
-    phrase: Partial<Record<AvailableLocales, string>>;
-    tier1: Array<string>;
-    tier2: Array<string>;
-    tier3: Array<string>;
-    catchableTiers: Array<number>;
+	trainerId: string;
+	type: string | undefined;
+	phrase: Partial<Record<AvailableLocales, string>>;
+	tier1: Array<string>;
+	tier2: Array<string>;
+	tier3: Array<string>;
+	catchableTiers: Array<number>;
 }
 
 // LeekDuck Spotlight Hour output DTO
 export interface ISpotlightHourEvent {
-    bonus: Partial<Record<AvailableLocales, string>>;
-    pokemon: Array<string>;
-    dateStart: number;
-    dateEnd: number;
+	bonus: Partial<Record<AvailableLocales, string>>;
+	pokemon: Array<string>;
+	dateStart: number;
+	dateEnd: number;
 }
 
 // LeekDuck 5-star and Mega Raid Bosses output DTO
 export interface ILeekduckSpecialRaidBossEvent {
-    dateStart: number;
-    dateEnd: number;
-    pokemon: Array<IEntry>;
-    title: string;
+	dateStart: number;
+	dateEnd: number;
+	pokemon: Array<IEntry>;
+	title: string;
 }

@@ -1,40 +1,36 @@
 {
-    "name": "pokemon-data-generator",
-    "version": "1.0.0",
-    "description": "Simple Pokemon GO data generator with GitHub Actions",
-    "main": "generate-data.ts",
-    "scripts": {
-        "generate": "tsx generate-data.ts",
-        "lint": "node scripts/run-linter-wrapper.js && node scripts/run-prettier-wrapper.js && pnpm tsc --noEmit",
-        "build": "pnpm tsc",
-        "debug": "npx tsx --inspect-brk ./generate-data.ts"
-    },
-    "keywords": [
-        "pokemon",
-        "data",
-        "github-actions"
-    ],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@types/jsdom": "^21.1.7",
-        "jsdom": "^26.1.0"
-    },
-    "devDependencies": {
-        "@ti-platform/aide-build-tools": "^3.0.0",
-        "@tsconfig/recommended": "^1.0.10",
-        "@types/node": "^24.0.13",
-        "@typescript-eslint/eslint-plugin": "^8.36.0",
-        "@typescript-eslint/parser": "^8.36.0",
-        "cross-env": "^7.0.3",
-        "eslint": "^8.57.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-json": "^3.1.0",
-        "eslint-plugin-simple-import-sort": "^12.0.0",
-        "prettier": "^3.6.2",
-        "ts-node": "^10.9.2",
-        "tsx": "^4.20.3",
-        "typescript": "^5.8.3"
-    }
+	"name": "pokemon-data-generator",
+	"version": "1.0.0",
+	"description": "Simple Pokemon GO data generator with GitHub Actions",
+	"main": "generate-data.ts",
+	"scripts": {
+		"generate": "tsx src/bin/generate-data.ts",
+		"lint": "npx eslint --fix --ext .ts ./src ./eslint.config.cjs ./prettier.config.cjs ./package.json ./tsconfig.json 2>&1 && pnpm run format && pnpm tsc --noEmit",
+		"format": "npx prettier --write \"src/**/*.{ts,js,json,css,md}\" *.json *.md *.cjs ./.github/workflows/**/*.yml",
+		"build": "pnpm tsc",
+		"debug": "npx tsx --inspect-brk src/bin/generate-data.ts"
+	},
+	"keywords": [
+		"pokemon",
+		"data",
+		"github-actions"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/jsdom": "^21.1.7",
+		"jsdom": "^26.1.0"
+	},
+	"devDependencies": {
+		"@ti-platform/aide-build-tools": "^4.1.0",
+		"@tsconfig/recommended": "^1.0.10",
+		"@types/node": "^24.0.13",
+		"@typescript-eslint/parser": "^8.36.0",
+		"eslint": "^9.31.0",
+		"eslint-plugin-promise": "^7.2.1",
+		"prettier": "^3.6.2",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.37.0"
+	}
 }

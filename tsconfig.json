@@ -1,12 +1,16 @@
 {
-    "extends": "@ti-platform/aide-build-tools/tsconfig.base.json",
-    "compilerOptions": {
-        "sourceMap": true,
-        "baseUrl": "./",
-        "outDir": "dist",
-        "module": "ESNext",
-        "target": "ESNext"
-    },
-    "include": ["*.ts", "src/**/*.ts"],
-    "exclude": ["node_modules"]
+	"extends": "@ti-platform/aide-build-tools/tsconfig.base.json",
+	"compilerOptions": {
+		"moduleResolution": "Node",
+		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"exactOptionalPropertyTypes": true,
+		"useUnknownInCatchVariables": true,
+		"allowJs": false,
+		"checkJs": false,
+		"incremental": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
 }

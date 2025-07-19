@@ -10,6 +10,10 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
 		"moveName": {
 			"en": "Wrap",
 			"pt_br": "Embrulho"
@@ -756,13 +760,13 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergy": -50,
+		"pvpEnergy": -45,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
-			"buffActivationChance": 0.66
+			"buffActivationChance": 1
 		},
 		"moveName": {
 			"en": "Parabolic Charge",
@@ -1599,7 +1603,7 @@
 		"vId": "0200",
 		"type": "bug",
 		"isFast": true,
-		"pvpPower": 2,
+		"pvpPower": 3,
 		"pvePower": 4,
 		"pvpEnergy": 4,
 		"pveEnergy": 8,
@@ -1615,7 +1619,7 @@
 		"vId": "0201",
 		"type": "bug",
 		"isFast": true,
-		"pvpPower": 3,
+		"pvpPower": 4,
 		"pvePower": 5,
 		"pvpEnergy": 3,
 		"pveEnergy": 6,
@@ -1745,7 +1749,7 @@
 		"isFast": true,
 		"pvpPower": 7,
 		"pvePower": 10,
-		"pvpEnergy": 6,
+		"pvpEnergy": 7,
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
@@ -2001,7 +2005,7 @@
 		"isFast": true,
 		"pvpPower": 6,
 		"pvePower": 11,
-		"pvpEnergy": 5,
+		"pvpEnergy": 8,
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
@@ -2063,7 +2067,7 @@
 		"vId": "0229",
 		"type": "steel",
 		"isFast": true,
-		"pvpPower": 6,
+		"pvpPower": 8,
 		"pvePower": 10,
 		"pvpEnergy": 7,
 		"pveEnergy": 11,
@@ -2904,7 +2908,7 @@
 		"pveCooldown": 3,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
-			"buffActivationChance": 0.3
+			"buffActivationChance": 0.2
 		},
 		"moveName": {
 			"en": "Crunch",
@@ -3016,7 +3020,7 @@
 		"vId": "0286",
 		"type": "steel",
 		"isFast": false,
-		"pvpPower": 75,
+		"pvpPower": 80,
 		"pvePower": 65,
 		"pvpEnergy": -40,
 		"pveEnergy": -33,
@@ -4531,7 +4535,7 @@
 		"vId": "0381",
 		"type": "steel",
 		"isFast": false,
-		"pvpPower": 50,
+		"pvpPower": 55,
 		"pvePower": 70,
 		"pvpEnergy": -35,
 		"pveEnergy": -33,
@@ -4915,7 +4919,7 @@
 		"vId": "0402",
 		"type": "steel",
 		"isFast": true,
-		"pvpPower": 3,
+		"pvpPower": 5,
 		"pvePower": 4,
 		"pvpEnergy": 8,
 		"pveEnergy": 6,
@@ -5223,15 +5227,55 @@
 		"vId": "0472",
 		"type": "electric",
 		"isFast": false,
-		"pvpPower": 1,
-		"pvePower": 1,
-		"pvpEnergy": -1,
-		"pveEnergy": -1,
+		"pvpPower": 60,
+		"pvePower": 220,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
 		"moveName": {
 			"en": "Thunder Cage",
 			"pt_br": "Thunder Cage"
+		}
+	},
+	"DYNAMAX_CANNON": {
+		"moveId": "DYNAMAX_CANNON",
+		"vId": "0482",
+		"type": "dragon",
+		"isFast": false,
+		"pvpPower": 80,
+		"pvePower": 215,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"moveName": {
+			"en": "Dynamax Cannon",
+			"pt_br": "Dynamax Cannon"
+		}
+	},
+	"CLANGING_SCALES": {
+		"moveId": "CLANGING_SCALES",
+		"vId": "0484",
+		"type": "dragon",
+		"isFast": false,
+		"pvpPower": 120,
+		"pvePower": 120,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.3,
+		"buffs": {
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Clanging Scales",
+			"pt_br": "Clanging Scales"
 		}
 	},
 	"CRUSH_GRIP": {
@@ -5239,10 +5283,10 @@
 		"vId": "0485",
 		"type": "normal",
 		"isFast": false,
-		"pvpPower": 1,
-		"pvePower": 1,
-		"pvpEnergy": -1,
-		"pveEnergy": -1,
+		"pvpPower": 110,
+		"pvePower": 210,
+		"pvpEnergy": -50,
+		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.8,
 		"moveName": {
@@ -5255,15 +5299,35 @@
 		"vId": "0486",
 		"type": "dragon",
 		"isFast": false,
-		"pvpPower": 1,
-		"pvePower": 1,
-		"pvpEnergy": -1,
-		"pveEnergy": -1,
+		"pvpPower": 100,
+		"pvePower": 155,
+		"pvpEnergy": -45,
+		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.3,
 		"moveName": {
 			"en": "Dragon Energy",
 			"pt_br": "Dragon Energy"
+		}
+	},
+	"AQUA_STEP": {
+		"moveId": "AQUA_STEP",
+		"vId": "0487",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 55,
+		"pvePower": 55,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Aqua Step",
+			"pt_br": "Aqua Step"
 		}
 	},
 	"CRUSH_CLAW": {
@@ -5328,46 +5392,6 @@
 		"moveName": {
 			"en": "Fissure",
 			"pt_br": "Fissura"
-		}
-	},
-	"CLANGING_SCALES": {
-		"moveId": "CLANGING_SCALES",
-		"vId": "-1",
-		"type": "dragon",
-		"isFast": false,
-		"pvpPower": 120,
-		"pvePower": 120,
-		"pvpEnergy": -45,
-		"pveEnergy": -100,
-		"pvpCooldown": 500,
-		"pveCooldown": 3.3,
-		"buffs": {
-			"buffActivationChance": 1,
-			"attackerDefenseStatStageChange": -1
-		},
-		"moveName": {
-			"en": "Clanging Scales",
-			"pt_br": "Clanging Scales"
-		}
-	},
-	"AQUA_STEP": {
-		"moveId": "AQUA_STEP",
-		"vId": "-1",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 55,
-		"pvePower": 55,
-		"pvpEnergy": -40,
-		"pveEnergy": -40,
-		"pvpCooldown": 500,
-		"pveCooldown": 3.5,
-		"buffs": {
-			"buffActivationChance": 1,
-			"attackerAttackStatStageChange": 1
-		},
-		"moveName": {
-			"en": "Aqua Step",
-			"pt_br": "Aqua Step"
 		}
 	}
 }

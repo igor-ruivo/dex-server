@@ -1,4 +1,13 @@
 {
+	"regieleki": {
+		"fastMove": "LOCK_ON",
+		"chargedMove": "THUNDER_CAGE",
+		"dps": 36.024096385542165,
+		"speciesId": "regieleki",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 279,
+		"rank": 1
+	},
 	"thundurus_therian": {
 		"fastMove": "VOLT_SWITCH",
 		"chargedMove": "WILDBOLT_STORM",
@@ -6,7 +15,7 @@
 		"speciesId": "thundurus_therian",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 223,
-		"rank": 1
+		"rank": 2
 	},
 	"electivire_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -15,7 +24,7 @@
 		"speciesId": "electivire_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 137,
-		"rank": 2
+		"rank": 3
 	},
 	"zapdos_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -24,7 +33,7 @@
 		"speciesId": "zapdos_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 216,
-		"rank": 3
+		"rank": 4
 	},
 	"manectric_mega": {
 		"fastMove": "THUNDER_FANG",
@@ -33,7 +42,7 @@
 		"speciesId": "manectric_mega",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 130,
-		"rank": 4
+		"rank": 5
 	},
 	"raikou_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -42,7 +51,7 @@
 		"speciesId": "raikou_shadow",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 133,
-		"rank": 5
+		"rank": 6
 	},
 	"zekrom": {
 		"fastMove": "CHARGE_BEAM",
@@ -51,7 +60,7 @@
 		"speciesId": "zekrom",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 194,
-		"rank": 6
+		"rank": 7
 	},
 	"xurkitree": {
 		"fastMove": "THUNDER_SHOCK",
@@ -60,7 +69,7 @@
 		"speciesId": "xurkitree",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 108,
-		"rank": 7
+		"rank": 8
 	},
 	"magnezone_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -69,7 +78,7 @@
 		"speciesId": "magnezone_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 131,
-		"rank": 8
+		"rank": 9
 	},
 	"ampharos_mega": {
 		"fastMove": "VOLT_SWITCH",
@@ -78,7 +87,7 @@
 		"speciesId": "ampharos_mega",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 207,
-		"rank": 9
+		"rank": 10
 	},
 	"deoxys_attack": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -87,7 +96,7 @@
 		"speciesId": "deoxys_attack",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 240,
-		"rank": 10
+		"rank": 11
 	},
 	"manectric_shadow": {
 		"fastMove": "THUNDER_FANG",
@@ -96,7 +105,7 @@
 		"speciesId": "manectric_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 119,
-		"rank": 11
+		"rank": 12
 	},
 	"luxray_shadow": {
 		"fastMove": "SPARK",
@@ -105,7 +114,7 @@
 		"speciesId": "luxray_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 128,
-		"rank": 12
+		"rank": 13
 	},
 	"magneton_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -114,7 +123,7 @@
 		"speciesId": "magneton_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 191,
-		"rank": 13
+		"rank": 14
 	},
 	"electivire": {
 		"fastMove": "THUNDER_SHOCK",
@@ -123,7 +132,7 @@
 		"speciesId": "electivire",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 114,
-		"rank": 14
+		"rank": 15
 	},
 	"mewtwo_shadow": {
 		"fastMove": "PSYCHO_CUT",
@@ -132,7 +141,7 @@
 		"speciesId": "mewtwo_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 121,
-		"rank": 15
+		"rank": 16
 	},
 	"golem_alolan_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -141,7 +150,7 @@
 		"speciesId": "golem_alolan_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 117,
-		"rank": 16
+		"rank": 17
 	},
 	"deoxys": {
 		"fastMove": "CHARGE_BEAM",
@@ -150,7 +159,7 @@
 		"speciesId": "deoxys",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 115,
-		"rank": 17
+		"rank": 18
 	},
 	"zebstrika_shadow": {
 		"fastMove": "SPARK",
@@ -159,7 +168,7 @@
 		"speciesId": "zebstrika_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 117,
-		"rank": 18
+		"rank": 19
 	},
 	"zapdos": {
 		"fastMove": "THUNDER_SHOCK",
@@ -168,15 +177,6 @@
 		"speciesId": "zapdos",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 180,
-		"rank": 19
-	},
-	"regieleki": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "ZAP_CANNON",
-		"dps": 24.778523489932887,
-		"speciesId": "regieleki",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 178,
 		"rank": 20
 	},
 	"kyurem_black": {

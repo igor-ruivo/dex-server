@@ -5393,5 +5393,39 @@
 			"en": "Fissure",
 			"pt_br": "Fissura"
 		}
+	},
+	"AEGISLASH_CHARGE_PSYCHO_CUT": {
+		"moveId": "AEGISLASH_CHARGE_PSYCHO_CUT",
+		"vId": "-1",
+		"type": "psychic",
+		"isFast": true,
+		"pvpPower": 0,
+		"pvePower": 0,
+		"pvpEnergy": -6,
+		"pveEnergy": 0,
+		"pvpCooldown": 1000,
+		"pveCooldown": 0,
+		"moveName": {
+			"en": "Psycho Cut",
+			"pt_br": "Corte Psíquico"
+		},
+		"unavailableForRaids": true
+	},
+	"AEGISLASH_CHARGE_AIR_SLASH": {
+		"moveId": "AEGISLASH_CHARGE_AIR_SLASH",
+		"vId": "-1",
+		"type": "flying",
+		"isFast": true,
+		"pvpPower": 0,
+		"pvePower": 0,
+		"pvpEnergy": -6,
+		"pveEnergy": 0,
+		"pvpCooldown": 1500,
+		"pveCooldown": 0,
+		"moveName": {
+			"en": "Air Slash",
+			"pt_br": "Golpe de Ar"
+		},
+		"unavailableForRaids": true
 	}
 }

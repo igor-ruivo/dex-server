@@ -217,7 +217,7 @@ type MoveSettingsType = {
 	energyDelta: number;
 	durationTurns: number;
 	durationMs: number;
-	buffs: BuffsType;
+	buffs?: BuffsType | undefined;
 };
 
 export type GameMasterMovesType = {
@@ -239,7 +239,7 @@ export type PvPMove = BaseMove & {
 	pvpPower: number;
 	pvpEnergy: number;
 	pvpCooldown: number;
-	buffs: BuffsType;
+	buffs?: BuffsType | undefined;
 };
 
 export type PvEMove = BaseMove & {

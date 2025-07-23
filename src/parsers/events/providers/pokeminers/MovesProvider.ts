@@ -239,6 +239,60 @@ class MovesProvider {
 				moveName: aquaStepMoveName,
 			};
 		}
+
+		const aegislashChargePsychoCutMoveName: Partial<
+			Record<AvailableLocales, string>
+		> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			const translation = this.translatorService.getTranslationForMoveName(
+				locale,
+				'0226' // Psycho Cut vid
+			);
+			aegislashChargePsychoCutMoveName[locale] = translation || 'Psycho Cut';
+		});
+
+		if (!movesDictionary.AEGISLASH_CHARGE_PSYCHO_CUT) {
+			movesDictionary.AEGISLASH_CHARGE_PSYCHO_CUT = {
+				moveId: 'AEGISLASH_CHARGE_PSYCHO_CUT',
+				vId: '-1',
+				type: 'psychic',
+				isFast: true,
+				pvpPower: 0,
+				pvePower: 0,
+				pvpEnergy: -6,
+				pveEnergy: 0,
+				pvpCooldown: 1000,
+				pveCooldown: 0,
+				moveName: aegislashChargePsychoCutMoveName,
+			};
+		}
+
+		const aegislashChargeAirSlashMoveName: Partial<
+			Record<AvailableLocales, string>
+		> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			const translation = this.translatorService.getTranslationForMoveName(
+				locale,
+				'0255' // Air Slash vid
+			);
+			aegislashChargeAirSlashMoveName[locale] = translation || 'Air Slash';
+		});
+
+		if (!movesDictionary.AEGISLASH_CHARGE_AIR_SLASH) {
+			movesDictionary.AEGISLASH_CHARGE_AIR_SLASH = {
+				moveId: 'AEGISLASH_CHARGE_AIR_SLASH',
+				vId: '-1',
+				type: 'flying',
+				isFast: true,
+				pvpPower: 0,
+				pvePower: 0,
+				pvpEnergy: -6,
+				pveEnergy: 0,
+				pvpCooldown: 1500,
+				pveCooldown: 0,
+				moveName: aegislashChargeAirSlashMoveName,
+			};
+		}
 		return movesDictionary;
 	}
 }

@@ -203,7 +203,6 @@ export type GameMasterData = Record<string, GameMasterPokemon>;
 export type IGameMasterMove = PvPMove &
 	PvEMove & {
 		moveName: Partial<Record<AvailableLocales, string>>;
-		unavailableForRaids?: boolean;
 	};
 
 type BuffsType = {

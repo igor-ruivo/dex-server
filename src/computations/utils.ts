@@ -53,25 +53,13 @@ export const cpm = [
 
 export const getAllFastMoves = (
 	p: GameMasterPokemon,
-	moves: Record<string, IGameMasterMove>,
-	forRaids = true
+	moves: Record<string, IGameMasterMove>
 ) => {
 	return Array.from(
 		new Set(
 			p.fastMoves
-				.filter((m) => !(forRaids && moves[m].unavailableForRaids))
-				.concat(
-					p.eliteMoves?.filter(
-						(m) =>
-							moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
-					) ?? []
-				)
-				.concat(
-					p.legacyMoves?.filter(
-						(m) =>
-							moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
-					) ?? []
-				)
+				.concat(p.eliteMoves?.filter((m) => moves[m].isFast) ?? [])
+				.concat(p.legacyMoves?.filter((m) => moves[m].isFast) ?? [])
 		)
 	);
 };
@@ -84,19 +72,8 @@ export const getAllChargedMoves = (
 	return Array.from(
 		new Set(
 			p.chargedMoves
-				.filter((m) => !(forRaids && moves[m].unavailableForRaids))
-				.concat(
-					p.eliteMoves?.filter(
-						(m) =>
-							!moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
-					) ?? []
-				)
-				.concat(
-					p.legacyMoves?.filter(
-						(m) =>
-							!moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
-					) ?? []
-				)
+				.concat(p.eliteMoves?.filter((m) => !moves[m].isFast) ?? [])
+				.concat(p.legacyMoves?.filter((m) => !moves[m].isFast) ?? [])
 		)
 	);
 };

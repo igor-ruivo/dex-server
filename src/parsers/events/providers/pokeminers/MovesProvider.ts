@@ -179,7 +179,7 @@ class MovesProvider {
 				pvePower: 50,
 				pvpEnergy: -40,
 				pveEnergy: -33,
-				pvpCooldown: 500,
+				pvpCooldown: 0.5,
 				pveCooldown: 2.0,
 				buffs: {
 					buffActivationChance: 0.3,
@@ -205,7 +205,7 @@ class MovesProvider {
 				pvePower: 120,
 				pvpEnergy: -45,
 				pveEnergy: -100,
-				pvpCooldown: 500,
+				pvpCooldown: 0.5,
 				pveCooldown: 3.3,
 				buffs: {
 					buffActivationChance: 1,
@@ -230,7 +230,7 @@ class MovesProvider {
 				pvePower: 55,
 				pvpEnergy: -40,
 				pveEnergy: -40,
-				pvpCooldown: 500,
+				pvpCooldown: 0.5,
 				pveCooldown: 3.5,
 				buffs: {
 					buffActivationChance: 1,
@@ -258,13 +258,12 @@ class MovesProvider {
 				type: 'psychic',
 				isFast: true,
 				pvpPower: 0,
-				pvePower: 0,
-				pvpEnergy: -6,
-				pveEnergy: 0,
-				pvpCooldown: 1000,
-				pveCooldown: 0,
+				pvePower: 4,
+				pvpEnergy: 6,
+				pveEnergy: 7,
+				pvpCooldown: 1,
+				pveCooldown: 0.5,
 				moveName: aegislashChargePsychoCutMoveName,
-				unavailableForRaids: true,
 			};
 		}
 
@@ -286,13 +285,12 @@ class MovesProvider {
 				type: 'flying',
 				isFast: true,
 				pvpPower: 0,
-				pvePower: 0,
-				pvpEnergy: -6,
-				pveEnergy: 0,
-				pvpCooldown: 1500,
-				pveCooldown: 0,
+				pvePower: 12,
+				pvpEnergy: 6,
+				pveEnergy: 8,
+				pvpCooldown: 1.5,
+				pveCooldown: 1,
 				moveName: aegislashChargeAirSlashMoveName,
-				unavailableForRaids: true,
 			};
 		}
 		return movesDictionary;

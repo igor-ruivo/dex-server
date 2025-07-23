@@ -49163,7 +49163,7 @@
 			"id": "FAMILY_HONEDGE",
 			"parent": "honedge",
 			"evolutions": [
-				"aegislash"
+				"aegislash_shield"
 			]
 		},
 		"form": "",
@@ -49226,8 +49226,8 @@
 			"hp": 155
 		},
 		"fastMoves": [
-			"PSYCHO_CUT",
-			"AIR_SLASH"
+			"AEGISLASH_CHARGE_PSYCHO_CUT",
+			"AEGISLASH_CHARGE_AIR_SLASH"
 		],
 		"chargedMoves": [
 			"FLASH_CANNON",

@@ -1367,6 +1367,15 @@
 		"chargedMoveDmg": 43,
 		"rank": 152
 	},
+	"aegislash_shield": {
+		"fastMove": "AEGISLASH_CHARGE_PSYCHO_CUT",
+		"chargedMove": "FLASH_CANNON",
+		"dps": 8.562962962962963,
+		"speciesId": "aegislash_shield",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 54,
+		"rank": 153
+	},
 	"ferroseed": {
 		"fastMove": "METAL_CLAW",
 		"chargedMove": "FLASH_CANNON",
@@ -1374,7 +1383,7 @@
 		"speciesId": "ferroseed",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 47,
-		"rank": 153
+		"rank": 154
 	},
 	"makuhita_shadow": {
 		"fastMove": "TACKLE",
@@ -1383,7 +1392,7 @@
 		"speciesId": "makuhita_shadow",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 39,
-		"rank": 154
+		"rank": 155
 	},
 	"onix_shadow": {
 		"fastMove": "ROCK_THROW",
@@ -1392,7 +1401,7 @@
 		"speciesId": "onix_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 34,
-		"rank": 155
+		"rank": 156
 	},
 	"pineco": {
 		"fastMove": "BUG_BITE",
@@ -1401,7 +1410,7 @@
 		"speciesId": "pineco",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 42,
-		"rank": 156
+		"rank": 157
 	},
 	"voltorb": {
 		"fastMove": "SPARK",
@@ -1410,7 +1419,7 @@
 		"speciesId": "voltorb",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 42,
-		"rank": 157
+		"rank": 158
 	},
 	"makuhita": {
 		"fastMove": "TACKLE",
@@ -1419,7 +1428,7 @@
 		"speciesId": "makuhita",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 32,
-		"rank": 158
+		"rank": 159
 	},
 	"venipede_shadow": {
 		"fastMove": "BUG_BITE",
@@ -1428,7 +1437,7 @@
 		"speciesId": "venipede_shadow",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 40,
-		"rank": 159
+		"rank": 160
 	},
 	"whirlipede": {
 		"fastMove": "BUG_BITE",
@@ -1437,7 +1446,7 @@
 		"speciesId": "whirlipede",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 39,
-		"rank": 160
+		"rank": 161
 	},
 	"beldum_shadow": {
 		"fastMove": "TAKE_DOWN",
@@ -1446,7 +1455,7 @@
 		"speciesId": "beldum_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 39,
-		"rank": 161
+		"rank": 162
 	},
 	"tinkatink": {
 		"fastMove": "FAIRY_WIND",
@@ -1455,7 +1464,7 @@
 		"speciesId": "tinkatink",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 48,
-		"rank": 162
+		"rank": 163
 	},
 	"onix": {
 		"fastMove": "TACKLE",
@@ -1464,7 +1473,7 @@
 		"speciesId": "onix",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 28,
-		"rank": 163
+		"rank": 164
 	},
 	"venipede": {
 		"fastMove": "BUG_BITE",
@@ -1473,7 +1482,7 @@
 		"speciesId": "venipede",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 34,
-		"rank": 164
+		"rank": 165
 	},
 	"baltoy": {
 		"fastMove": "EXTRASENSORY",
@@ -1482,7 +1491,7 @@
 		"speciesId": "baltoy",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 32,
-		"rank": 165
+		"rank": 166
 	},
 	"jigglypuff": {
 		"fastMove": "POUND",
@@ -1491,7 +1500,7 @@
 		"speciesId": "jigglypuff",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 33,
-		"rank": 166
+		"rank": 167
 	},
 	"smeargle": {
 		"fastMove": "METAL_CLAW",
@@ -1500,7 +1509,7 @@
 		"speciesId": "smeargle",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 15,
-		"rank": 167
+		"rank": 168
 	},
 	"beldum": {
 		"fastMove": "TAKE_DOWN",
@@ -1509,7 +1518,7 @@
 		"speciesId": "beldum",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 32,
-		"rank": 168
+		"rank": 169
 	},
 	"bronzor": {
 		"fastMove": "CONFUSION",
@@ -1518,7 +1527,7 @@
 		"speciesId": "bronzor",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 20,
-		"rank": 169
+		"rank": 170
 	},
 	"shuckle_shadow": {
 		"fastMove": "ROCK_THROW",
@@ -1527,7 +1536,7 @@
 		"speciesId": "shuckle_shadow",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 13,
-		"rank": 170
+		"rank": 171
 	},
 	"shuckle": {
 		"fastMove": "ROCK_THROW",
@@ -1536,6 +1545,6 @@
 		"speciesId": "shuckle",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 11,
-		"rank": 171
+		"rank": 172
 	}
 }

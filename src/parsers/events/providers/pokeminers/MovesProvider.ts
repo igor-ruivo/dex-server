@@ -264,6 +264,7 @@ class MovesProvider {
 				pvpCooldown: 1000,
 				pveCooldown: 0,
 				moveName: aegislashChargePsychoCutMoveName,
+				unavailableForRaids: true,
 			};
 		}
 
@@ -291,6 +292,7 @@ class MovesProvider {
 				pvpCooldown: 1500,
 				pveCooldown: 0,
 				moveName: aegislashChargeAirSlashMoveName,
+				unavailableForRaids: true,
 			};
 		}
 		return movesDictionary;

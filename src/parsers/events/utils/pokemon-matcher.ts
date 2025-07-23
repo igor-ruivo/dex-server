@@ -43,7 +43,8 @@ class PokemonMatcher {
 			let currP = normalizePokemonName(rawName);
 			if (
 				currP.toLocaleLowerCase().includes(' candy') ||
-				currP.toLocaleLowerCase().includes('dynamax')
+				currP.toLocaleLowerCase().includes('dynamax') ||
+				currP.toLocaleLowerCase().includes('gigantamax')
 			) {
 				continue;
 			}

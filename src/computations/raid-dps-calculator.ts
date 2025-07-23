@@ -28,7 +28,8 @@ class RaidDpsCalculator {
 									(m) => this.moves[m].type === type
 								))
 					)
-					.map((p) => computeDPSEntry(p, this.moves, 15, 100, type));
+					.map((p) => computeDPSEntry(p, this.moves, 15, 100, type))
+					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);
 
 				pokemonEntries.sort((a, b) => {
 					if (b.dps !== a.dps) {

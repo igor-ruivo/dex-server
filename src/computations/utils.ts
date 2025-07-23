@@ -53,26 +53,50 @@ export const cpm = [
 
 export const getAllFastMoves = (
 	p: GameMasterPokemon,
-	moves: Record<string, IGameMasterMove>
+	moves: Record<string, IGameMasterMove>,
+	forRaids = true
 ) => {
 	return Array.from(
 		new Set(
 			p.fastMoves
-				.concat(p.eliteMoves?.filter((m) => moves[m].isFast) ?? [])
-				.concat(p.legacyMoves?.filter((m) => moves[m].isFast) ?? [])
+				.filter((m) => !(forRaids && moves[m].unavailableForRaids))
+				.concat(
+					p.eliteMoves?.filter(
+						(m) =>
+							moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
+					) ?? []
+				)
+				.concat(
+					p.legacyMoves?.filter(
+						(m) =>
+							moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
+					) ?? []
+				)
 		)
 	);
 };
 
 export const getAllChargedMoves = (
 	p: GameMasterPokemon,
-	moves: Record<string, IGameMasterMove>
+	moves: Record<string, IGameMasterMove>,
+	forRaids = true
 ) => {
 	return Array.from(
 		new Set(
 			p.chargedMoves
-				.concat(p.eliteMoves?.filter((m) => !moves[m].isFast) ?? [])
-				.concat(p.legacyMoves?.filter((m) => !moves[m].isFast) ?? [])
+				.filter((m) => !(forRaids && moves[m].unavailableForRaids))
+				.concat(
+					p.eliteMoves?.filter(
+						(m) =>
+							!moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
+					) ?? []
+				)
+				.concat(
+					p.legacyMoves?.filter(
+						(m) =>
+							!moves[m].isFast && !(forRaids && moves[m].unavailableForRaids)
+					) ?? []
+				)
 		)
 	);
 };
@@ -100,7 +124,7 @@ export const calculateDamage = (
 	);
 };
 
-export const pveDPS = (
+const pveDPS = (
 	chargedMoveDamage: number,
 	fastMoveDamage: number,
 	fastMoveCooldown: number,

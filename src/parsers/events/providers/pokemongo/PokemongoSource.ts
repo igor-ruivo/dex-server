@@ -36,6 +36,7 @@ const EVENT_SECTION_TYPES = {
 		'Wild encounters',
 		'Wild Encounters',
 		'Event-themed Pokémon',
+		'Featured Pokémon',
 	],
 	EGGS: ['Eggs'],
 	LURES: ['Encounters from Lure Modules'],

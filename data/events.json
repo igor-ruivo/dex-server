@@ -1,5 +1,67 @@
 [
 	{
+		"id": "sweet-swarm-2025-0",
+		"url": "https://pokemongo.com/en/post/sweet-swarm-2025/",
+		"title": {
+			"en": "Sweet encounters await during the Sweet Swarm event!",
+			"pt_br": "Doces encontros esperam por vocês durante o evento Doce Enxame."
+		},
+		"subtitle": {
+			"en": "Sweet Swarm",
+			"pt_br": "Doce Enxame"
+		},
+		"startDate": 1754179200000,
+		"endDate": 1754524740000,
+		"dateRanges": [
+			{
+				"start": 1754179200000,
+				"end": 1754524740000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/iG5EZloNAa-mzTpwgCPYVaspBcEzCFvHMDfdGMNnJlHsPPeuRZNinS_rrVbbeSbEwk-REWFC8j7EAGA4ZB2_ZnEDVL2gmrYT8a1sqrNiI0C2=w1440-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "combee",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "swirlix",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "swirlix",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "combee",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Lure Modules activated during the event will last for one hour.",
+				"Lure Modules are more likely to attract event-themed Pokémon.",
+				"Increased chance to encounter Shiny Combee and Shiny Swirlix."
+			],
+			"pt_br": [
+				"Os Módulos Atrair ativados durante o evento durarão uma hora.",
+				"Os Módulos Atrair têm mais probabilidade de atrair Pokémon com o tema do evento.",
+				"Maior chance de encontrar Combee Brilhantes e Swirlix Brilhantes."
+			]
+		}
+	},
+	{
 		"id": "fossil-research-day-2025-0",
 		"url": "https://pokemongo.com/en/post/fossil-research-day-2025/",
 		"title": {

@@ -1,5 +1,101 @@
 [
 	{
+		"id": "cozy-companions-2025-0",
+		"url": "https://pokemongo.com/en/post/cozy-companions-2025/",
+		"title": {
+			"en": "The Cozy Companions event welcomes Snom to Pokémon GO!",
+			"pt_br": "O evento Companhias Aconchegantes marca a estreia de Snom no Pokémon GO."
+		},
+		"subtitle": {
+			"en": "Cozy Companions",
+			"pt_br": "Companhias Aconchegantes"
+		},
+		"startDate": 1754474400000,
+		"endDate": 1755028800000,
+		"dateRanges": [
+			{
+				"start": 1754474400000,
+				"end": 1755028800000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/oVZmZdWqu6VlWwQv8nlaJufazNazVLhW5N384OU_1O8wr8GcokqgoCTqudHaJXATBF5Ox60MQny0wjUWtK43LQLhDiA3oaiUkQoR5VwIKwos=w1440-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "abra",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "geodude",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "karrablast",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "shelmet",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "phantump",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "geodude_alolan",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [
+			{
+				"speciesId": "farfetchd_galarian",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "pancham",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "snom",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "charcadet",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"2× XP from hatching Eggs.",
+				"One extra Special Trade per day.",
+				"For the first time in Pokémon GO, you might even encounter Shiny Tandemaus—if you’re lucky!",
+				"Tandemaus will have an increased chance to be encountered from Party Play!",
+				"Friendship levels will increase faster than normal through opening Gifts, trading Pokémon, or battling together in raids, Gyms, or Trainer Battles!"
+			],
+			"pt_br": [
+				"2x mais PE por chocar Ovos.",
+				"Uma troca especial extra por dia.",
+				"Pela primeira vez no Pokémon GO, vocês poderão até encontrar Tandemaus Brilhantes, se tiverem sorte.",
+				"Haverá mais chances de encontrar Tandemaus em Jogos em Grupo.",
+				"Os níveis de amizade aumentarão mais rápido que o normal por meio da abertura de presentes, da troca de Pokémon ou de batalhas em conjunto em Reides, Ginásios ou batalhas de Treinadores."
+			]
+		}
+	},
+	{
 		"id": "sweet-swarm-2025-0",
 		"url": "https://pokemongo.com/en/post/sweet-swarm-2025/",
 		"title": {
@@ -20,7 +116,10 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/iG5EZloNAa-mzTpwgCPYVaspBcEzCFvHMDfdGMNnJlHsPPeuRZNinS_rrVbbeSbEwk-REWFC8j7EAGA4ZB2_ZnEDVL2gmrYT8a1sqrNiI0C2=w1440-e365",
 		"source": "pokemongo",
-		"wild": [
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
 			{
 				"speciesId": "combee",
 				"shiny": false,
@@ -30,11 +129,7 @@
 				"speciesId": "swirlix",
 				"shiny": true,
 				"kind": ""
-			}
-		],
-		"raids": [],
-		"eggs": [],
-		"researches": [
+			},
 			{
 				"speciesId": "swirlix",
 				"shiny": true,
@@ -84,16 +179,6 @@
 		"source": "pokemongo",
 		"wild": [
 			{
-				"speciesId": "tyrunt",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "amaura",
-				"shiny": true,
-				"kind": ""
-			},
-			{
 				"speciesId": "omanyte",
 				"shiny": true,
 				"kind": ""
@@ -136,7 +221,18 @@
 		],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "tyrunt",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "amaura",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -165,16 +261,16 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/ziRKlAzwf6oEnASgtpD12-FaMdleJ1s-rOGa51dc9RhJu93Xvy-5xFJxxc8hZI_rARfpEEO4W2psqOCCPDDsgK2Kt4WHxOSvTjE=s0-e365",
 		"source": "pokemongo",
-		"wild": [
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
 			{
 				"speciesId": "rookidee",
 				"shiny": true,
 				"kind": ""
 			}
 		],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1205,16 +1301,16 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/mTaxl778XzEFvST60TC4rvBPFQnrODlIgr98eY5mewqpz-NEnDe21UX60ZIQcyQKeg-rsauBunR9aznCuUjAyD37UIYpg5FL410r=s0-e365",
 		"source": "pokemongo",
-		"wild": [
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
 			{
 				"speciesId": "quaxly",
 				"shiny": true,
 				"kind": ""
 			}
 		],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1360,16 +1456,16 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/jnoSaANb0-v-lf0GZqegVLDVB89cdLU7aUyg-VL6h2Sj7l6oCAlXPM_w58coKwfYWhe51DBJoOkNf1oc2MgMHt-yOCB-TJrX9Tgi8k0KPYTsHg=w1440-e365",
 		"source": "pokemongo",
-		"wild": [
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
 			{
 				"speciesId": "eevee",
 				"shiny": true,
 				"kind": ""
 			}
 		],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1523,16 +1619,16 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/vOI7qV5u7nD8sjzFANXSD1LxpXOSaHe7UiciXnhd41ROqPQICe33wR9wQpOOXpar8Zl0HOQytIvBbknuEOYBzlkmWUAcz9ppl4leKNOlt8d-=w1440-e365",
 		"source": "pokemongo",
-		"wild": [
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
 			{
 				"speciesId": "jangmo_o",
 				"shiny": true,
 				"kind": ""
 			}
 		],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

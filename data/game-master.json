@@ -56531,6 +56531,84 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"snom": {
+		"dex": 872,
+		"speciesId": "snom",
+		"speciesName": "Snom",
+		"types": [
+			"Ice",
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/872.png",
+		"goImageUrl": "872.icon.png",
+		"shinyGoImageUrl": "872.s.icon.png",
+		"baseStats": {
+			"atk": 76,
+			"def": 59,
+			"hp": 102
+		},
+		"fastMoves": [
+			"POWDER_SNOW",
+			"STRUGGLE_BUG"
+		],
+		"chargedMoves": [
+			"ICY_WIND",
+			"BUG_BUZZ"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SNOM",
+			"evolutions": [
+				"frosmoth"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"frosmoth": {
+		"dex": 873,
+		"speciesId": "frosmoth",
+		"speciesName": "Frosmoth",
+		"types": [
+			"Ice",
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/873.png",
+		"goImageUrl": "873.icon.png",
+		"shinyGoImageUrl": "873.s.icon.png",
+		"baseStats": {
+			"atk": 230,
+			"def": 155,
+			"hp": 172
+		},
+		"fastMoves": [
+			"POWDER_SNOW",
+			"BUG_BITE"
+		],
+		"chargedMoves": [
+			"ICY_WIND",
+			"BUG_BUZZ",
+			"ICE_BEAM",
+			"HURRICANE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SNOM",
+			"parent": "snom"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"stonjourner": {
 		"dex": 874,
 		"speciesId": "stonjourner",

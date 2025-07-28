@@ -36,7 +36,6 @@ const EVENT_SECTION_TYPES = {
 		'Wild encounters',
 		'Wild Encounters',
 		'Event-themed Pokémon',
-		'Featured Pokémon',
 	],
 	EGGS: ['Eggs'],
 	LURES: ['Encounters from Lure Modules'],
@@ -50,6 +49,7 @@ const EVENT_SECTION_TYPES = {
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut'],
 	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],
+	FEATURED: ['Featured Pokémon'],
 };
 
 /**
@@ -462,7 +462,11 @@ class PokemonGoSource implements IEventSource {
 			);
 			return;
 		}
-		if (EVENT_SECTION_TYPES.RESEARCH.some((x) => x === sectionType)) {
+		// For now, assume featured pokémons are always related to researches.
+		if (
+			EVENT_SECTION_TYPES.RESEARCH.some((x) => x === sectionType) ||
+			EVENT_SECTION_TYPES.FEATURED.some((x) => x === sectionType)
+		) {
 			eventData.researches.push(
 				...extractPokemonSpeciesIdsFromElements(
 					sectionBodies,

@@ -391,7 +391,8 @@ class PokemonGoSource implements IEventSource {
 			const parsedContent = this.parseInnerEvent(
 				sectionElements,
 				gameMasterPokemon,
-				this.domain
+				this.domain,
+				parser.getTitle().toLocaleLowerCase().includes('community day')
 			);
 			const event = buildEventObject(
 				post,
@@ -442,63 +443,84 @@ class PokemonGoSource implements IEventSource {
 		sectionBodies: Array<HTMLElement>,
 		eventData: EventBlock,
 		gameMasterPokemon: GameMasterData,
-		domain: Array<GameMasterPokemon>
+		domain: Array<GameMasterPokemon>,
+		isCommunityDay: boolean
 	): void {
 		if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
-			eventData.wild.push(
-				...extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				)
-			);
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter((p) => !eventData.wild.some((w) => w.speciesId === p.speciesId));
+
+			eventData.wild.push(...parsedPkm);
 			return;
 		}
 		if (EVENT_SECTION_TYPES.EGGS.some((x) => x === sectionType)) {
-			eventData.eggs.push(
-				...extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				)
-			);
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter((p) => !eventData.eggs.some((w) => w.speciesId === p.speciesId));
+
+			eventData.eggs.push(...parsedPkm);
 			return;
 		}
-		// For now, assume featured pokémons are always related to researches.
 		if (
 			EVENT_SECTION_TYPES.RESEARCH.some((x) => x === sectionType) ||
 			EVENT_SECTION_TYPES.FEATURED.some((x) => x === sectionType)
 		) {
-			eventData.researches.push(
-				...extractPokemonSpeciesIdsFromElements(
+			if (isCommunityDay) {
+				const parsedPkm = extractPokemonSpeciesIdsFromElements(
 					sectionBodies,
 					new PokemonMatcher(gameMasterPokemon, domain)
-				)
+				).filter(
+					(p) => !eventData.wild.some((w) => w.speciesId === p.speciesId)
+				);
+
+				eventData.wild.push(...parsedPkm);
+				return;
+			}
+
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter(
+				(p) => !eventData.researches.some((w) => w.speciesId === p.speciesId)
 			);
+
+			// For now, assume featured pokémons are always related to researches.
+			eventData.researches.push(...parsedPkm);
 			return;
 		}
 		if (EVENT_SECTION_TYPES.RAIDS.some((x) => x === sectionType)) {
-			eventData.raids.push(
-				...extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				)
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter(
+				(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
 			);
+
+			eventData.raids.push(...parsedPkm);
 			return;
 		}
 		if (EVENT_SECTION_TYPES.INCENSE.some((x) => x === sectionType)) {
-			eventData.incenses.push(
-				...extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				)
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter(
+				(p) => !eventData.incenses.some((w) => w.speciesId === p.speciesId)
 			);
+
+			eventData.incenses.push(...parsedPkm);
 		}
 		if (EVENT_SECTION_TYPES.LURES.some((x) => x === sectionType)) {
-			eventData.lures.push(
-				...extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				)
+			const parsedPkm = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				new PokemonMatcher(gameMasterPokemon, domain)
+			).filter(
+				(p) => !eventData.lures.some((w) => w.speciesId === p.speciesId)
 			);
+
+			eventData.lures.push(...parsedPkm);
 		}
 	}
 
@@ -508,7 +530,8 @@ class PokemonGoSource implements IEventSource {
 	private parseInnerEvent(
 		sectionElements: Array<Element>,
 		gameMasterPokemon: GameMasterData,
-		domain: Array<GameMasterPokemon>
+		domain: Array<GameMasterPokemon>,
+		isCommunityDay: boolean
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock();
 
@@ -535,7 +558,8 @@ class PokemonGoSource implements IEventSource {
 				sectionBodies,
 				eventBlock,
 				gameMasterPokemon,
-				domain
+				domain,
+				isCommunityDay
 			);
 		}
 

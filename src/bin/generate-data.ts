@@ -48,7 +48,7 @@ const generateData = async () => {
 		const source = new PokemonGoSource(
 			dataFetcher,
 			pokemonDictionary,
-			domains.normalDomain
+			domains.allDomain
 		);
 		const events = await source.parseEvents();
 

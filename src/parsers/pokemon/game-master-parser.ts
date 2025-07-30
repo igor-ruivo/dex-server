@@ -11,6 +11,7 @@ import ImageUrlBuilder from './utils/image-url-builder';
 import PokemonTransformer from './utils/pokemon-transformer';
 import PokemonValidator from './utils/pokemon-validator';
 export interface IPokemonDomains {
+	allDomain: Array<GameMasterPokemon>;
 	normalDomain: Array<GameMasterPokemon>;
 	nonShadowDomain: Array<GameMasterPokemon>;
 	nonMegaDomain: Array<GameMasterPokemon>;
@@ -23,12 +24,10 @@ export interface IPokemonDomains {
 export const getDomains = (
 	gameMasterPokemon: GameMasterData
 ): IPokemonDomains => {
-	const nonShadowDomain = Object.values(gameMasterPokemon).filter(
-		(p) => !p.isShadow && !p.aliasId
-	);
-	const nonMegaDomain = Object.values(gameMasterPokemon).filter(
-		(p) => !p.isMega && !p.aliasId
-	);
+	const allDomain = Object.values(gameMasterPokemon).filter((p) => !p.aliasId);
+
+	const nonShadowDomain = allDomain.filter((p) => !p.isShadow);
+	const nonMegaDomain = allDomain.filter((p) => !p.isMega);
 
 	const nonMegaNonShadowDomain = nonShadowDomain.filter((p) => !p.isMega);
 	const normalDomain = nonMegaNonShadowDomain.filter(
@@ -36,6 +35,7 @@ export const getDomains = (
 	);
 
 	return {
+		allDomain,
 		normalDomain,
 		nonMegaDomain,
 		nonShadowDomain,

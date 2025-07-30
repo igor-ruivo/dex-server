@@ -178,7 +178,7 @@ class PokemonMatcher {
 				wd.isMega === isMega
 		);
 		if (finalResults.length === 0) {
-			console.error("Couldn't find Form in gamemaster.");
+			console.error(`Couldn't find Form in gamemaster: ${currP}`);
 			return null;
 		}
 		if (finalResults.length === 1) {

@@ -480,6 +480,22 @@ class PokemonGoSource implements IEventSource {
 				return;
 			}
 
+			if (
+				sectionBodies.some((b) =>
+					b.textContent?.toLocaleLowerCase().includes('hatch')
+				)
+			) {
+				const parsedPkm = extractPokemonSpeciesIdsFromElements(
+					sectionBodies,
+					new PokemonMatcher(gameMasterPokemon, domain)
+				).filter(
+					(p) => !eventData.eggs.some((w) => w.speciesId === p.speciesId)
+				);
+
+				eventData.eggs.push(...parsedPkm);
+				return;
+			}
+
 			const parsedPkm = extractPokemonSpeciesIdsFromElements(
 				sectionBodies,
 				new PokemonMatcher(gameMasterPokemon, domain)

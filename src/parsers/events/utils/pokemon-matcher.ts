@@ -426,7 +426,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 	const parsedPokemon = textes.filter(
 		(t) =>
 			t !== 'All' &&
-			t.split(' ').length <= 10 &&
+			t.split(' ').length <= 30 &&
 			(whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
 				!blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
 	);

@@ -1,5 +1,60 @@
 [
 	{
+		"id": "ultra-unlock-origin-forme-raid-day-2025-0",
+		"url": "https://pokemongo.com/news/ultra-unlock-origin-forme-raid-day-2025",
+		"title": {
+			"en": "The formidable Origin Forme Dialga and Origin Forme Palkia return to Pokémon GO in an Ultra Unlock Raid Day!",
+			"pt_br": "Os formidáveis Dialga e Palkia, ambos na Forma Origem, retornam ao Pokémon GO em um Ultrabônus: dia de Reides!"
+		},
+		"subtitle": {
+			"en": "Ultra Unlock: Origin Raid Day",
+			"pt_br": "Ultrabônus: dia de Reides de Origem"
+		},
+		"startDate": 1754823600000,
+		"endDate": 1754845200000,
+		"dateRanges": [
+			{
+				"start": 1754823600000,
+				"end": 1754845200000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/H7lp4SmO9Gs8ZzYGsWxo9-Txkq6E5hunffxXvRqVheMyXN7dcOLYNCFsC9TG5KKOVmgnUnk3LHWCWAd9pywMBDgf267UD1Rsjg=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [
+			{
+				"speciesId": "dialga_origin",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "palkia_origin",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"eggs": [],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Remote Raid Pass limit increased to 20 from Saturday, August 9, at 2:00 p.m. to Sunday, August 10, 2025, at 8:00 p.m. PDT.",
+				"Receive up to five additional free Raid Passes from spinning Gym Photo Discs (for a total of six).",
+				"Increased chance of encountering Shiny Dialga and Palkia in their Origin Formes from raids.",
+				"1.5× XP from Raid Battles",
+				"Increased chance to get Rare Candy XL from in-person Raid Battles for Trainers level 31 and up"
+			],
+			"pt_br": [
+				"O limite de Passes de Reide a Distância será aumentado para 20, de sábado, 9 de agosto, às 14h PDT (18h no horário de Brasília), a 10 de agosto de 2025, às 20h PDT (meia-noite no horário de Brasília).",
+				"Recebam até cinco Passes de Reide gratuitos adicionais ao girar fotodiscos em Ginásicos (em um total de seis).",
+				"Maior chance de encontrar Dialga Brilhante e Palkia Brilhante em suas Formas Origem em Reides.",
+				"1,5× mais PE em Batalhas de Reide",
+				"Maior chance de receber Doce Raro GG em Batalhas de Reide presenciais para Treinadoras e Treinadores do nível 31 e superior"
+			]
+		}
+	},
+	{
 		"id": "munchlax-hatch-day-2025-0",
 		"url": "https://pokemongo.com/en/post/munchlax-hatch-day-2025/",
 		"title": {
@@ -22,7 +77,13 @@
 		"source": "pokemongo",
 		"wild": [],
 		"raids": [],
-		"eggs": [],
+		"eggs": [
+			{
+				"speciesId": "munchlax",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"researches": [],
 		"incenses": [],
 		"lures": [],
@@ -71,7 +132,10 @@
 				"1/2 Egg Hatch Distance*",
 				"*This bonus is active throughout the Munchlax Hatch Day event."
 			],
-			"pt_br": []
+			"pt_br": [
+				"1/2 da distância para chocar Ovo*",
+				"*Esse bônus estará ativo em todo o evento Dia de Chocar Munchlax."
+			]
 		}
 	},
 	{
@@ -589,6 +653,11 @@
 		"incenses": [],
 		"lures": [
 			{
+				"speciesId": "chatot",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "jigglypuff",
 				"shiny": true,
 				"kind": ""
@@ -600,11 +669,6 @@
 			},
 			{
 				"speciesId": "kricketot",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "chatot",
 				"shiny": true,
 				"kind": ""
 			},
@@ -966,6 +1030,11 @@
 		"source": "pokemongo",
 		"wild": [
 			{
+				"speciesId": "rookidee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "magnemite",
 				"shiny": true,
 				"kind": ""
@@ -997,11 +1066,6 @@
 			},
 			{
 				"speciesId": "noibat",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "rookidee",
 				"shiny": true,
 				"kind": ""
 			},

@@ -238,37 +238,13 @@ class PokemonGoSource implements IEventSource {
 		);
 		const postPromises = translatedPosts.map((post) => {
 			try {
-				const originalEvent = this.findMatchingOriginalEvent(
-					post,
-					originalEvents
-				);
-				if (!originalEvent) {
-					return [];
-				}
-
-				return this.parsePostForTranslations(
-					post,
-					originalEvent.bonusSectionIndex
-				);
+				return this.parsePostForTranslations(post, originalEvents);
 			} catch {
 				return [];
 			}
 		});
 
 		return (await Promise.all(postPromises)).flat();
-	}
-
-	/**
-	 * Finds the matching original event for a translated post.
-	 */
-	private findMatchingOriginalEvent(
-		post: PokemonGoPost,
-		originalEvents: Array<IParsedEvent>
-	): IParsedEvent | undefined {
-		return originalEvents.find(
-			(e) =>
-				this.getShorterUrlVersion(e.url) === this.getShorterUrlVersion(post.url)
-		);
 	}
 
 	/**
@@ -285,7 +261,7 @@ class PokemonGoSource implements IEventSource {
 
 	private parsePostForTranslations(
 		post: PokemonGoPost,
-		bonusSectionindex: number
+		originalEvents: Array<IParsedEvent>
 	): Array<IParsedEvent> {
 		const { parser, subEvents } = this.createParserAndGetSubEvents(post);
 		const events: Array<IParsedEvent> = [];
@@ -293,9 +269,18 @@ class PokemonGoSource implements IEventSource {
 		for (let i = 0; i < subEvents.length; i++) {
 			const subEvent: IPokemonGoEventBlockParser = subEvents[i];
 			const sectionElements = subEvent.getEventBlocks();
+			// Find the matching original event for this subevent
+			const matchingOriginalEvent = originalEvents.find(
+				(e) =>
+					this.getShorterUrlVersion(e.url) ===
+						this.getShorterUrlVersion(post.url) &&
+					e.id.endsWith('-' + String(i)) &&
+					e.bonusSectionIndex !== undefined
+			);
+			const bonusSectionIndex = matchingOriginalEvent?.bonusSectionIndex ?? -1;
 			const parsedContent = this.parseTranslatedBonusFromPost(
 				sectionElements,
-				bonusSectionindex
+				bonusSectionIndex
 			);
 			const event = buildEventObject(
 				post,

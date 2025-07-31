@@ -493,7 +493,18 @@ class PokemonGoSource implements IEventSource {
 					(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
 				);
 
-				eventData.raids.push(...parsedPkm);
+				const updatedParsedPkm = parsedPkm.map((pkm) => {
+					const gmEntry = gameMasterPokemon[pkm.speciesId];
+					if (gmEntry?.isMega) {
+						return { ...pkm, kind: 'mega' };
+					}
+					if (gmEntry?.isLegendary) {
+						return { ...pkm, kind: '5' };
+					}
+					return pkm;
+				});
+
+				eventData.raids.push(...updatedParsedPkm);
 				return;
 			}
 

@@ -49,7 +49,12 @@ class PokemonMatcher {
 				continue;
 			}
 			const raidLIndex = currP.indexOf(' raids');
-			if (raidLIndex !== -1) {
+			if (
+				raidLIndex !== -1 &&
+				!currP.includes('will return to') &&
+				!currP.includes('will appear in')
+			) {
+				console.log(currP);
 				raidLevel = currP.substring(0, raidLIndex);
 				for (const [key, value] of Object.entries(RAID_LEVEL_MAPPINGS)) {
 					raidLevel = raidLevel.replaceAll(key, value);
@@ -426,7 +431,6 @@ export const extractPokemonSpeciesIdsFromElements = (
 	const parsedPokemon = textes.filter(
 		(t) =>
 			t !== 'All' &&
-			t.split(' ').length <= 30 &&
 			(whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
 				!blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
 	);

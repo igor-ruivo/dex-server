@@ -46,9 +46,9 @@ const EVENT_SECTION_TYPES = {
 		'Field Research task rewards',
 		'Field Research',
 		'Timed Research',
-		'Paid Timed Research'
+		'Paid Timed Research',
 	],
-	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut'],
+	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],
 	FEATURED: ['Featured Pokémon'],
 };

@@ -38,18 +38,19 @@ class PokemonGoPostParser implements IPokemonGoHtmlParser {
 					'h2.ContainerBlock__headline>span.ContainerBlock__headline__title'
 				)?.textContent ?? '',
 			imgUrl: e.querySelector('.ImageBlock>img')?.getAttribute('src') ?? '',
-			dateString:
-				(() => {
-					const body = e.querySelector(':scope>div.ContainerBlock>div.ContainerBlock__body');
-					if (!body) {
-						return '';
-					}
-					const firstParagraph = body.querySelector('p');
-					if (firstParagraph) {
-						return firstParagraph.textContent ?? '';
-					}
-					return body.textContent ?? '';
-				})(),
+			dateString: (() => {
+				const body = e.querySelector(
+					':scope>div.ContainerBlock>div.ContainerBlock__body'
+				);
+				if (!body) {
+					return '';
+				}
+				const firstParagraph = body.querySelector('p');
+				if (firstParagraph) {
+					return firstParagraph.textContent ?? '';
+				}
+				return body.textContent ?? '';
+			})(),
 			getEventBlocks: () =>
 				Array.from(e.getElementsByClassName('block--ContainerBlock')).map(
 					(b) => b.children[0]

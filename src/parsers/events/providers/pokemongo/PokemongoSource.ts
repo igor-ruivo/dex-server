@@ -46,6 +46,7 @@ const EVENT_SECTION_TYPES = {
 		'Field Research task rewards',
 		'Field Research',
 		'Timed Research',
+		'Paid Timed Research'
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut'],
 	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],

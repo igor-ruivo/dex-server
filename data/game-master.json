@@ -28037,6 +28037,49 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"cradily_b": {
+		"dex": 346,
+		"speciesId": "cradily_b",
+		"speciesName": "Cradily",
+		"types": [
+			"Rock",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
+		"goImageUrl": "346.icon.png",
+		"shinyGoImageUrl": "346.s.icon.png",
+		"baseStats": {
+			"atk": 152,
+			"def": 194,
+			"hp": 200
+		},
+		"fastMoves": [
+			"ACID",
+			"INFESTATION",
+			"BULLET_SEED"
+		],
+		"chargedMoves": [
+			"BULLDOZE",
+			"GRASS_KNOT",
+			"STONE_EDGE",
+			"ROCK_SLIDE",
+			"ROCK_TOMB",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_LILEEP",
+			"parent": "lileep"
+		},
+		"aliasId": "cradily",
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"cradily_shadow": {
 		"dex": 346,
 		"speciesId": "cradily_shadow",
@@ -38242,44 +38285,6 @@
 		"isMythical": false,
 		"isBeast": false
 	},
-	"giratina_origin": {
-		"dex": 487,
-		"speciesId": "giratina_origin",
-		"speciesName": "Giratina (Origin)",
-		"types": [
-			"Ghost",
-			"Dragon"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487_f2.png",
-		"goImageUrl": "487.fORIGIN.icon.png",
-		"shinyGoImageUrl": "487.fORIGIN.s.icon.png",
-		"baseStats": {
-			"atk": 225,
-			"def": 187,
-			"hp": 284
-		},
-		"fastMoves": [
-			"DRAGON_TAIL",
-			"SHADOW_CLAW"
-		],
-		"chargedMoves": [
-			"OMINOUS_WIND",
-			"DRAGON_PULSE",
-			"SHADOW_BALL",
-			"SHADOW_FORCE",
-			"RETURN"
-		],
-		"eliteMoves": [
-			"SHADOW_FORCE"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"form": "Origin",
-		"isLegendary": true,
-		"isMythical": false,
-		"isBeast": false
-	},
 	"giratina_altered_shadow": {
 		"dex": 487,
 		"speciesId": "giratina_altered_shadow",
@@ -38353,6 +38358,44 @@
 		"isMega": false,
 		"aliasId": "giratina_altered_shadow",
 		"form": "Altered",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"giratina_origin": {
+		"dex": 487,
+		"speciesId": "giratina_origin",
+		"speciesName": "Giratina (Origin)",
+		"types": [
+			"Ghost",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487_f2.png",
+		"goImageUrl": "487.fORIGIN.icon.png",
+		"shinyGoImageUrl": "487.fORIGIN.s.icon.png",
+		"baseStats": {
+			"atk": 225,
+			"def": 187,
+			"hp": 284
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"OMINOUS_WIND",
+			"DRAGON_PULSE",
+			"SHADOW_BALL",
+			"SHADOW_FORCE",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"SHADOW_FORCE"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Origin",
 		"isLegendary": true,
 		"isMythical": false,
 		"isBeast": false
@@ -49108,7 +49151,6 @@
 		],
 		"chargedMoves": [
 			"BRICK_BREAK",
-			"ROCK_SLIDE",
 			"SEED_BOMB"
 		],
 		"eliteMoves": [],

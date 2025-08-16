@@ -11481,7 +11481,8 @@
 		"chargedMoves": [
 			"BUBBLE_BEAM",
 			"POWER_GEM",
-			"SWIFT"
+			"SWIFT",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [
@@ -11493,6 +11494,46 @@
 			"id": "FAMILY_STARYU",
 			"evolutions": [
 				"starmie"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"staryu_shadow": {
+		"dex": 120,
+		"speciesId": "staryu_shadow",
+		"speciesName": "Staryu (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png",
+		"goImageUrl": "120.icon.png",
+		"shinyGoImageUrl": "120.s.icon.png",
+		"baseStats": {
+			"atk": 137,
+			"def": 112,
+			"hp": 102
+		},
+		"fastMoves": [
+			"TACKLE",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"BUBBLE_BEAM",
+			"POWER_GEM",
+			"SWIFT",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_STARYU",
+			"evolutions": [
+				"starmie_shadow"
 			]
 		},
 		"form": "",
@@ -11530,7 +11571,8 @@
 			"PSYBEAM",
 			"PSYCHIC",
 			"THUNDER",
-			"SURF"
+			"SURF",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"TACKLE"
@@ -11543,6 +11585,53 @@
 		"family": {
 			"id": "FAMILY_STARYU",
 			"parent": "staryu"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"starmie_shadow": {
+		"dex": 121,
+		"speciesId": "starmie_shadow",
+		"speciesName": "Starmie (Shadow)",
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
+		"goImageUrl": "121.icon.png",
+		"shinyGoImageUrl": "121.s.icon.png",
+		"baseStats": {
+			"atk": 210,
+			"def": 184,
+			"hp": 155
+		},
+		"fastMoves": [
+			"TACKLE",
+			"WATER_GUN",
+			"PSYWAVE",
+			"HIDDEN_POWER"
+		],
+		"chargedMoves": [
+			"HYDRO_PUMP",
+			"ICE_BEAM",
+			"POWER_GEM",
+			"PSYBEAM",
+			"PSYCHIC",
+			"THUNDER",
+			"SURF",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"TACKLE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_STARYU",
+			"parent": "staryu_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -27948,6 +28037,49 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"cradily_b": {
+		"dex": 346,
+		"speciesId": "cradily_b",
+		"speciesName": "Cradily",
+		"types": [
+			"Rock",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
+		"goImageUrl": "346.icon.png",
+		"shinyGoImageUrl": "346.s.icon.png",
+		"baseStats": {
+			"atk": 152,
+			"def": 194,
+			"hp": 200
+		},
+		"fastMoves": [
+			"ACID",
+			"INFESTATION",
+			"BULLET_SEED"
+		],
+		"chargedMoves": [
+			"BULLDOZE",
+			"GRASS_KNOT",
+			"STONE_EDGE",
+			"ROCK_SLIDE",
+			"ROCK_TOMB",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_LILEEP",
+			"parent": "lileep"
+		},
+		"aliasId": "cradily",
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"cradily_shadow": {
 		"dex": 346,
 		"speciesId": "cradily_shadow",
@@ -38139,7 +38271,8 @@
 			"ANCIENT_POWER",
 			"DRAGON_CLAW",
 			"SHADOW_SNEAK",
-			"SHADOW_FORCE"
+			"SHADOW_FORCE",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"SHADOW_FORCE"
@@ -38147,6 +38280,83 @@
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
+		"form": "Altered",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"giratina_altered_shadow": {
+		"dex": 487,
+		"speciesId": "giratina_altered_shadow",
+		"speciesName": "Giratina (Altered) (Shadow)",
+		"types": [
+			"Ghost",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487.png",
+		"goImageUrl": "487.icon.png",
+		"shinyGoImageUrl": "487.s.icon.png",
+		"baseStats": {
+			"atk": 187,
+			"def": 225,
+			"hp": 284
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"ANCIENT_POWER",
+			"DRAGON_CLAW",
+			"SHADOW_SNEAK",
+			"SHADOW_FORCE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"SHADOW_FORCE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"form": "Altered",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"giratina_altered_shadow_b": {
+		"dex": 487,
+		"speciesId": "giratina_altered_shadow_b",
+		"speciesName": "Giratina (Altered) (Shadow)",
+		"types": [
+			"Ghost",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487.png",
+		"goImageUrl": "487.icon.png",
+		"shinyGoImageUrl": "487.s.icon.png",
+		"baseStats": {
+			"atk": 187,
+			"def": 225,
+			"hp": 284
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"ANCIENT_POWER",
+			"DRAGON_CLAW",
+			"SHADOW_SNEAK",
+			"SHADOW_FORCE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"SHADOW_FORCE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"aliasId": "giratina_altered_shadow",
 		"form": "Altered",
 		"isLegendary": true,
 		"isMythical": false,
@@ -38176,7 +38386,8 @@
 			"OMINOUS_WIND",
 			"DRAGON_PULSE",
 			"SHADOW_BALL",
-			"SHADOW_FORCE"
+			"SHADOW_FORCE",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"SHADOW_FORCE"
@@ -48364,7 +48575,8 @@
 			"AERIAL_ACE",
 			"HEAT_WAVE",
 			"SWIFT",
-			"FLY"
+			"FLY",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -48374,6 +48586,48 @@
 			"id": "FAMILY_FLETCHLING",
 			"evolutions": [
 				"fletchinder"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"fletchling_shadow": {
+		"dex": 661,
+		"speciesId": "fletchling_shadow",
+		"speciesName": "Fletchling (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/661.png",
+		"goImageUrl": "661.icon.png",
+		"shinyGoImageUrl": "661.s.icon.png",
+		"baseStats": {
+			"atk": 95,
+			"def": 80,
+			"hp": 128
+		},
+		"fastMoves": [
+			"PECK",
+			"QUICK_ATTACK"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"HEAT_WAVE",
+			"SWIFT",
+			"FLY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FLETCHLING",
+			"evolutions": [
+				"fletchinder_shadow"
 			]
 		},
 		"form": "",
@@ -48406,7 +48660,8 @@
 			"AERIAL_ACE",
 			"HEAT_WAVE",
 			"FLAME_CHARGE",
-			"FLY"
+			"FLY",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -48417,6 +48672,50 @@
 			"parent": "fletchling",
 			"evolutions": [
 				"talonflame"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"fletchinder_shadow": {
+		"dex": 662,
+		"speciesId": "fletchinder_shadow",
+		"speciesName": "Fletchinder (Shadow)",
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/662.png",
+		"goImageUrl": "662.icon.png",
+		"shinyGoImageUrl": "662.s.icon.png",
+		"baseStats": {
+			"atk": 145,
+			"def": 110,
+			"hp": 158
+		},
+		"fastMoves": [
+			"PECK",
+			"EMBER",
+			"STEEL_WING"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"HEAT_WAVE",
+			"FLAME_CHARGE",
+			"FLY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FLETCHLING",
+			"parent": "fletchling_shadow",
+			"evolutions": [
+				"talonflame_shadow"
 			]
 		},
 		"form": "",
@@ -48451,7 +48750,8 @@
 			"FIRE_BLAST",
 			"FLAME_CHARGE",
 			"HURRICANE",
-			"FLY"
+			"FLY",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"INCINERATE"
@@ -48462,6 +48762,51 @@
 		"family": {
 			"id": "FAMILY_FLETCHLING",
 			"parent": "fletchinder"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"talonflame_shadow": {
+		"dex": 663,
+		"speciesId": "talonflame_shadow",
+		"speciesName": "Talonflame (Shadow)",
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/663.png",
+		"goImageUrl": "663.icon.png",
+		"shinyGoImageUrl": "663.s.icon.png",
+		"baseStats": {
+			"atk": 176,
+			"def": 155,
+			"hp": 186
+		},
+		"fastMoves": [
+			"PECK",
+			"FIRE_SPIN",
+			"STEEL_WING",
+			"INCINERATE"
+		],
+		"chargedMoves": [
+			"BRAVE_BIRD",
+			"FIRE_BLAST",
+			"FLAME_CHARGE",
+			"HURRICANE",
+			"FLY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"INCINERATE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FLETCHLING",
+			"parent": "fletchinder_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -48806,7 +49151,6 @@
 		],
 		"chargedMoves": [
 			"BRICK_BREAK",
-			"ROCK_SLIDE",
 			"SEED_BOMB"
 		],
 		"eliteMoves": [],
@@ -51919,7 +52263,8 @@
 		"chargedMoves": [
 			"DRILL_PECK",
 			"AERIAL_ACE",
-			"SKY_ATTACK"
+			"SKY_ATTACK",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51929,6 +52274,47 @@
 			"id": "FAMILY_PIKIPEK",
 			"evolutions": [
 				"trumbeak"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"pikipek_shadow": {
+		"dex": 731,
+		"speciesId": "pikipek_shadow",
+		"speciesName": "Pikipek (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/731.png",
+		"goImageUrl": "731.icon.png",
+		"shinyGoImageUrl": "731.s.icon.png",
+		"baseStats": {
+			"atk": 136,
+			"def": 59,
+			"hp": 111
+		},
+		"fastMoves": [
+			"PECK",
+			"ROCK_SMASH"
+		],
+		"chargedMoves": [
+			"DRILL_PECK",
+			"AERIAL_ACE",
+			"SKY_ATTACK",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_PIKIPEK",
+			"evolutions": [
+				"trumbeak_shadow"
 			]
 		},
 		"form": "",
@@ -51959,7 +52345,8 @@
 		"chargedMoves": [
 			"DRILL_PECK",
 			"ROCK_BLAST",
-			"SKY_ATTACK"
+			"SKY_ATTACK",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51970,6 +52357,48 @@
 			"parent": "pikipek",
 			"evolutions": [
 				"toucannon"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"trumbeak_shadow": {
+		"dex": 732,
+		"speciesId": "trumbeak_shadow",
+		"speciesName": "Trumbeak (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/732.png",
+		"goImageUrl": "732.icon.png",
+		"shinyGoImageUrl": "732.s.icon.png",
+		"baseStats": {
+			"atk": 159,
+			"def": 100,
+			"hp": 146
+		},
+		"fastMoves": [
+			"PECK",
+			"ROCK_SMASH"
+		],
+		"chargedMoves": [
+			"DRILL_PECK",
+			"ROCK_BLAST",
+			"SKY_ATTACK",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_PIKIPEK",
+			"parent": "pikipek_shadow",
+			"evolutions": [
+				"toucannon_shadow"
 			]
 		},
 		"form": "",
@@ -52001,7 +52430,8 @@
 		"chargedMoves": [
 			"DRILL_PECK",
 			"ROCK_BLAST",
-			"FLASH_CANNON"
+			"FLASH_CANNON",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -52010,6 +52440,46 @@
 		"family": {
 			"id": "FAMILY_PIKIPEK",
 			"parent": "trumbeak"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"toucannon_shadow": {
+		"dex": 733,
+		"speciesId": "toucannon_shadow",
+		"speciesName": "Toucannon (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/733.png",
+		"goImageUrl": "733.icon.png",
+		"shinyGoImageUrl": "733.s.icon.png",
+		"baseStats": {
+			"atk": 222,
+			"def": 146,
+			"hp": 190
+		},
+		"fastMoves": [
+			"PECK",
+			"ROCK_SMASH",
+			"BULLET_SEED"
+		],
+		"chargedMoves": [
+			"DRILL_PECK",
+			"ROCK_BLAST",
+			"FLASH_CANNON",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_PIKIPEK",
+			"parent": "trumbeak_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -52114,7 +52584,8 @@
 		"chargedMoves": [
 			"X_SCISSOR",
 			"VICE_GRIP",
-			"CRUNCH"
+			"CRUNCH",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -52124,6 +52595,46 @@
 			"id": "FAMILY_GRUBBIN",
 			"evolutions": [
 				"charjabug"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"grubbin_shadow": {
+		"dex": 736,
+		"speciesId": "grubbin_shadow",
+		"speciesName": "Grubbin (Shadow)",
+		"types": [
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/736.png",
+		"goImageUrl": "736.icon.png",
+		"shinyGoImageUrl": "736.s.icon.png",
+		"baseStats": {
+			"atk": 115,
+			"def": 85,
+			"hp": 132
+		},
+		"fastMoves": [
+			"BUG_BITE",
+			"SPARK"
+		],
+		"chargedMoves": [
+			"X_SCISSOR",
+			"VICE_GRIP",
+			"CRUNCH",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_GRUBBIN",
+			"evolutions": [
+				"charjabug_shadow"
 			]
 		},
 		"form": "",
@@ -52155,7 +52666,8 @@
 		"chargedMoves": [
 			"X_SCISSOR",
 			"DISCHARGE",
-			"CRUNCH"
+			"CRUNCH",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"VOLT_SWITCH"
@@ -52168,6 +52680,51 @@
 			"parent": "grubbin",
 			"evolutions": [
 				"vikavolt"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"charjabug_shadow": {
+		"dex": 737,
+		"speciesId": "charjabug_shadow",
+		"speciesName": "Charjabug (Shadow)",
+		"types": [
+			"Bug",
+			"Electric"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/737.png",
+		"goImageUrl": "737.icon.png",
+		"shinyGoImageUrl": "737.s.icon.png",
+		"baseStats": {
+			"atk": 145,
+			"def": 161,
+			"hp": 149
+		},
+		"fastMoves": [
+			"BUG_BITE",
+			"SPARK",
+			"VOLT_SWITCH"
+		],
+		"chargedMoves": [
+			"X_SCISSOR",
+			"DISCHARGE",
+			"CRUNCH",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"VOLT_SWITCH"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_GRUBBIN",
+			"parent": "grubbin_shadow",
+			"evolutions": [
+				"vikavolt_shadow"
 			]
 		},
 		"form": "",
@@ -52201,7 +52758,8 @@
 			"X_SCISSOR",
 			"DISCHARGE",
 			"CRUNCH",
-			"FLY"
+			"FLY",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"VOLT_SWITCH"
@@ -52212,6 +52770,50 @@
 		"family": {
 			"id": "FAMILY_GRUBBIN",
 			"parent": "charjabug"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"vikavolt_shadow": {
+		"dex": 738,
+		"speciesId": "vikavolt_shadow",
+		"speciesName": "Vikavolt (Shadow)",
+		"types": [
+			"Bug",
+			"Electric"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/738.png",
+		"goImageUrl": "738.icon.png",
+		"shinyGoImageUrl": "738.s.icon.png",
+		"baseStats": {
+			"atk": 254,
+			"def": 158,
+			"hp": 184
+		},
+		"fastMoves": [
+			"BUG_BITE",
+			"SPARK",
+			"MUD_SLAP",
+			"VOLT_SWITCH"
+		],
+		"chargedMoves": [
+			"X_SCISSOR",
+			"DISCHARGE",
+			"CRUNCH",
+			"FLY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"VOLT_SWITCH"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_GRUBBIN",
+			"parent": "charjabug_shadow"
 		},
 		"form": "",
 		"isLegendary": false,

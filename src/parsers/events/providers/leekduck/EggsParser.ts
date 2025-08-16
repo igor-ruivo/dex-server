@@ -52,11 +52,11 @@ class EggsParser {
 				}
 				continue;
 			}
-			if (entry.classList.contains('egg-list-flex')) {
+			if (entry.classList.contains('egg-grid')) {
 				const pkmList = Array.from(entry.children).map(
 					(c) =>
 						(
-							c.getElementsByClassName('hatch-pkmn')[0] as HTMLElement
+							c.getElementsByClassName('name')[0] as HTMLElement
 						).textContent?.trim() ?? ''
 				);
 				const matcher = new PokemonMatcher(this.gameMasterPokemon, this.domain);

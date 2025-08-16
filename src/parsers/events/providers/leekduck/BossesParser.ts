@@ -8,114 +8,94 @@ import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
 
+type ClassAndMatcher = {
+	classname: string;
+	matcher: PokemonMatcher;
+	prefix: string;
+};
+
 class BossesParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
 		private readonly gameMasterPokemon: GameMasterData,
 		private readonly domains: IPokemonDomains
 	) {}
+
+	private parseSection(
+		doc: Document,
+		classMatcher: ClassAndMatcher,
+		pokemons: Array<IEntry>
+	) {
+		const entries = Array.from(
+			doc.getElementsByClassName(classMatcher.classname)[0].children
+		);
+
+		for (const currentTier of entries) {
+			let tier = '';
+			const parsedTier =
+				currentTier
+					.getElementsByTagName('h2')[0]
+					.textContent?.trim()
+					.replaceAll('Shadow', '')
+					.replaceAll('shadow', '')
+					.trim() ?? '';
+			if (parsedTier.split(' ').length === 2) {
+				tier = parsedTier.split(' ')[1].toLocaleLowerCase();
+			}
+
+			if (parsedTier.split(' ').length === 1) {
+				tier = parsedTier.toLocaleLowerCase();
+			}
+
+			if (tier === 'mega' || tier === '5') {
+				continue;
+			}
+
+			const names = currentTier.getElementsByClassName('name');
+			for (const name of names) {
+				const parsedName = `${classMatcher.prefix} ${name.textContent?.trim()}`;
+
+				const parsedPkm = classMatcher.matcher.matchPokemonFromText([
+					parsedName,
+				]);
+
+				if (parsedPkm[0]) {
+					pokemons.push({
+						shiny: parsedPkm[0].shiny,
+						speciesId: parsedPkm[0].speciesId,
+						kind: tier,
+					});
+				}
+			}
+		}
+	}
+
 	async parse() {
 		const html = await this.dataFetcher.fetchText(LEEKDUCK_BOSS_URL);
 		const dom = new JSDOM(html);
 		const doc = dom.window.document;
 
-		const entries = Array.from(doc.getElementsByClassName('list')[0].children);
-		const shadowEntries = Array.from(
-			doc.getElementsByClassName('list')[1].children
-		);
-
 		const pokemons: Array<IEntry> = [];
 
-		let tier = '';
-
+		// The domain isn't as restrictive as it could, because the current PokemonMatcher requires all the entries.
 		const normalMatcher = new PokemonMatcher(
 			this.gameMasterPokemon,
 			this.domains.normalDomain
 		);
 
-		// The domain isn't as restrictive as it could, because the current PokemonMatcher requires all the entries.
 		const shadowMatcher = new PokemonMatcher(
 			this.gameMasterPokemon,
 			this.domains.nonMegaNonShadowDomain
 		);
 
-		for (const entry of entries) {
-			if (Array.from(entry.classList).includes('header-li')) {
-				const newTier = (entry as HTMLElement).textContent?.trim() ?? '';
-				if (newTier.split(' ').length === 2) {
-					tier = newTier.split(' ')[1].toLocaleLowerCase();
-				}
-
-				if (newTier.split(' ').length === 1) {
-					tier = newTier.toLocaleLowerCase();
-				}
-				continue;
-			}
-
-			if (tier === 'mega' || tier === '5') {
-				continue;
-			}
-
-			if (!Array.from(entry.classList).includes('boss-item')) {
-				continue;
-			}
-
-			const bossName =
-				(
-					entry.getElementsByClassName('boss-name')[0] as HTMLElement
-				).textContent?.trim() ?? '';
-			const parsedPkm = normalMatcher.matchPokemonFromText([bossName]);
-
-			if (parsedPkm[0]) {
-				pokemons.push({
-					shiny: parsedPkm[0].shiny,
-					speciesId: parsedPkm[0].speciesId,
-					kind: tier,
-				});
-			}
-		}
-
-		for (const entry of shadowEntries) {
-			if (Array.from(entry.classList).includes('header-li')) {
-				const newTier =
-					(entry as HTMLElement).textContent
-						?.trim()
-						.replaceAll('Shadow', '')
-						.replaceAll('shadow', '')
-						.trim() ?? '';
-				if (newTier.split(' ').length === 2) {
-					tier = newTier.split(' ')[1].toLocaleLowerCase();
-				}
-
-				if (newTier.split(' ').length === 1) {
-					tier = newTier.toLocaleLowerCase();
-				}
-				continue;
-			}
-
-			if (tier === 'mega' || tier === '5') {
-				continue;
-			}
-
-			if (!Array.from(entry.classList).includes('boss-item')) {
-				continue;
-			}
-
-			const bossName =
-				'Shadow ' +
-				((
-					entry.getElementsByClassName('boss-name')[0] as HTMLElement
-				).textContent?.trim() ?? '');
-			const parsedPkm = shadowMatcher.matchPokemonFromText([bossName]);
-
-			if (parsedPkm[0]) {
-				pokemons.push({
-					shiny: parsedPkm[0].shiny,
-					speciesId: parsedPkm[0].speciesId,
-					kind: tier,
-				});
-			}
-		}
+		[
+			{ classname: 'raid-bosses', matcher: normalMatcher, prefix: '' },
+			{
+				classname: 'shadow-raid-bosses',
+				matcher: shadowMatcher,
+				prefix: 'Shadow',
+			},
+		].forEach((c) => this.parseSection(doc, c, pokemons));
 
 		return pokemons;
 	}

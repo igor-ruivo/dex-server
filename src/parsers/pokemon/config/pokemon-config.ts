@@ -53,6 +53,7 @@ export const POKEMON_CONFIG = {
 		'toedscruel',
 		'snom',
 		'frosmoth',
+		'dondozo',
 	]),
 
 	// Pokemon that should be excluded

@@ -57543,6 +57543,41 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"eternatus": {
+		"dex": 890,
+		"speciesId": "eternatus",
+		"speciesName": "Eternatus",
+		"types": [
+			"Poison",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/890.png",
+		"goImageUrl": "890.icon.png",
+		"shinyGoImageUrl": "890.s.icon.png",
+		"baseStats": {
+			"atk": 278,
+			"def": 192,
+			"hp": 268
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"POISON_JAB"
+		],
+		"chargedMoves": [
+			"CROSS_POISON",
+			"FLAMETHROWER",
+			"HYPER_BEAM",
+			"DYNAMAX_CANNON"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"kubfu": {
 		"dex": 891,
 		"speciesId": "kubfu",

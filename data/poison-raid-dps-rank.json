@@ -17,6 +17,15 @@
 		"chargedMoveDmg": 148,
 		"rank": 2
 	},
+	"eternatus": {
+		"fastMove": "POISON_JAB",
+		"chargedMove": "SLUDGE_BOMB",
+		"dps": 27.875862068965517,
+		"speciesId": "eternatus",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 119,
+		"rank": 3
+	},
 	"gengar_shadow": {
 		"fastMove": "LICK",
 		"chargedMove": "SLUDGE_BOMB",
@@ -24,7 +33,7 @@
 		"speciesId": "gengar_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 135,
-		"rank": 3
+		"rank": 4
 	},
 	"naganadel": {
 		"fastMove": "POISON_JAB",
@@ -33,7 +42,7 @@
 		"speciesId": "naganadel",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 113,
-		"rank": 4
+		"rank": 5
 	},
 	"toxicroak_shadow": {
 		"fastMove": "POISON_JAB",
@@ -42,7 +51,7 @@
 		"speciesId": "toxicroak_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 111,
-		"rank": 5
+		"rank": 6
 	},
 	"nihilego": {
 		"fastMove": "POISON_JAB",
@@ -51,7 +60,7 @@
 		"speciesId": "nihilego",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 108,
-		"rank": 6
+		"rank": 7
 	},
 	"scolipede_shadow": {
 		"fastMove": "POISON_JAB",
@@ -60,7 +69,7 @@
 		"speciesId": "scolipede_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 107,
-		"rank": 7
+		"rank": 8
 	},
 	"roserade": {
 		"fastMove": "POISON_JAB",
@@ -69,15 +78,6 @@
 		"speciesId": "roserade",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 105,
-		"rank": 8
-	},
-	"eternatus": {
-		"fastMove": "POISON_JAB",
-		"chargedMove": "CROSS_POISON",
-		"dps": 24.322580645161292,
-		"speciesId": "eternatus",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 56,
 		"rank": 9
 	},
 	"victreebel_shadow": {

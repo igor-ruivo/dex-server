@@ -2,511 +2,209 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "Welcome to Pokémon GO: Delightful Days",
-		"pt_br": "Bem-vindos ao Pokémon GO: Dias Deslumbrantes"
+		"en": "",
+		"pt_br": ""
 	},
 	"subtitle": {
-		"en": "Welcome to Pokémon GO: Delightful Days",
-		"pt_br": "Bem-vindos ao Pokémon GO: Dias Deslumbrantes"
+		"en": "",
+		"pt_br": ""
 	},
-	"startDate": 1748944800000,
-	"endDate": 1756807200000,
-	"imageUrl": "https://lh3.googleusercontent.com/bdW6I4EwnAj-smzAMgEZpZ4npVCgyXOIGKnWAuZrO-zBmOQgLY73wjYnR-tOtiV3izqbPgKS69ZdibrHPESWh4ZeTftQIy4Iw6s=s0-e365",
+	"startDate": 0,
+	"endDate": 0,
+	"imageUrl": "",
 	"source": "pokemongo",
-	"wild": [
-		{
-			"speciesId": "fidough",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "litwick",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "scraggy",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "glameow",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "burmy_trash",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "meowth_alolan",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "pidgeot",
-			"shiny": false,
-			"kind": "0"
-		},
-		{
-			"speciesId": "gossifleur",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "petilil",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "patrat",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "burmy_plant",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "sudowoodo",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "ampharos",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "ponyta_galarian",
-			"shiny": false,
-			"kind": "1"
-		},
-		{
-			"speciesId": "rookidee",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "bunnelby",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "stunfisk_galarian",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "burmy_sandy",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "aggron",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "nosepass",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "geodude_alolan",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "tadbulb",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "bruxish",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "dewpider",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "bidoof",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "mantine",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "gyarados",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "slowpoke_galarian",
-			"shiny": false,
-			"kind": "3"
-		},
-		{
-			"speciesId": "fomantis",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "goomy",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "deerling",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "mudkip",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "torchic",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "treecko",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "voltorb_hisuian",
-			"shiny": false,
-			"kind": "4"
-		},
-		{
-			"speciesId": "bergmite",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "deerling",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "piplup",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "chimchar",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "turtwig",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "bagon",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "qwilfish_hisuian",
-			"shiny": false,
-			"kind": "5"
-		}
-	],
+	"wild": [],
 	"raids": [],
 	"eggs": [
 		{
-			"speciesId": "smoliv",
-			"shiny": false,
+			"speciesId": "wynaut",
+			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "larvesta",
-			"shiny": false,
+			"speciesId": "azurill",
+			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "duskull",
-			"shiny": false,
+			"speciesId": "treecko",
+			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "spoink",
-			"shiny": false,
+			"speciesId": "bulbasaur",
+			"shiny": true,
 			"kind": "2"
+		},
+		{
+			"speciesId": "chingling",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "torchic",
+			"shiny": true,
+			"kind": "5"
 		},
 		{
 			"speciesId": "togepi",
-			"shiny": false,
-			"kind": "2"
-		},
-		{
-			"speciesId": "bruxish",
-			"shiny": false,
+			"shiny": true,
 			"kind": "5"
 		},
 		{
-			"speciesId": "komala",
-			"shiny": false,
+			"speciesId": "charmander",
+			"shiny": true,
 			"kind": "5"
 		},
 		{
-			"speciesId": "sandygast",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "crabrawler",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "larvesta",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "corsola_galarian",
-			"shiny": false,
+			"speciesId": "riolu",
+			"shiny": true,
 			"kind": "7"
 		},
 		{
-			"speciesId": "voltorb_hisuian",
-			"shiny": false,
+			"speciesId": "pichu",
+			"shiny": true,
 			"kind": "7"
 		},
 		{
 			"speciesId": "grimer_alolan",
-			"shiny": false,
+			"shiny": true,
 			"kind": "7"
 		},
 		{
-			"speciesId": "meowth_galarian",
-			"shiny": false,
-			"kind": "7"
-		},
-		{
-			"speciesId": "meowth_alolan",
-			"shiny": false,
-			"kind": "7"
-		},
-		{
-			"speciesId": "frigibax",
-			"shiny": false,
+			"speciesId": "mantyke",
+			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "charcadet",
-			"shiny": false,
+			"speciesId": "tyrogue",
+			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "dreepy",
-			"shiny": false,
+			"speciesId": "vulpix_alolan",
+			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "toxel",
-			"shiny": false,
-			"kind": "10"
-		},
-		{
-			"speciesId": "lapras",
-			"shiny": false,
-			"kind": "10"
-		},
-		{
-			"speciesId": "riolu",
-			"shiny": false,
+			"speciesId": "happiny",
+			"shiny": true,
 			"kind": "5",
 			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
+				"en": "October",
+				"pt_br": "October"
+			}
+		},
+		{
+			"speciesId": "bonsly",
+			"shiny": true,
+			"kind": "5",
+			"comment": {
+				"en": "October",
+				"pt_br": "October"
+			}
+		},
+		{
+			"speciesId": "mudkip",
+			"shiny": true,
+			"kind": "5",
+			"comment": {
+				"en": "October",
+				"pt_br": "October"
+			}
+		},
+		{
+			"speciesId": "squirtle",
+			"shiny": true,
+			"kind": "5",
+			"comment": {
+				"en": "October",
+				"pt_br": "October"
 			}
 		},
 		{
 			"speciesId": "munchlax",
-			"shiny": false,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "anorith",
-			"shiny": false,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "lileep",
-			"shiny": false,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "skarmory",
-			"shiny": false,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "pawniard",
-			"shiny": false,
+			"shiny": true,
 			"kind": "7",
 			"comment": {
-				"en": "Route Rewards",
-				"pt_br": "Recompensas de Rota"
+				"en": "November",
+				"pt_br": "November"
 			}
 		},
 		{
-			"speciesId": "basculin",
-			"shiny": false,
+			"speciesId": "budew",
+			"shiny": true,
 			"kind": "7",
 			"comment": {
-				"en": "Route Rewards",
-				"pt_br": "Recompensas de Rota"
+				"en": "November",
+				"pt_br": "November"
 			}
 		},
 		{
-			"speciesId": "corsola_galarian",
-			"shiny": false,
+			"speciesId": "meowth_alolan",
+			"shiny": true,
 			"kind": "7",
 			"comment": {
-				"en": "Route Rewards",
-				"pt_br": "Recompensas de Rota"
+				"en": "November",
+				"pt_br": "November"
 			}
 		},
 		{
-			"speciesId": "sneasel_hisuian",
-			"shiny": false,
-			"kind": "7",
-			"comment": {
-				"en": "Route Rewards",
-				"pt_br": "Recompensas de Rota"
-			}
-		},
-		{
-			"speciesId": "vulpix_alolan",
-			"shiny": false,
-			"kind": "7",
-			"comment": {
-				"en": "Route Rewards",
-				"pt_br": "Recompensas de Rota"
-			}
-		},
-		{
-			"speciesId": "frigibax",
-			"shiny": false,
+			"speciesId": "magby",
+			"shiny": true,
 			"kind": "10",
 			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
+				"en": "October",
+				"pt_br": "October"
 			}
 		},
 		{
-			"speciesId": "charcadet",
-			"shiny": false,
+			"speciesId": "elekid",
+			"shiny": true,
 			"kind": "10",
 			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
+				"en": "October",
+				"pt_br": "October"
 			}
 		},
 		{
-			"speciesId": "jangmo_o",
-			"shiny": false,
+			"speciesId": "kabuto",
+			"shiny": true,
 			"kind": "10",
 			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
+				"en": "October",
+				"pt_br": "October"
 			}
 		},
 		{
-			"speciesId": "gible",
-			"shiny": false,
+			"speciesId": "omanyte",
+			"shiny": true,
 			"kind": "10",
 			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "bagon",
-			"shiny": false,
-			"kind": "10",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
+				"en": "October",
+				"pt_br": "October"
 			}
 		}
 	],
-	"researches": [
-		{
-			"speciesId": "frigibax",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "charcadet",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "sinistea",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "gible",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "corsola_galarian",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "aerodactyl",
-			"shiny": false,
-			"kind": ""
-		}
-	],
+	"researches": [],
 	"incenses": [],
 	"lures": [],
 	"bonuses": {
 		"en": [
-			"One additional Special Trade per day.",
-			"Increased XP for the first catch of the day.",
-			"Double Daily Adventure Incense duration."
+			"Trainers level 31 and above will receive one guaranteed Rare Candy XL when catching a five-star Raid Boss during a Raid Hour",
+			"Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon",
+			"One additional Candy when trading Pokémon",
+			"Increased XP for a seven-day PokéStop spin streak",
+			"Increased XP and Stardust for a seven-day Pokémon catch streak",
+			"Increased XP from going up a Friendship level"
 		],
 		"pt_br": [
-			"Uma troca especial adicional por dia.",
-			"Aumento de PE para a primeira captura do dia.",
-			"O dobro de duração do Incenso de Aventura Diário."
+			"Treinadoras e Treinadores do nível 31 e superior receberão um Doce Raro GG garantido ao pegar um chefe de Reide de cinco estrelas durante uma hora de Reides",
+			"Treinadores e Treinadoras de nível 31 e superior receberão um doce GG ao trocar Pokémon",
+			"Um doce de Pokémon extra ao trocar Pokémon",
+			"Mais PE para giro em Poképaradas por sete dias consecutivos",
+			"Aumento de PE e Poeira Estelar para sete dias consecutivos de captura de Pokémon",
+			"Mais PE ao subir um nível de amizade"
 		]
 	}
 }

@@ -944,6 +944,15 @@
 		"chargedMoveDmg": 53,
 		"rank": 105
 	},
+	"xatu_shadow": {
+		"fastMove": "PECK",
+		"chargedMove": "OMINOUS_WIND",
+		"dps": 14.03448275862069,
+		"speciesId": "xatu_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 55,
+		"rank": 106
+	},
 	"weezing": {
 		"fastMove": "ROLLOUT",
 		"chargedMove": "SHADOW_BALL",
@@ -951,15 +960,6 @@
 		"speciesId": "weezing",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 76,
-		"rank": 106
-	},
-	"xatu_shadow": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "OMINOUS_WIND",
-		"dps": 13.90566037735849,
-		"speciesId": "xatu_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 55,
 		"rank": 107
 	},
 	"hypno_shadow": {

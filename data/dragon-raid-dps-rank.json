@@ -35,6 +35,15 @@
 		"chargedMoveDmg": 252,
 		"rank": 4
 	},
+	"garchomp_mega": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "BREAKING_SWIPE",
+		"dps": 34.34146341463415,
+		"speciesId": "garchomp_mega",
+		"fastMoveDmg": 24,
+		"chargedMoveDmg": 77,
+		"rank": 5
+	},
 	"dragonite_shadow": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "DRACO_METEOR",
@@ -42,7 +51,7 @@
 		"speciesId": "dragonite_shadow",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 239,
-		"rank": 5
+		"rank": 6
 	},
 	"palkia_origin": {
 		"fastMove": "DRAGON_TAIL",
@@ -51,16 +60,16 @@
 		"speciesId": "palkia_origin",
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 231,
-		"rank": 6
-	},
-	"garchomp_mega": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "OUTRAGE",
-		"dps": 32.78048780487805,
-		"speciesId": "garchomp_mega",
-		"fastMoveDmg": 24,
-		"chargedMoveDmg": 186,
 		"rank": 7
+	},
+	"garchomp_shadow": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "BREAKING_SWIPE",
+		"dps": 32.5609756097561,
+		"speciesId": "garchomp_shadow",
+		"fastMoveDmg": 23,
+		"chargedMoveDmg": 72,
+		"rank": 8
 	},
 	"salamence_mega": {
 		"fastMove": "DRAGON_TAIL",
@@ -69,7 +78,7 @@
 		"speciesId": "salamence_mega",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 233,
-		"rank": 8
+		"rank": 9
 	},
 	"dialga_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -78,15 +87,6 @@
 		"speciesId": "dialga_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 250,
-		"rank": 9
-	},
-	"garchomp_shadow": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "OUTRAGE",
-		"dps": 31,
-		"speciesId": "garchomp_shadow",
-		"fastMoveDmg": 23,
-		"chargedMoveDmg": 174,
 		"rank": 10
 	},
 	"dialga_origin": {
@@ -233,6 +233,15 @@
 		"chargedMoveDmg": 208,
 		"rank": 26
 	},
+	"garchomp": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "BREAKING_SWIPE",
+		"dps": 27,
+		"speciesId": "garchomp",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 60,
+		"rank": 27
+	},
 	"latias_mega": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "OUTRAGE",
@@ -240,7 +249,7 @@
 		"speciesId": "latias_mega",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 160,
-		"rank": 27
+		"rank": 28
 	},
 	"regidrago": {
 		"fastMove": "DRAGON_BREATH",
@@ -249,7 +258,7 @@
 		"speciesId": "regidrago",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 161,
-		"rank": 28
+		"rank": 29
 	},
 	"latias_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -258,7 +267,7 @@
 		"speciesId": "latias_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 154,
-		"rank": 29
+		"rank": 30
 	},
 	"zekrom": {
 		"fastMove": "DRAGON_BREATH",
@@ -267,15 +276,6 @@
 		"speciesId": "zekrom",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 153,
-		"rank": 30
-	},
-	"garchomp": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "OUTRAGE",
-		"dps": 25.73170731707317,
-		"speciesId": "garchomp",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 145,
 		"rank": 31
 	},
 	"exeggutor_alolan": {

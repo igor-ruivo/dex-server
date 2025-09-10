@@ -26249,6 +26249,45 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"sharpedo_mega": {
+		"dex": 319,
+		"speciesId": "sharpedo_mega",
+		"speciesName": "Sharpedo (Mega)",
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/319_f2.png",
+		"goImageUrl": "319.fMEGA.icon.png",
+		"shinyGoImageUrl": "319.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 289,
+			"def": 144,
+			"hp": 172
+		},
+		"fastMoves": [
+			"BITE",
+			"WATERFALL"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"HYDRO_PUMP",
+			"POISON_FANG",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_CARVANHA",
+			"parent": "carvanha"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"sharpedo_shadow": {
 		"dex": 319,
 		"speciesId": "sharpedo_shadow",

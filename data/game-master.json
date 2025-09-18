@@ -18377,7 +18377,8 @@
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
 			"FELL_STINGER",
-			"SCALD"
+			"SCALD",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -18426,6 +18427,44 @@
 			]
 		},
 		"form": "Hisuian",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"qwilfish_shadow": {
+		"dex": 211,
+		"speciesId": "qwilfish_shadow",
+		"speciesName": "Qwilfish (Shadow)",
+		"types": [
+			"Water",
+			"Poison"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/211.png",
+		"goImageUrl": "211.icon.png",
+		"shinyGoImageUrl": "211.s.icon.png",
+		"baseStats": {
+			"atk": 184,
+			"def": 138,
+			"hp": 163
+		},
+		"fastMoves": [
+			"POISON_STING",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"AQUA_TAIL",
+			"ICE_BEAM",
+			"SLUDGE_WAVE",
+			"ACID_SPRAY",
+			"FELL_STINGER",
+			"SCALD",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false
@@ -27339,7 +27378,8 @@
 		"chargedMoves": [
 			"AERIAL_ACE",
 			"DISARMING_VOICE",
-			"ICE_BEAM"
+			"ICE_BEAM",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -27349,6 +27389,47 @@
 			"id": "FAMILY_SWABLU",
 			"evolutions": [
 				"altaria"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"swablu_shadow": {
+		"dex": 333,
+		"speciesId": "swablu_shadow",
+		"speciesName": "Swablu (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/333.png",
+		"goImageUrl": "333.icon.png",
+		"shinyGoImageUrl": "333.s.icon.png",
+		"baseStats": {
+			"atk": 76,
+			"def": 132,
+			"hp": 128
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"PECK"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"DISARMING_VOICE",
+			"ICE_BEAM",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SWABLU",
+			"evolutions": [
+				"altaria_shadow"
 			]
 		},
 		"form": "",
@@ -27381,7 +27462,8 @@
 			"DRAGON_PULSE",
 			"SKY_ATTACK",
 			"MOONBLAST",
-			"FLAMETHROWER"
+			"FLAMETHROWER",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"MOONBLAST"
@@ -27423,7 +27505,8 @@
 			"DRAGON_PULSE",
 			"SKY_ATTACK",
 			"MOONBLAST",
-			"FLAMETHROWER"
+			"FLAMETHROWER",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"MOONBLAST"
@@ -27436,6 +27519,49 @@
 			"parent": "swablu"
 		},
 		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"altaria_shadow": {
+		"dex": 334,
+		"speciesId": "altaria_shadow",
+		"speciesName": "Altaria (Shadow)",
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
+		"goImageUrl": "334.icon.png",
+		"shinyGoImageUrl": "334.s.icon.png",
+		"baseStats": {
+			"atk": 141,
+			"def": 201,
+			"hp": 181
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"PECK"
+		],
+		"chargedMoves": [
+			"DAZZLING_GLEAM",
+			"DRAGON_PULSE",
+			"SKY_ATTACK",
+			"MOONBLAST",
+			"FLAMETHROWER",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"MOONBLAST"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SWABLU",
+			"parent": "swablu_shadow"
+		},
+		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false
@@ -27931,7 +28057,8 @@
 		"chargedMoves": [
 			"DIG",
 			"GYRO_BALL",
-			"PSYBEAM"
+			"PSYBEAM",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -27941,6 +28068,47 @@
 			"id": "FAMILY_BALTOY",
 			"evolutions": [
 				"claydol"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"baltoy_shadow": {
+		"dex": 343,
+		"speciesId": "baltoy_shadow",
+		"speciesName": "Baltoy (Shadow)",
+		"types": [
+			"Ground",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/343.png",
+		"goImageUrl": "343.icon.png",
+		"shinyGoImageUrl": "343.s.icon.png",
+		"baseStats": {
+			"atk": 77,
+			"def": 124,
+			"hp": 120
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"EXTRASENSORY"
+		],
+		"chargedMoves": [
+			"DIG",
+			"GYRO_BALL",
+			"PSYBEAM",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_BALTOY",
+			"evolutions": [
+				"claydol_shadow"
 			]
 		},
 		"form": "",
@@ -27977,7 +28145,8 @@
 			"ICE_BEAM",
 			"SHADOW_BALL",
 			"ROCK_TOMB",
-			"SCORCHING_SANDS"
+			"SCORCHING_SANDS",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -27986,6 +28155,51 @@
 		"family": {
 			"id": "FAMILY_BALTOY",
 			"parent": "baltoy"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"claydol_shadow": {
+		"dex": 344,
+		"speciesId": "claydol_shadow",
+		"speciesName": "Claydol (Shadow)",
+		"types": [
+			"Ground",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/344.png",
+		"goImageUrl": "344.icon.png",
+		"shinyGoImageUrl": "344.s.icon.png",
+		"baseStats": {
+			"atk": 140,
+			"def": 229,
+			"hp": 155
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"EXTRASENSORY",
+			"MUD_SLAP"
+		],
+		"chargedMoves": [
+			"EARTHQUAKE",
+			"GYRO_BALL",
+			"PSYCHIC",
+			"EARTH_POWER",
+			"ICE_BEAM",
+			"SHADOW_BALL",
+			"ROCK_TOMB",
+			"SCORCHING_SANDS",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_BALTOY",
+			"parent": "baltoy_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -28385,7 +28599,8 @@
 			"TACKLE"
 		],
 		"chargedMoves": [
-			"MIRROR_COAT"
+			"MIRROR_COAT",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -28395,6 +28610,44 @@
 			"id": "FAMILY_FEEBAS",
 			"evolutions": [
 				"milotic"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"feebas_shadow": {
+		"dex": 349,
+		"speciesId": "feebas_shadow",
+		"speciesName": "Feebas (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/349.png",
+		"goImageUrl": "349.icon.png",
+		"shinyGoImageUrl": "349.s.icon.png",
+		"baseStats": {
+			"atk": 29,
+			"def": 85,
+			"hp": 85
+		},
+		"fastMoves": [
+			"SPLASH",
+			"TACKLE"
+		],
+		"chargedMoves": [
+			"MIRROR_COAT",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FEEBAS",
+			"evolutions": [
+				"milotic_shadow"
 			]
 		},
 		"form": "",
@@ -28425,7 +28678,8 @@
 			"BLIZZARD",
 			"HYPER_BEAM",
 			"SURF",
-			"WRAP"
+			"WRAP",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -28434,6 +28688,45 @@
 		"family": {
 			"id": "FAMILY_FEEBAS",
 			"parent": "feebas"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"milotic_shadow": {
+		"dex": 350,
+		"speciesId": "milotic_shadow",
+		"speciesName": "Milotic (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
+		"goImageUrl": "350.icon.png",
+		"shinyGoImageUrl": "350.s.icon.png",
+		"baseStats": {
+			"atk": 192,
+			"def": 219,
+			"hp": 216
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"WATERFALL"
+		],
+		"chargedMoves": [
+			"BLIZZARD",
+			"HYPER_BEAM",
+			"SURF",
+			"WRAP",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FEEBAS",
+			"parent": "feebas_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -47141,7 +47434,8 @@
 		"chargedMoves": [
 			"DRAGON_PULSE",
 			"CRUNCH",
-			"BODY_SLAM"
+			"BODY_SLAM",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -47151,6 +47445,47 @@
 			"id": "FAMILY_DEINO",
 			"evolutions": [
 				"zweilous"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"deino_shadow": {
+		"dex": 633,
+		"speciesId": "deino_shadow",
+		"speciesName": "Deino (Shadow)",
+		"types": [
+			"Dark",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/633.png",
+		"goImageUrl": "633.icon.png",
+		"shinyGoImageUrl": "633.s.icon.png",
+		"baseStats": {
+			"atk": 116,
+			"def": 93,
+			"hp": 141
+		},
+		"fastMoves": [
+			"TACKLE",
+			"DRAGON_BREATH"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"CRUNCH",
+			"BODY_SLAM",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DEINO",
+			"evolutions": [
+				"zweilous_shadow"
 			]
 		},
 		"form": "",
@@ -47181,7 +47516,8 @@
 		"chargedMoves": [
 			"DRAGON_PULSE",
 			"DARK_PULSE",
-			"BODY_SLAM"
+			"BODY_SLAM",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -47192,6 +47528,48 @@
 			"parent": "deino",
 			"evolutions": [
 				"hydreigon"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"zweilous_shadow": {
+		"dex": 634,
+		"speciesId": "zweilous_shadow",
+		"speciesName": "Zweilous (Shadow)",
+		"types": [
+			"Dark",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/634.png",
+		"goImageUrl": "634.icon.png",
+		"shinyGoImageUrl": "634.s.icon.png",
+		"baseStats": {
+			"atk": 159,
+			"def": 135,
+			"hp": 176
+		},
+		"fastMoves": [
+			"BITE",
+			"DRAGON_BREATH"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"DARK_PULSE",
+			"BODY_SLAM",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DEINO",
+			"parent": "deino_shadow",
+			"evolutions": [
+				"hydreigon_shadow"
 			]
 		},
 		"form": "",
@@ -47223,7 +47601,8 @@
 			"DRAGON_PULSE",
 			"DARK_PULSE",
 			"FLASH_CANNON",
-			"BRUTAL_SWING"
+			"BRUTAL_SWING",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"BRUTAL_SWING"
@@ -47234,6 +47613,48 @@
 		"family": {
 			"id": "FAMILY_DEINO",
 			"parent": "zweilous"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"hydreigon_shadow": {
+		"dex": 635,
+		"speciesId": "hydreigon_shadow",
+		"speciesName": "Hydreigon (Shadow)",
+		"types": [
+			"Dark",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/635.png",
+		"goImageUrl": "635.icon.png",
+		"shinyGoImageUrl": "635.s.icon.png",
+		"baseStats": {
+			"atk": 256,
+			"def": 188,
+			"hp": 211
+		},
+		"fastMoves": [
+			"BITE",
+			"DRAGON_BREATH"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"DARK_PULSE",
+			"FLASH_CANNON",
+			"BRUTAL_SWING",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"BRUTAL_SWING"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DEINO",
+			"parent": "zweilous_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -47456,11 +47877,47 @@
 			"GRASS_KNOT",
 			"DARK_PULSE",
 			"HYPER_BEAM",
-			"HURRICANE"
+			"HURRICANE",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
 		"isShadow": false,
+		"isMega": false,
+		"form": "Incarnate",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"tornadus_incarnate_shadow": {
+		"dex": 641,
+		"speciesId": "tornadus_incarnate_shadow",
+		"speciesName": "Tornadus (Incarnate) (Shadow)",
+		"types": [
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/641.png",
+		"goImageUrl": "641.icon.png",
+		"shinyGoImageUrl": "641.s.icon.png",
+		"baseStats": {
+			"atk": 266,
+			"def": 164,
+			"hp": 188
+		},
+		"fastMoves": [
+			"BITE",
+			"AIR_SLASH"
+		],
+		"chargedMoves": [
+			"GRASS_KNOT",
+			"DARK_PULSE",
+			"HYPER_BEAM",
+			"HURRICANE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
 		"isMega": false,
 		"form": "Incarnate",
 		"isLegendary": true,
@@ -47491,7 +47948,8 @@
 			"PSYCHIC",
 			"FOCUS_BLAST",
 			"HURRICANE",
-			"BLEAKWIND_STORM"
+			"BLEAKWIND_STORM",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"BLEAKWIND_STORM"
@@ -49191,9 +49649,12 @@
 			"PETAL_BLIZZARD",
 			"PSYCHIC",
 			"DISARMING_VOICE",
-			"TRAILBLAZE"
+			"TRAILBLAZE",
+			"CHILLING_WATER"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"CHILLING_WATER"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -57330,6 +57791,72 @@
 		"isShadow": false,
 		"isMega": false,
 		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"indeedee_female": {
+		"dex": 876,
+		"speciesId": "indeedee_female",
+		"speciesName": "Indeedee (♀)",
+		"types": [
+			"Psychic",
+			"Normal"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/876.png",
+		"goImageUrl": "876.fFEMALE.icon.png",
+		"shinyGoImageUrl": "876.fFEMALE.s.icon.png",
+		"baseStats": {
+			"atk": 184,
+			"def": 184,
+			"hp": 172
+		},
+		"fastMoves": [
+			"EXTRASENSORY"
+		],
+		"chargedMoves": [
+			"PSYBEAM",
+			"PSYCHIC",
+			"ENERGY_BALL"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Female",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"indeedee_male": {
+		"dex": 876,
+		"speciesId": "indeedee_male",
+		"speciesName": "Indeedee (♂)",
+		"types": [
+			"Psychic",
+			"Normal"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/876_f2.png",
+		"goImageUrl": "876.fMALE.icon.png",
+		"shinyGoImageUrl": "876.fMALE.s.icon.png",
+		"baseStats": {
+			"atk": 208,
+			"def": 166,
+			"hp": 155
+		},
+		"fastMoves": [
+			"EXTRASENSORY"
+		],
+		"chargedMoves": [
+			"PSYBEAM",
+			"PSYCHIC",
+			"SHADOW_BALL"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Male",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

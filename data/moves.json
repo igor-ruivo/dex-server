@@ -5425,5 +5425,25 @@
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
 		}
+	},
+	"CHILLING_WATER": {
+		"moveId": "CHILLING_WATER",
+		"vId": "-1",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 65,
+		"pvpEnergy": -45,
+		"pveEnergy": -33,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"buffActivationChance": 1,
+			"targetAttackStatStageChange": -1
+		},
+		"moveName": {
+			"en": "Chilling Water",
+			"pt_br": "Chilling Water"
+		}
 	}
 }

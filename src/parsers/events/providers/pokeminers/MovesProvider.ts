@@ -313,7 +313,7 @@ class MovesProvider {
 				pveCooldown: 3.5,
 				buffs: {
 					buffActivationChance: 1,
-					targetAttackStatStageChange: 1,
+					targetAttackStatStageChange: -1,
 				},
 				moveName: chillingWaterMoveName,
 			};

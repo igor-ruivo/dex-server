@@ -293,6 +293,32 @@ class MovesProvider {
 				moveName: aegislashChargeAirSlashMoveName,
 			};
 		}
+
+    const chillingWaterMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			chillingWaterMoveName[locale] = normalizedMoveName('CHILLING_WATER');
+		});
+
+		if (!movesDictionary.CHILLING_WATER) {
+			movesDictionary.CHILLING_WATER = {
+				moveId: 'CHILLING_WATER',
+				vId: '-1',
+				type: 'water',
+				isFast: false,
+				pvpPower: 60,
+				pvePower: 65,
+				pvpEnergy: -45,
+				pveEnergy: -33,
+				pvpCooldown: 0.5,
+				pveCooldown: 3.5,
+				buffs: {
+					buffActivationChance: 1,
+					targetAttackStatStageChange: 1,
+				},
+				moveName: chillingWaterMoveName,
+			};
+		}
+		
 		return movesDictionary;
 	}
 }

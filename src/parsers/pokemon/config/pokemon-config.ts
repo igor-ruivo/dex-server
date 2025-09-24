@@ -54,6 +54,9 @@ export const POKEMON_CONFIG = {
 		'snom',
 		'frosmoth',
 		'dondozo',
+		'camerupt_mega',
+		'dipplin',
+		'hydrapple',
 	]),
 
 	// Pokemon that should be excluded

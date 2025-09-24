@@ -72,7 +72,7 @@ class SeasonParser {
 			}
 
 			const imageUrl =
-				doc.querySelector('#hero picture>img')?.getAttribute('src') ?? '';
+				doc.querySelector('picture>img')?.getAttribute('src') ?? '';
 
 			const dateText = getText(doc, '.size\\:subheading');
 			let startDate = 0,

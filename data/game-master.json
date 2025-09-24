@@ -26659,6 +26659,47 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"camerupt_mega": {
+		"dex": 323,
+		"speciesId": "camerupt_mega",
+		"speciesName": "Camerupt (Mega)",
+		"types": [
+			"Fire",
+			"Ground"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/323_f2.png",
+		"goImageUrl": "323.fMEGA.icon.png",
+		"shinyGoImageUrl": "323.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 253,
+			"def": 183,
+			"hp": 172
+		},
+		"fastMoves": [
+			"EMBER",
+			"ROCK_SMASH",
+			"INCINERATE"
+		],
+		"chargedMoves": [
+			"EARTHQUAKE",
+			"OVERHEAT",
+			"SOLAR_BEAM",
+			"EARTH_POWER",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_NUMEL",
+			"parent": "numel"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"camerupt_shadow": {
 		"dex": 323,
 		"speciesId": "camerupt_shadow",

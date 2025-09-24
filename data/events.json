@@ -20,12 +20,43 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/nkeHvXbytZ4E9wnVsc74GfhO9_PHqE1Wc_jQjt6dx2nUc1-A33gpUm5UxdJih4Sb52zZpnccloF-JdG17NEeJ_iOQ7B3iGY2YsI4gxSl4NGlZxw=e365-s0",
 		"source": "pokemongo",
-		"wild": [],
+		"wild": [
+			{
+				"speciesId": "miltank",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "combee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "smoliv",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "applin",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"raids": [],
 		"eggs": [],
 		"researches": [
 			{
 				"speciesId": "applin",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "pumpkaboo_average",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "smoliv",
 				"shiny": false,
 				"kind": ""
 			}
@@ -307,12 +338,43 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/_LRZGfER8bvic6ZP0lmACiCoO-sFSeTA6vPESHas2rS8M1jPe1E_WtoiwsJwnR-xwElm6r_SfPI2juoMAJQo0kWZ5l9I6y35DBR7HJ51Y4Wj=e365-s0",
 		"source": "pokemongo",
-		"wild": [],
+		"wild": [
+			{
+				"speciesId": "sentret",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "dunsparce",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "buneary",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "audino",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"raids": [],
 		"eggs": [],
 		"researches": [
 			{
 				"speciesId": "dunsparce",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "miltank",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "spinda",
 				"shiny": false,
 				"kind": ""
 			}
@@ -397,7 +459,28 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/9mDCV7icX5FC1kAVEeCefVL-zBxsJq5GsQT97ki21aytfOKyX7dsL3LAj8Edjs9cyMFlhB6Uc5cK2qr0JhuXr1NH3EqZOzHBEjlh3EtlBX-H-fU=w1440-e365",
 		"source": "pokemongo",
-		"wild": [],
+		"wild": [
+			{
+				"speciesId": "abra",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "lunatone",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "solrock",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "beldum",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"raids": [
 			{
 				"speciesId": "raichu_alolan",
@@ -430,9 +513,30 @@
 				"speciesId": "espurr",
 				"shiny": true,
 				"kind": ""
+			},
+			{
+				"speciesId": "indeedee_male",
+				"shiny": true,
+				"kind": ""
 			}
 		],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "ralts",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "gothita",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "wyrdeer",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -519,7 +623,23 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/zuH-ueu-JlZDF1Mg0kEjLaPNVhCErI4ijDYtZ5FgV3k1mDg4TV-w7pGJYPWX4BK3UEInEk-2qY56CKXKiaHHLAJrIg1J0AO_iDG98FkZio5Q=w1440-e365",
 		"source": "pokemongo",
-		"wild": [],
+		"wild": [
+			{
+				"speciesId": "chansey",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "snorlax",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "abra",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"raids": [],
 		"eggs": [],
 		"researches": [],
@@ -1410,7 +1530,18 @@
 				"kind": ""
 			}
 		],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "snom",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "tandemaus",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1704,6 +1835,11 @@
 		"source": "pokemongo",
 		"wild": [
 			{
+				"speciesId": "wiglett",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "snubbull",
 				"shiny": true,
 				"kind": ""
@@ -1792,16 +1928,27 @@
 				"speciesId": "sandygast",
 				"shiny": true,
 				"kind": ""
-			},
-			{
-				"speciesId": "wiglett",
-				"shiny": true,
-				"kind": ""
 			}
 		],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "beldum",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "sandygast",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "fidough",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -2147,7 +2294,18 @@
 			}
 		],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "gyarados",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "lapras",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

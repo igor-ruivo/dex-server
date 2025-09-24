@@ -235,6 +235,7 @@ class PokemonMatcher {
 			morpeko: 'morpeko_full_belly',
 			pumpkaboo: 'pumpkaboo_average',
 			gourgeist: 'gourgeist_average',
+			indeedee: 'indeedee_male',
 		};
 		for (const [key, value] of Object.entries(specialCases)) {
 			if (currP.includes(key)) {
@@ -409,6 +410,9 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'rainy form',
 		'snowy form',
 		'to encounter',
+		'might even encounter',
+		'including',
+		'and more!',
 	];
 	const blackListedKeywords = [
 		'some trainers',
@@ -428,12 +432,19 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'fog',
 		'will be available',
 	];
-	const parsedPokemon = textes.filter(
-		(t) =>
-			t !== 'All' &&
-			(whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
-				!blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
-	);
+	const parsedPokemon = textes
+		.filter(
+			(t) =>
+				t !== 'All' &&
+				(whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
+					!blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
+		)
+		.flatMap((p) =>
+			p
+				.split(/,|and more|might even encounter/)
+				.map((s) => s.trim())
+				.filter(Boolean)
+		);
 
 	// Detect shiny phrase in the text
 	const shinyPhraseRegex = /if you[’'`]?re lucky[^\n]*shiny/i;

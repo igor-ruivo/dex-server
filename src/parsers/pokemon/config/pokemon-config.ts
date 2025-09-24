@@ -57,6 +57,7 @@ export const POKEMON_CONFIG = {
 		'camerupt_mega',
 		'dipplin',
 		'hydrapple',
+		'dudunsparce',
 	]),
 
 	// Pokemon that should be excluded

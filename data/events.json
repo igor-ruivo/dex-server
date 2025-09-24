@@ -98,7 +98,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/x_JL7ye4Ai8W9xtaFJtJkgihCW0O5DpSTgtpBDbgm-Zt3PoyaRo_HL3I2TYBWnXBPq4m1xcuBeCbuqvvN9uZgEQOW1JtdmFsiQ=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "metagross_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [],
 		"incenses": [],
@@ -299,7 +305,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/xOh1C0zGmyxr4G0zCFA8Rgtcme_2G_XViZ-5Bm9CltkJFnh4yrQfljryoTEFiWsRh4WolZZoREbDus7GlaY2Fm6Nm7XYWJusupg=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "camerupt_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [],
 		"incenses": [],
@@ -363,6 +375,11 @@
 		"raids": [],
 		"eggs": [],
 		"researches": [
+			{
+				"speciesId": "dudunsparce",
+				"shiny": false,
+				"kind": ""
+			},
 			{
 				"speciesId": "dunsparce",
 				"shiny": false,
@@ -500,6 +517,11 @@
 		],
 		"eggs": [
 			{
+				"speciesId": "indeedee_male",
+				"shiny": false,
+				"kind": ""
+			},
+			{
 				"speciesId": "smoochum",
 				"shiny": true,
 				"kind": ""
@@ -511,11 +533,6 @@
 			},
 			{
 				"speciesId": "espurr",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "indeedee_male",
 				"shiny": true,
 				"kind": ""
 			}
@@ -584,7 +601,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/r2ZN8gNHdCZivmwDdpyNl3lSY9Sygon_2AN4UsDR40SPIc8o27GMOb2cLXwDXyOzqItA7sYrlIZ-o_znUi5jhBB-wzVoidMB2U4=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "sharpedo_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [],
 		"incenses": [],
@@ -928,6 +951,11 @@
 		],
 		"eggs": [],
 		"researches": [
+			{
+				"speciesId": "dondozo",
+				"shiny": true,
+				"kind": ""
+			},
 			{
 				"speciesId": "slakoth",
 				"shiny": false,
@@ -2345,7 +2373,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/lUDWzGohGO26tCXUbOHxdaB4ICaqRzqCU8hkCFS3wFEVX0CM-ZYrdSRqKLaisAp4ejT3eAeneqErSo6RuU3ftr9TvoWmpg2qgzE=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "lilligant_hisuian",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"eggs": [],
 		"researches": [],
 		"incenses": [],

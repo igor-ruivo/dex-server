@@ -51,6 +51,7 @@ const EVENT_SECTION_TYPES = {
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],
 	FEATURED: ['Featured Pokémon'],
+	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
 };
 
 /**
@@ -386,7 +387,8 @@ class PokemonGoSource implements IEventSource {
 				sectionElements,
 				gameMasterPokemon,
 				this.domain,
-				parser.getTitle().toLocaleLowerCase().includes('community day')
+				parser.getTitle().toLocaleLowerCase().includes('community day'),
+				parser.getTitle().toLocaleLowerCase().includes('raid day')
 			);
 			const event = buildEventObject(
 				post,
@@ -439,7 +441,8 @@ class PokemonGoSource implements IEventSource {
 		eventData: EventBlock,
 		gameMasterPokemon: GameMasterData,
 		domain: Array<GameMasterPokemon>,
-		isCommunityDay: boolean
+		isCommunityDay: boolean,
+		isRaidDay: boolean
 	): void {
 		if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
 			const parsedPkm = extractPokemonSpeciesIdsFromElements(
@@ -461,7 +464,8 @@ class PokemonGoSource implements IEventSource {
 		}
 		if (
 			EVENT_SECTION_TYPES.RESEARCH.some((x) => x === sectionType) ||
-			EVENT_SECTION_TYPES.FEATURED.some((x) => x === sectionType)
+			EVENT_SECTION_TYPES.FEATURED.some((x) => x === sectionType) ||
+			EVENT_SECTION_TYPES.DEBUT.some((x) => x === sectionType)
 		) {
 			if (isCommunityDay) {
 				const parsedPkm = extractPokemonSpeciesIdsFromElements(
@@ -472,6 +476,29 @@ class PokemonGoSource implements IEventSource {
 				);
 
 				eventData.wild.push(...parsedPkm);
+				return;
+			}
+
+			if (isRaidDay) {
+				const parsedPkm = extractPokemonSpeciesIdsFromElements(
+					sectionBodies,
+					new PokemonMatcher(gameMasterPokemon, domain)
+				).filter(
+					(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
+				);
+
+				const updatedParsedPkm = parsedPkm.map((pkm) => {
+					const gmEntry = gameMasterPokemon[pkm.speciesId];
+					if (gmEntry?.isMega) {
+						return { ...pkm, kind: 'mega' };
+					}
+					if (gmEntry?.isLegendary) {
+						return { ...pkm, kind: '5' };
+					}
+					return pkm;
+				});
+
+				eventData.raids.push(...updatedParsedPkm);
 				return;
 			}
 
@@ -580,7 +607,8 @@ class PokemonGoSource implements IEventSource {
 		sectionElements: Array<Element>,
 		gameMasterPokemon: GameMasterData,
 		domain: Array<GameMasterPokemon>,
-		isCommunityDay: boolean
+		isCommunityDay: boolean,
+		isRaidDay: boolean
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock();
 
@@ -608,7 +636,8 @@ class PokemonGoSource implements IEventSource {
 				eventBlock,
 				gameMasterPokemon,
 				domain,
-				isCommunityDay
+				isCommunityDay,
+				isRaidDay
 			);
 		}
 

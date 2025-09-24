@@ -38,7 +38,7 @@ class SeasonParser {
 			const dom = new JSDOM(season.html);
 			const doc = dom.window.document;
 
-			const title = getText(doc, 'h1');
+			const title = getText(doc, '.size\\:heading-1');
 
 			const bonuses = Array.from(
 				doc.querySelector('#seasonal-bonuses')?.children[1].children ?? []
@@ -74,7 +74,7 @@ class SeasonParser {
 			const imageUrl =
 				doc.querySelector('#hero picture>img')?.getAttribute('src') ?? '';
 
-			const dateText = getText(doc, '#hero-logo h1 + *');
+			const dateText = getText(doc, '.size\\:subheading');
 			let startDate = 0,
 				endDate = 0;
 			const dateRanges = parseEventDateRange(dateText);
@@ -110,7 +110,7 @@ class SeasonParser {
 
 			// Research encounters (Field Research)
 			const researches: Array<IEntry> = [];
-			const researchList = doc.getElementById('encounter-pokemon');
+			const researchList = doc.getElementById('research-breakthrough');
 			if (researchList) {
 				researches.push(
 					...extractPokemonSpeciesIdsFromElements(
@@ -122,56 +122,47 @@ class SeasonParser {
 
 			// Eggs by distance/type (legacy order and comments, with correct index mapping)
 			const eggs: Array<IEntry> = [];
-			const eggsElement = Array.from(
-				doc.getElementById('eggs')?.querySelectorAll('[role=list]') ?? []
+
+			const tabs = Array.from(doc.querySelectorAll('#eggs [data-slot="tab"]'));
+			const eggKinds = tabs.map((tab) => {
+				const label = tab.querySelector('b')?.textContent ?? '';
+				return label.replace(/\s*km Eggs\s*/i, '').trim(); // "2", "5", "7", "10" etc.
+			});
+
+			const panels = Array.from(
+				doc.querySelectorAll('#eggs [data-slot="tabpanel"]')
 			);
-			// Legacy index mapping:
-			// 0: 2km, 1: 5km, 2: 5km (Adventure Sync), 3: 7km, 4: 7km (Route), 5: 10km, 6: 10km (Adventure Sync)
-			const eggGroups = [
-				eggsElement[0], // 2km
-				eggsElement[1], // 5km
-				eggsElement[3], // 7km
-				eggsElement[5], // 10km
-				eggsElement[2], // 5km (Adventure Sync)
-				eggsElement[4], // 7km (Route)
-				eggsElement[6], // 10km (Adventure Sync)
-			];
-			const eggKindMap = ['2', '5', '7', '10', '5', '7', '10'];
 
-			// Helper to extract egg comments from a document
-			const extractEggComments = (doc: Document): Array<string> =>
-				Array.from(
-					doc
-						.getElementById('eggs')
-						?.querySelectorAll(
-							'[role=figure] > div:first-child > div:first-child'
-						) ?? []
-				)
-					.filter((el) => {
-						const figure = el.closest('[role=figure]');
-						const prev = figure?.previousElementSibling;
-						return (
-							prev &&
-							[...prev.classList].some((cls) => cls.includes('groupDivider'))
-						);
-					})
-					.map((el) => el.textContent?.trim() ?? '');
+			panels.forEach((panel, i) => {
+				const kind = eggKinds[i] ?? '';
 
-			const comments = extractEggComments(doc);
+				const figures = Array.from(panel.querySelectorAll('[role=figure]'));
+				figures.forEach((figure) => {
+					const commentText =
+						figure
+							.querySelector('._size\\:subheading_sfz9t_87')
+							?.textContent?.trim() ?? null;
 
-			eggGroups.forEach((group, i) => {
-				if (group) {
-					// For indexes 4, 5, 6 use the parsed comments array, otherwise undefined
-					const comment =
-						i >= 4
-							? { [AvailableLocales.en]: comments[i - 4] || '' }
-							: undefined;
+					// Só guarda se for múltiplas palavras (ex: "Adventure Sync", "Gift from Matteo")
+					let comment: Partial<Record<AvailableLocales, string>> | undefined;
+					if (commentText && commentText.split(/\s+/).length > 1) {
+						comment = { [AvailableLocales.en]: commentText };
+					}
+
+					const listItems = Array.from(
+						figure.querySelectorAll('[role=listitem]')
+					);
 					const entries = extractPokemonSpeciesIdsFromElements(
-						Array.from(group.querySelectorAll('[role=listitem]')),
+						listItems,
 						new PokemonMatcher(gameMasterPokemon, this.domain)
-					).map((f) => ({ ...f, kind: eggKindMap[i], comment }));
+					).map((f) => ({
+						...f,
+						kind,
+						comment,
+					}));
+
 					eggs.push(...entries);
-				}
+				});
 			});
 
 			parsedSeasons.push({

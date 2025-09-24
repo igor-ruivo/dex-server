@@ -17980,6 +17980,12 @@
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
+		"family": {
+			"id": "FAMILY_DUNSPARCE",
+			"evolutions": [
+				"dudunsparce"
+			]
+		},
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
@@ -60800,6 +60806,44 @@
 		"family": {
 			"id": "FAMILY_WOOPER_PALDEAN",
 			"parent": "wooper_paldean"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dudunsparce": {
+		"dex": 982,
+		"speciesId": "dudunsparce",
+		"speciesName": "Dudunsparce",
+		"types": [
+			"Normal"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/982.png",
+		"goImageUrl": "982.icon.png",
+		"shinyGoImageUrl": "982.s.icon.png",
+		"baseStats": {
+			"atk": 188,
+			"def": 150,
+			"hp": 268
+		},
+		"fastMoves": [
+			"BITE",
+			"ASTONISH",
+			"ROLLOUT"
+		],
+		"chargedMoves": [
+			"DIG",
+			"ROCK_SLIDE",
+			"DRILL_RUN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DUNSPARCE",
+			"parent": "dunsparce"
 		},
 		"form": "",
 		"isLegendary": false,

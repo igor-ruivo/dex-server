@@ -2,15 +2,15 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "",
-		"pt_br": ""
+		"en": "Welcome to Pokémon GO: Tales of Transformation",
+		"pt_br": "Bem-vindos ao Pokémon GO: Histórias de Transformação"
 	},
 	"subtitle": {
-		"en": "",
-		"pt_br": ""
+		"en": "Welcome to Pokémon GO: Tales of Transformation",
+		"pt_br": "Bem-vindos ao Pokémon GO: Histórias de Transformação"
 	},
-	"startDate": 0,
-	"endDate": 0,
+	"startDate": 1756807200000,
+	"endDate": 1764669600000,
 	"imageUrl": "",
 	"source": "pokemongo",
 	"wild": [],
@@ -39,154 +39,252 @@
 		{
 			"speciesId": "chingling",
 			"shiny": true,
-			"kind": "5"
+			"kind": "2"
 		},
 		{
 			"speciesId": "torchic",
 			"shiny": true,
-			"kind": "5"
+			"kind": "2"
 		},
 		{
 			"speciesId": "togepi",
 			"shiny": true,
-			"kind": "5"
+			"kind": "2"
 		},
 		{
 			"speciesId": "charmander",
 			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "riolu",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "pichu",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "grimer_alolan",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "mantyke",
-			"shiny": true,
-			"kind": "10"
-		},
-		{
-			"speciesId": "tyrogue",
-			"shiny": true,
-			"kind": "10"
-		},
-		{
-			"speciesId": "vulpix_alolan",
-			"shiny": true,
-			"kind": "10"
+			"kind": "2"
 		},
 		{
 			"speciesId": "happiny",
 			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "October",
-				"pt_br": "October"
-			}
+			"kind": "2"
 		},
 		{
 			"speciesId": "bonsly",
 			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "October",
-				"pt_br": "October"
-			}
+			"kind": "2"
 		},
 		{
 			"speciesId": "mudkip",
 			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "October",
-				"pt_br": "October"
-			}
+			"kind": "2"
 		},
 		{
 			"speciesId": "squirtle",
 			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "October",
-				"pt_br": "October"
-			}
+			"kind": "2"
+		},
+		{
+			"speciesId": "riolu",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "pichu",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "grimer_alolan",
+			"shiny": true,
+			"kind": "5"
 		},
 		{
 			"speciesId": "munchlax",
 			"shiny": true,
-			"kind": "7",
-			"comment": {
-				"en": "November",
-				"pt_br": "November"
-			}
+			"kind": "5"
 		},
 		{
 			"speciesId": "budew",
 			"shiny": true,
-			"kind": "7",
-			"comment": {
-				"en": "November",
-				"pt_br": "November"
-			}
+			"kind": "5"
 		},
 		{
 			"speciesId": "meowth_alolan",
 			"shiny": true,
-			"kind": "7",
-			"comment": {
-				"en": "November",
-				"pt_br": "November"
-			}
+			"kind": "5"
+		},
+		{
+			"speciesId": "mantyke",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "tyrogue",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "vulpix_alolan",
+			"shiny": true,
+			"kind": "5"
 		},
 		{
 			"speciesId": "magby",
 			"shiny": true,
-			"kind": "10",
+			"kind": "5",
 			"comment": {
-				"en": "October",
-				"pt_br": "October"
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
 			}
 		},
 		{
 			"speciesId": "elekid",
 			"shiny": true,
-			"kind": "10",
+			"kind": "5",
 			"comment": {
-				"en": "October",
-				"pt_br": "October"
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
 			}
 		},
 		{
 			"speciesId": "kabuto",
 			"shiny": true,
-			"kind": "10",
+			"kind": "5",
 			"comment": {
-				"en": "October",
-				"pt_br": "October"
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
 			}
 		},
 		{
 			"speciesId": "omanyte",
 			"shiny": true,
+			"kind": "5",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
+		},
+		{
+			"speciesId": "qwilfish_hisuian",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
+			"speciesId": "farfetchd_galarian",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
+			"speciesId": "sandshrew_alolan",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
+			"speciesId": "rattata_alolan",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
+			"speciesId": "voltorb_hisuian",
+			"shiny": true,
+			"kind": "7",
+			"comment": {
+				"en": "7 km Eggs from Mateo’s Gift Exchange",
+				"pt_br": "7 km Eggs from Mateo’s Gift Exchange"
+			}
+		},
+		{
+			"speciesId": "ponyta_galarian",
+			"shiny": true,
+			"kind": "7",
+			"comment": {
+				"en": "7 km Eggs from Mateo’s Gift Exchange",
+				"pt_br": "7 km Eggs from Mateo’s Gift Exchange"
+			}
+		},
+		{
+			"speciesId": "beldum",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "mawile",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "bagon",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "absol",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "sableye",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "larvitar",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "tinkatink",
+			"shiny": false,
 			"kind": "10",
 			"comment": {
-				"en": "October",
-				"pt_br": "October"
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
+		},
+		{
+			"speciesId": "druddigon",
+			"shiny": true,
+			"kind": "10",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
+		},
+		{
+			"speciesId": "aerodactyl",
+			"shiny": true,
+			"kind": "10",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
 			}
 		}
 	],
-	"researches": [],
+	"researches": [
+		{
+			"speciesId": "frigibax",
+			"shiny": true,
+			"kind": ""
+		},
+		{
+			"speciesId": "dreepy",
+			"shiny": false,
+			"kind": ""
+		},
+		{
+			"speciesId": "morpeko_full_belly",
+			"shiny": false,
+			"kind": ""
+		},
+		{
+			"speciesId": "sinistea",
+			"shiny": false,
+			"kind": ""
+		},
+		{
+			"speciesId": "aggron",
+			"shiny": true,
+			"kind": ""
+		},
+		{
+			"speciesId": "alakazam",
+			"shiny": true,
+			"kind": ""
+		}
+	],
 	"incenses": [],
 	"lures": [],
 	"bonuses": {

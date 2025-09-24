@@ -294,7 +294,7 @@ class MovesProvider {
 			};
 		}
 
-    const chillingWaterMoveName: Partial<Record<AvailableLocales, string>> = {};
+		const chillingWaterMoveName: Partial<Record<AvailableLocales, string>> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
 			chillingWaterMoveName[locale] = normalizedMoveName('CHILLING_WATER');
 		});
@@ -318,7 +318,7 @@ class MovesProvider {
 				moveName: chillingWaterMoveName,
 			};
 		}
-		
+
 		return movesDictionary;
 	}
 }

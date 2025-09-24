@@ -72,6 +72,8 @@ const EGG_COMMENT_TRANSLATIONS: Record<
 		'From Route Gift': 'Route Rewards',
 		"7 km Eggs from Mateo's Gift Exchange":
 			"7 km Eggs from Mateo's Gift Exchange",
+		'7 km Eggs from Mateo’s Gift Exchange':
+			"7 km Eggs from Mateo's Gift Exchange",
 	},
 
 	[AvailableLocales.ptbr]: {
@@ -79,6 +81,8 @@ const EGG_COMMENT_TRANSLATIONS: Record<
 		'Route Rewards': 'Recompensas de Rota',
 		'From Route Gift': 'Recompensas de Rota',
 		"7 km Eggs from Mateo's Gift Exchange":
+			'Ovos de 7 km da Troca de presentes de Mateo',
+		'7 km Eggs from Mateo’s Gift Exchange':
 			'Ovos de 7 km da Troca de presentes de Mateo',
 	},
 };

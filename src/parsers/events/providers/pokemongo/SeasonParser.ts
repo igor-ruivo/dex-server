@@ -138,10 +138,11 @@ class SeasonParser {
 
 				const figures = Array.from(panel.querySelectorAll('[role=figure]'));
 				figures.forEach((figure) => {
-					const commentText =
-						figure
-							.querySelector('._size\\:subheading_sfz9t_87')
-							?.textContent?.trim() ?? null;
+					const candidate = figure.children[0].children[0];
+
+					const commentText = candidate.getAttribute('role')
+						? null
+						: (candidate?.textContent?.trim() ?? null);
 
 					// Só guarda se for múltiplas palavras (ex: "Adventure Sync", "Gift from Matteo")
 					let comment: Partial<Record<AvailableLocales, string>> | undefined;

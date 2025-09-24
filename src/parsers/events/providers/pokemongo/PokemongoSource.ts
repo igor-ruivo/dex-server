@@ -38,7 +38,7 @@ const EVENT_SECTION_TYPES = {
 		'Event-themed Pokémon',
 	],
 	EGGS: ['Eggs'],
-	LURES: ['Encounters from Lure Modules'],
+	LURES: ['Encounters from Lure Modules', 'Lure Module Bonus'],
 	RESEARCH: [
 		'Field Research Task Rewards',
 		'Field Research Task Encounters',
@@ -47,6 +47,7 @@ const EVENT_SECTION_TYPES = {
 		'Field Research',
 		'Timed Research',
 		'Paid Timed Research',
+		'Community Day Special Research',
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],
@@ -476,7 +477,6 @@ class PokemonGoSource implements IEventSource {
 				);
 
 				eventData.wild.push(...parsedPkm);
-				return;
 			}
 
 			if (isRaidDay) {
@@ -499,7 +499,6 @@ class PokemonGoSource implements IEventSource {
 				});
 
 				eventData.raids.push(...updatedParsedPkm);
-				return;
 			}
 
 			if (

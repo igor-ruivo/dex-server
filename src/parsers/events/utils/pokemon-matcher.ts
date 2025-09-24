@@ -420,7 +420,6 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'appearing',
 		'lucky, you m',
 		' tms',
-		'and more',
 		'wild encounters',
 		'sunny',
 		'event-themed',
@@ -430,7 +429,6 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'cloudy',
 		'windy',
 		'fog',
-		'will be available',
 	];
 	const parsedPokemon = textes
 		.filter(

@@ -139,7 +139,8 @@ const buildEventObject = (
 	endDate: number,
 	dateRanges: Array<{ start: number; end: number }>,
 	parsedContent: EventBlock,
-	index: number
+	index: number,
+	isSingleSubEvent: boolean
 ): IParsedEvent => {
 	return {
 		id: buildEventId(post, index),
@@ -149,7 +150,9 @@ const buildEventObject = (
 		startDate,
 		endDate,
 		dateRanges,
-		imageUrl: subEvent.imgUrl || parser.getImgUrl(),
+		imageUrl: isSingleSubEvent
+			? parser.getImgUrl()
+			: subEvent.imgUrl || parser.getImgUrl(),
 		source: 'pokemongo' as const,
 		wild: parsedContent.wild,
 		raids: parsedContent.raids,
@@ -267,6 +270,8 @@ class PokemonGoSource implements IEventSource {
 		const { parser, subEvents } = this.createParserAndGetSubEvents(post);
 		const events: Array<IParsedEvent> = [];
 
+		const isSingleSubEvent = subEvents.length <= 2;
+
 		for (let i = 0; i < subEvents.length; i++) {
 			const subEvent: IPokemonGoEventBlockParser = subEvents[i];
 			const sectionElements = subEvent.getEventBlocks();
@@ -291,7 +296,8 @@ class PokemonGoSource implements IEventSource {
 				0,
 				[],
 				parsedContent,
-				i
+				i,
+				isSingleSubEvent
 			);
 
 			events.push(event);
@@ -364,6 +370,8 @@ class PokemonGoSource implements IEventSource {
 		const { parser, subEvents } = this.createParserAndGetSubEvents(post);
 		const events: Array<IParsedEvent> = [];
 
+		const isSingleSubEvent = subEvents.length <= 2;
+
 		for (let i = 0; i < subEvents.length; i++) {
 			const subEvent: IPokemonGoEventBlockParser = subEvents[i];
 			const dateRanges = parseEventDateRange(subEvent.dateString);
@@ -388,7 +396,8 @@ class PokemonGoSource implements IEventSource {
 				endDate,
 				dateRanges,
 				parsedContent,
-				i
+				i,
+				isSingleSubEvent
 			);
 
 			if (this.eventIsRelevant(event)) {

@@ -58,6 +58,7 @@ export const POKEMON_CONFIG = {
 		'dipplin',
 		'hydrapple',
 		'dudunsparce',
+		'metagross_mega',
 	]),
 
 	// Pokemon that should be excluded

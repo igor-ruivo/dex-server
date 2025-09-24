@@ -30658,6 +30658,49 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"metagross_mega": {
+		"dex": 376,
+		"speciesId": "metagross_mega",
+		"speciesName": "Metagross (Mega)",
+		"types": [
+			"Steel",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376_f2.png",
+		"goImageUrl": "376.fMEGA.icon.png",
+		"shinyGoImageUrl": "376.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 300,
+			"def": 289,
+			"hp": 190
+		},
+		"fastMoves": [
+			"BULLET_PUNCH",
+			"ZEN_HEADBUTT",
+			"FURY_CUTTER"
+		],
+		"chargedMoves": [
+			"EARTHQUAKE",
+			"FLASH_CANNON",
+			"METEOR_MASH",
+			"PSYCHIC",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"METEOR_MASH"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_BELDUM",
+			"parent": "metang"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"metagross_shadow": {
 		"dex": 376,
 		"speciesId": "metagross_shadow",

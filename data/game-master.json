@@ -57987,6 +57987,40 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"duraludon": {
+		"dex": 884,
+		"speciesId": "duraludon",
+		"speciesName": "Duraludon",
+		"types": [
+			"Steel",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/884.png",
+		"goImageUrl": "884.icon.png",
+		"shinyGoImageUrl": "884.s.icon.png",
+		"baseStats": {
+			"atk": 239,
+			"def": 185,
+			"hp": 172
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"METAL_CLAW"
+		],
+		"chargedMoves": [
+			"FLASH_CANNON",
+			"DRAGON_CLAW",
+			"HYPER_BEAM"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"dreepy": {
 		"dex": 885,
 		"speciesId": "dreepy",

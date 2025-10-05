@@ -1322,6 +1322,15 @@
 		"chargedMoveDmg": 17,
 		"rank": 147
 	},
+	"metagross": {
+		"fastMove": "SHADOW_CLAW",
+		"chargedMove": "RETURN",
+		"dps": 12.594594594594595,
+		"speciesId": "metagross",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 17,
+		"rank": 148
+	},
 	"ho_oh": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "RETURN",
@@ -1329,7 +1338,7 @@
 		"speciesId": "ho_oh",
 		"fastMoveDmg": 25,
 		"chargedMoveDmg": 16,
-		"rank": 148
+		"rank": 149
 	},
 	"bibarel_shadow": {
 		"fastMove": "WATER_GUN",
@@ -1338,7 +1347,7 @@
 		"speciesId": "bibarel_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 96,
-		"rank": 149
+		"rank": 150
 	},
 	"cinccino": {
 		"fastMove": "POUND",
@@ -1347,15 +1356,6 @@
 		"speciesId": "cinccino",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 96,
-		"rank": 150
-	},
-	"metagross": {
-		"fastMove": "BULLET_PUNCH",
-		"chargedMove": "RETURN",
-		"dps": 12.571428571428571,
-		"speciesId": "metagross",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 17,
 		"rank": 151
 	},
 	"luxray": {

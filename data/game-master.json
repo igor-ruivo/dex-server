@@ -44580,6 +44580,7 @@
 		},
 		"fastMoves": [
 			"ZEN_HEADBUTT",
+			"CHARM",
 			"HIDDEN_POWER"
 		],
 		"chargedMoves": [
@@ -44589,7 +44590,9 @@
 			"PSYSHOCK",
 			"RETURN"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"CHARM"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -44619,6 +44622,7 @@
 		},
 		"fastMoves": [
 			"ZEN_HEADBUTT",
+			"CHARM",
 			"HIDDEN_POWER"
 		],
 		"chargedMoves": [
@@ -44628,7 +44632,9 @@
 			"PSYSHOCK",
 			"FRUSTRATION"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"CHARM"
+		],
 		"legacyMoves": [],
 		"isShadow": true,
 		"isMega": false,
@@ -58022,6 +58028,12 @@
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
+		"family": {
+			"id": "FAMILY_DURALUDON",
+			"evolutions": [
+				"archaludon"
+			]
+		},
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
@@ -61207,6 +61219,84 @@
 		"family": {
 			"id": "FAMILY_GIMMIGHOUL",
 			"parent": "gimmighoul"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dipplin": {
+		"dex": 1011,
+		"speciesId": "dipplin",
+		"speciesName": "Dipplin",
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1011.png",
+		"goImageUrl": "1011.icon.png",
+		"shinyGoImageUrl": "1011.s.icon.png",
+		"baseStats": {
+			"atk": 173,
+			"def": 184,
+			"hp": 190
+		},
+		"fastMoves": [
+			"BULLET_SEED",
+			"DRAGON_TAIL",
+			"ROLLOUT"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"OUTRAGE",
+			"SEED_BOMB"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_APPLIN",
+			"parent": "applin"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"hydrapple": {
+		"dex": 1019,
+		"speciesId": "hydrapple",
+		"speciesName": "Hydrapple",
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1019.png",
+		"goImageUrl": "1019.icon.png",
+		"shinyGoImageUrl": "1019.s.icon.png",
+		"baseStats": {
+			"atk": 216,
+			"def": 186,
+			"hp": 235
+		},
+		"fastMoves": [
+			"BULLET_SEED",
+			"DRAGON_TAIL",
+			"ROLLOUT"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"OUTRAGE",
+			"SEED_BOMB"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_APPLIN",
+			"parent": "dipplin"
 		},
 		"form": "",
 		"isLegendary": false,

@@ -57034,7 +57034,8 @@
 			"id": "FAMILY_APPLIN",
 			"evolutions": [
 				"flapple",
-				"appletun"
+				"appletun",
+				"dipplin"
 			]
 		},
 		"form": "",
@@ -61257,7 +61258,10 @@
 		"isMega": false,
 		"family": {
 			"id": "FAMILY_APPLIN",
-			"parent": "applin"
+			"parent": "applin",
+			"evolutions": [
+				"hydrapple"
+			]
 		},
 		"form": "",
 		"isLegendary": false,

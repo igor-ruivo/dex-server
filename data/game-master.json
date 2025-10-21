@@ -43358,7 +43358,8 @@
 		"chargedMoves": [
 			"SHADOW_BALL",
 			"DARK_PULSE",
-			"OMINOUS_WIND"
+			"OMINOUS_WIND",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -43413,6 +43414,46 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"yamask_shadow": {
+		"dex": 562,
+		"speciesId": "yamask_shadow",
+		"speciesName": "Yamask (Shadow)",
+		"types": [
+			"Ghost"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/562.png",
+		"goImageUrl": "562.icon.png",
+		"shinyGoImageUrl": "562.s.icon.png",
+		"baseStats": {
+			"atk": 95,
+			"def": 141,
+			"hp": 116
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"ZEN_HEADBUTT"
+		],
+		"chargedMoves": [
+			"SHADOW_BALL",
+			"DARK_PULSE",
+			"OMINOUS_WIND",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_YAMASK",
+			"evolutions": [
+				"cofagrigus_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"cofagrigus": {
 		"dex": 563,
 		"speciesId": "cofagrigus",
@@ -43436,7 +43477,8 @@
 		"chargedMoves": [
 			"SHADOW_BALL",
 			"DARK_PULSE",
-			"PSYCHIC"
+			"PSYCHIC",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -43445,6 +43487,45 @@
 		"family": {
 			"id": "FAMILY_YAMASK",
 			"parent": "yamask"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"cofagrigus_shadow": {
+		"dex": 563,
+		"speciesId": "cofagrigus_shadow",
+		"speciesName": "Cofagrigus (Shadow)",
+		"types": [
+			"Ghost"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/563.png",
+		"goImageUrl": "563.icon.png",
+		"shinyGoImageUrl": "563.s.icon.png",
+		"baseStats": {
+			"atk": 163,
+			"def": 237,
+			"hp": 151
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"ZEN_HEADBUTT",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"SHADOW_BALL",
+			"DARK_PULSE",
+			"PSYCHIC",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_YAMASK",
+			"parent": "yamask_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -51534,7 +51615,8 @@
 		"chargedMoves": [
 			"SEED_BOMB",
 			"SHADOW_BALL",
-			"FOUL_PLAY"
+			"FOUL_PLAY",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51544,6 +51626,47 @@
 			"id": "FAMILY_PHANTUMP",
 			"evolutions": [
 				"trevenant"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"phantump_shadow": {
+		"dex": 708,
+		"speciesId": "phantump_shadow",
+		"speciesName": "Phantump (Shadow)",
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/708.png",
+		"goImageUrl": "708.icon.png",
+		"shinyGoImageUrl": "708.s.icon.png",
+		"baseStats": {
+			"atk": 125,
+			"def": 103,
+			"hp": 125
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"TACKLE"
+		],
+		"chargedMoves": [
+			"SEED_BOMB",
+			"SHADOW_BALL",
+			"FOUL_PLAY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_PHANTUMP",
+			"evolutions": [
+				"trevenant_shadow"
 			]
 		},
 		"form": "",
@@ -51574,7 +51697,8 @@
 		"chargedMoves": [
 			"SEED_BOMB",
 			"SHADOW_BALL",
-			"FOUL_PLAY"
+			"FOUL_PLAY",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51583,6 +51707,45 @@
 		"family": {
 			"id": "FAMILY_PHANTUMP",
 			"parent": "phantump"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"trevenant_shadow": {
+		"dex": 709,
+		"speciesId": "trevenant_shadow",
+		"speciesName": "Trevenant (Shadow)",
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/709.png",
+		"goImageUrl": "709.icon.png",
+		"shinyGoImageUrl": "709.s.icon.png",
+		"baseStats": {
+			"atk": 201,
+			"def": 154,
+			"hp": 198
+		},
+		"fastMoves": [
+			"SHADOW_CLAW",
+			"SUCKER_PUNCH"
+		],
+		"chargedMoves": [
+			"SEED_BOMB",
+			"SHADOW_BALL",
+			"FOUL_PLAY",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_PHANTUMP",
+			"parent": "phantump_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -61262,6 +61425,44 @@
 			"evolutions": [
 				"hydrapple"
 			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"poltchageist": {
+		"dex": 1012,
+		"speciesId": "poltchageist",
+		"speciesName": "Poltchageist",
+		"types": [
+			"Grass",
+			"Ghost"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1012.png",
+		"goImageUrl": "1012.icon.png",
+		"shinyGoImageUrl": "1012.s.icon.png",
+		"baseStats": {
+			"atk": 134,
+			"def": 96,
+			"hp": 120
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"MAGICAL_LEAF"
+		],
+		"chargedMoves": [
+			"SHADOW_BALL",
+			"ENERGY_BALL",
+			"POLTERGEIST"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SINISTCHA",
+			"parent": "sinistcha"
 		},
 		"form": "",
 		"isLegendary": false,

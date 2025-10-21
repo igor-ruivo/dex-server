@@ -1,5 +1,123 @@
 [
 	{
+		"id": "enchanted-hollow-2025-0",
+		"url": "https://pokemongo.com/news/enchanted-hollow-2025",
+		"title": {
+			"en": "Tangle with Tarountula and Spidops during the Enchanted Hollow event!",
+			"pt_br": "Emaranhem-se com Tarountula e Spidops durante o evento Clareira Encantada."
+		},
+		"subtitle": {
+			"en": "Enchanted Hollow",
+			"pt_br": "Clareira Encantada"
+		},
+		"startDate": 1762250400000,
+		"endDate": 1762718400000,
+		"dateRanges": [
+			{
+				"start": 1762250400000,
+				"end": 1762718400000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/41O9iJfGMPf14cmwgK772NAuhzuBWi-vfBFCz-6IEB_YIVo7nILe29KjAQ1E1udb0DDGk7bM-gs4HgZRihOjP6g8xM_gMVm_hXg=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "paras",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "stantler",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "nickit",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [
+			{
+				"speciesId": "paras",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "stantler",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "leavanny",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "scolipede",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "drampa",
+				"shiny": true,
+				"kind": "3"
+			}
+		],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "paras",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "stantler",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "cottonee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "petilil",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "karrablast",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "shelmet",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "drampa",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"2× XP for spinning PokéStops.",
+				"2× Lure Module duration.",
+				"Increased chance of encountering Shiny Paras and Shiny Stantler."
+			],
+			"pt_br": [
+				"2x PE por girar Poképaradas.",
+				"2x duração do Módulo Atrair.",
+				"Maior chance de encontrar Paras e Stantler Brilhantes."
+			]
+		}
+	},
+	{
 		"id": "gigantamax-garbodor-max-battle-day-0",
 		"url": "https://pokemongo.com/news/gigantamax-garbodor-max-battle-day",
 		"title": {
@@ -107,6 +225,11 @@
 				"kind": "1"
 			},
 			{
+				"speciesId": "poltchageist",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
 				"speciesId": "gengar",
 				"shiny": true,
 				"kind": "3"
@@ -115,6 +238,16 @@
 				"speciesId": "drifblim",
 				"shiny": true,
 				"kind": "3"
+			},
+			{
+				"speciesId": "yamask_shadow",
+				"shiny": false,
+				"kind": "1"
+			},
+			{
+				"speciesId": "phantump_shadow",
+				"shiny": false,
+				"kind": "1"
 			}
 		],
 		"eggs": [],
@@ -260,6 +393,11 @@
 				"kind": "1"
 			},
 			{
+				"speciesId": "poltchageist",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
 				"speciesId": "marowak_alolan",
 				"shiny": true,
 				"kind": "3"
@@ -273,6 +411,16 @@
 				"speciesId": "samurott_hisuian",
 				"shiny": true,
 				"kind": "3"
+			},
+			{
+				"speciesId": "yamask_shadow",
+				"shiny": false,
+				"kind": "1"
+			},
+			{
+				"speciesId": "phantump_shadow",
+				"shiny": false,
+				"kind": "1"
 			}
 		],
 		"eggs": [],

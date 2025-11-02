@@ -59539,6 +59539,84 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"tarountula": {
+		"dex": 917,
+		"speciesId": "tarountula",
+		"speciesName": "Tarountula",
+		"types": [
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/917.png",
+		"goImageUrl": "917.icon.png",
+		"shinyGoImageUrl": "917.s.icon.png",
+		"baseStats": {
+			"atk": 70,
+			"def": 77,
+			"hp": 111
+		},
+		"fastMoves": [
+			"BUG_BITE",
+			"STRUGGLE_BUG"
+		],
+		"chargedMoves": [
+			"X_SCISSOR",
+			"GRASS_KNOT",
+			"LUNGE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_TAROUNTULA",
+			"evolutions": [
+				"spidops"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"spidops": {
+		"dex": 918,
+		"speciesId": "spidops",
+		"speciesName": "Spidops",
+		"types": [
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/918.png",
+		"goImageUrl": "918.icon.png",
+		"shinyGoImageUrl": "918.s.icon.png",
+		"baseStats": {
+			"atk": 139,
+			"def": 166,
+			"hp": 155
+		},
+		"fastMoves": [
+			"BUG_BITE",
+			"COUNTER",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"X_SCISSOR",
+			"GRASS_KNOT",
+			"LUNGE",
+			"ROCK_TOMB"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_TAROUNTULA",
+			"parent": "tarountula"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"nymble": {
 		"dex": 919,
 		"speciesId": "nymble",

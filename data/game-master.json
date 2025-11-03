@@ -61547,6 +61547,46 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"sinistcha": {
+		"dex": 1013,
+		"speciesId": "sinistcha",
+		"speciesName": "Sinistcha",
+		"types": [
+			"Grass",
+			"Ghost"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1013.png",
+		"goImageUrl": "1013.icon.png",
+		"shinyGoImageUrl": "1013.s.icon.png",
+		"baseStats": {
+			"atk": 225,
+			"def": 191,
+			"hp": 174
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"MAGICAL_LEAF"
+		],
+		"chargedMoves": [
+			"SHADOW_BALL",
+			"ENERGY_BALL",
+			"POLTERGEIST"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SINISTCHA",
+			"evolutions": [
+				"poltchageist"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"hydrapple": {
 		"dex": 1019,
 		"speciesId": "hydrapple",

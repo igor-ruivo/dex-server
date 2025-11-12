@@ -1,5 +1,114 @@
 [
 	{
+		"id": "final-justice-2025-0",
+		"url": "https://pokemongo.com/news/final-justice-2025",
+		"title": {
+			"en": "Finish off Tales of Transformation with the Final Justice event, Keldeo’s Resolute Form, and Keldeo’s Shiny debut!",
+			"pt_br": "Concluam Histórias de Transformação com o Golpe Final, Keldeo Forma Resoluta e a estreia de Keldeo Brilhante."
+		},
+		"subtitle": {
+			"en": "Final Justice",
+			"pt_br": "Golpe Final"
+		},
+		"startDate": 1764064800000,
+		"endDate": 1764532800000,
+		"dateRanges": [
+			{
+				"start": 1764064800000,
+				"end": 1764532800000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/V1RFaeLq3H8dCjoHfgThoVHecJijY-JLVtln5N_g6dPbqu5Xb8GK3XIB6KjvXZeo_yfNqsUusl3bcUKK2jyMRmdM-tXwVq1OB8Sn=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "hitmonlee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "hitmonchan",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "hitmontop",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [
+			{
+				"speciesId": "deoxys_attack",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "machop",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "timburr",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "pancham",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "farfetchd_galarian",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "throh",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "sawk",
+				"shiny": true,
+				"kind": "3"
+			}
+		],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "farfetchd_galarian",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "lilligant_hisuian",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "throh",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "sawk",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Receive up to two free Raid Passes from spinning Gym Photo Discs during the event."
+			],
+			"pt_br": [
+				"Recebam até 2 Passes de Reide gratuitos por girar fotodiscos em Ginásios durante o evento."
+			]
+		}
+	},
+	{
 		"id": "community-day-december-2025-0",
 		"url": "https://pokemongo.com/news/community-day-december-2025",
 		"title": {
@@ -8,7 +117,7 @@
 		},
 		"subtitle": {
 			"en": "December Community Day 2025",
-			"pt_br": "Dia Comunitário: dez. de 2025"
+			"pt_br": "Dia Comunitário: dezembro de 2025"
 		},
 		"startDate": 1765029600000,
 		"endDate": 1765126800000,
@@ -3264,88 +3373,6 @@
 			"pt_br": [
 				"2× PE por capturar Pokémon.",
 				"O Incenso (exceto o Incenso de Aventura Diário) ativado durante o evento durará duas horas."
-			]
-		}
-	},
-	{
-		"id": "pokemongo-summer-concert-2025-0",
-		"url": "https://pokemongo.com/en/post/pokemongo-summer-concert-2025/",
-		"title": {
-			"en": "Get ready for Summer Concert, a music-themed celebration!",
-			"pt_br": "Preparem-se para o Show de Férias, uma celebração musical."
-		},
-		"subtitle": {
-			"en": "Summer Concert",
-			"pt_br": "Show de Férias"
-		},
-		"startDate": 1752883200000,
-		"endDate": 1753203600000,
-		"dateRanges": [
-			{
-				"start": 1752883200000,
-				"end": 1753203600000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/b1nTAKER5wogwm7Bc5DTozujL8mz3x8COz4B4VGGwqqEIEH3tn1CffLqQ2wLyX4blDsQ9Mfm9xaCXkq1nTfllIzHScAfVRQIQGmCqqt-f_3UFmU=w1440-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "spinda",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [
-			{
-				"speciesId": "chatot",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "jigglypuff",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "lotad",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "kricketot",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "audino",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "noibat",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "popplio",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"bonuses": {
-			"en": [
-				"Lure Modules activated during the event will last for one hour.",
-				"Lure Modules will attract specific Pokémon during the event.",
-				"Increased chance to encounter Shiny Chatot at PokéStops with active Lure Modules."
-			],
-			"pt_br": [
-				"Os Módulos Atrair ativados durante o evento durarão uma hora.",
-				"Os Módulos Atrair vão atrair Pokémon específicos durante o evento.",
-				"Maior chance de encontrar Chatot Brilhante em Poképaradas com Módulos Atrair ativos."
 			]
 		}
 	},

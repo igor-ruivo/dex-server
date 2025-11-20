@@ -38954,13 +38954,51 @@
 			"DARK_PULSE",
 			"FOCUS_BLAST",
 			"SHADOW_BALL",
-			"SLUDGE_BOMB"
+			"SLUDGE_BOMB",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"SLUDGE_BOMB"
 		],
 		"legacyMoves": [],
 		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": true,
+		"isBeast": false
+	},
+	"darkrai_shadow": {
+		"dex": 491,
+		"speciesId": "darkrai_shadow",
+		"speciesName": "Darkrai (Shadow)",
+		"types": [
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/491.png",
+		"goImageUrl": "491.icon.png",
+		"shinyGoImageUrl": "491.s.icon.png",
+		"baseStats": {
+			"atk": 285,
+			"def": 198,
+			"hp": 172
+		},
+		"fastMoves": [
+			"FEINT_ATTACK",
+			"SNARL"
+		],
+		"chargedMoves": [
+			"DARK_PULSE",
+			"FOCUS_BLAST",
+			"SHADOW_BALL",
+			"SLUDGE_BOMB",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"SLUDGE_BOMB"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
 		"isMega": false,
 		"form": "",
 		"isLegendary": false,
@@ -57631,6 +57669,127 @@
 		"family": {
 			"id": "FAMILY_HATENNA",
 			"parent": "hattrem"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"impidimp": {
+		"dex": 859,
+		"speciesId": "impidimp",
+		"speciesName": "Impidimp",
+		"types": [
+			"Dark",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/859.png",
+		"goImageUrl": "859.icon.png",
+		"shinyGoImageUrl": "859.s.icon.png",
+		"baseStats": {
+			"atk": 103,
+			"def": 69,
+			"hp": 128
+		},
+		"fastMoves": [
+			"BITE",
+			"SUCKER_PUNCH"
+		],
+		"chargedMoves": [
+			"FOUL_PLAY",
+			"DARK_PULSE",
+			"PLAY_ROUGH"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_IMPIDIMP",
+			"evolutions": [
+				"morgrem"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"morgrem": {
+		"dex": 860,
+		"speciesId": "morgrem",
+		"speciesName": "Morgrem",
+		"types": [
+			"Dark",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/860.png",
+		"goImageUrl": "860.icon.png",
+		"shinyGoImageUrl": "860.s.icon.png",
+		"baseStats": {
+			"atk": 145,
+			"def": 102,
+			"hp": 163
+		},
+		"fastMoves": [
+			"BITE",
+			"SUCKER_PUNCH"
+		],
+		"chargedMoves": [
+			"FOUL_PLAY",
+			"DARK_PULSE",
+			"PLAY_ROUGH"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_IMPIDIMP",
+			"parent": "impidimp",
+			"evolutions": [
+				"grimmsnarl"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"grimmsnarl": {
+		"dex": 861,
+		"speciesId": "grimmsnarl",
+		"speciesName": "Grimmsnarl",
+		"types": [
+			"Dark",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/861.png",
+		"goImageUrl": "861.icon.png",
+		"shinyGoImageUrl": "861.s.icon.png",
+		"baseStats": {
+			"atk": 227,
+			"def": 139,
+			"hp": 216
+		},
+		"fastMoves": [
+			"BITE",
+			"SUCKER_PUNCH",
+			"LOW_KICK"
+		],
+		"chargedMoves": [
+			"FOUL_PLAY",
+			"DARK_PULSE",
+			"PLAY_ROUGH",
+			"POWER_UP_PUNCH"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_IMPIDIMP",
+			"parent": "morgrem"
 		},
 		"form": "",
 		"isLegendary": false,

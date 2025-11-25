@@ -2,128 +2,71 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "Welcome to Pokémon GO: Tales of Transformation",
-		"pt_br": "Bem-vindos ao Pokémon GO: Histórias de Transformação"
+		"en": "Welcome to Pokémon GO: Precious Paths",
+		"pt_br": "Bem-vindos ao Pokémon GO: Passos Preciosos"
 	},
 	"subtitle": {
-		"en": "Welcome to Pokémon GO: Tales of Transformation",
-		"pt_br": "Bem-vindos ao Pokémon GO: Histórias de Transformação"
+		"en": "Welcome to Pokémon GO: Precious Paths",
+		"pt_br": "Bem-vindos ao Pokémon GO: Passos Preciosos"
 	},
-	"startDate": 1756807200000,
-	"endDate": 1764669600000,
-	"imageUrl": "https://lh3.googleusercontent.com/yIYdctLa9eRpZqPeUUU85fL3M4uQnv7EM1k0F82Juhd1WEzzQLNfJtd_jjKkwa3CXyc3OpjQQDN-KIL6ueKFZBi7AuUzfM_YPMB0=s0-e365",
+	"startDate": 1764669600000,
+	"endDate": 1772532000000,
+	"imageUrl": "https://lh3.googleusercontent.com/eZMeR0IkVul0dITDAWCmJ1Ue1xIP0gDVdodNDtFy6MgmDKeBenxiAAPG3Roc6R2aIy2ua_AFT5FZWShXcmKlZ01roQREmdbavtzt=s0-e365",
 	"source": "pokemongo",
 	"wild": [],
 	"raids": [],
 	"eggs": [
 		{
-			"speciesId": "wynaut",
+			"speciesId": "bergmite",
 			"shiny": false,
 			"kind": "2"
 		},
 		{
-			"speciesId": "azurill",
+			"speciesId": "smoochum",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "treecko",
+			"speciesId": "cleffa",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "bulbasaur",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "chingling",
+			"speciesId": "snom",
 			"shiny": false,
-			"kind": "2"
+			"kind": "5"
 		},
 		{
-			"speciesId": "torchic",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "togepi",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "charmander",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "happiny",
+			"speciesId": "elgyem",
 			"shiny": false,
-			"kind": "2"
+			"kind": "5"
+		},
+		{
+			"speciesId": "audino",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "archen",
+			"shiny": false,
+			"kind": "5",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
+		},
+		{
+			"speciesId": "riolu",
+			"shiny": true,
+			"kind": "5",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
 		},
 		{
 			"speciesId": "bonsly",
 			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "mudkip",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "squirtle",
-			"shiny": true,
-			"kind": "2"
-		},
-		{
-			"speciesId": "riolu",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "pichu",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "grimer_alolan",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "munchlax",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "budew",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "meowth_alolan",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "mantyke",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "tyrogue",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "vulpix_alolan",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "magby",
-			"shiny": true,
 			"kind": "5",
 			"comment": {
 				"en": "Adventure Sync Rewards",
@@ -131,54 +74,22 @@
 			}
 		},
 		{
-			"speciesId": "elekid",
-			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "kabuto",
-			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "omanyte",
-			"shiny": true,
-			"kind": "5",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
-		},
-		{
-			"speciesId": "qwilfish_hisuian",
+			"speciesId": "stunfisk_galarian",
 			"shiny": false,
 			"kind": "7"
 		},
 		{
-			"speciesId": "farfetchd_galarian",
+			"speciesId": "zigzagoon_galarian",
 			"shiny": true,
 			"kind": "7"
 		},
 		{
-			"speciesId": "sandshrew_alolan",
+			"speciesId": "diglett_alolan",
 			"shiny": true,
 			"kind": "7"
 		},
 		{
-			"speciesId": "rattata_alolan",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "voltorb_hisuian",
+			"speciesId": "basculin",
 			"shiny": false,
 			"kind": "7",
 			"comment": {
@@ -187,7 +98,7 @@
 			}
 		},
 		{
-			"speciesId": "ponyta_galarian",
+			"speciesId": "slowpoke_galarian",
 			"shiny": true,
 			"kind": "7",
 			"comment": {
@@ -196,46 +107,26 @@
 			}
 		},
 		{
-			"speciesId": "beldum",
-			"shiny": false,
-			"kind": "10"
-		},
-		{
-			"speciesId": "mawile",
+			"speciesId": "growlithe_hisuian",
 			"shiny": true,
-			"kind": "10"
-		},
-		{
-			"speciesId": "bagon",
-			"shiny": false,
-			"kind": "10"
-		},
-		{
-			"speciesId": "absol",
-			"shiny": true,
-			"kind": "10"
-		},
-		{
-			"speciesId": "sableye",
-			"shiny": false,
-			"kind": "10"
-		},
-		{
-			"speciesId": "larvitar",
-			"shiny": true,
-			"kind": "10"
+			"kind": "7",
+			"comment": {
+				"en": "7 km Eggs from Mateo’s Gift Exchange",
+				"pt_br": "Ovos de 7 km da Troca de presentes de Mateo"
+			}
 		},
 		{
 			"speciesId": "tinkatink",
 			"shiny": false,
-			"kind": "10",
-			"comment": {
-				"en": "Adventure Sync Rewards",
-				"pt_br": "Recompensas de Sincroaventura"
-			}
+			"kind": "10"
 		},
 		{
-			"speciesId": "druddigon",
+			"speciesId": "beldum",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "dreepy",
 			"shiny": false,
 			"kind": "10",
 			"comment": {
@@ -244,7 +135,16 @@
 			}
 		},
 		{
-			"speciesId": "aerodactyl",
+			"speciesId": "drampa",
+			"shiny": false,
+			"kind": "10",
+			"comment": {
+				"en": "Adventure Sync Rewards",
+				"pt_br": "Recompensas de Sincroaventura"
+			}
+		},
+		{
+			"speciesId": "beldum",
 			"shiny": true,
 			"kind": "10",
 			"comment": {
@@ -255,32 +155,32 @@
 	],
 	"researches": [
 		{
-			"speciesId": "frigibax",
-			"shiny": true,
-			"kind": ""
-		},
-		{
 			"speciesId": "dreepy",
 			"shiny": false,
 			"kind": ""
 		},
 		{
-			"speciesId": "morpeko_full_belly",
-			"shiny": false,
-			"kind": ""
-		},
-		{
 			"speciesId": "sinistea",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "aggron",
 			"shiny": true,
 			"kind": ""
 		},
 		{
-			"speciesId": "alakazam",
+			"speciesId": "honedge",
+			"shiny": false,
+			"kind": ""
+		},
+		{
+			"speciesId": "snorlax",
+			"shiny": true,
+			"kind": ""
+		},
+		{
+			"speciesId": "lapras",
+			"shiny": true,
+			"kind": ""
+		},
+		{
+			"speciesId": "mr_mime_galarian",
 			"shiny": true,
 			"kind": ""
 		}
@@ -289,20 +189,14 @@
 	"lures": [],
 	"bonuses": {
 		"en": [
-			"Trainers level 31 and above will receive one guaranteed Rare Candy XL when catching a five-star Raid Boss during a Raid Hour",
-			"Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon",
-			"One additional Candy when trading Pokémon",
-			"Increased XP for a seven-day PokéStop spin streak",
-			"Increased XP and Stardust for a seven-day Pokémon catch streak",
-			"Increased XP from going up a Friendship level"
+			"One additional Special Trade per day.",
+			"Increased Stardust for the first catch of the day.",
+			"Increased friendship bonus damage dealt by Pokémon in raids."
 		],
 		"pt_br": [
-			"Treinadoras e Treinadores do nível 31 e superior receberão um Doce Raro GG garantido ao pegar um chefe de Reide de cinco estrelas durante uma hora de Reides",
-			"Treinadores e Treinadoras de nível 31 e superior receberão um doce GG ao trocar Pokémon",
-			"Um doce de Pokémon extra ao trocar Pokémon",
-			"Mais PE para giro em Poképaradas por sete dias consecutivos",
-			"Aumento de PE e Poeira Estelar para sete dias consecutivos de captura de Pokémon",
-			"Mais PE ao subir um nível de amizade"
+			"Uma troca especial adicional por dia.",
+			"Mais Poeira Estelar pela primeira captura do dia.",
+			"Mais danos de bônus de amizade para Pokémon em Reides."
 		]
 	}
 }

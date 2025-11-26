@@ -48557,6 +48557,44 @@
 		"isMythical": true,
 		"isBeast": false
 	},
+	"keldeo_resolute": {
+		"dex": 647,
+		"speciesId": "keldeo_resolute",
+		"speciesName": "Keldeo (Resolute)",
+		"types": [
+			"Water",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/647_f2.png",
+		"goImageUrl": "647.fRESOLUTE.icon.png",
+		"shinyGoImageUrl": "647.fRESOLUTE.s.icon.png",
+		"baseStats": {
+			"atk": 260,
+			"def": 192,
+			"hp": 209
+		},
+		"fastMoves": [
+			"POISON_JAB",
+			"LOW_KICK"
+		],
+		"chargedMoves": [
+			"AQUA_JET",
+			"CLOSE_COMBAT",
+			"HYDRO_PUMP",
+			"X_SCISSOR",
+			"SECRET_SWORD"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [
+			"SECRET_SWORD"
+		],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Resolute",
+		"isLegendary": false,
+		"isMythical": true,
+		"isBeast": false
+	},
 	"meloetta_aria": {
 		"dex": 648,
 		"speciesId": "meloetta_aria",

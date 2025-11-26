@@ -1,5 +1,98 @@
 [
 	{
+		"id": "journey-to-paldea-2025-0",
+		"url": "https://pokemongo.com/news/journey-to-paldea-2025",
+		"title": {
+			"en": "Embark on a Paldean adventure during the Journey to Paldea event!",
+			"pt_br": "Embarquem em uma aventura em Paldea durante o evento Jornada para Paldea."
+		},
+		"subtitle": {
+			"en": "Journey to Paldea",
+			"pt_br": "Jornada para Paldea"
+		},
+		"startDate": 1764669600000,
+		"endDate": 1765310400000,
+		"dateRanges": [
+			{
+				"start": 1764669600000,
+				"end": 1765310400000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/6VWnagFi2rsW0vaNLVWFLdpEpJla0YlutIqenhRWflYI8l05LDAmrA79t7QLLcYhYwUZCejY-_Dam5XIgoH9At9184MnlB-KAJfP=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "larvitar",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "drifloon",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "skrelp",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "misdreavus",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "bagon",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "clauncher",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [
+			{
+				"speciesId": "bombirdier",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "dondozo",
+				"shiny": true,
+				"kind": "3"
+			}
+		],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "larvitar",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "bagon",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"2× XP for winning Raid Battles.",
+				"2× XP for evolving Pokémon.",
+				"Increased chance to encounter Shiny Larvitar and Shiny Bagon."
+			],
+			"pt_br": [
+				"2× mais PE por vencer Batalhas de Reide.",
+				"2× mais PE por evoluir Pokémon.",
+				"Maior chance de encontrar Larvitar Brilhante e Bagon Brilhante."
+			]
+		}
+	},
+	{
 		"id": "lugia-max-battle-weekend-2025-0",
 		"url": "https://pokemongo.com/news/lugia-max-battle-weekend-2025",
 		"title": {

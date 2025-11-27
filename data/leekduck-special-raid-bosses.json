@@ -21,7 +21,7 @@
 			"pt_br": "Cobalion, Terrakion, and Virizion in 5-star Raid Battles"
 		},
 		"date": 1764064800000,
-		"dateEnd": 1764669600000,
+		"dateEnd": 1764842400000,
 		"raids": [
 			{
 				"speciesId": "cobalion",
@@ -47,7 +47,7 @@
 			"pt_br": "Mega Aerodactyl, Mega Medicham, and Mega Garchomp in Mega Raids"
 		},
 		"date": 1764064800000,
-		"dateEnd": 1764669600000,
+		"dateEnd": 1764842400000,
 		"raids": [
 			{
 				"speciesId": "aerodactyl_mega",
@@ -66,5 +66,117 @@
 			}
 		],
 		"rawUrl": "https://leekduck.com/events/mega-aerodactyl-medicham-garchomp-in-mega-raids-november-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Shadow Heatran in Shadow Raids",
+			"pt_br": "Shadow Heatran in Shadow Raids"
+		},
+		"date": 1764655200000,
+		"dateEnd": 1767304800000,
+		"raids": [
+			{
+				"speciesId": "heatran_shadow",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/shadow-heatran-in-shadow-raids-december-january-2026/"
+	},
+	{
+		"title": {
+			"en": "Kyurem in 5-star Raid Battles",
+			"pt_br": "Kyurem in 5-star Raid Battles"
+		},
+		"date": 1764842400000,
+		"dateEnd": 1765620000000,
+		"raids": [
+			{
+				"speciesId": "kyurem",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/kyurem-in-5-star-raid-battles-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Mega Gyarados in Mega Raids",
+			"pt_br": "Mega Gyarados in Mega Raids"
+		},
+		"date": 1764842400000,
+		"dateEnd": 1765620000000,
+		"raids": [
+			{
+				"speciesId": "gyarados_mega",
+				"kind": "mega",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/mega-gyarados-in-mega-raids-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Mega Abomasnow in Mega Raids",
+			"pt_br": "Mega Abomasnow in Mega Raids"
+		},
+		"date": 1765620000000,
+		"dateEnd": 1766397600000,
+		"raids": [
+			{
+				"speciesId": "abomasnow_mega",
+				"kind": "mega",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/mega-abomasnow-in-mega-raids-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Reshiram in 5-star Raid Battles",
+			"pt_br": "Reshiram in 5-star Raid Battles"
+		},
+		"date": 1765620000000,
+		"dateEnd": 1766397600000,
+		"raids": [
+			{
+				"speciesId": "reshiram",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/reshiram-in-5-star-raid-battles-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Mega Glalie in Mega Raids",
+			"pt_br": "Mega Glalie in Mega Raids"
+		},
+		"date": 1766397600000,
+		"dateEnd": 1767175200000,
+		"raids": [
+			{
+				"speciesId": "glalie_mega",
+				"kind": "mega",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/mega-glalie-in-mega-raids-december-2025/"
+	},
+	{
+		"title": {
+			"en": "Zekrom in 5-star Raid Battles",
+			"pt_br": "Zekrom in 5-star Raid Battles"
+		},
+		"date": 1766397600000,
+		"dateEnd": 1767175200000,
+		"raids": [
+			{
+				"speciesId": "zekrom",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"rawUrl": "https://leekduck.com/events/zekrom-in-5-star-raid-battles-december-2025/"
 	}
 ]

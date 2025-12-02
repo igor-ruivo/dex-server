@@ -18,6 +18,10 @@ export const normalizePokemonName = (pokemonName: string): string => {
 	)
 		.replaceAll('(normal)', '')
 		.replaceAll(' cloak', '')
+		.replaceAll('(dynamax)', '')
+		.replaceAll('dynamax', '')
+		.replaceAll('(gigantamax)', '')
+		.replaceAll('gigantamax', '')
 		.trim();
 };
 

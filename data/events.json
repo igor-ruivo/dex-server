@@ -44,7 +44,18 @@
 		],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "hitmonlee",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "hitmonchan",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -246,6 +257,16 @@
 			},
 			{
 				"speciesId": "hitmontop",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "sneasel_hisuian",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "crabrawler",
 				"shiny": true,
 				"kind": ""
 			}
@@ -966,7 +987,13 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "drilbur",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1800,7 +1827,13 @@
 		],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "duraludon",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -2545,6 +2578,11 @@
 		"researches": [
 			{
 				"speciesId": "slakoth",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "dondozo",
 				"shiny": false,
 				"kind": ""
 			}
@@ -3405,7 +3443,13 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "darumaka",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -3663,7 +3707,13 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "lapras",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

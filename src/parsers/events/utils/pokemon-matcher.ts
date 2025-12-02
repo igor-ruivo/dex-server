@@ -41,11 +41,7 @@ class PokemonMatcher {
 			let isShadow = false;
 			let isMega = false;
 			let currP = normalizePokemonName(rawName);
-			if (
-				currP.toLocaleLowerCase().includes(' candy') ||
-				currP.toLocaleLowerCase().includes('dynamax') ||
-				currP.toLocaleLowerCase().includes('gigantamax')
-			) {
+			if (currP.toLocaleLowerCase().includes(' candy')) {
 				continue;
 			}
 			const raidLIndex = currP.indexOf(' raids');
@@ -453,7 +449,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 		)
 		.flatMap((p) =>
 			p
-				.split(/,|and more|might even encounter/)
+				.split(/,|and more|\band\b|might even encounter/)
 				.map((s) => s.trim())
 				.filter(Boolean)
 		);

@@ -206,7 +206,13 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "gastly",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -993,6 +999,11 @@
 		"raids": [],
 		"eggs": [],
 		"researches": [
+			{
+				"speciesId": "garbodor",
+				"shiny": true,
+				"kind": ""
+			},
 			{
 				"speciesId": "drilbur",
 				"shiny": true,
@@ -3450,6 +3461,11 @@
 		"eggs": [],
 		"researches": [
 			{
+				"speciesId": "butterfree",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "darumaka",
 				"shiny": true,
 				"kind": ""
@@ -3662,7 +3678,13 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "gastly",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -3716,6 +3738,11 @@
 			{
 				"speciesId": "lapras",
 				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "passimian",
+				"shiny": false,
 				"kind": ""
 			}
 		],

@@ -440,7 +440,16 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'windy',
 		'fog',
 	];
-	const parsedPokemon = textes
+
+	const cleanedTextes = textes.map((t) =>
+		t
+			.replace(/when you take on[^!]*!/gi, '')
+			.replace(/(?:[^\s.!?;:]+\s+){1,3}candy\b/gi, '')
+			.replace(/\s+/g, ' ')
+			.trim()
+	);
+
+	const parsedPokemon = cleanedTextes
 		.filter(
 			(t) =>
 				t !== 'All' &&

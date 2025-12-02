@@ -38,7 +38,15 @@ const EVENT_SECTION_TYPES = {
 		'Event-themed Pokémon',
 	],
 	EGGS: ['Eggs'],
-	LURES: ['Encounters from Lure Modules', 'Lure Module Bonus'],
+	LURES: [
+		'Encounters from Lure Modules',
+		'Lure Module Bonus',
+		'Increased Glacial Lure Encounters',
+		'Increased Mossy Lure Encounters',
+		'Increased Magnetic Lure Encounters',
+		'Increased Rainy Lure Encounters',
+		'Increased Golden Lure Encounters',
+	],
 	RESEARCH: [
 		'Field Research Task Rewards',
 		'Field Research Task Encounters',
@@ -51,7 +59,11 @@ const EVENT_SECTION_TYPES = {
 		'Free Timed Research',
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
-	INCENSE: ['Incense Encounters', 'Increased Incense encounters'],
+	INCENSE: [
+		'Incense Encounters',
+		'Increased Incense encounters',
+		'Increased Incense Encounters',
+	],
 	FEATURED: ['Featured Pokémon'],
 	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
 };

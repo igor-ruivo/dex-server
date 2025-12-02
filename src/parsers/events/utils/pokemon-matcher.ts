@@ -302,6 +302,15 @@ class PokemonMatcher {
 				};
 			}
 		}
+		// Handle Zorua
+		if (currP.includes('zorua') && !currP.includes('hisuian')) {
+			return {
+				speciesId: 'zorua',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
 		if (availableForms.length === 0) {
 			if (isMega) {
 				console.log("Domain didn't cover Megas while computing " + currP);
@@ -444,6 +453,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 	const cleanedTextes = textes.map((t) =>
 		t
 			.replace(/when you take on[^!]*!/gi, '')
+			.replace(/for battles against[^!]*!/gi, '')
 			.replace(/(?:[^\s.!?;:]+\s+){1,3}candy\b/gi, '')
 			.replace(/\s+/g, ' ')
 			.trim()

@@ -246,7 +246,21 @@ class PokemonMatcher {
 				};
 			}
 		}
-		console.error("(0) Couldn't map form for " + currP);
+
+		const currPWords = currP.split(' ');
+		const names = Object.values(this.gameMasterPokemon)
+			.filter((p) => !p.aliasId)
+			.map((p) => p.speciesName.toLocaleLowerCase().split(' '));
+
+		if (
+			currPWords.length <= 10 &&
+			currPWords.some((w) =>
+				names.some((wordsInName) => wordsInName.includes(w.toLocaleLowerCase()))
+			)
+		) {
+			console.error("(0) Couldn't map form for " + currP);
+		}
+
 		return null;
 	}
 

@@ -47,6 +47,10 @@ export const KNOWN_FORMS = new Set([
 	'Curly',
 	'Droopy',
 	'Stretchy',
+	'Resolute',
+	'Combat',
+	'Blaze',
+	'Aqua',
 ]);
 
 export const MONTHS = [

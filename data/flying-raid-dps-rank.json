@@ -17,6 +17,15 @@
 		"chargedMoveDmg": 200,
 		"rank": 2
 	},
+	"toucannon_shadow": {
+		"fastMove": "PECK",
+		"chargedMove": "BEAK_BLAST",
+		"dps": 32,
+		"speciesId": "toucannon_shadow",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 170,
+		"rank": 3
+	},
 	"staraptor_shadow": {
 		"fastMove": "GUST",
 		"chargedMove": "FLY",
@@ -24,7 +33,7 @@
 		"speciesId": "staraptor_shadow",
 		"fastMoveDmg": 36,
 		"chargedMoveDmg": 129,
-		"rank": 3
+		"rank": 4
 	},
 	"pidgeot_mega": {
 		"fastMove": "GUST",
@@ -33,7 +42,7 @@
 		"speciesId": "pidgeot_mega",
 		"fastMoveDmg": 36,
 		"chargedMoveDmg": 184,
-		"rank": 4
+		"rank": 5
 	},
 	"moltres_shadow": {
 		"fastMove": "WING_ATTACK",
@@ -42,7 +51,7 @@
 		"speciesId": "moltres_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 122,
-		"rank": 5
+		"rank": 6
 	},
 	"salamence_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -51,7 +60,7 @@
 		"speciesId": "salamence_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 151,
-		"rank": 6
+		"rank": 7
 	},
 	"honchkrow_shadow": {
 		"fastMove": "SNARL",
@@ -60,7 +69,7 @@
 		"speciesId": "honchkrow_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 193,
-		"rank": 7
+		"rank": 8
 	},
 	"tornadus_incarnate_shadow": {
 		"fastMove": "AIR_SLASH",
@@ -69,7 +78,7 @@
 		"speciesId": "tornadus_incarnate_shadow",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 170,
-		"rank": 8
+		"rank": 9
 	},
 	"salamence_mega": {
 		"fastMove": "DRAGON_TAIL",
@@ -78,7 +87,7 @@
 		"speciesId": "salamence_mega",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 140,
-		"rank": 9
+		"rank": 10
 	},
 	"enamorus_incarnate": {
 		"fastMove": "FAIRY_WIND",
@@ -87,7 +96,7 @@
 		"speciesId": "enamorus_incarnate",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 128,
-		"rank": 10
+		"rank": 11
 	},
 	"tornadus_therian": {
 		"fastMove": "GUST",
@@ -96,7 +105,16 @@
 		"speciesId": "tornadus_therian",
 		"fastMoveDmg": 31,
 		"chargedMoveDmg": 182,
-		"rank": 11
+		"rank": 12
+	},
+	"toucannon": {
+		"fastMove": "PECK",
+		"chargedMove": "BEAK_BLAST",
+		"dps": 26.933333333333334,
+		"speciesId": "toucannon",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 142,
+		"rank": 13
 	},
 	"yveltal": {
 		"fastMove": "GUST",
@@ -105,7 +123,7 @@
 		"speciesId": "yveltal",
 		"fastMoveDmg": 32,
 		"chargedMoveDmg": 108,
-		"rank": 12
+		"rank": 14
 	},
 	"unfezant_shadow": {
 		"fastMove": "AIR_SLASH",
@@ -114,7 +132,7 @@
 		"speciesId": "unfezant_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 111,
-		"rank": 13
+		"rank": 15
 	},
 	"staraptor": {
 		"fastMove": "GUST",
@@ -123,7 +141,7 @@
 		"speciesId": "staraptor",
 		"fastMoveDmg": 30,
 		"chargedMoveDmg": 108,
-		"rank": 14
+		"rank": 16
 	},
 	"zapdos_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -132,7 +150,7 @@
 		"speciesId": "zapdos_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 108,
-		"rank": 15
+		"rank": 17
 	},
 	"vikavolt_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -141,7 +159,7 @@
 		"speciesId": "vikavolt_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 116,
-		"rank": 16
+		"rank": 18
 	},
 	"articuno_galarian": {
 		"fastMove": "PSYCHO_CUT",
@@ -150,7 +168,7 @@
 		"speciesId": "articuno_galarian",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 114,
-		"rank": 17
+		"rank": 19
 	},
 	"blaziken_mega": {
 		"fastMove": "COUNTER",
@@ -159,7 +177,7 @@
 		"speciesId": "blaziken_mega",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 178,
-		"rank": 18
+		"rank": 20
 	},
 	"salamence": {
 		"fastMove": "DRAGON_TAIL",
@@ -168,7 +186,7 @@
 		"speciesId": "salamence",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 126,
-		"rank": 19
+		"rank": 21
 	},
 	"moltres": {
 		"fastMove": "WING_ATTACK",
@@ -177,16 +195,7 @@
 		"speciesId": "moltres",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 102,
-		"rank": 20
-	},
-	"toucannon_shadow": {
-		"fastMove": "PECK",
-		"chargedMove": "DRILL_PECK",
-		"dps": 24.517241379310345,
-		"speciesId": "toucannon_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 96,
-		"rank": 21
+		"rank": 22
 	},
 	"ho_oh_shadow": {
 		"fastMove": "EXTRASENSORY",
@@ -195,7 +204,7 @@
 		"speciesId": "ho_oh_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 190,
-		"rank": 22
+		"rank": 23
 	},
 	"charizard_mega_y": {
 		"fastMove": "AIR_SLASH",
@@ -204,7 +213,7 @@
 		"speciesId": "charizard_mega_y",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 88,
-		"rank": 23
+		"rank": 24
 	},
 	"braviary": {
 		"fastMove": "AIR_SLASH",
@@ -213,7 +222,7 @@
 		"speciesId": "braviary",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 107,
-		"rank": 24
+		"rank": 25
 	},
 	"honchkrow": {
 		"fastMove": "PECK",
@@ -222,7 +231,7 @@
 		"speciesId": "honchkrow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 161,
-		"rank": 25
+		"rank": 26
 	},
 	"lugia_shadow": {
 		"fastMove": "EXTRASENSORY",
@@ -231,7 +240,7 @@
 		"speciesId": "lugia_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 215,
-		"rank": 26
+		"rank": 27
 	},
 	"tornadus_incarnate": {
 		"fastMove": "AIR_SLASH",
@@ -240,7 +249,7 @@
 		"speciesId": "tornadus_incarnate",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 141,
-		"rank": 27
+		"rank": 28
 	},
 	"swellow_shadow": {
 		"fastMove": "WING_ATTACK",
@@ -249,7 +258,7 @@
 		"speciesId": "swellow_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 150,
-		"rank": 28
+		"rank": 29
 	},
 	"zapdos_galarian": {
 		"fastMove": "COUNTER",
@@ -258,7 +267,7 @@
 		"speciesId": "zapdos_galarian",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 115,
-		"rank": 29
+		"rank": 30
 	},
 	"swanna_shadow": {
 		"fastMove": "AIR_SLASH",
@@ -267,7 +276,7 @@
 		"speciesId": "swanna_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 102,
-		"rank": 30
+		"rank": 31
 	},
 	"dragonite_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -276,7 +285,7 @@
 		"speciesId": "dragonite_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 168,
-		"rank": 31
+		"rank": 32
 	},
 	"braviary_hisuian": {
 		"fastMove": "AIR_SLASH",
@@ -285,7 +294,7 @@
 		"speciesId": "braviary_hisuian",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 99,
-		"rank": 32
+		"rank": 33
 	},
 	"vikavolt": {
 		"fastMove": "BUG_BITE",
@@ -294,7 +303,7 @@
 		"speciesId": "vikavolt",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 97,
-		"rank": 33
+		"rank": 34
 	},
 	"zapdos": {
 		"fastMove": "THUNDER_SHOCK",
@@ -303,7 +312,7 @@
 		"speciesId": "zapdos",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 90,
-		"rank": 34
+		"rank": 35
 	},
 	"blaziken_shadow": {
 		"fastMove": "COUNTER",
@@ -312,7 +321,7 @@
 		"speciesId": "blaziken_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 159,
-		"rank": 35
+		"rank": 36
 	},
 	"dodrio": {
 		"fastMove": "PECK",
@@ -321,7 +330,7 @@
 		"speciesId": "dodrio",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 145,
-		"rank": 36
+		"rank": 37
 	},
 	"pidgeot_shadow": {
 		"fastMove": "GUST",
@@ -330,7 +339,7 @@
 		"speciesId": "pidgeot_shadow",
 		"fastMoveDmg": 26,
 		"chargedMoveDmg": 135,
-		"rank": 37
+		"rank": 38
 	},
 	"moltres_galarian": {
 		"fastMove": "WING_ATTACK",
@@ -339,7 +348,7 @@
 		"speciesId": "moltres_galarian",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 94,
-		"rank": 38
+		"rank": 39
 	},
 	"talonflame_shadow": {
 		"fastMove": "PECK",
@@ -348,7 +357,7 @@
 		"speciesId": "talonflame_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 99,
-		"rank": 39
+		"rank": 40
 	},
 	"unfezant": {
 		"fastMove": "AIR_SLASH",
@@ -357,7 +366,7 @@
 		"speciesId": "unfezant",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 93,
-		"rank": 40
+		"rank": 41
 	},
 	"kartana": {
 		"fastMove": "AIR_SLASH",
@@ -366,7 +375,7 @@
 		"speciesId": "kartana",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 74,
-		"rank": 41
+		"rank": 42
 	},
 	"scyther_shadow": {
 		"fastMove": "AIR_SLASH",
@@ -375,7 +384,7 @@
 		"speciesId": "scyther_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 74,
-		"rank": 42
+		"rank": 43
 	},
 	"bombirdier": {
 		"fastMove": "WING_ATTACK",
@@ -384,7 +393,7 @@
 		"speciesId": "bombirdier",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 92,
-		"rank": 43
+		"rank": 44
 	},
 	"sirfetchd": {
 		"fastMove": "FURY_CUTTER",
@@ -393,7 +402,7 @@
 		"speciesId": "sirfetchd",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 137,
-		"rank": 44
+		"rank": 45
 	},
 	"charizard_shadow": {
 		"fastMove": "AIR_SLASH",
@@ -402,15 +411,6 @@
 		"speciesId": "charizard_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 76,
-		"rank": 45
-	},
-	"toucannon": {
-		"fastMove": "PECK",
-		"chargedMove": "DRILL_PECK",
-		"dps": 20.620689655172413,
-		"speciesId": "toucannon",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 80,
 		"rank": 46
 	},
 	"ho_oh": {

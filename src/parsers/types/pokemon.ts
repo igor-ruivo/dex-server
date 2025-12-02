@@ -118,6 +118,7 @@ export enum PokemonForms {
 	Curly = 'Curly',
 	Droopy = 'Droopy',
 	Stretchy = 'Stretchy',
+	Resolute = 'Resolute',
 }
 
 export interface PokemonStats {

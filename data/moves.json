@@ -5462,5 +5462,25 @@
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
 		}
+	},
+	"BEAK_BLAST": {
+		"moveId": "BEAK_BLAST",
+		"vId": "-1",
+		"type": "flying",
+		"isFast": false,
+		"pvpPower": 110,
+		"pvePower": 125,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"buffActivationChance": 1,
+			"targetAttackStatStageChange": -1
+		},
+		"moveName": {
+			"en": "Beak Blast",
+			"pt_br": "Beak Blast"
+		}
 	}
 }

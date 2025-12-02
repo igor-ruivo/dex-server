@@ -319,6 +319,31 @@ class MovesProvider {
 			};
 		}
 
+		const beakBlastMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			beakBlastMoveName[locale] = normalizedMoveName('BEAK_BLAST');
+		});
+
+		if (!movesDictionary.BEAK_BLAST) {
+			movesDictionary.BEAK_BLAST = {
+				moveId: 'BEAK_BLAST',
+				vId: '-1',
+				type: 'flying',
+				isFast: false,
+				pvpPower: 110,
+				pvePower: 125,
+				pvpEnergy: -55,
+				pveEnergy: -50,
+				pvpCooldown: 0.5,
+				pveCooldown: 2.5,
+				buffs: {
+					buffActivationChance: 1,
+					targetAttackStatStageChange: -1,
+				},
+				moveName: beakBlastMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

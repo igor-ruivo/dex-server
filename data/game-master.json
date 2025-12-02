@@ -60308,6 +60308,122 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"nacli": {
+		"dex": 932,
+		"speciesId": "nacli",
+		"speciesName": "Nacli",
+		"types": [
+			"Rock"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/932.png",
+		"goImageUrl": "932.icon.png",
+		"shinyGoImageUrl": "932.s.icon.png",
+		"baseStats": {
+			"atk": 95,
+			"def": 108,
+			"hp": 146
+		},
+		"fastMoves": [
+			"ROCK_THROW",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_TOMB",
+			"ANCIENT_POWER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_NACLI",
+			"evolutions": [
+				"naclstack"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"naclstack": {
+		"dex": 933,
+		"speciesId": "naclstack",
+		"speciesName": "Naclstack",
+		"types": [
+			"Rock"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/933.png",
+		"goImageUrl": "933.icon.png",
+		"shinyGoImageUrl": "933.s.icon.png",
+		"baseStats": {
+			"atk": 105,
+			"def": 160,
+			"hp": 155
+		},
+		"fastMoves": [
+			"SMACK_DOWN",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_TOMB",
+			"ANCIENT_POWER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_NACLI",
+			"parent": "nacli",
+			"evolutions": [
+				"garganacl"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"garganacl": {
+		"dex": 934,
+		"speciesId": "garganacl",
+		"speciesName": "Garganacl",
+		"types": [
+			"Rock"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/934.png",
+		"goImageUrl": "934.icon.png",
+		"shinyGoImageUrl": "934.s.icon.png",
+		"baseStats": {
+			"atk": 171,
+			"def": 212,
+			"hp": 225
+		},
+		"fastMoves": [
+			"SMACK_DOWN",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_TOMB",
+			"ANCIENT_POWER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_NACLI",
+			"parent": "naclstack"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"charcadet": {
 		"dex": 935,
 		"speciesId": "charcadet",

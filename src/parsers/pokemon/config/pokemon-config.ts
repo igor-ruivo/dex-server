@@ -59,6 +59,9 @@ export const POKEMON_CONFIG = {
 		'hydrapple',
 		'dudunsparce',
 		'metagross_mega',
+		'nacli',
+		'naclstack',
+		'garganacl',
 	]),
 
 	// Pokemon that should be excluded

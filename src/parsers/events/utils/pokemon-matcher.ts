@@ -50,7 +50,7 @@ class PokemonMatcher {
 				!currP.includes('will return to') &&
 				!currP.includes('will appear in')
 			) {
-				console.log(currP);
+				//console.log(currP);
 				raidLevel = currP.substring(0, raidLIndex);
 				for (const [key, value] of Object.entries(RAID_LEVEL_MAPPINGS)) {
 					raidLevel = raidLevel.replaceAll(key, value);

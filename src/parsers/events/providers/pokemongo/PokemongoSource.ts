@@ -531,8 +531,11 @@ class PokemonGoSource implements IEventSource {
 			}
 
 			if (
-				sectionBodies.some((b) =>
-					b.textContent?.toLocaleLowerCase().includes('raid')
+				sectionBodies.some(
+					(b) =>
+						b.textContent?.toLocaleLowerCase().includes('raid') &&
+						(!b.textContent?.toLocaleLowerCase().includes('debut') ||
+							b.textContent?.toLocaleLowerCase().includes('debut in'))
 				)
 			) {
 				const parsedPkm = extractPokemonSpeciesIdsFromElements(

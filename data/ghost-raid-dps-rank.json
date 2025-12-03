@@ -521,6 +521,15 @@
 		"chargedMoveDmg": 113,
 		"rank": 58
 	},
+	"glalie_mega": {
+		"fastMove": "POWDER_SNOW",
+		"chargedMove": "SHADOW_BALL",
+		"dps": 19.52631578947368,
+		"speciesId": "glalie_mega",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 107,
+		"rank": 59
+	},
 	"reuniclus_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "SHADOW_BALL",
@@ -528,7 +537,7 @@
 		"speciesId": "reuniclus_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 110,
-		"rank": 59
+		"rank": 60
 	},
 	"houndstone": {
 		"fastMove": "LICK",
@@ -537,15 +546,6 @@
 		"speciesId": "houndstone",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 96,
-		"rank": 60
-	},
-	"glalie_mega": {
-		"fastMove": "ROLLOUT",
-		"chargedMove": "SHADOW_BALL",
-		"dps": 19.18939393939394,
-		"speciesId": "glalie_mega",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 107,
 		"rank": 61
 	},
 	"decidueye": {
@@ -845,6 +845,15 @@
 		"chargedMoveDmg": 88,
 		"rank": 94
 	},
+	"glalie_shadow": {
+		"fastMove": "POWDER_SNOW",
+		"chargedMove": "SHADOW_BALL",
+		"dps": 15.526315789473681,
+		"speciesId": "glalie_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 85,
+		"rank": 95
+	},
 	"golbat_shadow": {
 		"fastMove": "WING_ATTACK",
 		"chargedMove": "SHADOW_BALL",
@@ -852,7 +861,7 @@
 		"speciesId": "golbat_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 85,
-		"rank": 95
+		"rank": 96
 	},
 	"gastly": {
 		"fastMove": "LICK",
@@ -861,15 +870,6 @@
 		"speciesId": "gastly",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 53,
-		"rank": 96
-	},
-	"glalie_shadow": {
-		"fastMove": "ROLLOUT",
-		"chargedMove": "SHADOW_BALL",
-		"dps": 15.265151515151516,
-		"speciesId": "glalie_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 85,
 		"rank": 97
 	},
 	"zorua_hisuian": {
@@ -1061,6 +1061,15 @@
 		"chargedMoveDmg": 72,
 		"rank": 118
 	},
+	"glalie": {
+		"fastMove": "POWDER_SNOW",
+		"chargedMove": "SHADOW_BALL",
+		"dps": 13.315789473684209,
+		"speciesId": "glalie",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 71,
+		"rank": 119
+	},
 	"sableye_shadow": {
 		"fastMove": "SHADOW_CLAW",
 		"chargedMove": "SHADOW_SNEAK",
@@ -1068,7 +1077,7 @@
 		"speciesId": "sableye_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 45,
-		"rank": 119
+		"rank": 120
 	},
 	"shuppet_shadow": {
 		"fastMove": "ASTONISH",
@@ -1077,7 +1086,7 @@
 		"speciesId": "shuppet_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 49,
-		"rank": 120
+		"rank": 121
 	},
 	"braviary_hisuian": {
 		"fastMove": "AIR_SLASH",
@@ -1086,7 +1095,7 @@
 		"speciesId": "braviary_hisuian",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 50,
-		"rank": 121
+		"rank": 122
 	},
 	"decidueye_hisuian": {
 		"fastMove": "MAGICAL_LEAF",
@@ -1095,7 +1104,7 @@
 		"speciesId": "decidueye_hisuian",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 55,
-		"rank": 122
+		"rank": 123
 	},
 	"misdreavus": {
 		"fastMove": "ASTONISH",
@@ -1104,7 +1113,7 @@
 		"speciesId": "misdreavus",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 48,
-		"rank": 123
+		"rank": 124
 	},
 	"rotom_fan": {
 		"fastMove": "ASTONISH",
@@ -1113,7 +1122,7 @@
 		"speciesId": "rotom_fan",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 48,
-		"rank": 124
+		"rank": 125
 	},
 	"rotom_mow": {
 		"fastMove": "ASTONISH",
@@ -1122,7 +1131,7 @@
 		"speciesId": "rotom_mow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 48,
-		"rank": 125
+		"rank": 126
 	},
 	"golbat": {
 		"fastMove": "WING_ATTACK",
@@ -1130,15 +1139,6 @@
 		"dps": 13.024096385542169,
 		"speciesId": "golbat",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 71,
-		"rank": 126
-	},
-	"glalie": {
-		"fastMove": "ROLLOUT",
-		"chargedMove": "SHADOW_BALL",
-		"dps": 12.871212121212121,
-		"speciesId": "glalie",
-		"fastMoveDmg": 7,
 		"chargedMoveDmg": 71,
 		"rank": 127
 	},

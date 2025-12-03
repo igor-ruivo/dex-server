@@ -26,6 +26,15 @@
 		"chargedMoveDmg": 159,
 		"rank": 3
 	},
+	"lucario_mega": {
+		"fastMove": "FORCE_PALM",
+		"chargedMove": "METEOR_MASH",
+		"dps": 33.28888888888889,
+		"speciesId": "lucario_mega",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 156,
+		"rank": 4
+	},
 	"metagross_shadow": {
 		"fastMove": "BULLET_PUNCH",
 		"chargedMove": "METEOR_MASH",
@@ -33,7 +42,7 @@
 		"speciesId": "metagross_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 156,
-		"rank": 4
+		"rank": 5
 	},
 	"metagross_mega": {
 		"fastMove": "BULLET_PUNCH",
@@ -42,7 +51,7 @@
 		"speciesId": "metagross_mega",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 151,
-		"rank": 5
+		"rank": 6
 	},
 	"dialga_shadow": {
 		"fastMove": "METAL_CLAW",
@@ -51,7 +60,7 @@
 		"speciesId": "dialga_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 100,
-		"rank": 6
+		"rank": 7
 	},
 	"excadrill_shadow": {
 		"fastMove": "METAL_CLAW",
@@ -60,7 +69,7 @@
 		"speciesId": "excadrill_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 93,
-		"rank": 7
+		"rank": 8
 	},
 	"metagross": {
 		"fastMove": "BULLET_PUNCH",
@@ -69,16 +78,16 @@
 		"speciesId": "metagross",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 130,
-		"rank": 8
-	},
-	"lucario_mega": {
-		"fastMove": "BULLET_PUNCH",
-		"chargedMove": "FLASH_CANNON",
-		"dps": 26.007843137254905,
-		"speciesId": "lucario_mega",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 156,
 		"rank": 9
+	},
+	"lucario": {
+		"fastMove": "FORCE_PALM",
+		"chargedMove": "METEOR_MASH",
+		"dps": 25.77777777777778,
+		"speciesId": "lucario",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 120,
+		"rank": 10
 	},
 	"dialga": {
 		"fastMove": "METAL_CLAW",
@@ -87,7 +96,7 @@
 		"speciesId": "dialga",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 84,
-		"rank": 10
+		"rank": 11
 	},
 	"dialga_origin": {
 		"fastMove": "METAL_CLAW",
@@ -96,7 +105,7 @@
 		"speciesId": "dialga_origin",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 82,
-		"rank": 11
+		"rank": 12
 	},
 	"empoleon_shadow": {
 		"fastMove": "STEEL_WING",
@@ -105,7 +114,7 @@
 		"speciesId": "empoleon_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 129,
-		"rank": 12
+		"rank": 13
 	},
 	"scizor_shadow": {
 		"fastMove": "BULLET_PUNCH",
@@ -114,7 +123,7 @@
 		"speciesId": "scizor_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 87,
-		"rank": 13
+		"rank": 14
 	},
 	"magneton_shadow": {
 		"fastMove": "METAL_SOUND",
@@ -123,7 +132,7 @@
 		"speciesId": "magneton_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 103,
-		"rank": 14
+		"rank": 15
 	},
 	"genesect": {
 		"fastMove": "METAL_CLAW",
@@ -132,7 +141,7 @@
 		"speciesId": "genesect",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 96,
-		"rank": 15
+		"rank": 16
 	},
 	"genesect_burn": {
 		"fastMove": "METAL_CLAW",
@@ -141,7 +150,7 @@
 		"speciesId": "genesect_burn",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 96,
-		"rank": 16
+		"rank": 17
 	},
 	"genesect_chill": {
 		"fastMove": "METAL_CLAW",
@@ -150,7 +159,7 @@
 		"speciesId": "genesect_chill",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 96,
-		"rank": 17
+		"rank": 18
 	},
 	"genesect_douse": {
 		"fastMove": "METAL_CLAW",
@@ -159,7 +168,7 @@
 		"speciesId": "genesect_douse",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 96,
-		"rank": 18
+		"rank": 19
 	},
 	"genesect_shock": {
 		"fastMove": "METAL_CLAW",
@@ -168,7 +177,7 @@
 		"speciesId": "genesect_shock",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 96,
-		"rank": 19
+		"rank": 20
 	},
 	"scizor_mega": {
 		"fastMove": "BULLET_PUNCH",
@@ -177,7 +186,7 @@
 		"speciesId": "scizor_mega",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 85,
-		"rank": 20
+		"rank": 21
 	},
 	"aggron_mega": {
 		"fastMove": "IRON_TAIL",
@@ -186,7 +195,7 @@
 		"speciesId": "aggron_mega",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 88,
-		"rank": 21
+		"rank": 22
 	},
 	"aggron_shadow": {
 		"fastMove": "IRON_TAIL",
@@ -195,7 +204,7 @@
 		"speciesId": "aggron_shadow",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 86,
-		"rank": 22
+		"rank": 23
 	},
 	"magnezone_shadow": {
 		"fastMove": "METAL_SOUND",
@@ -204,7 +213,7 @@
 		"speciesId": "magnezone_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 145,
-		"rank": 23
+		"rank": 24
 	},
 	"aerodactyl_mega": {
 		"fastMove": "STEEL_WING",
@@ -213,7 +222,7 @@
 		"speciesId": "aerodactyl_mega",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 74,
-		"rank": 24
+		"rank": 25
 	},
 	"excadrill": {
 		"fastMove": "METAL_CLAW",
@@ -222,7 +231,7 @@
 		"speciesId": "excadrill",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 78,
-		"rank": 25
+		"rank": 26
 	},
 	"duraludon": {
 		"fastMove": "METAL_CLAW",
@@ -231,7 +240,7 @@
 		"speciesId": "duraludon",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 122,
-		"rank": 26
+		"rank": 27
 	},
 	"dugtrio_alolan_shadow": {
 		"fastMove": "METAL_CLAW",
@@ -240,7 +249,7 @@
 		"speciesId": "dugtrio_alolan_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 75,
-		"rank": 27
+		"rank": 28
 	},
 	"kingambit": {
 		"fastMove": "METAL_CLAW",
@@ -249,7 +258,7 @@
 		"speciesId": "kingambit",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 73,
-		"rank": 28
+		"rank": 29
 	},
 	"melmetal": {
 		"fastMove": "THUNDER_SHOCK",
@@ -258,7 +267,7 @@
 		"speciesId": "melmetal",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 81,
-		"rank": 29
+		"rank": 30
 	},
 	"heatran_shadow": {
 		"fastMove": "FIRE_SPIN",
@@ -267,7 +276,7 @@
 		"speciesId": "heatran_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 92,
-		"rank": 30
+		"rank": 31
 	},
 	"bisharp": {
 		"fastMove": "METAL_CLAW",
@@ -276,7 +285,7 @@
 		"speciesId": "bisharp",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 71,
-		"rank": 31
+		"rank": 32
 	},
 	"machamp_shadow": {
 		"fastMove": "BULLET_PUNCH",
@@ -285,7 +294,7 @@
 		"speciesId": "machamp_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 84,
-		"rank": 32
+		"rank": 33
 	},
 	"jirachi": {
 		"fastMove": "CHARGE_BEAM",
@@ -294,7 +303,7 @@
 		"speciesId": "jirachi",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 70,
-		"rank": 33
+		"rank": 34
 	},
 	"empoleon": {
 		"fastMove": "STEEL_WING",
@@ -303,7 +312,7 @@
 		"speciesId": "empoleon",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 108,
-		"rank": 34
+		"rank": 35
 	},
 	"aerodactyl_shadow": {
 		"fastMove": "STEEL_WING",
@@ -312,7 +321,7 @@
 		"speciesId": "aerodactyl_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 68,
-		"rank": 35
+		"rank": 36
 	},
 	"steelix_mega": {
 		"fastMove": "IRON_TAIL",
@@ -321,7 +330,7 @@
 		"speciesId": "steelix_mega",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 76,
-		"rank": 36
+		"rank": 37
 	},
 	"hariyama_shadow": {
 		"fastMove": "FORCE_PALM",
@@ -330,7 +339,7 @@
 		"speciesId": "hariyama_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 75,
-		"rank": 37
+		"rank": 38
 	},
 	"kyurem_black": {
 		"fastMove": "DRAGON_TAIL",
@@ -339,7 +348,7 @@
 		"speciesId": "kyurem_black",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 78,
-		"rank": 38
+		"rank": 39
 	},
 	"necrozma_dawn_wings": {
 		"fastMove": "METAL_CLAW",
@@ -348,15 +357,6 @@
 		"speciesId": "necrozma_dawn_wings",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 70,
-		"rank": 39
-	},
-	"lucario": {
-		"fastMove": "BULLET_PUNCH",
-		"chargedMove": "FLASH_CANNON",
-		"dps": 19.76470588235294,
-		"speciesId": "lucario",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 120,
 		"rank": 40
 	},
 	"magneton": {
@@ -738,11 +738,11 @@
 		"rank": 82
 	},
 	"glalie_mega": {
-		"fastMove": "ROLLOUT",
+		"fastMove": "POWDER_SNOW",
 		"chargedMove": "GYRO_BALL",
-		"dps": 15.752650176678445,
+		"dps": 15.75609756097561,
 		"speciesId": "glalie_mega",
-		"fastMoveDmg": 10,
+		"fastMoveDmg": 5,
 		"chargedMoveDmg": 91,
 		"rank": 83
 	},
@@ -1241,6 +1241,15 @@
 		"chargedMoveDmg": 75,
 		"rank": 138
 	},
+	"glalie": {
+		"fastMove": "POWDER_SNOW",
+		"chargedMove": "GYRO_BALL",
+		"dps": 10.73170731707317,
+		"speciesId": "glalie",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 60,
+		"rank": 139
+	},
 	"wormadam_trash": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "IRON_HEAD",
@@ -1248,7 +1257,7 @@
 		"speciesId": "wormadam_trash",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 41,
-		"rank": 139
+		"rank": 140
 	},
 	"varoom": {
 		"fastMove": "METAL_SOUND",
@@ -1257,7 +1266,7 @@
 		"speciesId": "varoom",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 57,
-		"rank": 140
+		"rank": 141
 	},
 	"honedge": {
 		"fastMove": "PSYCHO_CUT",
@@ -1266,15 +1275,6 @@
 		"speciesId": "honedge",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 61,
-		"rank": 141
-	},
-	"glalie": {
-		"fastMove": "ICE_SHARD",
-		"chargedMove": "GYRO_BALL",
-		"dps": 10.588235294117647,
-		"speciesId": "glalie",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 60,
 		"rank": 142
 	},
 	"miltank": {

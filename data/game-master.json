@@ -6965,6 +6965,7 @@
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
 			"SCALD",
+			"PAYBACK",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -7007,6 +7008,7 @@
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
 			"SCALD",
+			"PAYBACK",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -13207,7 +13209,8 @@
 		"fastMoves": [
 			"BITE",
 			"STEEL_WING",
-			"ROCK_THROW"
+			"ROCK_THROW",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"ANCIENT_POWER",
@@ -13245,7 +13248,8 @@
 		"fastMoves": [
 			"BITE",
 			"STEEL_WING",
-			"ROCK_THROW"
+			"ROCK_THROW",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"ANCIENT_POWER",
@@ -13283,7 +13287,8 @@
 		"fastMoves": [
 			"BITE",
 			"STEEL_WING",
-			"ROCK_THROW"
+			"ROCK_THROW",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"ANCIENT_POWER",
@@ -21011,6 +21016,7 @@
 			"EXTRASENSORY",
 			"ICE_FANG",
 			"SNARL",
+			"WATER_GUN",
 			"HIDDEN_POWER"
 		],
 		"chargedMoves": [
@@ -21051,6 +21057,7 @@
 			"EXTRASENSORY",
 			"ICE_FANG",
 			"SNARL",
+			"WATER_GUN",
 			"HIDDEN_POWER"
 		],
 		"chargedMoves": [
@@ -21257,7 +21264,8 @@
 		"fastMoves": [
 			"BITE",
 			"IRON_TAIL",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"CRUNCH",
@@ -21300,7 +21308,8 @@
 		"fastMoves": [
 			"BITE",
 			"IRON_TAIL",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"CRUNCH",
@@ -21339,7 +21348,8 @@
 		"fastMoves": [
 			"BITE",
 			"IRON_TAIL",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"CRUNCH",
@@ -22035,7 +22045,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"FIRE_SPIN"
+			"FIRE_SPIN",
+			"EMBER"
 		],
 		"chargedMoves": [
 			"BRAVE_BIRD",
@@ -22044,6 +22055,7 @@
 			"STONE_EDGE",
 			"BLAST_BURN",
 			"BLAZE_KICK",
+			"AURA_SPHERE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -22080,7 +22092,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"FIRE_SPIN"
+			"FIRE_SPIN",
+			"EMBER"
 		],
 		"chargedMoves": [
 			"BRAVE_BIRD",
@@ -22089,6 +22102,7 @@
 			"STONE_EDGE",
 			"BLAST_BURN",
 			"BLAZE_KICK",
+			"AURA_SPHERE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -22121,7 +22135,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"FIRE_SPIN"
+			"FIRE_SPIN",
+			"EMBER"
 		],
 		"chargedMoves": [
 			"BRAVE_BIRD",
@@ -22130,6 +22145,7 @@
 			"STONE_EDGE",
 			"BLAST_BURN",
 			"BLAZE_KICK",
+			"AURA_SPHERE",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -23137,7 +23153,8 @@
 		},
 		"fastMoves": [
 			"BUBBLE",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"ASTONISH"
 		],
 		"chargedMoves": [
 			"BLIZZARD",
@@ -23146,7 +23163,8 @@
 			"ICE_BEAM",
 			"SOLAR_BEAM",
 			"LEAF_STORM",
-			"SCALD"
+			"SCALD",
+			"WEATHER_BALL_WATER"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -27703,7 +27721,8 @@
 		"chargedMoves": [
 			"MOONBLAST",
 			"PSYCHIC",
-			"ROCK_SLIDE"
+			"ROCK_SLIDE",
+			"WEATHER_BALL_ICE"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -27738,7 +27757,8 @@
 		"chargedMoves": [
 			"PSYCHIC",
 			"ROCK_SLIDE",
-			"SOLAR_BEAM"
+			"SOLAR_BEAM",
+			"WEATHER_BALL_FIRE"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -28726,6 +28746,7 @@
 			"HYPER_BEAM",
 			"SURF",
 			"WRAP",
+			"AQUA_TAIL",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -28765,6 +28786,7 @@
 			"HYPER_BEAM",
 			"SURF",
 			"WRAP",
+			"AQUA_TAIL",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -29626,7 +29648,8 @@
 		"fastMoves": [
 			"FROST_BREATH",
 			"ICE_SHARD",
-			"ROLLOUT"
+			"ROLLOUT",
+			"POWDER_SNOW"
 		],
 		"chargedMoves": [
 			"AVALANCHE",
@@ -29665,7 +29688,8 @@
 		"fastMoves": [
 			"FROST_BREATH",
 			"ICE_SHARD",
-			"ROLLOUT"
+			"ROLLOUT",
+			"POWDER_SNOW"
 		],
 		"chargedMoves": [
 			"AVALANCHE",
@@ -29700,7 +29724,8 @@
 		"fastMoves": [
 			"FROST_BREATH",
 			"ICE_SHARD",
-			"ROLLOUT"
+			"ROLLOUT",
+			"POWDER_SNOW"
 		],
 		"chargedMoves": [
 			"AVALANCHE",
@@ -31241,6 +31266,7 @@
 			"THUNDER",
 			"SURF",
 			"ORIGIN_PULSE",
+			"AVALANCHE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -31278,6 +31304,7 @@
 			"THUNDER",
 			"SURF",
 			"ORIGIN_PULSE",
+			"AVALANCHE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -31315,6 +31342,7 @@
 			"THUNDER",
 			"SURF",
 			"ORIGIN_PULSE",
+			"AVALANCHE",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -35193,7 +35221,8 @@
 			"PSYCHIC",
 			"BULLDOZE",
 			"PSYSHOCK",
-			"PAYBACK"
+			"PAYBACK",
+			"WEATHER_BALL_WATER"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -35795,7 +35824,8 @@
 			"POWER_UP_PUNCH",
 			"AURA_SPHERE",
 			"BLAZE_KICK",
-			"THUNDER_PUNCH"
+			"THUNDER_PUNCH",
+			"METEOR_MASH"
 		],
 		"eliteMoves": [
 			"FORCE_PALM"
@@ -35840,7 +35870,8 @@
 			"POWER_UP_PUNCH",
 			"AURA_SPHERE",
 			"BLAZE_KICK",
-			"THUNDER_PUNCH"
+			"THUNDER_PUNCH",
+			"METEOR_MASH"
 		],
 		"eliteMoves": [
 			"FORCE_PALM"
@@ -36457,7 +36488,8 @@
 		"chargedMoves": [
 			"BLIZZARD",
 			"SILVER_WIND",
-			"WATER_PULSE"
+			"WATER_PULSE",
+			"AQUA_TAIL"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -39842,7 +39874,8 @@
 			"RAZOR_SHELL",
 			"ICY_WIND",
 			"X_SCISSOR",
-			"DARK_PULSE"
+			"DARK_PULSE",
+			"SACRED_SWORD"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -47825,6 +47858,7 @@
 			"DARK_PULSE",
 			"FLASH_CANNON",
 			"BRUTAL_SWING",
+			"FLY",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -47867,6 +47901,7 @@
 			"DARK_PULSE",
 			"FLASH_CANNON",
 			"BRUTAL_SWING",
+			"FLY",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -48586,10 +48621,10 @@
 			"X_SCISSOR",
 			"SECRET_SWORD"
 		],
-		"eliteMoves": [],
-		"legacyMoves": [
+		"eliteMoves": [
 			"SECRET_SWORD"
 		],
+		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
 		"form": "Resolute",
@@ -49989,7 +50024,8 @@
 		"chargedMoves": [
 			"BRICK_BREAK",
 			"LEAF_BLADE",
-			"SEED_BOMB"
+			"SEED_BOMB",
+			"ROCK_SLIDE"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -50291,11 +50327,13 @@
 		},
 		"fastMoves": [
 			"PSYCHO_CUT",
-			"TACKLE"
+			"TACKLE",
+			"SHADOW_CLAW"
 		],
 		"chargedMoves": [
 			"IRON_HEAD",
-			"GYRO_BALL"
+			"GYRO_BALL",
+			"SACRED_SWORD"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -52008,7 +52046,8 @@
 		},
 		"fastMoves": [
 			"HEX",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"SEED_BOMB",
@@ -52048,7 +52087,8 @@
 		},
 		"fastMoves": [
 			"HEX",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"SEED_BOMB",
@@ -52088,7 +52128,8 @@
 		},
 		"fastMoves": [
 			"HEX",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"SEED_BOMB",
@@ -52128,7 +52169,8 @@
 		},
 		"fastMoves": [
 			"HEX",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"SEED_BOMB",
@@ -55348,7 +55390,8 @@
 			"POWER_WHIP",
 			"SHADOW_BALL",
 			"HEAVY_SLAM",
-			"WRAP"
+			"WRAP",
+			"BRUTAL_SWING"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -55984,13 +56027,15 @@
 		},
 		"fastMoves": [
 			"AIR_SLASH",
-			"RAZOR_LEAF"
+			"RAZOR_LEAF",
+			"FURY_CUTTER"
 		],
 		"chargedMoves": [
 			"LEAF_BLADE",
 			"X_SCISSOR",
 			"NIGHT_SLASH",
-			"AERIAL_ACE"
+			"AERIAL_ACE",
+			"SACRED_SWORD"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -58924,7 +58969,8 @@
 			"OUTRAGE",
 			"DRAGON_PULSE",
 			"BREAKING_SWIPE",
-			"DRAGON_ENERGY"
+			"DRAGON_ENERGY",
+			"VICE_GRIP"
 		],
 		"eliteMoves": [
 			"DRAGON_BREATH",
@@ -59036,7 +59082,8 @@
 		},
 		"fastMoves": [
 			"TACKLE",
-			"ROCK_SMASH"
+			"ROCK_SMASH",
+			"SMACK_DOWN"
 		],
 		"chargedMoves": [
 			"FIRE_PUNCH",
@@ -59046,6 +59093,7 @@
 			"ICE_PUNCH",
 			"TRAILBLAZE",
 			"SWIFT",
+			"PLAY_ROUGH",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -59081,7 +59129,8 @@
 		},
 		"fastMoves": [
 			"TACKLE",
-			"ROCK_SMASH"
+			"ROCK_SMASH",
+			"SMACK_DOWN"
 		],
 		"chargedMoves": [
 			"FIRE_PUNCH",
@@ -59091,6 +59140,7 @@
 			"ICE_PUNCH",
 			"TRAILBLAZE",
 			"SWIFT",
+			"PLAY_ROUGH",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -60164,7 +60214,8 @@
 		},
 		"fastMoves": [
 			"CHARM",
-			"BITE"
+			"BITE",
+			"FIRE_FANG"
 		],
 		"chargedMoves": [
 			"BODY_SLAM",
@@ -61148,7 +61199,8 @@
 		"chargedMoves": [
 			"SHADOW_BALL",
 			"DIG",
-			"PSYCHIC_FANGS"
+			"PSYCHIC_FANGS",
+			"PLAY_ROUGH"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -61226,7 +61278,9 @@
 		"chargedMoves": [
 			"BODY_SLAM",
 			"AVALANCHE",
-			"HEAVY_SLAM"
+			"HEAVY_SLAM",
+			"SUPER_POWER",
+			"ICICLE_SPEAR"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -61529,12 +61583,14 @@
 		"fastMoves": [
 			"BITE",
 			"ASTONISH",
-			"ROLLOUT"
+			"ROLLOUT",
+			"DRAGON_TAIL"
 		],
 		"chargedMoves": [
 			"DIG",
 			"ROCK_SLIDE",
-			"DRILL_RUN"
+			"DRILL_RUN",
+			"BODY_SLAM"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],

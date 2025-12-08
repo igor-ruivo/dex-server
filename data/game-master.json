@@ -57570,6 +57570,82 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"clobbopus": {
+		"dex": 852,
+		"speciesId": "clobbopus",
+		"speciesName": "Clobbopus",
+		"types": [
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/852.png",
+		"goImageUrl": "852.icon.png",
+		"shinyGoImageUrl": "852.s.icon.png",
+		"baseStats": {
+			"atk": 121,
+			"def": 103,
+			"hp": 137
+		},
+		"fastMoves": [
+			"ROCK_SMASH"
+		],
+		"chargedMoves": [
+			"BRICK_BREAK",
+			"SUPER_POWER",
+			"ICE_PUNCH"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_CLOBBOPUS",
+			"evolutions": [
+				"grapploct"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"grapploct": {
+		"dex": 853,
+		"speciesId": "grapploct",
+		"speciesName": "Grapploct",
+		"types": [
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/853.png",
+		"goImageUrl": "853.icon.png",
+		"shinyGoImageUrl": "853.s.icon.png",
+		"baseStats": {
+			"atk": 209,
+			"def": 162,
+			"hp": 190
+		},
+		"fastMoves": [
+			"ROCK_SMASH",
+			"WATERFALL"
+		],
+		"chargedMoves": [
+			"BRICK_BREAK",
+			"SUPER_POWER",
+			"ICE_PUNCH",
+			"SURF"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_CLOBBOPUS",
+			"parent": "clobbopus"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"sinistea": {
 		"dex": 854,
 		"speciesId": "sinistea",

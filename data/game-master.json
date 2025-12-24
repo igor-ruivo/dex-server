@@ -57296,6 +57296,122 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"rolycoly": {
+		"dex": 837,
+		"speciesId": "rolycoly",
+		"speciesName": "Rolycoly",
+		"types": [
+			"Rock"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/837.png",
+		"goImageUrl": "837.icon.png",
+		"shinyGoImageUrl": "837.s.icon.png",
+		"baseStats": {
+			"atk": 73,
+			"def": 91,
+			"hp": 102
+		},
+		"fastMoves": [
+			"SMACK_DOWN",
+			"TACKLE"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_SLIDE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROLYCOLY",
+			"evolutions": [
+				"carkol"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"carkol": {
+		"dex": 838,
+		"speciesId": "carkol",
+		"speciesName": "Carkol",
+		"types": [
+			"Rock",
+			"Fire"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/838.png",
+		"goImageUrl": "838.icon.png",
+		"shinyGoImageUrl": "838.s.icon.png",
+		"baseStats": {
+			"atk": 114,
+			"def": 157,
+			"hp": 190
+		},
+		"fastMoves": [
+			"SMACK_DOWN"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_SLIDE",
+			"FLAME_CHARGE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROLYCOLY",
+			"parent": "boltund",
+			"evolutions": [
+				"coalossal"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"coalossal": {
+		"dex": 839,
+		"speciesId": "coalossal",
+		"speciesName": "Coalossal",
+		"types": [
+			"Rock",
+			"Fire"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/839.png",
+		"goImageUrl": "839.icon.png",
+		"shinyGoImageUrl": "839.s.icon.png",
+		"baseStats": {
+			"atk": 146,
+			"def": 198,
+			"hp": 242
+		},
+		"fastMoves": [
+			"SMACK_DOWN",
+			"FIRE_SPIN"
+		],
+		"chargedMoves": [
+			"ROCK_BLAST",
+			"ROCK_SLIDE",
+			"FLAME_CHARGE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROLYCOLY",
+			"parent": "rolycoly"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"applin": {
 		"dex": 840,
 		"speciesId": "applin",

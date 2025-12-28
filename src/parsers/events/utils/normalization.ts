@@ -77,7 +77,7 @@ export const parseEventDateRange = (
 			multiDayMatch?.[4] &&
 			multiDayMatch?.[5]
 		) {
-			const year = multiDayMatch[3] || '2025';
+			const year = multiDayMatch[3] || '2026';
 			const startDate = multiDayMatch[1] + ', ' + year;
 			const endDate = multiDayMatch[2] + ', ' + year;
 			const startTime = multiDayMatch[4];
@@ -174,6 +174,16 @@ export const parseDateFromString = (side: string) => {
 	const day = datePart.trim().split(' ')[1]?.replace(',', '');
 	const monthIdx = toMonthIndex(month);
 	if (monthIdx === -1 || !day) return NaN;
+	// Temp hack to fix a 1 time only weird date format currently posted in pokemon go's website...
+	if (
+		year === 2025 &&
+		monthIdx === 0 &&
+		Number(day) === 6 &&
+		hour === 10 &&
+		minute === 0
+	) {
+		year++;
+	}
 	return new Date(
 		Date.UTC(year, monthIdx, Number(day), hour, minute)
 	).valueOf();

@@ -344,6 +344,31 @@ class MovesProvider {
 			};
 		}
 
+		const mindBlownMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			mindBlownMoveName[locale] = normalizedMoveName('MIND_BLOWN');
+		});
+
+		if (!movesDictionary.MIND_BLOWN) {
+			movesDictionary.MIND_BLOWN = {
+				moveId: 'MIND_BLOWN',
+				vId: '-1',
+				type: 'fire',
+				isFast: false,
+				pvpPower: 90,
+				pvePower: 130,
+				pvpEnergy: -35,
+				pveEnergy: -33,
+				pvpCooldown: 0.5,
+				pveCooldown: 4.0,
+				buffs: {
+					buffActivationChance: 1,
+					attackerDefenseStatStageChange: -4,
+				},
+				moveName: mindBlownMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

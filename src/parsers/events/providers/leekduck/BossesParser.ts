@@ -6,7 +6,7 @@ import type { IEntry } from '../../../types/events';
 import type { GameMasterData } from '../../../types/pokemon';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
-const LEEKDUCK_BOSS_URL = 'https://leekduck.com/boss/';
+const LEEKDUCK_BOSS_URL = 'https://leekduck.com/raid-bosses/';
 
 type ClassAndMatcher = {
 	classname: string;
@@ -40,7 +40,7 @@ class BossesParser {
 					.replaceAll('shadow', '')
 					.trim() ?? '';
 			if (parsedTier.split(' ').length === 2) {
-				tier = parsedTier.split(' ')[1].toLocaleLowerCase();
+				tier = parsedTier.split(' ')[0].split('-')[0].toLocaleLowerCase();
 			}
 
 			if (parsedTier.split(' ').length === 1) {
@@ -53,7 +53,8 @@ class BossesParser {
 
 			const names = currentTier.getElementsByClassName('name');
 			for (const name of names) {
-				const parsedName = `${classMatcher.prefix} ${name.textContent?.trim()}`;
+				const parsedName =
+					`${classMatcher.prefix} ${name.textContent?.trim()}`.trim();
 
 				const parsedPkm = classMatcher.matcher.matchPokemonFromText([
 					parsedName,

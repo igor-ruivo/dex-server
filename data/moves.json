@@ -5482,5 +5482,25 @@
 			"en": "Beak Blast",
 			"pt_br": "Beak Blast"
 		}
+	},
+	"MIND_BLOWN": {
+		"moveId": "MIND_BLOWN",
+		"vId": "-1",
+		"type": "fire",
+		"isFast": false,
+		"pvpPower": 90,
+		"pvePower": 130,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 4,
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerDefenseStatStageChange": -4
+		},
+		"moveName": {
+			"en": "Mind Blown",
+			"pt_br": "Mind Blown"
+		}
 	}
 }

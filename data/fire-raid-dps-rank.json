@@ -1,4 +1,13 @@
 {
+	"blacephalon": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "MIND_BLOWN",
+		"dps": 36.32258064516129,
+		"speciesId": "blacephalon",
+		"fastMoveDmg": 51,
+		"chargedMoveDmg": 205,
+		"rank": 1
+	},
 	"blaziken_mega": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
@@ -6,7 +15,7 @@
 		"speciesId": "blaziken_mega",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 198,
-		"rank": 1
+		"rank": 2
 	},
 	"charizard_mega_y": {
 		"fastMove": "FIRE_SPIN",
@@ -15,7 +24,7 @@
 		"speciesId": "charizard_mega_y",
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 192,
-		"rank": 2
+		"rank": 3
 	},
 	"chandelure_shadow": {
 		"fastMove": "FIRE_SPIN",
@@ -24,7 +33,7 @@
 		"speciesId": "chandelure_shadow",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 263,
-		"rank": 3
+		"rank": 4
 	},
 	"darmanitan_standard_shadow": {
 		"fastMove": "FIRE_FANG",
@@ -33,15 +42,6 @@
 		"speciesId": "darmanitan_standard_shadow",
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 255,
-		"rank": 4
-	},
-	"blacephalon": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 31.556213017751478,
-		"speciesId": "blacephalon",
-		"fastMoveDmg": 51,
-		"chargedMoveDmg": 253,
 		"rank": 5
 	},
 	"blaziken_shadow": {

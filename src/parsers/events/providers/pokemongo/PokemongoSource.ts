@@ -57,6 +57,7 @@ const EVENT_SECTION_TYPES = {
 		'Paid Timed Research',
 		'Community Day Special Research',
 		'Free Timed Research',
+		'Collection Challenges',
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: [

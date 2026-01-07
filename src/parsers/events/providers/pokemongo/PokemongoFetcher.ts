@@ -56,10 +56,12 @@ class PokemonGoFetcher {
 		const cardLinks = Array.from(
 			document.querySelectorAll('a')
 		) as Array<Element>;
-		const filteredLinks = cardLinks.filter((a: Element) => {
-			const href = a.getAttribute('href') ?? '';
-			return href.includes('/en/post/') || href.includes('/news/');
-		});
+		const filteredLinks = cardLinks
+			.filter((a: Element) => {
+				const href = a.getAttribute('href') ?? '';
+				return href.includes('/en/post/') || href.includes('/news/');
+			})
+			.slice(0, 30);
 
 		filteredLinks.forEach((a: Element) => {
 			let url = a.getAttribute('href') ?? '';

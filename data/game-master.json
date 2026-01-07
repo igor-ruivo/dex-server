@@ -61022,6 +61022,39 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"klawf": {
+		"dex": 950,
+		"speciesId": "klawf",
+		"speciesName": "Klawf",
+		"types": [
+			"Rock"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/950.png",
+		"goImageUrl": "950.icon.png",
+		"shinyGoImageUrl": "950.s.icon.png",
+		"baseStats": {
+			"atk": 184,
+			"def": 185,
+			"hp": 172
+		},
+		"fastMoves": [
+			"ROCK_THROW",
+			"MUD_SLAP"
+		],
+		"chargedMoves": [
+			"ROCK_SLIDE",
+			"ROCK_TOMB",
+			"BULLDOZE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"tinkatink": {
 		"dex": 957,
 		"speciesId": "tinkatink",

@@ -60865,6 +60865,84 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"wattrel": {
+		"dex": 940,
+		"speciesId": "wattrel",
+		"speciesName": "Wattrel",
+		"types": [
+			"Electric",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/940.png",
+		"goImageUrl": "940.icon.png",
+		"shinyGoImageUrl": "940.s.icon.png",
+		"baseStats": {
+			"atk": 105,
+			"def": 75,
+			"hp": 120
+		},
+		"fastMoves": [
+			"THUNDER_SHOCK",
+			"PECK"
+		],
+		"chargedMoves": [
+			"ACROBATICS",
+			"AERIAL_ACE",
+			"THUNDERBOLT"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_WATTREL",
+			"evolutions": [
+				"kilowattrel"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"kilowattrel": {
+		"dex": 941,
+		"speciesId": "kilowattrel",
+		"speciesName": "Kilowattrel",
+		"types": [
+			"Electric",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/941.png",
+		"goImageUrl": "941.icon.png",
+		"shinyGoImageUrl": "941.s.icon.png",
+		"baseStats": {
+			"atk": 221,
+			"def": 132,
+			"hp": 172
+		},
+		"fastMoves": [
+			"THUNDER_SHOCK",
+			"AIR_SLASH"
+		],
+		"chargedMoves": [
+			"ACROBATICS",
+			"AERIAL_ACE",
+			"THUNDERBOLT"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_WATTREL",
+			"parent": "wattrel"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"shroodle": {
 		"dex": 944,
 		"speciesId": "shroodle",

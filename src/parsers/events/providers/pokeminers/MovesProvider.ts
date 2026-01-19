@@ -369,6 +369,31 @@ class MovesProvider {
 			};
 		}
 
+		const drumBeatingMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			drumBeatingMoveName[locale] = normalizedMoveName('DRUM_BEATING');
+		});
+
+		if (!movesDictionary.DRUM_BEATING) {
+			movesDictionary.DRUM_BEATING = {
+				moveId: 'DRUM_BEATING',
+				vId: '-1',
+				type: 'grass',
+				isFast: false,
+				pvpPower: 60,
+				pvePower: 115,
+				pvpEnergy: -35,
+				pveEnergy: -33,
+				pvpCooldown: 0.5,
+				pveCooldown: 4.5,
+				buffs: {
+					buffActivationChance: 1,
+					targetAttackStatStageChange: -1,
+				},
+				moveName: drumBeatingMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

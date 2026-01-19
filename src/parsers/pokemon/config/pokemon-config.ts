@@ -62,6 +62,7 @@ export const POKEMON_CONFIG = {
 		'nacli',
 		'naclstack',
 		'garganacl',
+		'glimmet',
 	]),
 
 	// Pokemon that should be excluded

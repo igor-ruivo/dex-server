@@ -22,6 +22,11 @@
 		"source": "pokemongo",
 		"wild": [
 			{
+				"speciesId": "diglett",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "dunsparce",
 				"shiny": true,
 				"kind": ""
@@ -39,6 +44,11 @@
 		],
 		"raids": [],
 		"eggs": [
+			{
+				"speciesId": "diglett",
+				"shiny": true,
+				"kind": ""
+			},
 			{
 				"speciesId": "larvitar",
 				"shiny": true,
@@ -58,9 +68,20 @@
 				"speciesId": "yungoos",
 				"shiny": true,
 				"kind": ""
+			},
+			{
+				"speciesId": "glimmet",
+				"shiny": false,
+				"kind": ""
 			}
 		],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "glimmet",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -1539,6 +1560,11 @@
 		],
 		"eggs": [],
 		"researches": [
+			{
+				"speciesId": "keldeo_resolute",
+				"shiny": false,
+				"kind": ""
+			},
 			{
 				"speciesId": "farfetchd_galarian",
 				"shiny": true,

@@ -310,6 +310,14 @@ class PokemonMatcher {
 				kind: raidLevel,
 			};
 		}
+		// Handle Diglett
+		if (currP.includes('diglett') && !currP.includes('alola')) {
+			return {
+				speciesId: 'diglett',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
 
 		if (availableForms.length === 0) {
 			if (isMega) {

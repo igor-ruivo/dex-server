@@ -56554,9 +56554,13 @@
 		"chargedMoves": [
 			"ENERGY_BALL",
 			"GRASS_KNOT",
-			"EARTH_POWER"
+			"EARTH_POWER",
+			"DRUM_BEATING",
+			"FRENZY_PLANT"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"FRENZY_PLANT"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -61438,6 +61442,46 @@
 		"family": {
 			"id": "FAMILY_VAROOM",
 			"parent": "varoom"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"glimmet": {
+		"dex": 969,
+		"speciesId": "glimmet",
+		"speciesName": "Glimmet",
+		"types": [
+			"Rock",
+			"Poison"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/969.png",
+		"goImageUrl": "969.icon.png",
+		"shinyGoImageUrl": "969.s.icon.png",
+		"baseStats": {
+			"atk": 187,
+			"def": 104,
+			"hp": 134
+		},
+		"fastMoves": [
+			"ROCK_THROW",
+			"SMACK_DOWN"
+		],
+		"chargedMoves": [
+			"DAZZLING_GLEAM",
+			"POWER_GEM",
+			"SLUDGE_WAVE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_GLIMMET",
+			"evolutions": [
+				"glimmora"
+			]
 		},
 		"form": "",
 		"isLegendary": false,

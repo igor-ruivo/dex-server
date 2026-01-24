@@ -57,7 +57,7 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 			'RAZOR_SHELL',
 			'BUBBLE_BEAM',
 			'WATER_PULSE',
-			'VISE_GRIP',
+			'VICE_GRIP',
 		],
 		eliteMoves: [],
 		legacyMoves: [],

@@ -42,4 +42,26 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 		released: true,
 		tags: ['shadow'],
 	},
+	{
+		dex: 98,
+		speciesId: 'krabby_shadow',
+		speciesName: 'Krabby (Shadow)',
+		baseStats: {
+			atk: 181,
+			def: 124,
+			hp: 102,
+		},
+		types: ['water', 'none'],
+		fastMoves: ['BUBBLE', 'MUD_SHOT'],
+		chargedMoves: [
+			'RAZOR_SHELL',
+			'BUBBLE_BEAM',
+			'WATER_PULSE',
+			'VISE_GRIP',
+		],
+		eliteMoves: [],
+		legacyMoves: [],
+		released: true,
+		tags: ['shadow'],
+	},
 ];

@@ -62091,6 +62091,45 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"glimmora": {
+		"dex": 970,
+		"speciesId": "glimmora",
+		"speciesName": "Glimmora",
+		"types": [
+			"Rock",
+			"Poison"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/970.png",
+		"goImageUrl": "970.icon.png",
+		"shinyGoImageUrl": "970.s.icon.png",
+		"baseStats": {
+			"atk": 246,
+			"def": 177,
+			"hp": 195
+		},
+		"fastMoves": [
+			"ROCK_THROW",
+			"SMACK_DOWN"
+		],
+		"chargedMoves": [
+			"DAZZLING_GLEAM",
+			"POWER_GEM",
+			"SLUDGE_WAVE",
+			"METEOR_BEAM"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_GLIMMET",
+			"parent": "glimmet"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"greavard": {
 		"dex": 971,
 		"speciesId": "greavard",

@@ -243,6 +243,67 @@
 			}
 		]
 	},
+	"marowak_shadow": {
+		"speciesId": "marowak_shadow",
+		"moveset": [
+			"MUD_SLAP",
+			"BONE_CLUB",
+			"ROCK_SLIDE"
+		],
+		"lead": 92.6,
+		"switch": 78.8,
+		"charger": 94.4,
+		"closer": 77.9,
+		"consistency": 89.7,
+		"attacker": 75.1,
+		"score": 93.5,
+		"rank": 5,
+		"rankChange": 13,
+		"matchups": [
+			{
+				"opponent": "bastiodon",
+				"rating": 884
+			},
+			{
+				"opponent": "stunfisk",
+				"rating": 804
+			},
+			{
+				"opponent": "clefable",
+				"rating": 528
+			},
+			{
+				"opponent": "sableye_shadow",
+				"rating": 520
+			},
+			{
+				"opponent": "malamar",
+				"rating": 516
+			}
+		],
+		"counters": [
+			{
+				"opponent": "azumarill",
+				"rating": 348
+			},
+			{
+				"opponent": "cradily",
+				"rating": 357
+			},
+			{
+				"opponent": "altaria",
+				"rating": 423
+			},
+			{
+				"opponent": "jellicent",
+				"rating": 435
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 452
+			}
+		]
+	},
 	"azumarill": {
 		"speciesId": "azumarill",
 		"moveset": [
@@ -257,8 +318,8 @@
 		"consistency": 93.1,
 		"attacker": 91.3,
 		"score": 92.4,
-		"rank": 5,
-		"rankChange": 0,
+		"rank": 6,
+		"rankChange": -1,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -318,8 +379,8 @@
 		"consistency": 78.5,
 		"attacker": 99.2,
 		"score": 91.5,
-		"rank": 6,
-		"rankChange": 0,
+		"rank": 7,
+		"rankChange": -1,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -379,8 +440,8 @@
 		"consistency": 100,
 		"attacker": 90.3,
 		"score": 91,
-		"rank": 7,
-		"rankChange": 0,
+		"rank": 8,
+		"rankChange": -1,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -440,8 +501,8 @@
 		"consistency": 99.4,
 		"attacker": 87.9,
 		"score": 91,
-		"rank": 8,
-		"rankChange": 0,
+		"rank": 9,
+		"rankChange": -1,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -484,67 +545,6 @@
 			{
 				"opponent": "gastrodon",
 				"rating": 467
-			}
-		]
-	},
-	"goodra": {
-		"speciesId": "goodra",
-		"moveset": [
-			"DRAGON_BREATH",
-			"AQUA_TAIL",
-			"THUNDER_PUNCH"
-		],
-		"lead": 95.3,
-		"switch": 88.6,
-		"charger": 93.5,
-		"closer": 79.1,
-		"consistency": 94.3,
-		"attacker": 79.2,
-		"score": 90.8,
-		"rank": 9,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "stunfisk",
-				"rating": 722
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 572
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 555
-			},
-			{
-				"opponent": "furret",
-				"rating": 538
-			},
-			{
-				"opponent": "jellicent",
-				"rating": 512
-			}
-		],
-		"counters": [
-			{
-				"opponent": "wigglytuff",
-				"rating": 221
-			},
-			{
-				"opponent": "altaria",
-				"rating": 387
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 390
-			},
-			{
-				"opponent": "cradily",
-				"rating": 392
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 395
 			}
 		]
 	},
@@ -792,67 +792,6 @@
 			}
 		]
 	},
-	"lickitung": {
-		"speciesId": "lickitung",
-		"moveset": [
-			"LICK",
-			"BODY_SLAM",
-			"POWER_WHIP"
-		],
-		"lead": 92.1,
-		"switch": 85.4,
-		"charger": 88.6,
-		"closer": 82.5,
-		"consistency": 93.1,
-		"attacker": 91,
-		"score": 90.6,
-		"rank": 14,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "jellicent",
-				"rating": 817
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 655
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 629
-			},
-			{
-				"opponent": "sableye_shadow",
-				"rating": 548
-			},
-			{
-				"opponent": "altaria",
-				"rating": 518
-			}
-		],
-		"counters": [
-			{
-				"opponent": "furret",
-				"rating": 365
-			},
-			{
-				"opponent": "wigglytuff",
-				"rating": 385
-			},
-			{
-				"opponent": "cradily",
-				"rating": 388
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 396
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 475
-			}
-		]
-	},
 	"sealeo_shadow": {
 		"speciesId": "sealeo_shadow",
 		"moveset": [
@@ -867,8 +806,8 @@
 		"consistency": 85.6,
 		"attacker": 70.3,
 		"score": 90.6,
-		"rank": 15,
-		"rankChange": 0,
+		"rank": 14,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -928,8 +867,8 @@
 		"consistency": 94.3,
 		"attacker": 80.7,
 		"score": 90.5,
-		"rank": 16,
-		"rankChange": 0,
+		"rank": 15,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -975,128 +914,6 @@
 			}
 		]
 	},
-	"mandibuzz": {
-		"speciesId": "mandibuzz",
-		"moveset": [
-			"SNARL",
-			"FOUL_PLAY",
-			"SHADOW_BALL"
-		],
-		"lead": 92.4,
-		"switch": 78,
-		"charger": 88.6,
-		"closer": 84.4,
-		"consistency": 88.7,
-		"attacker": 94.9,
-		"score": 90.5,
-		"rank": 17,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "jellicent",
-				"rating": 791
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 665
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 642
-			},
-			{
-				"opponent": "furret",
-				"rating": 637
-			},
-			{
-				"opponent": "altaria",
-				"rating": 522
-			}
-		],
-		"counters": [
-			{
-				"opponent": "wigglytuff",
-				"rating": 150
-			},
-			{
-				"opponent": "cradily",
-				"rating": 295
-			},
-			{
-				"opponent": "clefable",
-				"rating": 299
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 311
-			},
-			{
-				"opponent": "stunfisk",
-				"rating": 386
-			}
-		]
-	},
-	"marowak_shadow": {
-		"speciesId": "marowak_shadow",
-		"moveset": [
-			"MUD_SLAP",
-			"BONE_CLUB",
-			"ROCK_SLIDE"
-		],
-		"lead": 92.6,
-		"switch": 78.8,
-		"charger": 94.4,
-		"closer": 77.9,
-		"consistency": 89.7,
-		"attacker": 75.1,
-		"score": 90.5,
-		"rank": 18,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "bastiodon",
-				"rating": 884
-			},
-			{
-				"opponent": "stunfisk",
-				"rating": 804
-			},
-			{
-				"opponent": "clefable",
-				"rating": 528
-			},
-			{
-				"opponent": "sableye_shadow",
-				"rating": 520
-			},
-			{
-				"opponent": "malamar",
-				"rating": 516
-			}
-		],
-		"counters": [
-			{
-				"opponent": "azumarill",
-				"rating": 348
-			},
-			{
-				"opponent": "cradily",
-				"rating": 357
-			},
-			{
-				"opponent": "altaria",
-				"rating": 423
-			},
-			{
-				"opponent": "jellicent",
-				"rating": 435
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 452
-			}
-		]
-	},
 	"talonflame": {
 		"speciesId": "talonflame",
 		"moveset": [
@@ -1111,8 +928,8 @@
 		"consistency": 88.1,
 		"attacker": 65.7,
 		"score": 90.5,
-		"rank": 19,
-		"rankChange": 0,
+		"rank": 16,
+		"rankChange": 3,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -1172,8 +989,8 @@
 		"consistency": 92.4,
 		"attacker": 61.6,
 		"score": 90.4,
-		"rank": 20,
-		"rankChange": 0,
+		"rank": 17,
+		"rankChange": 3,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -1233,8 +1050,8 @@
 		"consistency": 100,
 		"attacker": 64.8,
 		"score": 90.3,
-		"rank": 21,
-		"rankChange": 0,
+		"rank": 18,
+		"rankChange": 3,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -1294,8 +1111,8 @@
 		"consistency": 85.6,
 		"attacker": 79.7,
 		"score": 90.3,
-		"rank": 22,
-		"rankChange": 0,
+		"rank": 19,
+		"rankChange": 3,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -1341,67 +1158,6 @@
 			}
 		]
 	},
-	"tinkaton": {
-		"speciesId": "tinkaton",
-		"moveset": [
-			"FAIRY_WIND",
-			"PLAY_ROUGH",
-			"BULLDOZE"
-		],
-		"lead": 93.9,
-		"switch": 81,
-		"charger": 89.7,
-		"closer": 87.2,
-		"consistency": 66,
-		"attacker": 94.2,
-		"score": 90.3,
-		"rank": 23,
-		"rankChange": 5,
-		"matchups": [
-			{
-				"opponent": "sableye_shadow",
-				"rating": 684
-			},
-			{
-				"opponent": "altaria",
-				"rating": 645
-			},
-			{
-				"opponent": "wigglytuff",
-				"rating": 641
-			},
-			{
-				"opponent": "cradily",
-				"rating": 595
-			},
-			{
-				"opponent": "furret",
-				"rating": 588
-			}
-		],
-		"counters": [
-			{
-				"opponent": "gastrodon",
-				"rating": 250
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 300
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 323
-			},
-			{
-				"opponent": "jellicent",
-				"rating": 358
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 484
-			}
-		]
-	},
 	"clefable": {
 		"speciesId": "clefable",
 		"moveset": [
@@ -1416,8 +1172,8 @@
 		"consistency": 92,
 		"attacker": 77.5,
 		"score": 90.2,
-		"rank": 24,
-		"rankChange": 7,
+		"rank": 20,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -1477,8 +1233,8 @@
 		"consistency": 100,
 		"attacker": 78.7,
 		"score": 90.2,
-		"rank": 25,
-		"rankChange": -2,
+		"rank": 21,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -1538,8 +1294,8 @@
 		"consistency": 88.8,
 		"attacker": 82.1,
 		"score": 90.2,
-		"rank": 26,
-		"rankChange": -2,
+		"rank": 22,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -1599,8 +1355,8 @@
 		"consistency": 96.4,
 		"attacker": 86,
 		"score": 90.2,
-		"rank": 27,
-		"rankChange": -2,
+		"rank": 23,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -1660,8 +1416,8 @@
 		"consistency": 95.2,
 		"attacker": 86.7,
 		"score": 90.2,
-		"rank": 28,
-		"rankChange": -2,
+		"rank": 24,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -1721,8 +1477,8 @@
 		"consistency": 95.3,
 		"attacker": 73.9,
 		"score": 90.2,
-		"rank": 29,
-		"rankChange": 6,
+		"rank": 25,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -1782,8 +1538,8 @@
 		"consistency": 95.3,
 		"attacker": 62.8,
 		"score": 90.2,
-		"rank": 30,
-		"rankChange": -3,
+		"rank": 26,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -1829,128 +1585,6 @@
 			}
 		]
 	},
-	"umbreon": {
-		"speciesId": "umbreon",
-		"moveset": [
-			"SNARL",
-			"FOUL_PLAY",
-			"LAST_RESORT"
-		],
-		"lead": 90.6,
-		"switch": 73.8,
-		"charger": 89,
-		"closer": 82.5,
-		"consistency": 91.7,
-		"attacker": 93.4,
-		"score": 90.2,
-		"rank": 31,
-		"rankChange": -2,
-		"matchups": [
-			{
-				"opponent": "jellicent",
-				"rating": 785
-			},
-			{
-				"opponent": "sableye_shadow",
-				"rating": 708
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 634
-			},
-			{
-				"opponent": "furret",
-				"rating": 602
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 554
-			}
-		],
-		"counters": [
-			{
-				"opponent": "wigglytuff",
-				"rating": 201
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 290
-			},
-			{
-				"opponent": "altaria",
-				"rating": 394
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 425
-			},
-			{
-				"opponent": "cradily",
-				"rating": 440
-			}
-		]
-	},
-	"zweilous": {
-		"speciesId": "zweilous",
-		"moveset": [
-			"DRAGON_BREATH",
-			"BODY_SLAM",
-			"DARK_PULSE"
-		],
-		"lead": 94.4,
-		"switch": 70.1,
-		"charger": 94.3,
-		"closer": 80.7,
-		"consistency": 86,
-		"attacker": 79.7,
-		"score": 90.2,
-		"rank": 32,
-		"rankChange": -2,
-		"matchups": [
-			{
-				"opponent": "jellicent",
-				"rating": 767
-			},
-			{
-				"opponent": "sableye_shadow",
-				"rating": 689
-			},
-			{
-				"opponent": "furret",
-				"rating": 635
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 560
-			},
-			{
-				"opponent": "cradily",
-				"rating": 510
-			}
-		],
-		"counters": [
-			{
-				"opponent": "wigglytuff",
-				"rating": 65
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 259
-			},
-			{
-				"opponent": "altaria",
-				"rating": 380
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 423
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 494
-			}
-		]
-	},
 	"clodsire": {
 		"speciesId": "clodsire",
 		"moveset": [
@@ -1965,8 +1599,8 @@
 		"consistency": 90.4,
 		"attacker": 81.9,
 		"score": 90.1,
-		"rank": 33,
-		"rankChange": -1,
+		"rank": 27,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -2026,8 +1660,8 @@
 		"consistency": 94.4,
 		"attacker": 66.5,
 		"score": 90.1,
-		"rank": 34,
-		"rankChange": -1,
+		"rank": 28,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -2087,8 +1721,8 @@
 		"consistency": 87.1,
 		"attacker": 71.3,
 		"score": 90.1,
-		"rank": 35,
-		"rankChange": -1,
+		"rank": 29,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -2148,8 +1782,8 @@
 		"consistency": 94.4,
 		"attacker": 79,
 		"score": 90.1,
-		"rank": 36,
-		"rankChange": 0,
+		"rank": 30,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -2209,8 +1843,8 @@
 		"consistency": 90.4,
 		"attacker": 89.6,
 		"score": 90,
-		"rank": 37,
-		"rankChange": 2,
+		"rank": 31,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -2270,8 +1904,8 @@
 		"consistency": 97.4,
 		"attacker": 67.9,
 		"score": 90,
-		"rank": 38,
-		"rankChange": -1,
+		"rank": 32,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -2331,8 +1965,8 @@
 		"consistency": 83.8,
 		"attacker": 76.8,
 		"score": 90,
-		"rank": 39,
-		"rankChange": -1,
+		"rank": 33,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -2392,8 +2026,8 @@
 		"consistency": 94.3,
 		"attacker": 61.2,
 		"score": 89.9,
-		"rank": 40,
-		"rankChange": 0,
+		"rank": 34,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -2453,8 +2087,8 @@
 		"consistency": 84.8,
 		"attacker": 89.8,
 		"score": 89.9,
-		"rank": 41,
-		"rankChange": 0,
+		"rank": 35,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -2514,8 +2148,8 @@
 		"consistency": 97.8,
 		"attacker": 69.3,
 		"score": 89.8,
-		"rank": 42,
-		"rankChange": 0,
+		"rank": 36,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -2575,8 +2209,8 @@
 		"consistency": 92.4,
 		"attacker": 70.3,
 		"score": 89.8,
-		"rank": 43,
-		"rankChange": 3,
+		"rank": 37,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -2636,8 +2270,8 @@
 		"consistency": 98.6,
 		"attacker": 61.4,
 		"score": 89.8,
-		"rank": 44,
-		"rankChange": -1,
+		"rank": 38,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -2697,8 +2331,8 @@
 		"consistency": 100,
 		"attacker": 95.6,
 		"score": 89.7,
-		"rank": 45,
-		"rankChange": -1,
+		"rank": 39,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -2758,8 +2392,8 @@
 		"consistency": 100,
 		"attacker": 81.6,
 		"score": 89.7,
-		"rank": 46,
-		"rankChange": -1,
+		"rank": 40,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -2819,8 +2453,8 @@
 		"consistency": 100,
 		"attacker": 63.8,
 		"score": 89.7,
-		"rank": 47,
-		"rankChange": 0,
+		"rank": 41,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -2880,8 +2514,8 @@
 		"consistency": 94.9,
 		"attacker": 57.5,
 		"score": 89.7,
-		"rank": 48,
-		"rankChange": 0,
+		"rank": 42,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -2941,8 +2575,8 @@
 		"consistency": 99.3,
 		"attacker": 87.4,
 		"score": 89.7,
-		"rank": 49,
-		"rankChange": 4,
+		"rank": 43,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -3002,8 +2636,8 @@
 		"consistency": 90.5,
 		"attacker": 75.9,
 		"score": 89.6,
-		"rank": 50,
-		"rankChange": -1,
+		"rank": 44,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -3063,8 +2697,8 @@
 		"consistency": 100,
 		"attacker": 77.3,
 		"score": 89.6,
-		"rank": 51,
-		"rankChange": -1,
+		"rank": 45,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -3124,8 +2758,8 @@
 		"consistency": 86.9,
 		"attacker": 78.7,
 		"score": 89.6,
-		"rank": 52,
-		"rankChange": 4,
+		"rank": 46,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -3185,8 +2819,8 @@
 		"consistency": 96.8,
 		"attacker": 77.5,
 		"score": 89.6,
-		"rank": 53,
-		"rankChange": -2,
+		"rank": 47,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -3246,8 +2880,8 @@
 		"consistency": 98,
 		"attacker": 84.5,
 		"score": 89.6,
-		"rank": 54,
-		"rankChange": -2,
+		"rank": 48,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -3307,8 +2941,8 @@
 		"consistency": 96.5,
 		"attacker": 84.3,
 		"score": 89.5,
-		"rank": 55,
-		"rankChange": -1,
+		"rank": 49,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -3368,8 +3002,8 @@
 		"consistency": 86.9,
 		"attacker": 85,
 		"score": 89.5,
-		"rank": 56,
-		"rankChange": -1,
+		"rank": 50,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -3429,8 +3063,8 @@
 		"consistency": 96.5,
 		"attacker": 75.1,
 		"score": 89.4,
-		"rank": 57,
-		"rankChange": 0,
+		"rank": 51,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -3490,8 +3124,8 @@
 		"consistency": 97.9,
 		"attacker": 61.4,
 		"score": 89.4,
-		"rank": 58,
-		"rankChange": 0,
+		"rank": 52,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -3551,8 +3185,8 @@
 		"consistency": 83,
 		"attacker": 77.8,
 		"score": 89.4,
-		"rank": 59,
-		"rankChange": 0,
+		"rank": 53,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -3612,8 +3246,8 @@
 		"consistency": 76,
 		"attacker": 71.8,
 		"score": 89.4,
-		"rank": 60,
-		"rankChange": 0,
+		"rank": 54,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -3673,8 +3307,8 @@
 		"consistency": 87.1,
 		"attacker": 67.9,
 		"score": 89.4,
-		"rank": 61,
-		"rankChange": 0,
+		"rank": 55,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -3720,67 +3354,6 @@
 			}
 		]
 	},
-	"zweilous_shadow": {
-		"speciesId": "zweilous_shadow",
-		"moveset": [
-			"DRAGON_BREATH",
-			"BODY_SLAM",
-			"DARK_PULSE"
-		],
-		"lead": 93.4,
-		"switch": 73.7,
-		"charger": 94.9,
-		"closer": 81.3,
-		"consistency": 86,
-		"attacker": 69.3,
-		"score": 89.4,
-		"rank": 62,
-		"rankChange": 0,
-		"matchups": [
-			{
-				"opponent": "jellicent",
-				"rating": 742
-			},
-			{
-				"opponent": "furret",
-				"rating": 607
-			},
-			{
-				"opponent": "altaria",
-				"rating": 585
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 535
-			},
-			{
-				"opponent": "empoleon",
-				"rating": 535
-			}
-		],
-		"counters": [
-			{
-				"opponent": "wigglytuff",
-				"rating": 65
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 290
-			},
-			{
-				"opponent": "cradily",
-				"rating": 427
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 436
-			},
-			{
-				"opponent": "stunfisk",
-				"rating": 465
-			}
-		]
-	},
 	"dragonair": {
 		"speciesId": "dragonair",
 		"moveset": [
@@ -3795,8 +3368,8 @@
 		"consistency": 84.7,
 		"attacker": 68.6,
 		"score": 89.3,
-		"rank": 63,
-		"rankChange": 0,
+		"rank": 56,
+		"rankChange": 7,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -3842,6 +3415,67 @@
 			}
 		]
 	},
+	"florges": {
+		"speciesId": "florges",
+		"moveset": [
+			"FAIRY_WIND",
+			"CHILLING_WATER",
+			"TRAILBLAZE"
+		],
+		"lead": 89.4,
+		"switch": 86.8,
+		"charger": 89.6,
+		"closer": 75.6,
+		"consistency": 100,
+		"attacker": 79.7,
+		"score": 89.3,
+		"rank": 57,
+		"rankChange": 48,
+		"matchups": [
+			{
+				"opponent": "sableye_shadow",
+				"rating": 768
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 740
+			},
+			{
+				"opponent": "furret",
+				"rating": 663
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 590
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 540
+			}
+		],
+		"counters": [
+			{
+				"opponent": "empoleon",
+				"rating": 303
+			},
+			{
+				"opponent": "cradily",
+				"rating": 375
+			},
+			{
+				"opponent": "jellicent",
+				"rating": 397
+			},
+			{
+				"opponent": "wigglytuff",
+				"rating": 408
+			},
+			{
+				"opponent": "altaria",
+				"rating": 489
+			}
+		]
+	},
 	"moltres_galarian": {
 		"speciesId": "moltres_galarian",
 		"moveset": [
@@ -3856,8 +3490,8 @@
 		"consistency": 88.4,
 		"attacker": 76.8,
 		"score": 89.3,
-		"rank": 64,
-		"rankChange": 0,
+		"rank": 58,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -3917,8 +3551,8 @@
 		"consistency": 92,
 		"attacker": 59,
 		"score": 89.3,
-		"rank": 65,
-		"rankChange": 0,
+		"rank": 59,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -3978,8 +3612,8 @@
 		"consistency": 96.4,
 		"attacker": 75.9,
 		"score": 89.2,
-		"rank": 66,
-		"rankChange": 0,
+		"rank": 60,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -4039,8 +3673,8 @@
 		"consistency": 94,
 		"attacker": 73.7,
 		"score": 89.2,
-		"rank": 67,
-		"rankChange": 0,
+		"rank": 61,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -4100,8 +3734,8 @@
 		"consistency": 92.4,
 		"attacker": 69.1,
 		"score": 89.2,
-		"rank": 68,
-		"rankChange": 0,
+		"rank": 62,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -4161,8 +3795,8 @@
 		"consistency": 92.4,
 		"attacker": 82.4,
 		"score": 89.1,
-		"rank": 69,
-		"rankChange": 0,
+		"rank": 63,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -4222,8 +3856,8 @@
 		"consistency": 84.4,
 		"attacker": 60.4,
 		"score": 89,
-		"rank": 70,
-		"rankChange": 1,
+		"rank": 64,
+		"rankChange": 6,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -4269,6 +3903,67 @@
 			}
 		]
 	},
+	"mandibuzz": {
+		"speciesId": "mandibuzz",
+		"moveset": [
+			"SNARL",
+			"FOUL_PLAY",
+			"SHADOW_BALL"
+		],
+		"lead": 92.4,
+		"switch": 78,
+		"charger": 88.6,
+		"closer": 84.4,
+		"consistency": 88.7,
+		"attacker": 94.9,
+		"score": 89,
+		"rank": 65,
+		"rankChange": -48,
+		"matchups": [
+			{
+				"opponent": "jellicent",
+				"rating": 791
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 665
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 642
+			},
+			{
+				"opponent": "furret",
+				"rating": 637
+			},
+			{
+				"opponent": "altaria",
+				"rating": 522
+			}
+		],
+		"counters": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 150
+			},
+			{
+				"opponent": "cradily",
+				"rating": 295
+			},
+			{
+				"opponent": "clefable",
+				"rating": 299
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 311
+			},
+			{
+				"opponent": "stunfisk",
+				"rating": 386
+			}
+		]
+	},
 	"toucannon_shadow": {
 		"speciesId": "toucannon_shadow",
 		"moveset": [
@@ -4283,8 +3978,8 @@
 		"consistency": 96.1,
 		"attacker": 44.3,
 		"score": 89,
-		"rank": 71,
-		"rankChange": 1,
+		"rank": 66,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -4344,8 +4039,8 @@
 		"consistency": 83.8,
 		"attacker": 75.6,
 		"score": 89,
-		"rank": 72,
-		"rankChange": -2,
+		"rank": 67,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -4405,8 +4100,8 @@
 		"consistency": 98.5,
 		"attacker": 59.2,
 		"score": 88.9,
-		"rank": 73,
-		"rankChange": 0,
+		"rank": 68,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -4466,8 +4161,8 @@
 		"consistency": 94.4,
 		"attacker": 58.5,
 		"score": 88.9,
-		"rank": 74,
-		"rankChange": 2,
+		"rank": 69,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -4527,8 +4222,8 @@
 		"consistency": 94,
 		"attacker": 80.7,
 		"score": 88.9,
-		"rank": 75,
-		"rankChange": -1,
+		"rank": 70,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -4588,8 +4283,8 @@
 		"consistency": 97.4,
 		"attacker": 72,
 		"score": 88.9,
-		"rank": 76,
-		"rankChange": -1,
+		"rank": 71,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -4649,8 +4344,8 @@
 		"consistency": 77.5,
 		"attacker": 66,
 		"score": 88.8,
-		"rank": 77,
-		"rankChange": 0,
+		"rank": 72,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -4710,8 +4405,8 @@
 		"consistency": 89.3,
 		"attacker": 72.7,
 		"score": 88.8,
-		"rank": 78,
-		"rankChange": 0,
+		"rank": 73,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -4771,8 +4466,8 @@
 		"consistency": 82,
 		"attacker": 80.7,
 		"score": 88.7,
-		"rank": 79,
-		"rankChange": 4,
+		"rank": 74,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -4832,8 +4527,8 @@
 		"consistency": 100,
 		"attacker": 46.7,
 		"score": 88.7,
-		"rank": 80,
-		"rankChange": 0,
+		"rank": 75,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -4893,8 +4588,8 @@
 		"consistency": 94.4,
 		"attacker": 73.4,
 		"score": 88.7,
-		"rank": 81,
-		"rankChange": 0,
+		"rank": 76,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -4954,8 +4649,8 @@
 		"consistency": 100,
 		"attacker": 67.9,
 		"score": 88.7,
-		"rank": 82,
-		"rankChange": -3,
+		"rank": 77,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -5015,8 +4710,8 @@
 		"consistency": 83,
 		"attacker": 67.2,
 		"score": 88.6,
-		"rank": 83,
-		"rankChange": -1,
+		"rank": 78,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -5076,8 +4771,8 @@
 		"consistency": 90.6,
 		"attacker": 80.4,
 		"score": 88.6,
-		"rank": 84,
-		"rankChange": 1,
+		"rank": 79,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -5137,8 +4832,8 @@
 		"consistency": 100,
 		"attacker": 66.5,
 		"score": 88.6,
-		"rank": 85,
-		"rankChange": -1,
+		"rank": 80,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -5184,6 +4879,67 @@
 			}
 		]
 	},
+	"tinkaton": {
+		"speciesId": "tinkaton",
+		"moveset": [
+			"FAIRY_WIND",
+			"PLAY_ROUGH",
+			"BULLDOZE"
+		],
+		"lead": 93.9,
+		"switch": 81,
+		"charger": 89.7,
+		"closer": 87.2,
+		"consistency": 66,
+		"attacker": 94.2,
+		"score": 88.5,
+		"rank": 81,
+		"rankChange": -58,
+		"matchups": [
+			{
+				"opponent": "sableye_shadow",
+				"rating": 684
+			},
+			{
+				"opponent": "altaria",
+				"rating": 645
+			},
+			{
+				"opponent": "wigglytuff",
+				"rating": 641
+			},
+			{
+				"opponent": "cradily",
+				"rating": 595
+			},
+			{
+				"opponent": "furret",
+				"rating": 588
+			}
+		],
+		"counters": [
+			{
+				"opponent": "gastrodon",
+				"rating": 250
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 300
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 323
+			},
+			{
+				"opponent": "jellicent",
+				"rating": 358
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 484
+			}
+		]
+	},
 	"altaria_shadow": {
 		"speciesId": "altaria_shadow",
 		"moveset": [
@@ -5198,7 +4954,7 @@
 		"consistency": 95.8,
 		"attacker": 77.3,
 		"score": 88.4,
-		"rank": 86,
+		"rank": 82,
 		"rankChange": 4,
 		"matchups": [
 			{
@@ -5259,8 +5015,8 @@
 		"consistency": 87.9,
 		"attacker": 89.6,
 		"score": 88.4,
-		"rank": 87,
-		"rankChange": 0,
+		"rank": 83,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -5320,8 +5076,8 @@
 		"consistency": 79.7,
 		"attacker": 81.9,
 		"score": 88.4,
-		"rank": 88,
-		"rankChange": 0,
+		"rank": 84,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -5381,8 +5137,8 @@
 		"consistency": 88.2,
 		"attacker": 73.4,
 		"score": 88.4,
-		"rank": 89,
-		"rankChange": 0,
+		"rank": 85,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -5442,8 +5198,8 @@
 		"consistency": 91.6,
 		"attacker": 75.6,
 		"score": 88.3,
-		"rank": 90,
-		"rankChange": -4,
+		"rank": 86,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -5503,8 +5259,8 @@
 		"consistency": 98.5,
 		"attacker": 47.2,
 		"score": 88.2,
-		"rank": 91,
-		"rankChange": 0,
+		"rank": 87,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -5564,8 +5320,8 @@
 		"consistency": 88.7,
 		"attacker": 76.1,
 		"score": 88.1,
-		"rank": 92,
-		"rankChange": 0,
+		"rank": 88,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -5625,8 +5381,8 @@
 		"consistency": 100,
 		"attacker": 67.2,
 		"score": 88,
-		"rank": 93,
-		"rankChange": 0,
+		"rank": 89,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -5686,8 +5442,8 @@
 		"consistency": 94.9,
 		"attacker": 43.8,
 		"score": 88,
-		"rank": 94,
-		"rankChange": 0,
+		"rank": 90,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -5747,8 +5503,8 @@
 		"consistency": 83.8,
 		"attacker": 84.3,
 		"score": 88,
-		"rank": 95,
-		"rankChange": 0,
+		"rank": 91,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -5808,8 +5564,8 @@
 		"consistency": 91.7,
 		"attacker": 79.2,
 		"score": 87.9,
-		"rank": 96,
-		"rankChange": 0,
+		"rank": 92,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -5869,8 +5625,8 @@
 		"consistency": 100,
 		"attacker": 71,
 		"score": 87.9,
-		"rank": 97,
-		"rankChange": 0,
+		"rank": 93,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -5930,8 +5686,8 @@
 		"consistency": 80.9,
 		"attacker": 64.5,
 		"score": 87.8,
-		"rank": 98,
-		"rankChange": 0,
+		"rank": 94,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -5991,8 +5747,8 @@
 		"consistency": 67.6,
 		"attacker": 66.9,
 		"score": 87.7,
-		"rank": 99,
-		"rankChange": 0,
+		"rank": 95,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -6052,8 +5808,8 @@
 		"consistency": 100,
 		"attacker": 76.6,
 		"score": 87.6,
-		"rank": 100,
-		"rankChange": 0,
+		"rank": 96,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -6113,8 +5869,8 @@
 		"consistency": 80.9,
 		"attacker": 71,
 		"score": 87.6,
-		"rank": 101,
-		"rankChange": 0,
+		"rank": 97,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -6174,8 +5930,8 @@
 		"consistency": 91.4,
 		"attacker": 68.4,
 		"score": 87.6,
-		"rank": 102,
-		"rankChange": 2,
+		"rank": 98,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -6235,8 +5991,8 @@
 		"consistency": 83,
 		"attacker": 79.5,
 		"score": 87.6,
-		"rank": 103,
-		"rankChange": 2,
+		"rank": 99,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -6296,8 +6052,8 @@
 		"consistency": 92.4,
 		"attacker": 60,
 		"score": 87.5,
-		"rank": 104,
-		"rankChange": 2,
+		"rank": 100,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -6343,67 +6099,6 @@
 			}
 		]
 	},
-	"florges": {
-		"speciesId": "florges",
-		"moveset": [
-			"FAIRY_WIND",
-			"CHILLING_WATER",
-			"TRAILBLAZE"
-		],
-		"lead": 89.4,
-		"switch": 86.8,
-		"charger": 89.6,
-		"closer": 75.6,
-		"consistency": 100,
-		"attacker": 79.7,
-		"score": 87.5,
-		"rank": 105,
-		"rankChange": -3,
-		"matchups": [
-			{
-				"opponent": "sableye_shadow",
-				"rating": 768
-			},
-			{
-				"opponent": "gastrodon",
-				"rating": 740
-			},
-			{
-				"opponent": "furret",
-				"rating": 663
-			},
-			{
-				"opponent": "azumarill",
-				"rating": 590
-			},
-			{
-				"opponent": "corviknight",
-				"rating": 540
-			}
-		],
-		"counters": [
-			{
-				"opponent": "empoleon",
-				"rating": 303
-			},
-			{
-				"opponent": "cradily",
-				"rating": 375
-			},
-			{
-				"opponent": "jellicent",
-				"rating": 397
-			},
-			{
-				"opponent": "wigglytuff",
-				"rating": 408
-			},
-			{
-				"opponent": "altaria",
-				"rating": 489
-			}
-		]
-	},
 	"gyarados_shadow": {
 		"speciesId": "gyarados_shadow",
 		"moveset": [
@@ -6418,8 +6113,8 @@
 		"consistency": 92.2,
 		"attacker": 47.9,
 		"score": 87.5,
-		"rank": 106,
-		"rankChange": 1,
+		"rank": 101,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -6479,8 +6174,8 @@
 		"consistency": 76,
 		"attacker": 56.3,
 		"score": 87.5,
-		"rank": 107,
-		"rankChange": 1,
+		"rank": 102,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -6540,8 +6235,8 @@
 		"consistency": 100,
 		"attacker": 41.9,
 		"score": 87.5,
-		"rank": 108,
-		"rankChange": -5,
+		"rank": 103,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -6601,8 +6296,8 @@
 		"consistency": 74.3,
 		"attacker": 66.9,
 		"score": 87.5,
-		"rank": 109,
-		"rankChange": 1,
+		"rank": 104,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -6662,8 +6357,8 @@
 		"consistency": 95.8,
 		"attacker": 87.9,
 		"score": 87.4,
-		"rank": 110,
-		"rankChange": -1,
+		"rank": 105,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -6723,8 +6418,8 @@
 		"consistency": 96.1,
 		"attacker": 50.3,
 		"score": 87.4,
-		"rank": 111,
-		"rankChange": 0,
+		"rank": 106,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -6784,8 +6479,8 @@
 		"consistency": 93.6,
 		"attacker": 74.9,
 		"score": 87.3,
-		"rank": 112,
-		"rankChange": 1,
+		"rank": 107,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -6845,8 +6540,8 @@
 		"consistency": 100,
 		"attacker": 80.7,
 		"score": 87.2,
-		"rank": 113,
-		"rankChange": 1,
+		"rank": 108,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -6906,8 +6601,8 @@
 		"consistency": 90.5,
 		"attacker": 61.9,
 		"score": 87.2,
-		"rank": 114,
-		"rankChange": 1,
+		"rank": 109,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -6967,8 +6662,8 @@
 		"consistency": 85,
 		"attacker": 68.9,
 		"score": 87.2,
-		"rank": 115,
-		"rankChange": -3,
+		"rank": 110,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -7028,8 +6723,8 @@
 		"consistency": 95,
 		"attacker": 81.2,
 		"score": 87.2,
-		"rank": 116,
-		"rankChange": 0,
+		"rank": 111,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -7089,8 +6784,8 @@
 		"consistency": 95.1,
 		"attacker": 52.2,
 		"score": 87.2,
-		"rank": 117,
-		"rankChange": 0,
+		"rank": 112,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -7150,8 +6845,8 @@
 		"consistency": 90.6,
 		"attacker": 73.7,
 		"score": 87.2,
-		"rank": 118,
-		"rankChange": 0,
+		"rank": 113,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -7211,8 +6906,8 @@
 		"consistency": 95.8,
 		"attacker": 80,
 		"score": 87.2,
-		"rank": 119,
-		"rankChange": 0,
+		"rank": 114,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -7272,8 +6967,8 @@
 		"consistency": 92.7,
 		"attacker": 98,
 		"score": 87.1,
-		"rank": 120,
-		"rankChange": 0,
+		"rank": 115,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -7333,8 +7028,8 @@
 		"consistency": 92.4,
 		"attacker": 57.5,
 		"score": 87.1,
-		"rank": 121,
-		"rankChange": 3,
+		"rank": 116,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -7394,8 +7089,8 @@
 		"consistency": 92.6,
 		"attacker": 75.1,
 		"score": 87.1,
-		"rank": 122,
-		"rankChange": -1,
+		"rank": 117,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -7455,8 +7150,8 @@
 		"consistency": 79.7,
 		"attacker": 67.7,
 		"score": 87.1,
-		"rank": 123,
-		"rankChange": -1,
+		"rank": 118,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -7516,8 +7211,8 @@
 		"consistency": 95.1,
 		"attacker": 67.4,
 		"score": 87,
-		"rank": 124,
-		"rankChange": -1,
+		"rank": 119,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -7577,8 +7272,8 @@
 		"consistency": 85,
 		"attacker": 81.2,
 		"score": 87,
-		"rank": 125,
-		"rankChange": 0,
+		"rank": 120,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -7638,8 +7333,8 @@
 		"consistency": 100,
 		"attacker": 64.5,
 		"score": 86.9,
-		"rank": 126,
-		"rankChange": 0,
+		"rank": 121,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -7699,8 +7394,8 @@
 		"consistency": 93,
 		"attacker": 80.4,
 		"score": 86.9,
-		"rank": 127,
-		"rankChange": 0,
+		"rank": 122,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -7760,8 +7455,8 @@
 		"consistency": 100,
 		"attacker": 67.7,
 		"score": 86.9,
-		"rank": 128,
-		"rankChange": 0,
+		"rank": 123,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -7821,8 +7516,8 @@
 		"consistency": 92.4,
 		"attacker": 72.2,
 		"score": 86.8,
-		"rank": 129,
-		"rankChange": 0,
+		"rank": 124,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -7882,8 +7577,8 @@
 		"consistency": 56.5,
 		"attacker": 98,
 		"score": 86.8,
-		"rank": 130,
-		"rankChange": 0,
+		"rank": 125,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -7943,8 +7638,8 @@
 		"consistency": 90.4,
 		"attacker": 94.6,
 		"score": 86.8,
-		"rank": 131,
-		"rankChange": 1,
+		"rank": 126,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -8004,8 +7699,8 @@
 		"consistency": 94.4,
 		"attacker": 75.6,
 		"score": 86.8,
-		"rank": 132,
-		"rankChange": 1,
+		"rank": 127,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -8065,8 +7760,8 @@
 		"consistency": 84.5,
 		"attacker": 74.9,
 		"score": 86.8,
-		"rank": 133,
-		"rankChange": 1,
+		"rank": 128,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -8126,8 +7821,8 @@
 		"consistency": 78.4,
 		"attacker": 50.1,
 		"score": 86.7,
-		"rank": 134,
-		"rankChange": -3,
+		"rank": 129,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -8187,8 +7882,8 @@
 		"consistency": 90.3,
 		"attacker": 47.2,
 		"score": 86.7,
-		"rank": 135,
-		"rankChange": 2,
+		"rank": 130,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -8248,8 +7943,8 @@
 		"consistency": 81.8,
 		"attacker": 71.5,
 		"score": 86.6,
-		"rank": 136,
-		"rankChange": -1,
+		"rank": 131,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -8309,8 +8004,8 @@
 		"consistency": 86.6,
 		"attacker": 91.3,
 		"score": 86.6,
-		"rank": 137,
-		"rankChange": 4,
+		"rank": 132,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -8370,8 +8065,8 @@
 		"consistency": 92.8,
 		"attacker": 54.2,
 		"score": 86.6,
-		"rank": 138,
-		"rankChange": -2,
+		"rank": 133,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -8431,8 +8126,8 @@
 		"consistency": 82.6,
 		"attacker": 57.1,
 		"score": 86.6,
-		"rank": 139,
-		"rankChange": 3,
+		"rank": 134,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -8492,8 +8187,8 @@
 		"consistency": 84.7,
 		"attacker": 50.3,
 		"score": 86.6,
-		"rank": 140,
-		"rankChange": -2,
+		"rank": 135,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -8553,8 +8248,8 @@
 		"consistency": 87.1,
 		"attacker": 87.4,
 		"score": 86.6,
-		"rank": 141,
-		"rankChange": -2,
+		"rank": 136,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -8614,8 +8309,8 @@
 		"consistency": 100,
 		"attacker": 74.9,
 		"score": 86.5,
-		"rank": 142,
-		"rankChange": -2,
+		"rank": 137,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -8675,8 +8370,8 @@
 		"consistency": 80,
 		"attacker": 78,
 		"score": 86.5,
-		"rank": 143,
-		"rankChange": 6,
+		"rank": 138,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -8736,8 +8431,8 @@
 		"consistency": 99,
 		"attacker": 62.8,
 		"score": 86.5,
-		"rank": 144,
-		"rankChange": -1,
+		"rank": 139,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -8797,8 +8492,8 @@
 		"consistency": 83.5,
 		"attacker": 67.2,
 		"score": 86.5,
-		"rank": 145,
-		"rankChange": -1,
+		"rank": 140,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -8858,8 +8553,8 @@
 		"consistency": 84.8,
 		"attacker": 93,
 		"score": 86.5,
-		"rank": 146,
-		"rankChange": -1,
+		"rank": 141,
+		"rankChange": 5,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -8905,6 +8600,67 @@
 			}
 		]
 	},
+	"umbreon": {
+		"speciesId": "umbreon",
+		"moveset": [
+			"SNARL",
+			"FOUL_PLAY",
+			"LAST_RESORT"
+		],
+		"lead": 90.6,
+		"switch": 73.8,
+		"charger": 89,
+		"closer": 82.5,
+		"consistency": 91.7,
+		"attacker": 93.4,
+		"score": 86.5,
+		"rank": 142,
+		"rankChange": -111,
+		"matchups": [
+			{
+				"opponent": "jellicent",
+				"rating": 785
+			},
+			{
+				"opponent": "sableye_shadow",
+				"rating": 708
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 634
+			},
+			{
+				"opponent": "furret",
+				"rating": 602
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 554
+			}
+		],
+		"counters": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 201
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 290
+			},
+			{
+				"opponent": "altaria",
+				"rating": 394
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 425
+			},
+			{
+				"opponent": "cradily",
+				"rating": 440
+			}
+		]
+	},
 	"amoonguss": {
 		"speciesId": "amoonguss",
 		"moveset": [
@@ -8919,8 +8675,8 @@
 		"consistency": 86.9,
 		"attacker": 76.8,
 		"score": 86.4,
-		"rank": 147,
-		"rankChange": -1,
+		"rank": 143,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -8980,8 +8736,8 @@
 		"consistency": 95.8,
 		"attacker": 67.9,
 		"score": 86.4,
-		"rank": 148,
-		"rankChange": -1,
+		"rank": 144,
+		"rankChange": 4,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -9027,6 +8783,128 @@
 			}
 		]
 	},
+	"goodra": {
+		"speciesId": "goodra",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AQUA_TAIL",
+			"THUNDER_PUNCH"
+		],
+		"lead": 95.3,
+		"switch": 88.6,
+		"charger": 93.5,
+		"closer": 79.1,
+		"consistency": 94.3,
+		"attacker": 79.2,
+		"score": 86.4,
+		"rank": 145,
+		"rankChange": -136,
+		"matchups": [
+			{
+				"opponent": "stunfisk",
+				"rating": 722
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 572
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 555
+			},
+			{
+				"opponent": "furret",
+				"rating": 538
+			},
+			{
+				"opponent": "jellicent",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 221
+			},
+			{
+				"opponent": "altaria",
+				"rating": 387
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 390
+			},
+			{
+				"opponent": "cradily",
+				"rating": 392
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 395
+			}
+		]
+	},
+	"lickitung": {
+		"speciesId": "lickitung",
+		"moveset": [
+			"LICK",
+			"BODY_SLAM",
+			"POWER_WHIP"
+		],
+		"lead": 92.1,
+		"switch": 85.4,
+		"charger": 88.6,
+		"closer": 82.5,
+		"consistency": 93.1,
+		"attacker": 91,
+		"score": 86.4,
+		"rank": 146,
+		"rankChange": -132,
+		"matchups": [
+			{
+				"opponent": "jellicent",
+				"rating": 817
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 655
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 629
+			},
+			{
+				"opponent": "sableye_shadow",
+				"rating": 548
+			},
+			{
+				"opponent": "altaria",
+				"rating": 518
+			}
+		],
+		"counters": [
+			{
+				"opponent": "furret",
+				"rating": 365
+			},
+			{
+				"opponent": "wigglytuff",
+				"rating": 385
+			},
+			{
+				"opponent": "cradily",
+				"rating": 388
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 396
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 475
+			}
+		]
+	},
 	"marowak": {
 		"speciesId": "marowak",
 		"moveset": [
@@ -9041,8 +8919,8 @@
 		"consistency": 89.7,
 		"attacker": 85.7,
 		"score": 86.4,
-		"rank": 149,
-		"rankChange": -1,
+		"rank": 147,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -9102,8 +8980,8 @@
 		"consistency": 76.3,
 		"attacker": 75.9,
 		"score": 86.3,
-		"rank": 150,
-		"rankChange": 0,
+		"rank": 148,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -9163,8 +9041,8 @@
 		"consistency": 98.2,
 		"attacker": 80.9,
 		"score": 86.3,
-		"rank": 151,
-		"rankChange": 0,
+		"rank": 149,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -9224,8 +9102,8 @@
 		"consistency": 93.5,
 		"attacker": 58.5,
 		"score": 86.3,
-		"rank": 152,
-		"rankChange": 0,
+		"rank": 150,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -9285,8 +9163,8 @@
 		"consistency": 90.3,
 		"attacker": 58.3,
 		"score": 86.3,
-		"rank": 153,
-		"rankChange": 0,
+		"rank": 151,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -9346,8 +9224,8 @@
 		"consistency": 86,
 		"attacker": 60.2,
 		"score": 86.3,
-		"rank": 154,
-		"rankChange": 6,
+		"rank": 152,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -9407,8 +9285,8 @@
 		"consistency": 91.4,
 		"attacker": 78,
 		"score": 86.3,
-		"rank": 155,
-		"rankChange": -1,
+		"rank": 153,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -9468,8 +9346,8 @@
 		"consistency": 95.8,
 		"attacker": 70.3,
 		"score": 86.3,
-		"rank": 156,
-		"rankChange": -1,
+		"rank": 154,
+		"rankChange": 2,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -9515,6 +9393,67 @@
 			}
 		]
 	},
+	"zweilous": {
+		"speciesId": "zweilous",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BODY_SLAM",
+			"DARK_PULSE"
+		],
+		"lead": 94.4,
+		"switch": 70.1,
+		"charger": 94.3,
+		"closer": 80.7,
+		"consistency": 86,
+		"attacker": 79.7,
+		"score": 86.3,
+		"rank": 155,
+		"rankChange": -123,
+		"matchups": [
+			{
+				"opponent": "jellicent",
+				"rating": 767
+			},
+			{
+				"opponent": "sableye_shadow",
+				"rating": 689
+			},
+			{
+				"opponent": "furret",
+				"rating": 635
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 560
+			},
+			{
+				"opponent": "cradily",
+				"rating": 510
+			}
+		],
+		"counters": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 65
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 259
+			},
+			{
+				"opponent": "altaria",
+				"rating": 380
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 423
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 494
+			}
+		]
+	},
 	"dubwool": {
 		"speciesId": "dubwool",
 		"moveset": [
@@ -9529,8 +9468,8 @@
 		"consistency": 91.3,
 		"attacker": 70.3,
 		"score": 86.2,
-		"rank": 157,
-		"rankChange": -1,
+		"rank": 156,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -9590,8 +9529,8 @@
 		"consistency": 79.4,
 		"attacker": 75.9,
 		"score": 86.2,
-		"rank": 158,
-		"rankChange": -1,
+		"rank": 157,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -9651,8 +9590,8 @@
 		"consistency": 84.5,
 		"attacker": 77.5,
 		"score": 86.2,
-		"rank": 159,
-		"rankChange": -1,
+		"rank": 158,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -9712,8 +9651,8 @@
 		"consistency": 79.5,
 		"attacker": 43.1,
 		"score": 86.2,
-		"rank": 160,
-		"rankChange": -1,
+		"rank": 159,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -9773,8 +9712,8 @@
 		"consistency": 91.7,
 		"attacker": 79.2,
 		"score": 86.2,
-		"rank": 161,
-		"rankChange": 0,
+		"rank": 160,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -9834,8 +9773,8 @@
 		"consistency": 92.1,
 		"attacker": 68.6,
 		"score": 86.2,
-		"rank": 162,
-		"rankChange": 0,
+		"rank": 161,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -9895,8 +9834,8 @@
 		"consistency": 95.2,
 		"attacker": 71,
 		"score": 86.2,
-		"rank": 163,
-		"rankChange": 0,
+		"rank": 162,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -9956,8 +9895,8 @@
 		"consistency": 100,
 		"attacker": 73.4,
 		"score": 86.1,
-		"rank": 164,
-		"rankChange": 0,
+		"rank": 163,
+		"rankChange": 1,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -10000,6 +9939,67 @@
 			{
 				"opponent": "sableye_shadow",
 				"rating": 484
+			}
+		]
+	},
+	"zweilous_shadow": {
+		"speciesId": "zweilous_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BODY_SLAM",
+			"DARK_PULSE"
+		],
+		"lead": 93.4,
+		"switch": 73.7,
+		"charger": 94.9,
+		"closer": 81.3,
+		"consistency": 86,
+		"attacker": 69.3,
+		"score": 86.1,
+		"rank": 164,
+		"rankChange": -102,
+		"matchups": [
+			{
+				"opponent": "jellicent",
+				"rating": 742
+			},
+			{
+				"opponent": "furret",
+				"rating": 607
+			},
+			{
+				"opponent": "altaria",
+				"rating": 585
+			},
+			{
+				"opponent": "gastrodon",
+				"rating": 535
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 535
+			}
+		],
+		"counters": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 65
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 290
+			},
+			{
+				"opponent": "cradily",
+				"rating": 427
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 436
+			},
+			{
+				"opponent": "stunfisk",
+				"rating": 465
 			}
 		]
 	},
@@ -10079,7 +10079,7 @@
 		"attacker": 73.4,
 		"score": 86,
 		"rank": 166,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -10140,7 +10140,7 @@
 		"attacker": 73.4,
 		"score": 86,
 		"rank": 167,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -10201,7 +10201,7 @@
 		"attacker": 43.6,
 		"score": 86,
 		"rank": 168,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -10262,7 +10262,7 @@
 		"attacker": 41.4,
 		"score": 85.9,
 		"rank": 169,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -10323,7 +10323,7 @@
 		"attacker": 64.8,
 		"score": 85.9,
 		"rank": 170,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -10567,7 +10567,7 @@
 		"attacker": 75.6,
 		"score": 85.7,
 		"rank": 174,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -10628,7 +10628,7 @@
 		"attacker": 52.7,
 		"score": 85.7,
 		"rank": 175,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -10689,7 +10689,7 @@
 		"attacker": 71.8,
 		"score": 85.7,
 		"rank": 176,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -10750,7 +10750,7 @@
 		"attacker": 61.4,
 		"score": 85.7,
 		"rank": 177,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "marowak_shadow",
@@ -10811,7 +10811,7 @@
 		"attacker": 65,
 		"score": 85.7,
 		"rank": 178,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -10872,7 +10872,7 @@
 		"attacker": 76.3,
 		"score": 85.7,
 		"rank": 179,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -10933,7 +10933,7 @@
 		"attacker": 48.6,
 		"score": 85.7,
 		"rank": 180,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -10994,7 +10994,7 @@
 		"attacker": 84.5,
 		"score": 85.7,
 		"rank": 181,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -11055,7 +11055,7 @@
 		"attacker": 59.7,
 		"score": 85.6,
 		"rank": 182,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -11116,7 +11116,7 @@
 		"attacker": 87.2,
 		"score": 85.6,
 		"rank": 183,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -11177,7 +11177,7 @@
 		"attacker": 68.9,
 		"score": 85.5,
 		"rank": 184,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -11238,7 +11238,7 @@
 		"attacker": 67.4,
 		"score": 85.5,
 		"rank": 185,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -11299,7 +11299,7 @@
 		"attacker": 72,
 		"score": 85.5,
 		"rank": 186,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "guzzlord",
@@ -11360,7 +11360,7 @@
 		"attacker": 76.1,
 		"score": 85.5,
 		"rank": 187,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -11421,7 +11421,7 @@
 		"attacker": 57.5,
 		"score": 85.5,
 		"rank": 188,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -11482,7 +11482,7 @@
 		"attacker": 60.7,
 		"score": 85.4,
 		"rank": 189,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -11543,7 +11543,7 @@
 		"attacker": 57.1,
 		"score": 85.4,
 		"rank": 190,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -11787,7 +11787,7 @@
 		"attacker": 70.1,
 		"score": 85.3,
 		"rank": 194,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -11848,7 +11848,7 @@
 		"attacker": 53.2,
 		"score": 85.2,
 		"rank": 195,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -11909,7 +11909,7 @@
 		"attacker": 66.9,
 		"score": 85.2,
 		"rank": 196,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -11970,7 +11970,7 @@
 		"attacker": 72,
 		"score": 85.2,
 		"rank": 197,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -12031,7 +12031,7 @@
 		"attacker": 64.3,
 		"score": 85.2,
 		"rank": 198,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -12092,7 +12092,7 @@
 		"attacker": 75.1,
 		"score": 85.2,
 		"rank": 199,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -12275,7 +12275,7 @@
 		"attacker": 61.2,
 		"score": 85.1,
 		"rank": 202,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -12336,7 +12336,7 @@
 		"attacker": 73.4,
 		"score": 85.1,
 		"rank": 203,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -12397,7 +12397,7 @@
 		"attacker": 57.3,
 		"score": 85.1,
 		"rank": 204,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -12458,7 +12458,7 @@
 		"attacker": 67.7,
 		"score": 85,
 		"rank": 205,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -12519,7 +12519,7 @@
 		"attacker": 68.1,
 		"score": 85,
 		"rank": 206,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -12580,7 +12580,7 @@
 		"attacker": 65.5,
 		"score": 85,
 		"rank": 207,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -12641,7 +12641,7 @@
 		"attacker": 55.9,
 		"score": 85,
 		"rank": 208,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -12702,7 +12702,7 @@
 		"attacker": 64.8,
 		"score": 85,
 		"rank": 209,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -12763,7 +12763,7 @@
 		"attacker": 78.7,
 		"score": 85,
 		"rank": 210,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -12824,7 +12824,7 @@
 		"attacker": 57.3,
 		"score": 85,
 		"rank": 211,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -12946,7 +12946,7 @@
 		"attacker": 31.8,
 		"score": 84.8,
 		"rank": 213,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -13007,7 +13007,7 @@
 		"attacker": 47.2,
 		"score": 84.8,
 		"rank": 214,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -13068,7 +13068,7 @@
 		"attacker": 60.4,
 		"score": 84.8,
 		"rank": 215,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -13129,7 +13129,7 @@
 		"attacker": 44.8,
 		"score": 84.8,
 		"rank": 216,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -13190,7 +13190,7 @@
 		"attacker": 73.7,
 		"score": 84.8,
 		"rank": 217,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -13251,7 +13251,7 @@
 		"attacker": 50.1,
 		"score": 84.8,
 		"rank": 218,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -13312,7 +13312,7 @@
 		"attacker": 58.5,
 		"score": 84.7,
 		"rank": 219,
-		"rankChange": 7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -13373,7 +13373,7 @@
 		"attacker": 71.3,
 		"score": 84.7,
 		"rank": 220,
-		"rankChange": 7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -13434,7 +13434,7 @@
 		"attacker": 64,
 		"score": 84.7,
 		"rank": 221,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -13495,7 +13495,7 @@
 		"attacker": 79,
 		"score": 84.7,
 		"rank": 222,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -13556,7 +13556,7 @@
 		"attacker": 42.4,
 		"score": 84.7,
 		"rank": 223,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -13617,7 +13617,7 @@
 		"attacker": 34.2,
 		"score": 84.7,
 		"rank": 224,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -13678,7 +13678,7 @@
 		"attacker": 58.5,
 		"score": 84.7,
 		"rank": 225,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -13739,7 +13739,7 @@
 		"attacker": 50.6,
 		"score": 84.6,
 		"rank": 226,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -13800,7 +13800,7 @@
 		"attacker": 83.3,
 		"score": 84.6,
 		"rank": 227,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -13983,7 +13983,7 @@
 		"attacker": 30.8,
 		"score": 84.5,
 		"rank": 230,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -14044,7 +14044,7 @@
 		"attacker": 79.7,
 		"score": 84.5,
 		"rank": 231,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -14105,7 +14105,7 @@
 		"attacker": 68.4,
 		"score": 84.4,
 		"rank": 232,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -14166,7 +14166,7 @@
 		"attacker": 63.1,
 		"score": 84.4,
 		"rank": 233,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -14837,7 +14837,7 @@
 		"attacker": 58.5,
 		"score": 84.1,
 		"rank": 244,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -14898,7 +14898,7 @@
 		"attacker": 78,
 		"score": 84.1,
 		"rank": 245,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -15203,7 +15203,7 @@
 		"attacker": 84.3,
 		"score": 84,
 		"rank": 250,
-		"rankChange": -6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -15264,7 +15264,7 @@
 		"attacker": 72.5,
 		"score": 83.9,
 		"rank": 251,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -15325,7 +15325,7 @@
 		"attacker": 58.7,
 		"score": 83.8,
 		"rank": 252,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -15386,7 +15386,7 @@
 		"attacker": 72.2,
 		"score": 83.8,
 		"rank": 253,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -15447,7 +15447,7 @@
 		"attacker": 78,
 		"score": 83.8,
 		"rank": 254,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -15508,7 +15508,7 @@
 		"attacker": 51.8,
 		"score": 83.7,
 		"rank": 255,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -15569,7 +15569,7 @@
 		"attacker": 70.3,
 		"score": 83.7,
 		"rank": 256,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -15630,7 +15630,7 @@
 		"attacker": 62.1,
 		"score": 83.6,
 		"rank": 257,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -16057,7 +16057,7 @@
 		"attacker": 40.7,
 		"score": 83.4,
 		"rank": 264,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -16118,7 +16118,7 @@
 		"attacker": 44.8,
 		"score": 83.4,
 		"rank": 265,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -16179,7 +16179,7 @@
 		"attacker": 71,
 		"score": 83.3,
 		"rank": 266,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -16240,7 +16240,7 @@
 		"attacker": 56.1,
 		"score": 83.3,
 		"rank": 267,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -16667,7 +16667,7 @@
 		"attacker": 47.4,
 		"score": 83.1,
 		"rank": 274,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -16728,7 +16728,7 @@
 		"attacker": 63.8,
 		"score": 83,
 		"rank": 275,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -16789,7 +16789,7 @@
 		"attacker": 41.4,
 		"score": 83,
 		"rank": 276,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -16850,7 +16850,7 @@
 		"attacker": 55.6,
 		"score": 83,
 		"rank": 277,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -17216,7 +17216,7 @@
 		"attacker": 75.6,
 		"score": 82.8,
 		"rank": 283,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -17277,7 +17277,7 @@
 		"attacker": 40,
 		"score": 82.8,
 		"rank": 284,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -17338,7 +17338,7 @@
 		"attacker": 76.6,
 		"score": 82.8,
 		"rank": 285,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -17399,7 +17399,7 @@
 		"attacker": 77.5,
 		"score": 82.7,
 		"rank": 286,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -17460,7 +17460,7 @@
 		"attacker": 65.5,
 		"score": 82.7,
 		"rank": 287,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -17521,7 +17521,7 @@
 		"attacker": 51.8,
 		"score": 82.7,
 		"rank": 288,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -17582,7 +17582,7 @@
 		"attacker": 71.8,
 		"score": 82.7,
 		"rank": 289,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blastoise",
@@ -17643,7 +17643,7 @@
 		"attacker": 70.3,
 		"score": 82.7,
 		"rank": 290,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -17704,7 +17704,7 @@
 		"attacker": 67.9,
 		"score": 82.6,
 		"rank": 291,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -17765,7 +17765,7 @@
 		"attacker": 65.7,
 		"score": 82.6,
 		"rank": 292,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -17826,7 +17826,7 @@
 		"attacker": 71,
 		"score": 82.6,
 		"rank": 293,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -17887,7 +17887,7 @@
 		"attacker": 52,
 		"score": 82.6,
 		"rank": 294,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -17948,7 +17948,7 @@
 		"attacker": 43.6,
 		"score": 82.6,
 		"rank": 295,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -18009,7 +18009,7 @@
 		"attacker": 70.3,
 		"score": 82.5,
 		"rank": 296,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -18070,7 +18070,7 @@
 		"attacker": 61.9,
 		"score": 82.5,
 		"rank": 297,
-		"rankChange": -6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -18436,7 +18436,7 @@
 		"attacker": 22.4,
 		"score": 82.2,
 		"rank": 303,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -18497,7 +18497,7 @@
 		"attacker": 78.5,
 		"score": 82.2,
 		"rank": 304,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -18558,7 +18558,7 @@
 		"attacker": 70.6,
 		"score": 82.2,
 		"rank": 305,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -18619,7 +18619,7 @@
 		"attacker": 60.9,
 		"score": 81.9,
 		"rank": 306,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -18741,7 +18741,7 @@
 		"attacker": 59.5,
 		"score": 81.9,
 		"rank": 308,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -18802,7 +18802,7 @@
 		"attacker": 43.3,
 		"score": 81.8,
 		"rank": 309,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -18863,7 +18863,7 @@
 		"attacker": 42.6,
 		"score": 81.8,
 		"rank": 310,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -18924,7 +18924,7 @@
 		"attacker": 69.8,
 		"score": 81.8,
 		"rank": 311,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -18985,7 +18985,7 @@
 		"attacker": 56.3,
 		"score": 81.8,
 		"rank": 312,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -19046,7 +19046,7 @@
 		"attacker": 46.2,
 		"score": 81.8,
 		"rank": 313,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -19107,7 +19107,7 @@
 		"attacker": 65.7,
 		"score": 81.8,
 		"rank": 314,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -19168,7 +19168,7 @@
 		"attacker": 47.7,
 		"score": 81.8,
 		"rank": 315,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -19229,7 +19229,7 @@
 		"attacker": 57.1,
 		"score": 81.8,
 		"rank": 316,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -19290,7 +19290,7 @@
 		"attacker": 61.2,
 		"score": 81.7,
 		"rank": 317,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -19351,7 +19351,7 @@
 		"attacker": 40.7,
 		"score": 81.7,
 		"rank": 318,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -19412,7 +19412,7 @@
 		"attacker": 33.2,
 		"score": 81.7,
 		"rank": 319,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -19473,7 +19473,7 @@
 		"attacker": 67.4,
 		"score": 81.6,
 		"rank": 320,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -19534,7 +19534,7 @@
 		"attacker": 55.6,
 		"score": 81.6,
 		"rank": 321,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -19839,7 +19839,7 @@
 		"attacker": 71.5,
 		"score": 81.4,
 		"rank": 326,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -19900,7 +19900,7 @@
 		"attacker": 51.3,
 		"score": 81.3,
 		"rank": 327,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -19961,7 +19961,7 @@
 		"attacker": 60.4,
 		"score": 81.3,
 		"rank": 328,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -20266,7 +20266,7 @@
 		"attacker": 70.1,
 		"score": 81.1,
 		"rank": 333,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -20327,7 +20327,7 @@
 		"attacker": 60.7,
 		"score": 81.1,
 		"rank": 334,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -20388,7 +20388,7 @@
 		"attacker": 49.1,
 		"score": 81.1,
 		"rank": 335,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -20449,7 +20449,7 @@
 		"attacker": 52.5,
 		"score": 81,
 		"rank": 336,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -20510,7 +20510,7 @@
 		"attacker": 71.3,
 		"score": 81,
 		"rank": 337,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -20632,7 +20632,7 @@
 		"attacker": 64.8,
 		"score": 80.9,
 		"rank": 339,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -20693,7 +20693,7 @@
 		"attacker": 38,
 		"score": 80.9,
 		"rank": 340,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -20876,7 +20876,7 @@
 		"attacker": 36.6,
 		"score": 80.8,
 		"rank": 343,
-		"rankChange": -7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -21242,7 +21242,7 @@
 		"attacker": 48.1,
 		"score": 80.6,
 		"rank": 349,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -21303,7 +21303,7 @@
 		"attacker": 43.3,
 		"score": 80.6,
 		"rank": 350,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -21364,7 +21364,7 @@
 		"attacker": 55.9,
 		"score": 80.6,
 		"rank": 351,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -21669,7 +21669,7 @@
 		"attacker": 58.3,
 		"score": 80.5,
 		"rank": 356,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -21730,7 +21730,7 @@
 		"attacker": 72.7,
 		"score": 80.5,
 		"rank": 357,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -21791,7 +21791,7 @@
 		"attacker": 42.8,
 		"score": 80.4,
 		"rank": 358,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -21852,7 +21852,7 @@
 		"attacker": 41.2,
 		"score": 80.4,
 		"rank": 359,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -21913,7 +21913,7 @@
 		"attacker": 38,
 		"score": 80.4,
 		"rank": 360,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -21974,7 +21974,7 @@
 		"attacker": 57.3,
 		"score": 80.4,
 		"rank": 361,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -22035,7 +22035,7 @@
 		"attacker": 71.8,
 		"score": 80.3,
 		"rank": 362,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -22096,7 +22096,7 @@
 		"attacker": 51,
 		"score": 80.3,
 		"rank": 363,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -22157,7 +22157,7 @@
 		"attacker": 46.2,
 		"score": 80.2,
 		"rank": 364,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -22706,7 +22706,7 @@
 		"attacker": 57.3,
 		"score": 80,
 		"rank": 373,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -22767,7 +22767,7 @@
 		"attacker": 66.2,
 		"score": 80,
 		"rank": 374,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -22828,7 +22828,7 @@
 		"attacker": 38.5,
 		"score": 80,
 		"rank": 375,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -22889,7 +22889,7 @@
 		"attacker": 48.6,
 		"score": 80,
 		"rank": 376,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -22950,7 +22950,7 @@
 		"attacker": 60.2,
 		"score": 80,
 		"rank": 377,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "ninetales_alolan",
@@ -23011,7 +23011,7 @@
 		"attacker": 38.7,
 		"score": 79.9,
 		"rank": 378,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -23072,7 +23072,7 @@
 		"attacker": 63.6,
 		"score": 79.9,
 		"rank": 379,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -23194,7 +23194,7 @@
 		"attacker": 53.7,
 		"score": 79.8,
 		"rank": 381,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -23255,7 +23255,7 @@
 		"attacker": 52.7,
 		"score": 79.8,
 		"rank": 382,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -23316,7 +23316,7 @@
 		"attacker": 56.1,
 		"score": 79.8,
 		"rank": 383,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -23377,7 +23377,7 @@
 		"attacker": 58.3,
 		"score": 79.8,
 		"rank": 384,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -23438,7 +23438,7 @@
 		"attacker": 67.9,
 		"score": 79.7,
 		"rank": 385,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -23682,7 +23682,7 @@
 		"attacker": 51.3,
 		"score": 79.6,
 		"rank": 389,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -23743,7 +23743,7 @@
 		"attacker": 68.4,
 		"score": 79.6,
 		"rank": 390,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -23804,7 +23804,7 @@
 		"attacker": 55.1,
 		"score": 79.6,
 		"rank": 391,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -23865,7 +23865,7 @@
 		"attacker": 55.4,
 		"score": 79.6,
 		"rank": 392,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -23926,7 +23926,7 @@
 		"attacker": 41.6,
 		"score": 79.6,
 		"rank": 393,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -23987,7 +23987,7 @@
 		"attacker": 41.2,
 		"score": 79.6,
 		"rank": 394,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "marowak_shadow",
@@ -24048,7 +24048,7 @@
 		"attacker": 51.5,
 		"score": 79.5,
 		"rank": 395,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -24109,7 +24109,7 @@
 		"attacker": 58.5,
 		"score": 79.5,
 		"rank": 396,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -24170,7 +24170,7 @@
 		"attacker": 63.8,
 		"score": 79.5,
 		"rank": 397,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -24231,7 +24231,7 @@
 		"attacker": 41.4,
 		"score": 79.5,
 		"rank": 398,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -24292,7 +24292,7 @@
 		"attacker": 77.1,
 		"score": 79.5,
 		"rank": 399,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -24353,7 +24353,7 @@
 		"attacker": 54.4,
 		"score": 79.5,
 		"rank": 400,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -24414,7 +24414,7 @@
 		"attacker": 49.1,
 		"score": 79.4,
 		"rank": 401,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -25390,7 +25390,7 @@
 		"attacker": 48.6,
 		"score": 78.9,
 		"rank": 417,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -25451,7 +25451,7 @@
 		"attacker": 68.9,
 		"score": 78.9,
 		"rank": 418,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -25512,7 +25512,7 @@
 		"attacker": 56.8,
 		"score": 78.9,
 		"rank": 419,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -25573,7 +25573,7 @@
 		"attacker": 55.1,
 		"score": 78.8,
 		"rank": 420,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -25634,7 +25634,7 @@
 		"attacker": 34.9,
 		"score": 78.8,
 		"rank": 421,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -25695,7 +25695,7 @@
 		"attacker": 56.1,
 		"score": 78.8,
 		"rank": 422,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -25756,7 +25756,7 @@
 		"attacker": 50.8,
 		"score": 78.8,
 		"rank": 423,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -25878,7 +25878,7 @@
 		"attacker": 36.8,
 		"score": 78.8,
 		"rank": 425,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -25939,7 +25939,7 @@
 		"attacker": 46,
 		"score": 78.8,
 		"rank": 426,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -26000,7 +26000,7 @@
 		"attacker": 66.5,
 		"score": 78.7,
 		"rank": 427,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -26061,7 +26061,7 @@
 		"attacker": 62.8,
 		"score": 78.6,
 		"rank": 428,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -26122,7 +26122,7 @@
 		"attacker": 53.2,
 		"score": 78.6,
 		"rank": 429,
-		"rankChange": 7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -26183,7 +26183,7 @@
 		"attacker": 47.7,
 		"score": 78.6,
 		"rank": 430,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -26244,7 +26244,7 @@
 		"attacker": 36.3,
 		"score": 78.5,
 		"rank": 431,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -26305,7 +26305,7 @@
 		"attacker": 53.4,
 		"score": 78.5,
 		"rank": 432,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -26366,7 +26366,7 @@
 		"attacker": 54.6,
 		"score": 78.5,
 		"rank": 433,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -26427,7 +26427,7 @@
 		"attacker": 65.5,
 		"score": 78.5,
 		"rank": 434,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -26488,7 +26488,7 @@
 		"attacker": 46.5,
 		"score": 78.5,
 		"rank": 435,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -26549,7 +26549,7 @@
 		"attacker": 62.4,
 		"score": 78.5,
 		"rank": 436,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -26610,7 +26610,7 @@
 		"attacker": 52.2,
 		"score": 78.5,
 		"rank": 437,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -26915,7 +26915,7 @@
 		"attacker": 61.2,
 		"score": 78.4,
 		"rank": 442,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -26976,7 +26976,7 @@
 		"attacker": 68.9,
 		"score": 78.4,
 		"rank": 443,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -27037,7 +27037,7 @@
 		"attacker": 54.9,
 		"score": 78.4,
 		"rank": 444,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -27098,7 +27098,7 @@
 		"attacker": 41.9,
 		"score": 78.3,
 		"rank": 445,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -27159,7 +27159,7 @@
 		"attacker": 63.8,
 		"score": 78.3,
 		"rank": 446,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -27586,7 +27586,7 @@
 		"attacker": 61.6,
 		"score": 78,
 		"rank": 453,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -27647,7 +27647,7 @@
 		"attacker": 43.3,
 		"score": 77.9,
 		"rank": 454,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -27708,7 +27708,7 @@
 		"attacker": 59.2,
 		"score": 77.9,
 		"rank": 455,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blastoise",
@@ -27769,7 +27769,7 @@
 		"attacker": 63.1,
 		"score": 77.9,
 		"rank": 456,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -27830,7 +27830,7 @@
 		"attacker": 57.1,
 		"score": 77.9,
 		"rank": 457,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -27891,7 +27891,7 @@
 		"attacker": 57.3,
 		"score": 77.8,
 		"rank": 458,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -27952,7 +27952,7 @@
 		"attacker": 47.7,
 		"score": 77.7,
 		"rank": 459,
-		"rankChange": 7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -28074,7 +28074,7 @@
 		"attacker": 62.8,
 		"score": 77.7,
 		"rank": 461,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -28135,7 +28135,7 @@
 		"attacker": 43.8,
 		"score": 77.7,
 		"rank": 462,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -28196,7 +28196,7 @@
 		"attacker": 57.5,
 		"score": 77.6,
 		"rank": 463,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -28257,7 +28257,7 @@
 		"attacker": 55.9,
 		"score": 77.6,
 		"rank": 464,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -28318,7 +28318,7 @@
 		"attacker": 39.7,
 		"score": 77.6,
 		"rank": 465,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -28379,7 +28379,7 @@
 		"attacker": 66.5,
 		"score": 77.6,
 		"rank": 466,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -28440,7 +28440,7 @@
 		"attacker": 42.6,
 		"score": 77.6,
 		"rank": 467,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -28501,7 +28501,7 @@
 		"attacker": 63.8,
 		"score": 77.6,
 		"rank": 468,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -28562,7 +28562,7 @@
 		"attacker": 45,
 		"score": 77.5,
 		"rank": 469,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -28623,7 +28623,7 @@
 		"attacker": 62.6,
 		"score": 77.5,
 		"rank": 470,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -28684,7 +28684,7 @@
 		"attacker": 37.3,
 		"score": 77.5,
 		"rank": 471,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -28745,7 +28745,7 @@
 		"attacker": 52.2,
 		"score": 77.4,
 		"rank": 472,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -28806,7 +28806,7 @@
 		"attacker": 39.5,
 		"score": 77.4,
 		"rank": 473,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -28867,7 +28867,7 @@
 		"attacker": 67.7,
 		"score": 77.4,
 		"rank": 474,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -29111,7 +29111,7 @@
 		"attacker": 74.9,
 		"score": 77.3,
 		"rank": 478,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -29294,7 +29294,7 @@
 		"attacker": 73.9,
 		"score": 77.2,
 		"rank": 481,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -29355,7 +29355,7 @@
 		"attacker": 34.6,
 		"score": 77.2,
 		"rank": 482,
-		"rankChange": 8,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -29416,7 +29416,7 @@
 		"attacker": 56.6,
 		"score": 77.1,
 		"rank": 483,
-		"rankChange": 8,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -29477,7 +29477,7 @@
 		"attacker": 64.5,
 		"score": 77.1,
 		"rank": 484,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -29538,7 +29538,7 @@
 		"attacker": 55.6,
 		"score": 77.1,
 		"rank": 485,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -29599,7 +29599,7 @@
 		"attacker": 36.8,
 		"score": 77.1,
 		"rank": 486,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -29660,7 +29660,7 @@
 		"attacker": 66,
 		"score": 77.1,
 		"rank": 487,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -29721,7 +29721,7 @@
 		"attacker": 60,
 		"score": 77.1,
 		"rank": 488,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -29782,7 +29782,7 @@
 		"attacker": 49.1,
 		"score": 77.1,
 		"rank": 489,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -29843,7 +29843,7 @@
 		"attacker": 60.2,
 		"score": 77.1,
 		"rank": 490,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -29904,7 +29904,7 @@
 		"attacker": 32,
 		"score": 77.1,
 		"rank": 491,
-		"rankChange": -10,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -29965,7 +29965,7 @@
 		"attacker": 29.6,
 		"score": 77.1,
 		"rank": 492,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -30026,7 +30026,7 @@
 		"attacker": 48.4,
 		"score": 77,
 		"rank": 493,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -30148,7 +30148,7 @@
 		"attacker": 53.9,
 		"score": 76.9,
 		"rank": 495,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -30209,7 +30209,7 @@
 		"attacker": 64.3,
 		"score": 76.9,
 		"rank": 496,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -30270,7 +30270,7 @@
 		"attacker": 49.3,
 		"score": 76.9,
 		"rank": 497,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -30331,7 +30331,7 @@
 		"attacker": 46.7,
 		"score": 76.9,
 		"rank": 498,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "florges",
@@ -30392,7 +30392,7 @@
 		"attacker": 60.9,
 		"score": 76.8,
 		"rank": 499,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -30453,7 +30453,7 @@
 		"attacker": 51.5,
 		"score": 76.8,
 		"rank": 500,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -30514,7 +30514,7 @@
 		"attacker": 34.4,
 		"score": 76.8,
 		"rank": 501,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -30575,7 +30575,7 @@
 		"attacker": 28.6,
 		"score": 76.8,
 		"rank": 502,
-		"rankChange": -7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -30697,7 +30697,7 @@
 		"attacker": 58.7,
 		"score": 76.7,
 		"rank": 504,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -30758,7 +30758,7 @@
 		"attacker": 59,
 		"score": 76.7,
 		"rank": 505,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -30819,7 +30819,7 @@
 		"attacker": 37.5,
 		"score": 76.7,
 		"rank": 506,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -30880,7 +30880,7 @@
 		"attacker": 53.4,
 		"score": 76.7,
 		"rank": 507,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -30941,7 +30941,7 @@
 		"attacker": 58.3,
 		"score": 76.6,
 		"rank": 508,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -31002,7 +31002,7 @@
 		"attacker": 59.2,
 		"score": 76.6,
 		"rank": 509,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -31063,7 +31063,7 @@
 		"attacker": 60.4,
 		"score": 76.6,
 		"rank": 510,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -31124,7 +31124,7 @@
 		"attacker": 51.8,
 		"score": 76.6,
 		"rank": 511,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -31368,7 +31368,7 @@
 		"attacker": 65.7,
 		"score": 76.4,
 		"rank": 515,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -31612,7 +31612,7 @@
 		"attacker": 49.6,
 		"score": 76.3,
 		"rank": 519,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -31917,7 +31917,7 @@
 		"attacker": 50.1,
 		"score": 76.1,
 		"rank": 524,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -31978,7 +31978,7 @@
 		"attacker": 57.8,
 		"score": 76.1,
 		"rank": 525,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -32039,7 +32039,7 @@
 		"attacker": 52.7,
 		"score": 76,
 		"rank": 526,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -33015,7 +33015,7 @@
 		"attacker": 61.4,
 		"score": 75.6,
 		"rank": 542,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -33076,7 +33076,7 @@
 		"attacker": 40.2,
 		"score": 75.6,
 		"rank": 543,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -33137,7 +33137,7 @@
 		"attacker": 25.5,
 		"score": 75.5,
 		"rank": 544,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -33198,7 +33198,7 @@
 		"attacker": 37.3,
 		"score": 75.5,
 		"rank": 545,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -33259,7 +33259,7 @@
 		"attacker": 65.7,
 		"score": 75.5,
 		"rank": 546,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -33320,7 +33320,7 @@
 		"attacker": 57.5,
 		"score": 75.5,
 		"rank": 547,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -33381,7 +33381,7 @@
 		"attacker": 36.6,
 		"score": 75.5,
 		"rank": 548,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -33442,7 +33442,7 @@
 		"attacker": 55.9,
 		"score": 75.5,
 		"rank": 549,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -33503,7 +33503,7 @@
 		"attacker": 37.8,
 		"score": 75.4,
 		"rank": 550,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -33564,7 +33564,7 @@
 		"attacker": 59.5,
 		"score": 75.3,
 		"rank": 551,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -33625,7 +33625,7 @@
 		"attacker": 50.8,
 		"score": 75.3,
 		"rank": 552,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -33686,7 +33686,7 @@
 		"attacker": 50.8,
 		"score": 75.3,
 		"rank": 553,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -33747,7 +33747,7 @@
 		"attacker": 26.7,
 		"score": 75.3,
 		"rank": 554,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -33808,7 +33808,7 @@
 		"attacker": 51.8,
 		"score": 75.3,
 		"rank": 555,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -33869,7 +33869,7 @@
 		"attacker": 56.8,
 		"score": 75.3,
 		"rank": 556,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -33930,7 +33930,7 @@
 		"attacker": 66,
 		"score": 75.3,
 		"rank": 557,
-		"rankChange": -6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -33991,7 +33991,7 @@
 		"attacker": 37.8,
 		"score": 75.3,
 		"rank": 558,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -34052,7 +34052,7 @@
 		"attacker": 60.2,
 		"score": 75.3,
 		"rank": 559,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -34723,7 +34723,7 @@
 		"attacker": 57.5,
 		"score": 75,
 		"rank": 570,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -34784,7 +34784,7 @@
 		"attacker": 59.5,
 		"score": 74.9,
 		"rank": 571,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -34845,7 +34845,7 @@
 		"attacker": 51.5,
 		"score": 74.9,
 		"rank": 572,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -34906,7 +34906,7 @@
 		"attacker": 52,
 		"score": 74.9,
 		"rank": 573,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -34967,7 +34967,7 @@
 		"attacker": 54.6,
 		"score": 74.9,
 		"rank": 574,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -35028,7 +35028,7 @@
 		"attacker": 63.6,
 		"score": 74.9,
 		"rank": 575,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -35089,7 +35089,7 @@
 		"attacker": 48.6,
 		"score": 74.9,
 		"rank": 576,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -35150,7 +35150,7 @@
 		"attacker": 40.9,
 		"score": 74.8,
 		"rank": 577,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -35211,7 +35211,7 @@
 		"attacker": 44.5,
 		"score": 74.8,
 		"rank": 578,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -35272,7 +35272,7 @@
 		"attacker": 60.2,
 		"score": 74.8,
 		"rank": 579,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -35333,7 +35333,7 @@
 		"attacker": 45,
 		"score": 74.7,
 		"rank": 580,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -35394,7 +35394,7 @@
 		"attacker": 59.2,
 		"score": 74.6,
 		"rank": 581,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -35455,7 +35455,7 @@
 		"attacker": 58,
 		"score": 74.6,
 		"rank": 582,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -35516,7 +35516,7 @@
 		"attacker": 32.7,
 		"score": 74.6,
 		"rank": 583,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -36126,7 +36126,7 @@
 		"attacker": 45.3,
 		"score": 74.4,
 		"rank": 593,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -36187,7 +36187,7 @@
 		"attacker": 41.6,
 		"score": 74.3,
 		"rank": 594,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -36492,7 +36492,7 @@
 		"attacker": 56.3,
 		"score": 74,
 		"rank": 599,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -36553,7 +36553,7 @@
 		"attacker": 46.5,
 		"score": 74,
 		"rank": 600,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -36614,7 +36614,7 @@
 		"attacker": 38.3,
 		"score": 73.9,
 		"rank": 601,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -36675,7 +36675,7 @@
 		"attacker": 54.4,
 		"score": 73.9,
 		"rank": 602,
-		"rankChange": 11,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -36736,7 +36736,7 @@
 		"attacker": 49.1,
 		"score": 73.9,
 		"rank": 603,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -36797,7 +36797,7 @@
 		"attacker": 34.4,
 		"score": 73.9,
 		"rank": 604,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -36858,7 +36858,7 @@
 		"attacker": 57.1,
 		"score": 73.9,
 		"rank": 605,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -36919,7 +36919,7 @@
 		"attacker": 39.5,
 		"score": 73.9,
 		"rank": 606,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "moltres_galarian",
@@ -36980,7 +36980,7 @@
 		"attacker": 50.6,
 		"score": 73.9,
 		"rank": 607,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -37041,7 +37041,7 @@
 		"attacker": 46.5,
 		"score": 73.8,
 		"rank": 608,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -37102,7 +37102,7 @@
 		"attacker": 54.9,
 		"score": 73.8,
 		"rank": 609,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -37163,7 +37163,7 @@
 		"attacker": 43.3,
 		"score": 73.8,
 		"rank": 610,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -37224,7 +37224,7 @@
 		"attacker": 51.8,
 		"score": 73.8,
 		"rank": 611,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -37285,7 +37285,7 @@
 		"attacker": 42.1,
 		"score": 73.8,
 		"rank": 612,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "ninetales_alolan",
@@ -37346,7 +37346,7 @@
 		"attacker": 56.6,
 		"score": 73.7,
 		"rank": 613,
-		"rankChange": -7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -37407,7 +37407,7 @@
 		"attacker": 43.3,
 		"score": 73.7,
 		"rank": 614,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -37529,7 +37529,7 @@
 		"attacker": 36.6,
 		"score": 73.6,
 		"rank": 616,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -37590,7 +37590,7 @@
 		"attacker": 56.3,
 		"score": 73.6,
 		"rank": 617,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -37651,7 +37651,7 @@
 		"attacker": 31,
 		"score": 73.5,
 		"rank": 618,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -37712,7 +37712,7 @@
 		"attacker": 47.9,
 		"score": 73.5,
 		"rank": 619,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -37773,7 +37773,7 @@
 		"attacker": 40.7,
 		"score": 73.5,
 		"rank": 620,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -37834,7 +37834,7 @@
 		"attacker": 30.3,
 		"score": 73.5,
 		"rank": 621,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -37895,7 +37895,7 @@
 		"attacker": 46.7,
 		"score": 73.4,
 		"rank": 622,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -37956,7 +37956,7 @@
 		"attacker": 65,
 		"score": 73.4,
 		"rank": 623,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -38017,7 +38017,7 @@
 		"attacker": 51,
 		"score": 73.4,
 		"rank": 624,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -38078,7 +38078,7 @@
 		"attacker": 47.7,
 		"score": 73.4,
 		"rank": 625,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -38139,7 +38139,7 @@
 		"attacker": 49.1,
 		"score": 73.3,
 		"rank": 626,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -38261,7 +38261,7 @@
 		"attacker": 55.4,
 		"score": 73.3,
 		"rank": 628,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -38322,7 +38322,7 @@
 		"attacker": 41.9,
 		"score": 73.2,
 		"rank": 629,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -38383,7 +38383,7 @@
 		"attacker": 30.3,
 		"score": 73.2,
 		"rank": 630,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -38444,7 +38444,7 @@
 		"attacker": 73.7,
 		"score": 73.2,
 		"rank": 631,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -38505,7 +38505,7 @@
 		"attacker": 44,
 		"score": 73.1,
 		"rank": 632,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -38566,7 +38566,7 @@
 		"attacker": 74.4,
 		"score": 73.1,
 		"rank": 633,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -38627,7 +38627,7 @@
 		"attacker": 55.4,
 		"score": 73.1,
 		"rank": 634,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -38688,7 +38688,7 @@
 		"attacker": 67.2,
 		"score": 73.1,
 		"rank": 635,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -38749,7 +38749,7 @@
 		"attacker": 66,
 		"score": 73,
 		"rank": 636,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -38810,7 +38810,7 @@
 		"attacker": 30.1,
 		"score": 73,
 		"rank": 637,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "marowak_shadow",
@@ -38871,7 +38871,7 @@
 		"attacker": 42.8,
 		"score": 73,
 		"rank": 638,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -38993,7 +38993,7 @@
 		"attacker": 51.3,
 		"score": 72.9,
 		"rank": 640,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -39054,7 +39054,7 @@
 		"attacker": 37.8,
 		"score": 72.9,
 		"rank": 641,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "marowak_shadow",
@@ -39115,7 +39115,7 @@
 		"attacker": 52.2,
 		"score": 72.8,
 		"rank": 642,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -39176,7 +39176,7 @@
 		"attacker": 47.4,
 		"score": 72.8,
 		"rank": 643,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -39237,7 +39237,7 @@
 		"attacker": 32.2,
 		"score": 72.7,
 		"rank": 644,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -39298,7 +39298,7 @@
 		"attacker": 54.4,
 		"score": 72.7,
 		"rank": 645,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -39359,7 +39359,7 @@
 		"attacker": 56.8,
 		"score": 72.6,
 		"rank": 646,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -39420,7 +39420,7 @@
 		"attacker": 60,
 		"score": 72.6,
 		"rank": 647,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -39481,7 +39481,7 @@
 		"attacker": 53.4,
 		"score": 72.6,
 		"rank": 648,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -39542,7 +39542,7 @@
 		"attacker": 60,
 		"score": 72.6,
 		"rank": 649,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -39603,7 +39603,7 @@
 		"attacker": 59,
 		"score": 72.6,
 		"rank": 650,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -39725,7 +39725,7 @@
 		"attacker": 51.5,
 		"score": 72.5,
 		"rank": 652,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -39786,7 +39786,7 @@
 		"attacker": 45.7,
 		"score": 72.5,
 		"rank": 653,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -39847,7 +39847,7 @@
 		"attacker": 74.2,
 		"score": 72.4,
 		"rank": 654,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -39908,7 +39908,7 @@
 		"attacker": 50.3,
 		"score": 72.4,
 		"rank": 655,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -39969,7 +39969,7 @@
 		"attacker": 42.4,
 		"score": 72.4,
 		"rank": 656,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "moltres_galarian",
@@ -40030,7 +40030,7 @@
 		"attacker": 56.6,
 		"score": 72.4,
 		"rank": 657,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -40091,7 +40091,7 @@
 		"attacker": 34.2,
 		"score": 72.4,
 		"rank": 658,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -40335,7 +40335,7 @@
 		"attacker": 55.1,
 		"score": 72.3,
 		"rank": 662,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -40396,7 +40396,7 @@
 		"attacker": 46.7,
 		"score": 72.2,
 		"rank": 663,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -40457,7 +40457,7 @@
 		"attacker": 31.5,
 		"score": 72.2,
 		"rank": 664,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -40518,7 +40518,7 @@
 		"attacker": 53.2,
 		"score": 72.2,
 		"rank": 665,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -40884,7 +40884,7 @@
 		"attacker": 25.3,
 		"score": 71.8,
 		"rank": 671,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -40945,7 +40945,7 @@
 		"attacker": 40.7,
 		"score": 71.8,
 		"rank": 672,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -41006,7 +41006,7 @@
 		"attacker": 47.7,
 		"score": 71.8,
 		"rank": 673,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -41067,7 +41067,7 @@
 		"attacker": 70.1,
 		"score": 71.8,
 		"rank": 674,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -41128,7 +41128,7 @@
 		"attacker": 37.1,
 		"score": 71.8,
 		"rank": 675,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -41189,7 +41189,7 @@
 		"attacker": 55.4,
 		"score": 71.7,
 		"rank": 676,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -41250,7 +41250,7 @@
 		"attacker": 28.1,
 		"score": 71.7,
 		"rank": 677,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -41311,7 +41311,7 @@
 		"attacker": 43.6,
 		"score": 71.6,
 		"rank": 678,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sandslash_alolan_shadow",
@@ -41372,7 +41372,7 @@
 		"attacker": 43.8,
 		"score": 71.6,
 		"rank": 679,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -41433,7 +41433,7 @@
 		"attacker": 35.1,
 		"score": 71.6,
 		"rank": 680,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -41494,7 +41494,7 @@
 		"attacker": 40,
 		"score": 71.6,
 		"rank": 681,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -41555,7 +41555,7 @@
 		"attacker": 36.8,
 		"score": 71.6,
 		"rank": 682,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -41616,7 +41616,7 @@
 		"attacker": 37.5,
 		"score": 71.6,
 		"rank": 683,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -41677,7 +41677,7 @@
 		"attacker": 33.7,
 		"score": 71.5,
 		"rank": 684,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sealeo",
@@ -41799,7 +41799,7 @@
 		"attacker": 57.1,
 		"score": 71.4,
 		"rank": 686,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "florges",
@@ -41860,7 +41860,7 @@
 		"attacker": 56.6,
 		"score": 71.4,
 		"rank": 687,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -41921,7 +41921,7 @@
 		"attacker": 72,
 		"score": 71.4,
 		"rank": 688,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -41982,7 +41982,7 @@
 		"attacker": 46.5,
 		"score": 71.4,
 		"rank": 689,
-		"rankChange": -7,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -42043,7 +42043,7 @@
 		"attacker": 35.1,
 		"score": 71.4,
 		"rank": 690,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -42165,7 +42165,7 @@
 		"attacker": 62.4,
 		"score": 71.3,
 		"rank": 692,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -42226,7 +42226,7 @@
 		"attacker": 46.2,
 		"score": 71.3,
 		"rank": 693,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -42287,7 +42287,7 @@
 		"attacker": 55.4,
 		"score": 71.3,
 		"rank": 694,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -42348,7 +42348,7 @@
 		"attacker": 23.3,
 		"score": 71.3,
 		"rank": 695,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -42409,7 +42409,7 @@
 		"attacker": 53.4,
 		"score": 71.3,
 		"rank": 696,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -42470,7 +42470,7 @@
 		"attacker": 43.8,
 		"score": 71.2,
 		"rank": 697,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -42836,7 +42836,7 @@
 		"attacker": 40.2,
 		"score": 70.9,
 		"rank": 703,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -42897,7 +42897,7 @@
 		"attacker": 22.4,
 		"score": 70.9,
 		"rank": 704,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -42958,7 +42958,7 @@
 		"attacker": 42.8,
 		"score": 70.9,
 		"rank": 705,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -43019,7 +43019,7 @@
 		"attacker": 48.4,
 		"score": 70.8,
 		"rank": 706,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -43202,7 +43202,7 @@
 		"attacker": 54.9,
 		"score": 70.7,
 		"rank": 709,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -43263,7 +43263,7 @@
 		"attacker": 43.6,
 		"score": 70.7,
 		"rank": 710,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -43324,7 +43324,7 @@
 		"attacker": 60.4,
 		"score": 70.6,
 		"rank": 711,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -43385,7 +43385,7 @@
 		"attacker": 52.5,
 		"score": 70.5,
 		"rank": 712,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -43446,7 +43446,7 @@
 		"attacker": 44.5,
 		"score": 70.5,
 		"rank": 713,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -43507,7 +43507,7 @@
 		"attacker": 39,
 		"score": 70.4,
 		"rank": 714,
-		"rankChange": 6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -43629,7 +43629,7 @@
 		"attacker": 33,
 		"score": 70.4,
 		"rank": 716,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -43690,7 +43690,7 @@
 		"attacker": 33.7,
 		"score": 70.4,
 		"rank": 717,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -43751,7 +43751,7 @@
 		"attacker": 44.5,
 		"score": 70.4,
 		"rank": 718,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -43812,7 +43812,7 @@
 		"attacker": 46.9,
 		"score": 70.4,
 		"rank": 719,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -43873,7 +43873,7 @@
 		"attacker": 42.6,
 		"score": 70.4,
 		"rank": 720,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -43934,7 +43934,7 @@
 		"attacker": 44.3,
 		"score": 70.4,
 		"rank": 721,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "ninetales_alolan",
@@ -43995,7 +43995,7 @@
 		"attacker": 44,
 		"score": 70.3,
 		"rank": 722,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -44056,7 +44056,7 @@
 		"attacker": 50.1,
 		"score": 70.3,
 		"rank": 723,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -44117,7 +44117,7 @@
 		"attacker": 23.6,
 		"score": 70.3,
 		"rank": 724,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -44178,7 +44178,7 @@
 		"attacker": 50.6,
 		"score": 70.2,
 		"rank": 725,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -44239,7 +44239,7 @@
 		"attacker": 47.4,
 		"score": 70.2,
 		"rank": 726,
-		"rankChange": 8,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "guzzlord",
@@ -44300,7 +44300,7 @@
 		"attacker": 46.5,
 		"score": 70.2,
 		"rank": 727,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -44361,7 +44361,7 @@
 		"attacker": 33.7,
 		"score": 70.2,
 		"rank": 728,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -44422,7 +44422,7 @@
 		"attacker": 52.7,
 		"score": 70.2,
 		"rank": 729,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -44483,7 +44483,7 @@
 		"attacker": 61.2,
 		"score": 70.2,
 		"rank": 730,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -44544,7 +44544,7 @@
 		"attacker": 36.6,
 		"score": 70.2,
 		"rank": 731,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -44605,7 +44605,7 @@
 		"attacker": 56.3,
 		"score": 70.2,
 		"rank": 732,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -44666,7 +44666,7 @@
 		"attacker": 24,
 		"score": 70.1,
 		"rank": 733,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -44727,7 +44727,7 @@
 		"attacker": 40,
 		"score": 70.1,
 		"rank": 734,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -44788,7 +44788,7 @@
 		"attacker": 27.2,
 		"score": 70.1,
 		"rank": 735,
-		"rankChange": -8,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "moltres_galarian",
@@ -44849,7 +44849,7 @@
 		"attacker": 51.8,
 		"score": 70,
 		"rank": 736,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -44910,7 +44910,7 @@
 		"attacker": 55.4,
 		"score": 70,
 		"rank": 737,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -44971,7 +44971,7 @@
 		"attacker": 56.1,
 		"score": 70,
 		"rank": 738,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -45032,7 +45032,7 @@
 		"attacker": 54.9,
 		"score": 69.9,
 		"rank": 739,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -45398,7 +45398,7 @@
 		"attacker": 50.1,
 		"score": 69.6,
 		"rank": 745,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -45459,7 +45459,7 @@
 		"attacker": 65.7,
 		"score": 69.6,
 		"rank": 746,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -45520,7 +45520,7 @@
 		"attacker": 59,
 		"score": 69.5,
 		"rank": 747,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -45581,7 +45581,7 @@
 		"attacker": 47.7,
 		"score": 69.5,
 		"rank": 748,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -45642,7 +45642,7 @@
 		"attacker": 36.3,
 		"score": 69.5,
 		"rank": 749,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corviknight",
@@ -45703,7 +45703,7 @@
 		"attacker": 35.9,
 		"score": 69.5,
 		"rank": 750,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -45947,7 +45947,7 @@
 		"attacker": 54.4,
 		"score": 69.3,
 		"rank": 754,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -46008,7 +46008,7 @@
 		"attacker": 22.1,
 		"score": 69.3,
 		"rank": 755,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -46069,7 +46069,7 @@
 		"attacker": 49.1,
 		"score": 69.3,
 		"rank": 756,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "florges",
@@ -46130,7 +46130,7 @@
 		"attacker": 43.1,
 		"score": 69.1,
 		"rank": 757,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -46191,7 +46191,7 @@
 		"attacker": 47.7,
 		"score": 69.1,
 		"rank": 758,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -46252,7 +46252,7 @@
 		"attacker": 60.9,
 		"score": 69.1,
 		"rank": 759,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -46313,7 +46313,7 @@
 		"attacker": 55.6,
 		"score": 69.1,
 		"rank": 760,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -46374,7 +46374,7 @@
 		"attacker": 43.3,
 		"score": 69.1,
 		"rank": 761,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -46496,7 +46496,7 @@
 		"attacker": 43.3,
 		"score": 69.1,
 		"rank": 763,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -46557,7 +46557,7 @@
 		"attacker": 50.8,
 		"score": 68.9,
 		"rank": 764,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "tinkaton",
@@ -46618,7 +46618,7 @@
 		"attacker": 42.8,
 		"score": 68.9,
 		"rank": 765,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -46679,7 +46679,7 @@
 		"attacker": 46.9,
 		"score": 68.9,
 		"rank": 766,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -46740,7 +46740,7 @@
 		"attacker": 40.7,
 		"score": 68.9,
 		"rank": 767,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -46801,7 +46801,7 @@
 		"attacker": 29.8,
 		"score": 68.9,
 		"rank": 768,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -46862,7 +46862,7 @@
 		"attacker": 31.8,
 		"score": 68.9,
 		"rank": 769,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "steelix_shadow",
@@ -46923,7 +46923,7 @@
 		"attacker": 46.2,
 		"score": 68.8,
 		"rank": 770,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -47045,7 +47045,7 @@
 		"attacker": 53,
 		"score": 68.7,
 		"rank": 772,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -47106,7 +47106,7 @@
 		"attacker": 29.8,
 		"score": 68.7,
 		"rank": 773,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -47228,7 +47228,7 @@
 		"attacker": 57.8,
 		"score": 68.5,
 		"rank": 775,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -47289,7 +47289,7 @@
 		"attacker": 33,
 		"score": 68.5,
 		"rank": 776,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "florges",
@@ -47350,7 +47350,7 @@
 		"attacker": 42.8,
 		"score": 68.5,
 		"rank": 777,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -47411,7 +47411,7 @@
 		"attacker": 69.1,
 		"score": 68.5,
 		"rank": 778,
-		"rankChange": 8,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -47472,7 +47472,7 @@
 		"attacker": 36.6,
 		"score": 68.5,
 		"rank": 779,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -47533,7 +47533,7 @@
 		"attacker": 49.8,
 		"score": 68.5,
 		"rank": 780,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -47594,7 +47594,7 @@
 		"attacker": 35.9,
 		"score": 68.5,
 		"rank": 781,
-		"rankChange": -6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "moltres_galarian",
@@ -47655,7 +47655,7 @@
 		"attacker": 42.6,
 		"score": 68.4,
 		"rank": 782,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -47716,7 +47716,7 @@
 		"attacker": 51.8,
 		"score": 68.4,
 		"rank": 783,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -47777,7 +47777,7 @@
 		"attacker": 55.4,
 		"score": 68.4,
 		"rank": 784,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -47838,7 +47838,7 @@
 		"attacker": 40.9,
 		"score": 68.4,
 		"rank": 785,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -47899,7 +47899,7 @@
 		"attacker": 42.4,
 		"score": 68.3,
 		"rank": 786,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -47960,7 +47960,7 @@
 		"attacker": 39.7,
 		"score": 68.3,
 		"rank": 787,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "guzzlord",
@@ -48021,7 +48021,7 @@
 		"attacker": 20,
 		"score": 68.3,
 		"rank": 788,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -48082,7 +48082,7 @@
 		"attacker": 18,
 		"score": 68.2,
 		"rank": 789,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -48509,7 +48509,7 @@
 		"attacker": 38,
 		"score": 67.9,
 		"rank": 796,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -48570,7 +48570,7 @@
 		"attacker": 51.3,
 		"score": 67.9,
 		"rank": 797,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -48631,7 +48631,7 @@
 		"attacker": 56.6,
 		"score": 67.8,
 		"rank": 798,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -48692,7 +48692,7 @@
 		"attacker": 57.1,
 		"score": 67.8,
 		"rank": 799,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -48753,7 +48753,7 @@
 		"attacker": 26.5,
 		"score": 67.8,
 		"rank": 800,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -48997,7 +48997,7 @@
 		"attacker": 33.9,
 		"score": 67.5,
 		"rank": 804,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -49180,7 +49180,7 @@
 		"attacker": 53,
 		"score": 67.4,
 		"rank": 807,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -49607,7 +49607,7 @@
 		"attacker": 38.3,
 		"score": 67.1,
 		"rank": 814,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -49668,7 +49668,7 @@
 		"attacker": 39.5,
 		"score": 67.1,
 		"rank": 815,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -49729,7 +49729,7 @@
 		"attacker": 36.8,
 		"score": 67,
 		"rank": 816,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -49790,7 +49790,7 @@
 		"attacker": 34.6,
 		"score": 67,
 		"rank": 817,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -49851,7 +49851,7 @@
 		"attacker": 36.8,
 		"score": 66.9,
 		"rank": 818,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -50034,7 +50034,7 @@
 		"attacker": 44,
 		"score": 66.8,
 		"rank": 821,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -50095,7 +50095,7 @@
 		"attacker": 45.5,
 		"score": 66.8,
 		"rank": 822,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -50278,7 +50278,7 @@
 		"attacker": 28.9,
 		"score": 66.5,
 		"rank": 825,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -50339,7 +50339,7 @@
 		"attacker": 55.6,
 		"score": 66.5,
 		"rank": 826,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -50461,7 +50461,7 @@
 		"attacker": 37.1,
 		"score": 66.4,
 		"rank": 828,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -50522,7 +50522,7 @@
 		"attacker": 29.1,
 		"score": 66.4,
 		"rank": 829,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -50583,7 +50583,7 @@
 		"attacker": 56.8,
 		"score": 66.3,
 		"rank": 830,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -50644,7 +50644,7 @@
 		"attacker": 23.8,
 		"score": 66.3,
 		"rank": 831,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye_shadow",
@@ -50766,7 +50766,7 @@
 		"attacker": 68.1,
 		"score": 66.3,
 		"rank": 833,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -50827,7 +50827,7 @@
 		"attacker": 23.1,
 		"score": 66.2,
 		"rank": 834,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sableye",
@@ -50888,7 +50888,7 @@
 		"attacker": 55.4,
 		"score": 66.2,
 		"rank": 835,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -50949,7 +50949,7 @@
 		"attacker": 21.2,
 		"score": 66.2,
 		"rank": 836,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "moltres_galarian",
@@ -51010,7 +51010,7 @@
 		"attacker": 58.7,
 		"score": 66.1,
 		"rank": 837,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -51071,7 +51071,7 @@
 		"attacker": 43.6,
 		"score": 66.1,
 		"rank": 838,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -51132,7 +51132,7 @@
 		"attacker": 41.4,
 		"score": 66,
 		"rank": 839,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -51193,7 +51193,7 @@
 		"attacker": 53.2,
 		"score": 66,
 		"rank": 840,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -51254,7 +51254,7 @@
 		"attacker": 55.6,
 		"score": 65.9,
 		"rank": 841,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -51315,7 +51315,7 @@
 		"attacker": 38.5,
 		"score": 65.9,
 		"rank": 842,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -51498,7 +51498,7 @@
 		"attacker": 31,
 		"score": 65.8,
 		"rank": 845,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -51559,7 +51559,7 @@
 		"attacker": 58.3,
 		"score": 65.7,
 		"rank": 846,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -51620,7 +51620,7 @@
 		"attacker": 42.4,
 		"score": 65.7,
 		"rank": 847,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -51681,7 +51681,7 @@
 		"attacker": 40.9,
 		"score": 65.7,
 		"rank": 848,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -51742,7 +51742,7 @@
 		"attacker": 29.8,
 		"score": 65.7,
 		"rank": 849,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -51803,7 +51803,7 @@
 		"attacker": 52.7,
 		"score": 65.6,
 		"rank": 850,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusclops",
@@ -51864,7 +51864,7 @@
 		"attacker": 46.5,
 		"score": 65.6,
 		"rank": 851,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -51925,7 +51925,7 @@
 		"attacker": 38.7,
 		"score": 65.5,
 		"rank": 852,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -51986,7 +51986,7 @@
 		"attacker": 17.3,
 		"score": 65.5,
 		"rank": 853,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -52108,7 +52108,7 @@
 		"attacker": 46.2,
 		"score": 65.3,
 		"rank": 855,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -52169,7 +52169,7 @@
 		"attacker": 28.9,
 		"score": 65.3,
 		"rank": 856,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -52230,7 +52230,7 @@
 		"attacker": 60.7,
 		"score": 65.3,
 		"rank": 857,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -52291,7 +52291,7 @@
 		"attacker": 31.8,
 		"score": 65.2,
 		"rank": 858,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape",
@@ -52352,7 +52352,7 @@
 		"attacker": 46.5,
 		"score": 65.2,
 		"rank": 859,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -52474,7 +52474,7 @@
 		"attacker": 43.8,
 		"score": 65,
 		"rank": 861,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusclops",
@@ -52535,7 +52535,7 @@
 		"attacker": 41.6,
 		"score": 65,
 		"rank": 862,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -52596,7 +52596,7 @@
 		"attacker": 49.3,
 		"score": 65,
 		"rank": 863,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -52657,7 +52657,7 @@
 		"attacker": 48.1,
 		"score": 64.9,
 		"rank": 864,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -52718,7 +52718,7 @@
 		"attacker": 47.7,
 		"score": 64.9,
 		"rank": 865,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -52779,7 +52779,7 @@
 		"attacker": 44.8,
 		"score": 64.9,
 		"rank": 866,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -52840,7 +52840,7 @@
 		"attacker": 46,
 		"score": 64.9,
 		"rank": 867,
-		"rankChange": -5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -53267,7 +53267,7 @@
 		"attacker": 52.5,
 		"score": 64.5,
 		"rank": 874,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -53450,7 +53450,7 @@
 		"attacker": 49.3,
 		"score": 64.4,
 		"rank": 877,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "ninetales_shadow",
@@ -53511,7 +53511,7 @@
 		"attacker": 44,
 		"score": 64.4,
 		"rank": 878,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -53572,7 +53572,7 @@
 		"attacker": 25.3,
 		"score": 64.4,
 		"rank": 879,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -53633,7 +53633,7 @@
 		"attacker": 47.7,
 		"score": 64.3,
 		"rank": 880,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -53694,7 +53694,7 @@
 		"attacker": 47.4,
 		"score": 64.3,
 		"rank": 881,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -53755,7 +53755,7 @@
 		"attacker": 37.1,
 		"score": 64.2,
 		"rank": 882,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -53816,7 +53816,7 @@
 		"attacker": 45.3,
 		"score": 64.2,
 		"rank": 883,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -53877,7 +53877,7 @@
 		"attacker": 34.9,
 		"score": 64.2,
 		"rank": 884,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -53938,7 +53938,7 @@
 		"attacker": 31.5,
 		"score": 64.2,
 		"rank": 885,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -54060,7 +54060,7 @@
 		"attacker": 30.3,
 		"score": 64,
 		"rank": 887,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "furret",
@@ -54121,7 +54121,7 @@
 		"attacker": 48.1,
 		"score": 64,
 		"rank": 888,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -54304,7 +54304,7 @@
 		"attacker": 44.3,
 		"score": 63.9,
 		"rank": 891,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -54548,7 +54548,7 @@
 		"attacker": 25,
 		"score": 63.7,
 		"rank": 895,
-		"rankChange": 2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -54609,7 +54609,7 @@
 		"attacker": 26.5,
 		"score": 63.7,
 		"rank": 896,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -54670,7 +54670,7 @@
 		"attacker": 33.7,
 		"score": 63.7,
 		"rank": 897,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -54731,7 +54731,7 @@
 		"attacker": 48.6,
 		"score": 63.7,
 		"rank": 898,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -55097,7 +55097,7 @@
 		"attacker": 50.6,
 		"score": 63.1,
 		"rank": 904,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "ninetales_shadow",
@@ -55158,7 +55158,7 @@
 		"attacker": 33,
 		"score": 63.1,
 		"rank": 905,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -55219,7 +55219,7 @@
 		"attacker": 45.5,
 		"score": 63,
 		"rank": 906,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "cradily",
@@ -55280,7 +55280,7 @@
 		"attacker": 43.8,
 		"score": 63,
 		"rank": 907,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -55341,7 +55341,7 @@
 		"attacker": 18.5,
 		"score": 62.9,
 		"rank": 908,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -55646,7 +55646,7 @@
 		"attacker": 41.6,
 		"score": 62.8,
 		"rank": 913,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "steelix_shadow",
@@ -55707,7 +55707,7 @@
 		"attacker": 33.4,
 		"score": 62.7,
 		"rank": 914,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -55768,7 +55768,7 @@
 		"attacker": 18.7,
 		"score": 62.7,
 		"rank": 915,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -56378,7 +56378,7 @@
 		"attacker": 27.9,
 		"score": 62.3,
 		"rank": 925,
-		"rankChange": 5,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gyarados_shadow",
@@ -56439,7 +56439,7 @@
 		"attacker": 48.6,
 		"score": 62.2,
 		"rank": 926,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -56500,7 +56500,7 @@
 		"attacker": 37.8,
 		"score": 62.2,
 		"rank": 927,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -56561,7 +56561,7 @@
 		"attacker": 34.6,
 		"score": 62.2,
 		"rank": 928,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -56622,7 +56622,7 @@
 		"attacker": 32.2,
 		"score": 62.2,
 		"rank": 929,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -56683,7 +56683,7 @@
 		"attacker": 17.5,
 		"score": 62.1,
 		"rank": 930,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -56805,7 +56805,7 @@
 		"attacker": 43.8,
 		"score": 61.9,
 		"rank": 932,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -56866,7 +56866,7 @@
 		"attacker": 39.7,
 		"score": 61.8,
 		"rank": 933,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -57232,7 +57232,7 @@
 		"attacker": 33.9,
 		"score": 61.7,
 		"rank": 939,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -57293,7 +57293,7 @@
 		"attacker": 45.7,
 		"score": 61.7,
 		"rank": 940,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -57659,7 +57659,7 @@
 		"attacker": 38.5,
 		"score": 61.3,
 		"rank": 946,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -57720,7 +57720,7 @@
 		"attacker": 25.7,
 		"score": 61.3,
 		"rank": 947,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -57781,7 +57781,7 @@
 		"attacker": 20.9,
 		"score": 61.3,
 		"rank": 948,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -57842,7 +57842,7 @@
 		"attacker": 40,
 		"score": 61.3,
 		"rank": 949,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -57903,7 +57903,7 @@
 		"attacker": 27.4,
 		"score": 61.2,
 		"rank": 950,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -58025,7 +58025,7 @@
 		"attacker": 34.6,
 		"score": 61.1,
 		"rank": 952,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -58086,7 +58086,7 @@
 		"attacker": 46,
 		"score": 61.1,
 		"rank": 953,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "malamar",
@@ -58147,7 +58147,7 @@
 		"attacker": 26.9,
 		"score": 61.1,
 		"rank": 954,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -58330,7 +58330,7 @@
 		"attacker": 37.8,
 		"score": 60.9,
 		"rank": 957,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -58391,7 +58391,7 @@
 		"attacker": 37.1,
 		"score": 60.9,
 		"rank": 958,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -58452,7 +58452,7 @@
 		"attacker": 20.9,
 		"score": 60.9,
 		"rank": 959,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -58513,7 +58513,7 @@
 		"attacker": 51,
 		"score": 60.7,
 		"rank": 960,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -58574,7 +58574,7 @@
 		"attacker": 35.6,
 		"score": 60.7,
 		"rank": 961,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -58696,7 +58696,7 @@
 		"attacker": 39.7,
 		"score": 60.6,
 		"rank": 963,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toedscruel",
@@ -58879,7 +58879,7 @@
 		"attacker": 34.4,
 		"score": 60.5,
 		"rank": 966,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -58940,7 +58940,7 @@
 		"attacker": 38.7,
 		"score": 60.3,
 		"rank": 967,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -59001,7 +59001,7 @@
 		"attacker": 35.6,
 		"score": 60.1,
 		"rank": 968,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -59062,7 +59062,7 @@
 		"attacker": 41.2,
 		"score": 60.1,
 		"rank": 969,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -59184,7 +59184,7 @@
 		"attacker": 38,
 		"score": 60.1,
 		"rank": 971,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -59306,7 +59306,7 @@
 		"attacker": 25.7,
 		"score": 59.9,
 		"rank": 973,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -59428,7 +59428,7 @@
 		"attacker": 28.9,
 		"score": 59.8,
 		"rank": 975,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -59489,7 +59489,7 @@
 		"attacker": 34.4,
 		"score": 59.8,
 		"rank": 976,
-		"rankChange": 1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -59550,7 +59550,7 @@
 		"attacker": 22.4,
 		"score": 59.7,
 		"rank": 977,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -59611,7 +59611,7 @@
 		"attacker": 33.4,
 		"score": 59.7,
 		"rank": 978,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -59672,7 +59672,7 @@
 		"attacker": 31,
 		"score": 59.6,
 		"rank": 979,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "serperior",
@@ -59733,7 +59733,7 @@
 		"attacker": 51.5,
 		"score": 59.6,
 		"rank": 980,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -59794,7 +59794,7 @@
 		"attacker": 34.4,
 		"score": 59.6,
 		"rank": 981,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -59855,7 +59855,7 @@
 		"attacker": 21.4,
 		"score": 59.6,
 		"rank": 982,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blastoise",
@@ -59916,7 +59916,7 @@
 		"attacker": 45.3,
 		"score": 59.6,
 		"rank": 983,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -59977,7 +59977,7 @@
 		"attacker": 38,
 		"score": 59.5,
 		"rank": 984,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "jellicent",
@@ -60038,7 +60038,7 @@
 		"attacker": 27.9,
 		"score": 59.5,
 		"rank": 985,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -60099,7 +60099,7 @@
 		"attacker": 21.6,
 		"score": 59.4,
 		"rank": 986,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sealeo",
@@ -60160,7 +60160,7 @@
 		"attacker": 35.6,
 		"score": 59.4,
 		"rank": 987,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "altaria",
@@ -60221,7 +60221,7 @@
 		"attacker": 31.5,
 		"score": 59.2,
 		"rank": 988,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "empoleon",
@@ -60282,7 +60282,7 @@
 		"attacker": 41.9,
 		"score": 58.9,
 		"rank": 989,
-		"rankChange": 3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -60343,7 +60343,7 @@
 		"attacker": 29.8,
 		"score": 58.9,
 		"rank": 990,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -60404,7 +60404,7 @@
 		"attacker": 31.5,
 		"score": 58.8,
 		"rank": 991,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -60526,7 +60526,7 @@
 		"attacker": 15.1,
 		"score": 58.8,
 		"rank": 993,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -60587,7 +60587,7 @@
 		"attacker": 33.7,
 		"score": 58.8,
 		"rank": 994,
-		"rankChange": -6,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape",
@@ -60648,7 +60648,7 @@
 		"attacker": 42.4,
 		"score": 58.7,
 		"rank": 995,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -60709,7 +60709,7 @@
 		"attacker": 25.7,
 		"score": 58.7,
 		"rank": 996,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -60770,7 +60770,7 @@
 		"attacker": 35.1,
 		"score": 58.6,
 		"rank": 997,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charjabug",
@@ -60831,7 +60831,7 @@
 		"attacker": 25.7,
 		"score": 58.5,
 		"rank": 998,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gyarados_shadow",
@@ -60892,7 +60892,7 @@
 		"attacker": 41.2,
 		"score": 58.5,
 		"rank": 999,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "wigglytuff",
@@ -60953,7 +60953,7 @@
 		"attacker": 24.5,
 		"score": 58.4,
 		"rank": 1000,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -61014,7 +61014,7 @@
 		"attacker": 51.8,
 		"score": 58.4,
 		"rank": 1001,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -61075,7 +61075,7 @@
 		"attacker": 44.8,
 		"score": 58.4,
 		"rank": 1002,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -61136,7 +61136,7 @@
 		"attacker": 35.4,
 		"score": 58.4,
 		"rank": 1003,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -61197,7 +61197,7 @@
 		"attacker": 45.7,
 		"score": 58.3,
 		"rank": 1004,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -61258,7 +61258,7 @@
 		"attacker": 26.2,
 		"score": 58.2,
 		"rank": 1005,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape",
@@ -61319,7 +61319,7 @@
 		"attacker": 24,
 		"score": 58,
 		"rank": 1006,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "serperior",
@@ -61380,7 +61380,7 @@
 		"attacker": 19,
 		"score": 58,
 		"rank": 1007,
-		"rankChange": 4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "corsola_galarian",
@@ -61441,7 +61441,7 @@
 		"attacker": 52.2,
 		"score": 58,
 		"rank": 1008,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -61502,7 +61502,7 @@
 		"attacker": 29.6,
 		"score": 57.9,
 		"rank": 1009,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -61563,7 +61563,7 @@
 		"attacker": 41.6,
 		"score": 57.9,
 		"rank": 1010,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "typhlosion_shadow",
@@ -61624,7 +61624,7 @@
 		"attacker": 41.6,
 		"score": 57.9,
 		"rank": 1011,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "typhlosion_shadow",
@@ -61685,7 +61685,7 @@
 		"attacker": 41.6,
 		"score": 57.9,
 		"rank": 1012,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "typhlosion_shadow",
@@ -61746,7 +61746,7 @@
 		"attacker": 50.8,
 		"score": 57.9,
 		"rank": 1013,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -61807,7 +61807,7 @@
 		"attacker": 50.8,
 		"score": 57.8,
 		"rank": 1014,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -61868,7 +61868,7 @@
 		"attacker": 30.6,
 		"score": 57.6,
 		"rank": 1015,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toedscruel",
@@ -61929,7 +61929,7 @@
 		"attacker": 40,
 		"score": 57.6,
 		"rank": 1016,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "zweilous",
@@ -61990,7 +61990,7 @@
 		"attacker": 37.5,
 		"score": 57.5,
 		"rank": 1017,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -62051,7 +62051,7 @@
 		"attacker": 44.5,
 		"score": 57.5,
 		"rank": 1018,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -62112,7 +62112,7 @@
 		"attacker": 33.4,
 		"score": 57.2,
 		"rank": 1019,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "serperior",
@@ -62173,7 +62173,7 @@
 		"attacker": 29.6,
 		"score": 57.2,
 		"rank": 1020,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "umbreon",
@@ -62234,7 +62234,7 @@
 		"attacker": 45.7,
 		"score": 57.2,
 		"rank": 1021,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -62295,7 +62295,7 @@
 		"attacker": 27.9,
 		"score": 57.1,
 		"rank": 1022,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -62356,7 +62356,7 @@
 		"attacker": 27.4,
 		"score": 57.1,
 		"rank": 1023,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sandslash_alolan",
@@ -62478,7 +62478,7 @@
 		"attacker": 27.9,
 		"score": 57,
 		"rank": 1025,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -62539,7 +62539,7 @@
 		"attacker": 32,
 		"score": 57,
 		"rank": 1026,
-		"rankChange": -4,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toedscruel",
@@ -62600,7 +62600,7 @@
 		"attacker": 42.8,
 		"score": 56.8,
 		"rank": 1027,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -62661,7 +62661,7 @@
 		"attacker": 47.7,
 		"score": 56.6,
 		"rank": 1028,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -62722,7 +62722,7 @@
 		"attacker": 28.6,
 		"score": 56.5,
 		"rank": 1029,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blaziken_shadow",
@@ -62783,7 +62783,7 @@
 		"attacker": 47.9,
 		"score": 56.3,
 		"rank": 1030,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir",
@@ -62844,7 +62844,7 @@
 		"attacker": 24.8,
 		"score": 56.1,
 		"rank": 1031,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard",
@@ -62905,7 +62905,7 @@
 		"attacker": 27.2,
 		"score": 56,
 		"rank": 1032,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "scizor_shadow",
@@ -62966,7 +62966,7 @@
 		"attacker": 41.6,
 		"score": 56,
 		"rank": 1033,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -63027,7 +63027,7 @@
 		"attacker": 51.8,
 		"score": 55.7,
 		"rank": 1034,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -63088,7 +63088,7 @@
 		"attacker": 30.8,
 		"score": 55.5,
 		"rank": 1035,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -63149,7 +63149,7 @@
 		"attacker": 38.5,
 		"score": 55.5,
 		"rank": 1036,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -63210,7 +63210,7 @@
 		"attacker": 34.2,
 		"score": 55.4,
 		"rank": 1037,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "goodra",
@@ -63271,7 +63271,7 @@
 		"attacker": 21.9,
 		"score": 55.3,
 		"rank": 1038,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard",
@@ -63332,7 +63332,7 @@
 		"attacker": 21.9,
 		"score": 55.1,
 		"rank": 1039,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusclops",
@@ -63393,7 +63393,7 @@
 		"attacker": 41.9,
 		"score": 55,
 		"rank": 1040,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "talonflame",
@@ -63454,7 +63454,7 @@
 		"attacker": 40.9,
 		"score": 54.9,
 		"rank": 1041,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -63515,7 +63515,7 @@
 		"attacker": 37.8,
 		"score": 54.9,
 		"rank": 1042,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -63576,7 +63576,7 @@
 		"attacker": 28.9,
 		"score": 54.8,
 		"rank": 1043,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clodsire",
@@ -63637,7 +63637,7 @@
 		"attacker": 20.4,
 		"score": 54.6,
 		"rank": 1044,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -63698,7 +63698,7 @@
 		"attacker": 32.2,
 		"score": 54.4,
 		"rank": 1045,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gastrodon",
@@ -63759,7 +63759,7 @@
 		"attacker": 32.7,
 		"score": 54.4,
 		"rank": 1046,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "mew",
@@ -63820,7 +63820,7 @@
 		"attacker": 14.4,
 		"score": 54.1,
 		"rank": 1047,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toedscruel",
@@ -63881,7 +63881,7 @@
 		"attacker": 14.9,
 		"score": 54.1,
 		"rank": 1048,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gourgeist_super",
@@ -63942,7 +63942,7 @@
 		"attacker": 35.9,
 		"score": 54,
 		"rank": 1049,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -64003,7 +64003,7 @@
 		"attacker": 42.8,
 		"score": 53.9,
 		"rank": 1050,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -64064,7 +64064,7 @@
 		"attacker": 36.6,
 		"score": 53.9,
 		"rank": 1051,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -64125,7 +64125,7 @@
 		"attacker": 41.4,
 		"score": 53.8,
 		"rank": 1052,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "charizard_shadow",
@@ -64186,7 +64186,7 @@
 		"attacker": 39.7,
 		"score": 53.7,
 		"rank": 1053,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "haunter",
@@ -64247,7 +64247,7 @@
 		"attacker": 27.4,
 		"score": 53.6,
 		"rank": 1054,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "salamence_shadow",
@@ -64369,7 +64369,7 @@
 		"attacker": 26,
 		"score": 53.4,
 		"rank": 1056,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blaziken",
@@ -64430,7 +64430,7 @@
 		"attacker": 36.3,
 		"score": 53.4,
 		"rank": 1057,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "serperior",
@@ -64491,7 +64491,7 @@
 		"attacker": 37.8,
 		"score": 53.3,
 		"rank": 1058,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -64552,7 +64552,7 @@
 		"attacker": 45.7,
 		"score": 53.3,
 		"rank": 1059,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusknoir_shadow",
@@ -64613,7 +64613,7 @@
 		"attacker": 44.8,
 		"score": 53.2,
 		"rank": 1060,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "guzzlord",
@@ -64674,7 +64674,7 @@
 		"attacker": 33.7,
 		"score": 53.2,
 		"rank": 1061,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "quagsire",
@@ -64735,7 +64735,7 @@
 		"attacker": 25,
 		"score": 53,
 		"rank": 1062,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -64796,7 +64796,7 @@
 		"attacker": 13.9,
 		"score": 52.7,
 		"rank": 1063,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "turtonator",
@@ -64857,7 +64857,7 @@
 		"attacker": 28.9,
 		"score": 52.6,
 		"rank": 1064,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -64918,7 +64918,7 @@
 		"attacker": 30.8,
 		"score": 52.3,
 		"rank": 1065,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "umbreon",
@@ -64979,7 +64979,7 @@
 		"attacker": 22.1,
 		"score": 52.2,
 		"rank": 1066,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blaziken",
@@ -65040,7 +65040,7 @@
 		"attacker": 26.2,
 		"score": 51.8,
 		"rank": 1067,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "gligar",
@@ -65101,7 +65101,7 @@
 		"attacker": 35.9,
 		"score": 51.2,
 		"rank": 1068,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "clefable",
@@ -65162,7 +65162,7 @@
 		"attacker": 36.8,
 		"score": 50.9,
 		"rank": 1069,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -65223,7 +65223,7 @@
 		"attacker": 19.7,
 		"score": 50,
 		"rank": 1070,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "regidrago",
@@ -65284,7 +65284,7 @@
 		"attacker": 34.4,
 		"score": 49.7,
 		"rank": 1071,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -65345,7 +65345,7 @@
 		"attacker": 34.9,
 		"score": 49.5,
 		"rank": 1072,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toedscruel",
@@ -65406,7 +65406,7 @@
 		"attacker": 27.4,
 		"score": 49.3,
 		"rank": 1073,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sandslash_alolan_shadow",
@@ -65467,7 +65467,7 @@
 		"attacker": 16.6,
 		"score": 49.2,
 		"rank": 1074,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "stunfisk",
@@ -65528,7 +65528,7 @@
 		"attacker": 22.4,
 		"score": 49.1,
 		"rank": 1075,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "dusclops",
@@ -65589,7 +65589,7 @@
 		"attacker": 20,
 		"score": 48.6,
 		"rank": 1076,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "florges",
@@ -65650,7 +65650,7 @@
 		"attacker": 26,
 		"score": 48.5,
 		"rank": 1077,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toxicroak",
@@ -65711,7 +65711,7 @@
 		"attacker": 10.8,
 		"score": 48.4,
 		"rank": 1078,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "feraligatr_shadow",
@@ -65772,7 +65772,7 @@
 		"attacker": 11.5,
 		"score": 48.3,
 		"rank": 1079,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "azumarill",
@@ -65833,7 +65833,7 @@
 		"attacker": 33.2,
 		"score": 47.9,
 		"rank": 1080,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -65894,7 +65894,7 @@
 		"attacker": 34.4,
 		"score": 47.8,
 		"rank": 1081,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape_shadow",
@@ -65955,7 +65955,7 @@
 		"attacker": 31.3,
 		"score": 47.6,
 		"rank": 1082,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toxtricity",
@@ -66016,7 +66016,7 @@
 		"attacker": 35.9,
 		"score": 47.2,
 		"rank": 1083,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "magmortar_shadow",
@@ -66077,7 +66077,7 @@
 		"attacker": 27.4,
 		"score": 47.2,
 		"rank": 1084,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "flygon",
@@ -66138,7 +66138,7 @@
 		"attacker": 26,
 		"score": 46.8,
 		"rank": 1085,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "morpeko_full_belly",
@@ -66199,7 +66199,7 @@
 		"attacker": 30.3,
 		"score": 46.8,
 		"rank": 1086,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "togetic",
@@ -66260,7 +66260,7 @@
 		"attacker": 33,
 		"score": 46.6,
 		"rank": 1087,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape_shadow",
@@ -66321,7 +66321,7 @@
 		"attacker": 32.5,
 		"score": 45.9,
 		"rank": 1088,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "blaziken_shadow",
@@ -66382,7 +66382,7 @@
 		"attacker": 34.6,
 		"score": 45.8,
 		"rank": 1089,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -66443,7 +66443,7 @@
 		"attacker": 27.2,
 		"score": 45.4,
 		"rank": 1090,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp_shadow",
@@ -66504,7 +66504,7 @@
 		"attacker": 34.6,
 		"score": 45.2,
 		"rank": 1091,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -66565,7 +66565,7 @@
 		"attacker": 27.4,
 		"score": 45,
 		"rank": 1092,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp_shadow",
@@ -66626,7 +66626,7 @@
 		"attacker": 37.8,
 		"score": 44.6,
 		"rank": 1093,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "primeape",
@@ -66687,7 +66687,7 @@
 		"attacker": 17.1,
 		"score": 44.3,
 		"rank": 1094,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp",
@@ -66748,7 +66748,7 @@
 		"attacker": 23.6,
 		"score": 43.8,
 		"rank": 1095,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp_shadow",
@@ -66809,7 +66809,7 @@
 		"attacker": 13,
 		"score": 43.4,
 		"rank": 1096,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "annihilape",
@@ -66870,7 +66870,7 @@
 		"attacker": 23.1,
 		"score": 42.9,
 		"rank": 1097,
-		"rankChange": -1,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "meowscarada",
@@ -66931,7 +66931,7 @@
 		"attacker": 30.1,
 		"score": 42.9,
 		"rank": 1098,
-		"rankChange": -3,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp_shadow",
@@ -66992,7 +66992,7 @@
 		"attacker": 23.3,
 		"score": 42.6,
 		"rank": 1099,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "machamp_shadow",
@@ -67053,7 +67053,7 @@
 		"attacker": 29.6,
 		"score": 40.7,
 		"rank": 1100,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -67114,7 +67114,7 @@
 		"attacker": 27.7,
 		"score": 38.8,
 		"rank": 1101,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "salamence_shadow",
@@ -67175,7 +67175,7 @@
 		"attacker": 30.1,
 		"score": 38.2,
 		"rank": 1102,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "sandslash_alolan_shadow",
@@ -67236,7 +67236,7 @@
 		"attacker": 26.2,
 		"score": 35.9,
 		"rank": 1103,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "togedemaru",
@@ -67297,7 +67297,7 @@
 		"attacker": 27.4,
 		"score": 34.6,
 		"rank": 1104,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toxicroak",
@@ -67358,7 +67358,7 @@
 		"attacker": 18.5,
 		"score": 32.4,
 		"rank": 1105,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "flygon",
@@ -67419,7 +67419,7 @@
 		"attacker": 22.4,
 		"score": 32.2,
 		"rank": 1106,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "bastiodon",
@@ -67480,7 +67480,7 @@
 		"attacker": 25.7,
 		"score": 31.8,
 		"rank": 1107,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toxicroak",
@@ -67540,7 +67540,7 @@
 		"attacker": 21.2,
 		"score": 28.2,
 		"rank": 1108,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "toxicroak_shadow",
@@ -67601,7 +67601,7 @@
 		"attacker": 5.3,
 		"score": 16.4,
 		"rank": 1109,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "regigigas",
@@ -67658,7 +67658,7 @@
 		"attacker": 4.8,
 		"score": 16.4,
 		"rank": 1110,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [],
 		"counters": [
 			{
@@ -67698,7 +67698,7 @@
 		"attacker": 9.3,
 		"score": 13,
 		"rank": 1111,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "slaking",
@@ -67759,7 +67759,7 @@
 		"attacker": 8.4,
 		"score": 11.9,
 		"rank": 1112,
-		"rankChange": -2,
+		"rankChange": 0,
 		"matchups": [
 			{
 				"opponent": "slaking",

@@ -65,14 +65,19 @@
 	},
 	{
 		"title": {
-			"en": "Landorus (Incarnate Forme) in 5-star Raid Battles",
-			"pt_br": "Landorus (Incarnate Forme) in 5-star Raid Battles"
+			"en": "Dialga and Palkia in 5-star Raid Battles",
+			"pt_br": "Dialga and Palkia in 5-star Raid Battles"
 		},
 		"date": 1770199200000,
 		"dateEnd": 1771236000000,
 		"raids": [
 			{
-				"speciesId": "landorus_incarnate",
+				"speciesId": "dialga",
+				"kind": "5",
+				"shiny": false
+			},
+			{
+				"speciesId": "palkia",
 				"kind": "5",
 				"shiny": false
 			}

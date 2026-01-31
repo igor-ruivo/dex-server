@@ -3634,12 +3634,14 @@
 			"SOLAR_BEAM",
 			"WEATHER_BALL_FIRE",
 			"SCORCHING_SANDS",
+			"ENERGY_BALL",
 			"RETURN"
 		],
 		"eliteMoves": [
 			"EMBER",
 			"FIRE_BLAST",
-			"FLAMETHROWER"
+			"FLAMETHROWER",
+			"ENERGY_BALL"
 		],
 		"legacyMoves": [],
 		"isShadow": false,
@@ -3680,9 +3682,12 @@
 			"ICE_BEAM",
 			"PSYSHOCK",
 			"WEATHER_BALL_ICE",
+			"CHILLING_WATER",
 			"RETURN"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"CHILLING_WATER"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -3722,9 +3727,12 @@
 			"ICE_BEAM",
 			"PSYSHOCK",
 			"WEATHER_BALL_ICE",
+			"CHILLING_WATER",
 			"FRUSTRATION"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"CHILLING_WATER"
+		],
 		"legacyMoves": [],
 		"isShadow": true,
 		"isMega": false,
@@ -3766,12 +3774,14 @@
 			"SOLAR_BEAM",
 			"WEATHER_BALL_FIRE",
 			"SCORCHING_SANDS",
+			"ENERGY_BALL",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
 			"EMBER",
 			"FIRE_BLAST",
-			"FLAMETHROWER"
+			"FLAMETHROWER",
+			"ENERGY_BALL"
 		],
 		"legacyMoves": [],
 		"isShadow": true,

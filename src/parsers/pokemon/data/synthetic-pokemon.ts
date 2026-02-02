@@ -53,12 +53,7 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 		},
 		types: ['water', 'none'],
 		fastMoves: ['BUBBLE', 'MUD_SHOT'],
-		chargedMoves: [
-			'RAZOR_SHELL',
-			'BUBBLE_BEAM',
-			'WATER_PULSE',
-			'VICE_GRIP',
-		],
+		chargedMoves: ['RAZOR_SHELL', 'BUBBLE_BEAM', 'WATER_PULSE', 'VICE_GRIP'],
 		eliteMoves: [],
 		legacyMoves: [],
 		released: true,

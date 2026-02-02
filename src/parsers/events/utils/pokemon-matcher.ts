@@ -318,6 +318,18 @@ class PokemonMatcher {
 				kind: raidLevel,
 			};
 		}
+		// Handle Meowth
+		if (
+			currP.includes('meowth') &&
+			!currP.includes('alolan') &&
+			!currP.includes('galarian')
+		) {
+			return {
+				speciesId: 'meowth',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
 
 		if (availableForms.length === 0) {
 			if (isMega) {

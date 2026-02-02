@@ -62217,6 +62217,40 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"flamigo": {
+		"dex": 973,
+		"speciesId": "flamigo",
+		"speciesName": "Flamigo",
+		"types": [
+			"Flying",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/973.png",
+		"goImageUrl": "973.icon.png",
+		"shinyGoImageUrl": "973.s.icon.png",
+		"baseStats": {
+			"atk": 227,
+			"def": 145,
+			"hp": 193
+		},
+		"fastMoves": [
+			"WING_ATTACK",
+			"DOUBLE_KICK"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"BRAVE_BIRD",
+			"CLOSE_COMBAT"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"cetoddle": {
 		"dex": 974,
 		"speciesId": "cetoddle",

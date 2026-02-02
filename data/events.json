@@ -567,11 +567,22 @@
 				"speciesId": "spritzee",
 				"shiny": true,
 				"kind": ""
+			},
+			{
+				"speciesId": "flamigo",
+				"shiny": true,
+				"kind": ""
 			}
 		],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "flamigo",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

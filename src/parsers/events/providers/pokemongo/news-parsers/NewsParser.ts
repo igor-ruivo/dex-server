@@ -37,8 +37,10 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 				.querySelector('article[aria-labelledby=news-title]')
 				?.querySelectorAll('*') ?? [];
 
-		const containerBlocks = Array.from(allArticleNewsDescendants).filter((a) =>
-			Array.from(a.classList).some((c) => c.includes('_containerBlock'))
+		const containerBlocks = Array.from(allArticleNewsDescendants).filter(
+			(a) =>
+				Array.from(a.classList).some((c) => c.includes('_containerBlock')) &&
+				!!a.getAttribute('style')
 		);
 
 		const subTitle = containerBlocks[0].querySelector('h2')?.textContent ?? '';

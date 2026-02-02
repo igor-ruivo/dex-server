@@ -66,6 +66,10 @@ class PokemonMatcher {
 				isMega = true;
 				words = words.filter((word) => word !== 'mega');
 			}
+			if (words.includes('primal')) {
+				isMega = true;
+				words = words.filter((word) => word !== 'primal');
+			}
 			currP = words.join(' ').trim();
 
 			// Edge case for Darmanitan -> it has a form (Standard) on the id but not on the name...

@@ -127,6 +127,24 @@ class PokemonMatcher {
 				kind: raidLevel,
 			};
 		}
+
+		// handle nidoran sex
+		if (currP.includes('nidoran') && currP.includes('♀')) {
+			return {
+				speciesId: 'nidoran_female',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
+		if (currP.includes('nidoran') && currP.includes('♂')) {
+			return {
+				speciesId: 'nidoran_male',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
 		// Find base Pokémon name in domain
 		const isolatedPkmName = this.domain.filter((domainP) => {
 			const normalizedDomainPSpeciesName = domainP.speciesName

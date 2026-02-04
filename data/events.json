@@ -1,5 +1,74 @@
 [
 	{
+		"id": "lunar-new-year-event-2026-0",
+		"url": "https://pokemongo.com/news/lunar-new-year-event-2026",
+		"title": {
+			"en": "Celebrate the Lunar New Year with Pokémon GO’s 2026 event!",
+			"pt_br": "Celebrem o Ano Novo Lunar com o evento de 2026 do Pokémon GO!"
+		},
+		"subtitle": {
+			"en": "Lunar New Year",
+			"pt_br": "Ano Novo Lunar"
+		},
+		"startDate": 1771322400000,
+		"endDate": 1771704000000,
+		"dateRanges": [
+			{
+				"start": 1771322400000,
+				"end": 1771704000000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/O5YHRIWevXMRTGKW1VAQmLeK3cKvTFoP480gIsXbiyjPX7E3D2RoBBJtvQq5mKeoPJmduAR8tuoIdwILEm7Ohi8xiCO6AoS9DA=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "ponyta_galarian",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "fuecoco",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "blitzle",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "blitzle",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "darumaka",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Increased chance to get Lucky Pokémon in trades.",
+				"Increased chance to become Lucky Friends.",
+				"PokéStops may turn gold without a Golden Lure Module.",
+				"Increased chance to encounter Shiny Blitzle, Shiny Darumaka, and Shiny Gimmighoul."
+			],
+			"pt_br": [
+				"Maior chance de receber Pokémon Sortudos em trocas.",
+				"Maior chance de fazer Amizades sortudas.",
+				"Poképaradas podem ficar douradas sem um Módulo Atrair Dourado.",
+				"Maior chance de encontrar Blitzle Brilhante, Darumaka Brilhante e Gimmighoul Brilhante."
+			]
+		}
+	},
+	{
 		"id": "valentines-day-2026-0",
 		"url": "https://pokemongo.com/news/valentines-day-2026",
 		"title": {
@@ -21,6 +90,11 @@
 		"imageUrl": "https://lh3.googleusercontent.com/yfcCYMFjlHqbSxWTzwxkPcoCzlWL8gXlcVmBbD2bY8iHweCCQHQ3b_kQKGyDR1aNPKK1tKx4FrBpmuCFO8ecS2ct2K4w_FBymkk=s0-e365",
 		"source": "pokemongo",
 		"wild": [
+			{
+				"speciesId": "nidoran_female",
+				"shiny": true,
+				"kind": ""
+			},
 			{
 				"speciesId": "nidoran_male",
 				"shiny": true,
@@ -1698,130 +1772,6 @@
 		"bonuses": {
 			"en": [],
 			"pt_br": []
-		}
-	},
-	{
-		"id": "winter-holiday-part1-2025-0",
-		"url": "https://pokemongo.com/news/winter-holiday-part1-2025",
-		"title": {
-			"en": "Celebrate the holidays with new costumed Pokémon during Winter Holiday Part 1!",
-			"pt_br": "Celebre o fim de ano com novos Pokémon fantasiados durante as Festas de fim de ano Parte 1!"
-		},
-		"subtitle": {
-			"en": "Winter Holiday Part 1",
-			"pt_br": "Festas de fim de ano Parte 1"
-		},
-		"startDate": 1797588000000,
-		"endDate": 1766570400000,
-		"dateRanges": [
-			{
-				"start": 1797588000000,
-				"end": 1766570400000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/1XIa5cjHtAIl_GCzuw7_nsCYqjYcc0Gt-4mV7J4ECyq9ekwgDRmGssQruUuTyF8dzvh6yhglOe14WZinrNR8TW9H4GINI2qg72Y=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "swinub",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "snorunt",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "spheal",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "sudowoodo",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "charjabug",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [
-			{
-				"speciesId": "sudowoodo",
-				"shiny": true,
-				"kind": "3"
-			},
-			{
-				"speciesId": "avalugg_hisuian",
-				"shiny": true,
-				"kind": "3"
-			},
-			{
-				"speciesId": "charjabug",
-				"shiny": true,
-				"kind": "3"
-			}
-		],
-		"eggs": [
-			{
-				"speciesId": "pichu",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "smoochum",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "cubchoo",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "cryogonal",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "snom",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Increased chance to hatch Shiny Pichu wearing a festive hat and Shiny Cubchoo wearing a holiday ribbon from 7 km Eggs.",
-				"Plus, reach Major Milestones on your GO Pass: Winter Holiday 2025 to unlock the following bonuses.",
-				"Tier 1",
-				"2× XP from sending Gifts",
-				"GO Pass Deluxe: 2× Stardust from opening Gifts",
-				"Tier 2",
-				"Additional items may be rewarded from opening Gifts",
-				"GO Pass Deluxe: 1/2 Egg Hatch Distance when Eggs are placed in an Incubator during the event period",
-				"Tier 3",
-				"50% more XP for winning Raid Battles",
-				"GO Pass Deluxe: 2× XP from catching Pokémon"
-			],
-			"pt_br": [
-				"Maior chance de encontrar Pichu Brilhante com chapéu festivo e Cubchoo Brilhante com laço festivo.",
-				"Alcance Conquistas Principais no seu Passe GO: Festas de fim de ano 2025 para desbloquear os seguintes bônus:",
-				"Nível 1",
-				"2× PE ao enviar presentes",
-				"Passe GO Deluxe: 2× Poeira Estelar ao abrir presentes",
-				"Nível 2",
-				"Itens adicionais poderão ser concedidos ao abrir presentes.",
-				"Passe GO Deluxe: 1/2 da distância para chocar Ovo quando ele for colocado em uma Incubadora de Ovo durante o evento.",
-				"Nível 3",
-				"50% mais PE ao vencer Batalhas de Reide",
-				"GO Pass Deluxe: 2× PE ao capturar Pokémon"
-			]
 		}
 	}
 ]

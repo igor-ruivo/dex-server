@@ -72,7 +72,7 @@
 		"vId": "0020",
 		"type": "normal",
 		"isFast": false,
-		"pvpPower": 40,
+		"pvpPower": 70,
 		"pvePower": 35,
 		"pvpEnergy": -40,
 		"pveEnergy": -33,
@@ -657,9 +657,9 @@
 		"vId": "0066",
 		"type": "ghost",
 		"isFast": false,
-		"pvpPower": 50,
+		"pvpPower": 75,
 		"pvePower": 50,
-		"pvpEnergy": -45,
+		"pvpEnergy": -50,
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
@@ -712,7 +712,7 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergy": -55,
+		"pvpEnergy": -50,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
@@ -760,7 +760,7 @@
 		"isFast": false,
 		"pvpPower": 70,
 		"pvePower": 70,
-		"pvpEnergy": -45,
+		"pvpEnergy": -50,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
@@ -1407,7 +1407,7 @@
 		"vId": "0123",
 		"type": "fighting",
 		"isFast": false,
-		"pvpPower": 40,
+		"pvpPower": 50,
 		"pvePower": 40,
 		"pvpEnergy": -40,
 		"pveEnergy": -33,
@@ -2307,7 +2307,7 @@
 		"vId": "0244",
 		"type": "ice",
 		"isFast": true,
-		"pvpPower": 5,
+		"pvpPower": 6,
 		"pvePower": 6,
 		"pvpEnergy": 8,
 		"pveEnergy": 15,
@@ -2920,7 +2920,7 @@
 		"vId": "0280",
 		"type": "dark",
 		"isFast": false,
-		"pvpPower": 60,
+		"pvpPower": 65,
 		"pvePower": 70,
 		"pvpEnergy": -40,
 		"pveEnergy": -50,
@@ -3266,7 +3266,7 @@
 		"isFast": false,
 		"pvpPower": 100,
 		"pvePower": 100,
-		"pvpEnergy": -50,
+		"pvpEnergy": -45,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
@@ -4138,7 +4138,7 @@
 		"vId": "0359",
 		"type": "ice",
 		"isFast": false,
-		"pvpPower": 65,
+		"pvpPower": 70,
 		"pvePower": 55,
 		"pvpEnergy": -40,
 		"pveEnergy": -33,
@@ -4643,7 +4643,7 @@
 		"vId": "0387",
 		"type": "fairy",
 		"isFast": true,
-		"pvpPower": 4,
+		"pvpPower": 8,
 		"pvePower": 20,
 		"pvpEnergy": 13,
 		"pveEnergy": 14,
@@ -4661,7 +4661,7 @@
 		"isFast": false,
 		"pvpPower": 95,
 		"pvePower": 160,
-		"pvpEnergy": -50,
+		"pvpEnergy": -55,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
@@ -4681,6 +4681,10 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"buffs": {
+			"attackerDefenseStatStageChange": 1,
+			"buffActivationChance": 1
+		},
 		"moveName": {
 			"en": "Oblivion Wing",
 			"pt_br": "Asa do Esquecimento"
@@ -4986,9 +4990,9 @@
 		"pvpPower": 100,
 		"pvePower": 100,
 		"pvpEnergy": -45,
-		"pveEnergy": -45,
+		"pveEnergy": -50,
 		"pvpCooldown": 0,
-		"pveCooldown": 2.7,
+		"pveCooldown": 2.5,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5006,9 +5010,9 @@
 		"pvpPower": 100,
 		"pvePower": 100,
 		"pvpEnergy": -45,
-		"pveEnergy": -45,
+		"pveEnergy": -50,
 		"pvpCooldown": 0,
-		"pveCooldown": 2.7,
+		"pveCooldown": 2.5,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5100,7 +5104,7 @@
 		"pvpEnergy": -35,
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
-		"pveCooldown": 2.7,
+		"pveCooldown": 3,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5232,7 +5236,7 @@
 		"pvpEnergy": -40,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
-		"pveCooldown": 3.3,
+		"pveCooldown": 3.5,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5268,7 +5272,7 @@
 		"pvpEnergy": -45,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
-		"pveCooldown": 3.3,
+		"pveCooldown": 3.5,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5288,7 +5292,7 @@
 		"pvpEnergy": -50,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
-		"pveCooldown": 1.8,
+		"pveCooldown": 2,
 		"moveName": {
 			"en": "Crush Grip",
 			"pt_br": "Aperto Esmagador"
@@ -5299,12 +5303,12 @@
 		"vId": "0486",
 		"type": "dragon",
 		"isFast": false,
-		"pvpPower": 100,
+		"pvpPower": 90,
 		"pvePower": 155,
 		"pvpEnergy": -45,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
-		"pveCooldown": 3.3,
+		"pveCooldown": 3.5,
 		"moveName": {
 			"en": "Dragon Energy",
 			"pt_br": "Energia Dracônica"
@@ -5365,6 +5369,66 @@
 		"moveName": {
 			"en": "Secret Sword",
 			"pt_br": "Secret Sword"
+		}
+	},
+	"BEAK_BLAST": {
+		"moveId": "BEAK_BLAST",
+		"vId": "0490",
+		"type": "flying",
+		"isFast": false,
+		"pvpPower": 110,
+		"pvePower": 125,
+		"pvpEnergy": -55,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Beak Blast",
+			"pt_br": "Beak Blast"
+		}
+	},
+	"MIND_BLOWN": {
+		"moveId": "MIND_BLOWN",
+		"vId": "0491",
+		"type": "fire",
+		"isFast": false,
+		"pvpPower": 90,
+		"pvePower": 130,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"buffs": {
+			"attackerDefenseStatStageChange": -4,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Mind Blown",
+			"pt_br": "Mind Blown"
+		}
+	},
+	"DRUM_BEATING": {
+		"moveId": "DRUM_BEATING",
+		"vId": "0492",
+		"type": "grass",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 115,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 4.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Drum Beating",
+			"pt_br": "Drum Beating"
 		}
 	},
 	"CRUSH_CLAW": {
@@ -5461,66 +5525,6 @@
 		"moveName": {
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
-		}
-	},
-	"BEAK_BLAST": {
-		"moveId": "BEAK_BLAST",
-		"vId": "-1",
-		"type": "flying",
-		"isFast": false,
-		"pvpPower": 110,
-		"pvePower": 125,
-		"pvpEnergy": -55,
-		"pveEnergy": -50,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"buffActivationChance": 1,
-			"targetAttackStatStageChange": -1
-		},
-		"moveName": {
-			"en": "Beak Blast",
-			"pt_br": "Beak Blast"
-		}
-	},
-	"MIND_BLOWN": {
-		"moveId": "MIND_BLOWN",
-		"vId": "-1",
-		"type": "fire",
-		"isFast": false,
-		"pvpPower": 90,
-		"pvePower": 130,
-		"pvpEnergy": -35,
-		"pveEnergy": -33,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 4,
-		"buffs": {
-			"buffActivationChance": 1,
-			"attackerDefenseStatStageChange": -4
-		},
-		"moveName": {
-			"en": "Mind Blown",
-			"pt_br": "Mind Blown"
-		}
-	},
-	"DRUM_BEATING": {
-		"moveId": "DRUM_BEATING",
-		"vId": "-1",
-		"type": "grass",
-		"isFast": false,
-		"pvpPower": 60,
-		"pvePower": 115,
-		"pvpEnergy": -35,
-		"pveEnergy": -33,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 4.5,
-		"buffs": {
-			"buffActivationChance": 1,
-			"targetAttackStatStageChange": -1
-		},
-		"moveName": {
-			"en": "Drum Beating",
-			"pt_br": "Drum Beating"
 		}
 	}
 }

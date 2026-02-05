@@ -2,7 +2,7 @@
 	"regieleki": {
 		"fastMove": "LOCK_ON",
 		"chargedMove": "THUNDER_CAGE",
-		"dps": 36.024096385542165,
+		"dps": 35.1764705882353,
 		"speciesId": "regieleki",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 279,
@@ -422,15 +422,6 @@
 		"chargedMoveDmg": 131,
 		"rank": 47
 	},
-	"morpeko_full_belly": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "AURA_WHEEL_ELECTRIC",
-		"dps": 21.08695652173913,
-		"speciesId": "morpeko_full_belly",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 99,
-		"rank": 48
-	},
 	"lucario_mega": {
 		"fastMove": "FORCE_PALM",
 		"chargedMove": "THUNDER_PUNCH",
@@ -438,6 +429,15 @@
 		"speciesId": "lucario_mega",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 65,
+		"rank": 48
+	},
+	"morpeko_full_belly": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "AURA_WHEEL_ELECTRIC",
+		"dps": 21.011764705882353,
+		"speciesId": "morpeko_full_belly",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 99,
 		"rank": 49
 	},
 	"zebstrika": {

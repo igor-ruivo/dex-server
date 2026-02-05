@@ -2,7 +2,7 @@
 	"regigigas_shadow": {
 		"fastMove": "HIDDEN_POWER",
 		"chargedMove": "CRUSH_GRIP",
-		"dps": 28.926553672316384,
+		"dps": 28.444444444444446,
 		"speciesId": "regigigas_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 228,
@@ -62,15 +62,6 @@
 		"chargedMoveDmg": 98,
 		"rank": 7
 	},
-	"regigigas": {
-		"fastMove": "HIDDEN_POWER",
-		"chargedMove": "CRUSH_GRIP",
-		"dps": 24.01129943502825,
-		"speciesId": "regigigas",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 190,
-		"rank": 8
-	},
 	"blaziken_mega": {
 		"fastMove": "COUNTER",
 		"chargedMove": "AURA_SPHERE",
@@ -78,7 +69,7 @@
 		"speciesId": "blaziken_mega",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 103,
-		"rank": 9
+		"rank": 8
 	},
 	"mewtwo_shadow": {
 		"fastMove": "CONFUSION",
@@ -87,7 +78,7 @@
 		"speciesId": "mewtwo_shadow",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 108,
-		"rank": 10
+		"rank": 9
 	},
 	"kyurem_black": {
 		"fastMove": "DRAGON_TAIL",
@@ -96,12 +87,21 @@
 		"speciesId": "kyurem_black",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 156,
+		"rank": 10
+	},
+	"regigigas": {
+		"fastMove": "HIDDEN_POWER",
+		"chargedMove": "CRUSH_GRIP",
+		"dps": 23.611111111111114,
+		"speciesId": "regigigas",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 190,
 		"rank": 11
 	},
 	"regieleki": {
 		"fastMove": "LOCK_ON",
 		"chargedMove": "THUNDER_CAGE",
-		"dps": 23.493975903614455,
+		"dps": 22.941176470588236,
 		"speciesId": "regieleki",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 175,
@@ -2150,15 +2150,6 @@
 		"chargedMoveDmg": 115,
 		"rank": 239
 	},
-	"regidrago": {
-		"fastMove": "BITE",
-		"chargedMove": "DRAGON_ENERGY",
-		"dps": 15.811518324607329,
-		"speciesId": "regidrago",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 101,
-		"rank": 240
-	},
 	"conkeldurr": {
 		"fastMove": "COUNTER",
 		"chargedMove": "DYNAMIC_PUNCH",
@@ -2166,7 +2157,7 @@
 		"speciesId": "conkeldurr",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 66,
-		"rank": 241
+		"rank": 240
 	},
 	"excadrill": {
 		"fastMove": "METAL_CLAW",
@@ -2175,7 +2166,7 @@
 		"speciesId": "excadrill",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 113,
-		"rank": 242
+		"rank": 241
 	},
 	"golem_shadow": {
 		"fastMove": "MUD_SLAP",
@@ -2184,7 +2175,7 @@
 		"speciesId": "golem_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 114,
-		"rank": 243
+		"rank": 242
 	},
 	"genesect": {
 		"fastMove": "FURY_CUTTER",
@@ -2193,7 +2184,7 @@
 		"speciesId": "genesect",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 80,
-		"rank": 244
+		"rank": 243
 	},
 	"genesect_burn": {
 		"fastMove": "FURY_CUTTER",
@@ -2202,7 +2193,7 @@
 		"speciesId": "genesect_burn",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 80,
-		"rank": 245
+		"rank": 244
 	},
 	"genesect_chill": {
 		"fastMove": "FURY_CUTTER",
@@ -2211,7 +2202,7 @@
 		"speciesId": "genesect_chill",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 80,
-		"rank": 246
+		"rank": 245
 	},
 	"genesect_douse": {
 		"fastMove": "FURY_CUTTER",
@@ -2220,7 +2211,7 @@
 		"speciesId": "genesect_douse",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 80,
-		"rank": 247
+		"rank": 246
 	},
 	"genesect_shock": {
 		"fastMove": "FURY_CUTTER",
@@ -2229,7 +2220,7 @@
 		"speciesId": "genesect_shock",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 80,
-		"rank": 248
+		"rank": 247
 	},
 	"meowscarada": {
 		"fastMove": "LEAFAGE",
@@ -2238,7 +2229,7 @@
 		"speciesId": "meowscarada",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 75,
-		"rank": 249
+		"rank": 248
 	},
 	"crawdaunt": {
 		"fastMove": "SNARL",
@@ -2247,7 +2238,7 @@
 		"speciesId": "crawdaunt",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 61,
-		"rank": 250
+		"rank": 249
 	},
 	"polteageist": {
 		"fastMove": "SUCKER_PUNCH",
@@ -2256,7 +2247,7 @@
 		"speciesId": "polteageist",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 79,
-		"rank": 251
+		"rank": 250
 	},
 	"giratina_altered_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -2265,7 +2256,7 @@
 		"speciesId": "giratina_altered_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 102,
-		"rank": 252
+		"rank": 251
 	},
 	"charizard": {
 		"fastMove": "FIRE_SPIN",
@@ -2274,7 +2265,7 @@
 		"speciesId": "charizard",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 86,
-		"rank": 253
+		"rank": 252
 	},
 	"hitmonlee_shadow": {
 		"fastMove": "DOUBLE_KICK",
@@ -2283,7 +2274,7 @@
 		"speciesId": "hitmonlee_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 90,
-		"rank": 254
+		"rank": 253
 	},
 	"gholdengo": {
 		"fastMove": "HEX",
@@ -2292,7 +2283,7 @@
 		"speciesId": "gholdengo",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 80,
-		"rank": 255
+		"rank": 254
 	},
 	"dugtrio_alolan_shadow": {
 		"fastMove": "SAND_ATTACK",
@@ -2301,7 +2292,7 @@
 		"speciesId": "dugtrio_alolan_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 109,
-		"rank": 256
+		"rank": 255
 	},
 	"hippowdon_shadow": {
 		"fastMove": "SAND_ATTACK",
@@ -2310,7 +2301,7 @@
 		"speciesId": "hippowdon_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 109,
-		"rank": 257
+		"rank": 256
 	},
 	"aurorus_shadow": {
 		"fastMove": "ROCK_THROW",
@@ -2319,7 +2310,7 @@
 		"speciesId": "aurorus_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 101,
-		"rank": 258
+		"rank": 257
 	},
 	"victini": {
 		"fastMove": "QUICK_ATTACK",
@@ -2328,7 +2319,7 @@
 		"speciesId": "victini",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 71,
-		"rank": 259
+		"rank": 258
 	},
 	"samurott": {
 		"fastMove": "FURY_CUTTER",
@@ -2337,7 +2328,7 @@
 		"speciesId": "samurott",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 61,
-		"rank": 260
+		"rank": 259
 	},
 	"trevenant_shadow": {
 		"fastMove": "SUCKER_PUNCH",
@@ -2346,7 +2337,7 @@
 		"speciesId": "trevenant_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 78,
-		"rank": 261
+		"rank": 260
 	},
 	"infernape": {
 		"fastMove": "FIRE_SPIN",
@@ -2355,7 +2346,7 @@
 		"speciesId": "infernape",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 85,
-		"rank": 262
+		"rank": 261
 	},
 	"rapidash_shadow": {
 		"fastMove": "FIRE_SPIN",
@@ -2364,7 +2355,7 @@
 		"speciesId": "rapidash_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 112,
-		"rank": 263
+		"rank": 262
 	},
 	"zoroark": {
 		"fastMove": "SNARL",
@@ -2373,6 +2364,15 @@
 		"speciesId": "zoroark",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 56,
+		"rank": 263
+	},
+	"regidrago": {
+		"fastMove": "BITE",
+		"chargedMove": "DRAGON_ENERGY",
+		"dps": 15.487179487179487,
+		"speciesId": "regidrago",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 101,
 		"rank": 264
 	},
 	"incineroar": {
@@ -3860,15 +3860,6 @@
 		"chargedMoveDmg": 102,
 		"rank": 429
 	},
-	"morpeko_full_belly": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "AURA_WHEEL_ELECTRIC",
-		"dps": 13.743961352657003,
-		"speciesId": "morpeko_full_belly",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 62,
-		"rank": 430
-	},
 	"crobat_shadow": {
 		"fastMove": "AIR_SLASH",
 		"chargedMove": "SLUDGE_BOMB",
@@ -3876,6 +3867,15 @@
 		"speciesId": "crobat_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 64,
+		"rank": 430
+	},
+	"morpeko_full_belly": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "AURA_WHEEL_ELECTRIC",
+		"dps": 13.741176470588236,
+		"speciesId": "morpeko_full_belly",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 62,
 		"rank": 431
 	},
 	"solgaleo": {

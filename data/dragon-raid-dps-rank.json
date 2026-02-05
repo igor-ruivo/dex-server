@@ -260,15 +260,6 @@
 		"chargedMoveDmg": 160,
 		"rank": 29
 	},
-	"regidrago": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "DRAGON_ENERGY",
-		"dps": 26.02094240837696,
-		"speciesId": "regidrago",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 161,
-		"rank": 30
-	},
 	"latias_shadow": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "OUTRAGE",
@@ -276,7 +267,7 @@
 		"speciesId": "latias_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 154,
-		"rank": 31
+		"rank": 30
 	},
 	"zekrom": {
 		"fastMove": "DRAGON_BREATH",
@@ -285,6 +276,15 @@
 		"speciesId": "zekrom",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 153,
+		"rank": 31
+	},
+	"regidrago": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "DRAGON_ENERGY",
+		"dps": 25.487179487179485,
+		"speciesId": "regidrago",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 161,
 		"rank": 32
 	},
 	"exeggutor_alolan": {
@@ -467,15 +467,6 @@
 		"chargedMoveDmg": 169,
 		"rank": 52
 	},
-	"kommo_o": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "CLANGING_SCALES",
-		"dps": 21.265822784810126,
-		"speciesId": "kommo_o",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 136,
-		"rank": 53
-	},
 	"rhyperior_shadow": {
 		"fastMove": "MUD_SLAP",
 		"chargedMove": "BREAKING_SWIPE",
@@ -483,7 +474,7 @@
 		"speciesId": "rhyperior_shadow",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 56,
-		"rank": 54
+		"rank": 53
 	},
 	"latias": {
 		"fastMove": "DRAGON_BREATH",
@@ -492,7 +483,7 @@
 		"speciesId": "latias",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 128,
-		"rank": 55
+		"rank": 54
 	},
 	"sceptile_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -501,6 +492,15 @@
 		"speciesId": "sceptile_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 52,
+		"rank": 55
+	},
+	"kommo_o": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "CLANGING_SCALES",
+		"dps": 21,
+		"speciesId": "kommo_o",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 136,
 		"rank": 56
 	},
 	"necrozma_dusk_mane": {

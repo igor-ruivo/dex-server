@@ -60125,6 +60125,42 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"enamorus_therian": {
+		"dex": 905,
+		"speciesId": "enamorus_therian",
+		"speciesName": "Enamorus (Therian)",
+		"types": [
+			"Fairy",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/905_f2.png",
+		"goImageUrl": "905.fTHERIAN.icon.png",
+		"shinyGoImageUrl": "905.fTHERIAN.s.icon.png",
+		"baseStats": {
+			"atk": 250,
+			"def": 201,
+			"hp": 179
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"EXTRASENSORY",
+			"FAIRY_WIND"
+		],
+		"chargedMoves": [
+			"MOONBLAST",
+			"FLY",
+			"EARTH_POWER",
+			"MYSTICAL_FIRE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Therian",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"sprigatito": {
 		"dex": 906,
 		"speciesId": "sprigatito",

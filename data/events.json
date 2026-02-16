@@ -85,7 +85,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/UxA6iUsRr_GZyp7-3IZyZ1uR1HaZcGh8bKUahk9yURLP2EmeK_xGzd2yYTQzkHeU7wMqAeCu3BFF5a33EEOYUPWm_vJ5ogBSVw=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "enamorus_therian",
+				"shiny": false,
+				"kind": "5"
+			}
+		],
 		"eggs": [],
 		"researches": [],
 		"incenses": [],

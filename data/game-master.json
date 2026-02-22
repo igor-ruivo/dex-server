@@ -14185,6 +14185,54 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"dragonite_mega": {
+		"dex": 149,
+		"speciesId": "dragonite_mega",
+		"speciesName": "Dragonite (Mega)",
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149_f2.png",
+		"goImageUrl": "149.fMEGA.icon.png",
+		"shinyGoImageUrl": "149.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 299,
+			"def": 255,
+			"hp": 209
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"DRAGON_TAIL",
+			"STEEL_WING"
+		],
+		"chargedMoves": [
+			"DRACO_METEOR",
+			"DRAGON_CLAW",
+			"DRAGON_PULSE",
+			"HURRICANE",
+			"HYPER_BEAM",
+			"OUTRAGE",
+			"SUPER_POWER",
+			"THUNDER_PUNCH",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"DRACO_METEOR",
+			"DRAGON_PULSE"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_DRATINI",
+			"parent": "dragonair"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"mewtwo": {
 		"dex": 150,
 		"speciesId": "mewtwo",

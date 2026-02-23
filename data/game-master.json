@@ -6822,6 +6822,50 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"victreebel_mega": {
+		"dex": 71,
+		"speciesId": "victreebel_mega",
+		"speciesName": "Victreebel (Mega)",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/071_f2.png",
+		"goImageUrl": "71.fMEGA.icon.png",
+		"shinyGoImageUrl": "71.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 265,
+			"def": 181,
+			"hp": 190
+		},
+		"fastMoves": [
+			"ACID",
+			"RAZOR_LEAF",
+			"MAGICAL_LEAF"
+		],
+		"chargedMoves": [
+			"LEAF_BLADE",
+			"SLUDGE_BOMB",
+			"SOLAR_BEAM",
+			"ACID_SPRAY",
+			"LEAF_TORNADO",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"MAGICAL_LEAF"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_BELLSPROUT",
+			"parent": "weepinbell"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"victreebel_shadow": {
 		"dex": 71,
 		"speciesId": "victreebel_shadow",
@@ -51360,6 +51404,47 @@
 			"parent": "inkay"
 		},
 		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"malamar_mega": {
+		"dex": 687,
+		"speciesId": "malamar_mega",
+		"speciesName": "Malamar (Mega)",
+		"types": [
+			"Dark",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/687_f2.png",
+		"goImageUrl": "687.fMEGA.icon.png",
+		"shinyGoImageUrl": "687.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 208,
+			"def": 222,
+			"hp": 200
+		},
+		"fastMoves": [
+			"PECK",
+			"PSYCHO_CUT",
+			"PSYWAVE"
+		],
+		"chargedMoves": [
+			"PSYBEAM",
+			"FOUL_PLAY",
+			"SUPER_POWER",
+			"HYPER_BEAM",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_INKAY",
+			"parent": "inkay"
+		},
+		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

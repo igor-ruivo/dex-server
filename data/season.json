@@ -2,52 +2,52 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "Welcome to Pokémon GO: Precious Paths",
-		"pt_br": "Bem-vindos ao Pokémon GO: Passos Preciosos"
+		"en": "Memories in Motion",
+		"pt_br": "Memórias em Movimento"
 	},
 	"subtitle": {
-		"en": "Welcome to Pokémon GO: Precious Paths",
-		"pt_br": "Bem-vindos ao Pokémon GO: Passos Preciosos"
+		"en": "Memories in Motion",
+		"pt_br": "Memórias em Movimento"
 	},
-	"startDate": 1764669600000,
-	"endDate": 1772532000000,
-	"imageUrl": "https://lh3.googleusercontent.com/eZMeR0IkVul0dITDAWCmJ1Ue1xIP0gDVdodNDtFy6MgmDKeBenxiAAPG3Roc6R2aIy2ua_AFT5FZWShXcmKlZ01roQREmdbavtzt=s0-e365",
+	"startDate": 1772532000000,
+	"endDate": 1780394400000,
+	"imageUrl": "https://lh3.googleusercontent.com/vux5c-AQTr_0Qd-NN5-k_-pds6QCeZe9xzpYYn_0B7ZrFhLs77mqdVzGLwVqVlW0htEKtiOXFnhN64RaZaKGTHAXwP2-dG-_W-XY=s0-e365",
 	"source": "pokemongo",
 	"wild": [],
 	"raids": [],
 	"eggs": [
 		{
-			"speciesId": "bergmite",
+			"speciesId": "tadbulb",
 			"shiny": false,
 			"kind": "2"
 		},
 		{
-			"speciesId": "smoochum",
+			"speciesId": "wimpod",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "cleffa",
+			"speciesId": "dunsparce",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "snom",
+			"speciesId": "fidough",
 			"shiny": false,
 			"kind": "5"
 		},
 		{
-			"speciesId": "elgyem",
+			"speciesId": "snom",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
+			"speciesId": "sizzlipede",
 			"shiny": false,
 			"kind": "5"
 		},
 		{
 			"speciesId": "audino",
-			"shiny": true,
-			"kind": "5"
-		},
-		{
-			"speciesId": "archen",
 			"shiny": false,
 			"kind": "5",
 			"comment": {
@@ -56,7 +56,7 @@
 			}
 		},
 		{
-			"speciesId": "riolu",
+			"speciesId": "happiny",
 			"shiny": true,
 			"kind": "5",
 			"comment": {
@@ -65,26 +65,26 @@
 			}
 		},
 		{
-			"speciesId": "bonsly",
+			"speciesId": "chingling",
 			"shiny": true,
 			"kind": "5",
 			"comment": {
 				"en": "Adventure Sync Rewards",
 				"pt_br": "Recompensas de Sincroaventura"
 			}
-		},
-		{
-			"speciesId": "stunfisk_galarian",
-			"shiny": false,
-			"kind": "7"
 		},
 		{
 			"speciesId": "zigzagoon_galarian",
+			"shiny": false,
+			"kind": "7"
+		},
+		{
+			"speciesId": "corsola_galarian",
 			"shiny": true,
 			"kind": "7"
 		},
 		{
-			"speciesId": "diglett_alolan",
+			"speciesId": "meowth_galarian",
 			"shiny": true,
 			"kind": "7"
 		},
@@ -116,17 +116,22 @@
 			}
 		},
 		{
-			"speciesId": "tinkatink",
+			"speciesId": "impidimp",
 			"shiny": false,
 			"kind": "10"
 		},
 		{
-			"speciesId": "beldum",
+			"speciesId": "honedge",
 			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "dreepy",
+			"speciesId": "deino",
+			"shiny": true,
+			"kind": "10"
+		},
+		{
+			"speciesId": "toxel",
 			"shiny": false,
 			"kind": "10",
 			"comment": {
@@ -135,8 +140,8 @@
 			}
 		},
 		{
-			"speciesId": "drampa",
-			"shiny": false,
+			"speciesId": "turtonator",
+			"shiny": true,
 			"kind": "10",
 			"comment": {
 				"en": "Adventure Sync Rewards",
@@ -144,7 +149,7 @@
 			}
 		},
 		{
-			"speciesId": "beldum",
+			"speciesId": "goomy",
 			"shiny": true,
 			"kind": "10",
 			"comment": {
@@ -160,27 +165,27 @@
 			"kind": ""
 		},
 		{
+			"speciesId": "duraludon",
+			"shiny": true,
+			"kind": ""
+		},
+		{
 			"speciesId": "sinistea",
 			"shiny": true,
 			"kind": ""
 		},
 		{
+			"speciesId": "dhelmise",
+			"shiny": true,
+			"kind": ""
+		},
+		{
 			"speciesId": "honedge",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "snorlax",
 			"shiny": true,
 			"kind": ""
 		},
 		{
-			"speciesId": "lapras",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "mr_mime_galarian",
+			"speciesId": "gyarados",
 			"shiny": true,
 			"kind": ""
 		}
@@ -188,15 +193,7 @@
 	"incenses": [],
 	"lures": [],
 	"bonuses": {
-		"en": [
-			"One additional Special Trade per day.",
-			"Increased Stardust for the first catch of the day.",
-			"Increased friendship bonus damage dealt by Pokémon in raids."
-		],
-		"pt_br": [
-			"Uma troca especial adicional por dia.",
-			"Mais Poeira Estelar pela primeira captura do dia.",
-			"Mais danos de bônus de amizade para Pokémon em Reides."
-		]
+		"en": [],
+		"pt_br": []
 	}
 }

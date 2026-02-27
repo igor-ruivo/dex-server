@@ -1,5 +1,581 @@
 [
 	{
+		"id": "pokemon-30th-anniversary-0",
+		"url": "https://pokemongo.com/news/pokemon-30th-anniversary",
+		"title": {
+			"en": "Celebrate 30 years of Pokémon by going out and catching as many Pokémon as you can!",
+			"pt_br": "Celebre os 30 anos de Pokémon saindo e pegando o máximo possível de Pokémon!"
+		},
+		"subtitle": {
+			"en": "Pokémon 30th Anniversary",
+			"pt_br": "Aniversário de 30 anos de Pokémon"
+		},
+		"startDate": 1772532000000,
+		"endDate": 1773086400000,
+		"dateRanges": [
+			{
+				"start": 1772532000000,
+				"end": 1773086400000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/Vj1IZO6VpslD9uHTt7V7ew8I7sIFSS8seiqbDbsbqoOzak22R4zbeTIisOMJYbu7yNB4W6w2VE4ZUcR-oEUB-E3ZVFCHMzxXHzg=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "mew",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "alakazam",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "machamp",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "golem",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "gengar",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "eevee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "dragonite",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "articuno",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "zapdos",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "kangaskhan",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mr_mime",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mewtwo",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "smeargle",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "shedinja",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "kecleon",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "giratina_altered",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "zoroark",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "larvesta",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "volcarona",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "scatterbug",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "spewpa",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "vivillon",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "zygarde",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "mudbray",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "mudsdale",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "cosmog",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "cosmoem",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "morpeko_full_belly",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "eternatus",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "kubfu",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "maushold",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "dudunsparce",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "gimmighoul",
+				"shiny": false,
+				"kind": ""
+			},
+			{
+				"speciesId": "gholdengo",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"raids": [
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
+				"speciesId": "venusaur",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "charizard",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "blastoise",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "articuno",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "zapdos",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "moltres",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "deoxys",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "darkrai",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "nihilego",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "buzzwole",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "pheromosa",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "xurkitree",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "celesteela",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "kartana",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "guzzlord",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "stakataka",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "blacephalon",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "necrozma",
+				"shiny": true,
+				"kind": "5"
+			}
+		],
+		"eggs": [
+			{
+				"speciesId": "pichu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "cleffa",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "igglybuff",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "togepi",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "tyrogue",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "smoochum",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "elekid",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "magby",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "azurill",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "wynaut",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "budew",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "chingling",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "bonsly",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mime_jr",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "happiny",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "munchlax",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "riolu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mantyke",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "toxel",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"researches": [
+			{
+				"speciesId": "bulbasaur",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "charmander",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "squirtle",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "magikarp",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "eevee",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Incense activated during the event may lead to encounters with Legendary Pokémon–if you’re very lucky!",
+				"Wild Pokémon will appear more frequently."
+			],
+			"pt_br": [
+				"O Incenso ativado durante o evento pode levar a encontros com Pokémon Lendários. Isso se você tiver sorte!",
+				"Pokémon aparecerão na natureza mais frequentemente."
+			]
+		}
+	},
+	{
+		"id": "festival-of-colors-2026-0",
+		"url": "https://pokemongo.com/news/festival-of-colors-2026",
+		"title": {
+			"en": "The Festival of Colors event returns to India in Pokémon GO for 2026!",
+			"pt_br": "The Festival of Colors event returns to India in Pokémon GO for 2026!"
+		},
+		"subtitle": {
+			"en": "Festival of Colors",
+			"pt_br": "Festival of Colors"
+		},
+		"startDate": 1772618400000,
+		"endDate": 1773000000000,
+		"dateRanges": [
+			{
+				"start": 1772618400000,
+				"end": 1773000000000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/UFkIzWn5-MMK76LdARZPqR7-Uf0aNTLLdsCGN1sTHINe6QUWhuf4NDqRq4GKdVAdj57ILO_4gKqeQbaQmJ_gen3jbg0bYvjf3Ww=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "pikachu",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Lure Modules activated during the event will last for three hours.",
+				"2× Stardust from catching Pokémon.",
+				"Get Stickers of Pikachu wearing a kurta and Pikachu wearing a saree from spinning PokéStops."
+			],
+			"pt_br": [
+				"Lure Modules activated during the event will last for three hours.",
+				"2× Stardust from catching Pokémon.",
+				"Get Stickers of Pikachu wearing a kurta and Pikachu wearing a saree from spinning PokéStops."
+			]
+		}
+	},
+	{
+		"id": "pokemon-pokopia-celebration-event-2026-0",
+		"url": "https://pokemongo.com/news/pokemon-pokopia-celebration-event-2026",
+		"title": {
+			"en": "New costumed Ditto debut during the Pokémon Pokopia Celebration Event!",
+			"pt_br": "Estreia de novo Ditto fantasiado durante o evento de celebração Pokémon Pokopia."
+		},
+		"subtitle": {
+			"en": "Pokémon Pokopia Celebration Event",
+			"pt_br": "Evento de Celebração do Pokémon Pokopia"
+		},
+		"startDate": 1773136800000,
+		"endDate": 1773691200000,
+		"dateRanges": [
+			{
+				"start": 1773136800000,
+				"end": 1773691200000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/j0XcyDAp2gsla0vhmOV_vY6Bh1bKkCdtCT2lofsZqzEQ98Z96k3HSHWa2gp-MChpvEWYX_NmnvCmMI4QAGLgHXiwA8d-6i-n8to=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "bulbasaur",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "charmander",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "squirtle",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "sudowoodo",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "zorua",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [
+			{
+				"speciesId": "lapras",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "snorlax",
+				"shiny": true,
+				"kind": "3"
+			},
+			{
+				"speciesId": "dragonite",
+				"shiny": true,
+				"kind": "3"
+			}
+		],
+		"eggs": [],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"2× XP for spinning PokéStops.",
+				"10× XP for spinning a PokéStop for the first time.",
+				"Increased chance to encounter Shiny Sudowoodo and Shiny Zorua."
+			],
+			"pt_br": [
+				"Dobro de PE por girar Poképaradas.",
+				"10× mais PE por girar uma Poképarada pela primeira vez.",
+				"Maior chance de encontrar Sudowoodo Brilhante e Zorua Brilhante."
+			]
+		}
+	},
+	{
 		"id": "bug-out-2026-0",
 		"url": "https://pokemongo.com/news/bug-out-2026",
 		"title": {
@@ -955,191 +1531,6 @@
 				"2× maior duração do Incenso de Aventura Diário.",
 				"500 de Poeira Estelar adicional por capturar Flamigo.",
 				"Maior chance de encontrar Lotad, Spritzee e Pikipek, todos Brilhantes."
-			]
-		}
-	},
-	{
-		"id": "ho-oh-max-battle-weekend-2026-0",
-		"url": "https://pokemongo.com/news/ho-oh-max-battle-weekend-2026",
-		"title": {
-			"en": "Let colors fly during Dynamax Ho-Oh Max Battle Weekend!",
-			"pt_br": "Deixe tudo colorido no Fim de Semana de Batalhas Max: Ho-Oh Dinamax!"
-		},
-		"subtitle": {
-			"en": "Dynamax Ho-Oh Max Battle Weekend",
-			"pt_br": "Fim de Semana de Batalhas Max: Ho-Oh Dinamax"
-		},
-		"startDate": 1769839200000,
-		"endDate": 1769979600000,
-		"dateRanges": [
-			{
-				"start": 1769839200000,
-				"end": 1769979600000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/mAXqlOx49N-Zt5KDzz4jPkhkzli-6nQwktEUoEiAW55pKzuBvr6qYr2nhSorQ90_PYnBF_saVI1g9Zso4xWXIeG5O0boNXozdWLk=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "kabuto",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"The following bonuses will be active during the event.",
-				"Max Particle collection limit increased to 1,600",
-				"1/4 Adventuring distance to receive Max Particles*",
-				"Power Spots will refresh more frequently",
-				"8× Max Particles from Power Spots",
-				"*For this bonus to apply, Trainers must first collect all Max Particles available in the Nearby menu. Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect."
-			],
-			"pt_br": [
-				"Os bônus a seguir estarão ativos durante o evento.",
-				"*Limite de coleta de Partículas Max aumentado para 1.6001/4 da distância de aventura para receber Partículas Max*Os Pontos de Energia serão atualizados com mais frequência*8× mais Partículas Max de Pontos de Energia",
-				"*Para que esse bônus seja aplicado, as Treinadoras e os Treinadores devem primeiro coletar todas as Partículas Max disponíveis no menu Proximidades. É possível fazer isso a cada dia por meio da exploração. A Sincroaventura pode ajudar a garantir que a distância seja contabilizada. Fique de olho no menu Proximidades e procure o ícone que mostra quando as Partículas Max podem ser coletadas."
-			]
-		}
-	},
-	{
-		"id": "into-the-depths-2026-0",
-		"url": "https://pokemongo.com/news/into-the-depths-2026",
-		"title": {
-			"en": "Plunge Into the Depths for Glimmet’s debut in Pokémon GO!",
-			"pt_br": "Mergulhe Nas Profundezas para a estreia de Glimmet no Pokémon GO."
-		},
-		"subtitle": {
-			"en": "Into the Depths",
-			"pt_br": "Nas Profundezas"
-		},
-		"startDate": 1769508000000,
-		"endDate": 1769976000000,
-		"dateRanges": [
-			{
-				"start": 1769508000000,
-				"end": 1769976000000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/U4Tp4hTCJLYFF8q372gSiNXd9CgB7ETYMax-l_wNJTriB1zIzb0cF-O2WfMkdB2p4DznbqIP1oMjbmPDyt9Jhl91A6stmcIT0bcz=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "diglett",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "dunsparce",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "meditite",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "yungoos",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [],
-		"eggs": [
-			{
-				"speciesId": "diglett",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "larvitar",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "bagon",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "deino",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "yungoos",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "glimmet",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"researches": [
-			{
-				"speciesId": "glimmet",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"3× XP from completing Routes",
-				"1/2 Egg Hatch Distance"
-			],
-			"pt_br": [
-				"3× mais PE por completar Rotas",
-				"1/2 da distância para chocar Ovo"
-			]
-		}
-	},
-	{
-		"id": "shadow-raikou-raid-day-2026-0",
-		"url": "https://pokemongo.com/news/shadow-raikou-raid-day-2026",
-		"title": {
-			"en": "Unite with fellow Trainers to rescue Shadow Raikou from Team GO Rocket during a Shadow Raid Day event!",
-			"pt_br": "Una-se a colegas Treinadoras e Treinadores para resgatar Raikou Sombroso da Equipe GO Rocket durante o evento Dia de Reides Sombrosos."
-		},
-		"subtitle": {
-			"en": "Raikou Shadow Raid Day",
-			"pt_br": "Dia de Reides Sombrosos com Raikou"
-		},
-		"startDate": 1769263200000,
-		"endDate": 1769274000000,
-		"dateRanges": [
-			{
-				"start": 1769263200000,
-				"end": 1769274000000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/yZuMwj2kk51kJaPYf-lEFkJfH6H5I0NL4Yz7eefko3v9gMIcVjAbHIGM44mOJVVUHROhoTar1UPN1vS93CmThxHqrU0qv_r4Pg=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Up to five additional free Raid Passes from spinning Gym Photo Discs (for a total of six).",
-				"Increased chance of encountering Shiny Raikou from Shadow Raids.",
-				"The Remote Raid limit will increase to 20 from Friday, January 23, at 4:00 p.m. to Saturday, January 24, 2026, at 7:00 p.m. PST."
-			],
-			"pt_br": [
-				"Até cinco Passes de Reide adicionais por girar fotodiscos em Ginásios (total de seis).",
-				"Maior chance de encontrar Raikou Brilhante em Reides Sombrosos.",
-				"O limite de Reide à Distância aumentará para 20 de sexta-feira, 23 de janeiro, às 16h (21h no horário de Brasília), a sábado, 24 de janeiro de 2026, às 19h PST (meia-noite no horário de Brasília)."
 			]
 		}
 	}

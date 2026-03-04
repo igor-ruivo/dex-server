@@ -1,10 +1,10 @@
 {
 	"heracross_mega": {
-		"fastMove": "STRUGGLE_BUG",
+		"fastMove": "FURY_CUTTER",
 		"chargedMove": "MEGAHORN",
-		"dps": 29.11111111111111,
+		"dps": 31.939393939393938,
 		"speciesId": "heracross_mega",
-		"fastMoveDmg": 26,
+		"fastMoveDmg": 7,
 		"chargedMoveDmg": 176,
 		"rank": 1
 	},
@@ -188,6 +188,15 @@
 		"chargedMoveDmg": 138,
 		"rank": 21
 	},
+	"heracross": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "MEGAHORN",
+		"dps": 22.727272727272727,
+		"speciesId": "heracross",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 125,
+		"rank": 22
+	},
 	"vikavolt": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "X_SCISSOR",
@@ -195,7 +204,7 @@
 		"speciesId": "vikavolt",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 58,
-		"rank": 22
+		"rank": 23
 	},
 	"galvantula_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -204,7 +213,7 @@
 		"speciesId": "galvantula_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 118,
-		"rank": 23
+		"rank": 24
 	},
 	"absol_shadow": {
 		"fastMove": "SNARL",
@@ -213,7 +222,7 @@
 		"speciesId": "absol_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 131,
-		"rank": 24
+		"rank": 25
 	},
 	"pinsir": {
 		"fastMove": "BUG_BITE",
@@ -222,7 +231,7 @@
 		"speciesId": "pinsir",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 55,
-		"rank": 25
+		"rank": 26
 	},
 	"samurott_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -231,7 +240,7 @@
 		"speciesId": "samurott_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 114,
-		"rank": 26
+		"rank": 27
 	},
 	"escavalier": {
 		"fastMove": "BUG_BITE",
@@ -240,7 +249,7 @@
 		"speciesId": "escavalier",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 120,
-		"rank": 27
+		"rank": 28
 	},
 	"frosmoth": {
 		"fastMove": "BUG_BITE",
@@ -249,7 +258,7 @@
 		"speciesId": "frosmoth",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 112,
-		"rank": 28
+		"rank": 29
 	},
 	"yanmega": {
 		"fastMove": "BUG_BITE",
@@ -258,7 +267,7 @@
 		"speciesId": "yanmega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 112,
-		"rank": 29
+		"rank": 30
 	},
 	"scizor": {
 		"fastMove": "FURY_CUTTER",
@@ -267,7 +276,7 @@
 		"speciesId": "scizor",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 54,
-		"rank": 30
+		"rank": 31
 	},
 	"nidoking_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -276,7 +285,7 @@
 		"speciesId": "nidoking_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 110,
-		"rank": 31
+		"rank": 32
 	},
 	"scyther": {
 		"fastMove": "FURY_CUTTER",
@@ -285,7 +294,7 @@
 		"speciesId": "scyther",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 106,
-		"rank": 32
+		"rank": 33
 	},
 	"crustle_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -294,7 +303,7 @@
 		"speciesId": "crustle_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 53,
-		"rank": 33
+		"rank": 34
 	},
 	"sneasler_shadow": {
 		"fastMove": "POISON_JAB",
@@ -303,7 +312,7 @@
 		"speciesId": "sneasler_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 59,
-		"rank": 34
+		"rank": 35
 	},
 	"centiskorch": {
 		"fastMove": "BUG_BITE",
@@ -312,15 +321,6 @@
 		"speciesId": "centiskorch",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 107,
-		"rank": 35
-	},
-	"heracross": {
-		"fastMove": "STRUGGLE_BUG",
-		"chargedMove": "MEGAHORN",
-		"dps": 20.416666666666668,
-		"speciesId": "heracross",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 125,
 		"rank": 36
 	},
 	"venomoth_shadow": {

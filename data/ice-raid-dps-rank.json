@@ -566,6 +566,15 @@
 		"chargedMoveDmg": 121,
 		"rank": 63
 	},
+	"marshadow": {
+		"fastMove": "SHADOW_CLAW",
+		"chargedMove": "ICE_PUNCH",
+		"dps": 17.224489795918366,
+		"speciesId": "marshadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 56,
+		"rank": 64
+	},
 	"annihilape_shadow": {
 		"fastMove": "COUNTER",
 		"chargedMove": "ICE_PUNCH",
@@ -573,15 +582,6 @@
 		"speciesId": "annihilape_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 57,
-		"rank": 64
-	},
-	"marshadow": {
-		"fastMove": "COUNTER",
-		"chargedMove": "ICE_PUNCH",
-		"dps": 17,
-		"speciesId": "marshadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 56,
 		"rank": 65
 	},
 	"ninetales_alolan": {

@@ -845,6 +845,15 @@
 		"chargedMoveDmg": 56,
 		"rank": 94
 	},
+	"marshadow": {
+		"fastMove": "SHADOW_CLAW",
+		"chargedMove": "THUNDER_PUNCH",
+		"dps": 17.224489795918366,
+		"speciesId": "marshadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 56,
+		"rank": 95
+	},
 	"typhlosion_shadow": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "THUNDER_PUNCH",
@@ -852,7 +861,7 @@
 		"speciesId": "typhlosion_shadow",
 		"fastMoveDmg": 28,
 		"chargedMoveDmg": 57,
-		"rank": 95
+		"rank": 96
 	},
 	"stantler_shadow": {
 		"fastMove": "TACKLE",
@@ -861,7 +870,7 @@
 		"speciesId": "stantler_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 89,
-		"rank": 96
+		"rank": 97
 	},
 	"regigigas": {
 		"fastMove": "HIDDEN_POWER",
@@ -870,7 +879,7 @@
 		"speciesId": "regigigas",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 121,
-		"rank": 97
+		"rank": 98
 	},
 	"deoxys_speed": {
 		"fastMove": "CHARGE_BEAM",
@@ -879,7 +888,7 @@
 		"speciesId": "deoxys_speed",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 79,
-		"rank": 98
+		"rank": 99
 	},
 	"starmie_shadow": {
 		"fastMove": "PSYWAVE",
@@ -888,7 +897,7 @@
 		"speciesId": "starmie_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 108,
-		"rank": 99
+		"rank": 100
 	},
 	"boltund": {
 		"fastMove": "SPARK",
@@ -897,7 +906,7 @@
 		"speciesId": "boltund",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 102,
-		"rank": 100
+		"rank": 101
 	},
 	"kyogre": {
 		"fastMove": "WATERFALL",
@@ -906,15 +915,6 @@
 		"speciesId": "kyogre",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 114,
-		"rank": 101
-	},
-	"marshadow": {
-		"fastMove": "COUNTER",
-		"chargedMove": "THUNDER_PUNCH",
-		"dps": 17,
-		"speciesId": "marshadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 56,
 		"rank": 102
 	},
 	"absol": {

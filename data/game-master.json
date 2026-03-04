@@ -1685,6 +1685,7 @@
 			"BRAVE_BIRD",
 			"HURRICANE",
 			"FEATHER_DANCE",
+			"HEAT_WAVE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -1732,6 +1733,7 @@
 			"BRAVE_BIRD",
 			"HURRICANE",
 			"FEATHER_DANCE",
+			"HEAT_WAVE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -1779,6 +1781,7 @@
 			"BRAVE_BIRD",
 			"HURRICANE",
 			"FEATHER_DANCE",
+			"HEAT_WAVE",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -13647,7 +13650,8 @@
 		},
 		"fastMoves": [
 			"FROST_BREATH",
-			"ICE_SHARD"
+			"ICE_SHARD",
+			"POWDER_SNOW"
 		],
 		"chargedMoves": [
 			"BLIZZARD",
@@ -13722,7 +13726,8 @@
 		},
 		"fastMoves": [
 			"FROST_BREATH",
-			"ICE_SHARD"
+			"ICE_SHARD",
+			"POWDER_SNOW"
 		],
 		"chargedMoves": [
 			"BLIZZARD",
@@ -13770,6 +13775,7 @@
 			"ZAP_CANNON",
 			"ANCIENT_POWER",
 			"DRILL_PECK",
+			"HEAT_WAVE",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -13843,6 +13849,7 @@
 			"ZAP_CANNON",
 			"ANCIENT_POWER",
 			"DRILL_PECK",
+			"HEAT_WAVE",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -13882,6 +13889,7 @@
 			"OVERHEAT",
 			"SKY_ATTACK",
 			"ANCIENT_POWER",
+			"FLY",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -13956,6 +13964,7 @@
 			"OVERHEAT",
 			"SKY_ATTACK",
 			"ANCIENT_POWER",
+			"FLY",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -16021,7 +16030,8 @@
 			"ANCIENT_POWER",
 			"DAZZLING_GLEAM",
 			"DRAINING_KISS",
-			"PSYSHOCK"
+			"PSYSHOCK",
+			"HEAT_WAVE"
 		],
 		"eliteMoves": [
 			"STEEL_WING",
@@ -18968,14 +18978,16 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"STRUGGLE_BUG"
+			"STRUGGLE_BUG",
+			"FURY_CUTTER"
 		],
 		"chargedMoves": [
 			"CLOSE_COMBAT",
 			"EARTHQUAKE",
 			"MEGAHORN",
 			"ROCK_BLAST",
-			"UPPER_HAND"
+			"UPPER_HAND",
+			"ROCK_TOMB"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -19004,14 +19016,16 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"STRUGGLE_BUG"
+			"STRUGGLE_BUG",
+			"FURY_CUTTER"
 		],
 		"chargedMoves": [
 			"CLOSE_COMBAT",
 			"EARTHQUAKE",
 			"MEGAHORN",
 			"ROCK_BLAST",
-			"UPPER_HAND"
+			"UPPER_HAND",
+			"ROCK_TOMB"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -26942,6 +26956,8 @@
 			"OVERHEAT",
 			"SOLAR_BEAM",
 			"EARTH_POWER",
+			"SCORCHING_SANDS",
+			"ROCK_TOMB",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -26983,6 +26999,8 @@
 			"OVERHEAT",
 			"SOLAR_BEAM",
 			"EARTH_POWER",
+			"SCORCHING_SANDS",
+			"ROCK_TOMB",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -27024,6 +27042,8 @@
 			"OVERHEAT",
 			"SOLAR_BEAM",
 			"EARTH_POWER",
+			"SCORCHING_SANDS",
+			"ROCK_TOMB",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -27467,6 +27487,7 @@
 			"BOOMBURST",
 			"SCORCHING_SANDS",
 			"SAND_TOMB",
+			"TWISTER",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -27513,6 +27534,7 @@
 			"BOOMBURST",
 			"SCORCHING_SANDS",
 			"SAND_TOMB",
+			"TWISTER",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -34045,7 +34067,8 @@
 		},
 		"fastMoves": [
 			"BUG_BITE",
-			"CONFUSION"
+			"CONFUSION",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"BUG_BUZZ",
@@ -34083,7 +34106,8 @@
 		},
 		"fastMoves": [
 			"BUG_BITE",
-			"CONFUSION"
+			"CONFUSION",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"BUG_BUZZ",
@@ -34122,7 +34146,8 @@
 		"fastMoves": [
 			"BUG_BITE",
 			"CONFUSION",
-			"METAL_SOUND"
+			"METAL_SOUND",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"BUG_BUZZ",
@@ -35895,6 +35920,7 @@
 			"SAND_TOMB",
 			"EARTH_POWER",
 			"BREAKING_SWIPE",
+			"TWISTER",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -35939,6 +35965,7 @@
 			"SAND_TOMB",
 			"EARTH_POWER",
 			"BREAKING_SWIPE",
+			"TWISTER",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -35979,6 +36006,7 @@
 			"SAND_TOMB",
 			"EARTH_POWER",
 			"BREAKING_SWIPE",
+			"TWISTER",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -37775,6 +37803,7 @@
 			"EARTHQUAKE",
 			"NIGHT_SLASH",
 			"SAND_TOMB",
+			"ACROBATICS",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -37816,6 +37845,7 @@
 			"EARTHQUAKE",
 			"NIGHT_SLASH",
 			"SAND_TOMB",
+			"ACROBATICS",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -38540,7 +38570,8 @@
 		"chargedMoves": [
 			"OMINOUS_WIND",
 			"THUNDER",
-			"THUNDERBOLT"
+			"THUNDERBOLT",
+			"LEAF_STORM"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -42731,6 +42762,7 @@
 			"SLUDGE_BOMB",
 			"GYRO_BALL",
 			"X_SCISSOR",
+			"AQUA_TAIL",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -42772,6 +42804,7 @@
 			"SLUDGE_BOMB",
 			"GYRO_BALL",
 			"X_SCISSOR",
+			"AQUA_TAIL",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -53489,7 +53522,8 @@
 			"HYDRO_PUMP",
 			"OVERHEAT",
 			"EARTH_POWER",
-			"SLUDGE_BOMB"
+			"SLUDGE_BOMB",
+			"SCALD"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -56955,7 +56989,8 @@
 		"fastMoves": [
 			"SUCKER_PUNCH",
 			"COUNTER",
-			"POISON_JAB"
+			"POISON_JAB",
+			"SHADOW_CLAW"
 		],
 		"chargedMoves": [
 			"CLOSE_COMBAT",

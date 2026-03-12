@@ -1,5 +1,47 @@
 [
 	{
+		"id": "fashion-raid-day-2026-0",
+		"url": "https://pokemongo.com/news/fashion-raid-day-2026",
+		"title": {
+			"en": "Strike your best pose during Fashion Raid Day, featuring costumed Pokémon!",
+			"pt_br": "Faça sua melhor pose durante o Dia de Reides Fashion, com Pokémon fantasiados."
+		},
+		"subtitle": {
+			"en": "Fashion Raid Day",
+			"pt_br": "Dia de Reides Fashion"
+		},
+		"startDate": 1775311200000,
+		"endDate": 1775322000000,
+		"dateRanges": [
+			{
+				"start": 1775311200000,
+				"end": 1775322000000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/nM8zITUezX9EQtwxQh474CuTcVK13xfIdd7KThiQJVvMD5kDakRCXfOYC-LznpuO40s8PpaheKlF4djKJyxhTkcjaykYX2gaoHOL=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"The following Pokémon wearing fashionable costumes will appear more frequently in raids: Butterfree, Diglett, Dragonite, Wooper, Sneasel, Kirlia, Absol, Shinx, Croagunk, Blitzle, and Minccino.",
+				"Receive up to six free Raid Passes from spinning Gym Photo Discs.",
+				"Event-themed Pokémon appearing more frequently in raids are also more likely to be Shiny.",
+				"The Remote Raid Pass limit will increase to 20 from Friday, April 3, at 5:00 p.m. to Saturday, April 4, 2026, at 8:00 p.m. PDT."
+			],
+			"pt_br": [
+				"Os seguintes Pokémon com fantasias fashion vão aparecer com mais frequência em Reides: Butterfree, Diglett, Dragonite, Wooper, Sneasel, Kirlia, Absol, Shinx, Croagunk, Blitzle e Minccino.",
+				"Receba até seis Passes de Reide gratuitos ao girar fotosdiscos em Ginásios.",
+				"Pokémon com o tema do evento que aparecerem com mais frequência em Reides também terão mais chances de ser Brilhantes.",
+				"O limite do Passe de Reide a Distância será aumentado para 20 de sexta-feira, 3 de abril, às 17h PDT (21h, horário de Brasília), a sábado, 4 de abril de 2026, às 20h PDT (0h do dia 5 de abril, horário de Brasília)"
+			]
+		}
+	},
+	{
 		"id": "a-shockingly-good-time-0",
 		"url": "https://pokemongo.com/news/a-shockingly-good-time",
 		"title": {
@@ -1268,433 +1310,6 @@
 				"Dobro de Poeira Estelar ao abrir presentes.",
 				"Maior chance de encontrar Nidoran♂ e Nidoran♂ Brilhantes.",
 				"Maior chance de chocar Nidoran♀, Nidoran♂ e Cherubi, todos Brilhantes."
-			]
-		}
-	},
-	{
-		"id": "road-to-kalos-event-0",
-		"url": "https://pokemongo.com/news/road-to-kalos-event",
-		"title": {
-			"en": "Get ready for Pokémon GO Tour: Kalos with the Road to Kalos event!",
-			"pt_br": "Preparem-se para o Pokémon GO Tour: Kalos com o evento Caminho para Kalos!"
-		},
-		"subtitle": {
-			"en": "Road to Kalos",
-			"pt_br": "Caminho para Kalos"
-		},
-		"startDate": 1771804800000,
-		"endDate": 1772236740000,
-		"dateRanges": [
-			{
-				"start": 1771804800000,
-				"end": 1772236740000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/Axx_aL-fExXUa8VrLHT6UtOpykQJBTBjn49N78HUKlOLkCzO89tFI1hgcglChoN9bFIlBbLRTwbgti1Aq2TtKDi8I8vKC9uGxQ=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "snivy",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "tepig",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "oshawott",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "lillipup",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "darumaka",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "gothita",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "turtwig",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "chimchar",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "piplup",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "bidoof",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "shinx",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "snover",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "treecko",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "torchic",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "mudkip",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "poochyena",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "taillow",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "nincada",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "chikorita",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "cyndaquil",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "totodile",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "marill",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "hoppip",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "teddiursa",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "bulbasaur",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "charmander",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "squirtle",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "pikachu",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "clefairy",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "meowth",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [
-			{
-				"speciesId": "zekrom",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "kyurem_white",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "pikachu",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "reshiram",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "kyurem_black",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "dialga_origin",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "palkia_origin",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "dialga",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "palkia",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "kyogre_primal",
-				"shiny": true,
-				"kind": "mega"
-			},
-			{
-				"speciesId": "groudon_primal",
-				"shiny": true,
-				"kind": "mega"
-			},
-			{
-				"speciesId": "lugia_shadow",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "ho_oh_shadow",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "articuno",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "zapdos",
-				"shiny": true,
-				"kind": "5"
-			},
-			{
-				"speciesId": "moltres",
-				"shiny": true,
-				"kind": "5"
-			}
-		],
-		"eggs": [
-			{
-				"speciesId": "larvitar",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "bagon",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "beldum",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "gible",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Reach Major Milestones on your GO Pass: Road to Kalos to unlock the following bonuses. Trainers who upgrade to the GO Pass Deluxe will unlock additional bonuses in addition to the bonuses from the free GO Pass.",
-				"Tier 1",
-				"GO Pass",
-				"Scatterbug will appear more frequently when you pin Gifts!",
-				"Open up to 100 Gifts per day.",
-				"Receive up to 200 Gifts per day from spinning PokéStop and Gym Photo Discs.",
-				"Hold up to 40 total Gifts in your Item Bag.",
-				"1.5× Catch XP.",
-				"GO Pass Deluxe",
-				"All of the bonuses from the free GO Pass, plus:",
-				"Scatterbug will appear even more frequently when you pin Gifts!",
-				"1 additional Candy awarded for catching Pokémon in five-star raids, Mega Raids, Primal Raids, and Shadow Raids.",
-				"1 additional Candy XL awarded for catching Pokémon in five-star raids, Mega Raids, Primal Raids, and Shadow Raids (Trainers level 31+).",
-				"2× Hatch Candy.",
-				"Tier 2",
-				"GO Pass",
-				"Large increase to the catch effectiveness of Premier Balls.",
-				"2× Catch XP.",
-				"GO Pass Deluxe",
-				"All of the bonuses from the free GO Pass, plus:",
-				"Additional 5,000 XP from completed raids.",
-				"2× Hatch XP.",
-				"Tier 3",
-				"GO Pass",
-				"Substantial increase to the catch effectiveness of Premier Balls.",
-				"3× Catch XP.",
-				"GO Pass Deluxe",
-				"All of the bonuses from the free GO Pass, plus:",
-				"2× Stardust from completed raids.",
-				"2× Hatch Stardust."
-			],
-			"pt_br": [
-				"Alcancem Conquistas Principais no seu Passe GO: Caminho para Kalos para desbloquear os seguintes bônus. Treinadoras e Treinadores que fizerem upgrade para o Passe GO Deluxe desbloquearão bônus adicionais que se somarão aos bônus do Passe GO gratuito.",
-				"Nível 1",
-				"Passe GO",
-				"Scatterbug aparecerá com mais frequência quando vocês fixarem cartões-postais de presentes.",
-				"Abram até 100 presentes por dia.",
-				"Recebam até 200 presentes por dia ao girar fotodiscos de Poképaradas e de Ginásio.",
-				"Guardem até um total de 40 presentes na Bolsa.",
-				"1,5× mais PE por captura.",
-				"Passe GO Deluxe",
-				"Todos os bônus do Passe GO gratuito, mais:",
-				"Scatterbug aparecerá com ainda mais frequência quando vocês fixarem cartões-postais de presentes.",
-				"Um doce adicional de recompensa por pegar Pokémon em Reides de cinco estrelas, Megarreides, Reides Primitivos e Reides Sombrosos.",
-				"Um doce adicional de recompensa por pegar Pokémon em Reides de cinco estrelas, Megarreides, Reides Primitivos e Reides Sombrosos (Treinadoras e Treinadores do nível 31 e acima).",
-				"2x mais doce por chocar Ovos.",
-				"Nível 2",
-				"Passe GO",
-				"Aumento significativo da eficácia de captura de Bolas Presenteadas.",
-				"2× mais PE por captura.",
-				"Passe GO Deluxe",
-				"Todos os bônus do Passe GO gratuito, mais:",
-				"5.000 PE adicionais por Reides concluídos.",
-				"2× mais PE por chocar Ovos.",
-				"Nível 3",
-				"Passe GO",
-				"Aumento substancial da eficácia de captura de Bolas Presenteadas.",
-				"3× mais PE por captura.",
-				"Passe GO Deluxe",
-				"Todos os bônus do Passe GO gratuito, mais:",
-				"2× mais Poeira Estelar por Reides concluídos.",
-				"2× mais Poeira Estelar por chocar Ovos."
-			]
-		}
-	},
-	{
-		"id": "catch-mastery-oricorio-2026-0",
-		"url": "https://pokemongo.com/news/catch-mastery-oricorio-2026",
-		"title": {
-			"en": "Get ready for a Catch Mastery event featuring Oricorio, the Dancing Pokémon!",
-			"pt_br": "Preparem-se para um evento Mestre da captura com destaque para Oricorio, o Pokémon Dançante."
-		},
-		"subtitle": {
-			"en": "Oricorio Catch Mastery",
-			"pt_br": "Mestre da captura: Oricorio"
-		},
-		"startDate": 1770458400000,
-		"endDate": 1770494400000,
-		"dateRanges": [
-			{
-				"start": 1770458400000,
-				"end": 1770494400000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/cuP-HU0_-rifc87OytSdjZy7pDwTFPHfgmquuqttSnWE9X8B-MJX-Ae1fMo7Pm_d9e0NOXsqSPutk-CqWUK1UMFl5RR1lqCQnSo=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "hoothoot",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "starly",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "oricorio_baile",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "oricorio_pom_pom",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "oricorio_pau",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "oricorio_sensu",
-				"shiny": false,
-				"kind": ""
-			},
-			{
-				"speciesId": "hoothoot",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "starly",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"2× XP for successfully catching Pokémon with Nice Throws or better",
-				"Increased Candy for successfully catching Pokémon with Nice Throws or better"
-			],
-			"pt_br": [
-				"2× mais PE por capturar com sucesso Pokémon com boas jogadas ou superiores",
-				"Mais doces por capturar com sucesso Pokémon com boas jogadas ou superiores"
 			]
 		}
 	}

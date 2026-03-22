@@ -41,7 +41,7 @@ class SeasonParser {
 			const title = getText(doc, '.size\\:heading-1');
 
 			const bonuses = Array.from(
-				doc.querySelector('#seasonal-bonuses')?.children[1].children ?? []
+				doc.getElementById('seasonal-bonuses-list')?.children[0].children ?? []
 			)
 				.map((a) => a.textContent?.trim() ?? '')
 				.filter(Boolean);

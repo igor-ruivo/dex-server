@@ -104,6 +104,10 @@ export const POKEMON_CONFIG = {
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
 		[
+			'dragonite_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/149_f2.png',
+		],
+		[
 			'slowbro_mega',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/080_f2.png',
 		],

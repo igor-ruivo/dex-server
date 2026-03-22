@@ -57453,9 +57453,13 @@
 		"chargedMoves": [
 			"FLAME_CHARGE",
 			"FLAMETHROWER",
-			"FOCUS_BLAST"
+			"FOCUS_BLAST",
+			"PYRO_BALL",
+			"BLAST_BURN"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"BLAST_BURN"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -57777,6 +57781,121 @@
 		"family": {
 			"id": "FAMILY_ROOKIDEE",
 			"parent": "corvisquire"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"blipbug": {
+		"dex": 824,
+		"speciesId": "blipbug",
+		"speciesName": "Blipbug",
+		"types": [
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/824.png",
+		"goImageUrl": "824.icon.png",
+		"shinyGoImageUrl": "824.s.icon.png",
+		"baseStats": {
+			"atk": 46,
+			"def": 67,
+			"hp": 93
+		},
+		"fastMoves": [
+			"STRUGGLE_BUG"
+		],
+		"chargedMoves": [
+			"STRUGGLE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_BLIPBUG",
+			"evolutions": [
+				"dottler"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dottler": {
+		"dex": 825,
+		"speciesId": "dottler",
+		"speciesName": "Dottler",
+		"types": [
+			"Bug",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/825.png",
+		"goImageUrl": "825.icon.png",
+		"shinyGoImageUrl": "825.s.icon.png",
+		"baseStats": {
+			"atk": 87,
+			"def": 157,
+			"hp": 137
+		},
+		"fastMoves": [
+			"STRUGGLE_BUG",
+			"CONFUSION"
+		],
+		"chargedMoves": [
+			"BUG_BUZZ",
+			"PSYCHIC"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_BLIPBUG",
+			"parent": "blipbug",
+			"evolutions": [
+				"orbeetle"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"orbeetle": {
+		"dex": 826,
+		"speciesId": "orbeetle",
+		"speciesName": "Orbeetle",
+		"types": [
+			"Bug",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/826.png",
+		"goImageUrl": "826.icon.png",
+		"shinyGoImageUrl": "826.s.icon.png",
+		"baseStats": {
+			"atk": 156,
+			"def": 240,
+			"hp": 155
+		},
+		"fastMoves": [
+			"STRUGGLE_BUG",
+			"CONFUSION",
+			"PSYCHO_CUT"
+		],
+		"chargedMoves": [
+			"BUG_BUZZ",
+			"PSYCHIC",
+			"PSYSHOCK"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_BLIPBUG",
+			"parent": "dottler"
 		},
 		"form": "",
 		"isLegendary": false,

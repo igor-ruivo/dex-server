@@ -1,5 +1,75 @@
 [
 	{
+		"id": "communityday-april-2026-tinkatink-0",
+		"url": "https://pokemongo.com/news/communityday-april-2026-tinkatink",
+		"title": {
+			"en": "April Community Day: Tinkatink",
+			"pt_br": "Dia Comunitário de abril: Tinkatink"
+		},
+		"subtitle": {
+			"en": "April 2026 Community Day: Tinkatink",
+			"pt_br": "Dia Comunitário de abril de 2026: Tinkatink"
+		},
+		"startDate": 1775916000000,
+		"endDate": 1775926800000,
+		"dateRanges": [
+			{
+				"start": 1775916000000,
+				"end": 1775926800000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/jm0NtboSju-ggAlpG2WHFDs_2pK3hVg9h-poRtBr3LgcRtKSey8jqfz1zjzw9wNmi_CKKD7YdjNlJDhC0D7CVbdU_bPWm3Am5tw=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "tinkatink",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "tinkatink",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [
+			{
+				"speciesId": "tinkatink",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"bonuses": {
+			"en": [
+				"2× Candy for catching Pokémon.",
+				"3× Stardust for catching Pokémon.",
+				"2× chance for Trainers level 31 and up to receive Candy XL from catching Pokémon.",
+				"Incense (excluding Daily Adventure Incense) activated during the event will last for three hours.",
+				"Take a few snapshots during Community Day for a surprise!",
+				"Lure Modules will last for one hour and may attract the featured Pokémon.*",
+				"One additional Special Trade can be made for a maximum of two for the day.*",
+				"Trades will require 50% less Stardust.*",
+				"*While most bonuses are only active during the three-hour event period, these will be active from 2:00 p.m. to 9:00 p.m. local time."
+			],
+			"pt_br": [
+				"2× mais doces por capturar Pokémon.",
+				"3x Poeira Estelar por pegar Pokémon.",
+				"2× mais chances de Treinadoras e Treinadores no nível 31 e acima receberem Doces GG por capturar Pokémon.",
+				"O Incenso (exceto o Incenso de Aventura Diário) ativado durante o evento durará três horas.",
+				"Tirem retratos durante o Dia Comunitário para receber uma surpresa!",
+				"Os Módulos Atrair ativados durarão uma hora e poderão atrair o Pokémon em destaque.*",
+				"Pode ser feita uma troca especial adicional (máximo de duas por dia).*",
+				"As trocas exigirão 50% menos Poeira Estelar.*",
+				"*Embora a maioria dos bônus só fique ativa durante as três horas do evento, esses bônus estarão ativos das 14h às 21h, horário local."
+			]
+		}
+	},
+	{
 		"id": "fashion-raid-day-2026-0",
 		"url": "https://pokemongo.com/news/fashion-raid-day-2026",
 		"title": {
@@ -352,12 +422,22 @@
 				"kind": ""
 			},
 			{
+				"speciesId": "moltres",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "kangaskhan",
 				"shiny": true,
 				"kind": ""
 			},
 			{
 				"speciesId": "mr_mime",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "tauros",
 				"shiny": true,
 				"kind": ""
 			},
@@ -520,6 +600,11 @@
 			},
 			{
 				"speciesId": "darkrai",
+				"shiny": true,
+				"kind": "5"
+			},
+			{
+				"speciesId": "genesect",
 				"shiny": true,
 				"kind": "5"
 			},
@@ -905,6 +990,11 @@
 		],
 		"raids": [
 			{
+				"speciesId": "blipbug",
+				"shiny": true,
+				"kind": "1"
+			},
+			{
 				"speciesId": "pinsir",
 				"shiny": true,
 				"kind": "3"
@@ -1162,6 +1252,11 @@
 		"source": "pokemongo",
 		"wild": [
 			{
+				"speciesId": "ponyta",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "ponyta_galarian",
 				"shiny": true,
 				"kind": ""
@@ -1173,6 +1268,11 @@
 			},
 			{
 				"speciesId": "blitzle",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "darumaka",
 				"shiny": true,
 				"kind": ""
 			}
@@ -1205,111 +1305,6 @@
 				"Maior chance de fazer Amizades sortudas.",
 				"Poképaradas podem ficar douradas sem um Módulo Atrair Dourado.",
 				"Maior chance de encontrar Blitzle Brilhante, Darumaka Brilhante e Gimmighoul Brilhante."
-			]
-		}
-	},
-	{
-		"id": "valentines-day-2026-0",
-		"url": "https://pokemongo.com/news/valentines-day-2026",
-		"title": {
-			"en": "Love is in the air during Pokémon GO’s Valentine’s Day event!",
-			"pt_br": "O amor está no ar durante o evento do Dia dos Namorados Internacional do Pokémon GO."
-		},
-		"subtitle": {
-			"en": "Valentine’s Day 2026",
-			"pt_br": "Dia dos Namorados Internacional 2026"
-		},
-		"startDate": 1770717600000,
-		"endDate": 1771185600000,
-		"dateRanges": [
-			{
-				"start": 1770717600000,
-				"end": 1771185600000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/yfcCYMFjlHqbSxWTzwxkPcoCzlWL8gXlcVmBbD2bY8iHweCCQHQ3b_kQKGyDR1aNPKK1tKx4FrBpmuCFO8ecS2ct2K4w_FBymkk=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "nidoran_female",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "nidoran_male",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "furfrou",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "audino",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [
-			{
-				"speciesId": "gardevoir",
-				"shiny": true,
-				"kind": "3"
-			},
-			{
-				"speciesId": "gallade",
-				"shiny": true,
-				"kind": "3"
-			}
-		],
-		"eggs": [
-			{
-				"speciesId": "nidoran_female",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "nidoran_male",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "cleffa",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "igglybuff",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "cherubi",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "happiny",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"2× XP for catching Pokémon.",
-				"2× Stardust from opening Gifts.",
-				"Increased chance to encounter Shiny Nidoran♀ and Shiny Nidoran♂.",
-				"Increased chance to hatch Shiny Nidoran♀, Shiny Nidoran♂, and Shiny Cherubi."
-			],
-			"pt_br": [
-				"Dobro de PE ao capturar Pokémon.",
-				"Dobro de Poeira Estelar ao abrir presentes.",
-				"Maior chance de encontrar Nidoran♂ e Nidoran♂ Brilhantes.",
-				"Maior chance de chocar Nidoran♀, Nidoran♂ e Cherubi, todos Brilhantes."
 			]
 		}
 	}

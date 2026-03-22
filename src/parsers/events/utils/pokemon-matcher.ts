@@ -233,6 +233,15 @@ class PokemonMatcher {
 				kind: raidLevel,
 			};
 		}
+
+		if (currP.includes('zamazenta') && currP.includes('hero')) {
+			return {
+				speciesId: 'zamazenta_hero',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
 		console.error('Multiple matches for ' + currP);
 		return null;
 	}
@@ -324,34 +333,6 @@ class PokemonMatcher {
 				};
 			}
 		}
-		// Handle Zorua
-		if (currP.includes('zorua') && !currP.includes('hisuian')) {
-			return {
-				speciesId: 'zorua',
-				shiny: false,
-				kind: raidLevel,
-			};
-		}
-		// Handle Diglett
-		if (currP.includes('diglett') && !currP.includes('alola')) {
-			return {
-				speciesId: 'diglett',
-				shiny: false,
-				kind: raidLevel,
-			};
-		}
-		// Handle Meowth
-		if (
-			currP.includes('meowth') &&
-			!currP.includes('alolan') &&
-			!currP.includes('galarian')
-		) {
-			return {
-				speciesId: 'meowth',
-				shiny: false,
-				kind: raidLevel,
-			};
-		}
 
 		if (availableForms.length === 0) {
 			if (isMega) {
@@ -387,8 +368,23 @@ class PokemonMatcher {
 					};
 				}
 			}
-			console.error("Couldn't map form for " + currP);
-			return null;
+
+			if (currP.includes('except ')) {
+				console.log(`${currP} has 'except' keyword in it. Ignoring...`);
+				return null;
+			}
+
+			// then it's the base form (the simplest pokémon form). we're assuming it's the smallest id of the species.
+			const ans = availableForms.sort(
+				(f1: GameMasterPokemon, f2: GameMasterPokemon) =>
+					f1.speciesId.length - f2.speciesId.length
+			)[0];
+
+			return {
+				speciesId: ans.speciesId,
+				shiny: false,
+				kind: raidLevel,
+			};
 		}
 		if (mappedForm.length === 1) {
 			return {

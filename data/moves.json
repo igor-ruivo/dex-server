@@ -5526,5 +5526,21 @@
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
 		}
+	},
+	"PYRO_BALL": {
+		"moveId": "PYRO_BALL",
+		"vId": "-1",
+		"type": "fire",
+		"isFast": false,
+		"pvpPower": 75,
+		"pvePower": 150,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Pyro Ball",
+			"pt_br": "Pyro Ball"
+		}
 	}
 }

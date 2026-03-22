@@ -394,6 +394,27 @@ class MovesProvider {
 			};
 		}
 
+		const pyroBallMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			pyroBallMoveName[locale] = normalizedMoveName('PYRO_BALL');
+		});
+
+		if (!movesDictionary.PYRO_BALL) {
+			movesDictionary.PYRO_BALL = {
+				moveId: 'PYRO_BALL',
+				vId: '-1',
+				type: 'fire',
+				isFast: false,
+				pvpPower: 75,
+				pvePower: 150,
+				pvpEnergy: -40,
+				pveEnergy: -100,
+				pvpCooldown: 0.5,
+				pveCooldown: 2.0,
+				moveName: pyroBallMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

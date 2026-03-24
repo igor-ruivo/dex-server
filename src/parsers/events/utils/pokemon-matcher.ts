@@ -263,6 +263,7 @@ class PokemonMatcher {
 			pumpkaboo: 'pumpkaboo_average',
 			gourgeist: 'gourgeist_average',
 			indeedee: 'indeedee_male',
+			urshifu: 'urshifu_single_strike',
 		};
 		for (const [key, value] of Object.entries(specialCases)) {
 			if (currP.includes(key)) {

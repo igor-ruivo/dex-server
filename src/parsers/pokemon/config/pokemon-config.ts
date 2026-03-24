@@ -2,7 +2,6 @@ export enum Leagues {
 	GREAT = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json',
 	ULTRA = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-2500.json',
 	MASTER = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json',
-	HISUI = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/hisui/overall/rankings-1500.json',
 }
 
 export const POKEMON_CONFIG = {
@@ -64,6 +63,8 @@ export const POKEMON_CONFIG = {
 		'garganacl',
 		'glimmet',
 		'flamigo',
+		'silicobra',
+		'sandaconda',
 	]),
 
 	// Pokemon that should be excluded
@@ -106,6 +107,14 @@ export const POKEMON_CONFIG = {
 		[
 			'dragonite_mega',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/149_f2.png',
+		],
+		[
+			'victreebel_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/071_f2.png',
+		],
+		[
+			'malamar_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/687_f2.png',
 		],
 		[
 			'slowbro_mega',

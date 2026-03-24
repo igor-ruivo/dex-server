@@ -6833,7 +6833,7 @@
 			"Grass",
 			"Poison"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/071_f2.png",
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/071_f2.png",
 		"goImageUrl": "71.fMEGA.icon.png",
 		"shinyGoImageUrl": "71.fMEGA.s.icon.png",
 		"baseStats": {
@@ -51449,7 +51449,7 @@
 			"Dark",
 			"Psychic"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/687_f2.png",
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/687_f2.png",
 		"goImageUrl": "687.fMEGA.icon.png",
 		"shinyGoImageUrl": "687.fMEGA.s.icon.png",
 		"baseStats": {
@@ -58430,6 +58430,84 @@
 		"family": {
 			"id": "FAMILY_APPLIN",
 			"parent": "applin"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"silicobra": {
+		"dex": 843,
+		"speciesId": "silicobra",
+		"speciesName": "Silicobra",
+		"types": [
+			"Ground"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/843.png",
+		"goImageUrl": "843.icon.png",
+		"shinyGoImageUrl": "843.s.icon.png",
+		"baseStats": {
+			"atk": 103,
+			"def": 123,
+			"hp": 141
+		},
+		"fastMoves": [
+			"MUD_SLAP",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"DIG",
+			"BULLDOZE",
+			"EARTH_POWER",
+			"WRAP"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SILICOBRA",
+			"evolutions": [
+				"sandaconda"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"sandaconda": {
+		"dex": 844,
+		"speciesId": "sandaconda",
+		"speciesName": "Sandaconda",
+		"types": [
+			"Ground"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/844.png",
+		"goImageUrl": "844.icon.png",
+		"shinyGoImageUrl": "844.s.icon.png",
+		"baseStats": {
+			"atk": 202,
+			"def": 207,
+			"hp": 176
+		},
+		"fastMoves": [
+			"MUD_SLAP",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"DIG",
+			"BULLDOZE",
+			"EARTH_POWER",
+			"WRAP"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SILICOBRA",
+			"parent": "silicobra"
 		},
 		"form": "",
 		"isLegendary": false,

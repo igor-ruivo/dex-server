@@ -570,9 +570,9 @@ class PokemonGoSource implements IEventSource {
 			);
 
 			// For now, assume featured pokémons are always related to researches.
-			//if (!EVENT_SECTION_TYPES.DEBUT.some((x) => x === sectionType)) {
-			eventData.researches.push(...parsedPkm);
-			//}
+			if (!EVENT_SECTION_TYPES.DEBUT.some((x) => x === sectionType)) {
+				eventData.researches.push(...parsedPkm);
+			}
 
 			return;
 		}

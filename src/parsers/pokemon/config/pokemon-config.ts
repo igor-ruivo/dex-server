@@ -65,6 +65,7 @@ export const POKEMON_CONFIG = {
 		'flamigo',
 		'silicobra',
 		'sandaconda',
+		'orthworm',
 	]),
 
 	// Pokemon that should be excluded

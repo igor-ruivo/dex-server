@@ -133,14 +133,6 @@ export interface PokemonFamily {
 	evolutions?: Array<string>;
 }
 
-export interface PokemonTags {
-	legendary?: boolean;
-	mythical?: boolean;
-	ultrabeast?: boolean;
-	shadow?: boolean;
-	mega?: boolean;
-}
-
 export interface BasePvPEntry {
 	speciesId: string;
 	moveset: Array<string>;

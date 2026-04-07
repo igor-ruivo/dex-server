@@ -33,11 +33,6 @@ export interface ILeekduckSpecialRaidBoss {
 	rawUrl: string;
 }
 
-export interface ILeekduckEventsResult {
-	spotlightHours: Array<ILeekduckSpotlightHour>;
-	specialRaidBosses: Array<ILeekduckSpecialRaidBoss>;
-}
-
 type ParsedEventCommon = {
 	title: string;
 	date: number;

@@ -62462,6 +62462,39 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"orthworm": {
+		"dex": 968,
+		"speciesId": "orthworm",
+		"speciesName": "Orthworm",
+		"types": [
+			"Steel"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/968.png",
+		"goImageUrl": "968.icon.png",
+		"shinyGoImageUrl": "968.s.icon.png",
+		"baseStats": {
+			"atk": 161,
+			"def": 219,
+			"hp": 172
+		},
+		"fastMoves": [
+			"IRON_TAIL",
+			"MUD_SLAP"
+		],
+		"chargedMoves": [
+			"ROCK_TOMB",
+			"EARTHQUAKE",
+			"IRON_HEAD"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"glimmet": {
 		"dex": 969,
 		"speciesId": "glimmet",

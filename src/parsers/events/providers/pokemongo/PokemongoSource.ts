@@ -58,6 +58,7 @@ const EVENT_SECTION_TYPES = {
 		'Community Day Special Research',
 		'Free Timed Research',
 		'Collection Challenges',
+		'Featured Pokémon and Rewards'
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: [
@@ -442,8 +443,8 @@ class PokemonGoSource implements IEventSource {
 	 * Checks if a section is a bonus section by its type.
 	 */
 	private isBonusSection(sectionType: string): boolean {
-		return EVENT_SECTION_TYPES.BONUSES.some((bonusType) =>
-			sectionType.includes(bonusType)
+		return EVENT_SECTION_TYPES.BONUSES.some(
+			(bonusType) => sectionType === bonusType
 		);
 	}
 

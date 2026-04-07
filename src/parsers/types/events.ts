@@ -36,11 +36,6 @@ export interface IEventSource {
 	parseEvents(gameMasterPokemon: GameMasterData): Promise<Array<PublicEvent>>;
 }
 
-export enum PokemonGoPostKind {
-	News,
-	Post,
-}
-
 export interface IPokemonGoEventBlockParser {
 	subTitle: string;
 	imgUrl: string;
@@ -86,20 +81,4 @@ export interface IRocketGrunt {
 	tier2: Array<string>;
 	tier3: Array<string>;
 	catchableTiers: Array<number>;
-}
-
-// LeekDuck Spotlight Hour output DTO
-export interface ISpotlightHourEvent {
-	bonus: Partial<Record<AvailableLocales, string>>;
-	pokemon: Array<string>;
-	dateStart: number;
-	dateEnd: number;
-}
-
-// LeekDuck 5-star and Mega Raid Bosses output DTO
-export interface ILeekduckSpecialRaidBossEvent {
-	dateStart: number;
-	dateEnd: number;
-	pokemon: Array<IEntry>;
-	title: string;
 }

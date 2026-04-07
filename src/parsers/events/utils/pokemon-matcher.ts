@@ -187,7 +187,7 @@ class PokemonMatcher {
 				Array.from(KNOWN_FORMS).some((e) => ndfNormalized(e) === f)
 			);
 		if (formCandidate.length === 0) {
-			return this.handleSpecialCases(currP, isShadow, isMega, raidLevel);
+			return this.handleSpecialCases(currP, raidLevel);
 		}
 		if (formCandidate.length > 1) {
 			console.error('Multiple forms for ' + currP);
@@ -249,12 +249,7 @@ class PokemonMatcher {
 	/**
 	 * Handles special-case Pokémon names that don't match standard forms.
 	 */
-	private handleSpecialCases(
-		currP: string,
-		isShadow: boolean,
-		isMega: boolean,
-		raidLevel: string
-	): IEntry | null {
+	private handleSpecialCases(currP: string, raidLevel: string): IEntry | null {
 		const specialCases: Record<string, string> = {
 			giratina: 'giratina_altered',
 			zacian: 'zacian_hero',

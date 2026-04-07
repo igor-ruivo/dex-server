@@ -58,7 +58,7 @@ const EVENT_SECTION_TYPES = {
 		'Community Day Special Research',
 		'Free Timed Research',
 		'Collection Challenges',
-		'Featured Pokémon and Rewards'
+		'Featured Pokémon and Rewards',
 	],
 	RAIDS: ['Raids', 'Shadow Raids', 'Shadow Raid debut', 'Shadow Raid Debut'],
 	INCENSE: [

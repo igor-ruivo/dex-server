@@ -240,6 +240,27 @@ class MovesProvider {
 			};
 		}
 
+		const gigatonHammerMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			gigatonHammerMoveName[locale] = normalizedMoveName('GIGATON_HAMMER');
+		});
+
+		if (!movesDictionary.GIGATON_HAMMER) {
+			movesDictionary.GIGATON_HAMMER = {
+				moveId: 'GIGATON_HAMMER',
+				vId: '-1',
+				type: 'steel',
+				isFast: false,
+				pvpPower: 130,
+				pvePower: 300,
+				pvpEnergy: -60,
+				pveEnergy: -100,
+				pvpCooldown: 0.5,
+				pveCooldown: 3.0,
+				moveName: gigatonHammerMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

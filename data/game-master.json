@@ -14190,54 +14190,6 @@
 		"isMythical": false,
 		"isBeast": false
 	},
-	"dragonite_shadow": {
-		"dex": 149,
-		"speciesId": "dragonite_shadow",
-		"speciesName": "Dragonite (Shadow)",
-		"types": [
-			"Dragon",
-			"Flying"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
-		"goImageUrl": "149.icon.png",
-		"shinyGoImageUrl": "149.s.icon.png",
-		"baseStats": {
-			"atk": 263,
-			"def": 198,
-			"hp": 209
-		},
-		"fastMoves": [
-			"DRAGON_BREATH",
-			"DRAGON_TAIL",
-			"STEEL_WING"
-		],
-		"chargedMoves": [
-			"DRACO_METEOR",
-			"DRAGON_CLAW",
-			"DRAGON_PULSE",
-			"HURRICANE",
-			"HYPER_BEAM",
-			"OUTRAGE",
-			"SUPER_POWER",
-			"THUNDER_PUNCH",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [
-			"DRACO_METEOR",
-			"DRAGON_PULSE"
-		],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"family": {
-			"id": "FAMILY_DRATINI",
-			"parent": "dragonair_shadow"
-		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
 	"dragonite_mega": {
 		"dex": 149,
 		"speciesId": "dragonite_mega",
@@ -14282,6 +14234,54 @@
 			"parent": "dragonair"
 		},
 		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dragonite_shadow": {
+		"dex": 149,
+		"speciesId": "dragonite_shadow",
+		"speciesName": "Dragonite (Shadow)",
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
+		"goImageUrl": "149.icon.png",
+		"shinyGoImageUrl": "149.s.icon.png",
+		"baseStats": {
+			"atk": 263,
+			"def": 198,
+			"hp": 209
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"DRAGON_TAIL",
+			"STEEL_WING"
+		],
+		"chargedMoves": [
+			"DRACO_METEOR",
+			"DRAGON_CLAW",
+			"DRAGON_PULSE",
+			"HURRICANE",
+			"HYPER_BEAM",
+			"OUTRAGE",
+			"SUPER_POWER",
+			"THUNDER_PUNCH",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"DRACO_METEOR",
+			"DRAGON_PULSE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DRATINI",
+			"parent": "dragonair_shadow"
+		},
+		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false
@@ -48744,7 +48744,8 @@
 			"EARTH_POWER",
 			"OUTRAGE",
 			"ROCK_SLIDE",
-			"FOCUS_BLAST"
+			"FOCUS_BLAST",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -48780,7 +48781,8 @@
 			"STONE_EDGE",
 			"SUPER_POWER",
 			"BULLDOZE",
-			"SANDSEAR_STORM"
+			"SANDSEAR_STORM",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"SANDSEAR_STORM"
@@ -48789,6 +48791,42 @@
 		"isShadow": false,
 		"isMega": false,
 		"form": "Therian",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"landorus_incarnate_shadow": {
+		"dex": 645,
+		"speciesId": "landorus_incarnate_shadow",
+		"speciesName": "Landorus (Incarnate) (Shadow)",
+		"types": [
+			"Ground",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/645.png",
+		"goImageUrl": "645.icon.png",
+		"shinyGoImageUrl": "645.s.icon.png",
+		"baseStats": {
+			"atk": 261,
+			"def": 182,
+			"hp": 205
+		},
+		"fastMoves": [
+			"MUD_SHOT",
+			"ROCK_THROW"
+		],
+		"chargedMoves": [
+			"EARTH_POWER",
+			"OUTRAGE",
+			"ROCK_SLIDE",
+			"FOCUS_BLAST",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"form": "Incarnate",
 		"isLegendary": true,
 		"isMythical": false,
 		"isBeast": false
@@ -51787,7 +51825,8 @@
 		"chargedMoves": [
 			"PARABOLIC_CHARGE",
 			"BULLDOZE",
-			"THUNDERBOLT"
+			"THUNDERBOLT",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51797,6 +51836,47 @@
 			"id": "FAMILY_HELIOPTILE",
 			"evolutions": [
 				"heliolisk"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"helioptile_shadow": {
+		"dex": 694,
+		"speciesId": "helioptile_shadow",
+		"speciesName": "Helioptile (Shadow)",
+		"types": [
+			"Electric",
+			"Normal"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/694.png",
+		"goImageUrl": "694.icon.png",
+		"shinyGoImageUrl": "694.s.icon.png",
+		"baseStats": {
+			"atk": 115,
+			"def": 78,
+			"hp": 127
+		},
+		"fastMoves": [
+			"QUICK_ATTACK",
+			"THUNDER_SHOCK"
+		],
+		"chargedMoves": [
+			"PARABOLIC_CHARGE",
+			"BULLDOZE",
+			"THUNDERBOLT",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_HELIOPTILE",
+			"evolutions": [
+				"heliolisk_shadow"
 			]
 		},
 		"form": "",
@@ -51830,7 +51910,8 @@
 			"BULLDOZE",
 			"THUNDERBOLT",
 			"GRASS_KNOT",
-			"BREAKING_SWIPE"
+			"BREAKING_SWIPE",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -51839,6 +51920,48 @@
 		"family": {
 			"id": "FAMILY_HELIOPTILE",
 			"parent": "helioptile"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"heliolisk_shadow": {
+		"dex": 695,
+		"speciesId": "heliolisk_shadow",
+		"speciesName": "Heliolisk (Shadow)",
+		"types": [
+			"Electric",
+			"Normal"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/695.png",
+		"goImageUrl": "695.icon.png",
+		"shinyGoImageUrl": "695.s.icon.png",
+		"baseStats": {
+			"atk": 219,
+			"def": 168,
+			"hp": 158
+		},
+		"fastMoves": [
+			"QUICK_ATTACK",
+			"VOLT_SWITCH",
+			"MUD_SLAP"
+		],
+		"chargedMoves": [
+			"PARABOLIC_CHARGE",
+			"BULLDOZE",
+			"THUNDERBOLT",
+			"GRASS_KNOT",
+			"BREAKING_SWIPE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_HELIOPTILE",
+			"parent": "helioptile_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -55164,7 +55287,8 @@
 		"chargedMoves": [
 			"WATER_PULSE",
 			"BUBBLE_BEAM",
-			"MIRROR_COAT"
+			"MIRROR_COAT",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -55174,6 +55298,47 @@
 			"id": "FAMILY_DEWPIDER",
 			"evolutions": [
 				"araquanid"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dewpider_shadow": {
+		"dex": 751,
+		"speciesId": "dewpider_shadow",
+		"speciesName": "Dewpider (Shadow)",
+		"types": [
+			"Water",
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/751.png",
+		"goImageUrl": "751.icon.png",
+		"shinyGoImageUrl": "751.s.icon.png",
+		"baseStats": {
+			"atk": 72,
+			"def": 117,
+			"hp": 116
+		},
+		"fastMoves": [
+			"INFESTATION",
+			"BUG_BITE"
+		],
+		"chargedMoves": [
+			"WATER_PULSE",
+			"BUBBLE_BEAM",
+			"MIRROR_COAT",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DEWPIDER",
+			"evolutions": [
+				"araquanid_shadow"
 			]
 		},
 		"form": "",
@@ -55205,7 +55370,8 @@
 			"BUG_BUZZ",
 			"BUBBLE_BEAM",
 			"MIRROR_COAT",
-			"WATER_PULSE"
+			"WATER_PULSE",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -55214,6 +55380,46 @@
 		"family": {
 			"id": "FAMILY_DEWPIDER",
 			"parent": "dewpider"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"araquanid_shadow": {
+		"dex": 752,
+		"speciesId": "araquanid_shadow",
+		"speciesName": "Araquanid (Shadow)",
+		"types": [
+			"Water",
+			"Bug"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/752.png",
+		"goImageUrl": "752.icon.png",
+		"shinyGoImageUrl": "752.s.icon.png",
+		"baseStats": {
+			"atk": 126,
+			"def": 219,
+			"hp": 169
+		},
+		"fastMoves": [
+			"INFESTATION",
+			"BUG_BITE"
+		],
+		"chargedMoves": [
+			"BUG_BUZZ",
+			"BUBBLE_BEAM",
+			"MIRROR_COAT",
+			"WATER_PULSE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_DEWPIDER",
+			"parent": "dewpider_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -55361,11 +55567,50 @@
 		"chargedMoves": [
 			"MOONBLAST",
 			"SEED_BOMB",
-			"SLUDGE_BOMB"
+			"SLUDGE_BOMB",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
 		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_MORELULL",
+			"parent": "morelull"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"shiinotic_shadow": {
+		"dex": 756,
+		"speciesId": "shiinotic_shadow",
+		"speciesName": "Shiinotic (Shadow)",
+		"types": [
+			"Grass",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/756.png",
+		"goImageUrl": "756.icon.png",
+		"shinyGoImageUrl": "756.s.icon.png",
+		"baseStats": {
+			"atk": 154,
+			"def": 168,
+			"hp": 155
+		},
+		"fastMoves": [
+			"ASTONISH"
+		],
+		"chargedMoves": [
+			"MOONBLAST",
+			"SEED_BOMB",
+			"SLUDGE_BOMB",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
 		"isMega": false,
 		"family": {
 			"id": "FAMILY_MORELULL",
@@ -55478,7 +55723,8 @@
 		"chargedMoves": [
 			"SUPER_POWER",
 			"BRICK_BREAK",
-			"STOMP"
+			"STOMP",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -55488,6 +55734,47 @@
 			"id": "FAMILY_STUFFUL",
 			"evolutions": [
 				"bewear"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"stufful_shadow": {
+		"dex": 759,
+		"speciesId": "stufful_shadow",
+		"speciesName": "Stufful (Shadow)",
+		"types": [
+			"Normal",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/759.png",
+		"goImageUrl": "759.icon.png",
+		"shinyGoImageUrl": "759.s.icon.png",
+		"baseStats": {
+			"atk": 136,
+			"def": 95,
+			"hp": 172
+		},
+		"fastMoves": [
+			"TACKLE",
+			"TAKE_DOWN"
+		],
+		"chargedMoves": [
+			"SUPER_POWER",
+			"BRICK_BREAK",
+			"STOMP",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_STUFFUL",
+			"evolutions": [
+				"bewear_shadow"
 			]
 		},
 		"form": "",
@@ -55520,7 +55807,8 @@
 			"SUPER_POWER",
 			"PAYBACK",
 			"STOMP",
-			"DRAIN_PUNCH"
+			"DRAIN_PUNCH",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"DRAIN_PUNCH"
@@ -55531,6 +55819,49 @@
 		"family": {
 			"id": "FAMILY_STUFFUL",
 			"parent": "stufful"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"bewear_shadow": {
+		"dex": 760,
+		"speciesId": "bewear_shadow",
+		"speciesName": "Bewear (Shadow)",
+		"types": [
+			"Normal",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/760.png",
+		"goImageUrl": "760.icon.png",
+		"shinyGoImageUrl": "760.s.icon.png",
+		"baseStats": {
+			"atk": 226,
+			"def": 141,
+			"hp": 260
+		},
+		"fastMoves": [
+			"TACKLE",
+			"LOW_KICK",
+			"SHADOW_CLAW"
+		],
+		"chargedMoves": [
+			"SUPER_POWER",
+			"PAYBACK",
+			"STOMP",
+			"DRAIN_PUNCH",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"DRAIN_PUNCH"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_STUFFUL",
+			"parent": "stufful_shadow"
 		},
 		"form": "",
 		"isLegendary": false,

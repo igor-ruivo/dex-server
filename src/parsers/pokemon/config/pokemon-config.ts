@@ -281,6 +281,10 @@ export const POKEMON_CONFIG = {
 			'mewtwo_mega_y',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png',
 		],
+		[
+			'falinks_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/870_f2.png',
+		],
 	]),
 
 	// GO image override mappings

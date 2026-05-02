@@ -273,6 +273,14 @@ export const POKEMON_CONFIG = {
 			'aegislash_shield',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/681.png',
 		],
+		[
+			'mewtwo_mega_x',
+			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f2.png',
+		],
+		[
+			'mewtwo_mega_y',
+			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png',
+		],
 	]),
 
 	// GO image override mappings

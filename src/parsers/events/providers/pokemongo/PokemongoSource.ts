@@ -501,7 +501,9 @@ class PokemonGoSource implements IEventSource {
 					sectionBodies,
 					new PokemonMatcher(gameMasterPokemon, domain)
 				).filter(
-					(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
+					(p) =>
+						!eventData.raids.some((w) => w.speciesId === p.speciesId) &&
+						(!title || title.includes(p.speciesId))
 				);
 
 				const updatedParsedPkm = parsedPkm.map((pkm) => {
@@ -546,9 +548,7 @@ class PokemonGoSource implements IEventSource {
 					sectionBodies,
 					new PokemonMatcher(gameMasterPokemon, domain)
 				).filter(
-					(p) =>
-						!eventData.raids.some((w) => w.speciesId === p.speciesId) &&
-						(!title || title.includes(p.speciesId))
+					(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
 				);
 
 				const updatedParsedPkm = parsedPkm.map((pkm) => {

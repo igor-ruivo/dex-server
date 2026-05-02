@@ -55528,7 +55528,8 @@
 		],
 		"chargedMoves": [
 			"DAZZLING_GLEAM",
-			"SEED_BOMB"
+			"SEED_BOMB",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -63871,6 +63872,39 @@
 			"BUBBLE_BEAM",
 			"WATER_PULSE",
 			"VICE_GRIP",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"morelull_shadow": {
+		"dex": 755,
+		"speciesId": "morelull_shadow",
+		"speciesName": "Morelull (Shadow)",
+		"types": [
+			"Grass",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/755.png",
+		"goImageUrl": "755.icon.png",
+		"shinyGoImageUrl": "755.s.icon.png",
+		"baseStats": {
+			"atk": 108,
+			"def": 119,
+			"hp": 120
+		},
+		"fastMoves": [
+			"ASTONISH"
+		],
+		"chargedMoves": [
+			"DAZZLING_GLEAM",
+			"SEED_BOMB",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],

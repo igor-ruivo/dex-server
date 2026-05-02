@@ -59,4 +59,21 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 		released: true,
 		tags: ['shadow'],
 	},
+	{
+		dex: 755,
+		speciesId: 'morelull_shadow',
+		speciesName: 'Morelull (Shadow)',
+		baseStats: {
+			atk: 108,
+			def: 119,
+			hp: 120,
+		},
+		types: ['grass', 'fairy'],
+		fastMoves: ['ASTONISH'],
+		chargedMoves: ['DAZZLING_GLEAM', 'SEED_BOMB'],
+		eliteMoves: [],
+		legacyMoves: [],
+		released: true,
+		tags: ['shadow'],
+	},
 ];

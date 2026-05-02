@@ -9,12 +9,12 @@
 			"persian_shadow"
 		],
 		"tier2": [
-			"machamp_shadow",
 			"kangaskhan_shadow",
+			"nidoking_shadow",
 			"rhyperior_shadow"
 		],
 		"tier3": [
-			"thundurus_incarnate_shadow"
+			"landorus_incarnate_shadow"
 		],
 		"catchableTiers": [
 			2
@@ -27,17 +27,16 @@
 		},
 		"trainerId": "Cliff",
 		"tier1": [
-			"magikarp_shadow"
+			"snorlax_shadow"
 		],
 		"tier2": [
-			"cradily_shadow",
-			"annihilape_shadow",
-			"skarmory_shadow"
+			"gardevoir_shadow",
+			"golurk_shadow",
+			"weezing_galarian_shadow"
 		],
 		"tier3": [
-			"camerupt_shadow",
 			"tyranitar_shadow",
-			"gallade_shadow"
+			"camerupt_shadow"
 		],
 		"catchableTiers": [
 			0
@@ -50,12 +49,12 @@
 		},
 		"trainerId": "Arlo",
 		"tier1": [
-			"mawile_shadow"
+			"pineco_shadow"
 		],
 		"tier2": [
-			"slowbro_shadow",
 			"steelix_shadow",
-			"golurk_shadow"
+			"gigalith_shadow",
+			"slowbro_shadow"
 		],
 		"tier3": [
 			"scizor_shadow",
@@ -73,12 +72,12 @@
 		},
 		"trainerId": "Sierra",
 		"tier1": [
-			"hoppip_shadow"
+			"duskull_shadow"
 		],
 		"tier2": [
 			"ferrothorn_shadow",
-			"flygon_shadow",
-			"blastoise_shadow"
+			"blastoise_shadow",
+			"flygon_shadow"
 		],
 		"tier3": [
 			"houndoom_shadow",
@@ -97,14 +96,14 @@
 		"type": "normal",
 		"trainerId": "Normal-type Male Grunt",
 		"tier1": [
-			"teddiursa_shadow",
+			"stufful_shadow",
 			"meowth_shadow",
 			"swablu_shadow"
 		],
 		"tier2": [
-			"loudred_shadow",
+			"teddiursa_shadow",
 			"starly_shadow",
-			"rattata_shadow"
+			"loudred_shadow"
 		],
 		"tier3": [
 			"swellow_shadow",
@@ -112,7 +111,8 @@
 			"ursaring_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -129,7 +129,7 @@
 		],
 		"tier2": [
 			"magmar_shadow",
-			"camerupt_shadow",
+			"numel_shadow",
 			"braixen_shadow"
 		],
 		"tier3": [
@@ -138,7 +138,8 @@
 			"delphox_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -151,10 +152,10 @@
 		"tier1": [
 			"froakie_shadow",
 			"krabby_shadow",
-			"tentacool_shadow"
+			"dewpider_shadow"
 		],
 		"tier2": [
-			"sharpedo_shadow",
+			"carvanha_shadow",
 			"frogadier_shadow",
 			"tentacruel_shadow"
 		],
@@ -164,7 +165,8 @@
 			"tentacruel_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -198,7 +200,7 @@
 		"type": "electric",
 		"trainerId": "Electric-type Female Grunt",
 		"tier1": [
-			"magnemite_shadow",
+			"helioptile_shadow",
 			"voltorb_shadow",
 			"shinx_shadow"
 		],
@@ -213,7 +215,8 @@
 			"ampharos_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -225,11 +228,11 @@
 		"trainerId": "Grass-type Male Grunt",
 		"tier1": [
 			"chespin_shadow",
-			"phantump_shadow",
+			"morelull_shadow",
 			"cacnea_shadow"
 		],
 		"tier2": [
-			"ferrothorn_shadow",
+			"phantump_shadow",
 			"lileep_shadow",
 			"quilladin_shadow"
 		],
@@ -239,7 +242,8 @@
 			"trevenant_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -415,7 +419,7 @@
 		],
 		"tier2": [
 			"pinsir_shadow",
-			"shuckle_shadow",
+			"dewpider_shadow",
 			"anorith_shadow"
 		],
 		"tier3": [
@@ -616,7 +620,8 @@
 		},
 		"trainerId": "Female Grunt",
 		"tier1": [
-			"snorlax_shadow"
+			"snorlax_shadow",
+			"lapras_shadow"
 		],
 		"tier2": [
 			"poliwrath_shadow",

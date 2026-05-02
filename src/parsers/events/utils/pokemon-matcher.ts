@@ -330,6 +330,25 @@ class PokemonMatcher {
 			}
 		}
 
+		// Handle Mega Mewtwo X/Y
+		if ((raidLevel === 'Mega' || isMega || raidLevel === '5') && dex === 150) {
+			const words = currP.split(' ');
+			if (words.includes('x')) {
+				return {
+					speciesId: 'mewtwo_mega_x',
+					shiny: false,
+					kind: raidLevel,
+				};
+			}
+			if (words.includes('y')) {
+				return {
+					speciesId: 'mewtwo_mega_y',
+					shiny: false,
+					kind: raidLevel,
+				};
+			}
+		}
+
 		if (availableForms.length === 0) {
 			if (isMega) {
 				console.log("Domain didn't cover Megas while computing " + currP);

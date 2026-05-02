@@ -404,7 +404,8 @@ class PokemonGoSource implements IEventSource {
 				gameMasterPokemon,
 				this.domain,
 				parser.getTitle().toLocaleLowerCase().includes('community day'),
-				parser.getTitle().toLocaleLowerCase().includes('raid day')
+				parser.getTitle().toLocaleLowerCase().includes('raid day'),
+				parser.getTitle().toLocaleLowerCase()
 			);
 			const event = buildEventObject(
 				post,
@@ -458,7 +459,8 @@ class PokemonGoSource implements IEventSource {
 		gameMasterPokemon: GameMasterData,
 		domain: Array<GameMasterPokemon>,
 		isCommunityDay: boolean,
-		isRaidDay: boolean
+		isRaidDay: boolean,
+		title?: string
 	): void {
 		if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
 			const parsedPkm = extractPokemonSpeciesIdsFromElements(
@@ -544,7 +546,9 @@ class PokemonGoSource implements IEventSource {
 					sectionBodies,
 					new PokemonMatcher(gameMasterPokemon, domain)
 				).filter(
-					(p) => !eventData.raids.some((w) => w.speciesId === p.speciesId)
+					(p) =>
+						!eventData.raids.some((w) => w.speciesId === p.speciesId) &&
+						(!title || title.includes(p.speciesId))
 				);
 
 				const updatedParsedPkm = parsedPkm.map((pkm) => {
@@ -628,7 +632,8 @@ class PokemonGoSource implements IEventSource {
 		gameMasterPokemon: GameMasterData,
 		domain: Array<GameMasterPokemon>,
 		isCommunityDay: boolean,
-		isRaidDay: boolean
+		isRaidDay: boolean,
+		title?: string
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock();
 
@@ -657,7 +662,8 @@ class PokemonGoSource implements IEventSource {
 				gameMasterPokemon,
 				domain,
 				isCommunityDay,
-				isRaidDay
+				isRaidDay,
+				title
 			);
 		}
 

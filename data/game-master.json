@@ -146,6 +146,128 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"mewtwo_mega_x": {
+		"dex": 150,
+		"speciesId": "mewtwo_mega_x",
+		"speciesName": "Mewtwo (Mega X)",
+		"types": [
+			"Psychic",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+		"goImageUrl": "150.fMEGA_X.icon.png",
+		"shinyGoImageUrl": "150.fMEGA_X.s.icon.png",
+		"baseStats": {
+			"atk": 412,
+			"def": 222,
+			"hp": 235
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"PSYCHO_CUT"
+		],
+		"chargedMoves": [
+			"FLAMETHROWER",
+			"FOCUS_BLAST",
+			"HYPER_BEAM",
+			"ICE_BEAM",
+			"PSYCHIC",
+			"SHADOW_BALL",
+			"THUNDERBOLT",
+			"PSYSTRIKE",
+			"RETURN",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"PSYSTRIKE",
+			"SHADOW_BALL",
+			"HYPER_BEAM"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega X",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"mewtwo_mega_y": {
+		"dex": 150,
+		"speciesId": "mewtwo_mega_y",
+		"speciesName": "Mewtwo (Mega Y)",
+		"types": [
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f2.png",
+		"goImageUrl": "150.fMEGA_Y.icon.png",
+		"shinyGoImageUrl": "150.fMEGA_Y.s.icon.png",
+		"baseStats": {
+			"atk": 426,
+			"def": 229,
+			"hp": 235
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"PSYCHO_CUT"
+		],
+		"chargedMoves": [
+			"FLAMETHROWER",
+			"FOCUS_BLAST",
+			"HYPER_BEAM",
+			"ICE_BEAM",
+			"PSYCHIC",
+			"SHADOW_BALL",
+			"THUNDERBOLT",
+			"PSYSTRIKE",
+			"RETURN",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"PSYSTRIKE",
+			"SHADOW_BALL",
+			"HYPER_BEAM"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega Y",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"falinks_mega": {
+		"dex": 870,
+		"speciesId": "falinks_mega",
+		"speciesName": "Falinks (Mega)",
+		"types": [
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/870.png",
+		"goImageUrl": "870.fMEGA.icon.png",
+		"shinyGoImageUrl": "870.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 267,
+			"def": 229,
+			"hp": 163
+		},
+		"fastMoves": [
+			"ROCK_SMASH",
+			"COUNTER"
+		],
+		"chargedMoves": [
+			"SUPER_POWER",
+			"BRICK_BREAK",
+			"MEGAHORN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"bulbasaur": {
 		"dex": 1,
 		"speciesId": "bulbasaur",
@@ -14440,7 +14562,7 @@
 		"types": [
 			"Psychic"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png",
 		"goImageUrl": "150.icon.png",
 		"shinyGoImageUrl": "150.s.icon.png",
 		"baseStats": {
@@ -14521,7 +14643,7 @@
 		"types": [
 			"Psychic"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png",
 		"goImageUrl": "150.icon.png",
 		"shinyGoImageUrl": "150.s.icon.png",
 		"baseStats": {
@@ -59792,7 +59914,7 @@
 		"types": [
 			"Fighting"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/870.png",
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/870_f2.png",
 		"goImageUrl": "870.icon.png",
 		"shinyGoImageUrl": "870.s.icon.png",
 		"baseStats": {

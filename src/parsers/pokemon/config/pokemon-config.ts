@@ -67,6 +67,8 @@ export const POKEMON_CONFIG = {
 		'sandaconda',
 		'orthworm',
 		'falinks_mega',
+		'mewtwo_mega_x',
+		'mewtwo_mega_y',
 	]),
 
 	// Pokemon that should be excluded

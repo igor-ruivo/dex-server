@@ -59,11 +59,13 @@ class GameMasterParser {
 			console.log(`📊 Found ${rawData.length} Pokemon in source data`);
 
 			// Combine source data with synthetic Pokemon
-			const allPokemon = [
-				...new Map(
-					[...SYNTHETIC_POKEMON, ...rawData].map((p) => [p.speciesId, p])
-				).values(),
-			];
+			const rawIds = new Set(rawData.map((p) => p.speciesId));
+
+			const dedupedSynthetic = SYNTHETIC_POKEMON.filter(
+				(p) => !rawIds.has(p.speciesId)
+			);
+
+			const allPokemon = [...rawData, ...dedupedSynthetic];
 
 			const pokemonDictionary = this.transformData(allPokemon, this.moves);
 			console.log(

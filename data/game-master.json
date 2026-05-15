@@ -62489,6 +62489,83 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"flittle": {
+		"dex": 955,
+		"speciesId": "flittle",
+		"speciesName": "Flittle",
+		"types": [
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/955.png",
+		"goImageUrl": "955.icon.png",
+		"shinyGoImageUrl": "955.s.icon.png",
+		"baseStats": {
+			"atk": 105,
+			"def": 60,
+			"hp": 102
+		},
+		"fastMoves": [
+			"PECK",
+			"CONFUSION"
+		],
+		"chargedMoves": [
+			"PSYBEAM",
+			"PSYSHOCK",
+			"PSYCHIC"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FLITTLE",
+			"evolutions": [
+				"espathra"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"espathra": {
+		"dex": 956,
+		"speciesId": "espathra",
+		"speciesName": "Espathra",
+		"types": [
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/956.png",
+		"goImageUrl": "956.icon.png",
+		"shinyGoImageUrl": "956.s.icon.png",
+		"baseStats": {
+			"atk": 204,
+			"def": 127,
+			"hp": 216
+		},
+		"fastMoves": [
+			"PECK",
+			"CONFUSION"
+		],
+		"chargedMoves": [
+			"PSYBEAM",
+			"PSYSHOCK",
+			"PSYCHIC",
+			"DAZZLING_GLEAM"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_FLITTLE",
+			"parent": "flittle"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"tinkatink": {
 		"dex": 957,
 		"speciesId": "tinkatink",

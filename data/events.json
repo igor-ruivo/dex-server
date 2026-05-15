@@ -151,6 +151,11 @@
 				"speciesId": "happiny",
 				"shiny": true,
 				"kind": ""
+			},
+			{
+				"speciesId": "flittle",
+				"shiny": true,
+				"kind": ""
 			}
 		],
 		"researches": [
@@ -1618,58 +1623,6 @@
 			"pt_br": [
 				"O Incenso ativado durante o evento pode levar a encontros com Pokémon Lendários. Isso se você tiver sorte!",
 				"Pokémon aparecerão na natureza mais frequentemente."
-			]
-		}
-	},
-	{
-		"id": "festival-of-colors-2026-0",
-		"url": "https://pokemongo.com/news/festival-of-colors-2026",
-		"title": {
-			"en": "The Festival of Colors event returns to India in Pokémon GO for 2026!",
-			"pt_br": "The Festival of Colors event returns to India in Pokémon GO for 2026!"
-		},
-		"subtitle": {
-			"en": "Festival of Colors",
-			"pt_br": "Festival of Colors"
-		},
-		"startDate": 1772618400000,
-		"endDate": 1773000000000,
-		"dateRanges": [
-			{
-				"start": 1772618400000,
-				"end": 1773000000000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/UFkIzWn5-MMK76LdARZPqR7-Uf0aNTLLdsCGN1sTHINe6QUWhuf4NDqRq4GKdVAdj57ILO_4gKqeQbaQmJ_gen3jbg0bYvjf3Ww=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [
-			{
-				"speciesId": "pikachu",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "pikachu",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Lure Modules activated during the event will last for three hours.",
-				"2× Stardust from catching Pokémon.",
-				"Get Stickers of Pikachu wearing a kurta and Pikachu wearing a saree from spinning PokéStops."
-			],
-			"pt_br": [
-				"Lure Modules activated during the event will last for three hours.",
-				"2× Stardust from catching Pokémon.",
-				"Get Stickers of Pikachu wearing a kurta and Pikachu wearing a saree from spinning PokéStops."
 			]
 		}
 	}

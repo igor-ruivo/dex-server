@@ -1,6 +1,9 @@
 import { JSDOM } from 'jsdom';
 
-import type { IPokemonGoHtmlParser } from '../../../../types/events';
+import type {
+	IPokemonGoEventBlockParser,
+	IPokemonGoHtmlParser,
+} from '../../../../types/events';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 	private document: Document;
@@ -31,37 +34,82 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 		);
 	}
 
-	getSubEvents() {
+	private extractDateString(block: Element): string {
+		const rawDateString =
+			block
+				.querySelector(':scope > [class*="_markdown_"] p')
+				?.textContent?.trim() ?? '';
+		return rawDateString.includes('\n')
+			? rawDateString.slice(0, rawDateString.indexOf('\n')).trim()
+			: rawDateString;
+	}
+
+	private isEventRootBlock(
+		block: Element,
+		allContainerBlocks: Array<Element>
+	): boolean {
+		const parentBlock = block.parentElement?.closest(
+			'[class*="_containerBlock_"][style]'
+		);
+		if (parentBlock && allContainerBlocks.includes(parentBlock)) {
+			return false;
+		}
+
+		if (block.querySelector('[class*="_ImageBlock_"]')) {
+			return true;
+		}
+
+		const style = block.getAttribute('style') ?? '';
+		if (!style || style.includes('#ffffff')) {
+			return false;
+		}
+
+		return !!block.querySelector(':scope > [class*="_markdown_"] p');
+	}
+
+	private getContainerBlocks(): Array<Element> {
 		const allArticleNewsDescendants =
 			this.document
 				.querySelector('article[aria-labelledby=news-title]')
 				?.querySelectorAll('*') ?? [];
 
-		const containerBlocks = Array.from(allArticleNewsDescendants).filter(
+		return Array.from(allArticleNewsDescendants).filter(
 			(a) =>
 				Array.from(a.classList).some((c) => c.includes('_containerBlock')) &&
 				!!a.getAttribute('style')
 		);
+	}
 
-		const subTitle = containerBlocks[0].querySelector('h2')?.textContent ?? '';
+	getSubEvents(): Array<IPokemonGoEventBlockParser> {
+		const containerBlocks = this.getContainerBlocks();
+		const imgUrl = this.getImgUrl();
 
-		const imgUrl =
-			this.document
-				.querySelector('article>div>div>picture>img')
-				?.getAttribute('src') ?? '';
-
-		const dateString =
-			Array.from(containerBlocks[0].children)[1].textContent?.trim() ?? '';
-
-		// Assuming (for now) that events only have 1 sub-event (itself) at most.
-		return [
-			{
-				subTitle,
-				imgUrl,
-				dateString,
-				getEventBlocks: () => containerBlocks,
+		const questBlockIndices = containerBlocks.reduce<Array<number>>(
+			(indices, block, index) => {
+				if (this.isEventRootBlock(block, containerBlocks)) {
+					indices.push(index);
+				}
+				return indices;
 			},
-		];
+			[]
+		);
+
+		if (questBlockIndices.length === 0) {
+			return [];
+		}
+
+		return questBlockIndices.map((startIndex, questIndex) => {
+			const block = containerBlocks[startIndex];
+			const endIndex =
+				questBlockIndices[questIndex + 1] ?? containerBlocks.length;
+
+			return {
+				subTitle: block.querySelector('h2')?.textContent ?? '',
+				imgUrl,
+				dateString: this.extractDateString(block),
+				getEventBlocks: () => containerBlocks.slice(startIndex, endIndex),
+			};
+		});
 	}
 }
 

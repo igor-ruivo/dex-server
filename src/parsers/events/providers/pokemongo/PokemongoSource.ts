@@ -213,14 +213,11 @@ class PokemonGoSource implements IEventSource {
 	async parseEvents() {
 		try {
 			const posts = await this.fetcher.fetchAllPosts();
-			const originalEvents = await this.parseOriginalPosts(
+			const originalEvents = this.parseOriginalPosts(
 				posts,
 				this.gameMasterPokemon
 			);
-			const translatedEvents = await this.parseTranslatedPosts(
-				posts,
-				originalEvents
-			);
+			const translatedEvents = this.parseTranslatedPosts(posts, originalEvents);
 
 			return pairEventTranslations([...originalEvents, ...translatedEvents]);
 		} catch {
@@ -231,41 +228,37 @@ class PokemonGoSource implements IEventSource {
 	/**
 	 * Parses original English posts to extract full event data.
 	 */
-	private async parseOriginalPosts(
+	private parseOriginalPosts(
 		posts: Array<PokemonGoPost>,
 		gameMasterPokemon: GameMasterData
-	): Promise<Array<IParsedEvent>> {
+	): Array<IParsedEvent> {
 		const originalPosts = posts.filter((p) => p.locale === AvailableLocales.en);
-		const postPromises = originalPosts.map((post) => {
+		return originalPosts.flatMap((post) => {
 			try {
 				return this.parseSinglePost(post, gameMasterPokemon);
 			} catch {
 				return [];
 			}
 		});
-
-		return (await Promise.all(postPromises)).flat();
 	}
 
 	/**
 	 * Parses translated posts to extract bonus information only.
 	 */
-	private async parseTranslatedPosts(
+	private parseTranslatedPosts(
 		posts: Array<PokemonGoPost>,
 		originalEvents: Array<IParsedEvent>
-	): Promise<Array<IParsedEvent>> {
+	): Array<IParsedEvent> {
 		const translatedPosts = posts.filter(
 			(p) => p.locale !== AvailableLocales.en
 		);
-		const postPromises = translatedPosts.map((post) => {
+		return translatedPosts.flatMap((post) => {
 			try {
 				return this.parsePostForTranslations(post, originalEvents);
 			} catch {
 				return [];
 			}
 		});
-
-		return (await Promise.all(postPromises)).flat();
 	}
 
 	/**

@@ -2,52 +2,52 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "Memories in Motion",
-		"pt_br": "Memórias em Movimento"
+		"en": "Forever Forward",
+		"pt_br": "Sempre em Frente"
 	},
 	"subtitle": {
-		"en": "Memories in Motion",
-		"pt_br": "Memórias em Movimento"
+		"en": "Forever Forward",
+		"pt_br": "Sempre em Frente"
 	},
-	"startDate": 1772532000000,
-	"endDate": 1780394400000,
-	"imageUrl": "https://lh3.googleusercontent.com/vux5c-AQTr_0Qd-NN5-k_-pds6QCeZe9xzpYYn_0B7ZrFhLs77mqdVzGLwVqVlW0htEKtiOXFnhN64RaZaKGTHAXwP2-dG-_W-XY=s0-e365",
+	"startDate": 1780394400000,
+	"endDate": 1788861600000,
+	"imageUrl": "https://lh3.googleusercontent.com/vxXpQxDHcFQV0iSf8zsTE2f_xPVBBf8izq_j2SS_BPui046zuwLBG8t_bHPq_MlNqqG65KSs5P_xLAvMd_U6bmD21Aw1zX3iEgk=s0-e365",
 	"source": "pokemongo",
 	"wild": [],
 	"raids": [],
 	"eggs": [
 		{
-			"speciesId": "tadbulb",
+			"speciesId": "wynaut",
 			"shiny": false,
 			"kind": "2"
 		},
 		{
-			"speciesId": "wimpod",
+			"speciesId": "corphish",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "dunsparce",
+			"speciesId": "exeggcute",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "fidough",
+			"speciesId": "flittle",
 			"shiny": false,
 			"kind": "5"
 		},
 		{
-			"speciesId": "snom",
+			"speciesId": "mantyke",
+			"shiny": false,
+			"kind": "5"
+		},
+		{
+			"speciesId": "riolu",
 			"shiny": true,
 			"kind": "5"
 		},
 		{
-			"speciesId": "sizzlipede",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "audino",
+			"speciesId": "budew",
 			"shiny": false,
 			"kind": "5",
 			"comment": {
@@ -56,7 +56,7 @@
 			}
 		},
 		{
-			"speciesId": "happiny",
+			"speciesId": "sableye",
 			"shiny": true,
 			"kind": "5",
 			"comment": {
@@ -65,7 +65,7 @@
 			}
 		},
 		{
-			"speciesId": "chingling",
+			"speciesId": "tyrogue",
 			"shiny": true,
 			"kind": "5",
 			"comment": {
@@ -74,7 +74,7 @@
 			}
 		},
 		{
-			"speciesId": "zigzagoon_galarian",
+			"speciesId": "darumaka_galarian",
 			"shiny": false,
 			"kind": "7"
 		},
@@ -84,7 +84,7 @@
 			"kind": "7"
 		},
 		{
-			"speciesId": "meowth_galarian",
+			"speciesId": "diglett_alolan",
 			"shiny": true,
 			"kind": "7"
 		},
@@ -98,7 +98,7 @@
 			}
 		},
 		{
-			"speciesId": "slowpoke_galarian",
+			"speciesId": "sneasel_hisuian",
 			"shiny": true,
 			"kind": "7",
 			"comment": {
@@ -116,22 +116,22 @@
 			}
 		},
 		{
-			"speciesId": "impidimp",
+			"speciesId": "frigibax",
 			"shiny": false,
 			"kind": "10"
 		},
 		{
-			"speciesId": "honedge",
+			"speciesId": "absol",
 			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "deino",
+			"speciesId": "mawile",
 			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "toxel",
+			"speciesId": "drampa",
 			"shiny": false,
 			"kind": "10",
 			"comment": {
@@ -140,7 +140,7 @@
 			}
 		},
 		{
-			"speciesId": "turtonator",
+			"speciesId": "druddigon",
 			"shiny": true,
 			"kind": "10",
 			"comment": {
@@ -149,7 +149,7 @@
 			}
 		},
 		{
-			"speciesId": "goomy",
+			"speciesId": "bagon",
 			"shiny": true,
 			"kind": "10",
 			"comment": {
@@ -160,22 +160,17 @@
 	],
 	"researches": [
 		{
-			"speciesId": "dreepy",
+			"speciesId": "klawf",
 			"shiny": false,
 			"kind": ""
 		},
 		{
-			"speciesId": "duraludon",
+			"speciesId": "indeedee_male",
 			"shiny": true,
 			"kind": ""
 		},
 		{
-			"speciesId": "sinistea",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "dhelmise",
+			"speciesId": "jangmo_o",
 			"shiny": true,
 			"kind": ""
 		},
@@ -185,7 +180,12 @@
 			"kind": ""
 		},
 		{
-			"speciesId": "gyarados",
+			"speciesId": "axew",
+			"shiny": true,
+			"kind": ""
+		},
+		{
+			"speciesId": "dragonite",
 			"shiny": true,
 			"kind": ""
 		}
@@ -193,17 +193,7 @@
 	"incenses": [],
 	"lures": [],
 	"bonuses": {
-		"en": [
-			"Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon in-person.",
-			"One additional Candy when trading Pokémon in-person.",
-			"Increased XP for a seven-day PokéStop spin streak.",
-			"Increased XP and Stardust for a seven-day Pokémon catch streak."
-		],
-		"pt_br": [
-			"Treinadores e Treinadoras do nível 31 e superior receberão doce GG ao trocar Pokémon presencialmente.",
-			"Um doce extra ao trocar Pokémon presencialmente.",
-			"Mais PE para giro em Poképaradas por sete dias consecutivos.",
-			"Aumento de PE e Poeira Estelar para sete dias consecutivos de captura de Pokémon."
-		]
+		"en": [],
+		"pt_br": []
 	}
 }

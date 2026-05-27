@@ -28,6 +28,14 @@ const dateModifierNormalization = (date: string) => {
 		.replaceAll('P.M.', 'pm');
 };
 
+const stripLeadingFrom = (date: string): string => {
+	const trimmed = date.trim();
+	if (/^from\s+/i.test(trimmed)) {
+		return trimmed.replace(/^from\s+/i, '').trim();
+	}
+	return trimmed;
+};
+
 /**
  * Converts a month name to its index (0-based).
  */
@@ -74,7 +82,7 @@ export const parseEventDateRange = (
 	// Remove trailing period
 	if (date.endsWith('.')) date = date.slice(0, -1);
 	// Normalize spaces and time suffixes
-	date = dateWithoutTimezone(dateModifierNormalization(date));
+	date = stripLeadingFrom(dateWithoutTimezone(dateModifierNormalization(date)));
 	// Remove weekday at start
 	date = date.replace(/^[A-Za-z]+day,\s*/, '');
 
@@ -164,7 +172,7 @@ export const parseEventDateRange = (
 
 export const parseDateFromString = (side: string) => {
 	if (!side || typeof side !== 'string') return NaN;
-	side = fixDateString(side.trim());
+	side = fixDateString(stripLeadingFrom(side));
 	side = side.replace(/^[A-Za-z]+day,\s*/, '');
 	let year = new Date().getFullYear();
 	const yearMatch = /, (\d{4})/.exec(side);

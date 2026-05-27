@@ -34,14 +34,44 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 		);
 	}
 
+	private extractSubEventImgUrl(block: Element): string {
+		const srcset =
+			block
+				.querySelector('[class*="_ImageBlock_"] picture source')
+				?.getAttribute('srcset') ?? '';
+		if (srcset) {
+			const firstUrl = srcset.split(',')[0]?.trim().split(/\s+/)[0];
+			if (firstUrl) {
+				return firstUrl;
+			}
+		}
+
+		return (
+			block
+				.querySelector('[class*="_ImageBlock_"] picture img')
+				?.getAttribute('src') ?? ''
+		);
+	}
+
 	private extractDateString(block: Element): string {
-		const rawDateString =
+		let dateString =
 			block
 				.querySelector(':scope > [class*="_markdown_"] p')
 				?.textContent?.trim() ?? '';
-		return rawDateString.includes('\n')
-			? rawDateString.slice(0, rawDateString.indexOf('\n')).trim()
-			: rawDateString;
+
+		if (dateString.includes('\n')) {
+			dateString = dateString.slice(0, dateString.indexOf('\n')).trim();
+		}
+
+		const localTimeMarker = 'local time';
+		const localTimeIndex = dateString.lastIndexOf(localTimeMarker);
+		if (localTimeIndex !== -1) {
+			dateString = dateString
+				.slice(0, localTimeIndex + localTimeMarker.length)
+				.trim();
+		}
+
+		return dateString;
 	}
 
 	private isEventRootBlock(
@@ -55,7 +85,7 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 			return false;
 		}
 
-		if (block.querySelector('[class*="_ImageBlock_"]')) {
+		if (block.querySelector(':scope > [class*="_ImageBlock_"]')) {
 			return true;
 		}
 
@@ -82,7 +112,11 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 
 	getSubEvents(): Array<IPokemonGoEventBlockParser> {
 		const containerBlocks = this.getContainerBlocks();
-		const imgUrl = this.getImgUrl();
+		const articleImgUrl = this.getImgUrl();
+		const hasMultipleSubEvents =
+			containerBlocks.filter((block) =>
+				this.isEventRootBlock(block, containerBlocks)
+			).length > 1;
 
 		const questBlockIndices = containerBlocks.reduce<Array<number>>(
 			(indices, block, index) => {
@@ -105,7 +139,9 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 
 			return {
 				subTitle: block.querySelector('h2')?.textContent ?? '',
-				imgUrl,
+				imgUrl: hasMultipleSubEvents
+					? this.extractSubEventImgUrl(block)
+					: articleImgUrl,
 				dateString: this.extractDateString(block),
 				getEventBlocks: () => containerBlocks.slice(startIndex, endIndex),
 			};

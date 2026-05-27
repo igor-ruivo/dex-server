@@ -42,6 +42,28 @@ export const fixDateString = (dateString: string) =>
 	dateString.replace(/(\b[A-Za-z]+), (\d{1,2})/, '$1 $2');
 
 /**
+ * Trims noisy text from raw date strings extracted from Pokémon GO HTML.
+ * Cuts at the first newline (intro text) and after the last "local time" marker.
+ */
+export const trimEventDateString = (raw: string): string => {
+	let dateString = raw.trim();
+
+	if (dateString.includes('\n')) {
+		dateString = dateString.slice(0, dateString.indexOf('\n')).trim();
+	}
+
+	const localTimeMarker = 'local time';
+	const localTimeIndex = dateString.lastIndexOf(localTimeMarker);
+	if (localTimeIndex !== -1) {
+		dateString = dateString
+			.slice(0, localTimeIndex + localTimeMarker.length)
+			.trim();
+	}
+
+	return dateString;
+};
+
+/**
  * Parses a date range string and returns an array of {start, end} timestamps.
  * Handles multi-day and single-day event formats.
  */

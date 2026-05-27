@@ -4,6 +4,7 @@ import type {
 	IPokemonGoEventBlockParser,
 	IPokemonGoHtmlParser,
 } from '../../../../types/events';
+import { trimEventDateString } from '../../../utils/normalization';
 
 class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 	private document: Document;
@@ -54,24 +55,12 @@ class PokemonGoNewsParser implements IPokemonGoHtmlParser {
 	}
 
 	private extractDateString(block: Element): string {
-		let dateString =
+		const raw =
 			block
 				.querySelector(':scope > [class*="_markdown_"] p')
 				?.textContent?.trim() ?? '';
 
-		if (dateString.includes('\n')) {
-			dateString = dateString.slice(0, dateString.indexOf('\n')).trim();
-		}
-
-		const localTimeMarker = 'local time';
-		const localTimeIndex = dateString.lastIndexOf(localTimeMarker);
-		if (localTimeIndex !== -1) {
-			dateString = dateString
-				.slice(0, localTimeIndex + localTimeMarker.length)
-				.trim();
-		}
-
-		return dateString;
+		return trimEventDateString(raw);
 	}
 
 	private isEventRootBlock(

@@ -507,6 +507,12 @@ class PokemonGoSource implements IEventSource {
 					if (gmEntry?.isLegendary) {
 						return { ...pkm, kind: '5' };
 					}
+					const kind = (pkm.kind ?? '').trim();
+					// Official Pokémon GO HTML often omits the “X-star raids” text,
+					// which leaves `kind` empty. In that case, default to 3★.
+					if (!['1', '3', '5', 'mega'].includes(kind)) {
+						return { ...pkm, kind: '3' };
+					}
 					return pkm;
 				});
 
@@ -552,6 +558,11 @@ class PokemonGoSource implements IEventSource {
 					if (gmEntry?.isLegendary) {
 						return { ...pkm, kind: '5' };
 					}
+					const kind = (pkm.kind ?? '').trim();
+					// If we don't know the raid tier from parsing, assume 3★.
+					if (!['1', '3', '5', 'mega'].includes(kind)) {
+						return { ...pkm, kind: '3' };
+					}
 					return pkm;
 				});
 
@@ -588,6 +599,11 @@ class PokemonGoSource implements IEventSource {
 				}
 				if (gmEntry?.isLegendary) {
 					return { ...pkm, kind: '5' };
+				}
+				const kind = (pkm.kind ?? '').trim();
+				// If we don't know the raid tier from parsing, assume 3★.
+				if (!['1', '3', '5', 'mega'].includes(kind)) {
+					return { ...pkm, kind: '3' };
 				}
 				return pkm;
 			});

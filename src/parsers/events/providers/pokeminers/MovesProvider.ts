@@ -261,6 +261,27 @@ class MovesProvider {
 			};
 		}
 
+		const plasmaFistsMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			plasmaFistsMoveName[locale] = normalizedMoveName('PLASMA_FISTS');
+		});
+
+		if (!movesDictionary.PLASMA_FISTS) {
+			movesDictionary.PLASMA_FISTS = {
+				moveId: 'PLASMA_FISTS',
+				vId: '-1',
+				type: 'electric',
+				isFast: false,
+				pvpPower: 60,
+				pvePower: 135,
+				pvpEnergy: -35,
+				pveEnergy: -50,
+				pvpCooldown: 0.5,
+				pveCooldown: 3.5,
+				moveName: plasmaFistsMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

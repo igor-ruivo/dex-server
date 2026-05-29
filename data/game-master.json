@@ -57490,6 +57490,40 @@
 		"isMythical": false,
 		"isBeast": true
 	},
+	"zeraora": {
+		"dex": 807,
+		"speciesId": "zeraora",
+		"speciesName": "Zeraora",
+		"types": [
+			"Electric"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/807.png",
+		"goImageUrl": "807.icon.png",
+		"shinyGoImageUrl": "807.s.icon.png",
+		"baseStats": {
+			"atk": 252,
+			"def": 177,
+			"hp": 204
+		},
+		"fastMoves": [
+			"SPARK",
+			"VOLT_SWITCH"
+		],
+		"chargedMoves": [
+			"THUNDER_PUNCH",
+			"DISCHARGE",
+			"WILD_CHARGE",
+			"PLASMA_FISTS"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": true,
+		"isBeast": false
+	},
 	"meltan": {
 		"dex": 808,
 		"speciesId": "meltan",

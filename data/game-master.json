@@ -1686,6 +1686,7 @@
 			"HURRICANE",
 			"FEATHER_DANCE",
 			"HEAT_WAVE",
+			"TWISTER",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -1734,6 +1735,7 @@
 			"HURRICANE",
 			"FEATHER_DANCE",
 			"HEAT_WAVE",
+			"TWISTER",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -1782,6 +1784,7 @@
 			"HURRICANE",
 			"FEATHER_DANCE",
 			"HEAT_WAVE",
+			"TWISTER",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -11743,6 +11746,7 @@
 			"PSYCHIC",
 			"THUNDER",
 			"SURF",
+			"AQUA_JET",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -11792,6 +11796,7 @@
 			"PSYCHIC",
 			"THUNDER",
 			"SURF",
+			"AQUA_JET",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -13365,6 +13370,7 @@
 			"ANCIENT_POWER",
 			"STONE_EDGE",
 			"WATER_PULSE",
+			"AQUA_JET",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -13408,6 +13414,7 @@
 			"ANCIENT_POWER",
 			"STONE_EDGE",
 			"WATER_PULSE",
+			"AQUA_JET",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -13806,7 +13813,8 @@
 			"hp": 207
 		},
 		"fastMoves": [
-			"COUNTER"
+			"COUNTER",
+			"LOW_KICK"
 		],
 		"chargedMoves": [
 			"CLOSE_COMBAT",
@@ -14325,6 +14333,93 @@
 		"isShadow": false,
 		"isMega": false,
 		"form": "",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"mewtwo_mega_x": {
+		"dex": 150,
+		"speciesId": "mewtwo_mega_x",
+		"speciesName": "Mewtwo (Mega X)",
+		"types": [
+			"Psychic",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f2.png",
+		"goImageUrl": "150.fMEGA_X.icon.png",
+		"shinyGoImageUrl": "150.fMEGA_X.s.icon.png",
+		"baseStats": {
+			"atk": 399,
+			"def": 215,
+			"hp": 214
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"PSYCHO_CUT"
+		],
+		"chargedMoves": [
+			"FLAMETHROWER",
+			"FOCUS_BLAST",
+			"HYPER_BEAM",
+			"ICE_BEAM",
+			"PSYCHIC",
+			"SHADOW_BALL",
+			"THUNDERBOLT",
+			"PSYSTRIKE",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"PSYSTRIKE",
+			"SHADOW_BALL",
+			"HYPER_BEAM"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega X",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"mewtwo_mega_y": {
+		"dex": 150,
+		"speciesId": "mewtwo_mega_y",
+		"speciesName": "Mewtwo (Mega Y)",
+		"types": [
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png",
+		"goImageUrl": "150.fMEGA_Y.icon.png",
+		"shinyGoImageUrl": "150.fMEGA_Y.s.icon.png",
+		"baseStats": {
+			"atk": 413,
+			"def": 228,
+			"hp": 214
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"PSYCHO_CUT"
+		],
+		"chargedMoves": [
+			"FLAMETHROWER",
+			"FOCUS_BLAST",
+			"HYPER_BEAM",
+			"ICE_BEAM",
+			"PSYCHIC",
+			"SHADOW_BALL",
+			"THUNDERBOLT",
+			"PSYSTRIKE",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"PSYSTRIKE",
+			"SHADOW_BALL",
+			"HYPER_BEAM"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega Y",
 		"isLegendary": true,
 		"isMythical": false,
 		"isBeast": false
@@ -15525,13 +15620,15 @@
 		"fastMoves": [
 			"BUG_BITE",
 			"STRUGGLE_BUG",
-			"COUNTER"
+			"COUNTER",
+			"ROLLOUT"
 		],
 		"chargedMoves": [
 			"AERIAL_ACE",
 			"BUG_BUZZ",
 			"SILVER_WIND",
 			"DYNAMIC_PUNCH",
+			"ACROBATICS",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -15566,13 +15663,15 @@
 		"fastMoves": [
 			"BUG_BITE",
 			"STRUGGLE_BUG",
-			"COUNTER"
+			"COUNTER",
+			"ROLLOUT"
 		],
 		"chargedMoves": [
 			"AERIAL_ACE",
 			"BUG_BUZZ",
 			"SILVER_WIND",
 			"DYNAMIC_PUNCH",
+			"ACROBATICS",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -16160,6 +16259,7 @@
 			"FUTURE_SIGHT",
 			"OMINOUS_WIND",
 			"PSYSHOCK",
+			"SHADOW_BALL",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -16201,6 +16301,7 @@
 			"FUTURE_SIGHT",
 			"OMINOUS_WIND",
 			"PSYSHOCK",
+			"SHADOW_BALL",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -18679,6 +18780,7 @@
 			"ACID_SPRAY",
 			"FELL_STINGER",
 			"SCALD",
+			"SHADOW_BALL",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -18759,6 +18861,7 @@
 			"ACID_SPRAY",
 			"FELL_STINGER",
 			"SCALD",
+			"SHADOW_BALL",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -19869,7 +19972,8 @@
 			"AERIAL_ACE",
 			"ICE_BEAM",
 			"WATER_PULSE",
-			"BUBBLE_BEAM"
+			"BUBBLE_BEAM",
+			"TWISTER"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -20183,6 +20287,7 @@
 			"OUTRAGE",
 			"OCTAZOOKA",
 			"SWIFT",
+			"SURF",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -20227,6 +20332,7 @@
 			"OUTRAGE",
 			"OCTAZOOKA",
 			"SWIFT",
+			"SURF",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -29262,7 +29368,9 @@
 			"FOUL_PLAY",
 			"ICE_BEAM",
 			"SHADOW_SNEAK",
-			"THUNDER"
+			"THUNDER",
+			"THUNDER_PUNCH",
+			"DYNAMIC_PUNCH"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -34884,7 +34992,9 @@
 			"FIRE_PUNCH",
 			"FOCUS_BLAST",
 			"HYPER_BEAM",
-			"TRIPLE_AXEL"
+			"TRIPLE_AXEL",
+			"THUNDER_PUNCH",
+			"SHADOW_BALL"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -34924,7 +35034,9 @@
 			"FIRE_PUNCH",
 			"FOCUS_BLAST",
 			"HYPER_BEAM",
-			"TRIPLE_AXEL"
+			"TRIPLE_AXEL",
+			"THUNDER_PUNCH",
+			"SHADOW_BALL"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -36791,7 +36903,8 @@
 		},
 		"fastMoves": [
 			"WATER_GUN",
-			"WATERFALL"
+			"WATERFALL",
+			"GUST"
 		],
 		"chargedMoves": [
 			"BLIZZARD",
@@ -37298,6 +37411,7 @@
 			"SUPER_POWER",
 			"ROCK_WRECKER",
 			"BREAKING_SWIPE",
+			"DRILL_RUN",
 			"RETURN"
 		],
 		"eliteMoves": [
@@ -37343,6 +37457,7 @@
 			"SUPER_POWER",
 			"ROCK_WRECKER",
 			"BREAKING_SWIPE",
+			"DRILL_RUN",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [
@@ -41561,7 +41676,8 @@
 		},
 		"fastMoves": [
 			"MUD_SLAP",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"LOCK_ON"
 		],
 		"chargedMoves": [
 			"ROCK_SLIDE",
@@ -41603,7 +41719,8 @@
 		},
 		"fastMoves": [
 			"MUD_SLAP",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"LOCK_ON"
 		],
 		"chargedMoves": [
 			"ROCK_SLIDE",
@@ -42124,7 +42241,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"POISON_JAB"
+			"POISON_JAB",
+			"FORCE_PALM"
 		],
 		"chargedMoves": [
 			"DYNAMIC_PUNCH",
@@ -42165,7 +42283,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"POISON_JAB"
+			"POISON_JAB",
+			"FORCE_PALM"
 		],
 		"chargedMoves": [
 			"DYNAMIC_PUNCH",
@@ -42292,7 +42411,8 @@
 		"chargedMoves": [
 			"MUDDY_WATER",
 			"EARTH_POWER",
-			"SLUDGE_BOMB"
+			"SLUDGE_BOMB",
+			"ICY_WIND"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -45214,13 +45334,15 @@
 		},
 		"fastMoves": [
 			"WATER_GUN",
-			"AIR_SLASH"
+			"AIR_SLASH",
+			"GUST"
 		],
 		"chargedMoves": [
 			"ICE_BEAM",
 			"BUBBLE_BEAM",
 			"HURRICANE",
 			"FLY",
+			"AQUA_JET",
 			"RETURN"
 		],
 		"eliteMoves": [],
@@ -45254,13 +45376,15 @@
 		},
 		"fastMoves": [
 			"WATER_GUN",
-			"AIR_SLASH"
+			"AIR_SLASH",
+			"GUST"
 		],
 		"chargedMoves": [
 			"ICE_BEAM",
 			"BUBBLE_BEAM",
 			"HURRICANE",
 			"FLY",
+			"AQUA_JET",
 			"FRUSTRATION"
 		],
 		"eliteMoves": [],
@@ -51258,7 +51382,8 @@
 		},
 		"fastMoves": [
 			"CHARM",
-			"CHARGE_BEAM"
+			"CHARGE_BEAM",
+			"FAIRY_WIND"
 		],
 		"chargedMoves": [
 			"MOONBLAST",
@@ -52325,14 +52450,16 @@
 		},
 		"fastMoves": [
 			"CHARM",
-			"QUICK_ATTACK"
+			"QUICK_ATTACK",
+			"FAIRY_WIND"
 		],
 		"chargedMoves": [
 			"MOONBLAST",
 			"DAZZLING_GLEAM",
 			"DRAINING_KISS",
 			"LAST_RESORT",
-			"PSYSHOCK"
+			"PSYSHOCK",
+			"SHADOW_BALL"
 		],
 		"eliteMoves": [
 			"LAST_RESORT",
@@ -52509,13 +52636,15 @@
 		},
 		"fastMoves": [
 			"WATER_GUN",
-			"TACKLE"
+			"TACKLE",
+			"DRAGON_BREATH"
 		],
 		"chargedMoves": [
 			"DRAGON_PULSE",
 			"SLUDGE_WAVE",
 			"MUDDY_WATER",
-			"WATER_PULSE"
+			"WATER_PULSE",
+			"BODY_SLAM"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -57585,7 +57714,8 @@
 			"ROCK_SLIDE",
 			"THUNDERBOLT",
 			"SUPER_POWER",
-			"DOUBLE_IRON_BASH"
+			"DOUBLE_IRON_BASH",
+			"DYNAMIC_PUNCH"
 		],
 		"eliteMoves": [
 			"DOUBLE_IRON_BASH"
@@ -59744,6 +59874,39 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"falinks_mega": {
+		"dex": 870,
+		"speciesId": "falinks_mega",
+		"speciesName": "Falinks (Mega)",
+		"types": [
+			"Fighting"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/870_f2.png",
+		"goImageUrl": "870.fMEGA.icon.png",
+		"shinyGoImageUrl": "870.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 267,
+			"def": 229,
+			"hp": 163
+		},
+		"fastMoves": [
+			"ROCK_SMASH",
+			"COUNTER"
+		],
+		"chargedMoves": [
+			"SUPER_POWER",
+			"BRICK_BREAK",
+			"MEGAHORN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"snom": {
 		"dex": 872,
 		"speciesId": "snom",
@@ -61234,7 +61397,8 @@
 		},
 		"fastMoves": [
 			"WATER_GUN",
-			"WING_ATTACK"
+			"WING_ATTACK",
+			"LOW_KICK"
 		],
 		"chargedMoves": [
 			"AQUA_JET",
@@ -64029,128 +64193,6 @@
 		"isShadow": true,
 		"isMega": false,
 		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"mewtwo_mega_x": {
-		"dex": 150,
-		"speciesId": "mewtwo_mega_x",
-		"speciesName": "Mewtwo (Mega X)",
-		"types": [
-			"Psychic",
-			"Fighting"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f2.png",
-		"goImageUrl": "150.fMEGA_X.icon.png",
-		"shinyGoImageUrl": "150.fMEGA_X.s.icon.png",
-		"baseStats": {
-			"atk": 412,
-			"def": 222,
-			"hp": 235
-		},
-		"fastMoves": [
-			"CONFUSION",
-			"PSYCHO_CUT"
-		],
-		"chargedMoves": [
-			"FLAMETHROWER",
-			"FOCUS_BLAST",
-			"HYPER_BEAM",
-			"ICE_BEAM",
-			"PSYCHIC",
-			"SHADOW_BALL",
-			"THUNDERBOLT",
-			"PSYSTRIKE",
-			"RETURN",
-			"RETURN"
-		],
-		"eliteMoves": [
-			"PSYSTRIKE",
-			"SHADOW_BALL",
-			"HYPER_BEAM"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega X",
-		"isLegendary": true,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"mewtwo_mega_y": {
-		"dex": 150,
-		"speciesId": "mewtwo_mega_y",
-		"speciesName": "Mewtwo (Mega Y)",
-		"types": [
-			"Psychic"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png",
-		"goImageUrl": "150.fMEGA_Y.icon.png",
-		"shinyGoImageUrl": "150.fMEGA_Y.s.icon.png",
-		"baseStats": {
-			"atk": 426,
-			"def": 229,
-			"hp": 235
-		},
-		"fastMoves": [
-			"CONFUSION",
-			"PSYCHO_CUT"
-		],
-		"chargedMoves": [
-			"FLAMETHROWER",
-			"FOCUS_BLAST",
-			"HYPER_BEAM",
-			"ICE_BEAM",
-			"PSYCHIC",
-			"SHADOW_BALL",
-			"THUNDERBOLT",
-			"PSYSTRIKE",
-			"RETURN",
-			"RETURN"
-		],
-		"eliteMoves": [
-			"PSYSTRIKE",
-			"SHADOW_BALL",
-			"HYPER_BEAM"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega Y",
-		"isLegendary": true,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"falinks_mega": {
-		"dex": 870,
-		"speciesId": "falinks_mega",
-		"speciesName": "Falinks (Mega)",
-		"types": [
-			"Fighting"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/870_f2.png",
-		"goImageUrl": "870.fMEGA.icon.png",
-		"shinyGoImageUrl": "870.fMEGA.s.icon.png",
-		"baseStats": {
-			"atk": 267,
-			"def": 229,
-			"hp": 163
-		},
-		"fastMoves": [
-			"ROCK_SMASH",
-			"COUNTER"
-		],
-		"chargedMoves": [
-			"SUPER_POWER",
-			"BRICK_BREAK",
-			"MEGAHORN"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

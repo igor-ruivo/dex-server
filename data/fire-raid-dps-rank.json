@@ -152,15 +152,6 @@
 		"chargedMoveDmg": 211,
 		"rank": 17
 	},
-	"mewtwo_mega_y": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 28.333333333333336,
-		"speciesId": "mewtwo_mega_y",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 115,
-		"rank": 18
-	},
 	"ho_oh_shadow": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "SACRED_FIRE",
@@ -168,7 +159,7 @@
 		"speciesId": "ho_oh_shadow",
 		"fastMoveDmg": 47,
 		"chargedMoveDmg": 175,
-		"rank": 19
+		"rank": 18
 	},
 	"chandelure": {
 		"fastMove": "FIRE_SPIN",
@@ -177,16 +168,16 @@
 		"speciesId": "chandelure",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 219,
-		"rank": 20
+		"rank": 19
 	},
-	"mewtwo_mega_x": {
+	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "FLAMETHROWER",
 		"dps": 27.615384615384617,
-		"speciesId": "mewtwo_mega_x",
+		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 111,
-		"rank": 21
+		"rank": 20
 	},
 	"houndoom_mega": {
 		"fastMove": "FIRE_FANG",
@@ -195,7 +186,7 @@
 		"speciesId": "houndoom_mega",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 204,
-		"rank": 22
+		"rank": 21
 	},
 	"cinderace": {
 		"fastMove": "FIRE_SPIN",
@@ -204,7 +195,7 @@
 		"speciesId": "cinderace",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 182,
-		"rank": 23
+		"rank": 22
 	},
 	"volcarona": {
 		"fastMove": "FIRE_SPIN",
@@ -213,7 +204,7 @@
 		"speciesId": "volcarona",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 214,
-		"rank": 24
+		"rank": 23
 	},
 	"darmanitan_standard": {
 		"fastMove": "FIRE_FANG",
@@ -222,7 +213,7 @@
 		"speciesId": "darmanitan_standard",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 213,
-		"rank": 25
+		"rank": 24
 	},
 	"salamence_shadow": {
 		"fastMove": "FIRE_FANG",
@@ -231,7 +222,7 @@
 		"speciesId": "salamence_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 196,
-		"rank": 26
+		"rank": 25
 	},
 	"arcanine_shadow": {
 		"fastMove": "FIRE_FANG",
@@ -240,7 +231,7 @@
 		"speciesId": "arcanine_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 195,
-		"rank": 27
+		"rank": 26
 	},
 	"groudon_primal": {
 		"fastMove": "MUD_SHOT",
@@ -249,6 +240,15 @@
 		"speciesId": "groudon_primal",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 247,
+		"rank": 27
+	},
+	"mewtwo_mega_x": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 26.33009708737864,
+		"speciesId": "mewtwo_mega_x",
+		"fastMoveDmg": 24,
+		"chargedMoveDmg": 108,
 		"rank": 28
 	},
 	"blaziken": {

@@ -197,6 +197,15 @@
 		"chargedMoveDmg": 126,
 		"rank": 22
 	},
+	"swanna_shadow": {
+		"fastMove": "GUST",
+		"chargedMove": "FLY",
+		"dps": 24.928571428571427,
+		"speciesId": "swanna_shadow",
+		"fastMoveDmg": 29,
+		"chargedMoveDmg": 102,
+		"rank": 23
+	},
 	"enamorus_therian": {
 		"fastMove": "FAIRY_WIND",
 		"chargedMove": "FLY",
@@ -204,7 +213,7 @@
 		"speciesId": "enamorus_therian",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 114,
-		"rank": 23
+		"rank": 24
 	},
 	"ho_oh_shadow": {
 		"fastMove": "EXTRASENSORY",
@@ -213,7 +222,7 @@
 		"speciesId": "ho_oh_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 190,
-		"rank": 24
+		"rank": 25
 	},
 	"charizard_mega_y": {
 		"fastMove": "AIR_SLASH",
@@ -222,7 +231,7 @@
 		"speciesId": "charizard_mega_y",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 88,
-		"rank": 25
+		"rank": 26
 	},
 	"braviary": {
 		"fastMove": "AIR_SLASH",
@@ -231,7 +240,7 @@
 		"speciesId": "braviary",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 107,
-		"rank": 26
+		"rank": 27
 	},
 	"honchkrow": {
 		"fastMove": "PECK",
@@ -240,7 +249,7 @@
 		"speciesId": "honchkrow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 161,
-		"rank": 27
+		"rank": 28
 	},
 	"lugia_shadow": {
 		"fastMove": "EXTRASENSORY",
@@ -249,7 +258,7 @@
 		"speciesId": "lugia_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 215,
-		"rank": 28
+		"rank": 29
 	},
 	"tornadus_incarnate": {
 		"fastMove": "AIR_SLASH",
@@ -258,7 +267,7 @@
 		"speciesId": "tornadus_incarnate",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 141,
-		"rank": 29
+		"rank": 30
 	},
 	"flamigo": {
 		"fastMove": "WING_ATTACK",
@@ -267,7 +276,7 @@
 		"speciesId": "flamigo",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 151,
-		"rank": 30
+		"rank": 31
 	},
 	"swellow_shadow": {
 		"fastMove": "WING_ATTACK",
@@ -276,7 +285,7 @@
 		"speciesId": "swellow_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 150,
-		"rank": 31
+		"rank": 32
 	},
 	"zapdos_galarian": {
 		"fastMove": "COUNTER",
@@ -285,7 +294,7 @@
 		"speciesId": "zapdos_galarian",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 115,
-		"rank": 32
+		"rank": 33
 	},
 	"hydreigon_shadow": {
 		"fastMove": "BITE",
@@ -294,15 +303,6 @@
 		"speciesId": "hydreigon_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 117,
-		"rank": 33
-	},
-	"swanna_shadow": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "FLY",
-		"dps": 22.96969696969697,
-		"speciesId": "swanna_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 102,
 		"rank": 34
 	},
 	"dragonite_shadow": {
@@ -449,6 +449,15 @@
 		"chargedMoveDmg": 76,
 		"rank": 50
 	},
+	"swanna": {
+		"fastMove": "GUST",
+		"chargedMove": "FLY",
+		"dps": 20.714285714285715,
+		"speciesId": "swanna",
+		"fastMoveDmg": 24,
+		"chargedMoveDmg": 85,
+		"rank": 51
+	},
 	"ho_oh": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "BRAVE_BIRD",
@@ -456,7 +465,7 @@
 		"speciesId": "ho_oh",
 		"fastMoveDmg": 25,
 		"chargedMoveDmg": 158,
-		"rank": 51
+		"rank": 52
 	},
 	"tapu_koko": {
 		"fastMove": "VOLT_SWITCH",
@@ -465,7 +474,7 @@
 		"speciesId": "tapu_koko",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 138,
-		"rank": 52
+		"rank": 53
 	},
 	"gliscor_shadow": {
 		"fastMove": "WING_ATTACK",
@@ -474,7 +483,7 @@
 		"speciesId": "gliscor_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 115,
-		"rank": 53
+		"rank": 54
 	},
 	"kilowattrel": {
 		"fastMove": "AIR_SLASH",
@@ -483,7 +492,7 @@
 		"speciesId": "kilowattrel",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 113,
-		"rank": 54
+		"rank": 55
 	},
 	"sceptile_mega": {
 		"fastMove": "FURY_CUTTER",
@@ -492,7 +501,7 @@
 		"speciesId": "sceptile_mega",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 74,
-		"rank": 55
+		"rank": 56
 	},
 	"naganadel": {
 		"fastMove": "AIR_SLASH",
@@ -501,7 +510,7 @@
 		"speciesId": "naganadel",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 111,
-		"rank": 56
+		"rank": 57
 	},
 	"murkrow_shadow": {
 		"fastMove": "PECK",
@@ -510,7 +519,7 @@
 		"speciesId": "murkrow_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 77,
-		"rank": 57
+		"rank": 58
 	},
 	"swellow": {
 		"fastMove": "WING_ATTACK",
@@ -519,7 +528,7 @@
 		"speciesId": "swellow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 125,
-		"rank": 58
+		"rank": 59
 	},
 	"hydreigon": {
 		"fastMove": "BITE",
@@ -528,7 +537,7 @@
 		"speciesId": "hydreigon",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 98,
-		"rank": 59
+		"rank": 60
 	},
 	"sneasler_shadow": {
 		"fastMove": "POISON_JAB",
@@ -537,15 +546,6 @@
 		"speciesId": "sneasler_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 72,
-		"rank": 60
-	},
-	"swanna": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "FLY",
-		"dps": 19.393939393939394,
-		"speciesId": "swanna",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 85,
 		"rank": 61
 	},
 	"dragonite": {
@@ -1502,6 +1502,15 @@
 		"chargedMoveDmg": 40,
 		"rank": 167
 	},
+	"ledian_shadow": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "ACROBATICS",
+		"dps": 11.61290322580645,
+		"speciesId": "ledian_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 70,
+		"rank": 168
+	},
 	"ducklett_shadow": {
 		"fastMove": "WING_ATTACK",
 		"chargedMove": "BRAVE_BIRD",
@@ -1509,7 +1518,7 @@
 		"speciesId": "ducklett_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 74,
-		"rank": 168
+		"rank": 169
 	},
 	"starly": {
 		"fastMove": "SAND_ATTACK",
@@ -1518,7 +1527,7 @@
 		"speciesId": "starly",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 50,
-		"rank": 169
+		"rank": 170
 	},
 	"karrablast_shadow": {
 		"fastMove": "FURY_CUTTER",
@@ -1527,7 +1536,7 @@
 		"speciesId": "karrablast_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 40,
-		"rank": 170
+		"rank": 171
 	},
 	"quaxwell": {
 		"fastMove": "WING_ATTACK",
@@ -1536,7 +1545,7 @@
 		"speciesId": "quaxwell",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 39,
-		"rank": 171
+		"rank": 172
 	},
 	"beedrill": {
 		"fastMove": "POISON_JAB",
@@ -1545,7 +1554,7 @@
 		"speciesId": "beedrill",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 41,
-		"rank": 172
+		"rank": 173
 	},
 	"mandibuzz": {
 		"fastMove": "AIR_SLASH",
@@ -1554,7 +1563,7 @@
 		"speciesId": "mandibuzz",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 38,
-		"rank": 173
+		"rank": 174
 	},
 	"serperior": {
 		"fastMove": "VINE_WHIP",
@@ -1563,7 +1572,7 @@
 		"speciesId": "serperior",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 39,
-		"rank": 174
+		"rank": 175
 	},
 	"kricketune": {
 		"fastMove": "FURY_CUTTER",
@@ -1572,7 +1581,7 @@
 		"speciesId": "kricketune",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 39,
-		"rank": 175
+		"rank": 176
 	},
 	"vullaby": {
 		"fastMove": "AIR_SLASH",
@@ -1581,7 +1590,7 @@
 		"speciesId": "vullaby",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 75,
-		"rank": 176
+		"rank": 177
 	},
 	"purugly": {
 		"fastMove": "SCRATCH",
@@ -1590,7 +1599,7 @@
 		"speciesId": "purugly",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 41,
-		"rank": 177
+		"rank": 178
 	},
 	"fletchling": {
 		"fastMove": "PECK",
@@ -1599,7 +1608,7 @@
 		"speciesId": "fletchling",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 48,
-		"rank": 178
+		"rank": 179
 	},
 	"whimsicott": {
 		"fastMove": "FAIRY_WIND",
@@ -1608,7 +1617,7 @@
 		"speciesId": "whimsicott",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 75,
-		"rank": 179
+		"rank": 180
 	},
 	"jumpluff_shadow": {
 		"fastMove": "BULLET_SEED",
@@ -1617,7 +1626,7 @@
 		"speciesId": "jumpluff_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 77,
-		"rank": 180
+		"rank": 181
 	},
 	"aipom_shadow": {
 		"fastMove": "SCRATCH",
@@ -1626,7 +1635,7 @@
 		"speciesId": "aipom_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 40,
-		"rank": 181
+		"rank": 182
 	},
 	"frogadier": {
 		"fastMove": "BUBBLE",
@@ -1635,7 +1644,7 @@
 		"speciesId": "frogadier",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 41,
-		"rank": 182
+		"rank": 183
 	},
 	"piplup_shadow": {
 		"fastMove": "POUND",
@@ -1644,7 +1653,7 @@
 		"speciesId": "piplup_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 43,
-		"rank": 183
+		"rank": 184
 	},
 	"taillow_shadow": {
 		"fastMove": "PECK",
@@ -1653,7 +1662,7 @@
 		"speciesId": "taillow_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 39,
-		"rank": 184
+		"rank": 185
 	},
 	"grovyle": {
 		"fastMove": "QUICK_ATTACK",
@@ -1662,7 +1671,7 @@
 		"speciesId": "grovyle",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 41,
-		"rank": 185
+		"rank": 186
 	},
 	"togetic": {
 		"fastMove": "FAIRY_WIND",
@@ -1671,22 +1680,13 @@
 		"speciesId": "togetic",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 41,
-		"rank": 186
+		"rank": 187
 	},
 	"kecleon": {
 		"fastMove": "LICK",
 		"chargedMove": "AERIAL_ACE",
 		"dps": 10.571428571428571,
 		"speciesId": "kecleon",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 39,
-		"rank": 187
-	},
-	"ledian_shadow": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "AERIAL_ACE",
-		"dps": 10.571428571428571,
-		"speciesId": "ledian_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 39,
 		"rank": 188
@@ -1835,6 +1835,15 @@
 		"chargedMoveDmg": 36,
 		"rank": 204
 	},
+	"ledian": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "ACROBATICS",
+		"dps": 8.935483870967742,
+		"speciesId": "ledian",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 59,
+		"rank": 205
+	},
 	"taillow": {
 		"fastMove": "PECK",
 		"chargedMove": "AERIAL_ACE",
@@ -1842,7 +1851,7 @@
 		"speciesId": "taillow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 32,
-		"rank": 205
+		"rank": 206
 	},
 	"pidove": {
 		"fastMove": "AIR_SLASH",
@@ -1851,7 +1860,7 @@
 		"speciesId": "pidove",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 30,
-		"rank": 206
+		"rank": 207
 	},
 	"aipom": {
 		"fastMove": "SCRATCH",
@@ -1860,7 +1869,7 @@
 		"speciesId": "aipom",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 34,
-		"rank": 207
+		"rank": 208
 	},
 	"treecko": {
 		"fastMove": "POUND",
@@ -1869,7 +1878,7 @@
 		"speciesId": "treecko",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 31,
-		"rank": 208
+		"rank": 209
 	},
 	"quaxly": {
 		"fastMove": "WING_ATTACK",
@@ -1878,7 +1887,7 @@
 		"speciesId": "quaxly",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 30,
-		"rank": 209
+		"rank": 210
 	},
 	"froakie": {
 		"fastMove": "POUND",
@@ -1887,7 +1896,7 @@
 		"speciesId": "froakie",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 30,
-		"rank": 210
+		"rank": 211
 	},
 	"swablu_shadow": {
 		"fastMove": "PECK",
@@ -1896,15 +1905,6 @@
 		"speciesId": "swablu_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 29,
-		"rank": 211
-	},
-	"ledian": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "AERIAL_ACE",
-		"dps": 8.380952380952381,
-		"speciesId": "ledian",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 33,
 		"rank": 212
 	},
 	"pidgey_shadow": {

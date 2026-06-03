@@ -261,11 +261,11 @@
 		"rank": 29
 	},
 	"sylveon": {
-		"fastMove": "CHARM",
+		"fastMove": "FAIRY_WIND",
 		"chargedMove": "DAZZLING_GLEAM",
-		"dps": 19.427312775330396,
+		"dps": 19.52879581151832,
 		"speciesId": "sylveon",
-		"fastMoveDmg": 21,
+		"fastMoveDmg": 10,
 		"chargedMoveDmg": 105,
 		"rank": 30
 	},
@@ -530,6 +530,15 @@
 		"chargedMoveDmg": 93,
 		"rank": 59
 	},
+	"aromatisse": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "MOONBLAST",
+		"dps": 15.927631578947366,
+		"speciesId": "aromatisse",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 117,
+		"rank": 60
+	},
 	"mew": {
 		"fastMove": "SNARL",
 		"chargedMove": "DAZZLING_GLEAM",
@@ -537,15 +546,6 @@
 		"speciesId": "mew",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 90,
-		"rank": 60
-	},
-	"aromatisse": {
-		"fastMove": "CHARM",
-		"chargedMove": "MOONBLAST",
-		"dps": 15.912371134020617,
-		"speciesId": "aromatisse",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 117,
 		"rank": 61
 	},
 	"celebi": {

@@ -1,20 +1,20 @@
 {
 	"mewtwo_mega_y": {
-		"fastMove": "CONFUSION",
+		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYSTRIKE",
-		"dps": 44.21818181818182,
+		"dps": 42.705882352941174,
 		"speciesId": "mewtwo_mega_y",
-		"fastMoveDmg": 41,
-		"chargedMoveDmg": 201,
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 195,
 		"rank": 1
 	},
 	"mewtwo_mega_x": {
-		"fastMove": "PSYCHO_CUT",
+		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSTRIKE",
-		"dps": 42.54117647058823,
+		"dps": 41.199999999999996,
 		"speciesId": "mewtwo_mega_x",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 194,
+		"fastMoveDmg": 38,
+		"chargedMoveDmg": 188,
 		"rank": 2
 	},
 	"mewtwo_shadow": {
@@ -1367,6 +1367,15 @@
 		"chargedMoveDmg": 53,
 		"rank": 152
 	},
+	"aromatisse": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.887640449438202,
+		"speciesId": "aromatisse",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 72,
+		"rank": 153
+	},
 	"ninetales_alolan_shadow": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYSHOCK",
@@ -1374,7 +1383,7 @@
 		"speciesId": "ninetales_alolan_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 54,
-		"rank": 153
+		"rank": 154
 	},
 	"dusknoir": {
 		"fastMove": "ASTONISH",
@@ -1383,7 +1392,7 @@
 		"speciesId": "dusknoir",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 74,
-		"rank": 154
+		"rank": 155
 	},
 	"sylveon": {
 		"fastMove": "CHARM",
@@ -1392,7 +1401,7 @@
 		"speciesId": "sylveon",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 53,
-		"rank": 155
+		"rank": 156
 	},
 	"malamar": {
 		"fastMove": "PSYCHO_CUT",
@@ -1401,7 +1410,7 @@
 		"speciesId": "malamar",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 60,
-		"rank": 156
+		"rank": 157
 	},
 	"braixen_shadow": {
 		"fastMove": "EMBER",
@@ -1410,7 +1419,7 @@
 		"speciesId": "braixen_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 54,
-		"rank": 157
+		"rank": 158
 	},
 	"arcanine": {
 		"fastMove": "FIRE_FANG",
@@ -1419,7 +1428,7 @@
 		"speciesId": "arcanine",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 25,
-		"rank": 158
+		"rank": 159
 	},
 	"mime_jr": {
 		"fastMove": "CONFUSION",
@@ -1428,7 +1437,7 @@
 		"speciesId": "mime_jr",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 64,
-		"rank": 159
+		"rank": 160
 	},
 	"ponyta_galarian": {
 		"fastMove": "PSYCHO_CUT",
@@ -1437,7 +1446,7 @@
 		"speciesId": "ponyta_galarian",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 58,
-		"rank": 160
+		"rank": 161
 	},
 	"cofagrigus": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -1446,15 +1455,6 @@
 		"speciesId": "cofagrigus",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 68,
-		"rank": 161
-	},
-	"aromatisse": {
-		"fastMove": "CHARGE_BEAM",
-		"chargedMove": "PSYCHIC",
-		"dps": 13.130434782608697,
-		"speciesId": "aromatisse",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 72,
 		"rank": 162
 	},
 	"espurr": {

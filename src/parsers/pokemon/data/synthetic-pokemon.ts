@@ -147,4 +147,21 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 		released: true,
 		tags: ['mega'],
 	},
+	{
+		dex: 227,
+		speciesId: 'skarmory_mega',
+		speciesName: 'Skarmory (Mega)',
+		baseStats: {
+			atk: 273,
+			def: 228,
+			hp: 163,
+		},
+		types: ['steel', 'flying'],
+		fastMoves: ['AIR_SLASH', 'STEEL_WING'],
+		chargedMoves: ['BRAVE_BIRD', 'SKY_ATTACK', 'FLASH_CANNON'],
+		eliteMoves: [],
+		legacyMoves: [],
+		released: true,
+		tags: ['mega'],
+	},
 ];

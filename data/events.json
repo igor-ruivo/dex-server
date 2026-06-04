@@ -1,5 +1,57 @@
 [
 	{
+		"id": "skarmory-super-mega-raid-day-2026-0",
+		"url": "https://pokemongo.com/news/skarmory-super-mega-raid-day-2026",
+		"title": {
+			"en": "Stay sharp for Skarmory Super Mega Raid Day!",
+			"pt_br": "Fique em alerta para o Dia de Super Megarreides de Skarmory."
+		},
+		"subtitle": {
+			"en": "Skarmory Super Mega Raid Day",
+			"pt_br": "Dia de Super Megarreides de Skarmory"
+		},
+		"startDate": 1782568800000,
+		"endDate": 1782579600000,
+		"dateRanges": [
+			{
+				"start": 1782568800000,
+				"end": 1782579600000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/x8tOSGx9IpXzDcMXIgU98Cp3d1LjwaEnq75TxzSUiaPkRfB-FgqPWzU9yo9VqYWHbsH1B89o7yUzR2O6IrXgPeg6slWoYEz2wB5HP3ULH8Q=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [
+			{
+				"speciesId": "skarmory_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "houndoom",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Remote Raid Pass limit increased to 20 from Friday, June 26, at 5:00 p.m. to Saturday, June 27, 2026, at 8:00 p.m. PDT.",
+				"Receive up to six free Raid Passes from spinning Gym Photo Discs.",
+				"Increased chance of encountering Shiny Skarmory from Super Mega Raids."
+			],
+			"pt_br": [
+				"O limite de Passe de Reide a Distância aumentará para 20, de sexta-feira, 26 de junho, às 17h PDT (21h, no horário de Brasília) a sábado, 27 de junho de 2026, às 20h PDT (domingo, 28 de junho, à meia-noite, no horário de Brasília).",
+				"Receba até seis Passes de Reide gratuitos ao girar fotodiscos em Ginásios.",
+				"Maior chance de encontrar Skarmory Brilhante em Super Megarreides."
+			]
+		}
+	},
+	{
 		"id": "go-pass-june-2026-0",
 		"url": "https://pokemongo.com/news/go-pass-june-2026",
 		"title": {
@@ -1327,66 +1379,6 @@
 				"Maior chance de chocar Riolu Brilhante",
 				"Maior chance de receber Ovos de 2 km por giros em Poképaradas",
 				"*Esse bônus não é acumulável com os bônus dos eventos do Pokémon GO ou de Passes GO."
-			]
-		}
-	},
-	{
-		"id": "an-egg-cellent-adventure-2026-0",
-		"url": "https://pokemongo.com/news/an-egg-cellent-adventure-2026",
-		"title": {
-			"en": "Hop into spring with An Egg-cellent Adventure in Europe!",
-			"pt_br": "Hop into spring with An Egg-cellent Adventure in Europe!"
-		},
-		"subtitle": {
-			"en": "An Egg-cellent Adventure",
-			"pt_br": "An Egg-cellent Adventure"
-		},
-		"startDate": 1775124000000,
-		"endDate": 1775505600000,
-		"dateRanges": [
-			{
-				"start": 1775124000000,
-				"end": 1775505600000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/XdAYhdrhw1jo1fqpM59AIJwJ1vzfOxCsFw1D_oNlshBAsqeutw-GQuaHx_T0RWiSPVImnOUW1PVn2yVb6wayh5ImbilaJSw7I5GB=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "exeggcute",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "chansey",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "bunnelby",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "exeggcute",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Chansey caught in the wild will have a chance of holding a Lucky Egg.",
-				"Increased chance to encounter Shiny Exeggcute, Shiny Chansey, and Shiny Bunnelby."
-			],
-			"pt_br": [
-				"Chansey caught in the wild will have a chance of holding a Lucky Egg.",
-				"Increased chance to encounter Shiny Exeggcute, Shiny Chansey, and Shiny Bunnelby."
 			]
 		}
 	}

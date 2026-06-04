@@ -69,6 +69,7 @@ export const POKEMON_CONFIG = {
 		'falinks_mega',
 		'mewtwo_mega_x',
 		'mewtwo_mega_y',
+		'skarmory_mega',
 	]),
 
 	// Pokemon that should be excluded
@@ -119,6 +120,10 @@ export const POKEMON_CONFIG = {
 		[
 			'malamar_mega',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/687_f2.png',
+		],
+		[
+			'skarmory_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/227_f2.png',
 		],
 		[
 			'slowbro_mega',

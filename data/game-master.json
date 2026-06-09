@@ -9737,6 +9737,47 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"krabby_shadow": {
+		"dex": 98,
+		"speciesId": "krabby_shadow",
+		"speciesName": "Krabby (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png",
+		"goImageUrl": "98.icon.png",
+		"shinyGoImageUrl": "98.s.icon.png",
+		"baseStats": {
+			"atk": 181,
+			"def": 124,
+			"hp": 102
+		},
+		"fastMoves": [
+			"BUBBLE",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"BUBBLE_BEAM",
+			"VICE_GRIP",
+			"WATER_PULSE",
+			"RAZOR_SHELL",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_KRABBY",
+			"evolutions": [
+				"kingler_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"kingler": {
 		"dex": 99,
 		"speciesId": "kingler",
@@ -9762,7 +9803,8 @@
 			"WATER_PULSE",
 			"X_SCISSOR",
 			"CRABHAMMER",
-			"RAZOR_SHELL"
+			"RAZOR_SHELL",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"MUD_SHOT"
@@ -9773,6 +9815,49 @@
 		"family": {
 			"id": "FAMILY_KRABBY",
 			"parent": "krabby"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"kingler_shadow": {
+		"dex": 99,
+		"speciesId": "kingler_shadow",
+		"speciesName": "Kingler (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png",
+		"goImageUrl": "99.icon.png",
+		"shinyGoImageUrl": "99.s.icon.png",
+		"baseStats": {
+			"atk": 240,
+			"def": 181,
+			"hp": 146
+		},
+		"fastMoves": [
+			"BUBBLE",
+			"METAL_CLAW",
+			"MUD_SHOT"
+		],
+		"chargedMoves": [
+			"VICE_GRIP",
+			"WATER_PULSE",
+			"X_SCISSOR",
+			"CRABHAMMER",
+			"RAZOR_SHELL",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"MUD_SHOT"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_KRABBY",
+			"parent": "krabby_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -64121,41 +64206,6 @@
 			"BRICK_BREAK",
 			"STOMP"
 		],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"krabby_shadow": {
-		"dex": 98,
-		"speciesId": "krabby_shadow",
-		"speciesName": "Krabby (Shadow)",
-		"types": [
-			"Water"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png",
-		"goImageUrl": "98.icon.png",
-		"shinyGoImageUrl": "98.s.icon.png",
-		"baseStats": {
-			"atk": 181,
-			"def": 124,
-			"hp": 102
-		},
-		"fastMoves": [
-			"BUBBLE",
-			"MUD_SHOT"
-		],
-		"chargedMoves": [
-			"RAZOR_SHELL",
-			"BUBBLE_BEAM",
-			"WATER_PULSE",
-			"VICE_GRIP",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [],
 		"legacyMoves": [],
 		"isShadow": true,
 		"isMega": false,

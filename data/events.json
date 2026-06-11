@@ -1,5 +1,73 @@
 [
 	{
+		"id": "10th-anniversary-party-0",
+		"url": "https://pokemongo.com/news/10th-anniversary-party",
+		"title": {
+			"en": "Celebrate a decade of Pokémon GO together during the 10th Anniversary Party!",
+			"pt_br": "Participe de uma festa em comemoração ao 10º aniversário do Pokémon GO."
+		},
+		"subtitle": {
+			"en": "10th Anniversary Party",
+			"pt_br": "Festa de 10º aniversário"
+		},
+		"startDate": 1783159200000,
+		"endDate": 1783368000000,
+		"dateRanges": [
+			{
+				"start": 1783159200000,
+				"end": 1783368000000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/dX_Wg6XO3f7fSTWMorQrEa367IKhPrDo0FFTO7VD3dEbw0JJlt4qfIPMMpSli5ndDBtpBDX69udZvVaH_dCgqAX4jG7YqMiuXeJjei7Dyr6N=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "eevee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "wurmple",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "gimmighoul",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"4× XP for catching Pokémon.",
+				"4× Stardust for catching Pokémon.",
+				"Event-themed Pokémon appearing in the wild are more likely to be Shiny.",
+				"Gimmighoul holding a 10th anniversary coin may have a Special Background!^",
+				"When you use a Coin Bag during this event, you may encounter Shiny Gimmighoul—if you’re lucky!^",
+				"^These will be active from Saturday, July 4, at 10:00 a.m. to Friday, July 31, at 11:59 p.m. local time."
+			],
+			"pt_br": [
+				"4× PE por capturar Pokémon.",
+				"4× Poeira Estelar por capturar Pokémon.",
+				"Pokémon com o tema do evento surgirão na natureza e terão mais chances de serem Brilhantes.",
+				"Gimmighoul segurando uma moeda em comemoração ao 10º aniversário poderá ter um Fundo Especial.^",
+				"Ao usar um Porta-moedas durante o evento, você poderá encontrar um Gimmighoul Brilhante, se estiver com sorte!^",
+				"^Ativo de sábado, 4 de julho, às 10h, a sexta-feira, 31 de julho, às 23h59, horário local."
+			]
+		}
+	},
+	{
 		"id": "flying-taxi-taken-over-2026-0",
 		"url": "https://pokemongo.com/news/flying-taxi-taken-over-2026",
 		"title": {
@@ -1165,69 +1233,6 @@
 				"Até seis Passes de Reide adicionais por girar fotodiscos em Ginásios.",
 				"Maior chance de encontrar Entei Brilhante em Reides Sombrosos.",
 				"O limite de Reide à Distância aumentará para 20 de sexta-feira, 1º de maio, às 17h (21h no horário de Brasília), a sábado, 2 maio de 2026, às 20h PST (meia-noite de 3 de maio, no horário de Brasília)."
-			]
-		}
-	},
-	{
-		"id": "steeled-resolve-taken-over-2026-0",
-		"url": "https://pokemongo.com/news/steeled-resolve-taken-over-2026",
-		"title": {
-			"en": "Rescue Shadow Incarnate Forme Landorus and more during Steeled Resolve: Taken Over!",
-			"pt_br": "Resgate Landorus Sombroso (Forma Materializada) e muito mais durante o evento Determinação de Aço: A Invasão."
-		},
-		"subtitle": {
-			"en": "Steeled Resolve: Taken Over",
-			"pt_br": "Determinação de Aço: A Invasão"
-		},
-		"startDate": 1777507200000,
-		"endDate": 1777924800000,
-		"dateRanges": [
-			{
-				"start": 1777507200000,
-				"end": 1777924800000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/Mp9t6zH0m466LathgDeMY5tAJjYM8JcEZo7hMwDNtRB8Rd2wjtMCdUReBmxRBb00kkUgqh4FGKIfs8n-1sr9t-_bMsQJ1TfWtDw=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "beldum",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "pawniard",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "honedge",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "meltan",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Team GO Rocket will appear more frequently at PokéStops and in balloons.",
-				"You can use a Charged TM to help a Shadow Pokémon forget the Charged Attack Frustration.",
-				"Pokémon caught via one-star and three-star Shadow Raids during the event will have a wider variance of Attack, Defense, and HP.",
-				"Also, for the first time in Pokémon GO, you’ll be able to hatch Shiny Varoom from 12 km eggs—if you’re lucky!"
-			],
-			"pt_br": [
-				"A Equipe GO Rocket aparecerá com mais frequência em Poképaradas e em balões.",
-				"Você pode usar um MT de ataque carregado para ajudar um Pokémon Sombroso a esquecer o ataque carregado Frustração.",
-				"Pokémon capturados em Reides Sombrosos de uma e três estrelas durante o evento terão uma variação maior de ataque, defesa e PS.",
-				"Além disso, pela primeira vez no Pokémon GO, você pode até chocar um Varoom Brilhante de Ovos de 12 km, se tiver sorte."
 			]
 		}
 	}

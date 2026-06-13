@@ -233,6 +233,15 @@
 		"chargedMoveDmg": 195,
 		"rank": 26
 	},
+	"mewtwo_mega_x": {
+		"fastMove": "COUNTER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 26.794117647058826,
+		"speciesId": "mewtwo_mega_x",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 108,
+		"rank": 27
+	},
 	"groudon_primal": {
 		"fastMove": "MUD_SHOT",
 		"chargedMove": "FIRE_BLAST",
@@ -240,15 +249,6 @@
 		"speciesId": "groudon_primal",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 247,
-		"rank": 27
-	},
-	"mewtwo_mega_x": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 26.33009708737864,
-		"speciesId": "mewtwo_mega_x",
-		"fastMoveDmg": 24,
-		"chargedMoveDmg": 108,
 		"rank": 28
 	},
 	"blaziken": {

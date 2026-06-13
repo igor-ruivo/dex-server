@@ -14396,7 +14396,8 @@
 		},
 		"fastMoves": [
 			"CONFUSION",
-			"PSYCHO_CUT"
+			"PSYCHO_CUT",
+			"COUNTER"
 		],
 		"chargedMoves": [
 			"FLAMETHROWER",
@@ -14414,7 +14415,9 @@
 			"SHADOW_BALL",
 			"HYPER_BEAM"
 		],
-		"legacyMoves": [],
+		"legacyMoves": [
+			"COUNTER"
+		],
 		"isShadow": false,
 		"isMega": false,
 		"form": "",
@@ -14440,7 +14443,8 @@
 		},
 		"fastMoves": [
 			"CONFUSION",
-			"PSYCHO_CUT"
+			"PSYCHO_CUT",
+			"COUNTER"
 		],
 		"chargedMoves": [
 			"FLAMETHROWER",
@@ -14458,7 +14462,9 @@
 			"SHADOW_BALL",
 			"HYPER_BEAM"
 		],
-		"legacyMoves": [],
+		"legacyMoves": [
+			"COUNTER"
+		],
 		"isShadow": false,
 		"isMega": true,
 		"form": "Mega X",
@@ -14483,7 +14489,8 @@
 		},
 		"fastMoves": [
 			"CONFUSION",
-			"PSYCHO_CUT"
+			"PSYCHO_CUT",
+			"COUNTER"
 		],
 		"chargedMoves": [
 			"FLAMETHROWER",
@@ -14501,7 +14508,9 @@
 			"SHADOW_BALL",
 			"HYPER_BEAM"
 		],
-		"legacyMoves": [],
+		"legacyMoves": [
+			"COUNTER"
+		],
 		"isShadow": false,
 		"isMega": true,
 		"form": "Mega Y",

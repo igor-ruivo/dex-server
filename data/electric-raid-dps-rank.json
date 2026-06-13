@@ -98,6 +98,15 @@
 		"chargedMoveDmg": 131,
 		"rank": 11
 	},
+	"mewtwo_mega_x": {
+		"fastMove": "COUNTER",
+		"chargedMove": "THUNDERBOLT",
+		"dps": 28.11034482758621,
+		"speciesId": "mewtwo_mega_x",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 132,
+		"rank": 12
+	},
 	"ampharos_mega": {
 		"fastMove": "VOLT_SWITCH",
 		"chargedMove": "ZAP_CANNON",
@@ -105,7 +114,7 @@
 		"speciesId": "ampharos_mega",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 207,
-		"rank": 12
+		"rank": 13
 	},
 	"deoxys_attack": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -114,15 +123,6 @@
 		"speciesId": "deoxys_attack",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 240,
-		"rank": 13
-	},
-	"mewtwo_mega_x": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "THUNDERBOLT",
-		"dps": 27.709090909090907,
-		"speciesId": "mewtwo_mega_x",
-		"fastMoveDmg": 24,
-		"chargedMoveDmg": 132,
 		"rank": 14
 	},
 	"vikavolt_shadow": {

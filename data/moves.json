@@ -5590,5 +5590,25 @@
 			"en": "Plasma Fists",
 			"pt_br": "Plasma Fists"
 		}
+	},
+	"GLAIVE_RUSH": {
+		"moveId": "GLAIVE_RUSH",
+		"vId": "-1",
+		"type": "dragon",
+		"isFast": false,
+		"pvpPower": 90,
+		"pvePower": 105,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Glaive Rush",
+			"pt_br": "Glaive Rush"
+		},
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerDefenseStatStageChange": -1
+		}
 	}
 }

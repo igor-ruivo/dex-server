@@ -179,6 +179,15 @@
 		"chargedMoveDmg": 210,
 		"rank": 20
 	},
+	"baxcalibur": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "GLAIVE_RUSH",
+		"dps": 28.484848484848484,
+		"speciesId": "baxcalibur",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 135,
+		"rank": 21
+	},
 	"latios_shadow": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "DRAGON_CLAW",
@@ -186,7 +195,7 @@
 		"speciesId": "latios_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 73,
-		"rank": 21
+		"rank": 22
 	},
 	"dragonite": {
 		"fastMove": "DRAGON_TAIL",
@@ -195,7 +204,7 @@
 		"speciesId": "dragonite",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 200,
-		"rank": 22
+		"rank": 23
 	},
 	"dragapult": {
 		"fastMove": "DRAGON_TAIL",
@@ -204,7 +213,7 @@
 		"speciesId": "dragapult",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 61,
-		"rank": 23
+		"rank": 24
 	},
 	"hydreigon_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -213,7 +222,7 @@
 		"speciesId": "hydreigon_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 140,
-		"rank": 24
+		"rank": 25
 	},
 	"kyurem_white": {
 		"fastMove": "DRAGON_BREATH",
@@ -222,7 +231,7 @@
 		"speciesId": "kyurem_white",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 140,
-		"rank": 25
+		"rank": 26
 	},
 	"tyrantrum_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -231,7 +240,7 @@
 		"speciesId": "tyrantrum_shadow",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 153,
-		"rank": 26
+		"rank": 27
 	},
 	"dialga": {
 		"fastMove": "DRAGON_BREATH",
@@ -240,7 +249,7 @@
 		"speciesId": "dialga",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 208,
-		"rank": 27
+		"rank": 28
 	},
 	"reshiram": {
 		"fastMove": "DRAGON_BREATH",
@@ -249,7 +258,7 @@
 		"speciesId": "reshiram",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 208,
-		"rank": 28
+		"rank": 29
 	},
 	"garchomp": {
 		"fastMove": "DRAGON_TAIL",
@@ -258,7 +267,7 @@
 		"speciesId": "garchomp",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 60,
-		"rank": 29
+		"rank": 30
 	},
 	"latias_mega": {
 		"fastMove": "DRAGON_BREATH",
@@ -267,7 +276,7 @@
 		"speciesId": "latias_mega",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 160,
-		"rank": 30
+		"rank": 31
 	},
 	"latias_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -276,7 +285,7 @@
 		"speciesId": "latias_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 154,
-		"rank": 31
+		"rank": 32
 	},
 	"zekrom": {
 		"fastMove": "DRAGON_BREATH",
@@ -285,7 +294,7 @@
 		"speciesId": "zekrom",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 153,
-		"rank": 32
+		"rank": 33
 	},
 	"regidrago": {
 		"fastMove": "DRAGON_BREATH",
@@ -294,7 +303,7 @@
 		"speciesId": "regidrago",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 161,
-		"rank": 33
+		"rank": 34
 	},
 	"exeggutor_alolan": {
 		"fastMove": "DRAGON_TAIL",
@@ -303,7 +312,7 @@
 		"speciesId": "exeggutor_alolan",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 176,
-		"rank": 34
+		"rank": 35
 	},
 	"rampardos_shadow": {
 		"fastMove": "SMACK_DOWN",
@@ -312,7 +321,7 @@
 		"speciesId": "rampardos_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 163,
-		"rank": 35
+		"rank": 36
 	},
 	"charizard_mega_x": {
 		"fastMove": "DRAGON_BREATH",
@@ -321,7 +330,7 @@
 		"speciesId": "charizard_mega_x",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 62,
-		"rank": 36
+		"rank": 37
 	},
 	"kyurem": {
 		"fastMove": "DRAGON_BREATH",
@@ -330,7 +339,7 @@
 		"speciesId": "kyurem",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 187,
-		"rank": 37
+		"rank": 38
 	},
 	"gyarados_mega": {
 		"fastMove": "DRAGON_TAIL",
@@ -339,7 +348,7 @@
 		"speciesId": "gyarados_mega",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 135,
-		"rank": 38
+		"rank": 39
 	},
 	"latios": {
 		"fastMove": "DRAGON_BREATH",
@@ -348,15 +357,6 @@
 		"speciesId": "latios",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 61,
-		"rank": 39
-	},
-	"baxcalibur": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "OUTRAGE",
-		"dps": 23.609756097560975,
-		"speciesId": "baxcalibur",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 142,
 		"rank": 40
 	},
 	"gyarados_shadow": {

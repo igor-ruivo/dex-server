@@ -261,6 +261,31 @@ class MovesProvider {
 			};
 		}
 
+		const glaiveRushMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			glaiveRushMoveName[locale] = normalizedMoveName('GLAIVE_RUSH');
+		});
+
+		if (!movesDictionary.GLAIVE_RUSH) {
+			movesDictionary.GLAIVE_RUSH = {
+				moveId: 'GLAIVE_RUSH',
+				vId: '-1',
+				type: 'dragon',
+				isFast: false,
+				pvpPower: 90,
+				pvePower: 105,
+				pvpEnergy: -40,
+				pveEnergy: -50,
+				pvpCooldown: 0.5,
+				pveCooldown: 2.0,
+				moveName: glaiveRushMoveName,
+				buffs: {
+					buffActivationChance: 1,
+					attackerDefenseStatStageChange: -1,
+				},
+			};
+		}
+
 		return movesDictionary;
 	}
 }

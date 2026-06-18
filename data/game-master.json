@@ -62202,6 +62202,40 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"squawkabilly": {
+		"dex": 931,
+		"speciesId": "squawkabilly",
+		"speciesName": "Squawkabilly",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/931.png",
+		"goImageUrl": "931.icon.png",
+		"shinyGoImageUrl": "931.s.icon.png",
+		"baseStats": {
+			"atk": 185,
+			"def": 105,
+			"hp": 193
+		},
+		"fastMoves": [
+			"PECK",
+			"AIR_SLASH"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"BRAVE_BIRD",
+			"FLY"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"nacli": {
 		"dex": 932,
 		"speciesId": "nacli",

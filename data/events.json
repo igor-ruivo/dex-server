@@ -220,7 +220,28 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "pidgeotto",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "hoothoot",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "vullaby",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "rookidee",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {
@@ -269,7 +290,7 @@
 				"kind": ""
 			},
 			{
-				"speciesId": "kyurem_white",
+				"speciesId": "squawkabilly",
 				"shiny": true,
 				"kind": ""
 			}
@@ -320,6 +341,11 @@
 			},
 			{
 				"speciesId": "rookidee",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "squawkabilly",
 				"shiny": true,
 				"kind": ""
 			},

@@ -128,6 +128,14 @@ export const POKEMON_CONFIG = {
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/227_f2.png',
 		],
 		[
+			'raichu_mega_x',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f3.png',
+		],
+		[
+			'raichu_mega_y',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f4.png',
+		],
+		[
 			'slowbro_mega',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/080_f2.png',
 		],

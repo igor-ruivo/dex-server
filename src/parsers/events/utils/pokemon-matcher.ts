@@ -330,6 +330,26 @@ class PokemonMatcher {
 			}
 		}
 
+		// Handle Mega Raichu X/Y
+
+		if ((raidLevel === 'Mega' || isMega) && dex === 26) {
+			const words = currP.split(' ');
+			if (words.includes('x')) {
+				return {
+					speciesId: 'raichu_mega_x',
+					shiny: false,
+					kind: raidLevel,
+				};
+			}
+			if (words.includes('y')) {
+				return {
+					speciesId: 'raichu_mega_y',
+					shiny: false,
+					kind: raidLevel,
+				};
+			}
+		}
+
 		// Handle Mega Mewtwo X/Y
 		if ((raidLevel === 'Mega' || isMega || raidLevel === '5') && dex === 150) {
 			const words = currP.split(' ');

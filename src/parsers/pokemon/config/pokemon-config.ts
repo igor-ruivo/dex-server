@@ -70,6 +70,8 @@ export const POKEMON_CONFIG = {
 		'mewtwo_mega_x',
 		'mewtwo_mega_y',
 		'skarmory_mega',
+		'raichu_mega_x',
+		'raichu_mega_y',
 	]),
 
 	// Pokemon that should be excluded

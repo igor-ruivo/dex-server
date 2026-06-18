@@ -91,7 +91,18 @@
 		"imageUrl": "https://lh3.googleusercontent.com/LQMhW656yBSn7x-Vb_EJxsha4MhdRUnZfahU-s7OpHd-k3XcW4PKH2OEsPSXY69CzsKSH_Ajo14VFS_2IJItzVhiY-TtL0ca24s=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "raichu_mega_x",
+				"shiny": true,
+				"kind": "mega"
+			},
+			{
+				"speciesId": "raichu_mega_y",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [
 			{

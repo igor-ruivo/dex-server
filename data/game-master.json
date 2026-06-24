@@ -8515,7 +8515,8 @@
 			"AQUA_JET",
 			"AQUA_TAIL",
 			"AURORA_BEAM",
-			"ICY_WIND"
+			"ICY_WIND",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"WATER_GUN",
@@ -8528,6 +8529,51 @@
 			"id": "FAMILY_SEEL",
 			"evolutions": [
 				"dewgong"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"seel_shadow": {
+		"dex": 86,
+		"speciesId": "seel_shadow",
+		"speciesName": "Seel (Shadow)",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png",
+		"goImageUrl": "86.icon.png",
+		"shinyGoImageUrl": "86.s.icon.png",
+		"baseStats": {
+			"atk": 85,
+			"def": 121,
+			"hp": 163
+		},
+		"fastMoves": [
+			"ICE_SHARD",
+			"LICK",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"AQUA_JET",
+			"AQUA_TAIL",
+			"AURORA_BEAM",
+			"ICY_WIND",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"WATER_GUN",
+			"AQUA_JET"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SEEL",
+			"evolutions": [
+				"dewgong_shadow"
 			]
 		},
 		"form": "",
@@ -8563,7 +8609,8 @@
 			"ICY_WIND",
 			"WATER_PULSE",
 			"DRILL_RUN",
-			"LIQUIDATION"
+			"LIQUIDATION",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"ICE_SHARD",
@@ -8576,6 +8623,54 @@
 		"family": {
 			"id": "FAMILY_SEEL",
 			"parent": "seel"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"dewgong_shadow": {
+		"dex": 87,
+		"speciesId": "dewgong_shadow",
+		"speciesName": "Dewgong (Shadow)",
+		"types": [
+			"Water",
+			"Ice"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png",
+		"goImageUrl": "87.icon.png",
+		"shinyGoImageUrl": "87.s.icon.png",
+		"baseStats": {
+			"atk": 139,
+			"def": 177,
+			"hp": 207
+		},
+		"fastMoves": [
+			"FROST_BREATH",
+			"ICE_SHARD",
+			"IRON_TAIL"
+		],
+		"chargedMoves": [
+			"AQUA_JET",
+			"AURORA_BEAM",
+			"BLIZZARD",
+			"ICY_WIND",
+			"WATER_PULSE",
+			"DRILL_RUN",
+			"LIQUIDATION",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"ICE_SHARD",
+			"AQUA_JET",
+			"ICY_WIND"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_SEEL",
+			"parent": "seel_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -14425,6 +14520,44 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"mewtwo_armored": {
+		"dex": 150,
+		"speciesId": "mewtwo_armored",
+		"speciesName": "Mewtwo (Armored)",
+		"types": [
+			"Psychic"
+		],
+		"imageUrl": "https://i.imgur.com/Vwhh8KW.png",
+		"goImageUrl": "150.fA.icon.png",
+		"shinyGoImageUrl": "150.fA.s.icon.png",
+		"baseStats": {
+			"atk": 182,
+			"def": 278,
+			"hp": 214
+		},
+		"fastMoves": [
+			"CONFUSION",
+			"IRON_TAIL"
+		],
+		"chargedMoves": [
+			"DYNAMIC_PUNCH",
+			"ROCK_SLIDE",
+			"EARTHQUAKE",
+			"FUTURE_SIGHT",
+			"PSYSTRIKE",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"PSYSTRIKE"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "Armored",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"mewtwo_mega_x": {
 		"dex": 150,
 		"speciesId": "mewtwo_mega_x",
@@ -14514,44 +14647,6 @@
 		"isShadow": false,
 		"isMega": true,
 		"form": "Mega Y",
-		"isLegendary": true,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"mewtwo_armored": {
-		"dex": 150,
-		"speciesId": "mewtwo_armored",
-		"speciesName": "Mewtwo (Armored)",
-		"types": [
-			"Psychic"
-		],
-		"imageUrl": "https://i.imgur.com/Vwhh8KW.png",
-		"goImageUrl": "150.fA.icon.png",
-		"shinyGoImageUrl": "150.fA.s.icon.png",
-		"baseStats": {
-			"atk": 182,
-			"def": 278,
-			"hp": 214
-		},
-		"fastMoves": [
-			"CONFUSION",
-			"IRON_TAIL"
-		],
-		"chargedMoves": [
-			"DYNAMIC_PUNCH",
-			"ROCK_SLIDE",
-			"EARTHQUAKE",
-			"FUTURE_SIGHT",
-			"PSYSTRIKE",
-			"RETURN"
-		],
-		"eliteMoves": [
-			"PSYSTRIKE"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"form": "Armored",
 		"isLegendary": true,
 		"isMythical": false,
 		"isBeast": false
@@ -15557,7 +15652,8 @@
 		"chargedMoves": [
 			"AERIAL_ACE",
 			"NIGHT_SHADE",
-			"SKY_ATTACK"
+			"SKY_ATTACK",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -15567,6 +15663,47 @@
 			"id": "FAMILY_HOOTHOOT",
 			"evolutions": [
 				"noctowl"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"hoothoot_shadow": {
+		"dex": 163,
+		"speciesId": "hoothoot_shadow",
+		"speciesName": "Hoothoot (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/163.png",
+		"goImageUrl": "163.icon.png",
+		"shinyGoImageUrl": "163.s.icon.png",
+		"baseStats": {
+			"atk": 67,
+			"def": 88,
+			"hp": 155
+		},
+		"fastMoves": [
+			"FEINT_ATTACK",
+			"PECK"
+		],
+		"chargedMoves": [
+			"AERIAL_ACE",
+			"NIGHT_SHADE",
+			"SKY_ATTACK",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_HOOTHOOT",
+			"evolutions": [
+				"noctowl_shadow"
 			]
 		},
 		"form": "",
@@ -15598,7 +15735,8 @@
 			"NIGHT_SHADE",
 			"PSYCHIC",
 			"SKY_ATTACK",
-			"SHADOW_BALL"
+			"SHADOW_BALL",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -15607,6 +15745,46 @@
 		"family": {
 			"id": "FAMILY_HOOTHOOT",
 			"parent": "hoothoot"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"noctowl_shadow": {
+		"dex": 164,
+		"speciesId": "noctowl_shadow",
+		"speciesName": "Noctowl (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/164.png",
+		"goImageUrl": "164.icon.png",
+		"shinyGoImageUrl": "164.s.icon.png",
+		"baseStats": {
+			"atk": 145,
+			"def": 156,
+			"hp": 225
+		},
+		"fastMoves": [
+			"EXTRASENSORY",
+			"WING_ATTACK"
+		],
+		"chargedMoves": [
+			"NIGHT_SHADE",
+			"PSYCHIC",
+			"SKY_ATTACK",
+			"SHADOW_BALL",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_HOOTHOOT",
+			"parent": "hoothoot_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -48887,13 +49065,53 @@
 			"OVERHEAT",
 			"DRACO_METEOR",
 			"STONE_EDGE",
-			"FUSION_FLARE"
+			"FUSION_FLARE",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"FUSION_FLARE"
 		],
 		"legacyMoves": [],
 		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"reshiram_shadow": {
+		"dex": 643,
+		"speciesId": "reshiram_shadow",
+		"speciesName": "Reshiram (Shadow)",
+		"types": [
+			"Dragon",
+			"Fire"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/643.png",
+		"goImageUrl": "643.icon.png",
+		"shinyGoImageUrl": "643.s.icon.png",
+		"baseStats": {
+			"atk": 275,
+			"def": 211,
+			"hp": 205
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"FIRE_FANG"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"OVERHEAT",
+			"DRACO_METEOR",
+			"STONE_EDGE",
+			"FUSION_FLARE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"FUSION_FLARE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
 		"isMega": false,
 		"form": "",
 		"isLegendary": true,
@@ -48974,6 +49192,42 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"landorus_incarnate_shadow": {
+		"dex": 645,
+		"speciesId": "landorus_incarnate_shadow",
+		"speciesName": "Landorus (Incarnate) (Shadow)",
+		"types": [
+			"Ground",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/645.png",
+		"goImageUrl": "645.icon.png",
+		"shinyGoImageUrl": "645.s.icon.png",
+		"baseStats": {
+			"atk": 261,
+			"def": 182,
+			"hp": 205
+		},
+		"fastMoves": [
+			"MUD_SHOT",
+			"ROCK_THROW"
+		],
+		"chargedMoves": [
+			"EARTH_POWER",
+			"OUTRAGE",
+			"ROCK_SLIDE",
+			"FOCUS_BLAST",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"form": "Incarnate",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"landorus_therian": {
 		"dex": 645,
 		"speciesId": "landorus_therian",
@@ -49009,42 +49263,6 @@
 		"isShadow": false,
 		"isMega": false,
 		"form": "Therian",
-		"isLegendary": true,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"landorus_incarnate_shadow": {
-		"dex": 645,
-		"speciesId": "landorus_incarnate_shadow",
-		"speciesName": "Landorus (Incarnate) (Shadow)",
-		"types": [
-			"Ground",
-			"Flying"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/645.png",
-		"goImageUrl": "645.icon.png",
-		"shinyGoImageUrl": "645.s.icon.png",
-		"baseStats": {
-			"atk": 261,
-			"def": 182,
-			"hp": 205
-		},
-		"fastMoves": [
-			"MUD_SHOT",
-			"ROCK_THROW"
-		],
-		"chargedMoves": [
-			"EARTH_POWER",
-			"OUTRAGE",
-			"ROCK_SLIDE",
-			"FOCUS_BLAST",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"form": "Incarnate",
 		"isLegendary": true,
 		"isMythical": false,
 		"isBeast": false
@@ -53459,7 +53677,8 @@
 		"chargedMoves": [
 			"DRAGON_PULSE",
 			"AIR_CUTTER",
-			"HEAT_WAVE"
+			"HEAT_WAVE",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -53469,6 +53688,47 @@
 			"id": "FAMILY_NOIBAT",
 			"evolutions": [
 				"noivern"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"noibat_shadow": {
+		"dex": 714,
+		"speciesId": "noibat_shadow",
+		"speciesName": "Noibat (Shadow)",
+		"types": [
+			"Flying",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/714.png",
+		"goImageUrl": "714.icon.png",
+		"shinyGoImageUrl": "714.s.icon.png",
+		"baseStats": {
+			"atk": 83,
+			"def": 73,
+			"hp": 120
+		},
+		"fastMoves": [
+			"WING_ATTACK",
+			"BITE"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"AIR_CUTTER",
+			"HEAT_WAVE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_NOIBAT",
+			"evolutions": [
+				"noivern_shadow"
 			]
 		},
 		"form": "",
@@ -53501,7 +53761,8 @@
 			"HURRICANE",
 			"HEAT_WAVE",
 			"PSYCHIC",
-			"BOOMBURST"
+			"BOOMBURST",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"BOOMBURST"
@@ -53512,6 +53773,49 @@
 		"family": {
 			"id": "FAMILY_NOIBAT",
 			"parent": "noibat"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"noivern_shadow": {
+		"dex": 715,
+		"speciesId": "noivern_shadow",
+		"speciesName": "Noivern (Shadow)",
+		"types": [
+			"Flying",
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/715.png",
+		"goImageUrl": "715.icon.png",
+		"shinyGoImageUrl": "715.s.icon.png",
+		"baseStats": {
+			"atk": 205,
+			"def": 175,
+			"hp": 198
+		},
+		"fastMoves": [
+			"AIR_SLASH",
+			"BITE"
+		],
+		"chargedMoves": [
+			"DRACO_METEOR",
+			"HURRICANE",
+			"HEAT_WAVE",
+			"PSYCHIC",
+			"BOOMBURST",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"BOOMBURST"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_NOIBAT",
+			"parent": "noibat_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -56629,6 +56933,40 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"mimikyu": {
+		"dex": 778,
+		"speciesId": "mimikyu",
+		"speciesName": "Mimikyu",
+		"types": [
+			"Ghost",
+			"Fairy"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/778.png",
+		"goImageUrl": "778.icon.png",
+		"shinyGoImageUrl": "778.s.icon.png",
+		"baseStats": {
+			"atk": 177,
+			"def": 199,
+			"hp": 146
+		},
+		"fastMoves": [
+			"SHADOW_CLAW",
+			"HEX"
+		],
+		"chargedMoves": [
+			"SHADOW_SNEAK",
+			"PLAY_ROUGH",
+			"THUNDER"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"bruxish": {
 		"dex": 779,
 		"speciesId": "bruxish",
@@ -58277,7 +58615,8 @@
 		],
 		"chargedMoves": [
 			"SKY_ATTACK",
-			"PAYBACK"
+			"PAYBACK",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -58287,6 +58626,46 @@
 			"id": "FAMILY_ROOKIDEE",
 			"evolutions": [
 				"corvisquire"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"rookidee_shadow": {
+		"dex": 821,
+		"speciesId": "rookidee_shadow",
+		"speciesName": "Rookidee (Shadow)",
+		"types": [
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/821.png",
+		"goImageUrl": "821.icon.png",
+		"shinyGoImageUrl": "821.s.icon.png",
+		"baseStats": {
+			"atk": 88,
+			"def": 67,
+			"hp": 116
+		},
+		"fastMoves": [
+			"PECK",
+			"AIR_SLASH",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"SKY_ATTACK",
+			"PAYBACK",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROOKIDEE",
+			"evolutions": [
+				"corvisquire_shadow"
 			]
 		},
 		"form": "",
@@ -58316,7 +58695,8 @@
 		],
 		"chargedMoves": [
 			"SKY_ATTACK",
-			"PAYBACK"
+			"PAYBACK",
+			"RETURN"
 		],
 		"eliteMoves": [],
 		"legacyMoves": [],
@@ -58327,6 +58707,47 @@
 			"parent": "rookidee",
 			"evolutions": [
 				"corviknight"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"corvisquire_shadow": {
+		"dex": 822,
+		"speciesId": "corvisquire_shadow",
+		"speciesName": "Corvisquire (Shadow)",
+		"types": [
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/822.png",
+		"goImageUrl": "822.icon.png",
+		"shinyGoImageUrl": "822.s.icon.png",
+		"baseStats": {
+			"atk": 129,
+			"def": 110,
+			"hp": 169
+		},
+		"fastMoves": [
+			"PECK",
+			"AIR_SLASH",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"SKY_ATTACK",
+			"PAYBACK",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROOKIDEE",
+			"parent": "rookidee_shadow",
+			"evolutions": [
+				"corviknight_shadow"
 			]
 		},
 		"form": "",
@@ -58359,7 +58780,8 @@
 			"SKY_ATTACK",
 			"PAYBACK",
 			"IRON_HEAD",
-			"AIR_CUTTER"
+			"AIR_CUTTER",
+			"RETURN"
 		],
 		"eliteMoves": [
 			"IRON_HEAD",
@@ -58371,6 +58793,50 @@
 		"family": {
 			"id": "FAMILY_ROOKIDEE",
 			"parent": "corvisquire"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"corviknight_shadow": {
+		"dex": 823,
+		"speciesId": "corviknight_shadow",
+		"speciesName": "Corviknight (Shadow)",
+		"types": [
+			"Flying",
+			"Steel"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/823.png",
+		"goImageUrl": "823.icon.png",
+		"shinyGoImageUrl": "823.s.icon.png",
+		"baseStats": {
+			"atk": 163,
+			"def": 192,
+			"hp": 221
+		},
+		"fastMoves": [
+			"STEEL_WING",
+			"AIR_SLASH",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"SKY_ATTACK",
+			"PAYBACK",
+			"IRON_HEAD",
+			"AIR_CUTTER",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"IRON_HEAD",
+			"AIR_CUTTER"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ROOKIDEE",
+			"parent": "corvisquire_shadow"
 		},
 		"form": "",
 		"isLegendary": false,

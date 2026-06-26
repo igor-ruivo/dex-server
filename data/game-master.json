@@ -47286,6 +47286,46 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"axew_shadow": {
+		"dex": 610,
+		"speciesId": "axew_shadow",
+		"speciesName": "Axew (Shadow)",
+		"types": [
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/610.png",
+		"goImageUrl": "610.icon.png",
+		"shinyGoImageUrl": "610.s.icon.png",
+		"baseStats": {
+			"atk": 154,
+			"def": 101,
+			"hp": 130
+		},
+		"fastMoves": [
+			"SCRATCH",
+			"IRON_TAIL"
+		],
+		"chargedMoves": [
+			"DRAGON_CLAW",
+			"AQUA_TAIL",
+			"DRAGON_PULSE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_AXEW",
+			"evolutions": [
+				"fraxure_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"fraxure": {
 		"dex": 611,
 		"speciesId": "fraxure",
@@ -47320,6 +47360,47 @@
 			"parent": "axew",
 			"evolutions": [
 				"haxorus"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"fraxure_shadow": {
+		"dex": 611,
+		"speciesId": "fraxure_shadow",
+		"speciesName": "Fraxure (Shadow)",
+		"types": [
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/611.png",
+		"goImageUrl": "611.icon.png",
+		"shinyGoImageUrl": "611.s.icon.png",
+		"baseStats": {
+			"atk": 212,
+			"def": 123,
+			"hp": 165
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"IRON_TAIL"
+		],
+		"chargedMoves": [
+			"DRAGON_CLAW",
+			"AQUA_TAIL",
+			"NIGHT_SLASH",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_AXEW",
+			"parent": "axew_shadow",
+			"evolutions": [
+				"haxorus_shadow"
 			]
 		},
 		"form": "",
@@ -47363,6 +47444,48 @@
 		"family": {
 			"id": "FAMILY_AXEW",
 			"parent": "fraxure"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"haxorus_shadow": {
+		"dex": 612,
+		"speciesId": "haxorus_shadow",
+		"speciesName": "Haxorus (Shadow)",
+		"types": [
+			"Dragon"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/612.png",
+		"goImageUrl": "612.icon.png",
+		"shinyGoImageUrl": "612.s.icon.png",
+		"baseStats": {
+			"atk": 284,
+			"def": 172,
+			"hp": 183
+		},
+		"fastMoves": [
+			"DRAGON_TAIL",
+			"COUNTER"
+		],
+		"chargedMoves": [
+			"DRAGON_CLAW",
+			"SURF",
+			"NIGHT_SLASH",
+			"EARTHQUAKE",
+			"BREAKING_SWIPE",
+			"FRUSTRATION"
+		],
+		"eliteMoves": [
+			"BREAKING_SWIPE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_AXEW",
+			"parent": "fraxure_shadow"
 		},
 		"form": "",
 		"isLegendary": false,
@@ -64724,129 +64847,6 @@
 		"legacyMoves": [],
 		"isShadow": true,
 		"isMega": false,
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"axew_shadow": {
-		"dex": 610,
-		"speciesId": "axew_shadow",
-		"speciesName": "Axew (Shadow)",
-		"types": [
-			"Dragon"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/610.png",
-		"goImageUrl": "610.icon.png",
-		"shinyGoImageUrl": "610.s.icon.png",
-		"baseStats": {
-			"atk": 154,
-			"def": 101,
-			"hp": 130
-		},
-		"fastMoves": [
-			"SCRATCH",
-			"IRON_TAIL"
-		],
-		"chargedMoves": [
-			"DRAGON_PULSE",
-			"DRAGON_CLAW",
-			"AQUA_TAIL",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"family": {
-			"id": "FAMILY_AXEW",
-			"evolutions": [
-				"fraxure_shadow"
-			]
-		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"fraxure_shadow": {
-		"dex": 611,
-		"speciesId": "fraxure_shadow",
-		"speciesName": "Fraxure (Shadow)",
-		"types": [
-			"Dragon"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/611.png",
-		"goImageUrl": "611.icon.png",
-		"shinyGoImageUrl": "611.s.icon.png",
-		"baseStats": {
-			"atk": 212,
-			"def": 123,
-			"hp": 165
-		},
-		"fastMoves": [
-			"DRAGON_TAIL",
-			"IRON_TAIL"
-		],
-		"chargedMoves": [
-			"DRAGON_CLAW",
-			"AQUA_TAIL",
-			"NIGHT_SLASH",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"family": {
-			"id": "FAMILY_AXEW",
-			"parent": "axew_shadow",
-			"evolutions": [
-				"haxorus_shadow"
-			]
-		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"haxorus_shadow": {
-		"dex": 612,
-		"speciesId": "haxorus_shadow",
-		"speciesName": "Haxorus (Shadow)",
-		"types": [
-			"Dragon"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/612.png",
-		"goImageUrl": "612.icon.png",
-		"shinyGoImageUrl": "612.s.icon.png",
-		"baseStats": {
-			"atk": 284,
-			"def": 172,
-			"hp": 183
-		},
-		"fastMoves": [
-			"DRAGON_TAIL",
-			"COUNTER"
-		],
-		"chargedMoves": [
-			"DRAGON_CLAW",
-			"SURF",
-			"NIGHT_SLASH",
-			"EARTHQUAKE",
-			"BREAKING_SWIPE",
-			"FRUSTRATION"
-		],
-		"eliteMoves": [
-			"BREAKING_SWIPE"
-		],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"family": {
-			"id": "FAMILY_AXEW",
-			"parent": "fraxure_shadow"
-		},
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,

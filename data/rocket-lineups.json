@@ -10,7 +10,8 @@
 		],
 		"tier2": [
 			"kangaskhan_shadow",
-			"rhyperior_shadow"
+			"rhyperior_shadow",
+			"machamp_shadow"
 		],
 		"tier3": [
 			"reshiram_shadow"
@@ -121,13 +122,17 @@
 		"type": "fire",
 		"trainerId": "Fire-type Female Grunt",
 		"tier1": [
+			"litwick_shadow",
 			"ponyta_shadow",
 			"torchic_shadow"
 		],
 		"tier2": [
+			"magmar_shadow",
 			"blaziken_shadow"
 		],
 		"tier3": [
+			"darmanitan_standard_shadow",
+			"delphox_shadow",
 			"magmortar_shadow"
 		],
 		"catchableTiers": [
@@ -152,7 +157,8 @@
 		],
 		"tier3": [
 			"walrein_shadow",
-			"greninja_shadow"
+			"greninja_shadow",
+			"tentacruel_shadow"
 		],
 		"catchableTiers": [
 			0
@@ -188,10 +194,12 @@
 		"type": "electric",
 		"trainerId": "Electric-type Female Grunt",
 		"tier1": [
+			"voltorb_shadow",
 			"shinx_shadow",
 			"helioptile_shadow"
 		],
 		"tier2": [
+			"electabuzz_shadow",
 			"voltorb_shadow",
 			"geodude_alolan_shadow"
 		],
@@ -223,7 +231,8 @@
 		],
 		"tier3": [
 			"chesnaught_shadow",
-			"trevenant_shadow"
+			"trevenant_shadow",
+			"cradily_shadow"
 		],
 		"catchableTiers": [
 			0
@@ -243,7 +252,8 @@
 		],
 		"tier2": [
 			"sealeo_shadow",
-			"froslass_shadow"
+			"froslass_shadow",
+			"ninetales_alolan_shadow"
 		],
 		"tier3": [
 			"aurorus_shadow",
@@ -271,7 +281,11 @@
 			"hitmonlee_shadow",
 			"hitmonchan_shadow"
 		],
-		"tier3": [],
+		"tier3": [
+			"conkeldurr_shadow",
+			"annihilape_shadow",
+			"infernape_shadow"
+		],
 		"catchableTiers": [
 			0,
 			1
@@ -285,14 +299,18 @@
 		"type": "poison",
 		"trainerId": "Poison-type Female Grunt",
 		"tier1": [
+			"oddish_shadow",
 			"zubat_shadow",
 			"qwilfish_shadow"
 		],
 		"tier2": [
+			"weezing_galarian_shadow",
 			"nidorino_shadow",
 			"nidorina_shadow"
 		],
 		"tier3": [
+			"weezing_shadow",
+			"toxicroak_shadow",
 			"amoonguss_shadow"
 		],
 		"catchableTiers": [
@@ -310,12 +328,16 @@
 		"tier1": [
 			"rhyhorn_shadow",
 			"gligar_shadow",
-			"golurk_shadow"
+			"trapinch_shadow"
 		],
 		"tier2": [
+			"gligar_shadow",
+			"claydol_shadow",
 			"vibrava_shadow"
 		],
 		"tier3": [
+			"golurk_shadow",
+			"hippowdon_shadow",
 			"flygon_shadow"
 		],
 		"catchableTiers": [
@@ -342,7 +364,8 @@
 		],
 		"tier3": [
 			"dragonite_shadow",
-			"toucannon_shadow"
+			"toucannon_shadow",
+			"swanna_shadow"
 		],
 		"catchableTiers": [
 			0,
@@ -362,6 +385,7 @@
 			"drowzee_shadow"
 		],
 		"tier2": [
+			"drowzee_shadow",
 			"duosion_shadow",
 			"wobbuffet_shadow"
 		],
@@ -387,10 +411,13 @@
 			"grubbin_shadow"
 		],
 		"tier2": [
+			"pinsir_shadow",
 			"anorith_shadow",
 			"dewpider_shadow"
 		],
 		"tier3": [
+			"scizor_shadow",
+			"scolipede_shadow",
 			"vikavolt_shadow"
 		],
 		"catchableTiers": [
@@ -432,22 +459,22 @@
 		"type": "ghost",
 		"trainerId": "Ghost-type Male Grunt",
 		"tier1": [
-			"litwick_shadow",
 			"duskull_shadow",
 			"gastly_shadow",
 			"yamask_shadow"
 		],
 		"tier2": [
+			"dusclops_shadow",
 			"sableye_shadow",
 			"cofagrigus_shadow"
 		],
 		"tier3": [
+			"gengar_shadow",
 			"froslass_shadow",
 			"cofagrigus_shadow"
 		],
 		"catchableTiers": [
-			0,
-			1
+			0
 		]
 	},
 	{
@@ -469,7 +496,8 @@
 		],
 		"tier3": [
 			"dragonite_shadow",
-			"garchomp_shadow"
+			"garchomp_shadow",
+			"salamence_shadow"
 		],
 		"catchableTiers": [
 			0
@@ -488,9 +516,14 @@
 			"rattata_alolan_shadow"
 		],
 		"tier2": [
+			"houndour_shadow",
+			"raticate_alolan_shadow",
 			"absol_shadow"
 		],
-		"tier3": [],
+		"tier3": [
+			"liepard_shadow",
+			"hydreigon_shadow"
+		],
 		"catchableTiers": [
 			0
 		]
@@ -508,6 +541,7 @@
 			"beldum_shadow"
 		],
 		"tier2": [
+			"lairon_shadow",
 			"skarmory_shadow",
 			"metang_shadow"
 		],
@@ -528,13 +562,18 @@
 		"type": "fairy",
 		"trainerId": "Fairy-type Female Grunt",
 		"tier1": [
+			"ralts_shadow",
 			"snubbull_shadow",
 			"vulpix_alolan_shadow"
 		],
 		"tier2": [
+			"snubbull_shadow",
+			"weezing_galarian_shadow",
 			"kirlia_shadow"
 		],
 		"tier3": [
+			"ninetales_alolan_shadow",
+			"weezing_galarian_shadow",
 			"granbull_shadow"
 		],
 		"catchableTiers": [

@@ -30,7 +30,9 @@
 			"axew_shadow"
 		],
 		"tier2": [
-			"snorlax_shadow"
+			"snorlax_shadow",
+			"golurk_shadow",
+			"weezing_galarian_shadow"
 		],
 		"tier3": [
 			"tyranitar_shadow",
@@ -128,7 +130,8 @@
 		],
 		"tier2": [
 			"magmar_shadow",
-			"blaziken_shadow"
+			"blaziken_shadow",
+			"camerupt_shadow"
 		],
 		"tier3": [
 			"darmanitan_standard_shadow",
@@ -152,6 +155,7 @@
 			"krabby_shadow"
 		],
 		"tier2": [
+			"dewpider_shadow",
 			"swampert_shadow",
 			"sharpedo_shadow"
 		],
@@ -172,7 +176,8 @@
 		"type": "water",
 		"trainerId": "Water-type Male Grunt",
 		"tier1": [
-			"magikarp_shadow"
+			"magikarp_shadow",
+			"feebas_shadow"
 		],
 		"tier2": [
 			"magikarp_shadow"
@@ -226,6 +231,7 @@
 			"tangela_shadow"
 		],
 		"tier2": [
+			"lileep_shadow",
 			"sceptile_shadow",
 			"morelull_shadow"
 		],
@@ -407,6 +413,7 @@
 		"type": "bug",
 		"trainerId": "Bug-type Male Grunt",
 		"tier1": [
+			"venonat_shadow",
 			"weedle_shadow",
 			"grubbin_shadow"
 		],
@@ -448,7 +455,8 @@
 			"aurorus_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{
@@ -516,8 +524,8 @@
 			"rattata_alolan_shadow"
 		],
 		"tier2": [
+			"sneasel_shadow",
 			"houndour_shadow",
-			"raticate_alolan_shadow",
 			"absol_shadow"
 		],
 		"tier3": [
@@ -525,7 +533,8 @@
 			"hydreigon_shadow"
 		],
 		"catchableTiers": [
-			0
+			0,
+			1
 		]
 	},
 	{

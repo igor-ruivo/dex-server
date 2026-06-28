@@ -20330,6 +20330,41 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"skarmory_mega": {
+		"dex": 227,
+		"speciesId": "skarmory_mega",
+		"speciesName": "Skarmory (Mega)",
+		"types": [
+			"Steel",
+			"Flying"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/227_f2.png",
+		"goImageUrl": "227.fMEGA.icon.png",
+		"shinyGoImageUrl": "227.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 273,
+			"def": 228,
+			"hp": 163
+		},
+		"fastMoves": [
+			"AIR_SLASH",
+			"STEEL_WING"
+		],
+		"chargedMoves": [
+			"BRAVE_BIRD",
+			"FLASH_CANNON",
+			"SKY_ATTACK",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"houndour": {
 		"dex": 228,
 		"speciesId": "houndour",
@@ -64881,41 +64916,6 @@
 		"isShadow": true,
 		"isMega": false,
 		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"skarmory_mega": {
-		"dex": 227,
-		"speciesId": "skarmory_mega",
-		"speciesName": "Skarmory (Mega)",
-		"types": [
-			"Steel",
-			"Flying"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/227_f2.png",
-		"goImageUrl": "227.fMEGA.icon.png",
-		"shinyGoImageUrl": "227.fMEGA.s.icon.png",
-		"baseStats": {
-			"atk": 273,
-			"def": 228,
-			"hp": 163
-		},
-		"fastMoves": [
-			"AIR_SLASH",
-			"STEEL_WING"
-		],
-		"chargedMoves": [
-			"BRAVE_BIRD",
-			"SKY_ATTACK",
-			"FLASH_CANNON",
-			"RETURN"
-		],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

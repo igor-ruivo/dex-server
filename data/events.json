@@ -1,5 +1,48 @@
 [
 	{
+		"id": "go-pass-july-2026-0",
+		"url": "https://pokemongo.com/news/go-pass-july-2026",
+		"title": {
+			"en": "Ho-Oh, Gimmighoul holding a 10th anniversary coin, and more await in GO Pass: July!",
+			"pt_br": "Ho-Oh, Gimmighoul segurando uma moeda do 10º Aniversário e muitas outras surpresas esperam por você no Passe GO: julho."
+		},
+		"subtitle": {
+			"en": "GO Pass: July",
+			"pt_br": "Passe GO: julho"
+		},
+		"startDate": 1783418400000,
+		"endDate": 1785837600000,
+		"dateRanges": [
+			{
+				"start": 1783418400000,
+				"end": 1785837600000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/H4-iHsG7pyIpH9_ZbiY5Kc2r3os0THbRp8S_OR14tZuwY1gbmPtghAy9EYukpqzaRHSLyjBB_FewLFlUPd4CG8swStn8KHjQGgs=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "ho_oh",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "gimmighoul",
+				"shiny": false,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [],
+			"pt_br": []
+		}
+	},
+	{
 		"id": "ozone-ascent-2026-0",
 		"url": "https://pokemongo.com/news/ozone-ascent-2026",
 		"title": {
@@ -51,7 +94,7 @@
 		},
 		"subtitle": {
 			"en": "Willow’s Birthday Research",
-			"pt_br": "Aniversário do Professor Willow"
+			"pt_br": "Pesquisa de Aniversário do Professor Willow"
 		},
 		"startDate": 1784628000000,
 		"endDate": 1784664000000,

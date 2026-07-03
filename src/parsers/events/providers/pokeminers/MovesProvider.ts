@@ -286,6 +286,31 @@ class MovesProvider {
 			};
 		}
 
+		const snipeShotMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			snipeShotMoveName[locale] = normalizedMoveName('SNIPE_SHOT');
+		});
+
+		if (!movesDictionary.SNIPE_SHOT) {
+			movesDictionary.SNIPE_SHOT = {
+				moveId: 'SNIPE_SHOT',
+				vId: '-1',
+				type: 'water',
+				isFast: false,
+				pvpPower: 65,
+				pvePower: 100,
+				pvpEnergy: -35,
+				pveEnergy: -33,
+				pvpCooldown: 0.5,
+				pveCooldown: 3.5,
+				moveName: snipeShotMoveName,
+				buffs: {
+					buffActivationChance: 0.125,
+					attackerAttackStatStageChange: 2,
+				},
+			};
+		}
+
 		return movesDictionary;
 	}
 }

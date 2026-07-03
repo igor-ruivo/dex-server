@@ -58660,9 +58660,13 @@
 		"chargedMoves": [
 			"WATER_PULSE",
 			"SURF",
-			"SHADOW_BALL"
+			"SHADOW_BALL",
+			"SNIPE_SHOT",
+			"HYDRO_CANNON"
 		],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"HYDRO_CANNON"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,

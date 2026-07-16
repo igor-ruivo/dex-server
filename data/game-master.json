@@ -2466,6 +2466,96 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"raichu_mega_x": {
+		"dex": 26,
+		"speciesId": "raichu_mega_x",
+		"speciesName": "Raichu (Mega X)",
+		"types": [
+			"Electric"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f3.png",
+		"goImageUrl": "26.fMEGA_X.icon.png",
+		"shinyGoImageUrl": "26.fMEGA_X.s.icon.png",
+		"baseStats": {
+			"atk": 277,
+			"def": 203,
+			"hp": 155
+		},
+		"fastMoves": [
+			"SPARK",
+			"THUNDER_SHOCK",
+			"VOLT_SWITCH",
+			"CHARM"
+		],
+		"chargedMoves": [
+			"BRICK_BREAK",
+			"THUNDER",
+			"THUNDER_PUNCH",
+			"WILD_CHARGE",
+			"SKULL_BASH",
+			"TRAILBLAZE",
+			"SURF"
+		],
+		"eliteMoves": [
+			"THUNDER"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_PIKACHU",
+			"parent": "pikachu"
+		},
+		"form": "Mega X",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"raichu_mega_y": {
+		"dex": 26,
+		"speciesId": "raichu_mega_y",
+		"speciesName": "Raichu (Mega Y)",
+		"types": [
+			"Electric"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f4.png",
+		"goImageUrl": "26.fMEGA_Y.icon.png",
+		"shinyGoImageUrl": "26.fMEGA_Y.s.icon.png",
+		"baseStats": {
+			"atk": 339,
+			"def": 157,
+			"hp": 155
+		},
+		"fastMoves": [
+			"SPARK",
+			"THUNDER_SHOCK",
+			"VOLT_SWITCH",
+			"CHARM"
+		],
+		"chargedMoves": [
+			"BRICK_BREAK",
+			"THUNDER",
+			"THUNDER_PUNCH",
+			"WILD_CHARGE",
+			"SKULL_BASH",
+			"TRAILBLAZE",
+			"SURF"
+		],
+		"eliteMoves": [
+			"THUNDER"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_PIKACHU",
+			"parent": "pikachu"
+		},
+		"form": "Mega Y",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"raichu_alolan": {
 		"dex": 26,
 		"speciesId": "raichu_alolan",
@@ -2474,7 +2564,7 @@
 			"Electric",
 			"Psychic"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026_f2.png",
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026_f4.png",
 		"goImageUrl": "26.fALOLA.icon.png",
 		"shinyGoImageUrl": "26.fALOLA.s.icon.png",
 		"baseStats": {
@@ -64920,88 +65010,6 @@
 		"isShadow": true,
 		"isMega": false,
 		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"raichu_mega_x": {
-		"dex": 26,
-		"speciesId": "raichu_mega_x",
-		"speciesName": "Raichu (Mega X)",
-		"types": [
-			"Electric"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f3.png",
-		"goImageUrl": "26.fMEGA_X.icon.png",
-		"shinyGoImageUrl": "26.fMEGA_X.s.icon.png",
-		"baseStats": {
-			"atk": 277,
-			"def": 203,
-			"hp": 155
-		},
-		"fastMoves": [
-			"SPARK",
-			"THUNDER_SHOCK",
-			"VOLT_SWITCH",
-			"CHARM"
-		],
-		"chargedMoves": [
-			"BRICK_BREAK",
-			"THUNDER",
-			"THUNDER_PUNCH",
-			"WILD_CHARGE",
-			"SKULL_BASH",
-			"TRAILBLAZE",
-			"SURF"
-		],
-		"eliteMoves": [
-			"THUNDER"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega X",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"raichu_mega_y": {
-		"dex": 26,
-		"speciesId": "raichu_mega_y",
-		"speciesName": "Raichu (Mega Y)",
-		"types": [
-			"Electric"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f4.png",
-		"goImageUrl": "26.fMEGA_Y.icon.png",
-		"shinyGoImageUrl": "26.fMEGA_Y.s.icon.png",
-		"baseStats": {
-			"atk": 339,
-			"def": 157,
-			"hp": 155
-		},
-		"fastMoves": [
-			"SPARK",
-			"THUNDER_SHOCK",
-			"VOLT_SWITCH",
-			"CHARM"
-		],
-		"chargedMoves": [
-			"BRICK_BREAK",
-			"THUNDER",
-			"THUNDER_PUNCH",
-			"WILD_CHARGE",
-			"SKULL_BASH",
-			"TRAILBLAZE",
-			"SURF"
-		],
-		"eliteMoves": [
-			"THUNDER"
-		],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"form": "Mega Y",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

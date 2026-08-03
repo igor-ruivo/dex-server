@@ -1,23 +1,86 @@
 [
 	{
 		"title": {
-			"en": "Bidoof Spotlight Hour",
-			"pt_br": "Bidoof: Hora do Holofote"
+			"en": "Delibird Spotlight Hour",
+			"pt_br": "Delibird: Hora do Holofote"
 		},
-		"date": 1785434400000,
-		"dateEnd": 1785438000000,
+		"date": 1786039200000,
+		"dateEnd": 1786042800000,
 		"pokemons": [
 			{
-				"speciesId": "bidoof",
+				"speciesId": "delibird",
 				"kind": "5",
 				"shiny": false
 			}
 		],
 		"bonus": {
-			"en": "2× Transfer Candy",
-			"pt_br": "2× Doces ao transferir"
+			"en": "2× Catch Stardust",
+			"pt_br": "2× Poeira Estelar ao capturar"
 		},
 		"imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
-		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-07-30/"
+		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-08-06/"
+	},
+	{
+		"title": {
+			"en": "Wurmple Spotlight Hour",
+			"pt_br": "Wurmple: Hora do Holofote"
+		},
+		"date": 1786644000000,
+		"dateEnd": 1786647600000,
+		"pokemons": [
+			{
+				"speciesId": "wurmple",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"bonus": {
+			"en": "2× Evolution XP",
+			"pt_br": "2× XP ao evoluir"
+		},
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-08-13/"
+	},
+	{
+		"title": {
+			"en": "Magikarp Spotlight Hour",
+			"pt_br": "Magikarp: Hora do Holofote"
+		},
+		"date": 1787248800000,
+		"dateEnd": 1787252400000,
+		"pokemons": [
+			{
+				"speciesId": "magikarp",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"bonus": {
+			"en": "2× Catch XP",
+			"pt_br": "2× XP ao capturar"
+		},
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-08-20/"
+	},
+	{
+		"title": {
+			"en": "Mankey Spotlight Hour",
+			"pt_br": "Mankey: Hora do Holofote"
+		},
+		"date": 1787853600000,
+		"dateEnd": 1787857200000,
+		"pokemons": [
+			{
+				"speciesId": "mankey",
+				"kind": "5",
+				"shiny": false
+			}
+		],
+		"bonus": {
+			"en": "2× Catch Candy",
+			"pt_br": "2× Doces ao capturar"
+		},
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-08-27/"
 	}
 ]

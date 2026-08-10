@@ -705,7 +705,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/O6bqa5zd8A1Xm7PYM6oJ9QooN0gMp5fVhlxXHh5D0loTRhhEy8B7IvnR4AkcUpzcibmI3-QTL2mtT0fXFcA9bfJe0qAPqcf53xGzXrF3yA=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "starmie_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [
 			{

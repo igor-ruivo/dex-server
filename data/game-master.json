@@ -59880,6 +59880,84 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"arrokuda": {
+		"dex": 846,
+		"speciesId": "arrokuda",
+		"speciesName": "Arrokuda",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/846.png",
+		"goImageUrl": "846.icon.png",
+		"shinyGoImageUrl": "846.s.icon.png",
+		"baseStats": {
+			"atk": 118,
+			"def": 72,
+			"hp": 121
+		},
+		"fastMoves": [
+			"WATERFALL",
+			"BITE",
+			"PECK"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"AQUA_JET",
+			"CLOSE_COMBAT"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ARROKUDA",
+			"evolutions": [
+				"barraskewda"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"barraskewda": {
+		"dex": 847,
+		"speciesId": "barraskewda",
+		"speciesName": "Barraskewda",
+		"types": [
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/847.png",
+		"goImageUrl": "847.icon.png",
+		"shinyGoImageUrl": "847.s.icon.png",
+		"baseStats": {
+			"atk": 258,
+			"def": 127,
+			"hp": 156
+		},
+		"fastMoves": [
+			"WATERFALL",
+			"BITE",
+			"PECK"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"AQUA_JET",
+			"CLOSE_COMBAT"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"family": {
+			"id": "FAMILY_ARROKUDA",
+			"parent": "arrokuda"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"toxel": {
 		"dex": 848,
 		"speciesId": "toxel",

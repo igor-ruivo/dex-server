@@ -311,6 +311,27 @@ class MovesProvider {
 			};
 		}
 
+		const diveMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			diveMoveName[locale] = normalizedMoveName('DIVE');
+		});
+
+		if (!movesDictionary.DIVE) {
+			movesDictionary.DIVE = {
+				moveId: 'DIVE',
+				vId: '-1',
+				type: 'water',
+				isFast: false,
+				pvpPower: 50,
+				pvePower: 70,
+				pvpEnergy: -40,
+				pveEnergy: -33,
+				pvpCooldown: 0.5,
+				pveCooldown: 3.3,
+				moveName: diveMoveName,
+			};
+		}
+
 		return movesDictionary;
 	}
 }

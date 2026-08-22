@@ -113,6 +113,10 @@ export const POKEMON_CONFIG = {
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
 		[
+			'raichu_alolan',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png',
+		],
+		[
 			'dragonite_mega',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/149_f2.png',
 		],

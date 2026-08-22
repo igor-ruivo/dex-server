@@ -5630,5 +5630,21 @@
 			"buffActivationChance": 0.125,
 			"attackerAttackStatStageChange": 2
 		}
+	},
+	"DIVE": {
+		"moveId": "DIVE",
+		"vId": "-1",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 50,
+		"pvePower": 70,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 3.3,
+		"moveName": {
+			"en": "Dive",
+			"pt_br": "Dive"
+		}
 	}
 }

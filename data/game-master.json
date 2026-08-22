@@ -2564,7 +2564,7 @@
 			"Electric",
 			"Psychic"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026_f4.png",
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png",
 		"goImageUrl": "26.fALOLA.icon.png",
 		"shinyGoImageUrl": "26.fALOLA.s.icon.png",
 		"baseStats": {
@@ -59875,6 +59875,41 @@
 			"id": "FAMILY_SILICOBRA",
 			"parent": "silicobra"
 		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"cramorant": {
+		"dex": 845,
+		"speciesId": "cramorant",
+		"speciesName": "Cramorant",
+		"types": [
+			"Flying",
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/845.png",
+		"goImageUrl": "845.icon.png",
+		"shinyGoImageUrl": "845.s.icon.png",
+		"baseStats": {
+			"atk": 173,
+			"def": 163,
+			"hp": 172
+		},
+		"fastMoves": [
+			"PECK",
+			"WATER_GUN"
+		],
+		"chargedMoves": [
+			"FLY",
+			"HYDRO_PUMP",
+			"SURF",
+			"DIVE"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,

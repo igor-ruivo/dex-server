@@ -88,7 +88,11 @@ class PvPParser {
 
 			entry.moveset.forEach((move) => {
 				const existingMove = this.moves[move];
-				if (!existingMove && !POKEMON_CONFIG.HIDDEN_POWERS.has(move)) {
+				if (
+					!existingMove &&
+					!POKEMON_CONFIG.HIDDEN_POWERS.has(move) &&
+					move !== 'none'
+				) {
 					throw new Error(`${move} doesn't exist in moves game master!`);
 				}
 			});

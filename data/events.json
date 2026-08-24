@@ -1,5 +1,43 @@
 [
 	{
+		"id": "2026_ana_green-0",
+		"url": "https://pokemongo.com/news/2026_ana_green",
+		"title": {
+			"en": "Celebrate the launch of the Green Pokémon Jet: Take flight on a new adventure through the ANA and Pokémon GO partnership!",
+			"pt_br": "Celebrate the launch of the Green Pokémon Jet: Take flight on a new adventure through the ANA and Pokémon GO partnership!"
+		},
+		"subtitle": {
+			"en": "Green Pokémon Jet Collaboration Events",
+			"pt_br": "Green Pokémon Jet Collaboration Events"
+		},
+		"startDate": 1789740000000,
+		"endDate": 1819742400000,
+		"dateRanges": [
+			{
+				"start": 1789740000000,
+				"end": 1819742400000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/Jld2IxLcGvx_Pm6Zm5pz5zr6Td6kwfeN8-FrP8HKXUk1mlYRSbdAjNwvqq4VkYIuZ6c79alLPHTH0YrDF1AZX1USaSjfi1ZR1h1wUmMns40=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [
+			{
+				"speciesId": "bulbasaur",
+				"shiny": true,
+				"kind": "3"
+			}
+		],
+		"eggs": [],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [],
+			"pt_br": []
+		}
+	},
+	{
 		"id": "go-pass-august-2026-0",
 		"url": "https://pokemongo.com/news/go-pass-august-2026",
 		"title": {
@@ -1331,50 +1369,6 @@
 			},
 			{
 				"speciesId": "rayquaza_mega",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [],
-			"pt_br": []
-		}
-	},
-	{
-		"id": "happy-birthday-professor-willow-2026-0",
-		"url": "https://pokemongo.com/news/happy-birthday-professor-willow-2026",
-		"title": {
-			"en": "Wish Professor Willow a very happy birthday with Professor Willow’s assistant Pikachu!",
-			"pt_br": "Deseje um feliz aniversário ao Professor Willow com o Pikachu assistente do Professor Willow!"
-		},
-		"subtitle": {
-			"en": "Willow’s Birthday Research",
-			"pt_br": "Pesquisa de Aniversário do Professor Willow"
-		},
-		"startDate": 1784628000000,
-		"endDate": 1784664000000,
-		"dateRanges": [
-			{
-				"start": 1784628000000,
-				"end": 1784664000000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/ShSK79Cg5mCLJso3ekYZl88WrKAz2DjPiGssK3SoWrNfGNZyX44NLmuoo_Z93EDr4Lc29t3JdUF_FGcIGzt0_pJOuCYZj2ocHhtOD8fVrVo=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [
-			{
-				"speciesId": "pikachu",
-				"shiny": false,
-				"kind": "3"
-			}
-		],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "pikachu",
 				"shiny": false,
 				"kind": ""
 			}

@@ -2,47 +2,47 @@
 	"id": "season",
 	"url": "https://pokemongo.com/en/seasons",
 	"title": {
-		"en": "Forever Forward",
-		"pt_br": "Sempre em Frente"
+		"en": "Twilight Trails",
+		"pt_br": "Trilhas do Entardecer"
 	},
 	"subtitle": {
-		"en": "Forever Forward",
-		"pt_br": "Sempre em Frente"
+		"en": "Twilight Trails",
+		"pt_br": "Trilhas do Entardecer"
 	},
-	"startDate": 1780394400000,
-	"endDate": 1788861600000,
-	"imageUrl": "https://lh3.googleusercontent.com/vxXpQxDHcFQV0iSf8zsTE2f_xPVBBf8izq_j2SS_BPui046zuwLBG8t_bHPq_MlNqqG65KSs5P_xLAvMd_U6bmD21Aw1zX3iEgk=s0-e365",
+	"startDate": 1788861600000,
+	"endDate": 1796119200000,
+	"imageUrl": "https://lh3.googleusercontent.com/YEKSpLgk0hK8AR4RphzdrycILoXOsPh3wHTbphkSJdTYIJ3jKUubRQ6LRrEHL3sBzX0x5X-SjnH7cdta03BpTy5Q7Fz8pTULK5Y7H9AN5zk=s0-e365",
 	"source": "pokemongo",
 	"wild": [],
 	"raids": [],
 	"eggs": [
 		{
-			"speciesId": "wynaut",
+			"speciesId": "azurill",
 			"shiny": false,
 			"kind": "2"
 		},
 		{
-			"speciesId": "corphish",
+			"speciesId": "magby",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "exeggcute",
+			"speciesId": "elekid",
 			"shiny": true,
 			"kind": "2"
 		},
 		{
-			"speciesId": "flittle",
+			"speciesId": "fidough",
 			"shiny": false,
 			"kind": "5"
 		},
 		{
-			"speciesId": "mantyke",
-			"shiny": false,
+			"speciesId": "sizzlipede",
+			"shiny": true,
 			"kind": "5"
 		},
 		{
-			"speciesId": "riolu",
+			"speciesId": "munchlax",
 			"shiny": true,
 			"kind": "5"
 		},
@@ -74,22 +74,22 @@
 			}
 		},
 		{
-			"speciesId": "darumaka_galarian",
+			"speciesId": "stunfisk_galarian",
 			"shiny": false,
 			"kind": "7"
 		},
 		{
+			"speciesId": "zigzagoon_galarian",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
+			"speciesId": "meowth_galarian",
+			"shiny": true,
+			"kind": "7"
+		},
+		{
 			"speciesId": "corsola_galarian",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "diglett_alolan",
-			"shiny": true,
-			"kind": "7"
-		},
-		{
-			"speciesId": "basculin",
 			"shiny": false,
 			"kind": "7",
 			"comment": {
@@ -107,7 +107,7 @@
 			}
 		},
 		{
-			"speciesId": "growlithe_hisuian",
+			"speciesId": "slowpoke_galarian",
 			"shiny": true,
 			"kind": "7",
 			"comment": {
@@ -116,17 +116,17 @@
 			}
 		},
 		{
-			"speciesId": "frigibax",
+			"speciesId": "impidimp",
 			"shiny": false,
 			"kind": "10"
 		},
 		{
-			"speciesId": "absol",
+			"speciesId": "honedge",
 			"shiny": true,
 			"kind": "10"
 		},
 		{
-			"speciesId": "mawile",
+			"speciesId": "dratini",
 			"shiny": true,
 			"kind": "10"
 		},
@@ -158,38 +158,7 @@
 			}
 		}
 	],
-	"researches": [
-		{
-			"speciesId": "klawf",
-			"shiny": false,
-			"kind": ""
-		},
-		{
-			"speciesId": "indeedee_male",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "jangmo_o",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "honedge",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "axew",
-			"shiny": true,
-			"kind": ""
-		},
-		{
-			"speciesId": "dragonite",
-			"shiny": true,
-			"kind": ""
-		}
-	],
+	"researches": [],
 	"incenses": [],
 	"lures": [],
 	"bonuses": {

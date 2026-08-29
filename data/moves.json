@@ -4,7 +4,7 @@
 		"vId": "0013",
 		"type": "normal",
 		"isFast": false,
-		"pvpPower": 60,
+		"pvpPower": 70,
 		"pvePower": 60,
 		"pvpEnergy": -45,
 		"pveEnergy": -33,
@@ -184,7 +184,7 @@
 		"vId": "0031",
 		"type": "ground",
 		"isFast": false,
-		"pvpPower": 110,
+		"pvpPower": 120,
 		"pvePower": 140,
 		"pvpEnergy": -65,
 		"pveEnergy": -100,
@@ -266,7 +266,7 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 100,
-		"pvpEnergy": -70,
+		"pvpEnergy": -65,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
@@ -360,9 +360,9 @@
 		"vId": "0046",
 		"type": "ground",
 		"isFast": false,
-		"pvpPower": 80,
+		"pvpPower": 70,
 		"pvePower": 85,
-		"pvpEnergy": -45,
+		"pvpEnergy": -40,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
@@ -1393,7 +1393,7 @@
 		"isFast": false,
 		"pvpPower": 110,
 		"pvePower": 105,
-		"pvpEnergy": -65,
+		"pvpEnergy": -60,
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
@@ -2615,7 +2615,7 @@
 		"vId": "0262",
 		"type": "bug",
 		"isFast": false,
-		"pvpPower": 60,
+		"pvpPower": 75,
 		"pvePower": 65,
 		"pvpEnergy": -45,
 		"pveEnergy": -33,
@@ -2800,9 +2800,9 @@
 		"vId": "0273",
 		"type": "grass",
 		"isFast": false,
-		"pvpPower": 90,
+		"pvpPower": 80,
 		"pvePower": 90,
-		"pvpEnergy": -55,
+		"pvpEnergy": -45,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
@@ -3322,7 +3322,7 @@
 		"isFast": false,
 		"pvpPower": 90,
 		"pvePower": 100,
-		"pvpEnergy": -55,
+		"pvpEnergy": -50,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
@@ -3597,7 +3597,7 @@
 		"vId": "0320",
 		"type": "fairy",
 		"isFast": true,
-		"pvpPower": 13,
+		"pvpPower": 12,
 		"pvePower": 20,
 		"pvpEnergy": 8,
 		"pveEnergy": 11,
@@ -3984,7 +3984,7 @@
 		"isFast": true,
 		"pvpPower": 16,
 		"pvePower": 25,
-		"pvpEnergy": 12,
+		"pvpEnergy": 14,
 		"pveEnergy": 20,
 		"pvpCooldown": 2,
 		"pveCooldown": 2,
@@ -4591,9 +4591,9 @@
 		"vId": "0384",
 		"type": "flying",
 		"isFast": false,
-		"pvpPower": 150,
+		"pvpPower": 110,
 		"pvePower": 140,
-		"pvpEnergy": -70,
+		"pvpEnergy": -45,
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
@@ -5463,6 +5463,350 @@
 			"pt_br": "Gigaton Hammer"
 		}
 	},
+	"PLASMA_FISTS": {
+		"moveId": "PLASMA_FISTS",
+		"vId": "0497",
+		"type": "electric",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 135,
+		"pvpEnergy": -35,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"moveName": {
+			"en": "Plasma Fists",
+			"pt_br": "Plasma Fists"
+		}
+	},
+	"GLAIVE_RUSH": {
+		"moveId": "GLAIVE_RUSH",
+		"vId": "0590",
+		"type": "dragon",
+		"isFast": false,
+		"pvpPower": 90,
+		"pvePower": 105,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Glaive Rush",
+			"pt_br": "Glaive Rush"
+		}
+	},
+	"SNIPE_SHOT": {
+		"moveId": "SNIPE_SHOT",
+		"vId": "0592",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 65,
+		"pvePower": 100,
+		"pvpEnergy": -35,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerAttackStatStageChange": 2,
+			"buffActivationChance": 0.125
+		},
+		"moveName": {
+			"en": "Snipe Shot",
+			"pt_br": "Snipe Shot"
+		}
+	},
+	"DIVE": {
+		"moveId": "DIVE",
+		"vId": "0593",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 50,
+		"pvePower": 70,
+		"pvpEnergy": -40,
+		"pveEnergy": -33,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.3,
+		"moveName": {
+			"en": "Dive",
+			"pt_br": "Dive"
+		}
+	},
+	"GULP_MISSILE_GULPING": {
+		"moveId": "GULP_MISSILE_GULPING",
+		"vId": "0594",
+		"type": "normal",
+		"isFast": false,
+		"pvpPower": 0,
+		"pvePower": 0,
+		"pvpEnergy": 0,
+		"pveEnergy": 0,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Gulp Missile Gulping",
+			"pt_br": "Gulp Missile Gulping"
+		}
+	},
+	"GULP_MISSILE_GORGING": {
+		"moveId": "GULP_MISSILE_GORGING",
+		"vId": "0595",
+		"type": "normal",
+		"isFast": false,
+		"pvpPower": 0,
+		"pvePower": 0,
+		"pvpEnergy": 0,
+		"pveEnergy": 0,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"buffs": {
+			"targetAttackStatStageChange": -2,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Gulp Missile Gorging",
+			"pt_br": "Gulp Missile Gorging"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL",
+		"vId": "M",
+		"type": "poison",
+		"isFast": false,
+		"pvpPower": 20,
+		"pvePower": 160,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -2,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega V0071 Pokemon Victreebel",
+			"pt_br": "Temp Evolution Mega V0071 Pokemon Victreebel"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE",
+		"vId": "M",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 55,
+		"pvePower": 180,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 0.3
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega V0121 Pokemon Starmie",
+			"pt_br": "Temp Evolution Mega V0121 Pokemon Starmie"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE",
+		"vId": "M",
+		"type": "dragon",
+		"isFast": false,
+		"pvpPower": 80,
+		"pvePower": 185,
+		"pvpEnergy": -50,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"moveName": {
+			"en": "Temp Evolution Mega V0149 Pokemon Dragonite",
+			"pt_br": "Temp Evolution Mega V0149 Pokemon Dragonite"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0227_POKEMON_SKARMORY",
+		"vId": "M",
+		"type": "flying",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 170,
+		"pvpEnergy": -35,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"moveName": {
+			"en": "Temp Evolution Mega V0227 Pokemon Skarmory",
+			"pt_br": "Temp Evolution Mega V0227 Pokemon Skarmory"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0652_POKEMON_CHESNAUGHT",
+		"vId": "M",
+		"type": "grass",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 150,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Temp Evolution Mega V0652 Pokemon Chesnaught",
+			"pt_br": "Temp Evolution Mega V0652 Pokemon Chesnaught"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0655_POKEMON_DELPHOX",
+		"vId": "M",
+		"type": "fire",
+		"isFast": false,
+		"pvpPower": 50,
+		"pvePower": 140,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega V0655 Pokemon Delphox",
+			"pt_br": "Temp Evolution Mega V0655 Pokemon Delphox"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0658_POKEMON_GRENINJA",
+		"vId": "M",
+		"type": "water",
+		"isFast": false,
+		"pvpPower": 55,
+		"pvePower": 130,
+		"pvpEnergy": -35,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"moveName": {
+			"en": "Temp Evolution Mega V0658 Pokemon Greninja",
+			"pt_br": "Temp Evolution Mega V0658 Pokemon Greninja"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0687_POKEMON_MALAMAR",
+		"vId": "M",
+		"type": "psychic",
+		"isFast": false,
+		"pvpPower": 60,
+		"pvePower": 170,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"moveName": {
+			"en": "Temp Evolution Mega V0687 Pokemon Malamar",
+			"pt_br": "Temp Evolution Mega V0687 Pokemon Malamar"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS": {
+		"moveId": "TEMP_EVOLUTION_MEGA_V0870_POKEMON_FALINKS",
+		"vId": "M",
+		"type": "fighting",
+		"isFast": false,
+		"pvpPower": 40,
+		"pvePower": 150,
+		"pvpEnergy": -35,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 1.5,
+		"buffs": {
+			"targetDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega V0870 Pokemon Falinks",
+			"pt_br": "Temp Evolution Mega V0870 Pokemon Falinks"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU": {
+		"moveId": "TEMP_EVOLUTION_MEGA_X_V0026_POKEMON_RAICHU",
+		"vId": "M",
+		"type": "electric",
+		"isFast": false,
+		"pvpPower": 65,
+		"pvePower": 170,
+		"pvpEnergy": -35,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"attackerDefenseStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega X V0026 Pokemon Raichu",
+			"pt_br": "Temp Evolution Mega X V0026 Pokemon Raichu"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO": {
+		"moveId": "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO",
+		"vId": "M",
+		"type": "fighting",
+		"isFast": false,
+		"pvpPower": 130,
+		"pvePower": 130,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"moveName": {
+			"en": "Temp Evolution Mega X V0150 Pokemon Mewtwo",
+			"pt_br": "Temp Evolution Mega X V0150 Pokemon Mewtwo"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU": {
+		"moveId": "TEMP_EVOLUTION_MEGA_Y_V0026_POKEMON_RAICHU",
+		"vId": "M",
+		"type": "electric",
+		"isFast": false,
+		"pvpPower": 70,
+		"pvePower": 160,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3.5,
+		"buffs": {
+			"targetAttackStatStageChange": -1,
+			"buffActivationChance": 1
+		},
+		"moveName": {
+			"en": "Temp Evolution Mega Y V0026 Pokemon Raichu",
+			"pt_br": "Temp Evolution Mega Y V0026 Pokemon Raichu"
+		}
+	},
+	"TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO": {
+		"moveId": "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO",
+		"vId": "M",
+		"type": "psychic",
+		"isFast": false,
+		"pvpPower": 130,
+		"pvePower": 140,
+		"pvpEnergy": -80,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"moveName": {
+			"en": "Temp Evolution Mega Y V0150 Pokemon Mewtwo",
+			"pt_br": "Temp Evolution Mega Y V0150 Pokemon Mewtwo"
+		}
+	},
 	"CRUSH_CLAW": {
 		"moveId": "CRUSH_CLAW",
 		"vId": "0307",
@@ -5573,78 +5917,6 @@
 		"moveName": {
 			"en": "Pyro Ball",
 			"pt_br": "Pyro Ball"
-		}
-	},
-	"PLASMA_FISTS": {
-		"moveId": "PLASMA_FISTS",
-		"vId": "-1",
-		"type": "electric",
-		"isFast": false,
-		"pvpPower": 60,
-		"pvePower": 135,
-		"pvpEnergy": -35,
-		"pveEnergy": -50,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 3.5,
-		"moveName": {
-			"en": "Plasma Fists",
-			"pt_br": "Plasma Fists"
-		}
-	},
-	"GLAIVE_RUSH": {
-		"moveId": "GLAIVE_RUSH",
-		"vId": "-1",
-		"type": "dragon",
-		"isFast": false,
-		"pvpPower": 90,
-		"pvePower": 105,
-		"pvpEnergy": -40,
-		"pveEnergy": -50,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Glaive Rush",
-			"pt_br": "Glaive Rush"
-		},
-		"buffs": {
-			"buffActivationChance": 1,
-			"attackerDefenseStatStageChange": -1
-		}
-	},
-	"SNIPE_SHOT": {
-		"moveId": "SNIPE_SHOT",
-		"vId": "-1",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 65,
-		"pvePower": 100,
-		"pvpEnergy": -35,
-		"pveEnergy": -33,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 3.5,
-		"moveName": {
-			"en": "Snipe Shot",
-			"pt_br": "Snipe Shot"
-		},
-		"buffs": {
-			"buffActivationChance": 0.125,
-			"attackerAttackStatStageChange": 2
-		}
-	},
-	"DIVE": {
-		"moveId": "DIVE",
-		"vId": "-1",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 50,
-		"pvePower": 70,
-		"pvpEnergy": -40,
-		"pveEnergy": -33,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 3.3,
-		"moveName": {
-			"en": "Dive",
-			"pt_br": "Dive"
 		}
 	}
 }

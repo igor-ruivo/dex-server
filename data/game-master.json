@@ -14649,11 +14649,10 @@
 		"eliteMoves": [
 			"PSYSTRIKE",
 			"SHADOW_BALL",
-			"HYPER_BEAM"
-		],
-		"legacyMoves": [
+			"HYPER_BEAM",
 			"COUNTER"
 		],
+		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
 		"form": "",
@@ -50184,6 +50183,51 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"chesnaught_mega": {
+		"dex": 652,
+		"speciesId": "chesnaught_mega",
+		"speciesName": "Chesnaught (Mega)",
+		"types": [
+			"Grass",
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/652_f2.png",
+		"goImageUrl": "652.fMEGA.icon.png",
+		"shinyGoImageUrl": "652.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 242,
+			"def": 282,
+			"hp": 204
+		},
+		"fastMoves": [
+			"LOW_KICK",
+			"SMACK_DOWN",
+			"VINE_WHIP"
+		],
+		"chargedMoves": [
+			"GYRO_BALL",
+			"ENERGY_BALL",
+			"SUPER_POWER",
+			"SOLAR_BEAM",
+			"FRENZY_PLANT",
+			"THUNDER_PUNCH",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"FRENZY_PLANT"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_CHESPIN",
+			"parent": "quilladin"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"chesnaught_shadow": {
 		"dex": 652,
 		"speciesId": "chesnaught_shadow",
@@ -50437,6 +50481,52 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"delphox_mega": {
+		"dex": 655,
+		"speciesId": "delphox_mega",
+		"speciesName": "Delphox (Mega)",
+		"types": [
+			"Fire",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/655_f2.png",
+		"goImageUrl": "655.fMEGA.icon.png",
+		"shinyGoImageUrl": "655.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 331,
+			"def": 235,
+			"hp": 181
+		},
+		"fastMoves": [
+			"SCRATCH",
+			"FIRE_SPIN",
+			"ZEN_HEADBUTT"
+		],
+		"chargedMoves": [
+			"PSYCHIC",
+			"FLAMETHROWER",
+			"FLAME_CHARGE",
+			"FIRE_BLAST",
+			"BLAST_BURN",
+			"MYSTICAL_FIRE",
+			"PSYSHOCK",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"BLAST_BURN"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_FENNEKIN",
+			"parent": "braixen"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"delphox_shadow": {
 		"dex": 655,
 		"speciesId": "delphox_shadow",
@@ -50685,6 +50775,50 @@
 			"parent": "frogadier"
 		},
 		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"greninja_mega": {
+		"dex": 658,
+		"speciesId": "greninja_mega",
+		"speciesName": "Greninja (Mega)",
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/658_f2.png",
+		"goImageUrl": "658.fMEGA.icon.png",
+		"shinyGoImageUrl": "658.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 299,
+			"def": 180,
+			"hp": 176
+		},
+		"fastMoves": [
+			"FEINT_ATTACK",
+			"BUBBLE",
+			"WATER_SHURIKEN"
+		],
+		"chargedMoves": [
+			"NIGHT_SLASH",
+			"AERIAL_ACE",
+			"SURF",
+			"HYDRO_PUMP",
+			"HYDRO_CANNON",
+			"RETURN"
+		],
+		"eliteMoves": [
+			"HYDRO_CANNON"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"family": {
+			"id": "FAMILY_FROAKIE",
+			"parent": "frogadier"
+		},
+		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

@@ -74,6 +74,7 @@ export const getAllChargedMoves = (
 			p.chargedMoves
 				.concat(p.eliteMoves?.filter((m) => !moves[m].isFast) ?? [])
 				.concat(p.legacyMoves?.filter((m) => !moves[m].isFast) ?? [])
+				.concat(p.extraChargedMoves?.filter((m) => !moves[m].isFast) ?? [])
 		)
 	);
 };

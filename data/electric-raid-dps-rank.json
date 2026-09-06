@@ -10,11 +10,11 @@
 	},
 	"raichu_mega_y": {
 		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "WILD_CHARGE",
-		"dps": 33.43529411764706,
+		"chargedMove": "ZAP_CANNON_PLUS",
+		"dps": 34.85906040268456,
 		"speciesId": "raichu_mega_y",
 		"fastMoveDmg": 7,
-		"chargedMoveDmg": 153,
+		"chargedMoveDmg": 271,
 		"rank": 2
 	},
 	"thundurus_therian": {
@@ -35,6 +35,15 @@
 		"chargedMoveDmg": 137,
 		"rank": 4
 	},
+	"raichu_mega_x": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "VOLT_TACKLE_PLUS",
+		"dps": 30.416107382550337,
+		"speciesId": "raichu_mega_x",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 238,
+		"rank": 5
+	},
 	"zeraora": {
 		"fastMove": "VOLT_SWITCH",
 		"chargedMove": "PLASMA_FISTS",
@@ -42,7 +51,7 @@
 		"speciesId": "zeraora",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 173,
-		"rank": 5
+		"rank": 6
 	},
 	"zapdos_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -51,7 +60,7 @@
 		"speciesId": "zapdos_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 216,
-		"rank": 6
+		"rank": 7
 	},
 	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
@@ -60,7 +69,7 @@
 		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 137,
-		"rank": 7
+		"rank": 8
 	},
 	"manectric_mega": {
 		"fastMove": "THUNDER_FANG",
@@ -69,7 +78,7 @@
 		"speciesId": "manectric_mega",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 130,
-		"rank": 8
+		"rank": 9
 	},
 	"raikou_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -78,7 +87,7 @@
 		"speciesId": "raikou_shadow",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 133,
-		"rank": 9
+		"rank": 10
 	},
 	"zekrom": {
 		"fastMove": "CHARGE_BEAM",
@@ -87,7 +96,7 @@
 		"speciesId": "zekrom",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 194,
-		"rank": 10
+		"rank": 11
 	},
 	"xurkitree": {
 		"fastMove": "THUNDER_SHOCK",
@@ -96,7 +105,7 @@
 		"speciesId": "xurkitree",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 108,
-		"rank": 11
+		"rank": 12
 	},
 	"magnezone_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -105,7 +114,7 @@
 		"speciesId": "magnezone_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 131,
-		"rank": 12
+		"rank": 13
 	},
 	"mewtwo_mega_x": {
 		"fastMove": "COUNTER",
@@ -114,7 +123,7 @@
 		"speciesId": "mewtwo_mega_x",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 132,
-		"rank": 13
+		"rank": 14
 	},
 	"ampharos_mega": {
 		"fastMove": "VOLT_SWITCH",
@@ -123,7 +132,7 @@
 		"speciesId": "ampharos_mega",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 207,
-		"rank": 14
+		"rank": 15
 	},
 	"deoxys_attack": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -132,15 +141,6 @@
 		"speciesId": "deoxys_attack",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 240,
-		"rank": 15
-	},
-	"raichu_mega_x": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "WILD_CHARGE",
-		"dps": 27.811764705882354,
-		"speciesId": "raichu_mega_x",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 126,
 		"rank": 16
 	},
 	"vikavolt_shadow": {

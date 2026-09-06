@@ -40,6 +40,11 @@ class MovesProvider {
 			TECHNO_BLAST_WATER: 'TECHNO_BLAST_DOUSE',
 		};
 
+		const renamedVFXsIds: Record<string, string> = {
+			myst_fire: 'MYSTICAL_FIRE',
+			futuresight: 'FUTURE_SIGHT',
+		};
+
 		gmData
 			.filter(
 				(entry) =>
@@ -47,6 +52,8 @@ class MovesProvider {
 					(entry.data?.moveSettings || entry.data?.combatMove)
 			)
 			.forEach((entry) => {
+				const supermegaTerm = 'TEMP_EVOLUTION_MEGA';
+				const supermegaTermSuffix = '_PLUS';
 				const isPvP = !!entry.data.combatMove;
 				const dataPointer = entry.data.moveSettings || entry.data.combatMove;
 				const helperConst = '_MOVE_';
@@ -55,9 +62,13 @@ class MovesProvider {
 					helperIdx + helperConst.length
 				);
 				const typePointer = dataPointer.pokemonType || dataPointer.type;
-				const id = moveIdPointer.endsWith('_FAST')
-					? moveIdPointer.substring(0, moveIdPointer.lastIndexOf('_FAST'))
-					: moveIdPointer;
+				const id = moveIdPointer.includes(supermegaTerm)
+					? (
+							renamedVFXsIds[dataPointer.vfxName] ?? dataPointer.vfxName
+						).toLocaleUpperCase() + supermegaTermSuffix
+					: moveIdPointer.endsWith('_FAST')
+						? moveIdPointer.substring(0, moveIdPointer.lastIndexOf('_FAST'))
+						: moveIdPointer;
 				const isFast = moveIdPointer.endsWith('_FAST');
 
 				if (isPvP) {
@@ -67,7 +78,22 @@ class MovesProvider {
 					);
 					pvpMoves[id] = {
 						moveId: id,
-						vId: vidSubstring.substring(0, vidSubstring.indexOf('_')),
+						vId: moveIdPointer.includes(supermegaTerm)
+							? gmData
+									.filter(
+										(entry) =>
+											!entry.data.templateId?.startsWith('VN_BM_') &&
+											(entry.data?.moveSettings || entry.data?.combatMove)
+									)
+									.find(
+										(m) =>
+											(m.data.moveSettings || m.data.combatMove).vfxName ===
+											dataPointer.vfxName && !m.data.templateId.includes(supermegaTerm)
+									)!
+									.data.templateId.substring(
+										entry.data.templateId.indexOf(term) + term.length
+									)
+							: vidSubstring.substring(0, vidSubstring.indexOf('_')),
 						type:
 							typePointer.split('POKEMON_TYPE_')[1]?.toLocaleLowerCase() ?? '',
 						isFast: isFast,
@@ -240,45 +266,28 @@ class MovesProvider {
 			};
 		}
 
-		const plasmaFistsMoveName: Partial<Record<AvailableLocales, string>> = {};
+		const gulpMissileArrokudaMoveName: Partial<
+			Record<AvailableLocales, string>
+		> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
-			plasmaFistsMoveName[locale] = normalizedMoveName('PLASMA_FISTS');
+			gulpMissileArrokudaMoveName[locale] = normalizedMoveName(
+				'GULP_MISSILE_ARROKUDA'
+			);
 		});
 
-		if (!movesDictionary.PLASMA_FISTS) {
-			movesDictionary.PLASMA_FISTS = {
-				moveId: 'PLASMA_FISTS',
+		if (!movesDictionary.GULP_MISSILE_ARROKUDA) {
+			movesDictionary.GULP_MISSILE_ARROKUDA = {
+				moveId: 'GULP_MISSILE_ARROKUDA',
 				vId: '-1',
-				type: 'electric',
+				type: 'water',
 				isFast: false,
-				pvpPower: 60,
-				pvePower: 135,
-				pvpEnergy: -35,
-				pveEnergy: -50,
+				pvpPower: 15,
+				pvePower: 0,
+				pvpEnergy: 0,
+				pveEnergy: 0,
 				pvpCooldown: 0.5,
-				pveCooldown: 3.5,
-				moveName: plasmaFistsMoveName,
-			};
-		}
-
-		const glaiveRushMoveName: Partial<Record<AvailableLocales, string>> = {};
-		Object.values(AvailableLocales).forEach((locale) => {
-			glaiveRushMoveName[locale] = normalizedMoveName('GLAIVE_RUSH');
-		});
-
-		if (!movesDictionary.GLAIVE_RUSH) {
-			movesDictionary.GLAIVE_RUSH = {
-				moveId: 'GLAIVE_RUSH',
-				vId: '-1',
-				type: 'dragon',
-				isFast: false,
-				pvpPower: 90,
-				pvePower: 105,
-				pvpEnergy: -40,
-				pveEnergy: -50,
-				pvpCooldown: 0.5,
-				pveCooldown: 2.0,
-				moveName: glaiveRushMoveName,
+				pveCooldown: 0,
+				moveName: gulpMissileArrokudaMoveName,
 				buffs: {
 					buffActivationChance: 1,
 					attackerDefenseStatStageChange: -1,
@@ -286,49 +295,32 @@ class MovesProvider {
 			};
 		}
 
-		const snipeShotMoveName: Partial<Record<AvailableLocales, string>> = {};
+		const gulpMissilePikachuMoveName: Partial<
+			Record<AvailableLocales, string>
+		> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
-			snipeShotMoveName[locale] = normalizedMoveName('SNIPE_SHOT');
+			gulpMissilePikachuMoveName[locale] = normalizedMoveName(
+				'GULP_MISSILE_PIKACHU'
+			);
 		});
 
-		if (!movesDictionary.SNIPE_SHOT) {
-			movesDictionary.SNIPE_SHOT = {
-				moveId: 'SNIPE_SHOT',
+		if (!movesDictionary.GULP_MISSILE_PIKACHU) {
+			movesDictionary.GULP_MISSILE_PIKACHU = {
+				moveId: 'GULP_MISSILE_PIKACHU',
 				vId: '-1',
 				type: 'water',
 				isFast: false,
-				pvpPower: 65,
-				pvePower: 100,
-				pvpEnergy: -35,
-				pveEnergy: -33,
+				pvpPower: 15,
+				pvePower: 0,
+				pvpEnergy: 0,
+				pveEnergy: 0,
 				pvpCooldown: 0.5,
-				pveCooldown: 3.5,
-				moveName: snipeShotMoveName,
+				pveCooldown: 0,
+				moveName: gulpMissilePikachuMoveName,
 				buffs: {
-					buffActivationChance: 0.125,
-					attackerAttackStatStageChange: 2,
+					buffActivationChance: 1,
+					targetAttackStatStageChange: -2,
 				},
-			};
-		}
-
-		const diveMoveName: Partial<Record<AvailableLocales, string>> = {};
-		Object.values(AvailableLocales).forEach((locale) => {
-			diveMoveName[locale] = normalizedMoveName('DIVE');
-		});
-
-		if (!movesDictionary.DIVE) {
-			movesDictionary.DIVE = {
-				moveId: 'DIVE',
-				vId: '-1',
-				type: 'water',
-				isFast: false,
-				pvpPower: 50,
-				pvePower: 70,
-				pvpEnergy: -40,
-				pveEnergy: -33,
-				pvpCooldown: 0.5,
-				pveCooldown: 3.3,
-				moveName: diveMoveName,
 			};
 		}
 

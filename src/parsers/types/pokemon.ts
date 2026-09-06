@@ -166,6 +166,7 @@ export interface BasePokemon {
 	types: Array<string>;
 	fastMoves: Array<string>;
 	chargedMoves: Array<string>;
+	extraChargedMoves?: Array<string>;
 	eliteMoves?: Array<string>;
 	legacyMoves?: Array<string>;
 	baseStats: PokemonStats;
@@ -185,6 +186,7 @@ export type GameMasterPokemon = Omit<
 	shinyGoImageUrl: string;
 	isShadow: boolean;
 	isMega: boolean;
+	isSuperMega: boolean;
 	form: string;
 	isLegendary: boolean;
 	isMythical: boolean;
@@ -206,6 +208,9 @@ type BuffsType = {
 type MoveSettingsType = {
 	pokemonType: string;
 	type: string;
+	movementId: string;
+	uniqueId: string;
+	vfxName: string;
 	power: number;
 	energyDelta: number;
 	durationTurns: number;

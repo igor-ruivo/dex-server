@@ -118,6 +118,7 @@ class GameMasterParser {
 			...pokemon.fastMoves,
 			...pokemon.chargedMoves,
 			...(pokemon.legacyMoves ?? []),
+			...(pokemon.extraChargedMoves ?? []),
 		]);
 
 		for (const move of allPokemonMoves) {
@@ -227,10 +228,12 @@ class GameMasterParser {
 							? ['RETURN']
 							: []),
 				],
+				extraChargedMoves: pokemon.extraChargedMoves ?? [],
 				eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves ?? []),
 				legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves ?? []),
 				isShadow,
 				isMega,
+				isSuperMega: PokemonValidator.hasTag(pokemon, 'supermega'),
 				family: pokemon.family,
 				aliasId: pokemon.aliasId,
 				form: PokemonTransformer.getForm(pokemon.speciesName),

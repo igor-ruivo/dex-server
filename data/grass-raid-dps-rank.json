@@ -17,6 +17,15 @@
 		"chargedMoveDmg": 113,
 		"rank": 2
 	},
+	"chesnaught_mega": {
+		"fastMove": "VINE_WHIP",
+		"chargedMove": "SEED_BOMB_PLUS",
+		"dps": 28.75,
+		"speciesId": "chesnaught_mega",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 185,
+		"rank": 3
+	},
 	"sceptile_shadow": {
 		"fastMove": "FURY_CUTTER",
 		"chargedMove": "FRENZY_PLANT",
@@ -24,7 +33,7 @@
 		"speciesId": "sceptile_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 137,
-		"rank": 3
+		"rank": 4
 	},
 	"victreebel_mega": {
 		"fastMove": "MAGICAL_LEAF",
@@ -33,7 +42,7 @@
 		"speciesId": "victreebel_mega",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 241,
-		"rank": 4
+		"rank": 5
 	},
 	"chesnaught_shadow": {
 		"fastMove": "VINE_WHIP",
@@ -42,15 +51,6 @@
 		"speciesId": "chesnaught_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 124,
-		"rank": 5
-	},
-	"chesnaught_mega": {
-		"fastMove": "VINE_WHIP",
-		"chargedMove": "FRENZY_PLANT",
-		"dps": 27.066666666666666,
-		"speciesId": "chesnaught_mega",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 123,
 		"rank": 6
 	},
 	"venusaur_mega": {

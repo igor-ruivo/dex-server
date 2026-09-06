@@ -17,6 +17,15 @@
 		"chargedMoveDmg": 148,
 		"rank": 2
 	},
+	"victreebel_mega": {
+		"fastMove": "ACID",
+		"chargedMove": "ACID_SPRAY_PLUS",
+		"dps": 28,
+		"speciesId": "victreebel_mega",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 214,
+		"rank": 3
+	},
 	"eternatus": {
 		"fastMove": "POISON_JAB",
 		"chargedMove": "SLUDGE_BOMB",
@@ -24,7 +33,7 @@
 		"speciesId": "eternatus",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 119,
-		"rank": 3
+		"rank": 4
 	},
 	"gengar_shadow": {
 		"fastMove": "LICK",
@@ -33,7 +42,7 @@
 		"speciesId": "gengar_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 135,
-		"rank": 4
+		"rank": 5
 	},
 	"darkrai_shadow": {
 		"fastMove": "SNARL",
@@ -42,7 +51,7 @@
 		"speciesId": "darkrai_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 122,
-		"rank": 5
+		"rank": 6
 	},
 	"naganadel": {
 		"fastMove": "POISON_JAB",
@@ -51,7 +60,7 @@
 		"speciesId": "naganadel",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 113,
-		"rank": 6
+		"rank": 7
 	},
 	"toxicroak_shadow": {
 		"fastMove": "POISON_JAB",
@@ -60,15 +69,6 @@
 		"speciesId": "toxicroak_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 111,
-		"rank": 7
-	},
-	"victreebel_mega": {
-		"fastMove": "ACID",
-		"chargedMove": "SLUDGE_BOMB",
-		"dps": 25.2,
-		"speciesId": "victreebel_mega",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 114,
 		"rank": 8
 	},
 	"nihilego": {

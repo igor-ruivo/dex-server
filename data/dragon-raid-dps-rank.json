@@ -71,6 +71,15 @@
 		"chargedMoveDmg": 231,
 		"rank": 8
 	},
+	"dragonite_mega": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "OUTRAGE_PLUS",
+		"dps": 32.75757575757576,
+		"speciesId": "dragonite_mega",
+		"fastMoveDmg": 21,
+		"chargedMoveDmg": 278,
+		"rank": 9
+	},
 	"garchomp_shadow": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "BREAKING_SWIPE",
@@ -78,7 +87,7 @@
 		"speciesId": "garchomp_shadow",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 72,
-		"rank": 9
+		"rank": 10
 	},
 	"salamence_mega": {
 		"fastMove": "DRAGON_TAIL",
@@ -87,7 +96,7 @@
 		"speciesId": "salamence_mega",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 233,
-		"rank": 10
+		"rank": 11
 	},
 	"dialga_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -96,7 +105,7 @@
 		"speciesId": "dialga_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 250,
-		"rank": 11
+		"rank": 12
 	},
 	"reshiram_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -105,7 +114,7 @@
 		"speciesId": "reshiram_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 250,
-		"rank": 12
+		"rank": 13
 	},
 	"dialga_origin": {
 		"fastMove": "DRAGON_BREATH",
@@ -114,15 +123,6 @@
 		"speciesId": "dialga_origin",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 218,
-		"rank": 13
-	},
-	"dragonite_mega": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "DRACO_METEOR",
-		"dps": 30.46875,
-		"speciesId": "dragonite_mega",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 225,
 		"rank": 14
 	},
 	"kyurem_black": {

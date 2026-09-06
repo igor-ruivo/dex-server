@@ -10,11 +10,11 @@
 	},
 	"mewtwo_mega_x": {
 		"fastMove": "COUNTER",
-		"chargedMove": "FOCUS_BLAST",
-		"dps": 38.730038022813694,
+		"chargedMove": "DYNAMIC_PUNCH_PLUS",
+		"dps": 40.179591836734694,
 		"speciesId": "mewtwo_mega_x",
 		"fastMoveDmg": 26,
-		"chargedMoveDmg": 277,
+		"chargedMoveDmg": 258,
 		"rank": 2
 	},
 	"blaziken_mega": {
@@ -53,6 +53,15 @@
 		"chargedMoveDmg": 158,
 		"rank": 6
 	},
+	"falinks_mega": {
+		"fastMove": "COUNTER",
+		"chargedMove": "BRICK_BREAK_PLUS",
+		"dps": 31.95594713656388,
+		"speciesId": "falinks_mega",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 203,
+		"rank": 7
+	},
 	"conkeldurr_shadow": {
 		"fastMove": "FORCE_PALM",
 		"chargedMove": "FOCUS_BLAST",
@@ -60,7 +69,7 @@
 		"speciesId": "conkeldurr_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 208,
-		"rank": 7
+		"rank": 8
 	},
 	"heracross_mega": {
 		"fastMove": "COUNTER",
@@ -69,7 +78,7 @@
 		"speciesId": "heracross_mega",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 176,
-		"rank": 8
+		"rank": 9
 	},
 	"lucario": {
 		"fastMove": "FORCE_PALM",
@@ -78,7 +87,7 @@
 		"speciesId": "lucario",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 120,
-		"rank": 9
+		"rank": 10
 	},
 	"alakazam_mega": {
 		"fastMove": "COUNTER",
@@ -87,7 +96,7 @@
 		"speciesId": "alakazam_mega",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 213,
-		"rank": 10
+		"rank": 11
 	},
 	"terrakion": {
 		"fastMove": "DOUBLE_KICK",
@@ -96,7 +105,7 @@
 		"speciesId": "terrakion",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 66,
-		"rank": 11
+		"rank": 12
 	},
 	"machamp_shadow": {
 		"fastMove": "KARATE_CHOP",
@@ -105,7 +114,7 @@
 		"speciesId": "machamp_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 122,
-		"rank": 12
+		"rank": 13
 	},
 	"pheromosa": {
 		"fastMove": "LOW_KICK",
@@ -114,7 +123,7 @@
 		"speciesId": "pheromosa",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 222,
-		"rank": 13
+		"rank": 14
 	},
 	"lopunny_mega": {
 		"fastMove": "DOUBLE_KICK",
@@ -123,7 +132,7 @@
 		"speciesId": "lopunny_mega",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 199,
-		"rank": 14
+		"rank": 15
 	},
 	"gallade_mega": {
 		"fastMove": "LOW_KICK",
@@ -132,7 +141,7 @@
 		"speciesId": "gallade_mega",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 171,
-		"rank": 15
+		"rank": 16
 	},
 	"blaziken": {
 		"fastMove": "COUNTER",
@@ -141,7 +150,7 @@
 		"speciesId": "blaziken",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 122,
-		"rank": 16
+		"rank": 17
 	},
 	"kartana": {
 		"fastMove": "FURY_CUTTER",
@@ -150,7 +159,7 @@
 		"speciesId": "kartana",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 68,
-		"rank": 17
+		"rank": 18
 	},
 	"latios_mega": {
 		"fastMove": "DRAGON_BREATH",
@@ -159,7 +168,7 @@
 		"speciesId": "latios_mega",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 140,
-		"rank": 18
+		"rank": 19
 	},
 	"raikou_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -168,7 +177,7 @@
 		"speciesId": "raikou_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 123,
-		"rank": 19
+		"rank": 20
 	},
 	"latios_shadow": {
 		"fastMove": "DRAGON_BREATH",
@@ -177,7 +186,7 @@
 		"speciesId": "latios_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 136,
-		"rank": 20
+		"rank": 21
 	},
 	"alakazam_shadow": {
 		"fastMove": "COUNTER",
@@ -186,7 +195,7 @@
 		"speciesId": "alakazam_shadow",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 192,
-		"rank": 21
+		"rank": 22
 	},
 	"hariyama_shadow": {
 		"fastMove": "FORCE_PALM",
@@ -195,7 +204,7 @@
 		"speciesId": "hariyama_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 110,
-		"rank": 22
+		"rank": 23
 	},
 	"emboar_shadow": {
 		"fastMove": "LOW_KICK",
@@ -204,7 +213,7 @@
 		"speciesId": "emboar_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 201,
-		"rank": 23
+		"rank": 24
 	},
 	"mewtwo_shadow": {
 		"fastMove": "PSYCHO_CUT",
@@ -213,7 +222,7 @@
 		"speciesId": "mewtwo_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 211,
-		"rank": 24
+		"rank": 25
 	},
 	"sawk_shadow": {
 		"fastMove": "LOW_KICK",
@@ -222,7 +231,7 @@
 		"speciesId": "sawk_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 198,
-		"rank": 25
+		"rank": 26
 	},
 	"darkrai_shadow": {
 		"fastMove": "SNARL",
@@ -231,7 +240,7 @@
 		"speciesId": "darkrai_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 201,
-		"rank": 26
+		"rank": 27
 	},
 	"keldeo_ordinary": {
 		"fastMove": "LOW_KICK",
@@ -240,7 +249,7 @@
 		"speciesId": "keldeo_ordinary",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 66,
-		"rank": 27
+		"rank": 28
 	},
 	"conkeldurr": {
 		"fastMove": "FORCE_PALM",
@@ -249,7 +258,7 @@
 		"speciesId": "conkeldurr",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 173,
-		"rank": 28
+		"rank": 29
 	},
 	"sneasler_shadow": {
 		"fastMove": "ROCK_SMASH",
@@ -258,7 +267,7 @@
 		"speciesId": "sneasler_shadow",
 		"fastMoveDmg": 27,
 		"chargedMoveDmg": 165,
-		"rank": 29
+		"rank": 30
 	},
 	"breloom": {
 		"fastMove": "FORCE_PALM",
@@ -267,7 +276,7 @@
 		"speciesId": "breloom",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 104,
-		"rank": 30
+		"rank": 31
 	},
 	"gengar_mega": {
 		"fastMove": "LICK",
@@ -276,7 +285,7 @@
 		"speciesId": "gengar_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 203,
-		"rank": 31
+		"rank": 32
 	},
 	"toxicroak_shadow": {
 		"fastMove": "COUNTER",
@@ -285,7 +294,7 @@
 		"speciesId": "toxicroak_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 111,
-		"rank": 32
+		"rank": 33
 	},
 	"urshifu_rapid_strike": {
 		"fastMove": "COUNTER",
@@ -294,7 +303,7 @@
 		"speciesId": "urshifu_rapid_strike",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 110,
-		"rank": 33
+		"rank": 34
 	},
 	"urshifu_single_strike": {
 		"fastMove": "COUNTER",
@@ -303,15 +312,6 @@
 		"speciesId": "urshifu_single_strike",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 110,
-		"rank": 34
-	},
-	"falinks_mega": {
-		"fastMove": "COUNTER",
-		"chargedMove": "SUPER_POWER",
-		"dps": 25.12987012987013,
-		"speciesId": "falinks_mega",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 115,
 		"rank": 35
 	},
 	"annihilape_shadow": {

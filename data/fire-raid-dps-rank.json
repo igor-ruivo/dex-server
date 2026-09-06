@@ -8,6 +8,15 @@
 		"chargedMoveDmg": 233,
 		"rank": 1
 	},
+	"delphox_mega": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "MYSTICAL_FIRE_PLUS",
+		"dps": 36.33898305084746,
+		"speciesId": "delphox_mega",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 232,
+		"rank": 2
+	},
 	"blacephalon": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "MIND_BLOWN",
@@ -15,15 +24,6 @@
 		"speciesId": "blacephalon",
 		"fastMoveDmg": 51,
 		"chargedMoveDmg": 205,
-		"rank": 2
-	},
-	"delphox_mega": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "BLAST_BURN",
-		"dps": 35.47239263803681,
-		"speciesId": "delphox_mega",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 199,
 		"rank": 3
 	},
 	"blaziken_mega": {

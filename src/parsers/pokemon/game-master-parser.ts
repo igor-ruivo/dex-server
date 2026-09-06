@@ -222,6 +222,7 @@ class GameMasterParser {
 				fastMoves: PokemonTransformer.cleanMoves(pokemon.fastMoves),
 				chargedMoves: [
 					...PokemonTransformer.cleanMoves(pokemon.chargedMoves),
+					...(pokemon.extraChargedMoves ?? []),
 					...(isShadow
 						? ['FRUSTRATION']
 						: this.isNormalPokemonAndHasShadowVersion(pokemon, allPokemon)

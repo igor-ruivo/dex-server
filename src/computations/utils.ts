@@ -110,6 +110,10 @@ const pveDPS = (
 	fastMoveEnergy: number,
 	chargedMoveAnimationDuration: number
 ) => {
+	if (fastMoveCooldown === 0) {
+		return 0;
+	}
+
 	const fastMoveDPS = fastMoveDamage / fastMoveCooldown;
 
 	if (fastMoveEnergy === 0 && chargedMoveRequiredEnergy !== 0) {

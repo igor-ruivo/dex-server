@@ -284,4 +284,21 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 		released: true,
 		tags: ['mega'],
 	},
+	{
+		dex: 398,
+		speciesId: 'staraptor_mega',
+		speciesName: 'Staraptor (Mega)',
+		baseStats: {
+			atk: 278,
+			def: 207,
+			hp: 198,
+		},
+		types: ['fighting', 'flying'],
+		fastMoves: ['WING_ATTACK', 'GUST', 'SAND_ATTACK', 'QUICK_ATTACK'],
+		chargedMoves: ['CLOSE_COMBAT', 'HEAT_WAVE', 'BRAVE_BIRD', 'FLY'],
+		eliteMoves: [],
+		legacyMoves: [],
+		released: true,
+		tags: ['mega'],
+	},
 ];

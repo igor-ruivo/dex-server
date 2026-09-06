@@ -144,7 +144,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/wBYc9h2vb7e40ldRqi4atgrTsPv7Jcs0M1DAyQ9Tp-Jd8L8b0gkwJEEYcUjUml5KaMst8zTk7k_SNZg-LegIxBwt8fXRdW2lgD0iF27ILw=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "staraptor_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [
 			{

@@ -242,6 +242,14 @@ class PokemonMatcher {
 			};
 		}
 
+		if (currP.includes('zacian') && currP.includes('hero')) {
+			return {
+				speciesId: 'zacian_hero',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
 		console.error('Multiple matches for ' + currP);
 		return null;
 	}
@@ -441,7 +449,7 @@ class PokemonMatcher {
 		isMega: boolean,
 		raidLevel: string
 	): Array<GameMasterPokemon> {
-		if (raidLevel.toLocaleLowerCase() !== 'mega' || !isMega) {
+		if ((raidLevel && raidLevel.toLocaleLowerCase() !== 'mega') || !isMega) {
 			if (!isShadow) {
 				return this.domain.filter(
 					(formC) =>

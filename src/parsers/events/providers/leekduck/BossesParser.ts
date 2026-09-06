@@ -39,7 +39,8 @@ class BossesParser {
 					.replaceAll('Shadow', '')
 					.replaceAll('shadow', '')
 					.trim() ?? '';
-			if (parsedTier.split(' ').length === 2) {
+
+			if (parsedTier.split(' ').length >= 2) {
 				tier = parsedTier.split(' ')[0].split('-')[0].toLocaleLowerCase();
 			}
 
@@ -47,7 +48,7 @@ class BossesParser {
 				tier = parsedTier.toLocaleLowerCase();
 			}
 
-			if (tier === 'mega' || tier === '5') {
+			if (tier === 'mega' || tier === '5' || tier === 'super') {
 				continue;
 			}
 

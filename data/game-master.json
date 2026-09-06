@@ -65315,5 +65315,43 @@
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false
+	},
+	"staraptor_mega": {
+		"dex": 398,
+		"speciesId": "staraptor_mega",
+		"speciesName": "Staraptor (Mega)",
+		"types": [
+			"Fighting",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398_f2.png",
+		"goImageUrl": "398.fMEGA.icon.png",
+		"shinyGoImageUrl": "398.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 278,
+			"def": 207,
+			"hp": 198
+		},
+		"fastMoves": [
+			"WING_ATTACK",
+			"GUST",
+			"SAND_ATTACK",
+			"QUICK_ATTACK"
+		],
+		"chargedMoves": [
+			"CLOSE_COMBAT",
+			"HEAT_WAVE",
+			"BRAVE_BIRD",
+			"FLY",
+			"RETURN"
+		],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
 	}
 }

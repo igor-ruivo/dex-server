@@ -182,6 +182,11 @@ class EventsParser {
 			false,
 			false
 		);
+
+		if (pokemons.length === 0) {
+			return undefined;
+		}
+
 		const bonus = this.extractSpotlightBonus(parsed.htmlDoc);
 
 		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};

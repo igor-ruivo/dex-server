@@ -231,6 +231,7 @@ interface BaseMove {
 	vId: string;
 	type: string;
 	isFast: boolean;
+	isSuperMega: boolean;
 }
 
 export type PvPMove = BaseMove & {

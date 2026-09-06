@@ -62,7 +62,8 @@ class MovesProvider {
 					helperIdx + helperConst.length
 				);
 				const typePointer = dataPointer.pokemonType || dataPointer.type;
-				const id = moveIdPointer.includes(supermegaTerm)
+				const isSuperMega = moveIdPointer.includes(supermegaTerm);
+				const id = isSuperMega
 					? (
 							renamedVFXsIds[dataPointer.vfxName] ?? dataPointer.vfxName
 						).toLocaleUpperCase() + supermegaTermSuffix
@@ -78,7 +79,8 @@ class MovesProvider {
 					);
 					pvpMoves[id] = {
 						moveId: id,
-						vId: moveIdPointer.includes(supermegaTerm)
+						isSuperMega,
+						vId: isSuperMega
 							? gmData
 									.filter(
 										(entry) =>
@@ -88,11 +90,14 @@ class MovesProvider {
 									.find(
 										(m) =>
 											(m.data.moveSettings || m.data.combatMove).vfxName ===
-											dataPointer.vfxName && !m.data.templateId.includes(supermegaTerm)
+												dataPointer.vfxName &&
+											!m.data.templateId.includes(supermegaTerm) &&
+											!!m.data.combatMove
 									)!
 									.data.templateId.substring(
 										entry.data.templateId.indexOf(term) + term.length
 									)
+									.substring(0, vidSubstring.indexOf('_'))
 							: vidSubstring.substring(0, vidSubstring.indexOf('_')),
 						type:
 							typePointer.split('POKEMON_TYPE_')[1]?.toLocaleLowerCase() ?? '',
@@ -105,11 +110,27 @@ class MovesProvider {
 						buffs: dataPointer.buffs,
 					};
 				} else {
+					const vidTarget = isSuperMega
+						? gmData
+								.filter(
+									(entry) =>
+										!entry.data.templateId?.startsWith('VN_BM_') &&
+										(entry.data?.moveSettings || entry.data?.combatMove)
+								)
+								.find(
+									(m) =>
+										(m.data.moveSettings || m.data.combatMove).vfxName ===
+											dataPointer.vfxName &&
+										!m.data.templateId.includes(supermegaTerm) &&
+										!m.data.combatMove
+								)
+						: undefined;
 					pveMoves[id] = {
 						moveId: id,
-						vId: entry.data.templateId.substring(
+						isSuperMega,
+						vId: (vidTarget ?? entry).data.templateId.substring(
 							1,
-							entry.data.templateId.indexOf('_')
+							(vidTarget ?? entry).data.templateId.indexOf('_')
 						),
 						type:
 							typePointer.split('POKEMON_TYPE_')[1]?.toLocaleLowerCase() ?? '',
@@ -139,11 +160,13 @@ class MovesProvider {
 					locale,
 					move.vId
 				);
-				moveName[locale] = translation || enName;
+				moveName[locale] =
+					(translation || enName) + (move.isSuperMega ? '+' : '');
 			});
 
 			movesDictionary[translatedId] = {
 				moveId: translatedId,
+				isSuperMega: move.isSuperMega,
 				vId: move.vId,
 				type: move.type,
 				isFast: move.isFast,
@@ -171,10 +194,12 @@ class MovesProvider {
 					locale,
 					move.vId
 				);
-				moveName[locale] = translation || enName;
+				moveName[locale] =
+					(translation || enName) + (move.isSuperMega ? '+' : '');
 			});
 			movesDictionary[translatedId] = {
 				moveId: translatedId,
+				isSuperMega: move.isSuperMega,
 				vId: move.vId,
 				type: move.type,
 				isFast: move.isFast,
@@ -205,6 +230,7 @@ class MovesProvider {
 		if (!movesDictionary.AEGISLASH_CHARGE_PSYCHO_CUT) {
 			movesDictionary.AEGISLASH_CHARGE_PSYCHO_CUT = {
 				moveId: 'AEGISLASH_CHARGE_PSYCHO_CUT',
+				isSuperMega: false,
 				vId: '-1',
 				type: 'psychic',
 				isFast: true,
@@ -233,6 +259,7 @@ class MovesProvider {
 			movesDictionary.AEGISLASH_CHARGE_AIR_SLASH = {
 				moveId: 'AEGISLASH_CHARGE_AIR_SLASH',
 				vId: '-1',
+				isSuperMega: false,
 				type: 'flying',
 				isFast: true,
 				pvpPower: 0,
@@ -255,6 +282,7 @@ class MovesProvider {
 				moveId: 'PYRO_BALL',
 				vId: '-1',
 				type: 'fire',
+				isSuperMega: false,
 				isFast: false,
 				pvpPower: 75,
 				pvePower: 150,
@@ -280,6 +308,7 @@ class MovesProvider {
 				moveId: 'GULP_MISSILE_ARROKUDA',
 				vId: '-1',
 				type: 'water',
+				isSuperMega: false,
 				isFast: false,
 				pvpPower: 15,
 				pvePower: 0,
@@ -310,6 +339,7 @@ class MovesProvider {
 				vId: '-1',
 				type: 'water',
 				isFast: false,
+				isSuperMega: false,
 				pvpPower: 15,
 				pvePower: 0,
 				pvpEnergy: 0,

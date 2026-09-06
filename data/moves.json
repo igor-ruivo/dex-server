@@ -1,6 +1,7 @@
 {
 	"WRAP": {
 		"moveId": "WRAP",
+		"isSuperMega": false,
 		"vId": "0013",
 		"type": "normal",
 		"isFast": false,
@@ -21,6 +22,7 @@
 	},
 	"HYPER_BEAM": {
 		"moveId": "HYPER_BEAM",
+		"isSuperMega": false,
 		"vId": "0014",
 		"type": "normal",
 		"isFast": false,
@@ -37,6 +39,7 @@
 	},
 	"DARK_PULSE": {
 		"moveId": "DARK_PULSE",
+		"isSuperMega": false,
 		"vId": "0016",
 		"type": "dark",
 		"isFast": false,
@@ -53,6 +56,7 @@
 	},
 	"SLUDGE": {
 		"moveId": "SLUDGE",
+		"isSuperMega": false,
 		"vId": "0018",
 		"type": "poison",
 		"isFast": false,
@@ -69,6 +73,7 @@
 	},
 	"VICE_GRIP": {
 		"moveId": "VICE_GRIP",
+		"isSuperMega": false,
 		"vId": "0020",
 		"type": "normal",
 		"isFast": false,
@@ -85,6 +90,7 @@
 	},
 	"FLAME_WHEEL": {
 		"moveId": "FLAME_WHEEL",
+		"isSuperMega": false,
 		"vId": "0021",
 		"type": "fire",
 		"isFast": false,
@@ -101,6 +107,7 @@
 	},
 	"MEGAHORN": {
 		"moveId": "MEGAHORN",
+		"isSuperMega": false,
 		"vId": "0022",
 		"type": "bug",
 		"isFast": false,
@@ -117,6 +124,7 @@
 	},
 	"FLAMETHROWER": {
 		"moveId": "FLAMETHROWER",
+		"isSuperMega": false,
 		"vId": "0024",
 		"type": "fire",
 		"isFast": false,
@@ -133,6 +141,7 @@
 	},
 	"DIG": {
 		"moveId": "DIG",
+		"isSuperMega": false,
 		"vId": "0026",
 		"type": "ground",
 		"isFast": false,
@@ -149,6 +158,7 @@
 	},
 	"CROSS_CHOP": {
 		"moveId": "CROSS_CHOP",
+		"isSuperMega": false,
 		"vId": "0028",
 		"type": "fighting",
 		"isFast": false,
@@ -165,6 +175,7 @@
 	},
 	"PSYBEAM": {
 		"moveId": "PSYBEAM",
+		"isSuperMega": false,
 		"vId": "0030",
 		"type": "psychic",
 		"isFast": false,
@@ -181,6 +192,7 @@
 	},
 	"EARTHQUAKE": {
 		"moveId": "EARTHQUAKE",
+		"isSuperMega": false,
 		"vId": "0031",
 		"type": "ground",
 		"isFast": false,
@@ -197,6 +209,7 @@
 	},
 	"STONE_EDGE": {
 		"moveId": "STONE_EDGE",
+		"isSuperMega": false,
 		"vId": "0032",
 		"type": "rock",
 		"isFast": false,
@@ -213,6 +226,7 @@
 	},
 	"ICE_PUNCH": {
 		"moveId": "ICE_PUNCH",
+		"isSuperMega": false,
 		"vId": "0033",
 		"type": "ice",
 		"isFast": false,
@@ -229,6 +243,7 @@
 	},
 	"HEART_STAMP": {
 		"moveId": "HEART_STAMP",
+		"isSuperMega": false,
 		"vId": "0034",
 		"type": "psychic",
 		"isFast": false,
@@ -245,6 +260,7 @@
 	},
 	"DISCHARGE": {
 		"moveId": "DISCHARGE",
+		"isSuperMega": false,
 		"vId": "0035",
 		"type": "electric",
 		"isFast": false,
@@ -261,6 +277,7 @@
 	},
 	"FLASH_CANNON": {
 		"moveId": "FLASH_CANNON",
+		"isSuperMega": false,
 		"vId": "0036",
 		"type": "steel",
 		"isFast": false,
@@ -277,6 +294,7 @@
 	},
 	"DRILL_PECK": {
 		"moveId": "DRILL_PECK",
+		"isSuperMega": false,
 		"vId": "0038",
 		"type": "flying",
 		"isFast": false,
@@ -293,6 +311,7 @@
 	},
 	"ICE_BEAM": {
 		"moveId": "ICE_BEAM",
+		"isSuperMega": false,
 		"vId": "0039",
 		"type": "ice",
 		"isFast": false,
@@ -309,6 +328,7 @@
 	},
 	"BLIZZARD": {
 		"moveId": "BLIZZARD",
+		"isSuperMega": false,
 		"vId": "0040",
 		"type": "ice",
 		"isFast": false,
@@ -325,6 +345,7 @@
 	},
 	"HEAT_WAVE": {
 		"moveId": "HEAT_WAVE",
+		"isSuperMega": false,
 		"vId": "0042",
 		"type": "fire",
 		"isFast": false,
@@ -341,6 +362,7 @@
 	},
 	"AERIAL_ACE": {
 		"moveId": "AERIAL_ACE",
+		"isSuperMega": false,
 		"vId": "0045",
 		"type": "flying",
 		"isFast": false,
@@ -357,6 +379,7 @@
 	},
 	"DRILL_RUN": {
 		"moveId": "DRILL_RUN",
+		"isSuperMega": false,
 		"vId": "0046",
 		"type": "ground",
 		"isFast": false,
@@ -373,6 +396,7 @@
 	},
 	"PETAL_BLIZZARD": {
 		"moveId": "PETAL_BLIZZARD",
+		"isSuperMega": false,
 		"vId": "0047",
 		"type": "grass",
 		"isFast": false,
@@ -389,6 +413,7 @@
 	},
 	"MEGA_DRAIN": {
 		"moveId": "MEGA_DRAIN",
+		"isSuperMega": false,
 		"vId": "0048",
 		"type": "grass",
 		"isFast": false,
@@ -405,6 +430,7 @@
 	},
 	"BUG_BUZZ": {
 		"moveId": "BUG_BUZZ",
+		"isSuperMega": false,
 		"vId": "0049",
 		"type": "bug",
 		"isFast": false,
@@ -425,6 +451,7 @@
 	},
 	"POISON_FANG": {
 		"moveId": "POISON_FANG",
+		"isSuperMega": false,
 		"vId": "0050",
 		"type": "poison",
 		"isFast": false,
@@ -445,6 +472,7 @@
 	},
 	"NIGHT_SLASH": {
 		"moveId": "NIGHT_SLASH",
+		"isSuperMega": false,
 		"vId": "0051",
 		"type": "dark",
 		"isFast": false,
@@ -465,6 +493,7 @@
 	},
 	"BUBBLE_BEAM": {
 		"moveId": "BUBBLE_BEAM",
+		"isSuperMega": false,
 		"vId": "0053",
 		"type": "water",
 		"isFast": false,
@@ -485,6 +514,7 @@
 	},
 	"SUBMISSION": {
 		"moveId": "SUBMISSION",
+		"isSuperMega": false,
 		"vId": "0054",
 		"type": "fighting",
 		"isFast": false,
@@ -501,6 +531,7 @@
 	},
 	"LOW_SWEEP": {
 		"moveId": "LOW_SWEEP",
+		"isSuperMega": false,
 		"vId": "0056",
 		"type": "fighting",
 		"isFast": false,
@@ -517,6 +548,7 @@
 	},
 	"AQUA_JET": {
 		"moveId": "AQUA_JET",
+		"isSuperMega": false,
 		"vId": "0057",
 		"type": "water",
 		"isFast": false,
@@ -533,6 +565,7 @@
 	},
 	"AQUA_TAIL": {
 		"moveId": "AQUA_TAIL",
+		"isSuperMega": false,
 		"vId": "0058",
 		"type": "water",
 		"isFast": false,
@@ -549,6 +582,7 @@
 	},
 	"SEED_BOMB": {
 		"moveId": "SEED_BOMB",
+		"isSuperMega": false,
 		"vId": "0059",
 		"type": "grass",
 		"isFast": false,
@@ -565,6 +599,7 @@
 	},
 	"PSYSHOCK": {
 		"moveId": "PSYSHOCK",
+		"isSuperMega": false,
 		"vId": "0060",
 		"type": "psychic",
 		"isFast": false,
@@ -581,6 +616,7 @@
 	},
 	"ANCIENT_POWER": {
 		"moveId": "ANCIENT_POWER",
+		"isSuperMega": false,
 		"vId": "0062",
 		"type": "rock",
 		"isFast": false,
@@ -602,6 +638,7 @@
 	},
 	"ROCK_TOMB": {
 		"moveId": "ROCK_TOMB",
+		"isSuperMega": false,
 		"vId": "0063",
 		"type": "rock",
 		"isFast": false,
@@ -622,6 +659,7 @@
 	},
 	"ROCK_SLIDE": {
 		"moveId": "ROCK_SLIDE",
+		"isSuperMega": false,
 		"vId": "0064",
 		"type": "rock",
 		"isFast": false,
@@ -638,6 +676,7 @@
 	},
 	"POWER_GEM": {
 		"moveId": "POWER_GEM",
+		"isSuperMega": false,
 		"vId": "0065",
 		"type": "rock",
 		"isFast": false,
@@ -654,6 +693,7 @@
 	},
 	"SHADOW_SNEAK": {
 		"moveId": "SHADOW_SNEAK",
+		"isSuperMega": false,
 		"vId": "0066",
 		"type": "ghost",
 		"isFast": false,
@@ -670,6 +710,7 @@
 	},
 	"SHADOW_PUNCH": {
 		"moveId": "SHADOW_PUNCH",
+		"isSuperMega": false,
 		"vId": "0067",
 		"type": "ghost",
 		"isFast": false,
@@ -686,6 +727,7 @@
 	},
 	"OMINOUS_WIND": {
 		"moveId": "OMINOUS_WIND",
+		"isSuperMega": false,
 		"vId": "0069",
 		"type": "ghost",
 		"isFast": false,
@@ -707,6 +749,7 @@
 	},
 	"SHADOW_BALL": {
 		"moveId": "SHADOW_BALL",
+		"isSuperMega": false,
 		"vId": "0070",
 		"type": "ghost",
 		"isFast": false,
@@ -723,6 +766,7 @@
 	},
 	"MAGNET_BOMB": {
 		"moveId": "MAGNET_BOMB",
+		"isSuperMega": false,
 		"vId": "0072",
 		"type": "steel",
 		"isFast": false,
@@ -739,6 +783,7 @@
 	},
 	"IRON_HEAD": {
 		"moveId": "IRON_HEAD",
+		"isSuperMega": false,
 		"vId": "0074",
 		"type": "steel",
 		"isFast": false,
@@ -755,6 +800,7 @@
 	},
 	"PARABOLIC_CHARGE": {
 		"moveId": "PARABOLIC_CHARGE",
+		"isSuperMega": false,
 		"vId": "0075",
 		"type": "electric",
 		"isFast": false,
@@ -775,6 +821,7 @@
 	},
 	"THUNDER_PUNCH": {
 		"moveId": "THUNDER_PUNCH",
+		"isSuperMega": false,
 		"vId": "0077",
 		"type": "electric",
 		"isFast": false,
@@ -791,6 +838,7 @@
 	},
 	"THUNDER": {
 		"moveId": "THUNDER",
+		"isSuperMega": false,
 		"vId": "0078",
 		"type": "electric",
 		"isFast": false,
@@ -807,6 +855,7 @@
 	},
 	"THUNDERBOLT": {
 		"moveId": "THUNDERBOLT",
+		"isSuperMega": false,
 		"vId": "0079",
 		"type": "electric",
 		"isFast": false,
@@ -823,6 +872,7 @@
 	},
 	"TWISTER": {
 		"moveId": "TWISTER",
+		"isSuperMega": false,
 		"vId": "0080",
 		"type": "dragon",
 		"isFast": false,
@@ -839,6 +889,7 @@
 	},
 	"DRAGON_PULSE": {
 		"moveId": "DRAGON_PULSE",
+		"isSuperMega": false,
 		"vId": "0082",
 		"type": "dragon",
 		"isFast": false,
@@ -855,6 +906,7 @@
 	},
 	"DRAGON_CLAW": {
 		"moveId": "DRAGON_CLAW",
+		"isSuperMega": false,
 		"vId": "0083",
 		"type": "dragon",
 		"isFast": false,
@@ -871,6 +923,7 @@
 	},
 	"DISARMING_VOICE": {
 		"moveId": "DISARMING_VOICE",
+		"isSuperMega": false,
 		"vId": "0084",
 		"type": "fairy",
 		"isFast": false,
@@ -887,6 +940,7 @@
 	},
 	"DRAINING_KISS": {
 		"moveId": "DRAINING_KISS",
+		"isSuperMega": false,
 		"vId": "0085",
 		"type": "fairy",
 		"isFast": false,
@@ -903,6 +957,7 @@
 	},
 	"DAZZLING_GLEAM": {
 		"moveId": "DAZZLING_GLEAM",
+		"isSuperMega": false,
 		"vId": "0086",
 		"type": "fairy",
 		"isFast": false,
@@ -919,6 +974,7 @@
 	},
 	"MOONBLAST": {
 		"moveId": "MOONBLAST",
+		"isSuperMega": false,
 		"vId": "0087",
 		"type": "fairy",
 		"isFast": false,
@@ -939,6 +995,7 @@
 	},
 	"PLAY_ROUGH": {
 		"moveId": "PLAY_ROUGH",
+		"isSuperMega": false,
 		"vId": "0088",
 		"type": "fairy",
 		"isFast": false,
@@ -955,6 +1012,7 @@
 	},
 	"CROSS_POISON": {
 		"moveId": "CROSS_POISON",
+		"isSuperMega": false,
 		"vId": "0089",
 		"type": "poison",
 		"isFast": false,
@@ -975,6 +1033,7 @@
 	},
 	"SLUDGE_BOMB": {
 		"moveId": "SLUDGE_BOMB",
+		"isSuperMega": false,
 		"vId": "0090",
 		"type": "poison",
 		"isFast": false,
@@ -991,6 +1050,7 @@
 	},
 	"SLUDGE_WAVE": {
 		"moveId": "SLUDGE_WAVE",
+		"isSuperMega": false,
 		"vId": "0091",
 		"type": "poison",
 		"isFast": false,
@@ -1007,6 +1067,7 @@
 	},
 	"GUNK_SHOT": {
 		"moveId": "GUNK_SHOT",
+		"isSuperMega": false,
 		"vId": "0092",
 		"type": "poison",
 		"isFast": false,
@@ -1023,6 +1084,7 @@
 	},
 	"BONE_CLUB": {
 		"moveId": "BONE_CLUB",
+		"isSuperMega": false,
 		"vId": "0094",
 		"type": "ground",
 		"isFast": false,
@@ -1039,6 +1101,7 @@
 	},
 	"BULLDOZE": {
 		"moveId": "BULLDOZE",
+		"isSuperMega": false,
 		"vId": "0095",
 		"type": "ground",
 		"isFast": false,
@@ -1059,6 +1122,7 @@
 	},
 	"MUD_BOMB": {
 		"moveId": "MUD_BOMB",
+		"isSuperMega": false,
 		"vId": "0096",
 		"type": "ground",
 		"isFast": false,
@@ -1075,6 +1139,7 @@
 	},
 	"SIGNAL_BEAM": {
 		"moveId": "SIGNAL_BEAM",
+		"isSuperMega": false,
 		"vId": "0099",
 		"type": "bug",
 		"isFast": false,
@@ -1096,6 +1161,7 @@
 	},
 	"X_SCISSOR": {
 		"moveId": "X_SCISSOR",
+		"isSuperMega": false,
 		"vId": "0100",
 		"type": "bug",
 		"isFast": false,
@@ -1112,6 +1178,7 @@
 	},
 	"FLAME_CHARGE": {
 		"moveId": "FLAME_CHARGE",
+		"isSuperMega": false,
 		"vId": "0101",
 		"type": "fire",
 		"isFast": false,
@@ -1132,6 +1199,7 @@
 	},
 	"FLAME_BURST": {
 		"moveId": "FLAME_BURST",
+		"isSuperMega": false,
 		"vId": "0102",
 		"type": "fire",
 		"isFast": false,
@@ -1148,6 +1216,7 @@
 	},
 	"FIRE_BLAST": {
 		"moveId": "FIRE_BLAST",
+		"isSuperMega": false,
 		"vId": "0103",
 		"type": "fire",
 		"isFast": false,
@@ -1164,6 +1233,7 @@
 	},
 	"BRINE": {
 		"moveId": "BRINE",
+		"isSuperMega": false,
 		"vId": "0104",
 		"type": "water",
 		"isFast": false,
@@ -1180,6 +1250,7 @@
 	},
 	"WATER_PULSE": {
 		"moveId": "WATER_PULSE",
+		"isSuperMega": false,
 		"vId": "0105",
 		"type": "water",
 		"isFast": false,
@@ -1196,6 +1267,7 @@
 	},
 	"SCALD": {
 		"moveId": "SCALD",
+		"isSuperMega": false,
 		"vId": "0106",
 		"type": "water",
 		"isFast": false,
@@ -1216,6 +1288,7 @@
 	},
 	"HYDRO_PUMP": {
 		"moveId": "HYDRO_PUMP",
+		"isSuperMega": false,
 		"vId": "0107",
 		"type": "water",
 		"isFast": false,
@@ -1232,6 +1305,7 @@
 	},
 	"PSYCHIC": {
 		"moveId": "PSYCHIC",
+		"isSuperMega": false,
 		"vId": "0108",
 		"type": "psychic",
 		"isFast": false,
@@ -1252,6 +1326,7 @@
 	},
 	"PSYSTRIKE": {
 		"moveId": "PSYSTRIKE",
+		"isSuperMega": false,
 		"vId": "0109",
 		"type": "psychic",
 		"isFast": false,
@@ -1268,6 +1343,7 @@
 	},
 	"ICY_WIND": {
 		"moveId": "ICY_WIND",
+		"isSuperMega": false,
 		"vId": "0111",
 		"type": "ice",
 		"isFast": false,
@@ -1288,6 +1364,7 @@
 	},
 	"GIGA_DRAIN": {
 		"moveId": "GIGA_DRAIN",
+		"isSuperMega": false,
 		"vId": "0114",
 		"type": "grass",
 		"isFast": false,
@@ -1304,6 +1381,7 @@
 	},
 	"FIRE_PUNCH": {
 		"moveId": "FIRE_PUNCH",
+		"isSuperMega": false,
 		"vId": "0115",
 		"type": "fire",
 		"isFast": false,
@@ -1320,6 +1398,7 @@
 	},
 	"SOLAR_BEAM": {
 		"moveId": "SOLAR_BEAM",
+		"isSuperMega": false,
 		"vId": "0116",
 		"type": "grass",
 		"isFast": false,
@@ -1336,6 +1415,7 @@
 	},
 	"LEAF_BLADE": {
 		"moveId": "LEAF_BLADE",
+		"isSuperMega": false,
 		"vId": "0117",
 		"type": "grass",
 		"isFast": false,
@@ -1352,6 +1432,7 @@
 	},
 	"POWER_WHIP": {
 		"moveId": "POWER_WHIP",
+		"isSuperMega": false,
 		"vId": "0118",
 		"type": "grass",
 		"isFast": false,
@@ -1368,6 +1449,7 @@
 	},
 	"AIR_CUTTER": {
 		"moveId": "AIR_CUTTER",
+		"isSuperMega": false,
 		"vId": "0121",
 		"type": "flying",
 		"isFast": false,
@@ -1388,6 +1470,7 @@
 	},
 	"HURRICANE": {
 		"moveId": "HURRICANE",
+		"isSuperMega": false,
 		"vId": "0122",
 		"type": "flying",
 		"isFast": false,
@@ -1404,6 +1487,7 @@
 	},
 	"BRICK_BREAK": {
 		"moveId": "BRICK_BREAK",
+		"isSuperMega": false,
 		"vId": "0123",
 		"type": "fighting",
 		"isFast": false,
@@ -1424,6 +1508,7 @@
 	},
 	"SWIFT": {
 		"moveId": "SWIFT",
+		"isSuperMega": false,
 		"vId": "0125",
 		"type": "normal",
 		"isFast": false,
@@ -1440,6 +1525,7 @@
 	},
 	"HORN_ATTACK": {
 		"moveId": "HORN_ATTACK",
+		"isSuperMega": false,
 		"vId": "0126",
 		"type": "normal",
 		"isFast": false,
@@ -1456,6 +1542,7 @@
 	},
 	"STOMP": {
 		"moveId": "STOMP",
+		"isSuperMega": false,
 		"vId": "0127",
 		"type": "normal",
 		"isFast": false,
@@ -1472,6 +1559,7 @@
 	},
 	"HYPER_FANG": {
 		"moveId": "HYPER_FANG",
+		"isSuperMega": false,
 		"vId": "0129",
 		"type": "normal",
 		"isFast": false,
@@ -1488,6 +1576,7 @@
 	},
 	"BODY_SLAM": {
 		"moveId": "BODY_SLAM",
+		"isSuperMega": false,
 		"vId": "0131",
 		"type": "normal",
 		"isFast": false,
@@ -1504,6 +1593,7 @@
 	},
 	"REST": {
 		"moveId": "REST",
+		"isSuperMega": false,
 		"vId": "0132",
 		"type": "normal",
 		"isFast": false,
@@ -1520,6 +1610,7 @@
 	},
 	"STRUGGLE": {
 		"moveId": "STRUGGLE",
+		"isSuperMega": false,
 		"vId": "0133",
 		"type": "normal",
 		"isFast": false,
@@ -1536,6 +1627,7 @@
 	},
 	"SCALD_BLASTOISE": {
 		"moveId": "SCALD_BLASTOISE",
+		"isSuperMega": false,
 		"vId": "0134",
 		"type": "water",
 		"isFast": false,
@@ -1552,6 +1644,7 @@
 	},
 	"HYDRO_PUMP_BLASTOISE": {
 		"moveId": "HYDRO_PUMP_BLASTOISE",
+		"isSuperMega": false,
 		"vId": "0135",
 		"type": "water",
 		"isFast": false,
@@ -1568,6 +1661,7 @@
 	},
 	"WRAP_GREEN": {
 		"moveId": "WRAP_GREEN",
+		"isSuperMega": false,
 		"vId": "0136",
 		"type": "normal",
 		"isFast": false,
@@ -1584,6 +1678,7 @@
 	},
 	"WRAP_PINK": {
 		"moveId": "WRAP_PINK",
+		"isSuperMega": false,
 		"vId": "0137",
 		"type": "normal",
 		"isFast": false,
@@ -1600,6 +1695,7 @@
 	},
 	"FURY_CUTTER": {
 		"moveId": "FURY_CUTTER",
+		"isSuperMega": false,
 		"vId": "0200",
 		"type": "bug",
 		"isFast": true,
@@ -1616,6 +1712,7 @@
 	},
 	"BUG_BITE": {
 		"moveId": "BUG_BITE",
+		"isSuperMega": false,
 		"vId": "0201",
 		"type": "bug",
 		"isFast": true,
@@ -1632,6 +1729,7 @@
 	},
 	"BITE": {
 		"moveId": "BITE",
+		"isSuperMega": false,
 		"vId": "0202",
 		"type": "dark",
 		"isFast": true,
@@ -1648,6 +1746,7 @@
 	},
 	"SUCKER_PUNCH": {
 		"moveId": "SUCKER_PUNCH",
+		"isSuperMega": false,
 		"vId": "0203",
 		"type": "dark",
 		"isFast": true,
@@ -1664,6 +1763,7 @@
 	},
 	"DRAGON_BREATH": {
 		"moveId": "DRAGON_BREATH",
+		"isSuperMega": false,
 		"vId": "0204",
 		"type": "dragon",
 		"isFast": true,
@@ -1680,6 +1780,7 @@
 	},
 	"THUNDER_SHOCK": {
 		"moveId": "THUNDER_SHOCK",
+		"isSuperMega": false,
 		"vId": "0205",
 		"type": "electric",
 		"isFast": true,
@@ -1696,6 +1797,7 @@
 	},
 	"SPARK": {
 		"moveId": "SPARK",
+		"isSuperMega": false,
 		"vId": "0206",
 		"type": "electric",
 		"isFast": true,
@@ -1712,6 +1814,7 @@
 	},
 	"LOW_KICK": {
 		"moveId": "LOW_KICK",
+		"isSuperMega": false,
 		"vId": "0207",
 		"type": "fighting",
 		"isFast": true,
@@ -1728,6 +1831,7 @@
 	},
 	"KARATE_CHOP": {
 		"moveId": "KARATE_CHOP",
+		"isSuperMega": false,
 		"vId": "0208",
 		"type": "fighting",
 		"isFast": true,
@@ -1744,6 +1848,7 @@
 	},
 	"EMBER": {
 		"moveId": "EMBER",
+		"isSuperMega": false,
 		"vId": "0209",
 		"type": "fire",
 		"isFast": true,
@@ -1760,6 +1865,7 @@
 	},
 	"WING_ATTACK": {
 		"moveId": "WING_ATTACK",
+		"isSuperMega": false,
 		"vId": "0210",
 		"type": "flying",
 		"isFast": true,
@@ -1776,6 +1882,7 @@
 	},
 	"PECK": {
 		"moveId": "PECK",
+		"isSuperMega": false,
 		"vId": "0211",
 		"type": "flying",
 		"isFast": true,
@@ -1792,6 +1899,7 @@
 	},
 	"LICK": {
 		"moveId": "LICK",
+		"isSuperMega": false,
 		"vId": "0212",
 		"type": "ghost",
 		"isFast": true,
@@ -1808,6 +1916,7 @@
 	},
 	"SHADOW_CLAW": {
 		"moveId": "SHADOW_CLAW",
+		"isSuperMega": false,
 		"vId": "0213",
 		"type": "ghost",
 		"isFast": true,
@@ -1824,6 +1933,7 @@
 	},
 	"VINE_WHIP": {
 		"moveId": "VINE_WHIP",
+		"isSuperMega": false,
 		"vId": "0214",
 		"type": "grass",
 		"isFast": true,
@@ -1840,6 +1950,7 @@
 	},
 	"RAZOR_LEAF": {
 		"moveId": "RAZOR_LEAF",
+		"isSuperMega": false,
 		"vId": "0215",
 		"type": "grass",
 		"isFast": true,
@@ -1856,6 +1967,7 @@
 	},
 	"MUD_SHOT": {
 		"moveId": "MUD_SHOT",
+		"isSuperMega": false,
 		"vId": "0216",
 		"type": "ground",
 		"isFast": true,
@@ -1872,6 +1984,7 @@
 	},
 	"ICE_SHARD": {
 		"moveId": "ICE_SHARD",
+		"isSuperMega": false,
 		"vId": "0217",
 		"type": "ice",
 		"isFast": true,
@@ -1888,6 +2001,7 @@
 	},
 	"FROST_BREATH": {
 		"moveId": "FROST_BREATH",
+		"isSuperMega": false,
 		"vId": "0218",
 		"type": "ice",
 		"isFast": true,
@@ -1904,6 +2018,7 @@
 	},
 	"QUICK_ATTACK": {
 		"moveId": "QUICK_ATTACK",
+		"isSuperMega": false,
 		"vId": "0219",
 		"type": "normal",
 		"isFast": true,
@@ -1920,6 +2035,7 @@
 	},
 	"SCRATCH": {
 		"moveId": "SCRATCH",
+		"isSuperMega": false,
 		"vId": "0220",
 		"type": "normal",
 		"isFast": true,
@@ -1936,6 +2052,7 @@
 	},
 	"TACKLE": {
 		"moveId": "TACKLE",
+		"isSuperMega": false,
 		"vId": "0221",
 		"type": "normal",
 		"isFast": true,
@@ -1952,6 +2069,7 @@
 	},
 	"POUND": {
 		"moveId": "POUND",
+		"isSuperMega": false,
 		"vId": "0222",
 		"type": "normal",
 		"isFast": true,
@@ -1968,6 +2086,7 @@
 	},
 	"CUT": {
 		"moveId": "CUT",
+		"isSuperMega": false,
 		"vId": "0223",
 		"type": "normal",
 		"isFast": true,
@@ -1984,6 +2103,7 @@
 	},
 	"POISON_JAB": {
 		"moveId": "POISON_JAB",
+		"isSuperMega": false,
 		"vId": "0224",
 		"type": "poison",
 		"isFast": true,
@@ -2000,6 +2120,7 @@
 	},
 	"ACID": {
 		"moveId": "ACID",
+		"isSuperMega": false,
 		"vId": "0225",
 		"type": "poison",
 		"isFast": true,
@@ -2016,6 +2137,7 @@
 	},
 	"PSYCHO_CUT": {
 		"moveId": "PSYCHO_CUT",
+		"isSuperMega": false,
 		"vId": "0226",
 		"type": "psychic",
 		"isFast": true,
@@ -2032,6 +2154,7 @@
 	},
 	"ROCK_THROW": {
 		"moveId": "ROCK_THROW",
+		"isSuperMega": false,
 		"vId": "0227",
 		"type": "rock",
 		"isFast": true,
@@ -2048,6 +2171,7 @@
 	},
 	"METAL_CLAW": {
 		"moveId": "METAL_CLAW",
+		"isSuperMega": false,
 		"vId": "0228",
 		"type": "steel",
 		"isFast": true,
@@ -2064,6 +2188,7 @@
 	},
 	"BULLET_PUNCH": {
 		"moveId": "BULLET_PUNCH",
+		"isSuperMega": false,
 		"vId": "0229",
 		"type": "steel",
 		"isFast": true,
@@ -2080,6 +2205,7 @@
 	},
 	"WATER_GUN": {
 		"moveId": "WATER_GUN",
+		"isSuperMega": false,
 		"vId": "0230",
 		"type": "water",
 		"isFast": true,
@@ -2096,6 +2222,7 @@
 	},
 	"SPLASH": {
 		"moveId": "SPLASH",
+		"isSuperMega": false,
 		"vId": "0231",
 		"type": "water",
 		"isFast": true,
@@ -2112,6 +2239,7 @@
 	},
 	"WATER_GUN_FAST_BLASTOISE": {
 		"moveId": "WATER_GUN_FAST_BLASTOISE",
+		"isSuperMega": false,
 		"vId": "0232",
 		"type": "water",
 		"isFast": false,
@@ -2128,6 +2256,7 @@
 	},
 	"MUD_SLAP": {
 		"moveId": "MUD_SLAP",
+		"isSuperMega": false,
 		"vId": "0233",
 		"type": "ground",
 		"isFast": true,
@@ -2144,6 +2273,7 @@
 	},
 	"ZEN_HEADBUTT": {
 		"moveId": "ZEN_HEADBUTT",
+		"isSuperMega": false,
 		"vId": "0234",
 		"type": "psychic",
 		"isFast": true,
@@ -2160,6 +2290,7 @@
 	},
 	"CONFUSION": {
 		"moveId": "CONFUSION",
+		"isSuperMega": false,
 		"vId": "0235",
 		"type": "psychic",
 		"isFast": true,
@@ -2176,6 +2307,7 @@
 	},
 	"POISON_STING": {
 		"moveId": "POISON_STING",
+		"isSuperMega": false,
 		"vId": "0236",
 		"type": "poison",
 		"isFast": true,
@@ -2192,6 +2324,7 @@
 	},
 	"BUBBLE": {
 		"moveId": "BUBBLE",
+		"isSuperMega": false,
 		"vId": "0237",
 		"type": "water",
 		"isFast": true,
@@ -2208,6 +2341,7 @@
 	},
 	"FEINT_ATTACK": {
 		"moveId": "FEINT_ATTACK",
+		"isSuperMega": false,
 		"vId": "0238",
 		"type": "dark",
 		"isFast": true,
@@ -2224,6 +2358,7 @@
 	},
 	"STEEL_WING": {
 		"moveId": "STEEL_WING",
+		"isSuperMega": false,
 		"vId": "0239",
 		"type": "steel",
 		"isFast": true,
@@ -2240,6 +2375,7 @@
 	},
 	"FIRE_FANG": {
 		"moveId": "FIRE_FANG",
+		"isSuperMega": false,
 		"vId": "0240",
 		"type": "fire",
 		"isFast": true,
@@ -2256,6 +2392,7 @@
 	},
 	"ROCK_SMASH": {
 		"moveId": "ROCK_SMASH",
+		"isSuperMega": false,
 		"vId": "0241",
 		"type": "fighting",
 		"isFast": true,
@@ -2272,6 +2409,7 @@
 	},
 	"TRANSFORM": {
 		"moveId": "TRANSFORM",
+		"isSuperMega": false,
 		"vId": "0242",
 		"type": "normal",
 		"isFast": true,
@@ -2288,6 +2426,7 @@
 	},
 	"COUNTER": {
 		"moveId": "COUNTER",
+		"isSuperMega": false,
 		"vId": "0243",
 		"type": "fighting",
 		"isFast": true,
@@ -2304,6 +2443,7 @@
 	},
 	"POWDER_SNOW": {
 		"moveId": "POWDER_SNOW",
+		"isSuperMega": false,
 		"vId": "0244",
 		"type": "ice",
 		"isFast": true,
@@ -2320,6 +2460,7 @@
 	},
 	"CLOSE_COMBAT": {
 		"moveId": "CLOSE_COMBAT",
+		"isSuperMega": false,
 		"vId": "0245",
 		"type": "fighting",
 		"isFast": false,
@@ -2340,6 +2481,7 @@
 	},
 	"DYNAMIC_PUNCH": {
 		"moveId": "DYNAMIC_PUNCH",
+		"isSuperMega": false,
 		"vId": "0246",
 		"type": "fighting",
 		"isFast": false,
@@ -2356,6 +2498,7 @@
 	},
 	"FOCUS_BLAST": {
 		"moveId": "FOCUS_BLAST",
+		"isSuperMega": false,
 		"vId": "0247",
 		"type": "fighting",
 		"isFast": false,
@@ -2372,6 +2515,7 @@
 	},
 	"AURORA_BEAM": {
 		"moveId": "AURORA_BEAM",
+		"isSuperMega": false,
 		"vId": "0248",
 		"type": "ice",
 		"isFast": false,
@@ -2388,6 +2532,7 @@
 	},
 	"CHARGE_BEAM": {
 		"moveId": "CHARGE_BEAM",
+		"isSuperMega": false,
 		"vId": "0249",
 		"type": "electric",
 		"isFast": true,
@@ -2404,6 +2549,7 @@
 	},
 	"VOLT_SWITCH": {
 		"moveId": "VOLT_SWITCH",
+		"isSuperMega": false,
 		"vId": "0250",
 		"type": "electric",
 		"isFast": true,
@@ -2420,6 +2566,7 @@
 	},
 	"WILD_CHARGE": {
 		"moveId": "WILD_CHARGE",
+		"isSuperMega": false,
 		"vId": "0251",
 		"type": "electric",
 		"isFast": false,
@@ -2440,6 +2587,7 @@
 	},
 	"ZAP_CANNON": {
 		"moveId": "ZAP_CANNON",
+		"isSuperMega": false,
 		"vId": "0252",
 		"type": "electric",
 		"isFast": false,
@@ -2460,6 +2608,7 @@
 	},
 	"DRAGON_TAIL": {
 		"moveId": "DRAGON_TAIL",
+		"isSuperMega": false,
 		"vId": "0253",
 		"type": "dragon",
 		"isFast": true,
@@ -2476,6 +2625,7 @@
 	},
 	"AVALANCHE": {
 		"moveId": "AVALANCHE",
+		"isSuperMega": false,
 		"vId": "0254",
 		"type": "ice",
 		"isFast": false,
@@ -2492,6 +2642,7 @@
 	},
 	"AIR_SLASH": {
 		"moveId": "AIR_SLASH",
+		"isSuperMega": false,
 		"vId": "0255",
 		"type": "flying",
 		"isFast": true,
@@ -2508,6 +2659,7 @@
 	},
 	"BRAVE_BIRD": {
 		"moveId": "BRAVE_BIRD",
+		"isSuperMega": false,
 		"vId": "0256",
 		"type": "flying",
 		"isFast": false,
@@ -2528,6 +2680,7 @@
 	},
 	"SKY_ATTACK": {
 		"moveId": "SKY_ATTACK",
+		"isSuperMega": false,
 		"vId": "0257",
 		"type": "flying",
 		"isFast": false,
@@ -2544,6 +2697,7 @@
 	},
 	"SAND_TOMB": {
 		"moveId": "SAND_TOMB",
+		"isSuperMega": false,
 		"vId": "0258",
 		"type": "ground",
 		"isFast": false,
@@ -2564,6 +2718,7 @@
 	},
 	"ROCK_BLAST": {
 		"moveId": "ROCK_BLAST",
+		"isSuperMega": false,
 		"vId": "0259",
 		"type": "rock",
 		"isFast": false,
@@ -2580,6 +2735,7 @@
 	},
 	"INFESTATION": {
 		"moveId": "INFESTATION",
+		"isSuperMega": false,
 		"vId": "0260",
 		"type": "bug",
 		"isFast": true,
@@ -2596,6 +2752,7 @@
 	},
 	"STRUGGLE_BUG": {
 		"moveId": "STRUGGLE_BUG",
+		"isSuperMega": false,
 		"vId": "0261",
 		"type": "bug",
 		"isFast": true,
@@ -2612,6 +2769,7 @@
 	},
 	"SILVER_WIND": {
 		"moveId": "SILVER_WIND",
+		"isSuperMega": false,
 		"vId": "0262",
 		"type": "bug",
 		"isFast": false,
@@ -2633,6 +2791,7 @@
 	},
 	"ASTONISH": {
 		"moveId": "ASTONISH",
+		"isSuperMega": false,
 		"vId": "0263",
 		"type": "ghost",
 		"isFast": true,
@@ -2649,6 +2808,7 @@
 	},
 	"HEX": {
 		"moveId": "HEX",
+		"isSuperMega": false,
 		"vId": "0264",
 		"type": "ghost",
 		"isFast": true,
@@ -2665,6 +2825,7 @@
 	},
 	"NIGHT_SHADE": {
 		"moveId": "NIGHT_SHADE",
+		"isSuperMega": false,
 		"vId": "0265",
 		"type": "ghost",
 		"isFast": false,
@@ -2681,6 +2842,7 @@
 	},
 	"IRON_TAIL": {
 		"moveId": "IRON_TAIL",
+		"isSuperMega": false,
 		"vId": "0266",
 		"type": "steel",
 		"isFast": true,
@@ -2697,6 +2859,7 @@
 	},
 	"GYRO_BALL": {
 		"moveId": "GYRO_BALL",
+		"isSuperMega": false,
 		"vId": "0267",
 		"type": "steel",
 		"isFast": false,
@@ -2713,6 +2876,7 @@
 	},
 	"HEAVY_SLAM": {
 		"moveId": "HEAVY_SLAM",
+		"isSuperMega": false,
 		"vId": "0268",
 		"type": "steel",
 		"isFast": false,
@@ -2729,6 +2893,7 @@
 	},
 	"FIRE_SPIN": {
 		"moveId": "FIRE_SPIN",
+		"isSuperMega": false,
 		"vId": "0269",
 		"type": "fire",
 		"isFast": true,
@@ -2745,6 +2910,7 @@
 	},
 	"OVERHEAT": {
 		"moveId": "OVERHEAT",
+		"isSuperMega": false,
 		"vId": "0270",
 		"type": "fire",
 		"isFast": false,
@@ -2765,6 +2931,7 @@
 	},
 	"BULLET_SEED": {
 		"moveId": "BULLET_SEED",
+		"isSuperMega": false,
 		"vId": "0271",
 		"type": "grass",
 		"isFast": true,
@@ -2781,6 +2948,7 @@
 	},
 	"GRASS_KNOT": {
 		"moveId": "GRASS_KNOT",
+		"isSuperMega": false,
 		"vId": "0272",
 		"type": "grass",
 		"isFast": false,
@@ -2797,6 +2965,7 @@
 	},
 	"ENERGY_BALL": {
 		"moveId": "ENERGY_BALL",
+		"isSuperMega": false,
 		"vId": "0273",
 		"type": "grass",
 		"isFast": false,
@@ -2817,6 +2986,7 @@
 	},
 	"EXTRASENSORY": {
 		"moveId": "EXTRASENSORY",
+		"isSuperMega": false,
 		"vId": "0274",
 		"type": "psychic",
 		"isFast": true,
@@ -2833,6 +3003,7 @@
 	},
 	"FUTURE_SIGHT": {
 		"moveId": "FUTURE_SIGHT",
+		"isSuperMega": false,
 		"vId": "0275",
 		"type": "psychic",
 		"isFast": false,
@@ -2849,6 +3020,7 @@
 	},
 	"MIRROR_COAT": {
 		"moveId": "MIRROR_COAT",
+		"isSuperMega": false,
 		"vId": "0276",
 		"type": "psychic",
 		"isFast": false,
@@ -2865,6 +3037,7 @@
 	},
 	"OUTRAGE": {
 		"moveId": "OUTRAGE",
+		"isSuperMega": false,
 		"vId": "0277",
 		"type": "dragon",
 		"isFast": false,
@@ -2881,6 +3054,7 @@
 	},
 	"SNARL": {
 		"moveId": "SNARL",
+		"isSuperMega": false,
 		"vId": "0278",
 		"type": "dark",
 		"isFast": true,
@@ -2897,6 +3071,7 @@
 	},
 	"CRUNCH": {
 		"moveId": "CRUNCH",
+		"isSuperMega": false,
 		"vId": "0279",
 		"type": "dark",
 		"isFast": false,
@@ -2917,6 +3092,7 @@
 	},
 	"FOUL_PLAY": {
 		"moveId": "FOUL_PLAY",
+		"isSuperMega": false,
 		"vId": "0280",
 		"type": "dark",
 		"isFast": false,
@@ -2933,6 +3109,7 @@
 	},
 	"HIDDEN_POWER": {
 		"moveId": "HIDDEN_POWER",
+		"isSuperMega": false,
 		"vId": "0281",
 		"type": "normal",
 		"isFast": true,
@@ -2949,6 +3126,7 @@
 	},
 	"TAKE_DOWN": {
 		"moveId": "TAKE_DOWN",
+		"isSuperMega": false,
 		"vId": "0282",
 		"type": "normal",
 		"isFast": true,
@@ -2965,6 +3143,7 @@
 	},
 	"WATERFALL": {
 		"moveId": "WATERFALL",
+		"isSuperMega": false,
 		"vId": "0283",
 		"type": "water",
 		"isFast": true,
@@ -2981,6 +3160,7 @@
 	},
 	"SURF": {
 		"moveId": "SURF",
+		"isSuperMega": false,
 		"vId": "0284",
 		"type": "water",
 		"isFast": false,
@@ -2997,6 +3177,7 @@
 	},
 	"DRACO_METEOR": {
 		"moveId": "DRACO_METEOR",
+		"isSuperMega": false,
 		"vId": "0285",
 		"type": "dragon",
 		"isFast": false,
@@ -3017,6 +3198,7 @@
 	},
 	"DOOM_DESIRE": {
 		"moveId": "DOOM_DESIRE",
+		"isSuperMega": false,
 		"vId": "0286",
 		"type": "steel",
 		"isFast": false,
@@ -3033,6 +3215,7 @@
 	},
 	"YAWN": {
 		"moveId": "YAWN",
+		"isSuperMega": false,
 		"vId": "0287",
 		"type": "normal",
 		"isFast": true,
@@ -3049,6 +3232,7 @@
 	},
 	"PSYCHO_BOOST": {
 		"moveId": "PSYCHO_BOOST",
+		"isSuperMega": false,
 		"vId": "0288",
 		"type": "psychic",
 		"isFast": false,
@@ -3069,6 +3253,7 @@
 	},
 	"ORIGIN_PULSE": {
 		"moveId": "ORIGIN_PULSE",
+		"isSuperMega": false,
 		"vId": "0289",
 		"type": "water",
 		"isFast": false,
@@ -3085,6 +3270,7 @@
 	},
 	"PRECIPICE_BLADES": {
 		"moveId": "PRECIPICE_BLADES",
+		"isSuperMega": false,
 		"vId": "0290",
 		"type": "ground",
 		"isFast": false,
@@ -3101,6 +3287,7 @@
 	},
 	"PRESENT": {
 		"moveId": "PRESENT",
+		"isSuperMega": false,
 		"vId": "0291",
 		"type": "normal",
 		"isFast": true,
@@ -3117,6 +3304,7 @@
 	},
 	"WEATHER_BALL_FIRE": {
 		"moveId": "WEATHER_BALL_FIRE",
+		"isSuperMega": false,
 		"vId": "0292",
 		"type": "fire",
 		"isFast": false,
@@ -3133,6 +3321,7 @@
 	},
 	"WEATHER_BALL_ICE": {
 		"moveId": "WEATHER_BALL_ICE",
+		"isSuperMega": false,
 		"vId": "0293",
 		"type": "ice",
 		"isFast": false,
@@ -3149,6 +3338,7 @@
 	},
 	"WEATHER_BALL_ROCK": {
 		"moveId": "WEATHER_BALL_ROCK",
+		"isSuperMega": false,
 		"vId": "0294",
 		"type": "rock",
 		"isFast": false,
@@ -3165,6 +3355,7 @@
 	},
 	"WEATHER_BALL_WATER": {
 		"moveId": "WEATHER_BALL_WATER",
+		"isSuperMega": false,
 		"vId": "0295",
 		"type": "water",
 		"isFast": false,
@@ -3181,6 +3372,7 @@
 	},
 	"FRENZY_PLANT": {
 		"moveId": "FRENZY_PLANT",
+		"isSuperMega": false,
 		"vId": "0296",
 		"type": "grass",
 		"isFast": false,
@@ -3197,6 +3389,7 @@
 	},
 	"SMACK_DOWN": {
 		"moveId": "SMACK_DOWN",
+		"isSuperMega": false,
 		"vId": "0297",
 		"type": "rock",
 		"isFast": true,
@@ -3213,6 +3406,7 @@
 	},
 	"BLAST_BURN": {
 		"moveId": "BLAST_BURN",
+		"isSuperMega": false,
 		"vId": "0298",
 		"type": "fire",
 		"isFast": false,
@@ -3229,6 +3423,7 @@
 	},
 	"HYDRO_CANNON": {
 		"moveId": "HYDRO_CANNON",
+		"isSuperMega": false,
 		"vId": "0299",
 		"type": "water",
 		"isFast": false,
@@ -3245,6 +3440,7 @@
 	},
 	"LAST_RESORT": {
 		"moveId": "LAST_RESORT",
+		"isSuperMega": false,
 		"vId": "0300",
 		"type": "normal",
 		"isFast": false,
@@ -3261,6 +3457,7 @@
 	},
 	"METEOR_MASH": {
 		"moveId": "METEOR_MASH",
+		"isSuperMega": false,
 		"vId": "0301",
 		"type": "steel",
 		"isFast": false,
@@ -3277,6 +3474,7 @@
 	},
 	"SKULL_BASH": {
 		"moveId": "SKULL_BASH",
+		"isSuperMega": false,
 		"vId": "0302",
 		"type": "normal",
 		"isFast": false,
@@ -3297,6 +3495,7 @@
 	},
 	"ACID_SPRAY": {
 		"moveId": "ACID_SPRAY",
+		"isSuperMega": false,
 		"vId": "0303",
 		"type": "poison",
 		"isFast": false,
@@ -3317,6 +3516,7 @@
 	},
 	"EARTH_POWER": {
 		"moveId": "EARTH_POWER",
+		"isSuperMega": false,
 		"vId": "0304",
 		"type": "ground",
 		"isFast": false,
@@ -3337,6 +3537,7 @@
 	},
 	"CRABHAMMER": {
 		"moveId": "CRABHAMMER",
+		"isSuperMega": false,
 		"vId": "0305",
 		"type": "water",
 		"isFast": false,
@@ -3357,6 +3558,7 @@
 	},
 	"LUNGE": {
 		"moveId": "LUNGE",
+		"isSuperMega": false,
 		"vId": "0306",
 		"type": "bug",
 		"isFast": false,
@@ -3377,6 +3579,7 @@
 	},
 	"OCTAZOOKA": {
 		"moveId": "OCTAZOOKA",
+		"isSuperMega": false,
 		"vId": "0308",
 		"type": "water",
 		"isFast": false,
@@ -3397,6 +3600,7 @@
 	},
 	"MIRROR_SHOT": {
 		"moveId": "MIRROR_SHOT",
+		"isSuperMega": false,
 		"vId": "0309",
 		"type": "steel",
 		"isFast": false,
@@ -3417,6 +3621,7 @@
 	},
 	"SUPER_POWER": {
 		"moveId": "SUPER_POWER",
+		"isSuperMega": false,
 		"vId": "0310",
 		"type": "fighting",
 		"isFast": false,
@@ -3438,6 +3643,7 @@
 	},
 	"FELL_STINGER": {
 		"moveId": "FELL_STINGER",
+		"isSuperMega": false,
 		"vId": "0311",
 		"type": "bug",
 		"isFast": false,
@@ -3458,6 +3664,7 @@
 	},
 	"LEAF_TORNADO": {
 		"moveId": "LEAF_TORNADO",
+		"isSuperMega": false,
 		"vId": "0312",
 		"type": "grass",
 		"isFast": false,
@@ -3478,6 +3685,7 @@
 	},
 	"DRAIN_PUNCH": {
 		"moveId": "DRAIN_PUNCH",
+		"isSuperMega": false,
 		"vId": "0314",
 		"type": "fighting",
 		"isFast": false,
@@ -3498,6 +3706,7 @@
 	},
 	"SHADOW_BONE": {
 		"moveId": "SHADOW_BONE",
+		"isSuperMega": false,
 		"vId": "0315",
 		"type": "ghost",
 		"isFast": false,
@@ -3518,6 +3727,7 @@
 	},
 	"MUDDY_WATER": {
 		"moveId": "MUDDY_WATER",
+		"isSuperMega": false,
 		"vId": "0316",
 		"type": "water",
 		"isFast": false,
@@ -3538,6 +3748,7 @@
 	},
 	"BLAZE_KICK": {
 		"moveId": "BLAZE_KICK",
+		"isSuperMega": false,
 		"vId": "0317",
 		"type": "fire",
 		"isFast": false,
@@ -3554,6 +3765,7 @@
 	},
 	"RAZOR_SHELL": {
 		"moveId": "RAZOR_SHELL",
+		"isSuperMega": false,
 		"vId": "0318",
 		"type": "water",
 		"isFast": false,
@@ -3574,6 +3786,7 @@
 	},
 	"POWER_UP_PUNCH": {
 		"moveId": "POWER_UP_PUNCH",
+		"isSuperMega": false,
 		"vId": "0319",
 		"type": "fighting",
 		"isFast": false,
@@ -3594,6 +3807,7 @@
 	},
 	"CHARM": {
 		"moveId": "CHARM",
+		"isSuperMega": false,
 		"vId": "0320",
 		"type": "fairy",
 		"isFast": true,
@@ -3610,6 +3824,7 @@
 	},
 	"GIGA_IMPACT": {
 		"moveId": "GIGA_IMPACT",
+		"isSuperMega": false,
 		"vId": "0321",
 		"type": "normal",
 		"isFast": false,
@@ -3626,6 +3841,7 @@
 	},
 	"FRUSTRATION": {
 		"moveId": "FRUSTRATION",
+		"isSuperMega": false,
 		"vId": "0322",
 		"type": "normal",
 		"isFast": false,
@@ -3642,6 +3858,7 @@
 	},
 	"RETURN": {
 		"moveId": "RETURN",
+		"isSuperMega": false,
 		"vId": "0323",
 		"type": "normal",
 		"isFast": false,
@@ -3658,6 +3875,7 @@
 	},
 	"SYNCHRONOISE": {
 		"moveId": "SYNCHRONOISE",
+		"isSuperMega": false,
 		"vId": "0324",
 		"type": "psychic",
 		"isFast": false,
@@ -3674,6 +3892,7 @@
 	},
 	"LOCK_ON": {
 		"moveId": "LOCK_ON",
+		"isSuperMega": false,
 		"vId": "0325",
 		"type": "normal",
 		"isFast": true,
@@ -3690,6 +3909,7 @@
 	},
 	"THUNDER_FANG": {
 		"moveId": "THUNDER_FANG",
+		"isSuperMega": false,
 		"vId": "0326",
 		"type": "electric",
 		"isFast": true,
@@ -3706,6 +3926,7 @@
 	},
 	"ICE_FANG": {
 		"moveId": "ICE_FANG",
+		"isSuperMega": false,
 		"vId": "0327",
 		"type": "ice",
 		"isFast": true,
@@ -3722,6 +3943,7 @@
 	},
 	"SACRED_SWORD": {
 		"moveId": "SACRED_SWORD",
+		"isSuperMega": false,
 		"vId": "0330",
 		"type": "fighting",
 		"isFast": false,
@@ -3738,6 +3960,7 @@
 	},
 	"FLYING_PRESS": {
 		"moveId": "FLYING_PRESS",
+		"isSuperMega": false,
 		"vId": "0331",
 		"type": "fighting",
 		"isFast": false,
@@ -3754,6 +3977,7 @@
 	},
 	"AURA_SPHERE": {
 		"moveId": "AURA_SPHERE",
+		"isSuperMega": false,
 		"vId": "0332",
 		"type": "fighting",
 		"isFast": false,
@@ -3770,6 +3994,7 @@
 	},
 	"PAYBACK": {
 		"moveId": "PAYBACK",
+		"isSuperMega": false,
 		"vId": "0333",
 		"type": "dark",
 		"isFast": false,
@@ -3786,6 +4011,7 @@
 	},
 	"ROCK_WRECKER": {
 		"moveId": "ROCK_WRECKER",
+		"isSuperMega": false,
 		"vId": "0334",
 		"type": "rock",
 		"isFast": false,
@@ -3802,6 +4028,7 @@
 	},
 	"AEROBLAST": {
 		"moveId": "AEROBLAST",
+		"isSuperMega": false,
 		"vId": "0335",
 		"type": "flying",
 		"isFast": false,
@@ -3822,6 +4049,7 @@
 	},
 	"TECHNO_BLAST_NORMAL": {
 		"moveId": "TECHNO_BLAST_NORMAL",
+		"isSuperMega": false,
 		"vId": "0336",
 		"type": "normal",
 		"isFast": false,
@@ -3838,6 +4066,7 @@
 	},
 	"TECHNO_BLAST_BURN": {
 		"moveId": "TECHNO_BLAST_BURN",
+		"isSuperMega": false,
 		"vId": "0337",
 		"type": "fire",
 		"isFast": false,
@@ -3854,6 +4083,7 @@
 	},
 	"TECHNO_BLAST_CHILL": {
 		"moveId": "TECHNO_BLAST_CHILL",
+		"isSuperMega": false,
 		"vId": "0338",
 		"type": "ice",
 		"isFast": false,
@@ -3870,6 +4100,7 @@
 	},
 	"TECHNO_BLAST_DOUSE": {
 		"moveId": "TECHNO_BLAST_DOUSE",
+		"isSuperMega": false,
 		"vId": "0339",
 		"type": "water",
 		"isFast": false,
@@ -3886,6 +4117,7 @@
 	},
 	"TECHNO_BLAST_SHOCK": {
 		"moveId": "TECHNO_BLAST_SHOCK",
+		"isSuperMega": false,
 		"vId": "0340",
 		"type": "electric",
 		"isFast": false,
@@ -3902,6 +4134,7 @@
 	},
 	"FLY": {
 		"moveId": "FLY",
+		"isSuperMega": false,
 		"vId": "0341",
 		"type": "flying",
 		"isFast": false,
@@ -3918,6 +4151,7 @@
 	},
 	"V_CREATE": {
 		"moveId": "V_CREATE",
+		"isSuperMega": false,
 		"vId": "0342",
 		"type": "fire",
 		"isFast": false,
@@ -3938,6 +4172,7 @@
 	},
 	"LEAF_STORM": {
 		"moveId": "LEAF_STORM",
+		"isSuperMega": false,
 		"vId": "0343",
 		"type": "grass",
 		"isFast": false,
@@ -3958,6 +4193,7 @@
 	},
 	"TRI_ATTACK": {
 		"moveId": "TRI_ATTACK",
+		"isSuperMega": false,
 		"vId": "0344",
 		"type": "normal",
 		"isFast": false,
@@ -3979,6 +4215,7 @@
 	},
 	"GUST": {
 		"moveId": "GUST",
+		"isSuperMega": false,
 		"vId": "0345",
 		"type": "flying",
 		"isFast": true,
@@ -3995,6 +4232,7 @@
 	},
 	"INCINERATE": {
 		"moveId": "INCINERATE",
+		"isSuperMega": false,
 		"vId": "0346",
 		"type": "fire",
 		"isFast": true,
@@ -4011,6 +4249,7 @@
 	},
 	"FEATHER_DANCE": {
 		"moveId": "FEATHER_DANCE",
+		"isSuperMega": false,
 		"vId": "0348",
 		"type": "flying",
 		"isFast": false,
@@ -4031,6 +4270,7 @@
 	},
 	"FAIRY_WIND": {
 		"moveId": "FAIRY_WIND",
+		"isSuperMega": false,
 		"vId": "0350",
 		"type": "fairy",
 		"isFast": true,
@@ -4047,6 +4287,7 @@
 	},
 	"WEATHER_BALL_NORMAL": {
 		"moveId": "WEATHER_BALL_NORMAL",
+		"isSuperMega": false,
 		"vId": "0352",
 		"type": "normal",
 		"isFast": false,
@@ -4063,6 +4304,7 @@
 	},
 	"PSYCHIC_FANGS": {
 		"moveId": "PSYCHIC_FANGS",
+		"isSuperMega": false,
 		"vId": "0353",
 		"type": "psychic",
 		"isFast": false,
@@ -4083,6 +4325,7 @@
 	},
 	"DOUBLE_KICK": {
 		"moveId": "DOUBLE_KICK",
+		"isSuperMega": false,
 		"vId": "0356",
 		"type": "fighting",
 		"isFast": true,
@@ -4099,6 +4342,7 @@
 	},
 	"MAGICAL_LEAF": {
 		"moveId": "MAGICAL_LEAF",
+		"isSuperMega": false,
 		"vId": "0357",
 		"type": "grass",
 		"isFast": true,
@@ -4115,6 +4359,7 @@
 	},
 	"SACRED_FIRE": {
 		"moveId": "SACRED_FIRE",
+		"isSuperMega": false,
 		"vId": "0358",
 		"type": "fire",
 		"isFast": false,
@@ -4135,6 +4380,7 @@
 	},
 	"ICICLE_SPEAR": {
 		"moveId": "ICICLE_SPEAR",
+		"isSuperMega": false,
 		"vId": "0359",
 		"type": "ice",
 		"isFast": false,
@@ -4151,6 +4397,7 @@
 	},
 	"AEROBLAST_PLUS": {
 		"moveId": "AEROBLAST_PLUS",
+		"isSuperMega": false,
 		"vId": "0360",
 		"type": "flying",
 		"isFast": false,
@@ -4171,6 +4418,7 @@
 	},
 	"AEROBLAST_PLUS_PLUS": {
 		"moveId": "AEROBLAST_PLUS_PLUS",
+		"isSuperMega": false,
 		"vId": "0361",
 		"type": "flying",
 		"isFast": false,
@@ -4191,6 +4439,7 @@
 	},
 	"SACRED_FIRE_PLUS": {
 		"moveId": "SACRED_FIRE_PLUS",
+		"isSuperMega": false,
 		"vId": "0362",
 		"type": "fire",
 		"isFast": false,
@@ -4211,6 +4460,7 @@
 	},
 	"SACRED_FIRE_PLUS_PLUS": {
 		"moveId": "SACRED_FIRE_PLUS_PLUS",
+		"isSuperMega": false,
 		"vId": "0363",
 		"type": "fire",
 		"isFast": false,
@@ -4231,6 +4481,7 @@
 	},
 	"ACROBATICS": {
 		"moveId": "ACROBATICS",
+		"isSuperMega": false,
 		"vId": "0364",
 		"type": "flying",
 		"isFast": false,
@@ -4247,6 +4498,7 @@
 	},
 	"LUSTER_PURGE": {
 		"moveId": "LUSTER_PURGE",
+		"isSuperMega": false,
 		"vId": "0365",
 		"type": "psychic",
 		"isFast": false,
@@ -4267,6 +4519,7 @@
 	},
 	"MIST_BALL": {
 		"moveId": "MIST_BALL",
+		"isSuperMega": false,
 		"vId": "0366",
 		"type": "psychic",
 		"isFast": false,
@@ -4287,6 +4540,7 @@
 	},
 	"BRUTAL_SWING": {
 		"moveId": "BRUTAL_SWING",
+		"isSuperMega": false,
 		"vId": "0367",
 		"type": "dark",
 		"isFast": false,
@@ -4303,6 +4557,7 @@
 	},
 	"ROLLOUT": {
 		"moveId": "ROLLOUT",
+		"isSuperMega": false,
 		"vId": "0368",
 		"type": "rock",
 		"isFast": true,
@@ -4319,6 +4574,7 @@
 	},
 	"SEED_FLARE": {
 		"moveId": "SEED_FLARE",
+		"isSuperMega": false,
 		"vId": "0369",
 		"type": "grass",
 		"isFast": false,
@@ -4339,6 +4595,7 @@
 	},
 	"OBSTRUCT": {
 		"moveId": "OBSTRUCT",
+		"isSuperMega": false,
 		"vId": "0370",
 		"type": "dark",
 		"isFast": false,
@@ -4360,6 +4617,7 @@
 	},
 	"SHADOW_FORCE": {
 		"moveId": "SHADOW_FORCE",
+		"isSuperMega": false,
 		"vId": "0371",
 		"type": "ghost",
 		"isFast": false,
@@ -4376,6 +4634,7 @@
 	},
 	"METEOR_BEAM": {
 		"moveId": "METEOR_BEAM",
+		"isSuperMega": false,
 		"vId": "0372",
 		"type": "rock",
 		"isFast": false,
@@ -4396,6 +4655,7 @@
 	},
 	"WATER_SHURIKEN": {
 		"moveId": "WATER_SHURIKEN",
+		"isSuperMega": false,
 		"vId": "0373",
 		"type": "water",
 		"isFast": true,
@@ -4412,6 +4672,7 @@
 	},
 	"FUSION_BOLT": {
 		"moveId": "FUSION_BOLT",
+		"isSuperMega": false,
 		"vId": "0374",
 		"type": "electric",
 		"isFast": false,
@@ -4428,6 +4689,7 @@
 	},
 	"FUSION_FLARE": {
 		"moveId": "FUSION_FLARE",
+		"isSuperMega": false,
 		"vId": "0375",
 		"type": "fire",
 		"isFast": false,
@@ -4444,6 +4706,7 @@
 	},
 	"POLTERGEIST": {
 		"moveId": "POLTERGEIST",
+		"isSuperMega": false,
 		"vId": "0376",
 		"type": "ghost",
 		"isFast": false,
@@ -4460,6 +4723,7 @@
 	},
 	"HIGH_HORSEPOWER": {
 		"moveId": "HIGH_HORSEPOWER",
+		"isSuperMega": false,
 		"vId": "0377",
 		"type": "ground",
 		"isFast": false,
@@ -4476,6 +4740,7 @@
 	},
 	"GLACIATE": {
 		"moveId": "GLACIATE",
+		"isSuperMega": false,
 		"vId": "0378",
 		"type": "ice",
 		"isFast": false,
@@ -4496,6 +4761,7 @@
 	},
 	"BREAKING_SWIPE": {
 		"moveId": "BREAKING_SWIPE",
+		"isSuperMega": false,
 		"vId": "0379",
 		"type": "dragon",
 		"isFast": false,
@@ -4516,6 +4782,7 @@
 	},
 	"BOOMBURST": {
 		"moveId": "BOOMBURST",
+		"isSuperMega": false,
 		"vId": "0380",
 		"type": "normal",
 		"isFast": false,
@@ -4532,6 +4799,7 @@
 	},
 	"DOUBLE_IRON_BASH": {
 		"moveId": "DOUBLE_IRON_BASH",
+		"isSuperMega": false,
 		"vId": "0381",
 		"type": "steel",
 		"isFast": false,
@@ -4548,6 +4816,7 @@
 	},
 	"MYSTICAL_FIRE": {
 		"moveId": "MYSTICAL_FIRE",
+		"isSuperMega": false,
 		"vId": "0382",
 		"type": "fire",
 		"isFast": false,
@@ -4568,6 +4837,7 @@
 	},
 	"LIQUIDATION": {
 		"moveId": "LIQUIDATION",
+		"isSuperMega": false,
 		"vId": "0383",
 		"type": "water",
 		"isFast": false,
@@ -4588,6 +4858,7 @@
 	},
 	"DRAGON_ASCENT": {
 		"moveId": "DRAGON_ASCENT",
+		"isSuperMega": false,
 		"vId": "0384",
 		"type": "flying",
 		"isFast": false,
@@ -4608,6 +4879,7 @@
 	},
 	"LEAFAGE": {
 		"moveId": "LEAFAGE",
+		"isSuperMega": false,
 		"vId": "0385",
 		"type": "grass",
 		"isFast": true,
@@ -4624,6 +4896,7 @@
 	},
 	"MAGMA_STORM": {
 		"moveId": "MAGMA_STORM",
+		"isSuperMega": false,
 		"vId": "0386",
 		"type": "fire",
 		"isFast": false,
@@ -4640,6 +4913,7 @@
 	},
 	"GEOMANCY": {
 		"moveId": "GEOMANCY",
+		"isSuperMega": false,
 		"vId": "0387",
 		"type": "fairy",
 		"isFast": true,
@@ -4656,6 +4930,7 @@
 	},
 	"SPACIAL_REND": {
 		"moveId": "SPACIAL_REND",
+		"isSuperMega": false,
 		"vId": "0388",
 		"type": "dragon",
 		"isFast": false,
@@ -4672,6 +4947,7 @@
 	},
 	"OBLIVION_WING": {
 		"moveId": "OBLIVION_WING",
+		"isSuperMega": false,
 		"vId": "0389",
 		"type": "flying",
 		"isFast": false,
@@ -4692,6 +4968,7 @@
 	},
 	"NATURES_MADNESS": {
 		"moveId": "NATURES_MADNESS",
+		"isSuperMega": false,
 		"vId": "0390",
 		"type": "fairy",
 		"isFast": false,
@@ -4712,6 +4989,7 @@
 	},
 	"TRIPLE_AXEL": {
 		"moveId": "TRIPLE_AXEL",
+		"isSuperMega": false,
 		"vId": "0391",
 		"type": "ice",
 		"isFast": false,
@@ -4732,6 +5010,7 @@
 	},
 	"TRAILBLAZE": {
 		"moveId": "TRAILBLAZE",
+		"isSuperMega": false,
 		"vId": "0392",
 		"type": "grass",
 		"isFast": false,
@@ -4752,6 +5031,7 @@
 	},
 	"SCORCHING_SANDS": {
 		"moveId": "SCORCHING_SANDS",
+		"isSuperMega": false,
 		"vId": "0393",
 		"type": "ground",
 		"isFast": false,
@@ -4772,6 +5052,7 @@
 	},
 	"ROAR_OF_TIME": {
 		"moveId": "ROAR_OF_TIME",
+		"isSuperMega": false,
 		"vId": "0394",
 		"type": "dragon",
 		"isFast": false,
@@ -4788,6 +5069,7 @@
 	},
 	"BLEAKWIND_STORM": {
 		"moveId": "BLEAKWIND_STORM",
+		"isSuperMega": false,
 		"vId": "0395",
 		"type": "flying",
 		"isFast": false,
@@ -4808,6 +5090,7 @@
 	},
 	"SANDSEAR_STORM": {
 		"moveId": "SANDSEAR_STORM",
+		"isSuperMega": false,
 		"vId": "0396",
 		"type": "ground",
 		"isFast": false,
@@ -4828,6 +5111,7 @@
 	},
 	"WILDBOLT_STORM": {
 		"moveId": "WILDBOLT_STORM",
+		"isSuperMega": false,
 		"vId": "0397",
 		"type": "electric",
 		"isFast": false,
@@ -4848,6 +5132,7 @@
 	},
 	"SPIRIT_SHACKLE": {
 		"moveId": "SPIRIT_SHACKLE",
+		"isSuperMega": false,
 		"vId": "0398",
 		"type": "ghost",
 		"isFast": false,
@@ -4868,6 +5153,7 @@
 	},
 	"VOLT_TACKLE": {
 		"moveId": "VOLT_TACKLE",
+		"isSuperMega": false,
 		"vId": "0399",
 		"type": "electric",
 		"isFast": false,
@@ -4888,6 +5174,7 @@
 	},
 	"DARKEST_LARIAT": {
 		"moveId": "DARKEST_LARIAT",
+		"isSuperMega": false,
 		"vId": "0400",
 		"type": "dark",
 		"isFast": false,
@@ -4904,6 +5191,7 @@
 	},
 	"PSYWAVE": {
 		"moveId": "PSYWAVE",
+		"isSuperMega": false,
 		"vId": "0401",
 		"type": "psychic",
 		"isFast": true,
@@ -4920,6 +5208,7 @@
 	},
 	"METAL_SOUND": {
 		"moveId": "METAL_SOUND",
+		"isSuperMega": false,
 		"vId": "0402",
 		"type": "steel",
 		"isFast": true,
@@ -4936,6 +5225,7 @@
 	},
 	"SAND_ATTACK": {
 		"moveId": "SAND_ATTACK",
+		"isSuperMega": false,
 		"vId": "0403",
 		"type": "ground",
 		"isFast": true,
@@ -4952,6 +5242,7 @@
 	},
 	"SUNSTEEL_STRIKE": {
 		"moveId": "SUNSTEEL_STRIKE",
+		"isSuperMega": false,
 		"vId": "0404",
 		"type": "steel",
 		"isFast": false,
@@ -4968,6 +5259,7 @@
 	},
 	"MOONGEIST_BEAM": {
 		"moveId": "MOONGEIST_BEAM",
+		"isSuperMega": false,
 		"vId": "0405",
 		"type": "ghost",
 		"isFast": false,
@@ -4984,6 +5276,7 @@
 	},
 	"AURA_WHEEL_ELECTRIC": {
 		"moveId": "AURA_WHEEL_ELECTRIC",
+		"isSuperMega": false,
 		"vId": "0406",
 		"type": "electric",
 		"isFast": false,
@@ -5004,6 +5297,7 @@
 	},
 	"AURA_WHEEL_DARK": {
 		"moveId": "AURA_WHEEL_DARK",
+		"isSuperMega": false,
 		"vId": "0407",
 		"type": "dark",
 		"isFast": false,
@@ -5024,6 +5318,7 @@
 	},
 	"HIGH_JUMP_KICK": {
 		"moveId": "HIGH_JUMP_KICK",
+		"isSuperMega": false,
 		"vId": "0408",
 		"type": "fighting",
 		"isFast": false,
@@ -5044,6 +5339,7 @@
 	},
 	"FORCE_PALM": {
 		"moveId": "FORCE_PALM",
+		"isSuperMega": false,
 		"vId": "0462",
 		"type": "fighting",
 		"isFast": true,
@@ -5060,6 +5356,7 @@
 	},
 	"SPARKLING_ARIA": {
 		"moveId": "SPARKLING_ARIA",
+		"isSuperMega": false,
 		"vId": "0463",
 		"type": "water",
 		"isFast": false,
@@ -5076,6 +5373,7 @@
 	},
 	"RAGE_FIST": {
 		"moveId": "RAGE_FIST",
+		"isSuperMega": false,
 		"vId": "0464",
 		"type": "ghost",
 		"isFast": false,
@@ -5096,6 +5394,7 @@
 	},
 	"FLOWER_TRICK": {
 		"moveId": "FLOWER_TRICK",
+		"isSuperMega": false,
 		"vId": "0465",
 		"type": "grass",
 		"isFast": false,
@@ -5116,6 +5415,7 @@
 	},
 	"FREEZE_SHOCK": {
 		"moveId": "FREEZE_SHOCK",
+		"isSuperMega": false,
 		"vId": "0466",
 		"type": "ice",
 		"isFast": false,
@@ -5136,6 +5436,7 @@
 	},
 	"ICE_BURN": {
 		"moveId": "ICE_BURN",
+		"isSuperMega": false,
 		"vId": "0467",
 		"type": "ice",
 		"isFast": false,
@@ -5156,6 +5457,7 @@
 	},
 	"TORCH_SONG": {
 		"moveId": "TORCH_SONG",
+		"isSuperMega": false,
 		"vId": "0468",
 		"type": "fire",
 		"isFast": false,
@@ -5176,6 +5478,7 @@
 	},
 	"BEHEMOTH_BLADE": {
 		"moveId": "BEHEMOTH_BLADE",
+		"isSuperMega": false,
 		"vId": "0469",
 		"type": "steel",
 		"isFast": false,
@@ -5192,6 +5495,7 @@
 	},
 	"BEHEMOTH_BASH": {
 		"moveId": "BEHEMOTH_BASH",
+		"isSuperMega": false,
 		"vId": "0470",
 		"type": "steel",
 		"isFast": false,
@@ -5208,6 +5512,7 @@
 	},
 	"UPPER_HAND": {
 		"moveId": "UPPER_HAND",
+		"isSuperMega": false,
 		"vId": "0471",
 		"type": "fighting",
 		"isFast": false,
@@ -5228,6 +5533,7 @@
 	},
 	"THUNDER_CAGE": {
 		"moveId": "THUNDER_CAGE",
+		"isSuperMega": false,
 		"vId": "0472",
 		"type": "electric",
 		"isFast": false,
@@ -5248,6 +5554,7 @@
 	},
 	"DYNAMAX_CANNON": {
 		"moveId": "DYNAMAX_CANNON",
+		"isSuperMega": false,
 		"vId": "0482",
 		"type": "dragon",
 		"isFast": false,
@@ -5264,6 +5571,7 @@
 	},
 	"CLANGING_SCALES": {
 		"moveId": "CLANGING_SCALES",
+		"isSuperMega": false,
 		"vId": "0484",
 		"type": "dragon",
 		"isFast": false,
@@ -5284,6 +5592,7 @@
 	},
 	"CRUSH_GRIP": {
 		"moveId": "CRUSH_GRIP",
+		"isSuperMega": false,
 		"vId": "0485",
 		"type": "normal",
 		"isFast": false,
@@ -5300,6 +5609,7 @@
 	},
 	"DRAGON_ENERGY": {
 		"moveId": "DRAGON_ENERGY",
+		"isSuperMega": false,
 		"vId": "0486",
 		"type": "dragon",
 		"isFast": false,
@@ -5316,6 +5626,7 @@
 	},
 	"AQUA_STEP": {
 		"moveId": "AQUA_STEP",
+		"isSuperMega": false,
 		"vId": "0487",
 		"type": "water",
 		"isFast": false,
@@ -5336,6 +5647,7 @@
 	},
 	"CHILLING_WATER": {
 		"moveId": "CHILLING_WATER",
+		"isSuperMega": false,
 		"vId": "0488",
 		"type": "water",
 		"isFast": false,
@@ -5356,6 +5668,7 @@
 	},
 	"SECRET_SWORD": {
 		"moveId": "SECRET_SWORD",
+		"isSuperMega": false,
 		"vId": "0489",
 		"type": "fighting",
 		"isFast": false,
@@ -5373,6 +5686,7 @@
 	},
 	"BEAK_BLAST": {
 		"moveId": "BEAK_BLAST",
+		"isSuperMega": false,
 		"vId": "0490",
 		"type": "flying",
 		"isFast": false,
@@ -5393,6 +5707,7 @@
 	},
 	"MIND_BLOWN": {
 		"moveId": "MIND_BLOWN",
+		"isSuperMega": false,
 		"vId": "0491",
 		"type": "fire",
 		"isFast": false,
@@ -5413,6 +5728,7 @@
 	},
 	"DRUM_BEATING": {
 		"moveId": "DRUM_BEATING",
+		"isSuperMega": false,
 		"vId": "0492",
 		"type": "grass",
 		"isFast": false,
@@ -5433,6 +5749,7 @@
 	},
 	"PYROBALL": {
 		"moveId": "PYROBALL",
+		"isSuperMega": false,
 		"vId": "0493",
 		"type": "fire",
 		"isFast": false,
@@ -5449,6 +5766,7 @@
 	},
 	"GIGATON_HAMMER": {
 		"moveId": "GIGATON_HAMMER",
+		"isSuperMega": false,
 		"vId": "0494",
 		"type": "steel",
 		"isFast": false,
@@ -5465,6 +5783,7 @@
 	},
 	"PLASMA_FISTS": {
 		"moveId": "PLASMA_FISTS",
+		"isSuperMega": false,
 		"vId": "0497",
 		"type": "electric",
 		"isFast": false,
@@ -5481,6 +5800,7 @@
 	},
 	"GLAIVE_RUSH": {
 		"moveId": "GLAIVE_RUSH",
+		"isSuperMega": false,
 		"vId": "0590",
 		"type": "dragon",
 		"isFast": false,
@@ -5501,6 +5821,7 @@
 	},
 	"SNIPE_SHOT": {
 		"moveId": "SNIPE_SHOT",
+		"isSuperMega": false,
 		"vId": "0592",
 		"type": "water",
 		"isFast": false,
@@ -5521,6 +5842,7 @@
 	},
 	"DIVE": {
 		"moveId": "DIVE",
+		"isSuperMega": false,
 		"vId": "0593",
 		"type": "water",
 		"isFast": false,
@@ -5537,6 +5859,7 @@
 	},
 	"GULP_MISSILE_GULPING": {
 		"moveId": "GULP_MISSILE_GULPING",
+		"isSuperMega": false,
 		"vId": "0594",
 		"type": "normal",
 		"isFast": false,
@@ -5557,6 +5880,7 @@
 	},
 	"GULP_MISSILE_GORGING": {
 		"moveId": "GULP_MISSILE_GORGING",
+		"isSuperMega": false,
 		"vId": "0595",
 		"type": "normal",
 		"isFast": false,
@@ -5577,7 +5901,8 @@
 	},
 	"ACID_SPRAY_PLUS": {
 		"moveId": "ACID_SPRAY_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0303",
 		"type": "poison",
 		"isFast": false,
 		"pvpPower": 20,
@@ -5591,13 +5916,14 @@
 			"buffActivationChance": 1
 		},
 		"moveName": {
-			"en": "Acid Spray Plus",
-			"pt_br": "Acid Spray Plus"
+			"en": "Acid Spray+",
+			"pt_br": "Spray Ácido+"
 		}
 	},
 	"LIQUIDATION_PLUS": {
 		"moveId": "LIQUIDATION_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0383",
 		"type": "water",
 		"isFast": false,
 		"pvpPower": 55,
@@ -5611,13 +5937,14 @@
 			"buffActivationChance": 0.3
 		},
 		"moveName": {
-			"en": "Liquidation Plus",
-			"pt_br": "Liquidation Plus"
+			"en": "Liquidation+",
+			"pt_br": "Aquaríete+"
 		}
 	},
 	"OUTRAGE_PLUS": {
 		"moveId": "OUTRAGE_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0277",
 		"type": "dragon",
 		"isFast": false,
 		"pvpPower": 80,
@@ -5627,13 +5954,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
 		"moveName": {
-			"en": "Outrage Plus",
-			"pt_br": "Outrage Plus"
+			"en": "Outrage+",
+			"pt_br": "Ultraje+"
 		}
 	},
 	"DRILL_PECK_PLUS": {
 		"moveId": "DRILL_PECK_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0038",
 		"type": "flying",
 		"isFast": false,
 		"pvpPower": 60,
@@ -5643,13 +5971,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
 		"moveName": {
-			"en": "Drill Peck Plus",
-			"pt_br": "Drill Peck Plus"
+			"en": "Drill Peck+",
+			"pt_br": "Bico Broca+"
 		}
 	},
 	"SEED_BOMB_PLUS": {
 		"moveId": "SEED_BOMB_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0059",
 		"type": "grass",
 		"isFast": false,
 		"pvpPower": 60,
@@ -5659,13 +5988,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
 		"moveName": {
-			"en": "Seed Bomb Plus",
-			"pt_br": "Seed Bomb Plus"
+			"en": "Seed Bomb+",
+			"pt_br": "Bomba de Sementes+"
 		}
 	},
 	"MYSTICAL_FIRE_PLUS": {
 		"moveId": "MYSTICAL_FIRE_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0382",
 		"type": "fire",
 		"isFast": false,
 		"pvpPower": 50,
@@ -5679,13 +6009,14 @@
 			"buffActivationChance": 1
 		},
 		"moveName": {
-			"en": "Mystical Fire Plus",
-			"pt_br": "Mystical Fire Plus"
+			"en": "Mystical Fire+",
+			"pt_br": "Fogo Místico+"
 		}
 	},
 	"SURF_PLUS": {
 		"moveId": "SURF_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0284",
 		"type": "water",
 		"isFast": false,
 		"pvpPower": 55,
@@ -5695,13 +6026,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
 		"moveName": {
-			"en": "Surf Plus",
-			"pt_br": "Surf Plus"
+			"en": "Surf+",
+			"pt_br": "Surfar+"
 		}
 	},
 	"PSYBEAM_PLUS": {
 		"moveId": "PSYBEAM_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0030",
 		"type": "psychic",
 		"isFast": false,
 		"pvpPower": 60,
@@ -5711,13 +6043,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
 		"moveName": {
-			"en": "Psybeam Plus",
-			"pt_br": "Psybeam Plus"
+			"en": "Psybeam+",
+			"pt_br": "Feixe Psíquico+"
 		}
 	},
 	"BRICK_BREAK_PLUS": {
 		"moveId": "BRICK_BREAK_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0123",
 		"type": "fighting",
 		"isFast": false,
 		"pvpPower": 40,
@@ -5731,13 +6064,14 @@
 			"buffActivationChance": 1
 		},
 		"moveName": {
-			"en": "Brick Break Plus",
-			"pt_br": "Brick Break Plus"
+			"en": "Brick Break+",
+			"pt_br": "Quebra-telha+"
 		}
 	},
 	"VOLT_TACKLE_PLUS": {
 		"moveId": "VOLT_TACKLE_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0399",
 		"type": "electric",
 		"isFast": false,
 		"pvpPower": 65,
@@ -5751,13 +6085,14 @@
 			"buffActivationChance": 1
 		},
 		"moveName": {
-			"en": "Volt Tackle Plus",
-			"pt_br": "Volt Tackle Plus"
+			"en": "Volt Tackle+",
+			"pt_br": "Investida Trovão+"
 		}
 	},
 	"DYNAMIC_PUNCH_PLUS": {
 		"moveId": "DYNAMIC_PUNCH_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0246",
 		"type": "fighting",
 		"isFast": false,
 		"pvpPower": 130,
@@ -5767,13 +6102,14 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
 		"moveName": {
-			"en": "Dynamic Punch Plus",
-			"pt_br": "Dynamic Punch Plus"
+			"en": "Dynamic Punch+",
+			"pt_br": "Soco Dinâmico+"
 		}
 	},
 	"ZAP_CANNON_PLUS": {
 		"moveId": "ZAP_CANNON_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0252",
 		"type": "electric",
 		"isFast": false,
 		"pvpPower": 70,
@@ -5787,13 +6123,14 @@
 			"buffActivationChance": 1
 		},
 		"moveName": {
-			"en": "Zap Cannon Plus",
-			"pt_br": "Zap Cannon Plus"
+			"en": "Zap Cannon+",
+			"pt_br": "Canhão Zap+"
 		}
 	},
 	"FUTURE_SIGHT_PLUS": {
 		"moveId": "FUTURE_SIGHT_PLUS",
-		"vId": "M",
+		"isSuperMega": true,
+		"vId": "0275",
 		"type": "psychic",
 		"isFast": false,
 		"pvpPower": 130,
@@ -5803,12 +6140,13 @@
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
 		"moveName": {
-			"en": "Future Sight Plus",
-			"pt_br": "Future Sight Plus"
+			"en": "Future Sight+",
+			"pt_br": "Visão do Futuro+"
 		}
 	},
 	"CRUSH_CLAW": {
 		"moveId": "CRUSH_CLAW",
+		"isSuperMega": false,
 		"vId": "0307",
 		"type": "normal",
 		"isFast": false,
@@ -5825,6 +6163,7 @@
 	},
 	"LEECH_LIFE": {
 		"moveId": "LEECH_LIFE",
+		"isSuperMega": false,
 		"vId": "0313",
 		"type": "bug",
 		"isFast": false,
@@ -5841,6 +6180,7 @@
 	},
 	"HORN_DRILL": {
 		"moveId": "HORN_DRILL",
+		"isSuperMega": false,
 		"vId": "0328",
 		"type": "normal",
 		"isFast": false,
@@ -5857,6 +6197,7 @@
 	},
 	"FISSURE": {
 		"moveId": "FISSURE",
+		"isSuperMega": false,
 		"vId": "0329",
 		"type": "ground",
 		"isFast": false,
@@ -5873,6 +6214,7 @@
 	},
 	"AEGISLASH_CHARGE_PSYCHO_CUT": {
 		"moveId": "AEGISLASH_CHARGE_PSYCHO_CUT",
+		"isSuperMega": false,
 		"vId": "-1",
 		"type": "psychic",
 		"isFast": true,
@@ -5890,6 +6232,7 @@
 	"AEGISLASH_CHARGE_AIR_SLASH": {
 		"moveId": "AEGISLASH_CHARGE_AIR_SLASH",
 		"vId": "-1",
+		"isSuperMega": false,
 		"type": "flying",
 		"isFast": true,
 		"pvpPower": 0,
@@ -5907,6 +6250,7 @@
 		"moveId": "PYRO_BALL",
 		"vId": "-1",
 		"type": "fire",
+		"isSuperMega": false,
 		"isFast": false,
 		"pvpPower": 75,
 		"pvePower": 150,
@@ -5923,6 +6267,7 @@
 		"moveId": "GULP_MISSILE_ARROKUDA",
 		"vId": "-1",
 		"type": "water",
+		"isSuperMega": false,
 		"isFast": false,
 		"pvpPower": 15,
 		"pvePower": 0,
@@ -5944,6 +6289,7 @@
 		"vId": "-1",
 		"type": "water",
 		"isFast": false,
+		"isSuperMega": false,
 		"pvpPower": 15,
 		"pvePower": 0,
 		"pvpEnergy": 0,

@@ -114,6 +114,18 @@ export const POKEMON_CONFIG = {
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
 		[
+			'chesnaught_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/652_f2.png',
+		],
+		[
+			'delphox_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/655_f2.png',
+		],
+		[
+			'starmie_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/121_f2.png',
+		],
+		[
 			'staraptor_mega',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/398_f2.png',
 		],

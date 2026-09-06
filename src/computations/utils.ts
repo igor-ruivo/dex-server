@@ -113,10 +113,9 @@ const pveDPS = (
 	if (fastMoveCooldown === 0) {
 		return 0;
 	}
-
 	const fastMoveDPS = fastMoveDamage / fastMoveCooldown;
 
-	if (fastMoveEnergy === 0 && chargedMoveRequiredEnergy !== 0) {
+	if (chargedMoveRequiredEnergy === 0 || fastMoveEnergy === 0) {
 		return fastMoveDPS;
 	}
 

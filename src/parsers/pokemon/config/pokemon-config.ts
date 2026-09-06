@@ -73,6 +73,7 @@ export const POKEMON_CONFIG = {
 		'raichu_mega_x',
 		'raichu_mega_y',
 		'squawkabilly',
+		'staraptor_mega',
 	]),
 
 	// Pokemon that should be excluded
@@ -112,6 +113,10 @@ export const POKEMON_CONFIG = {
 
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
+		[
+			'staraptor_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/398_f2.png',
+		],
 		[
 			'raichu_alolan',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png',

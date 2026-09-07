@@ -21140,6 +21140,9 @@
 		"isShadow": false,
 		"isMega": false,
 		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_CORSOLA"
+		},
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
@@ -21175,6 +21178,12 @@
 		"isShadow": false,
 		"isMega": false,
 		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_CORSOLA",
+			"evolutions": [
+				"cursola"
+			]
+		},
 		"form": "Galarian",
 		"isLegendary": false,
 		"isMythical": false,
@@ -36844,6 +36853,10 @@
 		"isShadow": false,
 		"isMega": false,
 		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_SHELLOS",
+			"parent": "shellos"
+		},
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,

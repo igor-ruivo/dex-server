@@ -248,28 +248,48 @@ class GameMasterParser {
 		}
 	}
 
+	/**
+	 * Returns the Pokémon's family object, creating it (with the given id) when
+	 * the source data doesn't provide one. Some species (corsola, corsola_galarian,
+	 * gastrodon) ship with no `family` at all, so corrections must be able to seed it.
+	 */
+	private ensureFamily(
+		pokemon: GameMasterPokemon | undefined,
+		familyId: string
+	) {
+		if (!pokemon) {
+			return undefined;
+		}
+		pokemon.family = { ...(pokemon.family ?? {}), id: familyId };
+		return pokemon.family;
+	}
+
 	private applyManualCorrections(pokemonDictionary: GameMasterData): void {
 		// Apply any manual corrections needed
-		const gastrodon = pokemonDictionary.gastrodon;
-		if (gastrodon?.family) {
-			gastrodon.family.id = 'FAMILY_SHELLOS';
-			gastrodon.family.parent = 'shellos';
+		const gastrodonFamily = this.ensureFamily(
+			pokemonDictionary.gastrodon,
+			'FAMILY_SHELLOS'
+		);
+		if (gastrodonFamily) {
+			gastrodonFamily.parent = 'shellos';
 		}
 
-		const cursola = pokemonDictionary.cursola;
-		if (cursola?.family) {
-			cursola.family.parent = 'corsola_galarian';
+		const cursolaFamily = this.ensureFamily(
+			pokemonDictionary.cursola,
+			'FAMILY_CORSOLA'
+		);
+		if (cursolaFamily) {
+			cursolaFamily.parent = 'corsola_galarian';
 		}
 
-		const corsola = pokemonDictionary.corsola;
-		if (corsola?.family) {
-			corsola.family.id = 'FAMILY_CORSOLA';
-		}
+		this.ensureFamily(pokemonDictionary.corsola, 'FAMILY_CORSOLA');
 
-		const corsolaGalarian = pokemonDictionary.corsola_galarian;
-		if (corsolaGalarian?.family) {
-			corsolaGalarian.family.id = 'FAMILY_CORSOLA';
-			corsolaGalarian.family.evolutions = ['cursola'];
+		const corsolaGalarianFamily = this.ensureFamily(
+			pokemonDictionary.corsola_galarian,
+			'FAMILY_CORSOLA'
+		);
+		if (corsolaGalarianFamily) {
+			corsolaGalarianFamily.evolutions = ['cursola'];
 		}
 
 		const darmanitanShadow = pokemonDictionary.darmanitan_standard_shadow;

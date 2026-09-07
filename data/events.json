@@ -1,5 +1,80 @@
 [
 	{
+		"id": "harvest-festival-2026-0",
+		"url": "https://pokemongo.com/news/harvest-festival-2026",
+		"title": {
+			"en": "Enjoy a bountiful Harvest Festival event with Shiny Applin’s Pokémon GO debut!",
+			"pt_br": "Aproveite o abundante evento Festival da Colheita com estreia de Applin Brilhante no Pokémon GO."
+		},
+		"subtitle": {
+			"en": "Harvest Festival: Applin Picking",
+			"pt_br": "Festival da Colheita: Pomar de Applin"
+		},
+		"startDate": 1790676000000,
+		"endDate": 1791230400000,
+		"dateRanges": [
+			{
+				"start": 1790676000000,
+				"end": 1791230400000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/xNJ7JKQK3J1NgJXra1tCGw0XmW9r9vQBiNy1ZpDL683M_1GjMZDTONVKpVcrUd2U2dPeV2X5UGhbQjSnr8aApqqbwHZAD60u-H68Go-R=s0-e365",
+		"source": "pokemongo",
+		"wild": [
+			{
+				"speciesId": "skwovet",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "lechonk",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "smoliv",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "applin",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"raids": [],
+		"eggs": [],
+		"researches": [],
+		"incenses": [],
+		"lures": [],
+		"bonuses": {
+			"en": [
+				"Increased chance to encounter Shiny Smoliv.",
+				"Reach Major Milestones on your event GO Pass to unlock the following bonuses.",
+				"Tier 1 – Rank 1",
+				"Applin will have an increased chance of holding Tart Apples, Sweet Apples, or Syrupy Apples when caught.",
+				"Tier 2 – Rank 10",
+				"Mossy Lure Modules activated during the event will last for one hour.",
+				"Tier 3 – Rank 20",
+				"Earn more Stardust from defeating Team GO Rocket Grunts and Leaders.",
+				"Keep an eye out for additional bonus tasks for this GO Pass during the event!",
+				"Learn more about the event GO Pass below!"
+			],
+			"pt_br": [
+				"Maior chance de encontrar Smoliv Brilhante.",
+				"Alcance Conquistas Principais no seu Passe GO para desbloquear os seguintes bônus:",
+				"Nível 1 – Ranque 1**",
+				"Maior chance de Applin estar segurando terá Maçãs Azedas, Maças Doces ou Maçãs Xaropentas quando for capturado.",
+				"Nível 2 – Ranque 10**",
+				"Módulos Atrair Musgosos ativados durante o evento durarão uma hora.",
+				"Nível 3 – Ranque 20",
+				"Ganhe mais Poeira Estelar ao derrotar Líderes e Recrutas da Equipe GO Rocket.",
+				"Fique de olho nas tarefas de bônus adicionais para seu Passe GO durante o evento.",
+				"Saiba mais sobre o Passe GO do evento abaixo."
+			]
+		}
+	},
+	{
 		"id": "pokemon-horizons-celebration-event-2026-0",
 		"url": "https://pokemongo.com/news/pokemon-horizons-celebration-event-2026",
 		"title": {
@@ -1330,148 +1405,6 @@
 				"Receba até seis Passes de Reide gratuitos ao girar fotodiscos em Ginásios.",
 				"Maior chance de encontrar Starmie Brilhante em Super Megarreides.",
 				"Starmie capturado em Super Megarreides terá o Meganível 1 desbloqueado."
-			]
-		}
-	},
-	{
-		"id": "water-festival-2026-0",
-		"url": "https://pokemongo.com/news/water-festival-2026",
-		"title": {
-			"en": "Arrokuda and Cramorant splash into Pokémon GO during Ultra Unlock: Water Festival!",
-			"pt_br": "Arrokuda e Cramorant mergulham no Pokémon GO durante o Ultrabônus: Festival Aquático!"
-		},
-		"subtitle": {
-			"en": "Ultra Unlock: Water Festival",
-			"pt_br": "Ultrabônus: Festival Aquático"
-		},
-		"startDate": 1787047200000,
-		"endDate": 1787601600000,
-		"dateRanges": [
-			{
-				"start": 1787047200000,
-				"end": 1787601600000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/Y3Ck0DA4Oo6ifPYrNmJNTYvHqh60FFc62YcsMKjg3wTPZccPI0-QoYj_n0HFOArxWQ_KibUqpr1Sf6JEQ2LyqHDz2DqAjWOlBcNlg-xpZA=s0-e365",
-		"source": "pokemongo",
-		"wild": [
-			{
-				"speciesId": "psyduck",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "goldeen",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "mareanie",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "wimpod",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "feebas",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "clamperl",
-				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "wiglett",
-				"shiny": true,
-				"kind": ""
-			}
-		],
-		"raids": [
-			{
-				"speciesId": "tatsugiri_curly",
-				"shiny": true,
-				"kind": "1"
-			},
-			{
-				"speciesId": "tatsugiri_droopy",
-				"shiny": true,
-				"kind": "1"
-			},
-			{
-				"speciesId": "tatsugiri_stretchy",
-				"shiny": true,
-				"kind": "1"
-			},
-			{
-				"speciesId": "psyduck",
-				"shiny": true,
-				"kind": "1"
-			},
-			{
-				"speciesId": "lapras",
-				"shiny": true,
-				"kind": "3"
-			},
-			{
-				"speciesId": "samurott_hisuian",
-				"shiny": true,
-				"kind": "3"
-			},
-			{
-				"speciesId": "dondozo",
-				"shiny": true,
-				"kind": "3"
-			}
-		],
-		"eggs": [],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [
-				"Rainy Lure Modules will attract Arrokuda.",
-				"Increased chance to encounter Shiny Ducklett and Shiny Dewpider.",
-				"August 18 at 10:00 a.m. – August 20 at 10:00 a.m. local time",
-				"2× XP for catching Pokémon.",
-				"3× Stardust for catching Pokémon.",
-				"August 20 at 10:00 a.m. – August 22 at 10:00 a.m. local time",
-				"3× XP for catching Pokémon.",
-				"4× Stardust for catching Pokémon.",
-				"August 22 at 10:00 a.m. – August 24 at 8:00 p.m. local time",
-				"4× XP for catching Pokémon.",
-				"5× Stardust for catching Pokémon.",
-				"Reach Major Milestones on your event GO Pass to unlock the following bonuses.",
-				"Tier 1 – Rank 10",
-				"2× Candy for catching Pokémon.",
-				"Tier 2 – Rank 20",
-				"1/2 Egg Hatch Distance when Eggs are placed in an Incubator during the event period.",
-				"Keep an eye out for additional bonus tasks for this GO Pass during the event!",
-				"Learn more about the event GO Pass below!"
-			],
-			"pt_br": [
-				"O Módulo Atrair Chuvoso terá atração sobre Arrokuda.",
-				"Maior chance de encontrar Ducklett Brilhante e Dewpider Brilhante.",
-				"De 18 de agosto, às 10h, a 20 de agosto, às 10h, horário local",
-				"2× mais PE por pegar Pokémon.",
-				"3× mais Poeira Estelar por pegar Pokémon.",
-				"De 20 de agosto, às 10h, a 22 de agosto, às 10h, horário local",
-				"3× mais PE por pegar Pokémon.",
-				"4× mais Poeira Estelar por pegar Pokémon.",
-				"De 22 de agosto, às 10h, a 24 de agosto, às 20h, horário local",
-				"4× mais PE por pegar Pokémon.",
-				"5× mais Poeira Estelar por pegar Pokémon.",
-				"Alcance Conquistas Principais no seu Passe GO do evento para desbloquear os bônus a seguir.",
-				"Nível 1 – Ranque 10",
-				"2× mais doces por pegar Pokémon.",
-				"Nível 2 – Ranque 20",
-				"1/2 da distância para chocar Ovo quando os Ovos forem colocados em uma Incubadora durante o período do evento.",
-				"Fique de olho nas tarefas adicionais de bônus para este Passe GO durante o evento!",
-				"Saiba mais sobre o Passe GO do evento abaixo."
 			]
 		}
 	}

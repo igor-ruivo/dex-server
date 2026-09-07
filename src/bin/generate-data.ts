@@ -19,7 +19,7 @@ import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import type { IEntry } from '../parsers/types/events';
 
 const generateData = async () => {
-	console.log('🚀 Starting Pokemon GO data generation...');
+	console.log('Starting Pokemon GO data generation...');
 
 	try {
 		// Initialize dependencies
@@ -141,10 +141,10 @@ const generateData = async () => {
 			await fs.writeFile(filePath, JSON.stringify(dpsData[type], null, '\t'));
 		}
 
-		console.log('✅ All data written to disk.');
-		console.log(`�� Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
+		console.log('All data written to disk.');
+		console.log(`Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
 	} catch (error) {
-		console.error('❌ Data generation failed:', error);
+		console.error('Data generation failed:', error);
 		process.exit(1);
 	}
 };

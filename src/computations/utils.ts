@@ -66,8 +66,7 @@ export const getAllFastMoves = (
 
 export const getAllChargedMoves = (
 	p: GameMasterPokemon,
-	moves: Record<string, IGameMasterMove>,
-	forRaids = true
+	moves: Record<string, IGameMasterMove>
 ) => {
 	return Array.from(
 		new Set(
@@ -171,7 +170,7 @@ export const computeDPSEntry = (
 
 	const fastMoves = getAllFastMoves(p, moves);
 	const chargedMoves = getAllChargedMoves(p, moves);
-	let higherDPS = Number.MIN_VALUE;
+	let higherDPS = -Infinity;
 	let higherFast = '';
 	let higherFastDmg = 0;
 	let higherCharged = '';

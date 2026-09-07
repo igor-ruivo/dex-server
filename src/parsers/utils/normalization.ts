@@ -25,10 +25,6 @@ export const normalizePokemonName = (pokemonName: string): string => {
 		.trim();
 };
 
-export const sexConverter = (name: string): string => {
-	return name.replace('Male', '♂').replace('Female', '♀');
-};
-
 export const ndfNormalized = (str: string): string => {
 	return str
 		.toLocaleLowerCase()

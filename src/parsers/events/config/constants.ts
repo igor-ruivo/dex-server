@@ -70,45 +70,6 @@ export const MONTHS = [
 	'December',
 ];
 
-export const WHITELIST_KEYWORDS = [
-	'(sunny)',
-	'(rainy)',
-	'(snowy)',
-	'sunny form',
-	'rainy form',
-	'snowy form',
-];
-
-export const BLACKLISTED_KEYWORDS = [
-	'some trainers',
-	'the following',
-	'appearing',
-	'lucky, you m',
-	' tms',
-	'and more',
-	'wild encounters',
-	'sunny',
-	'event-themed',
-	'rainy',
-	'snow',
-	'partly cloudy',
-	'cloudy',
-	'windy',
-	'fog',
-	'will be available',
-];
-
-export const POKEMON_OVERRIDES: Record<string, string> = {
-	palkida: 'palkia',
-	darmanitan: 'darmanitan_standard',
-	giratina: 'giratina_altered',
-	zacian: 'zacian_hero',
-	zamazenta: 'zamazenta_hero',
-	morpeko: 'morpeko_full_belly',
-	pumpkaboo: 'pumpkaboo_average',
-	gourgeist: 'gourgeist_average',
-};
-
 export const RAID_LEVEL_MAPPINGS: Record<string, string> = {
 	'one-star': '1',
 	'three-star': '3',

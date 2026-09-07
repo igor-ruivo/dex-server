@@ -16,7 +16,7 @@ export const POKEMON_CONFIG = {
 		'shedinja',
 		'spewpa',
 		'camerupt_mega',
-		'aegislash_blade'
+		'aegislash_blade',
 	]),
 
 	// Pokemon that should be excluded

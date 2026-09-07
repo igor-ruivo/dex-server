@@ -50,13 +50,13 @@ class GameMasterParser {
 	) {}
 
 	async parse() {
-		console.log('🔄 Fetching Pokemon Game Master data...');
+		console.log('Fetching Pokemon Game Master data...');
 
 		try {
 			const rawData = await this.dataFetcher.fetchJson<Array<BasePokemon>>(
 				POKEMON_CONFIG.SOURCE_URL
 			);
-			console.log(`📊 Found ${rawData.length} Pokemon in source data`);
+			console.log(`Found ${rawData.length} Pokemon in source data`);
 
 			// Combine source data with synthetic Pokemon
 			const rawIds = new Set(rawData.map((p) => p.speciesId));
@@ -69,12 +69,12 @@ class GameMasterParser {
 
 			const pokemonDictionary = this.transformData(allPokemon, this.moves);
 			console.log(
-				`✅ Successfully parsed ${Object.keys(pokemonDictionary).length} Pokemon`
+				`Successfully parsed ${Object.keys(pokemonDictionary).length} Pokemon`
 			);
 
 			return pokemonDictionary;
 		} catch (error) {
-			console.error('❌ Failed to parse Game Master data:', error);
+			console.error('Failed to parse Game Master data:', error);
 			throw error;
 		}
 	}

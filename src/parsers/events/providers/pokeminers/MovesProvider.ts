@@ -74,31 +74,32 @@ class MovesProvider {
 
 				if (isPvP) {
 					const term = 'COMBAT_V';
-					const vidSubstring = entry.data.templateId.substring(
-						entry.data.templateId.indexOf(term) + term.length
-					);
+					const vidSubstring = (dpt: GameMasterMovesType) =>
+						dpt.data.templateId.substring(
+							dpt.data.templateId.indexOf(term) + term.length
+						);
+					const vidTarget = isSuperMega
+						? gmData
+								.filter(
+									(entry) =>
+										!entry.data.templateId?.startsWith('VN_BM_') &&
+										(entry.data?.moveSettings || entry.data?.combatMove)
+								)
+								.find(
+									(m) =>
+										(m.data.moveSettings || m.data.combatMove).vfxName ===
+											dataPointer.vfxName &&
+										!m.data.templateId.includes(supermegaTerm) &&
+										!!m.data.combatMove
+								)
+						: undefined;
 					pvpMoves[id] = {
 						moveId: id,
 						isSuperMega,
-						vId: isSuperMega
-							? gmData
-									.filter(
-										(entry) =>
-											!entry.data.templateId?.startsWith('VN_BM_') &&
-											(entry.data?.moveSettings || entry.data?.combatMove)
-									)
-									.find(
-										(m) =>
-											(m.data.moveSettings || m.data.combatMove).vfxName ===
-												dataPointer.vfxName &&
-											!m.data.templateId.includes(supermegaTerm) &&
-											!!m.data.combatMove
-									)!
-									.data.templateId.substring(
-										entry.data.templateId.indexOf(term) + term.length
-									)
-									.substring(0, vidSubstring.indexOf('_'))
-							: vidSubstring.substring(0, vidSubstring.indexOf('_')),
+						vId: vidSubstring(vidTarget ?? entry).substring(
+							0,
+							vidSubstring(vidTarget ?? entry).indexOf('_')
+						),
 						type:
 							typePointer.split('POKEMON_TYPE_')[1]?.toLocaleLowerCase() ?? '',
 						isFast: isFast,

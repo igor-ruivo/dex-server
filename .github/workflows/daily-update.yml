@@ -6,9 +6,12 @@ on:
     - cron: '0 14 * * *'
   workflow_dispatch: # Allows manual trigger
 
+concurrency:
+  group: daily-data-update
+  cancel-in-progress: false
+
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update-data:

@@ -44,7 +44,7 @@ class PvPParser {
 
 			return currentRankings;
 		} catch (error) {
-			console.error('❌ Failed to parse Game Master data:', error);
+			console.error('Failed to parse PvP data:', error);
 			throw error;
 		}
 	}
@@ -71,6 +71,11 @@ class PvPParser {
 		const seenIds = new Set<string>();
 		for (const entry of pvpEntries) {
 			const pokemon = this.gameMasterPokemon[entry.speciesId];
+			if (!pokemon) {
+				throw new Error(
+					`${entry.speciesId} doesn't exist in pokémon game master!`
+				);
+			}
 			const computedId = pokemon.aliasId ?? pokemon.speciesId;
 			if (!seenIds.has(computedId)) {
 				seenIds.add(computedId);
@@ -79,13 +84,6 @@ class PvPParser {
 		}
 
 		uniqueEntries.forEach((entry) => {
-			const pokemon = this.gameMasterPokemon[entry.speciesId];
-			if (!pokemon) {
-				throw new Error(
-					`${entry.speciesId} doesn't exist in pokémon game master!`
-				);
-			}
-
 			entry.moveset.forEach((move) => {
 				const existingMove = this.moves[move];
 				if (

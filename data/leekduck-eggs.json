@@ -243,25 +243,7 @@
 		}
 	},
 	{
-		"speciesId": "exeggcute",
-		"shiny": false,
-		"kind": "2",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
 		"speciesId": "pichu",
-		"shiny": false,
-		"kind": "2",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "cleffa",
 		"shiny": false,
 		"kind": "2",
 		"comment": {
@@ -279,7 +261,7 @@
 		}
 	},
 	{
-		"speciesId": "corphish",
+		"speciesId": "elekid",
 		"shiny": false,
 		"kind": "2",
 		"comment": {
@@ -288,7 +270,25 @@
 		}
 	},
 	{
-		"speciesId": "wynaut",
+		"speciesId": "magby",
+		"shiny": false,
+		"kind": "2",
+		"comment": {
+			"en": "",
+			"pt_br": ""
+		}
+	},
+	{
+		"speciesId": "azurill",
+		"shiny": false,
+		"kind": "2",
+		"comment": {
+			"en": "",
+			"pt_br": ""
+		}
+	},
+	{
+		"speciesId": "tadbulb",
 		"shiny": false,
 		"kind": "2",
 		"comment": {
@@ -306,7 +306,7 @@
 		}
 	},
 	{
-		"speciesId": "riolu",
+		"speciesId": "munchlax",
 		"shiny": false,
 		"kind": "5",
 		"comment": {
@@ -315,7 +315,7 @@
 		}
 	},
 	{
-		"speciesId": "mantyke",
+		"speciesId": "sizzlipede",
 		"shiny": false,
 		"kind": "5",
 		"comment": {
@@ -324,7 +324,7 @@
 		}
 	},
 	{
-		"speciesId": "snom",
+		"speciesId": "fidough",
 		"shiny": false,
 		"kind": "5",
 		"comment": {
@@ -333,43 +333,7 @@
 		}
 	},
 	{
-		"speciesId": "indeedee_male",
-		"shiny": false,
-		"kind": "5",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "flittle",
-		"shiny": false,
-		"kind": "5",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "larvesta",
-		"shiny": false,
-		"kind": "5",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "budew",
-		"shiny": false,
-		"kind": "5",
-		"comment": {
-			"en": "Adventure Sync Rewards",
-			"pt_br": "Recompensas de Sincroaventura"
-		}
-	},
-	{
-		"speciesId": "chingling",
+		"speciesId": "tyrogue",
 		"shiny": false,
 		"kind": "5",
 		"comment": {
@@ -387,16 +351,7 @@
 		}
 	},
 	{
-		"speciesId": "tyrogue",
-		"shiny": false,
-		"kind": "5",
-		"comment": {
-			"en": "Adventure Sync Rewards",
-			"pt_br": "Recompensas de Sincroaventura"
-		}
-	},
-	{
-		"speciesId": "happiny",
+		"speciesId": "budew",
 		"shiny": false,
 		"kind": "5",
 		"comment": {
@@ -409,26 +364,8 @@
 		"shiny": false,
 		"kind": "7",
 		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "corsola_galarian",
-		"shiny": false,
-		"kind": "7",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "zigzagoon_galarian",
-		"shiny": false,
-		"kind": "7",
-		"comment": {
-			"en": "",
-			"pt_br": ""
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
 		}
 	},
 	{
@@ -436,35 +373,8 @@
 		"shiny": false,
 		"kind": "7",
 		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "stunfisk_galarian",
-		"shiny": false,
-		"kind": "7",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "geodude_alolan",
-		"shiny": false,
-		"kind": "7",
-		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "diglett_alolan",
-		"shiny": false,
-		"kind": "7",
-		"comment": {
-			"en": "",
-			"pt_br": ""
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
 		}
 	},
 	{
@@ -472,17 +382,44 @@
 		"shiny": false,
 		"kind": "7",
 		"comment": {
-			"en": "Route Rewards",
-			"pt_br": "Recompensas de Rota"
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
 		}
 	},
 	{
-		"speciesId": "slowpoke_galarian",
+		"speciesId": "zigzagoon_galarian",
 		"shiny": false,
 		"kind": "7",
 		"comment": {
-			"en": "Route Rewards",
-			"pt_br": "Recompensas de Rota"
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
+		}
+	},
+	{
+		"speciesId": "stunfisk_galarian",
+		"shiny": false,
+		"kind": "7",
+		"comment": {
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
+		}
+	},
+	{
+		"speciesId": "geodude_alolan",
+		"shiny": false,
+		"kind": "7",
+		"comment": {
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
+		}
+	},
+	{
+		"speciesId": "diglett_alolan",
+		"shiny": false,
+		"kind": "7",
+		"comment": {
+			"en": "From Friend Gifts",
+			"pt_br": "From Friend Gifts"
 		}
 	},
 	{
@@ -495,7 +432,7 @@
 		}
 	},
 	{
-		"speciesId": "growlithe_hisuian",
+		"speciesId": "corsola_galarian",
 		"shiny": false,
 		"kind": "7",
 		"comment": {
@@ -513,30 +450,21 @@
 		}
 	},
 	{
-		"speciesId": "mawile",
+		"speciesId": "growlithe_hisuian",
 		"shiny": false,
-		"kind": "10",
+		"kind": "7",
 		"comment": {
-			"en": "",
-			"pt_br": ""
+			"en": "Route Rewards",
+			"pt_br": "Recompensas de Rota"
 		}
 	},
 	{
-		"speciesId": "absol",
+		"speciesId": "slowpoke_galarian",
 		"shiny": false,
-		"kind": "10",
+		"kind": "7",
 		"comment": {
-			"en": "",
-			"pt_br": ""
-		}
-	},
-	{
-		"speciesId": "honedge",
-		"shiny": false,
-		"kind": "10",
-		"comment": {
-			"en": "",
-			"pt_br": ""
+			"en": "Route Rewards",
+			"pt_br": "Recompensas de Rota"
 		}
 	},
 	{
@@ -558,7 +486,34 @@
 		}
 	},
 	{
+		"speciesId": "honedge",
+		"shiny": false,
+		"kind": "10",
+		"comment": {
+			"en": "",
+			"pt_br": ""
+		}
+	},
+	{
 		"speciesId": "frigibax",
+		"shiny": false,
+		"kind": "10",
+		"comment": {
+			"en": "",
+			"pt_br": ""
+		}
+	},
+	{
+		"speciesId": "impidimp",
+		"shiny": false,
+		"kind": "10",
+		"comment": {
+			"en": "",
+			"pt_br": ""
+		}
+	},
+	{
+		"speciesId": "dratini",
 		"shiny": false,
 		"kind": "10",
 		"comment": {
@@ -576,24 +531,6 @@
 		}
 	},
 	{
-		"speciesId": "druddigon",
-		"shiny": false,
-		"kind": "10",
-		"comment": {
-			"en": "Adventure Sync Rewards",
-			"pt_br": "Recompensas de Sincroaventura"
-		}
-	},
-	{
-		"speciesId": "toxel",
-		"shiny": false,
-		"kind": "10",
-		"comment": {
-			"en": "Adventure Sync Rewards",
-			"pt_br": "Recompensas de Sincroaventura"
-		}
-	},
-	{
 		"speciesId": "bagon",
 		"shiny": false,
 		"kind": "10",
@@ -603,7 +540,7 @@
 		}
 	},
 	{
-		"speciesId": "drampa",
+		"speciesId": "druddigon",
 		"shiny": false,
 		"kind": "10",
 		"comment": {
@@ -612,7 +549,7 @@
 		}
 	},
 	{
-		"speciesId": "gible",
+		"speciesId": "drampa",
 		"shiny": false,
 		"kind": "10",
 		"comment": {

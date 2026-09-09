@@ -809,6 +809,15 @@
 		"chargedMoveDmg": 85,
 		"rank": 90
 	},
+	"ursaluna_shadow": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "THUNDER_PUNCH",
+		"dps": 18.20408163265306,
+		"speciesId": "ursaluna_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 62,
+		"rank": 91
+	},
 	"latias_mega": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "THUNDER",
@@ -816,7 +825,7 @@
 		"speciesId": "latias_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 121,
-		"rank": 91
+		"rank": 92
 	},
 	"magmortar": {
 		"fastMove": "FIRE_SPIN",
@@ -825,7 +834,7 @@
 		"speciesId": "magmortar",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 84,
-		"rank": 92
+		"rank": 93
 	},
 	"bellibolt": {
 		"fastMove": "THUNDER_SHOCK",
@@ -834,7 +843,7 @@
 		"speciesId": "bellibolt",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 134,
-		"rank": 93
+		"rank": 94
 	},
 	"starmie_mega": {
 		"fastMove": "PSYWAVE",
@@ -843,15 +852,6 @@
 		"speciesId": "starmie_mega",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 116,
-		"rank": 94
-	},
-	"ursaluna_shadow": {
-		"fastMove": "TACKLE",
-		"chargedMove": "THUNDER_PUNCH",
-		"dps": 17.92452830188679,
-		"speciesId": "ursaluna_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 62,
 		"rank": 95
 	},
 	"latias_shadow": {
@@ -1259,6 +1259,15 @@
 		"chargedMoveDmg": 68,
 		"rank": 140
 	},
+	"ursaluna": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "THUNDER_PUNCH",
+		"dps": 15.224489795918368,
+		"speciesId": "ursaluna",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 52,
+		"rank": 141
+	},
 	"duosion_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "THUNDER",
@@ -1266,7 +1275,7 @@
 		"speciesId": "duosion_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 107,
-		"rank": 141
+		"rank": 142
 	},
 	"weezing_shadow": {
 		"fastMove": "INFESTATION",
@@ -1275,7 +1284,7 @@
 		"speciesId": "weezing_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 73,
-		"rank": 142
+		"rank": 143
 	},
 	"muk_shadow": {
 		"fastMove": "POISON_JAB",
@@ -1284,7 +1293,7 @@
 		"speciesId": "muk_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 49,
-		"rank": 143
+		"rank": 144
 	},
 	"regice_shadow": {
 		"fastMove": "LOCK_ON",
@@ -1293,7 +1302,7 @@
 		"speciesId": "regice_shadow",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 93,
-		"rank": 144
+		"rank": 145
 	},
 	"eelektrik": {
 		"fastMove": "SPARK",
@@ -1302,7 +1311,7 @@
 		"speciesId": "eelektrik",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 66,
-		"rank": 145
+		"rank": 146
 	},
 	"latias": {
 		"fastMove": "DRAGON_BREATH",
@@ -1311,15 +1320,6 @@
 		"speciesId": "latias",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 97,
-		"rank": 146
-	},
-	"ursaluna": {
-		"fastMove": "TACKLE",
-		"chargedMove": "THUNDER_PUNCH",
-		"dps": 14.792452830188681,
-		"speciesId": "ursaluna",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 52,
 		"rank": 147
 	},
 	"porygon_shadow": {
@@ -1889,6 +1889,15 @@
 		"chargedMoveDmg": 46,
 		"rank": 210
 	},
+	"volbeat": {
+		"fastMove": "INFESTATION",
+		"chargedMove": "THUNDERBOLT",
+		"dps": 11.066666666666665,
+		"speciesId": "volbeat",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 51,
+		"rank": 211
+	},
 	"amaura_shadow": {
 		"fastMove": "POWDER_SNOW",
 		"chargedMove": "THUNDERBOLT",
@@ -1896,7 +1905,7 @@
 		"speciesId": "amaura_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 54,
-		"rank": 211
+		"rank": 212
 	},
 	"voltorb": {
 		"fastMove": "SPARK",
@@ -1905,7 +1914,7 @@
 		"speciesId": "voltorb",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 48,
-		"rank": 212
+		"rank": 213
 	},
 	"blissey": {
 		"fastMove": "POUND",
@@ -1914,7 +1923,7 @@
 		"speciesId": "blissey",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 52,
-		"rank": 213
+		"rank": 214
 	},
 	"voltorb_hisuian": {
 		"fastMove": "CHARGE_BEAM",
@@ -1923,7 +1932,7 @@
 		"speciesId": "voltorb_hisuian",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 48,
-		"rank": 214
+		"rank": 215
 	},
 	"chinchou": {
 		"fastMove": "SPARK",
@@ -1932,7 +1941,7 @@
 		"speciesId": "chinchou",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 47,
-		"rank": 215
+		"rank": 216
 	},
 	"herdier": {
 		"fastMove": "SAND_ATTACK",
@@ -1941,7 +1950,7 @@
 		"speciesId": "herdier",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 51,
-		"rank": 216
+		"rank": 217
 	},
 	"uxie": {
 		"fastMove": "EXTRASENSORY",
@@ -1950,7 +1959,7 @@
 		"speciesId": "uxie",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 69,
-		"rank": 217
+		"rank": 218
 	},
 	"meltan": {
 		"fastMove": "THUNDER_SHOCK",
@@ -1959,7 +1968,7 @@
 		"speciesId": "meltan",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 43,
-		"rank": 218
+		"rank": 219
 	},
 	"glameow_shadow": {
 		"fastMove": "QUICK_ATTACK",
@@ -1968,7 +1977,7 @@
 		"speciesId": "glameow_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 48,
-		"rank": 219
+		"rank": 220
 	},
 	"deoxys_defense": {
 		"fastMove": "COUNTER",
@@ -1977,7 +1986,7 @@
 		"speciesId": "deoxys_defense",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 51,
-		"rank": 220
+		"rank": 221
 	},
 	"joltik": {
 		"fastMove": "CHARGE_BEAM",
@@ -1986,7 +1995,7 @@
 		"speciesId": "joltik",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 39,
-		"rank": 221
+		"rank": 222
 	},
 	"delcatty": {
 		"fastMove": "FEINT_ATTACK",
@@ -1995,15 +2004,6 @@
 		"speciesId": "delcatty",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 53,
-		"rank": 222
-	},
-	"volbeat": {
-		"fastMove": "STRUGGLE_BUG",
-		"chargedMove": "THUNDERBOLT",
-		"dps": 10.355555555555554,
-		"speciesId": "volbeat",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 51,
 		"rank": 223
 	},
 	"nidorina_shadow": {

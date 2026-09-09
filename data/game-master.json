@@ -1493,9 +1493,12 @@
 			"X_SCISSOR",
 			"FELL_STINGER",
 			"DRILL_RUN",
+			"FELL_STINGER_PLUS",
 			"RETURN"
 		],
-		"extraChargedMoves": [],
+		"extraChargedMoves": [
+			"FELL_STINGER_PLUS"
+		],
 		"eliteMoves": [
 			"BUG_BITE",
 			"DRILL_RUN"
@@ -1503,7 +1506,7 @@
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": true,
-		"isSuperMega": false,
+		"isSuperMega": true,
 		"family": {
 			"id": "FAMILY_WEEDLE",
 			"parent": "kakuna"
@@ -2426,6 +2429,8 @@
 			"GUNK_SHOT",
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
+			"BRUTAL_SWING",
+			"WRAP",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -2469,6 +2474,8 @@
 			"GUNK_SHOT",
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
+			"BRUTAL_SWING",
+			"WRAP",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -2563,7 +2570,8 @@
 			"WILD_CHARGE",
 			"SKULL_BASH",
 			"TRAILBLAZE",
-			"SURF"
+			"SURF",
+			"VOLT_TACKLE"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [
@@ -2611,6 +2619,7 @@
 			"SKULL_BASH",
 			"TRAILBLAZE",
 			"SURF",
+			"VOLT_TACKLE",
 			"VOLT_TACKLE_PLUS"
 		],
 		"extraChargedMoves": [
@@ -2661,6 +2670,7 @@
 			"SKULL_BASH",
 			"TRAILBLAZE",
 			"SURF",
+			"VOLT_TACKLE",
 			"ZAP_CANNON_PLUS"
 		],
 		"extraChargedMoves": [
@@ -2710,7 +2720,8 @@
 			"GRASS_KNOT",
 			"TRAILBLAZE",
 			"SURF",
-			"PSYSHOCK"
+			"PSYSHOCK",
+			"VOLT_TACKLE"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -3552,6 +3563,7 @@
 			"SLUDGE_WAVE",
 			"EARTH_POWER",
 			"SAND_TOMB",
+			"AVALANCHE",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -3600,6 +3612,7 @@
 			"SLUDGE_WAVE",
 			"EARTH_POWER",
 			"SAND_TOMB",
+			"AVALANCHE",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -7221,7 +7234,8 @@
 		"fastMoves": [
 			"ACID",
 			"RAZOR_LEAF",
-			"MAGICAL_LEAF"
+			"MAGICAL_LEAF",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"LEAF_BLADE",
@@ -7267,7 +7281,8 @@
 		"fastMoves": [
 			"ACID",
 			"RAZOR_LEAF",
-			"MAGICAL_LEAF"
+			"MAGICAL_LEAF",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"LEAF_BLADE",
@@ -7316,7 +7331,8 @@
 		"fastMoves": [
 			"ACID",
 			"RAZOR_LEAF",
-			"MAGICAL_LEAF"
+			"MAGICAL_LEAF",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"LEAF_BLADE",
@@ -9433,6 +9449,8 @@
 			"GUNK_SHOT",
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
+			"BRUTAL_SWING",
+			"ICE_PUNCH",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -9476,6 +9494,8 @@
 			"GUNK_SHOT",
 			"SLUDGE_WAVE",
 			"ACID_SPRAY",
+			"BRUTAL_SWING",
+			"ICE_PUNCH",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -14435,6 +14455,7 @@
 			"IRON_HEAD",
 			"ROCK_SLIDE",
 			"EARTH_POWER",
+			"BRUTAL_SWING",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -14476,6 +14497,7 @@
 			"IRON_HEAD",
 			"ROCK_SLIDE",
 			"EARTH_POWER",
+			"BRUTAL_SWING",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -14517,6 +14539,7 @@
 			"IRON_HEAD",
 			"ROCK_SLIDE",
 			"EARTH_POWER",
+			"BRUTAL_SWING",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -14548,7 +14571,8 @@
 		"fastMoves": [
 			"LICK",
 			"ZEN_HEADBUTT",
-			"YAWN"
+			"YAWN",
+			"PSYWAVE"
 		],
 		"chargedMoves": [
 			"BODY_SLAM",
@@ -14595,7 +14619,8 @@
 		"fastMoves": [
 			"LICK",
 			"ZEN_HEADBUTT",
-			"YAWN"
+			"YAWN",
+			"PSYWAVE"
 		],
 		"chargedMoves": [
 			"BODY_SLAM",
@@ -16941,7 +16966,8 @@
 			"MEGAHORN",
 			"SHADOW_SNEAK",
 			"LUNGE",
-			"TRAILBLAZE"
+			"TRAILBLAZE",
+			"FOUL_PLAY"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -16976,7 +17002,8 @@
 		},
 		"fastMoves": [
 			"AIR_SLASH",
-			"BITE"
+			"BITE",
+			"GUST"
 		],
 		"chargedMoves": [
 			"AIR_CUTTER",
@@ -17019,7 +17046,8 @@
 		},
 		"fastMoves": [
 			"AIR_SLASH",
-			"BITE"
+			"BITE",
+			"GUST"
 		],
 		"chargedMoves": [
 			"AIR_CUTTER",
@@ -21418,6 +21446,7 @@
 			"BRAVE_BIRD",
 			"FLASH_CANNON",
 			"SKY_ATTACK",
+			"DRILL_RUN",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -21455,6 +21484,7 @@
 			"BRAVE_BIRD",
 			"FLASH_CANNON",
 			"SKY_ATTACK",
+			"DRILL_RUN",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -21492,6 +21522,7 @@
 			"BRAVE_BIRD",
 			"FLASH_CANNON",
 			"SKY_ATTACK",
+			"DRILL_RUN",
 			"DRILL_PECK_PLUS",
 			"RETURN"
 		],
@@ -21612,13 +21643,15 @@
 		},
 		"fastMoves": [
 			"FIRE_FANG",
-			"SNARL"
+			"SNARL",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"CRUNCH",
 			"FIRE_BLAST",
 			"FLAMETHROWER",
 			"FOUL_PLAY",
+			"TRAILBLAZE",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -21654,13 +21687,15 @@
 		},
 		"fastMoves": [
 			"FIRE_FANG",
-			"SNARL"
+			"SNARL",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"CRUNCH",
 			"FIRE_BLAST",
 			"FLAMETHROWER",
 			"FOUL_PLAY",
+			"TRAILBLAZE",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -21696,13 +21731,15 @@
 		},
 		"fastMoves": [
 			"FIRE_FANG",
-			"SNARL"
+			"SNARL",
+			"INCINERATE"
 		],
 		"chargedMoves": [
 			"CRUNCH",
 			"FIRE_BLAST",
 			"FLAMETHROWER",
 			"FOUL_PLAY",
+			"TRAILBLAZE",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -22694,7 +22731,8 @@
 			"GYRO_BALL",
 			"ICE_BEAM",
 			"STOMP",
-			"THUNDERBOLT"
+			"THUNDERBOLT",
+			"HIGH_HORSEPOWER"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -23323,6 +23361,7 @@
 			"SKY_ATTACK",
 			"AEROBLAST",
 			"FLY",
+			"EARTH_POWER",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -23364,6 +23403,7 @@
 			"SKY_ATTACK",
 			"AEROBLAST",
 			"FLY",
+			"EARTH_POWER",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -27649,6 +27689,7 @@
 			"THUNDER",
 			"ROCK_TOMB",
 			"METEOR_BEAM",
+			"BRICK_BREAK",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -27693,6 +27734,7 @@
 			"THUNDER",
 			"ROCK_TOMB",
 			"METEOR_BEAM",
+			"BRICK_BREAK",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -27734,6 +27776,7 @@
 			"THUNDER",
 			"ROCK_TOMB",
 			"METEOR_BEAM",
+			"BRICK_BREAK",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -28173,12 +28216,14 @@
 		},
 		"fastMoves": [
 			"STRUGGLE_BUG",
-			"TACKLE"
+			"TACKLE",
+			"INFESTATION"
 		],
 		"chargedMoves": [
 			"BUG_BUZZ",
 			"SIGNAL_BEAM",
-			"THUNDERBOLT"
+			"THUNDERBOLT",
+			"LUNGE"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -28208,12 +28253,14 @@
 		},
 		"fastMoves": [
 			"STRUGGLE_BUG",
-			"TACKLE"
+			"TACKLE",
+			"INFESTATION"
 		],
 		"chargedMoves": [
 			"BUG_BUZZ",
 			"DAZZLING_GLEAM",
-			"SILVER_WIND"
+			"SILVER_WIND",
+			"SHADOW_BALL"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -30672,51 +30719,6 @@
 			"id": "FAMILY_LILEEP",
 			"parent": "lileep"
 		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"cradily_b": {
-		"dex": 346,
-		"speciesId": "cradily_b",
-		"speciesName": "Cradily",
-		"types": [
-			"Rock",
-			"Grass"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
-		"goImageUrl": "346.icon.png",
-		"shinyGoImageUrl": "346.s.icon.png",
-		"baseStats": {
-			"atk": 152,
-			"def": 194,
-			"hp": 200
-		},
-		"fastMoves": [
-			"ACID",
-			"INFESTATION",
-			"BULLET_SEED"
-		],
-		"chargedMoves": [
-			"BULLDOZE",
-			"GRASS_KNOT",
-			"STONE_EDGE",
-			"ROCK_SLIDE",
-			"ROCK_TOMB",
-			"RETURN"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"isSuperMega": false,
-		"family": {
-			"id": "FAMILY_LILEEP",
-			"parent": "lileep"
-		},
-		"aliasId": "cradily",
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
@@ -34120,7 +34122,8 @@
 		},
 		"fastMoves": [
 			"COUNTER",
-			"ZEN_HEADBUTT"
+			"ZEN_HEADBUTT",
+			"LOW_KICK"
 		],
 		"chargedMoves": [
 			"PSYCHO_BOOST",
@@ -35227,6 +35230,52 @@
 			"parent": "staravia_shadow"
 		},
 		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"staraptor_mega": {
+		"dex": 398,
+		"speciesId": "staraptor_mega",
+		"speciesName": "Staraptor (Mega)",
+		"types": [
+			"Fighting",
+			"Flying"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/398_f2.png",
+		"goImageUrl": "398.fMEGA.icon.png",
+		"shinyGoImageUrl": "398.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 278,
+			"def": 207,
+			"hp": 198
+		},
+		"fastMoves": [
+			"QUICK_ATTACK",
+			"WING_ATTACK",
+			"GUST",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"BRAVE_BIRD",
+			"CLOSE_COMBAT",
+			"HEAT_WAVE",
+			"FLY",
+			"RETURN"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [
+			"GUST"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"isSuperMega": true,
+		"family": {
+			"id": "FAMILY_STARLY",
+			"parent": "staravia"
+		},
+		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false
@@ -37264,6 +37313,7 @@
 			"DARK_PULSE",
 			"DAZZLING_GLEAM",
 			"SHADOW_BALL",
+			"MYSTICAL_FIRE",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -37306,6 +37356,7 @@
 			"DARK_PULSE",
 			"DAZZLING_GLEAM",
 			"SHADOW_BALL",
+			"MYSTICAL_FIRE",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -40515,6 +40566,7 @@
 			"LEAF_BLADE",
 			"PSYCHIC",
 			"SYNCHRONOISE",
+			"SACRED_SWORD",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -40561,6 +40613,7 @@
 			"LEAF_BLADE",
 			"PSYCHIC",
 			"SYNCHRONOISE",
+			"SACRED_SWORD",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -40603,6 +40656,7 @@
 			"LEAF_BLADE",
 			"PSYCHIC",
 			"SYNCHRONOISE",
+			"SACRED_SWORD",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -41812,13 +41866,15 @@
 		},
 		"fastMoves": [
 			"FEINT_ATTACK",
-			"SNARL"
+			"SNARL",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"DARK_PULSE",
 			"FOCUS_BLAST",
 			"SHADOW_BALL",
 			"SLUDGE_BOMB",
+			"FOUL_PLAY",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -41851,13 +41907,15 @@
 		},
 		"fastMoves": [
 			"FEINT_ATTACK",
-			"SNARL"
+			"SNARL",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"DARK_PULSE",
 			"FOCUS_BLAST",
 			"SHADOW_BALL",
 			"SLUDGE_BOMB",
+			"FOUL_PLAY",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -44540,7 +44598,8 @@
 		},
 		"fastMoves": [
 			"POUND",
-			"ZEN_HEADBUTT"
+			"ZEN_HEADBUTT",
+			"CHARGE_BEAM"
 		],
 		"chargedMoves": [
 			"DISARMING_VOICE",
@@ -44579,7 +44638,8 @@
 		},
 		"fastMoves": [
 			"POUND",
-			"ZEN_HEADBUTT"
+			"ZEN_HEADBUTT",
+			"CHARGE_BEAM"
 		],
 		"chargedMoves": [
 			"DISARMING_VOICE",
@@ -46618,6 +46678,7 @@
 			"SHADOW_BALL",
 			"DARK_PULSE",
 			"PSYCHIC",
+			"ENERGY_BALL",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -46659,6 +46720,7 @@
 			"SHADOW_BALL",
 			"DARK_PULSE",
 			"PSYCHIC",
+			"ENERGY_BALL",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -47327,7 +47389,8 @@
 			"FOUL_PLAY",
 			"SLUDGE_BOMB",
 			"FLAMETHROWER",
-			"SHADOW_BALL"
+			"SHADOW_BALL",
+			"SWIFT"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -49685,7 +49748,8 @@
 		"fastMoves": [
 			"HEX",
 			"FIRE_SPIN",
-			"INCINERATE"
+			"INCINERATE",
+			"ASTONISH"
 		],
 		"chargedMoves": [
 			"ENERGY_BALL",
@@ -49731,7 +49795,8 @@
 		"fastMoves": [
 			"HEX",
 			"FIRE_SPIN",
-			"INCINERATE"
+			"INCINERATE",
+			"ASTONISH"
 		],
 		"chargedMoves": [
 			"ENERGY_BALL",
@@ -53273,6 +53338,7 @@
 			"SURF",
 			"HYDRO_PUMP",
 			"HYDRO_CANNON",
+			"BRUTAL_SWING",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
@@ -53319,6 +53385,7 @@
 			"SURF",
 			"HYDRO_PUMP",
 			"HYDRO_CANNON",
+			"BRUTAL_SWING",
 			"SURF_PLUS",
 			"RETURN"
 		],
@@ -53368,6 +53435,7 @@
 			"SURF",
 			"HYDRO_PUMP",
 			"HYDRO_CANNON",
+			"BRUTAL_SWING",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
@@ -61419,7 +61487,8 @@
 			"THUNDER_PUNCH",
 			"DISCHARGE",
 			"WILD_CHARGE",
-			"PLASMA_FISTS"
+			"PLASMA_FISTS",
+			"DYNAMIC_PUNCH"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -63190,7 +63259,8 @@
 			"ACID_SPRAY",
 			"DISCHARGE",
 			"WILD_CHARGE",
-			"POWER_UP_PUNCH"
+			"POWER_UP_PUNCH",
+			"SWIFT"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -63686,7 +63756,8 @@
 			"FOUL_PLAY",
 			"DARK_PULSE",
 			"PLAY_ROUGH",
-			"POWER_UP_PUNCH"
+			"POWER_UP_PUNCH",
+			"DRAINING_KISS"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -64999,7 +65070,8 @@
 		"fastMoves": [
 			"TACKLE",
 			"ROCK_SMASH",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"SCRATCH"
 		],
 		"chargedMoves": [
 			"FIRE_PUNCH",
@@ -65048,7 +65120,8 @@
 		"fastMoves": [
 			"TACKLE",
 			"ROCK_SMASH",
-			"SMACK_DOWN"
+			"SMACK_DOWN",
+			"SCRATCH"
 		],
 		"chargedMoves": [
 			"FIRE_PUNCH",
@@ -66829,6 +66902,86 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"maschiff": {
+		"dex": 942,
+		"speciesId": "maschiff",
+		"speciesName": "Maschiff",
+		"types": [
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/942.png",
+		"goImageUrl": "942.icon.png",
+		"shinyGoImageUrl": "942.s.icon.png",
+		"baseStats": {
+			"atk": 140,
+			"def": 108,
+			"hp": 155
+		},
+		"fastMoves": [
+			"SNARL",
+			"BITE"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"PSYCHIC_FANGS",
+			"DIG"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_MASCHIFF",
+			"evolutions": [
+				"mabosstiff"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"mabosstiff": {
+		"dex": 943,
+		"speciesId": "mabosstiff",
+		"speciesName": "Mabosstiff",
+		"types": [
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/943.png",
+		"goImageUrl": "943.icon.png",
+		"shinyGoImageUrl": "943.s.icon.png",
+		"baseStats": {
+			"atk": 230,
+			"def": 168,
+			"hp": 190
+		},
+		"fastMoves": [
+			"SNARL",
+			"BITE"
+		],
+		"chargedMoves": [
+			"CRUNCH",
+			"PSYCHIC_FANGS",
+			"DIG"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_MASCHIFF",
+			"parent": "maschiff"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"shroodle": {
 		"dex": 944,
 		"speciesId": "shroodle",
@@ -66889,12 +67042,14 @@
 		},
 		"fastMoves": [
 			"MUD_SLAP",
-			"POISON_JAB"
+			"POISON_JAB",
+			"SCRATCH"
 		],
 		"chargedMoves": [
 			"ACID_SPRAY",
 			"POISON_FANG",
-			"SLUDGE_BOMB"
+			"SLUDGE_BOMB",
+			"FOUL_PLAY"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -67342,7 +67497,8 @@
 			"PAYBACK",
 			"AERIAL_ACE",
 			"FLY",
-			"ROCK_TOMB"
+			"ROCK_TOMB",
+			"DRILL_RUN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -67657,7 +67813,8 @@
 		},
 		"fastMoves": [
 			"WING_ATTACK",
-			"DOUBLE_KICK"
+			"DOUBLE_KICK",
+			"PECK"
 		],
 		"chargedMoves": [
 			"AERIAL_ACE",
@@ -68104,7 +68261,8 @@
 		"fastMoves": [
 			"SNARL",
 			"METAL_CLAW",
-			"METAL_SOUND"
+			"METAL_SOUND",
+			"LOW_KICK"
 		],
 		"chargedMoves": [
 			"DARK_PULSE",
@@ -68579,46 +68737,6 @@
 		"isMega": false,
 		"isSuperMega": false,
 		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
-	"staraptor_mega": {
-		"dex": 398,
-		"speciesId": "staraptor_mega",
-		"speciesName": "Staraptor (Mega)",
-		"types": [
-			"Fighting",
-			"Flying"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/398_f2.png",
-		"goImageUrl": "398.fMEGA.icon.png",
-		"shinyGoImageUrl": "398.fMEGA.s.icon.png",
-		"baseStats": {
-			"atk": 278,
-			"def": 207,
-			"hp": 198
-		},
-		"fastMoves": [
-			"WING_ATTACK",
-			"GUST",
-			"SAND_ATTACK",
-			"QUICK_ATTACK"
-		],
-		"chargedMoves": [
-			"CLOSE_COMBAT",
-			"HEAT_WAVE",
-			"BRAVE_BIRD",
-			"FLY",
-			"RETURN"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": true,
-		"isSuperMega": false,
-		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

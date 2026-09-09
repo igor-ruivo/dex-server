@@ -355,6 +355,32 @@ class MovesProvider {
 			};
 		}
 
+		const fellStingerPlusMoveName: Partial<Record<AvailableLocales, string>> = {
+			[AvailableLocales.en]: 'Fell Stinger+',
+			[AvailableLocales.ptbr]: 'Ferrão Letal+',
+		};
+
+		if (!movesDictionary.FELL_STINGER_PLUS) {
+			movesDictionary.FELL_STINGER_PLUS = {
+				moveId: 'FELL_STINGER_PLUS',
+				vId: '0311',
+				type: 'bug',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 40,
+				pvePower: 140,
+				pvpEnergy: -35,
+				pveEnergy: -100,
+				pvpCooldown: 0.5,
+				pveCooldown: 2,
+				moveName: fellStingerPlusMoveName,
+				buffs: {
+					buffActivationChance: 1,
+					attackerAttackStatStageChange: 1,
+				},
+			};
+		}
+
 		return movesDictionary;
 	}
 }

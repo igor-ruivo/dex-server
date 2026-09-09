@@ -477,11 +477,11 @@
 		"rank": 53
 	},
 	"ursaluna": {
-		"fastMove": "TACKLE",
+		"fastMove": "SCRATCH",
 		"chargedMove": "PLAY_ROUGH",
-		"dps": 16.625,
+		"dps": 16.81081081081081,
 		"speciesId": "ursaluna",
-		"fastMoveDmg": 4,
+		"fastMoveDmg": 5,
 		"chargedMoveDmg": 93,
 		"rank": 54
 	},
@@ -1124,6 +1124,15 @@
 		"chargedMoveDmg": 71,
 		"rank": 125
 	},
+	"illumise": {
+		"fastMove": "INFESTATION",
+		"chargedMove": "DAZZLING_GLEAM",
+		"dps": 11.19371727748691,
+		"speciesId": "illumise",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 63,
+		"rank": 126
+	},
 	"herdier": {
 		"fastMove": "SAND_ATTACK",
 		"chargedMove": "PLAY_ROUGH",
@@ -1131,7 +1140,7 @@
 		"speciesId": "herdier",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 58,
-		"rank": 126
+		"rank": 127
 	},
 	"shiinotic": {
 		"fastMove": "ASTONISH",
@@ -1140,7 +1149,7 @@
 		"speciesId": "shiinotic",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 105,
-		"rank": 127
+		"rank": 128
 	},
 	"delcatty": {
 		"fastMove": "CHARM",
@@ -1149,7 +1158,7 @@
 		"speciesId": "delcatty",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 53,
-		"rank": 128
+		"rank": 129
 	},
 	"sableye": {
 		"fastMove": "FEINT_ATTACK",
@@ -1158,7 +1167,7 @@
 		"speciesId": "sableye",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 63,
-		"rank": 129
+		"rank": 130
 	},
 	"comfey": {
 		"fastMove": "VINE_WHIP",
@@ -1167,7 +1176,7 @@
 		"speciesId": "comfey",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 52,
-		"rank": 130
+		"rank": 131
 	},
 	"cubchoo": {
 		"fastMove": "CHARM",
@@ -1176,7 +1185,7 @@
 		"speciesId": "cubchoo",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 52,
-		"rank": 131
+		"rank": 132
 	},
 	"oddish_shadow": {
 		"fastMove": "ACID",
@@ -1185,7 +1194,7 @@
 		"speciesId": "oddish_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 91,
-		"rank": 132
+		"rank": 133
 	},
 	"cresselia": {
 		"fastMove": "CONFUSION",
@@ -1194,7 +1203,7 @@
 		"speciesId": "cresselia",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 87,
-		"rank": 133
+		"rank": 134
 	},
 	"fidough": {
 		"fastMove": "CHARM",
@@ -1203,7 +1212,7 @@
 		"speciesId": "fidough",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 51,
-		"rank": 134
+		"rank": 135
 	},
 	"glameow_shadow": {
 		"fastMove": "QUICK_ATTACK",
@@ -1212,7 +1221,7 @@
 		"speciesId": "glameow_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 54,
-		"rank": 135
+		"rank": 136
 	},
 	"persian": {
 		"fastMove": "FEINT_ATTACK",
@@ -1221,15 +1230,6 @@
 		"speciesId": "persian",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 60,
-		"rank": 136
-	},
-	"illumise": {
-		"fastMove": "STRUGGLE_BUG",
-		"chargedMove": "DAZZLING_GLEAM",
-		"dps": 10.549019607843135,
-		"speciesId": "illumise",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 63,
 		"rank": 137
 	},
 	"gloom": {

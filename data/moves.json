@@ -6304,5 +6304,26 @@
 			"buffActivationChance": 1,
 			"targetAttackStatStageChange": -2
 		}
+	},
+	"FELL_STINGER_PLUS": {
+		"moveId": "FELL_STINGER_PLUS",
+		"vId": "0311",
+		"type": "bug",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 40,
+		"pvePower": 140,
+		"pvpEnergy": -35,
+		"pveEnergy": -100,
+		"pvpCooldown": 0.5,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Fell Stinger+",
+			"pt_br": "Ferrão Letal+"
+		},
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerAttackStatStageChange": 1
+		}
 	}
 }

@@ -1,2369 +1,2895 @@
 {
-	"reshiram_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FUSION_FLARE",
-		"dps": 36.41525423728814,
-		"speciesId": "reshiram_shadow",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 233,
-		"rank": 1
-	},
 	"delphox_mega": {
 		"fastMove": "FIRE_SPIN",
-		"chargedMove": "MYSTICAL_FIRE_PLUS",
-		"dps": 36.33898305084746,
+		"chargedMove": "BLAST_BURN",
+		"dps": 36.31809628341313,
+		"tdo": 1390.2688707339348,
+		"edps": 34.72083635808144,
 		"speciesId": "delphox_mega",
 		"fastMoveDmg": 22,
-		"chargedMoveDmg": 232,
-		"rank": 2
-	},
-	"blacephalon": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "MIND_BLOWN",
-		"dps": 36.32258064516129,
-		"speciesId": "blacephalon",
-		"fastMoveDmg": 51,
-		"chargedMoveDmg": 205,
-		"rank": 3
+		"chargedMoveDmg": 198,
+		"rank": 1
 	},
 	"blaziken_mega": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 35.36196319018405,
+		"dps": 36.17627945442293,
+		"tdo": 1063.1518586271518,
+		"edps": 33.584370004634366,
 		"speciesId": "blaziken_mega",
 		"fastMoveDmg": 22,
-		"chargedMoveDmg": 198,
+		"chargedMoveDmg": 197,
+		"rank": 2
+	},
+	"reshiram_shadow": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FUSION_FLARE",
+		"dps": 35.83760725342899,
+		"tdo": 1159.5136636609375,
+		"edps": 33.44073537234882,
+		"speciesId": "reshiram_shadow",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 232,
+		"rank": 3
+	},
+	"blacephalon": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "MIND_BLOWN",
+		"dps": 35.76950889435533,
+		"tdo": 713.121850624858,
+		"edps": 32.09575126163797,
+		"speciesId": "blacephalon",
+		"fastMoveDmg": 51,
+		"chargedMoveDmg": 204,
 		"rank": 4
 	},
 	"charizard_mega_y": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 34.08588957055214,
+		"dps": 34.94040086604895,
+		"tdo": 1244.0988495168758,
+		"edps": 32.658218382348494,
 		"speciesId": "charizard_mega_y",
 		"fastMoveDmg": 21,
-		"chargedMoveDmg": 192,
+		"chargedMoveDmg": 191,
 		"rank": 5
+	},
+	"heatran_shadow": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "MAGMA_STORM",
+		"dps": 31.635551329515582,
+		"tdo": 1055.0637619290203,
+		"edps": 29.635477376014556,
+		"speciesId": "heatran_shadow",
+		"fastMoveDmg": 20,
+		"chargedMoveDmg": 114,
+		"rank": 6
 	},
 	"chandelure_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "OVERHEAT",
-		"dps": 33.58088235294118,
+		"dps": 31.616235009035464,
+		"tdo": 688.1376571419335,
+		"edps": 28.71144234175455,
 		"speciesId": "chandelure_shadow",
 		"fastMoveDmg": 22,
-		"chargedMoveDmg": 263,
-		"rank": 6
-	},
-	"darmanitan_standard_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "OVERHEAT",
-		"dps": 32.31617647058823,
-		"speciesId": "darmanitan_standard_shadow",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 255,
+		"chargedMoveDmg": 261,
 		"rank": 7
 	},
 	"blaziken_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 31.0920245398773,
+		"dps": 31.169566270108078,
+		"tdo": 650.7203777261134,
+		"edps": 28.23589735720365,
 		"speciesId": "blaziken_shadow",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 176,
+		"chargedMoveDmg": 175,
 		"rank": 8
 	},
-	"reshiram": {
+	"darmanitan_standard_shadow": {
 		"fastMove": "FIRE_FANG",
-		"chargedMove": "FUSION_FLARE",
-		"dps": 30.89830508474576,
-		"speciesId": "reshiram",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 194,
-		"rank": 9
-	},
-	"moltres_shadow": {
-		"fastMove": "FIRE_SPIN",
 		"chargedMove": "OVERHEAT",
-		"dps": 30.85294117647059,
-		"speciesId": "moltres_shadow",
-		"fastMoveDmg": 20,
-		"chargedMoveDmg": 244,
-		"rank": 10
-	},
-	"heatran_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "MAGMA_STORM",
-		"dps": 30.54054054054054,
-		"speciesId": "heatran_shadow",
-		"fastMoveDmg": 20,
-		"chargedMoveDmg": 115,
-		"rank": 11
+		"dps": 31.00519606806944,
+		"tdo": 647.2888561248626,
+		"edps": 28.100945033225454,
+		"speciesId": "darmanitan_standard_shadow",
+		"fastMoveDmg": 21,
+		"chargedMoveDmg": 254,
+		"rank": 9
 	},
 	"delphox_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 30.319018404907975,
+		"dps": 30.76109821929552,
+		"tdo": 800.7306540204444,
+		"edps": 28.1621978196876,
 		"speciesId": "delphox_shadow",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 169,
-		"rank": 12
+		"chargedMoveDmg": 168,
+		"rank": 10
+	},
+	"moltres_shadow": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "OVERHEAT",
+		"dps": 30.272636483950986,
+		"tdo": 858.6770672462237,
+		"edps": 28.27537294829028,
+		"speciesId": "moltres_shadow",
+		"fastMoveDmg": 20,
+		"chargedMoveDmg": 243,
+		"rank": 11
 	},
 	"charizard_mega_x": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 29.374233128834355,
+		"dps": 30.10248771327619,
+		"tdo": 1076.5603554865675,
+		"edps": 28.339439919834433,
 		"speciesId": "charizard_mega_x",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 166,
+		"chargedMoveDmg": 165,
+		"rank": 12
+	},
+	"emboar_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "BLAST_BURN",
+		"dps": 30.03678977734391,
+		"tdo": 713.4949804941667,
+		"edps": 27.402886596564976,
+		"speciesId": "emboar_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 171,
 		"rank": 13
 	},
-	"entei_shadow": {
+	"reshiram": {
 		"fastMove": "FIRE_FANG",
-		"chargedMove": "OVERHEAT",
-		"dps": 29.191176470588236,
-		"speciesId": "entei_shadow",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 230,
+		"chargedMove": "FUSION_FLARE",
+		"dps": 29.75571489264978,
+		"tdo": 1155.2833578244592,
+		"edps": 28.08437366143328,
+		"speciesId": "reshiram",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 193,
 		"rank": 14
 	},
 	"charizard_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 29.153374233128837,
+		"dps": 29.545393067659884,
+		"tdo": 726.0516320642832,
+		"edps": 27.041967636479363,
 		"speciesId": "charizard_shadow",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 164,
+		"chargedMoveDmg": 163,
 		"rank": 15
-	},
-	"emboar_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "BLAST_BURN",
-		"dps": 29.058823529411764,
-		"speciesId": "emboar_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 172,
-		"rank": 16
 	},
 	"infernape_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 29.042944785276074,
+		"dps": 29.224574465629377,
+		"tdo": 626.5777590302547,
+		"edps": 26.630370329794797,
 		"speciesId": "infernape_shadow",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 163,
+		"rank": 16
+	},
+	"entei_shadow": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "OVERHEAT",
+		"dps": 29.141782033894224,
+		"tdo": 940.46906691177,
+		"edps": 27.38601219775615,
+		"speciesId": "entei_shadow",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 228,
 		"rank": 17
 	},
 	"typhlosion_shadow": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "BLAST_BURN",
-		"dps": 28.752475247524746,
+		"dps": 28.825518740667142,
+		"tdo": 708.361363777876,
+		"edps": 26.39115481225585,
 		"speciesId": "typhlosion_shadow",
 		"fastMoveDmg": 44,
-		"chargedMoveDmg": 164,
+		"chargedMoveDmg": 163,
 		"rank": 18
-	},
-	"magmortar_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 28.669117647058826,
-		"speciesId": "magmortar_shadow",
-		"fastMoveDmg": 20,
-		"chargedMoveDmg": 211,
-		"rank": 19
-	},
-	"ho_oh_shadow": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "SACRED_FIRE",
-		"dps": 28.0327868852459,
-		"speciesId": "ho_oh_shadow",
-		"fastMoveDmg": 47,
-		"chargedMoveDmg": 175,
-		"rank": 20
-	},
-	"chandelure": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 27.72794117647059,
-		"speciesId": "chandelure",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 219,
-		"rank": 21
 	},
 	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 27.615384615384617,
+		"dps": 28.704130677638428,
+		"tdo": 1301.1980066101098,
+		"edps": 27.64605600524398,
 		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 111,
-		"rank": 22
+		"rank": 19
 	},
-	"houndoom_mega": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 27.470588235294116,
-		"speciesId": "houndoom_mega",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 204,
-		"rank": 23
-	},
-	"cinderace": {
+	"magmortar_shadow": {
 		"fastMove": "FIRE_SPIN",
-		"chargedMove": "PYRO_BALL",
-		"dps": 27.440677966101696,
-		"speciesId": "cinderace",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 182,
-		"rank": 24
+		"chargedMove": "FIRE_BLAST",
+		"dps": 27.66142574041322,
+		"tdo": 660.0405514077179,
+		"edps": 25.369060734361792,
+		"speciesId": "magmortar_shadow",
+		"fastMoveDmg": 20,
+		"chargedMoveDmg": 210,
+		"rank": 20
+	},
+	"ho_oh_shadow": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "SACRED_FIRE",
+		"dps": 27.27074249593034,
+		"tdo": 1055.136284991652,
+		"edps": 25.77142334944234,
+		"speciesId": "ho_oh_shadow",
+		"fastMoveDmg": 47,
+		"chargedMoveDmg": 174,
+		"rank": 21
+	},
+	"mewtwo_mega_x": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 27.184774682077503,
+		"tdo": 1190.9008561375572,
+		"edps": 25.782966416728815,
+		"speciesId": "mewtwo_mega_x",
+		"fastMoveDmg": 24,
+		"chargedMoveDmg": 107,
+		"rank": 22
 	},
 	"volcarona": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "OVERHEAT",
-		"dps": 27.397058823529413,
+		"dps": 27.043085292083653,
+		"tdo": 916.8499674570861,
+		"edps": 25.481150398655487,
 		"speciesId": "volcarona",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 214,
+		"chargedMoveDmg": 213,
+		"rank": 23
+	},
+	"houndoom_mega": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 26.971125186117035,
+		"tdo": 863.1396460456921,
+		"edps": 25.374256599845808,
+		"speciesId": "houndoom_mega",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 203,
+		"rank": 24
+	},
+	"groudon_primal": {
+		"fastMove": "MUD_SHOT",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 26.815735741224522,
+		"tdo": 1381.6645992780561,
+		"edps": 25.93481818212436,
+		"speciesId": "groudon_primal",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 245,
 		"rank": 25
 	},
 	"darmanitan_standard": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "OVERHEAT",
-		"dps": 27.330882352941178,
+		"dps": 26.790280674938508,
+		"tdo": 671.1539880831364,
+		"edps": 24.634402948704444,
 		"speciesId": "darmanitan_standard",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 213,
+		"chargedMoveDmg": 212,
 		"rank": 26
+	},
+	"cinderace": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "PYRO_BALL",
+		"dps": 26.62307320513491,
+		"tdo": 761.0242606350522,
+		"edps": 24.613524377065485,
+		"speciesId": "cinderace",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 181,
+		"rank": 27
+	},
+	"chandelure": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "OVERHEAT",
+		"dps": 26.60278176597384,
+		"tdo": 694.8218841966005,
+		"edps": 24.515780314666245,
+		"speciesId": "chandelure",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 218,
+		"rank": 28
 	},
 	"salamence_shadow": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 26.941176470588236,
+		"dps": 26.5261539288026,
+		"tdo": 732.7194297039299,
+		"edps": 24.490609967411054,
 		"speciesId": "salamence_shadow",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 196,
-		"rank": 27
-	},
-	"arcanine_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 26.875,
-		"speciesId": "arcanine_shadow",
-		"fastMoveDmg": 19,
 		"chargedMoveDmg": 195,
-		"rank": 28
-	},
-	"mewtwo_mega_x": {
-		"fastMove": "COUNTER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 26.794117647058826,
-		"speciesId": "mewtwo_mega_x",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 108,
 		"rank": 29
 	},
-	"groudon_primal": {
-		"fastMove": "MUD_SHOT",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 26.783783783783786,
-		"speciesId": "groudon_primal",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 247,
+	"heatran": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "MAGMA_STORM",
+		"dps": 26.51725297306056,
+		"tdo": 1061.2387376011604,
+		"edps": 25.097484754959666,
+		"speciesId": "heatran",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 95,
 		"rank": 30
 	},
 	"blaziken": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 26.049079754601227,
+		"dps": 26.462013850094735,
+		"tdo": 662.9302000861936,
+		"edps": 24.356569202906897,
 		"speciesId": "blaziken",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 147,
+		"chargedMoveDmg": 146,
 		"rank": 31
-	},
-	"moltres": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 26.000000000000004,
-		"speciesId": "moltres",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 204,
-		"rank": 32
-	},
-	"houndoom_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 25.941176470588236,
-		"speciesId": "houndoom_shadow",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 192,
-		"rank": 33
-	},
-	"flareon": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 25.73529411764706,
-		"speciesId": "flareon",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 200,
-		"rank": 34
-	},
-	"heatran": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "MAGMA_STORM",
-		"dps": 25.675675675675674,
-		"speciesId": "heatran",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 96,
-		"rank": 35
-	},
-	"kyurem_white": {
-		"fastMove": "ICE_FANG",
-		"chargedMove": "FUSION_FLARE",
-		"dps": 25.473684210526315,
-		"speciesId": "kyurem_white",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 182,
-		"rank": 36
-	},
-	"camerupt_mega": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 25.473372781065088,
-		"speciesId": "camerupt_mega",
-		"fastMoveDmg": 41,
-		"chargedMoveDmg": 205,
-		"rank": 37
-	},
-	"volcanion": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 25.473372781065088,
-		"speciesId": "volcanion",
-		"fastMoveDmg": 41,
-		"chargedMoveDmg": 205,
-		"rank": 38
 	},
 	"delphox": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 25.386503067484664,
+		"dps": 25.882319054827942,
+		"tdo": 808.4796041642821,
+		"edps": 24.017438069819985,
 		"speciesId": "delphox",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 141,
-		"rank": 39
+		"chargedMoveDmg": 140,
+		"rank": 32
 	},
-	"salamence_mega": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 24.544117647058826,
-		"speciesId": "salamence_mega",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 182,
-		"rank": 40
-	},
-	"entei": {
-		"fastMove": "FIRE_FANG",
+	"moltres": {
+		"fastMove": "FIRE_SPIN",
 		"chargedMove": "OVERHEAT",
-		"dps": 24.47058823529412,
-		"speciesId": "entei",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 192,
-		"rank": 41
-	},
-	"rapidash_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 24.34558823529412,
-		"speciesId": "rapidash_shadow",
+		"dps": 25.73182686350804,
+		"tdo": 875.853565839436,
+		"edps": 24.274371065398793,
+		"speciesId": "moltres",
 		"fastMoveDmg": 17,
-		"chargedMoveDmg": 179,
-		"rank": 42
+		"chargedMoveDmg": 203,
+		"rank": 33
 	},
-	"charizard": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "BLAST_BURN",
-		"dps": 24.33128834355828,
-		"speciesId": "charizard",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 137,
-		"rank": 43
-	},
-	"infernape": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "BLAST_BURN",
-		"dps": 24.22085889570552,
-		"speciesId": "infernape",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 136,
-		"rank": 44
-	},
-	"magmortar": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 24.147058823529413,
-		"speciesId": "magmortar",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 176,
-		"rank": 45
-	},
-	"typhlosion": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "BLAST_BURN",
-		"dps": 24.07920792079208,
-		"speciesId": "typhlosion",
-		"fastMoveDmg": 37,
-		"chargedMoveDmg": 137,
-		"rank": 46
-	},
-	"camerupt_shadow": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 24.03550295857988,
-		"speciesId": "camerupt_shadow",
-		"fastMoveDmg": 39,
-		"chargedMoveDmg": 192,
-		"rank": 47
-	},
-	"mewtwo_shadow": {
-		"fastMove": "PSYCHO_CUT",
+	"arcanine_shadow": {
+		"fastMove": "FIRE_FANG",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 24.000000000000004,
-		"speciesId": "mewtwo_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 98,
-		"rank": 48
+		"dps": 25.67288547778757,
+		"tdo": 672.4760248269132,
+		"edps": 23.68642882723373,
+		"speciesId": "arcanine_shadow",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 90,
+		"rank": 34
 	},
 	"emboar": {
 		"fastMove": "EMBER",
 		"chargedMove": "BLAST_BURN",
-		"dps": 24,
+		"dps": 25.069271027441722,
+		"tdo": 714.5956631500394,
+		"edps": 23.243486287686643,
 		"speciesId": "emboar",
 		"fastMoveDmg": 12,
-		"chargedMoveDmg": 144,
-		"rank": 49
+		"chargedMoveDmg": 143,
+		"rank": 35
 	},
-	"incineroar": {
+	"houndoom_shadow": {
 		"fastMove": "FIRE_FANG",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 25.013096909497133,
+		"tdo": 507.4801282458539,
+		"edps": 22.567052170277538,
+		"speciesId": "houndoom_shadow",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 89,
+		"rank": 36
+	},
+	"mewtwo_shadow": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 24.852660721038994,
+		"tdo": 731.3932514010711,
+		"edps": 23.05716107656981,
+		"speciesId": "mewtwo_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 98,
+		"rank": 37
+	},
+	"flareon": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "OVERHEAT",
+		"dps": 24.84265451678528,
+		"tdo": 670.4677060834578,
+		"edps": 22.977933804780946,
+		"speciesId": "flareon",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 199,
+		"rank": 38
+	},
+	"charizard": {
+		"fastMove": "FIRE_SPIN",
 		"chargedMove": "BLAST_BURN",
-		"dps": 23.779141104294478,
-		"speciesId": "incineroar",
+		"dps": 24.827793260072585,
+		"tdo": 732.1450283690601,
+		"edps": 23.03575541150691,
+		"speciesId": "charizard",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 132,
-		"rank": 50
+		"chargedMoveDmg": 136,
+		"rank": 39
 	},
-	"lucario_mega": {
-		"fastMove": "FORCE_PALM",
-		"chargedMove": "BLAZE_KICK",
-		"dps": 23.714285714285715,
-		"speciesId": "lucario_mega",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 52,
-		"rank": 51
-	},
-	"garchomp_mega": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 23.363636363636363,
-		"speciesId": "garchomp_mega",
+	"infernape": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "BLAST_BURN",
+		"dps": 24.681256612158464,
+		"tdo": 635.0023167608003,
+		"edps": 22.805064452772804,
+		"speciesId": "infernape",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 198,
-		"rank": 52
-	},
-	"palkia_shadow": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 23.363636363636363,
-		"speciesId": "palkia_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 198,
-		"rank": 53
-	},
-	"ho_oh": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "SACRED_FIRE",
-		"dps": 23.318032786885244,
-		"speciesId": "ho_oh",
-		"fastMoveDmg": 39,
-		"chargedMoveDmg": 146,
-		"rank": 54
-	},
-	"alakazam_mega": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 23.27741935483871,
-		"speciesId": "alakazam_mega",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 77,
-		"rank": 55
+		"chargedMoveDmg": 136,
+		"rank": 40
 	},
 	"victini": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "V_CREATE",
-		"dps": 23.15277777777778,
+		"dps": 24.60763788791197,
+		"tdo": 1039.059384517412,
+		"edps": 23.38026083743206,
 		"speciesId": "victini",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 113,
+		"rank": 41
+	},
+	"volcanion": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "OVERHEAT",
+		"dps": 24.540156202449126,
+		"tdo": 910.3525558349129,
+		"edps": 23.247053848361883,
+		"speciesId": "volcanion",
+		"fastMoveDmg": 41,
+		"chargedMoveDmg": 203,
+		"rank": 42
+	},
+	"incineroar": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "BLAST_BURN",
+		"dps": 24.53237804939983,
+		"tdo": 844.280669393129,
+		"edps": 23.204122660757047,
+		"speciesId": "incineroar",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 131,
+		"rank": 43
+	},
+	"entei": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "OVERHEAT",
+		"dps": 24.52438173126211,
+		"tdo": 949.7465858116417,
+		"edps": 23.268937840294072,
+		"speciesId": "entei",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 190,
+		"rank": 44
+	},
+	"kyurem_white": {
+		"fastMove": "ICE_FANG",
+		"chargedMove": "FUSION_FLARE",
+		"dps": 24.5121568695021,
+		"tdo": 987.859265112765,
+		"edps": 23.25793228340189,
+		"speciesId": "kyurem_white",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 181,
+		"rank": 45
+	},
+	"salamence_mega": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 24.51098979671647,
+		"tdo": 1180.9624311163213,
+		"edps": 23.365563614039946,
+		"speciesId": "salamence_mega",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 181,
+		"rank": 46
+	},
+	"typhlosion": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "BLAST_BURN",
+		"dps": 24.357924764368533,
+		"tdo": 718.2891097413583,
+		"edps": 22.63071472491715,
+		"speciesId": "typhlosion",
+		"fastMoveDmg": 37,
+		"chargedMoveDmg": 136,
+		"rank": 47
+	},
+	"lucario_mega": {
+		"fastMove": "FORCE_PALM",
+		"chargedMove": "BLAZE_KICK",
+		"dps": 24.248519792127794,
+		"tdo": 675.3522524195415,
+		"edps": 22.468730501636276,
+		"speciesId": "lucario_mega",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 52,
+		"rank": 48
+	},
+	"camerupt_mega": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "OVERHEAT",
+		"dps": 24.15448622904766,
+		"tdo": 701.0589100938736,
+		"edps": 22.421435790526836,
+		"speciesId": "camerupt_mega",
+		"fastMoveDmg": 41,
+		"chargedMoveDmg": 204,
+		"rank": 49
+	},
+	"magmortar": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 23.595335206005615,
+		"tdo": 675.6215169440235,
+		"edps": 21.90680073747849,
+		"speciesId": "magmortar",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 175,
+		"rank": 50
+	},
+	"garchomp_mega": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 23.55307684794345,
+		"tdo": 1110.1137062804062,
+		"edps": 22.45981484169876,
+		"speciesId": "garchomp_mega",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 197,
+		"rank": 51
+	},
+	"alakazam_mega": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 23.504796121662032,
+		"tdo": 657.710988465704,
+		"edps": 21.828734907270636,
+		"speciesId": "alakazam_mega",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 76,
+		"rank": 52
+	},
+	"skeledirge": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "BLAST_BURN",
+		"dps": 23.07549226963513,
+		"tdo": 860.7370460124584,
+		"edps": 21.896521886101016,
+		"speciesId": "skeledirge",
+		"fastMoveDmg": 34,
+		"chargedMoveDmg": 127,
+		"rank": 53
+	},
+	"rapidash_shadow": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 23.008511733697596,
+		"tdo": 472.12681305757263,
+		"edps": 20.606302003730157,
+		"speciesId": "rapidash_shadow",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 178,
+		"rank": 54
+	},
+	"palkia_shadow": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 22.900073721018092,
+		"tdo": 700.7634300449961,
+		"edps": 21.336527921489544,
+		"speciesId": "palkia_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 197,
+		"rank": 55
+	},
+	"ho_oh": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "SACRED_FIRE",
+		"dps": 22.752927278230683,
+		"tdo": 1056.404245315337,
+		"edps": 21.699636095215208,
+		"speciesId": "ho_oh",
+		"fastMoveDmg": 39,
+		"chargedMoveDmg": 145,
 		"rank": 56
 	},
-	"typhlosion_hisuian": {
-		"fastMove": "EMBER",
-		"chargedMove": "OVERHEAT",
-		"dps": 23.142857142857142,
-		"speciesId": "typhlosion_hisuian",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 194,
+	"arcanine_hisuian": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 22.54091725245769,
+		"tdo": 734.9159719704907,
+		"edps": 21.05391684699457,
+		"speciesId": "arcanine_hisuian",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 77,
 		"rank": 57
 	},
 	"pyroar": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "OVERHEAT",
-		"dps": 23.007352941176467,
+		"dps": 22.471464733904227,
+		"tdo": 619.3549329236108,
+		"edps": 20.6181817569868,
 		"speciesId": "pyroar",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 181,
+		"chargedMoveDmg": 180,
 		"rank": 58
 	},
 	"salamence": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 22.551470588235293,
+		"dps": 22.371376193453795,
+		"tdo": 741.544788098597,
+		"edps": 20.905933422787495,
 		"speciesId": "salamence",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 163,
-		"rank": 59
-	},
-	"arcanine": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 22.485294117647058,
-		"speciesId": "arcanine",
-		"fastMoveDmg": 16,
 		"chargedMoveDmg": 162,
-		"rank": 60
-	},
-	"skeledirge": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "BLAST_BURN",
-		"dps": 22.356435643564353,
-		"speciesId": "skeledirge",
-		"fastMoveDmg": 34,
-		"chargedMoveDmg": 128,
-		"rank": 61
-	},
-	"manectric_mega": {
-		"fastMove": "SNARL",
-		"chargedMove": "OVERHEAT",
-		"dps": 22.342105263157894,
-		"speciesId": "manectric_mega",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 192,
-		"rank": 62
+		"rank": 59
 	},
 	"rampardos_shadow": {
 		"fastMove": "SMACK_DOWN",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 22.328125000000004,
+		"dps": 22.334786777703158,
+		"tdo": 422.347735674653,
+		"edps": 19.95747504562161,
 		"speciesId": "rampardos_shadow",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 97,
-		"rank": 63
+		"chargedMoveDmg": 96,
+		"rank": 60
 	},
-	"groudon_shadow": {
-		"fastMove": "MUD_SHOT",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 22.243243243243246,
-		"speciesId": "groudon_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 191,
-		"rank": 64
-	},
-	"magmar_shadow": {
+	"typhlosion_hisuian": {
 		"fastMove": "EMBER",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 22,
-		"speciesId": "magmar_shadow",
+		"chargedMove": "OVERHEAT",
+		"dps": 22.3183977414705,
+		"tdo": 627.3679983359497,
+		"edps": 20.77299766118713,
+		"speciesId": "typhlosion_hisuian",
 		"fastMoveDmg": 13,
-		"chargedMoveDmg": 178,
-		"rank": 65
-	},
-	"arcanine_hisuian": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 21.955882352941178,
-		"speciesId": "arcanine_hisuian",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 77,
-		"rank": 66
-	},
-	"salazzle": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 21.85207100591716,
-		"speciesId": "salazzle",
-		"fastMoveDmg": 38,
-		"chargedMoveDmg": 163,
-		"rank": 67
+		"chargedMoveDmg": 193,
+		"rank": 61
 	},
 	"ceruledge": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 21.822485207100588,
+		"dps": 22.091264187110184,
+		"tdo": 690.059360123368,
+		"edps": 20.632696658246715,
 		"speciesId": "ceruledge",
 		"fastMoveDmg": 39,
 		"chargedMoveDmg": 79,
-		"rank": 68
+		"rank": 62
+	},
+	"groudon_shadow": {
+		"fastMove": "MUD_SHOT",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 22.05247435664956,
+		"tdo": 767.1707307772792,
+		"edps": 20.655586839416372,
+		"speciesId": "groudon_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 190,
+		"rank": 63
 	},
 	"garchomp_shadow": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 21.818181818181817,
+		"dps": 21.866220905842464,
+		"tdo": 753.7499087256091,
+		"edps": 20.492094593107144,
 		"speciesId": "garchomp_shadow",
 		"fastMoveDmg": 14,
-		"chargedMoveDmg": 185,
-		"rank": 69
+		"chargedMoveDmg": 184,
+		"rank": 64
+	},
+	"ninetales_shadow": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 21.742206474578154,
+		"tdo": 558.3338462810465,
+		"edps": 19.949398210201707,
+		"speciesId": "ninetales_shadow",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 58,
+		"rank": 65
 	},
 	"armarouge": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 21.69230769230769,
+		"dps": 21.643543716780496,
+		"tdo": 719.399669448275,
+		"edps": 20.26897411132581,
 		"speciesId": "armarouge",
+		"fastMoveDmg": 38,
+		"chargedMoveDmg": 77,
+		"rank": 66
+	},
+	"camerupt_shadow": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "OVERHEAT",
+		"dps": 21.53681532103518,
+		"tdo": 397.25437290282434,
+		"edps": 19.048059158313556,
+		"speciesId": "camerupt_shadow",
 		"fastMoveDmg": 39,
-		"chargedMoveDmg": 78,
+		"chargedMoveDmg": 191,
+		"rank": 67
+	},
+	"arcanine": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 21.482994315979848,
+		"tdo": 675.2711552907808,
+		"edps": 20.0742294305807,
+		"speciesId": "arcanine",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 75,
+		"rank": 68
+	},
+	"manectric_mega": {
+		"fastMove": "SNARL",
+		"chargedMove": "OVERHEAT",
+		"dps": 21.2354345338491,
+		"tdo": 603.8852205799659,
+		"edps": 19.57288007957438,
+		"speciesId": "manectric_mega",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 191,
+		"rank": 69
+	},
+	"alakazam_shadow": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 21.082171250079842,
+		"tdo": 403.02417358463697,
+		"edps": 18.691549945061222,
+		"speciesId": "alakazam_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 68,
 		"rank": 70
 	},
 	"houndoom": {
 		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 21.61764705882353,
+		"chargedMove": "FLAMETHROWER",
+		"dps": 21.05515326404052,
+		"tdo": 512.6149238409886,
+		"edps": 19.29472215775947,
 		"speciesId": "houndoom",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 160,
+		"chargedMoveDmg": 74,
 		"rank": 71
 	},
 	"genesect_burn": {
 		"fastMove": "FURY_CUTTER",
 		"chargedMove": "TECHNO_BLAST_BURN",
-		"dps": 21.575757575757574,
+		"dps": 20.864099971514513,
+		"tdo": 658.6616558011057,
+		"edps": 19.532819926455403,
 		"speciesId": "genesect_burn",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 128,
+		"chargedMoveDmg": 127,
 		"rank": 72
 	},
-	"ninetales_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 21.477941176470587,
-		"speciesId": "ninetales_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 169,
+	"magmar_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 20.798577342835475,
+		"tdo": 407.4902345600215,
+		"edps": 18.491051903805385,
+		"speciesId": "magmar_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 82,
 		"rank": 73
 	},
-	"alakazam_shadow": {
+	"mewtwo": {
 		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 21.24590163934426,
-		"speciesId": "alakazam_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 69,
+		"chargedMove": "FLAMETHROWER",
+		"dps": 20.616735114701193,
+		"tdo": 728.0801859195,
+		"edps": 19.365726544052148,
+		"speciesId": "mewtwo",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 82,
 		"rank": 74
-	},
-	"talonflame_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 21.220588235294116,
-		"speciesId": "talonflame_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 154,
-		"rank": 75
-	},
-	"manectric_shadow": {
-		"fastMove": "THUNDER_FANG",
-		"chargedMove": "OVERHEAT",
-		"dps": 20.973684210526315,
-		"speciesId": "manectric_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 176,
-		"rank": 76
 	},
 	"mienshao": {
 		"fastMove": "FORCE_PALM",
 		"chargedMove": "BLAZE_KICK",
-		"dps": 20.428571428571427,
+		"dps": 20.463762121351525,
+		"tdo": 404.25179579118293,
+		"edps": 18.203816167873164,
 		"speciesId": "mienshao",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 44,
-		"rank": 77
+		"rank": 75
 	},
-	"rapidash": {
+	"talonflame_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 20.15441176470588,
-		"speciesId": "rapidash",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 149,
-		"rank": 78
-	},
-	"simisear": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 20.08823529411765,
-		"speciesId": "simisear",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 148,
-		"rank": 79
+		"dps": 20.372200842259435,
+		"tdo": 452.69610208512137,
+		"edps": 18.4207866252853,
+		"speciesId": "talonflame_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 153,
+		"rank": 76
 	},
 	"tyranitar_mega": {
 		"fastMove": "BITE",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 20.060606060606062,
+		"dps": 20.32390399589759,
+		"tdo": 1109.910723652282,
+		"edps": 19.50465513640256,
 		"speciesId": "tyranitar_mega",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 181,
-		"rank": 80
-	},
-	"palkia_origin": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 20.03030303030303,
-		"speciesId": "palkia_origin",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 168,
-		"rank": 81
-	},
-	"tyranitar_shadow": {
-		"fastMove": "SMACK_DOWN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 19.890625,
-		"speciesId": "tyranitar_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 178,
-		"rank": 82
-	},
-	"mewtwo": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 19.883495145631066,
-		"speciesId": "mewtwo",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 82,
-		"rank": 83
-	},
-	"camerupt": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 19.88165680473373,
-		"speciesId": "camerupt",
-		"fastMoveDmg": 32,
-		"chargedMoveDmg": 160,
-		"rank": 84
-	},
-	"palkia": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 19.848484848484848,
-		"speciesId": "palkia",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 165,
-		"rank": 85
-	},
-	"electivire_shadow": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 19.846153846153847,
-		"speciesId": "electivire_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 82,
-		"rank": 86
-	},
-	"darmanitan_galarian_standard": {
-		"fastMove": "ICE_FANG",
-		"chargedMove": "OVERHEAT",
-		"dps": 19.82608695652174,
-		"speciesId": "darmanitan_galarian_standard",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 178,
-		"rank": 87
+		"chargedMoveDmg": 180,
+		"rank": 77
 	},
 	"solgaleo": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 19.558823529411764,
+		"dps": 20.29584308241418,
+		"tdo": 913.4442378278692,
+		"edps": 19.40321911728511,
 		"speciesId": "solgaleo",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 70,
-		"rank": 88
+		"rank": 78
 	},
-	"hitmonlee_shadow": {
-		"fastMove": "DOUBLE_KICK",
-		"chargedMove": "BLAZE_KICK",
-		"dps": 19.456521739130434,
-		"speciesId": "hitmonlee_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 46,
-		"rank": 89
-	},
-	"heatmor": {
-		"fastMove": "FIRE_SPIN",
+	"electivire_shadow": {
+		"fastMove": "THUNDER_SHOCK",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 19.294117647058822,
-		"speciesId": "heatmor",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 68,
-		"rank": 90
+		"dps": 20.090784114830555,
+		"tdo": 456.3219294929508,
+		"edps": 18.212481838644436,
+		"speciesId": "electivire_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 82,
+		"rank": 79
 	},
-	"azelf": {
-		"fastMove": "EXTRASENSORY",
+	"tyranitar_shadow": {
+		"fastMove": "BITE",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 19.09027777777778,
-		"speciesId": "azelf",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 159,
-		"rank": 91
-	},
-	"roserade": {
-		"fastMove": "MAGICAL_LEAF",
-		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 19.08,
-		"speciesId": "roserade",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 57,
-		"rank": 92
+		"dps": 20.002863182269785,
+		"tdo": 694.4672967819986,
+		"edps": 18.799521557902263,
+		"speciesId": "tyranitar_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 177,
+		"rank": 80
 	},
 	"eternatus": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 19.060606060606062,
+		"dps": 19.984622224141898,
+		"tdo": 915.390710435869,
+		"edps": 19.118579681380915,
 		"speciesId": "eternatus",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 76,
-		"rank": 93
+		"rank": 81
 	},
-	"rampardos": {
-		"fastMove": "SMACK_DOWN",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 19.015625,
-		"speciesId": "rampardos",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 81,
-		"rank": 94
-	},
-	"rotom_heat": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "OVERHEAT",
-		"dps": 18.923076923076923,
-		"speciesId": "rotom_heat",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 168,
-		"rank": 95
-	},
-	"lopunny_mega": {
-		"fastMove": "POUND",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 18.79245283018868,
-		"speciesId": "lopunny_mega",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 60,
-		"rank": 96
-	},
-	"enamorus_therian": {
-		"fastMove": "FAIRY_WIND",
-		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 18.576271186440678,
-		"speciesId": "enamorus_therian",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 64,
-		"rank": 97
-	},
-	"ponyta_shadow": {
-		"fastMove": "EMBER",
+	"salazzle": {
+		"fastMove": "INCINERATE",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 18.5,
-		"speciesId": "ponyta_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 149,
-		"rank": 98
+		"dps": 19.908036837686133,
+		"tdo": 415.0582255358328,
+		"edps": 17.783794251276653,
+		"speciesId": "salazzle",
+		"fastMoveDmg": 37,
+		"chargedMoveDmg": 162,
+		"rank": 82
 	},
-	"lucario": {
-		"fastMove": "FORCE_PALM",
-		"chargedMove": "BLAZE_KICK",
-		"dps": 18.448979591836736,
-		"speciesId": "lucario",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 40,
-		"rank": 99
-	},
-	"magmar": {
-		"fastMove": "EMBER",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 18.428571428571427,
-		"speciesId": "magmar",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 148,
-		"rank": 100
-	},
-	"garchomp": {
+	"palkia_origin": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 18.424242424242426,
-		"speciesId": "garchomp",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 154,
-		"rank": 101
+		"dps": 19.8147477863954,
+		"tdo": 752.928059691638,
+		"edps": 18.679673211889387,
+		"speciesId": "palkia_origin",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 167,
+		"rank": 83
 	},
-	"mismagius_shadow": {
-		"fastMove": "SUCKER_PUNCH",
-		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 18.31578947368421,
-		"speciesId": "mismagius_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 65,
-		"rank": 102
-	},
-	"groudon": {
-		"fastMove": "MUD_SHOT",
+	"palkia": {
+		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 18.2972972972973,
-		"speciesId": "groudon",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 159,
-		"rank": 103
+		"dps": 19.615849337282015,
+		"tdo": 720.3157814500503,
+		"edps": 18.48001243308161,
+		"speciesId": "palkia",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 164,
+		"rank": 84
+	},
+	"simisear": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 19.57176037795197,
+		"tdo": 443.53441105677337,
+		"edps": 17.76387481171781,
+		"speciesId": "simisear",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 69,
+		"rank": 85
+	},
+	"heatmor": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 19.568283948862714,
+		"tdo": 468.30317511122513,
+		"edps": 17.782066087731558,
+		"speciesId": "heatmor",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 68,
+		"rank": 86
 	},
 	"ursaluna_shadow": {
 		"fastMove": "SCRATCH",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 18.20408163265306,
+		"dps": 19.478049757805444,
+		"tdo": 727.7433230087863,
+		"edps": 18.357659363260243,
 		"speciesId": "ursaluna_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 62,
-		"rank": 104
+		"rank": 87
 	},
-	"charmeleon_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 18.161764705882355,
-		"speciesId": "charmeleon_shadow",
-		"fastMoveDmg": 13,
+	"roserade": {
+		"fastMove": "MAGICAL_LEAF",
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 19.442958777273255,
+		"tdo": 515.5521017849228,
+		"edps": 17.93212652445654,
+		"speciesId": "roserade",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 57,
+		"rank": 88
+	},
+	"rapidash": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 19.37914583561037,
+		"tdo": 477.1841743621136,
+		"edps": 17.64647912700785,
+		"speciesId": "rapidash",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 148,
+		"rank": 89
+	},
+	"hitmonlee_shadow": {
+		"fastMove": "DOUBLE_KICK",
+		"chargedMove": "BLAZE_KICK",
+		"dps": 19.368340324770184,
+		"tdo": 375.1135936628107,
+		"edps": 17.29186859126399,
+		"speciesId": "hitmonlee_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 46,
+		"rank": 90
+	},
+	"lopunny_mega": {
+		"fastMove": "POUND",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 19.124053703810308,
+		"tdo": 609.2472416900957,
+		"edps": 17.765091451893834,
+		"speciesId": "lopunny_mega",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 59,
+		"rank": 91
+	},
+	"enamorus_therian": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "MYSTICAL_FIRE",
+		"dps": 18.992527721742043,
+		"tdo": 624.3325687655991,
+		"edps": 17.65153839272142,
+		"speciesId": "enamorus_therian",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 63,
+		"rank": 92
+	},
+	"lucario": {
+		"fastMove": "FORCE_PALM",
+		"chargedMove": "BLAZE_KICK",
+		"dps": 18.735204787635944,
+		"tdo": 436.6636971860084,
+		"edps": 17.05259026186651,
+		"speciesId": "lucario",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 40,
+		"rank": 93
+	},
+	"mismagius_shadow": {
+		"fastMove": "SUCKER_PUNCH",
+		"chargedMove": "MYSTICAL_FIRE",
+		"dps": 18.70647536218065,
+		"tdo": 417.4863523781707,
+		"edps": 17.009476177934612,
+		"speciesId": "mismagius_shadow",
+		"fastMoveDmg": 4,
 		"chargedMoveDmg": 65,
-		"rank": 105
+		"rank": 94
+	},
+	"rampardos": {
+		"fastMove": "SMACK_DOWN",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 18.64002670088774,
+		"tdo": 422.97641593590555,
+		"edps": 16.954519034227918,
+		"speciesId": "rampardos",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 80,
+		"rank": 95
+	},
+	"darmanitan_galarian_standard": {
+		"fastMove": "ICE_FANG",
+		"chargedMove": "OVERHEAT",
+		"dps": 18.572574971818156,
+		"tdo": 465.28283568785014,
+		"edps": 16.956002910706633,
+		"speciesId": "darmanitan_galarian_standard",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 177,
+		"rank": 96
 	},
 	"ninetales": {
 		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 18.15441176470588,
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 18.55253284561902,
+		"tdo": 571.7087149403235,
+		"edps": 17.23118041134462,
 		"speciesId": "ninetales",
 		"fastMoveDmg": 12,
-		"chargedMoveDmg": 141,
-		"rank": 106
+		"chargedMoveDmg": 49,
+		"rank": 97
 	},
-	"revavroom": {
-		"fastMove": "LICK",
+	"manectric_shadow": {
+		"fastMove": "THUNDER_FANG",
 		"chargedMove": "OVERHEAT",
-		"dps": 18.054054054054056,
-		"speciesId": "revavroom",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 156,
-		"rank": 107
-	},
-	"pignite_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 18,
-		"speciesId": "pignite_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 71,
-		"rank": 108
-	},
-	"turtonator": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 17.955882352941174,
-		"speciesId": "turtonator",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 138,
-		"rank": 109
-	},
-	"braixen_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 17.857142857142858,
-		"speciesId": "braixen_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 70,
-		"rank": 110
-	},
-	"zoroark": {
-		"fastMove": "SNARL",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 17.723684210526315,
-		"speciesId": "zoroark",
+		"dps": 18.53848585651135,
+		"tdo": 321.56802596328055,
+		"edps": 16.33759893635202,
+		"speciesId": "manectric_shadow",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 69,
-		"rank": 111
+		"chargedMoveDmg": 175,
+		"rank": 98
 	},
-	"zapdos_shadow": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 17.661971830985916,
-		"speciesId": "zapdos_shadow",
+	"garchomp": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 18.531651875949702,
+		"tdo": 766.5649146549462,
+		"edps": 17.53512379277933,
+		"speciesId": "garchomp",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 153,
+		"rank": 99
+	},
+	"camerupt": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "OVERHEAT",
+		"dps": 18.335763390542315,
+		"tdo": 405.8517865442425,
+		"edps": 16.51848877955484,
+		"speciesId": "camerupt",
+		"fastMoveDmg": 32,
+		"chargedMoveDmg": 159,
+		"rank": 100
+	},
+	"groudon": {
+		"fastMove": "MUD_SHOT",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 18.220137191490565,
+		"tdo": 760.6197634123467,
+		"edps": 17.25595897576889,
+		"speciesId": "groudon",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 122,
-		"rank": 112
+		"chargedMoveDmg": 158,
+		"rank": 101
 	},
-	"zoroark_hisuian": {
-		"fastMove": "SNARL",
+	"azelf": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 18.202868211672474,
+		"tdo": 462.6830898465197,
+		"edps": 16.647319532253338,
+		"speciesId": "azelf",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 158,
+		"rank": 102
+	},
+	"rotom_heat": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "OVERHEAT",
+		"dps": 17.913520732067038,
+		"tdo": 497.04120711090286,
+		"edps": 16.440944712276384,
+		"speciesId": "rotom_heat",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 167,
+		"rank": 103
+	},
+	"magmar": {
+		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 17.57894736842105,
-		"speciesId": "zoroark_hisuian",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 72,
-		"rank": 113
+		"dps": 17.808697800999717,
+		"tdo": 418.69425671535356,
+		"edps": 16.263952153278854,
+		"speciesId": "magmar",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 69,
+		"rank": 104
 	},
-	"staraptor_shadow": {
-		"fastMove": "GUST",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 17.53846153846154,
-		"speciesId": "staraptor_shadow",
-		"fastMoveDmg": 23,
-		"chargedMoveDmg": 113,
-		"rank": 114
+	"marshadow": {
+		"fastMove": "COUNTER",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 17.71234540023492,
+		"tdo": 630.5720896901428,
+		"edps": 16.724888714590524,
+		"speciesId": "marshadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 56,
+		"rank": 105
 	},
 	"alakazam": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 17.53548387096774,
+		"dps": 17.701998417599953,
+		"tdo": 406.08721846310374,
+		"edps": 16.002356301986172,
 		"speciesId": "alakazam",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 57,
-		"rank": 115
+		"rank": 106
 	},
 	"electivire": {
 		"fastMove": "THUNDER_SHOCK",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 17.512820512820515,
+		"dps": 17.685279838663888,
+		"tdo": 482.0228795222732,
+		"edps": 16.23090299383131,
 		"speciesId": "electivire",
 		"fastMoveDmg": 4,
+		"chargedMoveDmg": 68,
+		"rank": 107
+	},
+	"revavroom": {
+		"fastMove": "LICK",
+		"chargedMove": "OVERHEAT",
+		"dps": 17.63506479177815,
+		"tdo": 518.2609210549138,
+		"edps": 16.401004912196864,
+		"speciesId": "revavroom",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 155,
+		"rank": 108
+	},
+	"pignite_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 17.620517689227366,
+		"tdo": 308.55144255454263,
+		"edps": 15.443533278660848,
+		"speciesId": "pignite_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 70,
+		"rank": 109
+	},
+	"charmeleon_shadow": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 17.43778331335458,
+		"tdo": 265.9106872507224,
+		"edps": 15.042101672816045,
+		"speciesId": "charmeleon_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 65,
+		"rank": 110
+	},
+	"turtonator": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "OVERHEAT",
+		"dps": 17.415046351981296,
+		"tdo": 531.0466596232073,
+		"edps": 16.21053551513236,
+		"speciesId": "turtonator",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 137,
+		"rank": 111
+	},
+	"zoroark": {
+		"fastMove": "SNARL",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 17.384111321136302,
+		"tdo": 327.28119288218676,
+		"edps": 15.450269096186991,
+		"speciesId": "zoroark",
+		"fastMoveDmg": 9,
 		"chargedMoveDmg": 69,
-		"rank": 116
+		"rank": 112
 	},
 	"centiskorch": {
 		"fastMove": "EMBER",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 17.46153846153846,
+		"dps": 17.344440320195435,
+		"tdo": 563.1113968970803,
+		"edps": 16.18419001944703,
 		"speciesId": "centiskorch",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 107,
-		"rank": 117
+		"rank": 113
 	},
-	"pidgeot_mega": {
-		"fastMove": "GUST",
+	"zapdos_shadow": {
+		"fastMove": "THUNDER_SHOCK",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 17.46153846153846,
-		"speciesId": "pidgeot_mega",
-		"fastMoveDmg": 23,
-		"chargedMoveDmg": 112,
-		"rank": 118
+		"dps": 17.281029509323485,
+		"tdo": 500.1763517888551,
+		"edps": 16.077104221896853,
+		"speciesId": "zapdos_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 121,
+		"rank": 114
 	},
-	"combusken_shadow": {
-		"fastMove": "EMBER",
+	"zoroark_hisuian": {
+		"fastMove": "SNARL",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 17.428571428571427,
-		"speciesId": "combusken_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 67,
-		"rank": 119
-	},
-	"marowak_alolan_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 17.294117647058822,
-		"speciesId": "marowak_alolan_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 128,
-		"rank": 120
-	},
-	"talonflame": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 17.294117647058822,
-		"speciesId": "talonflame",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 128,
-		"rank": 121
-	},
-	"marshadow": {
-		"fastMove": "SHADOW_CLAW",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 17.224489795918366,
-		"speciesId": "marshadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 56,
-		"rank": 122
-	},
-	"lampent_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAME_BURST",
-		"dps": 17.2,
-		"speciesId": "lampent_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 74,
-		"rank": 123
-	},
-	"manectric": {
-		"fastMove": "SNARL",
-		"chargedMove": "OVERHEAT",
-		"dps": 17.177631578947366,
-		"speciesId": "manectric",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 147,
-		"rank": 124
-	},
-	"darumaka_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 17.058823529411764,
-		"speciesId": "darumaka_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 49,
-		"rank": 125
-	},
-	"weezing_galarian_shadow": {
-		"fastMove": "FAIRY_WIND",
-		"chargedMove": "OVERHEAT",
-		"dps": 17.006578947368418,
-		"speciesId": "weezing_galarian_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 145,
-		"rank": 126
-	},
-	"staraptor_mega": {
-		"fastMove": "GUST",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 17,
-		"speciesId": "staraptor_mega",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 111,
-		"rank": 127
-	},
-	"mew": {
-		"fastMove": "SNARL",
-		"chargedMove": "OVERHEAT",
-		"dps": 16.921052631578945,
-		"speciesId": "mew",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 144,
-		"rank": 128
-	},
-	"hitmonlee": {
-		"fastMove": "DOUBLE_KICK",
-		"chargedMove": "BLAZE_KICK",
-		"dps": 16.76086956521739,
-		"speciesId": "hitmonlee",
+		"dps": 17.060426879353155,
+		"tdo": 307.5045639792918,
+		"edps": 15.011593353370998,
+		"speciesId": "zoroark_hisuian",
 		"fastMoveDmg": 8,
-		"chargedMoveDmg": 39,
-		"rank": 129
+		"chargedMoveDmg": 72,
+		"rank": 115
 	},
-	"tyranitar": {
-		"fastMove": "SMACK_DOWN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 16.7421875,
-		"speciesId": "tyranitar",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 149,
-		"rank": 130
-	},
-	"raboot": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 16.5,
-		"speciesId": "raboot",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 58,
-		"rank": 131
-	},
-	"torkoal": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "OVERHEAT",
-		"dps": 16.49264705882353,
-		"speciesId": "torkoal",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 127,
-		"rank": 132
-	},
-	"monferno_shadow": {
+	"braixen_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 16.428571428571427,
-		"speciesId": "monferno_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 65,
-		"rank": 133
-	},
-	"quilava_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 16.428571428571427,
-		"speciesId": "quilava_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 65,
-		"rank": 134
-	},
-	"houndour_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 16.142857142857142,
-		"speciesId": "houndour_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 63,
-		"rank": 135
-	},
-	"unfezant_shadow": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 15.96774193548387,
-		"speciesId": "unfezant_shadow",
+		"dps": 16.991888169661383,
+		"tdo": 270.29583824137774,
+		"edps": 14.72357704058083,
+		"speciesId": "braixen_shadow",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 110,
-		"rank": 136
+		"chargedMoveDmg": 69,
+		"rank": 116
 	},
 	"drifblim_shadow": {
 		"fastMove": "HEX",
 		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 15.694915254237287,
+		"dps": 16.96851195555158,
+		"tdo": 423.2439766335373,
+		"edps": 15.56032252221581,
 		"speciesId": "drifblim_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 56,
-		"rank": 137
+		"rank": 117
 	},
-	"zapdos": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 15.690140845070422,
-		"speciesId": "zapdos",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 102,
-		"rank": 138
-	},
-	"mismagius": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 15.63934426229508,
-		"speciesId": "mismagius",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 54,
-		"rank": 139
-	},
-	"torracat": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 15.571428571428571,
-		"speciesId": "torracat",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 59,
-		"rank": 140
-	},
-	"slowking_shadow": {
-		"fastMove": "CONFUSION",
+	"tyranitar": {
+		"fastMove": "SMACK_DOWN",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 15.563106796116504,
-		"speciesId": "slowking_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 129,
-		"rank": 141
-	},
-	"skuntank_shadow": {
-		"fastMove": "POISON_JAB",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 15.558823529411764,
-		"speciesId": "skuntank_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 62,
-		"rank": 142
-	},
-	"crocalor": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 15.44378698224852,
-		"speciesId": "crocalor",
-		"fastMoveDmg": 28,
-		"chargedMoveDmg": 55,
-		"rank": 143
-	},
-	"hitmonchan_shadow": {
-		"fastMove": "COUNTER",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 15.294117647058824,
-		"speciesId": "hitmonchan_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 50,
-		"rank": 144
-	},
-	"ponyta": {
-		"fastMove": "EMBER",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 15.285714285714286,
-		"speciesId": "ponyta",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 124,
-		"rank": 145
-	},
-	"charmeleon": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 15.23529411764706,
-		"speciesId": "charmeleon",
+		"dps": 16.83302738403812,
+		"tdo": 701.29885217702,
+		"edps": 15.97264962854092,
+		"speciesId": "tyranitar",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 54,
-		"rank": 146
+		"chargedMoveDmg": 148,
+		"rank": 118
+	},
+	"talonflame": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 16.819022802389618,
+		"tdo": 448.4880014898401,
+		"edps": 15.466352351469958,
+		"speciesId": "talonflame",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 127,
+		"rank": 119
+	},
+	"mew": {
+		"fastMove": "SNARL",
+		"chargedMove": "OVERHEAT",
+		"dps": 16.65656334610824,
+		"tdo": 703.3246562476571,
+		"edps": 15.81367842933024,
+		"speciesId": "mew",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 143,
+		"rank": 120
+	},
+	"hitmonlee": {
+		"fastMove": "DOUBLE_KICK",
+		"chargedMove": "BLAZE_KICK",
+		"dps": 16.618024723977257,
+		"tdo": 386.2167094510759,
+		"edps": 15.080918882499288,
+		"speciesId": "hitmonlee",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 38,
+		"rank": 121
+	},
+	"staraptor_mega": {
+		"fastMove": "GUST",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 16.53579875793745,
+		"tdo": 610.0845421142127,
+		"edps": 15.50992290247185,
+		"speciesId": "staraptor_mega",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 111,
+		"rank": 122
+	},
+	"staraptor_shadow": {
+		"fastMove": "GUST",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 16.45680306369876,
+		"tdo": 353.27082729263446,
+		"edps": 14.756849142452403,
+		"speciesId": "staraptor_shadow",
+		"fastMoveDmg": 23,
+		"chargedMoveDmg": 113,
+		"rank": 123
+	},
+	"marowak_alolan_shadow": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 16.42591512346487,
+		"tdo": 364.7745908958209,
+		"edps": 14.87813128603084,
+		"speciesId": "marowak_alolan_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 127,
+		"rank": 124
+	},
+	"pidgeot_mega": {
+		"fastMove": "GUST",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 16.417231949058753,
+		"tdo": 512.5757657323559,
+		"edps": 15.326858706506368,
+		"speciesId": "pidgeot_mega",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 111,
+		"rank": 125
+	},
+	"raboot": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 16.37864378817797,
+		"tdo": 318.99517057202246,
+		"edps": 14.622352261867178,
+		"speciesId": "raboot",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 58,
+		"rank": 126
+	},
+	"combusken_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 16.267653632101954,
+		"tdo": 233.65076993216738,
+		"edps": 13.939546213624835,
+		"speciesId": "combusken_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 66,
+		"rank": 127
 	},
 	"ursaluna": {
 		"fastMove": "SCRATCH",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 15.224489795918368,
+		"dps": 16.221977470061717,
+		"tdo": 727.3070810791844,
+		"edps": 15.437316241743472,
 		"speciesId": "ursaluna",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 52,
-		"rank": 147
+		"rank": 128
+	},
+	"lampent_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_BURST",
+		"dps": 16.1958219916642,
+		"tdo": 232.61905887700624,
+		"edps": 13.886770057804952,
+		"speciesId": "lampent_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 74,
+		"rank": 129
+	},
+	"torkoal": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "OVERHEAT",
+		"dps": 16.17003853345678,
+		"tdo": 516.7245159877417,
+		"edps": 15.111194604292242,
+		"speciesId": "torkoal",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 127,
+		"rank": 130
+	},
+	"mismagius": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "MYSTICAL_FIRE",
+		"dps": 16.06446186345722,
+		"tdo": 430.22709888704077,
+		"edps": 14.811331863854669,
+		"speciesId": "mismagius",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 54,
+		"rank": 131
+	},
+	"darumaka_shadow": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 16.00075543217156,
+		"tdo": 197.41134898891568,
+		"edps": 13.387409680518713,
+		"speciesId": "darumaka_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 48,
+		"rank": 132
+	},
+	"skuntank_shadow": {
+		"fastMove": "POISON_JAB",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 15.984756554269598,
+		"tdo": 374.7898536188674,
+		"edps": 14.529336352772786,
+		"speciesId": "skuntank_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 62,
+		"rank": 133
+	},
+	"weezing_galarian_shadow": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "OVERHEAT",
+		"dps": 15.876754766841044,
+		"tdo": 390.206472480087,
+		"edps": 14.46790716106261,
+		"speciesId": "weezing_galarian_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 144,
+		"rank": 134
+	},
+	"manectric": {
+		"fastMove": "SNARL",
+		"chargedMove": "OVERHEAT",
+		"dps": 15.711588954582588,
+		"tdo": 327.03932043236483,
+		"edps": 14.114866674540904,
+		"speciesId": "manectric",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 146,
+		"rank": 135
+	},
+	"ponyta_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 15.599603359689258,
+		"tdo": 218.88511260693994,
+		"edps": 13.291239565176834,
+		"speciesId": "ponyta_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 148,
+		"rank": 136
+	},
+	"quilava_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 15.595997289153463,
+		"tdo": 237.82508837250813,
+		"edps": 13.455506458235774,
+		"speciesId": "quilava_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 65,
+		"rank": 137
+	},
+	"solrock": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 15.495925913678853,
+		"tdo": 452.096998325011,
+		"edps": 14.340393964921242,
+		"speciesId": "solrock",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 43,
+		"rank": 138
+	},
+	"zapdos": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 15.480410462069823,
+		"tdo": 537.6718234051077,
+		"edps": 14.535354777750035,
+		"speciesId": "zapdos",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 101,
+		"rank": 139
 	},
 	"altaria_mega": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 15.090909090909092,
+		"dps": 15.407104032081083,
+		"tdo": 549.6834361510782,
+		"edps": 14.47070694531907,
 		"speciesId": "altaria_mega",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 62,
-		"rank": 148
+		"chargedMoveDmg": 61,
+		"rank": 140
+	},
+	"hitmonchan_shadow": {
+		"fastMove": "COUNTER",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 15.380986358275248,
+		"tdo": 322.20655516214276,
+		"edps": 13.834702409932653,
+		"speciesId": "hitmonchan_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 50,
+		"rank": 141
 	},
 	"kommo_o": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 15.090909090909092,
+		"dps": 15.378559511379594,
+		"tdo": 600.4703288004732,
+		"edps": 14.487379405946463,
 		"speciesId": "kommo_o",
 		"fastMoveDmg": 10,
-		"chargedMoveDmg": 62,
-		"rank": 149
+		"chargedMoveDmg": 61,
+		"rank": 142
 	},
 	"togekiss": {
 		"fastMove": "CHARM",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 14.876288659793815,
+		"dps": 15.242836195303946,
+		"tdo": 587.7134584828028,
+		"edps": 14.353121585041533,
 		"speciesId": "togekiss",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 63,
-		"rank": 150
+		"chargedMoveDmg": 62,
+		"rank": 143
+	},
+	"monferno_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 15.23676414300585,
+		"tdo": 210.54566754546542,
+		"edps": 12.993076470680197,
+		"speciesId": "monferno_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 65,
+		"rank": 144
+	},
+	"crocalor": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 15.225458466100664,
+		"tdo": 366.433032508312,
+		"edps": 13.899287511245904,
+		"speciesId": "crocalor",
+		"fastMoveDmg": 27,
+		"chargedMoveDmg": 55,
+		"rank": 145
+	},
+	"unfezant_shadow": {
+		"fastMove": "AIR_SLASH",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 15.201905103814886,
+		"tdo": 327.5389428395538,
+		"edps": 13.702153478183469,
+		"speciesId": "unfezant_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 109,
+		"rank": 146
 	},
 	"pignite": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 14.857142857142858,
+		"dps": 15.009458202930144,
+		"tdo": 315.39528502424287,
+		"edps": 13.521189523541825,
 		"speciesId": "pignite",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 59,
+		"rank": 147
+	},
+	"charmeleon": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 14.994213860496835,
+		"tdo": 274.3781225124222,
+		"edps": 13.211367265042325,
+		"speciesId": "charmeleon",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 54,
+		"rank": 148
+	},
+	"slowking_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 14.77479414732299,
+		"tdo": 434.8789463855073,
+		"edps": 13.708112254027613,
+		"speciesId": "slowking_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 128,
+		"rank": 149
+	},
+	"zebstrika_shadow": {
+		"fastMove": "SPARK",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 14.720785205032916,
+		"tdo": 283.63666744271416,
+		"edps": 13.123734064310433,
+		"speciesId": "zebstrika_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 76,
+		"rank": 150
+	},
+	"tauros_blaze": {
+		"fastMove": "DOUBLE_KICK",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 14.631463607063765,
+		"tdo": 466.0009700186001,
+		"edps": 13.609294284330238,
+		"speciesId": "tauros_blaze",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 75,
 		"rank": 151
 	},
 	"shelgon_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 14.857142857142858,
+		"dps": 14.579689782905348,
+		"tdo": 287.3386692571173,
+		"edps": 13.01147597412304,
 		"speciesId": "shelgon_shadow",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 59,
+		"chargedMoveDmg": 58,
 		"rank": 152
-	},
-	"gourgeist_super": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 14.852071005917159,
-		"speciesId": "gourgeist_super",
-		"fastMoveDmg": 26,
-		"chargedMoveDmg": 110,
-		"rank": 153
-	},
-	"solrock": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 14.814814814814813,
-		"speciesId": "solrock",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 43,
-		"rank": 154
-	},
-	"magcargo": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "OVERHEAT",
-		"dps": 14.781065088757398,
-		"speciesId": "magcargo",
-		"fastMoveDmg": 24,
-		"chargedMoveDmg": 118,
-		"rank": 155
 	},
 	"braixen": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 14.714285714285714,
+		"dps": 14.489399860458708,
+		"tdo": 276.58548115071926,
+		"edps": 12.81788828226312,
 		"speciesId": "braixen",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 58,
-		"rank": 156
-	},
-	"tornadus_therian": {
-		"fastMove": "GUST",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 14.692307692307692,
-		"speciesId": "tornadus_therian",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 96,
-		"rank": 157
-	},
-	"staraptor": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 14.640287769784171,
-		"speciesId": "staraptor",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 95,
-		"rank": 158
-	},
-	"growlithe_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 14.571428571428571,
-		"speciesId": "growlithe_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 57,
-		"rank": 159
-	},
-	"zebstrika_shadow": {
-		"fastMove": "SPARK",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 14.518518518518519,
-		"speciesId": "zebstrika_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 76,
-		"rank": 160
-	},
-	"noivern_shadow": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 14.516129032258064,
-		"speciesId": "noivern_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 100,
-		"rank": 161
-	},
-	"gourgeist_large": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 14.49112426035503,
-		"speciesId": "gourgeist_large",
-		"fastMoveDmg": 25,
-		"chargedMoveDmg": 109,
-		"rank": 162
-	},
-	"fletchinder_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 14.461538461538462,
-		"speciesId": "fletchinder_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 88,
-		"rank": 163
-	},
-	"marowak_alolan": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 14.433823529411764,
-		"speciesId": "marowak_alolan",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 107,
-		"rank": 164
-	},
-	"combusken": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 14.428571428571429,
-		"speciesId": "combusken",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 56,
-		"rank": 165
-	},
-	"exploud_shadow": {
-		"fastMove": "ASTONISH",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 14.407894736842103,
-		"speciesId": "exploud_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 130,
-		"rank": 166
-	},
-	"darumaka": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 14.352941176470589,
-		"speciesId": "darumaka",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 41,
-		"rank": 167
-	},
-	"tauros_blaze": {
-		"fastMove": "DOUBLE_KICK",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 14.341176470588236,
-		"speciesId": "tauros_blaze",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 76,
-		"rank": 168
-	},
-	"weezing_galarian": {
-		"fastMove": "FAIRY_WIND",
-		"chargedMove": "OVERHEAT",
-		"dps": 14.296052631578947,
-		"speciesId": "weezing_galarian",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 121,
-		"rank": 169
-	},
-	"gourgeist_average": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 14.29585798816568,
-		"speciesId": "gourgeist_average",
-		"fastMoveDmg": 25,
-		"chargedMoveDmg": 106,
-		"rank": 170
-	},
-	"torchic_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 14.285714285714286,
-		"speciesId": "torchic_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 55,
-		"rank": 171
-	},
-	"lampent": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAME_BURST",
-		"dps": 14.266666666666667,
-		"speciesId": "lampent",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 62,
-		"rank": 172
-	},
-	"monferno": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 14.142857142857142,
-		"speciesId": "monferno",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 54,
-		"rank": 173
-	},
-	"quilava": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 14.142857142857142,
-		"speciesId": "quilava",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 54,
-		"rank": 174
+		"rank": 153
 	},
 	"castform_sunny": {
 		"fastMove": "EMBER",
 		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 14.041666666666668,
+		"dps": 14.35730349579851,
+		"tdo": 324.1045443734402,
+		"edps": 13.00092082300519,
 		"speciesId": "castform_sunny",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 41,
-		"rank": 175
+		"rank": 154
 	},
-	"gourgeist_small": {
+	"torracat": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 14.339842597592822,
+		"tdo": 235.39895268383574,
+		"edps": 12.510043622019301,
+		"speciesId": "torracat",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 59,
+		"rank": 155
+	},
+	"drifblim": {
+		"fastMove": "ASTONISH",
+		"chargedMove": "MYSTICAL_FIRE",
+		"dps": 14.294362115397213,
+		"tdo": 427.85151152971224,
+		"edps": 13.281802665548677,
+		"speciesId": "drifblim",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 47,
+		"rank": 156
+	},
+	"noivern_shadow": {
+		"fastMove": "AIR_SLASH",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 14.18859375433398,
+		"tdo": 373.35636564331685,
+		"edps": 13.030026504226791,
+		"speciesId": "noivern_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 100,
+		"rank": 157
+	},
+	"tornadus_therian": {
+		"fastMove": "GUST",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 14.185532330045636,
+		"tdo": 459.32130808860137,
+		"edps": 13.22266986124073,
+		"speciesId": "tornadus_therian",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 96,
+		"rank": 158
+	},
+	"gourgeist_super": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "FIRE_BLAST",
-		"dps": 13.869822485207102,
-		"speciesId": "gourgeist_small",
+		"dps": 14.154708715135602,
+		"tdo": 505.7679034384985,
+		"edps": 13.33667606699128,
+		"speciesId": "gourgeist_super",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 110,
+		"rank": 159
+	},
+	"staraptor": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 14.022432040520147,
+		"tdo": 361.21594309055854,
+		"edps": 12.878691705514678,
+		"speciesId": "staraptor",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 94,
+		"rank": 160
+	},
+	"gourgeist_large": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.948685869283082,
+		"tdo": 472.0209578920443,
+		"edps": 13.027956637684087,
+		"speciesId": "gourgeist_large",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 108,
+		"rank": 161
+	},
+	"marowak_alolan": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.908068441460916,
+		"tdo": 370.632148578683,
+		"edps": 12.793060719961879,
+		"speciesId": "marowak_alolan",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 106,
+		"rank": 162
+	},
+	"darumaka": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 13.904020819746906,
+		"tdo": 205.85115205272444,
+		"edps": 11.915877511655552,
+		"speciesId": "darumaka",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 40,
+		"rank": 163
+	},
+	"combusken": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 13.900765038574333,
+		"tdo": 239.58645719503414,
+		"edps": 12.184450160073705,
+		"speciesId": "combusken",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 55,
+		"rank": 164
+	},
+	"lampent": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_BURST",
+		"dps": 13.88310462402091,
+		"tdo": 239.2820713469381,
+		"edps": 12.170879421313531,
+		"speciesId": "lampent",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 62,
+		"rank": 165
+	},
+	"quilava": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 13.865338520638382,
+		"tdo": 253.72090772392568,
+		"edps": 12.276622886645223,
+		"speciesId": "quilava",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 54,
+		"rank": 166
+	},
+	"gourgeist_average": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.7301995363694,
+		"tdo": 435.5016757273455,
+		"edps": 12.804290744337786,
+		"speciesId": "gourgeist_average",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 106,
+		"rank": 167
+	},
+	"exploud_shadow": {
+		"fastMove": "ASTONISH",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.71641167133917,
+		"tdo": 335.78790384049563,
+		"edps": 12.493956301975617,
+		"speciesId": "exploud_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 129,
+		"rank": 168
+	},
+	"monferno": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 13.708184288739034,
+		"tdo": 227.3080215931517,
+		"edps": 12.007330992740497,
+		"speciesId": "monferno",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 54,
+		"rank": 169
+	},
+	"magcargo": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "OVERHEAT",
+		"dps": 13.69368769863239,
+		"tdo": 334.490067862647,
+		"edps": 12.475099530811166,
+		"speciesId": "magcargo",
 		"fastMoveDmg": 24,
-		"chargedMoveDmg": 104,
-		"rank": 176
+		"chargedMoveDmg": 118,
+		"rank": 170
+	},
+	"ponyta": {
+		"fastMove": "EMBER",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.608226715502893,
+		"tdo": 229.1318532249005,
+		"edps": 11.930569767070255,
+		"speciesId": "ponyta",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 124,
+		"rank": 171
+	},
+	"weezing_galarian": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "OVERHEAT",
+		"dps": 13.569081498002515,
+		"tdo": 400.1883545353974,
+		"edps": 12.537043435659577,
+		"speciesId": "weezing_galarian",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 120,
+		"rank": 172
 	},
 	"litleo": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 13.705882352941178,
+		"dps": 13.422870655073726,
+		"tdo": 230.7857527628554,
+		"edps": 11.797130112032834,
 		"speciesId": "litleo",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 48,
-		"rank": 177
-	},
-	"gabite_shadow": {
-		"fastMove": "MUD_SHOT",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 13.621621621621621,
-		"speciesId": "gabite_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 59,
-		"rank": 178
-	},
-	"scorbunny": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 13.441176470588236,
-		"speciesId": "scorbunny",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 46,
-		"rank": 179
-	},
-	"braviary": {
-		"fastMove": "STEEL_WING",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 13.32258064516129,
-		"speciesId": "braviary",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 94,
-		"rank": 180
+		"rank": 173
 	},
 	"hitmonchan": {
 		"fastMove": "COUNTER",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 13.23529411764706,
+		"dps": 13.416155687429393,
+		"tdo": 337.25588565917866,
+		"edps": 12.244348173533876,
 		"speciesId": "hitmonchan",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 42,
+		"rank": 174
+	},
+	"skuntank": {
+		"fastMove": "POISON_JAB",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 13.247167168458725,
+		"tdo": 372.7229020226518,
+		"edps": 12.231742000587733,
+		"speciesId": "skuntank",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 52,
+		"rank": 175
+	},
+	"braviary": {
+		"fastMove": "STEEL_WING",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 13.204178545752766,
+		"tdo": 413.8241036498921,
+		"edps": 12.234870090776543,
+		"speciesId": "braviary",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 93,
+		"rank": 176
+	},
+	"gourgeist_small": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 13.194841823087327,
+		"tdo": 389.17566890589137,
+		"edps": 12.206953090073107,
+		"speciesId": "gourgeist_small",
+		"fastMoveDmg": 24,
+		"chargedMoveDmg": 104,
+		"rank": 177
+	},
+	"cherrim_sunny": {
+		"fastMove": "RAZOR_LEAF",
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 13.128521270845578,
+		"tdo": 323.3081202593334,
+		"edps": 11.985132576929365,
+		"speciesId": "cherrim_sunny",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 41,
+		"rank": 178
+	},
+	"gabite_shadow": {
+		"fastMove": "MUD_SHOT",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 13.063969349459141,
+		"tdo": 219.1464865071881,
+		"edps": 11.405142417945722,
+		"speciesId": "gabite_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 58,
+		"rank": 179
+	},
+	"fletchinder_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 12.91854874168056,
+		"tdo": 182.1806915242709,
+		"edps": 11.028429449988638,
+		"speciesId": "fletchinder_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 64,
+		"rank": 180
+	},
+	"shelgon": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 12.785015421198045,
+		"tdo": 302.36276786722334,
+		"edps": 11.58973732628191,
+		"speciesId": "shelgon",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
 		"rank": 181
 	},
 	"unfezant": {
 		"fastMove": "AIR_SLASH",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 13.193548387096774,
+		"dps": 12.7826156265213,
+		"tdo": 330.4957804629363,
+		"edps": 11.705318590552455,
 		"speciesId": "unfezant",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 92,
+		"chargedMoveDmg": 91,
 		"rank": 182
 	},
-	"drifblim": {
-		"fastMove": "ASTONISH",
-		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 13.152542372881356,
-		"speciesId": "drifblim",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 47,
+	"growlithe_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 12.521433893745119,
+		"tdo": 142.04377046243798,
+		"edps": 10.302580834297276,
+		"speciesId": "growlithe_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 56,
 		"rank": 183
 	},
-	"houndour": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 13.142857142857142,
-		"speciesId": "houndour",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 52,
+	"slowking": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 12.42114492730413,
+		"tdo": 438.7224280292973,
+		"edps": 11.658470739303704,
+		"speciesId": "slowking",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 107,
 		"rank": 184
 	},
-	"magby": {
+	"houndour_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 13.142857142857142,
-		"speciesId": "magby",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 52,
+		"dps": 12.377250691647266,
+		"tdo": 113.25101732320077,
+		"edps": 9.728252305074273,
+		"speciesId": "houndour_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 62,
 		"rank": 185
 	},
-	"litwick_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 13.094339622641511,
-		"speciesId": "litwick_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 43,
+	"altaria_shadow": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 12.296122041125965,
+		"tdo": 338.9037442621746,
+		"edps": 11.30457164113533,
+		"speciesId": "altaria_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 49,
 		"rank": 186
 	},
 	"pidgeot_shadow": {
 		"fastMove": "GUST",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 12.923076923076923,
+		"dps": 12.161955610229636,
+		"tdo": 281.457865155431,
+		"edps": 11.042774499582185,
 		"speciesId": "pidgeot_shadow",
 		"fastMoveDmg": 17,
-		"chargedMoveDmg": 83,
+		"chargedMoveDmg": 82,
 		"rank": 187
-	},
-	"skuntank": {
-		"fastMove": "POISON_JAB",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.764705882352942,
-		"speciesId": "skuntank",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 52,
-		"rank": 188
-	},
-	"charmander_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "charmander_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 189
-	},
-	"cyndaquil_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "cyndaquil_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 190
-	},
-	"fennekin_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "fennekin_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 191
-	},
-	"growlithe_hisuian": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "growlithe_hisuian",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 192
-	},
-	"shelgon": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "shelgon",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 193
-	},
-	"tepig_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.714285714285714,
-		"speciesId": "tepig_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 49,
-		"rank": 194
-	},
-	"cherrim_sunny": {
-		"fastMove": "RAZOR_LEAF",
-		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 12.666666666666668,
-		"speciesId": "cherrim_sunny",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 41,
-		"rank": 195
-	},
-	"slowking": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 12.611650485436892,
-		"speciesId": "slowking",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 107,
-		"rank": 196
-	},
-	"chimchar_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.571428571428571,
-		"speciesId": "chimchar_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 48,
-		"rank": 197
-	},
-	"bagon_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.428571428571429,
-		"speciesId": "bagon_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 47,
-		"rank": 198
-	},
-	"growlithe": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.428571428571429,
-		"speciesId": "growlithe",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 47,
-		"rank": 199
-	},
-	"salandit": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12.428571428571429,
-		"speciesId": "salandit",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 47,
-		"rank": 200
-	},
-	"vulpix_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 12.104166666666666,
-		"speciesId": "vulpix_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 35,
-		"rank": 201
-	},
-	"larvesta": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 12.013698630136988,
-		"speciesId": "larvesta",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 58,
-		"rank": 202
-	},
-	"altaria_shadow": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12,
-		"speciesId": "altaria_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 49,
-		"rank": 203
-	},
-	"gabite": {
-		"fastMove": "MUD_SHOT",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 12,
-		"speciesId": "gabite",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 49,
-		"rank": 204
-	},
-	"exploud": {
-		"fastMove": "ASTONISH",
-		"chargedMove": "FIRE_BLAST",
-		"dps": 11.953947368421051,
-		"speciesId": "exploud",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 109,
-		"rank": 205
-	},
-	"noivern": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 11.870967741935484,
-		"speciesId": "noivern",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 84,
-		"rank": 206
-	},
-	"coalossal": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 11.826086956521738,
-		"speciesId": "coalossal",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 54,
-		"rank": 207
 	},
 	"zebstrika": {
 		"fastMove": "SPARK",
 		"chargedMove": "FLAME_CHARGE",
-		"dps": 11.777777777777779,
+		"dps": 12.119197136957872,
+		"tdo": 280.2118591606701,
+		"edps": 11.007512064483553,
 		"speciesId": "zebstrika",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 63,
-		"rank": 208
+		"rank": 188
 	},
-	"fletchinder": {
-		"fastMove": "EMBER",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 11.76923076923077,
-		"speciesId": "fletchinder",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 73,
-		"rank": 209
+	"coalossal": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 12.081460774740043,
+		"tdo": 516.5702344134478,
+		"edps": 11.48042606685594,
+		"speciesId": "coalossal",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 54,
+		"rank": 189
 	},
-	"numel_shadow": {
-		"fastMove": "EMBER",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 11.76923076923077,
-		"speciesId": "numel_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 73,
-		"rank": 210
-	},
-	"lopunny": {
-		"fastMove": "POUND",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 11.584905660377359,
-		"speciesId": "lopunny",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 35,
-		"rank": 211
-	},
-	"torchic": {
-		"fastMove": "EMBER",
+	"scorbunny": {
+		"fastMove": "FIRE_SPIN",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 11.571428571428571,
-		"speciesId": "torchic",
-		"fastMoveDmg": 7,
+		"dps": 12.066912073844705,
+		"tdo": 134.4991652841884,
+		"edps": 9.894011120842801,
+		"speciesId": "scorbunny",
+		"fastMoveDmg": 10,
 		"chargedMoveDmg": 46,
-		"rank": 212
+		"rank": 190
+	},
+	"gabite": {
+		"fastMove": "MUD_SHOT",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.981938843752546,
+		"tdo": 241.19467833501093,
+		"edps": 10.684641890053204,
+		"speciesId": "gabite",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 49,
+		"rank": 191
 	},
 	"hypno_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 11.548387096774194,
+		"dps": 11.945584638226997,
+		"tdo": 344.11321397452423,
+		"edps": 11.01569004337803,
 		"speciesId": "hypno_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 38,
-		"rank": 213
+		"rank": 192
 	},
-	"kecleon": {
-		"fastMove": "LICK",
+	"growlithe_hisuian": {
+		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 11.513513513513512,
-		"speciesId": "kecleon",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 46,
-		"rank": 214
+		"dps": 11.914614444850656,
+		"tdo": 169.02229003880817,
+		"edps": 10.18358927581043,
+		"speciesId": "growlithe_hisuian",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
+		"rank": 193
+	},
+	"magby": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.89189093988788,
+		"tdo": 151.88989480103587,
+		"edps": 9.977625259553552,
+		"speciesId": "magby",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 52,
+		"rank": 194
 	},
 	"slurpuff": {
 		"fastMove": "FAIRY_WIND",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 11.499999999999998,
+		"dps": 11.783370877329956,
+		"tdo": 340.7459196980681,
+		"edps": 10.869719714407227,
 		"speciesId": "slurpuff",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 48,
-		"rank": 215
+		"rank": 195
 	},
-	"litten": {
+	"noivern": {
+		"fastMove": "BITE",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 11.75135469258632,
+		"tdo": 371.0679153302668,
+		"edps": 10.94532128284074,
+		"speciesId": "noivern",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 83,
+		"rank": 196
+	},
+	"larvesta": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 11.669736184274372,
+		"tdo": 179.45125650679418,
+		"edps": 10.09845249741723,
+		"speciesId": "larvesta",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 57,
+		"rank": 197
+	},
+	"kecleon": {
+		"fastMove": "LICK",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.664255215111677,
+		"tdo": 315.4767742919079,
+		"edps": 10.745138903501703,
+		"speciesId": "kecleon",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 46,
+		"rank": 198
+	},
+	"lopunny": {
+		"fastMove": "POUND",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 11.655422632261152,
+		"tdo": 338.88507845037253,
+		"edps": 10.760752028129009,
+		"speciesId": "lopunny",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 34,
+		"rank": 199
+	},
+	"litwick_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "MYSTICAL_FIRE",
+		"dps": 11.637531378073191,
+		"tdo": 129.94322235370194,
+		"edps": 9.524213762009108,
+		"speciesId": "litwick_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 43,
+		"rank": 200
+	},
+	"exploud": {
+		"fastMove": "ASTONISH",
+		"chargedMove": "FIRE_BLAST",
+		"dps": 11.569425569800769,
+		"tdo": 339.8737287159017,
+		"edps": 10.687408998173597,
+		"speciesId": "exploud",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 108,
+		"rank": 201
+	},
+	"growlithe": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 11.428571428571429,
-		"speciesId": "litten",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 45,
-		"rank": 216
+		"dps": 11.55146574579397,
+		"tdo": 157.24849040036554,
+		"edps": 9.81330829492692,
+		"speciesId": "growlithe",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 47,
+		"rank": 202
+	},
+	"torchic_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.339946351243611,
+		"tdo": 107.99484378901079,
+		"edps": 8.994112917999388,
+		"speciesId": "torchic_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 54,
+		"rank": 203
+	},
+	"houndour": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.220652701614073,
+		"tdo": 123.2018724651694,
+		"edps": 9.158512071670904,
+		"speciesId": "houndour",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 52,
+		"rank": 204
+	},
+	"tepig_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 11.126665713433198,
+		"tdo": 128.99174314617676,
+		"edps": 9.173679263702615,
+		"speciesId": "tepig_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
+		"rank": 205
+	},
+	"fletchinder": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 10.930098026880032,
+		"tdo": 184.96686614872644,
+		"edps": 9.551966192655767,
+		"speciesId": "fletchinder",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 54,
+		"rank": 206
+	},
+	"salandit": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 10.799621568878326,
+		"tdo": 119.73855758035572,
+		"edps": 8.855107991852636,
+		"speciesId": "salandit",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 47,
+		"rank": 207
+	},
+	"fennekin_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 10.656419970474149,
+		"tdo": 109.6191009468664,
+		"edps": 8.612759077388905,
+		"speciesId": "fennekin_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
+		"rank": 208
 	},
 	"fuecoco": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 11.124260355029586,
+		"dps": 10.612232450201306,
+		"tdo": 167.1726347213857,
+		"edps": 9.211138472862796,
 		"speciesId": "fuecoco",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 40,
-		"rank": 217
+		"rank": 209
 	},
-	"staravia_shadow": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 11.050359712230215,
-		"speciesId": "staravia_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 72,
-		"rank": 218
+	"vulpix_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "WEATHER_BALL_FIRE",
+		"dps": 10.475080882668195,
+		"tdo": 111.16865677351251,
+		"edps": 8.5035467019106,
+		"speciesId": "vulpix_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 35,
+		"rank": 210
 	},
-	"charmander": {
+	"bagon_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 10.857142857142858,
-		"speciesId": "charmander",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 41,
-		"rank": 219
-	},
-	"cyndaquil": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 10.857142857142858,
-		"speciesId": "cyndaquil",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 41,
-		"rank": 220
-	},
-	"fennekin": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 10.857142857142858,
-		"speciesId": "fennekin",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 41,
-		"rank": 221
-	},
-	"tepig": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 10.857142857142858,
-		"speciesId": "tepig",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 41,
-		"rank": 222
-	},
-	"chimchar": {
-		"fastMove": "EMBER",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 10.714285714285714,
-		"speciesId": "chimchar",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 40,
-		"rank": 223
+		"dps": 10.27311131715516,
+		"tdo": 103.58994403795856,
+		"edps": 8.24120397693638,
+		"speciesId": "bagon_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 46,
+		"rank": 211
 	},
 	"pidgeot": {
 		"fastMove": "GUST",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 10.692307692307692,
+		"dps": 10.265678959469653,
+		"tdo": 285.08798674916864,
+		"edps": 9.46265055572749,
 		"speciesId": "pidgeot",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 69,
-		"rank": 224
+		"rank": 212
 	},
-	"slugma": {
+	"tepig": {
 		"fastMove": "EMBER",
-		"chargedMove": "FLAME_BURST",
-		"dps": 10.666666666666666,
-		"speciesId": "slugma",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 10.160720827221136,
+		"tdo": 141.35222651312756,
+		"edps": 8.64417192192588,
+		"speciesId": "tepig",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 41,
+		"rank": 213
+	},
+	"charmander_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 10.093477806775658,
+		"tdo": 94.14519722479511,
+		"edps": 7.982510058174505,
+		"speciesId": "charmander_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
+		"rank": 214
+	},
+	"cyndaquil_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 10.093477806775658,
+		"tdo": 94.14519722479511,
+		"edps": 7.982510058174505,
+		"speciesId": "cyndaquil_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 49,
+		"rank": 215
+	},
+	"hypno": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 9.97157626637573,
+		"tdo": 344.69820258320806,
+		"edps": 9.315174958475364,
+		"speciesId": "hypno",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 32,
+		"rank": 216
+	},
+	"chimchar_shadow": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.97005593086936,
+		"tdo": 93.23447564948961,
+		"edps": 7.900953226966903,
+		"speciesId": "chimchar_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 48,
+		"rank": 217
+	},
+	"torchic": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.946206576123252,
+		"tdo": 113.66604763481213,
+		"edps": 8.205183616281928,
+		"speciesId": "torchic",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 45,
-		"rank": 225
+		"rank": 218
+	},
+	"diggersby_shadow": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 9.881972305230072,
+		"tdo": 232.6607688710583,
+		"edps": 8.971744703000994,
+		"speciesId": "diggersby_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 31,
+		"rank": 219
 	},
 	"litwick": {
 		"fastMove": "EMBER",
 		"chargedMove": "MYSTICAL_FIRE",
-		"dps": 10.528301886792452,
+		"dps": 9.865607500413601,
+		"tdo": 132.18977517256957,
+		"edps": 8.354528374239488,
 		"speciesId": "litwick",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 36,
-		"rank": 226
-	},
-	"chatot": {
-		"fastMove": "STEEL_WING",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 10.483870967741936,
-		"speciesId": "chatot",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 75,
-		"rank": 227
+		"rank": 220
 	},
 	"pansear": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "FLAME_BURST",
-		"dps": 10.482758620689655,
+		"dps": 9.845228052520646,
+		"tdo": 127.24709186667829,
+		"edps": 8.280061459965497,
 		"speciesId": "pansear",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 40,
+		"rank": 221
+	},
+	"fennekin": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.825909051070726,
+		"tdo": 121.2910935078794,
+		"edps": 8.198619485092625,
+		"speciesId": "fennekin",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 41,
+		"rank": 222
+	},
+	"altaria": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.817645752233313,
+		"tdo": 324.7108667821556,
+		"edps": 9.16388024765823,
+		"speciesId": "altaria",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 41,
+		"rank": 223
+	},
+	"dusclops_shadow": {
+		"fastMove": "HEX",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 9.72779016199915,
+		"tdo": 212.96223073990362,
+		"edps": 8.76693600015465,
+		"speciesId": "dusclops_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 34,
+		"rank": 224
+	},
+	"litten": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.575791359554675,
+		"tdo": 100.84993923598482,
+		"edps": 7.770208335645443,
+		"speciesId": "litten",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 45,
+		"rank": 225
+	},
+	"charmander": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.514506599902038,
+		"tdo": 106.49393439865399,
+		"edps": 7.798122312306811,
+		"speciesId": "charmander",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 41,
+		"rank": 226
+	},
+	"cyndaquil": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.514506599902038,
+		"tdo": 106.49393439865399,
+		"edps": 7.798122312306811,
+		"speciesId": "cyndaquil",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 41,
+		"rank": 227
+	},
+	"chatot": {
+		"fastMove": "STEEL_WING",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 9.433162610726743,
+		"tdo": 154.97553366591723,
+		"edps": 8.196117642719962,
+		"speciesId": "chatot",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 75,
 		"rank": 228
 	},
 	"vulpix": {
 		"fastMove": "EMBER",
 		"chargedMove": "WEATHER_BALL_FIRE",
-		"dps": 10.375,
+		"dps": 9.425822481226612,
+		"tdo": 120.03986350557408,
+		"edps": 7.91400927191898,
 		"speciesId": "vulpix",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 30,
+		"chargedMoveDmg": 29,
 		"rank": 229
 	},
-	"tranquill_shadow": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 10.35483870967742,
-		"speciesId": "tranquill_shadow",
+	"chimchar": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.409234319531471,
+		"tdo": 105.58798095634832,
+		"edps": 7.7193110275893355,
+		"speciesId": "chimchar",
 		"fastMoveDmg": 7,
-		"chargedMoveDmg": 73,
+		"chargedMoveDmg": 40,
 		"rank": 230
 	},
 	"loudred_shadow": {
 		"fastMove": "BITE",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 10.242424242424242,
+		"dps": 9.151676611684843,
+		"tdo": 121.67532178920646,
+		"edps": 7.723821159777284,
 		"speciesId": "loudred_shadow",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 47,
+		"chargedMoveDmg": 46,
 		"rank": 231
 	},
-	"numel": {
+	"numel_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 10.076923076923077,
-		"speciesId": "numel",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 61,
+		"dps": 9.082750526901712,
+		"tdo": 94.32877327297773,
+		"edps": 7.336821354653037,
+		"speciesId": "numel_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 73,
 		"rank": 232
 	},
-	"sizzlipede": {
-		"fastMove": "EMBER",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 10.076923076923077,
-		"speciesId": "sizzlipede",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 61,
+	"buneary": {
+		"fastMove": "POUND",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 9.00576878331184,
+		"tdo": 136.21585897358318,
+		"edps": 7.741539685328556,
+		"speciesId": "buneary",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 29,
 		"rank": 233
 	},
-	"hypno": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 10.038709677419355,
-		"speciesId": "hypno",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 32,
+	"loudred": {
+		"fastMove": "BITE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 9.003015129562895,
+		"tdo": 143.6385728991066,
+		"edps": 7.799871940966504,
+		"speciesId": "loudred",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 39,
 		"rank": 234
 	},
 	"bagon": {
 		"fastMove": "EMBER",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 9.857142857142858,
+		"dps": 8.758647983251734,
+		"tdo": 105.98244633565918,
+		"edps": 7.27945759126987,
 		"speciesId": "bagon",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 39,
 		"rank": 235
 	},
-	"stunky_shadow": {
-		"fastMove": "BITE",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 9.757575757575758,
-		"speciesId": "stunky_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 43,
-		"rank": 236
-	},
-	"dusclops_shadow": {
-		"fastMove": "HEX",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 9.728813559322035,
-		"speciesId": "dusclops_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 34,
-		"rank": 237
-	},
-	"riolu": {
-		"fastMove": "COUNTER",
-		"chargedMove": "BLAZE_KICK",
-		"dps": 9.642857142857144,
-		"speciesId": "riolu",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 23,
-		"rank": 238
-	},
-	"diggersby_shadow": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 9.627118644067798,
-		"speciesId": "diggersby_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 31,
-		"rank": 239
-	},
-	"altaria": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 9.515151515151516,
-		"speciesId": "altaria",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 41,
-		"rank": 240
-	},
-	"charcadet": {
-		"fastMove": "INCINERATE",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 9.455621301775148,
-		"speciesId": "charcadet",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 34,
-		"rank": 241
-	},
-	"loudred": {
-		"fastMove": "BITE",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 9.272727272727273,
-		"speciesId": "loudred",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 39,
-		"rank": 242
-	},
-	"staravia": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 9.208633093525178,
-		"speciesId": "staravia",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 60,
-		"rank": 243
-	},
-	"buneary": {
-		"fastMove": "POUND",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 9.20754716981132,
-		"speciesId": "buneary",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 29,
-		"rank": 244
-	},
-	"whismur_shadow": {
-		"fastMove": "POUND",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 9.142857142857142,
-		"speciesId": "whismur_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 34,
-		"rank": 245
-	},
-	"togetic": {
-		"fastMove": "FAIRY_WIND",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 9.115107913669062,
-		"speciesId": "togetic",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 59,
-		"rank": 246
-	},
-	"stunky": {
-		"fastMove": "BITE",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 8.909090909090908,
-		"speciesId": "stunky",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 36,
-		"rank": 247
-	},
-	"tranquill": {
+	"tranquill_shadow": {
 		"fastMove": "AIR_SLASH",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 8.774193548387096,
-		"speciesId": "tranquill",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 61,
-		"rank": 248
+		"dps": 8.740763348410134,
+		"tdo": 120.30614141498816,
+		"edps": 7.4253850666684915,
+		"speciesId": "tranquill_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 72,
+		"rank": 236
 	},
-	"pidove_shadow": {
+	"staravia_shadow": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 8.460431654676258,
-		"speciesId": "pidove_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 52,
-		"rank": 249
+		"dps": 8.646893561759248,
+		"tdo": 98.99903980700248,
+		"edps": 7.106556071067008,
+		"speciesId": "staravia_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 71,
+		"rank": 237
 	},
-	"blitzle_shadow": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 8.435294117647059,
-		"speciesId": "blitzle_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 45,
-		"rank": 250
+	"sizzlipede": {
+		"fastMove": "EMBER",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 8.587367982819964,
+		"tdo": 106.91655576200493,
+		"edps": 7.164173137185831,
+		"speciesId": "sizzlipede",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 61,
+		"rank": 238
 	},
-	"dusclops": {
-		"fastMove": "HEX",
-		"chargedMove": "FIRE_PUNCH",
-		"dps": 8.40677966101695,
-		"speciesId": "dusclops",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 28,
-		"rank": 251
+	"numel": {
+		"fastMove": "EMBER",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 8.582553730447314,
+		"tdo": 106.96078835519202,
+		"edps": 7.160822084892401,
+		"speciesId": "numel",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 61,
+		"rank": 239
 	},
 	"bastiodon_shadow": {
 		"fastMove": "SMACK_DOWN",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 8.406250000000002,
+		"dps": 8.558666295727448,
+		"tdo": 284.6240121461002,
+		"edps": 7.993138618692935,
 		"speciesId": "bastiodon_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 34,
-		"rank": 252
+		"rank": 240
 	},
-	"carkol": {
-		"fastMove": "SMACK_DOWN",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 8.295081967213113,
-		"speciesId": "carkol",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 44,
-		"rank": 253
+	"togetic": {
+		"fastMove": "FAIRY_WIND",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 8.54861005444542,
+		"tdo": 211.19187856551184,
+		"edps": 7.793538904050173,
+		"speciesId": "togetic",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 58,
+		"rank": 241
+	},
+	"dusclops": {
+		"fastMove": "HEX",
+		"chargedMove": "FIRE_PUNCH",
+		"dps": 8.47827766341097,
+		"tdo": 222.72926938424337,
+		"edps": 7.751027630414169,
+		"speciesId": "dusclops",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 28,
+		"rank": 242
+	},
+	"slugma": {
+		"fastMove": "EMBER",
+		"chargedMove": "FLAME_BURST",
+		"dps": 8.466225556349949,
+		"tdo": 76.81722170620327,
+		"edps": 6.652634484626259,
+		"speciesId": "slugma",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 45,
+		"rank": 243
+	},
+	"stunky_shadow": {
+		"fastMove": "BITE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 8.38492982372758,
+		"tdo": 100.6970317153824,
+		"edps": 6.967269549703463,
+		"speciesId": "stunky_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 42,
+		"rank": 244
+	},
+	"stunky": {
+		"fastMove": "BITE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 8.309013805462957,
+		"tdo": 119.74240611421382,
+		"edps": 7.108100585574426,
+		"speciesId": "stunky",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 35,
+		"rank": 245
 	},
 	"diggersby": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "FIRE_PUNCH",
-		"dps": 7.966101694915254,
+		"dps": 8.236582794425514,
+		"tdo": 232.70614852382886,
+		"edps": 7.594384549390871,
 		"speciesId": "diggersby",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 26,
-		"rank": 254
+		"rank": 246
 	},
-	"fletchling_shadow": {
+	"carkol": {
+		"fastMove": "TACKLE",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 8.053801626780574,
+		"tdo": 222.45885029676316,
+		"edps": 7.3947196008688065,
+		"speciesId": "carkol",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 43,
+		"rank": 247
+	},
+	"riolu": {
+		"fastMove": "COUNTER",
+		"chargedMove": "BLAZE_KICK",
+		"dps": 8.019253539311363,
+		"tdo": 78.6841400658471,
+		"edps": 6.4116311133834865,
+		"speciesId": "riolu",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 23,
+		"rank": 248
+	},
+	"tranquill": {
+		"fastMove": "AIR_SLASH",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 7.8588728026981265,
+		"tdo": 129.80157401304393,
+		"edps": 6.83473845096532,
+		"speciesId": "tranquill",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 60,
+		"rank": 249
+	},
+	"staravia": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 7.553956834532373,
-		"speciesId": "fletchling_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 50,
-		"rank": 255
+		"dps": 7.830461230934963,
+		"tdo": 107.58196597379569,
+		"edps": 6.63248439583367,
+		"speciesId": "staravia",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 60,
+		"rank": 250
 	},
-	"blitzle": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "FLAME_CHARGE",
-		"dps": 7.364705882352942,
-		"speciesId": "blitzle",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 38,
-		"rank": 256
+	"charcadet": {
+		"fastMove": "INCINERATE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 7.600518397558738,
+		"tdo": 71.36800076110036,
+		"edps": 6.003482994373026,
+		"speciesId": "charcadet",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 34,
+		"rank": 251
 	},
 	"bastiodon": {
 		"fastMove": "SMACK_DOWN",
 		"chargedMove": "FLAMETHROWER",
-		"dps": 7.078125000000001,
+		"dps": 7.222230708268073,
+		"tdo": 288.21598487834854,
+		"edps": 6.815329799189889,
 		"speciesId": "bastiodon",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 29,
-		"rank": 257
+		"rank": 252
+	},
+	"pidove_shadow": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 6.083170776869075,
+		"tdo": 57.1041850498348,
+		"edps": 4.815688642425854,
+		"speciesId": "pidove_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 51,
+		"rank": 253
+	},
+	"whismur_shadow": {
+		"fastMove": "POUND",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 6,
+		"tdo": 39.382059528697276,
+		"edps": 4.351610095735422,
+		"speciesId": "whismur_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 34,
+		"rank": 254
+	},
+	"blitzle": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 5.784760242136414,
+		"tdo": 51.20183990010643,
+		"edps": 4.5221310756835535,
+		"speciesId": "blitzle",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 37,
+		"rank": 255
 	},
 	"pidove": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 6.899280575539568,
+		"dps": 5.516111068711277,
+		"tdo": 62.13727374294921,
+		"edps": 4.5176544045294325,
 		"speciesId": "pidove",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 43,
-		"rank": 258
-	},
-	"whismur": {
-		"fastMove": "POUND",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 6.857142857142857,
-		"speciesId": "whismur",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 28,
-		"rank": 259
+		"rank": 256
 	},
 	"fletchling": {
 		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 6.805755395683453,
+		"dps": 5.328633803402865,
+		"tdo": 56.71691406657932,
+		"edps": 4.31657104293843,
 		"speciesId": "fletchling",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 42,
-		"rank": 260
+		"rank": 257
 	},
-	"noibat_shadow": {
-		"fastMove": "WING_ATTACK",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 6.729323308270677,
-		"speciesId": "noibat_shadow",
+	"smeargle": {
+		"fastMove": "LOCK_ON",
+		"chargedMove": "V_CREATE",
+		"dps": 5.285380715866947,
+		"tdo": 65.28719143864869,
+		"edps": 4.400095472971788,
+		"speciesId": "smeargle",
+		"fastMoveDmg": 1,
+		"chargedMoveDmg": 23,
+		"rank": 258
+	},
+	"blitzle_shadow": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "FLAME_CHARGE",
+		"dps": 5.255305363225109,
+		"tdo": 38.76295671840931,
+		"edps": 3.930551350833345,
+		"speciesId": "blitzle_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 45,
+		"rank": 259
+	},
+	"fletchling_shadow": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 4.908933497890149,
+		"tdo": 43.54142144962297,
+		"edps": 3.833715370559699,
+		"speciesId": "fletchling_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 50,
+		"rank": 260
+	},
+	"whismur": {
+		"fastMove": "POUND",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 4.1134415994420666,
+		"tdo": 32.39916168337591,
+		"edps": 3.123970722719127,
+		"speciesId": "whismur",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 28,
 		"rank": 261
 	},
 	"noibat": {
 		"fastMove": "BITE",
 		"chargedMove": "HEAT_WAVE",
-		"dps": 5.67741935483871,
+		"dps": 4,
+		"tdo": 37.13752637439301,
+		"edps": 3.153910849453322,
 		"speciesId": "noibat",
 		"fastMoveDmg": 2,
-		"chargedMoveDmg": 38,
+		"chargedMoveDmg": 37,
 		"rank": 262
 	},
-	"smeargle": {
-		"fastMove": "LOCK_ON",
-		"chargedMove": "V_CREATE",
-		"dps": 5.655913978494623,
-		"speciesId": "smeargle",
-		"fastMoveDmg": 1,
-		"chargedMoveDmg": 23,
+	"noibat_shadow": {
+		"fastMove": "WING_ATTACK",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 4,
+		"tdo": 30.947937407409967,
+		"edps": 3.0278562777553493,
+		"speciesId": "noibat_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 45,
 		"rank": 263
 	}
 }

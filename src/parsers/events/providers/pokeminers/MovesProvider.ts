@@ -141,6 +141,14 @@ class MovesProvider {
 						pvePower: dataPointer.power,
 						pveEnergy: dataPointer.energyDelta,
 						pveCooldown: +dataPointer.durationMs / 1000,
+						pveDamageWindowStart:
+							dataPointer.damageWindowStartMs != null
+								? +dataPointer.damageWindowStartMs / 1000
+								: undefined,
+						pveDamageWindowEnd:
+							dataPointer.damageWindowEndMs != null
+								? +dataPointer.damageWindowEndMs / 1000
+								: undefined,
 					};
 				}
 			});
@@ -179,6 +187,8 @@ class MovesProvider {
 				pveEnergy: pveCounterpart?.pveEnergy ?? 0,
 				pvpCooldown: move.pvpCooldown ?? 0,
 				pveCooldown: pveCounterpart?.pveCooldown ?? 0,
+				pveDamageWindowStart: pveCounterpart?.pveDamageWindowStart,
+				pveDamageWindowEnd: pveCounterpart?.pveDamageWindowEnd,
 				buffs: move.buffs,
 				moveName,
 			};
@@ -212,6 +222,8 @@ class MovesProvider {
 				pveEnergy: move.pveEnergy ?? 0,
 				pvpCooldown: pvpCounterpart?.pvpCooldown ?? 0,
 				pveCooldown: move.pveCooldown ?? 0,
+				pveDamageWindowStart: move.pveDamageWindowStart,
+				pveDamageWindowEnd: move.pveDamageWindowEnd,
 				buffs: pvpCounterpart?.buffs,
 				moveName,
 			};

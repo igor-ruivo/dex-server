@@ -1,7 +1,7 @@
 import type { GameMasterData, IGameMasterMove } from '../parsers/types/pokemon';
 import { PokemonTypes } from '../parsers/types/pokemon';
 import type { DPSEntry } from './utils';
-import { computeDPSEntry, getAllChargedMoves } from './utils';
+import { computeDPSEntry, getAllChargedMoves, MAX_LEVEL_INDEX } from './utils';
 
 type ComputedDpsRank = DPSEntry & {
 	rank: number;
@@ -28,7 +28,7 @@ class RaidDpsCalculator {
 									(m) => this.moves[m].type === type
 								))
 					)
-					.map((p) => computeDPSEntry(p, this.moves, 15, 100, type))
+					.map((p) => computeDPSEntry(p, this.moves, 15, MAX_LEVEL_INDEX, type))
 					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);
 
 				pokemonEntries.sort((a, b) => {

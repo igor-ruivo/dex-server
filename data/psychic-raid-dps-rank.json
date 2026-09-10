@@ -1,98 +1,120 @@
 {
 	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "FUTURE_SIGHT_PLUS",
-		"dps": 43.096296296296295,
+		"chargedMove": "PSYSTRIKE",
+		"dps": 44.25225243211816,
+		"tdo": 2006.0159040990295,
+		"edps": 42.25759253654404,
 		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 287,
+		"chargedMoveDmg": 194,
 		"rank": 1
 	},
 	"mewtwo_mega_x": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSTRIKE",
-		"dps": 41.199999999999996,
+		"dps": 42.60217353237283,
+		"tdo": 1866.3007336408916,
+		"edps": 40.639975409652344,
 		"speciesId": "mewtwo_mega_x",
 		"fastMoveDmg": 38,
-		"chargedMoveDmg": 188,
+		"chargedMoveDmg": 187,
 		"rank": 2
 	},
 	"mewtwo_shadow": {
-		"fastMove": "CONFUSION",
+		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYSTRIKE",
-		"dps": 37.8,
+		"dps": 38.890571228895396,
+		"tdo": 1144.5173480305575,
+		"edps": 35.99732752644662,
 		"speciesId": "mewtwo_shadow",
-		"fastMoveDmg": 35,
-		"chargedMoveDmg": 172,
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 171,
 		"rank": 3
 	},
 	"alakazam_mega": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 35.77777777777778,
+		"dps": 35.853518259066995,
+		"tdo": 1003.2528175137679,
+		"edps": 33.306023592386374,
 		"speciesId": "alakazam_mega",
 		"fastMoveDmg": 35,
-		"chargedMoveDmg": 174,
+		"chargedMoveDmg": 173,
 		"rank": 4
 	},
-	"alakazam_shadow": {
+	"mewtwo": {
 		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 32.34188034188034,
-		"speciesId": "alakazam_shadow",
-		"fastMoveDmg": 32,
-		"chargedMoveDmg": 156,
+		"chargedMove": "PSYSTRIKE",
+		"dps": 32.42949282793463,
+		"tdo": 1145.2478307586746,
+		"edps": 30.392554871465883,
+		"speciesId": "mewtwo",
+		"fastMoveDmg": 29,
+		"chargedMoveDmg": 143,
 		"rank": 5
 	},
 	"gallade_mega": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 31.794871794871796,
+		"dps": 32.23049971881541,
+		"tdo": 1135.3916881775694,
+		"edps": 30.21770731728332,
 		"speciesId": "gallade_mega",
 		"fastMoveDmg": 31,
-		"chargedMoveDmg": 155,
+		"chargedMoveDmg": 154,
 		"rank": 6
 	},
 	"gardevoir_mega": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 31.794871794871796,
+		"dps": 32.22886025930265,
+		"tdo": 1130.6999184774259,
+		"edps": 30.216266227569772,
 		"speciesId": "gardevoir_mega",
 		"fastMoveDmg": 31,
-		"chargedMoveDmg": 155,
+		"chargedMoveDmg": 154,
 		"rank": 7
-	},
-	"mewtwo": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYSTRIKE",
-		"dps": 31.788235294117648,
-		"speciesId": "mewtwo",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 143,
-		"rank": 8
 	},
 	"latios_mega": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 30.92207792207792,
+		"dps": 31.740210909552786,
+		"tdo": 1304.878533886133,
+		"edps": 30.451495074645514,
 		"speciesId": "latios_mega",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 159,
-		"rank": 9
+		"chargedMoveDmg": 158,
+		"rank": 8
 	},
 	"delphox_mega": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 30.68831168831169,
+		"dps": 31.524684416638078,
+		"tdo": 1206.7754615260415,
+		"edps": 29.65495803006517,
 		"speciesId": "delphox_mega",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 157,
+		"rank": 9
+	},
+	"alakazam_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 31.146105372504017,
+		"tdo": 595.4146387121257,
+		"edps": 27.64461547275095,
+		"speciesId": "alakazam_shadow",
+		"fastMoveDmg": 31,
+		"chargedMoveDmg": 155,
 		"rank": 10
 	},
 	"hoopa_unbound": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 30.52991452991453,
+		"dps": 31.004592592032083,
+		"tdo": 936.234774460323,
+		"edps": 28.968753299106236,
 		"speciesId": "hoopa_unbound",
 		"fastMoveDmg": 30,
 		"chargedMoveDmg": 148,
@@ -101,2077 +123,2539 @@
 	"latios_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 29.805194805194805,
+		"dps": 30.530397346219537,
+		"tdo": 927.464645565675,
+		"edps": 28.554371077618402,
 		"speciesId": "latios_shadow",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 155,
+		"chargedMoveDmg": 154,
 		"rank": 12
 	},
 	"metagross_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 29.103896103896105,
+		"dps": 29.817420988202255,
+		"tdo": 969.6508901379059,
+		"edps": 27.98185794384605,
 		"speciesId": "metagross_shadow",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 149,
+		"chargedMoveDmg": 148,
 		"rank": 13
+	},
+	"metagross_mega": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHIC",
+		"dps": 28.57555380525536,
+		"tdo": 1395.0460788370724,
+		"edps": 27.57737149870172,
+		"speciesId": "metagross_mega",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 143,
+		"rank": 14
 	},
 	"gallade_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 28.478632478632477,
+		"dps": 28.574335784817055,
+		"tdo": 718.9964769526794,
+		"edps": 26.226225286049313,
 		"speciesId": "gallade_shadow",
 		"fastMoveDmg": 28,
-		"chargedMoveDmg": 138,
-		"rank": 14
+		"chargedMoveDmg": 137,
+		"rank": 15
 	},
 	"gardevoir_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 28.478632478632477,
+		"dps": 28.574335784817055,
+		"tdo": 718.9964769526794,
+		"edps": 26.226225286049313,
 		"speciesId": "gardevoir_shadow",
 		"fastMoveDmg": 28,
-		"chargedMoveDmg": 138,
-		"rank": 15
-	},
-	"deoxys_attack": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHO_BOOST",
-		"dps": 28.441860465116278,
-		"speciesId": "deoxys_attack",
-		"fastMoveDmg": 23,
-		"chargedMoveDmg": 144,
+		"chargedMoveDmg": 137,
 		"rank": 16
 	},
 	"exeggutor_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 28.23931623931624,
+		"dps": 28.282127947147533,
+		"tdo": 700.1131960461029,
+		"edps": 25.934942764528806,
 		"speciesId": "exeggutor_shadow",
-		"fastMoveDmg": 28,
-		"chargedMoveDmg": 136,
+		"fastMoveDmg": 27,
+		"chargedMoveDmg": 135,
 		"rank": 17
 	},
-	"metagross_mega": {
+	"latias_mega": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 27.753246753246756,
-		"speciesId": "metagross_mega",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 143,
+		"dps": 27.316982995250907,
+		"tdo": 1368.6980216532538,
+		"edps": 26.403385925740285,
+		"speciesId": "latias_mega",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 138,
 		"rank": 18
 	},
 	"starmie_mega": {
 		"fastMove": "PSYWAVE",
 		"chargedMove": "PSYCHIC",
-		"dps": 26.760869565217394,
+		"dps": 27.059251593777958,
+		"tdo": 875.3582267947369,
+		"edps": 25.452241511511577,
 		"speciesId": "starmie_mega",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 133,
+		"chargedMoveDmg": 132,
 		"rank": 19
+	},
+	"latias_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHIC",
+		"dps": 26.583123644697146,
+		"tdo": 928.5078256182262,
+		"edps": 25.072385069963907,
+		"speciesId": "latias_shadow",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 132,
+		"rank": 20
 	},
 	"alakazam": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 26.666666666666664,
+		"dps": 26.54671806679455,
+		"tdo": 608.9867734001537,
+		"edps": 23.998402740384993,
 		"speciesId": "alakazam",
 		"fastMoveDmg": 26,
 		"chargedMoveDmg": 130,
-		"rank": 20
-	},
-	"latias_mega": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 26.51948051948052,
-		"speciesId": "latias_mega",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 138,
 		"rank": 21
 	},
 	"gengar_mega": {
 		"fastMove": "LICK",
 		"chargedMove": "PSYCHIC",
-		"dps": 26.232558139534884,
+		"dps": 26.526336656722325,
+		"tdo": 752.6122123065961,
+		"edps": 24.530817627694546,
 		"speciesId": "gengar_mega",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 138,
+		"chargedMoveDmg": 137,
 		"rank": 22
-	},
-	"espeon": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 26.188034188034187,
-		"speciesId": "espeon",
-		"fastMoveDmg": 26,
-		"chargedMoveDmg": 126,
-		"rank": 23
-	},
-	"hoopa": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 26.188034188034187,
-		"speciesId": "hoopa",
-		"fastMoveDmg": 26,
-		"chargedMoveDmg": 126,
-		"rank": 24
 	},
 	"delphox_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 26.051948051948052,
+		"dps": 26.424797890623722,
+		"tdo": 687.8540404010898,
+		"edps": 24.364547510875305,
 		"speciesId": "delphox_shadow",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 134,
+		"chargedMoveDmg": 133,
+		"rank": 23
+	},
+	"lunala": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 26.332256373607557,
+		"tdo": 1185.1218870685568,
+		"edps": 25.014860912225828,
+		"speciesId": "lunala",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 122,
+		"rank": 24
+	},
+	"hoopa": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 26.031860453105185,
+		"tdo": 770.8113406644056,
+		"edps": 24.107345982473092,
+		"speciesId": "hoopa",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 125,
 		"rank": 25
 	},
-	"azelf": {
+	"espeon": {
 		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 25.935135135135134,
-		"speciesId": "azelf",
-		"fastMoveDmg": 26,
-		"chargedMoveDmg": 157,
+		"chargedMove": "PSYCHIC",
+		"dps": 25.85416067798043,
+		"tdo": 683.3798657938645,
+		"edps": 23.87860458307845,
+		"speciesId": "espeon",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 125,
 		"rank": 26
 	},
-	"latias_shadow": {
+	"latios": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 25.935064935064936,
-		"speciesId": "latias_shadow",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 133,
+		"dps": 25.465111874833838,
+		"tdo": 928.3072854704483,
+		"edps": 24.075454486448123,
+		"speciesId": "latios",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 128,
 		"rank": 27
 	},
 	"necrozma_dawn_wings": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 25.58518518518519,
+		"dps": 25.304195119646078,
+		"tdo": 999.3664404896068,
+		"edps": 23.96981404611606,
 		"speciesId": "necrozma_dawn_wings",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 161,
+		"chargedMoveDmg": 160,
 		"rank": 28
 	},
 	"necrozma_dusk_mane": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 25.58518518518519,
+		"dps": 25.304195119646078,
+		"tdo": 999.3664404896068,
+		"edps": 23.96981404611606,
 		"speciesId": "necrozma_dusk_mane",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 161,
+		"chargedMoveDmg": 160,
 		"rank": 29
-	},
-	"lunala": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 25.401709401709404,
-		"speciesId": "lunala",
-		"fastMoveDmg": 25,
-		"chargedMoveDmg": 123,
-		"rank": 30
 	},
 	"starmie_shadow": {
 		"fastMove": "PSYWAVE",
 		"chargedMove": "PSYCHIC",
-		"dps": 25.23913043478261,
+		"dps": 25.109035389671877,
+		"tdo": 552.054624737153,
+		"edps": 22.713695641375804,
 		"speciesId": "starmie_shadow",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 123,
-		"rank": 31
-	},
-	"malamar_mega": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYBEAM_PLUS",
-		"dps": 24.985915492957748,
-		"speciesId": "malamar_mega",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 182,
-		"rank": 32
-	},
-	"tapu_lele": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 24.940540540540542,
-		"speciesId": "tapu_lele",
-		"fastMoveDmg": 25,
-		"chargedMoveDmg": 151,
-		"rank": 33
-	},
-	"latios": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 24.818181818181817,
-		"speciesId": "latios",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 129,
-		"rank": 34
-	},
-	"articuno_galarian": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 24.562162162162164,
-		"speciesId": "articuno_galarian",
-		"fastMoveDmg": 25,
-		"chargedMoveDmg": 146,
-		"rank": 35
+		"chargedMoveDmg": 122,
+		"rank": 30
 	},
 	"metagross": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 24.233766233766232,
+		"dps": 24.839839622047712,
+		"tdo": 969.338303538874,
+		"edps": 23.552737910843657,
 		"speciesId": "metagross",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 124,
-		"rank": 36
+		"chargedMoveDmg": 123,
+		"rank": 31
+	},
+	"azelf": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 24.825468386000423,
+		"tdo": 631.0172817905826,
+		"edps": 22.928129844023985,
+		"speciesId": "azelf",
+		"fastMoveDmg": 26,
+		"chargedMoveDmg": 156,
+		"rank": 32
+	},
+	"malamar_mega": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "PSYBEAM_PLUS",
+		"dps": 24.714864177155892,
+		"tdo": 984.3985050414415,
+		"edps": 23.44034908080217,
+		"speciesId": "malamar_mega",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 181,
+		"rank": 33
+	},
+	"tapu_lele": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 24.17742313940576,
+		"tdo": 790.3262248401925,
+		"edps": 22.54237362249298,
+		"speciesId": "tapu_lele",
+		"fastMoveDmg": 25,
+		"chargedMoveDmg": 150,
+		"rank": 34
 	},
 	"necrozma": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 24.133333333333336,
+		"dps": 23.972964920638148,
+		"tdo": 921.2743552956185,
+		"edps": 22.73744144535451,
 		"speciesId": "necrozma",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 147,
-		"rank": 37
+		"chargedMoveDmg": 146,
+		"rank": 35
 	},
-	"deoxys": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHO_BOOST",
-		"dps": 23.709302325581394,
-		"speciesId": "deoxys",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 121,
-		"rank": 38
+	"exeggutor": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 23.873099714404802,
+		"tdo": 709.1633065390987,
+		"edps": 22.178776088473345,
+		"speciesId": "exeggutor",
+		"fastMoveDmg": 23,
+		"chargedMoveDmg": 112,
+		"rank": 36
 	},
 	"gallade": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 23.58974358974359,
+		"dps": 23.812181918476334,
+		"tdo": 719.0036145038778,
+		"edps": 22.158874946308188,
 		"speciesId": "gallade",
 		"fastMoveDmg": 23,
-		"chargedMoveDmg": 115,
-		"rank": 39
+		"chargedMoveDmg": 114,
+		"rank": 37
 	},
 	"gardevoir": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 23.58974358974359,
+		"dps": 23.812181918476334,
+		"tdo": 719.0036145038778,
+		"edps": 22.158874946308188,
 		"speciesId": "gardevoir",
 		"fastMoveDmg": 23,
-		"chargedMoveDmg": 115,
+		"chargedMoveDmg": 114,
+		"rank": 38
+	},
+	"articuno_galarian": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 23.7747826565031,
+		"tdo": 875.3006013439624,
+		"edps": 22.525208157294703,
+		"speciesId": "articuno_galarian",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 145,
+		"rank": 39
+	},
+	"darmanitan_standard_shadow": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "PSYCHIC",
+		"dps": 23.695918512728916,
+		"tdo": 494.69462974072695,
+		"edps": 21.185830005548855,
+		"speciesId": "darmanitan_standard_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 126,
 		"rank": 40
 	},
 	"hatterene": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 23.58974358974359,
+		"dps": 23.51024949055933,
+		"tdo": 592.4284379157739,
+		"edps": 21.458625735205203,
 		"speciesId": "hatterene",
 		"fastMoveDmg": 23,
-		"chargedMoveDmg": 115,
+		"chargedMoveDmg": 114,
 		"rank": 41
 	},
 	"honchkrow_shadow": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC",
-		"dps": 23.415730337078653,
+		"dps": 23.177706780387048,
+		"tdo": 427.71958021951986,
+		"edps": 20.627811493376022,
 		"speciesId": "honchkrow_shadow",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 118,
+		"chargedMoveDmg": 117,
 		"rank": 42
-	},
-	"exeggutor": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "PSYCHIC",
-		"dps": 23.409638554216865,
-		"speciesId": "exeggutor",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 113,
-		"rank": 43
-	},
-	"gengar_shadow": {
-		"fastMove": "LICK",
-		"chargedMove": "PSYCHIC",
-		"dps": 23.395348837209305,
-		"speciesId": "gengar_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 126,
-		"rank": 44
 	},
 	"reuniclus_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 23.33877551020408,
+		"dps": 23.1005827158942,
+		"tdo": 629.8825867677779,
+		"edps": 21.448970337704516,
 		"speciesId": "reuniclus_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 151,
+		"rank": 43
+	},
+	"deoxys_attack": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHO_BOOST",
+		"dps": 23,
+		"tdo": 166.3616649968755,
+		"edps": 17.100371747211895,
+		"speciesId": "deoxys_attack",
+		"fastMoveDmg": 23,
+		"chargedMoveDmg": 143,
+		"rank": 44
+	},
+	"slowbro_mega": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 22.979344673194603,
+		"tdo": 1140.4645710703933,
+		"edps": 21.937517789250645,
+		"speciesId": "slowbro_mega",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 108,
 		"rank": 45
 	},
-	"darmanitan_standard_shadow": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "PSYCHIC",
-		"dps": 23.28571428571429,
-		"speciesId": "darmanitan_standard_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 127,
+	"deoxys": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHO_BOOST",
+		"dps": 22.95569828058442,
+		"tdo": 353.85834948404266,
+		"edps": 19.77763269812739,
+		"speciesId": "deoxys",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 120,
 		"rank": 46
 	},
 	"lugia_shadow": {
 		"fastMove": "EXTRASENSORY",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 22.88627450980392,
+		"dps": 22.779742366193393,
+		"tdo": 1209.6565087446243,
+		"edps": 21.787131864643662,
 		"speciesId": "lugia_shadow",
 		"fastMoveDmg": 14,
-		"chargedMoveDmg": 138,
+		"chargedMoveDmg": 137,
 		"rank": 47
 	},
-	"kadabra_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYBEAM",
-		"dps": 22.666666666666668,
-		"speciesId": "kadabra_shadow",
-		"fastMoveDmg": 27,
-		"chargedMoveDmg": 93,
+	"gengar_shadow": {
+		"fastMove": "LICK",
+		"chargedMove": "PSYCHIC",
+		"dps": 22.771750118319734,
+		"tdo": 412.6094826821064,
+		"edps": 20.034435204841785,
+		"speciesId": "gengar_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 125,
 		"rank": 48
 	},
-	"slowbro_mega": {
-		"fastMove": "CONFUSION",
+	"magmortar_shadow": {
+		"fastMove": "FIRE_SPIN",
 		"chargedMove": "PSYCHIC",
-		"dps": 22.444444444444443,
-		"speciesId": "slowbro_mega",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 109,
+		"dps": 22.691376736396478,
+		"tdo": 541.4481868665839,
+		"edps": 20.716971038751694,
+		"speciesId": "magmortar_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 119,
 		"rank": 49
 	},
 	"meloetta_aria": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSHOCK",
-		"dps": 22.35502958579882,
+		"dps": 22.64544087377222,
+		"tdo": 1019.952497181843,
+		"edps": 21.601849603459144,
 		"speciesId": "meloetta_aria",
-		"fastMoveDmg": 25,
+		"fastMoveDmg": 24,
 		"chargedMoveDmg": 76,
 		"rank": 50
-	},
-	"magmortar_shadow": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "PSYCHIC",
-		"dps": 22.350649350649352,
-		"speciesId": "magmortar_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 119,
-		"rank": 51
 	},
 	"beheeyem": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 22.32478632478632,
+		"dps": 22.527805943825612,
+		"tdo": 614.0088248206191,
+		"edps": 20.665603153599967,
 		"speciesId": "beheeyem",
 		"fastMoveDmg": 22,
-		"chargedMoveDmg": 108,
-		"rank": 52
-	},
-	"girafarig_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 22.32478632478632,
-		"speciesId": "girafarig_shadow",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 108,
-		"rank": 53
+		"chargedMoveDmg": 107,
+		"rank": 51
 	},
 	"slowbro_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.538461538461537,
+		"dps": 22.01719266968241,
+		"tdo": 648.0505552284151,
+		"edps": 20.511817229833866,
 		"speciesId": "slowbro_shadow",
 		"fastMoveDmg": 21,
-		"chargedMoveDmg": 105,
-		"rank": 54
+		"chargedMoveDmg": 104,
+		"rank": 52
 	},
 	"slowking_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.538461538461537,
+		"dps": 22.01719266968241,
+		"tdo": 648.0505552284151,
+		"edps": 20.511817229833866,
 		"speciesId": "slowking_shadow",
 		"fastMoveDmg": 21,
-		"chargedMoveDmg": 105,
-		"rank": 55
+		"chargedMoveDmg": 104,
+		"rank": 53
 	},
 	"delphox": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.532467532467535,
+		"dps": 21.965591869778972,
+		"tdo": 686.1337650035832,
+		"edps": 20.523030249337157,
 		"speciesId": "delphox",
 		"fastMoveDmg": 13,
-		"chargedMoveDmg": 112,
-		"rank": 56
-	},
-	"gothitelle_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 21.418803418803417,
-		"speciesId": "gothitelle_shadow",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 104,
-		"rank": 57
+		"chargedMoveDmg": 111,
+		"rank": 54
 	},
 	"latias": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.415584415584416,
+		"dps": 21.954858988960744,
+		"tdo": 920.2195860562792,
+		"edps": 20.914083290056517,
 		"speciesId": "latias",
 		"fastMoveDmg": 13,
-		"chargedMoveDmg": 111,
-		"rank": 58
-	},
-	"duosion_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 21.405405405405407,
-		"speciesId": "duosion_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 77,
-		"rank": 59
+		"chargedMoveDmg": 110,
+		"rank": 55
 	},
 	"celebi": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.299145299145298,
+		"dps": 21.863708204686226,
+		"tdo": 923.1967446005531,
+		"edps": 20.831353436454673,
 		"speciesId": "celebi",
 		"fastMoveDmg": 21,
-		"chargedMoveDmg": 103,
-		"rank": 60
+		"chargedMoveDmg": 102,
+		"rank": 56
 	},
 	"jirachi": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.299145299145298,
+		"dps": 21.863708204686226,
+		"tdo": 923.1967446005531,
+		"edps": 20.831353436454673,
 		"speciesId": "jirachi",
 		"fastMoveDmg": 21,
-		"chargedMoveDmg": 103,
-		"rank": 61
-	},
-	"mr_rime": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 21.299145299145298,
-		"speciesId": "mr_rime",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 103,
-		"rank": 62
+		"chargedMoveDmg": 102,
+		"rank": 57
 	},
 	"victini": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.299145299145298,
+		"dps": 21.863708204686226,
+		"tdo": 923.1967446005531,
+		"edps": 20.831353436454673,
 		"speciesId": "victini",
 		"fastMoveDmg": 21,
+		"chargedMoveDmg": 102,
+		"rank": 58
+	},
+	"girafarig_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 21.76073534155815,
+		"tdo": 393.4101292797858,
+		"edps": 19.198404140473905,
+		"speciesId": "girafarig_shadow",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 107,
+		"rank": 59
+	},
+	"mr_rime": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 21.753858997079124,
+		"tdo": 677.7325624678125,
+		"edps": 20.310539154346017,
+		"speciesId": "mr_rime",
+		"fastMoveDmg": 21,
 		"chargedMoveDmg": 103,
+		"rank": 60
+	},
+	"gothitelle_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 21.67099896795901,
+		"tdo": 582.3872620563126,
+		"edps": 19.91584119386223,
+		"speciesId": "gothitelle_shadow",
+		"fastMoveDmg": 21,
+		"chargedMoveDmg": 104,
+		"rank": 61
+	},
+	"grumpig_shadow": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "PSYCHIC",
+		"dps": 21.2687137745174,
+		"tdo": 577.7983727610867,
+		"edps": 19.57556863194526,
+		"speciesId": "grumpig_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 101,
+		"rank": 62
+	},
+	"wyrdeer": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 21.190733247675084,
+		"tdo": 648.9506840307455,
+		"edps": 19.792663100900782,
+		"speciesId": "wyrdeer",
+		"fastMoveDmg": 20,
+		"chargedMoveDmg": 100,
 		"rank": 63
 	},
 	"starmie": {
 		"fastMove": "PSYWAVE",
 		"chargedMove": "PSYCHIC",
-		"dps": 21.108695652173914,
+		"dps": 21.17946946281343,
+		"tdo": 558.7896636884974,
+		"edps": 19.47462554937305,
 		"speciesId": "starmie",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 103,
-		"rank": 64
-	},
-	"wyrdeer": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 21.05982905982906,
-		"speciesId": "wyrdeer",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 101,
-		"rank": 65
-	},
-	"grumpig_shadow": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "PSYCHIC",
-		"dps": 20.956521739130437,
-		"speciesId": "grumpig_shadow",
-		"fastMoveDmg": 5,
 		"chargedMoveDmg": 102,
-		"rank": 66
-	},
-	"mesprit": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 20.81081081081081,
-		"speciesId": "mesprit",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 125,
-		"rank": 67
+		"rank": 64
 	},
 	"rapidash_galarian": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYCHIC",
-		"dps": 20.804347826086957,
+		"dps": 21.01332640546759,
+		"tdo": 517.4235694624377,
+		"edps": 19.284351973325073,
 		"speciesId": "rapidash_galarian",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 101,
-		"rank": 68
+		"rank": 65
 	},
-	"indeedee_male": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "PSYCHIC",
-		"dps": 20.74698795180723,
-		"speciesId": "indeedee_male",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 102,
-		"rank": 69
-	},
-	"medicham_mega": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYCHIC",
-		"dps": 20.65217391304348,
-		"speciesId": "medicham_mega",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 100,
-		"rank": 70
+	"kadabra_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYBEAM",
+		"dps": 20.918704280925645,
+		"tdo": 242.77153152382718,
+		"edps": 17.279879259566524,
+		"speciesId": "kadabra_shadow",
+		"fastMoveDmg": 27,
+		"chargedMoveDmg": 92,
+		"rank": 66
 	},
 	"espathra": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 20.512820512820515,
+		"dps": 20.862914385245183,
+		"tdo": 536.6077200167313,
+		"edps": 19.182097649116844,
 		"speciesId": "espathra",
 		"fastMoveDmg": 20,
+		"chargedMoveDmg": 99,
+		"rank": 67
+	},
+	"medicham_mega": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "PSYCHIC",
+		"dps": 20.84784253060133,
+		"tdo": 536.2200621177667,
+		"edps": 19.169355748369938,
+		"speciesId": "medicham_mega",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 100,
+		"rank": 68
+	},
+	"braviary_hisuian": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHIC",
+		"dps": 20.74939224459171,
+		"tdo": 633.1101771102523,
+		"edps": 19.40710668168841,
+		"speciesId": "braviary_hisuian",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 103,
+		"rank": 69
+	},
+	"indeedee_male": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "PSYCHIC",
+		"dps": 20.68093492563075,
+		"tdo": 496.2824912032089,
+		"edps": 18.74283787369326,
+		"speciesId": "indeedee_male",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 101,
+		"rank": 70
+	},
+	"yveltal": {
+		"fastMove": "SNARL",
+		"chargedMove": "PSYCHIC",
+		"dps": 20.529205118921595,
+		"tdo": 839.5336551905226,
+		"edps": 19.590777890815435,
+		"speciesId": "yveltal",
+		"fastMoveDmg": 9,
 		"chargedMoveDmg": 100,
 		"rank": 71
 	},
 	"gengar": {
 		"fastMove": "LICK",
 		"chargedMove": "PSYCHIC",
-		"dps": 20.46511627906977,
+		"dps": 20.34734726044038,
+		"tdo": 442.4170502108063,
+		"edps": 18.400463982349507,
 		"speciesId": "gengar",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 105,
+		"chargedMoveDmg": 104,
 		"rank": 72
 	},
-	"abra_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 20.162162162162165,
-		"speciesId": "abra_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 73,
-		"rank": 73
-	},
-	"jynx": {
+	"mesprit": {
 		"fastMove": "CONFUSION",
-		"chargedMove": "PSYSHOCK",
-		"dps": 20.023668639053255,
-		"speciesId": "jynx",
-		"fastMoveDmg": 22,
-		"chargedMoveDmg": 69,
-		"rank": 74
-	},
-	"braviary_hisuian": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 19.948051948051948,
-		"speciesId": "braviary_hisuian",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 104,
-		"rank": 75
-	},
-	"reuniclus": {
-		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 19.869387755102043,
-		"speciesId": "reuniclus",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 126,
-		"rank": 76
-	},
-	"yveltal": {
-		"fastMove": "SNARL",
-		"chargedMove": "PSYCHIC",
-		"dps": 19.80898876404494,
-		"speciesId": "yveltal",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 101,
-		"rank": 77
-	},
-	"mewtwo_armored": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYSTRIKE",
-		"dps": 19.636363636363633,
-		"speciesId": "mewtwo_armored",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 90,
-		"rank": 78
+		"dps": 20.3421427932293,
+		"tdo": 741.5541486663174,
+		"edps": 19.123251343464016,
+		"speciesId": "mesprit",
+		"fastMoveDmg": 21,
+		"chargedMoveDmg": 124,
+		"rank": 73
 	},
 	"darmanitan_standard": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "PSYCHIC",
-		"dps": 19.532467532467532,
+		"dps": 20.181957173061505,
+		"tdo": 505.6013114746653,
+		"edps": 18.558886970943345,
 		"speciesId": "darmanitan_standard",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 106,
-		"rank": 79
+		"chargedMoveDmg": 105,
+		"rank": 74
+	},
+	"mewtwo_armored": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYSTRIKE",
+		"dps": 20.125463691322658,
+		"tdo": 1057.0769687188167,
+		"edps": 19.29696171306325,
+		"speciesId": "mewtwo_armored",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 89,
+		"rank": 75
+	},
+	"jynx": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYSHOCK",
+		"dps": 20.076237367682737,
+		"tdo": 463.6268129304411,
+		"edps": 18.20052710845814,
+		"speciesId": "jynx",
+		"fastMoveDmg": 22,
+		"chargedMoveDmg": 68,
+		"rank": 76
+	},
+	"duosion_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 19.853898090801763,
+		"tdo": 271.5968113850036,
+		"edps": 16.825213656658107,
+		"speciesId": "duosion_shadow",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 77,
+		"rank": 77
 	},
 	"honchkrow": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC",
-		"dps": 19.37078651685393,
+		"dps": 19.731093203859178,
+		"tdo": 436.9392703065828,
+		"edps": 17.873709327431158,
 		"speciesId": "honchkrow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 98,
-		"rank": 80
-	},
-	"golduck_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 19.367521367521366,
-		"speciesId": "golduck_shadow",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 94,
-		"rank": 81
-	},
-	"mr_mime": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 19.367521367521366,
-		"speciesId": "mr_mime",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 94,
-		"rank": 82
-	},
-	"kadabra": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYBEAM",
-		"dps": 19.042735042735046,
-		"speciesId": "kadabra",
-		"fastMoveDmg": 23,
-		"chargedMoveDmg": 77,
-		"rank": 83
+		"rank": 78
 	},
 	"mew": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.97752808988764,
+		"dps": 19.651771007274718,
+		"tdo": 829.7975279263438,
+		"edps": 18.55769621779093,
 		"speciesId": "mew",
 		"fastMoveDmg": 7,
-		"chargedMoveDmg": 103,
-		"rank": 84
+		"chargedMoveDmg": 102,
+		"rank": 79
+	},
+	"golduck_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 19.4503289742678,
+		"tdo": 460.7223357737179,
+		"edps": 17.68460881670188,
+		"speciesId": "golduck_shadow",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 93,
+		"rank": 80
 	},
 	"solgaleo": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 18.85714285714286,
+		"dps": 19.449484924434355,
+		"tdo": 875.3526454064067,
+		"edps": 18.60514384027804,
 		"speciesId": "solgaleo",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 33,
-		"rank": 85
+		"rank": 81
 	},
 	"magmortar": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.83116883116883,
+		"dps": 19.171423364841914,
+		"tdo": 548.9485960951221,
+		"edps": 17.74277547184223,
 		"speciesId": "magmortar",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 100,
-		"rank": 86
+		"chargedMoveDmg": 99,
+		"rank": 82
 	},
-	"slowking_galarian": {
+	"mr_mime": {
 		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 18.82162162162162,
-		"speciesId": "slowking_galarian",
+		"chargedMove": "PSYCHIC",
+		"dps": 19.14653025621569,
+		"tdo": 444.4092327302025,
+		"edps": 17.412870760523244,
+		"speciesId": "mr_mime",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 113,
-		"rank": 87
+		"chargedMoveDmg": 94,
+		"rank": 83
+	},
+	"reuniclus": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 19.040859385011057,
+		"tdo": 623.0235691085221,
+		"edps": 17.69327847500166,
+		"speciesId": "reuniclus",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 126,
+		"rank": 84
 	},
 	"bruxish": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSHOCK",
-		"dps": 18.80473372781065,
+		"dps": 19.028251134280403,
+		"tdo": 437.75533172614024,
+		"edps": 17.295022562137323,
 		"speciesId": "bruxish",
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 64,
-		"rank": 88
-	},
-	"indeedee_female": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.686746987951807,
-		"speciesId": "indeedee_female",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 91,
-		"rank": 89
-	},
-	"cresselia_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 18.67027027027027,
-		"speciesId": "cresselia_shadow",
-		"fastMoveDmg": 19,
-		"chargedMoveDmg": 111,
-		"rank": 90
-	},
-	"polteageist": {
-		"fastMove": "SUCKER_PUNCH",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.6046511627907,
-		"speciesId": "polteageist",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 100,
-		"rank": 91
-	},
-	"lugia": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 18.549019607843135,
-		"speciesId": "lugia",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 115,
-		"rank": 92
-	},
-	"girafarig": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.46153846153846,
-		"speciesId": "girafarig",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 90,
-		"rank": 93
-	},
-	"mr_mime_galarian": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.46153846153846,
-		"speciesId": "mr_mime_galarian",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 90,
-		"rank": 94
+		"rank": 85
 	},
 	"slowbro_galarian": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.46153846153846,
+		"dps": 18.874697722120654,
+		"tdo": 584.6146735470415,
+		"edps": 17.529206587797315,
 		"speciesId": "slowbro_galarian",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 90,
-		"rank": 95
-	},
-	"venomoth_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.34188034188034,
-		"speciesId": "venomoth_shadow",
-		"fastMoveDmg": 18,
 		"chargedMoveDmg": 89,
-		"rank": 96
+		"rank": 86
 	},
-	"raichu_alolan": {
-		"fastMove": "THUNDER_SHOCK",
+	"indeedee_female": {
+		"fastMove": "EXTRASENSORY",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.326086956521742,
-		"speciesId": "raichu_alolan",
-		"fastMoveDmg": 3,
+		"dps": 18.86064774952848,
+		"tdo": 550.1754396246521,
+		"edps": 17.476269912210928,
+		"speciesId": "indeedee_female",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 90,
+		"rank": 87
+	},
+	"polteageist": {
+		"fastMove": "SUCKER_PUNCH",
+		"chargedMove": "PSYCHIC",
+		"dps": 18.751236813908964,
+		"tdo": 507.1545156498048,
+		"edps": 17.342098375459464,
+		"speciesId": "polteageist",
+		"fastMoveDmg": 4,
 		"chargedMoveDmg": 99,
-		"rank": 97
+		"rank": 88
 	},
 	"lunatone": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.22222222222222,
+		"dps": 18.66919334831296,
+		"tdo": 544.6777637515021,
+		"edps": 17.311767094539494,
 		"speciesId": "lunatone",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 88,
-		"rank": 98
-	},
-	"slowbro": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.22222222222222,
-		"speciesId": "slowbro",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 88,
-		"rank": 99
-	},
-	"slowking": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 18.22222222222222,
-		"speciesId": "slowking",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 88,
-		"rank": 100
+		"rank": 89
 	},
 	"solrock": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.22222222222222,
+		"dps": 18.66919334831296,
+		"tdo": 544.6777637515021,
+		"edps": 17.311767094539494,
 		"speciesId": "solrock",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 88,
-		"rank": 101
+		"rank": 90
 	},
-	"gothitelle": {
+	"slowbro": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.102564102564102,
-		"speciesId": "gothitelle",
+		"dps": 18.644929839244796,
+		"tdo": 658.5503137901748,
+		"edps": 17.57452242956379,
+		"speciesId": "slowbro",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 87,
-		"rank": 102
+		"rank": 91
+	},
+	"slowking": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 18.644929839244796,
+		"tdo": 658.5503137901748,
+		"edps": 17.57452242956379,
+		"speciesId": "slowking",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 87,
+		"rank": 92
+	},
+	"cresselia_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 18.617949934889506,
+		"tdo": 913.5179553619017,
+		"edps": 17.864073758263263,
+		"speciesId": "cresselia_shadow",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 110,
+		"rank": 93
+	},
+	"slowking_galarian": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 18.494448444057472,
+		"tdo": 653.2352189695117,
+		"edps": 17.4407613872081,
+		"speciesId": "slowking_galarian",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 112,
+		"rank": 94
 	},
 	"hypno_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 18.102564102564102,
+		"dps": 18.484697223010027,
+		"tdo": 532.4836551239771,
+		"edps": 17.133418093995623,
 		"speciesId": "hypno_shadow",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 87,
-		"rank": 103
+		"rank": 95
 	},
-	"gorebyss": {
+	"lugia": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 18.440719913063138,
+		"tdo": 1175.0934177810125,
+		"edps": 17.784791206365355,
+		"speciesId": "lugia",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 114,
+		"rank": 96
+	},
+	"gothitelle": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.98290598290598,
-		"speciesId": "gorebyss",
+		"dps": 18.403758875084623,
+		"tdo": 593.5000146902305,
+		"edps": 17.12229302908185,
+		"speciesId": "gothitelle",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 86,
-		"rank": 104
+		"chargedMoveDmg": 87,
+		"rank": 97
 	},
 	"tornadus_therian": {
 		"fastMove": "GUST",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.9375,
+		"dps": 18.35113420413465,
+		"tdo": 594.2016676878198,
+		"edps": 17.076732720827287,
 		"speciesId": "tornadus_therian",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 96,
-		"rank": 105
+		"rank": 98
+	},
+	"girafarig": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 18.324992869594944,
+		"tdo": 397.5548430192974,
+		"edps": 16.49159543273535,
+		"speciesId": "girafarig",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 89,
+		"rank": 99
+	},
+	"mr_mime_galarian": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 18.26049420864087,
+		"tdo": 398.4060616675801,
+		"edps": 16.43933880558443,
+		"speciesId": "mr_mime_galarian",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 90,
+		"rank": 100
+	},
+	"kadabra": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYBEAM",
+		"dps": 18.236797428521886,
+		"tdo": 253.9760795573228,
+		"edps": 15.584207727378603,
+		"speciesId": "kadabra",
+		"fastMoveDmg": 23,
+		"chargedMoveDmg": 77,
+		"rank": 101
+	},
+	"raichu_alolan": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "PSYCHIC",
+		"dps": 18.224594900748574,
+		"tdo": 408.34270258931787,
+		"edps": 16.428210060920506,
+		"speciesId": "raichu_alolan",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 98,
+		"rank": 102
 	},
 	"noivern_shadow": {
 		"fastMove": "AIR_SLASH",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.56756756756757,
+		"dps": 18.1438504168082,
+		"tdo": 477.4343509783201,
+		"edps": 16.616330402737017,
 		"speciesId": "noivern_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 100,
-		"rank": 106
+		"rank": 103
 	},
-	"duosion": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 17.513513513513516,
-		"speciesId": "duosion",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 64,
-		"rank": 107
-	},
-	"solosis_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 17.513513513513516,
-		"speciesId": "solosis_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 64,
-		"rank": 108
-	},
-	"claydol_shadow": {
+	"venomoth_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.435897435897434,
-		"speciesId": "claydol_shadow",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 85,
-		"rank": 109
-	},
-	"xatu_shadow": {
-		"fastMove": "PECK",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 17.36,
-		"speciesId": "xatu_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 137,
-		"rank": 110
-	},
-	"oranguru": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 17.316239316239315,
-		"speciesId": "oranguru",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 84,
-		"rank": 111
-	},
-	"grumpig": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "PSYCHIC",
-		"dps": 17.289156626506024,
-		"speciesId": "grumpig",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 85,
-		"rank": 112
+		"dps": 18.002039877855978,
+		"tdo": 347.44739639457407,
+		"edps": 15.970377628350725,
+		"speciesId": "venomoth_shadow",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 88,
+		"rank": 104
 	},
 	"armarouge": {
 		"fastMove": "INCINERATE",
 		"chargedMove": "PSYSHOCK",
-		"dps": 17.28,
+		"dps": 17.806211856545392,
+		"tdo": 591.8523829253124,
+		"edps": 16.60389201951201,
 		"speciesId": "armarouge",
 		"fastMoveDmg": 24,
-		"chargedMoveDmg": 72,
-		"rank": 113
+		"chargedMoveDmg": 71,
+		"rank": 105
 	},
-	"butterfree_shadow": {
+	"oranguru": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.196581196581196,
-		"speciesId": "butterfree_shadow",
+		"dps": 17.67484915539787,
+		"tdo": 635.3760961943279,
+		"edps": 16.691452788022083,
+		"speciesId": "oranguru",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 83,
-		"rank": 114
+		"rank": 106
 	},
-	"gothorita_shadow": {
+	"grumpig": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "PSYCHIC",
+		"dps": 17.5946683698681,
+		"tdo": 573.5845393081333,
+		"edps": 16.401849915546986,
+		"speciesId": "grumpig",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 84,
+		"rank": 107
+	},
+	"claydol_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.196581196581196,
-		"speciesId": "gothorita_shadow",
+		"dps": 17.42946458936176,
+		"tdo": 469.86470147338264,
+		"edps": 16.015175826863697,
+		"speciesId": "claydol_shadow",
 		"fastMoveDmg": 17,
-		"chargedMoveDmg": 83,
-		"rank": 115
+		"chargedMoveDmg": 84,
+		"rank": 108
+	},
+	"gorebyss": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 17.425587802737713,
+		"tdo": 426.1032055763992,
+		"edps": 15.943825014953411,
+		"speciesId": "gorebyss",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 85,
+		"rank": 109
 	},
 	"meowstic": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.196581196581196,
+		"dps": 17.32683376982775,
+		"tdo": 479.92134664495524,
+		"edps": 15.928483495456259,
 		"speciesId": "meowstic",
 		"fastMoveDmg": 17,
-		"chargedMoveDmg": 83,
-		"rank": 116
+		"chargedMoveDmg": 82,
+		"rank": 110
 	},
 	"meowstic_female": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 17.196581196581196,
+		"dps": 17.32683376982775,
+		"tdo": 479.92134664495524,
+		"edps": 15.928483495456259,
 		"speciesId": "meowstic_female",
 		"fastMoveDmg": 17,
-		"chargedMoveDmg": 83,
-		"rank": 117
+		"chargedMoveDmg": 82,
+		"rank": 111
 	},
-	"abra": {
+	"duosion": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYSHOCK",
-		"dps": 17.027027027027028,
-		"speciesId": "abra",
+		"dps": 17.308324518191018,
+		"tdo": 284.1287438523258,
+		"edps": 15.141802824956587,
+		"speciesId": "duosion",
 		"fastMoveDmg": 12,
-		"chargedMoveDmg": 61,
-		"rank": 118
+		"chargedMoveDmg": 64,
+		"rank": 112
 	},
 	"musharna": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "FUTURE_SIGHT",
-		"dps": 16.98775510204082,
+		"dps": 17.105321169025043,
+		"tdo": 650.4054806020375,
+		"edps": 16.182624535563196,
 		"speciesId": "musharna",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 109,
-		"rank": 119
+		"rank": 113
 	},
 	"primarina": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYCHIC",
-		"dps": 16.51851851851852,
+		"dps": 16.996520175990955,
+		"tdo": 573.1913423439427,
+		"edps": 15.88085392547803,
 		"speciesId": "primarina",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 94,
-		"rank": 120
+		"chargedMoveDmg": 93,
+		"rank": 114
 	},
 	"florges": {
 		"fastMove": "FAIRY_WIND",
 		"chargedMove": "PSYCHIC",
-		"dps": 16.494382022471907,
+		"dps": 16.954966685153703,
+		"tdo": 688.8074771899477,
+		"edps": 16.082401617499414,
 		"speciesId": "florges",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 86,
-		"rank": 121
+		"rank": 115
+	},
+	"xatu_shadow": {
+		"fastMove": "PECK",
+		"chargedMove": "PSYSHOCK",
+		"dps": 16.84543454665697,
+		"tdo": 314.4162371485322,
+		"edps": 14.99326833104265,
+		"speciesId": "xatu_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 71,
+		"rank": 116
+	},
+	"gothorita_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 16.833522243536443,
+		"tdo": 312.4519404562192,
+		"edps": 14.835634391346762,
+		"speciesId": "gothorita_shadow",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 83,
+		"rank": 117
 	},
 	"bronzong": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 16.41025641025641,
+		"dps": 16.666355640035498,
+		"tdo": 539.2758178479638,
+		"edps": 15.576052324502093,
 		"speciesId": "bronzong",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 80,
-		"rank": 122
-	},
-	"swoobat": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 16.41025641025641,
-		"speciesId": "swoobat",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 80,
-		"rank": 123
+		"rank": 118
 	},
 	"malamar_shadow": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYBEAM",
-		"dps": 16.39130434782609,
+		"dps": 16.664540167758958,
+		"tdo": 420.0963880615542,
+		"edps": 15.304328944131859,
 		"speciesId": "malamar_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 72,
+		"rank": 119
+	},
+	"butterfree_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 16.599498243206686,
+		"tdo": 278.76451882999083,
+		"edps": 14.58233606128099,
+		"speciesId": "butterfree_shadow",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 83,
+		"rank": 120
+	},
+	"orbeetle": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "PSYCHIC",
+		"dps": 16.481264701192874,
+		"tdo": 557.1997663261898,
+		"edps": 15.430125068596904,
+		"speciesId": "orbeetle",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 78,
+		"rank": 121
+	},
+	"golduck": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 16.475263095456814,
+		"tdo": 468.3019197971392,
+		"edps": 15.19055225773156,
+		"speciesId": "golduck",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 78,
+		"rank": 122
+	},
+	"deoxys_speed": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHO_BOOST",
+		"dps": 16.19156771461732,
+		"tdo": 447.342755660599,
+		"edps": 14.934168215794227,
+		"speciesId": "deoxys_speed",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 82,
+		"rank": 123
+	},
+	"swoobat": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 16.15287512913729,
+		"tdo": 307.17798578611036,
+		"edps": 14.30441561530311,
+		"speciesId": "swoobat",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 80,
 		"rank": 124
 	},
 	"dusknoir_shadow": {
 		"fastMove": "HEX",
 		"chargedMove": "PSYCHIC",
-		"dps": 16.370786516853933,
+		"dps": 16.144664745987892,
+		"tdo": 405.4834751972229,
+		"edps": 14.718876761478407,
 		"speciesId": "dusknoir_shadow",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 89,
+		"chargedMoveDmg": 88,
 		"rank": 125
-	},
-	"metang_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 16.31168831168831,
-		"speciesId": "metang_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 84,
-		"rank": 126
-	},
-	"orbeetle": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYCHIC",
-		"dps": 16.217391304347828,
-		"speciesId": "orbeetle",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 78,
-		"rank": 127
-	},
-	"golduck": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 16.17094017094017,
-		"speciesId": "golduck",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 78,
-		"rank": 128
-	},
-	"deoxys_speed": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHO_BOOST",
-		"dps": 16.13953488372093,
-		"speciesId": "deoxys_speed",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 82,
-		"rank": 129
-	},
-	"hattrem": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 16.05128205128205,
-		"speciesId": "hattrem",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 77,
-		"rank": 130
 	},
 	"cofagrigus_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 15.96103896103896,
+		"dps": 16.127477412168535,
+		"tdo": 439.533909712241,
+		"edps": 14.86488324959845,
 		"speciesId": "cofagrigus_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 81,
-		"rank": 131
+		"rank": 126
 	},
-	"uxie": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 15.762162162162161,
-		"speciesId": "uxie",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 94,
-		"rank": 132
-	},
-	"sigilyph": {
+	"metang_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYBEAM",
-		"dps": 15.74025974025974,
-		"speciesId": "sigilyph",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 68,
-		"rank": 133
+		"chargedMove": "PSYCHIC",
+		"dps": 16.121772485383207,
+		"tdo": 340.20845484227493,
+		"edps": 14.458963138216,
+		"speciesId": "metang_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 83,
+		"rank": 127
 	},
 	"arcanine_shadow": {
 		"fastMove": "FIRE_FANG",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 15.642857142857144,
+		"dps": 16.042216955274203,
+		"tdo": 420.2101200049208,
+		"edps": 14.777846699856196,
 		"speciesId": "arcanine_shadow",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 29,
-		"rank": 134
+		"rank": 128
 	},
-	"cresselia": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 15.61081081081081,
-		"speciesId": "cresselia",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 92,
-		"rank": 135
-	},
-	"venomoth": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "PSYCHIC",
-		"dps": 15.608695652173914,
-		"speciesId": "venomoth",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 74,
-		"rank": 136
+	"sigilyph": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYBEAM",
+		"dps": 15.92748042351199,
+		"tdo": 433.0422961530832,
+		"edps": 14.694810231457812,
+		"speciesId": "sigilyph",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 68,
+		"rank": 129
 	},
 	"chimecho": {
 		"fastMove": "EXTRASENSORY",
 		"chargedMove": "PSYSHOCK",
-		"dps": 15.454545454545455,
+		"dps": 15.846105412527109,
+		"tdo": 448.87971853098423,
+		"edps": 14.6397903729023,
 		"speciesId": "chimecho",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 55,
-		"rank": 137
+		"rank": 130
 	},
-	"elgyem": {
+	"cresselia": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 15.626207740491564,
+		"tdo": 920.0683404608224,
+		"edps": 15.091669788038317,
+		"speciesId": "cresselia",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 92,
+		"rank": 131
+	},
+	"hattrem": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 15.264957264957266,
-		"speciesId": "elgyem",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 74,
-		"rank": 138
+		"dps": 15.61757964819901,
+		"tdo": 295.65680425342157,
+		"edps": 13.857374613976214,
+		"speciesId": "hattrem",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 76,
+		"rank": 132
 	},
-	"hypno": {
-		"fastMove": "CONFUSION",
+	"venomoth": {
+		"fastMove": "PSYWAVE",
 		"chargedMove": "PSYCHIC",
-		"dps": 15.145299145299147,
-		"speciesId": "hypno",
-		"fastMoveDmg": 15,
+		"dps": 15.593073836954046,
+		"tdo": 361.14394767983663,
+		"edps": 14.19156931203673,
+		"speciesId": "venomoth",
+		"fastMoveDmg": 4,
 		"chargedMoveDmg": 73,
-		"rank": 139
+		"rank": 133
 	},
 	"noctowl_shadow": {
 		"fastMove": "EXTRASENSORY",
 		"chargedMove": "PSYCHIC",
-		"dps": 15.096385542168674,
+		"dps": 15.534603472780697,
+		"tdo": 415.43486629280784,
+		"edps": 14.210112678222387,
 		"speciesId": "noctowl_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 73,
-		"rank": 140
+		"rank": 134
 	},
-	"kirlia_shadow": {
+	"uxie": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "FUTURE_SIGHT",
+		"dps": 15.49527014112007,
+		"tdo": 676.207099900832,
+		"edps": 14.748721109547061,
+		"speciesId": "uxie",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 94,
+		"rank": 135
+	},
+	"hypno": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 15.025641025641026,
-		"speciesId": "kirlia_shadow",
+		"dps": 15.39216124366095,
+		"tdo": 532.0773940677324,
+		"edps": 14.44360328843908,
+		"speciesId": "hypno",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 72,
-		"rank": 141
-	},
-	"luxray_shadow": {
-		"fastMove": "SNARL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 14.934782608695652,
-		"speciesId": "luxray_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 30,
-		"rank": 142
+		"rank": 136
 	},
 	"manectric_mega": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 14.934782608695652,
+		"dps": 15.249661877456337,
+		"tdo": 433.6640915898602,
+		"edps": 14.115941635778048,
 		"speciesId": "manectric_mega",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 30,
-		"rank": 143
+		"rank": 137
 	},
-	"claydol": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 14.905982905982906,
-		"speciesId": "claydol",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 71,
-		"rank": 144
-	},
-	"xatu": {
-		"fastMove": "PECK",
-		"chargedMove": "FUTURE_SIGHT",
-		"dps": 14.72,
-		"speciesId": "xatu",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 114,
-		"rank": 145
+	"luxray_shadow": {
+		"fastMove": "SNARL",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 15.216969902638557,
+		"tdo": 348.22772196946727,
+		"edps": 13.73951513236636,
+		"speciesId": "luxray_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 30,
+		"rank": 138
 	},
 	"togekiss": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYSHOCK",
-		"dps": 14.714285714285714,
+		"dps": 15.169511418878653,
+		"tdo": 584.8862970941195,
+		"edps": 14.288088572980744,
 		"speciesId": "togekiss",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 58,
-		"rank": 146
-	},
-	"solosis": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 14.702702702702702,
-		"speciesId": "solosis",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 54,
-		"rank": 147
+		"chargedMoveDmg": 57,
+		"rank": 139
 	},
 	"noivern": {
-		"fastMove": "AIR_SLASH",
+		"fastMove": "BITE",
 		"chargedMove": "PSYCHIC",
-		"dps": 14.486486486486486,
+		"dps": 15.018682238808935,
+		"tdo": 474.2390350006534,
+		"edps": 13.95665534219084,
 		"speciesId": "noivern",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 84,
-		"rank": 148
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 83,
+		"rank": 140
 	},
 	"clefable": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYCHIC",
-		"dps": 14.376623376623376,
+		"dps": 14.901495120089065,
+		"tdo": 477.74561271028415,
+		"edps": 13.855399842822571,
 		"speciesId": "clefable",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 73,
-		"rank": 149
+		"rank": 141
 	},
-	"manectric_shadow": {
-		"fastMove": "THUNDER_FANG",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 14.369565217391305,
-		"speciesId": "manectric_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 28,
-		"rank": 150
-	},
-	"butterfree": {
-		"fastMove": "CONFUSION",
+	"claydol": {
+		"fastMove": "EXTRASENSORY",
 		"chargedMove": "PSYCHIC",
-		"dps": 14.239316239316238,
-		"speciesId": "butterfree",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 69,
-		"rank": 151
-	},
-	"gothorita": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 14.239316239316238,
-		"speciesId": "gothorita",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 69,
-		"rank": 152
-	},
-	"slowpoke_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 14.11965811965812,
-		"speciesId": "slowpoke_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 68,
-		"rank": 153
-	},
-	"metang": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 14.025974025974026,
-		"speciesId": "metang",
+		"dps": 14.890460360610586,
+		"tdo": 481.7016809296592,
+		"edps": 13.845859502099314,
+		"speciesId": "claydol",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 70,
-		"rank": 154
+		"rank": 142
 	},
-	"exeggcute_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 14,
-		"speciesId": "exeggcute_shadow",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 67,
-		"rank": 155
+	"xatu": {
+		"fastMove": "PECK",
+		"chargedMove": "PSYSHOCK",
+		"dps": 14.466933508970667,
+		"tdo": 324.02647492285575,
+		"edps": 13.090750275251246,
+		"speciesId": "xatu",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 59,
+		"rank": 143
+	},
+	"solosis_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 14.417184496244992,
+		"tdo": 131.9162754163075,
+		"edps": 11.403158181604054,
+		"speciesId": "solosis_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 64,
+		"rank": 144
 	},
 	"ninetales_shadow": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "PSYSHOCK",
-		"dps": 13.945945945945947,
+		"dps": 14.347155749973444,
+		"tdo": 368.4309898557031,
+		"edps": 13.163629092533865,
 		"speciesId": "ninetales_shadow",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 53,
-		"rank": 156
+		"rank": 145
+	},
+	"elgyem": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 14.29058806087623,
+		"tdo": 207.14458060210305,
+		"edps": 12.198673454198984,
+		"speciesId": "elgyem",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 74,
+		"rank": 146
+	},
+	"manectric_shadow": {
+		"fastMove": "THUNDER_FANG",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 14.290220826170716,
+		"tdo": 247.87774671668012,
+		"edps": 12.503450183988509,
+		"speciesId": "manectric_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 28,
+		"rank": 147
 	},
 	"aromatisse": {
 		"fastMove": "FAIRY_WIND",
 		"chargedMove": "PSYCHIC",
-		"dps": 13.887640449438202,
+		"dps": 14.264134150929717,
+		"tdo": 443.88717214082914,
+		"edps": 13.279171551896518,
 		"speciesId": "aromatisse",
 		"fastMoveDmg": 6,
+		"chargedMoveDmg": 71,
+		"rank": 148
+	},
+	"gothorita": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 14.181750836749465,
+		"tdo": 315.87797356824876,
+		"edps": 12.84579454784679,
+		"speciesId": "gothorita",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 69,
+		"rank": 149
+	},
+	"butterfree": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 14.061914430619016,
+		"tdo": 283.3793823966532,
+		"edps": 12.597514366399567,
+		"speciesId": "butterfree",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 69,
+		"rank": 150
+	},
+	"abra_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 14,
+		"tdo": 95.09394886196816,
+		"edps": 10.256911204454429,
+		"speciesId": "abra_shadow",
+		"fastMoveDmg": 14,
 		"chargedMoveDmg": 72,
-		"rank": 157
+		"rank": 151
 	},
 	"ninetales_alolan_shadow": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYSHOCK",
-		"dps": 13.714285714285714,
+		"dps": 13.978123430647239,
+		"tdo": 364.2073323760587,
+		"edps": 12.841306749221564,
 		"speciesId": "ninetales_alolan_shadow",
 		"fastMoveDmg": 14,
-		"chargedMoveDmg": 54,
-		"rank": 158
-	},
-	"dusknoir": {
-		"fastMove": "ASTONISH",
-		"chargedMove": "PSYCHIC",
-		"dps": 13.617977528089886,
-		"speciesId": "dusknoir",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 74,
-		"rank": 159
+		"chargedMoveDmg": 53,
+		"rank": 152
 	},
 	"sylveon": {
-		"fastMove": "CHARM",
+		"fastMove": "QUICK_ATTACK",
 		"chargedMove": "PSYSHOCK",
-		"dps": 13.571428571428571,
+		"dps": 13.943929214490607,
+		"tdo": 555.6501634920794,
+		"edps": 13.184066748049089,
 		"speciesId": "sylveon",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 53,
-		"rank": 160
-	},
-	"mabosstiff": {
-		"fastMove": "SNARL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 13.521739130434783,
-		"speciesId": "mabosstiff",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 25,
-		"rank": 161
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 52,
+		"rank": 153
 	},
 	"malamar": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYBEAM",
-		"dps": 13.478260869565217,
+		"dps": 13.773488471352055,
+		"tdo": 416.6590567291939,
+		"edps": 12.722120584168854,
 		"speciesId": "malamar",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 60,
+		"rank": 154
+	},
+	"slowpoke_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.714165896145532,
+		"tdo": 224.2701064808727,
+		"edps": 11.91649344768484,
+		"speciesId": "slowpoke_shadow",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 68,
+		"rank": 155
+	},
+	"dusknoir": {
+		"fastMove": "ASTONISH",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.675599633219639,
+		"tdo": 412.1656267557495,
+		"edps": 12.638560290389583,
+		"speciesId": "dusknoir",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 74,
+		"rank": 156
+	},
+	"metang": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.599118560946753,
+		"tdo": 344.3692287874167,
+		"edps": 12.406817926157371,
+		"speciesId": "metang",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 70,
+		"rank": 157
+	},
+	"arcanine": {
+		"fastMove": "FIRE_FANG",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 13.355647569739912,
+		"tdo": 419.8057045225929,
+		"edps": 12.467580322613262,
+		"speciesId": "arcanine",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 24,
+		"rank": 158
+	},
+	"exeggcute_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.331752378114649,
+		"tdo": 206.21213631345893,
+		"edps": 11.49307794708048,
+		"speciesId": "exeggcute_shadow",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 67,
+		"rank": 159
+	},
+	"mabosstiff": {
+		"fastMove": "BITE",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 13.293545506186733,
+		"tdo": 390.6719492935344,
+		"edps": 12.291383008772096,
+		"speciesId": "mabosstiff",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 25,
+		"rank": 160
+	},
+	"cofagrigus": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHIC",
+		"dps": 13.237261653306485,
+		"tdo": 432.91771818207116,
+		"edps": 12.374554204257318,
+		"speciesId": "cofagrigus",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 67,
+		"rank": 161
+	},
+	"solosis": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 13.06842582589079,
+		"tdo": 143.4902741166135,
+		"edps": 10.67764115369029,
+		"speciesId": "solosis",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 53,
 		"rank": 162
 	},
 	"braixen_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "PSYSHOCK",
-		"dps": 13.293103448275861,
+		"dps": 12.952289793480501,
+		"tdo": 206.03655061271635,
+		"edps": 11.209954796350692,
 		"speciesId": "braixen_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 54,
 		"rank": 163
 	},
-	"arcanine": {
-		"fastMove": "FIRE_FANG",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 13.214285714285715,
-		"speciesId": "arcanine",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 25,
-		"rank": 164
-	},
-	"mime_jr": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 13.213675213675213,
-		"speciesId": "mime_jr",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 64,
-		"rank": 165
-	},
 	"ponyta_galarian": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYBEAM",
-		"dps": 13.173913043478262,
+		"dps": 12.866045179116728,
+		"tdo": 216.63518966860252,
+		"edps": 11.245562874961571,
 		"speciesId": "ponyta_galarian",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 58,
+		"rank": 164
+	},
+	"abra": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 12.83825082119157,
+		"tdo": 104.64342993438107,
+		"edps": 9.878927378758638,
+		"speciesId": "abra",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 60,
+		"rank": 165
+	},
+	"noctowl": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "PSYCHIC",
+		"dps": 12.741033444513109,
+		"tdo": 408.87324196853734,
+		"edps": 11.836200858544935,
+		"speciesId": "noctowl",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 61,
 		"rank": 166
 	},
-	"cofagrigus": {
-		"fastMove": "ZEN_HEADBUTT",
+	"medicham": {
+		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "PSYCHIC",
-		"dps": 13.142857142857142,
-		"speciesId": "cofagrigus",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 68,
+		"dps": 12.713204481669791,
+		"tdo": 281.48270387413453,
+		"edps": 11.495348513049334,
+		"speciesId": "medicham",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 62,
 		"rank": 167
 	},
 	"espurr": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 12.974358974358974,
+		"dps": 12.508674830513433,
+		"tdo": 218.4544429025075,
+		"edps": 10.979617634054982,
 		"speciesId": "espurr",
 		"fastMoveDmg": 13,
-		"chargedMoveDmg": 62,
-		"rank": 168
-	},
-	"gothita_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 12.974358974358974,
-		"speciesId": "gothita_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 62,
-		"rank": 169
-	},
-	"noctowl": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "PSYCHIC",
-		"dps": 12.903614457831326,
-		"speciesId": "noctowl",
-		"fastMoveDmg": 8,
 		"chargedMoveDmg": 61,
-		"rank": 170
-	},
-	"natu_shadow": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "PSYSHOCK",
-		"dps": 12.83969465648855,
-		"speciesId": "natu_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 52,
-		"rank": 171
-	},
-	"lycanroc_midnight": {
-		"fastMove": "ROCK_THROW",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 12.731707317073171,
-		"speciesId": "lycanroc_midnight",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 24,
-		"rank": 172
-	},
-	"medicham": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYCHIC",
-		"dps": 12.695652173913045,
-		"speciesId": "medicham",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 62,
-		"rank": 173
-	},
-	"kirlia": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 12.307692307692307,
-		"speciesId": "kirlia",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 60,
-		"rank": 174
-	},
-	"smoochum": {
-		"fastMove": "POWDER_SNOW",
-		"chargedMove": "PSYSHOCK",
-		"dps": 12.297872340425531,
-		"speciesId": "smoochum",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 49,
-		"rank": 175
-	},
-	"spoink_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 12.289655172413793,
-		"speciesId": "spoink_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 49,
-		"rank": 176
+		"rank": 168
 	},
 	"luxray": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 12.08695652173913,
+		"dps": 12.40454444158279,
+		"tdo": 340.64125407752675,
+		"edps": 11.396147756270237,
 		"speciesId": "luxray",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 25,
+		"rank": 169
+	},
+	"lycanroc_midnight": {
+		"fastMove": "ROCK_THROW",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 12.280270869289224,
+		"tdo": 340.82880040138025,
+		"edps": 11.291172455193566,
+		"speciesId": "lycanroc_midnight",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 24,
+		"rank": 170
+	},
+	"steelix_mega": {
+		"fastMove": "IRON_TAIL",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 12.26825711962872,
+		"tdo": 642.4579236488643,
+		"edps": 11.786267262120848,
+		"speciesId": "steelix_mega",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 23,
+		"rank": 171
+	},
+	"ninetales": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "PSYSHOCK",
+		"dps": 12.250291575536663,
+		"tdo": 377.50093276068014,
+		"edps": 11.385539284464292,
+		"speciesId": "ninetales",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 44,
+		"rank": 172
+	},
+	"avalugg": {
+		"fastMove": "BITE",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 11.952255240012772,
+		"tdo": 552.0566371063344,
+		"edps": 11.380938153738771,
+		"speciesId": "avalugg",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 51,
+		"rank": 173
+	},
+	"blissey": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.855730748340772,
+		"tdo": 873.7663373423103,
+		"edps": 11.53658977666627,
+		"speciesId": "blissey",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 55,
+		"rank": 174
+	},
+	"mime_jr": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.854885521401718,
+		"tdo": 145.97153307453627,
+		"edps": 9.866466414119342,
+		"speciesId": "mime_jr",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 64,
+		"rank": 175
+	},
+	"slowpoke": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.8163313407532,
+		"tdo": 231.88140036288831,
+		"edps": 10.537929437704259,
+		"speciesId": "slowpoke",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 56,
+		"rank": 176
+	},
+	"slowpoke_galarian": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.8163313407532,
+		"tdo": 231.88140036288831,
+		"edps": 10.537929437704259,
+		"speciesId": "slowpoke_galarian",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 56,
 		"rank": 177
 	},
 	"porygon_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYBEAM",
-		"dps": 12.03896103896104,
+		"dps": 11.730568998516832,
+		"tdo": 205.34914403840108,
+		"edps": 10.276011258711906,
 		"speciesId": "porygon_shadow",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 53,
+		"chargedMoveDmg": 52,
 		"rank": 178
 	},
-	"steelix_mega": {
-		"fastMove": "IRON_TAIL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 12,
-		"speciesId": "steelix_mega",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 23,
+	"spoink_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 11.712874845159746,
+		"tdo": 177.2895008041037,
+		"edps": 10.062778012748472,
+		"speciesId": "spoink_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 48,
 		"rank": 179
 	},
-	"drowzee_shadow": {
+	"kirlia_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 11.948717948717949,
-		"speciesId": "drowzee_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 57,
+		"dps": 11.636436499413163,
+		"tdo": 104.57132020204541,
+		"edps": 9.15161799411921,
+		"speciesId": "kirlia_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 72,
 		"rank": 180
-	},
-	"slowpoke": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 11.948717948717949,
-		"speciesId": "slowpoke",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 57,
-		"rank": 181
-	},
-	"slowpoke_galarian": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 11.948717948717949,
-		"speciesId": "slowpoke_galarian",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 57,
-		"rank": 182
-	},
-	"ninetales": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "PSYSHOCK",
-		"dps": 11.891891891891893,
-		"speciesId": "ninetales",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 44,
-		"rank": 183
-	},
-	"exeggcute": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 11.82905982905983,
-		"speciesId": "exeggcute",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 56,
-		"rank": 184
-	},
-	"ninetales_alolan": {
-		"fastMove": "CHARM",
-		"chargedMove": "PSYSHOCK",
-		"dps": 11.571428571428571,
-		"speciesId": "ninetales_alolan",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 45,
-		"rank": 185
-	},
-	"avalugg": {
-		"fastMove": "BITE",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 11.542857142857143,
-		"speciesId": "avalugg",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 51,
-		"rank": 186
 	},
 	"manectric": {
 		"fastMove": "SNARL",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 11.521739130434783,
+		"dps": 11.629908514066754,
+		"tdo": 242.0784675646456,
+		"edps": 10.41104190126526,
 		"speciesId": "manectric",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 23,
-		"rank": 187
+		"rank": 181
 	},
-	"flittle": {
+	"exeggcute": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYCHIC",
-		"dps": 11.282051282051281,
-		"speciesId": "flittle",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 55,
-		"rank": 188
+		"dps": 11.591960158070773,
+		"tdo": 215.16177883379862,
+		"edps": 10.259915768197562,
+		"speciesId": "exeggcute",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 56,
+		"rank": 182
+	},
+	"ninetales_alolan": {
+		"fastMove": "POWDER_SNOW",
+		"chargedMove": "PSYSHOCK",
+		"dps": 11.589263943871913,
+		"tdo": 362.3572301370061,
+		"edps": 10.796793633176708,
+		"speciesId": "ninetales_alolan",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 44,
+		"rank": 183
+	},
+	"drowzee_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.534707321340525,
+		"tdo": 192.43429532763548,
+		"edps": 10.098132896136928,
+		"speciesId": "drowzee_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 57,
+		"rank": 184
+	},
+	"gothita_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.503797201210846,
+		"tdo": 136.40704060072693,
+		"edps": 9.524309723618261,
+		"speciesId": "gothita_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 62,
+		"rank": 185
 	},
 	"braixen": {
 		"fastMove": "EMBER",
 		"chargedMove": "PSYSHOCK",
-		"dps": 11.172413793103448,
+		"dps": 11.19917414601449,
+		"tdo": 213.77896941882392,
+		"edps": 9.94441419571532,
 		"speciesId": "braixen",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 45,
+		"rank": 186
+	},
+	"umbreon": {
+		"fastMove": "SNARL",
+		"chargedMove": "PSYCHIC",
+		"dps": 11.059031432760987,
+		"tdo": 510.79997706079394,
+		"edps": 10.553291635777953,
+		"speciesId": "umbreon",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 54,
+		"rank": 187
+	},
+	"steelix_shadow": {
+		"fastMove": "IRON_TAIL",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 10.949481515135272,
+		"tdo": 400.9866393312796,
+		"edps": 10.267447287803652,
+		"speciesId": "steelix_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 20,
+		"rank": 188
+	},
+	"alomomola": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "PSYCHIC",
+		"dps": 10.946403744228967,
+		"tdo": 441.68016423938525,
+		"edps": 10.356876855181374,
+		"speciesId": "alomomola",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 58,
 		"rank": 189
 	},
-	"mothim": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "PSYBEAM",
-		"dps": 11.027027027027026,
-		"speciesId": "mothim",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 52,
+	"deoxys_defense": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYCHO_BOOST",
+		"dps": 10.845853583691623,
+		"tdo": 443.6887525808035,
+		"edps": 10.266820914373763,
+		"speciesId": "deoxys_defense",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 53,
 		"rank": 190
 	},
 	"floette": {
 		"fastMove": "VINE_WHIP",
 		"chargedMove": "PSYCHIC",
-		"dps": 11,
+		"dps": 10.805504611548917,
+		"tdo": 222.73919631374477,
+		"edps": 9.651383335235906,
 		"speciesId": "floette",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 58,
+		"chargedMoveDmg": 57,
 		"rank": 191
 	},
-	"blissey": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.974025974025974,
-		"speciesId": "blissey",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 55,
-		"rank": 192
-	},
-	"gothita": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.923076923076922,
-		"speciesId": "gothita",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 52,
-		"rank": 193
-	},
-	"hatenna": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.923076923076922,
-		"speciesId": "hatenna",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 52,
-		"rank": 194
-	},
-	"deoxys_defense": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYCHO_BOOST",
-		"dps": 10.883720930232558,
-		"speciesId": "deoxys_defense",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 54,
-		"rank": 195
-	},
-	"umbreon": {
-		"fastMove": "SNARL",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.696629213483144,
-		"speciesId": "umbreon",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 54,
-		"rank": 196
-	},
-	"steelix_shadow": {
-		"fastMove": "IRON_TAIL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 10.692307692307692,
-		"speciesId": "steelix_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 20,
-		"rank": 197
-	},
-	"spoink": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 10.606896551724137,
-		"speciesId": "spoink",
+	"mothim": {
+		"fastMove": "AIR_SLASH",
+		"chargedMove": "PSYBEAM",
+		"dps": 10.750422701690187,
+		"tdo": 178.07194528216806,
+		"edps": 9.344082924863232,
+		"speciesId": "mothim",
 		"fastMoveDmg": 8,
-		"chargedMoveDmg": 41,
-		"rank": 198
-	},
-	"sinistea": {
-		"fastMove": "ASTONISH",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.573033707865168,
-		"speciesId": "sinistea",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 57,
-		"rank": 199
-	},
-	"natu": {
-		"fastMove": "QUICK_ATTACK",
-		"chargedMove": "PSYSHOCK",
-		"dps": 10.549618320610687,
-		"speciesId": "natu",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 43,
-		"rank": 200
+		"chargedMoveDmg": 52,
+		"rank": 192
 	},
 	"togetic": {
 		"fastMove": "EXTRASENSORY",
 		"chargedMove": "PSYSHOCK",
-		"dps": 10.545454545454545,
+		"dps": 10.675667711854201,
+		"tdo": 263.7404565944882,
+		"edps": 9.727220595049317,
 		"speciesId": "togetic",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 37,
-		"rank": 201
+		"rank": 193
 	},
 	"morpeko_full_belly": {
 		"fastMove": "BITE",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 10.536585365853659,
+		"dps": 10.533177514716494,
+		"tdo": 185.91095349645863,
+		"edps": 9.253137914007803,
 		"speciesId": "morpeko_full_belly",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 21,
-		"rank": 202
+		"rank": 194
 	},
-	"woobat": {
-		"fastMove": "CONFUSION",
+	"smoochum": {
+		"fastMove": "POUND",
 		"chargedMove": "PSYSHOCK",
-		"dps": 10.485207100591715,
-		"speciesId": "woobat",
+		"dps": 10.507415579137565,
+		"tdo": 124.78859269571954,
+		"edps": 8.682750270001973,
+		"speciesId": "smoochum",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 48,
+		"rank": 195
+	},
+	"kirlia": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 10.454371849497178,
+		"tdo": 112.7383810295448,
+		"edps": 8.494702310266282,
+		"speciesId": "kirlia",
 		"fastMoveDmg": 12,
-		"chargedMoveDmg": 35,
-		"rank": 203
+		"chargedMoveDmg": 60,
+		"rank": 196
+	},
+	"spoink": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 10.341269473713092,
+		"tdo": 187.83418420309246,
+		"edps": 9.11023991371866,
+		"speciesId": "spoink",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 40,
+		"rank": 197
 	},
 	"porygon": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYBEAM",
-		"dps": 10.337662337662337,
+		"dps": 10.324003897442466,
+		"tdo": 216.87187877668947,
+		"edps": 9.253977213114089,
 		"speciesId": "porygon",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 44,
-		"rank": 204
+		"rank": 198
 	},
-	"psyduck_shadow": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYBEAM",
-		"dps": 10.220779220779221,
-		"speciesId": "psyduck_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 43,
-		"rank": 205
-	},
-	"chingling": {
-		"fastMove": "ZEN_HEADBUTT",
+	"woobat": {
+		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSHOCK",
-		"dps": 10.162162162162163,
-		"speciesId": "chingling",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 37,
-		"rank": 206
+		"dps": 10.128854030268496,
+		"tdo": 140.90890730598727,
+		"edps": 8.621097038740425,
+		"speciesId": "woobat",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 35,
+		"rank": 199
 	},
-	"munna": {
-		"fastMove": "ZEN_HEADBUTT",
-		"chargedMove": "PSYSHOCK",
-		"dps": 10.162162162162163,
-		"speciesId": "munna",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 37,
-		"rank": 207
+	"gothita": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 10.102703059810722,
+		"tdo": 143.75217408403196,
+		"edps": 8.61202243971778,
+		"speciesId": "gothita",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 51,
+		"rank": 200
 	},
 	"wormadam_plant": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 10.034188034188034,
+		"dps": 10.061994864504337,
+		"tdo": 260.13507478309975,
+		"edps": 9.209470895074732,
 		"speciesId": "wormadam_plant",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 41,
-		"rank": 208
+		"rank": 201
 	},
 	"wormadam_sandy": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 10.034188034188034,
+		"dps": 10.061994864504337,
+		"tdo": 260.13507478309975,
+		"edps": 9.209470895074732,
 		"speciesId": "wormadam_sandy",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 41,
-		"rank": 209
-	},
-	"drowzee": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 10.017094017094017,
-		"speciesId": "drowzee",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 48,
-		"rank": 210
-	},
-	"alomomola": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "PSYCHIC",
-		"dps": 9.943661971830986,
-		"speciesId": "alomomola",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 58,
-		"rank": 211
+		"rank": 202
 	},
 	"araquanid_shadow": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 9.9,
+		"dps": 10.054147922192447,
+		"tdo": 281.898296610308,
+		"edps": 9.276887895839398,
 		"speciesId": "araquanid_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 41,
-		"rank": 212
-	},
-	"dottler": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYCHIC",
-		"dps": 9.897435897435898,
-		"speciesId": "dottler",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 47,
-		"rank": 213
-	},
-	"inkay_shadow": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "PSYBEAM",
-		"dps": 9.804347826086957,
-		"speciesId": "inkay_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 43,
-		"rank": 214
-	},
-	"ralts_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYSHOCK",
-		"dps": 9.763313609467456,
-		"speciesId": "ralts_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 33,
-		"rank": 215
+		"rank": 203
 	},
 	"houndstone": {
 		"fastMove": "LICK",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 9.733333333333333,
+		"dps": 10.00455169434896,
+		"tdo": 313.85480091191147,
+		"edps": 9.320721034607184,
 		"speciesId": "houndstone",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 20,
-		"rank": 216
+		"rank": 204
 	},
-	"fennekin_shadow": {
-		"fastMove": "SCRATCH",
+	"munna": {
+		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYSHOCK",
-		"dps": 9.471698113207546,
-		"speciesId": "fennekin_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 38,
-		"rank": 217
+		"dps": 9.938422922246286,
+		"tdo": 164.8166967914904,
+		"edps": 8.644069428196378,
+		"speciesId": "munna",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 36,
+		"rank": 205
+	},
+	"drowzee": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 9.774592029651071,
+		"tdo": 195.6842165660878,
+		"edps": 8.728080651460127,
+		"speciesId": "drowzee",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 47,
+		"rank": 206
+	},
+	"dottler": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 9.745098166912504,
+		"tdo": 198.7514256137968,
+		"edps": 8.70961081569856,
+		"speciesId": "dottler",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 47,
+		"rank": 207
+	},
+	"natu_shadow": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "PSYSHOCK",
+		"dps": 9.630941506397228,
+		"tdo": 88.06252440652966,
+		"edps": 7.577747205341725,
+		"speciesId": "natu_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 51,
+		"rank": 208
+	},
+	"hatenna": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYCHIC",
+		"dps": 9.554249854064686,
+		"tdo": 110.79242200850811,
+		"edps": 7.882365804232689,
+		"speciesId": "hatenna",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 51,
+		"rank": 209
+	},
+	"chingling": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYSHOCK",
+		"dps": 9.44665684947634,
+		"tdo": 115.36597747627377,
+		"edps": 7.866321495615102,
+		"speciesId": "chingling",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 37,
+		"rank": 210
 	},
 	"dachsbun": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 9.272727272727273,
+		"dps": 9.416919676242722,
+		"tdo": 273.43062593733663,
+		"edps": 8.681170692296726,
 		"speciesId": "dachsbun",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 18,
-		"rank": 218
+		"rank": 211
+	},
+	"psyduck_shadow": {
+		"fastMove": "ZEN_HEADBUTT",
+		"chargedMove": "PSYBEAM",
+		"dps": 9.268518724289795,
+		"tdo": 100.74357091266158,
+		"edps": 7.5666562546693354,
+		"speciesId": "psyduck_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 43,
+		"rank": 212
 	},
 	"wormadam_trash": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 9.128205128205126,
+		"dps": 9.146213809312865,
+		"tdo": 230.39612007836024,
+		"edps": 8.35643940103323,
 		"speciesId": "wormadam_trash",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 37,
+		"rank": 213
+	},
+	"natu": {
+		"fastMove": "QUICK_ATTACK",
+		"chargedMove": "PSYSHOCK",
+		"dps": 9.014152512246337,
+		"tdo": 98.90734651505775,
+		"edps": 7.352761156863789,
+		"speciesId": "natu",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 43,
+		"rank": 214
+	},
+	"araquanid": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 8.985874218456281,
+		"tdo": 302.3352459102121,
+		"edps": 8.378546463571448,
+		"speciesId": "araquanid",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 34,
+		"rank": 215
+	},
+	"sinistea": {
+		"fastMove": "ASTONISH",
+		"chargedMove": "PSYCHIC",
+		"dps": 8.94453143743164,
+		"tdo": 104.74924065405328,
+		"edps": 7.400090186744454,
+		"speciesId": "sinistea",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 57,
+		"rank": 216
+	},
+	"steelix": {
+		"fastMove": "IRON_TAIL",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 8.761596769171534,
+		"tdo": 385.03558868838235,
+		"edps": 8.314778897626503,
+		"speciesId": "steelix",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 17,
+		"rank": 217
+	},
+	"inkay_shadow": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "PSYBEAM",
+		"dps": 8.745978708755212,
+		"tdo": 98.05799285262069,
+		"edps": 7.169918733261917,
+		"speciesId": "inkay_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 42,
+		"rank": 218
+	},
+	"maschiff": {
+		"fastMove": "SNARL",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 8.711442000116332,
+		"tdo": 142.0611649067582,
+		"edps": 7.576242108374156,
+		"speciesId": "maschiff",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 16,
 		"rank": 219
 	},
 	"venonat_shadow": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 9.008547008547007,
+		"dps": 8.533260573973243,
+		"tdo": 108.42059721068374,
+		"edps": 7.133252767964861,
 		"speciesId": "venonat_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 36,
 		"rank": 220
 	},
-	"baltoy_shadow": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYBEAM",
-		"dps": 8.888888888888888,
-		"speciesId": "baltoy_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 35,
-		"rank": 221
-	},
-	"araquanid": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 8.85,
-		"speciesId": "araquanid",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 34,
-		"rank": 222
-	},
-	"maschiff": {
-		"fastMove": "SNARL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 8.826086956521738,
-		"speciesId": "maschiff",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 16,
-		"rank": 223
-	},
 	"inkay": {
 		"fastMove": "PSYWAVE",
 		"chargedMove": "PSYBEAM",
-		"dps": 8.73913043478261,
+		"dps": 8.225895431365858,
+		"tdo": 110.67232444173301,
+		"edps": 6.95568403576024,
 		"speciesId": "inkay",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 36,
-		"rank": 224
+		"chargedMoveDmg": 35,
+		"rank": 221
 	},
-	"steelix": {
-		"fastMove": "IRON_TAIL",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 8.538461538461538,
-		"speciesId": "steelix",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 17,
-		"rank": 225
-	},
-	"flabebe": {
-		"fastMove": "VINE_WHIP",
-		"chargedMove": "PSYCHIC",
-		"dps": 8.375,
-		"speciesId": "flabebe",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 47,
-		"rank": 226
-	},
-	"psyduck": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "PSYBEAM",
-		"dps": 8.25,
-		"speciesId": "psyduck",
+	"fennekin_shadow": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "PSYSHOCK",
+		"dps": 8.062527890749232,
+		"tdo": 82.93658294171392,
+		"edps": 6.492217379820856,
+		"speciesId": "fennekin_shadow",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 36,
-		"rank": 227
+		"chargedMoveDmg": 38,
+		"rank": 222
 	},
-	"meditite": {
+	"baltoy_shadow": {
 		"fastMove": "CONFUSION",
-		"chargedMove": "PSYSHOCK",
-		"dps": 7.988165680473373,
-		"speciesId": "meditite",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 27,
-		"rank": 228
-	},
-	"ralts": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "PSYSHOCK",
-		"dps": 7.988165680473373,
-		"speciesId": "ralts",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 27,
-		"rank": 229
+		"chargedMove": "PSYBEAM",
+		"dps": 7.901309486155389,
+		"tdo": 96.56125899591338,
+		"edps": 6.583511071326639,
+		"speciesId": "baltoy_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 35,
+		"rank": 223
 	},
 	"lileep_shadow": {
 		"fastMove": "INFESTATION",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 7.9393939393939394,
+		"dps": 7.835733943081863,
+		"tdo": 151.89769225119144,
+		"edps": 6.956337988753691,
 		"speciesId": "lileep_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 35,
-		"rank": 230
+		"rank": 224
 	},
-	"fennekin": {
-		"fastMove": "EMBER",
+	"flabebe": {
+		"fastMove": "VINE_WHIP",
+		"chargedMove": "PSYCHIC",
+		"dps": 7.804216394048372,
+		"tdo": 117.05821547259205,
+		"edps": 6.699305863991981,
+		"speciesId": "flabebe",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 47,
+		"rank": 225
+	},
+	"psyduck": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "PSYBEAM",
+		"dps": 7.779257735021984,
+		"tdo": 101.46737677561569,
+		"edps": 6.5467747674020185,
+		"speciesId": "psyduck",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 36,
+		"rank": 226
+	},
+	"meditite": {
+		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSHOCK",
-		"dps": 7.793103448275863,
-		"speciesId": "fennekin",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 32,
-		"rank": 231
+		"dps": 7.385843215462563,
+		"tdo": 82.44756941017624,
+		"edps": 6.043726791899323,
+		"speciesId": "meditite",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 27,
+		"rank": 227
+	},
+	"flittle": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYBEAM",
+		"dps": 7.333333333333333,
+		"tdo": 50.32463474406133,
+		"edps": 5.387051487152698,
+		"speciesId": "flittle",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 38,
+		"rank": 228
+	},
+	"ralts_shadow": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYSHOCK",
+		"dps": 7.333333333333333,
+		"tdo": 40.111356927376846,
+		"edps": 5.03955285421948,
+		"speciesId": "ralts_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 33,
+		"rank": 229
 	},
 	"venonat": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 7.435897435897436,
+		"dps": 7.218576511296296,
+		"tdo": 110.06002700424396,
+		"edps": 6.218977620091511,
 		"speciesId": "venonat",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 30,
-		"rank": 232
+		"rank": 230
 	},
 	"baltoy": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYBEAM",
-		"dps": 7.316239316239316,
+		"dps": 7.07020456149322,
+		"tdo": 103.6852763184612,
+		"edps": 6.044537724831845,
 		"speciesId": "baltoy",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 29,
-		"rank": 233
+		"rank": 231
+	},
+	"fennekin": {
+		"fastMove": "EMBER",
+		"chargedMove": "PSYSHOCK",
+		"dps": 7.040181559759809,
+		"tdo": 86.90405289108847,
+		"edps": 5.871698985438498,
+		"speciesId": "fennekin",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 32,
+		"rank": 232
 	},
 	"bergmite": {
 		"fastMove": "TACKLE",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 6.933333333333334,
+		"dps": 6.7339019823761,
+		"tdo": 114.58458438685885,
+		"edps": 5.890357704740781,
 		"speciesId": "bergmite",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 32,
-		"rank": 234
-	},
-	"cleffa": {
-		"fastMove": "POUND",
-		"chargedMove": "PSYCHIC",
-		"dps": 6.875,
-		"speciesId": "cleffa",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 35,
-		"rank": 235
-	},
-	"lileep": {
-		"fastMove": "ACID",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 6.533333333333333,
-		"speciesId": "lileep",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 29,
-		"rank": 236
-	},
-	"igglybuff": {
-		"fastMove": "POUND",
-		"chargedMove": "PSYCHIC",
-		"dps": 6.5,
-		"speciesId": "igglybuff",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 32,
-		"rank": 237
-	},
-	"dewpider_shadow": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 6.25,
-		"speciesId": "dewpider_shadow",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 25,
-		"rank": 238
-	},
-	"greavard": {
-		"fastMove": "LICK",
-		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 6.133333333333334,
-		"speciesId": "greavard",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 12,
-		"rank": 239
+		"rank": 233
 	},
 	"chansey": {
 		"fastMove": "POUND",
 		"chargedMove": "PSYCHIC",
-		"dps": 6.125,
+		"dps": 6.632781617754687,
+		"tdo": 372.82557651993704,
+		"edps": 6.368089240812798,
 		"speciesId": "chansey",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 29,
-		"rank": 240
+		"rank": 234
+	},
+	"lileep": {
+		"fastMove": "ACID",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 6.56935055892861,
+		"tdo": 152.81824063760322,
+		"edps": 5.939816051991166,
+		"speciesId": "lileep",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 29,
+		"rank": 235
+	},
+	"ralts": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "PSYSHOCK",
+		"dps": 6,
+		"tdo": 39.382061103979716,
+		"edps": 4.351610095735422,
+		"speciesId": "ralts",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 27,
+		"rank": 236
+	},
+	"greavard": {
+		"fastMove": "LICK",
+		"chargedMove": "PSYCHIC_FANGS",
+		"dps": 5.965618378345129,
+		"tdo": 85.59264073061453,
+		"edps": 5.084042202289095,
+		"speciesId": "greavard",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 12,
+		"rank": 237
+	},
+	"wobbuffet_shadow": {
+		"fastMove": "COUNTER",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 5.849685298299742,
+		"tdo": 183.38875797142154,
+		"edps": 5.4303743491709024,
+		"speciesId": "wobbuffet_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 26,
+		"rank": 238
+	},
+	"cleffa": {
+		"fastMove": "POUND",
+		"chargedMove": "PSYCHIC",
+		"dps": 5.810931317155335,
+		"tdo": 64.76929697492386,
+		"edps": 4.755350204278882,
+		"speciesId": "cleffa",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 34,
+		"rank": 239
 	},
 	"fidough": {
 		"fastMove": "CHARM",
 		"chargedMove": "PSYCHIC_FANGS",
-		"dps": 6,
+		"dps": 5.777815404465339,
+		"tdo": 82.14826527440363,
+		"edps": 4.921038752096022,
 		"speciesId": "fidough",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 12,
+		"rank": 240
+	},
+	"dewpider_shadow": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 5.6477177271243475,
+		"tdo": 63.804337229581996,
+		"edps": 4.626859079743859,
+		"speciesId": "dewpider_shadow",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 25,
 		"rank": 241
 	},
 	"dewpider": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 5.65,
+		"dps": 5.388923375352223,
+		"tdo": 73.05677401987792,
+		"edps": 4.553060444553972,
 		"speciesId": "dewpider",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 21,
@@ -2180,82 +2664,100 @@
 	"togepi": {
 		"fastMove": "ZEN_HEADBUTT",
 		"chargedMove": "PSYSHOCK",
-		"dps": 5.621621621621622,
+		"dps": 5.317965423805109,
+		"tdo": 68.29642489680128,
+		"edps": 4.459471090712168,
 		"speciesId": "togepi",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 20,
 		"rank": 243
 	},
-	"wobbuffet_shadow": {
+	"wobbuffet": {
 		"fastMove": "COUNTER",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 5.296551724137931,
-		"speciesId": "wobbuffet_shadow",
+		"dps": 5.222456031735506,
+		"tdo": 196.47000780878898,
+		"edps": 4.908036756158379,
+		"speciesId": "wobbuffet",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 26,
+		"chargedMoveDmg": 22,
 		"rank": 244
-	},
-	"smeargle": {
-		"fastMove": "LOCK_ON",
-		"chargedMove": "PSYSTRIKE",
-		"dps": 5.2,
-		"speciesId": "smeargle",
-		"fastMoveDmg": 1,
-		"chargedMoveDmg": 21,
-		"rank": 245
 	},
 	"bronzor": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "PSYSHOCK",
-		"dps": 5.159763313609467,
+		"dps": 5.181640594800774,
+		"tdo": 112.01248302688718,
+		"edps": 4.649957332083382,
 		"speciesId": "bronzor",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 17,
+		"rank": 245
+	},
+	"smeargle": {
+		"fastMove": "LOCK_ON",
+		"chargedMove": "PSYSTRIKE",
+		"dps": 4.765574445521755,
+		"tdo": 58.86633108678092,
+		"edps": 3.9687008423346137,
+		"speciesId": "smeargle",
+		"fastMoveDmg": 1,
+		"chargedMoveDmg": 21,
 		"rank": 246
 	},
-	"wobbuffet": {
-		"fastMove": "COUNTER",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 4.8,
-		"speciesId": "wobbuffet",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 22,
+	"igglybuff": {
+		"fastMove": "POUND",
+		"chargedMove": "PSYCHIC",
+		"dps": 4,
+		"tdo": 32.648456915219604,
+		"edps": 3.065603923973023,
+		"speciesId": "igglybuff",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 32,
 		"rank": 247
 	},
 	"wynaut": {
 		"fastMove": "COUNTER",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 3.489655172413793,
+		"dps": 3.3536682292389517,
+		"tdo": 61.352895909767014,
+		"edps": 2.9546669318481205,
 		"speciesId": "wynaut",
 		"fastMoveDmg": 2,
-		"chargedMoveDmg": 17,
+		"chargedMoveDmg": 16,
 		"rank": 248
 	},
 	"happiny": {
 		"fastMove": "POUND",
 		"chargedMove": "PSYCHIC",
-		"dps": 3.25,
+		"dps": 3.2306568663337725,
+		"tdo": 55.778468319964794,
+		"edps": 2.826445705417173,
 		"speciesId": "happiny",
 		"fastMoveDmg": 1,
 		"chargedMoveDmg": 16,
 		"rank": 249
 	},
-	"feebas_shadow": {
-		"fastMove": "TACKLE",
-		"chargedMove": "MIRROR_COAT",
-		"dps": 3.066666666666667,
-		"speciesId": "feebas_shadow",
-		"fastMoveDmg": 1,
-		"chargedMoveDmg": 13,
-		"rank": 250
-	},
 	"feebas": {
 		"fastMove": "TACKLE",
 		"chargedMove": "MIRROR_COAT",
-		"dps": 2.8,
+		"dps": 2.237772325424026,
+		"tdo": 17.550401285818104,
+		"edps": 1.6977746553360855,
 		"speciesId": "feebas",
 		"fastMoveDmg": 1,
 		"chargedMoveDmg": 11,
+		"rank": 250
+	},
+	"feebas_shadow": {
+		"fastMove": "TACKLE",
+		"chargedMove": "MIRROR_COAT",
+		"dps": 2,
+		"tdo": 13.071333176902842,
+		"edps": 1.4470383947520742,
+		"speciesId": "feebas_shadow",
+		"fastMoveDmg": 1,
+		"chargedMoveDmg": 13,
 		"rank": 251
 	}
 }

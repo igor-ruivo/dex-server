@@ -11,6 +11,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.15,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -32,6 +34,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3.5,
+		"pveDamageWindowEnd": 3.8,
 		"moveName": {
 			"en": "Hyper Beam",
 			"pt_br": "Hiper-raio"
@@ -49,6 +53,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Dark Pulse",
 			"pt_br": "Pulso Sombrio"
@@ -66,6 +72,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.45,
 		"moveName": {
 			"en": "Sludge",
 			"pt_br": "Ataque de Lama"
@@ -83,6 +91,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.6,
 		"moveName": {
 			"en": "Vise Grip",
 			"pt_br": "Agarramento Compressor"
@@ -100,6 +110,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Flame Wheel",
 			"pt_br": "Roda de Fogo"
@@ -117,6 +129,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Megahorn",
 			"pt_br": "Megachifre"
@@ -134,6 +148,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Flamethrower",
 			"pt_br": "Lança-chamas"
@@ -151,6 +167,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 4.5,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 4.3,
 		"moveName": {
 			"en": "Dig",
 			"pt_br": "Cavar"
@@ -168,6 +186,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1.2,
 		"moveName": {
 			"en": "Cross Chop",
 			"pt_br": "Golpe Cruzado"
@@ -185,6 +205,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Psybeam",
 			"pt_br": "Feixe Psíquico"
@@ -202,6 +224,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.4,
 		"moveName": {
 			"en": "Earthquake",
 			"pt_br": "Terremoto"
@@ -219,6 +243,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Stone Edge",
 			"pt_br": "Gume de Pedra"
@@ -236,6 +262,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Ice Punch",
 			"pt_br": "Soco de Gelo"
@@ -253,6 +281,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 2.1,
 		"moveName": {
 			"en": "Discharge",
 			"pt_br": "Descarga"
@@ -270,6 +300,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Flash Cannon",
 			"pt_br": "Canhão de Flash"
@@ -287,6 +319,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Drill Peck",
 			"pt_br": "Bico Broca"
@@ -304,6 +338,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 3,
 		"moveName": {
 			"en": "Ice Beam",
 			"pt_br": "Raio Congelante"
@@ -321,6 +357,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Blizzard",
 			"pt_br": "Nevasca"
@@ -338,6 +376,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Heat Wave",
 			"pt_br": "Onda de Calor"
@@ -355,6 +395,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Aerial Ace",
 			"pt_br": "Ás dos Ares"
@@ -372,6 +414,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Drill Run",
 			"pt_br": "Furação"
@@ -389,6 +433,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Petal Blizzard",
 			"pt_br": "Nevasca de Pétalas"
@@ -406,6 +452,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.9,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -427,6 +475,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 1.2,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -448,6 +498,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.8,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 0.125
@@ -469,6 +521,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.55,
+		"pveDamageWindowEnd": 1.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -490,6 +544,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Submission",
 			"pt_br": "Submissão"
@@ -507,6 +563,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 1.75,
 		"moveName": {
 			"en": "Low Sweep",
 			"pt_br": "Movimento Baixo"
@@ -524,6 +582,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Aqua Jet",
 			"pt_br": "Aqua Jato"
@@ -541,6 +601,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.75,
 		"moveName": {
 			"en": "Aqua Tail",
 			"pt_br": "Aqua Cauda"
@@ -558,6 +620,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Seed Bomb",
 			"pt_br": "Bomba de Sementes"
@@ -575,6 +639,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.4,
 		"moveName": {
 			"en": "Psyshock",
 			"pt_br": "Choque Psíquico"
@@ -592,6 +658,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.85,
+		"pveDamageWindowEnd": 3.1,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"attackerDefenseStatStageChange": 1,
@@ -614,6 +682,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -635,6 +705,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2.4,
 		"moveName": {
 			"en": "Rock Slide",
 			"pt_br": "Deslize de Pedras"
@@ -652,6 +724,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Power Gem",
 			"pt_br": "Gema Poderosa"
@@ -669,6 +743,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.3,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Shadow Sneak",
 			"pt_br": "Furtividade nas Sombras"
@@ -686,6 +762,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.3,
 		"moveName": {
 			"en": "Shadow Punch",
 			"pt_br": "Soco Sombrio"
@@ -703,6 +781,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 2.3,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"attackerDefenseStatStageChange": 1,
@@ -725,6 +805,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.4,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Shadow Ball",
 			"pt_br": "Bola Sombria"
@@ -742,6 +824,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.4,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Magnet Bomb",
 			"pt_br": "Bomba Ímã"
@@ -759,6 +843,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Iron Head",
 			"pt_br": "Cabeça de Ferro"
@@ -776,6 +862,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.6,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
 			"buffActivationChance": 1
@@ -797,6 +885,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 1.75,
 		"moveName": {
 			"en": "Thunder Punch",
 			"pt_br": "Soco Trovoada"
@@ -814,6 +904,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Thunder",
 			"pt_br": "Trovão"
@@ -831,6 +923,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Thunderbolt",
 			"pt_br": "Relâmpago"
@@ -848,6 +942,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.15,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Twister",
 			"pt_br": "Twister"
@@ -865,6 +961,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 3.2,
 		"moveName": {
 			"en": "Dragon Pulse",
 			"pt_br": "Pulso do Dragão"
@@ -882,6 +980,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.1,
 		"moveName": {
 			"en": "Dragon Claw",
 			"pt_br": "Garra de Dragão"
@@ -899,6 +999,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3.3,
+		"pveDamageWindowEnd": 3.6,
 		"moveName": {
 			"en": "Disarming Voice",
 			"pt_br": "Voz Desarmante"
@@ -916,6 +1018,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.2,
 		"moveName": {
 			"en": "Draining Kiss",
 			"pt_br": "Beijo Drenante"
@@ -933,6 +1037,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 3.3,
 		"moveName": {
 			"en": "Dazzling Gleam",
 			"pt_br": "Clarão Deslumbrante"
@@ -950,6 +1056,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 2.3,
+		"pveDamageWindowEnd": 3.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.1
@@ -971,6 +1079,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Play Rough",
 			"pt_br": "Jogo Duro"
@@ -988,6 +1098,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.3,
 		"buffs": {
 			"attackerAttackStatStageChange": 2,
 			"buffActivationChance": 0.125
@@ -1009,6 +1121,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Sludge Bomb",
 			"pt_br": "Bomba de Lodo"
@@ -1026,6 +1140,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Sludge Wave",
 			"pt_br": "Onda de Lama"
@@ -1043,6 +1159,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2.6,
 		"moveName": {
 			"en": "Gunk Shot",
 			"pt_br": "Tiro de Sujeira"
@@ -1060,6 +1178,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.3,
 		"moveName": {
 			"en": "Bone Club",
 			"pt_br": "Bastão de Osso"
@@ -1077,6 +1197,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.1,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.5
@@ -1098,6 +1220,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Mud Bomb",
 			"pt_br": "Bomba de Lama"
@@ -1115,6 +1239,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"targetDefenseStatStageChange": -1,
@@ -1137,6 +1263,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.3,
 		"moveName": {
 			"en": "X-Scissor",
 			"pt_br": "Tesoura X"
@@ -1154,6 +1282,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3.1,
+		"pveDamageWindowEnd": 3.65,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -1175,6 +1305,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Flame Burst",
 			"pt_br": "Rajada de Chamas"
@@ -1192,6 +1324,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 2.9,
+		"pveDamageWindowEnd": 3.7,
 		"moveName": {
 			"en": "Fire Blast",
 			"pt_br": "Rajada de Fogo"
@@ -1209,6 +1343,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Brine",
 			"pt_br": "Salmoura"
@@ -1226,6 +1362,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.7,
 		"moveName": {
 			"en": "Water Pulse",
 			"pt_br": "Pulso d'Água"
@@ -1243,6 +1381,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 3.2,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -1264,6 +1404,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 3.2,
 		"moveName": {
 			"en": "Hydro Pump",
 			"pt_br": "Jato d'Água"
@@ -1281,6 +1423,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.1
@@ -1302,6 +1446,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Psystrike",
 			"pt_br": "Golpe Psíquico"
@@ -1319,6 +1465,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -1340,6 +1488,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Fire Punch",
 			"pt_br": "Soco de Fogo"
@@ -1357,6 +1507,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 5,
+		"pveDamageWindowStart": 2.8,
+		"pveDamageWindowEnd": 4.8,
 		"moveName": {
 			"en": "Solar Beam",
 			"pt_br": "Raio Solar"
@@ -1374,6 +1526,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.35,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Leaf Blade",
 			"pt_br": "Lâmina de Folha"
@@ -1391,6 +1545,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.15,
+		"pveDamageWindowEnd": 2.25,
 		"moveName": {
 			"en": "Power Whip",
 			"pt_br": "Chicote Poderoso"
@@ -1408,6 +1564,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2.3,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 0.3
@@ -1429,6 +1587,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Hurricane",
 			"pt_br": "Furacão"
@@ -1446,6 +1606,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 1.3,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -1467,6 +1629,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Swift",
 			"pt_br": "Ataque Veloz"
@@ -1484,6 +1648,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.95,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Horn Attack",
 			"pt_br": "Ataque de Chifre"
@@ -1501,6 +1667,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.3,
 		"moveName": {
 			"en": "Stomp",
 			"pt_br": "Pisotear"
@@ -1518,6 +1686,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Hyper Fang",
 			"pt_br": "Hiperpresa"
@@ -1535,6 +1705,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Body Slam",
 			"pt_br": "Pancada Corporal"
@@ -1552,6 +1724,8 @@
 		"pveEnergy": 0,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Struggle",
 			"pt_br": "Insistência"
@@ -1569,6 +1743,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Fury Cutter",
 			"pt_br": "Cortador de Fúria"
@@ -1586,6 +1762,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.25,
+		"pveDamageWindowEnd": 0.45,
 		"moveName": {
 			"en": "Bug Bite",
 			"pt_br": "Picada"
@@ -1603,6 +1781,8 @@
 		"pveEnergy": 4,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Bite",
 			"pt_br": "Mordida"
@@ -1620,6 +1800,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.1,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Sucker Punch",
 			"pt_br": "Soco Enganador"
@@ -1637,6 +1819,8 @@
 		"pveEnergy": 4,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Dragon Breath",
 			"pt_br": "Sopro do Dragão"
@@ -1654,6 +1838,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Thunder Shock",
 			"pt_br": "Trovoada de Choques"
@@ -1671,6 +1857,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.1,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Spark",
 			"pt_br": "Faísca"
@@ -1688,6 +1876,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Low Kick",
 			"pt_br": "Rasteira"
@@ -1705,6 +1895,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Karate Chop",
 			"pt_br": "Golpe de Caratê"
@@ -1722,6 +1914,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Ember",
 			"pt_br": "Brasa"
@@ -1739,6 +1933,8 @@
 		"pveEnergy": 11,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Wing Attack",
 			"pt_br": "Ataque de Asa"
@@ -1756,6 +1952,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.45,
+		"pveDamageWindowEnd": 0.9,
 		"moveName": {
 			"en": "Peck",
 			"pt_br": "Bicada"
@@ -1773,6 +1971,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Lick",
 			"pt_br": "Lambida"
@@ -1790,6 +1990,8 @@
 		"pveEnergy": 4,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.05,
+		"pveDamageWindowEnd": 0.3,
 		"moveName": {
 			"en": "Shadow Claw",
 			"pt_br": "Garra Sombria"
@@ -1807,6 +2009,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.25,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Vine Whip",
 			"pt_br": "Chicote de Vinha"
@@ -1824,6 +2028,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.85,
 		"moveName": {
 			"en": "Razor Leaf",
 			"pt_br": "Folha Navalha"
@@ -1841,6 +2047,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.25,
+		"pveDamageWindowEnd": 0.45,
 		"moveName": {
 			"en": "Mud Shot",
 			"pt_br": "Tiro de Lama"
@@ -1858,6 +2066,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.4,
+		"pveDamageWindowEnd": 0.7,
 		"moveName": {
 			"en": "Ice Shard",
 			"pt_br": "Caco de Gelo"
@@ -1875,6 +2085,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.55,
+		"pveDamageWindowEnd": 0.85,
 		"moveName": {
 			"en": "Frost Breath",
 			"pt_br": "Respiração de Gelo"
@@ -1892,6 +2104,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.45,
+		"pveDamageWindowEnd": 0.75,
 		"moveName": {
 			"en": "Quick Attack",
 			"pt_br": "Ataque Rápido"
@@ -1909,6 +2123,8 @@
 		"pveEnergy": 4,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Scratch",
 			"pt_br": "Arranhão"
@@ -1926,6 +2142,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Tackle",
 			"pt_br": "Investida"
@@ -1943,6 +2161,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.24,
+		"pveDamageWindowEnd": 0.44,
 		"moveName": {
 			"en": "Pound",
 			"pt_br": "Pancada"
@@ -1960,6 +2180,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Cut",
 			"pt_br": "Cortar"
@@ -1977,6 +2199,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.4,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Poison Jab",
 			"pt_br": "Golpe Envenenado"
@@ -1994,6 +2218,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Acid",
 			"pt_br": "Ácido"
@@ -2011,6 +2237,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.27,
+		"pveDamageWindowEnd": 0.47,
 		"moveName": {
 			"en": "Psycho Cut",
 			"pt_br": "Corte Psíquico"
@@ -2028,6 +2256,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.9,
 		"moveName": {
 			"en": "Rock Throw",
 			"pt_br": "Lançamento de Rocha"
@@ -2045,6 +2275,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.23,
+		"pveDamageWindowEnd": 0.43,
 		"moveName": {
 			"en": "Metal Claw",
 			"pt_br": "Garra de Metal"
@@ -2062,6 +2294,8 @@
 		"pveEnergy": 11,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.4,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Bullet Punch",
 			"pt_br": "Soco Projétil"
@@ -2079,6 +2313,8 @@
 		"pveEnergy": 5,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Water Gun",
 			"pt_br": "Revólver d'Água"
@@ -2096,6 +2332,8 @@
 		"pveEnergy": 17,
 		"pvpCooldown": 2,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Splash",
 			"pt_br": "Borrifada"
@@ -2113,6 +2351,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.45,
 		"moveName": {
 			"en": "Mud-Slap",
 			"pt_br": "Tapa de Lama"
@@ -2130,6 +2370,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Zen Headbutt",
 			"pt_br": "Cabeçada Zen"
@@ -2147,6 +2389,8 @@
 		"pveEnergy": 14,
 		"pvpCooldown": 2,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.5,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Confusion",
 			"pt_br": "Confusão"
@@ -2164,6 +2408,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.275,
+		"pveDamageWindowEnd": 0.475,
 		"moveName": {
 			"en": "Poison Sting",
 			"pt_br": "Ferrão Venenoso"
@@ -2181,6 +2427,8 @@
 		"pveEnergy": 12,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.55,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Bubble",
 			"pt_br": "Bolha"
@@ -2198,6 +2446,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.85,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Feint Attack",
 			"pt_br": "Ataque Dissimulado"
@@ -2215,6 +2465,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Steel Wing",
 			"pt_br": "Asa de Aço"
@@ -2232,6 +2484,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.74,
+		"pveDamageWindowEnd": 0.94,
 		"moveName": {
 			"en": "Fire Fang",
 			"pt_br": "Presas de Fogo"
@@ -2249,6 +2503,8 @@
 		"pveEnergy": 12,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Rock Smash",
 			"pt_br": "Esmagamento de Pedras"
@@ -2266,6 +2522,8 @@
 		"pveEnergy": 0,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.07,
+		"pveDamageWindowEnd": 0.47,
 		"moveName": {
 			"en": "Transform",
 			"pt_br": "Transformação"
@@ -2283,6 +2541,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Counter",
 			"pt_br": "Contra-atacar"
@@ -2300,6 +2560,8 @@
 		"pveEnergy": 15,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.85,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Powder Snow",
 			"pt_br": "Neve em Pó"
@@ -2317,6 +2579,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.5,
 		"buffs": {
 			"attackerDefenseStatStageChange": -2,
 			"buffActivationChance": 1
@@ -2338,6 +2602,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Dynamic Punch",
 			"pt_br": "Soco Dinâmico"
@@ -2355,6 +2621,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 3,
+		"pveDamageWindowEnd": 3.5,
 		"moveName": {
 			"en": "Focus Blast",
 			"pt_br": "Explosão Focalizada"
@@ -2372,6 +2640,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 3.3,
+		"pveDamageWindowEnd": 3.5,
 		"moveName": {
 			"en": "Aurora Beam",
 			"pt_br": "Raio Aurora"
@@ -2389,6 +2659,8 @@
 		"pveEnergy": 14,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Charge Beam",
 			"pt_br": "Carga de Raio"
@@ -2406,6 +2678,8 @@
 		"pveEnergy": 20,
 		"pvpCooldown": 2,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Volt Switch",
 			"pt_br": "Troca Elétrica"
@@ -2423,6 +2697,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2,
 		"buffs": {
 			"attackerDefenseStatStageChange": -2,
 			"buffActivationChance": 1
@@ -2444,6 +2720,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.8,
+		"pveDamageWindowEnd": 3.3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.33
@@ -2465,6 +2743,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Dragon Tail",
 			"pt_br": "Cauda do Dragão"
@@ -2482,6 +2762,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.9,
 		"moveName": {
 			"en": "Avalanche",
 			"pt_br": "Avalanche"
@@ -2499,6 +2781,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
@@ -2516,6 +2800,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.6,
 		"buffs": {
 			"attackerDefenseStatStageChange": -3,
 			"buffActivationChance": 1
@@ -2537,6 +2823,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Sky Attack",
 			"pt_br": "Ataque do Céu"
@@ -2554,6 +2842,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 4,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -2575,6 +2865,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.9,
 		"moveName": {
 			"en": "Rock Blast",
 			"pt_br": "Explosão de Rocha"
@@ -2592,6 +2884,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Infestation",
 			"pt_br": "Infestação"
@@ -2609,6 +2903,8 @@
 		"pveEnergy": 15,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Struggle Bug",
 			"pt_br": "Ira de Inseto"
@@ -2626,6 +2922,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 3.3,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"attackerDefenseStatStageChange": 1,
@@ -2648,6 +2946,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Astonish",
 			"pt_br": "Abismar"
@@ -2665,6 +2965,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Hex",
 			"pt_br": "Feitiço"
@@ -2682,6 +2984,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.4,
 		"moveName": {
 			"en": "Night Shade",
 			"pt_br": "Sombra Noturna"
@@ -2699,6 +3003,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Iron Tail",
 			"pt_br": "Cauda de Ferro"
@@ -2716,6 +3022,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 3.2,
+		"pveDamageWindowEnd": 3.5,
 		"moveName": {
 			"en": "Gyro Ball",
 			"pt_br": "Girobola"
@@ -2733,6 +3041,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Heavy Slam",
 			"pt_br": "Golpe Pesado"
@@ -2750,6 +3060,8 @@
 		"pveEnergy": 9,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Fire Spin",
 			"pt_br": "Chama Furacão"
@@ -2767,6 +3079,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.8,
 		"buffs": {
 			"attackerAttackStatStageChange": -2,
 			"buffActivationChance": 1
@@ -2788,6 +3102,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Bullet Seed",
 			"pt_br": "Projétil de Semente"
@@ -2805,6 +3121,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Grass Knot",
 			"pt_br": "Nó de Grama"
@@ -2822,6 +3140,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3.1,
+		"pveDamageWindowEnd": 3.9,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.1
@@ -2843,6 +3163,8 @@
 		"pveEnergy": 11,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Extrasensory",
 			"pt_br": "Extrassensorial"
@@ -2860,6 +3182,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Future Sight",
 			"pt_br": "Visão do Futuro"
@@ -2877,6 +3201,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 2.4,
 		"moveName": {
 			"en": "Mirror Coat",
 			"pt_br": "Casaco Espelhado"
@@ -2894,6 +3220,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.8,
 		"moveName": {
 			"en": "Outrage",
 			"pt_br": "Ultraje"
@@ -2911,6 +3239,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.95,
 		"moveName": {
 			"en": "Snarl",
 			"pt_br": "Rosnado"
@@ -2928,6 +3258,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.2
@@ -2949,6 +3281,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 1.9,
 		"moveName": {
 			"en": "Foul Play",
 			"pt_br": "Jogo Sujo"
@@ -2966,6 +3300,8 @@
 		"pveEnergy": 15,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Hidden Power",
 			"pt_br": "Poder Oculto"
@@ -2983,6 +3319,8 @@
 		"pveEnergy": 8,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.9,
 		"moveName": {
 			"en": "Take Down",
 			"pt_br": "Desmantelar"
@@ -3000,6 +3338,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 0.9,
 		"moveName": {
 			"en": "Waterfall",
 			"pt_br": "Cachoeira"
@@ -3017,6 +3357,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Surf",
 			"pt_br": "Surfar"
@@ -3034,6 +3376,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.9,
+		"pveDamageWindowEnd": 3.4,
 		"buffs": {
 			"attackerAttackStatStageChange": -2,
 			"buffActivationChance": 1
@@ -3055,6 +3399,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Doom Desire",
 			"pt_br": "Desejo Cruel"
@@ -3072,6 +3418,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 2,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Yawn",
 			"pt_br": "Bocejo"
@@ -3089,6 +3437,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3.5,
+		"pveDamageWindowEnd": 4,
 		"buffs": {
 			"attackerAttackStatStageChange": -2,
 			"buffActivationChance": 1
@@ -3110,6 +3460,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Origin Pulse",
 			"pt_br": "Pulso Original"
@@ -3127,6 +3479,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Precipice Blades",
 			"pt_br": "Lâmina Abissal"
@@ -3144,6 +3498,8 @@
 		"pveEnergy": 23,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Present",
 			"pt_br": "Presente"
@@ -3161,6 +3517,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3178,6 +3536,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3195,6 +3555,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3212,6 +3574,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -3229,6 +3593,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.045,
+		"pveDamageWindowEnd": 2.45,
 		"moveName": {
 			"en": "Frenzy Plant",
 			"pt_br": "Planta Mortal"
@@ -3246,6 +3612,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 0.9,
 		"moveName": {
 			"en": "Smack Down",
 			"pt_br": "Derrubada"
@@ -3263,6 +3631,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.95,
+		"pveDamageWindowEnd": 3.4,
 		"moveName": {
 			"en": "Blast Burn",
 			"pt_br": "Queimadura Explosiva"
@@ -3280,6 +3650,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Hydro Cannon",
 			"pt_br": "Hidro Canhão"
@@ -3297,6 +3669,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.8,
+		"pveDamageWindowEnd": 2.95,
 		"moveName": {
 			"en": "Last Resort",
 			"pt_br": "Último Recurso"
@@ -3314,6 +3688,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 2.4,
 		"moveName": {
 			"en": "Meteor Mash",
 			"pt_br": "Meteoro Esmagador"
@@ -3331,6 +3707,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 2.2,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
 			"buffActivationChance": 1
@@ -3352,6 +3730,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetDefenseStatStageChange": -2,
 			"buffActivationChance": 1
@@ -3373,6 +3753,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.3,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.1
@@ -3394,6 +3776,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 1.85,
 		"buffs": {
 			"attackerAttackStatStageChange": 2,
 			"buffActivationChance": 0.125
@@ -3415,6 +3799,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.5,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -3436,6 +3822,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.8,
 		"buffs": {
 			"targetAttackStatStageChange": -2,
 			"buffActivationChance": 0.5
@@ -3457,6 +3845,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -3478,6 +3868,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"attackerAttackStatStageChange": -1,
 			"attackerDefenseStatStageChange": -1,
@@ -3500,6 +3892,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 1.8,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -3521,6 +3915,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.5,
 		"buffs": {
 			"targetAttackStatStageChange": -2,
 			"buffActivationChance": 0.5
@@ -3542,6 +3938,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.6,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
 			"buffActivationChance": 1
@@ -3563,6 +3961,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.45,
+		"pveDamageWindowEnd": 2.9,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.2
@@ -3584,6 +3984,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.7,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -3605,6 +4007,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.25,
+		"pveDamageWindowEnd": 0.6,
 		"moveName": {
 			"en": "Blaze Kick",
 			"pt_br": "Chute Labareda"
@@ -3622,6 +4026,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.85,
+		"pveDamageWindowEnd": 1.2,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.5
@@ -3643,6 +4049,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 1.9,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -3664,6 +4072,8 @@
 		"pveEnergy": 11,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.2,
 		"moveName": {
 			"en": "Charm",
 			"pt_br": "Encantar"
@@ -3681,6 +4091,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4.5,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Giga Impact",
 			"pt_br": "Gigaimpacto"
@@ -3698,6 +4110,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Frustration",
 			"pt_br": "Frustração"
@@ -3715,6 +4129,7 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 0.5,
+		"pveDamageWindowEnd": 0.15,
 		"moveName": {
 			"en": "Return",
 			"pt_br": "Retorno"
@@ -3732,6 +4147,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 0.75,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Synchronoise",
 			"pt_br": "Barulho Sincronizado"
@@ -3749,6 +4166,8 @@
 		"pveEnergy": 10,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.37,
+		"pveDamageWindowEnd": 0.5,
 		"moveName": {
 			"en": "Lock-On",
 			"pt_br": "Mirar"
@@ -3766,6 +4185,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.7,
 		"moveName": {
 			"en": "Thunder Fang",
 			"pt_br": "Presa Trovejante"
@@ -3783,6 +4204,8 @@
 		"pveEnergy": 20,
 		"pvpCooldown": 1,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.4,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Ice Fang",
 			"pt_br": "Presa de Gelo"
@@ -3800,6 +4223,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Sacred Sword",
 			"pt_br": "Espada Sagrada"
@@ -3817,6 +4242,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Flying Press",
 			"pt_br": "Aperto Voador"
@@ -3834,6 +4261,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Aura Sphere",
 			"pt_br": "Aura Esférica"
@@ -3851,6 +4280,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Payback",
 			"pt_br": "Revide"
@@ -3868,6 +4299,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.6,
 		"moveName": {
 			"en": "Rock Wrecker",
 			"pt_br": "Demolidor de Pedras"
@@ -3885,6 +4318,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 3.3,
+		"pveDamageWindowEnd": 3.5,
 		"buffs": {
 			"attackerAttackStatStageChange": 2,
 			"buffActivationChance": 0.125
@@ -3906,6 +4341,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -3923,6 +4360,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -3940,6 +4379,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -3957,6 +4398,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -3974,6 +4417,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.6,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Techno Blast",
 			"pt_br": "Rajada Tecnológica"
@@ -3991,6 +4436,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Fly",
 			"pt_br": "Voar"
@@ -4008,6 +4455,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"attackerDefenseStatStageChange": -3,
 			"buffActivationChance": 1
@@ -4029,6 +4478,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.25,
 		"buffs": {
 			"attackerAttackStatStageChange": -2,
 			"buffActivationChance": 1
@@ -4050,6 +4501,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2.4,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"targetDefenseStatStageChange": -1,
@@ -4072,6 +4525,8 @@
 		"pveEnergy": 20,
 		"pvpCooldown": 2,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Gust",
 			"pt_br": "Lufada de Vento"
@@ -4089,6 +4544,8 @@
 		"pveEnergy": 22,
 		"pvpCooldown": 2.5,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Incinerate",
 			"pt_br": "Incinerar"
@@ -4106,6 +4563,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"targetAttackStatStageChange": -2,
 			"buffActivationChance": 1
@@ -4127,6 +4586,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.63,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Fairy Wind",
 			"pt_br": "Vento de Fada"
@@ -4144,6 +4605,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Weather Ball",
 			"pt_br": "Esfera Climática"
@@ -4161,6 +4624,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.9,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4182,6 +4647,8 @@
 		"pveEnergy": 13,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.8,
 		"moveName": {
 			"en": "Double Kick",
 			"pt_br": "Chute Duplo"
@@ -4199,6 +4666,8 @@
 		"pveEnergy": 17,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.85,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Magical Leaf",
 			"pt_br": "Folha Mágica"
@@ -4216,6 +4685,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 2.3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.5
@@ -4237,6 +4708,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.6,
 		"moveName": {
 			"en": "Icicle Spear",
 			"pt_br": "Lança Congelada"
@@ -4254,6 +4727,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.6,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Acrobatics",
 			"pt_br": "Acrobático"
@@ -4271,6 +4746,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.5,
+		"pveDamageWindowEnd": 1.5,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.5
@@ -4292,6 +4769,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.7,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.5
@@ -4313,6 +4792,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Brutal Swing",
 			"pt_br": "Balanço Violento"
@@ -4330,6 +4811,8 @@
 		"pveEnergy": 19,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.06,
+		"pveDamageWindowEnd": 1.3,
 		"moveName": {
 			"en": "Rollout",
 			"pt_br": "Rolagem"
@@ -4347,6 +4830,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.3,
+		"pveDamageWindowEnd": 2.4,
 		"buffs": {
 			"targetDefenseStatStageChange": -2,
 			"buffActivationChance": 0.4
@@ -4368,6 +4853,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 1.4,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
 			"targetDefenseStatStageChange": -1,
@@ -4390,6 +4877,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Shadow Force",
 			"pt_br": "Força das Sombras"
@@ -4407,6 +4896,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 2,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -4428,6 +4919,8 @@
 		"pveEnergy": 14,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Water Shuriken",
 			"pt_br": "Estrela Ninja de Água"
@@ -4445,6 +4938,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.25,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Fusion Bolt",
 			"pt_br": "Raio de Fusão"
@@ -4462,6 +4957,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Fusion Flare",
 			"pt_br": "Chama da Fusão"
@@ -4479,6 +4976,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.7,
+		"pveDamageWindowEnd": 2.9,
 		"moveName": {
 			"en": "Poltergeist",
 			"pt_br": "Poltergeist"
@@ -4496,6 +4995,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.1,
 		"moveName": {
 			"en": "High Horsepower",
 			"pt_br": "Potência Equina"
@@ -4513,6 +5014,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 2.5,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4534,6 +5037,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.47,
+		"pveDamageWindowEnd": 0.9,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4555,6 +5060,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.2,
 		"moveName": {
 			"en": "Boomburst",
 			"pt_br": "Rajada Explosiva"
@@ -4572,6 +5079,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Double Iron Bash",
 			"pt_br": "Pancada de Ferro Dupla"
@@ -4589,6 +5098,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4610,6 +5121,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -4631,6 +5144,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 3.25,
+		"pveDamageWindowEnd": 3.4,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4652,6 +5167,8 @@
 		"pveEnergy": 4,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.7,
 		"moveName": {
 			"en": "Leafage",
 			"pt_br": "Folhagem"
@@ -4669,6 +5186,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2.8,
 		"moveName": {
 			"en": "Magma Storm",
 			"pt_br": "Tempestade de Magma"
@@ -4686,6 +5205,8 @@
 		"pveEnergy": 14,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 1.5,
 		"moveName": {
 			"en": "Geomancy",
 			"pt_br": "Geomancia"
@@ -4703,6 +5224,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.37,
+		"pveDamageWindowEnd": 2.95,
 		"moveName": {
 			"en": "Spacial Rend",
 			"pt_br": "Laceração Espacial"
@@ -4720,6 +5243,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.9,
 		"buffs": {
 			"attackerDefenseStatStageChange": 1,
 			"buffActivationChance": 1
@@ -4741,6 +5266,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 1.9,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4762,6 +5289,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 1.7,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -4783,6 +5312,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.9,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -4804,6 +5335,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.4,
+		"pveDamageWindowEnd": 2.3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.1
@@ -4825,6 +5358,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.85,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Roar of Time",
 			"pt_br": "Rugido do Tempo"
@@ -4842,6 +5377,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4863,6 +5400,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4884,6 +5423,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4905,6 +5446,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 3.4,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.33
@@ -4926,6 +5469,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.6,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -4947,6 +5492,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2,
 		"moveName": {
 			"en": "Darkest Lariat",
 			"pt_br": "Lariat Escuro"
@@ -4964,6 +5511,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.6,
 		"moveName": {
 			"en": "Psywave",
 			"pt_br": "Onda Psíquica"
@@ -4981,6 +5530,8 @@
 		"pveEnergy": 6,
 		"pvpCooldown": 1,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.2,
+		"pveDamageWindowEnd": 0.7,
 		"moveName": {
 			"en": "Metal Sound",
 			"pt_br": "Som de Metal"
@@ -4998,6 +5549,8 @@
 		"pveEnergy": 7,
 		"pvpCooldown": 0.5,
 		"pveCooldown": 0.5,
+		"pveDamageWindowStart": 0.3,
+		"pveDamageWindowEnd": 0.6,
 		"moveName": {
 			"en": "Sand Attack",
 			"pt_br": "Ataque de Areia"
@@ -5015,6 +5568,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 3,
 		"moveName": {
 			"en": "Sunsteel Strike",
 			"pt_br": "Ataque Solaraço"
@@ -5032,6 +5587,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.2,
+		"pveDamageWindowEnd": 3,
 		"moveName": {
 			"en": "Moongeist Beam",
 			"pt_br": "Feixe Espectral"
@@ -5049,6 +5606,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.5,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5070,6 +5629,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.45,
+		"pveDamageWindowEnd": 0.8,
 		"buffs": {
 			"attackerDefenseStatStageChange": -4,
 			"buffActivationChance": 0.1
@@ -5091,6 +5652,8 @@
 		"pveEnergy": 16,
 		"pvpCooldown": 1.5,
 		"pveCooldown": 1,
+		"pveDamageWindowStart": 0.8,
+		"pveDamageWindowEnd": 1,
 		"moveName": {
 			"en": "Force Palm",
 			"pt_br": "Palma da Força"
@@ -5108,6 +5671,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 2.9,
 		"moveName": {
 			"en": "Sparkling Aria",
 			"pt_br": "Aria Cintilante"
@@ -5125,6 +5690,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.75,
+		"pveDamageWindowEnd": 3,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5146,6 +5713,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5167,6 +5736,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.4,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -5188,6 +5759,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.8,
+		"pveDamageWindowEnd": 2.2,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -5209,6 +5782,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.5,
+		"pveDamageWindowEnd": 3.5,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5230,6 +5805,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.5,
+		"pveDamageWindowEnd": 3.5,
 		"moveName": {
 			"en": "Behemoth Blade",
 			"pt_br": "Espada Colossal"
@@ -5247,6 +5824,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Behemoth Bash",
 			"pt_br": "Pancada Colossal"
@@ -5264,6 +5843,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 2.3,
+		"pveDamageWindowEnd": 3.1,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -5285,6 +5866,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.88,
+		"pveDamageWindowEnd": 3.2,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5306,6 +5889,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Dynamax Cannon",
 			"pt_br": "Canhão Dinamax"
@@ -5323,6 +5908,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.88,
+		"pveDamageWindowEnd": 3.2,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5344,6 +5931,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 1.7,
 		"moveName": {
 			"en": "Crush Grip",
 			"pt_br": "Aperto Esmagador"
@@ -5361,6 +5950,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 1.88,
+		"pveDamageWindowEnd": 3.2,
 		"moveName": {
 			"en": "Dragon Energy",
 			"pt_br": "Energia Dracônica"
@@ -5378,6 +5969,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 3.1,
 		"buffs": {
 			"attackerAttackStatStageChange": 1,
 			"buffActivationChance": 1
@@ -5399,6 +5992,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.05,
+		"pveDamageWindowEnd": 3.1,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5420,6 +6015,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.6,
 		"buffs": {},
 		"moveName": {
 			"en": "Secret Sword",
@@ -5438,6 +6035,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.5,
+		"pveDamageWindowEnd": 2.5,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5459,6 +6058,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 3,
+		"pveDamageWindowEnd": 4,
 		"buffs": {
 			"attackerDefenseStatStageChange": -4,
 			"buffActivationChance": 1
@@ -5480,6 +6081,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 4.5,
+		"pveDamageWindowStart": 3,
+		"pveDamageWindowEnd": 4,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5501,6 +6104,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 0.9,
+		"pveDamageWindowEnd": 1.6,
 		"moveName": {
 			"en": "Pyro Ball",
 			"pt_br": "Pyro Ball"
@@ -5518,6 +6123,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 3.1,
 		"moveName": {
 			"en": "Gigaton Hammer",
 			"pt_br": "Gigaton Hammer"
@@ -5535,6 +6142,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.5,
+		"pveDamageWindowEnd": 3,
 		"moveName": {
 			"en": "Plasma Fists",
 			"pt_br": "Plasma Fists"
@@ -5552,6 +6161,8 @@
 		"pveEnergy": -50,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.7,
+		"pveDamageWindowEnd": 1.9,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5573,6 +6184,8 @@
 		"pveEnergy": -33,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.9,
 		"buffs": {
 			"attackerAttackStatStageChange": 2,
 			"buffActivationChance": 0.125
@@ -5611,6 +6224,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.8,
 		"buffs": {
 			"targetDefenseStatStageChange": -2,
 			"buffActivationChance": 1
@@ -5632,6 +6247,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 2,
+		"pveDamageWindowEnd": 2.7,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 0.3
@@ -5653,6 +6270,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 4,
+		"pveDamageWindowStart": 2.6,
+		"pveDamageWindowEnd": 3.8,
 		"moveName": {
 			"en": "Outrage+",
 			"pt_br": "Ultraje+"
@@ -5670,6 +6289,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.9,
+		"pveDamageWindowEnd": 2.3,
 		"moveName": {
 			"en": "Drill Peck+",
 			"pt_br": "Bico Broca+"
@@ -5687,6 +6308,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 1.8,
 		"moveName": {
 			"en": "Seed Bomb+",
 			"pt_br": "Bomba de Sementes+"
@@ -5704,6 +6327,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2,
+		"pveDamageWindowStart": 1.3,
+		"pveDamageWindowEnd": 2,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5725,6 +6350,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 1.4,
 		"moveName": {
 			"en": "Surf+",
 			"pt_br": "Surfar+"
@@ -5742,6 +6369,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3,
+		"pveDamageWindowStart": 1.1,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Psybeam+",
 			"pt_br": "Feixe Psíquico+"
@@ -5759,6 +6388,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 1.5,
+		"pveDamageWindowStart": 0.7,
+		"pveDamageWindowEnd": 1.3,
 		"buffs": {
 			"targetDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5780,6 +6411,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.1,
+		"pveDamageWindowEnd": 2.6,
 		"buffs": {
 			"attackerDefenseStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5801,6 +6434,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Dynamic Punch+",
 			"pt_br": "Soco Dinâmico+"
@@ -5818,6 +6453,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 3.5,
+		"pveDamageWindowStart": 2.8,
+		"pveDamageWindowEnd": 3.3,
 		"buffs": {
 			"targetAttackStatStageChange": -1,
 			"buffActivationChance": 1
@@ -5839,6 +6476,8 @@
 		"pveEnergy": -100,
 		"pvpCooldown": 0,
 		"pveCooldown": 2.5,
+		"pveDamageWindowStart": 1.2,
+		"pveDamageWindowEnd": 2.5,
 		"moveName": {
 			"en": "Future Sight+",
 			"pt_br": "Visão do Futuro+"

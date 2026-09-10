@@ -2,2554 +2,3122 @@
 	"kyogre_primal": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "ORIGIN_PULSE",
-		"dps": 34.18099547511313,
+		"dps": 34.355959532867104,
+		"tdo": 1770.1700791978465,
+		"edps": 33.06838399551748,
 		"speciesId": "kyogre_primal",
 		"fastMoveDmg": 23,
-		"chargedMoveDmg": 211,
+		"chargedMoveDmg": 210,
 		"rank": 1
 	},
 	"greninja_mega": {
 		"fastMove": "WATER_SHURIKEN",
-		"chargedMove": "SURF_PLUS",
-		"dps": 34.13223140495868,
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 33.78428166303394,
+		"tdo": 984.1496661450715,
+		"edps": 31.446972253311838,
 		"speciesId": "greninja_mega",
 		"fastMoveDmg": 14,
-		"chargedMoveDmg": 195,
+		"chargedMoveDmg": 135,
 		"rank": 2
 	},
 	"kyogre_shadow": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "ORIGIN_PULSE",
-		"dps": 32.38914027149321,
+		"dps": 32.115694360223316,
+		"tdo": 1117.2542506243983,
+		"edps": 30.116770938371236,
 		"speciesId": "kyogre_shadow",
 		"fastMoveDmg": 22,
-		"chargedMoveDmg": 197,
+		"chargedMoveDmg": 195,
 		"rank": 3
-	},
-	"greninja_shadow": {
-		"fastMove": "WATER_SHURIKEN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 30.410256410256416,
-		"speciesId": "greninja_shadow",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 123,
-		"rank": 4
-	},
-	"kingler_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "CRABHAMMER",
-		"dps": 30.405405405405403,
-		"speciesId": "kingler_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 125,
-		"rank": 5
-	},
-	"starmie_mega": {
-		"fastMove": "PSYWAVE",
-		"chargedMove": "LIQUIDATION_PLUS",
-		"dps": 30.380281690140848,
-		"speciesId": "starmie_mega",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 251,
-		"rank": 6
 	},
 	"swampert_mega": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 29.857142857142858,
+		"dps": 31.06672728337955,
+		"tdo": 1358.4365236984115,
+		"edps": 29.83105623199994,
 		"speciesId": "swampert_mega",
 		"fastMoveDmg": 8,
-		"chargedMoveDmg": 129,
+		"chargedMoveDmg": 128,
+		"rank": 4
+	},
+	"greninja_shadow": {
+		"fastMove": "WATER_SHURIKEN",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 30.289131079327678,
+		"tdo": 629.7002581344896,
+		"edps": 27.511469402896825,
+		"speciesId": "greninja_shadow",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 123,
+		"rank": 5
+	},
+	"kingler_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "CRABHAMMER",
+		"dps": 29.86542882717886,
+		"tdo": 614.8500288070352,
+		"edps": 26.678383386199883,
+		"speciesId": "kingler_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 124,
+		"rank": 6
+	},
+	"starmie_mega": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "LIQUIDATION_PLUS",
+		"dps": 29.138167609070376,
+		"tdo": 942.6105020653507,
+		"edps": 27.382820161430246,
+		"speciesId": "starmie_mega",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 249,
 		"rank": 7
-	},
-	"sharpedo_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 27.309236947791167,
-		"speciesId": "sharpedo_shadow",
-		"fastMoveDmg": 20,
-		"chargedMoveDmg": 200,
-		"rank": 8
-	},
-	"gyarados_mega": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 27.196787148594378,
-		"speciesId": "gyarados_mega",
-		"fastMoveDmg": 20,
-		"chargedMoveDmg": 198,
-		"rank": 9
 	},
 	"blastoise_mega": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 27.142857142857142,
+		"dps": 28.124467461030807,
+		"tdo": 1124.9303558918693,
+		"edps": 26.57955980056892,
 		"speciesId": "blastoise_mega",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 120,
+		"rank": 8
+	},
+	"swampert_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 27.64285204719716,
+		"tdo": 821.3780834009149,
+		"edps": 25.526016365924413,
+		"speciesId": "swampert_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 115,
+		"rank": 9
+	},
+	"samurott_shadow": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 27.446083854418166,
+		"tdo": 712.5595508830048,
+		"edps": 25.230180937100403,
+		"speciesId": "samurott_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 117,
 		"rank": 10
 	},
 	"inteleon": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 27.142857142857142,
+		"dps": 27.376055788459055,
+		"tdo": 630.031187648838,
+		"edps": 25.086797251429413,
 		"speciesId": "inteleon",
 		"fastMoveDmg": 7,
-		"chargedMoveDmg": 120,
+		"chargedMoveDmg": 119,
 		"rank": 11
 	},
-	"crawdaunt_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "CRABHAMMER",
-		"dps": 26.859375000000004,
-		"speciesId": "crawdaunt_shadow",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 117,
+	"feraligatr_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 27.02164506312342,
+		"tdo": 759.6935308287508,
+		"edps": 24.953812960931085,
+		"speciesId": "feraligatr_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 113,
 		"rank": 12
 	},
-	"samurott_shadow": {
-		"fastMove": "FURY_CUTTER",
+	"empoleon_shadow": {
+		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 26.682926829268293,
-		"speciesId": "samurott_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 118,
+		"dps": 26.84035319561342,
+		"tdo": 747.1621945939513,
+		"edps": 24.758194638087765,
+		"speciesId": "empoleon_shadow",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 116,
 		"rank": 13
 	},
 	"kyogre": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "ORIGIN_PULSE",
-		"dps": 26.67873303167421,
+		"dps": 26.63237932754074,
+		"tdo": 1111.798108341505,
+		"edps": 25.242998371044308,
 		"speciesId": "kyogre",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 164,
+		"chargedMoveDmg": 163,
 		"rank": 14
 	},
-	"swampert_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 26.571428571428573,
-		"speciesId": "swampert_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 116,
-		"rank": 15
-	},
-	"sharpedo_mega": {
+	"gyarados_mega": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 26.337349397590362,
-		"speciesId": "sharpedo_mega",
+		"dps": 26.50039727234396,
+		"tdo": 1257.6137357064288,
+		"edps": 25.59599199700996,
+		"speciesId": "gyarados_mega",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 197,
-		"rank": 16
+		"rank": 15
 	},
-	"feraligatr_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 26.285714285714285,
-		"speciesId": "feraligatr_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 114,
-		"rank": 17
+	"crawdaunt_shadow": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "CRABHAMMER",
+		"dps": 26.1784037561225,
+		"tdo": 470.07889331475303,
+		"edps": 23.112787307287427,
+		"speciesId": "crawdaunt_shadow",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 116,
+		"rank": 16
 	},
 	"gyarados_shadow": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 26.224899598393577,
+		"dps": 26.03625162619408,
+		"tdo": 789.9268033657551,
+		"edps": 24.149930615419507,
 		"speciesId": "gyarados_shadow",
 		"fastMoveDmg": 19,
-		"chargedMoveDmg": 195,
+		"chargedMoveDmg": 194,
+		"rank": 17
+	},
+	"greninja": {
+		"fastMove": "WATER_SHURIKEN",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 25.61849622193079,
+		"tdo": 639.1193311024878,
+		"edps": 23.602924759350955,
+		"speciesId": "greninja",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 102,
 		"rank": 18
 	},
-	"empoleon_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 26.078125000000004,
-		"speciesId": "empoleon_shadow",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 117,
+	"kingler": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "CRABHAMMER",
+		"dps": 25.52778900212763,
+		"tdo": 630.6594499745371,
+		"edps": 23.525907647129426,
+		"speciesId": "kingler",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 103,
 		"rank": 19
 	},
 	"palkia_shadow": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 26.03125,
+		"dps": 25.367426982260643,
+		"tdo": 776.2667212372031,
+		"edps": 23.536445831066658,
 		"speciesId": "palkia_shadow",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 229,
+		"chargedMoveDmg": 227,
 		"rank": 20
 	},
-	"kingler": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "CRABHAMMER",
-		"dps": 25.64864864864865,
-		"speciesId": "kingler",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 104,
+	"sharpedo_mega": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 25.21822286459338,
+		"tdo": 587.7641881865752,
+		"edps": 22.87254903875471,
+		"speciesId": "sharpedo_mega",
+		"fastMoveDmg": 19,
+		"chargedMoveDmg": 195,
 		"rank": 21
-	},
-	"greninja": {
-		"fastMove": "WATER_SHURIKEN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 25.538461538461537,
-		"speciesId": "greninja",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 103,
-		"rank": 22
 	},
 	"primarina": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 24.203125,
+		"dps": 24.92855625505979,
+		"tdo": 840.6916518546199,
+		"edps": 23.558252092426915,
 		"speciesId": "primarina",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 107,
-		"rank": 23
+		"chargedMoveDmg": 106,
+		"rank": 22
 	},
 	"quaquaval": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 24,
+		"dps": 24.891763460171404,
+		"tdo": 719.8081874398908,
+		"edps": 23.090814070105687,
 		"speciesId": "quaquaval",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 108,
-		"rank": 24
+		"rank": 23
 	},
 	"raichu_mega_y": {
 		"fastMove": "THUNDER_SHOCK",
 		"chargedMove": "SURF",
-		"dps": 23.802816901408452,
+		"dps": 23.890341957655227,
+		"tdo": 544.792379018099,
+		"edps": 21.711792898815915,
 		"speciesId": "raichu_mega_y",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 85,
+		"rank": 24
+	},
+	"samurott": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 23.707063249705723,
+		"tdo": 738.5838405483312,
+		"edps": 22.06781864300074,
+		"speciesId": "samurott",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 98,
 		"rank": 25
-	},
-	"salamence_shadow": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 23.53125,
-		"speciesId": "salamence_shadow",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 189,
-		"rank": 26
-	},
-	"starmie_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 23.333333333333332,
-		"speciesId": "starmie_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 175,
-		"rank": 27
 	},
 	"haxorus_shadow": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "SURF",
-		"dps": 23.193548387096776,
+		"dps": 23.58899415697597,
+		"tdo": 569.7308287637194,
+		"edps": 21.493365725764868,
 		"speciesId": "haxorus_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 86,
+		"rank": 26
+	},
+	"swampert": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 23.334542316863256,
+		"tdo": 832.0334983899908,
+		"edps": 21.807909552012006,
+		"speciesId": "swampert",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 96,
+		"rank": 27
+	},
+	"salamence_shadow": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 23.11359875412685,
+		"tdo": 638.4560288304781,
+		"edps": 21.460191254638403,
+		"speciesId": "salamence_shadow",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 188,
 		"rank": 28
 	},
 	"volcanion": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 23.185185185185187,
+		"dps": 23.026534204531554,
+		"tdo": 854.2025605779679,
+		"edps": 21.85243396233116,
 		"speciesId": "volcanion",
 		"fastMoveDmg": 7,
-		"chargedMoveDmg": 173,
-		"rank": 29
-	},
-	"omastar_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 23.11111111111111,
-		"speciesId": "omastar_shadow",
-		"fastMoveDmg": 7,
 		"chargedMoveDmg": 172,
-		"rank": 30
-	},
-	"sharpedo": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 23.04417670682731,
-		"speciesId": "sharpedo",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 167,
-		"rank": 31
-	},
-	"samurott": {
-		"fastMove": "FURY_CUTTER",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 22.78048780487805,
-		"speciesId": "samurott",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 98,
-		"rank": 32
-	},
-	"crawdaunt": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "CRABHAMMER",
-		"dps": 22.437500000000004,
-		"speciesId": "crawdaunt",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 98,
-		"rank": 33
-	},
-	"krabby_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 22.352941176470587,
-		"speciesId": "krabby_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 62,
-		"rank": 34
-	},
-	"palkia_origin": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 22.34375,
-		"speciesId": "palkia_origin",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 195,
-		"rank": 35
+		"rank": 29
 	},
 	"blastoise_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 22.285714285714285,
+		"dps": 22.981684019845815,
+		"tdo": 674.8299481740237,
+		"edps": 21.376849113719192,
 		"speciesId": "blastoise_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 96,
-		"rank": 36
-	},
-	"clawitzer": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "CRABHAMMER",
-		"dps": 22.285714285714285,
-		"speciesId": "clawitzer",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 96,
-		"rank": 37
-	},
-	"swampert": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 22.285714285714285,
-		"speciesId": "swampert",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 96,
-		"rank": 38
+		"rank": 30
 	},
 	"feraligatr": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 22.142857142857142,
+		"dps": 22.960771596109012,
+		"tdo": 774.6301293520277,
+		"edps": 21.450384936005356,
 		"speciesId": "feraligatr",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 95,
+		"rank": 31
+	},
+	"clawitzer": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "CRABHAMMER",
+		"dps": 22.813182951345002,
+		"tdo": 625.9617280233485,
+		"edps": 21.200977056860264,
+		"speciesId": "clawitzer",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 96,
+		"rank": 32
+	},
+	"starmie_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 22.67491876343624,
+		"tdo": 498.5374218733698,
+		"edps": 20.365938731991147,
+		"speciesId": "starmie_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 77,
+		"rank": 33
+	},
+	"omastar_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 22.446444197314776,
+		"tdo": 592.2588505648866,
+		"edps": 20.56887216306135,
+		"speciesId": "omastar_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 171,
+		"rank": 34
+	},
+	"empoleon": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "HYDRO_CANNON",
+		"dps": 22.381631788876113,
+		"tdo": 747.652298298899,
+		"edps": 20.914889164558996,
+		"speciesId": "empoleon",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 97,
+		"rank": 35
+	},
+	"crawdaunt": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "CRABHAMMER",
+		"dps": 22.360060193045964,
+		"tdo": 481.81667003190364,
+		"edps": 20.084650610263555,
+		"speciesId": "crawdaunt",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 97,
+		"rank": 36
+	},
+	"milotic_shadow": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 22.159402685626773,
+		"tdo": 782.6836107252509,
+		"edps": 20.749368913841177,
+		"speciesId": "milotic_shadow",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 71,
+		"rank": 37
+	},
+	"samurott_hisuian": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 22.150986678189323,
+		"tdo": 642.4130543092663,
+		"edps": 20.627892752956466,
+		"speciesId": "samurott_hisuian",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 61,
+		"rank": 38
+	},
+	"politoed_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "WEATHER_BALL_WATER",
+		"dps": 22.06885157364247,
+		"tdo": 619.590871738819,
+		"edps": 20.27873775883985,
+		"speciesId": "politoed_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 60,
 		"rank": 39
 	},
-	"palkia": {
+	"palkia_origin": {
 		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 22.09375,
-		"speciesId": "palkia",
+		"dps": 22.005523095855843,
+		"tdo": 836.1739440578738,
+		"edps": 20.930805348020794,
+		"speciesId": "palkia_origin",
 		"fastMoveDmg": 13,
-		"chargedMoveDmg": 191,
+		"chargedMoveDmg": 193,
 		"rank": 40
 	},
 	"gyarados": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 22.016064257028113,
+		"dps": 21.998500273160467,
+		"tdo": 800.9081772995626,
+		"edps": 20.636578912621278,
 		"speciesId": "gyarados",
 		"fastMoveDmg": 16,
-		"chargedMoveDmg": 163,
-		"rank": 41
-	},
-	"kingdra_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 21.95983935742972,
-		"speciesId": "kingdra_shadow",
-		"fastMoveDmg": 16,
 		"chargedMoveDmg": 162,
-		"rank": 42
-	},
-	"salamence_mega": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 21.875,
-		"speciesId": "salamence_mega",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 175,
-		"rank": 43
-	},
-	"genesect_douse": {
-		"fastMove": "FURY_CUTTER",
-		"chargedMove": "TECHNO_BLAST_DOUSE",
-		"dps": 21.575757575757574,
-		"speciesId": "genesect_douse",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 128,
-		"rank": 44
-	},
-	"milotic_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "SURF",
-		"dps": 21.553719008264462,
-		"speciesId": "milotic_shadow",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 72,
-		"rank": 45
-	},
-	"empoleon": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 21.546875,
-		"speciesId": "empoleon",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 97,
-		"rank": 46
-	},
-	"poliwrath_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 21.380281690140844,
-		"speciesId": "poliwrath_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 153,
-		"rank": 47
+		"rank": 41
 	},
 	"golisopod": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "RAZOR_SHELL",
-		"dps": 21.35632183908046,
+		"dps": 21.989575987271774,
+		"tdo": 811.4646626474008,
+		"edps": 20.628725224722988,
 		"speciesId": "golisopod",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 62,
-		"rank": 48
+		"chargedMoveDmg": 61,
+		"rank": 42
 	},
-	"samurott_hisuian": {
+	"sharpedo_shadow": {
 		"fastMove": "WATERFALL",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 21.35632183908046,
-		"speciesId": "samurott_hisuian",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 62,
-		"rank": 49
-	},
-	"kabutops_shadow": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "WATER_PULSE",
-		"dps": 21.35211267605634,
-		"speciesId": "kabutops_shadow",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 88,
-		"rank": 50
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 21.982732370481518,
+		"tdo": 263.1588643580191,
+		"edps": 18.307110805649735,
+		"speciesId": "sharpedo_shadow",
+		"fastMoveDmg": 20,
+		"chargedMoveDmg": 199,
+		"rank": 43
 	},
 	"escavalier_shadow": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "RAZOR_SHELL",
-		"dps": 21.294117647058822,
+		"dps": 21.967057651808634,
+		"tdo": 542.0427182633697,
+		"edps": 20.1115344569075,
 		"speciesId": "escavalier_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 63,
-		"rank": 51
+		"rank": 44
 	},
-	"politoed_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 21.235294117647058,
-		"speciesId": "politoed_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 60,
-		"rank": 52
-	},
-	"golduck_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.74074074074074,
-		"speciesId": "golduck_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 160,
-		"rank": 53
-	},
-	"floatzel": {
+	"kingdra_shadow": {
 		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.65060240963856,
-		"speciesId": "floatzel",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 153,
-		"rank": 54
-	},
-	"keldeo_ordinary": {
-		"fastMove": "LOW_KICK",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.59259259259259,
-		"speciesId": "keldeo_ordinary",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 178,
-		"rank": 55
-	},
-	"keldeo_resolute": {
-		"fastMove": "LOW_KICK",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.59259259259259,
-		"speciesId": "keldeo_resolute",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 178,
-		"rank": 56
-	},
-	"seadra_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.51851851851852,
-		"speciesId": "seadra_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 157,
-		"rank": 57
-	},
-	"tatsugiri_curly": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.444444444444443,
-		"speciesId": "tatsugiri_curly",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 156,
-		"rank": 58
-	},
-	"tatsugiri_droopy": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.444444444444443,
-		"speciesId": "tatsugiri_droopy",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 156,
-		"rank": 59
-	},
-	"tatsugiri_stretchy": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.444444444444443,
-		"speciesId": "tatsugiri_stretchy",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 156,
-		"rank": 60
-	},
-	"crabominable": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "CRABHAMMER",
-		"dps": 20.37837837837838,
-		"speciesId": "crabominable",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 84,
-		"rank": 61
-	},
-	"carracosta_shadow": {
-		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 20.307692307692307,
-		"speciesId": "carracosta_shadow",
-		"fastMoveDmg": 6,
+		"dps": 21.95617368652295,
+		"tdo": 585.5411140456812,
+		"edps": 20.156436887740988,
+		"speciesId": "kingdra_shadow",
+		"fastMoveDmg": 16,
 		"chargedMoveDmg": 72,
-		"rank": 62
+		"rank": 45
+	},
+	"salamence_mega": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 21.90649914033984,
+		"tdo": 1055.4756334437798,
+		"edps": 20.92843260004838,
+		"speciesId": "salamence_mega",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 174,
+		"rank": 46
+	},
+	"palkia": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 21.79428241181454,
+		"tdo": 800.3102642500469,
+		"edps": 20.45676112429293,
+		"speciesId": "palkia",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 190,
+		"rank": 47
 	},
 	"lapras_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SPARKLING_ARIA",
-		"dps": 20.253968253968253,
+		"dps": 21.61248523727485,
+		"tdo": 778.6516370933457,
+		"edps": 20.269084983974576,
 		"speciesId": "lapras_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 88,
-		"rank": 63
+		"rank": 48
 	},
-	"suicune_shadow": {
+	"kabutops_shadow": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "WATER_PULSE",
+		"dps": 21.37231836300068,
+		"tdo": 474.62066063046325,
+		"edps": 19.28411113909837,
+		"speciesId": "kabutops_shadow",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 88,
+		"rank": 49
+	},
+	"crabominable": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "CRABHAMMER",
+		"dps": 20.869901070606918,
+		"tdo": 584.3321189964258,
+		"edps": 19.237220275573197,
+		"speciesId": "crabominable",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 83,
+		"rank": 50
+	},
+	"genesect_douse": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "TECHNO_BLAST_DOUSE",
+		"dps": 20.864099971514513,
+		"tdo": 658.6616558011057,
+		"edps": 19.532819926455403,
+		"speciesId": "genesect_douse",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 127,
+		"rank": 51
+	},
+	"poliwrath_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 20.790377010695963,
+		"tdo": 598.7409861961529,
+		"edps": 19.169631919955872,
+		"speciesId": "poliwrath_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 152,
+		"rank": 52
+	},
+	"carracosta_shadow": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 20.074074074074073,
-		"speciesId": "suicune_shadow",
+		"chargedMove": "SURF",
+		"dps": 20.59642487359504,
+		"tdo": 553.7655190026716,
+		"edps": 18.956585720275466,
+		"speciesId": "carracosta_shadow",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 151,
-		"rank": 64
+		"chargedMoveDmg": 71,
+		"rank": 53
 	},
-	"salamence": {
-		"fastMove": "DRAGON_TAIL",
+	"keldeo_ordinary": {
+		"fastMove": "LOW_KICK",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 19.96875,
-		"speciesId": "salamence",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 157,
-		"rank": 65
+		"dps": 20.55090607212832,
+		"tdo": 746.7083972751265,
+		"edps": 19.307632782398194,
+		"speciesId": "keldeo_ordinary",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 177,
+		"rank": 54
+	},
+	"keldeo_resolute": {
+		"fastMove": "LOW_KICK",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 20.55090607212832,
+		"tdo": 746.7083972751265,
+		"edps": 19.307632782398194,
+		"speciesId": "keldeo_resolute",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 177,
+		"rank": 55
 	},
 	"slowbro_mega": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 19.846153846153847,
+		"dps": 20.54321712003721,
+		"tdo": 1019.5595929477873,
+		"edps": 19.680700013985735,
 		"speciesId": "slowbro_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 69,
-		"rank": 66
-	},
-	"haxorus": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "SURF",
-		"dps": 19.774193548387096,
-		"speciesId": "haxorus",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 72,
-		"rank": 67
+		"rank": 56
 	},
 	"rhyperior_shadow": {
 		"fastMove": "MUD_SLAP",
 		"chargedMove": "SURF",
-		"dps": 19.703703703703702,
+		"dps": 20.529457129542863,
+		"tdo": 730.2083456024984,
+		"edps": 19.28869934704295,
 		"speciesId": "rhyperior_shadow",
 		"fastMoveDmg": 18,
-		"chargedMoveDmg": 74,
-		"rank": 68
-	},
-	"starmie": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 19.703703703703702,
-		"speciesId": "starmie",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 146,
-		"rank": 69
-	},
-	"omastar": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 19.555555555555557,
-		"speciesId": "omastar",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 144,
-		"rank": 70
-	},
-	"slowbro_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 19.53846153846154,
-		"speciesId": "slowbro_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 67,
-		"rank": 71
-	},
-	"slowking_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 19.53846153846154,
-		"speciesId": "slowking_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 67,
-		"rank": 72
-	},
-	"simipour": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 19.48148148148148,
-		"speciesId": "simipour",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 143,
-		"rank": 73
-	},
-	"raichu_mega_x": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "SURF",
-		"dps": 19.43661971830986,
-		"speciesId": "raichu_mega_x",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 70,
-		"rank": 74
-	},
-	"vaporeon": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 19.40740740740741,
-		"speciesId": "vaporeon",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 142,
-		"rank": 75
+		"chargedMoveDmg": 73,
+		"rank": 57
 	},
 	"wailord_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 19.384615384615383,
+		"dps": 20.50742504199966,
+		"tdo": 494.76103691292155,
+		"edps": 18.60021270312657,
 		"speciesId": "wailord_shadow",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 66,
-		"rank": 76
+		"chargedMoveDmg": 65,
+		"rank": 58
 	},
-	"barraskewda": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "AQUA_JET",
-		"dps": 19.287128712871286,
-		"speciesId": "barraskewda",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 59,
-		"rank": 77
-	},
-	"frogadier_shadow": {
-		"fastMove": "BUBBLE",
+	"haxorus": {
+		"fastMove": "DRAGON_TAIL",
 		"chargedMove": "SURF",
-		"dps": 19.205882352941178,
-		"speciesId": "frogadier_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 63,
-		"rank": 78
+		"dps": 20.264184785199877,
+		"tdo": 587.3144659006543,
+		"edps": 18.72139774125169,
+		"speciesId": "haxorus",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 72,
+		"rank": 59
 	},
-	"urshifu_rapid_strike": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "AQUA_JET",
-		"dps": 19.148514851485146,
-		"speciesId": "urshifu_rapid_strike",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 58,
-		"rank": 79
+	"suicune_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 20.222961481500253,
+		"tdo": 790.6630139437628,
+		"edps": 19.066234315048785,
+		"speciesId": "suicune_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 151,
+		"rank": 60
 	},
-	"wugtrio": {
+	"tatsugiri_curly": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 19.076923076923077,
-		"speciesId": "wugtrio",
+		"dps": 20.17890344022879,
+		"tdo": 525.1564744997158,
+		"edps": 18.579288826007453,
+		"speciesId": "tatsugiri_curly",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 64,
-		"rank": 80
+		"chargedMoveDmg": 69,
+		"rank": 61
 	},
-	"armaldo_shadow": {
-		"fastMove": "FURY_CUTTER",
+	"tatsugiri_droopy": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 20.17890344022879,
+		"tdo": 525.1564744997158,
+		"edps": 18.579288826007453,
+		"speciesId": "tatsugiri_droopy",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 69,
+		"rank": 62
+	},
+	"tatsugiri_stretchy": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 20.17890344022879,
+		"tdo": 525.1564744997158,
+		"edps": 18.579288826007453,
+		"speciesId": "tatsugiri_stretchy",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 69,
+		"rank": 63
+	},
+	"golduck_shadow": {
+		"fastMove": "WATER_GUN",
 		"chargedMove": "LIQUIDATION",
-		"dps": 19.061728395061728,
-		"speciesId": "armaldo_shadow",
+		"dps": 20.08396613802807,
+		"tdo": 475.731377240671,
+		"edps": 18.22900514613152,
+		"speciesId": "golduck_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 83,
+		"rank": 64
+	},
+	"slowbro_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 20.053438173772033,
+		"tdo": 590.2497170153127,
+		"edps": 18.54137686498943,
+		"speciesId": "slowbro_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 66,
+		"rank": 65
+	},
+	"slowking_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 20.053438173772033,
+		"tdo": 590.2497170153127,
+		"edps": 18.54137686498943,
+		"speciesId": "slowking_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 66,
+		"rank": 66
+	},
+	"salamence": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 19.883906370467816,
+		"tdo": 659.0925389907597,
+		"edps": 18.67113942264255,
+		"speciesId": "salamence",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 157,
+		"rank": 67
+	},
+	"floatzel": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "LIQUIDATION",
+		"dps": 19.848893124766906,
+		"tdo": 425.53753369238495,
+		"edps": 17.948817593419108,
+		"speciesId": "floatzel",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 79,
+		"rank": 68
+	},
+	"vaporeon": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 19.82268967902627,
+		"tdo": 798.0556941934971,
+		"edps": 18.71003974385237,
+		"speciesId": "vaporeon",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 142,
+		"rank": 69
+	},
+	"raichu_mega_x": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "SURF",
+		"dps": 19.735232406269127,
+		"tdo": 570.3992546851061,
+		"edps": 18.246799143003983,
+		"speciesId": "raichu_mega_x",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 80,
-		"rank": 81
+		"chargedMoveDmg": 70,
+		"rank": 70
+	},
+	"krabby_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 19.617707638192606,
+		"tdo": 207.9216614190236,
+		"edps": 15.879479745149318,
+		"speciesId": "krabby_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 62,
+		"rank": 71
 	},
 	"barbaracle": {
 		"fastMove": "FURY_CUTTER",
 		"chargedMove": "RAZOR_SHELL",
-		"dps": 18.912280701754387,
+		"dps": 19.596284881067756,
+		"tdo": 644.0332270891794,
+		"edps": 18.394724039135973,
 		"speciesId": "barbaracle",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 55,
-		"rank": 82
+		"rank": 72
+	},
+	"urshifu_rapid_strike": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "AQUA_JET",
+		"dps": 19.525368274361533,
+		"tdo": 703.5393390073682,
+		"edps": 18.377142738972882,
+		"speciesId": "urshifu_rapid_strike",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 58,
+		"rank": 73
+	},
+	"starmie": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 19.464164034080042,
+		"tdo": 513.5338113014537,
+		"edps": 17.950162748027225,
+		"speciesId": "starmie",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 65,
+		"rank": 74
+	},
+	"armaldo_shadow": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "LIQUIDATION",
+		"dps": 19.35123210061782,
+		"tdo": 466.68611200503926,
+		"edps": 17.60264958445231,
+		"speciesId": "armaldo_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 79,
+		"rank": 75
+	},
+	"barraskewda": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "AQUA_JET",
+		"dps": 19.329751664070226,
+		"tdo": 366.47345505685274,
+		"edps": 17.241263757421255,
+		"speciesId": "barraskewda",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 59,
+		"rank": 76
 	},
 	"cloyster_shadow": {
 		"fastMove": "ICE_SHARD",
 		"chargedMove": "RAZOR_SHELL",
-		"dps": 18.833333333333336,
+		"dps": 19.285337271811727,
+		"tdo": 516.4292747996398,
+		"edps": 17.797964989028692,
 		"speciesId": "cloyster_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 64,
-		"rank": 83
+		"rank": 77
 	},
-	"krabby": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 18.705882352941178,
-		"speciesId": "krabby",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 52,
-		"rank": 84
-	},
-	"bibarel_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 18.615384615384617,
-		"speciesId": "bibarel_shadow",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 61,
-		"rank": 85
+	"sharpedo": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 19.26146729460529,
+		"tdo": 276.6986001436436,
+		"edps": 16.415745234966387,
+		"speciesId": "sharpedo",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 166,
+		"rank": 78
 	},
 	"blastoise": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 18.571428571428573,
+		"dps": 19.20730697429187,
+		"tdo": 676.7998277566205,
+		"edps": 18.07331712413818,
 		"speciesId": "blastoise",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 80,
-		"rank": 86
+		"rank": 79
 	},
-	"qwilfish_shadow": {
+	"omastar": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 18.41509433962264,
-		"speciesId": "qwilfish_shadow",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 19.20091059892082,
+		"tdo": 607.9489256843334,
+		"edps": 17.831394548594254,
+		"speciesId": "omastar",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 58,
-		"rank": 87
+		"chargedMoveDmg": 143,
+		"rank": 80
+	},
+	"simipour": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 19.150999887248123,
+		"tdo": 433.9991545015927,
+		"edps": 17.39636853423631,
+		"speciesId": "simipour",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 63,
+		"rank": 81
 	},
 	"rhydon_shadow": {
 		"fastMove": "MUD_SLAP",
 		"chargedMove": "SURF",
-		"dps": 18.349206349206348,
+		"dps": 19.091060155044993,
+		"tdo": 574.6678858212324,
+		"edps": 17.694770826679886,
 		"speciesId": "rhydon_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 68,
-		"rank": 88
+		"rank": 82
+	},
+	"seadra_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 18.728189475890957,
+		"tdo": 336.38473252896966,
+		"edps": 16.52106712435583,
+		"speciesId": "seadra_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 156,
+		"rank": 83
+	},
+	"bibarel_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 18.434568439291866,
+		"tdo": 326.73623297892334,
+		"edps": 16.274475346282635,
+		"speciesId": "bibarel_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 61,
+		"rank": 84
 	},
 	"politoed": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 18.235294117647058,
+		"dps": 18.323550291804334,
+		"tdo": 617.3282691157003,
+		"edps": 17.072253136071456,
 		"speciesId": "politoed",
-		"fastMoveDmg": 10,
+		"fastMoveDmg": 9,
 		"chargedMoveDmg": 50,
-		"rank": 89
+		"rank": 85
 	},
-	"kingdra": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 18.032128514056225,
-		"speciesId": "kingdra",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 135,
-		"rank": 90
+	"qwilfish_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 18.257925754565235,
+		"tdo": 323.8468959934163,
+		"edps": 16.11930842921848,
+		"speciesId": "qwilfish_shadow",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 57,
+		"rank": 86
+	},
+	"ludicolo": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "WEATHER_BALL_WATER",
+		"dps": 18.219409084542423,
+		"tdo": 558.840622437173,
+		"edps": 16.943450506101716,
+		"speciesId": "ludicolo",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 50,
+		"rank": 87
 	},
 	"walrein_shadow": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "WATER_PULSE",
-		"dps": 17.859154929577468,
+		"dps": 18.195785751969133,
+		"tdo": 581.3708395077027,
+		"edps": 16.9421324116879,
 		"speciesId": "walrein_shadow",
 		"fastMoveDmg": 15,
-		"chargedMoveDmg": 74,
+		"chargedMoveDmg": 73,
+		"rank": 88
+	},
+	"milotic": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 18.16713153252214,
+		"tdo": 770.009022800019,
+		"edps": 17.208407498232855,
+		"speciesId": "milotic",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 59,
+		"rank": 89
+	},
+	"kingdra": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 18.108281474826352,
+		"tdo": 579.50773483943,
+		"edps": 16.866245353781352,
+		"speciesId": "kingdra",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 60,
+		"rank": 90
+	},
+	"escavalier": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 18.061661589462062,
+		"tdo": 534.8113174423291,
+		"edps": 16.76936269231222,
+		"speciesId": "escavalier",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 52,
 		"rank": 91
 	},
-	"poliwrath": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.859154929577464,
-		"speciesId": "poliwrath",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 128,
+	"wugtrio": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 17.93607319853683,
+		"tdo": 265.5128107818042,
+		"edps": 15.411431974389599,
+		"speciesId": "wugtrio",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 63,
 		"rank": 92
 	},
-	"prinplup_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.859154929577464,
-		"speciesId": "prinplup_shadow",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 128,
+	"lapras": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SPARKLING_ARIA",
+		"dps": 17.877859204486256,
+		"tdo": 772.9212855232652,
+		"edps": 16.94864250811976,
+		"speciesId": "lapras",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 73,
 		"rank": 93
 	},
 	"kabutops": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "WATER_PULSE",
-		"dps": 17.760563380281692,
+		"dps": 17.876943028628375,
+		"tdo": 476.39755531885106,
+		"edps": 16.39219517627429,
 		"speciesId": "kabutops",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 73,
 		"rank": 94
 	},
-	"milotic": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "SURF",
-		"dps": 17.685950413223143,
-		"speciesId": "milotic",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 60,
-		"rank": 95
-	},
 	"bruxish": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 17.660377358490564,
+		"dps": 17.81630236719335,
+		"tdo": 409.8737870257191,
+		"edps": 16.095706521942184,
 		"speciesId": "bruxish",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 54,
-		"rank": 96
-	},
-	"escavalier": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 17.647058823529413,
-		"speciesId": "escavalier",
-		"fastMoveDmg": 4,
 		"chargedMoveDmg": 53,
-		"rank": 97
-	},
-	"corphish_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 17.58823529411765,
-		"speciesId": "corphish_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 50,
-		"rank": 98
-	},
-	"ludicolo": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 17.58823529411765,
-		"speciesId": "ludicolo",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 50,
-		"rank": 99
-	},
-	"rotom_wash": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.369127516778526,
-		"speciesId": "rotom_wash",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 142,
-		"rank": 100
+		"rank": 95
 	},
 	"pelipper": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 17.291666666666668,
+		"dps": 17.73296227611948,
+		"tdo": 444.34807699879485,
+		"edps": 16.235833295497304,
 		"speciesId": "pelipper",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 50,
-		"rank": 101
+		"rank": 96
 	},
-	"golduck": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.25925925925926,
-		"speciesId": "golduck",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 133,
-		"rank": 102
+	"frogadier_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "SURF",
+		"dps": 17.706956543995762,
+		"tdo": 236.3719160168883,
+		"edps": 14.998129945158505,
+		"speciesId": "frogadier_shadow",
+		"fastMoveDmg": 11,
+		"chargedMoveDmg": 63,
+		"rank": 97
 	},
-	"lugia_shadow": {
-		"fastMove": "EXTRASENSORY",
+	"poliwrath": {
+		"fastMove": "BUBBLE",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.220216606498195,
-		"speciesId": "lugia_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 135,
-		"rank": 103
+		"dps": 17.49572356582514,
+		"tdo": 604.6301437811034,
+		"edps": 16.35140492397424,
+		"speciesId": "poliwrath",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 127,
+		"rank": 98
 	},
-	"tapu_fini": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.185185185185187,
-		"speciesId": "tapu_fini",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 132,
-		"rank": 104
-	},
-	"seadra": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 17.11111111111111,
-		"speciesId": "seadra",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 131,
-		"rank": 105
+	"krabby": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 17.360540701002755,
+		"tdo": 220.79843435180905,
+		"edps": 14.562705428297676,
+		"speciesId": "krabby",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 52,
+		"rank": 99
 	},
 	"huntail": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 17.09433962264151,
+		"dps": 17.357141469285605,
+		"tdo": 424.42950581808674,
+		"edps": 15.886505113510994,
 		"speciesId": "huntail",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 51,
-		"rank": 106
+		"rank": 100
+	},
+	"wailord": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 17.3494323562264,
+		"tdo": 502.285789748264,
+		"edps": 16.136291839944164,
+		"speciesId": "wailord",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 55,
+		"rank": 101
 	},
 	"swanna_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 17.09433962264151,
+		"dps": 17.26188396372722,
+		"tdo": 323.7874254505627,
+		"edps": 15.337947685252807,
 		"speciesId": "swanna_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 51,
-		"rank": 107
-	},
-	"fraxure_shadow": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 17.06122448979592,
-		"speciesId": "fraxure_shadow",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 55,
-		"rank": 108
-	},
-	"lapras": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SPARKLING_ARIA",
-		"dps": 16.984126984126984,
-		"speciesId": "lapras",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 74,
-		"rank": 109
+		"rank": 102
 	},
 	"carracosta": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 16.923076923076923,
+		"dps": 17.213214278374668,
+		"tdo": 555.3634659424043,
+		"edps": 16.05267790349723,
 		"speciesId": "carracosta",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 60,
-		"rank": 110
+		"chargedMoveDmg": 59,
+		"rank": 103
 	},
-	"marshtomp_shadow": {
+	"tapu_fini": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 16.76923076923077,
-		"speciesId": "marshtomp_shadow",
+		"dps": 17.20046186342072,
+		"tdo": 678.2407935341043,
+		"edps": 16.285414156026295,
+		"speciesId": "tapu_fini",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 59,
-		"rank": 111
+		"rank": 104
+	},
+	"dondozo": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 17.178123249937517,
+		"tdo": 848.1554410701794,
+		"edps": 16.516119402296408,
+		"speciesId": "dondozo",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 55,
+		"rank": 105
+	},
+	"lugia_shadow": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 17.148817933492065,
+		"tdo": 910.641520744805,
+		"edps": 16.50717331147135,
+		"speciesId": "lugia_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 134,
+		"rank": 106
+	},
+	"rhyperior": {
+		"fastMove": "MUD_SLAP",
+		"chargedMove": "SURF",
+		"dps": 17.115635686771082,
+		"tdo": 730.5393673000478,
+		"edps": 16.244461589111864,
+		"speciesId": "rhyperior",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 61,
+		"rank": 107
+	},
+	"golduck": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 16.981034098395114,
+		"tdo": 482.6782323501718,
+		"edps": 15.63577516667687,
+		"speciesId": "golduck",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 133,
+		"rank": 108
 	},
 	"suicune": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 16.74074074074074,
+		"dps": 16.90246176720868,
+		"tdo": 793.0085953467434,
+		"edps": 16.08674499071547,
 		"speciesId": "suicune",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 126,
-		"rank": 112
+		"rank": 109
 	},
-	"drizzile": {
+	"mew": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 16.743893434794444,
+		"tdo": 707.0121758955594,
+		"edps": 15.892372805418589,
+		"speciesId": "mew",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 54,
+		"rank": 110
+	},
+	"slowbro": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 16.615384615384617,
-		"speciesId": "drizzile",
+		"dps": 16.74271070956259,
+		"tdo": 591.3627718926919,
+		"edps": 15.67541814512458,
+		"speciesId": "slowbro",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 58,
+		"chargedMoveDmg": 55,
+		"rank": 111
+	},
+	"slowking": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 16.74271070956259,
+		"tdo": 591.3627718926919,
+		"edps": 15.67541814512458,
+		"speciesId": "slowking",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 55,
+		"rank": 112
+	},
+	"fraxure_shadow": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 16.688854687534025,
+		"tdo": 270.5784282881764,
+		"edps": 14.495506511309676,
+		"speciesId": "fraxure_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 54,
 		"rank": 113
 	},
-	"dondozo": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 16.610441767068274,
-		"speciesId": "dondozo",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 124,
+	"marshtomp_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 16.565279450503787,
+		"tdo": 299.48200866781167,
+		"edps": 14.598420536020539,
+		"speciesId": "marshtomp_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 59,
 		"rank": 114
 	},
-	"tentacruel_shadow": {
-		"fastMove": "POISON_JAB",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 16.49429657794677,
-		"speciesId": "tentacruel_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 141,
+	"grapploct": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "SURF",
+		"dps": 16.545615171385343,
+		"tdo": 470.30164581232674,
+		"edps": 15.265860994278002,
+		"speciesId": "grapploct",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 54,
 		"rank": 115
 	},
 	"scolipede_shadow": {
 		"fastMove": "POISON_JAB",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 16.47058823529412,
+		"dps": 16.46311082102123,
+		"tdo": 345.5926121400217,
+		"edps": 14.747407511455354,
 		"speciesId": "scolipede_shadow",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 53,
+		"chargedMoveDmg": 52,
 		"rank": 116
 	},
-	"rhyperior": {
-		"fastMove": "MUD_SLAP",
-		"chargedMove": "SURF",
-		"dps": 16.465608465608465,
-		"speciesId": "rhyperior",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 62,
+	"rotom_wash": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 16.456255270515335,
+		"tdo": 456.6068896517963,
+		"edps": 15.174391790778197,
+		"speciesId": "rotom_wash",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 141,
 		"rank": 117
 	},
-	"cramorant": {
+	"drizzile": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 16.444444444444443,
-		"speciesId": "cramorant",
+		"chargedMove": "SURF",
+		"dps": 16.34087601851385,
+		"tdo": 290.9802008161493,
+		"edps": 14.410004785218046,
+		"speciesId": "drizzile",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 122,
+		"chargedMoveDmg": 58,
 		"rank": 118
 	},
 	"gorebyss": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 16.375,
+		"dps": 16.32151086226171,
+		"tdo": 399.10550949489914,
+		"edps": 14.851006307012184,
 		"speciesId": "gorebyss",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 71,
+		"chargedMoveDmg": 70,
 		"rank": 119
 	},
-	"slowbro": {
+	"cramorant": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 16.307692307692307,
-		"speciesId": "slowbro",
+		"dps": 16.273386212975534,
+		"tdo": 424.60925162054394,
+		"edps": 14.9737901089,
+		"speciesId": "cramorant",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 56,
+		"chargedMoveDmg": 54,
 		"rank": 120
 	},
-	"slowking": {
-		"fastMove": "WATER_GUN",
+	"beartic": {
+		"fastMove": "POWDER_SNOW",
 		"chargedMove": "SURF",
-		"dps": 16.307692307692307,
-		"speciesId": "slowking",
+		"dps": 16.190887106166283,
+		"tdo": 489.7570676171663,
+		"edps": 14.978325241077638,
+		"speciesId": "beartic",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 56,
+		"chargedMoveDmg": 59,
 		"rank": 121
 	},
-	"grapploct": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "SURF",
-		"dps": 16.16528925619835,
-		"speciesId": "grapploct",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 54,
+	"prinplup_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 16.18884269760882,
+		"tdo": 287.0839031870286,
+		"edps": 14.278043966443207,
+		"speciesId": "prinplup_shadow",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 127,
 		"rank": 122
 	},
-	"mew": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "SURF",
-		"dps": 16.16528925619835,
-		"speciesId": "mew",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 54,
+	"seadra": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 16.084877492232867,
+		"tdo": 346.6885532985173,
+		"edps": 14.443173032520553,
+		"speciesId": "seadra",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 130,
 		"rank": 123
 	},
-	"wailord": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 16.153846153846153,
-		"speciesId": "wailord",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 55,
+	"tentacruel_shadow": {
+		"fastMove": "POISON_JAB",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 16.025911773222745,
+		"tdo": 480.407540629979,
+		"edps": 14.822365995965804,
+		"speciesId": "tentacruel_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 140,
 		"rank": 124
 	},
-	"frogadier": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "SURF",
-		"dps": 15.970588235294116,
-		"speciesId": "frogadier",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 53,
+	"armaldo": {
+		"fastMove": "FURY_CUTTER",
+		"chargedMove": "LIQUIDATION",
+		"dps": 15.98653952876783,
+		"tdo": 462.64937984709627,
+		"edps": 14.774113211804417,
+		"speciesId": "armaldo",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 66,
 		"rank": 125
 	},
 	"relicanth": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 15.925925925925926,
+		"dps": 15.971067758122482,
+		"tdo": 653.3988556224967,
+		"edps": 15.179139351993614,
 		"speciesId": "relicanth",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 115,
+		"chargedMoveDmg": 114,
 		"rank": 126
 	},
-	"beartic": {
-		"fastMove": "POWDER_SNOW",
+	"jellicent": {
+		"fastMove": "BUBBLE",
 		"chargedMove": "SURF",
-		"dps": 15.86206896551724,
-		"speciesId": "beartic",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 60,
+		"dps": 15.936576047327994,
+		"tdo": 577.2185136761718,
+		"edps": 14.966608940989302,
+		"speciesId": "jellicent",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 50,
 		"rank": 127
 	},
 	"sealeo_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 15.846153846153847,
+		"dps": 15.924269078221364,
+		"tdo": 338.76644698693497,
+		"edps": 14.29989894913222,
 		"speciesId": "sealeo_shadow",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 53,
+		"chargedMoveDmg": 52,
 		"rank": 128
+	},
+	"rhydon": {
+		"fastMove": "MUD_SLAP",
+		"chargedMove": "SURF",
+		"dps": 15.91136289865956,
+		"tdo": 574.7454296826412,
+		"edps": 14.929495280479863,
+		"speciesId": "rhydon",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 57,
+		"rank": 129
 	},
 	"octillery": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 15.75,
+		"dps": 15.904997149749493,
+		"tdo": 379.9215324064418,
+		"edps": 14.47736951986381,
 		"speciesId": "octillery",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 66,
-		"rank": 129
-	},
-	"tirtouga_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 15.692307692307692,
-		"speciesId": "tirtouga_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 52,
 		"rank": 130
 	},
-	"armaldo": {
-		"fastMove": "FURY_CUTTER",
-		"chargedMove": "LIQUIDATION",
-		"dps": 15.679012345679013,
-		"speciesId": "armaldo",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 67,
-		"rank": 131
-	},
-	"dewott_shadow": {
+	"quagsire_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 15.660377358490567,
-		"speciesId": "dewott_shadow",
+		"dps": 15.839600322989666,
+		"tdo": 377.75797239861305,
+		"edps": 14.423165796969188,
+		"speciesId": "quagsire_shadow",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 50,
+		"chargedMoveDmg": 48,
+		"rank": 131
+	},
+	"basculin": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 15.760836313526001,
+		"tdo": 332.68503787291917,
+		"edps": 14.15460027930975,
+		"speciesId": "basculin",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 49,
 		"rank": 132
 	},
-	"wartortle_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 15.555555555555555,
-		"speciesId": "wartortle_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 110,
+	"cloyster": {
+		"fastMove": "FROST_BREATH",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 15.70394857449512,
+		"tdo": 504.6307866279575,
+		"edps": 14.703377228407744,
+		"speciesId": "cloyster",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 53,
 		"rank": 133
 	},
 	"bibarel": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 15.538461538461538,
+		"dps": 15.682887394475188,
+		"tdo": 333.5581912651715,
+		"edps": 14.104948936554019,
 		"speciesId": "bibarel",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 51,
 		"rank": 134
 	},
-	"basculin": {
+	"dewott_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 15.471698113207548,
-		"speciesId": "basculin",
+		"dps": 15.634228406836655,
+		"tdo": 261.33778087857405,
+		"edps": 13.668256134238945,
+		"speciesId": "dewott_shadow",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 49,
+		"chargedMoveDmg": 50,
 		"rank": 135
-	},
-	"jellicent": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "SURF",
-		"dps": 15.441176470588234,
-		"speciesId": "jellicent",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 50,
-		"rank": 136
-	},
-	"marshtomp": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 15.384615384615385,
-		"speciesId": "marshtomp",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 50,
-		"rank": 137
-	},
-	"quagsire_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 15.283018867924529,
-		"speciesId": "quagsire_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 48,
-		"rank": 138
-	},
-	"qwilfish": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 15.283018867924529,
-		"speciesId": "qwilfish",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 48,
-		"rank": 139
-	},
-	"walrein": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "WATER_PULSE",
-		"dps": 15.267605633802818,
-		"speciesId": "walrein",
-		"fastMoveDmg": 13,
-		"chargedMoveDmg": 62,
-		"rank": 140
-	},
-	"rhydon": {
-		"fastMove": "MUD_SLAP",
-		"chargedMove": "SURF",
-		"dps": 15.248677248677248,
-		"speciesId": "rhydon",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 57,
-		"rank": 141
-	},
-	"cloyster": {
-		"fastMove": "FROST_BREATH",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 15.225806451612904,
-		"speciesId": "cloyster",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 53,
-		"rank": 142
-	},
-	"omanyte_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BRINE",
-		"dps": 15.2,
-		"speciesId": "omanyte_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 64,
-		"rank": 143
 	},
 	"goodra": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 15.09433962264151,
+		"dps": 15.629799965136115,
+		"tdo": 697.5757161920136,
+		"edps": 14.885306027139249,
 		"speciesId": "goodra",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 47,
-		"rank": 144
+		"rank": 136
 	},
 	"seismitoad": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "MUDDY_WATER",
-		"dps": 15.052631578947368,
+		"dps": 15.569131439634802,
+		"tdo": 498.8885431231709,
+		"edps": 14.44467613304327,
 		"speciesId": "seismitoad",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 44,
-		"rank": 145
+		"rank": 137
+	},
+	"qwilfish": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 15.531176519149511,
+		"tdo": 330.5779797105617,
+		"edps": 13.969090378131568,
+		"speciesId": "qwilfish",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 48,
+		"rank": 138
+	},
+	"walrein": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "WATER_PULSE",
+		"dps": 15.51289514983967,
+		"tdo": 594.7802657259405,
+		"edps": 14.592326917489341,
+		"speciesId": "walrein",
+		"fastMoveDmg": 13,
+		"chargedMoveDmg": 61,
+		"rank": 139
+	},
+	"marshtomp": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 15.326267839739137,
+		"tdo": 332.4984652631889,
+		"edps": 13.803107011204201,
+		"speciesId": "marshtomp",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 49,
+		"rank": 140
+	},
+	"frogadier": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "SURF",
+		"dps": 15.300917141540495,
+		"tdo": 245.10415918694403,
+		"edps": 13.258691123120384,
+		"speciesId": "frogadier",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 53,
+		"rank": 141
 	},
 	"overqwil": {
 		"fastMove": "POISON_JAB",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 14.941176470588236,
+		"dps": 15.288279827035955,
+		"tdo": 472.5888119833147,
+		"edps": 14.189177381155297,
 		"speciesId": "overqwil",
 		"fastMoveDmg": 10,
-		"chargedMoveDmg": 48,
-		"rank": 146
+		"chargedMoveDmg": 47,
+		"rank": 142
+	},
+	"tirtouga_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 15.109985445463368,
+		"tdo": 251.73996406529398,
+		"edps": 13.242448827677382,
+		"speciesId": "tirtouga_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 51,
+		"rank": 143
 	},
 	"eelektross": {
 		"fastMove": "VOLT_SWITCH",
 		"chargedMove": "LIQUIDATION",
-		"dps": 14.885844748858448,
+		"dps": 15.067280793487743,
+		"tdo": 418.1799646616766,
+		"edps": 13.94655216633473,
 		"speciesId": "eelektross",
-		"fastMoveDmg": 10,
+		"fastMoveDmg": 9,
 		"chargedMoveDmg": 65,
-		"rank": 147
-	},
-	"corphish": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 14.823529411764707,
-		"speciesId": "corphish",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 41,
-		"rank": 148
-	},
-	"quaxwell": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "LIQUIDATION",
-		"dps": 14.761904761904763,
-		"speciesId": "quaxwell",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 60,
-		"rank": 149
-	},
-	"prinplup": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 14.67605633802817,
-		"speciesId": "prinplup",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 107,
-		"rank": 150
-	},
-	"raichu_alolan": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "SURF",
-		"dps": 14.47887323943662,
-		"speciesId": "raichu_alolan",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 52,
-		"rank": 151
+		"rank": 144
 	},
 	"drapion_shadow": {
 		"fastMove": "BITE",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 14.408163265306122,
+		"dps": 14.855122449452283,
+		"tdo": 393.77326362415636,
+		"edps": 13.614670517244265,
 		"speciesId": "drapion_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 47,
-		"rank": 152
+		"rank": 145
 	},
-	"froakie_shadow": {
+	"corphish_shadow": {
 		"fastMove": "BUBBLE",
-		"chargedMove": "SURF",
-		"dps": 14.352941176470589,
-		"speciesId": "froakie_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 48,
-		"rank": 153
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 14.85226635845903,
+		"tdo": 154.13243700494024,
+		"edps": 11.990916877489957,
+		"speciesId": "corphish_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 49,
+		"rank": 146
+	},
+	"quaxwell": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "LIQUIDATION",
+		"dps": 14.809161703349726,
+		"tdo": 299.5719044640437,
+		"edps": 13.217180721890374,
+		"speciesId": "quaxwell",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 59,
+		"rank": 147
 	},
 	"whiscash_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SCALD",
-		"dps": 14.352941176470589,
+		"dps": 14.664531727848546,
+		"tdo": 382.6853709813064,
+		"edps": 13.442351801968,
 		"speciesId": "whiscash_shadow",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 72,
-		"rank": 154
+		"chargedMoveDmg": 71,
+		"rank": 148
 	},
 	"swanna": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 14.339622641509434,
+		"dps": 14.6411720574456,
+		"tdo": 329.5557499271146,
+		"edps": 13.244937874417072,
 		"speciesId": "swanna",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 43,
-		"rank": 155
+		"rank": 149
+	},
+	"raichu_alolan": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "SURF",
+		"dps": 14.514172082281931,
+		"tdo": 325.2064743388063,
+		"edps": 13.12941705471719,
+		"speciesId": "raichu_alolan",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 52,
+		"rank": 150
+	},
+	"wartortle_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 14.483151851416132,
+		"tdo": 270.11065810344365,
+		"edps": 12.802062912747362,
+		"speciesId": "wartortle_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 109,
+		"rank": 151
 	},
 	"seaking": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "WATER_PULSE",
-		"dps": 14.267605633802818,
+		"dps": 14.448480465225472,
+		"tdo": 375.8871703944777,
+		"edps": 13.260589207655492,
 		"speciesId": "seaking",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 59,
-		"rank": 156
-	},
-	"fraxure": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 14.244897959183673,
-		"speciesId": "fraxure",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 46,
-		"rank": 157
-	},
-	"dewott": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 14.150943396226415,
-		"speciesId": "dewott",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 42,
-		"rank": 158
-	},
-	"tentacruel": {
-		"fastMove": "POISON_STING",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 14.112676056338028,
-		"speciesId": "tentacruel",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 117,
-		"rank": 159
-	},
-	"raichu": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "SURF",
-		"dps": 14.084507042253522,
-		"speciesId": "raichu",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 50,
-		"rank": 160
+		"rank": 152
 	},
 	"castform_rainy": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 14.041666666666668,
+		"dps": 14.424212494345161,
+		"tdo": 325.6149610401069,
+		"edps": 13.055760618807367,
 		"speciesId": "castform_rainy",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 41,
-		"rank": 161
+		"rank": 153
 	},
-	"croconaw_shadow": {
+	"dewott": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 14,
-		"speciesId": "croconaw_shadow",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 14.354911521761423,
+		"tdo": 287.9436662361282,
+		"edps": 12.832154765719068,
+		"speciesId": "dewott",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 62,
-		"rank": 162
+		"chargedMoveDmg": 42,
+		"rank": 154
 	},
-	"lugia": {
-		"fastMove": "EXTRASENSORY",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 13.94945848375451,
-		"speciesId": "lugia",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 112,
-		"rank": 163
+	"fraxure": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 14.201008221750767,
+		"tdo": 276.29121665144277,
+		"edps": 12.591677571308667,
+		"speciesId": "fraxure",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 45,
+		"rank": 155
 	},
 	"scolipede": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 13.894736842105264,
+		"dps": 14.18449624453853,
+		"tdo": 357.3121040184026,
+		"edps": 13.01526780190582,
 		"speciesId": "scolipede",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 44,
-		"rank": 164
+		"rank": 156
 	},
-	"crabrawler": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "CRABHAMMER",
-		"dps": 13.81081081081081,
-		"speciesId": "crabrawler",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 56,
-		"rank": 165
-	},
-	"staryu_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 13.773584905660378,
-		"speciesId": "staryu_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 40,
-		"rank": 166
-	},
-	"omanyte": {
+	"omanyte_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "BRINE",
-		"dps": 13.733333333333333,
-		"speciesId": "omanyte",
+		"dps": 14.153842735463304,
+		"tdo": 194.2600738351631,
+		"edps": 12.050294413566863,
+		"speciesId": "omanyte_shadow",
 		"fastMoveDmg": 5,
-		"chargedMoveDmg": 53,
-		"rank": 167
+		"chargedMoveDmg": 63,
+		"rank": 157
 	},
-	"dragalge": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 13.62962962962963,
-		"speciesId": "dragalge",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 104,
-		"rank": 168
-	},
-	"lanturn": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 13.62962962962963,
-		"speciesId": "lanturn",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 104,
-		"rank": 169
+	"raichu": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "SURF",
+		"dps": 14.09923860898948,
+		"tdo": 310.3015601077353,
+		"edps": 12.670125614977932,
+		"speciesId": "raichu",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 50,
+		"rank": 158
 	},
 	"alomomola": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "HYDRO_PUMP",
-		"dps": 13.598393574297189,
+		"dps": 14.080138910934703,
+		"tdo": 568.1243093169903,
+		"edps": 13.305770887620339,
 		"speciesId": "alomomola",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 99,
-		"rank": 170
+		"rank": 159
+	},
+	"tentacruel": {
+		"fastMove": "POISON_STING",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 13.980175039782372,
+		"tdo": 502.89919516274546,
+		"edps": 13.181622358941679,
+		"speciesId": "tentacruel",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 117,
+		"rank": 160
+	},
+	"lugia": {
+		"fastMove": "EXTRASENSORY",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 13.951780506444466,
+		"tdo": 889.0458461892589,
+		"edps": 13.52409407117743,
+		"speciesId": "lugia",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 112,
+		"rank": 161
+	},
+	"lanturn": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 13.933691990232564,
+		"tdo": 468.6514944833119,
+		"edps": 13.003593265173519,
+		"speciesId": "lanturn",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 46,
+		"rank": 162
+	},
+	"slowking_galarian": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "SURF",
+		"dps": 13.875388332126374,
+		"tdo": 490.0871936159814,
+		"edps": 12.975208078247254,
+		"speciesId": "slowking_galarian",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 49,
+		"rank": 163
+	},
+	"croconaw_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 13.863497880438699,
+		"tdo": 252.33026513964083,
+		"edps": 12.275179866530033,
+		"speciesId": "croconaw_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 62,
+		"rank": 164
+	},
+	"dewgong_shadow": {
+		"fastMove": "FROST_BREATH",
+		"chargedMove": "LIQUIDATION",
+		"dps": 13.850617979239315,
+		"tdo": 384.8521585160073,
+		"edps": 12.766129449184405,
+		"speciesId": "dewgong_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 62,
+		"rank": 165
 	},
 	"glaceon": {
 		"fastMove": "FROST_BREATH",
 		"chargedMove": "WATER_PULSE",
-		"dps": 13.558441558441558,
+		"dps": 13.77946170560968,
+		"tdo": 421.7286131362593,
+		"edps": 12.836128673578465,
 		"speciesId": "glaceon",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 66,
+		"rank": 166
+	},
+	"corphish": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 13.678881037771916,
+		"tdo": 170.34647534335556,
+		"edps": 11.44530622393752,
+		"speciesId": "corphish",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 41,
+		"rank": 167
+	},
+	"prinplup": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 13.650524226754449,
+		"tdo": 290.48494735686825,
+		"edps": 12.27637661974482,
+		"speciesId": "prinplup",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 106,
+		"rank": 168
+	},
+	"tauros_aqua": {
+		"fastMove": "DOUBLE_KICK",
+		"chargedMove": "AQUA_JET",
+		"dps": 13.637402568755313,
+		"tdo": 434.3408831981814,
+		"edps": 12.723550673524258,
+		"speciesId": "tauros_aqua",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 49,
+		"rank": 169
+	},
+	"slowbro_galarian": {
+		"fastMove": "CONFUSION",
+		"chargedMove": "SURF",
+		"dps": 13.532996692626584,
+		"tdo": 419.1637164234375,
+		"edps": 12.621992019286015,
+		"speciesId": "slowbro_galarian",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 47,
+		"rank": 170
+	},
+	"bronzong": {
+		"fastMove": "METAL_SOUND",
+		"chargedMove": "WEATHER_BALL_WATER",
+		"dps": 13.530867408346088,
+		"tdo": 437.82034569692246,
+		"edps": 12.630766544171319,
+		"speciesId": "bronzong",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 39,
 		"rank": 171
 	},
-	"carvanha_shadow": {
-		"fastMove": "SNARL",
-		"chargedMove": "AQUA_JET",
-		"dps": 13.557251908396946,
-		"speciesId": "carvanha_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 48,
+	"cinccino": {
+		"fastMove": "POUND",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 13.438226845224579,
+		"tdo": 298.36349412949477,
+		"edps": 12.114176671439292,
+		"speciesId": "cinccino",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 43,
 		"rank": 172
 	},
 	"wailmer_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SCALD",
-		"dps": 13.529411764705882,
+		"dps": 13.40331910272525,
+		"tdo": 212.0640917857242,
+		"edps": 11.644825517416692,
 		"speciesId": "wailmer_shadow",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 65,
 		"rank": 173
 	},
-	"horsea_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 13.39622641509434,
-		"speciesId": "horsea_shadow",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 38,
-		"rank": 174
-	},
-	"slowking_galarian": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "SURF",
-		"dps": 13.395833333333332,
-		"speciesId": "slowking_galarian",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 49,
-		"rank": 175
-	},
 	"brionne": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 13.375,
+		"dps": 13.37482109440487,
+		"tdo": 283.71883951233843,
+		"edps": 12.043256210775708,
 		"speciesId": "brionne",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 57,
-		"rank": 176
+		"rank": 174
 	},
-	"tauros_aqua": {
-		"fastMove": "DOUBLE_KICK",
-		"chargedMove": "AQUA_JET",
-		"dps": 13.251908396946567,
-		"speciesId": "tauros_aqua",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 49,
-		"rank": 177
+	"omanyte": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "BRINE",
+		"dps": 13.360693623782042,
+		"tdo": 220.04902686899138,
+		"edps": 11.630646012496806,
+		"speciesId": "omanyte",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 53,
+		"rank": 175
 	},
-	"slowbro_galarian": {
-		"fastMove": "CONFUSION",
-		"chargedMove": "SURF",
-		"dps": 13.25,
-		"speciesId": "slowbro_galarian",
-		"fastMoveDmg": 12,
-		"chargedMoveDmg": 48,
-		"rank": 178
-	},
-	"poliwhirl_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 13.210526315789474,
-		"speciesId": "poliwhirl_shadow",
-		"fastMoveDmg": 9,
-		"chargedMoveDmg": 38,
-		"rank": 179
-	},
-	"dewgong_shadow": {
-		"fastMove": "FROST_BREATH",
-		"chargedMove": "LIQUIDATION",
-		"dps": 13.15,
-		"speciesId": "dewgong_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 62,
-		"rank": 180
-	},
-	"cinccino": {
-		"fastMove": "POUND",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 13.094339622641511,
-		"speciesId": "cinccino",
+	"dragalge": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 13.289243477270677,
+		"tdo": 410.4226947288585,
+		"edps": 12.307869806036846,
+		"speciesId": "dragalge",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 43,
-		"rank": 181
-	},
-	"bronzong": {
-		"fastMove": "METAL_SOUND",
-		"chargedMove": "WEATHER_BALL_WATER",
-		"dps": 13.058823529411764,
-		"speciesId": "bronzong",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 39,
-		"rank": 182
+		"chargedMoveDmg": 103,
+		"rank": 176
 	},
 	"sealeo": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 12.923076923076923,
+		"dps": 13.272918513779093,
+		"tdo": 338.8352410145829,
+		"edps": 12.124928444844489,
 		"speciesId": "sealeo",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 44,
-		"rank": 183
-	},
-	"sobble": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 12.76923076923077,
-		"speciesId": "sobble",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 43,
-		"rank": 184
-	},
-	"tirtouga": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 12.76923076923077,
-		"speciesId": "tirtouga",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 43,
-		"rank": 185
+		"rank": 177
 	},
 	"florges": {
 		"fastMove": "FAIRY_WIND",
 		"chargedMove": "CHILLING_WATER",
-		"dps": 12.713375796178346,
+		"dps": 13.082492320015211,
+		"tdo": 531.485475474106,
+		"edps": 12.390851894426797,
 		"speciesId": "florges",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 59,
-		"rank": 186
-	},
-	"lumineon": {
-		"fastMove": "WATERFALL",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 12.680851063829786,
-		"speciesId": "lumineon",
-		"fastMoveDmg": 10,
-		"chargedMoveDmg": 38,
-		"rank": 187
-	},
-	"wartortle": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 12.666666666666666,
-		"speciesId": "wartortle",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 91,
-		"rank": 188
-	},
-	"psyduck_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 12.528301886792454,
-		"speciesId": "psyduck_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 40,
-		"rank": 189
+		"rank": 178
 	},
 	"quagsire": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 12.528301886792454,
+		"dps": 13.065297426137741,
+		"tdo": 373.9124999061997,
+		"edps": 12.076521773390903,
 		"speciesId": "quagsire",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 40,
-		"rank": 190
+		"rank": 179
+	},
+	"poliwhirl_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 13.023283948896069,
+		"tdo": 208.35142126343194,
+		"edps": 11.348305610743664,
+		"speciesId": "poliwhirl_shadow",
+		"fastMoveDmg": 9,
+		"chargedMoveDmg": 38,
+		"rank": 180
+	},
+	"lumineon": {
+		"fastMove": "WATERFALL",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 12.965066579695709,
+		"tdo": 347.1123327197587,
+		"edps": 11.876906716247673,
+		"speciesId": "lumineon",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 38,
+		"rank": 181
 	},
 	"ninetales_alolan_shadow": {
 		"fastMove": "CHARM",
 		"chargedMove": "CHILLING_WATER",
-		"dps": 12.5,
+		"dps": 12.80387874312406,
+		"tdo": 333.6117715826902,
+		"edps": 11.732315507806154,
 		"speciesId": "ninetales_alolan_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 58,
-		"rank": 191
+		"rank": 182
 	},
-	"dragonair_shadow": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 12.408163265306122,
-		"speciesId": "dragonair_shadow",
+	"tirtouga": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 12.66806209531408,
+		"tdo": 253.26756024144828,
+		"edps": 11.32861992868053,
+		"speciesId": "tirtouga",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 43,
-		"rank": 192
+		"rank": 183
+	},
+	"crabrawler": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "CRABHAMMER",
+		"dps": 12.647835074085178,
+		"tdo": 172.84631814674248,
+		"edps": 10.729815443758381,
+		"speciesId": "crabrawler",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 56,
+		"rank": 184
 	},
 	"qwilfish_hisuian": {
 		"fastMove": "POISON_JAB",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 12.23529411764706,
+		"dps": 12.470889719875533,
+		"tdo": 287.99414697796294,
+		"edps": 11.305386982954662,
 		"speciesId": "qwilfish_hisuian",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 40,
-		"rank": 193
+		"rank": 185
 	},
-	"mantine": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 12.210526315789474,
-		"speciesId": "mantine",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 36,
-		"rank": 194
-	},
-	"froakie": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "SURF",
-		"dps": 12.205882352941178,
-		"speciesId": "froakie",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 40,
-		"rank": 195
-	},
-	"oshawott_shadow": {
-		"fastMove": "WATER_GUN",
+	"dragonair_shadow": {
+		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 12.150943396226417,
-		"speciesId": "oshawott_shadow",
+		"dps": 12.31920401109484,
+		"tdo": 205.59878638183903,
+		"edps": 10.73259907953402,
+		"speciesId": "dragonair_shadow",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 38,
-		"rank": 196
-	},
-	"axew_shadow": {
-		"fastMove": "SCRATCH",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 12.081632653061224,
-		"speciesId": "axew_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 41,
-		"rank": 197
+		"chargedMoveDmg": 43,
+		"rank": 186
 	},
 	"furfrou": {
 		"fastMove": "SUCKER_PUNCH",
 		"chargedMove": "SURF",
-		"dps": 12,
+		"dps": 12.282551835346284,
+		"tdo": 342.2911795003443,
+		"edps": 11.301609435743611,
 		"speciesId": "furfrou",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 43,
-		"rank": 198
+		"rank": 187
 	},
-	"azumarill": {
+	"staryu_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 12.2602983082447,
+		"tdo": 118.72479728947341,
+		"edps": 9.750001773114445,
+		"speciesId": "staryu_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 39,
+		"rank": 188
+	},
+	"mantine": {
 		"fastMove": "BUBBLE",
-		"chargedMove": "HYDRO_PUMP",
-		"dps": 11.859154929577466,
-		"speciesId": "azumarill",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 82,
-		"rank": 199
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 12.22979330938687,
+		"tdo": 410.0287361271228,
+		"edps": 11.393735153678566,
+		"speciesId": "mantine",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 35,
+		"rank": 189
 	},
 	"whiscash": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "SCALD",
-		"dps": 11.764705882352942,
+		"dps": 12.189960494506495,
+		"tdo": 381.73081777924926,
+		"edps": 11.333407033654362,
 		"speciesId": "whiscash",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 60,
-		"rank": 200
+		"rank": 190
 	},
 	"drapion": {
 		"fastMove": "BITE",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 11.755102040816327,
+		"dps": 12.167070945008266,
+		"tdo": 387.02346151971835,
+		"edps": 11.32215826108696,
 		"speciesId": "drapion",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 39,
-		"rank": 201
+		"rank": 191
 	},
-	"masquerain": {
-		"fastMove": "INFESTATION",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 11.728813559322033,
-		"speciesId": "masquerain",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 38,
-		"rank": 202
-	},
-	"piplup_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 11.578947368421053,
-		"speciesId": "piplup_shadow",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 33,
-		"rank": 203
-	},
-	"shellder_shadow": {
-		"fastMove": "ICE_SHARD",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 11.500000000000002,
-		"speciesId": "shellder_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 42,
-		"rank": 204
-	},
-	"croconaw": {
+	"wartortle": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 11.5,
-		"speciesId": "croconaw",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 12.111930629114026,
+		"tdo": 271.0648939589066,
+		"edps": 10.91346972272574,
+		"speciesId": "wartortle",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 52,
-		"rank": 205
-	},
-	"quaxly": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "LIQUIDATION",
-		"dps": 11.492063492063494,
-		"speciesId": "quaxly",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 46,
-		"rank": 206
-	},
-	"carvanha": {
-		"fastMove": "SNARL",
-		"chargedMove": "AQUA_JET",
-		"dps": 11.465648854961831,
-		"speciesId": "carvanha",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 40,
-		"rank": 207
+		"chargedMoveDmg": 91,
+		"rank": 192
 	},
 	"gastrodon": {
 		"fastMove": "MUD_SLAP",
 		"chargedMove": "WATER_PULSE",
-		"dps": 11.438596491228068,
+		"dps": 11.79841341257356,
+		"tdo": 377.6872261675556,
+		"edps": 10.994186850658812,
 		"speciesId": "gastrodon",
 		"fastMoveDmg": 11,
-		"chargedMoveDmg": 58,
-		"rank": 208
+		"chargedMoveDmg": 57,
+		"rank": 193
 	},
-	"clauncher": {
+	"horsea_shadow": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "CRABHAMMER",
-		"dps": 11.428571428571429,
-		"speciesId": "clauncher",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 50,
-		"rank": 209
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 11.753117189427979,
+		"tdo": 105.74790016421893,
+		"edps": 9.23499082667143,
+		"speciesId": "horsea_shadow",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 37,
+		"rank": 194
 	},
-	"anorith_shadow": {
-		"fastMove": "STRUGGLE_BUG",
-		"chargedMove": "AQUA_JET",
-		"dps": 11.413793103448276,
-		"speciesId": "anorith_shadow",
-		"fastMoveDmg": 11,
-		"chargedMoveDmg": 42,
-		"rank": 210
+	"masquerain": {
+		"fastMove": "INFESTATION",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 11.741606505448056,
+		"tdo": 283.9899588218612,
+		"edps": 10.70275487254939,
+		"speciesId": "masquerain",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 37,
+		"rank": 195
 	},
-	"dragonair": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 11.26530612244898,
-		"speciesId": "dragonair",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 36,
-		"rank": 211
+	"dewgong": {
+		"fastMove": "FROST_BREATH",
+		"chargedMove": "LIQUIDATION",
+		"dps": 11.707412637354269,
+		"tdo": 390.3614880810468,
+		"edps": 10.923076088586061,
+		"speciesId": "dewgong",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 52,
+		"rank": 196
+	},
+	"azumarill": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "HYDRO_PUMP",
+		"dps": 11.697028521208424,
+		"tdo": 366.5894342752045,
+		"edps": 10.898177113139868,
+		"speciesId": "azumarill",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 82,
+		"rank": 197
 	},
 	"araquanid_shadow": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 11.263157894736842,
+		"dps": 11.604149645484132,
+		"tdo": 325.3572599078846,
+		"edps": 10.701741482196802,
 		"speciesId": "araquanid_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 37,
-		"rank": 212
+		"rank": 198
 	},
-	"totodile_shadow": {
+	"croconaw": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 11.25,
-		"speciesId": "totodile_shadow",
+		"dps": 11.416062133395751,
+		"tdo": 249.34123769092534,
+		"edps": 10.246334249120721,
+		"speciesId": "croconaw",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 50,
-		"rank": 213
+		"chargedMoveDmg": 51,
+		"rank": 199
+	},
+	"dragonair": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 11.399572945044497,
+		"tdo": 228.30096370620677,
+		"edps": 10.198262613141788,
+		"speciesId": "dragonair",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 36,
+		"rank": 200
+	},
+	"cryogonal": {
+		"fastMove": "ICE_SHARD",
+		"chargedMove": "WATER_PULSE",
+		"dps": 11.279237740755844,
+		"tdo": 422.0423036601186,
+		"edps": 10.6392252049476,
+		"speciesId": "cryogonal",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 53,
+		"rank": 201
+	},
+	"wailmer": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SCALD",
+		"dps": 11.23802289870176,
+		"tdo": 213.36636364851248,
+		"edps": 9.975033458838398,
+		"speciesId": "wailmer",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 54,
+		"rank": 202
+	},
+	"psyduck_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 11.218196464682187,
+		"tdo": 121.93546829549925,
+		"edps": 9.145709477081503,
+		"speciesId": "psyduck_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 40,
+		"rank": 203
+	},
+	"sliggoo": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "MUDDY_WATER",
+		"dps": 11.05228053068714,
+		"tdo": 303.527366662813,
+		"edps": 10.147573019379568,
+		"speciesId": "sliggoo",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 31,
+		"rank": 204
+	},
+	"sobble": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 11.03932528753343,
+		"tdo": 123.0455668681114,
+		"edps": 9.037349407866097,
+		"speciesId": "sobble",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 42,
+		"rank": 205
 	},
 	"popplio": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 11.20754716981132,
+		"dps": 10.875184316392604,
+		"tdo": 152.16480745738542,
+		"edps": 9.251909315211481,
 		"speciesId": "popplio",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 33,
-		"rank": 214
+		"rank": 206
+	},
+	"piplup_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 10.86859863944071,
+		"tdo": 129.61083588836925,
+		"edps": 9.002938229619641,
+		"speciesId": "piplup_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 33,
+		"rank": 207
+	},
+	"clauncher": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "CRABHAMMER",
+		"dps": 10.84794752458365,
+		"tdo": 169.7919492391148,
+		"edps": 9.39408142459476,
+		"speciesId": "clauncher",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 50,
+		"rank": 208
+	},
+	"quaxly": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "LIQUIDATION",
+		"dps": 10.798433374121823,
+		"tdo": 137.46994585239324,
+		"edps": 9.035652584334573,
+		"speciesId": "quaxly",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 45,
+		"rank": 209
+	},
+	"oshawott_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 10.766145852550698,
+		"tdo": 113.08490314539178,
+		"edps": 8.704451237568891,
+		"speciesId": "oshawott_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 38,
+		"rank": 210
+	},
+	"froakie_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "SURF",
+		"dps": 10.754209824841894,
+		"tdo": 94.43416716012709,
+		"edps": 8.394883611154189,
+		"speciesId": "froakie_shadow",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 47,
+		"rank": 211
 	},
 	"psyduck": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 11.20754716981132,
+		"dps": 10.745495684083501,
+		"tdo": 140.1569785133969,
+		"edps": 9.05833344625386,
 		"speciesId": "psyduck",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 33,
+		"rank": 212
+	},
+	"axew_shadow": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 10.679204518411348,
+		"tdo": 116.62532478534844,
+		"edps": 8.712830333709652,
+		"speciesId": "axew_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 41,
+		"rank": 213
+	},
+	"slowpoke_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 10.608228189883029,
+		"tdo": 173.47817459223884,
+		"edps": 9.225110788071984,
+		"speciesId": "slowpoke_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 46,
+		"rank": 214
+	},
+	"poliwhirl": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 10.603060794679154,
+		"tdo": 203.55813940778765,
+		"edps": 9.400346606226226,
+		"speciesId": "poliwhirl",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 31,
 		"rank": 215
 	},
 	"staryu": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 11.20754716981132,
+		"dps": 10.522522513236165,
+		"tdo": 122.27608538586557,
+		"edps": 8.682999157095482,
 		"speciesId": "staryu",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 33,
 		"rank": 216
 	},
-	"wailmer": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "SCALD",
-		"dps": 11.176470588235293,
-		"speciesId": "wailmer",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 55,
-		"rank": 217
-	},
-	"cryogonal": {
-		"fastMove": "ICE_SHARD",
-		"chargedMove": "WATER_PULSE",
-		"dps": 11.125,
-		"speciesId": "cryogonal",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 54,
-		"rank": 218
-	},
-	"dewgong": {
-		"fastMove": "FROST_BREATH",
-		"chargedMove": "LIQUIDATION",
-		"dps": 11.100000000000001,
-		"speciesId": "dewgong",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 52,
-		"rank": 219
-	},
 	"oshawott": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 11.018867924528301,
+		"dps": 10.513076931220883,
+		"tdo": 132.5120818942256,
+		"edps": 8.81422538856973,
 		"speciesId": "oshawott",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 32,
-		"rank": 220
-	},
-	"sliggoo": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "MUDDY_WATER",
-		"dps": 11.018867924528301,
-		"speciesId": "sliggoo",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 32,
-		"rank": 221
-	},
-	"slowpoke_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 10.875,
-		"speciesId": "slowpoke_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 47,
-		"rank": 222
-	},
-	"barboach_shadow": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 10.830188679245284,
-		"speciesId": "barboach_shadow",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 31,
-		"rank": 223
-	},
-	"horsea": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10.830188679245284,
-		"speciesId": "horsea",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 31,
-		"rank": 224
-	},
-	"poliwhirl": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10.789473684210526,
-		"speciesId": "poliwhirl",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 32,
-		"rank": 225
-	},
-	"squirtle_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 10.789473684210526,
-		"speciesId": "squirtle_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 32,
-		"rank": 226
-	},
-	"buizel": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 10.75,
-		"speciesId": "buizel",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 46,
-		"rank": 227
-	},
-	"clamperl": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 10.75,
-		"speciesId": "clamperl",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 46,
-		"rank": 228
-	},
-	"remoraid": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 10.625,
-		"speciesId": "remoraid",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 45,
-		"rank": 229
+		"rank": 217
 	},
 	"ninetales_alolan": {
 		"fastMove": "CHARM",
 		"chargedMove": "CHILLING_WATER",
-		"dps": 10.5,
+		"dps": 10.429746439588222,
+		"tdo": 326.1030251087583,
+		"edps": 9.701239843242726,
 		"speciesId": "ninetales_alolan",
-		"fastMoveDmg": 12,
+		"fastMoveDmg": 11,
 		"chargedMoveDmg": 48,
-		"rank": 230
+		"rank": 218
 	},
-	"poliwag_shadow": {
+	"froakie": {
 		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10.368421052631579,
-		"speciesId": "poliwag_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 30,
-		"rank": 231
-	},
-	"palpitoad": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "WATER_PULSE",
-		"dps": 10.348837209302326,
-		"speciesId": "palpitoad",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 45,
-		"rank": 232
-	},
-	"kabuto_shadow": {
-		"fastMove": "MUD_SHOT",
-		"chargedMove": "AQUA_JET",
-		"dps": 10.285714285714286,
-		"speciesId": "kabuto_shadow",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 43,
-		"rank": 233
-	},
-	"corsola": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10.157894736842104,
-		"speciesId": "corsola",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 29,
-		"rank": 234
-	},
-	"tentacool_shadow": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10.157894736842104,
-		"speciesId": "tentacool_shadow",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 29,
-		"rank": 235
-	},
-	"wiglett": {
-		"fastMove": "WATER_GUN",
 		"chargedMove": "SURF",
-		"dps": 10.153846153846153,
-		"speciesId": "wiglett",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 36,
-		"rank": 236
+		"dps": 10.381177036751561,
+		"tdo": 109.39022348882574,
+		"edps": 8.42733151449825,
+		"speciesId": "froakie",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 40,
+		"rank": 219
 	},
-	"spheal_shadow": {
+	"clamperl": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 10.125,
-		"speciesId": "spheal_shadow",
+		"dps": 10.349578497543568,
+		"tdo": 152.19314346736493,
+		"edps": 8.868737088108611,
+		"speciesId": "clamperl",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 41,
-		"rank": 237
+		"chargedMoveDmg": 46,
+		"rank": 220
 	},
-	"totodile": {
+	"totodile_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 10.125,
-		"speciesId": "totodile",
+		"dps": 10.324871543036625,
+		"tdo": 126.50877955388336,
+		"edps": 8.611768167925987,
+		"speciesId": "totodile_shadow",
 		"fastMoveDmg": 4,
-		"chargedMoveDmg": 41,
-		"rank": 238
-	},
-	"shellder": {
-		"fastMove": "ICE_SHARD",
-		"chargedMove": "RAZOR_SHELL",
-		"dps": 10.041666666666668,
-		"speciesId": "shellder",
-		"fastMoveDmg": 4,
-		"chargedMoveDmg": 35,
-		"rank": 239
+		"chargedMoveDmg": 49,
+		"rank": 221
 	},
 	"araquanid": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 10,
+		"dps": 10.27491173540576,
+		"tdo": 345.70570327472234,
+		"edps": 9.579360355023852,
 		"speciesId": "araquanid",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 31,
-		"rank": 240
+		"rank": 222
 	},
-	"panpour": {
+	"palpitoad": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "WATER_PULSE",
+		"dps": 10.273237930884418,
+		"tdo": 195.05843978180803,
+		"edps": 9.123508163927108,
+		"speciesId": "palpitoad",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 45,
+		"rank": 223
+	},
+	"corsola": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 10.210245317167868,
+		"tdo": 220.0685196104969,
+		"edps": 9.168073175401144,
+		"speciesId": "corsola",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 29,
+		"rank": 224
+	},
+	"squirtle_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 10.176865597264053,
+		"tdo": 128.14761021805748,
+		"edps": 8.513385634724477,
+		"speciesId": "squirtle_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 32,
+		"rank": 225
+	},
+	"horsea": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "SURF",
-		"dps": 10,
-		"speciesId": "panpour",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 35,
-		"rank": 241
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 10.070058547333046,
+		"tdo": 108.72563300547291,
+		"edps": 8.221140665788537,
+		"speciesId": "horsea",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 31,
+		"rank": 226
+	},
+	"anorith_shadow": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "AQUA_JET",
+		"dps": 10.020493420167202,
+		"tdo": 107.59170664697386,
+		"edps": 8.13920305878126,
+		"speciesId": "anorith_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 41,
+		"rank": 227
 	},
 	"lombre": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 9.947368421052632,
+		"dps": 9.899620338427868,
+		"tdo": 175.87477233511717,
+		"edps": 8.689558788730418,
 		"speciesId": "lombre",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 28,
-		"rank": 242
+		"rank": 228
+	},
+	"tentacool_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 9.848725118340809,
+		"tdo": 142.00803259901252,
+		"edps": 8.422046652769021,
+		"speciesId": "tentacool_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 29,
+		"rank": 229
+	},
+	"totodile": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 9.833876346784532,
+		"tdo": 144.5912510767169,
+		"edps": 8.420629546234178,
+		"speciesId": "totodile",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 41,
+		"rank": 230
+	},
+	"shellder_shadow": {
+		"fastMove": "TACKLE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 9.779125954863666,
+		"tdo": 111.10228393076893,
+		"edps": 8.034798540569568,
+		"speciesId": "shellder_shadow",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 42,
+		"rank": 231
 	},
 	"piplup": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 9.947368421052632,
+		"dps": 9.664127892412118,
+		"tdo": 138.2966602327446,
+		"edps": 8.232115914074186,
 		"speciesId": "piplup",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 28,
-		"rank": 243
+		"rank": 232
+	},
+	"spheal_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 9.651772887046752,
+		"tdo": 123.79601029524079,
+		"edps": 8.085736299869547,
+		"speciesId": "spheal_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 41,
+		"rank": 233
+	},
+	"stunfisk_galarian": {
+		"fastMove": "METAL_CLAW",
+		"chargedMove": "MUDDY_WATER",
+		"dps": 9.644018549212385,
+		"tdo": 358.40711359583713,
+		"edps": 9.088880762971122,
+		"speciesId": "stunfisk_galarian",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 29,
+		"rank": 234
+	},
+	"barboach_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 9.601088533007525,
+		"tdo": 92.02514967546422,
+		"edps": 7.624574685335742,
+		"speciesId": "barboach_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 31,
+		"rank": 235
+	},
+	"buizel": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 9.555353407056083,
+		"tdo": 98.76117342430331,
+		"edps": 7.708908922108353,
+		"speciesId": "buizel",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 46,
+		"rank": 236
 	},
 	"arrokuda": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "AQUA_JET",
-		"dps": 9.900990099009901,
+		"dps": 9.303014752337067,
+		"tdo": 86.14690514112267,
+		"edps": 7.326434762647632,
 		"speciesId": "arrokuda",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 29,
-		"rank": 244
+		"rank": 237
+	},
+	"shellder": {
+		"fastMove": "TACKLE",
+		"chargedMove": "RAZOR_SHELL",
+		"dps": 9.30056239382029,
+		"tdo": 126.79829709476446,
+		"edps": 7.8872410759852505,
+		"speciesId": "shellder",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 35,
+		"rank": 238
+	},
+	"stunfisk": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "MUDDY_WATER",
+		"dps": 9.27886836001597,
+		"tdo": 344.83679281399367,
+		"edps": 8.707886415683914,
+		"speciesId": "stunfisk",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 29,
+		"rank": 239
+	},
+	"skrelp": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 9.127280802784359,
+		"tdo": 134.201906111481,
+		"edps": 7.827074498760469,
+		"speciesId": "skrelp",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 30,
+		"rank": 240
+	},
+	"seel_shadow": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 9.086954961607276,
+		"tdo": 143.2696352334753,
+		"edps": 7.8627973862521445,
+		"speciesId": "seel_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 29,
+		"rank": 241
+	},
+	"kabuto_shadow": {
+		"fastMove": "SCRATCH",
+		"chargedMove": "AQUA_JET",
+		"dps": 9.066928321492046,
+		"tdo": 107.15897705394258,
+		"edps": 7.498635168035474,
+		"speciesId": "kabuto_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 42,
+		"rank": 242
+	},
+	"panpour": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "SURF",
+		"dps": 9.016805225077501,
+		"tdo": 116.53993556052016,
+		"edps": 7.57361405884604,
+		"speciesId": "panpour",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 34,
+		"rank": 243
 	},
 	"axew": {
 		"fastMove": "SCRATCH",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 9.591836734693878,
+		"dps": 8.974619653460637,
+		"tdo": 117.61190324302251,
+		"edps": 7.547625430855673,
 		"speciesId": "axew",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 34,
+		"rank": 244
+	},
+	"chinchou": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 8.909287723772316,
+		"tdo": 152.79062999831476,
+		"edps": 7.789633063823763,
+		"speciesId": "chinchou",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 26,
 		"rank": 245
 	},
 	"anorith": {
 		"fastMove": "STRUGGLE_BUG",
 		"chargedMove": "AQUA_JET",
-		"dps": 9.448275862068964,
+		"dps": 8.79158751582567,
+		"tdo": 113.27609168182548,
+		"edps": 7.3667484200944005,
 		"speciesId": "anorith",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 35,
 		"rank": 246
 	},
-	"skrelp": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 9.39622641509434,
-		"speciesId": "skrelp",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 30,
-		"rank": 247
-	},
-	"dratini_shadow": {
-		"fastMove": "DRAGON_BREATH",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 9.26530612244898,
-		"speciesId": "dratini_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 32,
-		"rank": 248
-	},
 	"goldeen": {
 		"fastMove": "MUD_SHOT",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 9.263157894736842,
+		"dps": 8.787313025054173,
+		"tdo": 123.0663223657469,
+		"edps": 7.470095531887962,
 		"speciesId": "goldeen",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 33,
+		"rank": 247
+	},
+	"remoraid": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 8.742896735359915,
+		"tdo": 71.99723206015099,
+		"edps": 6.727427280025933,
+		"speciesId": "remoraid",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 44,
+		"rank": 248
+	},
+	"mantyke": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "WATER_PULSE",
+		"dps": 8.717026746676725,
+		"tdo": 189.4712065907077,
+		"edps": 7.825664168180124,
+		"speciesId": "mantyke",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 38,
 		"rank": 249
 	},
-	"toxapex": {
-		"fastMove": "POISON_JAB",
-		"chargedMove": "BRINE",
-		"dps": 9.227586206896552,
-		"speciesId": "toxapex",
+	"squirtle": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 8.716720975493926,
+		"tdo": 131.71367894592728,
+		"edps": 7.5156679933773765,
+		"speciesId": "squirtle",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 41,
+		"chargedMoveDmg": 26,
 		"rank": 250
 	},
-	"seel_shadow": {
+	"slowpoke": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 9.20754716981132,
-		"speciesId": "seel_shadow",
+		"chargedMove": "WATER_PULSE",
+		"dps": 8.67705049971949,
+		"tdo": 170.27676043199062,
+		"edps": 7.721220623001755,
+		"speciesId": "slowpoke",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 29,
+		"chargedMoveDmg": 39,
 		"rank": 251
 	},
-	"stunfisk_galarian": {
-		"fastMove": "METAL_CLAW",
-		"chargedMove": "MUDDY_WATER",
-		"dps": 9.20754716981132,
-		"speciesId": "stunfisk_galarian",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 29,
+	"poliwag_shadow": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 8.65275261030247,
+		"tdo": 73.79298318178428,
+		"edps": 6.715759183471067,
+		"speciesId": "poliwag_shadow",
+		"fastMoveDmg": 7,
+		"chargedMoveDmg": 30,
 		"rank": 252
 	},
 	"kabuto": {
 		"fastMove": "SCRATCH",
 		"chargedMove": "AQUA_JET",
-		"dps": 9.169811320754716,
+		"dps": 8.635324880785161,
+		"tdo": 122.46960623796691,
+		"edps": 7.356363210649534,
 		"speciesId": "kabuto",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 36,
+		"chargedMoveDmg": 35,
 		"rank": 253
 	},
-	"chinchou": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 9.157894736842104,
-		"speciesId": "chinchou",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 27,
+	"toxapex": {
+		"fastMove": "POISON_JAB",
+		"chargedMove": "BRINE",
+		"dps": 8.52294502351644,
+		"tdo": 291.056807939587,
+		"edps": 7.966201915542744,
+		"speciesId": "toxapex",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 40,
 		"rank": 254
-	},
-	"squirtle": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 9.157894736842104,
-		"speciesId": "squirtle",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 27,
-		"rank": 255
-	},
-	"pikachu": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "SURF",
-		"dps": 8.929577464788732,
-		"speciesId": "pikachu",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 31,
-		"rank": 256
-	},
-	"stunfisk": {
-		"fastMove": "THUNDER_SHOCK",
-		"chargedMove": "MUDDY_WATER",
-		"dps": 8.81967213114754,
-		"speciesId": "stunfisk",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 29,
-		"rank": 257
-	},
-	"mantyke": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "WATER_PULSE",
-		"dps": 8.790697674418604,
-		"speciesId": "mantyke",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 38,
-		"rank": 258
-	},
-	"poliwag": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 8.736842105263158,
-		"speciesId": "poliwag",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 25,
-		"rank": 259
 	},
 	"tentacool": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 8.736842105263158,
+		"dps": 8.423502636242262,
+		"tdo": 145.74943300053246,
+		"edps": 7.368357234254469,
 		"speciesId": "tentacool",
 		"fastMoveDmg": 6,
-		"chargedMoveDmg": 25,
-		"rank": 260
+		"chargedMoveDmg": 24,
+		"rank": 255
 	},
-	"barboach": {
+	"seel": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 8.641509433962264,
-		"speciesId": "barboach",
+		"dps": 8.315732668164406,
+		"tdo": 157.33218074785654,
+		"edps": 7.375320972419961,
+		"speciesId": "seel",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 26,
-		"rank": 261
+		"chargedMoveDmg": 24,
+		"rank": 256
 	},
 	"ducklett_shadow": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 8.641509433962264,
+		"dps": 8.182455946832956,
+		"tdo": 102.46729219829427,
+		"edps": 6.83312014358847,
 		"speciesId": "ducklett_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 26,
-		"rank": 262
+		"rank": 257
 	},
-	"slowpoke": {
+	"barboach": {
 		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 8.625,
-		"speciesId": "slowpoke",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 8.015201512412071,
+		"tdo": 92.18956527609667,
+		"edps": 6.589224527626743,
+		"speciesId": "barboach",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 39,
-		"rank": 263
+		"chargedMoveDmg": 26,
+		"rank": 258
 	},
 	"slowpoke_galarian": {
 		"fastMove": "CONFUSION",
 		"chargedMove": "SURF",
-		"dps": 8.541666666666666,
+		"dps": 8.009683475900669,
+		"tdo": 157.1804790586505,
+		"edps": 7.133572698887618,
 		"speciesId": "slowpoke_galarian",
-		"fastMoveDmg": 8,
+		"fastMoveDmg": 7,
 		"chargedMoveDmg": 30,
+		"rank": 259
+	},
+	"carvanha": {
+		"fastMove": "BITE",
+		"chargedMove": "AQUA_JET",
+		"dps": 8,
+		"tdo": 48.40128135681149,
+		"edps": 5.675368898978434,
+		"speciesId": "carvanha",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 40,
+		"rank": 260
+	},
+	"carvanha_shadow": {
+		"fastMove": "BITE",
+		"chargedMove": "AQUA_JET",
+		"dps": 8,
+		"tdo": 40.3343995173002,
+		"edps": 5.366726296958855,
+		"speciesId": "carvanha_shadow",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 48,
+		"rank": 261
+	},
+	"poliwag": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 7.895085801647884,
+		"tdo": 80.79768138386086,
+		"edps": 6.369653893228166,
+		"speciesId": "poliwag",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 25,
+		"rank": 262
+	},
+	"clodsire": {
+		"fastMove": "POISON_STING",
+		"chargedMove": "WATER_PULSE",
+		"dps": 7.890758093914095,
+		"tdo": 299.6296370107973,
+		"edps": 7.414884412476198,
+		"speciesId": "clodsire",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 37,
+		"rank": 263
+	},
+	"finneon": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 7.881717934959914,
+		"tdo": 121.46596243589764,
+		"edps": 6.7992108073326305,
+		"speciesId": "finneon",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 35,
 		"rank": 264
 	},
 	"surskit": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 8.526315789473685,
+		"dps": 7.85622496154231,
+		"tdo": 84.54431163258269,
+		"edps": 6.3902827866584,
 		"speciesId": "surskit",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 24,
 		"rank": 265
 	},
-	"tympole": {
-		"fastMove": "BUBBLE",
-		"chargedMove": "WATER_PULSE",
-		"dps": 8.511627906976743,
-		"speciesId": "tympole",
-		"fastMoveDmg": 6,
-		"chargedMoveDmg": 36,
-		"rank": 266
-	},
-	"wingull": {
+	"spheal": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 8.5,
-		"speciesId": "wingull",
+		"dps": 7.801151886350509,
+		"tdo": 120.07139361891214,
+		"edps": 6.736144853330277,
+		"speciesId": "spheal",
 		"fastMoveDmg": 3,
-		"chargedMoveDmg": 38,
+		"chargedMoveDmg": 34,
+		"rank": 266
+	},
+	"ducklett": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 7.771042473302213,
+		"tdo": 116.77829495040886,
+		"edps": 6.674845706176633,
+		"speciesId": "ducklett",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 22,
 		"rank": 267
 	},
 	"dratini": {
 		"fastMove": "DRAGON_BREATH",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 8.448979591836734,
+		"dps": 7.711585399271919,
+		"tdo": 87.00540947212042,
+		"edps": 6.331450636110809,
 		"speciesId": "dratini",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 27,
 		"rank": 268
 	},
-	"seel": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "AQUA_TAIL",
-		"dps": 8.264150943396226,
-		"speciesId": "seel",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 24,
+	"pikachu": {
+		"fastMove": "THUNDER_SHOCK",
+		"chargedMove": "SURF",
+		"dps": 7.676722916632746,
+		"tdo": 83.53721829742365,
+		"edps": 6.2657720940409085,
+		"speciesId": "pikachu",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 31,
 		"rank": 269
-	},
-	"finneon": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 8.125,
-		"speciesId": "finneon",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 35,
-		"rank": 270
-	},
-	"spheal": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "WATER_PULSE",
-		"dps": 8.125,
-		"speciesId": "spheal",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 35,
-		"rank": 271
 	},
 	"minccino": {
 		"fastMove": "POUND",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 8.075471698113207,
+		"dps": 7.645929714582974,
+		"tdo": 91.55446759959351,
+		"edps": 6.334919247322329,
 		"speciesId": "minccino",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 23,
-		"rank": 272
+		"rank": 270
 	},
 	"skorupi_shadow": {
 		"fastMove": "INFESTATION",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 7.966101694915254,
+		"dps": 7.614370424481286,
+		"tdo": 111.12995409872431,
+		"edps": 6.51618812533963,
 		"speciesId": "skorupi_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 26,
-		"rank": 273
+		"rank": 271
 	},
-	"mareanie": {
-		"fastMove": "POISON_STING",
-		"chargedMove": "BRINE",
-		"dps": 7.9,
-		"speciesId": "mareanie",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 36,
-		"rank": 274
-	},
-	"ducklett": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 7.886792452830188,
-		"speciesId": "ducklett",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 22,
-		"rank": 275
+	"tympole": {
+		"fastMove": "BUBBLE",
+		"chargedMove": "WATER_PULSE",
+		"dps": 7.612802552411138,
+		"tdo": 83.95046417375409,
+		"edps": 6.225706671935546,
+		"speciesId": "tympole",
+		"fastMoveDmg": 6,
+		"chargedMoveDmg": 35,
+		"rank": 272
 	},
 	"goomy": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "MUDDY_WATER",
-		"dps": 7.69811320754717,
+		"dps": 7.533215922981173,
+		"tdo": 107.1907350302029,
+		"edps": 6.417986859171553,
 		"speciesId": "goomy",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 21,
-		"rank": 276
+		"rank": 273
+	},
+	"dratini_shadow": {
+		"fastMove": "DRAGON_BREATH",
+		"chargedMove": "AQUA_TAIL",
+		"dps": 7.515234522679952,
+		"tdo": 70.6584094921083,
+		"edps": 5.945431177437108,
+		"speciesId": "dratini_shadow",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 32,
+		"rank": 274
 	},
 	"luvdisc": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "WATER_PULSE",
-		"dps": 7.5,
+		"dps": 7.330192919558266,
+		"tdo": 114.50624425046881,
+		"edps": 6.3416075261462,
 		"speciesId": "luvdisc",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 30,
-		"rank": 277
+		"rank": 275
 	},
-	"clodsire": {
+	"mareanie": {
 		"fastMove": "POISON_STING",
-		"chargedMove": "WATER_PULSE",
-		"dps": 7.488372093023256,
-		"speciesId": "clodsire",
+		"chargedMove": "BRINE",
+		"dps": 7.324229829371489,
+		"tdo": 108.55943239789936,
+		"edps": 6.268290605616503,
+		"speciesId": "mareanie",
 		"fastMoveDmg": 2,
-		"chargedMoveDmg": 37,
-		"rank": 278
-	},
-	"lotad": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 7.320754716981132,
-		"speciesId": "lotad",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 19,
-		"rank": 279
-	},
-	"dewpider_shadow": {
-		"fastMove": "BUG_BITE",
-		"chargedMove": "BUBBLE_BEAM",
-		"dps": 7.157894736842105,
-		"speciesId": "dewpider_shadow",
-		"fastMoveDmg": 2,
-		"chargedMoveDmg": 23,
-		"rank": 280
+		"chargedMoveDmg": 35,
+		"rank": 276
 	},
 	"skorupi": {
 		"fastMove": "POISON_STING",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 6.947368421052632,
+		"dps": 6.87810974835,
+		"tdo": 120.46128705330328,
+		"edps": 6.03662606315485,
 		"speciesId": "skorupi",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 22,
-		"rank": 281
+		"rank": 277
+	},
+	"lotad": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 6.80135001496231,
+		"tdo": 66.01661656737778,
+		"edps": 5.424082814354486,
+		"speciesId": "lotad",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 19,
+		"rank": 278
 	},
 	"shellos": {
 		"fastMove": "MUD_SLAP",
 		"chargedMove": "WATER_PULSE",
-		"dps": 6.8508771929824555,
+		"dps": 6.73564888872859,
+		"tdo": 125.27391235961068,
+		"edps": 5.959577534036391,
 		"speciesId": "shellos",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 37,
-		"rank": 282
+		"rank": 279
+	},
+	"wingull": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "WATER_PULSE",
+		"dps": 6.548140198597669,
+		"tdo": 52.50514610504815,
+		"edps": 5.002122962882976,
+		"speciesId": "wingull",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 38,
+		"rank": 280
+	},
+	"dewpider_shadow": {
+		"fastMove": "BUG_BITE",
+		"chargedMove": "BUBBLE_BEAM",
+		"dps": 6.51058305567728,
+		"tdo": 73.55244311353833,
+		"edps": 5.34961305253511,
+		"speciesId": "dewpider_shadow",
+		"fastMoveDmg": 2,
+		"chargedMoveDmg": 23,
+		"rank": 281
 	},
 	"dewpider": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 6.315789473684211,
+		"dps": 6.070364163334961,
+		"tdo": 82.2949580110037,
+		"edps": 5.131676350890766,
 		"speciesId": "dewpider",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 19,
+		"rank": 282
+	},
+	"wiglett": {
+		"fastMove": "WATER_GUN",
+		"chargedMove": "LIQUIDATION",
+		"dps": 6,
+		"tdo": 25.5227127154668,
+		"edps": 3.787878787878788,
+		"speciesId": "wiglett",
+		"fastMoveDmg": 3,
+		"chargedMoveDmg": 42,
 		"rank": 283
 	},
 	"smeargle": {
 		"fastMove": "WATER_GUN",
 		"chargedMove": "HYDRO_CANNON",
-		"dps": 5.714285714285714,
+		"dps": 5.28352513153833,
+		"tdo": 65.2642704995895,
+		"edps": 4.3988093636577394,
 		"speciesId": "smeargle",
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 20,
@@ -2558,7 +3126,9 @@
 	"marill": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "AQUA_TAIL",
-		"dps": 4.473684210526316,
+		"dps": 4.408049298083004,
+		"tdo": 69.78494122262522,
+		"edps": 3.814982742823053,
 		"speciesId": "marill",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 13,
@@ -2567,7 +3137,9 @@
 	"azurill": {
 		"fastMove": "BUBBLE",
 		"chargedMove": "BUBBLE_BEAM",
-		"dps": 3.8421052631578947,
+		"dps": 3.5671763499033626,
+		"tdo": 36.376308007153554,
+		"edps": 2.868613720273542,
 		"speciesId": "azurill",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 10,

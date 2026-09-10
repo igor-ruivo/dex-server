@@ -215,6 +215,8 @@ type MoveSettingsType = {
 	energyDelta: number;
 	durationTurns: number;
 	durationMs: number;
+	damageWindowStartMs?: number;
+	damageWindowEndMs?: number;
 	buffs?: BuffsType | undefined;
 };
 
@@ -245,4 +247,8 @@ export type PvEMove = BaseMove & {
 	pvePower: number;
 	pveEnergy: number;
 	pveCooldown: number;
+	/** Seconds into the animation when the hit lands. Omitted for synthetic moves. */
+	pveDamageWindowStart?: number | undefined;
+	/** Seconds into the animation when the hit stops being active. */
+	pveDamageWindowEnd?: number | undefined;
 };

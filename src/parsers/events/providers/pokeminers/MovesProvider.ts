@@ -39,6 +39,7 @@ class MovesProvider {
 		const renamedMoveIds: Record<string, string> = {
 			FUTURESIGHT: 'FUTURE_SIGHT',
 			TECHNO_BLAST_WATER: 'TECHNO_BLAST_DOUSE',
+			PYROBALL: 'PYRO_BALL',
 		};
 
 		const renamedVFXsIds: Record<string, string> = {
@@ -271,28 +272,6 @@ class MovesProvider {
 				pvpCooldown: 1.5,
 				pveCooldown: 1,
 				moveName: aegislashChargeAirSlashMoveName,
-			};
-		}
-
-		const pyroBallMoveName: Partial<Record<AvailableLocales, string>> = {};
-		Object.values(AvailableLocales).forEach((locale) => {
-			pyroBallMoveName[locale] = normalizedMoveName('PYRO_BALL');
-		});
-
-		if (!movesDictionary.PYRO_BALL) {
-			movesDictionary.PYRO_BALL = {
-				moveId: 'PYRO_BALL',
-				vId: '-1',
-				type: 'fire',
-				isSuperMega: false,
-				isFast: false,
-				pvpPower: 75,
-				pvePower: 150,
-				pvpEnergy: -40,
-				pveEnergy: -100,
-				pvpCooldown: 0.5,
-				pveCooldown: 2.0,
-				moveName: pyroBallMoveName,
 			};
 		}
 

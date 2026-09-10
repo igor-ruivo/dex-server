@@ -5489,6 +5489,23 @@
 			"pt_br": "Drum Beating"
 		}
 	},
+	"PYRO_BALL": {
+		"moveId": "PYRO_BALL",
+		"isSuperMega": false,
+		"vId": "0493",
+		"type": "fire",
+		"isFast": false,
+		"pvpPower": 75,
+		"pvePower": 150,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Pyro Ball",
+			"pt_br": "Pyro Ball"
+		}
+	},
 	"GIGATON_HAMMER": {
 		"moveId": "GIGATON_HAMMER",
 		"isSuperMega": false,
@@ -5859,23 +5876,6 @@
 		"moveName": {
 			"en": "Air Slash",
 			"pt_br": "Golpe de Ar"
-		}
-	},
-	"PYRO_BALL": {
-		"moveId": "PYRO_BALL",
-		"vId": "-1",
-		"type": "fire",
-		"isSuperMega": false,
-		"isFast": false,
-		"pvpPower": 75,
-		"pvePower": 150,
-		"pvpEnergy": -40,
-		"pveEnergy": -100,
-		"pvpCooldown": 0.5,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Pyro Ball",
-			"pt_br": "Pyro Ball"
 		}
 	},
 	"GULP_MISSILE_ARROKUDA": {

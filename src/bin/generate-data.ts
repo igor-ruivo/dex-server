@@ -140,7 +140,7 @@ const generateData = async () => {
 			)
 		);
 		for (const type of Object.keys(dpsData)) {
-			const fileName = `${type.toLocaleLowerCase() || 'default'}-raid-dps-rank.json`;
+			const fileName = `${type.toLocaleLowerCase()}-raid-dps-rank.json`;
 			const filePath = path.join(dataDir, fileName);
 			await fs.writeFile(filePath, JSON.stringify(dpsData[type], null, '\t'));
 		}

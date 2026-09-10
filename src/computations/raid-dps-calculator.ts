@@ -16,17 +16,18 @@ class RaidDpsCalculator {
 	compute() {
 		const output: Record<string, Record<string, ComputedDpsRank>> = {};
 
-		['', ...Object.values(PokemonTypes)]
+		// One ranking per attacking type. The old generic "" (type-agnostic) list
+		// was dropped — a raid ranking only makes sense once a type is chosen.
+		Object.values(PokemonTypes)
 			.map((type) => type.toLocaleLowerCase())
 			.forEach((type) => {
 				const pokemonEntries = Object.values(this.gameMasterPokemon)
 					.filter(
 						(p) =>
 							!p.aliasId &&
-							(!type ||
-								getAllChargedMoves(p, this.moves).some(
-									(m) => this.moves[m].type === type
-								))
+							getAllChargedMoves(p, this.moves).some(
+								(m) => this.moves[m].type === type
+							)
 					)
 					.map((p) => computeDPSEntry(p, this.moves, 15, MAX_LEVEL_INDEX, type))
 					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);

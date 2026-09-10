@@ -133,7 +133,11 @@ const generateData = async () => {
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'moves.json'),
-			JSON.stringify(moves, null, '\t')
+			JSON.stringify(
+				movesProvider.pruneUnlearnableMoves(moves, pokemonDictionary),
+				null,
+				'\t'
+			)
 		);
 		for (const type of Object.keys(dpsData)) {
 			const fileName = `${type.toLocaleLowerCase() || 'default'}-raid-dps-rank.json`;

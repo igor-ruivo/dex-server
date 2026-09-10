@@ -241,23 +241,6 @@
 			"pt_br": "Soco de Gelo"
 		}
 	},
-	"HEART_STAMP": {
-		"moveId": "HEART_STAMP",
-		"isSuperMega": false,
-		"vId": "0034",
-		"type": "psychic",
-		"isFast": false,
-		"pvpPower": 40,
-		"pvePower": 40,
-		"pvpEnergy": -40,
-		"pveEnergy": -33,
-		"pvpCooldown": 0,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Heart Stamp",
-			"pt_br": "Estampa de Coração"
-		}
-	},
 	"DISCHARGE": {
 		"moveId": "DISCHARGE",
 		"isSuperMega": false,
@@ -409,23 +392,6 @@
 		"moveName": {
 			"en": "Petal Blizzard",
 			"pt_br": "Nevasca de Pétalas"
-		}
-	},
-	"MEGA_DRAIN": {
-		"moveId": "MEGA_DRAIN",
-		"isSuperMega": false,
-		"vId": "0048",
-		"type": "grass",
-		"isFast": false,
-		"pvpPower": 25,
-		"pvePower": 25,
-		"pvpEnergy": -55,
-		"pveEnergy": -50,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"moveName": {
-			"en": "Mega Drain",
-			"pt_br": "Megadreno"
 		}
 	},
 	"BUG_BUZZ": {
@@ -1362,23 +1328,6 @@
 			"pt_br": "Vento Congelante"
 		}
 	},
-	"GIGA_DRAIN": {
-		"moveId": "GIGA_DRAIN",
-		"isSuperMega": false,
-		"vId": "0114",
-		"type": "grass",
-		"isFast": false,
-		"pvpPower": 50,
-		"pvePower": 50,
-		"pvpEnergy": -80,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 4,
-		"moveName": {
-			"en": "Giga Drain",
-			"pt_br": "Gigadreno"
-		}
-	},
 	"FIRE_PUNCH": {
 		"moveId": "FIRE_PUNCH",
 		"isSuperMega": false,
@@ -1591,23 +1540,6 @@
 			"pt_br": "Pancada Corporal"
 		}
 	},
-	"REST": {
-		"moveId": "REST",
-		"isSuperMega": false,
-		"vId": "0132",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 50,
-		"pvePower": 50,
-		"pvpEnergy": -35,
-		"pveEnergy": -33,
-		"pvpCooldown": 0,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Rest",
-			"pt_br": "Descansar"
-		}
-	},
 	"STRUGGLE": {
 		"moveId": "STRUGGLE",
 		"isSuperMega": false,
@@ -1623,74 +1555,6 @@
 		"moveName": {
 			"en": "Struggle",
 			"pt_br": "Insistência"
-		}
-	},
-	"SCALD_BLASTOISE": {
-		"moveId": "SCALD_BLASTOISE",
-		"isSuperMega": false,
-		"vId": "0134",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 50,
-		"pvePower": 50,
-		"pvpEnergy": -80,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 4.5,
-		"moveName": {
-			"en": "Scald",
-			"pt_br": "Escaldada"
-		}
-	},
-	"HYDRO_PUMP_BLASTOISE": {
-		"moveId": "HYDRO_PUMP_BLASTOISE",
-		"isSuperMega": false,
-		"vId": "0135",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 90,
-		"pvePower": 90,
-		"pvpEnergy": -80,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 4.5,
-		"moveName": {
-			"en": "Hydro Pump",
-			"pt_br": "Jato d'Água"
-		}
-	},
-	"WRAP_GREEN": {
-		"moveId": "WRAP_GREEN",
-		"isSuperMega": false,
-		"vId": "0136",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 25,
-		"pvePower": 25,
-		"pvpEnergy": -45,
-		"pveEnergy": -33,
-		"pvpCooldown": 0,
-		"pveCooldown": 3,
-		"moveName": {
-			"en": "Wrap",
-			"pt_br": "Embrulho"
-		}
-	},
-	"WRAP_PINK": {
-		"moveId": "WRAP_PINK",
-		"isSuperMega": false,
-		"vId": "0137",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 25,
-		"pvePower": 25,
-		"pvpEnergy": -45,
-		"pveEnergy": -33,
-		"pvpCooldown": 0,
-		"pveCooldown": 3,
-		"moveName": {
-			"en": "Wrap",
-			"pt_br": "Embrulho"
 		}
 	},
 	"FURY_CUTTER": {
@@ -2235,23 +2099,6 @@
 		"moveName": {
 			"en": "Splash",
 			"pt_br": "Borrifada"
-		}
-	},
-	"WATER_GUN_FAST_BLASTOISE": {
-		"moveId": "WATER_GUN_FAST_BLASTOISE",
-		"isSuperMega": false,
-		"vId": "0232",
-		"type": "water",
-		"isFast": false,
-		"pvpPower": 6,
-		"pvePower": 10,
-		"pvpEnergy": 4,
-		"pveEnergy": 6,
-		"pvpCooldown": 0,
-		"pveCooldown": 1,
-		"moveName": {
-			"en": "Water Gun",
-			"pt_br": "Revólver d'Água"
 		}
 	},
 	"MUD_SLAP": {
@@ -4395,90 +4242,6 @@
 			"pt_br": "Lança Congelada"
 		}
 	},
-	"AEROBLAST_PLUS": {
-		"moveId": "AEROBLAST_PLUS",
-		"isSuperMega": false,
-		"vId": "0360",
-		"type": "flying",
-		"isFast": false,
-		"pvpPower": 170,
-		"pvePower": 200,
-		"pvpEnergy": -75,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 3.5,
-		"buffs": {
-			"attackerAttackStatStageChange": 2,
-			"buffActivationChance": 0.125
-		},
-		"moveName": {
-			"en": "Aeroblast+",
-			"pt_br": "Explosão Aérea+"
-		}
-	},
-	"AEROBLAST_PLUS_PLUS": {
-		"moveId": "AEROBLAST_PLUS_PLUS",
-		"isSuperMega": false,
-		"vId": "0361",
-		"type": "flying",
-		"isFast": false,
-		"pvpPower": 170,
-		"pvePower": 225,
-		"pvpEnergy": -75,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 3.5,
-		"buffs": {
-			"attackerAttackStatStageChange": 2,
-			"buffActivationChance": 0.125
-		},
-		"moveName": {
-			"en": "Aeroblast++",
-			"pt_br": "Explosão Aérea++"
-		}
-	},
-	"SACRED_FIRE_PLUS": {
-		"moveId": "SACRED_FIRE_PLUS",
-		"isSuperMega": false,
-		"vId": "0362",
-		"type": "fire",
-		"isFast": false,
-		"pvpPower": 130,
-		"pvePower": 135,
-		"pvpEnergy": -65,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"targetAttackStatStageChange": -1,
-			"buffActivationChance": 0.5
-		},
-		"moveName": {
-			"en": "Sacred Fire+",
-			"pt_br": "Fogo Sagrado+"
-		}
-	},
-	"SACRED_FIRE_PLUS_PLUS": {
-		"moveId": "SACRED_FIRE_PLUS_PLUS",
-		"isSuperMega": false,
-		"vId": "0363",
-		"type": "fire",
-		"isFast": false,
-		"pvpPower": 130,
-		"pvePower": 155,
-		"pvpEnergy": -65,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"targetAttackStatStageChange": -1,
-			"buffActivationChance": 0.5
-		},
-		"moveName": {
-			"en": "Sacred Fire++",
-			"pt_br": "Fogo Sagrado++"
-		}
-	},
 	"ACROBATICS": {
 		"moveId": "ACROBATICS",
 		"isSuperMega": false,
@@ -5295,27 +5058,6 @@
 			"pt_br": "Roda de Aura"
 		}
 	},
-	"AURA_WHEEL_DARK": {
-		"moveId": "AURA_WHEEL_DARK",
-		"isSuperMega": false,
-		"vId": "0407",
-		"type": "dark",
-		"isFast": false,
-		"pvpPower": 100,
-		"pvePower": 100,
-		"pvpEnergy": -45,
-		"pveEnergy": -50,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"attackerAttackStatStageChange": 1,
-			"buffActivationChance": 1
-		},
-		"moveName": {
-			"en": "Aura Wheel",
-			"pt_br": "Roda de Aura"
-		}
-	},
 	"HIGH_JUMP_KICK": {
 		"moveId": "HIGH_JUMP_KICK",
 		"isSuperMega": false,
@@ -5747,23 +5489,6 @@
 			"pt_br": "Drum Beating"
 		}
 	},
-	"PYROBALL": {
-		"moveId": "PYROBALL",
-		"isSuperMega": false,
-		"vId": "0493",
-		"type": "fire",
-		"isFast": false,
-		"pvpPower": 75,
-		"pvePower": 150,
-		"pvpEnergy": -40,
-		"pveEnergy": -100,
-		"pvpCooldown": 0,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Pyroball",
-			"pt_br": "Pyroball"
-		}
-	},
 	"GIGATON_HAMMER": {
 		"moveId": "GIGATON_HAMMER",
 		"isSuperMega": false,
@@ -5855,48 +5580,6 @@
 		"moveName": {
 			"en": "Dive",
 			"pt_br": "Dive"
-		}
-	},
-	"GULP_MISSILE_GULPING": {
-		"moveId": "GULP_MISSILE_GULPING",
-		"isSuperMega": false,
-		"vId": "0594",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 0,
-		"pvpEnergy": 0,
-		"pveEnergy": 0,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"targetDefenseStatStageChange": -1,
-			"buffActivationChance": 1
-		},
-		"moveName": {
-			"en": "Gulp Missile Gulping",
-			"pt_br": "Gulp Missile Gulping"
-		}
-	},
-	"GULP_MISSILE_GORGING": {
-		"moveId": "GULP_MISSILE_GORGING",
-		"isSuperMega": false,
-		"vId": "0595",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 0,
-		"pvpEnergy": 0,
-		"pveEnergy": 0,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"buffs": {
-			"targetAttackStatStageChange": -2,
-			"buffActivationChance": 1
-		},
-		"moveName": {
-			"en": "Gulp Missile Gorging",
-			"pt_br": "Gulp Missile Gorging"
 		}
 	},
 	"ACID_SPRAY_PLUS": {
@@ -6142,74 +5825,6 @@
 		"moveName": {
 			"en": "Future Sight+",
 			"pt_br": "Visão do Futuro+"
-		}
-	},
-	"CRUSH_CLAW": {
-		"moveId": "CRUSH_CLAW",
-		"isSuperMega": false,
-		"vId": "0307",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 0,
-		"pvpEnergy": 0,
-		"pveEnergy": 0,
-		"pvpCooldown": 0,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Crush Claw",
-			"pt_br": "Garra Esmagadora"
-		}
-	},
-	"LEECH_LIFE": {
-		"moveId": "LEECH_LIFE",
-		"isSuperMega": false,
-		"vId": "0313",
-		"type": "bug",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 0,
-		"pvpEnergy": 0,
-		"pveEnergy": 0,
-		"pvpCooldown": 0,
-		"pveCooldown": 2.5,
-		"moveName": {
-			"en": "Leech Life",
-			"pt_br": "Suga-vidas"
-		}
-	},
-	"HORN_DRILL": {
-		"moveId": "HORN_DRILL",
-		"isSuperMega": false,
-		"vId": "0328",
-		"type": "normal",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 9000,
-		"pvpEnergy": 0,
-		"pveEnergy": -25,
-		"pvpCooldown": 0,
-		"pveCooldown": 2,
-		"moveName": {
-			"en": "Horn Drill",
-			"pt_br": "Chifre Broca"
-		}
-	},
-	"FISSURE": {
-		"moveId": "FISSURE",
-		"isSuperMega": false,
-		"vId": "0329",
-		"type": "ground",
-		"isFast": false,
-		"pvpPower": 0,
-		"pvePower": 9001,
-		"pvpEnergy": 0,
-		"pveEnergy": -25,
-		"pvpCooldown": 0,
-		"pveCooldown": 3,
-		"moveName": {
-			"en": "Fissure",
-			"pt_br": "Fissura"
 		}
 	},
 	"AEGISLASH_CHARGE_PSYCHO_CUT": {

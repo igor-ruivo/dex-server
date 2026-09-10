@@ -2,6 +2,7 @@ import type HttpDataFetcher from '../../../services/data-fetcher';
 import type GameMasterTranslator from '../../../services/gamemaster-translator';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
 import type {
+	GameMasterData,
 	GameMasterMovesType,
 	IGameMasterMove,
 	PvEMove,
@@ -382,6 +383,51 @@ class MovesProvider {
 		}
 
 		return movesDictionary;
+	}
+
+	/**
+	 * The PokeMiners Game Master carries a fair amount of dead move data: renamed
+	 * duplicates, scrapped signature moves, mega "+"/"++" variants that never
+	 * shipped, etc. None of it is attached to a Pokémon, so it has no business in
+	 * moves.json. This drops every move that no known Pokémon can learn.
+	 *
+	 * Must run after the Pokémon Game Master has been parsed, since the parsed
+	 * dictionary is the source of truth for what's actually learnable.
+	 */
+	pruneUnlearnableMoves(
+		moves: Record<string, IGameMasterMove>,
+		pokemonDictionary: GameMasterData
+	): Record<string, IGameMasterMove> {
+		const learnable = new Set<string>();
+		for (const pokemon of Object.values(pokemonDictionary)) {
+			for (const move of [
+				...pokemon.fastMoves,
+				...pokemon.chargedMoves,
+				...(pokemon.eliteMoves ?? []),
+				...(pokemon.legacyMoves ?? []),
+				...(pokemon.extraChargedMoves ?? []),
+			]) {
+				learnable.add(move);
+			}
+		}
+
+		const learnableMoves: Record<string, IGameMasterMove> = {};
+		const skipped: Array<string> = [];
+		for (const [moveId, move] of Object.entries(moves)) {
+			if (learnable.has(moveId)) {
+				learnableMoves[moveId] = move;
+			} else {
+				skipped.push(moveId);
+			}
+		}
+
+		if (skipped.length > 0) {
+			console.log(
+				`Skipping ${skipped.length} move(s) not learnable by any known Pokémon: ${skipped.join(', ')}`
+			);
+		}
+
+		return learnableMoves;
 	}
 }
 

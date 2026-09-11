@@ -21696,14 +21696,17 @@
 			"FLAMETHROWER",
 			"FOUL_PLAY",
 			"TRAILBLAZE",
+			"DARK_PULSE_PLUS",
 			"RETURN"
 		],
-		"extraChargedMoves": [],
+		"extraChargedMoves": [
+			"DARK_PULSE_PLUS"
+		],
 		"eliteMoves": [],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": true,
-		"isSuperMega": false,
+		"isSuperMega": true,
 		"family": {
 			"id": "FAMILY_HOUNDOUR",
 			"parent": "houndour"

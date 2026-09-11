@@ -54,6 +54,17 @@
 		"chargedMoveDmg": 99,
 		"rank": 5
 	},
+	"houndoom_mega": {
+		"fastMove": "SNARL",
+		"chargedMove": "DARK_PULSE_PLUS",
+		"dps": 30.81619413844155,
+		"tdo": 986.1909252054869,
+		"edps": 28.859636953189785,
+		"speciesId": "houndoom_mega",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 217,
+		"rank": 6
+	},
 	"absol_shadow": {
 		"fastMove": "SNARL",
 		"chargedMove": "BRUTAL_SWING",
@@ -63,7 +74,7 @@
 		"speciesId": "absol_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 97,
-		"rank": 6
+		"rank": 7
 	},
 	"greninja_mega": {
 		"fastMove": "FEINT_ATTACK",
@@ -74,7 +85,7 @@
 		"speciesId": "greninja_mega",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 97,
-		"rank": 7
+		"rank": 8
 	},
 	"weavile_shadow": {
 		"fastMove": "SNARL",
@@ -85,17 +96,6 @@
 		"speciesId": "weavile_shadow",
 		"fastMoveDmg": 17,
 		"chargedMoveDmg": 103,
-		"rank": 8
-	},
-	"houndoom_mega": {
-		"fastMove": "SNARL",
-		"chargedMove": "FOUL_PLAY",
-		"dps": 28.468424428911206,
-		"tdo": 911.0567547881585,
-		"edps": 26.742756380427384,
-		"speciesId": "houndoom_mega",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 102,
 		"rank": 9
 	},
 	"salamence_shadow": {

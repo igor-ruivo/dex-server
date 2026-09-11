@@ -6527,7 +6527,7 @@
 		"pvePower": 0,
 		"pvpEnergy": 0,
 		"pveEnergy": 0,
-		"pvpCooldown": 0.5,
+		"pvpCooldown": 0,
 		"pveCooldown": 0,
 		"moveName": {
 			"en": "Gulp Missile Arrokuda",
@@ -6548,7 +6548,7 @@
 		"pvePower": 0,
 		"pvpEnergy": 0,
 		"pveEnergy": 0,
-		"pvpCooldown": 0.5,
+		"pvpCooldown": 0,
 		"pveCooldown": 0,
 		"moveName": {
 			"en": "Gulp Missile Pikachu",
@@ -6569,7 +6569,7 @@
 		"pvePower": 140,
 		"pvpEnergy": -35,
 		"pveEnergy": -100,
-		"pvpCooldown": 0.5,
+		"pvpCooldown": 0,
 		"pveCooldown": 2,
 		"moveName": {
 			"en": "Fell Stinger+",
@@ -6578,6 +6578,23 @@
 		"buffs": {
 			"buffActivationChance": 1,
 			"attackerAttackStatStageChange": 1
+		}
+	},
+	"DARK_PULSE_PLUS": {
+		"moveId": "DARK_PULSE_PLUS",
+		"vId": "0016",
+		"type": "dark",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 60,
+		"pvePower": 150,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 3,
+		"moveName": {
+			"en": "Dark Pulse+",
+			"pt_br": "Pulso Sombrio+"
 		}
 	}
 }

@@ -307,7 +307,7 @@ class MovesProvider {
 				pvePower: 0,
 				pvpEnergy: 0,
 				pveEnergy: 0,
-				pvpCooldown: 0.5,
+				pvpCooldown: 0,
 				pveCooldown: 0,
 				moveName: gulpMissileArrokudaMoveName,
 				buffs: {
@@ -337,7 +337,7 @@ class MovesProvider {
 				pvePower: 0,
 				pvpEnergy: 0,
 				pveEnergy: 0,
-				pvpCooldown: 0.5,
+				pvpCooldown: 0,
 				pveCooldown: 0,
 				moveName: gulpMissilePikachuMoveName,
 				buffs: {
@@ -363,7 +363,7 @@ class MovesProvider {
 				pvePower: 140,
 				pvpEnergy: -35,
 				pveEnergy: -100,
-				pvpCooldown: 0.5,
+				pvpCooldown: 0,
 				pveCooldown: 2,
 				moveName: fellStingerPlusMoveName,
 				buffs: {
@@ -373,7 +373,29 @@ class MovesProvider {
 			};
 		}
 
-		return movesDictionary;
+		const darkPulsePlusMoveName: Partial<Record<AvailableLocales, string>> = {
+			[AvailableLocales.en]: 'Dark Pulse+',
+			[AvailableLocales.ptbr]: 'Pulso Sombrio+',
+		};
+
+		if (!movesDictionary.DARK_PULSE_PLUS) {
+			movesDictionary.DARK_PULSE_PLUS = {
+				moveId: 'DARK_PULSE_PLUS',
+				vId: '0016',
+				type: 'dark',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 60,
+				pvePower: 150,
+				pvpEnergy: -45,
+				pveEnergy: -100,
+				pvpCooldown: 0,
+				pveCooldown: 3,
+				moveName: darkPulsePlusMoveName,
+			};
+		}
+
+		return movesDictionary; //DARK_PULSE_PLUS
 	}
 
 	/**

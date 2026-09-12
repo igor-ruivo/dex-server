@@ -4,7 +4,9 @@ import type { DPSEntry } from './utils';
 import { computeDPSEntry, getAllChargedMoves, MAX_LEVEL_INDEX } from './utils';
 
 type ComputedDpsRank = DPSEntry & {
-	rank: number;
+	dpsRank: number;
+	tdoRank: number;
+	edpsRank: number;
 };
 
 class RaidDpsCalculator {
@@ -32,17 +34,40 @@ class RaidDpsCalculator {
 					.map((p) => computeDPSEntry(p, this.moves, 15, MAX_LEVEL_INDEX, type))
 					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);
 
-				pokemonEntries.sort((a, b) => {
-					if (b.dps !== a.dps) {
-						return b.dps - a.dps;
-					}
+				// Consumers rank by whichever figure they care about (DPS, TDO or eDPS —
+				// see go-pokedex's `RaidMetric`) — a single `rank` baked in here could
+				// only ever reflect one of those, silently misleading anyone reading it
+				// under a different metric. Precomputing all three removes the need for
+				// every consumer to re-sort this list itself just to get a correct rank.
+				const rankBy = (
+					metric: 'dps' | 'tdo' | 'edps'
+				): Map<string, number> => {
+					const sorted = [...pokemonEntries].sort((a, b) =>
+						b[metric] !== a[metric]
+							? b[metric] - a[metric]
+							: a.speciesId.localeCompare(b.speciesId)
+					);
+					return new Map(sorted.map((e, i) => [e.speciesId, i + 1]));
+				};
+				const dpsRanks = rankBy('dps');
+				const tdoRanks = rankBy('tdo');
+				const edpsRanks = rankBy('edps');
 
-					return a.speciesId.localeCompare(b.speciesId);
-				});
+				// Iteration/serialization order still reads naturally best-DPS-first —
+				// merely cosmetic now that every consumer ranks off an explicit field.
+				pokemonEntries.sort(
+					(a, b) =>
+						(dpsRanks.get(a.speciesId) ?? 0) - (dpsRanks.get(b.speciesId) ?? 0)
+				);
 
 				const parsedEntries: Record<string, ComputedDpsRank> = {};
-				pokemonEntries.forEach((k, i) => {
-					parsedEntries[k.speciesId] = { ...k, rank: i + 1 };
+				pokemonEntries.forEach((k) => {
+					parsedEntries[k.speciesId] = {
+						...k,
+						dpsRank: dpsRanks.get(k.speciesId)!,
+						tdoRank: tdoRanks.get(k.speciesId)!,
+						edpsRank: edpsRanks.get(k.speciesId)!,
+					};
 				});
 
 				output[type] = parsedEntries;

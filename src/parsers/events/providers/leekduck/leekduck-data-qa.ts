@@ -1,6 +1,9 @@
 import type { IEntry, IRocketGrunt } from '../../../types/events';
 import { PokemonTypes } from '../../../types/pokemon';
-import type { ILeekduckSpecialRaidBoss, ILeekduckSpotlightHour } from './EventsParser';
+import type {
+	ILeekduckSpecialRaidBoss,
+	ILeekduckSpotlightHour,
+} from './EventsParser';
 
 export interface LeekduckQaInput {
 	eggs: Array<IEntry>;
@@ -33,26 +36,37 @@ function validateEggs(eggs: Array<IEntry>, errors: Array<string>) {
 
 	for (const kind of EXPECTED_EGG_KINDS) {
 		if (!countByKind.get(kind)) {
-			errors.push(`Eggs: expected "${kind}km" eggs to have at least one Pokemon, found none.`);
+			errors.push(
+				`Eggs: expected "${kind}km" eggs to have at least one Pokemon, found none.`
+			);
 		}
 	}
 }
 
-function validateRocketLineups(lineups: Array<IRocketGrunt>, errors: Array<string>) {
+function validateRocketLineups(
+	lineups: Array<IRocketGrunt>,
+	errors: Array<string>
+) {
 	if (lineups.length === 0) {
-		errors.push('Rocket lineups: rocket-lineups.json would be completely empty.');
+		errors.push(
+			'Rocket lineups: rocket-lineups.json would be completely empty.'
+		);
 		return;
 	}
 
 	for (const grunt of lineups) {
 		const total = grunt.tier1.length + grunt.tier2.length + grunt.tier3.length;
 		if (total === 0) {
-			errors.push(`Rocket lineups: "${grunt.trainerId}" has no Pokemon in any tier.`);
+			errors.push(
+				`Rocket lineups: "${grunt.trainerId}" has no Pokemon in any tier.`
+			);
 		}
 	}
 
 	for (const leader of ROCKET_LEADER_NAMES) {
-		const found = lineups.some((g) => g.trainerId.toLocaleLowerCase().includes(leader));
+		const found = lineups.some((g) =>
+			g.trainerId.toLocaleLowerCase().includes(leader)
+		);
 		if (!found) {
 			errors.push(`Rocket lineups: missing the "${leader}" leader lineup.`);
 		}
@@ -62,9 +76,15 @@ function validateRocketLineups(lineups: Array<IRocketGrunt>, errors: Array<strin
 		(g) =>
 			!g.type &&
 			g.trainerId.toLocaleLowerCase().includes('grunt') &&
-			!ROCKET_LEADER_NAMES.some((leader) => g.trainerId.toLocaleLowerCase().includes(leader))
+			!ROCKET_LEADER_NAMES.some((leader) =>
+				g.trainerId.toLocaleLowerCase().includes(leader)
+			)
 	);
-	if (!genericLower.some((g) => /male grunt/i.test(g.trainerId) && !/female/i.test(g.trainerId))) {
+	if (
+		!genericLower.some(
+			(g) => /male grunt/i.test(g.trainerId) && !/female/i.test(g.trainerId)
+		)
+	) {
 		errors.push('Rocket lineups: missing the generic (typeless) Male Grunt.');
 	}
 	if (!genericLower.some((g) => /female grunt/i.test(g.trainerId))) {
@@ -78,7 +98,9 @@ function validateRocketLineups(lineups: Array<IRocketGrunt>, errors: Array<strin
 		);
 	}
 
-	const typesCovered = new Set(lineups.map((g) => g.type).filter((t): t is string => !!t));
+	const typesCovered = new Set(
+		lineups.map((g) => g.type).filter((t): t is string => !!t)
+	);
 	for (const type of Object.values(PokemonTypes)) {
 		if (!typesCovered.has(type.toLocaleLowerCase())) {
 			errors.push(`Rocket lineups: no grunt found for type "${type}".`);
@@ -88,7 +110,9 @@ function validateRocketLineups(lineups: Array<IRocketGrunt>, errors: Array<strin
 
 function validateRaidBosses(raidBosses: Array<IEntry>, errors: Array<string>) {
 	if (raidBosses.length === 0) {
-		errors.push('Raid bosses: leekduck-raid-bosses.json would be completely empty.');
+		errors.push(
+			'Raid bosses: leekduck-raid-bosses.json would be completely empty.'
+		);
 		return;
 	}
 
@@ -111,7 +135,9 @@ function validateSpecialRaidBosses(
 	errors: Array<string>
 ) {
 	if (specialRaidBosses.length === 0) {
-		errors.push('Special raid bosses: leekduck-special-raid-bosses.json would be completely empty.');
+		errors.push(
+			'Special raid bosses: leekduck-special-raid-bosses.json would be completely empty.'
+		);
 		return;
 	}
 
@@ -130,9 +156,14 @@ function validateSpecialRaidBosses(
 	}
 }
 
-function validateSpotlightHours(spotlightHours: Array<ILeekduckSpotlightHour>, errors: Array<string>) {
+function validateSpotlightHours(
+	spotlightHours: Array<ILeekduckSpotlightHour>,
+	errors: Array<string>
+) {
 	if (spotlightHours.length === 0) {
-		errors.push('Spotlight hours: spotlight-hours.json would be completely empty.');
+		errors.push(
+			'Spotlight hours: spotlight-hours.json would be completely empty.'
+		);
 		return;
 	}
 

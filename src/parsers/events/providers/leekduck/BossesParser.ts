@@ -37,7 +37,8 @@ class BossesParser {
 			// broke: the old code assumed a specific word count/shape that
 			// LeekDuck's rewording no longer guarantees.
 			const tier = (
-				currentTier.getElementsByTagName('h2')[0]?.getAttribute('data-tier') ?? ''
+				currentTier.getElementsByTagName('h2')[0]?.getAttribute('data-tier') ??
+				''
 			).toLocaleLowerCase();
 
 			// This page only ever holds the standing tier-1/tier-3 bosses;

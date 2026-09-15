@@ -20,8 +20,12 @@ class RaidDpsCalculator {
 
 		// One ranking per attacking type. The old generic "" (type-agnostic) list
 		// was dropped — a raid ranking only makes sense once a type is chosen.
+		// Normal is excluded entirely: it's the only type with zero
+		// super-effective matchups against anything, so it was never a
+		// meaningful raid attacking type to rank or surface.
 		Object.values(PokemonTypes)
 			.map((type) => type.toLocaleLowerCase())
+			.filter((type) => type !== 'normal')
 			.forEach((type) => {
 				const pokemonEntries = Object.values(this.gameMasterPokemon)
 					.filter(

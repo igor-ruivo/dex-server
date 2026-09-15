@@ -320,8 +320,11 @@ export const computeDPSEntry = (
 		const stab = p.types
 			.map((t) => t.toString().toLocaleLowerCase())
 			.includes(mType);
+		// No Normal-type carve-out needed here any more: `forcedType` never
+		// arrives as 'normal' (RaidDpsCalculator no longer ranks that type at
+		// all), so this simplifies to a plain match check.
 		const eff =
-			forcedType && forcedType !== 'normal' && mType === forcedType
+			forcedType && mType === forcedType
 				? Effectiveness.Effective
 				: Effectiveness.Normal;
 		return calculateDamage(

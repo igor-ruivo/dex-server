@@ -39,6 +39,33 @@ type ParsedEventCommon = {
 	htmlDoc: Document;
 };
 
+// Reads the literal wall-clock date/time digits out of an ISO 8601 string
+// and re-stamps them as UTC, discarding whatever offset the string itself
+// carries (e.g. "2026-09-08T06:00:00-08:00" -> Date.UTC(2026, 8, 8, 6, 0)).
+// go-pokedex's own time handling expects LeekDuck's displayed local time
+// persisted this way, matching what the old #event-date-start/#event-time-
+// start text-scraping produced.
+const WALL_CLOCK_REGEX = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/;
+
+function wallClockAsUtcMillis(isoString: string | null | undefined): number {
+	if (!isoString) {
+		return NaN;
+	}
+	const match = WALL_CLOCK_REGEX.exec(isoString);
+	if (!match) {
+		return NaN;
+	}
+	const [, year, month, day, hour, minute, second] = match;
+	return Date.UTC(
+		Number(year),
+		Number(month) - 1,
+		Number(day),
+		Number(hour),
+		Number(minute),
+		Number(second)
+	);
+}
+
 class EventsParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
@@ -168,10 +195,14 @@ class EventsParser {
 				? endRow.getAttribute('data-end')
 				: endRow?.getAttribute('data-start');
 
-		const date = startAttr ? new Date(startAttr).getTime() : NaN;
-		const dateEnd = endAttr ? new Date(endAttr).getTime() : NaN;
+		// go-pokedex expects these as the displayed wall-clock time stamped
+		// as if it were UTC (matching the old #event-date-start/#event-time-
+		// start behavior), not the true UTC instant — so the attribute's own
+		// "-08:00"/etc offset is deliberately dropped rather than applied.
+		const date = wallClockAsUtcMillis(startAttr);
+		const dateEnd = wallClockAsUtcMillis(endAttr);
 
-		if (!title || !date || Number.isNaN(date) || !dateEnd || Number.isNaN(dateEnd)) {
+		if (!title || Number.isNaN(date) || Number.isNaN(dateEnd)) {
 			return undefined;
 		}
 

@@ -5,6 +5,7 @@ import RaidDpsCalculator from '../computations/raid-dps-calculator';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
 import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
 import EventsParser from '../parsers/events/providers/leekduck/EventsParser';
+import { validateLeekduckData } from '../parsers/events/providers/leekduck/leekduck-data-qa';
 import RocketLineupsParser from '../parsers/events/providers/leekduck/RocketLineupsParser';
 import MovesProvider from '../parsers/events/providers/pokeminers/MovesProvider';
 import PokemonGoSource from '../parsers/events/providers/pokemongo/PokemongoSource';
@@ -86,6 +87,19 @@ const generateData = async () => {
 			domains.nonMegaNonShadowDomain // The domain isn't as restrictive as it could, because the current PokemonMatcher requires all the entries.
 		);
 		const leekduckRocketLineups = await leekduckRocketLineupsParser.parse();
+
+		// Step 7b: QA the LeekDuck-derived data before it's written/committed.
+		// LeekDuck restructures its pages without notice, and a scraper that
+		// silently starts returning empty/partial results is worse than one
+		// that fails loudly, since a bad generate would otherwise overwrite
+		// good data. Throws (failing the job) if anything looks degraded.
+		validateLeekduckData({
+			eggs: leekduckEggEntries,
+			rocketLineups: leekduckRocketLineups,
+			raidBosses: leekduckBossEntries,
+			specialRaidBosses: leekduckEvents.specialRaidBosses,
+			spotlightHours: leekduckEvents.spotlightHours,
+		});
 
 		// Step 8: DPS calculations
 		const raidDpsCalculator = new RaidDpsCalculator(pokemonDictionary, moves);

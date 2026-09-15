@@ -31,24 +31,19 @@ class BossesParser {
 		);
 
 		for (const currentTier of entries) {
-			let tier = '';
-			const parsedTier =
-				currentTier
-					.getElementsByTagName('h2')[0]
-					.textContent?.trim()
-					.replaceAll('Shadow', '')
-					.replaceAll('shadow', '')
-					.trim() ?? '';
+			// LeekDuck tags each tier's own header with a `data-tier`
+			// attribute directly ("1", "3", "5", "Mega") now — reading it
+			// beats parsing the header's own display text, which is what
+			// broke: the old code assumed a specific word count/shape that
+			// LeekDuck's rewording no longer guarantees.
+			const tier = (
+				currentTier.getElementsByTagName('h2')[0]?.getAttribute('data-tier') ?? ''
+			).toLocaleLowerCase();
 
-			if (parsedTier.split(' ').length >= 2) {
-				tier = parsedTier.split(' ')[0].split('-')[0].toLocaleLowerCase();
-			}
-
-			if (parsedTier.split(' ').length === 1) {
-				tier = parsedTier.toLocaleLowerCase();
-			}
-
-			if (tier === 'mega' || tier === '5' || tier === 'super') {
+			// This page only ever holds the standing tier-1/tier-3 bosses;
+			// tier 5, Mega, and Elite raids are event-scoped and come from
+			// EventsParser instead.
+			if (!tier || tier === 'mega' || tier === '5' || tier === 'super') {
 				continue;
 			}
 

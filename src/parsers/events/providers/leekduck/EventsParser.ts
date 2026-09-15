@@ -9,7 +9,6 @@ import {
 } from '../../../services/gamemaster-translator';
 import type { IEntry } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
-import { parseDateFromString } from '../../utils/normalization';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
@@ -143,27 +142,36 @@ class EventsParser {
 				.getElementsByClassName('page-title')[0]
 				?.textContent?.replace(/\s/g, ' ')
 				.trim() ?? '';
-		const dateCont = (
-			htmlDoc.getElementById('event-date-start')?.textContent?.trim() +
-			' ' +
-			htmlDoc.getElementById('event-time-start')?.textContent?.trim()
-		)
-			.replaceAll('  ', ' ')
-			.replaceAll(/&nbsp;|\u00A0/g, ' ')
-			.trim();
-		const endCont = (
-			htmlDoc.getElementById('event-date-end')?.textContent?.trim() +
-			' ' +
-			htmlDoc.getElementById('event-time-end')?.textContent?.trim()
-		)
-			.replaceAll('  ', ' ')
-			.replaceAll(/&nbsp;|\u00A0/g, ' ')
-			.trim();
 
-		const date = parseDateFromString(dateCont);
-		const dateEnd = parseDateFromString(endCont);
+		// LeekDuck replaced the old #event-date-start/#event-time-start/
+		// #event-date-end/#event-time-end text nodes with `.schedule-row`
+		// elements carrying ready-to-parse ISO 8601 datetimes directly as
+		// attributes. Two variants exist:
+		//  - multi-day events: two rows, data-kind="start"/"end", each row's
+		//    own datetime under data-start (yes, even the "end" row uses the
+		//    attribute name data-start \u2014 it's disambiguated by data-kind);
+		//  - single-day/short events: one row, data-kind="single", with both
+		//    data-start and data-end on that same row.
+		const rows = Array.from(
+			htmlDoc.querySelectorAll('.times .schedule-row[data-segment]')
+		);
+		const startRow =
+			rows.find((r) => r.getAttribute('data-kind') === 'start') ??
+			rows.find((r) => r.getAttribute('data-kind') === 'single');
+		const endRow =
+			rows.find((r) => r.getAttribute('data-kind') === 'end') ??
+			rows.find((r) => r.getAttribute('data-kind') === 'single');
 
-		if (!title || !date || !dateEnd) {
+		const startAttr = startRow?.getAttribute('data-start');
+		const endAttr =
+			endRow?.getAttribute('data-kind') === 'single'
+				? endRow.getAttribute('data-end')
+				: endRow?.getAttribute('data-start');
+
+		const date = startAttr ? new Date(startAttr).getTime() : NaN;
+		const dateEnd = endAttr ? new Date(endAttr).getTime() : NaN;
+
+		if (!title || !date || Number.isNaN(date) || !dateEnd || Number.isNaN(dateEnd)) {
 			return undefined;
 		}
 

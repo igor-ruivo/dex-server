@@ -1,6 +1,8 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+import { augmentGameMasterWithBestIvSpreads } from '../computations/best-iv-spread-calculator';
+import { augmentGameMasterWithFormIdentifiers } from '../computations/form-identifier-calculator';
 import RaidDpsCalculator from '../computations/raid-dps-calculator';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
 import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
@@ -37,6 +39,19 @@ const generateData = async () => {
 		// Step 3: Parse Game Master data first
 		const gameMasterParser = new GameMasterParser(dataFetcher, moves);
 		const pokemonDictionary = await gameMasterParser.parse();
+
+		// Step 3b: Precompute every species' tied-for-rank-1 IV spread(s) per
+		// league/level — what go-pokedex's Mass Delete sweeps otherwise
+		// brute-force per species, on every visitor's machine. Written straight
+		// onto the same game-master.json entries (see that function's own doc
+		// comment for why a separate file isn't worth it here).
+		augmentGameMasterWithBestIvSpreads(pokemonDictionary);
+
+		// Step 3c: Precompute every species' in-game-search disambiguation
+		// identifier + Shadow-counterpart flag — what go-pokedex's Search
+		// Strings tab and Mass Delete's generators otherwise each rebuild by
+		// re-scanning the whole gamemaster on every page visit.
+		augmentGameMasterWithFormIdentifiers(pokemonDictionary);
 
 		// Initialize domains
 		const domains = getDomains(pokemonDictionary);

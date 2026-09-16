@@ -176,33 +176,6 @@ export interface BasePokemon {
 	tags?: Array<string>;
 }
 
-/** One raw (pre-purification) IV spread — see `best-iv-spread-calculator.ts`
- *  for how these get computed; kept here rather than in that computations
- *  module so `GameMasterPokemon` doesn't need to import back out of it. */
-export interface BadIvPattern {
-	A: number;
-	D: number;
-	S: number;
-}
-
-/** The only two level ceilings ("50" or "51"/Best Buddy) any consumer ever
- *  evaluates against. */
-export type BestIvLevel = 50 | 51;
-
-export type PerLevelPatterns = Record<
-	`level${BestIvLevel}`,
-	Array<BadIvPattern>
->;
-
-/** Tied-for-rank-1 (best stat product) raw IV patterns, per league (Great /
- *  Ultra / Master) and per level ceiling — everything Mass Delete's bulk
- *  sweeps (`findBadIvCarveOuts`, `findTradeableSpeciesData` in go-pokedex)
- *  need about one species, computed once here instead of by every client. */
-export type BestIvSpreads = Record<
-	'great' | 'ultra' | 'master',
-	PerLevelPatterns
->;
-
 export type GameMasterPokemon = Omit<
 	BasePokemon,
 	'types' | 'released' | 'tags'
@@ -218,21 +191,6 @@ export type GameMasterPokemon = Omit<
 	isLegendary: boolean;
 	isMythical: boolean;
 	isBeast: boolean;
-	bestIvSpreads?: BestIvSpreads;
-	/** Only ever populated for a Shadow species — see
-	 *  `augmentGameMasterWithBestIvSpreads`'s own doc comment. */
-	bestIvSpreadsPurified?: BestIvSpreads;
-	/** The shortest `dex[&type[&!type]]` in-game-search identifier that pins
-	 *  down this species' own form among every dex number shared by multiple
-	 *  species — see `form-identifier-calculator.ts`. A Shadow shares its
-	 *  non-Shadow counterpart's identical value (Shadow status never changes
-	 *  a species' dex or types). `String(dex)` (no disambiguation needed)
-	 *  when this dex has only one candidate form. */
-	searchFormId?: string;
-	/** Whether a Shadow counterpart of this (non-Shadow) species exists in
-	 *  the gamemaster — always `false` for a Shadow species itself (nothing
-	 *  to purify from). Feeds go-pokedex's `shadowSuffixFor`. */
-	hasShadowCounterpart?: boolean;
 };
 
 export type GameMasterData = Record<string, GameMasterPokemon>;

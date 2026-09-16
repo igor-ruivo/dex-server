@@ -164,26 +164,32 @@ export const isNormalPokemonAndHasShadowVersion = (
 
 /* ---- whole-dictionary orchestration ---------------------------------------- */
 
+/** One species' form-identity half of `SpeciesSearchMetadata` — the other
+ *  half (`bestIvSpreads`/`bestIvSpreadsPurified`) comes from
+ *  `best-iv-spread-calculator.ts`; `species-search-metadata.ts` combines
+ *  both into the single record actually written to disk. */
+export interface FormIdentifierFields {
+	searchFormId: string;
+	hasShadowCounterpart: boolean;
+}
+
 /**
- * Mutates every species in `gameMasterPokemon` in place, adding
- * `searchFormId` and `hasShadowCounterpart` (see their own doc comments on
- * `GameMasterPokemon`). Returns the same object for convenience.
- *
- * Reuses `game-master.json` itself for the same reason
- * `augmentGameMasterWithBestIvSpreads` does: a short string and a boolean per
- * species is a tiny payload, always looked up by the exact speciesId key the
- * gamemaster already uses.
+ * Every species' `searchFormId` and `hasShadowCounterpart`, keyed by
+ * speciesId. A pure function of `gameMasterPokemon` — never mutates it.
  */
-export const augmentGameMasterWithFormIdentifiers = (
+export const computeFormIdentifiersForAllSpecies = (
 	gameMasterPokemon: GameMasterData
-): GameMasterData => {
+): Record<string, FormIdentifierFields> => {
 	const formIds = buildFormIds(gameMasterPokemon);
+	const result: Record<string, FormIdentifierFields> = {};
 	for (const pokemon of Object.values(gameMasterPokemon)) {
-		pokemon.searchFormId = formIdentifierFor(pokemon, formIds);
-		pokemon.hasShadowCounterpart = isNormalPokemonAndHasShadowVersion(
-			pokemon,
-			gameMasterPokemon
-		);
+		result[pokemon.speciesId] = {
+			searchFormId: formIdentifierFor(pokemon, formIds),
+			hasShadowCounterpart: isNormalPokemonAndHasShadowVersion(
+				pokemon,
+				gameMasterPokemon
+			),
+		};
 	}
-	return gameMasterPokemon;
+	return result;
 };

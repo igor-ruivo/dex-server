@@ -1,9 +1,8 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-import { augmentGameMasterWithBestIvSpreads } from '../computations/best-iv-spread-calculator';
-import { augmentGameMasterWithFormIdentifiers } from '../computations/form-identifier-calculator';
 import RaidDpsCalculator from '../computations/raid-dps-calculator';
+import { computeSpeciesSearchMetadata } from '../computations/species-search-metadata-calculator';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
 import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
 import EventsParser from '../parsers/events/providers/leekduck/EventsParser';
@@ -41,17 +40,16 @@ const generateData = async () => {
 		const pokemonDictionary = await gameMasterParser.parse();
 
 		// Step 3b: Precompute every species' tied-for-rank-1 IV spread(s) per
-		// league/level — what go-pokedex's Mass Delete sweeps otherwise
-		// brute-force per species, on every visitor's machine. Written straight
-		// onto the same game-master.json entries (see that function's own doc
-		// comment for why a separate file isn't worth it here).
-		augmentGameMasterWithBestIvSpreads(pokemonDictionary);
-
-		// Step 3c: Precompute every species' in-game-search disambiguation
-		// identifier + Shadow-counterpart flag — what go-pokedex's Search
-		// Strings tab and Mass Delete's generators otherwise each rebuild by
-		// re-scanning the whole gamemaster on every page visit.
-		augmentGameMasterWithFormIdentifiers(pokemonDictionary);
+		// league/level, plus its in-game-search disambiguation identifier and
+		// Shadow-counterpart flag — what go-pokedex's Search Strings tab and
+		// Mass Delete's bulk sweeps otherwise each recompute by re-scanning the
+		// whole gamemaster (or brute-forcing 16x16x16 per species) on every
+		// visit. Kept in its own file (`species-search-metadata.json`), not
+		// written onto `game-master.json` itself — that file is the client's
+		// core species dataset and this is an optional, separately-fetchable
+		// add-on, keyed by the same speciesId either way.
+		const speciesSearchMetadata =
+			computeSpeciesSearchMetadata(pokemonDictionary);
 
 		// Initialize domains
 		const domains = getDomains(pokemonDictionary);
@@ -150,6 +148,10 @@ const generateData = async () => {
 		await fs.writeFile(
 			path.join(dataDir, 'game-master.json'),
 			JSON.stringify(pokemonDictionary, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'species-search-metadata.json'),
+			JSON.stringify(speciesSearchMetadata, null, '\t')
 		);
 		for (const key of Object.keys(Leagues)) {
 			const fileName = `${key.toLocaleLowerCase()}-league-pvp.json`;

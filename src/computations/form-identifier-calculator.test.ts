@@ -6,9 +6,9 @@ import type {
 } from '../parsers/types/pokemon';
 import { PokemonTypes } from '../parsers/types/pokemon';
 import {
-	augmentGameMasterWithFormIdentifiers,
 	buildFormIds,
 	buildUniqueTypes,
+	computeFormIdentifiersForAllSpecies,
 	formIdentifierFor,
 	generatePokemonId,
 	isNormalPokemonAndHasShadowVersion,
@@ -226,8 +226,8 @@ describe('isNormalPokemonAndHasShadowVersion', () => {
 	});
 });
 
-describe('augmentGameMasterWithFormIdentifiers', () => {
-	it('sets searchFormId and hasShadowCounterpart on every species', () => {
+describe('computeFormIdentifiersForAllSpecies', () => {
+	it('computes searchFormId and hasShadowCounterpart for every species', () => {
 		const dict: GameMasterData = {
 			mon: makePokemon({
 				speciesId: 'mon',
@@ -242,7 +242,7 @@ describe('augmentGameMasterWithFormIdentifiers', () => {
 			}),
 		};
 
-		const result = augmentGameMasterWithFormIdentifiers(dict);
+		const result = computeFormIdentifiersForAllSpecies(dict);
 
 		expect(result.mon.searchFormId).toBe('10');
 		expect(result.mon.hasShadowCounterpart).toBe(true);
@@ -250,8 +250,9 @@ describe('augmentGameMasterWithFormIdentifiers', () => {
 		expect(result.mon_shadow.hasShadowCounterpart).toBe(false);
 	});
 
-	it('mutates and returns the same object reference', () => {
+	it('never mutates the input gamemaster', () => {
 		const dict: GameMasterData = { mon: makePokemon({}) };
-		expect(augmentGameMasterWithFormIdentifiers(dict)).toBe(dict);
+		computeFormIdentifiersForAllSpecies(dict);
+		expect(dict.mon).not.toHaveProperty('searchFormId');
 	});
 });

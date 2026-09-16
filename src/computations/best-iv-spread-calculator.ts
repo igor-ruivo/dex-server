@@ -1,11 +1,10 @@
+import type { GameMasterData, PokemonStats } from '../parsers/types/pokemon';
 import type {
 	BadIvPattern,
 	BestIvLevel,
 	BestIvSpreads,
-	GameMasterData,
 	PerLevelPatterns,
-	PokemonStats,
-} from '../parsers/types/pokemon';
+} from '../parsers/types/species-search-metadata';
 import { cpm, MAX_LEVEL } from './utils';
 
 /**
@@ -406,28 +405,36 @@ export const computeBestIvSpreadsPurified = (
 		)
 	);
 
+/** One species' IV-spread half of `SpeciesSearchMetadata` — the other half
+ *  (`searchFormId`/`hasShadowCounterpart`) comes from
+ *  `form-identifier-calculator.ts`; `species-search-metadata.ts` combines
+ *  both into the single record actually written to disk. */
+export interface BestIvSpreadFields {
+	bestIvSpreads: BestIvSpreads;
+	bestIvSpreadsPurified?: BestIvSpreads;
+}
+
 /**
- * Mutates every species in `gameMasterPokemon` in place, adding
- * `bestIvSpreads` (always) and `bestIvSpreadsPurified` (Shadow forms only —
- * a non-Shadow catch can never purify, so the field would be pure dead
- * weight everywhere else). Returns the same object for convenience.
- *
- * Reuses `game-master.json` itself rather than a separate output file: the
- * payload is tiny (a handful of {A,D,S} triples per league/level) and it's
- * always looked up by the exact same speciesId key the gamemaster already
- * uses, so there's no join to maintain and nothing to keep in sync across
- * two files.
+ * Every species' `bestIvSpreads` (always) and `bestIvSpreadsPurified`
+ * (Shadow forms only — a non-Shadow catch can never purify, so the field
+ * would be pure dead weight everywhere else), keyed by speciesId. A pure
+ * function of `gameMasterPokemon` — never mutates it.
  */
-export const augmentGameMasterWithBestIvSpreads = (
+export const computeBestIvSpreadsForAllSpecies = (
 	gameMasterPokemon: GameMasterData
-): GameMasterData => {
+): Record<string, BestIvSpreadFields> => {
+	const result: Record<string, BestIvSpreadFields> = {};
 	for (const pokemon of Object.values(gameMasterPokemon)) {
-		pokemon.bestIvSpreads = computeBestIvSpreads(pokemon.baseStats);
-		if (pokemon.isShadow) {
-			pokemon.bestIvSpreadsPurified = computeBestIvSpreadsPurified(
-				pokemon.baseStats
-			);
-		}
+		result[pokemon.speciesId] = {
+			bestIvSpreads: computeBestIvSpreads(pokemon.baseStats),
+			...(pokemon.isShadow
+				? {
+						bestIvSpreadsPurified: computeBestIvSpreadsPurified(
+							pokemon.baseStats
+						),
+					}
+				: {}),
+		};
 	}
-	return gameMasterPokemon;
+	return result;
 };

@@ -6,12 +6,12 @@ import type {
 } from '../parsers/types/pokemon';
 import { PokemonTypes } from '../parsers/types/pokemon';
 import {
-	augmentGameMasterWithBestIvSpreads,
 	BEST_IV_LEVELS,
 	calculateCP,
 	calculateHP,
 	computeBestIVs,
 	computeBestIvSpreads,
+	computeBestIvSpreadsForAllSpecies,
 	computeBestIvSpreadsPurified,
 	LEAGUE_CAPS,
 	tiedTop1Patterns,
@@ -243,7 +243,7 @@ describe('computeBestIvSpreadsPurified', () => {
 	});
 });
 
-describe('augmentGameMasterWithBestIvSpreads', () => {
+describe('computeBestIvSpreadsForAllSpecies', () => {
 	const makePokemon = (
 		overrides: Partial<GameMasterPokemon>
 	): GameMasterPokemon => ({
@@ -267,7 +267,7 @@ describe('augmentGameMasterWithBestIvSpreads', () => {
 		...overrides,
 	});
 
-	it('adds bestIvSpreads to every species, and bestIvSpreadsPurified only to Shadow ones', () => {
+	it('adds bestIvSpreads for every species, and bestIvSpreadsPurified only for Shadow ones', () => {
 		const dict: GameMasterData = {
 			test_mon: makePokemon({ speciesId: 'test_mon', isShadow: false }),
 			test_mon_shadow: makePokemon({
@@ -276,7 +276,7 @@ describe('augmentGameMasterWithBestIvSpreads', () => {
 			}),
 		};
 
-		const result = augmentGameMasterWithBestIvSpreads(dict);
+		const result = computeBestIvSpreadsForAllSpecies(dict);
 
 		expect(result.test_mon.bestIvSpreads).toBeDefined();
 		expect(result.test_mon.bestIvSpreadsPurified).toBeUndefined();
@@ -285,8 +285,9 @@ describe('augmentGameMasterWithBestIvSpreads', () => {
 		expect(result.test_mon_shadow.bestIvSpreadsPurified).toBeDefined();
 	});
 
-	it('mutates and returns the same object reference', () => {
+	it('never mutates the input gamemaster', () => {
 		const dict: GameMasterData = { test_mon: makePokemon({}) };
-		expect(augmentGameMasterWithBestIvSpreads(dict)).toBe(dict);
+		computeBestIvSpreadsForAllSpecies(dict);
+		expect(dict.test_mon).not.toHaveProperty('bestIvSpreads');
 	});
 });

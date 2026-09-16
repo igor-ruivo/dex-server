@@ -395,7 +395,33 @@ class MovesProvider {
 			};
 		}
 
-		return movesDictionary; //DARK_PULSE_PLUS
+		const braveBirdPlusMoveName: Partial<Record<AvailableLocales, string>> = {
+			[AvailableLocales.en]: 'Brave Bird+',
+			[AvailableLocales.ptbr]: 'Pássaro Bravo+',
+		};
+
+		if (!movesDictionary.BRAVE_BIRD_PLUS) {
+			movesDictionary.BRAVE_BIRD_PLUS = {
+				moveId: 'BRAVE_BIRD_PLUS',
+				vId: '0256',
+				type: 'flying',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 130,
+				pvePower: 150,
+				pvpEnergy: -55,
+				pveEnergy: -100,
+				pvpCooldown: 0,
+				pveCooldown: 2,
+				moveName: braveBirdPlusMoveName,
+				buffs: {
+					buffActivationChance: 1,
+					attackerDefenseStatStageChange: -3,
+				},
+			};
+		}
+
+		return movesDictionary;
 	}
 
 	/**

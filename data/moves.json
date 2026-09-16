@@ -6596,5 +6596,26 @@
 			"en": "Dark Pulse+",
 			"pt_br": "Pulso Sombrio+"
 		}
+	},
+	"BRAVE_BIRD_PLUS": {
+		"moveId": "BRAVE_BIRD_PLUS",
+		"vId": "0256",
+		"type": "flying",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 130,
+		"pvePower": 150,
+		"pvpEnergy": -55,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Brave Bird+",
+			"pt_br": "Pássaro Bravo+"
+		},
+		"buffs": {
+			"buffActivationChance": 1,
+			"attackerDefenseStatStageChange": -3
+		}
 	}
 }

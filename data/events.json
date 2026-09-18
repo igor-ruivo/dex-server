@@ -479,7 +479,13 @@
 			}
 		],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "charmander",
+				"shiny": false,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

@@ -191,6 +191,19 @@ export type GameMasterPokemon = Omit<
 	isLegendary: boolean;
 	isMythical: boolean;
 	isBeast: boolean;
+	/** This species' own Shadow form's speciesId — present only on a
+	 *  non-Shadow species that actually has one (see
+	 *  `family-relations-calculator.ts`). */
+	shadowSpecies?: string;
+	/** The non-Shadow species this Shadow form purifies into — always present
+	 *  on a Shadow species (every Shadow has exactly one). */
+	nonShadowSpecies?: string;
+	/** Every Mega/Primal form of this species — present only on a base
+	 *  (non-Mega) species that actually has one or more. */
+	megaFormsIds?: Array<string>;
+	/** The non-Mega species this Mega/Primal form evolves from — always
+	 *  present on a Mega/Primal species. */
+	baseSpecies?: string;
 };
 
 export type GameMasterData = Record<string, GameMasterPokemon>;

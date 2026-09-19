@@ -140,42 +140,23 @@ export const formIdentifierFor = (
 	return formIds[key] ?? String(species.dex);
 };
 
-/* ---- Shadow-counterpart flag — mirrors go-pokedex's own ------------------- */
-/*      `isNormalPokemonAndHasShadowVersion` (utils/pokemon-helper.ts)        */
-
-export const isNormalPokemonAndHasShadowVersion = (
-	pokemon: GameMasterPokemon,
-	gameMasterPokemon: GameMasterData
-): boolean => {
-	if (pokemon.isShadow) {
-		return false;
-	}
-
-	return Object.values(gameMasterPokemon).some(
-		(p) =>
-			p.speciesId !== pokemon.speciesId &&
-			!p.aliasId &&
-			p.dex === pokemon.dex &&
-			p.isShadow &&
-			p.types.length === pokemon.types.length &&
-			p.types.every((t) => pokemon.types.includes(t))
-	);
-};
-
 /* ---- whole-dictionary orchestration ---------------------------------------- */
 
 /** One species' form-identity half of `SpeciesSearchMetadata` — the other
  *  half (`bestIvSpreads`/`bestIvSpreadsPurified`) comes from
  *  `best-iv-spread-calculator.ts`; `species-search-metadata.ts` combines
- *  both into the single record actually written to disk. */
+ *  both into the single record actually written to disk.
+ *
+ *  The Shadow-counterpart flag that used to live here (`hasShadowCounterpart`)
+ *  moved to `game-master.json` itself — see `shadowSpecies`/`nonShadowSpecies`
+ *  on `GameMasterPokemon`, computed by `family-relations-calculator.ts`. */
 export interface FormIdentifierFields {
 	searchFormId: string;
-	hasShadowCounterpart: boolean;
 }
 
 /**
- * Every species' `searchFormId` and `hasShadowCounterpart`, keyed by
- * speciesId. A pure function of `gameMasterPokemon` — never mutates it.
+ * Every species' `searchFormId`, keyed by speciesId. A pure function of
+ * `gameMasterPokemon` — never mutates it.
  */
 export const computeFormIdentifiersForAllSpecies = (
 	gameMasterPokemon: GameMasterData
@@ -185,10 +166,6 @@ export const computeFormIdentifiersForAllSpecies = (
 	for (const pokemon of Object.values(gameMasterPokemon)) {
 		result[pokemon.speciesId] = {
 			searchFormId: formIdentifierFor(pokemon, formIds),
-			hasShadowCounterpart: isNormalPokemonAndHasShadowVersion(
-				pokemon,
-				gameMasterPokemon
-			),
 		};
 	}
 	return result;

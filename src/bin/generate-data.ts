@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+import { augmentGameMasterWithFamilyRelations } from '../computations/family-relations-calculator';
 import RaidDpsCalculator from '../computations/raid-dps-calculator';
 import { computeSpeciesSearchMetadata } from '../computations/species-search-metadata-calculator';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
@@ -39,15 +40,23 @@ const generateData = async () => {
 		const gameMasterParser = new GameMasterParser(dataFetcher, moves);
 		const pokemonDictionary = await gameMasterParser.parse();
 
+		// Step 3a: Precompute the Mega<->base and Shadow<->non-Shadow
+		// relationships directly onto `pokemonDictionary` itself — go-pokedex
+		// used to re-derive these client-side by scanning the whole gamemaster
+		// (dex-number matching for Megas, needing an exceptions list for
+		// look-alike dexes) or via speciesId string surgery (`_shadow`
+		// append/strip) — both gone now that it's just data on each species.
+		augmentGameMasterWithFamilyRelations(pokemonDictionary);
+
 		// Step 3b: Precompute every species' tied-for-rank-1 IV spread(s) per
-		// league/level, plus its in-game-search disambiguation identifier and
-		// Shadow-counterpart flag — what go-pokedex's Search Strings tab and
-		// Mass Delete's bulk sweeps otherwise each recompute by re-scanning the
-		// whole gamemaster (or brute-forcing 16x16x16 per species) on every
-		// visit. Kept in its own file (`species-search-metadata.json`), not
-		// written onto `game-master.json` itself — that file is the client's
-		// core species dataset and this is an optional, separately-fetchable
-		// add-on, keyed by the same speciesId either way.
+		// league/level, plus its in-game-search disambiguation identifier —
+		// what go-pokedex's Search Strings tab and Mass Delete's bulk sweeps
+		// otherwise each recompute by re-scanning the whole gamemaster (or
+		// brute-forcing 16x16x16 per species) on every visit. Kept in its own
+		// file (`species-search-metadata.json`), not written onto
+		// `game-master.json` itself — that file is the client's core species
+		// dataset and this is an optional, separately-fetchable add-on, keyed
+		// by the same speciesId either way.
 		const speciesSearchMetadata =
 			computeSpeciesSearchMetadata(pokemonDictionary);
 

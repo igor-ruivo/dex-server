@@ -41,10 +41,6 @@ export interface SpeciesSearchMetadata {
 	 *  a species' dex or types). `String(dex)` (no disambiguation needed)
 	 *  when this dex has only one candidate form. */
 	searchFormId: string;
-	/** Whether a Shadow counterpart of this (non-Shadow) species exists in
-	 *  the gamemaster — always `false` for a Shadow species itself (nothing
-	 *  to purify from). Feeds go-pokedex's `shadowSuffixFor`. */
-	hasShadowCounterpart: boolean;
 	bestIvSpreads: BestIvSpreads;
 	/** Only ever populated for a Shadow species — a non-Shadow catch can
 	 *  never purify, so it'd be pure dead weight everywhere else. */

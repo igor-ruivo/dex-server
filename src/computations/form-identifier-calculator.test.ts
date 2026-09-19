@@ -11,7 +11,6 @@ import {
 	computeFormIdentifiersForAllSpecies,
 	formIdentifierFor,
 	generatePokemonId,
-	isNormalPokemonAndHasShadowVersion,
 	type PokemonForm,
 } from './form-identifier-calculator';
 
@@ -170,64 +169,8 @@ describe('buildFormIds / formIdentifierFor', () => {
 	});
 });
 
-describe('isNormalPokemonAndHasShadowVersion', () => {
-	it('is false for a Shadow species itself', () => {
-		const dict: GameMasterData = {
-			mon_shadow: makePokemon({
-				speciesId: 'mon_shadow',
-				dex: 7,
-				isShadow: true,
-			}),
-		};
-		expect(isNormalPokemonAndHasShadowVersion(dict.mon_shadow, dict)).toBe(
-			false
-		);
-	});
-
-	it('is true when a matching-type Shadow counterpart exists', () => {
-		const dict: GameMasterData = {
-			mon: makePokemon({
-				speciesId: 'mon',
-				dex: 7,
-				types: [PokemonTypes.Electric],
-			}),
-			mon_shadow: makePokemon({
-				speciesId: 'mon_shadow',
-				dex: 7,
-				types: [PokemonTypes.Electric],
-				isShadow: true,
-			}),
-		};
-		expect(isNormalPokemonAndHasShadowVersion(dict.mon, dict)).toBe(true);
-	});
-
-	it('is false when no Shadow counterpart exists', () => {
-		const dict: GameMasterData = {
-			mon: makePokemon({ speciesId: 'mon', dex: 8, types: [PokemonTypes.Ice] }),
-		};
-		expect(isNormalPokemonAndHasShadowVersion(dict.mon, dict)).toBe(false);
-	});
-
-	it('is false when the dex-matching Shadow has different types (e.g. a Mega/regional confusion guard)', () => {
-		const dict: GameMasterData = {
-			mon: makePokemon({
-				speciesId: 'mon',
-				dex: 9,
-				types: [PokemonTypes.Grass],
-			}),
-			other_shadow: makePokemon({
-				speciesId: 'other_shadow',
-				dex: 9,
-				types: [PokemonTypes.Fire],
-				isShadow: true,
-			}),
-		};
-		expect(isNormalPokemonAndHasShadowVersion(dict.mon, dict)).toBe(false);
-	});
-});
-
 describe('computeFormIdentifiersForAllSpecies', () => {
-	it('computes searchFormId and hasShadowCounterpart for every species', () => {
+	it('computes searchFormId for every species', () => {
 		const dict: GameMasterData = {
 			mon: makePokemon({
 				speciesId: 'mon',
@@ -245,9 +188,7 @@ describe('computeFormIdentifiersForAllSpecies', () => {
 		const result = computeFormIdentifiersForAllSpecies(dict);
 
 		expect(result.mon.searchFormId).toBe('10');
-		expect(result.mon.hasShadowCounterpart).toBe(true);
 		expect(result.mon_shadow.searchFormId).toBe('10');
-		expect(result.mon_shadow.hasShadowCounterpart).toBe(false);
 	});
 
 	it('never mutates the input gamemaster', () => {

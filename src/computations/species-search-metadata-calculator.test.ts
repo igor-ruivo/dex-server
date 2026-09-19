@@ -51,12 +51,10 @@ describe('computeSpeciesSearchMetadata', () => {
 		expect(Object.keys(metadata).sort()).toEqual(['mon', 'mon_shadow']);
 
 		expect(metadata.mon.searchFormId).toBe('20');
-		expect(metadata.mon.hasShadowCounterpart).toBe(true);
 		expect(metadata.mon.bestIvSpreads).toBeDefined();
 		expect(metadata.mon.bestIvSpreadsPurified).toBeUndefined();
 
 		expect(metadata.mon_shadow.searchFormId).toBe('20');
-		expect(metadata.mon_shadow.hasShadowCounterpart).toBe(false);
 		expect(metadata.mon_shadow.bestIvSpreads).toBeDefined();
 		expect(metadata.mon_shadow.bestIvSpreadsPurified).toBeDefined();
 	});

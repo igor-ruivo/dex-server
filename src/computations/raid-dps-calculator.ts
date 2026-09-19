@@ -35,7 +35,14 @@ class RaidDpsCalculator {
 								(m) => this.moves[m].type === type
 							)
 					)
-					.map((p) => computeDPSEntry(p, this.moves, 15, MAX_LEVEL_INDEX, type))
+					// Max Level (3): the fixed Mega Level dex-server always ranks at —
+					// see `MEGA_LEVEL_PLUS_MULTIPLIER`'s own doc comment. go-pokedex's
+					// live Counters recompute is the only place this is parameterized.
+					.map((p) =>
+						computeDPSEntry(p, this.moves, 15, MAX_LEVEL_INDEX, type, {
+							megaLevel: 3,
+						})
+					)
 					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);
 
 				// Consumers rank by whichever figure they care about (DPS, TDO or eDPS —

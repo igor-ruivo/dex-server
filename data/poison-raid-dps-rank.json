@@ -1,4 +1,17 @@
 {
+	"victreebel_mega": {
+		"fastMove": "ACID",
+		"chargedMove": "ACID_SPRAY_PLUS",
+		"dps": 30.40521482903461,
+		"tdo": 957.0275958573527,
+		"edps": 28.4988826035483,
+		"speciesId": "victreebel_mega",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 256,
+		"dpsRank": 1,
+		"tdoRank": 3,
+		"edpsRank": 1
+	},
 	"gengar_mega": {
 		"fastMove": "LICK",
 		"chargedMove": "SLUDGE_BOMB",
@@ -8,9 +21,9 @@
 		"speciesId": "gengar_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 147,
-		"dpsRank": 1,
+		"dpsRank": 2,
 		"tdoRank": 5,
-		"edpsRank": 1
+		"edpsRank": 2
 	},
 	"beedrill_mega": {
 		"fastMove": "POISON_JAB",
@@ -21,9 +34,9 @@
 		"speciesId": "beedrill_mega",
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 129,
-		"dpsRank": 2,
+		"dpsRank": 3,
 		"tdoRank": 16,
-		"edpsRank": 3
+		"edpsRank": 4
 	},
 	"eternatus": {
 		"fastMove": "POISON_JAB",
@@ -34,22 +47,9 @@
 		"speciesId": "eternatus",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 119,
-		"dpsRank": 3,
-		"tdoRank": 1,
-		"edpsRank": 2
-	},
-	"victreebel_mega": {
-		"fastMove": "ACID",
-		"chargedMove": "ACID_SPRAY_PLUS",
-		"dps": 27.26576346577163,
-		"tdo": 858.2109419580501,
-		"edps": 25.634870089018076,
-		"speciesId": "victreebel_mega",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 213,
 		"dpsRank": 4,
-		"tdoRank": 4,
-		"edpsRank": 4
+		"tdoRank": 1,
+		"edpsRank": 3
 	},
 	"naganadel": {
 		"fastMove": "POISON_JAB",
@@ -295,7 +295,7 @@
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 104,
 		"dpsRank": 23,
-		"tdoRank": 3,
+		"tdoRank": 4,
 		"edpsRank": 21
 	},
 	"venusaur_shadow": {

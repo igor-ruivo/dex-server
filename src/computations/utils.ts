@@ -43,50 +43,85 @@ export const RAID_RELOBBY_SECONDS = 10;
 /** Trainers assumed in the lobby, for the death → relobby accounting in eDPS. */
 export const RAID_PARTY_SIZE = 6;
 
-export type RaidTier = 'T1' | 'T3' | 'T5' | 'MEGA' | 'T6' | 'PRIMAL' | 'ELITE';
+export type RaidTier = 'T1' | 'T3' | 'MEGA' | 'T5' | 'ELITE' | 'LEGENDARY_MEGA' | 'PRIMAL' | 'SUPER_MEGA';
 
 /**
- * Boss HP + the CPM applied to the boss's base defense, per tier. HP and CPM are
- * datamined game constants (not estimates). T6 = Mega-Legendary raids.
+ * Boss HP + the CPM applied to the boss's base defense, per tier. HP and CPM
+ * are datamined game constants (not estimates).
  */
 export const RAID_BOSS_STATS: Record<RaidTier, { hp: number; cpm: number }> = {
 	T1: { hp: 600, cpm: 0.5974 },
 	T3: { hp: 3600, cpm: 0.73 },
-	T5: { hp: 15000, cpm: 0.79 },
 	MEGA: { hp: 9000, cpm: 0.79 },
-	T6: { hp: 22500, cpm: 0.79 },
-	PRIMAL: { hp: 22500, cpm: 0.79 },
+	T5: { hp: 15000, cpm: 0.79 },
 	ELITE: { hp: 20000, cpm: 0.79 },
+	LEGENDARY_MEGA: { hp: 22500, cpm: 0.79 },
+	PRIMAL: { hp: 22500, cpm: 0.79 },
+	SUPER_MEGA: { hp: 25000, cpm: 0.79 },
 };
 
 /**
- * Best-effort raid tier from Game Master flags:
+ * Best-effort raid tier from Game Master flags, checked in this exact order:
  *  - Primal (`*_primal`) → Primal
- *  - a Mega/Primal of a Legendary or Mythical (Mega Rayquaza, Mega Mewtwo…) → T6
+ *  - the move-level `isSuperMega` flag's Pokémon-level counterpart (a Mega
+ *    with its own "Plus" move, e.g. Mega Mewtwo X/Y) → Super Mega
+ *  - a Mega/Primal of a Legendary or Mythical WITHOUT its own Plus move
+ *    (Mega Rayquaza) → Legendary Mega
  *  - any other Mega → Mega
- *  - Legendary / Mythical / Ultra Beast → T5
- *  - an evolved form, or a standalone with no evo line → T3
- *  - the base of an evo line → T1
+ *  - Legendary / Mythical / Ultra Beast → Tier 5
+ *  - an evolved form, or a standalone with no evo line → Tier 3
+ *  - the base of an evo line → Tier 1
  *
- * The speculative `isSuperMega` flag is NOT a raid tier and is ignored. Elite
- * Raids are event-scheduled — pass `tier: 'ELITE'` explicitly when you know it.
+ * Elite Raids are event-scheduled, not intrinsic — this never infers `ELITE`;
+ * pass `tier: 'ELITE'` explicitly when you know it's one.
  */
 export const guessRaidTier = (p: {
 	speciesId: string;
 	isMega: boolean;
+	isSuperMega: boolean;
 	isLegendary: boolean;
 	isMythical: boolean;
 	isBeast: boolean;
 	family?: { parent?: string; evolutions?: Array<string> } | undefined;
 }): RaidTier => {
 	if (p.isMega && p.speciesId.includes('_primal')) return 'PRIMAL';
-	if (p.isMega && (p.isLegendary || p.isMythical)) return 'T6';
+	if (p.isSuperMega) return 'SUPER_MEGA';
+	if (p.isMega && (p.isLegendary || p.isMythical)) return 'LEGENDARY_MEGA';
 	if (p.isMega) return 'MEGA';
 	if (p.isLegendary || p.isMythical || p.isBeast) return 'T5';
 	if (p.family?.parent) return 'T3';
 	if (p.family?.evolutions && p.family.evolutions.length > 0) return 'T1';
 	return 'T3';
 };
+
+/** Base (1) / High (2) / Max (3) / Super Max (4) — a Mega or Primal form's own
+ *  Mega Level, raised by feeding it Mega Energy after evolving. Unrelated to
+ *  the speculative `isSuperMega` flag on a Pokémon itself (a separate, older
+ *  flag `guessRaidTier` already ignores) — this is the move-level
+ *  `isSuperMega` flag instead (see {@link MEGA_LEVEL_PLUS_MULTIPLIER}). */
+export type MegaLevel = 1 | 2 | 3 | 4;
+
+/**
+ * The bonus "Plus" charged attack's own damage scalar, per Mega Level —
+ * community-verified (Niantic hasn't published exact figures): ×1.0 Base,
+ * ×1.1 High, ×1.2 Max, ×1.3 Super Max. Applies ONLY to a move whose
+ * `IGameMasterMove.isSuperMega` is `true` (16 moves total, e.g.
+ * `VOLT_TACKLE_PLUS`) — every other move on a Mega/Primal's kit is
+ * unaffected by Mega Level entirely. dex-server's own precomputed raid
+ * rankings always use Max Level (3) — see `computeDPSEntry`'s default.
+ */
+export const MEGA_LEVEL_PLUS_MULTIPLIER: Record<MegaLevel, number> = {
+	1: 1,
+	2: 1.1,
+	3: 1.2,
+	4: 1.3,
+};
+
+/** At Mega Level 4 (Super Max), every Mega/Primal form gains +2 effective
+ *  Pokémon levels — unconditional, independent of whether its kit even has a
+ *  Plus move. Expressed as a half-level {@link cpm} index delta (2 whole
+ *  levels = 4 index steps). */
+export const SUPER_MAX_LEVEL_INDEX_BONUS = 4;
 
 /** PvE battles resolve on a 500 ms server tick, so every duration snaps to it. */
 const roundToPveTurn = (seconds: number) => Math.round(seconds * 2) / 2;
@@ -286,6 +321,9 @@ export interface RaidOpts {
 	partySize?: number;
 	/** A Mega of this type on your team: ×1.3 same type, ×1.1 others. */
 	megaBoostType?: string;
+	/** Base/High/Max/Super Max — defaults to Max (3), dex-server's own fixed
+	 *  choice for every precomputed ranking. See {@link MegaLevel}. */
+	megaLevel?: MegaLevel;
 }
 
 export const computeDPSEntry = (
@@ -301,9 +339,16 @@ export const computeDPSEntry = (
 	const boss = RAID_BOSS_STATS[tier];
 	const dummyBossDef = 200;
 
+	const megaLevel = opts.megaLevel ?? 3;
+	const plusMultiplier = MEGA_LEVEL_PLUS_MULTIPLIER[megaLevel];
+	// Unconditional for any Mega/Primal at Super Max — independent of whether
+	// this exact attacker even has a Plus move (see the constant's own doc).
+	const effectiveLevel =
+		megaLevel === 4 && p.isMega ? level + SUPER_MAX_LEVEL_INDEX_BONUS : level;
+
 	const attackerDefEff =
-		(p.baseStats.def + 15) * cpm[level] * (p.isShadow ? 0.8333333 : 1);
-	const attackerHpEff = Math.floor((p.baseStats.hp + 15) * cpm[level]);
+		(p.baseStats.def + 15) * cpm[effectiveLevel] * (p.isShadow ? 0.8333333 : 1);
+	const attackerHpEff = Math.floor((p.baseStats.hp + 15) * cpm[effectiveLevel]);
 	const incomingDps = RAID_INCOMING_DPS_NUMERATOR / attackerDefEff;
 	const incomingChargedHit = RAID_INCOMING_CM_POWER / attackerDefEff;
 
@@ -317,6 +362,7 @@ export const computeDPSEntry = (
 	const dmg = (moveId: string) => {
 		const mv = moves[moveId];
 		const mType = mv.type.toLocaleLowerCase();
+		const power = mv.isSuperMega ? mv.pvePower * plusMultiplier : mv.pvePower;
 		const stab = p.types
 			.map((t) => t.toString().toLocaleLowerCase())
 			.includes(mType);
@@ -329,13 +375,13 @@ export const computeDPSEntry = (
 				: Effectiveness.Normal;
 		return calculateDamage(
 			p.baseStats.atk,
-			mv.pvePower,
+			power,
 			stab,
 			p.isShadow,
 			false,
 			eff,
 			attackIV,
-			level,
+			effectiveLevel,
 			dummyBossDef,
 			moveBonus(mType),
 			boss.cpm

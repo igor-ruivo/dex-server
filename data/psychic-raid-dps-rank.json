@@ -1,13 +1,13 @@
 {
 	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYSTRIKE",
-		"dps": 44.25225243211816,
-		"tdo": 2006.0159040990295,
-		"edps": 42.25759253654404,
+		"chargedMove": "FUTURE_SIGHT_PLUS",
+		"dps": 48.93222377655426,
+		"tdo": 2218.1654881697527,
+		"edps": 46.649557204353655,
 		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 9,
-		"chargedMoveDmg": 194,
+		"chargedMoveDmg": 342,
 		"dpsRank": 1,
 		"tdoRank": 1,
 		"edpsRank": 1
@@ -48,7 +48,7 @@
 		"fastMoveDmg": 35,
 		"chargedMoveDmg": 173,
 		"dpsRank": 4,
-		"tdoRank": 17,
+		"tdoRank": 18,
 		"edpsRank": 4
 	},
 	"mewtwo": {
@@ -192,7 +192,7 @@
 		"chargedMoveDmg": 137,
 		"dpsRank": 15,
 		"tdoRank": 46,
-		"edpsRank": 16
+		"edpsRank": 17
 	},
 	"gardevoir_shadow": {
 		"fastMove": "CONFUSION",
@@ -205,7 +205,7 @@
 		"chargedMoveDmg": 137,
 		"dpsRank": 16,
 		"tdoRank": 47,
-		"edpsRank": 17
+		"edpsRank": 18
 	},
 	"exeggutor_shadow": {
 		"fastMove": "CONFUSION",
@@ -218,7 +218,20 @@
 		"chargedMoveDmg": 135,
 		"dpsRank": 17,
 		"tdoRank": 49,
-		"edpsRank": 18
+		"edpsRank": 19
+	},
+	"malamar_mega": {
+		"fastMove": "PSYCHO_CUT",
+		"chargedMove": "PSYBEAM_PLUS",
+		"dps": 28.223043716080472,
+		"tdo": 1124.1300717933386,
+		"edps": 26.667586751583055,
+		"speciesId": "malamar_mega",
+		"fastMoveDmg": 5,
+		"chargedMoveDmg": 217,
+		"dpsRank": 18,
+		"tdoRank": 15,
+		"edpsRank": 15
 	},
 	"latias_mega": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -229,9 +242,9 @@
 		"speciesId": "latias_mega",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 138,
-		"dpsRank": 18,
+		"dpsRank": 19,
 		"tdoRank": 4,
-		"edpsRank": 15
+		"edpsRank": 16
 	},
 	"starmie_mega": {
 		"fastMove": "PSYWAVE",
@@ -242,9 +255,9 @@
 		"speciesId": "starmie_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 132,
-		"dpsRank": 19,
+		"dpsRank": 20,
 		"tdoRank": 34,
-		"edpsRank": 19
+		"edpsRank": 20
 	},
 	"latias_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -255,9 +268,9 @@
 		"speciesId": "latias_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 132,
-		"dpsRank": 20,
+		"dpsRank": 21,
 		"tdoRank": 24,
-		"edpsRank": 20
+		"edpsRank": 21
 	},
 	"alakazam": {
 		"fastMove": "CONFUSION",
@@ -268,9 +281,9 @@
 		"speciesId": "alakazam",
 		"fastMoveDmg": 26,
 		"chargedMoveDmg": 130,
-		"dpsRank": 21,
+		"dpsRank": 22,
 		"tdoRank": 70,
-		"edpsRank": 26
+		"edpsRank": 27
 	},
 	"gengar_mega": {
 		"fastMove": "LICK",
@@ -281,9 +294,9 @@
 		"speciesId": "gengar_mega",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 137,
-		"dpsRank": 22,
+		"dpsRank": 23,
 		"tdoRank": 42,
-		"edpsRank": 22
+		"edpsRank": 23
 	},
 	"delphox_shadow": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -294,9 +307,9 @@
 		"speciesId": "delphox_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 133,
-		"dpsRank": 23,
+		"dpsRank": 24,
 		"tdoRank": 51,
-		"edpsRank": 23
+		"edpsRank": 24
 	},
 	"lunala": {
 		"fastMove": "CONFUSION",
@@ -307,9 +320,9 @@
 		"speciesId": "lunala",
 		"fastMoveDmg": 25,
 		"chargedMoveDmg": 122,
-		"dpsRank": 24,
+		"dpsRank": 25,
 		"tdoRank": 8,
-		"edpsRank": 21
+		"edpsRank": 22
 	},
 	"hoopa": {
 		"fastMove": "CONFUSION",
@@ -320,9 +333,9 @@
 		"speciesId": "hoopa",
 		"fastMoveDmg": 25,
 		"chargedMoveDmg": 125,
-		"dpsRank": 25,
+		"dpsRank": 26,
 		"tdoRank": 41,
-		"edpsRank": 24
+		"edpsRank": 25
 	},
 	"espeon": {
 		"fastMove": "CONFUSION",
@@ -333,9 +346,9 @@
 		"speciesId": "espeon",
 		"fastMoveDmg": 25,
 		"chargedMoveDmg": 125,
-		"dpsRank": 26,
+		"dpsRank": 27,
 		"tdoRank": 53,
-		"edpsRank": 29
+		"edpsRank": 30
 	},
 	"latios": {
 		"fastMove": "ZEN_HEADBUTT",
@@ -346,9 +359,9 @@
 		"speciesId": "latios",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 128,
-		"dpsRank": 27,
+		"dpsRank": 28,
 		"tdoRank": 25,
-		"edpsRank": 25
+		"edpsRank": 26
 	},
 	"necrozma_dawn_wings": {
 		"fastMove": "PSYCHO_CUT",
@@ -359,9 +372,9 @@
 		"speciesId": "necrozma_dawn_wings",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 160,
-		"dpsRank": 28,
-		"tdoRank": 18,
-		"edpsRank": 27
+		"dpsRank": 29,
+		"tdoRank": 19,
+		"edpsRank": 28
 	},
 	"necrozma_dusk_mane": {
 		"fastMove": "PSYCHO_CUT",
@@ -372,9 +385,9 @@
 		"speciesId": "necrozma_dusk_mane",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 160,
-		"dpsRank": 29,
-		"tdoRank": 19,
-		"edpsRank": 28
+		"dpsRank": 30,
+		"tdoRank": 20,
+		"edpsRank": 29
 	},
 	"starmie_shadow": {
 		"fastMove": "PSYWAVE",
@@ -385,7 +398,7 @@
 		"speciesId": "starmie_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 122,
-		"dpsRank": 30,
+		"dpsRank": 31,
 		"tdoRank": 86,
 		"edpsRank": 34
 	},
@@ -398,9 +411,9 @@
 		"speciesId": "metagross",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 123,
-		"dpsRank": 31,
+		"dpsRank": 32,
 		"tdoRank": 22,
-		"edpsRank": 30
+		"edpsRank": 31
 	},
 	"azelf": {
 		"fastMove": "CONFUSION",
@@ -411,22 +424,9 @@
 		"speciesId": "azelf",
 		"fastMoveDmg": 26,
 		"chargedMoveDmg": 156,
-		"dpsRank": 32,
+		"dpsRank": 33,
 		"tdoRank": 66,
 		"edpsRank": 32
-	},
-	"malamar_mega": {
-		"fastMove": "PSYCHO_CUT",
-		"chargedMove": "PSYBEAM_PLUS",
-		"dps": 24.714864177155892,
-		"tdo": 984.3985050414415,
-		"edps": 23.44034908080217,
-		"speciesId": "malamar_mega",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 181,
-		"dpsRank": 33,
-		"tdoRank": 20,
-		"edpsRank": 31
 	},
 	"tapu_lele": {
 		"fastMove": "CONFUSION",
@@ -646,7 +646,7 @@
 		"fastMoveDmg": 24,
 		"chargedMoveDmg": 76,
 		"dpsRank": 50,
-		"tdoRank": 16,
+		"tdoRank": 17,
 		"edpsRank": 42
 	},
 	"beheeyem": {
@@ -971,7 +971,7 @@
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 89,
 		"dpsRank": 75,
-		"tdoRank": 15,
+		"tdoRank": 16,
 		"edpsRank": 65
 	},
 	"jynx": {

@@ -22,8 +22,21 @@
 		"fastMoveDmg": 27,
 		"chargedMoveDmg": 84,
 		"dpsRank": 2,
-		"tdoRank": 2,
+		"tdoRank": 3,
 		"edpsRank": 2
+	},
+	"dragonite_mega": {
+		"fastMove": "DRAGON_TAIL",
+		"chargedMove": "OUTRAGE_PLUS",
+		"dps": 36.13520493835349,
+		"tdo": 1712.5529248342225,
+		"edps": 34.71357196305588,
+		"speciesId": "dragonite_mega",
+		"fastMoveDmg": 21,
+		"chargedMoveDmg": 332,
+		"dpsRank": 3,
+		"tdoRank": 2,
+		"edpsRank": 3
 	},
 	"garchomp_mega": {
 		"fastMove": "DRAGON_TAIL",
@@ -34,9 +47,9 @@
 		"speciesId": "garchomp_mega",
 		"fastMoveDmg": 24,
 		"chargedMoveDmg": 76,
-		"dpsRank": 3,
-		"tdoRank": 3,
-		"edpsRank": 3
+		"dpsRank": 4,
+		"tdoRank": 4,
+		"edpsRank": 4
 	},
 	"haxorus_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -47,9 +60,9 @@
 		"speciesId": "haxorus_shadow",
 		"fastMoveDmg": 24,
 		"chargedMoveDmg": 77,
-		"dpsRank": 4,
+		"dpsRank": 5,
 		"tdoRank": 48,
-		"edpsRank": 4
+		"edpsRank": 5
 	},
 	"palkia_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -60,9 +73,9 @@
 		"speciesId": "palkia_shadow",
 		"fastMoveDmg": 24,
 		"chargedMoveDmg": 253,
-		"dpsRank": 5,
+		"dpsRank": 6,
 		"tdoRank": 21,
-		"edpsRank": 6
+		"edpsRank": 7
 	},
 	"salamence_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -73,9 +86,9 @@
 		"speciesId": "salamence_shadow",
 		"fastMoveDmg": 24,
 		"chargedMoveDmg": 250,
-		"dpsRank": 6,
+		"dpsRank": 7,
 		"tdoRank": 35,
-		"edpsRank": 7
+		"edpsRank": 8
 	},
 	"garchomp_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -86,22 +99,9 @@
 		"speciesId": "garchomp_shadow",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 71,
-		"dpsRank": 7,
-		"tdoRank": 13,
-		"edpsRank": 5
-	},
-	"dragonite_mega": {
-		"fastMove": "DRAGON_TAIL",
-		"chargedMove": "OUTRAGE_PLUS",
-		"dps": 32.7175780167898,
-		"tdo": 1550.5816010102387,
-		"edps": 31.48157687960957,
-		"speciesId": "dragonite_mega",
-		"fastMoveDmg": 21,
-		"chargedMoveDmg": 276,
 		"dpsRank": 8,
-		"tdoRank": 4,
-		"edpsRank": 8
+		"tdoRank": 13,
+		"edpsRank": 6
 	},
 	"dragonite_shadow": {
 		"fastMove": "DRAGON_TAIL",

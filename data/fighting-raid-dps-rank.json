@@ -1,4 +1,17 @@
 {
+	"mewtwo_mega_x": {
+		"fastMove": "COUNTER",
+		"chargedMove": "DYNAMIC_PUNCH_PLUS",
+		"dps": 43.89912076688532,
+		"tdo": 1923.1169327821133,
+		"edps": 41.93546218667416,
+		"speciesId": "mewtwo_mega_x",
+		"fastMoveDmg": 26,
+		"chargedMoveDmg": 307,
+		"dpsRank": 1,
+		"tdoRank": 1,
+		"edpsRank": 1
+	},
 	"lucario_mega": {
 		"fastMove": "FORCE_PALM",
 		"chargedMove": "AURA_SPHERE",
@@ -8,22 +21,9 @@
 		"speciesId": "lucario_mega",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 155,
-		"dpsRank": 1,
-		"tdoRank": 10,
-		"edpsRank": 2
-	},
-	"mewtwo_mega_x": {
-		"fastMove": "COUNTER",
-		"chargedMove": "DYNAMIC_PUNCH_PLUS",
-		"dps": 40.126992010227674,
-		"tdo": 1757.8688695444825,
-		"edps": 38.381506358061195,
-		"speciesId": "mewtwo_mega_x",
-		"fastMoveDmg": 26,
-		"chargedMoveDmg": 256,
 		"dpsRank": 2,
-		"tdoRank": 1,
-		"edpsRank": 1
+		"tdoRank": 11,
+		"edpsRank": 2
 	},
 	"blaziken_mega": {
 		"fastMove": "COUNTER",
@@ -35,7 +35,7 @@
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 164,
 		"dpsRank": 3,
-		"tdoRank": 8,
+		"tdoRank": 9,
 		"edpsRank": 3
 	},
 	"keldeo_resolute": {
@@ -51,6 +51,19 @@
 		"tdoRank": 4,
 		"edpsRank": 5
 	},
+	"falinks_mega": {
+		"fastMove": "COUNTER",
+		"chargedMove": "BRICK_BREAK_PLUS",
+		"dps": 33.940334594573315,
+		"tdo": 1152.0838281163115,
+		"edps": 31.71568961831713,
+		"speciesId": "falinks_mega",
+		"fastMoveDmg": 18,
+		"chargedMoveDmg": 242,
+		"dpsRank": 5,
+		"tdoRank": 8,
+		"edpsRank": 7
+	},
 	"mewtwo_mega_y": {
 		"fastMove": "COUNTER",
 		"chargedMove": "FOCUS_BLAST",
@@ -60,7 +73,7 @@
 		"speciesId": "mewtwo_mega_y",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 238,
-		"dpsRank": 5,
+		"dpsRank": 6,
 		"tdoRank": 2,
 		"edpsRank": 4
 	},
@@ -73,7 +86,7 @@
 		"speciesId": "gallade_mega",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 81,
-		"dpsRank": 6,
+		"dpsRank": 7,
 		"tdoRank": 5,
 		"edpsRank": 6
 	},
@@ -86,9 +99,9 @@
 		"speciesId": "blaziken_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 146,
-		"dpsRank": 7,
+		"dpsRank": 8,
 		"tdoRank": 77,
-		"edpsRank": 7
+		"edpsRank": 8
 	},
 	"conkeldurr_shadow": {
 		"fastMove": "FORCE_PALM",
@@ -99,21 +112,8 @@
 		"speciesId": "conkeldurr_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 125,
-		"dpsRank": 8,
-		"tdoRank": 24,
-		"edpsRank": 8
-	},
-	"falinks_mega": {
-		"fastMove": "COUNTER",
-		"chargedMove": "BRICK_BREAK_PLUS",
-		"dps": 30.900549857933754,
-		"tdo": 1048.9002007929323,
-		"edps": 28.989526279966828,
-		"speciesId": "falinks_mega",
-		"fastMoveDmg": 18,
-		"chargedMoveDmg": 201,
 		"dpsRank": 9,
-		"tdoRank": 12,
+		"tdoRank": 24,
 		"edpsRank": 9
 	},
 	"lucario": {
@@ -165,7 +165,7 @@
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 66,
 		"dpsRank": 13,
-		"tdoRank": 11,
+		"tdoRank": 12,
 		"edpsRank": 11
 	},
 	"latios_mega": {
@@ -763,7 +763,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 104,
 		"dpsRank": 59,
-		"tdoRank": 9,
+		"tdoRank": 10,
 		"edpsRank": 51
 	},
 	"cobalion": {

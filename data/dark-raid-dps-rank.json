@@ -1,4 +1,17 @@
 {
+	"houndoom_mega": {
+		"fastMove": "SNARL",
+		"chargedMove": "DARK_PULSE_PLUS",
+		"dps": 34.58599501390301,
+		"tdo": 1106.8334483058366,
+		"edps": 32.27878122947737,
+		"speciesId": "houndoom_mega",
+		"fastMoveDmg": 16,
+		"chargedMoveDmg": 260,
+		"dpsRank": 1,
+		"tdoRank": 4,
+		"edpsRank": 1
+	},
 	"darkrai_shadow": {
 		"fastMove": "SNARL",
 		"chargedMove": "FOUL_PLAY",
@@ -8,9 +21,9 @@
 		"speciesId": "darkrai_shadow",
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 120,
-		"dpsRank": 1,
+		"dpsRank": 2,
 		"tdoRank": 18,
-		"edpsRank": 1
+		"edpsRank": 2
 	},
 	"absol_mega": {
 		"fastMove": "SNARL",
@@ -21,9 +34,9 @@
 		"speciesId": "absol_mega",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 102,
-		"dpsRank": 2,
+		"dpsRank": 3,
 		"tdoRank": 45,
-		"edpsRank": 3
+		"edpsRank": 4
 	},
 	"hydreigon_shadow": {
 		"fastMove": "BITE",
@@ -34,9 +47,9 @@
 		"speciesId": "hydreigon_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 101,
-		"dpsRank": 3,
+		"dpsRank": 4,
 		"tdoRank": 11,
-		"edpsRank": 4
+		"edpsRank": 5
 	},
 	"tyranitar_mega": {
 		"fastMove": "BITE",
@@ -47,9 +60,9 @@
 		"speciesId": "tyranitar_mega",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 101,
-		"dpsRank": 4,
+		"dpsRank": 5,
 		"tdoRank": 1,
-		"edpsRank": 2
+		"edpsRank": 3
 	},
 	"tyranitar_shadow": {
 		"fastMove": "BITE",
@@ -60,21 +73,8 @@
 		"speciesId": "tyranitar_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 99,
-		"dpsRank": 5,
-		"tdoRank": 4,
-		"edpsRank": 5
-	},
-	"houndoom_mega": {
-		"fastMove": "SNARL",
-		"chargedMove": "DARK_PULSE_PLUS",
-		"dps": 30.81619413844155,
-		"tdo": 986.1909252054869,
-		"edps": 28.859636953189785,
-		"speciesId": "houndoom_mega",
-		"fastMoveDmg": 16,
-		"chargedMoveDmg": 217,
 		"dpsRank": 6,
-		"tdoRank": 8,
+		"tdoRank": 5,
 		"edpsRank": 6
 	},
 	"absol_shadow": {
@@ -256,7 +256,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 83,
 		"dpsRank": 20,
-		"tdoRank": 5,
+		"tdoRank": 6,
 		"edpsRank": 14
 	},
 	"muk_alolan_shadow": {
@@ -308,7 +308,7 @@
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 85,
 		"dpsRank": 24,
-		"tdoRank": 6,
+		"tdoRank": 7,
 		"edpsRank": 23
 	},
 	"weavile": {
@@ -555,7 +555,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 98,
 		"dpsRank": 43,
-		"tdoRank": 7,
+		"tdoRank": 8,
 		"edpsRank": 36
 	},
 	"mienshao": {

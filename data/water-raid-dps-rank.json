@@ -1,4 +1,17 @@
 {
+	"greninja_mega": {
+		"fastMove": "WATER_SHURIKEN",
+		"chargedMove": "SURF_PLUS",
+		"dps": 36.46533637123399,
+		"tdo": 1062.2498644061702,
+		"edps": 33.83334826450289,
+		"speciesId": "greninja_mega",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 233,
+		"dpsRank": 1,
+		"tdoRank": 8,
+		"edpsRank": 1
+	},
 	"kyogre_primal": {
 		"fastMove": "WATERFALL",
 		"chargedMove": "ORIGIN_PULSE",
@@ -8,22 +21,22 @@
 		"speciesId": "kyogre_primal",
 		"fastMoveDmg": 23,
 		"chargedMoveDmg": 210,
-		"dpsRank": 1,
-		"tdoRank": 1,
-		"edpsRank": 1
-	},
-	"greninja_mega": {
-		"fastMove": "WATER_SHURIKEN",
-		"chargedMove": "HYDRO_CANNON",
-		"dps": 33.78428166303394,
-		"tdo": 984.1496661450715,
-		"edps": 31.446972253311838,
-		"speciesId": "greninja_mega",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 135,
 		"dpsRank": 2,
-		"tdoRank": 9,
+		"tdoRank": 1,
 		"edpsRank": 2
+	},
+	"starmie_mega": {
+		"fastMove": "PSYWAVE",
+		"chargedMove": "LIQUIDATION_PLUS",
+		"dps": 33.81593721713915,
+		"tdo": 1093.9348687161616,
+		"edps": 31.60703913816631,
+		"speciesId": "starmie_mega",
+		"fastMoveDmg": 4,
+		"chargedMoveDmg": 299,
+		"dpsRank": 3,
+		"tdoRank": 7,
+		"edpsRank": 3
 	},
 	"kyogre_shadow": {
 		"fastMove": "WATERFALL",
@@ -34,9 +47,9 @@
 		"speciesId": "kyogre_shadow",
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 195,
-		"dpsRank": 3,
+		"dpsRank": 4,
 		"tdoRank": 5,
-		"edpsRank": 3
+		"edpsRank": 4
 	},
 	"swampert_mega": {
 		"fastMove": "WATER_GUN",
@@ -47,9 +60,9 @@
 		"speciesId": "swampert_mega",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 128,
-		"dpsRank": 4,
+		"dpsRank": 5,
 		"tdoRank": 2,
-		"edpsRank": 4
+		"edpsRank": 5
 	},
 	"greninja_shadow": {
 		"fastMove": "WATER_SHURIKEN",
@@ -60,9 +73,9 @@
 		"speciesId": "greninja_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 123,
-		"dpsRank": 5,
+		"dpsRank": 6,
 		"tdoRank": 57,
-		"edpsRank": 5
+		"edpsRank": 6
 	},
 	"kingler_shadow": {
 		"fastMove": "BUBBLE",
@@ -73,22 +86,9 @@
 		"speciesId": "kingler_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 124,
-		"dpsRank": 6,
+		"dpsRank": 7,
 		"tdoRank": 61,
 		"edpsRank": 7
-	},
-	"starmie_mega": {
-		"fastMove": "WATER_GUN",
-		"chargedMove": "LIQUIDATION_PLUS",
-		"dps": 29.138167609070376,
-		"tdo": 942.6105020653507,
-		"edps": 27.382820161430246,
-		"speciesId": "starmie_mega",
-		"fastMoveDmg": 7,
-		"chargedMoveDmg": 249,
-		"dpsRank": 7,
-		"tdoRank": 10,
-		"edpsRank": 6
 	},
 	"blastoise_mega": {
 		"fastMove": "WATER_GUN",
@@ -594,7 +594,7 @@
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 174,
 		"dpsRank": 46,
-		"tdoRank": 7,
+		"tdoRank": 9,
 		"edpsRank": 34
 	},
 	"palkia": {
@@ -724,7 +724,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 69,
 		"dpsRank": 56,
-		"tdoRank": 8,
+		"tdoRank": 10,
 		"edpsRank": 48
 	},
 	"rhyperior_shadow": {

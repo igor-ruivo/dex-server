@@ -12,6 +12,19 @@
 		"tdoRank": 6,
 		"edpsRank": 1
 	},
+	"chesnaught_mega": {
+		"fastMove": "VINE_WHIP",
+		"chargedMove": "SEED_BOMB_PLUS",
+		"dps": 31.82998680295981,
+		"tdo": 1624.0619714538107,
+		"edps": 30.658938474515892,
+		"speciesId": "chesnaught_mega",
+		"fastMoveDmg": 8,
+		"chargedMoveDmg": 220,
+		"dpsRank": 2,
+		"tdoRank": 1,
+		"edpsRank": 2
+	},
 	"kartana": {
 		"fastMove": "RAZOR_LEAF",
 		"chargedMove": "LEAF_BLADE",
@@ -21,22 +34,9 @@
 		"speciesId": "kartana",
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 113,
-		"dpsRank": 2,
+		"dpsRank": 3,
 		"tdoRank": 45,
 		"edpsRank": 3
-	},
-	"chesnaught_mega": {
-		"fastMove": "VINE_WHIP",
-		"chargedMove": "SEED_BOMB_PLUS",
-		"dps": 28.79871273430793,
-		"tdo": 1469.397221812953,
-		"edps": 27.785155564043144,
-		"speciesId": "chesnaught_mega",
-		"fastMoveDmg": 8,
-		"chargedMoveDmg": 184,
-		"dpsRank": 3,
-		"tdoRank": 1,
-		"edpsRank": 2
 	},
 	"chesnaught_shadow": {
 		"fastMove": "VINE_WHIP",

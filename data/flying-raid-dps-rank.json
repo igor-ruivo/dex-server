@@ -12,6 +12,19 @@
 		"tdoRank": 1,
 		"edpsRank": 1
 	},
+	"staraptor_mega": {
+		"fastMove": "GUST",
+		"chargedMove": "BRAVE_BIRD_PLUS",
+		"dps": 34.00912765680755,
+		"tdo": 1254.7590459909084,
+		"edps": 32.533863245749146,
+		"speciesId": "staraptor_mega",
+		"fastMoveDmg": 35,
+		"chargedMoveDmg": 251,
+		"dpsRank": 2,
+		"tdoRank": 4,
+		"edpsRank": 2
+	},
 	"rayquaza": {
 		"fastMove": "AIR_SLASH",
 		"chargedMove": "DRAGON_ASCENT",
@@ -21,9 +34,9 @@
 		"speciesId": "rayquaza",
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 199,
-		"dpsRank": 2,
+		"dpsRank": 3,
 		"tdoRank": 7,
-		"edpsRank": 2
+		"edpsRank": 3
 	},
 	"moltres_shadow": {
 		"fastMove": "WING_ATTACK",
@@ -34,9 +47,9 @@
 		"speciesId": "moltres_shadow",
 		"fastMoveDmg": 16,
 		"chargedMoveDmg": 137,
-		"dpsRank": 3,
+		"dpsRank": 4,
 		"tdoRank": 12,
-		"edpsRank": 3
+		"edpsRank": 4
 	},
 	"toucannon_shadow": {
 		"fastMove": "PECK",
@@ -47,22 +60,22 @@
 		"speciesId": "toucannon_shadow",
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 169,
-		"dpsRank": 4,
-		"tdoRank": 37,
-		"edpsRank": 5
-	},
-	"staraptor_mega": {
-		"fastMove": "GUST",
-		"chargedMove": "FLY",
-		"dps": 31.297747355196417,
-		"tdo": 1154.7232851534166,
-		"edps": 29.454056139892177,
-		"speciesId": "staraptor_mega",
-		"fastMoveDmg": 35,
-		"chargedMoveDmg": 126,
 		"dpsRank": 5,
-		"tdoRank": 5,
-		"edpsRank": 4
+		"tdoRank": 37,
+		"edpsRank": 6
+	},
+	"skarmory_mega": {
+		"fastMove": "AIR_SLASH",
+		"chargedMove": "DRILL_PECK_PLUS",
+		"dps": 31.860857069069922,
+		"tdo": 1077.0648739833382,
+		"edps": 29.8925584992702,
+		"speciesId": "skarmory_mega",
+		"fastMoveDmg": 17,
+		"chargedMoveDmg": 280,
+		"dpsRank": 6,
+		"tdoRank": 8,
+		"edpsRank": 5
 	},
 	"staraptor_shadow": {
 		"fastMove": "GUST",
@@ -73,9 +86,9 @@
 		"speciesId": "staraptor_shadow",
 		"fastMoveDmg": 36,
 		"chargedMoveDmg": 128,
-		"dpsRank": 6,
+		"dpsRank": 7,
 		"tdoRank": 39,
-		"edpsRank": 7
+		"edpsRank": 8
 	},
 	"salamence_shadow": {
 		"fastMove": "DRAGON_TAIL",
@@ -86,9 +99,9 @@
 		"speciesId": "salamence_shadow",
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 150,
-		"dpsRank": 7,
+		"dpsRank": 8,
 		"tdoRank": 20,
-		"edpsRank": 6
+		"edpsRank": 7
 	},
 	"pidgeot_mega": {
 		"fastMove": "GUST",
@@ -99,21 +112,8 @@
 		"speciesId": "pidgeot_mega",
 		"fastMoveDmg": 36,
 		"chargedMoveDmg": 183,
-		"dpsRank": 8,
-		"tdoRank": 16,
-		"edpsRank": 9
-	},
-	"skarmory_mega": {
-		"fastMove": "AIR_SLASH",
-		"chargedMove": "DRILL_PECK_PLUS",
-		"dps": 28.919971670138196,
-		"tdo": 977.6474491873547,
-		"edps": 27.190034603183104,
-		"speciesId": "skarmory_mega",
-		"fastMoveDmg": 17,
-		"chargedMoveDmg": 233,
 		"dpsRank": 9,
-		"tdoRank": 10,
+		"tdoRank": 16,
 		"edpsRank": 10
 	},
 	"salamence_mega": {
@@ -127,7 +127,7 @@
 		"chargedMoveDmg": 139,
 		"dpsRank": 10,
 		"tdoRank": 2,
-		"edpsRank": 8
+		"edpsRank": 9
 	},
 	"yveltal": {
 		"fastMove": "GUST",
@@ -230,7 +230,7 @@
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 114,
 		"dpsRank": 18,
-		"tdoRank": 9,
+		"tdoRank": 10,
 		"edpsRank": 16
 	},
 	"unfezant_shadow": {
@@ -529,7 +529,7 @@
 		"fastMoveDmg": 14,
 		"chargedMoveDmg": 157,
 		"dpsRank": 41,
-		"tdoRank": 8,
+		"tdoRank": 9,
 		"edpsRank": 38
 	},
 	"talonflame_shadow": {
@@ -828,7 +828,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 89,
 		"dpsRank": 64,
-		"tdoRank": 4,
+		"tdoRank": 5,
 		"edpsRank": 56
 	},
 	"talonflame": {

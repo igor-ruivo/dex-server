@@ -43,7 +43,15 @@ export const RAID_RELOBBY_SECONDS = 10;
 /** Trainers assumed in the lobby, for the death → relobby accounting in eDPS. */
 export const RAID_PARTY_SIZE = 6;
 
-export type RaidTier = 'T1' | 'T3' | 'MEGA' | 'T5' | 'ELITE' | 'LEGENDARY_MEGA' | 'PRIMAL' | 'SUPER_MEGA';
+export type RaidTier =
+	| 'T1'
+	| 'T3'
+	| 'MEGA'
+	| 'T5'
+	| 'ELITE'
+	| 'LEGENDARY_MEGA'
+	| 'PRIMAL'
+	| 'SUPER_MEGA';
 
 /**
  * Boss HP + the CPM applied to the boss's base defense, per tier. HP and CPM
@@ -315,7 +323,7 @@ export interface RaidOpts {
 	tier?: RaidTier;
 	/** Attacker move types boosted ×1.2 by the current weather. */
 	weatherBoostedTypes?: ReadonlySet<string>;
-	/** Friendship damage multiplier (1 = none … 1.11 = best friend). */
+	/** Friendship damage multiplier (1 = none … 1.1 = best friend … 1.12 = forever friend). */
 	friendship?: number;
 	/** Trainers fast-attacking together, for Party Power (1 = off). */
 	partySize?: number;

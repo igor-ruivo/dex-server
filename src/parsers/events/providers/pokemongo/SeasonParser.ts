@@ -34,7 +34,18 @@ class SeasonParser {
 
 		const parsedSeasons: Array<IParsedEvent> = [];
 
+		// `AvailableLocales.en` is always first (Object.values(AvailableLocales)
+		// preserves declaration order, and Promise.all preserves array order),
+		// so by the time any other locale is processed below, these are
+		// already populated — the fallback for a locale whose own season page
+		// 404s/etc (fetchText returns `''` on any non-2xx — see
+		// HttpDataFetcher's own doc comment for why that's `fetchText`-only,
+		// not thrown).
+		let enTitle = '';
+		let enBonuses: Array<string> = [];
+
 		for (const season of seasonsHtmls) {
+			const fetchFailed = season.html === '';
 			const dom = new JSDOM(season.html);
 			const doc = dom.window.document;
 
@@ -46,13 +57,24 @@ class SeasonParser {
 				.map((a) => a.textContent?.trim() ?? '')
 				.filter(Boolean);
 
+			if (season.locale === AvailableLocales.en) {
+				enTitle = title;
+				enBonuses = bonuses;
+			}
+
 			if (season.locale !== AvailableLocales.en) {
+				if (fetchFailed) {
+					console.log(
+						`[SeasonParser] ${season.locale} season page failed to fetch — falling back to English season content.`
+					);
+				}
+
 				parsedSeasons.push({
 					id: 'season',
 					url: seasonUrlBuilder(season.locale),
 					source: 'pokemongo',
-					title: title,
-					subtitle: title,
+					title: fetchFailed ? enTitle : title,
+					subtitle: fetchFailed ? enTitle : title,
 					imageUrl: '',
 					startDate: 0,
 					endDate: 0,
@@ -62,7 +84,7 @@ class SeasonParser {
 					eggs: [],
 					researches: [],
 					lures: [],
-					bonuses: bonuses,
+					bonuses: fetchFailed ? enBonuses : bonuses,
 					isSeason: true,
 					locale: season.locale,
 					bonusSectionIndex: -1,

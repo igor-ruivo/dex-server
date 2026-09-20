@@ -124,14 +124,35 @@ const buildEventId = (post: PokemonGoPost, index: number): string => {
 	return idBase.replaceAll('/', '') + '-' + String(index);
 };
 
+// `es-MX` and `zh-Hant` are the only two `AvailableLocales` values with
+// meaningful casing/hyphenation — everything else is already
+// all-lowercase. `extractLocaleFromPath` below has to lowercase the whole
+// URL to match reliably (a link's casing isn't guaranteed), so it needs this
+// map to translate back from a lowercased segment to the real,
+// correctly-cased enum value; naively casting the lowercased segment `as
+// AvailableLocales` (the previous approach) type-checks but is wrong at
+// runtime for exactly these two — `'es-mx'`/`'zh-hant'` never equals
+// `AvailableLocales.esMx`/`AvailableLocales.zhHant`, so `pairEventTranslations`
+// silently failed to find a match for either and shipped an empty
+// title/subtitle/bonuses for both in events.json, while every other locale
+// (already lowercase, so unaffected by the lowercasing) worked fine.
+const LOCALE_BY_LOWERCASE = new Map<string, AvailableLocales>(
+	Object.values(AvailableLocales).map((locale) => [
+		locale.toLowerCase(),
+		locale,
+	])
+);
+
 /**
  * Extracts the locale from the event's url path.
  */
-const extractLocaleFromPath = (path: string): AvailableLocales => {
+export const extractLocaleFromPath = (path: string): AvailableLocales => {
 	const url = path.toLocaleLowerCase();
-	const match = /\/([a-z_]{1,5})\/news\//.exec(url);
-	if (match?.[1]) {
-		return match[1] as AvailableLocales;
+
+	const match = /\/([a-z_-]{1,7})\/news\//.exec(url);
+	const fromRegex = match?.[1] && LOCALE_BY_LOWERCASE.get(match[1]);
+	if (fromRegex) {
+		return fromRegex;
 	}
 
 	const parts = url.split('/');
@@ -141,7 +162,10 @@ const extractLocaleFromPath = (path: string): AvailableLocales => {
 		parts[3] !== 'news' &&
 		parts[3] !== 'post'
 	) {
-		return parts[3] as AvailableLocales;
+		const fromPath = LOCALE_BY_LOWERCASE.get(parts[3]);
+		if (fromPath) {
+			return fromPath;
+		}
 	}
 	return AvailableLocales.en;
 };

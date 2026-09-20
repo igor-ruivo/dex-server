@@ -484,9 +484,16 @@ export const pairEventTranslations = (
 
 		for (const locale of locales) {
 			const localeEvent = localeEvents[locale];
-			title[locale] = localeEvent ? localeEvent.title : '';
-			subtitle[locale] = localeEvent ? localeEvent.subtitle : '';
-			bonuses[locale] = localeEvent ? localeEvent.bonuses : [];
+			// No translated post found for this locale/event — fall back to
+			// the English content instead of shipping an empty string, same
+			// reasoning as SeasonParser's own EN fallback. `localeEvent`
+			// being `undefined` is the precise signal for "missing"; a
+			// translated post that legitimately has no bonuses (a real,
+			// non-empty page with an empty bonuses section) still gets its
+			// own (empty) `bonuses` respected, not overwritten with EN's.
+			title[locale] = localeEvent ? localeEvent.title : enEvent.title;
+			subtitle[locale] = localeEvent ? localeEvent.subtitle : enEvent.subtitle;
+			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
 
 			if (locale === AvailableLocales.en) {
 				continue;
@@ -632,14 +639,13 @@ class GameMasterTranslator {
 		return this.parsedSources[locale]?.translatedMovesDictionary[moveID] ?? '';
 	}
 
-	getTranslationForRocketPhrase(
-		locale: AvailableLocales,
+	private lookupRocketPhrase(
+		phrases: Record<string, string> | undefined,
 		trainerId: string,
 		type?: string
-	): string {
-		const phrases = this.parsedSources[locale]?.translatedPhrasesDictionary;
+	): string | undefined {
 		if (!phrases) {
-			return '';
+			return undefined;
 		}
 
 		if (trainerId && phrases[trainerId]) {
@@ -650,6 +656,32 @@ class GameMasterTranslator {
 			const typeKey = `_${type}__male_speaker`;
 			if (phrases[typeKey]) {
 				return phrases[typeKey];
+			}
+		}
+
+		return undefined;
+	}
+
+	getTranslationForRocketPhrase(
+		locale: AvailableLocales,
+		trainerId: string,
+		type?: string
+	): string {
+		const phrases = this.parsedSources[locale]?.translatedPhrasesDictionary;
+		const found = this.lookupRocketPhrase(phrases, trainerId, type);
+		if (found) {
+			return found;
+		}
+
+		// Not found for the requested locale — fall back to English rather
+		// than shipping an empty phrase, same reasoning as
+		// `pairEventTranslations`'s own EN fallback.
+		if (locale !== AvailableLocales.en) {
+			const enPhrases =
+				this.parsedSources[AvailableLocales.en]?.translatedPhrasesDictionary;
+			const enFound = this.lookupRocketPhrase(enPhrases, trainerId, type);
+			if (enFound) {
+				return enFound;
 			}
 		}
 

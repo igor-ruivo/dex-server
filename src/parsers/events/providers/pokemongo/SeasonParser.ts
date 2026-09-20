@@ -63,9 +63,15 @@ class SeasonParser {
 			}
 
 			if (season.locale !== AvailableLocales.en) {
-				if (fetchFailed) {
+				// Falls back whenever the fetch itself failed OR the page
+				// fetched fine but genuinely has no title yet (e.g. that
+				// locale's season page exists but hasn't been updated with
+				// the current season) — either way, an empty title isn't
+				// something to ship.
+				const needsFallback = fetchFailed || !title;
+				if (needsFallback) {
 					console.log(
-						`[SeasonParser] ${season.locale} season page failed to fetch — falling back to English season content.`
+						`[SeasonParser] ${season.locale} season page ${fetchFailed ? 'failed to fetch' : 'had no title'} — falling back to English season content.`
 					);
 				}
 
@@ -73,8 +79,8 @@ class SeasonParser {
 					id: 'season',
 					url: seasonUrlBuilder(season.locale),
 					source: 'pokemongo',
-					title: fetchFailed ? enTitle : title,
-					subtitle: fetchFailed ? enTitle : title,
+					title: needsFallback ? enTitle : title,
+					subtitle: needsFallback ? enTitle : title,
 					imageUrl: '',
 					startDate: 0,
 					endDate: 0,
@@ -84,7 +90,7 @@ class SeasonParser {
 					eggs: [],
 					researches: [],
 					lures: [],
-					bonuses: fetchFailed ? enBonuses : bonuses,
+					bonuses: needsFallback ? enBonuses : bonuses,
 					isSeason: true,
 					locale: season.locale,
 					bonusSectionIndex: -1,

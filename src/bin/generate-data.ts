@@ -18,7 +18,9 @@ import GameMasterParser, {
 } from '../parsers/pokemon/game-master-parser';
 import PvPParser from '../parsers/pokemon/pvp-parser';
 import HttpDataFetcher from '../parsers/services/data-fetcher';
+import { validateSkippedFetches } from '../parsers/services/fetch-failures-qa';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
+import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
 import type { IEntry } from '../parsers/types/events';
 
 const generateData = async () => {
@@ -123,6 +125,23 @@ const generateData = async () => {
 			spotlightHours: leekduckEvents.spotlightHours,
 		});
 
+		// Step 7c: QA that no output ended up with a locale silently missing
+		// its translation (as opposed to LeekDuck-content-shape issues, which
+		// Step 7b already covers) — e.g. the es-MX/zh-Hant locale-casing bug,
+		// or an events/season/rocket-phrase EN fallback regressing. Pruned
+		// moves are computed here (rather than inline at write time, further
+		// down) so the exact set that's QA'd is the exact set that's written.
+		const finalMoves = movesProvider.pruneUnlearnableMoves(
+			moves,
+			pokemonDictionary
+		);
+		validateTranslationCompleteness({
+			events,
+			season: seasonData,
+			moves: finalMoves,
+			rocketLineups: leekduckRocketLineups,
+		});
+
 		// Step 8: DPS calculations
 		const raidDpsCalculator = new RaidDpsCalculator(pokemonDictionary, moves);
 		const dpsData = raidDpsCalculator.compute();
@@ -173,11 +192,7 @@ const generateData = async () => {
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'moves.json'),
-			JSON.stringify(
-				movesProvider.pruneUnlearnableMoves(moves, pokemonDictionary),
-				null,
-				'\t'
-			)
+			JSON.stringify(finalMoves, null, '\t')
 		);
 		for (const type of Object.keys(dpsData)) {
 			const fileName = `${type.toLocaleLowerCase()}-raid-dps-rank.json`;
@@ -197,6 +212,14 @@ const generateData = async () => {
 				console.log(`  [${status}] ${url}`);
 			}
 		}
+
+		// Files are already written above, but the workflow's commit/push step
+		// only runs if this whole job succeeds — so throwing here still stops a
+		// run with an unreviewed fetch failure from ever being published, it
+		// just does so after generation instead of before (the full set of
+		// skipped fetches isn't known until every fetch in the run has
+		// resolved).
+		validateSkippedFetches(skipped);
 	} catch (error) {
 		console.error('Data generation failed:', error);
 		process.exit(1);

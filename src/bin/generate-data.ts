@@ -19,6 +19,10 @@ import GameMasterParser, {
 import PvPParser from '../parsers/pokemon/pvp-parser';
 import HttpDataFetcher from '../parsers/services/data-fetcher';
 import { validateSkippedFetches } from '../parsers/services/fetch-failures-qa';
+import {
+	buildGameTranslations,
+	validateGameTranslations,
+} from '../parsers/services/game-translations-provider';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
 import type { IEntry } from '../parsers/types/events';
@@ -33,6 +37,18 @@ const generateData = async () => {
 		// Step 1: Initiate the translator
 		const translatorService = new GameMasterTranslator(dataFetcher);
 		await translatorService.setupGameMasterSources();
+
+		// Step 1b: Build go-pokedex's GameTranslator data — every UI string
+		// that should track the player's in-game language (search-bar
+		// keywords, league names, type chips, CP/raid labels, etc.) rather
+		// than the website's own UI language. Sourced from the same
+		// data-mined string tables `setupGameMasterSources` just fetched, no
+		// extra network calls.
+		const gameTranslations = buildGameTranslations(translatorService);
+		validateGameTranslations(
+			gameTranslations.translations,
+			gameTranslations.types
+		);
 
 		// Step 2: Instantiate the moves provider
 		const movesProvider = new MovesProvider(dataFetcher, translatorService);
@@ -180,6 +196,10 @@ const generateData = async () => {
 		await fs.writeFile(
 			path.join(dataDir, 'species-search-metadata.json'),
 			JSON.stringify(speciesSearchMetadata, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'game-translations.json'),
+			JSON.stringify(gameTranslations, null, '\t')
 		);
 		for (const key of Object.keys(Leagues)) {
 			const fileName = `${key.toLocaleLowerCase()}-league-pvp.json`;

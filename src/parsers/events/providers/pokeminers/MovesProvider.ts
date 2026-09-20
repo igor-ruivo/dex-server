@@ -347,10 +347,12 @@ class MovesProvider {
 			};
 		}
 
-		const fellStingerPlusMoveName: Partial<Record<AvailableLocales, string>> = {
-			[AvailableLocales.en]: 'Fell Stinger+',
-			[AvailableLocales.ptbr]: 'Ferrão Letal+',
-		};
+		const fellStingerPlusMoveName: Partial<Record<AvailableLocales, string>> =
+			{};
+		Object.values(AvailableLocales).forEach((locale) => {
+			fellStingerPlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0311')}+`;
+		});
 
 		if (!movesDictionary.FELL_STINGER_PLUS) {
 			movesDictionary.FELL_STINGER_PLUS = {
@@ -373,10 +375,11 @@ class MovesProvider {
 			};
 		}
 
-		const darkPulsePlusMoveName: Partial<Record<AvailableLocales, string>> = {
-			[AvailableLocales.en]: 'Dark Pulse+',
-			[AvailableLocales.ptbr]: 'Pulso Sombrio+',
-		};
+		const darkPulsePlusMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			darkPulsePlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0016')}+`;
+		});
 
 		if (!movesDictionary.DARK_PULSE_PLUS) {
 			movesDictionary.DARK_PULSE_PLUS = {
@@ -395,10 +398,11 @@ class MovesProvider {
 			};
 		}
 
-		const braveBirdPlusMoveName: Partial<Record<AvailableLocales, string>> = {
-			[AvailableLocales.en]: 'Brave Bird+',
-			[AvailableLocales.ptbr]: 'Pássaro Bravo+',
-		};
+		const braveBirdPlusMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			braveBirdPlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0256')}+`;
+		});
 
 		if (!movesDictionary.BRAVE_BIRD_PLUS) {
 			movesDictionary.BRAVE_BIRD_PLUS = {

@@ -31,6 +31,13 @@ type ParsedSources = Partial<
 		{
 			readonly translatedMovesDictionary: Record<string, string>;
 			readonly translatedPhrasesDictionary: Record<string, string>;
+			/** The full, unfiltered key→value string table for this locale —
+			 *  everything `tryParseMove`/`tryParseRocketPhrase` don't already
+			 *  extract. Kept so other consumers (e.g. `game-translations-provider.ts`,
+			 *  which needs arbitrary keys like `filter_key_shadow` or
+			 *  `pokemon_type_fire`) can look values up without re-fetching the
+			 *  same 15 multi-MB files this class already downloaded. */
+			readonly rawDictionary: Record<string, string>;
 		}
 	>
 >;
@@ -599,6 +606,7 @@ class GameMasterTranslator {
 				{
 					translatedMovesDictionary: Record<string, string>;
 					translatedPhrasesDictionary: Record<string, string>;
+					rawDictionary: Record<string, string>;
 				},
 			]
 		> = await Promise.all(
@@ -608,6 +616,7 @@ class GameMasterTranslator {
 				}>(url);
 				const translatedPhrasesDictionary: Record<string, string> = {};
 				const translatedMovesDictionary: Record<string, string> = {};
+				const rawDictionary: Record<string, string> = {};
 
 				translationData.data.forEach((t, index) => {
 					const value = translationData.data[index + 1];
@@ -616,12 +625,17 @@ class GameMasterTranslator {
 					this.tryParseRocketPhrase(translatedPhrasesDictionary, t, value);
 				});
 
+				for (let i = 0; i < translationData.data.length; i += 2) {
+					rawDictionary[translationData.data[i]] = translationData.data[i + 1];
+				}
+
 				// Cast locale to AvailableLocales to ensure type safety
 				return [
 					locale as AvailableLocales,
 					{
 						translatedMovesDictionary,
 						translatedPhrasesDictionary,
+						rawDictionary,
 					},
 				];
 			})
@@ -637,6 +651,14 @@ class GameMasterTranslator {
 
 	getTranslationForMoveName(locale: AvailableLocales, moveID: string) {
 		return this.parsedSources[locale]?.translatedMovesDictionary[moveID] ?? '';
+	}
+
+	/** Looks up an arbitrary data-mined string-table key for a locale — e.g.
+	 *  `filter_key_shadow` or `pokemon_type_fire`. Used by
+	 *  `game-translations-provider.ts` to source go-pokedex's GameTranslator
+	 *  data without a second fetch of the same i18n files. */
+	getRawString(locale: AvailableLocales, key: string): string | undefined {
+		return this.parsedSources[locale]?.rawDictionary[key];
 	}
 
 	private lookupRocketPhrase(

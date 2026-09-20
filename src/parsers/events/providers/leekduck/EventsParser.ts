@@ -100,6 +100,11 @@ class EventsParser {
 			return e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e;
 		});
 
+		// How many event pages LeekDuck currently lists isn't knowable in
+		// advance — widen the fetcher's progress denominator now that we
+		// actually know, for this run.
+		this.dataFetcher.announceExpectedFetches(urls.length);
+
 		const spotlightHours: Array<ILeekduckSpotlightHour> = [];
 		const specialRaidBosses: Array<ILeekduckSpecialRaidBoss> = [];
 

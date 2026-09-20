@@ -187,6 +187,16 @@ const generateData = async () => {
 
 		console.log('All data written to disk.');
 		console.log(`Pokemon parsed: ${Object.keys(pokemonDictionary).length}`);
+
+		const skipped = dataFetcher.getSkippedFetches();
+		if (skipped.length > 0) {
+			console.log(
+				`\n${skipped.length} fetch(es) were skipped (non-2xx, ignored so the run could finish) — check these:`
+			);
+			for (const { url, status } of skipped) {
+				console.log(`  [${status}] ${url}`);
+			}
+		}
 	} catch (error) {
 		console.error('Data generation failed:', error);
 		process.exit(1);

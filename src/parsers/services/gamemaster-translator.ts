@@ -1,9 +1,28 @@
 import type { IParsedEvent, PublicEvent } from '../types/events';
 import type HttpDataFetcher from './data-fetcher';
 
+// Values match go-pokedex's own `GameLanguage` enum exactly
+// (src/contexts/language-context.tsx there) — this repo publishes the JSON
+// that app reads keyed by these strings, so the two must stay in lockstep.
+// `ptbr` keeps the underscore (not the `pt-BR` every other consumer uses)
+// for the same backward-compatibility reason documented on that enum: it's
+// what's already published and already persisted in real users' storage.
 export enum AvailableLocales {
 	en = 'en',
 	ptbr = 'pt_br',
+	de = 'de',
+	es = 'es',
+	esMx = 'es-MX',
+	fr = 'fr',
+	hi = 'hi',
+	id = 'id',
+	it = 'it',
+	ja = 'ja',
+	ko = 'ko',
+	ru = 'ru',
+	th = 'th',
+	tr = 'tr',
+	zhHant = 'zh-Hant',
 }
 
 type ParsedSources = Partial<
@@ -16,11 +35,42 @@ type ParsedSources = Partial<
 	>
 >;
 
+// Every file here confirmed present in PokeMiners/pogo_assets as of
+// 2026-09-21 (github.com/PokeMiners/pogo_assets/tree/master/Texts/Latest%20APK/JSON)
+// — same data-mined, APK-extracted client string tables Niantic itself ships,
+// one full locale set per file, alternating key/value pairs (see
+// `setupGameMasterSources` below for how they're parsed).
 const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
 	[AvailableLocales.en]:
 		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_english.json',
 	[AvailableLocales.ptbr]:
 		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_brazilianportuguese.json',
+	[AvailableLocales.de]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_german.json',
+	[AvailableLocales.es]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_spanish.json',
+	[AvailableLocales.esMx]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_latinamericanspanish.json',
+	[AvailableLocales.fr]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_french.json',
+	[AvailableLocales.hi]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_hindi.json',
+	[AvailableLocales.id]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_indonesian.json',
+	[AvailableLocales.it]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_italian.json',
+	[AvailableLocales.ja]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_japanese.json',
+	[AvailableLocales.ko]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_korean.json',
+	[AvailableLocales.ru]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_russian.json',
+	[AvailableLocales.th]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_thai.json',
+	[AvailableLocales.tr]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_turkish.json',
+	[AvailableLocales.zhHant]:
+		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_chinesetraditional.json',
 };
 
 const SPOTLIGHT_HOUR_TITLE_TRANSLATIONS: Record<
@@ -37,6 +87,60 @@ const SPOTLIGHT_HOUR_TITLE_TRANSLATIONS: Record<
 		' Spotlight Hour': ': Hora do Holofote',
 		' and ': ' e ',
 	},
+
+	// Not spreadsheet-sourced like GameTranslator.ts's search keywords in
+	// go-pokedex — these are best-effort, not independently verified against
+	// Niantic's own client strings. Worth double-checking if this ever gets
+	// the same rigor as that file did.
+	[AvailableLocales.de]: {
+		' Spotlight Hour': ': Sternstunde',
+		' and ': ' und ',
+	},
+	[AvailableLocales.es]: {
+		' Spotlight Hour': ': Hora Destacada',
+		' and ': ' y ',
+	},
+	[AvailableLocales.esMx]: {
+		' Spotlight Hour': ': Hora Destacada',
+		' and ': ' y ',
+	},
+	[AvailableLocales.fr]: {
+		' Spotlight Hour': ': Heure Vedette',
+		' and ': ' et ',
+	},
+	[AvailableLocales.hi]: {
+		' Spotlight Hour': ': स्पॉटलाइट आवर',
+		' and ': ' और ',
+	},
+	[AvailableLocales.id]: {
+		' Spotlight Hour': ': Waktu Sorotan',
+		' and ': ' dan ',
+	},
+	[AvailableLocales.it]: {
+		' Spotlight Hour': ': Ora Speciale',
+		' and ': ' e ',
+	},
+	[AvailableLocales.ja]: {
+		' Spotlight Hour': ': スポットライトアワー',
+		' and ': 'と',
+	},
+	[AvailableLocales.ko]: {
+		' Spotlight Hour': ': 스포트라이트 아워',
+		' and ': ' 및 ',
+	},
+	[AvailableLocales.ru]: {
+		' Spotlight Hour': ': Спотлайт-час',
+		' and ': ' и ',
+	},
+	[AvailableLocales.th]: {
+		' Spotlight Hour': ': สปอตไลท์อาวร์',
+		' and ': ' และ ',
+	},
+	[AvailableLocales.tr]: {
+		' Spotlight Hour': ': Öne Çıkan Saat',
+		' and ': ' ve ',
+	},
+	[AvailableLocales.zhHant]: { ' Spotlight Hour': ': 聚焦時間', ' and ': '、' },
 };
 
 const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<
@@ -58,6 +162,100 @@ const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<
 		'Transfer Candy': 'Doces ao transferir',
 		'Evolution XP': 'XP ao evoluir',
 		'Catch Stardust': 'Poeira Estelar ao capturar',
+	},
+
+	// Best-effort, not independently verified — see the note on
+	// SPOTLIGHT_HOUR_TITLE_TRANSLATIONS above.
+	[AvailableLocales.de]: {
+		'Catch XP': 'Fang-EP',
+		'Catch Candy': 'Fang-Bonbons',
+		'Transfer Candy': 'Austausch-Bonbons',
+		'Evolution XP': 'Entwicklungs-EP',
+		'Catch Stardust': 'Fang-Sternenstaub',
+	},
+	[AvailableLocales.es]: {
+		'Catch XP': 'PE por captura',
+		'Catch Candy': 'Caramelos por captura',
+		'Transfer Candy': 'Caramelos por transferencia',
+		'Evolution XP': 'PE por evolución',
+		'Catch Stardust': 'Polvo Estelar por captura',
+	},
+	[AvailableLocales.esMx]: {
+		'Catch XP': 'PE por captura',
+		'Catch Candy': 'Caramelos por captura',
+		'Transfer Candy': 'Caramelos por transferencia',
+		'Evolution XP': 'PE por evolución',
+		'Catch Stardust': 'Polvo Estelar por captura',
+	},
+	[AvailableLocales.fr]: {
+		'Catch XP': 'PX de capture',
+		'Catch Candy': 'Bonbons de capture',
+		'Transfer Candy': 'Bonbons de transfert',
+		'Evolution XP': "PX d'évolution",
+		'Catch Stardust': "Poussière d'Étoile de capture",
+	},
+	[AvailableLocales.hi]: {
+		'Catch XP': 'कैच XP',
+		'Catch Candy': 'कैच कैंडी',
+		'Transfer Candy': 'ट्रांसफर कैंडी',
+		'Evolution XP': 'एवोल्यूशन XP',
+		'Catch Stardust': 'कैच स्टारडस्ट',
+	},
+	[AvailableLocales.id]: {
+		'Catch XP': 'XP Tangkap',
+		'Catch Candy': 'Permen Tangkap',
+		'Transfer Candy': 'Permen Transfer',
+		'Evolution XP': 'XP Evolusi',
+		'Catch Stardust': 'Stardust Tangkap',
+	},
+	[AvailableLocales.it]: {
+		'Catch XP': 'PE da cattura',
+		'Catch Candy': 'Caramelle da cattura',
+		'Transfer Candy': 'Caramelle da scambio',
+		'Evolution XP': 'PE da evoluzione',
+		'Catch Stardust': 'Polvere Stellare da cattura',
+	},
+	[AvailableLocales.ja]: {
+		'Catch XP': 'キャッチXP',
+		'Catch Candy': 'キャッチアメ',
+		'Transfer Candy': '交換アメ',
+		'Evolution XP': '進化XP',
+		'Catch Stardust': 'キャッチほしのすな',
+	},
+	[AvailableLocales.ko]: {
+		'Catch XP': '포획 XP',
+		'Catch Candy': '포획 사탕',
+		'Transfer Candy': '교환 사탕',
+		'Evolution XP': '진화 XP',
+		'Catch Stardust': '포획 별의모래',
+	},
+	[AvailableLocales.ru]: {
+		'Catch XP': 'XP за поимку',
+		'Catch Candy': 'Конфеты за поимку',
+		'Transfer Candy': 'Конфеты за обмен',
+		'Evolution XP': 'XP за эволюцию',
+		'Catch Stardust': 'Звёздная пыль за поимку',
+	},
+	[AvailableLocales.th]: {
+		'Catch XP': 'XP จากการจับ',
+		'Catch Candy': 'ลูกอมจากการจับ',
+		'Transfer Candy': 'ลูกอมจากการแลกเปลี่ยน',
+		'Evolution XP': 'XP จากการวิวัฒนาการ',
+		'Catch Stardust': 'สตาร์ดัสต์จากการจับ',
+	},
+	[AvailableLocales.tr]: {
+		'Catch XP': 'Yakalama XP',
+		'Catch Candy': 'Yakalama Şekeri',
+		'Transfer Candy': 'Transfer Şekeri',
+		'Evolution XP': 'Evrim XP',
+		'Catch Stardust': 'Yakalama Yıldız Tozu',
+	},
+	[AvailableLocales.zhHant]: {
+		'Catch XP': '捕捉經驗值',
+		'Catch Candy': '捕捉糖果',
+		'Transfer Candy': '交換糖果',
+		'Evolution XP': '進化經驗值',
+		'Catch Stardust': '捕捉星塵',
 	},
 };
 
@@ -84,6 +282,121 @@ const EGG_COMMENT_TRANSLATIONS: Record<
 			'Ovos de 7 km da Troca de presentes de Mateo',
 		'7 km Eggs from Mateo’s Gift Exchange':
 			'Ovos de 7 km da Troca de presentes de Mateo',
+	},
+
+	// Best-effort, not independently verified — see the note on
+	// SPOTLIGHT_HOUR_TITLE_TRANSLATIONS above. "Mateo" is an NPC name, kept
+	// unchanged in every locale.
+	[AvailableLocales.de]: {
+		'Adventure Sync Rewards': 'Adventure-Sync-Belohnungen',
+		'Route Rewards': 'Routenbelohnungen',
+		'From Route Gift': 'Routenbelohnungen',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'7-km-Eier aus Mateos Geschenketausch',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'7-km-Eier aus Mateos Geschenketausch',
+	},
+	[AvailableLocales.es]: {
+		'Adventure Sync Rewards': 'Recompensas de Sincronización de aventuras',
+		'Route Rewards': 'Recompensas de rutas',
+		'From Route Gift': 'Recompensas de rutas',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'Huevos de 7 km del intercambio de regalos de Mateo',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'Huevos de 7 km del intercambio de regalos de Mateo',
+	},
+	[AvailableLocales.esMx]: {
+		'Adventure Sync Rewards': 'Recompensas de Sincronización de aventuras',
+		'Route Rewards': 'Recompensas de rutas',
+		'From Route Gift': 'Recompensas de rutas',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'Huevos de 7 km del intercambio de regalos de Mateo',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'Huevos de 7 km del intercambio de regalos de Mateo',
+	},
+	[AvailableLocales.fr]: {
+		'Adventure Sync Rewards': 'Récompenses de Synchro Aventure',
+		'Route Rewards': "Récompenses d'itinéraire",
+		'From Route Gift': "Récompenses d'itinéraire",
+		"7 km Eggs from Mateo's Gift Exchange":
+			"Œufs de 7 km de l'échange de cadeaux de Mateo",
+		'7 km Eggs from Mateo’s Gift Exchange':
+			"Œufs de 7 km de l'échange de cadeaux de Mateo",
+	},
+	[AvailableLocales.hi]: {
+		'Adventure Sync Rewards': 'एडवेंचर सिंक रिवॉर्ड्स',
+		'Route Rewards': 'रूट रिवॉर्ड्स',
+		'From Route Gift': 'रूट रिवॉर्ड्स',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'मेटियो के गिफ्ट एक्सचेंज से 7 किमी के अंडे',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'मेटियो के गिफ्ट एक्सचेंज से 7 किमी के अंडे',
+	},
+	[AvailableLocales.id]: {
+		'Adventure Sync Rewards': 'Hadiah Sinkronisasi Petualangan',
+		'Route Rewards': 'Hadiah Rute',
+		'From Route Gift': 'Hadiah Rute',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'Telur 7 km dari Pertukaran Hadiah Mateo',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'Telur 7 km dari Pertukaran Hadiah Mateo',
+	},
+	[AvailableLocales.it]: {
+		'Adventure Sync Rewards': 'Ricompense di Avventura Sync',
+		'Route Rewards': 'Ricompense del percorso',
+		'From Route Gift': 'Ricompense del percorso',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'Uova da 7 km dallo scambio di doni di Mateo',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'Uova da 7 km dallo scambio di doni di Mateo',
+	},
+	[AvailableLocales.ja]: {
+		'Adventure Sync Rewards': 'アドベンチャーシンクの報酬',
+		'Route Rewards': 'ルートの報酬',
+		'From Route Gift': 'ルートの報酬',
+		"7 km Eggs from Mateo's Gift Exchange": 'マテオのギフト交換の7kmタマゴ',
+		'7 km Eggs from Mateo’s Gift Exchange': 'マテオのギフト交換の7kmタマゴ',
+	},
+	[AvailableLocales.ko]: {
+		'Adventure Sync Rewards': '어드벤처 싱크 보상',
+		'Route Rewards': '루트 보상',
+		'From Route Gift': '루트 보상',
+		"7 km Eggs from Mateo's Gift Exchange": '마테오의 선물 교환 7km 알',
+		'7 km Eggs from Mateo’s Gift Exchange': '마테오의 선물 교환 7km 알',
+	},
+	[AvailableLocales.ru]: {
+		'Adventure Sync Rewards': 'Награды Adventure Sync',
+		'Route Rewards': 'Награды за маршрут',
+		'From Route Gift': 'Награды за маршрут',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'Яйца 7 км из обмена подарками Матео',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'Яйца 7 км из обмена подарками Матео',
+	},
+	[AvailableLocales.th]: {
+		'Adventure Sync Rewards': 'รางวัล Adventure Sync',
+		'Route Rewards': 'รางวัลเส้นทาง',
+		'From Route Gift': 'รางวัลเส้นทาง',
+		"7 km Eggs from Mateo's Gift Exchange":
+			'ไข่ 7 กม. จากการแลกของขวัญของมาเตโอ',
+		'7 km Eggs from Mateo’s Gift Exchange':
+			'ไข่ 7 กม. จากการแลกของขวัญของมาเตโอ',
+	},
+	[AvailableLocales.tr]: {
+		'Adventure Sync Rewards': 'Macera Senkronu Ödülleri',
+		'Route Rewards': 'Rota Ödülleri',
+		'From Route Gift': 'Rota Ödülleri',
+		"7 km Eggs from Mateo's Gift Exchange":
+			"Mateo'nun Hediye Takasından 7 km Yumurtalar",
+		'7 km Eggs from Mateo’s Gift Exchange':
+			"Mateo'nun Hediye Takasından 7 km Yumurtalar",
+	},
+	[AvailableLocales.zhHant]: {
+		'Adventure Sync Rewards': '冒險同步獎勵',
+		'Route Rewards': '路線獎勵',
+		'From Route Gift': '路線獎勵',
+		"7 km Eggs from Mateo's Gift Exchange": '馬提歐禮物交換的7公里蛋',
+		'7 km Eggs from Mateo’s Gift Exchange': '馬提歐禮物交換的7公里蛋',
 	},
 };
 

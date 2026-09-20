@@ -129,6 +129,10 @@ class BossesParser {
 		pokemons: Array<IEntry>
 	) {
 		const currentEntries = selectCurrentRaidEntries(entries, Date.now());
+		// How many raid rotations are currently active isn't knowable in
+		// advance — widen the fetcher's progress denominator now that we
+		// actually know, for this run.
+		this.dataFetcher.announceExpectedFetches(currentEntries.length);
 
 		for (const entry of currentEntries) {
 			const html = await this.dataFetcher.fetchText(

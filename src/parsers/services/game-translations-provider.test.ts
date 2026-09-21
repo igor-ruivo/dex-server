@@ -50,6 +50,10 @@ const REQUIRED_KEYS = [
 	'filter_label_gigantamax',
 	'filter_label_shiny',
 	'filter_label_costume',
+	'filter_label_location_card',
+	'location_card_tutorial_message',
+	'special_background_filter_header',
+	'special_background_ftue_body',
 	'combat_move_attack_bonus_self',
 	'combat_move_attack_bonus_target',
 	'combat_move_attack_debuff_self',
@@ -76,7 +80,17 @@ const REQUIRED_KEYS = [
 	'mega_level_3',
 	'settings_bgmode',
 	'route_general_plural',
+	'badge_detail_reward_header',
+	'friend_singular',
+	'friendslist_sort_gift',
 	'spotlight_hour_event_name',
+	'pokedex_mode_name_mega',
+	'pokedex_info_variant_mega_primal',
+	'combat_grunt_name',
+	'combat_giovanni_name',
+	'combat_sierra_name',
+	'combat_arlo_name',
+	'combat_cliff_name',
 	...[
 		'bug',
 		'dark',
@@ -235,6 +249,44 @@ describe('buildGameTranslations', () => {
 
 		expect(translations.greatLeagueShort[AvailableLocales.tr]).toBe('Süper');
 		expect(translations.masterLeagueShort[AvailableLocales.tr]).toBe('Usta');
+	});
+
+	it('combines egg-comment phrases from their component keys, matching the literal scraped LeekDuck text', () => {
+		const { translations } = buildGameTranslations(
+			makeStubTranslator({
+				[AvailableLocales.en]: {
+					settings_bgmode: 'Adventure Sync',
+					route_general_plural: 'Routes',
+					badge_detail_reward_header: 'Rewards',
+					friend_singular: 'friend',
+					friendslist_sort_gift: 'Gift',
+				},
+				[AvailableLocales.ptbr]: {
+					settings_bgmode: 'Sincronização de Aventura',
+					route_general_plural: 'Rotas',
+					badge_detail_reward_header: 'Recompensas',
+					friend_singular: 'amigo',
+					friendslist_sort_gift: 'Presente',
+				},
+			})
+		);
+
+		expect(translations.adventureSyncRewards[AvailableLocales.en]).toBe(
+			'Adventure Sync Rewards'
+		);
+		expect(translations.routeRewards[AvailableLocales.en]).toBe(
+			'Routes Rewards'
+		);
+		expect(translations.friendGiftGroup[AvailableLocales.en]).toBe(
+			'Friend Gift'
+		);
+
+		expect(translations.adventureSyncRewards[AvailableLocales.ptbr]).toBe(
+			'Sincronização de Aventura Recompensas'
+		);
+		expect(translations.friendGiftGroup[AvailableLocales.ptbr]).toBe(
+			'Amigo Presente'
+		);
 	});
 
 	it('produces both a display and a lowercased search value for every type', () => {

@@ -204,6 +204,19 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	gigantamaxDisplay: 'filter_label_gigantamax',
 	shinyDisplay: 'filter_label_shiny',
 	costumeDisplay: 'filter_label_costume',
+	// "Location Background" — the base (non-special) filter concept; no
+	// dedicated `filter_label_any_background` key exists, but this one is the
+	// actual in-game title-cased name for the same "background" search token
+	// `backgroundSearch` above already uses. `location_card_tutorial_message`
+	// is the in-app tutorial toast body ("You got a Location Background!
+	// These are rare backgrounds you may receive when catching Pokémon at
+	// special locations...") — the closest thing to a plain-language
+	// description that exists in the dump for this concept.
+	backgroundDisplay: 'filter_label_location_card',
+	backgroundDescription: 'location_card_tutorial_message',
+	// "Special Background" filter header + its own FTUE tutorial body.
+	specialBackgroundDisplay: 'special_background_filter_header',
+	specialBackgroundDescription: 'special_background_ftue_body',
 
 	// PvP charged-move stat-stage buff/debuff badges — the actual short
 	// labels Pokémon GO's own move-detail screen shows (e.g. "ATTACK DROP"),
@@ -251,13 +264,39 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	megaLevelHigh: 'mega_level_2',
 	megaLevelMax: 'mega_level_3',
 
-	// Egg-comment labels (Eggs tab groupings).
+	// Egg-comment labels (Eggs tab groupings). `rewardsDisplay`/`friendDisplay`/
+	// `giftDisplay` are combined with these (and each other) below, into the
+	// actual scraped LeekDuck comment phrases ("Adventure Sync Rewards",
+	// "Route Rewards", "From Friend Gifts") — see EGG_COMMENT_TRANSLATION_KEYS.
 	adventureSync: 'settings_bgmode',
 	routes: 'route_general_plural',
+	rewardsDisplay: 'badge_detail_reward_header',
+	friendDisplay: 'friend_singular',
+	giftDisplay: 'friendslist_sort_gift',
 
 	// "Pokémon Spotlight Hour" — replaces the hand-typed, unverified
 	// SPOTLIGHT_HOUR_TITLE_TRANSLATIONS map in gamemaster-translator.ts.
 	spotlightHour: 'spotlight_hour_event_name',
+
+	// "Mega" — go-pokedex combines this with `legendaryDisplay`/other concept
+	// words client-side (e.g. "Legendary Mega") rather than baking every
+	// combination in here; see GameTranslator.ts call sites.
+	megaDisplay: 'pokedex_mode_name_mega',
+	// "PRIMAL" — the short badge-style word (as opposed to
+	// `pokedex_mode_name_primal`'s "Primal Reversion", a full ability-name
+	// phrase); matches the raid boss tier label's existing short style.
+	primalDisplay: 'pokedex_info_variant_mega_primal',
+
+	// Team GO Rocket grunt/leader display names — go-pokedex combines
+	// `gruntDisplay` with a type name for "<Type> Grunt" cards; the four NPC
+	// names are already the full display name each (e.g. `sierraDisplay`'s
+	// value already reads "Leader Sierra"/"Boss Sierra" per locale, not just
+	// "Sierra" — no separate "Leader" word to source).
+	gruntDisplay: 'combat_grunt_name',
+	giovanniDisplay: 'combat_giovanni_name',
+	sierraDisplay: 'combat_sierra_name',
+	arloDisplay: 'combat_arlo_name',
+	cliffDisplay: 'combat_cliff_name',
 };
 
 const POKEMON_TYPES = [
@@ -500,6 +539,44 @@ export function buildGameTranslations(translator: GameMasterTranslator): {
 		);
 	}
 
+	// Combined egg-comment phrases (see localizeEggComment/
+	// EGG_COMMENT_TRANSLATION_KEYS below) — built from two or three
+	// DISPLAY_SOURCE_KEYS entries each, matching the literal scraped LeekDuck
+	// comment text word-for-word.
+	const capitalizeRecord = (
+		rec: Partial<Record<AvailableLocales, string>>
+	): Partial<Record<AvailableLocales, string>> =>
+		Object.fromEntries(
+			Object.entries(rec).map(([locale, value]) => [
+				locale,
+				value.charAt(0).toUpperCase() + value.slice(1),
+			])
+		);
+	const combine = (
+		...parts: Array<Partial<Record<AvailableLocales, string>>>
+	): Partial<Record<AvailableLocales, string>> => {
+		const out: Partial<Record<AvailableLocales, string>> = {};
+		for (const locale of ALL_LOCALES) {
+			const words = parts.map((p) => p[locale]).filter((w): w is string => !!w);
+			if (words.length === parts.length) {
+				out[locale] = words.join(' ');
+			}
+		}
+		return out;
+	};
+	translations.adventureSyncRewards = combine(
+		translations.adventureSync,
+		translations.rewardsDisplay
+	);
+	translations.routeRewards = combine(
+		translations.routes,
+		translations.rewardsDisplay
+	);
+	translations.friendGiftGroup = combine(
+		capitalizeRecord(translations.friendDisplay),
+		translations.giftDisplay
+	);
+
 	const longForms: Record<
 		LeagueTier,
 		Partial<Record<AvailableLocales, string>>
@@ -585,15 +662,17 @@ export function validateGameTranslations(
 }
 
 // SeasonParser only ever scrapes the EN season page for an egg's grouping
-// comment (e.g. "Adventure Sync", "Gift from Matteo"), so its comment is
-// EN-only by construction — this maps the handful of scraped EN strings that
-// have a confirmed data-mined source onto all 15 locales instead. Anything
-// not listed here (e.g. "Gift from Matteo" — no confirmed source, see
+// comment (e.g. "Adventure Sync Rewards", "From Friend Gifts"), so its
+// comment is EN-only by construction — this maps the exact scraped EN
+// strings (verified against the live leekduck-eggs.json output) that have a
+// confirmed data-mined source onto all 15 locales instead. Anything not
+// listed here (e.g. "Gift from Matteo" — no confirmed source, see
 // `game-translations-provider.ts`'s own DISPLAY_SOURCE_KEYS comment) is left
 // for the caller to fall back to EN-only, same as before this existed.
 const EGG_COMMENT_TRANSLATION_KEYS: Record<string, string> = {
-	'Adventure Sync': 'adventureSync',
-	'Routes': 'routes',
+	'Adventure Sync Rewards': 'adventureSyncRewards',
+	'Route Rewards': 'routeRewards',
+	'From Friend Gifts': 'friendGiftGroup',
 };
 
 export function localizeEggComment(

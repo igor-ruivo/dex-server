@@ -24,8 +24,15 @@ export type IParsedEvent = EventBlock & {
 
 export type PublicEvent = Omit<
 	IParsedEvent,
-	'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
+	'url' | 'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
 > & {
+	// The "View original" link needs to open in whichever language the post
+	// itself is being read in — pokemongo.com actually publishes a genuinely
+	// separate URL per locale (e.g. /de/news/…), unlike LeekDuck (a single
+	// English-only fan site), so this is worth keeping instead of collapsing
+	// to one URL the way title/subtitle/bonuses fall back to EN when a given
+	// locale's own translated post is missing.
+	url: Partial<Record<AvailableLocales, string>>;
 	title: Partial<Record<AvailableLocales, string>>;
 	subtitle: Partial<Record<AvailableLocales, string>>;
 	bonuses: Partial<Record<AvailableLocales, Array<string>>>;

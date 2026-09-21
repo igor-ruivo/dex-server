@@ -1,6 +1,22 @@
 {
 	"id": "season",
-	"url": "https://pokemongo.com/en/seasons",
+	"url": {
+		"en": "https://pokemongo.com/en/seasons",
+		"pt_br": "https://pokemongo.com/pt_br/seasons",
+		"de": "https://pokemongo.com/de/seasons",
+		"es": "https://pokemongo.com/es/seasons",
+		"es-MX": "https://pokemongo.com/es-MX/seasons",
+		"fr": "https://pokemongo.com/fr/seasons",
+		"hi": "https://pokemongo.com/hi/seasons",
+		"id": "https://pokemongo.com/id/seasons",
+		"it": "https://pokemongo.com/it/seasons",
+		"ja": "https://pokemongo.com/ja/seasons",
+		"ko": "https://pokemongo.com/ko/seasons",
+		"ru": "https://pokemongo.com/ru/seasons",
+		"th": "https://pokemongo.com/th/seasons",
+		"tr": "https://pokemongo.com/tr/seasons",
+		"zh-Hant": "https://pokemongo.com/zh-Hant/seasons"
+	},
 	"title": {
 		"en": "Twilight Trails",
 		"pt_br": "Trilhas do Entardecer",

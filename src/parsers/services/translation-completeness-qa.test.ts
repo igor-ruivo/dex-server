@@ -20,7 +20,7 @@ const fullBonuses = (
 
 const makeEvent = (overrides: Partial<PublicEvent> = {}): PublicEvent => ({
 	id: 'test-event',
-	url: 'https://pokemongo.com/en/post/test-event',
+	url: fullRecord('https://pokemongo.com/en/post/test-event'),
 	source: 'pokemongo',
 	imageUrl: '',
 	startDate: 0,

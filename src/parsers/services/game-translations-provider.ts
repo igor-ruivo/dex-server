@@ -167,6 +167,7 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	cpDisplay: 'pokemon_info_cp',
 	raidDisplay: 'raid',
 	shadowDisplay: 'filter_label_shadow',
+	purifiedDisplay: 'filter_label_purified',
 	fastAttackHeader: 'pokedex_info_battle_fast_header',
 	chargedAttackHeader: 'pokedex_info_battle_charge_header',
 	// Plural forms — for a section header listing multiple moves at once

@@ -446,7 +446,8 @@ export const pairEventTranslations = (
 			continue;
 		}
 
-		// Build title, subtitle, and bonuses objects for all locales
+		// Build url, title, subtitle, and bonuses objects for all locales
+		const url: Partial<Record<AvailableLocales, string>> = {};
 		const title: Partial<Record<AvailableLocales, string>> = {};
 		const subtitle: Partial<Record<AvailableLocales, string>> = {};
 		const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
@@ -460,6 +461,7 @@ export const pairEventTranslations = (
 			// translated post that legitimately has no bonuses (a real,
 			// non-empty page with an empty bonuses section) still gets its
 			// own (empty) `bonuses` respected, not overwritten with EN's.
+			url[locale] = localeEvent ? localeEvent.url : enEvent.url;
 			title[locale] = localeEvent ? localeEvent.title : enEvent.title;
 			subtitle[locale] = localeEvent ? localeEvent.subtitle : enEvent.subtitle;
 			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
@@ -483,7 +485,7 @@ export const pairEventTranslations = (
 
 		publicEvents.push({
 			id: enEvent.id,
-			url: enEvent.url,
+			url,
 			title,
 			subtitle,
 			startDate: enEvent.startDate,

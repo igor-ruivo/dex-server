@@ -34,6 +34,7 @@ const REQUIRED_KEYS = [
 	'pokemon_info_cp',
 	'raid',
 	'filter_label_shadow',
+	'filter_label_purified',
 	'pokedex_info_battle_fast_header',
 	'pokedex_info_battle_charge_header',
 	'tips_raid_tutorial_fast_attack_title',

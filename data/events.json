@@ -231,7 +231,23 @@
 			}
 		],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "venusaur",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "charizard",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "blastoise",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"bonuses": {

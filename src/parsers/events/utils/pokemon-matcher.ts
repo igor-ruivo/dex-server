@@ -510,6 +510,8 @@ export const extractPokemonSpeciesIdsFromElements = (
 		'rainy form',
 		'snowy form',
 		'to encounter',
+		'encounters with',
+		'such as',
 		'might even encounter',
 		'including',
 		'and more!',

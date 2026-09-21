@@ -123,6 +123,25 @@ describe('buildGameTranslations', () => {
 		expect(() => validateGameTranslations(translations, types)).not.toThrow();
 	});
 
+	it('uses the pinned spreadsheet override for hi/th search tokens even when the live dump looks clean', () => {
+		// The stub's default (unclean-looking) `hi:filter_key_attack` value is
+		// NOT corrupted (no PUA codepoints) — this proves the override wins
+		// outright, not just as a corruption fallback.
+		const { translations } = buildGameTranslations(makeStubTranslator());
+		expect(translations.attackSearch[AvailableLocales.hi]).toBe('अटैक');
+		expect(translations.attackSearch[AvailableLocales.th]).toBe('โจมตี');
+	});
+
+	it('uses the pinned spreadsheet override for hi/th type search tokens', () => {
+		const { types } = buildGameTranslations(makeStubTranslator());
+		expect(types.fire.search[AvailableLocales.hi]).toBe('फ़ायर');
+		expect(types.fire.search[AvailableLocales.th]).toBe('ไฟ');
+		// Display (not a search token) is unaffected by the override.
+		expect(types.fire.display[AvailableLocales.hi]).toBe(
+			`${AvailableLocales.hi}:pokemon_type_fire`
+		);
+	});
+
 	it('lowercases search-token values but keeps display values as-is', () => {
 		const { translations } = buildGameTranslations(
 			makeStubTranslator({

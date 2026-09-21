@@ -43,6 +43,123 @@ const SEARCH_TOKEN_SOURCE_KEYS: Record<string, string> = {
 	tradedSearch: 'filter_key_traded',
 };
 
+// Spreadsheet-verified (APK 0.429.1 audit, pre-dating this file — the same
+// source that originally seeded go-pokedex's GameTranslator.ts by hand)
+// overrides for hi/th search tokens specifically. PokeMiners' live dump
+// corrupts most Hindi/Thai conjunct clusters via a PUA font-hack (see
+// `isCorrupted`'s own comment), and unlike a display label, a corrupted or
+// EN-fallback *search token* is a functionally broken search for that
+// locale's players — they'd be typing a real Hindi/Thai word into a search
+// bar that only recognizes the (unreadable, or wrong-language) alternative.
+// Pinned here rather than re-derived live; takes priority over the dump
+// outright, not just as a corruption fallback.
+const SEARCH_TOKEN_OVERRIDES: Record<
+	string,
+	Partial<Record<AvailableLocales, string>>
+> = {
+	attackSearch: {
+		[AvailableLocales.hi]: 'अटैक',
+		[AvailableLocales.th]: 'โจมตี',
+	},
+	defenseSearch: {
+		[AvailableLocales.hi]: 'डिफ़ेंस',
+		[AvailableLocales.th]: 'ป้องกัน',
+	},
+	hpSearch: { [AvailableLocales.hi]: 'hp', [AvailableLocales.th]: 'hp' },
+	cpSearch: { [AvailableLocales.hi]: 'cp', [AvailableLocales.th]: 'cp' },
+	shadowSearch: {
+		[AvailableLocales.hi]: 'शैडो',
+		[AvailableLocales.th]: 'ชาโดว์',
+	},
+	legendary: {
+		[AvailableLocales.hi]: 'लेजेंडरी',
+		[AvailableLocales.th]: 'ตำนาน',
+	},
+	mythical: { [AvailableLocales.hi]: 'मिथिकल', [AvailableLocales.th]: 'มายา' },
+	megaEvolve: {
+		[AvailableLocales.hi]: 'मेगा एवॉल्व',
+		[AvailableLocales.th]: 'วิวัฒนาการเมก้า',
+	},
+	ultraBeast: {
+		[AvailableLocales.hi]: 'अल्ट्राबीस्ट',
+		[AvailableLocales.th]: 'อัลตร้าบีสต์',
+	},
+	favorite: {
+		[AvailableLocales.hi]: 'पसंदीदा',
+		[AvailableLocales.th]: 'รายการโปรด',
+	},
+	dynamaxSearch: {
+		[AvailableLocales.hi]: 'डायनामैक्स',
+		[AvailableLocales.th]: 'ไดแมกซ์',
+	},
+	fusionSearch: {
+		[AvailableLocales.hi]: 'फ़्यूज़न',
+		[AvailableLocales.th]: 'รวมร่าง',
+	},
+	gigantamaxSearch: {
+		[AvailableLocales.hi]: 'जायगैंटामैक्स',
+		[AvailableLocales.th]: 'กิกะแมกซ์',
+	},
+	backgroundSearch: {
+		[AvailableLocales.hi]: 'बैकग्राउंड',
+		[AvailableLocales.th]: 'พื้นหลัง',
+	},
+	specialBackgroundSearch: {
+		[AvailableLocales.hi]: 'स्पेशलबैकग्राउंड',
+		[AvailableLocales.th]: 'พื้นหลังพิเศษ',
+	},
+	shinySearch: {
+		[AvailableLocales.hi]: 'शाइनी',
+		[AvailableLocales.th]: 'สีแตกต่าง',
+	},
+	costumeSearch: {
+		[AvailableLocales.hi]: 'कॉस्ट्यूम',
+		[AvailableLocales.th]: 'เครื่องแต่งกาย',
+	},
+	tradedSearch: {
+		[AvailableLocales.hi]: 'ट्रेड किये गए',
+		[AvailableLocales.th]: 'แลกเปลี่ยน',
+	},
+};
+
+// Same reasoning and source as `SEARCH_TOKEN_OVERRIDES` above, for the 18
+// Pokémon-type search tokens (e.g. typing "fire" to filter) — these are
+// derived from the type *display* name (lowercased), not resolved
+// independently, so they're applied after that derivation instead of
+// through `resolveAcrossLocales`; see `buildGameTranslations` below.
+const TYPE_SEARCH_OVERRIDES: Record<
+	string,
+	Partial<Record<AvailableLocales, string>>
+> = {
+	bug: { [AvailableLocales.hi]: 'बग', [AvailableLocales.th]: 'แมลง' },
+	dark: { [AvailableLocales.hi]: 'डार्क', [AvailableLocales.th]: 'ความมืด' },
+	dragon: { [AvailableLocales.hi]: 'ड्रैगन', [AvailableLocales.th]: 'มังกร' },
+	electric: {
+		[AvailableLocales.hi]: 'इलेक्ट्रिक',
+		[AvailableLocales.th]: 'ไฟฟ้า',
+	},
+	fairy: { [AvailableLocales.hi]: 'फ़ेरी', [AvailableLocales.th]: 'แฟรี่' },
+	fighting: {
+		[AvailableLocales.hi]: 'फ़ाइटिंग',
+		[AvailableLocales.th]: 'ต่อสู้',
+	},
+	fire: { [AvailableLocales.hi]: 'फ़ायर', [AvailableLocales.th]: 'ไฟ' },
+	flying: { [AvailableLocales.hi]: 'फ़्लाइंग', [AvailableLocales.th]: 'บิน' },
+	ghost: { [AvailableLocales.hi]: 'घोस्ट', [AvailableLocales.th]: 'ผี' },
+	grass: { [AvailableLocales.hi]: 'ग्रास', [AvailableLocales.th]: 'หญ้า' },
+	ground: { [AvailableLocales.hi]: 'ग्राउंड', [AvailableLocales.th]: 'ดิน' },
+	ice: { [AvailableLocales.hi]: 'आइस', [AvailableLocales.th]: 'น้ำแข็ง' },
+	normal: { [AvailableLocales.hi]: 'नॉर्मल', [AvailableLocales.th]: 'ปกติ' },
+	poison: { [AvailableLocales.hi]: 'पॉइज़न', [AvailableLocales.th]: 'พิษ' },
+	psychic: {
+		[AvailableLocales.hi]: 'साइकिक',
+		[AvailableLocales.th]: 'พลังจิต',
+	},
+	rock: { [AvailableLocales.hi]: 'रॉक', [AvailableLocales.th]: 'หิน' },
+	steel: { [AvailableLocales.hi]: 'स्टील', [AvailableLocales.th]: 'โลหะ' },
+	water: { [AvailableLocales.hi]: 'वॉटर', [AvailableLocales.th]: 'น้ำ' },
+};
+
 const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	greatLeagueLong: 'combat_great_league',
 	ultraLeagueLong: 'combat_ultra_league',
@@ -165,11 +282,16 @@ const isCorrupted = (value: string): boolean =>
 /** Resolves one data-mined key across every locale, falling back to the EN
  *  value whenever a locale's own value is missing or PUA-corrupted — logs
  *  every fallback so a real (non-corruption) gap in the dump is still
- *  visible, not silently absorbed. */
+ *  visible, not silently absorbed. `manualOverrides` (when given) wins
+ *  outright for whichever locales it covers, before the live dump is even
+ *  consulted — see `SEARCH_TOKEN_OVERRIDES`'s own comment for why search
+ *  tokens specifically can't settle for an EN fallback the way a display
+ *  label can. */
 function resolveAcrossLocales(
 	translator: GameMasterTranslator,
 	translationKey: string,
-	sourceKey: string
+	sourceKey: string,
+	manualOverrides?: Partial<Record<AvailableLocales, string>>
 ): Partial<Record<AvailableLocales, string>> {
 	const enValue = translator.getRawString(AvailableLocales.en, sourceKey);
 	if (!enValue) {
@@ -180,6 +302,12 @@ function resolveAcrossLocales(
 
 	const result: Partial<Record<AvailableLocales, string>> = {};
 	for (const locale of ALL_LOCALES) {
+		const override = manualOverrides?.[locale];
+		if (override) {
+			result[locale] = override;
+			continue;
+		}
+
 		const raw = translator.getRawString(locale, sourceKey);
 		if (raw && !isCorrupted(raw)) {
 			result[locale] = raw;
@@ -335,7 +463,8 @@ export function buildGameTranslations(translator: GameMasterTranslator): {
 		const resolved = resolveAcrossLocales(
 			translator,
 			translationKey,
-			sourceKey
+			sourceKey,
+			SEARCH_TOKEN_OVERRIDES[translationKey]
 		);
 		translations[translationKey] = Object.fromEntries(
 			Object.entries(resolved).map(([locale, value]) => [
@@ -381,12 +510,19 @@ export function buildGameTranslations(translator: GameMasterTranslator): {
 			`type.${type}`,
 			`pokemon_type_${type}`
 		);
-		const search = Object.fromEntries(
-			Object.entries(display).map(([locale, value]) => [
-				locale,
-				value.toLowerCase(),
-			])
-		);
+		const search: Partial<Record<AvailableLocales, string>> =
+			Object.fromEntries(
+				Object.entries(display).map(([locale, value]) => [
+					locale,
+					value.toLowerCase(),
+				])
+			);
+		const overrides = TYPE_SEARCH_OVERRIDES[type];
+		if (overrides) {
+			for (const [locale, value] of Object.entries(overrides)) {
+				search[locale as AvailableLocales] = value;
+			}
+		}
 		types[type] = { display, search };
 	}
 

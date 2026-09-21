@@ -52,6 +52,79 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	shadowDisplay: 'filter_label_shadow',
 	fastAttackHeader: 'pokedex_info_battle_fast_header',
 	chargedAttackHeader: 'pokedex_info_battle_charge_header',
+	// Plural forms — for a section header listing multiple moves at once
+	// (e.g. "Fast Attacks" above a whole movepool), as opposed to the
+	// singular forms above (e.g. a single move's own detail-screen header).
+	// Several locales (English, Portuguese, …) inflect these differently
+	// from the singular, so this isn't safe to derive by just appending an
+	// "s" — sourced as its own confirmed data-mined key instead.
+	fastAttackHeaderPlural: 'tips_raid_tutorial_fast_attack_title',
+	chargedAttackHeaderPlural: 'tips_raid_tutorial_charged_attack_title',
+	// The actual TM item names — used as an "Elite {Fast,Charged} TM" badge
+	// on a move only obtainable that way (no bare "Elite" badge exists
+	// in-game; these two qualified names are what the game actually calls
+	// them).
+	eliteFastTm: 'elitefasttm.1_title',
+	eliteChargedTm: 'elitechargedtm.1_title',
+	// The raid difficulty tier (distinct from the Elite TM move badges above).
+	eliteRaidTier: 'elite_raid_title',
+	// Plural "Raids" — for a sentence genuinely needing the plural (e.g. "does
+	// not apply to raids"), as opposed to `raidDisplay`'s singular "raid".
+	raidDisplayPlural: 'meetup_check_in_raid',
+	// "Can Mega Evolve" — the actual in-game filter label for this concept
+	// (go-pokedex previously called this "Mega Evolvable", its own invented
+	// phrasing).
+	megaEvolvableDisplay: 'filter_label_evolve_mega',
+
+	// PvP charged-move stat-stage buff/debuff badges — the actual short
+	// labels Pokémon GO's own move-detail screen shows (e.g. "ATTACK DROP"),
+	// not a constructed sentence — see go-pokedex's `buffText()` for why a
+	// sentence built from independently-translated words was replaced with
+	// these badges instead (word order/grammar isn't safe to assemble
+	// per-locale from parts).
+	attackBoostSelf: 'combat_move_attack_bonus_self',
+	attackBoostTarget: 'combat_move_attack_bonus_target',
+	attackDropSelf: 'combat_move_attack_debuff_self',
+	attackDropTarget: 'combat_move_attack_debuff_target',
+	defenseBoostSelf: 'combat_move_defense_bonus_self',
+	defenseBoostTarget: 'combat_move_defense_bonus_target',
+	defenseDropSelf: 'combat_move_defense_debuff_self',
+	defenseDropTarget: 'combat_move_defense_debuff_target',
+	buffChance: 'combat_ability_buff_chance',
+
+	// Weather boost conditions (Counters tab). go-pokedex shows "Sunny/Clear"
+	// as one combined label — sourced as two separate keys here since that
+	// combining is a go-pokedex display choice, not something to bake in.
+	weatherSunny: 'weather_sunny',
+	weatherClear: 'weather_clear',
+	weatherRainy: 'weather_rainy',
+	weatherPartlyCloudy: 'weather_partly_cloudy',
+	weatherCloudy: 'weather_overcast',
+	weatherWindy: 'weather_windy',
+	weatherSnow: 'weather_snow',
+	weatherFog: 'weather_fog',
+
+	// Friendship ladder (Counters tab raid-bonus selector). Levels 1-4 only —
+	// level 0 ("no bonus") and a 6th "Best Friend Forever" tier go-pokedex
+	// also shows have no data-mined equivalent (the latter looks like a very
+	// recently added tier PokeMiners hasn't dumped yet); both stay
+	// site-only English per an explicit call on this.
+	friendshipGood: 'friendship_level_1',
+	friendshipGreat: 'friendship_level_2',
+	friendshipUltra: 'friendship_level_3',
+	friendshipBest: 'friendship_level_4',
+
+	// Mega Level ladder (Counters tab mega-aura selector). Only 3 confirmed
+	// tiers exist in the dump; go-pokedex's 4th ("Super Max") has no
+	// data-mined equivalent — same reasoning as the friendship 6th tier
+	// above, stays site-only English.
+	megaLevelBase: 'mega_level_1',
+	megaLevelHigh: 'mega_level_2',
+	megaLevelMax: 'mega_level_3',
+
+	// Egg-comment labels (Eggs tab groupings).
+	adventureSync: 'settings_bgmode',
+	routes: 'route_general_plural',
 };
 
 const POKEMON_TYPES = [
@@ -357,4 +430,24 @@ export function validateGameTranslations(
 				errors.map((e) => `  - ${e}`).join('\n')
 		);
 	}
+}
+
+// SeasonParser only ever scrapes the EN season page for an egg's grouping
+// comment (e.g. "Adventure Sync", "Gift from Matteo"), so its comment is
+// EN-only by construction — this maps the handful of scraped EN strings that
+// have a confirmed data-mined source onto all 15 locales instead. Anything
+// not listed here (e.g. "Gift from Matteo" — no confirmed source, see
+// `game-translations-provider.ts`'s own DISPLAY_SOURCE_KEYS comment) is left
+// for the caller to fall back to EN-only, same as before this existed.
+const EGG_COMMENT_TRANSLATION_KEYS: Record<string, string> = {
+	'Adventure Sync': 'adventureSync',
+	'Routes': 'routes',
+};
+
+export function localizeEggComment(
+	scrapedEnglishText: string,
+	translations: GameTranslations
+): Partial<Record<AvailableLocales, string>> | undefined {
+	const translationKey = EGG_COMMENT_TRANSLATION_KEYS[scrapedEnglishText];
+	return translationKey ? translations[translationKey] : undefined;
 }

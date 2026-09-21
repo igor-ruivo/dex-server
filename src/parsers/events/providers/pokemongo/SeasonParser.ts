@@ -1,6 +1,8 @@
 import { JSDOM } from 'jsdom';
 
 import type HttpDataFetcher from '../../../services/data-fetcher';
+import type { GameTranslations } from '../../../services/game-translations-provider';
+import { localizeEggComment } from '../../../services/game-translations-provider';
 import {
 	AvailableLocales,
 	pairEventTranslations,
@@ -19,7 +21,8 @@ const getText = (doc: Document, selector: string) =>
 class SeasonParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
-		private readonly domain: Array<GameMasterPokemon>
+		private readonly domain: Array<GameMasterPokemon>,
+		private readonly gameTranslations: GameTranslations
 	) {}
 
 	async fetchSeasonData(gameMasterPokemon: GameMasterData) {
@@ -178,7 +181,10 @@ class SeasonParser {
 					// Só guarda se for múltiplas palavras (ex: "Adventure Sync", "Gift from Matteo")
 					let comment: Partial<Record<AvailableLocales, string>> | undefined;
 					if (commentText && commentText.split(/\s+/).length > 1) {
-						comment = { [AvailableLocales.en]: commentText };
+						comment = localizeEggComment(
+							commentText,
+							this.gameTranslations
+						) ?? { [AvailableLocales.en]: commentText };
 					}
 
 					const listItems = Array.from(

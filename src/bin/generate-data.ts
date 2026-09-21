@@ -94,7 +94,11 @@ const generateData = async () => {
 		const events = await source.parseEvents();
 
 		// Step 6: Generate season data
-		const seasonParser = new SeasonParser(dataFetcher, domains.normalDomain);
+		const seasonParser = new SeasonParser(
+			dataFetcher,
+			domains.normalDomain,
+			gameTranslations.translations
+		);
 		const seasonData = await seasonParser.fetchSeasonData(pokemonDictionary);
 
 		// Step 7: LeekDuck integration

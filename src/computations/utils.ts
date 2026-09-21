@@ -16,8 +16,6 @@ export type DPSEntry = {
 	dps: number;
 	/** Total damage output = dps × time-on-field (bulk-weighted). */
 	tdo: number;
-	/** Effective DPS: bossHP ÷ time-to-win, incl. faints + relobby downtime. */
-	edps: number;
 	fastMove: string;
 	fastMoveDmg: number;
 	chargedMove: string;
@@ -30,18 +28,12 @@ export type DPSEntry = {
 /**
  * GamePress "y": the numerator of the average incoming DPS a raid attacker
  * suffers, before dividing by its own effective defense. `incomingDps = Y / Def`.
- * Same for every boss — the closed-form TDO/eDPS metrics deliberately don't look
+ * Same for every boss — the closed-form TDO metric deliberately doesn't look
  * at the specific boss's moveset (see the comparison notes).
  */
 export const RAID_INCOMING_DPS_NUMERATOR = 900;
 /** Companion to {@link RAID_INCOMING_DPS_NUMERATOR}: one absorbed boss charged hit. */
 export const RAID_INCOMING_CM_POWER = 11700;
-/** Seconds lost to the faint/respawn animation on an in-battle swap. */
-export const RAID_RESPAWN_SECONDS = 1;
-/** Seconds lost walking back in after the whole party wipes to the lobby. */
-export const RAID_RELOBBY_SECONDS = 10;
-/** Trainers assumed in the lobby, for the death → relobby accounting in eDPS. */
-export const RAID_PARTY_SIZE = 6;
 
 export type RaidTier =
 	| 'T1'
@@ -319,7 +311,7 @@ export const calculateDamage = (
 };
 
 export interface RaidOpts {
-	/** Boss tier — sets boss HP (eDPS) and the CPM on the boss's defense. */
+	/** Boss tier — sets the CPM on the boss's defense. */
 	tier?: RaidTier;
 	/** Attacker move types boosted ×1.2 by the current weather. */
 	weatherBoostedTypes?: ReadonlySet<string>;
@@ -447,24 +439,11 @@ export const computeDPSEntry = (
 	const tof = incomingDps > 0 ? attackerHpEff / incomingDps : 0;
 	const tdo = dps * tof;
 
-	let edps = 0;
-	if (tdo > 0 && tof > 0) {
-		const lives = boss.hp / tdo;
-		const deaths = Math.max(0, Math.ceil(lives) - 1);
-		const relobbies = Math.floor(deaths / RAID_PARTY_SIZE);
-		const ttw =
-			lives * tof +
-			(deaths - relobbies) * RAID_RESPAWN_SECONDS +
-			relobbies * RAID_RELOBBY_SECONDS;
-		edps = ttw > 0 ? boss.hp / ttw : 0;
-	}
-
 	return {
 		fastMove: best.fast,
 		chargedMove: best.charged,
 		dps,
 		tdo,
-		edps,
 		speciesId: p.speciesId,
 		fastMoveDmg: best.fastDmg,
 		chargedMoveDmg: best.chargedDmg,

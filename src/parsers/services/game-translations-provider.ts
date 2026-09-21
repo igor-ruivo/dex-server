@@ -286,6 +286,9 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	// `pokedex_mode_name_primal`'s "Primal Reversion", a full ability-name
 	// phrase); matches the raid boss tier label's existing short style.
 	primalDisplay: 'pokedex_info_variant_mega_primal',
+	// "Mega Energy" — the resource needed to Mega Evolve, referenced in
+	// go-pokedex's "Can Mega Evolve" filter description.
+	megaEnergyDisplay: 'mega_energy',
 
 	// Team GO Rocket grunt/leader display names — go-pokedex combines
 	// `gruntDisplay` with a type name for "<Type> Grunt" cards; the four NPC

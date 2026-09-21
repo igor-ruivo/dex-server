@@ -6,7 +6,6 @@ import { computeDPSEntry, getAllChargedMoves, MAX_LEVEL_INDEX } from './utils';
 type ComputedDpsRank = DPSEntry & {
 	dpsRank: number;
 	tdoRank: number;
-	edpsRank: number;
 };
 
 class RaidDpsCalculator {
@@ -45,14 +44,12 @@ class RaidDpsCalculator {
 					)
 					.filter((e) => e.fastMove && e.chargedMove && e.dps >= 0);
 
-				// Consumers rank by whichever figure they care about (DPS, TDO or eDPS —
+				// Consumers rank by whichever figure they care about (DPS or TDO —
 				// see go-pokedex's `RaidMetric`) — a single `rank` baked in here could
 				// only ever reflect one of those, silently misleading anyone reading it
-				// under a different metric. Precomputing all three removes the need for
+				// under the other metric. Precomputing both removes the need for
 				// every consumer to re-sort this list itself just to get a correct rank.
-				const rankBy = (
-					metric: 'dps' | 'tdo' | 'edps'
-				): Map<string, number> => {
+				const rankBy = (metric: 'dps' | 'tdo'): Map<string, number> => {
 					const sorted = [...pokemonEntries].sort((a, b) =>
 						b[metric] !== a[metric]
 							? b[metric] - a[metric]
@@ -62,7 +59,6 @@ class RaidDpsCalculator {
 				};
 				const dpsRanks = rankBy('dps');
 				const tdoRanks = rankBy('tdo');
-				const edpsRanks = rankBy('edps');
 
 				// Iteration/serialization order still reads naturally best-DPS-first —
 				// merely cosmetic now that every consumer ranks off an explicit field.
@@ -77,7 +73,6 @@ class RaidDpsCalculator {
 						...k,
 						dpsRank: dpsRanks.get(k.speciesId)!,
 						tdoRank: tdoRanks.get(k.speciesId)!,
-						edpsRank: edpsRanks.get(k.speciesId)!,
 					};
 				});
 

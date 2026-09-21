@@ -86,6 +86,7 @@ const REQUIRED_KEYS = [
 	'spotlight_hour_event_name',
 	'pokedex_mode_name_mega',
 	'pokedex_info_variant_mega_primal',
+	'mega_energy',
 	'combat_grunt_name',
 	'combat_giovanni_name',
 	'combat_sierra_name',

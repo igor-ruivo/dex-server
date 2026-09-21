@@ -2,10 +2,11 @@ import { JSDOM } from 'jsdom';
 
 import type { IPokemonDomains } from '../../../pokemon/game-master-parser';
 import type HttpDataFetcher from '../../../services/data-fetcher';
+import type { GameTranslations } from '../../../services/game-translations-provider';
 import {
 	AvailableLocales,
+	getSpotlightHourAndTranslation,
 	getSpotlightHourBonusTranslation,
-	getSpotlightHourTranslation,
 } from '../../../services/gamemaster-translator';
 import type { IEntry } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
@@ -70,7 +71,8 @@ class EventsParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
 		private readonly gameMasterPokemon: GameMasterData,
-		private readonly domains: IPokemonDomains
+		private readonly domains: IPokemonDomains,
+		private readonly gameTranslations: GameTranslations
 	) {}
 	async parse() {
 		const html = await this.dataFetcher.fetchText(LEEKDUCK_EVENTS_URL);
@@ -233,12 +235,20 @@ class EventsParser {
 
 		const bonus = this.extractSpotlightBonus(parsed.htmlDoc);
 
+		// "<species>: <spotlight-hour-event-name>" — the event-name half is
+		// sourced live from the data-mined `spotlight_hour_event_name` key
+		// (this.gameTranslations), not a hand-typed translation (see
+		// game-translations-provider.ts's DISPLAY_SOURCE_KEYS.spotlightHour).
+		// ` and ` between two species (dual-species Spotlight Hours) is the
+		// only piece still website-copy, not game data — no data-mined
+		// equivalent exists for that bare conjunction.
 		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
-			translatedTitles[locale] = getSpotlightHourTranslation(
-				locale,
-				parsed.title
-			);
+			const localizedName = getSpotlightHourAndTranslation(locale, rawPkmName);
+			const eventName = this.gameTranslations.spotlightHour?.[locale];
+			translatedTitles[locale] = eventName
+				? `${localizedName}: ${eventName}`
+				: parsed.title;
 		});
 
 		return {

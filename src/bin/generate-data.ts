@@ -105,7 +105,8 @@ const generateData = async () => {
 		const leekduckEventsParser = new EventsParser(
 			dataFetcher,
 			pokemonDictionary,
-			domains
+			domains,
+			gameTranslations.translations
 		);
 		const leekduckEvents = await leekduckEventsParser.parse();
 

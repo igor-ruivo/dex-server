@@ -185,13 +185,25 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	eliteChargedTm: 'elitechargedtm.1_title',
 	// The raid difficulty tier (distinct from the Elite TM move badges above).
 	eliteRaidTier: 'elite_raid_title',
-	// Plural "Raids" — for a sentence genuinely needing the plural (e.g. "does
-	// not apply to raids"), as opposed to `raidDisplay`'s singular "raid".
-	raidDisplayPlural: 'meetup_check_in_raid',
 	// "Can Mega Evolve" — the actual in-game filter label for this concept
 	// (go-pokedex previously called this "Mega Evolvable", its own invented
 	// phrasing).
 	megaEvolvableDisplay: 'filter_label_evolve_mega',
+	// Every other MassDelete/search-filter checkbox's own display label —
+	// distinct from the lowercase search-token versions above (e.g.
+	// `legendary` is the typed keyword "legendary"; `legendaryDisplay` is the
+	// properly-cased "Legendary" shown next to the checkbox). `costume`'s
+	// real in-game label is "Event" — that's what the same filter shows in
+	// the game itself, not a mismatch.
+	favoriteDisplay: 'favorite_filter_group_key',
+	legendaryDisplay: 'filter_label_legendary',
+	mythicalDisplay: 'filter_label_mythical',
+	ultraBeastDisplay: 'filter_key_ultra_beast',
+	dynamaxDisplay: 'filter_label_dynamax',
+	fusionDisplay: 'fusion_feature_name',
+	gigantamaxDisplay: 'filter_label_gigantamax',
+	shinyDisplay: 'filter_label_shiny',
+	costumeDisplay: 'filter_label_costume',
 
 	// PvP charged-move stat-stage buff/debuff badges — the actual short
 	// labels Pokémon GO's own move-detail screen shows (e.g. "ATTACK DROP"),
@@ -242,6 +254,10 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	// Egg-comment labels (Eggs tab groupings).
 	adventureSync: 'settings_bgmode',
 	routes: 'route_general_plural',
+
+	// "Pokémon Spotlight Hour" — replaces the hand-typed, unverified
+	// SPOTLIGHT_HOUR_TITLE_TRANSLATIONS map in gamemaster-translator.ts.
+	spotlightHour: 'spotlight_hour_event_name',
 };
 
 const POKEMON_TYPES = [

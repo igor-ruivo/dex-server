@@ -80,74 +80,36 @@ const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
 		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_chinesetraditional.json',
 };
 
-const SPOTLIGHT_HOUR_TITLE_TRANSLATIONS: Record<
+// Just the bare " and " conjunction for dual-species Spotlight Hours
+// ("Bulbasaur and Ivysaur Spotlight Hour") — the "Spotlight Hour" phrase
+// itself now comes live from the data-mined `spotlight_hour_event_name` key
+// (game-translations-provider.ts), not from a hand-typed map like this one.
+const SPOTLIGHT_HOUR_AND_TRANSLATIONS: Record<
 	AvailableLocales,
 	Record<string, string>
 > = {
 	// The source of truth is already in en
-	[AvailableLocales.en]: {
-		' Spotlight Hour': ' Spotlight Hour',
-		' and ': ' and ',
-	},
+	[AvailableLocales.en]: { ' and ': ' and ' },
 
-	[AvailableLocales.ptbr]: {
-		' Spotlight Hour': ': Hora do Holofote',
-		' and ': ' e ',
-	},
+	[AvailableLocales.ptbr]: { ' and ': ' e ' },
 
 	// Not spreadsheet-sourced like GameTranslator.ts's search keywords in
 	// go-pokedex — these are best-effort, not independently verified against
 	// Niantic's own client strings. Worth double-checking if this ever gets
 	// the same rigor as that file did.
-	[AvailableLocales.de]: {
-		' Spotlight Hour': ': Sternstunde',
-		' and ': ' und ',
-	},
-	[AvailableLocales.es]: {
-		' Spotlight Hour': ': Hora Destacada',
-		' and ': ' y ',
-	},
-	[AvailableLocales.esMx]: {
-		' Spotlight Hour': ': Hora Destacada',
-		' and ': ' y ',
-	},
-	[AvailableLocales.fr]: {
-		' Spotlight Hour': ': Heure Vedette',
-		' and ': ' et ',
-	},
-	[AvailableLocales.hi]: {
-		' Spotlight Hour': ': स्पॉटलाइट आवर',
-		' and ': ' और ',
-	},
-	[AvailableLocales.id]: {
-		' Spotlight Hour': ': Waktu Sorotan',
-		' and ': ' dan ',
-	},
-	[AvailableLocales.it]: {
-		' Spotlight Hour': ': Ora Speciale',
-		' and ': ' e ',
-	},
-	[AvailableLocales.ja]: {
-		' Spotlight Hour': ': スポットライトアワー',
-		' and ': 'と',
-	},
-	[AvailableLocales.ko]: {
-		' Spotlight Hour': ': 스포트라이트 아워',
-		' and ': ' 및 ',
-	},
-	[AvailableLocales.ru]: {
-		' Spotlight Hour': ': Спотлайт-час',
-		' and ': ' и ',
-	},
-	[AvailableLocales.th]: {
-		' Spotlight Hour': ': สปอตไลท์อาวร์',
-		' and ': ' และ ',
-	},
-	[AvailableLocales.tr]: {
-		' Spotlight Hour': ': Öne Çıkan Saat',
-		' and ': ' ve ',
-	},
-	[AvailableLocales.zhHant]: { ' Spotlight Hour': ': 聚焦時間', ' and ': '、' },
+	[AvailableLocales.de]: { ' and ': ' und ' },
+	[AvailableLocales.es]: { ' and ': ' y ' },
+	[AvailableLocales.esMx]: { ' and ': ' y ' },
+	[AvailableLocales.fr]: { ' and ': ' et ' },
+	[AvailableLocales.hi]: { ' and ': ' और ' },
+	[AvailableLocales.id]: { ' and ': ' dan ' },
+	[AvailableLocales.it]: { ' and ': ' e ' },
+	[AvailableLocales.ja]: { ' and ': 'と' },
+	[AvailableLocales.ko]: { ' and ': ' 및 ' },
+	[AvailableLocales.ru]: { ' and ': ' и ' },
+	[AvailableLocales.th]: { ' and ': ' และ ' },
+	[AvailableLocales.tr]: { ' and ': ' ve ' },
+	[AvailableLocales.zhHant]: { ' and ': '、' },
 };
 
 const SPOTLIGHT_HOUR_BONUS_TRANSLATIONS: Record<
@@ -424,12 +386,12 @@ const replaceLocalizedStringComponents = (
 	return translated;
 };
 
-export const getSpotlightHourTranslation = (
+export const getSpotlightHourAndTranslation = (
 	locale: AvailableLocales,
 	enPhrase: string
 ) => {
 	return replaceLocalizedStringComponents(
-		SPOTLIGHT_HOUR_TITLE_TRANSLATIONS[locale],
+		SPOTLIGHT_HOUR_AND_TRANSLATIONS[locale],
 		enPhrase
 	);
 };

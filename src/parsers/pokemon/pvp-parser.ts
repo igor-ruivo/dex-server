@@ -7,31 +7,77 @@ import type {
 	GameMasterData,
 	IGameMasterMove,
 	PvPEntry,
+	PvPLeagueMetadata,
 } from '../types/pokemon';
-import { Leagues, POKEMON_CONFIG } from './config/pokemon-config';
+import {
+	getActiveLeagueDefinitions,
+	LeagueDefinitions,
+	POKEMON_CONFIG,
+	type PvPLeagueDefinition,
+	type PVPokeFormat,
+	PVPokeFormatsUrl,
+} from './config/pokemon-config';
 
-type LeagueKey = keyof typeof Leagues;
+export function validatePvPokeFormats(
+	formats: ReadonlyArray<PVPokeFormat>,
+	definitions = LeagueDefinitions
+): void {
+	for (const definition of Object.values(definitions)) {
+		if (!definition.icon || !definition.rankingFile) {
+			throw new Error(
+				`PvP league ${definition.id} is missing a required icon or ranking file`
+			);
+		}
+	}
+	getActiveLeagueDefinitions(formats, definitions);
+}
 
 class PvPParser {
 	constructor(
 		private readonly dataFetcher: IDataFetcher,
 		private readonly gameMasterPokemon: GameMasterData,
 		private readonly moves: Record<string, IGameMasterMove>
-	) {}
+	) {
+		this.activeLeagueDefinitions = {};
+	}
+
+	private activeLeagueDefinitions: Record<string, PvPLeagueDefinition>;
 
 	async parse() {
 		try {
+			const formats =
+				await this.dataFetcher.fetchJson<Array<PVPokeFormat>>(PVPokeFormatsUrl);
+			validatePvPokeFormats(formats);
+			this.activeLeagueDefinitions = getActiveLeagueDefinitions(formats);
 			const leagueEntries = await Promise.all(
-				(Object.keys(Leagues) as Array<LeagueKey>).map(async (leagueKey) => {
-					const url = Leagues[leagueKey];
-					const sourceJson =
-						await this.dataFetcher.fetchJson<Array<BasePvPEntry>>(url);
-					const parsedLeague = await this.parseLeague(leagueKey, sourceJson);
-					return [leagueKey, parsedLeague] as [
-						LeagueKey,
-						Record<string, PvPEntry>,
-					];
-				})
+				Object.entries(this.activeLeagueDefinitions).map(
+					async ([leagueKey, definition]) => {
+						const sourceJson = await this.dataFetcher.fetchJson<
+							Array<BasePvPEntry>
+						>(definition.url);
+						if (
+							!Array.isArray(sourceJson) ||
+							sourceJson.length === 0 ||
+							sourceJson.some(
+								(entry) =>
+									!entry.speciesId ||
+									!Array.isArray(entry.moveset) ||
+									!Array.isArray(entry.scores) ||
+									!Array.isArray(entry.matchups) ||
+									!Array.isArray(entry.counters)
+							)
+						) {
+							throw new Error(
+								`PvPoke ranking ${leagueKey} is missing required ranking data`
+							);
+						}
+						const parsedLeague = await this.parseLeague(leagueKey, sourceJson);
+						return [leagueKey, parsedLeague] as [
+							string,
+							Record<string, PvPEntry>,
+						];
+					}
+				)
 			);
 
 			const currentRankings = leagueEntries.reduce(
@@ -39,7 +85,7 @@ class PvPParser {
 					acc[leagueKey] = entries;
 					return acc;
 				},
-				{} as Record<LeagueKey, Record<string, PvPEntry>>
+				{} as Record<string, Record<string, PvPEntry>>
 			);
 
 			return currentRankings;
@@ -49,8 +95,21 @@ class PvPParser {
 		}
 	}
 
+	getLeagueMetadata(): Array<PvPLeagueMetadata> {
+		return Object.values(this.activeLeagueDefinitions).map(
+			({ id, title, cpCap, icon, format, rankingFile }) => ({
+				id,
+				title,
+				cpCap,
+				icon,
+				format,
+				rankingFile,
+			})
+		);
+	}
+
 	private async parseLeague(
-		leagueKey: LeagueKey,
+		leagueKey: string,
 		pvpEntries: Array<BasePvPEntry>
 	) {
 		const rankedPokemonDictionary: Record<string, PvPEntry> = {};
@@ -58,13 +117,17 @@ class PvPParser {
 		const dataDir = path.join(process.cwd(), 'data');
 		const filePath = path.join(
 			dataDir,
-			`${leagueKey.toLocaleLowerCase()}-league-pvp.json`
+			this.activeLeagueDefinitions[leagueKey].rankingFile
 		);
-		const fileContent = await fs.readFile(filePath, 'utf-8');
-		const previousRankings = JSON.parse(fileContent) as Record<
-			string,
-			PvPEntry
-		>;
+		let previousRankings: Record<string, PvPEntry> = {};
+		try {
+			const fileContent = await fs.readFile(filePath, 'utf-8');
+			previousRankings = JSON.parse(fileContent) as Record<string, PvPEntry>;
+		} catch (error) {
+			if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
+				throw error;
+			}
+		}
 
 		// Filter to unique computedIds (no alias duplicates)
 		const uniqueEntries: Array<BasePvPEntry> = [];

@@ -1,0 +1,53 @@
+{
+	"leagues": [
+		{
+			"id": "great",
+			"title": "Great League",
+			"cpCap": 1500,
+			"rankingFile": "great-league-pvp.json",
+			"icon": "great-league.svg"
+		},
+		{
+			"id": "ultra",
+			"title": "Ultra League",
+			"cpCap": 2500,
+			"rankingFile": "ultra-league-pvp.json",
+			"icon": "ultra-league.svg"
+		},
+		{
+			"id": "master",
+			"title": "Master League",
+			"cpCap": 10000,
+			"rankingFile": "master-league-pvp.json",
+			"icon": "master-league.svg"
+		},
+		{
+			"id": "mega-1500",
+			"title": "mega (1500 CP)",
+			"cpCap": 1500,
+			"rankingFile": "mega-1500-league-pvp.json",
+			"icon": "mega-1500-league.svg"
+		},
+		{
+			"id": "mega-2500",
+			"title": "mega (2500 CP)",
+			"cpCap": 2500,
+			"rankingFile": "mega-2500-league-pvp.json",
+			"icon": "mega-2500-league.svg"
+		},
+		{
+			"id": "mega-10000",
+			"title": "mega (10000 CP)",
+			"cpCap": 10000,
+			"rankingFile": "mega-10000-league-pvp.json",
+			"icon": "mega-10000-league.svg"
+		},
+		{
+			"id": "retro-1500",
+			"title": "retro (1500 CP)",
+			"cpCap": 1500,
+			"rankingFile": "retro-1500-league-pvp.json",
+			"icon": "retro-1500-league.svg"
+		}
+	]
+}

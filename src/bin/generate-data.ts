@@ -12,7 +12,6 @@ import RocketLineupsParser from '../parsers/events/providers/leekduck/RocketLine
 import MovesProvider from '../parsers/events/providers/pokeminers/MovesProvider';
 import PokemonGoSource from '../parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from '../parsers/events/providers/pokemongo/SeasonParser';
-import { Leagues } from '../parsers/pokemon/config/pokemon-config';
 import GameMasterParser, {
 	getDomains,
 } from '../parsers/pokemon/game-master-parser';
@@ -206,11 +205,34 @@ const generateData = async () => {
 			path.join(dataDir, 'game-translations.json'),
 			JSON.stringify(gameTranslations, null, '\t')
 		);
-		for (const key of Object.keys(Leagues)) {
-			const fileName = `${key.toLocaleLowerCase()}-league-pvp.json`;
+		for (const [key, entries] of Object.entries(pvpData)) {
+			const fileName = pvpParser
+				.getLeagueMetadata()
+				.find(({ id }) => id === key)?.rankingFile;
+			if (!fileName) {
+				throw new Error(`Missing metadata for generated PvP league ${key}`);
+			}
 			const filePath = path.join(dataDir, fileName);
-			await fs.writeFile(filePath, JSON.stringify(pvpData[key], null, '\t'));
+			await fs.writeFile(filePath, JSON.stringify(entries, null, '\t'));
 		}
+		await fs.writeFile(
+			path.join(dataDir, 'leagues.json'),
+			JSON.stringify(
+				{
+					leagues: pvpParser
+						.getLeagueMetadata()
+						.map(({ id, title, cpCap, icon, rankingFile }) => ({
+							id,
+							title,
+							cpCap,
+							rankingFile,
+							icon,
+						})),
+				},
+				null,
+				'\t'
+			)
+		);
 		await fs.writeFile(
 			path.join(dataDir, 'season.json'),
 			JSON.stringify(seasonData, null, '\t')

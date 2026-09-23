@@ -1,8 +1,144 @@
-export enum Leagues {
-	GREAT = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-1500.json',
-	ULTRA = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-2500.json',
-	MASTER = 'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings/all/overall/rankings-10000.json',
+export const PVPokeRankingRoot =
+	'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/rankings';
+export const PVPokeFormatsUrl =
+	'https://raw.githubusercontent.com/pvpoke/pvpoke/master/src/data/gamemaster/formats.json';
+
+const rankingUrl = (format: string, cpCap: number) =>
+	`${PVPokeRankingRoot}/${format}/overall/rankings-${cpCap}.json`;
+
+const dynamicLeagueIds = [
+	['catch', 1500],
+	['cauldron', 2500],
+	['chrysalis', 1500],
+	['classic', 500],
+	['classic', 1500],
+	['classic', 2500],
+	['classic', 10000],
+	['colormega', 1500],
+	['copadiluvio', 1500],
+	['coupedusillage', 10000],
+	['fantasy', 2500],
+	['ligaultra', 2500],
+	['little', 500],
+	['mega', 1500],
+	['mega', 2500],
+	['mega', 10000],
+	['premier', 500],
+	['premier', 1500],
+	['premier', 2500],
+	['premier', 10000],
+	['remix', 1500],
+	['retro', 1500],
+	['spectral', 1500],
+	['tsuki', 1500],
+	['willpower', 1500],
+] as const;
+
+export const Leagues: Record<string, string> = {
+	great: rankingUrl('all', 1500),
+	ultra: rankingUrl('all', 2500),
+	master: rankingUrl('all', 10000),
+	...Object.fromEntries(
+		dynamicLeagueIds.map(([format, cpCap]) => [
+			`${format}-${cpCap}`,
+			rankingUrl(format, cpCap),
+		])
+	),
+};
+
+export type LeagueKey = keyof typeof Leagues;
+
+export interface PvPLeagueDefinition {
+	id: string;
+	title: string;
+	cpCap: number;
+	icon: string;
+	format: string;
+	url: string;
+	rankingFile: string;
 }
+
+export interface PVPokeFormat {
+	title: string;
+	cup: string;
+	cp: number;
+	showCup?: boolean;
+	showFormat?: boolean;
+	hideRankings?: boolean;
+}
+
+const titleCase = (value: string) =>
+	value
+		.split('_')
+		.map((part) => part[0] + part.slice(1).toLocaleLowerCase())
+		.join(' ');
+
+export const LeagueDefinitions: Record<LeagueKey, PvPLeagueDefinition> =
+	Object.keys(Leagues).reduce(
+		(definitions, id) => {
+			const permanentCpCaps: Record<string, number> = {
+				great: 1500,
+				ultra: 2500,
+				master: 10000,
+			};
+			const [format, cp] = id.split(/-(?=\d+$)/);
+			const cpCap = permanentCpCaps[id] ?? Number(cp);
+			const formatTitle = titleCase(format);
+			definitions[id] = {
+				id,
+				title:
+					id === 'great'
+						? 'Great League'
+						: id === 'ultra'
+							? 'Ultra League'
+							: id === 'master'
+								? 'Master League'
+								: `${formatTitle} (${cpCap} CP)`,
+				cpCap,
+				icon: `${id}-league.svg`,
+				format:
+					id === 'great' || id === 'ultra' || id === 'master' ? 'all' : format,
+				url: Leagues[id],
+				rankingFile: `${id}-league-pvp.json`,
+			};
+			return definitions;
+		},
+		{} as Record<LeagueKey, PvPLeagueDefinition>
+	);
+
+export const BLACKLISTED_PVP_FORMAT = /laic|battle[\s_-]*frontier|gymbreakers/i;
+
+export const getActiveLeagueDefinitions = (
+	formats: ReadonlyArray<PVPokeFormat>,
+	definitions = LeagueDefinitions
+): Record<string, PvPLeagueDefinition> => {
+	const activeDefinitions: Record<string, PvPLeagueDefinition> = {};
+	for (const id of ['great', 'ultra', 'master']) {
+		activeDefinitions[id] = definitions[id];
+	}
+
+	for (const format of formats) {
+		if (
+			!format.showFormat ||
+			format.hideRankings ||
+			format.title === 'Custom' ||
+			BLACKLISTED_PVP_FORMAT.test(`${format.title} ${format.cup}`)
+		) {
+			continue;
+		}
+
+		const id = `${format.cup}-${format.cp}`;
+		const definition = definitions[id];
+		if (!definition) {
+			throw new Error(
+				`PvPoke has unconfigured ranking format: ${format.cup} (${format.cp} CP)`
+			);
+		}
+		activeDefinitions[id] = definition;
+	}
+
+	return activeDefinitions;
+};
 
 export const POKEMON_CONFIG = {
 	SOURCE_URL:

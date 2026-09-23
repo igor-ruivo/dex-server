@@ -153,6 +153,15 @@ export type PvPEntry = Omit<BasePvPEntry, 'scores'> & {
 	attacker: number;
 };
 
+export interface PvPLeagueMetadata {
+	id: string;
+	title: string;
+	cpCap: number;
+	icon: string;
+	format: string;
+	rankingFile: string;
+}
+
 export type MatchUp = {
 	opponent: string;
 	rating: number;

@@ -12,9 +12,6 @@ const RESOURCE_REFERENCE_PATTERN = /\b(?:candy|energy)\b/i;
 export const isPokemonResourceReference = (text: string): boolean =>
 	RESOURCE_REFERENCE_PATTERN.test(text);
 
-export const hasExplicitShinyMarker = (text: string): boolean =>
-	text.trim().endsWith('*');
-
 /**
  * Utility for matching Pokémon names and forms to Game Master data in the event pipeline.
  * Handles normalization, form detection, and special cases for event parsing.
@@ -564,15 +561,18 @@ export const extractPokemonSpeciesIdsFromElements = (
 				.filter(Boolean)
 		);
 
-	// A shiny note usually applies only to the Pokémon names carrying the
-	// explicit marker. Do not promote every Pokémon in the same HTML block
-	// when a trailing note says that shiny encounters are possible.
+	// Detect shiny phrase in the text
+	const shinyPhraseRegex = /if you[’'`]?re lucky[^\n]*shiny/i;
+	const shinyByPhrase = textes.some((t) => shinyPhraseRegex.test(t));
+
+	// Mark shiny by asterisk or by phrase
 	const results = matcher.matchPokemonFromText(parsedPokemon);
 	return results.map((entry, idx) => {
 		const originalText = parsedPokemon[idx] || '';
+		const isAsterisk = originalText.trim().endsWith('*');
 		return {
 			...entry,
-			shiny: hasExplicitShinyMarker(originalText),
+			shiny: isAsterisk || shinyByPhrase,
 		};
 	});
 };

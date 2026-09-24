@@ -68262,6 +68262,48 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"bramblin": {
+		"dex": 946,
+		"speciesId": "bramblin",
+		"speciesName": "Bramblin",
+		"types": [
+			"Grass",
+			"Ghost"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/946.png",
+		"goImageUrl": "946.icon.png",
+		"shinyGoImageUrl": "946.s.icon.png",
+		"baseStats": {
+			"atk": 121,
+			"def": 64,
+			"hp": 120
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"BULLET_SEED"
+		],
+		"chargedMoves": [
+			"SHADOW_SNEAK",
+			"NIGHT_SHADE",
+			"POWER_WHIP"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_BRAMBLIN",
+			"evolutions": [
+				"brambleghast"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"toedscool": {
 		"dex": 948,
 		"speciesId": "toedscool",

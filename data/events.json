@@ -286,7 +286,7 @@
 				"kind": ""
 			},
 			{
-				"speciesId": "manectric_mega",
+				"speciesId": "bramblin",
 				"shiny": false,
 				"kind": ""
 			},
@@ -314,6 +314,11 @@
 			},
 			{
 				"speciesId": "dwebble",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "bramblin",
 				"shiny": true,
 				"kind": ""
 			},
@@ -500,99 +505,6 @@
 				"本次活動的「GO Pass」還會推出額外課題，屆時記得留意喔！",
 				"繼續閱讀來瞭解本次活動的「GO Pass」詳情吧！"
 			]
-		}
-	},
-	{
-		"id": "fall-marathon-buddy-trek-2026-1",
-		"url": {
-			"en": "https://pokemongo.com/news/fall-marathon-buddy-trek-2026",
-			"pt_br": "https://pokemongo.com/pt_br/news/fall-marathon-buddy-trek-2026",
-			"de": "https://pokemongo.com/de/news/fall-marathon-buddy-trek-2026",
-			"es": "https://pokemongo.com/es/news/fall-marathon-buddy-trek-2026",
-			"es-MX": "https://pokemongo.com/es-MX/news/fall-marathon-buddy-trek-2026",
-			"fr": "https://pokemongo.com/fr/news/fall-marathon-buddy-trek-2026",
-			"hi": "https://pokemongo.com/hi/news/fall-marathon-buddy-trek-2026",
-			"id": "https://pokemongo.com/id/news/fall-marathon-buddy-trek-2026",
-			"it": "https://pokemongo.com/it/news/fall-marathon-buddy-trek-2026",
-			"ja": "https://pokemongo.com/ja/news/fall-marathon-buddy-trek-2026",
-			"ko": "https://pokemongo.com/ko/news/fall-marathon-buddy-trek-2026",
-			"ru": "https://pokemongo.com/ru/news/fall-marathon-buddy-trek-2026",
-			"th": "https://pokemongo.com/th/news/fall-marathon-buddy-trek-2026",
-			"tr": "https://pokemongo.com/tr/news/fall-marathon-buddy-trek-2026",
-			"zh-Hant": "https://pokemongo.com/zh-Hant/news/fall-marathon-buddy-trek-2026"
-		},
-		"title": {
-			"en": "Fall Marathon: Buddy Trek will bring Bramblin’s Pokémon GO debut!",
-			"pt_br": "Maratona das Folhas: Caminhada Companheira marcará a estreia de Bramblin no Pokémon GO.",
-			"de": "Weherba feiert beim Herbst-Marathon: Kumpel-Wanderung in Pokémon GO sein Debüt!",
-			"es": "¡Maratón otoñal: Excursión en compañía nos trae el debut de Bramblin en Pokémon GO!",
-			"es-MX": "Maratón de Otoño: ¡Aventura con Compañeros traerá el debut de Bramblin en Pokémon GO!",
-			"fr": "L’évènement Marathon automnal : Explore avec tes Copains marquera les débuts de Virovent dans Pokémon GO !",
-			"hi": "ऑटम मैराथन - पार्टनर के संग के दौरान ब्रैम्बलिन का Pokémon GO आगमन होगा!",
-			"id": "Maraton Musim Gugur: Partner Trek akan menghadirkan debut Bramblin di Pokémon GO!",
-			"it": "Con la maratona autunnale Esplora in compagnia, Bramblin farà il suo debutto in Pokémon GO!",
-			"ja": "「秋の遠足：相棒といっしょ」では、「アノクサ」が『Pokémon GO』に初登場",
-			"ko": "\"그푸리\"가 \"Pokémon GO\"에 처음으로 등장하는 \"가을 소풍: 파트너와 함께\" 이벤트!",
-			"ru": "Fall Marathon: Buddy Trek will bring Bramblin’s Pokémon GO debut!",
-			"th": "การเดินทางไกลช่วงฤดูใบไม้ร่วง: ไปกับคู่หู จะมาพร้อมการเปิดตัวของอาโนะคุสะใน Pokémon GO!",
-			"tr": "Sonbahar Maratonu: Dost Turu ile Bramblin Pokémon GO’da ilk defa görünüyor!",
-			"zh-Hant": "「納噬草」即將在《Pokémon GO》「秋季遠足：與夥伴同行」期間首度登場！"
-		},
-		"subtitle": {
-			"en": "GO Pass: Fall Marathon",
-			"pt_br": "Passe GO: Maratona das Folhas",
-			"de": "GO-Pass: Herbst-Marathon",
-			"es": "Pase de GO: Maratón otoñal",
-			"es-MX": "Pase de GO: Maratón de otoño",
-			"fr": "Passe GO : Marathon automnal",
-			"hi": "GO पास: ऑटम मैराथन",
-			"id": "Tiket GO: Maraton Musim Gugur",
-			"it": "Biglietto GO dell'evento Maratona autunnale",
-			"ja": "GOパス：秋の遠足",
-			"ko": "GO패스: 가을 소풍",
-			"ru": "GO Pass: Fall Marathon",
-			"th": "บัตรผ่าน GO: การเดินทางไกลช่วงฤดูใบไม้ร่วง",
-			"tr": "GO Bileti: Sonbahar Maratonu",
-			"zh-Hant": "GO Pass：秋季遠足"
-		},
-		"startDate": 1791885600000,
-		"endDate": 1792440000000,
-		"dateRanges": [
-			{
-				"start": 1791885600000,
-				"end": 1792440000000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/M4kOTm3cvwmzkibKybdE7ItO-lG_C4RpMeI-UQJdEH7kOGF36MjUUo_2VVd6QMHmGoUypowGKIzv2f7LBAXjT3qrtYNNYRhX4GszOYp3vw=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "manectric_mega",
-				"shiny": false,
-				"kind": ""
-			}
-		],
-		"incenses": [],
-		"lures": [],
-		"bonuses": {
-			"en": [],
-			"pt_br": [],
-			"de": [],
-			"es": [],
-			"es-MX": [],
-			"fr": [],
-			"hi": [],
-			"id": [],
-			"it": [],
-			"ja": [],
-			"ko": [],
-			"ru": [],
-			"th": [],
-			"tr": [],
-			"zh-Hant": []
 		}
 	},
 	{
@@ -3111,7 +3023,7 @@
 		"eggs": [],
 		"researches": [
 			{
-				"speciesId": "beedrill_mega",
+				"speciesId": "beedrill",
 				"shiny": false,
 				"kind": ""
 			},

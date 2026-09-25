@@ -36,6 +36,7 @@ const EVENT_SECTION_TYPES = {
 		'Wild encounters',
 		'Wild Encounters',
 		'Event-themed Pokémon',
+		'Sparkle O’Clock',
 	],
 	EGGS: ['Eggs'],
 	LURES: [
@@ -46,6 +47,7 @@ const EVENT_SECTION_TYPES = {
 		'Increased Magnetic Lure Encounters',
 		'Increased Rainy Lure Encounters',
 		'Increased Golden Lure Encounters',
+		'Increased Lure Module Encounters',
 	],
 	RESEARCH: [
 		'Field Research Task Rewards',

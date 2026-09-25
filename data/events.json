@@ -62,7 +62,53 @@
 		],
 		"imageUrl": "https://lh3.googleusercontent.com/CecgAXRzLOF4ifTP3Ufl01if11xzdVEI6R169xxEXw095LM8_lhhWydeV5VNDpXF9Ax-U8N1Zxq6SlKpwsft03DRYjsekc05qpxF8EyqcnU=s0-e365",
 		"source": "pokemongo",
-		"wild": [],
+		"wild": [
+			{
+				"speciesId": "charmander",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "chinchou",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mareep",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "camerupt",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "litwick",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "lampent",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "morelull",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "tadbulb",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"raids": [
 			{
 				"speciesId": "pikachu",
@@ -79,7 +125,48 @@
 			}
 		],
 		"incenses": [],
-		"lures": [],
+		"lures": [
+			{
+				"speciesId": "charmander",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "chinchou",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "mareep",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "camerupt",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "litwick",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "lampent",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "morelull",
+				"shiny": true,
+				"kind": ""
+			},
+			{
+				"speciesId": "tadbulb",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"bonuses": {
 			"en": [
 				"3× Lure Module duration.",

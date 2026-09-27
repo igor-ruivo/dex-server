@@ -164,6 +164,18 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	greatLeagueLong: 'combat_great_league',
 	ultraLeagueLong: 'combat_ultra_league',
 	masterLeagueLong: 'combat_master_league',
+	// PvPoke's "Retro Cup" — its own in-game data-mined title, for the
+	// rotating-league picker's display name (go-pokedex's league-visuals.ts).
+	retroCupTitle: 'retro_cup_title',
+	// Same idea, for every other named rotating cup with its own real
+	// in-game title (go-pokedex composes "Mega " + this for a cup's mega
+	// variant, e.g. `colormega` → "Mega " + colorCupTitle — see
+	// `CUP_TITLE_KEY` in league-visuals.ts).
+	littleCupTitle: 'little_cup_title',
+	colorCupTitle: 'color_cup_great_title',
+	fantasyCupTitle: 'fantasy_cup_great_title',
+	halloweenCupTitle: 'halloween_cup_title',
+	catchCupTitle: 'catch_cup_title',
 	cpDisplay: 'pokemon_info_cp',
 	raidDisplay: 'raid',
 	shadowDisplay: 'filter_label_shadow',

@@ -43,11 +43,25 @@
 			"icon": "mega-10000-league.svg"
 		},
 		{
+			"id": "colormega-1500",
+			"title": "colormega (1500 CP)",
+			"cpCap": 1500,
+			"rankingFile": "colormega-1500-league-pvp.json",
+			"icon": "colormega-1500-league.svg"
+		},
+		{
 			"id": "retro-1500",
 			"title": "retro (1500 CP)",
 			"cpCap": 1500,
 			"rankingFile": "retro-1500-league-pvp.json",
 			"icon": "retro-1500-league.svg"
+		},
+		{
+			"id": "laic2027-1500",
+			"title": "laic2027 (1500 CP)",
+			"cpCap": 1500,
+			"rankingFile": "laic2027-1500-league-pvp.json",
+			"icon": "laic2027-1500-league.svg"
 		}
 	]
 }

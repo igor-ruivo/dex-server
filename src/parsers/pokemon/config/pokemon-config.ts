@@ -17,9 +17,18 @@ const dynamicLeagueIds = [
 	['colormega', 1500],
 	['copadiluvio', 1500],
 	['coupedusillage', 10000],
-	['fantasy', 2500],
+	// Not live on PvPoke yet — will be the Great League (1500 CP) edition once
+	// it rotates in. If a different-cp edition (Ultra/Master) ever needs to
+	// coexist, add it as its own separate entry rather than changing this one.
+	['fantasy', 1500],
 	['ligaultra', 2500],
 	['little', 500],
+	// PvPoke's yearly Latin America International Championship cup — the id
+	// carries the year (`laic2027` right now), so this specific entry goes
+	// stale once that rotates; update the year here when it does. Previously
+	// blacklisted (see BLACKLISTED_PVP_FORMAT's own history) as a guess that
+	// it was some kind of internal/test format — confirmed legitimate.
+	['laic2027', 1500],
 	['mega', 1500],
 	['mega', 2500],
 	['mega', 10000],
@@ -106,7 +115,7 @@ export const LeagueDefinitions: Record<LeagueKey, PvPLeagueDefinition> =
 		{} as Record<LeagueKey, PvPLeagueDefinition>
 	);
 
-export const BLACKLISTED_PVP_FORMAT = /laic|battle[\s_-]*frontier|gymbreakers/i;
+export const BLACKLISTED_PVP_FORMAT = /battle[\s_-]*frontier|gymbreakers/i;
 
 export const getActiveLeagueDefinitions = (
 	formats: ReadonlyArray<PVPokeFormat>,

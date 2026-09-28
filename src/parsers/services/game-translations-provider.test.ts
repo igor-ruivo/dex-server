@@ -93,6 +93,12 @@ const REQUIRED_KEYS = [
 	'combat_sierra_name',
 	'combat_arlo_name',
 	'combat_cliff_name',
+	'retro_cup_title',
+	'little_cup_title',
+	'color_cup_great_title',
+	'fantasy_cup_great_title',
+	'halloween_cup_title',
+	'catch_cup_title',
 	...[
 		'bug',
 		'dark',

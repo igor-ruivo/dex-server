@@ -415,10 +415,25 @@ export interface BestIvSpreadFields {
 }
 
 /**
- * Every species' `bestIvSpreads` (always) and `bestIvSpreadsPurified`
- * (Shadow forms only — a non-Shadow catch can never purify, so the field
- * would be pure dead weight everywhere else), keyed by speciesId. A pure
- * function of `gameMasterPokemon` — never mutates it.
+ * Every species' `bestIvSpreads` (always) and `bestIvSpreadsPurified` (Shadow
+ * *or* Mega forms — everything else would be pure dead weight, since neither
+ * a plain non-Shadow, non-Mega catch nor an alias form can ever be the
+ * "purified" side of anything).
+ *
+ * Shadow needs it for the obvious reason: ranking its own raw IVs once
+ * purified (+2/+2/+2). Mega needs it for a less obvious one: a Shadow's
+ * reachable evolution line can continue *past* purification into a Mega
+ * form (Shadow Charmander → purify → Charmander → Charmeleon → Charizard →
+ * Mega Charizard X/Y) — the client's own carve-out sweep needs to check that
+ * Shadow's purified IVs against the *Mega's* best-purified ranking, computed
+ * with the Mega's own (boosted) base stats. `bestIvSpreadsPurified` is a
+ * pure function of `stats` alone — it doesn't know or care whether the
+ * species holding it is itself directly catchable as Shadow, only that a
+ * purified individual might land here. Server-side, this needs no
+ * reachability graph at all (dex-server doesn't have one, see
+ * `family-relations-calculator.ts`) — it's the client's job to walk from a
+ * Shadow to its reachable Mega form(s) (via `nonShadowSpecies` → evolution
+ * chain → `megaFormsIds`) and then simply read *this* field off each one.
  */
 export const computeBestIvSpreadsForAllSpecies = (
 	gameMasterPokemon: GameMasterData
@@ -427,7 +442,7 @@ export const computeBestIvSpreadsForAllSpecies = (
 	for (const pokemon of Object.values(gameMasterPokemon)) {
 		result[pokemon.speciesId] = {
 			bestIvSpreads: computeBestIvSpreads(pokemon.baseStats),
-			...(pokemon.isShadow
+			...(pokemon.isShadow || pokemon.isMega
 				? {
 						bestIvSpreadsPurified: computeBestIvSpreadsPurified(
 							pokemon.baseStats

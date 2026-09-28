@@ -267,12 +267,16 @@ describe('computeBestIvSpreadsForAllSpecies', () => {
 		...overrides,
 	});
 
-	it('adds bestIvSpreads for every species, and bestIvSpreadsPurified only for Shadow ones', () => {
+	it('adds bestIvSpreads for every species, and bestIvSpreadsPurified only for Shadow or Mega ones', () => {
 		const dict: GameMasterData = {
 			test_mon: makePokemon({ speciesId: 'test_mon', isShadow: false }),
 			test_mon_shadow: makePokemon({
 				speciesId: 'test_mon_shadow',
 				isShadow: true,
+			}),
+			test_mon_mega: makePokemon({
+				speciesId: 'test_mon_mega',
+				isMega: true,
 			}),
 		};
 
@@ -283,6 +287,13 @@ describe('computeBestIvSpreadsForAllSpecies', () => {
 
 		expect(result.test_mon_shadow.bestIvSpreads).toBeDefined();
 		expect(result.test_mon_shadow.bestIvSpreadsPurified).toBeDefined();
+
+		// Mega gets it too — not because a Mega is itself ever Shadow-catchable,
+		// but because a Shadow's own purified IVs can land here once its
+		// reachable evolution line continues into this Mega form. See
+		// `computeBestIvSpreadsForAllSpecies`'s own doc comment.
+		expect(result.test_mon_mega.bestIvSpreads).toBeDefined();
+		expect(result.test_mon_mega.bestIvSpreadsPurified).toBeDefined();
 	});
 
 	it('never mutates the input gamemaster', () => {

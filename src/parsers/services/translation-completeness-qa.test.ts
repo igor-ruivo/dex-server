@@ -35,6 +35,7 @@ const makeEvent = (overrides: Partial<PublicEvent> = {}): PublicEvent => ({
 	title: fullRecord('Test Event'),
 	subtitle: fullRecord('Test Subtitle'),
 	bonuses: fullBonuses(['+2x Stardust']),
+	availableLocales: ALL_LOCALES,
 	...overrides,
 });
 

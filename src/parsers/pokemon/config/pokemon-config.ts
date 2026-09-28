@@ -115,7 +115,8 @@ export const LeagueDefinitions: Record<LeagueKey, PvPLeagueDefinition> =
 		{} as Record<LeagueKey, PvPLeagueDefinition>
 	);
 
-export const BLACKLISTED_PVP_FORMAT = /battle[\s_-]*frontier|gymbreakers/i;
+export const BLACKLISTED_PVP_FORMAT =
+	/battle[\s_-]*frontier|gymbreakers|devon[\s_-]*trail/i;
 
 export const getActiveLeagueDefinitions = (
 	formats: ReadonlyArray<PVPokeFormat>,

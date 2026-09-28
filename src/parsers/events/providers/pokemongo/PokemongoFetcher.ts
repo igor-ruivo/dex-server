@@ -2,36 +2,91 @@ import { JSDOM } from 'jsdom';
 
 import type HttpDataFetcher from '../../../services/data-fetcher';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
-import type { ExtractedPostLink, PokemonGoPost } from '../../../types/events';
+import type { PokemonGoPost } from '../../../types/events';
+
+interface ListingLink {
+	slug: string;
+}
 
 class PokemonGoFetcher {
 	private baseUrl = 'https://pokemongo.com';
-	private newsUrl = 'https://pokemongo.com/news';
 
 	constructor(private readonly dataFetcher: HttpDataFetcher) {}
 
 	async fetchAllPosts(): Promise<Array<PokemonGoPost>> {
 		try {
-			const newsPageHtml = await this.fetchPage(this.newsUrl);
-			const postLinks = this.extractPostLinks(newsPageHtml);
-			const postPromises = postLinks.map(async (link) => {
-				try {
-					const html = await this.fetchPage(link.url);
-					return {
-						url: link.url,
-						type: this.determinePostType(link.url),
-						html,
-						locale: link.locale,
-					};
-				} catch {
-					return null;
-				}
-			});
+			const locales = Object.values(AvailableLocales);
+			// The ground truth for "is this event published in language X" is
+			// whether X's own news listing page (e.g. pokemongo.com/pt-BR/news)
+			// actually links to it — not whether a URL built by string-
+			// substituting the English one happens to return 200. A missing
+			// translation can silently redirect to a generic page (a false
+			// positive for "it exists") or the substituted URL shape can simply
+			// be wrong for that locale (a false negative) — fetching each
+			// locale's real listing page sidesteps both failure modes, and gives
+			// us the real per-locale URL to fetch directly instead of a guess.
+			//
+			// Always `/${locale}/news`, even for English — the bare, unprefixed
+			// `/news` can come back geo/Accept-Language-negotiated into a
+			// non-English page (seen live: a fully Chinese post surfacing as the
+			// "English" one), where the explicit `/en/news` reliably doesn't.
+			const listingPages = await Promise.all(
+				locales.map(async (locale) => {
+					try {
+						const html = await this.fetchPage(`${this.baseUrl}/${locale}/news`);
+						return { locale, links: this.extractListingLinks(html) };
+					} catch {
+						return { locale, links: [] as Array<ListingLink> };
+					}
+				})
+			);
+
+			const enListing = listingPages.find(
+				(p) => p.locale === AvailableLocales.en
+			);
+			if (!enListing) {
+				return [];
+			}
+			// Same cap as before — which events exist at all is still driven by
+			// the English listing.
+			const enLinks = enListing.links.slice(0, 30);
+
+			const postPromises = enLinks.flatMap((enLink) =>
+				listingPages.map(async ({ locale, links }) => {
+					const match =
+						locale === AvailableLocales.en
+							? enLink
+							: links.find((l) => l.slug === enLink.slug);
+					if (!match) {
+						return null;
+					}
+					// The listing page's own hrefs are bare/unprefixed
+					// (`/news/<slug>`) even when the *listing* page itself was
+					// fetched from an explicit `/en/news` — and fetching that bare
+					// URL directly is exactly where geo/Accept-Language
+					// negotiation can quietly swap in a different language (seen
+					// live: a fully Chinese post surfacing as the "English" one).
+					// Reconstructing an explicitly locale-prefixed URL from the
+					// matched slug — confirmed live to work the same as the
+					// listing pages do — removes that ambiguity for the actual
+					// content fetch too, not just for finding the event.
+					const url = `${this.baseUrl}/${locale}/${match.slug}`;
+					try {
+						const html = await this.fetchPage(url);
+						return {
+							url,
+							type: this.determinePostType(url),
+							html,
+							locale,
+						};
+					} catch {
+						return null;
+					}
+				})
+			);
+
 			const results = await Promise.all(postPromises);
-			const posts = results.filter(
-				(post) => post !== null
-			) as Array<PokemonGoPost>;
-			return posts;
+			return results.filter((post): post is PokemonGoPost => post !== null);
 		} catch (error) {
 			console.error(error);
 			return [];
@@ -48,58 +103,38 @@ class PokemonGoFetcher {
 		return text;
 	}
 
-	private extractPostLinks(html: string): Array<ExtractedPostLink> {
-		const links: Array<ExtractedPostLink> = [];
+	// Normalizes a post URL (whatever locale prefix or absence of one it has)
+	// down to a bare "post/<slug>" or "news/<slug>" key, so the same event can
+	// be matched across every locale's own listing page regardless of that
+	// locale's URL shape (`/pt-br/post/x`, `/post/x`, `/en/post/x`, …).
+	private slugOf(url: string): string {
+		const path = url.toLowerCase().replace(/^https?:\/\/[^/]+/, '');
+		const match = /\/(post|news)\/([^/?#]+)/.exec(path);
+		return match ? `${match[1]}/${match[2]}` : path;
+	}
+
+	private extractListingLinks(html: string): Array<ListingLink> {
 		const dom = new JSDOM(html);
 		const document = dom.window.document;
-		// Select all <a> elements with href containing /en/post/ or /news/
-		const cardLinks = Array.from(
+		const anchors = Array.from(
 			document.querySelectorAll('a')
 		) as Array<Element>;
-		const filteredLinks = cardLinks
-			.filter((a: Element) => {
-				const href = a.getAttribute('href') ?? '';
-				return href.includes('/en/post/') || href.includes('/news/');
-			})
-			.slice(0, 30);
 
-		filteredLinks.forEach((a: Element) => {
-			let url = a.getAttribute('href') ?? '';
-			if (url.startsWith('/')) url = this.baseUrl + url;
-			if (!url.startsWith('http'))
-				url = this.baseUrl + '/' + url.replace(/^\//, '');
-
-			if (!links.some((link) => link.url === url)) {
-				links.push({
-					url: url,
-					locale: AvailableLocales.en,
-				});
-
-				// Add links for all AvailableLocales except the one already present in the URL
-				const availableLocales = Object.values(AvailableLocales);
-				availableLocales.forEach((locale) => {
-					if (locale === AvailableLocales.en) {
-						return;
-					}
-
-					let localeUrl: string;
-					if (url.includes(`/${AvailableLocales.en}/`)) {
-						localeUrl = url.replaceAll(
-							`/${AvailableLocales.en}/`,
-							`/${locale}/`
-						);
-					} else {
-						localeUrl = url.replace('/news/', `/${locale}/news/`);
-					}
-					if (!links.some((l) => l.url === localeUrl)) {
-						links.push({
-							url: localeUrl,
-							locale,
-						});
-					}
-				});
+		const seen = new Set<string>();
+		const links: Array<ListingLink> = [];
+		for (const a of anchors) {
+			const href = a.getAttribute('href') ?? '';
+			if (!href.includes('/post/') && !href.includes('/news/')) {
+				continue;
 			}
-		});
+
+			const slug = this.slugOf(href);
+			if (seen.has(slug)) {
+				continue;
+			}
+			seen.add(slug);
+			links.push({ slug });
+		}
 		return links;
 	}
 

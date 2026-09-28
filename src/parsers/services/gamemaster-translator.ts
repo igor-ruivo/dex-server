@@ -451,19 +451,30 @@ export const pairEventTranslations = (
 		const title: Partial<Record<AvailableLocales, string>> = {};
 		const subtitle: Partial<Record<AvailableLocales, string>> = {};
 		const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
+		const availableLocales: Array<AvailableLocales> = [];
 
 		for (const locale of locales) {
 			const localeEvent = localeEvents[locale];
+			if (localeEvent) {
+				availableLocales.push(locale);
+			}
 			// No translated post found for this locale/event — fall back to
 			// the English content instead of shipping an empty string, same
 			// reasoning as SeasonParser's own EN fallback. `localeEvent`
-			// being `undefined` is the precise signal for "missing"; a
-			// translated post that legitimately has no bonuses (a real,
-			// non-empty page with an empty bonuses section) still gets its
-			// own (empty) `bonuses` respected, not overwritten with EN's.
-			url[locale] = localeEvent ? localeEvent.url : enEvent.url;
-			title[locale] = localeEvent ? localeEvent.title : enEvent.title;
-			subtitle[locale] = localeEvent ? localeEvent.subtitle : enEvent.subtitle;
+			// being `undefined` is the precise signal for "missing" for
+			// `availableLocales` above; the fallback chains below are
+			// separately guarded against an *empty string*, not just a
+			// missing `localeEvent` — a real translated post can come back
+			// with a genuinely blank field (e.g. a subevent whose HTML block
+			// has no distinct subtitle text of its own), and that's still
+			// worth falling back on rather than shipping empty. Subtitle's
+			// chain goes one step further, down to EN's own *title*, since a
+			// subtitle-less event mirroring its title reads fine and is
+			// still better than empty.
+			url[locale] = localeEvent?.url ?? enEvent.url;
+			title[locale] = localeEvent?.title ?? enEvent.title;
+			subtitle[locale] =
+				localeEvent?.subtitle ?? enEvent.subtitle ?? enEvent.title;
 			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
 
 			if (locale === AvailableLocales.en) {
@@ -500,6 +511,7 @@ export const pairEventTranslations = (
 			incenses: enEvent.incenses,
 			lures: enEvent.lures,
 			bonuses,
+			availableLocales,
 		});
 	}
 

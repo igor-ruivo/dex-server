@@ -36,6 +36,13 @@ export type PublicEvent = Omit<
 	title: Partial<Record<AvailableLocales, string>>;
 	subtitle: Partial<Record<AvailableLocales, string>>;
 	bonuses: Partial<Record<AvailableLocales, Array<string>>>;
+	// Which locales actually have their own pokemongo.com post for this event
+	// — `url`/`title`/`subtitle`/`bonuses` above fall back to the English
+	// post's content for any locale missing here, so consumers that want to
+	// know whether a locale's *own* page genuinely exists (rather than
+	// silently reading English) need this instead of inferring it from
+	// those fallback-filled fields.
+	availableLocales: Array<AvailableLocales>;
 };
 
 export interface IEventSource {

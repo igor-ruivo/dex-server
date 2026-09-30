@@ -1,7 +1,14 @@
+import { calculateCP } from '../../computations/best-iv-spread-calculator';
+import { MAX_LEVEL } from '../../computations/utils';
 import { POKEMON_CONFIG } from '../pokemon/config/pokemon-config';
 import type { IDataFetcher } from '../services/data-fetcher';
 import type { BasePokemon, GameMasterData } from '../types/pokemon';
+import type {
+	BadIvPattern,
+	SpeciesSearchMetadataMap,
+} from '../types/species-search-metadata';
 import {
+	type BestIvs,
 	type LeaderboardMember,
 	type LeaderboardTeam,
 	type PvPokeMove,
@@ -12,12 +19,12 @@ import {
 	type TeamLeaderboard,
 	type TeamLeague,
 } from '../types/teams';
+import { metaGroupUrl, PVPOKE_MOVES_URL, trainingAnalysisUrl } from './config';
 import {
 	buildSimulatorStatus,
 	findChangedSimulatorSources,
 	findUnknownMechanics,
 } from './simulator-guard';
-import { metaGroupUrl, PVPOKE_MOVES_URL, trainingAnalysisUrl } from './config';
 
 interface RawGroupEntry {
 	speciesId: string;
@@ -30,6 +37,47 @@ interface RawTrainingAnalysis {
 
 /** Ranked species per league (the keys of each `*-league-pvp.json`). */
 export type RankedSpeciesByLeague = Record<TeamLeague, ReadonlyArray<string>>;
+
+/** Great / Ultra / Master League CP caps (Master has none). */
+const LEAGUE_CP_CAPS: Record<TeamLeague, number> = {
+	great: 1500,
+	ultra: 2500,
+	master: Number.MAX_VALUE,
+};
+
+/**
+ * The rank-1 spread to rate a species with, from the tied-for-best (stat product) patterns
+ * `species-search-metadata.json` already computes: level-50 only (Best Buddy is ignored, like
+ * PvPoke), and on a tie the highest numbers win — Attack first, then Defense, then HP. The level is
+ * the highest one at which that spread still fits the league's CP cap.
+ */
+export const pickBestIvs = (
+	patterns: ReadonlyArray<BadIvPattern>,
+	baseStats: { atk: number; def: number; hp: number },
+	cpCap: number
+): BestIvs | undefined => {
+	const best = [...patterns].sort(
+		(a, b) => b.A - a.A || b.D - a.D || b.S - a.S
+	)[0];
+	if (!best) return undefined;
+
+	for (let index = (MAX_LEVEL - 1) * 2; index >= 0; index--) {
+		if (
+			calculateCP(
+				baseStats.atk,
+				best.A,
+				baseStats.def,
+				best.D,
+				baseStats.hp,
+				best.S,
+				index
+			) <= cpCap
+		) {
+			return [index / 2 + 1, best.A, best.D, best.S];
+		}
+	}
+	return undefined;
+};
 
 /** PvPoke's own move abbreviation: an explicit one, else the initials of the move id's words. */
 export const moveAbbreviation = (
@@ -125,16 +173,17 @@ class TeamBuilderParser {
 		private readonly gameMaster: GameMasterData
 	) {}
 
-	async parse(rankedSpecies: RankedSpeciesByLeague): Promise<{
+	async parse(
+		rankedSpecies: RankedSpeciesByLeague,
+		bestIvSpreads: SpeciesSearchMetadataMap
+	): Promise<{
 		builder: TeamBuilderData;
 		leaderboard: TeamLeaderboard;
 	}> {
 		console.log('Fetching PvPoke team-builder sources...');
 		const [rawMoves, rawPokemon, groups, analyses] = await Promise.all([
 			this.dataFetcher.fetchJson<Array<PvPokeMove>>(PVPOKE_MOVES_URL),
-			this.dataFetcher.fetchJson<Array<BasePokemon>>(
-				POKEMON_CONFIG.SOURCE_URL
-			),
+			this.dataFetcher.fetchJson<Array<BasePokemon>>(POKEMON_CONFIG.SOURCE_URL),
 			Promise.all(
 				TEAM_LEAGUES.map((league) =>
 					this.dataFetcher.fetchJson<Array<RawGroupEntry>>(metaGroupUrl(league))
@@ -169,7 +218,13 @@ class TeamBuilderParser {
 
 		return {
 			builder: {
-				...this.buildBuilderData(rawPokemon, moves, groups, rankedSpecies),
+				...this.buildBuilderData(
+					rawPokemon,
+					moves,
+					groups,
+					rankedSpecies,
+					bestIvSpreads
+				),
 				simulator,
 			},
 			leaderboard: this.buildLeaderboard(analyses, abbreviations),
@@ -180,7 +235,8 @@ class TeamBuilderParser {
 		rawPokemon: Array<BasePokemon>,
 		moves: Record<string, TeamBuilderMove>,
 		groups: Array<Array<RawGroupEntry>>,
-		rankedSpecies: RankedSpeciesByLeague
+		rankedSpecies: RankedSpeciesByLeague,
+		bestIvSpreads: SpeciesSearchMetadataMap
 	): Omit<TeamBuilderData, 'simulator'> {
 		const rawById = new Map(rawPokemon.map((p) => [p.speciesId, p]));
 		const ivs: TeamBuilderData['ivs'] = {};
@@ -193,9 +249,29 @@ class TeamBuilderParser {
 					`Ranked species ${speciesId} is missing from PvPoke's pokemon.json`
 				);
 			}
+			// A Shadow shares its normal form's spreads (same base stats), and a battle-only alternate form
+			// (Mimikyu Busted, Morpeko Hangry…) its original form's.
+			const source = [
+				speciesId,
+				this.gameMaster[speciesId]?.nonShadowSpecies,
+				raw.originalFormId,
+			].find((id) => id && bestIvSpreads[id]?.bestIvSpreads);
+			if (!source) {
+				throw new Error(
+					`No best IV spreads for ${speciesId} in species-search-metadata`
+				);
+			}
+			const spreads = bestIvSpreads[source].bestIvSpreads;
+
 			const entry: TeamBuilderData['ivs'][string] = {};
-			if (raw.defaultIVs?.cp1500) entry.great = raw.defaultIVs.cp1500;
-			if (raw.defaultIVs?.cp2500) entry.ultra = raw.defaultIVs.cp2500;
+			for (const league of TEAM_LEAGUES) {
+				const picked = pickBestIvs(
+					spreads[league].level50,
+					raw.baseStats,
+					LEAGUE_CP_CAPS[league]
+				);
+				if (picked) entry[league] = picked;
+			}
 			ivs[speciesId] = entry;
 		};
 
@@ -251,24 +327,28 @@ class TeamBuilderParser {
 		analyses: Array<RawTrainingAnalysis>,
 		abbreviations: Record<string, string>
 	): TeamLeaderboard {
-		const leagues = {} as TeamLeaderboard['leagues'];
 		const dates = new Set<string>();
 
-		TEAM_LEAGUES.forEach((league, i) => {
-			const analysis = analyses[i];
+		const build = (league: TeamLeague) => {
+			const analysis = analyses[TEAM_LEAGUES.indexOf(league)];
 			if (!Array.isArray(analysis.teams) || analysis.teams.length === 0) {
 				throw new Error(
 					`PvPoke training analysis for ${league} league has no teams`
 				);
 			}
-			dates.add(analysis.properties.lastUpdated.replace(/\s+/g, ' ').trim());
-			leagues[league] = {
+			dates.add(analysis.properties.lastUpdated.replace(/s+/g, ' ').trim());
+			return {
 				totalTeams: analysis.properties.totalTeams,
 				teams: analysis.teams
 					.map((t) => parseLeaderboardTeam(t, this.gameMaster, abbreviations))
-					.sort((a, b) => b.score - a.score),
+					.sort((x, y) => y.score - x.score),
 			};
-		});
+		};
+		const leagues: TeamLeaderboard['leagues'] = {
+			great: build('great'),
+			ultra: build('ultra'),
+			master: build('master'),
+		};
 
 		// PvPoke stamps one date per league file; they're refreshed together, so
 		// the newest is what "last updated" should honestly say.

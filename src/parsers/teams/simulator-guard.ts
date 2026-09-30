@@ -75,7 +75,8 @@ export const findUnknownMechanics = (
 
 	for (const move of moves) {
 		for (const tag of move.tags ?? []) {
-			if (!KNOWN_MOVE_TAGS.has(tag)) issues.add(`move tag "${tag}" (${move.moveId})`);
+			if (!KNOWN_MOVE_TAGS.has(tag))
+				issues.add(`move tag "${tag}" (${move.moveId})`);
 		}
 		if (move.buffTarget && !KNOWN_BUFF_TARGETS.has(move.buffTarget)) {
 			issues.add(`buff target "${move.buffTarget}" (${move.moveId})`);
@@ -107,3 +108,23 @@ export const buildSimulatorStatus = (
 	changedSources: [...changedSources],
 	unknownMechanics: [...unknownMechanics],
 });
+
+/** Throws (failing the data-generation run, and so raising the daily alert) unless the simulator is verified. */
+export const assertSimulatorVerified = (status: SimulatorStatus): void => {
+	if (status.verified) return;
+	throw new Error(
+		[
+			"PvPoke's battle simulator changed or uses a mechanic go-pokedex's Teams port doesn't implement.",
+			status.changedSources.length
+				? `Changed sources: ${status.changedSources.join(', ')}`
+				: '',
+			status.unknownMechanics.length
+				? `Unknown mechanics: ${status.unknownMechanics.join('; ')}`
+				: '',
+			'Port the change, re-run go-pokedex's pvp-sim:parity, regenerate its golden fixture, then update the hashes in simulator-guard.ts.',
+		]
+			.filter(Boolean)
+			.join('
+')
+	);
+};

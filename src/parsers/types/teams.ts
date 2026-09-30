@@ -53,8 +53,8 @@ export interface TeamBuilderMove {
 	tags?: Array<string>;
 }
 
-/** `[level, atk IV, def IV, hp IV]` — PvPoke's own default spread for a league. */
-export type DefaultIvs = [number, number, number, number];
+/** `[level, atk IV, def IV, hp IV]` — the rank-1 (best stat product) spread for a league. */
+export type BestIvs = [number, number, number, number];
 
 /**
  * Species whose battle stats or moves change mid-fight (Aegislash, Mimikyu,
@@ -90,8 +90,13 @@ export interface TeamBuilderData {
 	simulator: SimulatorStatus;
 	/** Every move the simulator can meet, keyed by moveId. */
 	moves: Record<string, TeamBuilderMove>;
-	/** PvPoke's default IV spread per ranked species, for Great and Ultra League. Master is always level 50, 15/15/15. */
-	ivs: Record<string, Partial<Record<'great' | 'ultra', DefaultIvs>>>;
+	/**
+	 * The rank-1 IV spread (best stat product at the league's cap, level ≤ 50) per ranked species and
+	 * league — what the Teams view rates every Pokémon with. Deliberately NOT PvPoke's own default IVs
+	 * (which sit a few ranks down, and lower for legendaries): the simulator is IV-agnostic, so it is
+	 * fed the best possible spread and the results are the team at its ceiling.
+	 */
+	ivs: Record<string, Partial<Record<TeamLeague, BestIvs>>>;
 	forms: Record<string, TeamBuilderForm>;
 	/** Species PvPoke keeps out of its team-builder threat lists. */
 	excludedThreats: Array<string>;
@@ -115,5 +120,8 @@ export interface LeaderboardTeam {
 
 export interface TeamLeaderboard {
 	lastUpdated: string;
-	leagues: Record<TeamLeague, { totalTeams: number; teams: Array<LeaderboardTeam> }>;
+	leagues: Record<
+		TeamLeague,
+		{ totalTeams: number; teams: Array<LeaderboardTeam> }
+	>;
 }

@@ -37,6 +37,8 @@ jobs:
         run: pnpm install
 
       - name: Run tests
+        # Includes the live PvPoke check (simulator-guard.upstream.test.ts): it fails when PvPoke
+        # changes its battle/team-builder code or adds a mechanic go-pokedex's port lacks.
         run: pnpm run test
         id: run-tests
 
@@ -59,29 +61,13 @@ jobs:
             git push
           fi
 
-      # Runs AFTER the data is committed, so a PvPoke simulator change never
-      # blocks the daily update — it only raises the alert below. The Teams
-      # view marks its threat score as unverified until src/parsers/teams/
-      # simulator-guard.ts is re-verified.
-      - name: Check PvPoke simulator is still verified
-        id: check-sim
-        run: |
-          if node -e "process.exit(require('./data/team-builder.json').simulator.verified ? 0 : 1)"; then
-            echo "Simulator verified."
-          else
-            node -e "console.log(JSON.stringify(require('./data/team-builder.json').simulator, null, 2))"
-            exit 1
-          fi
-
       - name: Send Discord notification on failure
-        if: failure() && (steps.run-tests.outcome == 'failure' || steps.generate-data.outcome == 'failure' || steps.check-sim.outcome == 'failure')
+        if: failure() && (steps.run-tests.outcome == 'failure' || steps.generate-data.outcome == 'failure')
         run: |
           if [ "${{ steps.run-tests.outcome }}" == "failure" ]; then
-            FAILED_STEP="the test suite (pnpm run test)"
-          elif [ "${{ steps.check-sim.outcome }}" == "failure" ]; then
-            FAILED_STEP="the PvPoke simulator check — PvPoke changed its battle code or added a mechanic the Teams view's port does not know (data was still published; see data/team-builder.json > simulator)"
+            FAILED_STEP="the test suite (pnpm run test) — this includes the live PvPoke simulator check: if it names a PvPoke source file, PvPoke changed its battle code and go-pokedex's Teams port must be re-verified"
           else
-            FAILED_STEP="data generation (pnpm run generate) — this includes the translation-completeness and fetch-failure QA gates"
+            FAILED_STEP="data generation (pnpm run generate) — this includes the translation-completeness, fetch-failure and PvPoke-simulator QA gates"
           fi
           echo "Sending Discord notification for failure in: $FAILED_STEP"
 

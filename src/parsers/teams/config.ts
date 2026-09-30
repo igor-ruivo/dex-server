@@ -21,4 +21,3 @@ export const metaGroupUrl = (league: TeamLeague) =>
 /** PvPoke's training-analysis results (what https://pvpoke.com/train/analysis/ renders). */
 export const trainingAnalysisUrl = (league: TeamLeague) =>
 	`${PVPOKE_RAW}/training/analysis/all/${TEAM_LEAGUE_CP[league]}.json`;
-

@@ -24,6 +24,7 @@ import {
 } from '../parsers/services/game-translations-provider';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
+import { assertSimulatorVerified } from '../parsers/teams/simulator-guard';
 import TeamBuilderParser from '../parsers/teams/team-builder-parser';
 import type { IEntry } from '../parsers/types/events';
 
@@ -92,11 +93,16 @@ const generateData = async () => {
 			dataFetcher,
 			pokemonDictionary
 		);
-		const teamData = await teamBuilderParser.parse({
-			great: Object.keys(pvpData.great),
-			ultra: Object.keys(pvpData.ultra),
-			master: Object.keys(pvpData.master),
-		});
+		const teamData = await teamBuilderParser.parse(
+			{
+				great: Object.keys(pvpData.great),
+				ultra: Object.keys(pvpData.ultra),
+				master: Object.keys(pvpData.master),
+			},
+			speciesSearchMetadata
+		);
+		// A PvPoke simulator change must fail the run (and so the daily Discord alert), not be published.
+		assertSimulatorVerified(teamData.builder.simulator);
 
 		// Step 5: Generate events
 		const source = new PokemonGoSource(

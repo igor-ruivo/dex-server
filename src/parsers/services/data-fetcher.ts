@@ -25,7 +25,7 @@ interface HostLimits {
 	minIntervalMs: number;
 }
 
-const DEFAULT_LIMITS: HostLimits = { concurrency: 6, minIntervalMs: 150 };
+const DEFAULT_LIMITS: HostLimits = { concurrency: 12, minIntervalMs: 75 };
 
 /** pokemongo.com sits behind bot/WAF-style protection that 429s well before
  *  a plain concurrency cap would suggest — confirmed by getting 429'd on a
@@ -36,7 +36,7 @@ const DEFAULT_LIMITS: HostLimits = { concurrency: 6, minIntervalMs: 150 };
  *  less than 150ms apart. The other hosts (raw.githubusercontent.com,
  *  leekduck.com) haven't shown this and keep the default. */
 const HOST_LIMITS: Record<string, HostLimits> = {
-	'pokemongo.com': { concurrency: 6, minIntervalMs: 150 },
+	'pokemongo.com': { concurrency: 12, minIntervalMs: 75 },
 };
 
 const MAX_RETRIES = 7;

@@ -47,4 +47,4 @@ the port is re-verified (see go-pokedex's `scripts/pvp-sim-parity`).
 
 Every Pokémon is rated at its **rank-1 IVs** (`ivs` in `team-builder.json`), taken from the level-50
 tied-for-best spreads already in `species-search-metadata.json` (ties: highest Attack, then Defense, then
-HP) — not PvPoke's default IVs. 
+HP) — not PvPoke's default IVs.

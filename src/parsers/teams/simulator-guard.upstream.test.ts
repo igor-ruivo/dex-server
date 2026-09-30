@@ -26,7 +26,10 @@ import {
  */
 /** Offline is only excusable off CI; on CI an unreachable upstream must not turn the guard into a silent pass. */
 const skipOrFail = (ctx: { skip: () => never }, error: unknown): never => {
-	if (process.env.CI) throw new Error(`Couldn't reach PvPoke to verify its simulator: ${String(error)}`);
+	if (process.env.CI)
+		throw new Error(
+			`Couldn't reach PvPoke to verify its simulator: ${String(error)}`
+		);
 	return ctx.skip();
 };
 

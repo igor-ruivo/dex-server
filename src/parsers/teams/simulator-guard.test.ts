@@ -4,6 +4,7 @@ import type { IDataFetcher } from '../services/data-fetcher';
 import type { BasePokemon } from '../types/pokemon';
 import type { PvPokeMove } from '../types/teams';
 import {
+	assertSimulatorVerified,
 	buildSimulatorStatus,
 	findChangedSimulatorSources,
 	findUnknownMechanics,
@@ -91,5 +92,22 @@ describe('buildSimulatorStatus', () => {
 			false
 		);
 		expect(buildSimulatorStatus([], ['x']).verified).toBe(false);
+	});
+});
+
+describe('assertSimulatorVerified', () => {
+	it('passes a verified simulator', () => {
+		expect(() =>
+			assertSimulatorVerified(buildSimulatorStatus([], []))
+		).not.toThrow();
+	});
+
+	it('fails the run, naming what changed, so the daily alert fires', () => {
+		const failing = () =>
+			assertSimulatorVerified(
+				buildSimulatorStatus(['js/battle/Battle.js'], ['move tag "x" (Y)'])
+			);
+		expect(failing).toThrow('js/battle/Battle.js');
+		expect(failing).toThrow('move tag "x" (Y)');
 	});
 });

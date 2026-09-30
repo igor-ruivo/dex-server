@@ -121,10 +121,9 @@ export const assertSimulatorVerified = (status: SimulatorStatus): void => {
 			status.unknownMechanics.length
 				? `Unknown mechanics: ${status.unknownMechanics.join('; ')}`
 				: '',
-			'Port the change, re-run go-pokedex's pvp-sim:parity, regenerate its golden fixture, then update the hashes in simulator-guard.ts.',
+			"Port the change, re-run go-pokedex's pvp-sim:parity, regenerate its golden fixture, then update the hashes in simulator-guard.ts.",
 		]
 			.filter(Boolean)
-			.join('
-')
+			.join('\n')
 	);
 };

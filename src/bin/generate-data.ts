@@ -24,6 +24,7 @@ import {
 } from '../parsers/services/game-translations-provider';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
+import TeamBuilderParser from '../parsers/teams/team-builder-parser';
 import type { IEntry } from '../parsers/types/events';
 
 const generateData = async () => {
@@ -83,6 +84,19 @@ const generateData = async () => {
 		// Step 4: Parse PvP Data
 		const pvpParser = new PvPParser(dataFetcher, pokemonDictionary, moves);
 		const pvpData = await pvpParser.parse();
+
+		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default
+		// IVs, meta groups, form-changing species) and its training-analysis team
+		// leaderboard, for Great/Ultra/Master League only.
+		const teamBuilderParser = new TeamBuilderParser(
+			dataFetcher,
+			pokemonDictionary
+		);
+		const teamData = await teamBuilderParser.parse({
+			great: Object.keys(pvpData.great),
+			ultra: Object.keys(pvpData.ultra),
+			master: Object.keys(pvpData.master),
+		});
 
 		// Step 5: Generate events
 		const source = new PokemonGoSource(
@@ -232,6 +246,14 @@ const generateData = async () => {
 				null,
 				'\t'
 			)
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'team-builder.json'),
+			JSON.stringify(teamData.builder)
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'team-leaderboard.json'),
+			JSON.stringify(teamData.leaderboard, null, '	')
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'season.json'),

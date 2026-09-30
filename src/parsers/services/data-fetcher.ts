@@ -54,6 +54,9 @@ const MAX_BACKOFF_MS = 30000;
  *   - MovesProvider (PokeMiners game_masters latest.json): 1
  *   - GameMasterParser (pvpoke gamemaster/pokemon.json): 1
  *   - PvPParser (one per League — GREAT/ULTRA/MASTER): 3
+ *   - TeamBuilderParser (pvpoke moves.json + pokemon.json, 3 meta groups,
+ *     3 training analyses, 6 simulator source
+ *     files fingerprinted): 14
  *   - PokemonGoFetcher (1 listing page + up to 30 posts x 15 locales,
  *     `.slice(0, 30)`-capped so this is a real upper bound, not a guess): 451
  *   - SeasonParser (one per AvailableLocales member): 15
@@ -63,9 +66,9 @@ const MAX_BACKOFF_MS = 30000;
  *     are dynamic, announced separately): 1
  *   - EggsParser (single LeekDuck page): 1
  *   - RocketLineupsParser (single LeekDuck page): 1
- * Total: 15+1+1+3+451+15+1+1+1+1 = 490.
+ * Total: 15+1+1+3+14+451+15+1+1+1+1 = 504.
  */
-const FIXED_KNOWN_FETCHES = 490;
+const FIXED_KNOWN_FETCHES = 504;
 const PROGRESS_LOG_EVERY = 10;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

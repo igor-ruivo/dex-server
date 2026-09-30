@@ -183,6 +183,23 @@ export interface BasePokemon {
 	aliasId?: string | undefined;
 	released: boolean;
 	tags?: Array<string>;
+	/** PvPoke's default IV spreads (`[level, atk, def, hp]`) per league key, e.g. `cp1500`. */
+	defaultIVs?: Partial<Record<'cp1500' | 'cp2500', [number, number, number, number]>>;
+	/** Present on the few species that swap form (or moveset) mid-battle. */
+	formChange?: PokemonFormChange;
+	originalFormId?: string;
+	nativeStatBuffs?: [number, number];
+}
+
+export interface PokemonFormChange {
+	type: string;
+	trigger: string;
+	moveId?: string;
+	moveIDs?: Array<string>;
+	effect?: string;
+	alternativeFormId?: string;
+	defaultFormId?: string;
+	resetOnSwitch?: boolean;
 }
 
 export type GameMasterPokemon = Omit<

@@ -1,10 +1,9 @@
 import type { PokemonFormChange } from './pokemon';
 
 /**
- * Shapes of the two Teams-page datasets dex-server derives from PvPoke:
+ * Shape of the Teams-page dataset dex-server derives from PvPoke:
  * `team-builder.json` (everything go-pokedex's team-rating simulator needs
- * that `game-master.json` and the ranking files don't already carry) and
- * `team-leaderboard.json` (PvPoke's own training-analysis team ranking).
+ * that `game-master.json` and the ranking files don't already carry).
  */
 
 /** The three leagues the Teams view supports — PvPoke's "all Pokémon" cup at 1500 / 2500 / uncapped CP. */
@@ -102,26 +101,4 @@ export interface TeamBuilderData {
 	excludedThreats: Array<string>;
 	/** PvPoke's per-league "meta" group — the species its threat ranking favours. */
 	meta: Record<TeamLeague, Array<string>>;
-}
-
-export interface LeaderboardMember {
-	speciesId: string;
-	/** `[fast, charged 1, charged 2?]` as moveIds. */
-	moveset: Array<string>;
-}
-
-export interface LeaderboardTeam {
-	members: Array<LeaderboardMember>;
-	/** PvPoke's team rating from its training simulations (~0–1000, 500 = even). */
-	score: number;
-	/** How many simulated games the score is drawn from. */
-	games: number;
-}
-
-export interface TeamLeaderboard {
-	lastUpdated: string;
-	leagues: Record<
-		TeamLeague,
-		{ totalTeams: number; teams: Array<LeaderboardTeam> }
-	>;
 }

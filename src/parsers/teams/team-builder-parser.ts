@@ -9,17 +9,14 @@ import type {
 } from '../types/species-search-metadata';
 import {
 	type BestIvs,
-	type LeaderboardMember,
-	type LeaderboardTeam,
 	type PvPokeMove,
 	TEAM_LEAGUES,
 	type TeamBuilderData,
 	type TeamBuilderForm,
 	type TeamBuilderMove,
-	type TeamLeaderboard,
 	type TeamLeague,
 } from '../types/teams';
-import { metaGroupUrl, PVPOKE_MOVES_URL, trainingAnalysisUrl } from './config';
+import { metaGroupUrl, PVPOKE_MOVES_URL } from './config';
 import {
 	buildSimulatorStatus,
 	findChangedSimulatorSources,
@@ -28,11 +25,6 @@ import {
 
 interface RawGroupEntry {
 	speciesId: string;
-}
-
-interface RawTrainingAnalysis {
-	properties: { lastUpdated: string; totalTeams: number };
-	teams: Array<{ team: string; teamScore: number; games: number }>;
 }
 
 /** Ranked species per league (the keys of each `*-league-pvp.json`). */
@@ -112,61 +104,6 @@ const toTeamBuilderMove = (move: PvPokeMove): TeamBuilderMove => {
 	return out;
 };
 
-/**
- * Resolves one training-analysis entry — `"ninetales_shadow E/EB/WBF"` — to
- * concrete move ids. PvPoke writes movesets as move abbreviations, which only
- * mean anything against that species' own move pool (`Ac` is Acid for one
- * species, something else for another), so each abbreviation is looked up
- * inside the species' fast pool (first slot) or charged pool (the rest).
- */
-export const resolveLeaderboardMember = (
-	entry: string,
-	gameMaster: GameMasterData,
-	abbreviations: Record<string, string>
-): LeaderboardMember => {
-	const [rawId, movesetStr] = entry.trim().split(/\s+/);
-	const species = gameMaster[rawId];
-	if (!species || !movesetStr) {
-		throw new Error(
-			`Training analysis entry "${entry}" has an unknown species or no moveset`
-		);
-	}
-	const speciesId = species.aliasId ?? species.speciesId;
-	const [fastAbbr, ...chargedAbbrs] = movesetStr.split('/');
-
-	const find = (pool: ReadonlyArray<string>, abbr: string, slot: string) => {
-		const moveId = pool.find((id) => abbreviations[id] === abbr);
-		if (!moveId) {
-			throw new Error(
-				`Training analysis "${entry}": no ${slot} move of ${speciesId} has abbreviation "${abbr}"`
-			);
-		}
-		return moveId;
-	};
-
-	return {
-		speciesId,
-		moveset: [
-			find(species.fastMoves, fastAbbr, 'fast'),
-			...chargedAbbrs.map((abbr) =>
-				find(species.chargedMoves, abbr, 'charged')
-			),
-		],
-	};
-};
-
-export const parseLeaderboardTeam = (
-	raw: { team: string; teamScore: number; games: number },
-	gameMaster: GameMasterData,
-	abbreviations: Record<string, string>
-): LeaderboardTeam => ({
-	members: raw.team
-		.split('|')
-		.map((entry) => resolveLeaderboardMember(entry, gameMaster, abbreviations)),
-	score: raw.teamScore,
-	games: raw.games,
-});
-
 class TeamBuilderParser {
 	constructor(
 		private readonly dataFetcher: IDataFetcher,
@@ -176,24 +113,14 @@ class TeamBuilderParser {
 	async parse(
 		rankedSpecies: RankedSpeciesByLeague,
 		bestIvSpreads: SpeciesSearchMetadataMap
-	): Promise<{
-		builder: TeamBuilderData;
-		leaderboard: TeamLeaderboard;
-	}> {
+	): Promise<TeamBuilderData> {
 		console.log('Fetching PvPoke team-builder sources...');
-		const [rawMoves, rawPokemon, groups, analyses] = await Promise.all([
+		const [rawMoves, rawPokemon, groups] = await Promise.all([
 			this.dataFetcher.fetchJson<Array<PvPokeMove>>(PVPOKE_MOVES_URL),
 			this.dataFetcher.fetchJson<Array<BasePokemon>>(POKEMON_CONFIG.SOURCE_URL),
 			Promise.all(
 				TEAM_LEAGUES.map((league) =>
 					this.dataFetcher.fetchJson<Array<RawGroupEntry>>(metaGroupUrl(league))
-				)
-			),
-			Promise.all(
-				TEAM_LEAGUES.map((league) =>
-					this.dataFetcher.fetchJson<RawTrainingAnalysis>(
-						trainingAnalysisUrl(league)
-					)
 				)
 			),
 		]);
@@ -210,24 +137,19 @@ class TeamBuilderParser {
 		}
 
 		const moves: Record<string, TeamBuilderMove> = {};
-		const abbreviations: Record<string, string> = {};
 		for (const move of rawMoves) {
 			moves[move.moveId] = toTeamBuilderMove(move);
-			abbreviations[move.moveId] = moves[move.moveId].abbreviation;
 		}
 
 		return {
-			builder: {
-				...this.buildBuilderData(
-					rawPokemon,
-					moves,
-					groups,
-					rankedSpecies,
-					bestIvSpreads
-				),
-				simulator,
-			},
-			leaderboard: this.buildLeaderboard(analyses, abbreviations),
+			...this.buildBuilderData(
+				rawPokemon,
+				moves,
+				groups,
+				rankedSpecies,
+				bestIvSpreads
+			),
+			simulator,
 		};
 	}
 
@@ -321,41 +243,6 @@ class TeamBuilderParser {
 				])
 			) as TeamBuilderData['meta'],
 		};
-	}
-
-	private buildLeaderboard(
-		analyses: Array<RawTrainingAnalysis>,
-		abbreviations: Record<string, string>
-	): TeamLeaderboard {
-		const dates = new Set<string>();
-
-		const build = (league: TeamLeague) => {
-			const analysis = analyses[TEAM_LEAGUES.indexOf(league)];
-			if (!Array.isArray(analysis.teams) || analysis.teams.length === 0) {
-				throw new Error(
-					`PvPoke training analysis for ${league} league has no teams`
-				);
-			}
-			dates.add(analysis.properties.lastUpdated.replace(/s+/g, ' ').trim());
-			return {
-				totalTeams: analysis.properties.totalTeams,
-				teams: analysis.teams
-					.map((t) => parseLeaderboardTeam(t, this.gameMaster, abbreviations))
-					.sort((x, y) => y.score - x.score),
-			};
-		};
-		const leagues: TeamLeaderboard['leagues'] = {
-			great: build('great'),
-			ultra: build('ultra'),
-			master: build('master'),
-		};
-
-		// PvPoke stamps one date per league file; they're refreshed together, so
-		// the newest is what "last updated" should honestly say.
-		const lastUpdated = [...dates].sort(
-			(a, b) => Date.parse(b) - Date.parse(a)
-		)[0];
-		return { lastUpdated, leagues };
 	}
 }
 

@@ -87,8 +87,8 @@ const generateData = async () => {
 		const pvpData = await pvpParser.parse();
 
 		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default
-		// IVs, meta groups, form-changing species) and its training-analysis team
-		// leaderboard, for Great/Ultra/Master League only.
+		// IVs, meta groups, form-changing species) for Great/Ultra/Master
+		// League only.
 		const teamBuilderParser = new TeamBuilderParser(
 			dataFetcher,
 			pokemonDictionary
@@ -102,7 +102,7 @@ const generateData = async () => {
 			speciesSearchMetadata
 		);
 		// A PvPoke simulator change must fail the run (and so the daily Discord alert), not be published.
-		assertSimulatorVerified(teamData.builder.simulator);
+		assertSimulatorVerified(teamData.simulator);
 
 		// Step 5: Generate events
 		const source = new PokemonGoSource(
@@ -255,11 +255,7 @@ const generateData = async () => {
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'team-builder.json'),
-			JSON.stringify(teamData.builder)
-		);
-		await fs.writeFile(
-			path.join(dataDir, 'team-leaderboard.json'),
-			JSON.stringify(teamData.leaderboard, null, '	')
+			JSON.stringify(teamData)
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'season.json'),

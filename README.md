@@ -29,15 +29,13 @@ League are always included.
 
 ## Teams data
 
-Two files feed go-pokedex's Teams view (Great, Ultra and Master League only), both derived from PvPoke
-by `src/parsers/teams/`:
+One file feeds go-pokedex's Teams view (Great, Ultra and Master League only), derived from PvPoke by
+`src/parsers/teams/`:
 
 - `data/team-builder.json` — what go-pokedex's port of PvPoke's simulator needs beyond `game-master.json`
   and the ranking files: PvPoke's move table (energy, turns, buff chances…), its default IVs per ranked
   species, its team-builder meta groups, the few form-changing species (Aegislash, Mimikyu, Morpeko,
   Cramorant), and a `simulator` status block.
-- `data/team-leaderboard.json` — PvPoke's training-analysis team ranking (`train/analysis`), with movesets
-  resolved from PvPoke's abbreviations to move ids.
 
 `simulator.verified` is `false` when PvPoke's simulator source (fingerprinted in
 `src/parsers/teams/simulator-guard.ts`) changed, or its data uses a mechanic the port doesn't know. That

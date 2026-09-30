@@ -17,7 +17,3 @@ export const TEAM_LEAGUE_CP: Record<TeamLeague, number> = {
 /** The quick-fill group PvPoke's team builder treats as each league's meta. */
 export const metaGroupUrl = (league: TeamLeague) =>
 	`${PVPOKE_RAW}/groups/${league}.json`;
-
-/** PvPoke's training-analysis results (what https://pvpoke.com/train/analysis/ renders). */
-export const trainingAnalysisUrl = (league: TeamLeague) =>
-	`${PVPOKE_RAW}/training/analysis/all/${TEAM_LEAGUE_CP[league]}.json`;

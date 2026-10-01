@@ -2664,6 +2664,52 @@
 			"raichu_mega_y"
 		]
 	},
+	"raichu_alolan": {
+		"dex": 26,
+		"speciesId": "raichu_alolan",
+		"speciesName": "Raichu (Alolan)",
+		"types": [
+			"Electric",
+			"Psychic"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png",
+		"goImageUrl": "26.fALOLA.icon.png",
+		"shinyGoImageUrl": "26.fALOLA.s.icon.png",
+		"baseStats": {
+			"atk": 201,
+			"def": 154,
+			"hp": 155
+		},
+		"fastMoves": [
+			"SPARK",
+			"VOLT_SWITCH",
+			"THUNDER_SHOCK"
+		],
+		"chargedMoves": [
+			"PSYCHIC",
+			"THUNDER_PUNCH",
+			"WILD_CHARGE",
+			"GRASS_KNOT",
+			"TRAILBLAZE",
+			"SURF",
+			"PSYSHOCK",
+			"VOLT_TACKLE"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_PIKACHU",
+			"parent": "pikachu"
+		},
+		"form": "Alolan",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"raichu_mega_x": {
 		"dex": 26,
 		"speciesId": "raichu_mega_x",
@@ -2767,52 +2813,6 @@
 		"isMythical": false,
 		"isBeast": false,
 		"baseSpecies": "raichu"
-	},
-	"raichu_alolan": {
-		"dex": 26,
-		"speciesId": "raichu_alolan",
-		"speciesName": "Raichu (Alolan)",
-		"types": [
-			"Electric",
-			"Psychic"
-		],
-		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png",
-		"goImageUrl": "26.fALOLA.icon.png",
-		"shinyGoImageUrl": "26.fALOLA.s.icon.png",
-		"baseStats": {
-			"atk": 201,
-			"def": 154,
-			"hp": 155
-		},
-		"fastMoves": [
-			"SPARK",
-			"VOLT_SWITCH",
-			"THUNDER_SHOCK"
-		],
-		"chargedMoves": [
-			"PSYCHIC",
-			"THUNDER_PUNCH",
-			"WILD_CHARGE",
-			"GRASS_KNOT",
-			"TRAILBLAZE",
-			"SURF",
-			"PSYSHOCK",
-			"VOLT_TACKLE"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"isSuperMega": false,
-		"family": {
-			"id": "FAMILY_PIKACHU",
-			"parent": "pikachu"
-		},
-		"form": "Alolan",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
 	},
 	"sandshrew": {
 		"dex": 27,
@@ -12916,57 +12916,6 @@
 		],
 		"shadowSpecies": "starmie_shadow"
 	},
-	"starmie_shadow": {
-		"dex": 121,
-		"speciesId": "starmie_shadow",
-		"speciesName": "Starmie (Shadow)",
-		"types": [
-			"Water",
-			"Psychic"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
-		"goImageUrl": "121.icon.png",
-		"shinyGoImageUrl": "121.s.icon.png",
-		"baseStats": {
-			"atk": 210,
-			"def": 184,
-			"hp": 155
-		},
-		"fastMoves": [
-			"TACKLE",
-			"WATER_GUN",
-			"PSYWAVE",
-			"HIDDEN_POWER"
-		],
-		"chargedMoves": [
-			"HYDRO_PUMP",
-			"ICE_BEAM",
-			"POWER_GEM",
-			"PSYBEAM",
-			"PSYCHIC",
-			"THUNDER",
-			"SURF",
-			"AQUA_JET",
-			"FRUSTRATION"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [
-			"TACKLE"
-		],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"isSuperMega": false,
-		"family": {
-			"id": "FAMILY_STARYU",
-			"parent": "staryu_shadow"
-		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false,
-		"nonShadowSpecies": "starmie"
-	},
 	"starmie_mega": {
 		"dex": 121,
 		"speciesId": "starmie_mega",
@@ -13023,6 +12972,57 @@
 		"isMythical": false,
 		"isBeast": false,
 		"baseSpecies": "starmie"
+	},
+	"starmie_shadow": {
+		"dex": 121,
+		"speciesId": "starmie_shadow",
+		"speciesName": "Starmie (Shadow)",
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
+		"goImageUrl": "121.icon.png",
+		"shinyGoImageUrl": "121.s.icon.png",
+		"baseStats": {
+			"atk": 210,
+			"def": 184,
+			"hp": 155
+		},
+		"fastMoves": [
+			"TACKLE",
+			"WATER_GUN",
+			"PSYWAVE",
+			"HIDDEN_POWER"
+		],
+		"chargedMoves": [
+			"HYDRO_PUMP",
+			"ICE_BEAM",
+			"POWER_GEM",
+			"PSYBEAM",
+			"PSYCHIC",
+			"THUNDER",
+			"SURF",
+			"AQUA_JET",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [
+			"TACKLE"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_STARYU",
+			"parent": "staryu_shadow"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "starmie"
 	},
 	"mr_mime": {
 		"dex": 122,
@@ -21933,45 +21933,6 @@
 		],
 		"shadowSpecies": "skarmory_shadow"
 	},
-	"skarmory_shadow": {
-		"dex": 227,
-		"speciesId": "skarmory_shadow",
-		"speciesName": "Skarmory (Shadow)",
-		"types": [
-			"Steel",
-			"Flying"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
-		"goImageUrl": "227.icon.png",
-		"shinyGoImageUrl": "227.s.icon.png",
-		"baseStats": {
-			"atk": 148,
-			"def": 226,
-			"hp": 163
-		},
-		"fastMoves": [
-			"AIR_SLASH",
-			"STEEL_WING"
-		],
-		"chargedMoves": [
-			"BRAVE_BIRD",
-			"FLASH_CANNON",
-			"SKY_ATTACK",
-			"DRILL_RUN",
-			"FRUSTRATION"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"isSuperMega": false,
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false,
-		"nonShadowSpecies": "skarmory"
-	},
 	"skarmory_mega": {
 		"dex": 227,
 		"speciesId": "skarmory_mega",
@@ -22013,6 +21974,45 @@
 		"isMythical": false,
 		"isBeast": false,
 		"baseSpecies": "skarmory"
+	},
+	"skarmory_shadow": {
+		"dex": 227,
+		"speciesId": "skarmory_shadow",
+		"speciesName": "Skarmory (Shadow)",
+		"types": [
+			"Steel",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
+		"goImageUrl": "227.icon.png",
+		"shinyGoImageUrl": "227.s.icon.png",
+		"baseStats": {
+			"atk": 148,
+			"def": 226,
+			"hp": 163
+		},
+		"fastMoves": [
+			"AIR_SLASH",
+			"STEEL_WING"
+		],
+		"chargedMoves": [
+			"BRAVE_BIRD",
+			"FLASH_CANNON",
+			"SKY_ATTACK",
+			"DRILL_RUN",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "skarmory"
 	},
 	"houndour": {
 		"dex": 228,
@@ -35994,53 +35994,6 @@
 		],
 		"shadowSpecies": "staraptor_shadow"
 	},
-	"staraptor_shadow": {
-		"dex": 398,
-		"speciesId": "staraptor_shadow",
-		"speciesName": "Staraptor (Shadow)",
-		"types": [
-			"Normal",
-			"Flying"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
-		"goImageUrl": "398.icon.png",
-		"shinyGoImageUrl": "398.s.icon.png",
-		"baseStats": {
-			"atk": 234,
-			"def": 140,
-			"hp": 198
-		},
-		"fastMoves": [
-			"QUICK_ATTACK",
-			"WING_ATTACK",
-			"GUST",
-			"SAND_ATTACK"
-		],
-		"chargedMoves": [
-			"BRAVE_BIRD",
-			"CLOSE_COMBAT",
-			"HEAT_WAVE",
-			"FLY",
-			"FRUSTRATION"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [
-			"GUST"
-		],
-		"legacyMoves": [],
-		"isShadow": true,
-		"isMega": false,
-		"isSuperMega": false,
-		"family": {
-			"id": "FAMILY_STARLY",
-			"parent": "staravia_shadow"
-		},
-		"form": "",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false,
-		"nonShadowSpecies": "staraptor"
-	},
 	"staraptor_mega": {
 		"dex": 398,
 		"speciesId": "staraptor_mega",
@@ -36090,6 +36043,53 @@
 		"isMythical": false,
 		"isBeast": false,
 		"baseSpecies": "staraptor"
+	},
+	"staraptor_shadow": {
+		"dex": 398,
+		"speciesId": "staraptor_shadow",
+		"speciesName": "Staraptor (Shadow)",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
+		"goImageUrl": "398.icon.png",
+		"shinyGoImageUrl": "398.s.icon.png",
+		"baseStats": {
+			"atk": 234,
+			"def": 140,
+			"hp": 198
+		},
+		"fastMoves": [
+			"QUICK_ATTACK",
+			"WING_ATTACK",
+			"GUST",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"BRAVE_BIRD",
+			"CLOSE_COMBAT",
+			"HEAT_WAVE",
+			"FLY",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [
+			"GUST"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_STARLY",
+			"parent": "staravia_shadow"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "staraptor"
 	},
 	"bidoof": {
 		"dex": 399,
@@ -53031,7 +53031,8 @@
 			"WILD_CHARGE",
 			"FLASH_CANNON",
 			"CRUNCH",
-			"FUSION_BOLT"
+			"FUSION_BOLT",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [
@@ -53044,7 +53045,50 @@
 		"form": "",
 		"isLegendary": true,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "zekrom_shadow"
+	},
+	"zekrom_shadow": {
+		"dex": 644,
+		"speciesId": "zekrom_shadow",
+		"speciesName": "Zekrom (Shadow)",
+		"types": [
+			"Dragon",
+			"Electric"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/644.png",
+		"goImageUrl": "644.icon.png",
+		"shinyGoImageUrl": "644.s.icon.png",
+		"baseStats": {
+			"atk": 275,
+			"def": 211,
+			"hp": 205
+		},
+		"fastMoves": [
+			"DRAGON_BREATH",
+			"CHARGE_BEAM"
+		],
+		"chargedMoves": [
+			"OUTRAGE",
+			"WILD_CHARGE",
+			"FLASH_CANNON",
+			"CRUNCH",
+			"FUSION_BOLT",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [
+			"FUSION_BOLT"
+		],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"form": "",
+		"isLegendary": true,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "zekrom"
 	},
 	"landorus_incarnate": {
 		"dex": 645,
@@ -55463,7 +55507,8 @@
 		"chargedMoves": [
 			"LOW_SWEEP",
 			"CRUNCH",
-			"BODY_SLAM"
+			"BODY_SLAM",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -55480,7 +55525,51 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "pancham_shadow"
+	},
+	"pancham_shadow": {
+		"dex": 674,
+		"speciesId": "pancham_shadow",
+		"speciesName": "Pancham (Shadow)",
+		"types": [
+			"Fighting"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/674.png",
+		"goImageUrl": "674.icon.png",
+		"shinyGoImageUrl": "674.s.icon.png",
+		"baseStats": {
+			"atk": 145,
+			"def": 107,
+			"hp": 167
+		},
+		"fastMoves": [
+			"LOW_KICK",
+			"TACKLE"
+		],
+		"chargedMoves": [
+			"LOW_SWEEP",
+			"CRUNCH",
+			"BODY_SLAM",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_PANCHAM",
+			"evolutions": [
+				"pangoro_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "pancham"
 	},
 	"pangoro": {
 		"dex": 675,
@@ -55508,7 +55597,8 @@
 			"CLOSE_COMBAT",
 			"NIGHT_SLASH",
 			"IRON_HEAD",
-			"ROCK_SLIDE"
+			"ROCK_SLIDE",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -55523,7 +55613,53 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "pangoro_shadow"
+	},
+	"pangoro_shadow": {
+		"dex": 675,
+		"speciesId": "pangoro_shadow",
+		"speciesName": "Pangoro (Shadow)",
+		"types": [
+			"Fighting",
+			"Dark"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/675.png",
+		"goImageUrl": "675.icon.png",
+		"shinyGoImageUrl": "675.s.icon.png",
+		"baseStats": {
+			"atk": 226,
+			"def": 146,
+			"hp": 216
+		},
+		"fastMoves": [
+			"LOW_KICK",
+			"SNARL",
+			"BULLET_PUNCH",
+			"KARATE_CHOP"
+		],
+		"chargedMoves": [
+			"CLOSE_COMBAT",
+			"NIGHT_SLASH",
+			"IRON_HEAD",
+			"ROCK_SLIDE",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_PANCHAM",
+			"parent": "pancham_shadow"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "pangoro"
 	},
 	"furfrou": {
 		"dex": 676,
@@ -60453,7 +60589,8 @@
 			"LEAF_BLADE",
 			"ENERGY_BALL",
 			"GRASS_KNOT",
-			"TRAILBLAZE"
+			"TRAILBLAZE",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -60470,7 +60607,53 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "fomantis_shadow"
+	},
+	"fomantis_shadow": {
+		"dex": 753,
+		"speciesId": "fomantis_shadow",
+		"speciesName": "Fomantis (Shadow)",
+		"types": [
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/753.png",
+		"goImageUrl": "753.icon.png",
+		"shinyGoImageUrl": "753.s.icon.png",
+		"baseStats": {
+			"atk": 100,
+			"def": 64,
+			"hp": 120
+		},
+		"fastMoves": [
+			"RAZOR_LEAF",
+			"FURY_CUTTER",
+			"LEAFAGE"
+		],
+		"chargedMoves": [
+			"LEAF_BLADE",
+			"ENERGY_BALL",
+			"GRASS_KNOT",
+			"TRAILBLAZE",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_FOMANTIS",
+			"evolutions": [
+				"lurantis_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "fomantis"
 	},
 	"lurantis": {
 		"dex": 754,
@@ -60497,7 +60680,8 @@
 			"LEAF_STORM",
 			"SUPER_POWER",
 			"X_SCISSOR",
-			"TRAILBLAZE"
+			"TRAILBLAZE",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -60512,7 +60696,52 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "lurantis_shadow"
+	},
+	"lurantis_shadow": {
+		"dex": 754,
+		"speciesId": "lurantis_shadow",
+		"speciesName": "Lurantis (Shadow)",
+		"types": [
+			"Grass"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/754.png",
+		"goImageUrl": "754.icon.png",
+		"shinyGoImageUrl": "754.s.icon.png",
+		"baseStats": {
+			"atk": 192,
+			"def": 169,
+			"hp": 172
+		},
+		"fastMoves": [
+			"RAZOR_LEAF",
+			"FURY_CUTTER",
+			"LEAFAGE"
+		],
+		"chargedMoves": [
+			"LEAF_BLADE",
+			"LEAF_STORM",
+			"SUPER_POWER",
+			"X_SCISSOR",
+			"TRAILBLAZE",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_FOMANTIS",
+			"parent": "fomantis_shadow"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "lurantis"
 	},
 	"morelull": {
 		"dex": 755,
@@ -61161,7 +61390,8 @@
 			"STRUGGLE_BUG"
 		],
 		"chargedMoves": [
-			"BUG_BUZZ"
+			"BUG_BUZZ",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -61178,7 +61408,49 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "wimpod_shadow"
+	},
+	"wimpod_shadow": {
+		"dex": 767,
+		"speciesId": "wimpod_shadow",
+		"speciesName": "Wimpod (Shadow)",
+		"types": [
+			"Bug",
+			"Water"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/767.png",
+		"goImageUrl": "767.icon.png",
+		"shinyGoImageUrl": "767.s.icon.png",
+		"baseStats": {
+			"atk": 67,
+			"def": 74,
+			"hp": 93
+		},
+		"fastMoves": [
+			"STRUGGLE_BUG"
+		],
+		"chargedMoves": [
+			"BUG_BUZZ",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_WIMPOD",
+			"evolutions": [
+				"golisopod_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "wimpod"
 	},
 	"golisopod": {
 		"dex": 768,
@@ -61207,7 +61479,8 @@
 			"AQUA_JET",
 			"AERIAL_ACE",
 			"LIQUIDATION",
-			"RAZOR_SHELL"
+			"RAZOR_SHELL",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -61222,17 +61495,18 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "golisopod_shadow"
 	},
-	"golisopodsh": {
+	"golisopod_shadow": {
 		"dex": 768,
-		"speciesId": "golisopodsh",
-		"speciesName": "Golisopod",
+		"speciesId": "golisopod_shadow",
+		"speciesName": "Golisopod (Shadow)",
 		"types": [
 			"Bug",
 			"Water"
 		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/768_f2.png",
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/768.png",
 		"goImageUrl": "768.icon.png",
 		"shinyGoImageUrl": "768.s.icon.png",
 		"baseStats": {
@@ -61251,23 +61525,24 @@
 			"AQUA_JET",
 			"AERIAL_ACE",
 			"LIQUIDATION",
-			"RAZOR_SHELL"
+			"RAZOR_SHELL",
+			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
 		"legacyMoves": [],
-		"isShadow": false,
+		"isShadow": true,
 		"isMega": false,
 		"isSuperMega": false,
 		"family": {
 			"id": "FAMILY_WIMPOD",
-			"parent": "wimpod"
+			"parent": "wimpod_shadow"
 		},
-		"aliasId": "golisopod",
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"nonShadowSpecies": "golisopod"
 	},
 	"sandygast": {
 		"dex": 769,
@@ -61294,7 +61569,8 @@
 			"SAND_TOMB",
 			"SHADOW_BALL",
 			"EARTH_POWER",
-			"SCORCHING_SANDS"
+			"SCORCHING_SANDS",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -61311,7 +61587,54 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "sandygast_shadow"
+	},
+	"sandygast_shadow": {
+		"dex": 769,
+		"speciesId": "sandygast_shadow",
+		"speciesName": "Sandygast (Shadow)",
+		"types": [
+			"Ghost",
+			"Ground"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/769.png",
+		"goImageUrl": "769.icon.png",
+		"shinyGoImageUrl": "769.s.icon.png",
+		"baseStats": {
+			"atk": 120,
+			"def": 118,
+			"hp": 146
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"MUD_SHOT",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"SAND_TOMB",
+			"SHADOW_BALL",
+			"EARTH_POWER",
+			"SCORCHING_SANDS",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_SANDYGAST",
+			"evolutions": [
+				"palossand_shadow"
+			]
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "sandygast"
 	},
 	"palossand": {
 		"dex": 770,
@@ -61338,7 +61661,8 @@
 			"SAND_TOMB",
 			"SHADOW_BALL",
 			"EARTH_POWER",
-			"SCORCHING_SANDS"
+			"SCORCHING_SANDS",
+			"RETURN"
 		],
 		"extraChargedMoves": [],
 		"eliteMoves": [],
@@ -61353,7 +61677,52 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"shadowSpecies": "palossand_shadow"
+	},
+	"palossand_shadow": {
+		"dex": 770,
+		"speciesId": "palossand_shadow",
+		"speciesName": "Palossand (Shadow)",
+		"types": [
+			"Ghost",
+			"Ground"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/770.png",
+		"goImageUrl": "770.icon.png",
+		"shinyGoImageUrl": "770.s.icon.png",
+		"baseStats": {
+			"atk": 178,
+			"def": 178,
+			"hp": 198
+		},
+		"fastMoves": [
+			"ASTONISH",
+			"MUD_SHOT",
+			"SAND_ATTACK"
+		],
+		"chargedMoves": [
+			"SAND_TOMB",
+			"SHADOW_BALL",
+			"EARTH_POWER",
+			"SCORCHING_SANDS",
+			"FRUSTRATION"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": true,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_SANDYGAST",
+			"parent": "sandygast_shadow"
+		},
+		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"nonShadowSpecies": "palossand"
 	},
 	"komala": {
 		"dex": 775,

@@ -1,4 +1,7 @@
-import { calculateCP } from '../../computations/best-iv-spread-calculator';
+import {
+	calculateCP,
+	tiedTop1Patterns,
+} from '../../computations/best-iv-spread-calculator';
 import { MAX_LEVEL } from '../../computations/utils';
 import { POKEMON_CONFIG } from '../pokemon/config/pokemon-config';
 import type { IDataFetcher } from '../services/data-fetcher';
@@ -9,6 +12,8 @@ import type {
 } from '../types/species-search-metadata';
 import {
 	type BestIvs,
+	type ExtraTeamLeague,
+	ivsKeyForCap,
 	type PvPokeMove,
 	TEAM_LEAGUES,
 	type TeamBuilderData,
@@ -16,7 +21,7 @@ import {
 	type TeamBuilderMove,
 	type TeamLeague,
 } from '../types/teams';
-import { metaGroupUrl, PVPOKE_MOVES_URL } from './config';
+import { cupMetaGroupUrls, metaGroupUrl, PVPOKE_MOVES_URL } from './config';
 import {
 	buildSimulatorStatus,
 	findChangedSimulatorSources,
@@ -28,7 +33,10 @@ interface RawGroupEntry {
 }
 
 /** Ranked species per league (the keys of each `*-league-pvp.json`). */
-export type RankedSpeciesByLeague = Record<TeamLeague, ReadonlyArray<string>>;
+export type RankedSpeciesByLeague = Record<string, ReadonlyArray<string>>;
+
+/** How many species a cup's meta group falls back to (its ranking's best) when PvPoke has no group file for it — about the size of Great League's. */
+const FALLBACK_META_SIZE = 44;
 
 /** Great / Ultra / Master League CP caps (Master has none). */
 const LEAGUE_CP_CAPS: Record<TeamLeague, number> = {
@@ -112,16 +120,20 @@ class TeamBuilderParser {
 
 	async parse(
 		rankedSpecies: RankedSpeciesByLeague,
-		bestIvSpreads: SpeciesSearchMetadataMap
+		bestIvSpreads: SpeciesSearchMetadataMap,
+		extraLeagues: ReadonlyArray<ExtraTeamLeague> = []
 	): Promise<TeamBuilderData> {
 		console.log('Fetching PvPoke team-builder sources...');
-		const [rawMoves, rawPokemon, groups] = await Promise.all([
+		const [rawMoves, rawPokemon, groups, extraGroups] = await Promise.all([
 			this.dataFetcher.fetchJson<Array<PvPokeMove>>(PVPOKE_MOVES_URL),
 			this.dataFetcher.fetchJson<Array<BasePokemon>>(POKEMON_CONFIG.SOURCE_URL),
 			Promise.all(
 				TEAM_LEAGUES.map((league) =>
 					this.dataFetcher.fetchJson<Array<RawGroupEntry>>(metaGroupUrl(league))
 				)
+			),
+			Promise.all(
+				extraLeagues.map((league) => this.fetchCupMeta(league, rankedSpecies))
 			),
 		]);
 
@@ -147,10 +159,34 @@ class TeamBuilderParser {
 				moves,
 				groups,
 				rankedSpecies,
-				bestIvSpreads
+				bestIvSpreads,
+				extraLeagues,
+				extraGroups
 			),
 			simulator,
 		};
+	}
+
+	/**
+	 * A cup's meta group: PvPoke's own quick-fill group for its format when there is one, else the best of the cup's ranking
+	 * (a cup PvPoke has no group for yet, e.g. a brand new one).
+	 */
+	private async fetchCupMeta(
+		league: ExtraTeamLeague,
+		rankedSpecies: RankedSpeciesByLeague
+	): Promise<Array<string>> {
+		for (const url of cupMetaGroupUrls(league.format, league.cpCap)) {
+			try {
+				const group =
+					await this.dataFetcher.fetchJson<Array<RawGroupEntry>>(url);
+				if (Array.isArray(group) && group.length > 0) {
+					return group.map((g) => g.speciesId);
+				}
+			} catch {
+				// no such group file: try the next name, then the fallback
+			}
+		}
+		return (rankedSpecies[league.id] ?? []).slice(0, FALLBACK_META_SIZE);
 	}
 
 	private buildBuilderData(
@@ -158,11 +194,21 @@ class TeamBuilderParser {
 		moves: Record<string, TeamBuilderMove>,
 		groups: Array<Array<RawGroupEntry>>,
 		rankedSpecies: RankedSpeciesByLeague,
-		bestIvSpreads: SpeciesSearchMetadataMap
+		bestIvSpreads: SpeciesSearchMetadataMap,
+		extraLeagues: ReadonlyArray<ExtraTeamLeague>,
+		extraGroups: Array<Array<string>>
 	): Omit<TeamBuilderData, 'simulator'> {
 		const rawById = new Map(rawPokemon.map((p) => [p.speciesId, p]));
 		const ivs: TeamBuilderData['ivs'] = {};
 		const forms: Record<string, TeamBuilderForm> = {};
+
+		const otherCaps = [
+			...new Set(
+				extraLeagues
+					.map((league) => league.cpCap)
+					.filter((cap) => ivsKeyForCap(cap).startsWith('cap-'))
+			),
+		];
 
 		const addIvs = (speciesId: string) => {
 			const raw = rawById.get(speciesId);
@@ -194,11 +240,29 @@ class TeamBuilderParser {
 				);
 				if (picked) entry[league] = picked;
 			}
+			// Any other CP cap a cup uses (e.g. a Little Cup's 500): its own spread, from the same tied-for-best rule.
+			for (const cap of otherCaps) {
+				const picked = pickBestIvs(
+					tiedTop1Patterns(
+						raw.baseStats.atk,
+						raw.baseStats.def,
+						raw.baseStats.hp,
+						cap,
+						MAX_LEVEL
+					),
+					raw.baseStats,
+					cap
+				);
+				if (picked) entry[ivsKeyForCap(cap)] = picked;
+			}
 			ivs[speciesId] = entry;
 		};
 
-		for (const league of TEAM_LEAGUES) {
-			for (const speciesId of rankedSpecies[league]) {
+		for (const league of [
+			...TEAM_LEAGUES,
+			...extraLeagues.map((extra) => extra.id),
+		]) {
+			for (const speciesId of rankedSpecies[league] ?? []) {
 				if (!ivs[speciesId]) addIvs(speciesId);
 			}
 		}
@@ -236,12 +300,17 @@ class TeamBuilderParser {
 			excludedThreats: rawPokemon
 				.filter((p) => p.tags?.includes('teambuilderexclude'))
 				.map((p) => p.speciesId),
-			meta: Object.fromEntries(
-				TEAM_LEAGUES.map((league, i) => [
-					league,
-					groups[i].map((g) => g.speciesId),
-				])
-			) as TeamBuilderData['meta'],
+			meta: {
+				...Object.fromEntries(
+					TEAM_LEAGUES.map((league, i) => [
+						league,
+						groups[i].map((g) => g.speciesId),
+					])
+				),
+				...Object.fromEntries(
+					extraLeagues.map((league, i) => [league.id, extraGroups[i]])
+				),
+			},
 		};
 	}
 }

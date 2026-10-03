@@ -27,6 +27,7 @@ import { validateTranslationCompleteness } from '../parsers/services/translation
 import { assertSimulatorVerified } from '../parsers/teams/simulator-guard';
 import TeamBuilderParser from '../parsers/teams/team-builder-parser';
 import type { IEntry } from '../parsers/types/events';
+import { TEAM_LEAGUES } from '../parsers/types/teams';
 
 const generateData = async () => {
 	console.log('Starting Pokemon GO data generation...');
@@ -88,18 +89,26 @@ const generateData = async () => {
 
 		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default
 		// IVs, meta groups, form-changing species) for Great/Ultra/Master
-		// League only.
+		// League and every rotating/custom cup.
 		const teamBuilderParser = new TeamBuilderParser(
 			dataFetcher,
 			pokemonDictionary
 		);
 		const teamData = await teamBuilderParser.parse(
-			{
-				great: Object.keys(pvpData.great),
-				ultra: Object.keys(pvpData.ultra),
-				master: Object.keys(pvpData.master),
-			},
-			speciesSearchMetadata
+			Object.fromEntries(
+				Object.entries(pvpData).map(([leagueId, ranking]) => [
+					leagueId,
+					Object.keys(ranking),
+				])
+			),
+			speciesSearchMetadata,
+			// every rotating / custom cup too: its meta group and, for a CP cap the three leagues don't have, its rank-1 IVs
+			pvpParser
+				.getLeagueMetadata()
+				.filter(
+					({ id }) => !(TEAM_LEAGUES as ReadonlyArray<string>).includes(id)
+				)
+				.map(({ id, cpCap, format }) => ({ id, cpCap, format }))
 		);
 		// A PvPoke simulator change must fail the run (and so the daily Discord alert), not be published.
 		assertSimulatorVerified(teamData.simulator);

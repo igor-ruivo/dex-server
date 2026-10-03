@@ -17,3 +17,15 @@ export const TEAM_LEAGUE_CP: Record<TeamLeague, number> = {
 /** The quick-fill group PvPoke's team builder treats as each league's meta. */
 export const metaGroupUrl = (league: TeamLeague) =>
 	`${PVPOKE_RAW}/groups/${league}.json`;
+
+/** The quick-fill group files a cup's meta may be in: PvPoke names them after the format, with the league's name when the
+ *  same format has one group per cap (`megagreat`, `megaultra`). First one that exists wins. */
+export const cupMetaGroupUrls = (
+	format: string,
+	cpCap: number
+): Array<string> => {
+	const suffix = cpCap === 1500 ? 'great' : cpCap === 2500 ? 'ultra' : '';
+	return [...new Set([`${format}${suffix}`, format])].map(
+		(name) => `${PVPOKE_RAW}/groups/${name}.json`
+	);
+};

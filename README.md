@@ -46,3 +46,7 @@ the port is re-verified (see go-pokedex's `scripts/pvp-sim-parity`).
 Every Pokémon is rated at its **rank-1 IVs** (`ivs` in `team-builder.json`), taken from the level-50
 tied-for-best spreads already in `species-search-metadata.json` (ties: highest Attack, then Defense, then
 HP) — not PvPoke's default IVs.
+
+The Teams view also covers every rotating/custom cup in `leagues.json`: `meta` has a group per cup (PvPoke's own quick-fill group
+for the cup's format when there is one, else the cup ranking's best 44), and `ivs` gets a `cap-<n>` entry for any CP cap the
+three leagues don't have (a cup at 1500 / 2500 / 10000 CP shares Great / Ultra / Master's spreads).

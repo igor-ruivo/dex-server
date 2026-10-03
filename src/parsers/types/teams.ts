@@ -10,6 +10,24 @@ import type { PokemonFormChange } from './pokemon';
 export const TEAM_LEAGUES = ['great', 'ultra', 'master'] as const;
 export type TeamLeague = (typeof TEAM_LEAGUES)[number];
 
+/** The key of the rank-1 spreads (`TeamBuilderData.ivs`) for a CP cap: a static league's id, or `cap-<n>` for any other cap. */
+export const ivsKeyForCap = (cpCap: number): string =>
+	cpCap === 1500
+		? 'great'
+		: cpCap === 2500
+			? 'ultra'
+			: cpCap === 10000
+				? 'master'
+				: `cap-${cpCap}`;
+
+/** A rotating / custom cup the Teams view also covers (from `leagues.json`). */
+export interface ExtraTeamLeague {
+	id: string;
+	cpCap: number;
+	/** PvPoke's format name (e.g. `mega`, `retro`), which its meta group files are named after. */
+	format: string;
+}
+
 /** One raw entry of PvPoke's `gamemaster/moves.json`. */
 export interface PvPokeMove {
 	moveId: string;
@@ -91,14 +109,16 @@ export interface TeamBuilderData {
 	moves: Record<string, TeamBuilderMove>;
 	/**
 	 * The rank-1 IV spread (best stat product at the league's cap, level ≤ 50) per ranked species and
-	 * league — what the Teams view rates every Pokémon with. Deliberately NOT PvPoke's own default IVs
+	 * CP cap — what the Teams view rates every Pokémon with. Keyed by `ivsKeyForCap`: `great` / `ultra` / `master` for the
+	 * 1500 / 2500 / uncapped caps (a cup at one of those caps shares them), `cap-<n>` for any other cap a rotating
+	 * cup uses (e.g. `cap-500` for a Little Cup). Deliberately NOT PvPoke's own default IVs
 	 * (which sit a few ranks down, and lower for legendaries): the simulator is IV-agnostic, so it is
 	 * fed the best possible spread and the results are the team at its ceiling.
 	 */
-	ivs: Record<string, Partial<Record<TeamLeague, BestIvs>>>;
+	ivs: Record<string, Partial<Record<string, BestIvs>>>;
 	forms: Record<string, TeamBuilderForm>;
 	/** Species PvPoke keeps out of its team-builder threat lists. */
 	excludedThreats: Array<string>;
 	/** PvPoke's per-league "meta" group — the species its threat ranking favours. */
-	meta: Record<TeamLeague, Array<string>>;
+	meta: Record<string, Array<string>>;
 }

@@ -37,35 +37,57 @@ const page = (spawns: string) => `
 const parse = (title: string, html: string) => {
 	const parser = new EventsParser(
 		{} as never,
-		{} as never,
-		{ nonMegaNonShadowDomain: [], nonShadowDomain: [], nonMegaDomain: [] } as never,
-		{} as never
+		{},
+		{
+			nonMegaNonShadowDomain: [],
+			nonShadowDomain: [],
+			nonMegaDomain: [],
+		} as never,
+		{}
 	);
 	const htmlDoc = new JSDOM(html).window.document;
 	return (
 		parser as unknown as {
 			parseSpotlightHourEvent: (
-				parsed: { title: string; date: number; dateEnd: number; htmlDoc: Document },
+				parsed: {
+					title: string;
+					date: number;
+					dateEnd: number;
+					htmlDoc: Document;
+				},
 				gameMaster: unknown,
 				url: string
-			) => { pokemons: Array<{ speciesId: string; shiny: boolean }> } | undefined;
+			) =>
+				| { pokemons: Array<{ speciesId: string; shiny: boolean }> }
+				| undefined;
 		}
-	).parseSpotlightHourEvent({ title, date: 0, dateEnd: 1, htmlDoc }, {}, 'https://leekduck.com/events/x/');
+	).parseSpotlightHourEvent(
+		{ title, date: 0, dateEnd: 1, htmlDoc },
+		{},
+		'https://leekduck.com/events/x/'
+	);
 };
 
 describe('spotlight hours and the shiny mark', () => {
 	it('flags the featured Pokémon as shiny when the page shows the shiny icon next to it', () => {
 		const result = parse('Elgyem Spotlight Hour', page(item('Elgyem', true)));
-		expect(result?.pokemons).toEqual([{ speciesId: 'elgyem', kind: '5', shiny: true }]);
+		expect(result?.pokemons).toEqual([
+			{ speciesId: 'elgyem', kind: '5', shiny: true },
+		]);
 	});
 
 	it('leaves the Pokémon non-shiny when the page has no shiny icon for it', () => {
 		const result = parse('Elgyem Spotlight Hour', page(item('Elgyem', false)));
-		expect(result?.pokemons).toEqual([{ speciesId: 'elgyem', kind: '5', shiny: false }]);
+		expect(result?.pokemons).toEqual([
+			{ speciesId: 'elgyem', kind: '5', shiny: false },
+		]);
 	});
 
 	it('flags each Pokémon of a dual spotlight by its own icon', () => {
-		const result = parse('Elgyem and Axew Spotlight Hour', page(item('Elgyem', true) + item('Axew', false)));
+		const result = parse(
+			'Elgyem and Axew Spotlight Hour',
+			page(item('Elgyem', true) + item('Axew', false))
+		);
 		expect(result?.pokemons).toEqual([
 			{ speciesId: 'elgyem', kind: '5', shiny: true },
 			{ speciesId: 'axew', kind: '5', shiny: false },
@@ -79,11 +101,16 @@ describe('spotlight hours and the shiny mark', () => {
 
 	it('copes with a page that lists no Pokémon at all', () => {
 		const result = parse('Elgyem Spotlight Hour', page(''));
-		expect(result?.pokemons).toEqual([{ speciesId: 'elgyem', kind: '5', shiny: false }]);
+		expect(result?.pokemons).toEqual([
+			{ speciesId: 'elgyem', kind: '5', shiny: false },
+		]);
 	});
 
 	it('ignores a shiny icon that is not inside a Pokémon list item', () => {
-		const result = parse('Elgyem Spotlight Hour', page(item('Elgyem', false)) + SHINY_ICON);
+		const result = parse(
+			'Elgyem Spotlight Hour',
+			page(item('Elgyem', false)) + SHINY_ICON
+		);
 		expect(result?.pokemons[0].shiny).toBe(false);
 	});
 

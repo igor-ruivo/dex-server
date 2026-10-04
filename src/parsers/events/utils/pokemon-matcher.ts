@@ -30,7 +30,12 @@ class PokemonMatcher {
 	/** The name a species is written with in event text ("Zorua (Hisuian)" → "zorua"), or undefined if unknown. */
 	plainNameOf(speciesId: string): string | undefined {
 		const name = this.gameMasterPokemon[speciesId]?.speciesName;
-		return name?.replace(/\s*\(.*$/, '').trim().toLowerCase() || undefined;
+		return (
+			name
+				?.replace(/\s*\(.*$/, '')
+				.trim()
+				.toLowerCase() || undefined
+		);
 	}
 
 	/**
@@ -482,7 +487,8 @@ class PokemonMatcher {
 }
 
 /** The elements that hold text as a block: the text under the nearest one of them, inline tags included, is one phrase. */
-const BLOCK_SELECTOR = 'p, li, div, h1, h2, h3, h4, h5, h6, td, th, dd, dt, blockquote, ul, ol, table, section, article';
+const BLOCK_SELECTOR =
+	'p, li, div, h1, h2, h3, h4, h5, h6, td, th, dd, dt, blockquote, ul, ol, table, section, article';
 /**
  * An asterisk right after a name: "Hoppip*", "Skarmory*!", "Eevee*. You" (the list is cut at commas and "and", not at the
  * end of a sentence). A star that opens a text (the footnote "*If you're lucky…") follows no name.
@@ -634,37 +640,65 @@ export const extractPokemonSpeciesIdsFromElements = (
 	const starred = new Set<string>();
 	for (const fragment of fragments) {
 		if (!hasStar(fragment)) continue;
-		matcher.matchPokemonFromText([fragment.text]).forEach((entry) => starred.add(entry.speciesId));
+		matcher
+			.matchPokemonFromText([fragment.text])
+			.forEach((entry) => starred.add(entry.speciesId));
 	}
 	if (starred.size > 0) {
-		return results.map((entry) => ({ ...entry, shiny: starred.has(entry.speciesId) }));
+		return results.map((entry) => ({
+			...entry,
+			shiny: starred.has(entry.speciesId),
+		}));
 	}
 
 	// No asterisks: a Pokémon can be shiny when a sentence that says "shiny" names it ("Zorua … will still have an increased
 	// chance to be Shiny"). "If you're lucky" alone says nothing: it also introduces Special Backgrounds. A remark that is both
 	// lucky and shiny but names no Pokémon of the results ("If you're lucky, they may be Shiny!") speaks for the Pokémon of its
 	// block.
-	const names = new Map(results.map((entry) => [entry.speciesId, matcher.plainNameOf(entry.speciesId)] as const));
+	const names = new Map(
+		results.map(
+			(entry) =>
+				[entry.speciesId, matcher.plainNameOf(entry.speciesId)] as const
+		)
+	);
 	const mentions = (sentence: string, speciesId: string) => {
 		const name = names.get(speciesId);
-		return !!name && new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(sentence);
+		return (
+			!!name &&
+			new RegExp(
+				`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`,
+				'i'
+			).test(sentence)
+		);
 	};
 	const shinySpecies = new Set<string>();
-	const blocks = [...blockParts.values()].map((parts) => parts.join('').replace(/\s+/g, ' ').trim()).filter(Boolean);
+	const blocks = [...blockParts.values()]
+		.map((parts) => parts.join('').replace(/\s+/g, ' ').trim())
+		.filter(Boolean);
 	for (const block of blocks) {
-		const sentences = sentenceRanges(block).map(([start, end]) => block.slice(start, end));
+		const sentences = sentenceRanges(block).map(([start, end]) =>
+			block.slice(start, end)
+		);
 		for (const sentence of sentences) {
 			if (!SHINY_WORD.test(sentence)) continue;
-			const named = results.filter((entry) => mentions(sentence, entry.speciesId));
-			if (named.length > 0) named.forEach((entry) => shinySpecies.add(entry.speciesId));
+			const named = results.filter((entry) =>
+				mentions(sentence, entry.speciesId)
+			);
+			if (named.length > 0)
+				named.forEach((entry) => shinySpecies.add(entry.speciesId));
 			else if (SHINY_REMARK.test(sentence)) {
 				results
-					.filter((entry) => sentences.some((other) => mentions(other, entry.speciesId)))
+					.filter((entry) =>
+						sentences.some((other) => mentions(other, entry.speciesId))
+					)
 					.forEach((entry) => shinySpecies.add(entry.speciesId));
 			}
 		}
 	}
-	return results.map((entry) => ({ ...entry, shiny: shinySpecies.has(entry.speciesId) }));
+	return results.map((entry) => ({
+		...entry,
+		shiny: shinySpecies.has(entry.speciesId),
+	}));
 };
 
 export default PokemonMatcher;

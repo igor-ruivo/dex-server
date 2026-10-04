@@ -47,7 +47,7 @@ export const assertSuperMegasAlwaysCapBound = (
 			`Super Max Mega Pokémon that fit under a capped league's ${cap} CP at level 50 with 0/0/0 IVs: ${offenders
 				.map(({ speciesId, cp }) => `${speciesId} (${cp} CP)`)
 				.join(', ')}.`,
-			"go-pokedex assumes a Super Max Mega never reaches level 50 in a capped league (so the extra levels only matter in an uncapped one, and the ordinary level-50 best IV spreads serve it). That no longer holds:",
+			'go-pokedex assumes a Super Max Mega never reaches level 50 in a capped league (so the extra levels only matter in an uncapped one, and the ordinary level-50 best IV spreads serve it). That no longer holds:',
 			"it now needs best-IV spreads for a level ceiling of 52 (dex-server's species-search-metadata / team-builder.json) and go-pokedex's Super Max Mega build (superMegaBuild in lib/pvp-sim/team-eval.ts, useOptimalBuild) must stop reusing the level-50 spread.",
 		].join(' ')
 	);

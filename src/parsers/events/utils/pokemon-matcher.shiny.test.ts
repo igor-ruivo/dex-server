@@ -9,7 +9,31 @@ import { extractPokemonSpeciesIdsFromElements } from './pokemon-matcher';
  * Whether an event section's Pokémon can be shiny is read from the phrase that talks about each one: a sentence that names
  * it and says "shiny". "If you're lucky" alone does not mean shiny (it also introduces Special Backgrounds).
  */
-const KNOWN = ['zorua', 'axew', 'elgyem', 'ponyta', 'hoppip', 'electrike', 'dwebble', 'bramblin', 'growlithe', 'nincada', 'helioptile', 'sandile', 'doduo', 'blitzle', 'skarmory', 'bulbasaur', 'charmander', 'squirtle', 'pikachu', 'eevee', 'nidoran', 'lapras', 'snorlax'];
+const KNOWN = [
+	'zorua',
+	'axew',
+	'elgyem',
+	'ponyta',
+	'hoppip',
+	'electrike',
+	'dwebble',
+	'bramblin',
+	'growlithe',
+	'nincada',
+	'helioptile',
+	'sandile',
+	'doduo',
+	'blitzle',
+	'skarmory',
+	'bulbasaur',
+	'charmander',
+	'squirtle',
+	'pikachu',
+	'eevee',
+	'nidoran',
+	'lapras',
+	'snorlax',
+];
 
 /** Stands in for the real matcher: finds the known names in a text, each species once per call. */
 const fakeMatcher = {
@@ -26,12 +50,16 @@ const fakeMatcher = {
 		}
 		return out;
 	},
-	plainNameOf: (speciesId: string) => (KNOWN.includes(speciesId) ? speciesId : undefined),
+	plainNameOf: (speciesId: string) =>
+		KNOWN.includes(speciesId) ? speciesId : undefined,
 } as unknown as PokemonMatcher;
 
 const shinyOf = (html: string): Record<string, boolean> => {
 	const body = new JSDOM(`<body>${html}</body>`).window.document.body;
-	const entries = extractPokemonSpeciesIdsFromElements(Array.from(body.children), fakeMatcher);
+	const entries = extractPokemonSpeciesIdsFromElements(
+		Array.from(body.children),
+		fakeMatcher
+	);
 	return Object.fromEntries(entries.map((e) => [e.speciesId, e.shiny]));
 };
 
@@ -47,49 +75,73 @@ describe('shiny in an event section', () => {
 	});
 
 	it('flags the Pokémon of a phrase that says it can be shiny if you are lucky', () => {
-		expect(shinyOf('<p>If you’re lucky, <strong>Zorua</strong> may be Shiny!</p>')).toEqual({ zorua: true });
+		expect(
+			shinyOf('<p>If you’re lucky, <strong>Zorua</strong> may be Shiny!</p>')
+		).toEqual({ zorua: true });
 	});
 
 	it('lets a lucky-and-shiny remark that names no Pokémon speak for the Pokémon of its paragraph', () => {
-		expect(shinyOf('<p><strong>Zorua</strong>, <strong>Axew</strong> will be easier to find. If you’re lucky, they may be Shiny!</p>')).toEqual({
+		expect(
+			shinyOf(
+				'<p><strong>Zorua</strong>, <strong>Axew</strong> will be easier to find. If you’re lucky, they may be Shiny!</p>'
+			)
+		).toEqual({
 			zorua: true,
 			axew: true,
 		});
 	});
 
 	it('flags only the Pokémon named in the sentence that says shiny', () => {
-		expect(shinyOf('<p><strong>Zorua</strong> will be easier to find. Shiny <strong>Axew</strong> will be available too.</p>')).toEqual({
+		expect(
+			shinyOf(
+				'<p><strong>Zorua</strong> will be easier to find. Shiny <strong>Axew</strong> will be available too.</p>'
+			)
+		).toEqual({
 			zorua: false,
 			axew: true,
 		});
 	});
 
 	it('keeps "p.m." inside its sentence', () => {
-		expect(shinyOf('<p>From 2:00 p.m. to 9:00 p.m. local time, <strong>Zorua</strong> has an increased chance to be Shiny.</p>')).toEqual({
+		expect(
+			shinyOf(
+				'<p>From 2:00 p.m. to 9:00 p.m. local time, <strong>Zorua</strong> has an increased chance to be Shiny.</p>'
+			)
+		).toEqual({
 			zorua: true,
 		});
 	});
 
 	it('does not flag a Pokémon in a text that never says shiny', () => {
-		expect(shinyOf('<p><strong>Zorua</strong> will be easier to find.</p>')).toEqual({ zorua: false });
+		expect(
+			shinyOf('<p><strong>Zorua</strong> will be easier to find.</p>')
+		).toEqual({ zorua: false });
 	});
 
 	it('reads each paragraph on its own: shiny in one does not flag the Pokémon of another', () => {
-		const html = '<p><strong>Zorua</strong> will be easier to find.</p><p><strong>Axew</strong> has an increased chance to be Shiny.</p>';
+		const html =
+			'<p><strong>Zorua</strong> will be easier to find.</p><p><strong>Axew</strong> has an increased chance to be Shiny.</p>';
 		expect(shinyOf(html)).toEqual({ zorua: false, axew: true });
 	});
 
 	it('reads a phrase that runs through inline tags', () => {
-		expect(shinyOf('<div><p>Catch <em>Zorua</em> and <strong>Axew</strong>. <b>Axew</b> can be <i>Shiny</i>.</p></div>')).toEqual({
+		expect(
+			shinyOf(
+				'<div><p>Catch <em>Zorua</em> and <strong>Axew</strong>. <b>Axew</b> can be <i>Shiny</i>.</p></div>'
+			)
+		).toEqual({
 			zorua: false,
 			axew: true,
 		});
 	});
 
 	describe('a section that marks the shiny ones with an asterisk (Incense Encounters)', () => {
-		const intro = '<p>The following Pokémon will be attracted to Incense (excluding Daily Adventure Incense) during the event on the following days.</p>';
-		const day1 = '<p>October 13 at 10:00 a.m. to October 16, 2026, at 10:00 a.m. local time</p>';
-		const day2 = '<p>October 16 at 10:00 a.m. to October 19, 2026, at 8:00 p.m. local time</p>';
+		const intro =
+			'<p>The following Pokémon will be attracted to Incense (excluding Daily Adventure Incense) during the event on the following days.</p>';
+		const day1 =
+			'<p>October 13 at 10:00 a.m. to October 16, 2026, at 10:00 a.m. local time</p>';
+		const day2 =
+			'<p>October 16 at 10:00 a.m. to October 19, 2026, at 8:00 p.m. local time</p>';
 		const footnote = '<p>*If you’re lucky, you may encounter a Shiny one!</p>';
 		const expected = {
 			ponyta: true,
@@ -103,13 +155,26 @@ describe('shiny in an event section', () => {
 		};
 
 		it('flags the starred Pokémon and not the others, whatever the footnote says', () => {
-			const list = (names: Array<string>) => names.map((n) => `<p>${n}</p>`).join('');
+			const list = (names: Array<string>) =>
+				names.map((n) => `<p>${n}</p>`).join('');
 			const html =
 				intro +
 				day1 +
-				list(['Galarian Ponyta*', 'Hoppip*', 'Electrike*', 'Dwebble*', 'Bramblin']) +
+				list([
+					'Galarian Ponyta*',
+					'Hoppip*',
+					'Electrike*',
+					'Dwebble*',
+					'Bramblin',
+				]) +
 				day2 +
-				list(['Hisuian Growlithe*', 'Nincada*', 'Electrike*', 'Helioptile*', 'Bramblin']) +
+				list([
+					'Hisuian Growlithe*',
+					'Nincada*',
+					'Electrike*',
+					'Helioptile*',
+					'Bramblin',
+				]) +
 				footnote;
 			expect(shinyOf(html)).toEqual(expected);
 		});
@@ -126,12 +191,19 @@ describe('shiny in an event section', () => {
 		});
 
 		it('keeps a starred Pokémon shiny when the same one is listed again without a star', () => {
-			expect(shinyOf('<p>Hoppip*</p><p>Bramblin</p><p>Hoppip</p>')).toEqual({ hoppip: true, bramblin: false });
+			expect(shinyOf('<p>Hoppip*</p><p>Bramblin</p><p>Hoppip</p>')).toEqual({
+				hoppip: true,
+				bramblin: false,
+			});
 		});
 
 		it('does not let the list de-duplication shift the stars onto other Pokémon', () => {
 			// Electrike is listed twice, so the list is shorter than the fragments: the star of Helioptile must stay with it
-			expect(shinyOf('<p>Electrike*</p><p>Electrike*</p><p>Bramblin</p><p>Helioptile*</p>')).toEqual({
+			expect(
+				shinyOf(
+					'<p>Electrike*</p><p>Electrike*</p><p>Bramblin</p><p>Helioptile*</p>'
+				)
+			).toEqual({
 				electrike: true,
 				bramblin: false,
 				helioptile: true,
@@ -146,8 +218,14 @@ describe('shiny in an event section', () => {
 		it.each([
 			['a paragraph', `<p>${text}</p>`],
 			['a heading and a paragraph', `<h2>Featured Pokémon</h2><p>${text}</p>`],
-			['a heading and loose text in the same block', `<div><h2>Featured Pokémon</h2>${text}</div>`],
-			['the name in its own tag', `<p><strong>Sandile</strong> will hatch much more frequently from 2 km Eggs. You’ll also have an increased chance of hatching Shiny <strong>Sandile</strong>!</p>`],
+			[
+				'a heading and loose text in the same block',
+				`<div><h2>Featured Pokémon</h2>${text}</div>`,
+			],
+			[
+				'the name in its own tag',
+				`<p><strong>Sandile</strong> will hatch much more frequently from 2 km Eggs. You’ll also have an increased chance of hatching Shiny <strong>Sandile</strong>!</p>`,
+			],
 			['line breaks', `<p>Featured Pokémon<br>${text}</p>`],
 			['a list item', `<ul><li>${text}</li></ul>`],
 		])('flags the Pokémon: %s', (_name, html) => {
@@ -155,7 +233,11 @@ describe('shiny in an event section', () => {
 		});
 
 		it('does not flag it when the sentences never say shiny', () => {
-			expect(shinyOf('<p>Sandile will hatch much more frequently from 2 km Eggs.</p>')).toEqual({ sandile: false });
+			expect(
+				shinyOf(
+					'<p>Sandile will hatch much more frequently from 2 km Eggs.</p>'
+				)
+			).toEqual({ sandile: false });
 		});
 	});
 
@@ -163,7 +245,13 @@ describe('shiny in an event section', () => {
 		const html =
 			'<p>You may encounter event-themed Pokémon in the wild, including Ponyta*, Doduo*, Electrike*, Blitzle*, and more! You might even encounter Skarmory*!</p>' +
 			'<div>*If you’re lucky, you may encounter a Shiny one!</div>';
-		expect(shinyOf(html)).toEqual({ ponyta: true, doduo: true, electrike: true, blitzle: true, skarmory: true });
+		expect(shinyOf(html)).toEqual({
+			ponyta: true,
+			doduo: true,
+			electrike: true,
+			blitzle: true,
+			skarmory: true,
+		});
 	});
 
 	it('reads the stars of a list whose sentence ends right after a starred name (Eevee*. You…)', () => {
@@ -183,14 +271,20 @@ describe('shiny in an event section', () => {
 	});
 
 	it('does not take the star that opens a footnote for the star of a name', () => {
-		expect(shinyOf('<p>Zorua will be easier to find.</p><p>*Axew is a surprise.</p>')).toEqual({
+		expect(
+			shinyOf('<p>Zorua will be easier to find.</p><p>*Axew is a surprise.</p>')
+		).toEqual({
 			zorua: false,
 			axew: false,
 		});
 	});
 
 	it('reads a star before closing punctuation, and leaves an unstarred name in the same sentence non-shiny', () => {
-		expect(shinyOf('<p>Look for Zorua* (and Axew!) today. You might even encounter Elgyem*!</p>')).toEqual({
+		expect(
+			shinyOf(
+				'<p>Look for Zorua* (and Axew!) today. You might even encounter Elgyem*!</p>'
+			)
+		).toEqual({
 			zorua: true,
 			axew: false,
 			elgyem: true,
@@ -198,6 +292,9 @@ describe('shiny in an event section', () => {
 	});
 
 	it('still flags a Pokémon marked with an asterisk', () => {
-		expect(shinyOf('<p>Zorua*, Axew</p>')).toEqual({ zorua: true, axew: false });
+		expect(shinyOf('<p>Zorua*, Axew</p>')).toEqual({
+			zorua: true,
+			axew: false,
+		});
 	});
 });

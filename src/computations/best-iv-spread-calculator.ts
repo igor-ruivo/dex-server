@@ -404,7 +404,8 @@ export const computeBestIvSpreads = (
 ): BestIvSpreads =>
 	computeSpreadsAcrossLeaguesAndLevels(
 		stats,
-		(cap, level) => tiedTop1Patterns(stats.atk, stats.def, stats.hp, cap, level),
+		(cap, level) =>
+			tiedTop1Patterns(stats.atk, stats.def, stats.hp, cap, level),
 		otherCaps
 	);
 

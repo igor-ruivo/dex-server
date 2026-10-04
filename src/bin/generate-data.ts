@@ -4,6 +4,7 @@ import path from 'path';
 import { augmentGameMasterWithFamilyRelations } from '../computations/family-relations-calculator';
 import RaidDpsCalculator from '../computations/raid-dps-calculator';
 import { computeSpeciesSearchMetadata } from '../computations/species-search-metadata-calculator';
+import { assertSuperMegasAlwaysCapBound } from '../computations/super-mega-guard';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
 import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
 import EventsParser from '../parsers/events/providers/leekduck/EventsParser';
@@ -24,7 +25,6 @@ import {
 } from '../parsers/services/game-translations-provider';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
-import { assertSuperMegasAlwaysCapBound } from '../computations/super-mega-guard';
 import { assertSimulatorVerified } from '../parsers/teams/simulator-guard';
 import TeamBuilderParser from '../parsers/teams/team-builder-parser';
 import type { IEntry } from '../parsers/types/events';
@@ -97,7 +97,6 @@ const generateData = async () => {
 			pokemonDictionary,
 			leagueMetadata.map(({ cpCap }) => cpCap)
 		);
-
 
 		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default
 		// IVs, meta groups, form-changing species) for Great/Ultra/Master

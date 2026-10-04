@@ -241,9 +241,9 @@ class TeamBuilderParser {
 			// Any other CP cap a cup uses (e.g. a Little Cup's 500): its spread comes from the same generated
 			// species-search-metadata as the others (see `computeBestIvSpreads`), not a computation of its own.
 			for (const cap of otherCaps) {
-				const patterns = (spreads as Record<string, PerLevelPatterns | undefined>)[
-					ivsKeyForCap(cap)
-				]?.level50;
+				const patterns = (
+					spreads as Record<string, PerLevelPatterns | undefined>
+				)[ivsKeyForCap(cap)]?.level50;
 				if (!patterns) {
 					throw new Error(
 						`No best IV spreads for ${speciesId} at ${cap} CP in species-search-metadata`

@@ -66,6 +66,7 @@ const makeGrunt = (overrides: Partial<IRocketGrunt> = {}): IRocketGrunt => ({
 	tier1: [],
 	tier2: [],
 	tier3: [],
+	shinyPokemon: [],
 	catchableTiers: [],
 	...overrides,
 });

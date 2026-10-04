@@ -53,15 +53,30 @@ class EggsParser {
 				continue;
 			}
 			if (entry.classList.contains('egg-grid')) {
-				const pkmList = Array.from(entry.children).map(
-					(c) =>
+				const cards = Array.from(entry.children).map((c) => ({
+					name:
 						(
-							c.getElementsByClassName('name')[0] as HTMLElement
-						).textContent?.trim() ?? ''
-				);
+							c.getElementsByClassName('name')[0] as HTMLElement | undefined
+						)?.textContent?.trim() ?? '',
+					shiny: !!c.querySelector('.shiny-icon'),
+				}));
+				const pkmList = cards.map((c) => c.name);
 				const matcher = new PokemonMatcher(this.gameMasterPokemon, this.domain);
+				// Matched card by card too: the list match drops repeats and unknown names, so its entries can't be lined up
+				// with the cards by position.
+				const shinyIds = new Set(
+					cards
+						.filter((c) => c.shiny)
+						.flatMap((c) => matcher.matchPokemonFromText([c.name]))
+						.map((r) => r.speciesId)
+				);
 				const parsedPkm = matcher.matchPokemonFromText(pkmList).map((r) => {
-					return { ...r, kind: km, comment: { ...comment } };
+					return {
+						...r,
+						shiny: r.shiny || shinyIds.has(r.speciesId),
+						kind: km,
+						comment: { ...comment },
+					};
 				});
 				pokemons.push(...parsedPkm);
 			}

@@ -73,15 +73,15 @@ describe('expandHiddenPower', () => {
 		}
 	});
 
-	it('names each one "<Hidden Power> <Type>" in every language, falling back to the English type', () => {
+	it('names each one "<Hidden Power> (<Type>)" in every language, falling back to the English type', () => {
 		expect(moves.HIDDEN_POWER_PSYCHIC.moveName[AvailableLocales.en]).toBe(
-			'Hidden Power Psychic'
+			'Hidden Power (Psychic)'
 		);
 		expect(moves.HIDDEN_POWER_PSYCHIC.moveName[AvailableLocales.ptbr]).toBe(
-			'Poder Oculto Psíquico'
+			'Poder Oculto (Psíquico)'
 		);
 		expect(moves.HIDDEN_POWER_FIRE.moveName[AvailableLocales.ptbr]).toBe(
-			'Poder Oculto Fire'
+			'Poder Oculto (Fire)'
 		);
 	});
 

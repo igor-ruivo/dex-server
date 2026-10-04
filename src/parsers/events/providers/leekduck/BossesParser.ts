@@ -112,8 +112,10 @@ class BossesParser {
 					}
 					seen.add(dedupeKey);
 
+					// The boss's card carries a shiny icon when it can be shiny.
+					const card = name.closest('.card');
 					pokemons.push({
-						shiny: parsedPkm[0].shiny,
+						shiny: parsedPkm[0].shiny || !!card?.querySelector('.shiny-icon'),
 						speciesId: parsedPkm[0].speciesId,
 						kind: tier,
 					});

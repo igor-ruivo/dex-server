@@ -8,7 +8,7 @@ export const GENERIC_HIDDEN_POWER = 'HIDDEN_POWER';
 /**
  * Replaces the generic Hidden Power with one move per type (`HIDDEN_POWER_PSYCHIC`…), the way PvPoke lists them — and the way
  * a Pokémon's move pool already lists them. Each variant is the generic move with its type changed, so it has the type's own
- * STAB and effectiveness in every damage calculation, and is named "<Hidden Power> <Type>" in each language (the type from the
+ * STAB and effectiveness in every damage calculation, and is named "<Hidden Power> (<Type>)" in each language (the type from the
  * data-mined `pokemon_type_<type>` strings, English when a locale has none). A game master without the generic move is
  * returned as it is.
  */
@@ -33,7 +33,7 @@ export const expandHiddenPower = (
 				generic.moveName[AvailableLocales.en] ??
 				'Hidden Power';
 			groupName[locale] = base;
-			moveName[locale] = `${base} ${typeName(locale, type) ?? english}`;
+			moveName[locale] = `${base} (${typeName(locale, type) ?? english})`;
 		}
 		expanded[moveId] = { ...generic, moveId, type, moveName, groupName };
 	}

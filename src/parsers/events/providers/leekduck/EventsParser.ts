@@ -67,6 +67,15 @@ function wallClockAsUtcMillis(isoString: string | null | undefined): number {
 	);
 }
 
+/** A Pokémon's name as the shiny marks are matched: lowercase, without a Shadow / Mega / Primal word or a bracketed form. */
+const shinyNameKey = (name: string): string =>
+	name
+		.toLowerCase()
+		.replace(/\(.*?\)/g, ' ')
+		.replace(/\b(shadow|mega|primal)\b/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+
 class EventsParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
@@ -279,7 +288,8 @@ class EventsParser {
 			rawPkmName,
 			gameMasterPokemon,
 			isShadow,
-			isMega
+			isMega,
+			this.extractShinyNames(parsed.htmlDoc)
 		);
 		if (pokemons.length === 0) {
 			return undefined;
@@ -333,7 +343,7 @@ class EventsParser {
 				entries.push({
 					speciesId: entry.speciesId,
 					kind: isMega ? 'mega' : '5',
-					shiny: shinyNames.has(p.toLowerCase()),
+					shiny: shinyNames.has(shinyNameKey(p)),
 				});
 			}
 		}
@@ -350,8 +360,8 @@ class EventsParser {
 			htmlDoc.querySelectorAll('.pkmn-list-item')
 		)) {
 			const name = item.querySelector('.pkmn-name')?.textContent?.trim();
-			if (name && item.querySelector('img.shiny-icon')) {
-				names.add(name.toLowerCase());
+			if (name && item.querySelector('.shiny-icon')) {
+				names.add(shinyNameKey(name));
 			}
 		}
 		return names;

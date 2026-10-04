@@ -54,6 +54,18 @@ class RocketLineupsParser {
 				(p) => (p as HTMLElement)?.getAttribute('data-pokemon')?.trim() ?? ''
 			);
 			const matcher = new PokemonMatcher(this.gameMasterPokemon, this.domain);
+			// The Pokémon whose element carries the shiny icon (any tier), as the shadow ids the tiers list.
+			const shinyPokemon = [
+				...new Set(
+					Array.from(entry.getElementsByClassName('shadow-pokemon'))
+						.filter((p) => !!p.querySelector('.shiny-icon'))
+						.map((p) => p.getAttribute('data-pokemon')?.trim() ?? '')
+						.flatMap((n) => matcher.matchPokemonFromText([n]))
+						.map((e) =>
+							this.convertToShadowVersion(e.speciesId, this.gameMasterPokemon)
+						)
+				),
+			];
 			const tier1Pkms = matcher
 				.matchPokemonFromText(tier1)
 				.map((e) =>
@@ -95,6 +107,7 @@ class RocketLineupsParser {
 				tier1: tier1Pkms,
 				tier2: tier2Pkms,
 				tier3: tier3Pkms,
+				shinyPokemon,
 				catchableTiers: catchableTiers,
 			});
 		}

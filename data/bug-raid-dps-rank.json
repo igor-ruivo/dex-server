@@ -1209,6 +1209,17 @@
 		"dpsRank": 110,
 		"tdoRank": 113
 	},
+	"porygon_shadow": {
+		"fastMove": "HIDDEN_POWER_BUG",
+		"chargedMove": "SIGNAL_BEAM",
+		"dps": 12.15744988756312,
+		"tdo": 212.8218953757906,
+		"speciesId": "porygon_shadow",
+		"fastMoveDmg": 12,
+		"chargedMoveDmg": 60,
+		"dpsRank": 111,
+		"tdoRank": 121
+	},
 	"swadloon": {
 		"fastMove": "BUG_BITE",
 		"chargedMove": "BUG_BUZZ",
@@ -1217,7 +1228,7 @@
 		"speciesId": "swadloon",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 59,
-		"dpsRank": 111,
+		"dpsRank": 112,
 		"tdoRank": 105
 	},
 	"togedemaru": {
@@ -1228,7 +1239,7 @@
 		"speciesId": "togedemaru",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 37,
-		"dpsRank": 112,
+		"dpsRank": 113,
 		"tdoRank": 106
 	},
 	"drapion": {
@@ -1239,7 +1250,7 @@
 		"speciesId": "drapion",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 35,
-		"dpsRank": 113,
+		"dpsRank": 114,
 		"tdoRank": 74
 	},
 	"sawsbuck": {
@@ -1250,7 +1261,7 @@
 		"speciesId": "sawsbuck",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 89,
-		"dpsRank": 114,
+		"dpsRank": 115,
 		"tdoRank": 96
 	},
 	"karrablast": {
@@ -1261,7 +1272,7 @@
 		"speciesId": "karrablast",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 33,
-		"dpsRank": 115,
+		"dpsRank": 116,
 		"tdoRank": 131
 	},
 	"pawniard": {
@@ -1272,7 +1283,7 @@
 		"speciesId": "pawniard",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 31,
-		"dpsRank": 116,
+		"dpsRank": 117,
 		"tdoRank": 127
 	},
 	"seaking": {
@@ -1283,7 +1294,7 @@
 		"speciesId": "seaking",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 79,
-		"dpsRank": 117,
+		"dpsRank": 118,
 		"tdoRank": 99
 	},
 	"sizzlipede": {
@@ -1294,7 +1305,7 @@
 		"speciesId": "sizzlipede",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 61,
-		"dpsRank": 118,
+		"dpsRank": 119,
 		"tdoRank": 132
 	},
 	"paras": {
@@ -1305,7 +1316,7 @@
 		"speciesId": "paras",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 30,
-		"dpsRank": 119,
+		"dpsRank": 120,
 		"tdoRank": 138
 	},
 	"whirlipede_shadow": {
@@ -1316,7 +1327,7 @@
 		"speciesId": "whirlipede_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 50,
-		"dpsRank": 120,
+		"dpsRank": 121,
 		"tdoRank": 123
 	},
 	"grubbin_shadow": {
@@ -1327,7 +1338,7 @@
 		"speciesId": "grubbin_shadow",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 34,
-		"dpsRank": 121,
+		"dpsRank": 122,
 		"tdoRank": 145
 	},
 	"qwilfish": {
@@ -1338,7 +1349,7 @@
 		"speciesId": "qwilfish",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 36,
-		"dpsRank": 122,
+		"dpsRank": 123,
 		"tdoRank": 116
 	},
 	"vibrava_shadow": {
@@ -1349,7 +1360,7 @@
 		"speciesId": "vibrava_shadow",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 68,
-		"dpsRank": 123,
+		"dpsRank": 124,
 		"tdoRank": 142
 	},
 	"grubbin": {
@@ -1360,19 +1371,8 @@
 		"speciesId": "grubbin",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 28,
-		"dpsRank": 124,
-		"tdoRank": 140
-	},
-	"porygon_shadow": {
-		"fastMove": "TACKLE",
-		"chargedMove": "SIGNAL_BEAM",
-		"dps": 11.000311316231548,
-		"tdo": 192.56563882192694,
-		"speciesId": "porygon_shadow",
-		"fastMoveDmg": 3,
-		"chargedMoveDmg": 60,
 		"dpsRank": 125,
-		"tdoRank": 122
+		"tdoRank": 140
 	},
 	"venonat_shadow": {
 		"fastMove": "BUG_BITE",
@@ -1419,12 +1419,12 @@
 		"tdoRank": 130
 	},
 	"porygon": {
-		"fastMove": "QUICK_ATTACK",
+		"fastMove": "HIDDEN_POWER_BUG",
 		"chargedMove": "SIGNAL_BEAM",
-		"dps": 10.054238583031285,
-		"tdo": 211.2050356462224,
+		"dps": 10.343392612143353,
+		"tdo": 217.2791691095891,
 		"speciesId": "porygon",
-		"fastMoveDmg": 5,
+		"fastMoveDmg": 10,
 		"chargedMoveDmg": 50,
 		"dpsRank": 130,
 		"tdoRank": 120
@@ -1438,7 +1438,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 29,
 		"dpsRank": 131,
-		"tdoRank": 121
+		"tdoRank": 122
 	},
 	"joltik_shadow": {
 		"fastMove": "CHARGE_BEAM",

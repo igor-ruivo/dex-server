@@ -8,6 +8,7 @@ import type {
 	PvEMove,
 	PvPMove,
 } from '../../../types/pokemon';
+import { expandHiddenPower } from './hidden-power';
 
 const normalizedMoveName = (moveName: string) => {
 	return moveName
@@ -425,7 +426,10 @@ class MovesProvider {
 			};
 		}
 
-		return movesDictionary;
+		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
+		return expandHiddenPower(movesDictionary, (locale, type) =>
+			this.translatorService.getRawString(locale, `pokemon_type_${type}`)
+		);
 	}
 
 	/**

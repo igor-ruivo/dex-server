@@ -179,7 +179,7 @@ export const POKEMON_CONFIG = {
 		'pikachu_horizons',
 	]),
 
-	// Hidden power moves that should be consolidated
+	// The Hidden Power moves, one per type (the generic one is expanded into these in `expandHiddenPower`)
 	HIDDEN_POWERS: new Set([
 		'HIDDEN_POWER_BUG',
 		'HIDDEN_POWER_DARK',

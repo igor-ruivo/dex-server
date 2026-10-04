@@ -199,6 +199,7 @@ class TeamBuilderParser {
 		const rawById = new Map(rawPokemon.map((p) => [p.speciesId, p]));
 		const ivs: TeamBuilderData['ivs'] = {};
 		const forms: Record<string, TeamBuilderForm> = {};
+		const pools: TeamBuilderData['pools'] = {};
 
 		const otherCaps = [
 			...new Set(
@@ -253,6 +254,20 @@ class TeamBuilderParser {
 				if (picked) entry[ivsKeyForCap(cap)] = picked;
 			}
 			ivs[speciesId] = entry;
+			const pool = this.gameMaster[speciesId];
+			pools[speciesId] = {
+				fast: [...(pool?.fastMoves ?? raw.fastMoves)],
+				charged: [
+					...new Set(
+						pool?.chargedMoves ?? [
+							...raw.chargedMoves,
+							...(raw.extraChargedMoves ?? []),
+						]
+					),
+				],
+				elite: [...(pool?.eliteMoves ?? raw.eliteMoves ?? [])],
+				legacy: [...(pool?.legacyMoves ?? raw.legacyMoves ?? [])],
+			};
 		};
 
 		for (const league of [
@@ -294,6 +309,7 @@ class TeamBuilderParser {
 			moves,
 			ivs,
 			forms,
+			pools,
 			excludedThreats: rawPokemon
 				.filter((p) => p.tags?.includes('teambuilderexclude'))
 				.map((p) => p.speciesId),

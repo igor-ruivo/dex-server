@@ -1,5 +1,4 @@
 import { PokemonForms, PokemonTypes } from '../../types/pokemon';
-import { POKEMON_CONFIG } from '../config/pokemon-config';
 
 /**
  * Utility for transforming, cleaning, and extracting information from Pokémon data.
@@ -17,25 +16,6 @@ class PokemonTransformer {
 				return PokemonTypes[typeName as keyof typeof PokemonTypes];
 			})
 			.filter((type) => type !== undefined);
-	}
-
-	/**
-	 * Cleans a list of moves, replacing all hidden powers with 'HIDDEN_POWER' if present.
-	 */
-	static cleanMoves(moves: Array<string>): Array<string> {
-		if (!moves) return [];
-
-		const hasHiddenPower = moves.some((move) =>
-			POKEMON_CONFIG.HIDDEN_POWERS.has(move)
-		);
-		if (hasHiddenPower) {
-			return [
-				...moves.filter((move) => !POKEMON_CONFIG.HIDDEN_POWERS.has(move)),
-				'HIDDEN_POWER',
-			];
-		}
-
-		return moves;
 	}
 
 	/**

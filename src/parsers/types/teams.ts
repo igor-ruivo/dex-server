@@ -103,6 +103,14 @@ export interface SimulatorStatus {
 	unknownMechanics: Array<string>;
 }
 
+/** The moves a species can use. `elite` / `legacy` are the ones that need an Elite TM / can no longer be learned. */
+export interface TeamBuilderMovePool {
+	fast: Array<string>;
+	charged: Array<string>;
+	elite: Array<string>;
+	legacy: Array<string>;
+}
+
 export interface TeamBuilderData {
 	simulator: SimulatorStatus;
 	/** Every move the simulator can meet, keyed by moveId. */
@@ -117,6 +125,11 @@ export interface TeamBuilderData {
 	 */
 	ivs: Record<string, Partial<Record<string, BestIvs>>>;
 	forms: Record<string, TeamBuilderForm>;
+	/**
+	 * The moves each ranked species can use, from PvPoke's own data (its move pools, with the Return / Frustration PvPoke adds):
+	 * what the Teams view offers when a move is picked, so it never mixes another source's pools with PvPoke's move table.
+	 */
+	pools: Record<string, TeamBuilderMovePool>;
 	/** Species PvPoke keeps out of its team-builder threat lists. */
 	excludedThreats: Array<string>;
 	/** PvPoke's per-league "meta" group — the species its threat ranking favours. */

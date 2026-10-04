@@ -12,7 +12,6 @@ import type {
 import {
 	getActiveLeagueDefinitions,
 	LeagueDefinitions,
-	POKEMON_CONFIG,
 	type PvPLeagueDefinition,
 	type PVPokeFormat,
 	PVPokeFormatsUrl,
@@ -149,11 +148,7 @@ class PvPParser {
 		uniqueEntries.forEach((entry) => {
 			entry.moveset.forEach((move) => {
 				const existingMove = this.moves[move];
-				if (
-					!existingMove &&
-					!POKEMON_CONFIG.HIDDEN_POWERS.has(move) &&
-					move !== 'none'
-				) {
+				if (!existingMove && move !== 'none') {
 					throw new Error(`${move} doesn't exist in moves game master!`);
 				}
 			});

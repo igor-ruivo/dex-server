@@ -219,9 +219,9 @@ class GameMasterParser {
 					goForm
 				),
 				baseStats: pokemon.baseStats,
-				fastMoves: PokemonTransformer.cleanMoves(pokemon.fastMoves),
+				fastMoves: pokemon.fastMoves,
 				chargedMoves: [
-					...PokemonTransformer.cleanMoves(pokemon.chargedMoves),
+					...pokemon.chargedMoves,
 					...(pokemon.extraChargedMoves ?? []),
 					...(isShadow
 						? ['FRUSTRATION']
@@ -230,8 +230,8 @@ class GameMasterParser {
 							: []),
 				],
 				extraChargedMoves: pokemon.extraChargedMoves ?? [],
-				eliteMoves: PokemonTransformer.cleanMoves(pokemon.eliteMoves ?? []),
-				legacyMoves: PokemonTransformer.cleanMoves(pokemon.legacyMoves ?? []),
+				eliteMoves: pokemon.eliteMoves ?? [],
+				legacyMoves: pokemon.legacyMoves ?? [],
 				isShadow,
 				isMega,
 				isSuperMega: PokemonValidator.hasTag(pokemon, 'supermega'),

@@ -173,7 +173,7 @@
 		"fastMoveDmg": 18,
 		"chargedMoveDmg": 163,
 		"dpsRank": 16,
-		"tdoRank": 77
+		"tdoRank": 78
 	},
 	"entei_shadow": {
 		"fastMove": "FIRE_FANG",
@@ -635,7 +635,7 @@
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 180,
 		"dpsRank": 58,
-		"tdoRank": 79
+		"tdoRank": 80
 	},
 	"salamence": {
 		"fastMove": "FIRE_FANG",
@@ -668,7 +668,7 @@
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 193,
 		"dpsRank": 61,
-		"tdoRank": 76
+		"tdoRank": 77
 	},
 	"ceruledge": {
 		"fastMove": "INCINERATE",
@@ -756,7 +756,7 @@
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 191,
 		"dpsRank": 69,
-		"tdoRank": 82
+		"tdoRank": 83
 	},
 	"alakazam_shadow": {
 		"fastMove": "PSYCHO_CUT",
@@ -998,7 +998,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 59,
 		"dpsRank": 91,
-		"tdoRank": 81
+		"tdoRank": 82
 	},
 	"enamorus_therian": {
 		"fastMove": "FAIRY_WIND",
@@ -1009,7 +1009,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 63,
 		"dpsRank": 92,
-		"tdoRank": 78
+		"tdoRank": 79
 	},
 	"lucario": {
 		"fastMove": "FORCE_PALM",
@@ -1152,7 +1152,7 @@
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 56,
 		"dpsRank": 105,
-		"tdoRank": 75
+		"tdoRank": 76
 	},
 	"alakazam": {
 		"fastMove": "CONFUSION",
@@ -1339,7 +1339,7 @@
 		"fastMoveDmg": 22,
 		"chargedMoveDmg": 111,
 		"dpsRank": 122,
-		"tdoRank": 80
+		"tdoRank": 81
 	},
 	"staraptor_shadow": {
 		"fastMove": "GUST",
@@ -1374,6 +1374,17 @@
 		"dpsRank": 125,
 		"tdoRank": 96
 	},
+	"togekiss": {
+		"fastMove": "HIDDEN_POWER_FIRE",
+		"chargedMove": "FLAMETHROWER",
+		"dps": 16.41225901330669,
+		"tdo": 632.8025429544209,
+		"speciesId": "togekiss",
+		"fastMoveDmg": 15,
+		"chargedMoveDmg": 62,
+		"dpsRank": 126,
+		"tdoRank": 75
+	},
 	"raboot": {
 		"fastMove": "FIRE_SPIN",
 		"chargedMove": "FLAMETHROWER",
@@ -1382,7 +1393,7 @@
 		"speciesId": "raboot",
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 58,
-		"dpsRank": 126,
+		"dpsRank": 127,
 		"tdoRank": 166
 	},
 	"combusken_shadow": {
@@ -1393,7 +1404,7 @@
 		"speciesId": "combusken_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 66,
-		"dpsRank": 127,
+		"dpsRank": 128,
 		"tdoRank": 189
 	},
 	"ursaluna": {
@@ -1404,7 +1415,7 @@
 		"speciesId": "ursaluna",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 52,
-		"dpsRank": 128,
+		"dpsRank": 129,
 		"tdoRank": 45
 	},
 	"lampent_shadow": {
@@ -1415,7 +1426,7 @@
 		"speciesId": "lampent_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 74,
-		"dpsRank": 129,
+		"dpsRank": 130,
 		"tdoRank": 192
 	},
 	"torkoal": {
@@ -1426,7 +1437,7 @@
 		"speciesId": "torkoal",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 127,
-		"dpsRank": 130,
+		"dpsRank": 131,
 		"tdoRank": 92
 	},
 	"mismagius": {
@@ -1437,7 +1448,7 @@
 		"speciesId": "mismagius",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 54,
-		"dpsRank": 131,
+		"dpsRank": 132,
 		"tdoRank": 119
 	},
 	"darumaka_shadow": {
@@ -1448,7 +1459,7 @@
 		"speciesId": "darumaka_shadow",
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 48,
-		"dpsRank": 132,
+		"dpsRank": 133,
 		"tdoRank": 204
 	},
 	"skuntank_shadow": {
@@ -1459,7 +1470,7 @@
 		"speciesId": "skuntank_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 62,
-		"dpsRank": 133,
+		"dpsRank": 134,
 		"tdoRank": 139
 	},
 	"weezing_galarian_shadow": {
@@ -1470,7 +1481,7 @@
 		"speciesId": "weezing_galarian_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 144,
-		"dpsRank": 134,
+		"dpsRank": 135,
 		"tdoRank": 135
 	},
 	"manectric": {
@@ -1481,7 +1492,7 @@
 		"speciesId": "manectric",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 146,
-		"dpsRank": 135,
+		"dpsRank": 136,
 		"tdoRank": 160
 	},
 	"ponyta_shadow": {
@@ -1492,8 +1503,8 @@
 		"speciesId": "ponyta_shadow",
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 148,
-		"dpsRank": 136,
-		"tdoRank": 199
+		"dpsRank": 137,
+		"tdoRank": 200
 	},
 	"quilava_shadow": {
 		"fastMove": "EMBER",
@@ -1503,7 +1514,7 @@
 		"speciesId": "quilava_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 65,
-		"dpsRank": 137,
+		"dpsRank": 138,
 		"tdoRank": 187
 	},
 	"solrock": {
@@ -1514,7 +1525,7 @@
 		"speciesId": "solrock",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 43,
-		"dpsRank": 138,
+		"dpsRank": 139,
 		"tdoRank": 112
 	},
 	"zapdos": {
@@ -1525,7 +1536,7 @@
 		"speciesId": "zapdos",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 101,
-		"dpsRank": 139,
+		"dpsRank": 140,
 		"tdoRank": 89
 	},
 	"altaria_mega": {
@@ -1536,7 +1547,7 @@
 		"speciesId": "altaria_mega",
 		"fastMoveDmg": 5,
 		"chargedMoveDmg": 61,
-		"dpsRank": 140,
+		"dpsRank": 141,
 		"tdoRank": 88
 	},
 	"hitmonchan_shadow": {
@@ -1547,7 +1558,7 @@
 		"speciesId": "hitmonchan_shadow",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 50,
-		"dpsRank": 141,
+		"dpsRank": 142,
 		"tdoRank": 164
 	},
 	"kommo_o": {
@@ -1558,17 +1569,6 @@
 		"speciesId": "kommo_o",
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 61,
-		"dpsRank": 142,
-		"tdoRank": 83
-	},
-	"togekiss": {
-		"fastMove": "CHARM",
-		"chargedMove": "FLAMETHROWER",
-		"dps": 15.242836195303946,
-		"tdo": 587.7134584828028,
-		"speciesId": "togekiss",
-		"fastMoveDmg": 15,
-		"chargedMoveDmg": 62,
 		"dpsRank": 143,
 		"tdoRank": 84
 	},
@@ -1966,7 +1966,7 @@
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 58,
 		"dpsRank": 179,
-		"tdoRank": 198
+		"tdoRank": 199
 	},
 	"fletchinder_shadow": {
 		"fastMove": "EMBER",
@@ -2461,7 +2461,7 @@
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 34,
 		"dpsRank": 224,
-		"tdoRank": 200
+		"tdoRank": 201
 	},
 	"litten": {
 		"fastMove": "EMBER",
@@ -2540,6 +2540,17 @@
 		"dpsRank": 231,
 		"tdoRank": 224
 	},
+	"togetic": {
+		"fastMove": "HIDDEN_POWER_FIRE",
+		"chargedMove": "HEAT_WAVE",
+		"dps": 9.144827183129136,
+		"tdo": 225.9213158234636,
+		"speciesId": "togetic",
+		"fastMoveDmg": 10,
+		"chargedMoveDmg": 58,
+		"dpsRank": 232,
+		"tdoRank": 196
+	},
 	"numel_shadow": {
 		"fastMove": "EMBER",
 		"chargedMove": "HEAT_WAVE",
@@ -2548,7 +2559,7 @@
 		"speciesId": "numel_shadow",
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 73,
-		"dpsRank": 232,
+		"dpsRank": 233,
 		"tdoRank": 246
 	},
 	"buneary": {
@@ -2559,7 +2570,7 @@
 		"speciesId": "buneary",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 29,
-		"dpsRank": 233,
+		"dpsRank": 234,
 		"tdoRank": 216
 	},
 	"loudred": {
@@ -2570,7 +2581,7 @@
 		"speciesId": "loudred",
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 39,
-		"dpsRank": 234,
+		"dpsRank": 235,
 		"tdoRank": 213
 	},
 	"bagon": {
@@ -2581,7 +2592,7 @@
 		"speciesId": "bagon",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 39,
-		"dpsRank": 235,
+		"dpsRank": 236,
 		"tdoRank": 240
 	},
 	"tranquill_shadow": {
@@ -2592,7 +2603,7 @@
 		"speciesId": "tranquill_shadow",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 72,
-		"dpsRank": 236,
+		"dpsRank": 237,
 		"tdoRank": 226
 	},
 	"staravia_shadow": {
@@ -2603,7 +2614,7 @@
 		"speciesId": "staravia_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 71,
-		"dpsRank": 237,
+		"dpsRank": 238,
 		"tdoRank": 245
 	},
 	"sizzlipede": {
@@ -2614,7 +2625,7 @@
 		"speciesId": "sizzlipede",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 61,
-		"dpsRank": 238,
+		"dpsRank": 239,
 		"tdoRank": 237
 	},
 	"numel": {
@@ -2625,7 +2636,7 @@
 		"speciesId": "numel",
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 61,
-		"dpsRank": 239,
+		"dpsRank": 240,
 		"tdoRank": 236
 	},
 	"bastiodon_shadow": {
@@ -2636,19 +2647,8 @@
 		"speciesId": "bastiodon_shadow",
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 34,
-		"dpsRank": 240,
-		"tdoRank": 175
-	},
-	"togetic": {
-		"fastMove": "FAIRY_WIND",
-		"chargedMove": "HEAT_WAVE",
-		"dps": 8.54861005444542,
-		"tdo": 211.19187856551184,
-		"speciesId": "togetic",
-		"fastMoveDmg": 5,
-		"chargedMoveDmg": 58,
 		"dpsRank": 241,
-		"tdoRank": 201
+		"tdoRank": 175
 	},
 	"dusclops": {
 		"fastMove": "HEX",
@@ -2659,7 +2659,7 @@
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 28,
 		"dpsRank": 242,
-		"tdoRank": 196
+		"tdoRank": 197
 	},
 	"slugma": {
 		"fastMove": "EMBER",
@@ -2714,7 +2714,7 @@
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 43,
 		"dpsRank": 247,
-		"tdoRank": 197
+		"tdoRank": 198
 	},
 	"riolu": {
 		"fastMove": "COUNTER",

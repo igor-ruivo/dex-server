@@ -235,6 +235,8 @@ export type GameMasterData = Record<string, GameMasterPokemon>;
 export type IGameMasterMove = PvPMove &
 	PvEMove & {
 		moveName: Partial<Record<AvailableLocales, string>>;
+		/** Only on the typed variants of one move (Hidden Power): the name without the type, for lists that show them as one. */
+		groupName?: Partial<Record<AvailableLocales, string>>;
 	};
 
 type BuffsType = {

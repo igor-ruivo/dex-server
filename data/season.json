@@ -60,7 +60,7 @@
 	"eggs": [
 		{
 			"speciesId": "azurill",
-			"shiny": false,
+			"shiny": true,
 			"kind": "2"
 		},
 		{
@@ -75,22 +75,22 @@
 		},
 		{
 			"speciesId": "fidough",
-			"shiny": false,
-			"kind": "5"
-		},
-		{
-			"speciesId": "sizzlipede",
 			"shiny": true,
 			"kind": "5"
 		},
 		{
-			"speciesId": "munchlax",
+			"speciesId": "sizzlipede",
 			"shiny": false,
 			"kind": "5"
 		},
 		{
+			"speciesId": "munchlax",
+			"shiny": true,
+			"kind": "5"
+		},
+		{
 			"speciesId": "budew",
-			"shiny": false,
+			"shiny": true,
 			"kind": "5",
 			"comment": {
 				"en": "Adventure Sync Rewards",
@@ -161,7 +161,7 @@
 		},
 		{
 			"speciesId": "zigzagoon_galarian",
-			"shiny": false,
+			"shiny": true,
 			"kind": "7"
 		},
 		{
@@ -171,7 +171,7 @@
 		},
 		{
 			"speciesId": "corsola_galarian",
-			"shiny": false,
+			"shiny": true,
 			"kind": "7",
 			"comment": {
 				"en": "7 km Eggs from Mateo’s Gift Exchange",
@@ -237,7 +237,7 @@
 		},
 		{
 			"speciesId": "impidimp",
-			"shiny": false,
+			"shiny": true,
 			"kind": "10"
 		},
 		{
@@ -247,12 +247,12 @@
 		},
 		{
 			"speciesId": "dratini",
-			"shiny": true,
+			"shiny": false,
 			"kind": "10"
 		},
 		{
 			"speciesId": "drampa",
-			"shiny": false,
+			"shiny": true,
 			"kind": "10",
 			"comment": {
 				"en": "Adventure Sync Rewards",
@@ -296,7 +296,7 @@
 		},
 		{
 			"speciesId": "bagon",
-			"shiny": true,
+			"shiny": false,
 			"kind": "10",
 			"comment": {
 				"en": "Adventure Sync Rewards",

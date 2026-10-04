@@ -27,6 +27,12 @@ class PokemonMatcher {
 		private readonly domain: Array<GameMasterPokemon>
 	) {}
 
+	/** The name a species is written with in event text ("Zorua (Hisuian)" → "zorua"), or undefined if unknown. */
+	plainNameOf(speciesId: string): string | undefined {
+		const name = this.gameMasterPokemon[speciesId]?.speciesName;
+		return name?.replace(/\s*\(.*$/, '').trim().toLowerCase() || undefined;
+	}
+
 	/**
 	 * Matches an array of Pokémon name strings to IEntry objects using normalization and form logic.
 	 */
@@ -475,6 +481,29 @@ class PokemonMatcher {
 	}
 }
 
+/** The elements that hold text as a block: the text under the nearest one of them, inline tags included, is one phrase. */
+const BLOCK_SELECTOR = 'p, li, div, h1, h2, h3, h4, h5, h6, td, th, dd, dt, blockquote, ul, ol, table, section, article';
+/** The word that makes a phrase about a shiny. "If you're lucky" alone does not: it also introduces Special Backgrounds. */
+const SHINY_WORD = /\bshiny\b/i;
+/** A remark such as "If you're lucky, they may be Shiny!", which refers to Pokémon named before it. */
+const SHINY_REMARK = /if you[’'`]?re lucky[^\n]*shiny/i;
+
+/**
+ * The [start, end) ranges of the sentences of a text. A sentence ends at . ! or ? followed by a space and a capital, digit
+ * or opening quote — so "2:00 p.m. to 9:00 p.m. local time" stays in one piece.
+ */
+const sentenceRanges = (text: string): Array<[number, number]> => {
+	const ranges: Array<[number, number]> = [];
+	let start = 0;
+	for (const match of text.matchAll(/[.!?]+(?=\s+[A-Z0-9“"‘'(])/g)) {
+		const end = match.index + match[0].length;
+		ranges.push([start, end]);
+		start = end;
+	}
+	ranges.push([start, text.length]);
+	return ranges;
+};
+
 /**
  * Extracts Pokémon species IDs from a list of HTML elements using a PokemonMatcher.
  */
@@ -483,6 +512,14 @@ export const extractPokemonSpeciesIdsFromElements = (
 	matcher: PokemonMatcher
 ): Array<IEntry> => {
 	const textes: Array<string> = [];
+	// The text of every block (a paragraph, a list item, the loose text of a div…), put back together: a phrase can run through
+	// inline tags (<strong>Zorua</strong> …), so "shiny" is read from these rather than from the separate text nodes.
+	const blockParts = new Map<Node | null, Array<string>>();
+	const addToBlock = (node: Node, text: string) => {
+		const parent = node.parentElement;
+		const holder = parent?.closest?.(BLOCK_SELECTOR) ?? parent;
+		blockParts.set(holder, [...(blockParts.get(holder) ?? []), text]);
+	};
 	const stack = [...elements];
 	while (stack.length > 0) {
 		const node = stack.pop();
@@ -493,6 +530,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 			if (Array.from(el.classList ?? []).includes('ContainerBlock__headline')) {
 				continue;
 			}
+			if (el.tagName === 'BR') addToBlock(el, ' ');
 			if (el.childNodes) {
 				for (let i = el.childNodes.length - 1; i >= 0; i--) {
 					stack.push(el.childNodes[i]);
@@ -503,6 +541,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 			const actualText = node.textContent?.trim();
 			if (actualText) {
 				textes.push(actualText);
+				addToBlock(node, node.textContent ?? '');
 			}
 		}
 	}
@@ -561,20 +600,46 @@ export const extractPokemonSpeciesIdsFromElements = (
 				.filter(Boolean)
 		);
 
-	// Detect shiny phrase in the text
-	const shinyPhraseRegex = /if you[’'`]?re lucky[^\n]*shiny/i;
-	const shinyByPhrase = textes.some((t) => shinyPhraseRegex.test(t));
-
-	// Mark shiny by asterisk or by phrase
 	const results = matcher.matchPokemonFromText(parsedPokemon);
-	return results.map((entry, idx) => {
-		const originalText = parsedPokemon[idx] || '';
-		const isAsterisk = originalText.trim().endsWith('*');
-		return {
-			...entry,
-			shiny: isAsterisk || shinyByPhrase,
-		};
-	});
+
+	// An asterisk right after a name marks that Pokémon as the one that can be shiny ("Hoppip*", with a footnote "*If you're
+	// lucky, you may encounter a Shiny one!"). Each starred fragment is matched on its own, so the Pokémon is known whatever
+	// the other fragments (and the matcher's own de-duplication) do to the list. A section that uses asterisks says it all
+	// with them: the Pokémon without one (Bramblin) is not shiny, and no sentence of the section widens that.
+	const starred = new Set<string>();
+	for (const fragment of parsedPokemon) {
+		if (!fragment.trim().endsWith('*')) continue;
+		matcher.matchPokemonFromText([fragment]).forEach((entry) => starred.add(entry.speciesId));
+	}
+	if (starred.size > 0) {
+		return results.map((entry) => ({ ...entry, shiny: starred.has(entry.speciesId) }));
+	}
+
+	// No asterisks: a Pokémon can be shiny when a sentence that says "shiny" names it ("Zorua … will still have an increased
+	// chance to be Shiny"). "If you're lucky" alone says nothing: it also introduces Special Backgrounds. A remark that is both
+	// lucky and shiny but names no Pokémon of the results ("If you're lucky, they may be Shiny!") speaks for the Pokémon of its
+	// block.
+	const names = new Map(results.map((entry) => [entry.speciesId, matcher.plainNameOf(entry.speciesId)] as const));
+	const mentions = (sentence: string, speciesId: string) => {
+		const name = names.get(speciesId);
+		return !!name && new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(sentence);
+	};
+	const shinySpecies = new Set<string>();
+	const blocks = [...blockParts.values()].map((parts) => parts.join('').replace(/\s+/g, ' ').trim()).filter(Boolean);
+	for (const block of blocks) {
+		const sentences = sentenceRanges(block).map(([start, end]) => block.slice(start, end));
+		for (const sentence of sentences) {
+			if (!SHINY_WORD.test(sentence)) continue;
+			const named = results.filter((entry) => mentions(sentence, entry.speciesId));
+			if (named.length > 0) named.forEach((entry) => shinySpecies.add(entry.speciesId));
+			else if (SHINY_REMARK.test(sentence)) {
+				results
+					.filter((entry) => sentences.some((other) => mentions(other, entry.speciesId)))
+					.forEach((entry) => shinySpecies.add(entry.speciesId));
+			}
+		}
+	}
+	return results.map((entry) => ({ ...entry, shiny: shinySpecies.has(entry.speciesId) }));
 };
 
 export default PokemonMatcher;

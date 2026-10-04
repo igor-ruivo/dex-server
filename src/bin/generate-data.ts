@@ -73,7 +73,18 @@ const generateData = async () => {
 		// reuses the ordinary level-50 best spreads for them on that assumption (see super-mega-guard.ts).
 		assertSuperMegasAlwaysCapBound(pokemonDictionary);
 
-		// Step 3b: Precompute every species' tied-for-rank-1 IV spread(s) per
+		// Initialize domains
+		const domains = getDomains(pokemonDictionary);
+
+		// Step 4: Parse PvP Data
+		const pvpParser = new PvPParser(dataFetcher, pokemonDictionary, moves);
+		const pvpData = await pvpParser.parse();
+
+		// Every rotating / custom cup's CP cap: one with a cap the three leagues don't have (a Little Cup's 500) needs its own tied
+		// rank-1 spreads too, so the leagues are known before the species metadata is computed.
+		const leagueMetadata = pvpParser.getLeagueMetadata();
+
+		// Step 4a: Precompute every species' tied-for-rank-1 IV spread(s) per
 		// league/level, plus its in-game-search disambiguation identifier —
 		// what go-pokedex's Search Strings tab and Mass Delete's bulk sweeps
 		// otherwise each recompute by re-scanning the whole gamemaster (or
@@ -82,15 +93,11 @@ const generateData = async () => {
 		// `game-master.json` itself — that file is the client's core species
 		// dataset and this is an optional, separately-fetchable add-on, keyed
 		// by the same speciesId either way.
-		const speciesSearchMetadata =
-			computeSpeciesSearchMetadata(pokemonDictionary);
+		const speciesSearchMetadata = computeSpeciesSearchMetadata(
+			pokemonDictionary,
+			leagueMetadata.map(({ cpCap }) => cpCap)
+		);
 
-		// Initialize domains
-		const domains = getDomains(pokemonDictionary);
-
-		// Step 4: Parse PvP Data
-		const pvpParser = new PvPParser(dataFetcher, pokemonDictionary, moves);
-		const pvpData = await pvpParser.parse();
 
 		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default
 		// IVs, meta groups, form-changing species) for Great/Ultra/Master
@@ -108,8 +115,7 @@ const generateData = async () => {
 			),
 			speciesSearchMetadata,
 			// every rotating / custom cup too: its meta group and, for a CP cap the three leagues don't have, its rank-1 IVs
-			pvpParser
-				.getLeagueMetadata()
+			leagueMetadata
 				.filter(
 					({ id }) => !(TEAM_LEAGUES as ReadonlyArray<string>).includes(id)
 				)

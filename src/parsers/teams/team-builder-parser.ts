@@ -1,13 +1,11 @@
-import {
-	calculateCP,
-	tiedTop1Patterns,
-} from '../../computations/best-iv-spread-calculator';
+import { calculateCP } from '../../computations/best-iv-spread-calculator';
 import { MAX_LEVEL } from '../../computations/utils';
 import { POKEMON_CONFIG } from '../pokemon/config/pokemon-config';
 import type { IDataFetcher } from '../services/data-fetcher';
 import type { BasePokemon, GameMasterData } from '../types/pokemon';
 import type {
 	BadIvPattern,
+	PerLevelPatterns,
 	SpeciesSearchMetadataMap,
 } from '../types/species-search-metadata';
 import {
@@ -240,19 +238,18 @@ class TeamBuilderParser {
 				);
 				if (picked) entry[league] = picked;
 			}
-			// Any other CP cap a cup uses (e.g. a Little Cup's 500): its own spread, from the same tied-for-best rule.
+			// Any other CP cap a cup uses (e.g. a Little Cup's 500): its spread comes from the same generated
+			// species-search-metadata as the others (see `computeBestIvSpreads`), not a computation of its own.
 			for (const cap of otherCaps) {
-				const picked = pickBestIvs(
-					tiedTop1Patterns(
-						raw.baseStats.atk,
-						raw.baseStats.def,
-						raw.baseStats.hp,
-						cap,
-						MAX_LEVEL
-					),
-					raw.baseStats,
-					cap
-				);
+				const patterns = (spreads as Record<string, PerLevelPatterns | undefined>)[
+					ivsKeyForCap(cap)
+				]?.level50;
+				if (!patterns) {
+					throw new Error(
+						`No best IV spreads for ${speciesId} at ${cap} CP in species-search-metadata`
+					);
+				}
+				const picked = pickBestIvs(patterns, raw.baseStats, cap);
 				if (picked) entry[ivsKeyForCap(cap)] = picked;
 			}
 			ivs[speciesId] = entry;

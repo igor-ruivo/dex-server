@@ -12,9 +12,13 @@ import { computeFormIdentifiersForAllSpecies } from './form-identifier-calculato
  * gamemaster entry.
  */
 export const computeSpeciesSearchMetadata = (
-	gameMasterPokemon: GameMasterData
+	gameMasterPokemon: GameMasterData,
+	otherCaps: ReadonlyArray<number> = []
 ): SpeciesSearchMetadataMap => {
-	const ivSpreads = computeBestIvSpreadsForAllSpecies(gameMasterPokemon);
+	const ivSpreads = computeBestIvSpreadsForAllSpecies(
+		gameMasterPokemon,
+		otherCaps
+	);
 	const formIdentifiers =
 		computeFormIdentifiersForAllSpecies(gameMasterPokemon);
 

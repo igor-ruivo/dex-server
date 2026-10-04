@@ -5,6 +5,7 @@ import type {
 	BestIvSpreads,
 	PerLevelPatterns,
 } from '../parsers/types/species-search-metadata';
+import { ivsKeyForCap } from '../parsers/types/teams';
 import { cpm, MAX_LEVEL } from './utils';
 
 /**
@@ -359,11 +360,28 @@ export const LEAGUE_CAPS = {
 
 export type LeagueKey = keyof typeof LEAGUE_CAPS;
 
+/**
+ * The CP caps beyond Great / Ultra / Master that some rotating / custom cup has (a Little Cup's 500), each once, lowest
+ * first — a cup at 1500 / 2500 / 10000 CP shares its league's spreads and adds nothing. Pass every cup's cap; the
+ * permanent ones are filtered out here.
+ */
+export const extraCaps = (caps: ReadonlyArray<number>): Array<number> =>
+	[...new Set(caps)]
+		.filter((cap) => ivsKeyForCap(cap).startsWith('cap-'))
+		.sort((a, b) => a - b);
+
 const computeSpreadsAcrossLeaguesAndLevels = (
 	stats: PokemonStats,
-	compute: (cap: number, level: number) => Array<BadIvPattern>
+	compute: (cap: number, level: number) => Array<BadIvPattern>,
+	otherCaps: ReadonlyArray<number>
 ): BestIvSpreads => {
-	const leagues = Object.entries(LEAGUE_CAPS) as Array<[LeagueKey, number]>;
+	const leagues: Array<[string, number]> = [
+		...(Object.entries(LEAGUE_CAPS) as Array<[LeagueKey, number]>),
+		...extraCaps(otherCaps).map((cap): [string, number] => [
+			ivsKeyForCap(cap),
+			cap,
+		]),
+	];
 	return Object.fromEntries(
 		leagues.map(([league, cap]) => [
 			league,
@@ -380,9 +398,14 @@ const computeSpreadsAcrossLeaguesAndLevels = (
  * here and what's deliberately left out (the CP-threshold/blanket-shape
  * policy, still applied client-side).
  */
-export const computeBestIvSpreads = (stats: PokemonStats): BestIvSpreads =>
-	computeSpreadsAcrossLeaguesAndLevels(stats, (cap, level) =>
-		tiedTop1Patterns(stats.atk, stats.def, stats.hp, cap, level)
+export const computeBestIvSpreads = (
+	stats: PokemonStats,
+	otherCaps: ReadonlyArray<number> = []
+): BestIvSpreads =>
+	computeSpreadsAcrossLeaguesAndLevels(
+		stats,
+		(cap, level) => tiedTop1Patterns(stats.atk, stats.def, stats.hp, cap, level),
+		otherCaps
 	);
 
 /**
@@ -393,16 +416,20 @@ export const computeBestIvSpreads = (stats: PokemonStats): BestIvSpreads =>
  * once, rather than leaking into every caller.
  */
 export const computeBestIvSpreadsPurified = (
-	stats: PokemonStats
+	stats: PokemonStats,
+	otherCaps: ReadonlyArray<number> = []
 ): BestIvSpreads =>
-	computeSpreadsAcrossLeaguesAndLevels(stats, (cap, level) =>
-		tiedTop1PurifiedPatterns(
-			stats.atk,
-			stats.def,
-			stats.hp,
-			cap,
-			(level - 1) * 2
-		)
+	computeSpreadsAcrossLeaguesAndLevels(
+		stats,
+		(cap, level) =>
+			tiedTop1PurifiedPatterns(
+				stats.atk,
+				stats.def,
+				stats.hp,
+				cap,
+				(level - 1) * 2
+			),
+		otherCaps
 	);
 
 /** One species' IV-spread half of `SpeciesSearchMetadata` — the other half
@@ -436,16 +463,18 @@ export interface BestIvSpreadFields {
  * chain → `megaFormsIds`) and then simply read *this* field off each one.
  */
 export const computeBestIvSpreadsForAllSpecies = (
-	gameMasterPokemon: GameMasterData
+	gameMasterPokemon: GameMasterData,
+	otherCaps: ReadonlyArray<number> = []
 ): Record<string, BestIvSpreadFields> => {
 	const result: Record<string, BestIvSpreadFields> = {};
 	for (const pokemon of Object.values(gameMasterPokemon)) {
 		result[pokemon.speciesId] = {
-			bestIvSpreads: computeBestIvSpreads(pokemon.baseStats),
+			bestIvSpreads: computeBestIvSpreads(pokemon.baseStats, otherCaps),
 			...(pokemon.isShadow || pokemon.isMega
 				? {
 						bestIvSpreadsPurified: computeBestIvSpreadsPurified(
-							pokemon.baseStats
+							pokemon.baseStats,
+							otherCaps
 						),
 					}
 				: {}),

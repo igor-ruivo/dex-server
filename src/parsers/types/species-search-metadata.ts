@@ -27,11 +27,15 @@ export type PerLevelPatterns = Record<
 /** Tied-for-rank-1 (best stat product) raw IV patterns, per league (Great /
  *  Ultra / Master) and per level ceiling — everything Mass Delete's bulk
  *  sweeps (`findBadIvCarveOuts`, `findTradeableSpeciesData` in go-pokedex)
- *  need about one species, computed once here instead of by every client. */
+ *  need about one species, computed once here instead of by every client.
+ *  Any other CP cap a rotating / custom cup has (a Little Cup's 500) gets its
+ *  own `cap-<n>` entry, the same key `TeamBuilderData.ivs` uses (see
+ *  `ivsKeyForCap`); a cup at 1500 / 2500 / 10000 CP shares the league's. */
 export type BestIvSpreads = Record<
 	'great' | 'ultra' | 'master',
 	PerLevelPatterns
->;
+> &
+	Partial<Record<`cap-${number}`, PerLevelPatterns>>;
 
 export interface SpeciesSearchMetadata {
 	/** The shortest `dex[&type[&!type]]` in-game-search identifier that pins

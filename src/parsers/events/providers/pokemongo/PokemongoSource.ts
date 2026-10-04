@@ -5,6 +5,7 @@ import {
 } from '../../../services/gamemaster-translator';
 import type {
 	EventBlock,
+	IEntry,
 	IEventSource,
 	IParsedEvent,
 	IPokemonGoEventBlockParser,
@@ -71,6 +72,18 @@ const EVENT_SECTION_TYPES = {
 	],
 	FEATURED: ['Featured Pokémon'],
 	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
+};
+
+/**
+ * Adds parsed Pokémon to a list: one already there keeps its place and can only gain the shiny flag (the same species named
+ * by two sections is shiny if either says so), so the order the sections come in never decides it.
+ */
+const mergeEntries = (list: Array<IEntry>, parsed: Array<IEntry>): void => {
+	for (const entry of parsed) {
+		const existing = list.find((other) => other.speciesId === entry.speciesId);
+		if (!existing) list.push(entry);
+		else if (entry.shiny) existing.shiny = true;
+	}
 };
 
 /**
@@ -506,14 +519,13 @@ class PokemonGoSource implements IEventSource {
 			EVENT_SECTION_TYPES.DEBUT.some((x) => x === sectionType)
 		) {
 			if (isCommunityDay) {
-				const parsedPkm = extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					new PokemonMatcher(gameMasterPokemon, domain)
-				).filter(
-					(p) => !eventData.wild.some((w) => w.speciesId === p.speciesId)
+				mergeEntries(
+					eventData.wild,
+					extractPokemonSpeciesIdsFromElements(
+						sectionBodies,
+						new PokemonMatcher(gameMasterPokemon, domain)
+					)
 				);
-
-				eventData.wild.push(...parsedPkm);
 			}
 
 			if (isRaidDay) {
@@ -600,13 +612,21 @@ class PokemonGoSource implements IEventSource {
 			const parsedPkm = extractPokemonSpeciesIdsFromElements(
 				sectionBodies,
 				new PokemonMatcher(gameMasterPokemon, domain)
-			).filter(
-				(p) => !eventData.researches.some((w) => w.speciesId === p.speciesId)
 			);
 
-			// For now, assume featured pokémons are always related to researches.
+			// For now, assume featured pokémons are always related to researches. Their "you might encounter a Shiny one" is about
+			// the wild, not about the research encounters, so they join the list as non-shiny: a research section that really
+			// says so makes them shiny (see `mergeEntries`).
 			if (!EVENT_SECTION_TYPES.DEBUT.some((x) => x === sectionType)) {
-				eventData.researches.push(...parsedPkm);
+				const isFeatured = EVENT_SECTION_TYPES.FEATURED.some(
+					(x) => x === sectionType
+				);
+				mergeEntries(
+					eventData.researches,
+					isFeatured
+						? parsedPkm.map((p) => ({ ...p, shiny: false }))
+						: parsedPkm
+				);
 			}
 
 			return;

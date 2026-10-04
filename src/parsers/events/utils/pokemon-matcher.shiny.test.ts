@@ -9,7 +9,7 @@ import { extractPokemonSpeciesIdsFromElements } from './pokemon-matcher';
  * Whether an event section's Pokémon can be shiny is read from the phrase that talks about each one: a sentence that names
  * it and says "shiny". "If you're lucky" alone does not mean shiny (it also introduces Special Backgrounds).
  */
-const KNOWN = ['zorua', 'axew', 'elgyem', 'ponyta', 'hoppip', 'electrike', 'dwebble', 'bramblin', 'growlithe', 'nincada', 'helioptile', 'sandile'];
+const KNOWN = ['zorua', 'axew', 'elgyem', 'ponyta', 'hoppip', 'electrike', 'dwebble', 'bramblin', 'growlithe', 'nincada', 'helioptile', 'sandile', 'doduo', 'blitzle', 'skarmory', 'bulbasaur', 'charmander', 'squirtle', 'pikachu', 'eevee', 'nidoran', 'lapras', 'snorlax'];
 
 /** Stands in for the real matcher: finds the known names in a text, each species once per call. */
 const fakeMatcher = {
@@ -156,6 +156,44 @@ describe('shiny in an event section', () => {
 
 		it('does not flag it when the sentences never say shiny', () => {
 			expect(shinyOf('<p>Sandile will hatch much more frequently from 2 km Eggs.</p>')).toEqual({ sandile: false });
+		});
+	});
+
+	it('reads the star of a name that is followed by punctuation, as in a sentence (Wild Encounters)', () => {
+		const html =
+			'<p>You may encounter event-themed Pokémon in the wild, including Ponyta*, Doduo*, Electrike*, Blitzle*, and more! You might even encounter Skarmory*!</p>' +
+			'<div>*If you’re lucky, you may encounter a Shiny one!</div>';
+		expect(shinyOf(html)).toEqual({ ponyta: true, doduo: true, electrike: true, blitzle: true, skarmory: true });
+	});
+
+	it('reads the stars of a list whose sentence ends right after a starred name (Eevee*. You…)', () => {
+		const html =
+			'<p>Trainers may encounter Bulbasaur*, Charmander*, Squirtle*, Pikachu*, and Eevee*. You might even encounter Nidoran♀*, Nidoran♂*, Lapras*, and Snorlax*!</p>' +
+			'<p>*If you’re lucky, you may encounter a Shiny one!</p>';
+		expect(shinyOf(html)).toEqual({
+			bulbasaur: true,
+			charmander: true,
+			squirtle: true,
+			pikachu: true,
+			eevee: true,
+			nidoran: true,
+			lapras: true,
+			snorlax: true,
+		});
+	});
+
+	it('does not take the star that opens a footnote for the star of a name', () => {
+		expect(shinyOf('<p>Zorua will be easier to find.</p><p>*Axew is a surprise.</p>')).toEqual({
+			zorua: false,
+			axew: false,
+		});
+	});
+
+	it('reads a star before closing punctuation, and leaves an unstarred name in the same sentence non-shiny', () => {
+		expect(shinyOf('<p>Look for Zorua* (and Axew!) today. You might even encounter Elgyem*!</p>')).toEqual({
+			zorua: true,
+			axew: false,
+			elgyem: true,
 		});
 	});
 

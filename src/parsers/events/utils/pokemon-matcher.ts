@@ -483,6 +483,23 @@ class PokemonMatcher {
 
 /** The elements that hold text as a block: the text under the nearest one of them, inline tags included, is one phrase. */
 const BLOCK_SELECTOR = 'p, li, div, h1, h2, h3, h4, h5, h6, td, th, dd, dt, blockquote, ul, ol, table, section, article';
+/**
+ * An asterisk right after a name: "Hoppip*", "Skarmory*!", "Eevee*. You" (the list is cut at commas and "and", not at the
+ * end of a sentence). A star that opens a text (the footnote "*If you're lucky…") follows no name.
+ */
+const STAR_AFTER_NAME = /[^\s*]\*/;
+/**
+ * Whether a name fragment is starred: the asterisk follows the name ("Hoppip*"), or — for a Pokémon "wearing" something
+ * ("Charmander wearing Friede's goggles*", "Pikachu wearing Cap's hat*!") — comes later in the sentence, after the outfit and
+ * before the next comma or the end of the sentence.
+ */
+const hasStar = (fragment: { text: string; after: string }): boolean => {
+	if (STAR_AFTER_NAME.test(fragment.text)) return true;
+	if (!/\bwearing\b/i.test(fragment.text)) return false;
+	const sameClause = fragment.after.split(/[,;!?]|\.(?=\s|$)/)[0];
+	return sameClause.includes('*');
+};
+
 /** The word that makes a phrase about a shiny. "If you're lucky" alone does not: it also introduces Special Backgrounds. */
 const SHINY_WORD = /\bshiny\b/i;
 /** A remark such as "If you're lucky, they may be Shiny!", which refers to Pokémon named before it. */
@@ -586,19 +603,27 @@ export const extractPokemonSpeciesIdsFromElements = (
 			.trim()
 	);
 
-	const parsedPokemon = cleanedTextes
+	// Every name fragment keeps what follows it in its text: a Pokémon "wearing" something has its star after the outfit.
+	const fragments = cleanedTextes
 		.filter(
 			(t) =>
 				t !== 'All' &&
 				(whitelist.some((k) => t.toLocaleLowerCase().includes(k)) ||
 					!blackListedKeywords.some((k) => t.toLocaleLowerCase().includes(k)))
 		)
-		.flatMap((p) =>
-			p
+		.flatMap((node) => {
+			let from = 0;
+			return node
 				.split(/,|and more|\band\b|might even encounter/)
-				.map((s) => s.trim())
+				.map((piece) => piece.trim())
 				.filter(Boolean)
-		);
+				.map((text) => {
+					const at = node.indexOf(text, from);
+					if (at >= 0) from = at + text.length;
+					return { text, after: at >= 0 ? node.slice(at + text.length) : '' };
+				});
+		});
+	const parsedPokemon = fragments.map((fragment) => fragment.text);
 
 	const results = matcher.matchPokemonFromText(parsedPokemon);
 
@@ -607,9 +632,9 @@ export const extractPokemonSpeciesIdsFromElements = (
 	// the other fragments (and the matcher's own de-duplication) do to the list. A section that uses asterisks says it all
 	// with them: the Pokémon without one (Bramblin) is not shiny, and no sentence of the section widens that.
 	const starred = new Set<string>();
-	for (const fragment of parsedPokemon) {
-		if (!fragment.trim().endsWith('*')) continue;
-		matcher.matchPokemonFromText([fragment]).forEach((entry) => starred.add(entry.speciesId));
+	for (const fragment of fragments) {
+		if (!hasStar(fragment)) continue;
+		matcher.matchPokemonFromText([fragment.text]).forEach((entry) => starred.add(entry.speciesId));
 	}
 	if (starred.size > 0) {
 		return results.map((entry) => ({ ...entry, shiny: starred.has(entry.speciesId) }));

@@ -226,7 +226,8 @@ class EventsParser {
 			rawPkmName,
 			gameMasterPokemon,
 			false,
-			false
+			false,
+			this.extractShinyNames(parsed.htmlDoc)
 		);
 
 		if (pokemons.length === 0) {
@@ -302,7 +303,8 @@ class EventsParser {
 		rawPkmName: string,
 		gameMasterPokemon: GameMasterData,
 		isShadow: boolean,
-		isMega: boolean
+		isMega: boolean,
+		shinyNames: ReadonlySet<string> = new Set()
 	): Array<IEntry> {
 		// The following domains aren't as restrictive as they could, because the current PokemonMatcher requires all the entries.
 		let domainToUse: Array<GameMasterPokemon> = [];
@@ -331,11 +333,28 @@ class EventsParser {
 				entries.push({
 					speciesId: entry.speciesId,
 					kind: isMega ? 'mega' : '5',
-					shiny: false,
+					shiny: shinyNames.has(p.toLowerCase()),
 				});
 			}
 		}
 		return entries;
+	}
+
+	/**
+	 * The names (lowercased) of the Pokémon an event page lists with the shiny mark: each `.pkmn-list-item` carries an
+	 * `img.shiny-icon` next to its `.pkmn-name` when that Pokémon can be shiny.
+	 */
+	private extractShinyNames(htmlDoc: Document): Set<string> {
+		const names = new Set<string>();
+		for (const item of Array.from(
+			htmlDoc.querySelectorAll('.pkmn-list-item')
+		)) {
+			const name = item.querySelector('.pkmn-name')?.textContent?.trim();
+			if (name && item.querySelector('img.shiny-icon')) {
+				names.add(name.toLowerCase());
+			}
+		}
+		return names;
 	}
 
 	private extractSpotlightBonus(htmlDoc: Document) {

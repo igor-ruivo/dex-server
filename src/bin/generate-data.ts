@@ -24,6 +24,7 @@ import {
 } from '../parsers/services/game-translations-provider';
 import GameMasterTranslator from '../parsers/services/gamemaster-translator';
 import { validateTranslationCompleteness } from '../parsers/services/translation-completeness-qa';
+import { assertSuperMegasAlwaysCapBound } from '../computations/super-mega-guard';
 import { assertSimulatorVerified } from '../parsers/teams/simulator-guard';
 import TeamBuilderParser from '../parsers/teams/team-builder-parser';
 import type { IEntry } from '../parsers/types/events';
@@ -67,6 +68,10 @@ const generateData = async () => {
 		// look-alike dexes) or via speciesId string surgery (`_shadow`
 		// append/strip) — both gone now that it's just data on each species.
 		augmentGameMasterWithFamilyRelations(pokemonDictionary);
+
+		// Fail the run (and so raise the daily alert) if a Super Max Mega could ever reach level 50 in a capped league: go-pokedex
+		// reuses the ordinary level-50 best spreads for them on that assumption (see super-mega-guard.ts).
+		assertSuperMegasAlwaysCapBound(pokemonDictionary);
 
 		// Step 3b: Precompute every species' tied-for-rank-1 IV spread(s) per
 		// league/level, plus its in-game-search disambiguation identifier —

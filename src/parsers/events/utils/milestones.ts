@@ -101,7 +101,8 @@ const splitTierHeading = (heading: string): { tier: string; rank: string } => {
  * The major milestone bonuses of a news post's "Major Milestone Bonuses" section: a sentence that introduces them, then for each
  * tier a bold heading ("Tier 1 Bonus Starting at Rank 1") followed by its bullet points. A sentence between two tiers (the GO Pass
  * Deluxe's stronger version of a bonus) goes with the tier after it, whatever follows the last one stays with the last one. The
- * title is the same in every language (the posts of the other languages are read the same way, by the section's position).
+ * title is the section's own headline, in the language of the post (the posts of the other languages are read the same way, by the
+ * section's position).
  */
 export const parseMilestoneSection = (
 	section: Element
@@ -133,8 +134,11 @@ export const parseMilestoneSection = (
 		return undefined;
 	}
 	tiers[tiers.length - 1].blocks.push(...pending);
+	const headline = section.children[0]?.textContent
+		?.replace(/\s+/g, ' ')
+		.trim();
 	return {
-		title: MILESTONE_TITLE,
+		title: headline || MILESTONE_TITLE,
 		...(intro.length > 0 ? { intro } : {}),
 		tiers,
 	};

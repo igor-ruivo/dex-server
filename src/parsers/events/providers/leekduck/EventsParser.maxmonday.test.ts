@@ -30,7 +30,14 @@ const parse = (title: string, html: string) => {
 			nonShadowDomain: [],
 			nonMegaDomain: [],
 		} as never,
-		{}
+		{},
+		{
+			en: [
+				{ kind: 'item', level: 0, runs: [{ text: 'A bullet.' }] },
+				{ kind: 'note', runs: [{ text: '*A footnote.' }] },
+			],
+			pt_br: [{ kind: 'item', level: 0, runs: [{ text: 'Um ponto.' }] }],
+		}
 	);
 	return (
 		parser as unknown as {
@@ -49,6 +56,8 @@ const parse = (title: string, html: string) => {
 							kind?: string;
 							shiny: boolean;
 						}>;
+						bonuses: Record<string, Array<string>>;
+						bonusBlocks: Record<string, Array<unknown>>;
 						imgUrl?: string;
 						title: Record<string, string>;
 				  }
@@ -71,6 +80,12 @@ describe('Max Mondays', () => {
 			'https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg'
 		);
 		expect(result?.title.en).toBe('Dynamax Sableye during Max Monday');
+		// the season post's text is injected as the Monday's bonuses, per locale
+		expect(result?.bonuses).toEqual({
+			en: ['A bullet.', '*A footnote.'],
+			pt_br: ['Um ponto.'],
+		});
+		expect(result?.bonusBlocks.en).toHaveLength(2);
 	});
 
 	it('takes the Pokémon from the title when the page lists none', () => {

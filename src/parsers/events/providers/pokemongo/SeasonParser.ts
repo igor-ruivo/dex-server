@@ -9,6 +9,7 @@ import {
 } from '../../../services/gamemaster-translator';
 import type { IEntry, IParsedEvent } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
+import type { RichBlock } from '../../../types/rich-text';
 import {
 	maxBattleLinesOf,
 	parseMaxBattleEntries,
@@ -17,6 +18,7 @@ import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
 } from '../../utils/pokemon-matcher';
+import { parseRichBlocks } from '../../utils/rich-text';
 
 // Helper to extract text content from a selector
 const getText = (doc: Document, selector: string) =>
@@ -50,6 +52,7 @@ class SeasonParser {
 		// not thrown).
 		let enTitle = '';
 		let enBonuses: Array<string> = [];
+		let enBonusBlocks: Array<RichBlock> = [];
 
 		for (const season of seasonsHtmls) {
 			const fetchFailed = season.html === '';
@@ -64,9 +67,18 @@ class SeasonParser {
 				.map((a) => a.textContent?.trim() ?? '')
 				.filter(Boolean);
 
+			// the same list with its formatting kept
+			const bonusBlocks = parseRichBlocks(
+				Array.from(
+					doc.getElementById('seasonal-bonuses-list')?.children[0]?.children ??
+						[]
+				)
+			);
+
 			if (season.locale === AvailableLocales.en) {
 				enTitle = title;
 				enBonuses = bonuses;
+				enBonusBlocks = bonusBlocks;
 			}
 
 			if (season.locale !== AvailableLocales.en) {
@@ -99,6 +111,7 @@ class SeasonParser {
 					lures: [],
 					maxBattles: [],
 					bonuses: needsFallback ? enBonuses : bonuses,
+					bonusBlocks: needsFallback ? enBonusBlocks : bonusBlocks,
 					isSeason: true,
 					locale: season.locale,
 					bonusSectionIndex: -1,
@@ -235,6 +248,7 @@ class SeasonParser {
 				lures: [],
 				maxBattles,
 				bonuses: bonuses,
+				bonusBlocks,
 				isSeason: true,
 				locale: season.locale,
 				bonusSectionIndex: -1,

@@ -10,7 +10,10 @@ import {
 } from '../../../services/gamemaster-translator';
 import type { IEntry } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
+import type { RichBlock } from '../../../types/rich-text';
 import PokemonMatcher from '../../utils/pokemon-matcher';
+import { richBlocksToLines } from '../../utils/rich-text';
+import { MAX_MONDAY_BONUSES } from './max-monday-bonuses';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -31,6 +34,10 @@ export interface ILeekduckMaxMonday {
 	date: number;
 	dateEnd: number;
 	pokemons: Array<IEntry>;
+	/** What a Max Monday brings, per locale: its bullet points and the asterisk footnote (the same for every Monday), as plain lines. */
+	bonuses: Partial<Record<AvailableLocales, Array<string>>>;
+	/** The same, with its formatting kept (bullet points, bold, the footnote as a note). */
+	bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>>;
 	imgUrl?: string;
 	rawUrl: string;
 }
@@ -91,7 +98,11 @@ class EventsParser {
 		private readonly dataFetcher: HttpDataFetcher,
 		private readonly gameMasterPokemon: GameMasterData,
 		private readonly domains: IPokemonDomains,
-		private readonly gameTranslations: GameTranslations
+		private readonly gameTranslations: GameTranslations,
+		/** What a Max Monday brings, injected into every Max Monday as its bonuses (scraped once, see max-monday-bonuses.ts). */
+		private readonly maxMondayBonuses: Partial<
+			Record<AvailableLocales, Array<RichBlock>>
+		> = MAX_MONDAY_BONUSES
 	) {}
 	async parse() {
 		const html = await this.dataFetcher.fetchText(LEEKDUCK_EVENTS_URL);
@@ -371,6 +382,13 @@ class EventsParser {
 			date: parsed.date,
 			dateEnd: parsed.dateEnd,
 			pokemons,
+			bonuses: Object.fromEntries(
+				Object.entries(this.maxMondayBonuses).map(([locale, blocks]) => [
+					locale,
+					richBlocksToLines(blocks),
+				])
+			),
+			bonusBlocks: this.maxMondayBonuses,
 			imgUrl:
 				parsed.htmlDoc
 					.querySelector('meta[property="og:image"]')

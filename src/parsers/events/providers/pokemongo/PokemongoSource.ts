@@ -23,6 +23,7 @@ import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
 } from '../../utils/pokemon-matcher';
+import { parseRichBlocks } from '../../utils/rich-text';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import PokemonGoPostParser from './news-parsers/PostParser';
 import PokemonGoFetcher from './PokemongoFetcher';
@@ -225,6 +226,7 @@ const buildEventObject = (
 		lures: parsedContent.lures,
 		maxBattles: parsedContent.maxBattles,
 		bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : [],
+		bonusBlocks: parsedContent.bonusBlocks,
 		locale: extractLocaleFromPath(post.url),
 		bonusSectionIndex: parsedContent.bonusSectionIndex,
 	};
@@ -375,6 +377,7 @@ class PokemonGoSource implements IEventSource {
 			lures: [],
 			maxBattles: [],
 			bonuses: [],
+			bonusBlocks: [],
 			bonusSectionIndex,
 		};
 	}
@@ -399,6 +402,11 @@ class PokemonGoSource implements IEventSource {
 		return bonusesArr;
 	}
 
+	/** The bonuses of a section as formatted blocks: everything after its headline, with the bullet points, bold and footnotes kept. */
+	private parseBonusBlocks(sectionElement: Element) {
+		return parseRichBlocks(Array.from(sectionElement.children).slice(1));
+	}
+
 	private parseTranslatedBonusFromPost(
 		sectionElements: Array<Element>,
 		bonusSectionIndex: number
@@ -414,6 +422,7 @@ class PokemonGoSource implements IEventSource {
 
 		const sectionElement = sectionElements[bonusSectionIndex];
 		eventBlock.bonuses = this.parseBonusContent(sectionElement);
+		eventBlock.bonusBlocks = this.parseBonusBlocks(sectionElement);
 
 		return eventBlock;
 	}
@@ -775,6 +784,7 @@ class PokemonGoSource implements IEventSource {
 			if (this.isBonusSection(sectionType)) {
 				eventBlock.bonusSectionIndex = i;
 				eventBlock.bonuses = this.parseBonusContent(sectionElement);
+				eventBlock.bonusBlocks = this.parseBonusBlocks(sectionElement);
 				continue;
 			}
 

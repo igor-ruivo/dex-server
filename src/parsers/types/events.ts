@@ -1,5 +1,6 @@
 import type { AvailableLocales } from '../services/gamemaster-translator';
 import type { GameMasterData } from '../types/pokemon';
+import type { RichBlock } from './rich-text';
 
 export interface IEntry {
 	speciesId: string;
@@ -27,7 +28,13 @@ export type IParsedEvent = EventBlock & {
 
 export type PublicEvent = Omit<
 	IParsedEvent,
-	'url' | 'title' | 'subtitle' | 'bonuses' | 'locale' | 'bonusSectionIndex'
+	| 'url'
+	| 'title'
+	| 'subtitle'
+	| 'bonuses'
+	| 'bonusBlocks'
+	| 'locale'
+	| 'bonusSectionIndex'
 > & {
 	// The "View original" link needs to open in whichever language the post
 	// itself is being read in — pokemongo.com actually publishes a genuinely
@@ -39,6 +46,11 @@ export type PublicEvent = Omit<
 	title: Partial<Record<AvailableLocales, string>>;
 	subtitle: Partial<Record<AvailableLocales, string>>;
 	bonuses: Partial<Record<AvailableLocales, Array<string>>>;
+	/**
+	 * The same bonuses with their formatting kept (bullet points and how deep they are, bold, links, the asterisk footnotes), per
+	 * locale: what `bonuses` flattens into plain lines.
+	 */
+	bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>>;
 	// Which locales actually have their own pokemongo.com post for this event
 	// — `url`/`title`/`subtitle`/`bonuses` above fall back to the English
 	// post's content for any locale missing here, so consumers that want to
@@ -79,6 +91,7 @@ export interface EventData {
 
 export type EventBlock = EventData & {
 	bonuses: Array<string>;
+	bonusBlocks: Array<RichBlock>;
 	bonusSectionIndex: number;
 };
 

@@ -1,4 +1,5 @@
 import type { IParsedEvent, PublicEvent } from '../types/events';
+import type { RichBlock } from '../types/rich-text';
 import type HttpDataFetcher from './data-fetcher';
 
 // Values match go-pokedex's own `GameLanguage` enum exactly
@@ -451,6 +452,7 @@ export const pairEventTranslations = (
 		const title: Partial<Record<AvailableLocales, string>> = {};
 		const subtitle: Partial<Record<AvailableLocales, string>> = {};
 		const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
+		const bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>> = {};
 		const availableLocales: Array<AvailableLocales> = [];
 
 		for (const locale of locales) {
@@ -476,6 +478,9 @@ export const pairEventTranslations = (
 			subtitle[locale] =
 				localeEvent?.subtitle ?? enEvent.subtitle ?? enEvent.title;
 			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
+			bonusBlocks[locale] = localeEvent
+				? localeEvent.bonusBlocks
+				: enEvent.bonusBlocks;
 
 			if (locale === AvailableLocales.en) {
 				continue;
@@ -512,6 +517,7 @@ export const pairEventTranslations = (
 			lures: enEvent.lures,
 			maxBattles: enEvent.maxBattles,
 			bonuses,
+			bonusBlocks,
 			availableLocales,
 		});
 	}

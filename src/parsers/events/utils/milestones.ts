@@ -2,7 +2,7 @@ import type { IMilestoneBonuses, IMilestoneTier } from '../../types/events';
 import type { RichBlock } from '../../types/rich-text';
 import { parseRichBlocks } from './rich-text';
 
-/** The title of the season's milestone bonuses: the page has none of its own in the block, and it reads the same in every language. */
+/** The title of the milestone bonuses when the page does not give one in its own language. */
 export const MILESTONE_TITLE = 'Major Milestone Bonuses';
 
 const COLOR = /#[0-9a-f]{3,8}\b/i;
@@ -49,7 +49,26 @@ export const parseMilestoneBonuses = (
 		);
 		tiers.push({ tier, rank, ...(colors ? { colors } : {}), blocks });
 	}
-	return tiers.length > 0 ? { title: MILESTONE_TITLE, tiers } : undefined;
+	if (tiers.length === 0) {
+		return undefined;
+	}
+	// the section above the cards has the title and the sentence that introduces them, in the language of the page
+	const head =
+		root.previousElementSibling?.id === 'bonuses'
+			? root.previousElementSibling
+			: doc.getElementById('bonuses');
+	const title = head
+		?.querySelector('[class*="heading"]')
+		?.textContent?.replace(/\s+/g, ' ')
+		.trim();
+	const intro = Array.from(
+		head?.querySelectorAll('[class*="size:body"]') ?? []
+	).flatMap((el) => parseRichBlocks(Array.from(el.childNodes)));
+	return {
+		title: title ?? MILESTONE_TITLE,
+		...(intro.length > 0 ? { intro } : {}),
+		tiers,
+	};
 };
 
 /** A heading of a tier in a post: a paragraph that is all bold ("Tier 1 Bonus Starting at Rank 25"). */

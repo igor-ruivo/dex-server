@@ -389,6 +389,16 @@
 	"milestoneBonuses": {
 		"en": {
 			"title": "Major Milestone Bonuses",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Reach Major Milestones on your GO Pass to unlock the following bonuses. Once unlocked, these bonuses will last until the current GO Pass ends!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Tier 1",
@@ -478,7 +488,17 @@
 			]
 		},
 		"pt_br": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bônus de Conquista Principal",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Alcance marcos importantes no seu Passe GO para desbloquear os seguintes bônus. Uma vez desbloqueados, esses bônus durarão até o Passe GO atual terminar."
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Nível 1",
@@ -568,7 +588,17 @@
 			]
 		},
 		"de": {
-			"title": "Major Milestone Bonuses",
+			"title": "Boni für große Meilensteine",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Bei großen Meilensteinen schaltet ihr mit dem GO-Pass die folgenden Boni frei. Diese Boni bleiben aktiv, bis der aktuelle GO-Pass endet!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Rang 1",
@@ -658,7 +688,17 @@
 			]
 		},
 		"es": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bonus de hitos principales",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Llegad a hitos principales en el Pase de GO para desbloquear los bonus siguientes. ¡Una vez desbloqueados, estos bonus estarán disponibles hasta que el Pase de GO finalice!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Nivel 1",
@@ -748,7 +788,17 @@
 			]
 		},
 		"es-MX": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bonificaciones de objetivo principal",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Alcancen hitos principales en el Pase de GO para desbloquear las siguientes bonificaciones. ¡Una vez desbloqueadas, estas bonificaciones estarán disponibles hasta que el Pase de GO finalice!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Nivel 1",
@@ -838,7 +888,17 @@
 			]
 		},
 		"fr": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bonus d’Échelon majeur",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Atteignez les Échelons majeurs du Passe GO pour profiter des bonus qui suivent. Une fois débloqués, vous bénéficierez de ces bonus jusqu’à la fin du Passe GO."
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Échelon 1",
@@ -928,7 +988,17 @@
 			]
 		},
 		"hi": {
-			"title": "Major Milestone Bonuses",
+			"title": "बड़ा माइल्स्टोन बोनस",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "निम्नलिखित बोनस अनलॉक करने के लिए अपने GO पास पर प्रमुख मील के पत्थर तक पहुंचें। एक बार अनलॉक होने के बाद, ये बोनस वर्तमान GO पास के समाप्त होने तक जारी रहेंगे!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "टीयर 1",
@@ -1018,7 +1088,17 @@
 			]
 		},
 		"id": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bonus Milestone Mayor",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Capai Milestone Mayor di Tiket GO Anda untuk membuka bonus berikut. Setelah dibuka, bonus-bonus ini akan bertahan hingga Tiket GO Anda berakhir!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Tingkat 1",
@@ -1108,7 +1188,17 @@
 			]
 		},
 		"it": {
-			"title": "Major Milestone Bonuses",
+			"title": "Bonus dell'obiettivo principale",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Raggiungi un obiettivo principale del biglietto GO per sbloccare i seguenti bonus. Una volta sbloccati, questi bonus dureranno fino alla scadenza dell'attuale biglietto GO."
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Obiettivo 1",
@@ -1198,7 +1288,17 @@
 			]
 		},
 		"ja": {
-			"title": "Major Milestone Bonuses",
+			"title": "「メジャーマイルストーン」のボーナス",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "「GOパス」の「メジャーマイルストーン」を達成すると、以下のボーナスが手に入ります。一度アンロックされたボーナスは、その時点での「GOパス」が終了するまで有効です！"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "ティア1",
@@ -1288,7 +1388,17 @@
 			]
 		},
 		"ko": {
-			"title": "Major Milestone Bonuses",
+			"title": "메이저 마일스톤 보너스",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "\"GO패스\"의 \"메이저 마일스톤\"을 달성하면 다음 보너스가 잠금 해제됩니다. 잠금 해제한 보너스는 이번 \"GO패스\" 진행 기간이 끝날 때까지 적용됩니다!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "티어 1",
@@ -1379,6 +1489,16 @@
 		},
 		"ru": {
 			"title": "Major Milestone Bonuses",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Reach Major Milestones on your GO Pass to unlock the following bonuses. Once unlocked, these bonuses will last until the current GO Pass ends!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Tier 1",
@@ -1468,7 +1588,17 @@
 			]
 		},
 		"th": {
-			"title": "Major Milestone Bonuses",
+			"title": "โบนัสความสำเร็จขั้นใหญ่",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "ไปถึงความสำเร็จขั้นใหญ่ในบัตรผ่าน GO ของคุณเพื่อปลดล็อกโบนัสต่อไปนี้ เมื่อปลดล็อกแล้ว โบนัสเหล่านี้จะคงอยู่จนกว่าบัตรผ่าน GO ปัจจุบันจะสิ้นสุดลง!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Tier 1",
@@ -1558,7 +1688,17 @@
 			]
 		},
 		"tr": {
-			"title": "Major Milestone Bonuses",
+			"title": "Büyük Aşama Bonusları",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Aşağıdaki bonusların kilidini açmak için GO Biletinizde Büyük Aşamalara ulaşın. Bu bonusların kilidi açıldığında mevcut GO Biletiniz sona erene kadar geçerli olur!"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "Katman 1",
@@ -1648,7 +1788,17 @@
 			]
 		},
 		"zh-Hant": {
-			"title": "Major Milestone Bonuses",
+			"title": "主里程碑獎勵加碼內容",
+			"intro": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "達成「GO Pass」主里程碑即可解鎖以下獎勵加碼內容。 解鎖後，獎勵加碼內容將生效至當前的「GO Pass」結束為止！"
+						}
+					]
+				}
+			],
 			"tiers": [
 				{
 					"tier": "第1階段",

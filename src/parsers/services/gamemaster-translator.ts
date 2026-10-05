@@ -457,6 +457,8 @@ export const pairEventTranslations = (
 		const subtitle: Partial<Record<AvailableLocales, string>> = {};
 		const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
 		const bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>> = {};
+		const rewardBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>> =
+			{};
 		const milestoneBonuses: Partial<
 			Record<AvailableLocales, IMilestoneBonuses>
 		> = {};
@@ -485,6 +487,11 @@ export const pairEventTranslations = (
 			subtitle[locale] =
 				localeEvent?.subtitle ?? enEvent.subtitle ?? enEvent.title;
 			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
+			if (enEvent.rewardBlocks.length > 0) {
+				rewardBlocks[locale] = localeEvent?.rewardBlocks.length
+					? localeEvent.rewardBlocks
+					: enEvent.rewardBlocks;
+			}
 			const milestones =
 				localeEvent?.milestoneBonuses ?? enEvent.milestoneBonuses;
 			if (milestones) {
@@ -531,6 +538,7 @@ export const pairEventTranslations = (
 			bonuses,
 			bonusBlocks,
 			...(enEvent.milestoneBonuses ? { milestoneBonuses } : {}),
+			...(enEvent.rewardBlocks.length > 0 ? { rewardBlocks } : {}),
 			availableLocales,
 		});
 	}

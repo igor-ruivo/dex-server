@@ -129,6 +129,9 @@ class SeasonParser {
 					locale: season.locale,
 					bonusSectionIndex: -1,
 					milestoneSectionIndex: -1,
+					rewardBlocks: [],
+					rewardSectionIndex: -1,
+					rewardDropped: [],
 				});
 
 				continue;
@@ -271,6 +274,9 @@ class SeasonParser {
 				locale: season.locale,
 				bonusSectionIndex: -1,
 				milestoneSectionIndex: -1,
+				rewardBlocks: [],
+				rewardSectionIndex: -1,
+				rewardDropped: [],
 			});
 		}
 

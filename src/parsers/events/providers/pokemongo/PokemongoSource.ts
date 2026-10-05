@@ -24,6 +24,11 @@ import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
 } from '../../utils/pokemon-matcher';
+import {
+	FEATURED_REWARDS_TITLE,
+	rewardBlocksLike,
+	rewardBlocksWithout,
+} from '../../utils/rewards';
 import { parseRichBlocks } from '../../utils/rich-text';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import PokemonGoPostParser from './news-parsers/PostParser';
@@ -232,6 +237,9 @@ const buildEventObject = (
 		bonusBlocks: parsedContent.bonusBlocks,
 		milestoneSectionIndex: parsedContent.milestoneSectionIndex,
 		milestoneBonuses: parsedContent.milestoneBonuses,
+		rewardBlocks: parsedContent.rewardBlocks,
+		rewardSectionIndex: parsedContent.rewardSectionIndex,
+		rewardDropped: parsedContent.rewardDropped,
 		locale: extractLocaleFromPath(post.url),
 		bonusSectionIndex: parsedContent.bonusSectionIndex,
 	};
@@ -351,7 +359,9 @@ class PokemonGoSource implements IEventSource {
 			const parsedContent = this.parseTranslatedBonusFromPost(
 				sectionElements,
 				bonusSectionIndex,
-				matchingOriginalEvent?.milestoneSectionIndex ?? -1
+				matchingOriginalEvent?.milestoneSectionIndex ?? -1,
+				matchingOriginalEvent?.rewardSectionIndex ?? -1,
+				matchingOriginalEvent?.rewardDropped ?? []
 			);
 			const event = buildEventObject(
 				post,
@@ -386,6 +396,9 @@ class PokemonGoSource implements IEventSource {
 			bonusBlocks: [],
 			bonusSectionIndex,
 			milestoneSectionIndex: -1,
+			rewardBlocks: [],
+			rewardSectionIndex: -1,
+			rewardDropped: [],
 		};
 	}
 
@@ -417,9 +430,23 @@ class PokemonGoSource implements IEventSource {
 	private parseTranslatedBonusFromPost(
 		sectionElements: Array<Element>,
 		bonusSectionIndex: number,
-		milestoneSectionIndex = -1
+		milestoneSectionIndex = -1,
+		rewardSectionIndex = -1,
+		rewardDropped: Array<number> = []
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock(bonusSectionIndex);
+
+		// the rewards section too sits at the same place in every language, and has the same lines left out
+		if (
+			rewardSectionIndex !== -1 &&
+			sectionElements.length > rewardSectionIndex
+		) {
+			eventBlock.rewardSectionIndex = rewardSectionIndex;
+			eventBlock.rewardBlocks = rewardBlocksLike(
+				sectionElements[rewardSectionIndex],
+				rewardDropped
+			);
+		}
 
 		// the milestone section sits at the same place in the post of every language
 		if (
@@ -823,6 +850,20 @@ class PokemonGoSource implements IEventSource {
 				isRaidDay,
 				title
 			);
+
+			// The same section also has rewards (rare candy, a Lucky Egg…) next to the Pokémon taken from it above: they are kept as
+			// formatted blocks, without the lines of those Pokémon.
+			if (sectionType === FEATURED_REWARDS_TITLE) {
+				const matcher = new PokemonMatcher(gameMasterPokemon, domain);
+				const names = extractPokemonSpeciesIdsFromElements(
+					sectionBodies,
+					matcher
+				).flatMap((entry) => matcher.plainNameOf(entry.speciesId) ?? []);
+				const { blocks, dropped } = rewardBlocksWithout(sectionElement, names);
+				eventBlock.rewardSectionIndex = i;
+				eventBlock.rewardBlocks = blocks;
+				eventBlock.rewardDropped = dropped;
+			}
 		}
 
 		return eventBlock;

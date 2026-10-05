@@ -56,6 +56,9 @@ export type PublicEvent = Omit<
 	| 'locale'
 	| 'bonusSectionIndex'
 	| 'milestoneSectionIndex'
+	| 'rewardBlocks'
+	| 'rewardSectionIndex'
+	| 'rewardDropped'
 > & {
 	// The "View original" link needs to open in whichever language the post
 	// itself is being read in — pokemongo.com actually publishes a genuinely
@@ -74,6 +77,8 @@ export type PublicEvent = Omit<
 	bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>>;
 	/** A season's major milestone bonuses, per locale (English where a locale has none of its own). */
 	milestoneBonuses?: Partial<Record<AvailableLocales, IMilestoneBonuses>>;
+	/** The rewards of a GO Pass's "Featured Pokémon and Rewards" section with their formatting, per locale (English where a locale has none). */
+	rewardBlocks?: Partial<Record<AvailableLocales, Array<RichBlock>>>;
 	// Which locales actually have their own pokemongo.com post for this event
 	// — `url`/`title`/`subtitle`/`bonuses` above fall back to the English
 	// post's content for any locale missing here, so consumers that want to
@@ -119,6 +124,13 @@ export type EventBlock = EventData & {
 	/** The "Major Milestone Bonuses" section of a post: where it is among the post's sections (-1 for none) and what it says. */
 	milestoneSectionIndex: number;
 	milestoneBonuses?: IMilestoneBonuses | undefined;
+	/**
+	 * The rewards of a "Featured Pokémon and Rewards" section (a GO Pass's), formatted, without the lines the Pokémon were taken from;
+	 * where that section is (-1 for none) and which of its blocks were left out, for the posts of the other languages.
+	 */
+	rewardBlocks: Array<RichBlock>;
+	rewardSectionIndex: number;
+	rewardDropped: Array<number>;
 };
 
 export type PokemonGoPost = ExtractedPostLink & {

@@ -31,6 +31,7 @@ const makeEvent = (overrides: Partial<PublicEvent> = {}): PublicEvent => ({
 	eggs: [],
 	researches: [],
 	lures: [],
+	maxBattles: [],
 	isSeason: false,
 	title: fullRecord('Test Event'),
 	subtitle: fullRecord('Test Subtitle'),

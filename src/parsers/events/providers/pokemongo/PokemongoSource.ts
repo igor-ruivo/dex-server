@@ -13,6 +13,12 @@ import type {
 	PokemonGoPost,
 } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
+import {
+	maxBattleTier,
+	maxFormOfTitle,
+	mergeMaxEntries,
+	parseMaxBattleEntries,
+} from '../../utils/max-battles';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
@@ -217,6 +223,7 @@ const buildEventObject = (
 		researches: parsedContent.researches,
 		incenses: parsedContent.incenses,
 		lures: parsedContent.lures,
+		maxBattles: parsedContent.maxBattles,
 		bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : [],
 		locale: extractLocaleFromPath(post.url),
 		bonusSectionIndex: parsedContent.bonusSectionIndex,
@@ -366,6 +373,7 @@ class PokemonGoSource implements IEventSource {
 			researches: [],
 			incenses: [],
 			lures: [],
+			maxBattles: [],
 			bonuses: [],
 			bonusSectionIndex,
 		};
@@ -467,7 +475,8 @@ class PokemonGoSource implements IEventSource {
 				(event.raids && event.raids.length > 0) ||
 				(event.researches && event.researches.length > 0) ||
 				(event.eggs && event.eggs.length > 0) ||
-				(event.incenses && event.incenses.length > 0)) &&
+				(event.incenses && event.incenses.length > 0) ||
+				(event.maxBattles && event.maxBattles.length > 0)) &&
 				event.dateRanges &&
 				event.dateRanges.length > 0)
 		);
@@ -483,6 +492,52 @@ class PokemonGoSource implements IEventSource {
 	}
 
 	/**
+	 * The Dynamax / Gigantamax Pokémon a section names ("Dynamax Uxie*: Appearing in Europe…", "Gigantamax Cinderace"), with
+	 * the Max Battle tier it mentions. Only the sections that can say so are read: the featured and debut ones, and any whose
+	 * own title speaks of Max Battles. For a post whose title says it is about Max Battles, the featured Pokémon are Max
+	 * Pokémon even when the section does not repeat the form. Returns whether the section was one.
+	 */
+	private processMaxBattleSection(
+		sectionType: string,
+		sectionBodies: Array<HTMLElement>,
+		eventData: EventBlock,
+		gameMasterPokemon: GameMasterData,
+		domain: Array<GameMasterPokemon>,
+		title?: string
+	): boolean {
+		const isFeatured = EVENT_SECTION_TYPES.FEATURED.some(
+			(x) => x === sectionType
+		);
+		if (
+			!isFeatured &&
+			!/dynamax|gigantamax|max battle|debut/i.test(sectionType)
+		) {
+			return false;
+		}
+		const matcher = new PokemonMatcher(gameMasterPokemon, domain);
+		const lines = sectionBodies.slice(1).flatMap((body) => {
+			const blocks = Array.from(body.querySelectorAll('li, p'));
+			return (blocks.length > 0 ? blocks : [body])
+				.map((block) => (block.textContent ?? '').replace(/\s+/g, ' ').trim())
+				.filter(Boolean);
+		});
+		let entries = parseMaxBattleEntries(lines, matcher);
+		const form = title ? maxFormOfTitle(title) : undefined;
+		if (entries.length === 0 && isFeatured && form) {
+			const tier = maxBattleTier(lines.join(' '));
+			entries = extractPokemonSpeciesIdsFromElements(
+				sectionBodies,
+				matcher
+			).map((entry) => ({ ...entry, kind: form, ...(tier ? { tier } : {}) }));
+		}
+		if (entries.length === 0) {
+			return false;
+		}
+		mergeMaxEntries(eventData.maxBattles, entries);
+		return true;
+	}
+
+	/**
 	 * Processes a section of the event and updates the eventData object accordingly.
 	 */
 	private processEventSection(
@@ -495,6 +550,18 @@ class PokemonGoSource implements IEventSource {
 		isRaidDay: boolean,
 		title?: string
 	): void {
+		if (
+			this.processMaxBattleSection(
+				sectionType,
+				sectionBodies,
+				eventData,
+				gameMasterPokemon,
+				domain,
+				title
+			)
+		) {
+			return;
+		}
 		if (EVENT_SECTION_TYPES.WILD_ENCOUNTERS.some((x) => x === sectionType)) {
 			const parsedPkm = extractPokemonSpeciesIdsFromElements(
 				sectionBodies,

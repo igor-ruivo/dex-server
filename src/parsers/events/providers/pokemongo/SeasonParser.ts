@@ -9,6 +9,10 @@ import {
 } from '../../../services/gamemaster-translator';
 import type { IEntry, IParsedEvent } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
+import {
+	maxBattleLinesOf,
+	parseMaxBattleEntries,
+} from '../../utils/max-battles';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
@@ -93,6 +97,7 @@ class SeasonParser {
 					eggs: [],
 					researches: [],
 					lures: [],
+					maxBattles: [],
 					bonuses: needsFallback ? enBonuses : bonuses,
 					isSeason: true,
 					locale: season.locale,
@@ -203,6 +208,16 @@ class SeasonParser {
 				});
 			});
 
+			// Dynamax Pokémon that make their debut in Max Battles during the season ("Dynamax Rhyhorn, Dynamax Sneasel…"), named in
+			// the section's paragraphs and in the captions of its picture grid
+			const maxDebuts = doc.getElementById('max-pokemon-debuts');
+			const maxBattles: Array<IEntry> = maxDebuts
+				? parseMaxBattleEntries(
+						maxBattleLinesOf(maxDebuts),
+						new PokemonMatcher(gameMasterPokemon, this.domain)
+					)
+				: [];
+
 			parsedSeasons.push({
 				id: 'season',
 				url: seasonUrlBuilder(AvailableLocales.en),
@@ -218,6 +233,7 @@ class SeasonParser {
 				eggs,
 				researches,
 				lures: [],
+				maxBattles,
 				bonuses: bonuses,
 				isSeason: true,
 				locale: season.locale,

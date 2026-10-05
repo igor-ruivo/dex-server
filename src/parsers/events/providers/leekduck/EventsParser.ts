@@ -25,6 +25,16 @@ export interface ILeekduckSpotlightHour {
 	rawUrl: string;
 }
 
+/** One Max Monday: the Dynamax Pokémon that takes over the Power Spots for that Monday (they rotate weekly). */
+export interface ILeekduckMaxMonday {
+	title: Partial<Record<AvailableLocales, string>>;
+	date: number;
+	dateEnd: number;
+	pokemons: Array<IEntry>;
+	imgUrl?: string;
+	rawUrl: string;
+}
+
 export interface ILeekduckSpecialRaidBoss {
 	title: Partial<Record<AvailableLocales, string>>;
 	date: number;
@@ -104,8 +114,25 @@ class EventsParser {
 		).map((e) => {
 			return (e.parentElement as HTMLAnchorElement).href;
 		});
+		// Raid Hours (a Pokémon's five-star raids for an hour, weekly on Wednesdays) are special raid windows like the ones above.
+		const raidHourUrls = Array.from(
+			doc.getElementsByClassName('event-item-wrapper raid-hour')
+		).map((e) => {
+			return (e.parentElement as HTMLAnchorElement).href;
+		});
+		const maxMondayUrls = Array.from(
+			doc.getElementsByClassName('event-item-wrapper max-mondays')
+		).map((e) => {
+			return (e.parentElement as HTMLAnchorElement).href;
+		});
 		const postUrls = Array.from(
-			new Set([...raidUrls, ...eliteRaidUrls, ...spotlightUrls])
+			new Set([
+				...raidUrls,
+				...eliteRaidUrls,
+				...spotlightUrls,
+				...raidHourUrls,
+				...maxMondayUrls,
+			])
 		);
 		const urls = postUrls.map((e) => {
 			return e.startsWith('http') ? e : LEEKDUCK_BASE_URL + e;
@@ -118,6 +145,7 @@ class EventsParser {
 
 		const spotlightHours: Array<ILeekduckSpotlightHour> = [];
 		const specialRaidBosses: Array<ILeekduckSpecialRaidBoss> = [];
+		const maxMondays: Array<ILeekduckMaxMonday> = [];
 
 		const eventPromises = urls.map(async (url) => {
 			try {
@@ -126,7 +154,12 @@ class EventsParser {
 				if (!parsed) {
 					return;
 				}
-				if (parsed.title.includes('Spotlight')) {
+				if (parsed.title.includes('Max Monday')) {
+					const maxMonday = this.parseMaxMondayEvent(parsed, url);
+					if (maxMonday) {
+						maxMondays.push(maxMonday);
+					}
+				} else if (parsed.title.includes('Spotlight')) {
 					const spotlightHour = this.parseSpotlightHourEvent(
 						parsed,
 						this.gameMasterPokemon,
@@ -160,6 +193,15 @@ class EventsParser {
 					} else {
 						return s1.rawUrl.localeCompare(s2.rawUrl);
 					}
+				}
+			),
+
+			maxMondays: maxMondays.sort(
+				(m1: ILeekduckMaxMonday, m2: ILeekduckMaxMonday) => {
+					if (m1.date !== m2.date) {
+						return m1.date - m2.date;
+					}
+					return m1.rawUrl.localeCompare(m2.rawUrl);
 				}
 			),
 
@@ -273,13 +315,79 @@ class EventsParser {
 		};
 	}
 
+	/**
+	 * A Max Monday ("Dynamax Sizzlipede during Max Monday"): the page lists the featured Dynamax Pokémon like a Spotlight Hour
+	 * does, each with the shiny icon when it can be shiny. Their entries are the base species, `kind` being the form.
+	 */
+	private parseMaxMondayEvent(
+		parsed: ParsedEventCommon,
+		url: string
+	): ILeekduckMaxMonday | undefined {
+		const form = /gigantamax/i.test(parsed.title) ? 'gigantamax' : 'dynamax';
+		const shinyNames = this.extractShinyNames(parsed.htmlDoc);
+		const listed = Array.from(
+			parsed.htmlDoc.querySelectorAll('.pkmn-list-item')
+		)
+			.map(
+				(item) => item.querySelector('.pkmn-name')?.textContent?.trim() ?? ''
+			)
+			// the list can carry the form word in front of the name
+			.map((name) => name.replace(/^(?:dynamax|gigantamax)\s+/i, ''))
+			.filter(Boolean);
+		const fromTitle =
+			/^(?:dynamax|gigantamax)\s+(.+?)\s+during\b/i.exec(parsed.title)?.[1] ??
+			'';
+		const names = listed.length > 0 ? listed : [fromTitle].filter(Boolean);
+
+		const matcher = new PokemonMatcher(
+			this.gameMasterPokemon,
+			this.domains.nonMegaNonShadowDomain
+		);
+		const pokemons: Array<IEntry> = [];
+		for (const name of names) {
+			const entry = matcher.matchPokemonFromText([name])[0];
+			if (
+				entry?.speciesId &&
+				!pokemons.some((p) => p.speciesId === entry.speciesId)
+			) {
+				pokemons.push({
+					speciesId: entry.speciesId,
+					kind: form,
+					shiny: shinyNames.has(shinyNameKey(name)),
+				});
+			}
+		}
+		if (pokemons.length === 0) {
+			return undefined;
+		}
+
+		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			translatedTitles[locale] = parsed.title;
+		});
+
+		return {
+			title: translatedTitles,
+			date: parsed.date,
+			dateEnd: parsed.dateEnd,
+			pokemons,
+			imgUrl:
+				parsed.htmlDoc
+					.querySelector('meta[property="og:image"]')
+					?.getAttribute('content') ??
+				'https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg',
+			rawUrl: url,
+		};
+	}
+
 	private parseSpecialRaidBossEvent(
 		parsed: ParsedEventCommon,
 		gameMasterPokemon: GameMasterData,
 		url: string
 	): ILeekduckSpecialRaidBoss | undefined {
 		const parts = parsed.title.split(' in ');
-		const rawPkmName = parts[0];
+		// "Yveltal Raid Hour": the Pokémon is what comes before "Raid Hour"
+		const rawPkmName = parts[0].replace(/\s+Raid Hour\b.*$/i, '');
 		const raidType = parts[1] ?? '';
 		const isShadow =
 			raidType.includes('Shadow') || rawPkmName.includes('Shadow');

@@ -4,7 +4,10 @@ import type { GameMasterData } from '../types/pokemon';
 export interface IEntry {
 	speciesId: string;
 	shiny: boolean;
+	/** What the entry is: a raid tier, an egg distance… or, in `maxBattles`, the form (`dynamax` or `gigantamax`). */
 	kind?: string;
+	/** The Max Battle tier ("5" for a five-star battle), for the entries of `maxBattles`. */
+	tier?: string | undefined;
 	comment?: Partial<Record<AvailableLocales, string>> | undefined;
 }
 
@@ -70,6 +73,8 @@ export interface EventData {
 	researches: Array<IEntry>;
 	incenses: Array<IEntry>;
 	lures: Array<IEntry>;
+	/** The Dynamax / Gigantamax Pokémon the event brings to Max Battles (the entry's species is the base one). */
+	maxBattles: Array<IEntry>;
 }
 
 export type EventBlock = EventData & {

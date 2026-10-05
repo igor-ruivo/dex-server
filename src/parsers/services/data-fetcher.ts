@@ -65,9 +65,10 @@ const MAX_BACKOFF_MS = 30000;
  *     are dynamic, announced separately): 1
  *   - EggsParser (single LeekDuck page): 1
  *   - RocketLineupsParser (single LeekDuck page): 1
- * Total: 15+1+1+3+11+451+15+1+1+1+1 = 501.
+ *   - MaxBattlesParser (Pokebattler's max.json): 1
+ * Total: 15+1+1+3+11+451+15+1+1+1+1+1 = 502.
  */
-const FIXED_KNOWN_FETCHES = 501;
+const FIXED_KNOWN_FETCHES = 502;
 const PROGRESS_LOG_EVERY = 10;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

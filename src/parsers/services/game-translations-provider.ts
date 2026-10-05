@@ -213,6 +213,8 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	mythicalDisplay: 'filter_label_mythical',
 	ultraBeastDisplay: 'filter_key_ultra_beast',
 	dynamaxDisplay: 'filter_label_dynamax',
+	// "Max Battle" — the in-game name of the battle, from its Power Spot tutorial
+	maxBattleDisplay: 'bread_station_tutorial_title_2',
 	fusionDisplay: 'fusion_feature_name',
 	gigantamaxDisplay: 'filter_label_gigantamax',
 	shinyDisplay: 'filter_label_shiny',

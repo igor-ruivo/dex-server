@@ -68,6 +68,26 @@
 		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [
+			{
+				"speciesId": "uxie",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5"
+			},
+			{
+				"speciesId": "mesprit",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5"
+			},
+			{
+				"speciesId": "azelf",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5"
+			}
+		],
 		"bonuses": {
 			"en": [
 				"The following bonuses will be active during the event.",
@@ -387,6 +407,7 @@
 		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [],
 			"pt_br": [],
@@ -576,6 +597,7 @@
 				"kind": ""
 			}
 		],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"3× Lure Module duration.",
@@ -732,6 +754,7 @@
 		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"2× Candy from hatching Eggs*",
@@ -1013,6 +1036,7 @@
 			}
 		],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Increased chance to encounter Shiny Electrike.",
@@ -1272,6 +1296,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [],
 			"pt_br": [],
@@ -1387,6 +1412,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [],
 			"pt_br": [],
@@ -1573,6 +1599,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [],
 			"pt_br": [],
@@ -1681,6 +1708,7 @@
 				"kind": ""
 			}
 		],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"3× XP for catching Pokémon.",
@@ -2011,6 +2039,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Incense duration increased to 2 hours",
@@ -2144,15 +2173,17 @@
 		"wild": [],
 		"raids": [],
 		"eggs": [],
-		"researches": [
-			{
-				"speciesId": "cinderace",
-				"shiny": false,
-				"kind": ""
-			}
-		],
+		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [
+			{
+				"speciesId": "cinderace",
+				"kind": "gigantamax",
+				"shiny": true,
+				"tier": "6"
+			}
+		],
 		"bonuses": {
 			"en": [
 				"The following bonuses will be active during the event.",
@@ -2487,6 +2518,7 @@
 		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Increased chance to encounter Shiny Slugma.",
@@ -2686,6 +2718,7 @@
 		"researches": [],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Increased chance to encounter Shiny Smoliv.",
@@ -3027,6 +3060,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Increased chance to encounter Kecleon at PokéStops.",
@@ -3321,6 +3355,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Remote Raid limit increased to 20 from Friday, September 18, at 5:00 p.m. to Saturday, September 19, 2026, at 8:00 p.m. PDT.",
@@ -3628,6 +3663,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [
 				"Reach Major Milestones on your event GO Pass to unlock the following bonuses.",
@@ -3881,6 +3917,7 @@
 		],
 		"incenses": [],
 		"lures": [],
+		"maxBattles": [],
 		"bonuses": {
 			"en": [],
 			"pt_br": [],

@@ -10,6 +10,9 @@ import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
 import EventsParser from '../parsers/events/providers/leekduck/EventsParser';
 import { validateLeekduckData } from '../parsers/events/providers/leekduck/leekduck-data-qa';
 import RocketLineupsParser from '../parsers/events/providers/leekduck/RocketLineupsParser';
+import MaxBattlesParser, {
+	markMaxShiny,
+} from '../parsers/events/providers/pokebattler/MaxBattlesParser';
 import MovesProvider from '../parsers/events/providers/pokeminers/MovesProvider';
 import PokemonGoSource from '../parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from '../parsers/events/providers/pokemongo/SeasonParser';
@@ -171,6 +174,18 @@ const generateData = async () => {
 		);
 		const leekduckRocketLineups = await leekduckRocketLineupsParser.parse();
 
+		// Step 7a: the Max Battle bosses that are current right now, by tier (Pokebattler). It knows nothing about shiny, so the
+		// Pokémon the Max Mondays, the news posts and the season page say can be shiny are marked from them.
+		const currentMaxBattles = await new MaxBattlesParser(
+			dataFetcher,
+			pokemonDictionary
+		).parse();
+		const currentMaxBattlesWithShiny = markMaxShiny(currentMaxBattles, [
+			leekduckEvents.maxMondays.flatMap((m) => m.pokemons),
+			events.flatMap((e) => e.maxBattles),
+			seasonData.maxBattles,
+		]);
+
 		// Step 7b: QA the LeekDuck-derived data before it's written/committed.
 		// LeekDuck restructures its pages without notice, and a scraper that
 		// silently starts returning empty/partial results is worse than one
@@ -211,6 +226,14 @@ const generateData = async () => {
 		await fs.writeFile(
 			path.join(dataDir, 'spotlight-hours.json'),
 			JSON.stringify(leekduckEvents.spotlightHours, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'max-mondays.json'),
+			JSON.stringify(leekduckEvents.maxMondays, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'current-max-battles.json'),
+			JSON.stringify(currentMaxBattlesWithShiny, null, '\t')
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'leekduck-special-raid-bosses.json'),

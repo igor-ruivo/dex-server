@@ -510,6 +510,7 @@ export const pairEventTranslations = (
 			researches: enEvent.researches,
 			incenses: enEvent.incenses,
 			lures: enEvent.lures,
+			maxBattles: enEvent.maxBattles,
 			bonuses,
 			availableLocales,
 		});

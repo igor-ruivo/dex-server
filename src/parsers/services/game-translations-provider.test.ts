@@ -47,6 +47,7 @@ const REQUIRED_KEYS = [
 	'filter_label_mythical',
 	'filter_key_ultra_beast',
 	'filter_label_dynamax',
+	'bread_station_tutorial_title_2',
 	'fusion_feature_name',
 	'filter_label_gigantamax',
 	'filter_label_shiny',

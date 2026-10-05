@@ -7,13 +7,18 @@ import {
 	AvailableLocales,
 	pairEventTranslations,
 } from '../../../services/gamemaster-translator';
-import type { IEntry, IParsedEvent } from '../../../types/events';
+import type {
+	IEntry,
+	IMilestoneBonuses,
+	IParsedEvent,
+} from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import type { RichBlock } from '../../../types/rich-text';
 import {
 	maxBattleLinesOf,
 	parseMaxBattleEntries,
 } from '../../utils/max-battles';
+import { parseMilestoneBonuses } from '../../utils/milestones';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
@@ -53,6 +58,7 @@ class SeasonParser {
 		let enTitle = '';
 		let enBonuses: Array<string> = [];
 		let enBonusBlocks: Array<RichBlock> = [];
+		let enMilestones: IMilestoneBonuses | undefined;
 
 		for (const season of seasonsHtmls) {
 			const fetchFailed = season.html === '';
@@ -67,6 +73,9 @@ class SeasonParser {
 				.map((a) => a.textContent?.trim() ?? '')
 				.filter(Boolean);
 
+			// the season's major milestone bonuses (its tiers and the ranks that earn them), in this language
+			const milestones = parseMilestoneBonuses(doc);
+
 			// the same list with its formatting kept
 			const bonusBlocks = parseRichBlocks(
 				Array.from(
@@ -79,6 +88,7 @@ class SeasonParser {
 				enTitle = title;
 				enBonuses = bonuses;
 				enBonusBlocks = bonusBlocks;
+				enMilestones = milestones;
 			}
 
 			if (season.locale !== AvailableLocales.en) {
@@ -112,9 +122,13 @@ class SeasonParser {
 					maxBattles: [],
 					bonuses: needsFallback ? enBonuses : bonuses,
 					bonusBlocks: needsFallback ? enBonusBlocks : bonusBlocks,
+					milestoneBonuses: needsFallback
+						? enMilestones
+						: (milestones ?? enMilestones),
 					isSeason: true,
 					locale: season.locale,
 					bonusSectionIndex: -1,
+					milestoneSectionIndex: -1,
 				});
 
 				continue;
@@ -224,12 +238,15 @@ class SeasonParser {
 			// Dynamax Pokémon that make their debut in Max Battles during the season ("Dynamax Rhyhorn, Dynamax Sneasel…"), named in
 			// the section's paragraphs and in the captions of its picture grid
 			const maxDebuts = doc.getElementById('max-pokemon-debuts');
-			const maxBattles: Array<IEntry> = maxDebuts
-				? parseMaxBattleEntries(
-						maxBattleLinesOf(maxDebuts),
-						new PokemonMatcher(gameMasterPokemon, this.domain)
-					)
-				: [];
+			// Every Dynamax Pokémon of the season can be shiny: the page does not say it, so they are all marked
+			const maxBattles: Array<IEntry> = (
+				maxDebuts
+					? parseMaxBattleEntries(
+							maxBattleLinesOf(maxDebuts),
+							new PokemonMatcher(gameMasterPokemon, this.domain)
+						)
+					: []
+			).map((entry) => ({ ...entry, shiny: true }));
 
 			parsedSeasons.push({
 				id: 'season',
@@ -249,9 +266,11 @@ class SeasonParser {
 				maxBattles,
 				bonuses: bonuses,
 				bonusBlocks,
+				milestoneBonuses: milestones,
 				isSeason: true,
 				locale: season.locale,
 				bonusSectionIndex: -1,
+				milestoneSectionIndex: -1,
 			});
 		}
 

@@ -193,7 +193,11 @@ const readNodes = (nodes: ReadonlyArray<Node>, blocks: Array<RichBlock>) => {
 			});
 		} else if (tag === 'P') {
 			pushBlock(blocks, 'text', inlineRuns(Array.from(el.childNodes)));
-		} else if (/footnote/i.test(el.getAttribute('class') ?? '')) {
+		} else if (
+			/footnote/i.test(el.getAttribute('class') ?? '') &&
+			!el.querySelector('[class*="ootnote"]')
+		) {
+			// the innermost footnote element is one note: a block holding several footnotes is read through, one note each
 			const runs = inlineRuns(Array.from(el.childNodes));
 			pushBlock(blocks, 'note', runs);
 		} else {

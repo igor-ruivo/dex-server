@@ -12,6 +12,25 @@ export interface IEntry {
 	comment?: Partial<Record<AvailableLocales, string>> | undefined;
 }
 
+/** One tier of a season's major milestone bonuses: what a rank of the season earns. */
+export interface IMilestoneTier {
+	/** The tier as the page names it ("Tier 1"). */
+	tier: string;
+	/** The rank that earns it ("Rank 25"). */
+	rank: string;
+	/** The two colours the card's header goes from (bronze, silver, gold…), whatever the language. */
+	colors?: [string, string];
+	/** What the tier gives, with its formatting kept. */
+	blocks: Array<RichBlock>;
+}
+
+export interface IMilestoneBonuses {
+	title: string;
+	/** The sentence(s) that introduce the tiers ("Reach Major Milestones on your GO Pass to unlock the following bonuses."). */
+	intro?: Array<RichBlock>;
+	tiers: Array<IMilestoneTier>;
+}
+
 export type IParsedEvent = EventBlock & {
 	id: string;
 	url: string;
@@ -33,8 +52,10 @@ export type PublicEvent = Omit<
 	| 'subtitle'
 	| 'bonuses'
 	| 'bonusBlocks'
+	| 'milestoneBonuses'
 	| 'locale'
 	| 'bonusSectionIndex'
+	| 'milestoneSectionIndex'
 > & {
 	// The "View original" link needs to open in whichever language the post
 	// itself is being read in — pokemongo.com actually publishes a genuinely
@@ -51,6 +72,8 @@ export type PublicEvent = Omit<
 	 * locale: what `bonuses` flattens into plain lines.
 	 */
 	bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>>;
+	/** A season's major milestone bonuses, per locale (English where a locale has none of its own). */
+	milestoneBonuses?: Partial<Record<AvailableLocales, IMilestoneBonuses>>;
 	// Which locales actually have their own pokemongo.com post for this event
 	// — `url`/`title`/`subtitle`/`bonuses` above fall back to the English
 	// post's content for any locale missing here, so consumers that want to
@@ -93,6 +116,9 @@ export type EventBlock = EventData & {
 	bonuses: Array<string>;
 	bonusBlocks: Array<RichBlock>;
 	bonusSectionIndex: number;
+	/** The "Major Milestone Bonuses" section of a post: where it is among the post's sections (-1 for none) and what it says. */
+	milestoneSectionIndex: number;
+	milestoneBonuses?: IMilestoneBonuses | undefined;
 };
 
 export type PokemonGoPost = ExtractedPostLink & {

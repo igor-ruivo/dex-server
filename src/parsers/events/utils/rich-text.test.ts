@@ -89,3 +89,18 @@ describe('the formatting of a post text', () => {
 		]);
 	});
 });
+
+describe('several footnotes in a post', () => {
+	it('keeps each footnote as a note of its own, as the post lays them out on separate lines', () => {
+		const blocks =
+			blocksOf(`<div class="_containerBlock"><div class="_headline"><h2>Bônus do evento</h2></div><div class="_markdown"><ul>
+<li>2× mais Partículas Max ao explorar*</li>
+<li>1/4 da distância de aventura para receber Partículas Max**</li>
+</ul></div><div class="_IconFootnotesBlock_v388d_2"><div class="_IconFootnotesBlockFootnote_v388d_8"><div class="_size:footnote_13f4f_218">*Vocês podem coletar Partículas Max diariamente.</div></div><div class="_IconFootnotesBlockFootnote_v388d_8"><div class="_size:footnote_13f4f_218">**Para que esses bônus entrem em vigor, é preciso coletar todas as Partículas Max.</div></div></div></div>`);
+		const notes = blocks.filter((b) => b.kind === 'note');
+		expect(notes.map((n) => n.runs.map((r) => r.text).join(''))).toEqual([
+			'*Vocês podem coletar Partículas Max diariamente.',
+			'**Para que esses bônus entrem em vigor, é preciso coletar todas as Partículas Max.',
+		]);
+	});
+});

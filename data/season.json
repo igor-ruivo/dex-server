@@ -324,32 +324,32 @@
 		{
 			"speciesId": "rhyhorn",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		},
 		{
 			"speciesId": "sneasel",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		},
 		{
 			"speciesId": "sizzlipede",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		},
 		{
 			"speciesId": "uxie",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		},
 		{
 			"speciesId": "mesprit",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		},
 		{
 			"speciesId": "azelf",
 			"kind": "dynamax",
-			"shiny": false
+			"shiny": true
 		}
 	],
 	"bonuses": {
@@ -385,6 +385,1358 @@
 		"th": [],
 		"tr": [],
 		"zh-Hant": []
+	},
+	"milestoneBonuses": {
+		"en": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Tier 1",
+					"rank": "Rank 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "One additional Candy for trading Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 2",
+					"rank": "Rank 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Increased limits on opening Gifts, receiving Gifts from PokéStop and Gym Photo Discs, and storing Gifts"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 3",
+					"rank": "Rank 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "2× Daily Adventure Incense duration"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 4",
+					"rank": "Rank 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Increased XP and Stardust from hatching Eggs"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"pt_br": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Nível 1",
+					"rank": "Ranque 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Treinadoras e Treinadores de nível 31 e superior receberão um Doce GG ao trocar Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Um doce extra ao trocar Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nível 2",
+					"rank": "Ranque 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Limites aumentados para abrir presentes, receber presentes de Poképaradas, fotodiscos de Ginásios e armazenar presentes"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nível 3",
+					"rank": "Ranque 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "O dobro de duração do Incenso de Aventura Diário"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nível 4",
+					"rank": "Ranque 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Aumento de PE e Poeira Estelar ao chocar Ovos"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"de": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Rang 1",
+					"rank": "Stufe 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "ein garantiertes Bonbon XL beim Tauschen (Trainer ab Level 31)"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "ein zusätzliches Bonbon beim Tauschen"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Rang 2",
+					"rank": "Stufe 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "mehr Geschenke öffnen, mehr Geschenke von PokéStops und Arenen erhalten und mehr Geschenke aufbewahren"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Rang 3",
+					"rank": "Stufe 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Doppelte Wirkungszeit des Täglichen Abenteuerrauchs"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Rang 4",
+					"rank": "Stufe 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "mehr Schlüpf-EP und Schlüpf-Sternenstaub"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"es": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Nivel 1",
+					"rank": "Nivel 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Los Entrenadores de nivel 31 y superior recibirán un Caramelo ++ garantizado al intercambiar Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Un Caramelo extra por intercambiar Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 2",
+					"rank": "Nivel 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Límites aumentados de apertura y recepción de regalos en fotodiscos de Poképaradas y Gimnasios, y almacenamiento de regalos"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 3",
+					"rank": "Nivel 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Doble de duración del Incienso de aventura diaria"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 4",
+					"rank": "Nivel 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Más PX y Polvos Estelares por eclosionar Huevos"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"es-MX": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Nivel 1",
+					"rank": "Rango 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Los Entrenadores de nivel 31 y superior recbirán un Caramelo XL garantizado al intercambiar Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Un Caramelo adicional al intercambiar Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 2",
+					"rank": "Rango 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Se han aumentado los límites para abrir regalos, recibir regalos de fotodiscos de Poképaradas y gimnasios, y almacenar regalos"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 3",
+					"rank": "Rango 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "El doble de duración del Incienso de Aventura Diario"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Nivel 4",
+					"rank": "Rango 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Más EXP y Polvos Estrella por eclosionar Huevos"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"fr": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Échelon 1",
+					"rank": "Rang 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Un Bonbon L garanti lors d’un échange de Pokémon pour les Dresseurs et Dresseuses de niveau 31 ou plus"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Un Bonbon supplémentaire lors des échanges de Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Échelon 2",
+					"rank": "Rang 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Limites augmentées pour le stockage, l’ouverture et l’obtention de Cadeaux en faisant tourner les PhotoDisques de PokéStops ou d’Arènes"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Échelon 3",
+					"rank": "Rang 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Durée de l’Encens d’aventure quotidienne ×2"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Échelon 4",
+					"rank": "Rang 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Augmentation des PX et Poussières Étoiles d’éclosion"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"hi": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "टीयर 1",
+					"rank": "रैंक 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "लेवल 31 और उससे ऊपर के ट्रेनर्स को पोकेमॉन का ट्रेड करते समय एक निश्चित रूप से एक कैंडी XL मिलेगा।"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "पोकेमॉन ट्रेड करने पर एक अतिरिक्त कैंडी मिलेगी।"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "टीयर 2",
+					"rank": "रैंक 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "गिफ़्ट खोलने, पोकेस्टॉप और जिम फोटो डिस्क से गिफ़्ट पाने और गिफ़्ट स्टोर करने पर सीमाएं बढ़ा दी गई हैं।"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "3 टियर",
+					"rank": "रैंक 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "2x दैनिक एडवेंचर इंसेंस अवधि।"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "टीयर 4",
+					"rank": "रैंक 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "अंडे हैच करने पर XP और स्टारडस्ट की मात्रा में वृद्धि होती है।"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"id": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Tingkat 1",
+					"rank": "Rank 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Pelatih level 31 ke atas akan menerima satu jaminan Permen XL saat menukarkan Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Satu Permen tambahan untuk pertukaran Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tingkat 2",
+					"rank": "Rank 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Peningkatan batas untuk membuka dan menerima Hadiah dari Disk Foto di PokéStop dan Gym, serta batas untuk menyimpannya"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tingkat 3",
+					"rank": "Rank 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Durasi Pewangi Harian ×2."
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tingkat 4",
+					"rank": "Rank 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Peningkatan XP dan Debu Bintang dengan menetaskan Telur"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"it": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Obiettivo 1",
+					"rank": "Livello 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Gli Allenatori e le Allenatrici a partire dal livello 31 riceveranno una caramella L garantita scambiando Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Una caramella aggiuntiva scambiando Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Obiettivo 2",
+					"rank": "Livello 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Aumento del limite di pacchi amicizia che puoi aprire, ricevere facendo girare i dischi foto dei Pokéstop o delle Palestre e conservare"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Obiettivo 3",
+					"rank": "Livello 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Durata aroma avventura giornaliera raddoppiata"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Obiettivo 4",
+					"rank": "Livello 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Polvere di stelle e PE extra facendo schiudere le Uova"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"ja": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "ティア1",
+					"rank": "ランク1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "トレーナーレベル31以上のトレーナーは、ポケモンを交換すると「アメXL」を必ず獲得"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "ポケモン交換でもらえる「ポケモンのアメ」が1個追加"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "ティア2",
+					"rank": "ランク25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "ギフトを開封できる数、ポケストップやジムのフォトディスクで獲得できる数、所持できる数の上限が増加"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "ティア3",
+					"rank": "ランク50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "「おさんぽおこう」の効果時間が2倍"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "ティア4",
+					"rank": "ランク75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "タマゴをかえした時にもらえるXPと「ほしのすな」が増加"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"ko": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "티어 1",
+					"rank": "랭크 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "트레이너 레벨 31 이상의 트레이너가 포켓몬을 교환하면 \"포켓몬의 사탕XL\" 1개 반드시 획득"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "포켓몬을 교환했을 때 추가 \"포켓몬의 사탕\" 1개 획득"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "티어2",
+					"rank": "랭크 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "포켓스톱과 체육관 포토디스크를 통해 받고, 열고, 보관할 수 있는 선물 개수 증가"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "티어3",
+					"rank": "랭크 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "산책향로 지속 시간 2배"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "티어 4",
+					"rank": "랭크 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "알 부화 시 획득할 수 있는 XP와 \"별의모래\" 증가"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"ru": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Tier 1",
+					"rank": "Rank 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "One additional Candy for trading Pokémon"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 2",
+					"rank": "Rank 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Increased limits on opening Gifts, receiving Gifts from PokéStop and Gym Photo Discs, and storing Gifts"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 3",
+					"rank": "Rank 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "2× Daily Adventure Incense duration"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 4",
+					"rank": "Rank 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Increased XP and Stardust from hatching Eggs"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"th": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Tier 1",
+					"rank": "ระดับ 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "เทรนเนอร์เลเวล 31 ขึ้นไปจะได้รับประกันว่าจะได้ลูกอม XL 1 เม็ดเมื่อแลกเปลี่ยนโปเกมอน"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "ลูกอมเพิ่ม 1 เม็ดจากการแลกเปลี่ยนโปเกมอน"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 2",
+					"rank": "ระดับ 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "เพิ่มขีดจำกัดในการเปิดของขวัญ, รับของขวัญจากเสาโปเกสต็อปและแผ่นภาพในยิม รวมถึงเพิ่มจำนวนของขวัญที่สามารถเก็บได้"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 3",
+					"rank": "ระดับ 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "2× ระยะเวลาเครื่องหอมรายวัน"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Tier 4",
+					"rank": "ระดับ 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "เพิ่ม XP และสตาร์ดัสต์จากการฟักไข่"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"tr": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "Katman 1",
+					"rank": "Rütbe 1",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Eğitmen seviyesi 31 ve üzerinde olan Eğitmenler Pokémon takas ederken garantili bir Büyük Şeker alacak"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Pokémon takas ettiğinizde ek 1 Şeker"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Katman 2",
+					"rank": "Rütbe 25",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Hediyeleri açma, PokéDurak'lardan ve Spor Salonu Fotoğraf Disklerinden Hediyeleri alma ve saklama sınırları artırıldı"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Katman 3",
+					"rank": "Rütbe 50",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "2× Günlük Macera Tütsüsü süresi"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "Katman 4",
+					"rank": "Rütbe 75",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "Yumurta çatlatma karşılığında daha fazla TP ve Yıldız Tozu"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		},
+		"zh-Hant": {
+			"title": "Major Milestone Bonuses",
+			"tiers": [
+				{
+					"tier": "第1階段",
+					"rank": "1級",
+					"colors": [
+						"#9043B7",
+						"#543D98"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "等級31以上的訓練家交換寶可夢時，必定會獲得1顆糖果XL"
+								}
+							],
+							"level": 0
+						},
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "交換寶可夢時，額外獲得1顆糖果"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "第2段",
+					"rank": "25級",
+					"colors": [
+						"#B77143",
+						"#98583D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "訓練家能開啟、自寶可補給站與道館轉盤獲得，以及存放的友情禮物數量增加"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "第3階段",
+					"rank": "50級",
+					"colors": [
+						"#A6A6A6",
+						"#8D8D8D"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "散步小薰香持續時間加倍。"
+								}
+							],
+							"level": 0
+						}
+					]
+				},
+				{
+					"tier": "第4階段",
+					"rank": "75級",
+					"colors": [
+						"#C9AC56",
+						"#C3953E"
+					],
+					"blocks": [
+						{
+							"kind": "item",
+							"runs": [
+								{
+									"text": "孵蛋獲得的星星沙子與XP增加"
+								}
+							],
+							"level": 0
+						}
+					]
+				}
+			]
+		}
 	},
 	"availableLocales": [
 		"en",

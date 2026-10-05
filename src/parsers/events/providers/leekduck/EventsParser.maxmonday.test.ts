@@ -79,7 +79,12 @@ describe('Max Mondays', () => {
 		expect(result?.imgUrl).toBe(
 			'https://cdn.leekduck.com/assets/img/events/max-battles-kanto.jpg'
 		);
-		expect(result?.title.en).toBe('Dynamax Sableye during Max Monday');
+		// titled like a Spotlight Hour: the species, then what "Max Monday" is called in that language
+		expect(result?.title.en).toBe('Dynamax Sableye: Max Monday');
+		expect(result?.title.pt_br).toBe('Dynamax Sableye: Segunda Max');
+		expect(result?.title.de).toBe('Dynamax Sableye: Dyna-Montag');
+		// a language with no name of its own (Russian) uses English
+		expect(result?.title.ru).toBe('Dynamax Sableye: Max Monday');
 		// the season post's text is injected as the Monday's bonuses, per locale
 		expect(result?.bonuses).toEqual({
 			en: ['A bullet.', '*A footnote.'],

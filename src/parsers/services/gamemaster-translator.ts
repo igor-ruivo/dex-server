@@ -1,4 +1,8 @@
-import type { IParsedEvent, PublicEvent } from '../types/events';
+import type {
+	IMilestoneBonuses,
+	IParsedEvent,
+	PublicEvent,
+} from '../types/events';
 import type { RichBlock } from '../types/rich-text';
 import type HttpDataFetcher from './data-fetcher';
 
@@ -453,6 +457,9 @@ export const pairEventTranslations = (
 		const subtitle: Partial<Record<AvailableLocales, string>> = {};
 		const bonuses: Partial<Record<AvailableLocales, Array<string>>> = {};
 		const bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>> = {};
+		const milestoneBonuses: Partial<
+			Record<AvailableLocales, IMilestoneBonuses>
+		> = {};
 		const availableLocales: Array<AvailableLocales> = [];
 
 		for (const locale of locales) {
@@ -478,6 +485,11 @@ export const pairEventTranslations = (
 			subtitle[locale] =
 				localeEvent?.subtitle ?? enEvent.subtitle ?? enEvent.title;
 			bonuses[locale] = localeEvent ? localeEvent.bonuses : enEvent.bonuses;
+			const milestones =
+				localeEvent?.milestoneBonuses ?? enEvent.milestoneBonuses;
+			if (milestones) {
+				milestoneBonuses[locale] = milestones;
+			}
 			bonusBlocks[locale] = localeEvent
 				? localeEvent.bonusBlocks
 				: enEvent.bonusBlocks;
@@ -518,6 +530,7 @@ export const pairEventTranslations = (
 			maxBattles: enEvent.maxBattles,
 			bonuses,
 			bonusBlocks,
+			...(enEvent.milestoneBonuses ? { milestoneBonuses } : {}),
 			availableLocales,
 		});
 	}

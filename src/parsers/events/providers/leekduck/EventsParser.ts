@@ -13,7 +13,7 @@ import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import type { RichBlock } from '../../../types/rich-text';
 import PokemonMatcher from '../../utils/pokemon-matcher';
 import { richBlocksToLines } from '../../utils/rich-text';
-import { MAX_MONDAY_BONUSES } from './max-monday-bonuses';
+import { MAX_MONDAY_BONUSES, MAX_MONDAY_NAMES } from './max-monday-bonuses';
 
 const LEEKDUCK_EVENTS_URL = 'https://leekduck.com/events/';
 const LEEKDUCK_BASE_URL = 'https://leekduck.com';
@@ -372,9 +372,17 @@ class EventsParser {
 			return undefined;
 		}
 
+		// "<Dynamax species>: <Max Monday>", the way a Spotlight Hour is titled: the second half is what the season post calls a
+		// Max Monday in that language (see MAX_MONDAY_NAMES), English where a language has none.
+		const speciesPart = /^(.+?)\s+during\b/i.exec(parsed.title)?.[1];
 		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
-			translatedTitles[locale] = parsed.title;
+			const maxMonday =
+				MAX_MONDAY_NAMES[locale] ?? MAX_MONDAY_NAMES[AvailableLocales.en];
+			translatedTitles[locale] =
+				speciesPart && maxMonday
+					? `${speciesPart}: ${maxMonday}`
+					: parsed.title;
 		});
 
 		return {

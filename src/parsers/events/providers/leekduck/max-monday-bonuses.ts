@@ -529,3 +529,24 @@ export const MAX_MONDAY_BONUSES: Partial<
 		},
 	],
 };
+
+/**
+ * What "Max Monday" is called in each language, as the same season post writes it in the heading of that part (scraped once, like
+ * the text above). The game has no data-mined string for it. Russian has no post of its own: consumers use English.
+ */
+export const MAX_MONDAY_NAMES: Partial<Record<AvailableLocales, string>> = {
+	'en': 'Max Monday',
+	'pt_br': 'Segunda Max',
+	'de': 'Dyna-Montag',
+	'es': 'Lunes Max',
+	'es-MX': 'Lunes Max',
+	'fr': 'Lundi Dynamax',
+	'hi': 'मैक्स मंडे',
+	'id': 'Senin Max',
+	'it': 'Dynalunedì',
+	'ja': 'マックスマンデー',
+	'ko': '맥스 먼데이',
+	'th': 'วันจันทร์สุดแมกซ์',
+	'tr': 'Maksi Pazartesi',
+	'zh-Hant': '極巨星期一',
+};

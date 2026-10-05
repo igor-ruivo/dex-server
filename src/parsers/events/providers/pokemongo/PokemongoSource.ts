@@ -19,6 +19,7 @@ import {
 	mergeMaxEntries,
 	parseMaxBattleEntries,
 } from '../../utils/max-battles';
+import { parseMilestoneSection } from '../../utils/milestones';
 import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
@@ -78,6 +79,8 @@ const EVENT_SECTION_TYPES = {
 		'Increased Incense Encounters',
 	],
 	FEATURED: ['Featured Pokémon'],
+	/** A GO Pass post's tiers of bonuses (what ranks of the pass earn), read as the season page's milestone cards are. */
+	MILESTONES: ['Major Milestone Bonuses'],
 	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
 };
 
@@ -227,6 +230,8 @@ const buildEventObject = (
 		maxBattles: parsedContent.maxBattles,
 		bonuses: parsedContent.bonuses.length > 0 ? parsedContent.bonuses : [],
 		bonusBlocks: parsedContent.bonusBlocks,
+		milestoneSectionIndex: parsedContent.milestoneSectionIndex,
+		milestoneBonuses: parsedContent.milestoneBonuses,
 		locale: extractLocaleFromPath(post.url),
 		bonusSectionIndex: parsedContent.bonusSectionIndex,
 	};
@@ -345,7 +350,8 @@ class PokemonGoSource implements IEventSource {
 			const bonusSectionIndex = matchingOriginalEvent?.bonusSectionIndex ?? -1;
 			const parsedContent = this.parseTranslatedBonusFromPost(
 				sectionElements,
-				bonusSectionIndex
+				bonusSectionIndex,
+				matchingOriginalEvent?.milestoneSectionIndex ?? -1
 			);
 			const event = buildEventObject(
 				post,
@@ -379,6 +385,7 @@ class PokemonGoSource implements IEventSource {
 			bonuses: [],
 			bonusBlocks: [],
 			bonusSectionIndex,
+			milestoneSectionIndex: -1,
 		};
 	}
 
@@ -409,9 +416,21 @@ class PokemonGoSource implements IEventSource {
 
 	private parseTranslatedBonusFromPost(
 		sectionElements: Array<Element>,
-		bonusSectionIndex: number
+		bonusSectionIndex: number,
+		milestoneSectionIndex = -1
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock(bonusSectionIndex);
+
+		// the milestone section sits at the same place in the post of every language
+		if (
+			milestoneSectionIndex !== -1 &&
+			sectionElements.length > milestoneSectionIndex
+		) {
+			eventBlock.milestoneSectionIndex = milestoneSectionIndex;
+			eventBlock.milestoneBonuses = parseMilestoneSection(
+				sectionElements[milestoneSectionIndex]
+			);
+		}
 
 		if (
 			bonusSectionIndex === -1 ||
@@ -778,6 +797,12 @@ class PokemonGoSource implements IEventSource {
 			) as Array<HTMLElement>;
 
 			if (!sectionType) {
+				continue;
+			}
+
+			if (EVENT_SECTION_TYPES.MILESTONES.some((x) => x === sectionType)) {
+				eventBlock.milestoneSectionIndex = i;
+				eventBlock.milestoneBonuses = parseMilestoneSection(sectionElement);
 				continue;
 			}
 

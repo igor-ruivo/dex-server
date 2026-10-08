@@ -131,7 +131,6 @@ class SeasonParser {
 					milestoneSectionIndex: -1,
 					rewardBlocks: [],
 					rewardSectionIndex: -1,
-					rewardDropped: [],
 				});
 
 				continue;
@@ -276,7 +275,6 @@ class SeasonParser {
 				milestoneSectionIndex: -1,
 				rewardBlocks: [],
 				rewardSectionIndex: -1,
-				rewardDropped: [],
 			});
 		}
 

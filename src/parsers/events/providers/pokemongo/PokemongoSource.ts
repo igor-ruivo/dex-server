@@ -24,11 +24,7 @@ import { parseEventDateRange } from '../../utils/normalization';
 import PokemonMatcher, {
 	extractPokemonSpeciesIdsFromElements,
 } from '../../utils/pokemon-matcher';
-import {
-	FEATURED_REWARDS_TITLE,
-	rewardBlocksLike,
-	rewardBlocksWithout,
-} from '../../utils/rewards';
+import { FEATURED_REWARDS_TITLE, sectionBlocks } from '../../utils/rewards';
 import { parseRichBlocks } from '../../utils/rich-text';
 import PokemonGoNewsParser from './news-parsers/NewsParser';
 import PokemonGoPostParser from './news-parsers/PostParser';
@@ -239,7 +235,6 @@ const buildEventObject = (
 		milestoneBonuses: parsedContent.milestoneBonuses,
 		rewardBlocks: parsedContent.rewardBlocks,
 		rewardSectionIndex: parsedContent.rewardSectionIndex,
-		rewardDropped: parsedContent.rewardDropped,
 		locale: extractLocaleFromPath(post.url),
 		bonusSectionIndex: parsedContent.bonusSectionIndex,
 	};
@@ -360,8 +355,7 @@ class PokemonGoSource implements IEventSource {
 				sectionElements,
 				bonusSectionIndex,
 				matchingOriginalEvent?.milestoneSectionIndex ?? -1,
-				matchingOriginalEvent?.rewardSectionIndex ?? -1,
-				matchingOriginalEvent?.rewardDropped ?? []
+				matchingOriginalEvent?.rewardSectionIndex ?? -1
 			);
 			const event = buildEventObject(
 				post,
@@ -398,7 +392,6 @@ class PokemonGoSource implements IEventSource {
 			milestoneSectionIndex: -1,
 			rewardBlocks: [],
 			rewardSectionIndex: -1,
-			rewardDropped: [],
 		};
 	}
 
@@ -431,8 +424,7 @@ class PokemonGoSource implements IEventSource {
 		sectionElements: Array<Element>,
 		bonusSectionIndex: number,
 		milestoneSectionIndex = -1,
-		rewardSectionIndex = -1,
-		rewardDropped: Array<number> = []
+		rewardSectionIndex = -1
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock(bonusSectionIndex);
 
@@ -442,9 +434,8 @@ class PokemonGoSource implements IEventSource {
 			sectionElements.length > rewardSectionIndex
 		) {
 			eventBlock.rewardSectionIndex = rewardSectionIndex;
-			eventBlock.rewardBlocks = rewardBlocksLike(
-				sectionElements[rewardSectionIndex],
-				rewardDropped
+			eventBlock.rewardBlocks = sectionBlocks(
+				sectionElements[rewardSectionIndex]
 			);
 		}
 
@@ -852,17 +843,11 @@ class PokemonGoSource implements IEventSource {
 			);
 
 			// The same section also has rewards (rare candy, a Lucky Egg…) next to the Pokémon taken from it above: they are kept as
-			// formatted blocks, without the lines of those Pokémon.
+			// formatted blocks, along with the lines of those Pokémon.
 			if (sectionType === FEATURED_REWARDS_TITLE) {
-				const matcher = new PokemonMatcher(gameMasterPokemon, domain);
-				const names = extractPokemonSpeciesIdsFromElements(
-					sectionBodies,
-					matcher
-				).flatMap((entry) => matcher.plainNameOf(entry.speciesId) ?? []);
-				const { blocks, dropped } = rewardBlocksWithout(sectionElement, names);
+				const blocks = sectionBlocks(sectionElement);
 				eventBlock.rewardSectionIndex = i;
 				eventBlock.rewardBlocks = blocks;
-				eventBlock.rewardDropped = dropped;
 			}
 		}
 

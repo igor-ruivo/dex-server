@@ -130,7 +130,6 @@ export type EventBlock = EventData & {
 	 */
 	rewardBlocks: Array<RichBlock>;
 	rewardSectionIndex: number;
-	rewardDropped: Array<number>;
 };
 
 export type PokemonGoPost = ExtractedPostLink & {

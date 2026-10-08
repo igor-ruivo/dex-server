@@ -30,7 +30,6 @@ const [event] = (
 			researches: Array<{ speciesId: string }>;
 			rewardBlocks: Array<RichBlock>;
 			rewardSectionIndex: number;
-			rewardDropped: Array<number>;
 		}>;
 	}
 ).parseSinglePost(
@@ -51,12 +50,13 @@ describe('the rewards of a GO Pass post', () => {
 		expect(event.researches.map((p) => p.speciesId)).toContain('kyogre');
 	});
 
-	it('keeps the rewards as formatted blocks, without the line of the Pokémon and its shiny remark', () => {
+	it('keeps the rewards as formatted blocks, with the line of the Pokémon and its shiny remark', () => {
 		expect(lines(event.rewardBlocks)).toEqual([
 			[
 				'text',
 				'Complete Pass Tasks to rank up your GO Pass to earn the following rewards.',
 			],
+			['item', 'Encounter with Kyogre*'],
 			['item', 'Rare Candy XL'],
 			['item', 'Premium Battle Pass'],
 			['item', 'Lucky Egg'],
@@ -69,9 +69,8 @@ describe('the rewards of a GO Pass post', () => {
 			['item', 'One Super Incubator'],
 			['item', 'Additional encounters with even more Pokémon!'],
 			['item', 'And even more goodies!'],
+			['note', '*You might even encounter a Shiny one—if you’re lucky!'],
 		]);
 		expect(event.rewardSectionIndex).toBeGreaterThanOrEqual(0);
-		// the places left out: the Kyogre line and the remark
-		expect(event.rewardDropped).toHaveLength(2);
 	});
 });

@@ -197,6 +197,8 @@ const generateData = async () => {
 			raidBosses: leekduckBossEntries,
 			specialRaidBosses: leekduckEvents.specialRaidBosses,
 			spotlightHours: leekduckEvents.spotlightHours,
+			raidHours: leekduckEvents.raidHours,
+			maxMondays: leekduckEvents.maxMondays,
 		});
 
 		// Step 7c: QA that no output ended up with a locale silently missing
@@ -230,6 +232,10 @@ const generateData = async () => {
 		await fs.writeFile(
 			path.join(dataDir, 'max-mondays.json'),
 			JSON.stringify(leekduckEvents.maxMondays, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'raid-hours.json'),
+			JSON.stringify(leekduckEvents.raidHours, null, '\t')
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'current-max-battles.json'),

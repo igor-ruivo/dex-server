@@ -85,11 +85,11 @@ const LOCALE_GAME_MASTER_FILES: Record<AvailableLocales, string> = {
 		'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Texts/Latest%20APK/JSON/i18n_chinesetraditional.json',
 };
 
-// Just the bare " and " conjunction for dual-species Spotlight Hours
+// Just the bare " and " conjunction for dual-species Events
 // ("Bulbasaur and Ivysaur Spotlight Hour") — the "Spotlight Hour" phrase
 // itself now comes live from the data-mined `spotlight_hour_event_name` key
 // (game-translations-provider.ts), not from a hand-typed map like this one.
-const SPOTLIGHT_HOUR_AND_TRANSLATIONS: Record<
+const EVENTS_AND_TRANSLATIONS: Record<
 	AvailableLocales,
 	Record<string, string>
 > = {
@@ -391,12 +391,12 @@ const replaceLocalizedStringComponents = (
 	return translated;
 };
 
-export const getSpotlightHourAndTranslation = (
+export const getEventAndTranslation = (
 	locale: AvailableLocales,
 	enPhrase: string
 ) => {
 	return replaceLocalizedStringComponents(
-		SPOTLIGHT_HOUR_AND_TRANSLATIONS[locale],
+		EVENTS_AND_TRANSLATIONS[locale],
 		enPhrase
 	);
 };

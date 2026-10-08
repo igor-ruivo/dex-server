@@ -86,6 +86,7 @@ const REQUIRED_KEYS = [
 	'friend_singular',
 	'friendslist_sort_gift',
 	'spotlight_hour_event_name',
+	'raid_hour',
 	'pokedex_mode_name_mega',
 	'pokedex_info_variant_mega_primal',
 	'mega_energy',

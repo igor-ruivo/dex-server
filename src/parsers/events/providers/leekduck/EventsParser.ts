@@ -5,7 +5,7 @@ import type HttpDataFetcher from '../../../services/data-fetcher';
 import type { GameTranslations } from '../../../services/game-translations-provider';
 import {
 	AvailableLocales,
-	getSpotlightHourAndTranslation,
+	getEventAndTranslation,
 	getSpotlightHourBonusTranslation,
 } from '../../../services/gamemaster-translator';
 import type { IEntry } from '../../../types/events';
@@ -38,6 +38,15 @@ export interface ILeekduckMaxMonday {
 	bonuses: Partial<Record<AvailableLocales, Array<string>>>;
 	/** The same, with its formatting kept (bullet points, bold, the footnote as a note). */
 	bonusBlocks: Partial<Record<AvailableLocales, Array<RichBlock>>>;
+	imgUrl?: string;
+	rawUrl: string;
+}
+
+export interface ILeekduckRaidHour {
+	title: Partial<Record<AvailableLocales, string>>;
+	date: number;
+	dateEnd: number;
+	pokemons: Array<IEntry>;
 	imgUrl?: string;
 	rawUrl: string;
 }
@@ -125,7 +134,6 @@ class EventsParser {
 		).map((e) => {
 			return (e.parentElement as HTMLAnchorElement).href;
 		});
-		// Raid Hours (a Pokémon's five-star raids for an hour, weekly on Wednesdays) are special raid windows like the ones above.
 		const raidHourUrls = Array.from(
 			doc.getElementsByClassName('event-item-wrapper raid-hour')
 		).map((e) => {
@@ -157,6 +165,7 @@ class EventsParser {
 		const spotlightHours: Array<ILeekduckSpotlightHour> = [];
 		const specialRaidBosses: Array<ILeekduckSpecialRaidBoss> = [];
 		const maxMondays: Array<ILeekduckMaxMonday> = [];
+		const raidHours: Array<ILeekduckRaidHour> = [];
 
 		const eventPromises = urls.map(async (url) => {
 			try {
@@ -179,6 +188,15 @@ class EventsParser {
 					if (spotlightHour) {
 						spotlightHours.push(spotlightHour);
 					}
+				} else if (parsed.title.includes('Raid Hour')) {
+					const raidHour = this.parseRaidHourEvent(
+						parsed,
+						this.gameMasterPokemon,
+						url
+					);
+					if (raidHour) {
+						raidHours.push(raidHour);
+					}
 				} else {
 					const specialRaidBoss = this.parseSpecialRaidBossEvent(
 						parsed,
@@ -198,6 +216,16 @@ class EventsParser {
 
 		return {
 			spotlightHours: spotlightHours.sort(
+				(s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => {
+					if (s1.date !== s2.date) {
+						return s1.date - s2.date;
+					} else {
+						return s1.rawUrl.localeCompare(s2.rawUrl);
+					}
+				}
+			),
+
+			raidHours: raidHours.sort(
 				(s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => {
 					if (s1.date !== s2.date) {
 						return s1.date - s2.date;
@@ -278,6 +306,47 @@ class EventsParser {
 		return { title, date, dateEnd, htmlDoc };
 	}
 
+	private parseRaidHourEvent(
+		parsed: ParsedEventCommon,
+		gameMasterPokemon: GameMasterData,
+		url: string
+	): ILeekduckRaidHour | undefined {
+		const rawPkmName = parsed.title.split('Raid Hour')[0].trim();
+		const pokemons = this.matchPokemonEntries(
+			rawPkmName,
+			gameMasterPokemon,
+			false,
+			false,
+			this.extractShinyNames(parsed.htmlDoc)
+		);
+
+		if (pokemons.length === 0) {
+			return undefined;
+		}
+
+		// "<species>: <raid-hour-event-name>" — the event-name half is
+		// sourced live from the data-mined `raid_hour` key
+		// (this.gameTranslations), not a hand-typed translation (see
+		// game-translations-provider.ts's DISPLAY_SOURCE_KEYS.raid_hour).
+		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			const localizedName = getEventAndTranslation(locale, rawPkmName);
+			const eventName = this.gameTranslations.raidHour?.[locale];
+			translatedTitles[locale] = eventName
+				? `${localizedName}: ${eventName}`
+				: parsed.title;
+		});
+
+		return {
+			title: translatedTitles,
+			date: parsed.date,
+			dateEnd: parsed.dateEnd,
+			pokemons,
+			imgUrl: 'https://cdn.leekduck.com/assets/img/events/raidhour.jpg',
+			rawUrl: url,
+		};
+	}
+
 	private parseSpotlightHourEvent(
 		parsed: ParsedEventCommon,
 		gameMasterPokemon: GameMasterData,
@@ -307,7 +376,7 @@ class EventsParser {
 		// equivalent exists for that bare conjunction.
 		const translatedTitles: Partial<Record<AvailableLocales, string>> = {};
 		Object.values(AvailableLocales).forEach((locale) => {
-			const localizedName = getSpotlightHourAndTranslation(locale, rawPkmName);
+			const localizedName = getEventAndTranslation(locale, rawPkmName);
 			const eventName = this.gameTranslations.spotlightHour?.[locale];
 			translatedTitles[locale] = eventName
 				? `${localizedName}: ${eventName}`

@@ -1,6 +1,8 @@
 import type { IEntry, IRocketGrunt } from '../../../types/events';
 import { PokemonTypes } from '../../../types/pokemon';
 import type {
+	ILeekduckMaxMonday,
+	ILeekduckRaidHour,
 	ILeekduckSpecialRaidBoss,
 	ILeekduckSpotlightHour,
 } from './EventsParser';
@@ -11,6 +13,8 @@ export interface LeekduckQaInput {
 	raidBosses: Array<IEntry>;
 	specialRaidBosses: Array<ILeekduckSpecialRaidBoss>;
 	spotlightHours: Array<ILeekduckSpotlightHour>;
+	raidHours: Array<ILeekduckRaidHour>;
+	maxMondays: Array<ILeekduckMaxMonday>;
 }
 
 // Standard egg distances LeekDuck has always listed. If any of these ever
@@ -175,6 +179,40 @@ function validateSpotlightHours(
 	}
 }
 
+function validateRaidHours(
+	raidHours: Array<ILeekduckRaidHour>,
+	errors: Array<string>
+) {
+	if (raidHours.length === 0) {
+		errors.push('Raid hours: raid-hours.json would be completely empty.');
+		return;
+	}
+
+	for (const raidHour of raidHours) {
+		if (raidHour.pokemons.length === 0) {
+			const title = raidHour.title.en ?? raidHour.rawUrl;
+			errors.push(`Raid hours: "${title}" has no Pokemon matched.`);
+		}
+	}
+}
+
+function validateMaxMondays(
+	maxMondays: Array<ILeekduckMaxMonday>,
+	errors: Array<string>
+) {
+	if (maxMondays.length === 0) {
+		errors.push('Max Mondays: max-mondays.json would be completely empty.');
+		return;
+	}
+
+	for (const maxMonday of maxMondays) {
+		if (maxMonday.pokemons.length === 0) {
+			const title = maxMonday.title.en ?? maxMonday.rawUrl;
+			errors.push(`Max Mondays: "${title}" has no Pokemon matched.`);
+		}
+	}
+}
+
 // Guards against LeekDuck silently breaking any of our scrapers (HTML/class
 // reshuffles, id renames, etc.) by asserting the shape of a healthy dataset:
 // every source that's always populated on the live site must still be
@@ -189,6 +227,8 @@ export function validateLeekduckData(input: LeekduckQaInput): void {
 	validateRaidBosses(input.raidBosses, errors);
 	validateSpecialRaidBosses(input.specialRaidBosses, errors);
 	validateSpotlightHours(input.spotlightHours, errors);
+	validateRaidHours(input.raidHours, errors);
+	validateMaxMondays(input.maxMondays, errors);
 
 	if (errors.length > 0) {
 		throw new Error(

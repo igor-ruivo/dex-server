@@ -293,6 +293,8 @@ const DISPLAY_SOURCE_KEYS: Record<string, string> = {
 	// SPOTLIGHT_HOUR_TITLE_TRANSLATIONS map in gamemaster-translator.ts.
 	spotlightHour: 'spotlight_hour_event_name',
 
+	raidHour: 'raid_hour',
+
 	// "Mega" — go-pokedex combines this with `legendaryDisplay`/other concept
 	// words client-side (e.g. "Legendary Mega") rather than baking every
 	// combination in here; see GameTranslator.ts call sites.

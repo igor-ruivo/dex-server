@@ -522,7 +522,9 @@ class PokemonGoSource implements IEventSource {
 				(event.researches && event.researches.length > 0) ||
 				(event.eggs && event.eggs.length > 0) ||
 				(event.incenses && event.incenses.length > 0) ||
-				(event.maxBattles && event.maxBattles.length > 0)) &&
+				(event.maxBattles && event.maxBattles.length > 0) ||
+				(event.rewardBlocks && event.rewardBlocks.length > 0) ||
+				event.milestoneBonuses) &&
 				event.dateRanges &&
 				event.dateRanges.length > 0)
 		);

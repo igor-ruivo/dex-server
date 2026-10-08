@@ -189,9 +189,9 @@ function validateRaidHours(
 	}
 
 	for (const raidHour of raidHours) {
-		if (raidHour.pokemons.length === 0) {
+		if (raidHour.raids.length === 0) {
 			const title = raidHour.title.en ?? raidHour.rawUrl;
-			errors.push(`Raid hours: "${title}" has no Pokemon matched.`);
+			errors.push(`Raid hours: "${title}" has no Raid matched.`);
 		}
 	}
 }

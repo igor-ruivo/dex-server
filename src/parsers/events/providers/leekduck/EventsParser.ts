@@ -46,7 +46,7 @@ export interface ILeekduckRaidHour {
 	title: Partial<Record<AvailableLocales, string>>;
 	date: number;
 	dateEnd: number;
-	pokemons: Array<IEntry>;
+	raids: Array<IEntry>;
 	imgUrl?: string;
 	rawUrl: string;
 }
@@ -226,7 +226,7 @@ class EventsParser {
 			),
 
 			raidHours: raidHours.sort(
-				(s1: ILeekduckSpotlightHour, s2: ILeekduckSpotlightHour) => {
+				(s1: ILeekduckRaidHour, s2: ILeekduckRaidHour) => {
 					if (s1.date !== s2.date) {
 						return s1.date - s2.date;
 					} else {
@@ -312,7 +312,7 @@ class EventsParser {
 		url: string
 	): ILeekduckRaidHour | undefined {
 		const rawPkmName = parsed.title.split('Raid Hour')[0].trim();
-		const pokemons = this.matchPokemonEntries(
+		const raids = this.matchPokemonEntries(
 			rawPkmName,
 			gameMasterPokemon,
 			false,
@@ -320,7 +320,7 @@ class EventsParser {
 			this.extractShinyNames(parsed.htmlDoc)
 		);
 
-		if (pokemons.length === 0) {
+		if (raids.length === 0) {
 			return undefined;
 		}
 
@@ -341,7 +341,7 @@ class EventsParser {
 			title: translatedTitles,
 			date: parsed.date,
 			dateEnd: parsed.dateEnd,
-			pokemons,
+			raids,
 			imgUrl: 'https://cdn.leekduck.com/assets/img/events/raidhour.jpg',
 			rawUrl: url,
 		};

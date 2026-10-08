@@ -30,7 +30,7 @@ const parse = (title: string) => {
 	);
 	return (
 		parser as unknown as {
-			parseSpecialRaidBossEvent: (
+			parseRaidHourEvent: (
 				parsed: {
 					title: string;
 					date: number;
@@ -43,7 +43,7 @@ const parse = (title: string) => {
 				| { raids: Array<{ speciesId: string; kind?: string }>; date: number }
 				| undefined;
 		}
-	).parseSpecialRaidBossEvent(
+	).parseRaidHourEvent(
 		{
 			title,
 			date: 5,

@@ -98,7 +98,7 @@ const shinyNameKey = (name: string): string =>
 	name
 		.toLowerCase()
 		.replace(/\(.*?\)/g, ' ')
-		.replace(/\b(shadow|mega|primal)\b/g, ' ')
+		.replace(/\b(shadow|mega|primal|forme)\b/g, ' ')
 		.replace(/\s+/g, ' ')
 		.trim();
 
@@ -167,6 +167,10 @@ class EventsParser {
 		const maxMondays: Array<ILeekduckMaxMonday> = [];
 		const raidHours: Array<ILeekduckRaidHour> = [];
 
+		// RaidHours parses come last, because we need the specialRaidBosses to all finish first.
+		// That's because that's where we'll fetch their shiny status.
+		const pendingRaidHourEvents: Array<[ParsedEventCommon, string]> = [];
+
 		const eventPromises = urls.map(async (url) => {
 			try {
 				const eventHtml = await this.dataFetcher.fetchText(url);
@@ -189,14 +193,7 @@ class EventsParser {
 						spotlightHours.push(spotlightHour);
 					}
 				} else if (parsed.title.includes('Raid Hour')) {
-					const raidHour = this.parseRaidHourEvent(
-						parsed,
-						this.gameMasterPokemon,
-						url
-					);
-					if (raidHour) {
-						raidHours.push(raidHour);
-					}
+					pendingRaidHourEvents.push([parsed, url]);
 				} else {
 					const specialRaidBoss = this.parseSpecialRaidBossEvent(
 						parsed,
@@ -213,6 +210,18 @@ class EventsParser {
 		});
 
 		await Promise.all(eventPromises);
+
+		for (const [raidHourEvent, url] of pendingRaidHourEvents) {
+			const raidHour = this.parseRaidHourEvent(
+				raidHourEvent,
+				this.gameMasterPokemon,
+				url,
+				specialRaidBosses
+			);
+			if (raidHour) {
+				raidHours.push(raidHour);
+			}
+		}
 
 		return {
 			spotlightHours: spotlightHours.sort(
@@ -309,15 +318,17 @@ class EventsParser {
 	private parseRaidHourEvent(
 		parsed: ParsedEventCommon,
 		gameMasterPokemon: GameMasterData,
-		url: string
+		url: string,
+		specialBosses: Array<ILeekduckSpecialRaidBoss>
 	): ILeekduckRaidHour | undefined {
 		const rawPkmName = parsed.title.split('Raid Hour')[0].trim();
+		const isMega = rawPkmName.includes('Mega');
 		const raids = this.matchPokemonEntries(
 			rawPkmName,
 			gameMasterPokemon,
 			false,
-			false,
-			this.extractShinyNames(parsed.htmlDoc)
+			isMega,
+			this.extractShinyNames(parsed.htmlDoc, specialBosses)
 		);
 
 		if (raids.length === 0) {
@@ -481,8 +492,7 @@ class EventsParser {
 		url: string
 	): ILeekduckSpecialRaidBoss | undefined {
 		const parts = parsed.title.split(' in ');
-		// "Yveltal Raid Hour": the Pokémon is what comes before "Raid Hour"
-		const rawPkmName = parts[0].replace(/\s+Raid Hour\b.*$/i, '');
+		const rawPkmName = parts[0];
 		const raidType = parts[1] ?? '';
 		const isShadow =
 			raidType.includes('Shadow') || rawPkmName.includes('Shadow');
@@ -546,7 +556,8 @@ class EventsParser {
 				entries.push({
 					speciesId: entry.speciesId,
 					kind: isMega ? 'mega' : '5',
-					shiny: shinyNames.has(shinyNameKey(p)),
+					shiny:
+						shinyNames.has(entry.speciesId) || shinyNames.has(shinyNameKey(p)),
 				});
 			}
 		}
@@ -557,7 +568,21 @@ class EventsParser {
 	 * The names (lowercased) of the Pokémon an event page lists with the shiny mark: each `.pkmn-list-item` carries an
 	 * `img.shiny-icon` next to its `.pkmn-name` when that Pokémon can be shiny.
 	 */
-	private extractShinyNames(htmlDoc: Document): Set<string> {
+	private extractShinyNames(
+		htmlDoc: Document,
+		specialBosses?: Array<ILeekduckSpecialRaidBoss>
+	): Set<string> {
+		// Edge case where the caller of this method sends an optional list of previously parsed specialBosses
+		// Useful for when Leekduck doesn't provide information in the post's body for whether or not the species can be shiny.
+		// So we assume they'll be shiny whether or not the current boss rotation has them shiny.
+		if (specialBosses) {
+			return new Set(
+				specialBosses.flatMap((b) =>
+					b.raids.filter((r) => r.shiny).map((s) => s.speciesId)
+				)
+			);
+		}
+
 		const names = new Set<string>();
 		for (const item of Array.from(
 			htmlDoc.querySelectorAll('.pkmn-list-item')

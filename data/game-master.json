@@ -48826,7 +48826,8 @@
 		},
 		"fastMoves": [
 			"SHADOW_CLAW",
-			"SNARL"
+			"SNARL",
+			"SUCKER_PUNCH"
 		],
 		"chargedMoves": [
 			"FOUL_PLAY",
@@ -48835,7 +48836,9 @@
 			"NIGHT_SHADE"
 		],
 		"extraChargedMoves": [],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"SUCKER_PUNCH"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,

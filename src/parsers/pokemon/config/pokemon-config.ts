@@ -203,6 +203,10 @@ export const POKEMON_CONFIG = {
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
 		[
+			'chandelure_mega',
+			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/609_f2.png',
+		],
+		[
 			'chesnaught_mega',
 			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/652_f2.png',
 		],

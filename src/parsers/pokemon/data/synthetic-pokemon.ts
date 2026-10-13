@@ -59,7 +59,6 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 			'OVERHEAT',
 			'FLAME_CHARGE',
 			'POLTERGEIST',
-			'OMINOUS_WIND_PLUS',
 		],
 		extraChargedMoves: ['OMINOUS_WIND_PLUS'],
 		eliteMoves: ['POLTERGEIST'],

@@ -19,7 +19,10 @@ import SeasonParser from '../parsers/events/providers/pokemongo/SeasonParser';
 import GameMasterParser, {
 	getDomains,
 } from '../parsers/pokemon/game-master-parser';
+import { validateImageUrls } from '../parsers/pokemon/image-urls-qa';
 import PvPParser from '../parsers/pokemon/pvp-parser';
+import type { ImageHostCache } from '../parsers/pokemon/utils/image-host-resolver';
+import ImageHostResolver from '../parsers/pokemon/utils/image-host-resolver';
 import HttpDataFetcher from '../parsers/services/data-fetcher';
 import { validateSkippedFetches } from '../parsers/services/fetch-failures-qa';
 import {
@@ -61,7 +64,19 @@ const generateData = async () => {
 		const moves = await movesProvider.fetchMoves();
 
 		// Step 3: Parse Game Master data first
-		const gameMasterParser = new GameMasterParser(dataFetcher, moves);
+		// Which artwork host serves each picture is remembered across runs (data/image-hosts.json), so only new pictures are probed.
+		const imageHostsPath = path.join(process.cwd(), 'data', 'image-hosts.json');
+		const imageHostResolver = new ImageHostResolver(
+			await fs
+				.readFile(imageHostsPath, 'utf-8')
+				.then((content) => JSON.parse(content) as ImageHostCache)
+				.catch(() => ({}))
+		);
+		const gameMasterParser = new GameMasterParser(
+			dataFetcher,
+			moves,
+			imageHostResolver
+		);
 		const pokemonDictionary = await gameMasterParser.parse();
 
 		// Step 3a: Precompute the Mega<->base and Shadow<->non-Shadow
@@ -262,6 +277,10 @@ const generateData = async () => {
 			JSON.stringify(events, null, '\t')
 		);
 		await fs.writeFile(
+			imageHostsPath,
+			JSON.stringify(imageHostResolver.getCache(), null, '\t')
+		);
+		await fs.writeFile(
 			path.join(dataDir, 'game-master.json'),
 			JSON.stringify(pokemonDictionary, null, '\t')
 		);
@@ -339,6 +358,9 @@ const generateData = async () => {
 		// skipped fetches isn't known until every fetch in the run has
 		// resolved).
 		validateSkippedFetches(skipped);
+
+		// Same reasoning: a Pokémon whose official artwork no host serves (yet) would ship a broken picture.
+		validateImageUrls(pokemonDictionary, imageHostResolver.getUnresolved());
 	} catch (error) {
 		console.error('Data generation failed:', error);
 		process.exit(1);

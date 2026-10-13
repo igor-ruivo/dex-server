@@ -7,6 +7,7 @@ import type {
 } from '../types/pokemon';
 import { POKEMON_CONFIG } from './config/pokemon-config';
 import { SYNTHETIC_POKEMON } from './data/synthetic-pokemon';
+import type ImageHostResolver from './utils/image-host-resolver';
 import ImageUrlBuilder from './utils/image-url-builder';
 import PokemonTransformer from './utils/pokemon-transformer';
 import PokemonValidator from './utils/pokemon-validator';
@@ -46,7 +47,8 @@ export const getDomains = (
 class GameMasterParser {
 	constructor(
 		private readonly dataFetcher: IDataFetcher,
-		private readonly moves: Record<string, IGameMasterMove>
+		private readonly moves: Record<string, IGameMasterMove>,
+		private readonly imageHostResolver?: ImageHostResolver
 	) {}
 
 	async parse() {
@@ -68,6 +70,7 @@ class GameMasterParser {
 			const allPokemon = [...rawData, ...dedupedSynthetic];
 
 			const pokemonDictionary = this.transformData(allPokemon, this.moves);
+			await this.resolveImageHosts(pokemonDictionary);
 			console.log(
 				`Successfully parsed ${Object.keys(pokemonDictionary).length} Pokemon`
 			);
@@ -107,6 +110,21 @@ class GameMasterParser {
 		this.applyManualCorrections(pokemonDictionary);
 
 		return pokemonDictionary;
+	}
+
+	/** Points every official-artwork `imageUrl` at the host that actually serves it. */
+	private async resolveImageHosts(pokemonDictionary: GameMasterData) {
+		if (!this.imageHostResolver) {
+			return;
+		}
+
+		const pokemon = Object.values(pokemonDictionary);
+		const resolved = await this.imageHostResolver.resolveAll(
+			pokemon.map((p) => p.imageUrl)
+		);
+		for (const p of pokemon) {
+			p.imageUrl = resolved.get(p.imageUrl) ?? p.imageUrl;
+		}
 	}
 
 	private checkPokemonMoves(

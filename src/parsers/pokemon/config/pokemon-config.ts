@@ -199,57 +199,12 @@ export const POKEMON_CONFIG = {
 
 	// Image URL builders
 	POKEMON_BASE_URL: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/',
+	// Where the newer artwork ships instead — see ImageHostResolver
+	POKEMON_FALLBACK_BASE_URL:
+		'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/',
 
 	// Override mappings for special Pokemon
 	IMAGE_OVERRIDE_MAPPINGS: new Map<string, string>([
-		[
-			'chandelure_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/609_f2.png',
-		],
-		[
-			'chesnaught_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/652_f2.png',
-		],
-		[
-			'delphox_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/655_f2.png',
-		],
-		[
-			'starmie_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/121_f2.png',
-		],
-		[
-			'staraptor_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/398_f2.png',
-		],
-		[
-			'raichu_alolan',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f2.png',
-		],
-		[
-			'dragonite_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/149_f2.png',
-		],
-		[
-			'victreebel_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/071_f2.png',
-		],
-		[
-			'malamar_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/687_f2.png',
-		],
-		[
-			'skarmory_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/227_f2.png',
-		],
-		[
-			'raichu_mega_x',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f3.png',
-		],
-		[
-			'raichu_mega_y',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/026_f4.png',
-		],
 		[
 			'slowbro_mega',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/080_f2.png',
@@ -410,10 +365,6 @@ export const POKEMON_CONFIG = {
 		[
 			'mewtwo_mega_y',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png',
-		],
-		[
-			'falinks_mega',
-			'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/870_f2.png',
 		],
 	]),
 

@@ -63,7 +63,13 @@
 		"imageUrl": "https://lh3.googleusercontent.com/6P6KzIHu36YynVJ4Bn6-2y_98P8qbfr5VP6aBOsIC83pPQ6NifL2ZrIWrF12RCzi-yJzdpuVsboYspq5mfkvph2B5OJslcoYMaHnNM8ua8og=s0-e365",
 		"source": "pokemongo",
 		"wild": [],
-		"raids": [],
+		"raids": [
+			{
+				"speciesId": "chandelure_mega",
+				"shiny": true,
+				"kind": "mega"
+			}
+		],
 		"eggs": [],
 		"researches": [
 			{

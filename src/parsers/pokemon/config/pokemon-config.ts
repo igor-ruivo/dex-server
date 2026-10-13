@@ -161,10 +161,8 @@ export const POKEMON_CONFIG = {
 		'ditto',
 		'shedinja',
 		'spewpa',
-		'camerupt_mega',
 		'aegislash_blade',
-		'staraptor_mega',
-		'bramblin',
+		'chandelure_mega',
 	]),
 
 	// Pokemon that should be excluded

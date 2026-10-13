@@ -51403,6 +51403,9 @@
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false,
+		"megaFormsIds": [
+			"chandelure_mega"
+		],
 		"shadowSpecies": "chandelure_shadow"
 	},
 	"chandelure_shadow": {
@@ -70994,5 +70997,53 @@
 		"isMythical": false,
 		"isBeast": false,
 		"nonShadowSpecies": "morelull"
+	},
+	"chandelure_mega": {
+		"dex": 609,
+		"speciesId": "chandelure_mega",
+		"speciesName": "Chandelure (Mega)",
+		"types": [
+			"Ghost",
+			"Fire"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/609_f2.png",
+		"goImageUrl": "609.fMEGA.icon.png",
+		"shinyGoImageUrl": "609.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 335,
+			"def": 227,
+			"hp": 155
+		},
+		"fastMoves": [
+			"HEX",
+			"FIRE_SPIN",
+			"INCINERATE",
+			"ASTONISH"
+		],
+		"chargedMoves": [
+			"ENERGY_BALL",
+			"SHADOW_BALL",
+			"OVERHEAT",
+			"FLAME_CHARGE",
+			"POLTERGEIST",
+			"OMINOUS_WIND_PLUS",
+			"OMINOUS_WIND_PLUS",
+			"RETURN"
+		],
+		"extraChargedMoves": [
+			"OMINOUS_WIND_PLUS"
+		],
+		"eliteMoves": [
+			"POLTERGEIST"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"isSuperMega": true,
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"baseSpecies": "chandelure"
 	}
 }

@@ -426,6 +426,35 @@ class MovesProvider {
 			};
 		}
 
+		const ominousWindPlusMoveName: Partial<Record<AvailableLocales, string>> =
+			{};
+		Object.values(AvailableLocales).forEach((locale) => {
+			ominousWindPlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0069')}+`;
+		});
+
+		if (!movesDictionary.OMINOUS_WIND_PLUS) {
+			movesDictionary.OMINOUS_WIND_PLUS = {
+				moveId: 'OMINOUS_WIND_PLUS',
+				vId: '0069',
+				type: 'ghost',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 50,
+				pvePower: 145,
+				pvpEnergy: -40,
+				pveEnergy: -100,
+				pvpCooldown: 0,
+				pveCooldown: 2.5,
+				moveName: ominousWindPlusMoveName,
+				buffs: {
+					buffActivationChance: 0.1,
+					userAttackStatStageChange: 1,
+					userDefenseStatStageChange: 1,
+				},
+			};
+		}
+
 		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
 		return expandHiddenPower(movesDictionary, (locale, type) =>
 			this.translatorService.getRawString(locale, `pokemon_type_${type}`)

@@ -9,6 +9,7 @@
 		"format": "npx prettier --write \"src/**/*.{ts,js,json,css,md}\" *.json *.md *.cjs ./.github/workflows/**/*.yml",
 		"build": "pnpm tsc",
 		"debug": "npx tsx --inspect-brk src/bin/generate-data.ts",
+		"ship": "pnpm run lint && pnpm run test && pnpm run generate && git add . && git commit -m \"Changes\" && git push origin main",
 		"test": "vitest run",
 		"test:watch": "vitest"
 	},

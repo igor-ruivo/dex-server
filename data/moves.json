@@ -10850,6 +10850,41 @@
 			"attackerDefenseStatStageChange": -3
 		}
 	},
+	"OMINOUS_WIND_PLUS": {
+		"moveId": "OMINOUS_WIND_PLUS",
+		"vId": "0069",
+		"type": "ghost",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 50,
+		"pvePower": 145,
+		"pvpEnergy": -40,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"moveName": {
+			"en": "Ominous Wind+",
+			"pt_br": "Vento Ominoso+",
+			"de": "Unheilböen+",
+			"es": "Viento Aciago+",
+			"es-MX": "Viento Ominoso+",
+			"fr": "Vent Mauvais+",
+			"hi": "ऑमनस+",
+			"id": "Angin Mencurigakan+",
+			"it": "Funestovento+",
+			"ja": "あやしいかぜ+",
+			"ko": "괴상한바람+",
+			"ru": "Зловещий Ветер+",
+			"th": "สายลมบอกเหตุ+",
+			"tr": "Uğursuz Rüzgâr+",
+			"zh-Hant": "奇異之風+"
+		},
+		"buffs": {
+			"buffActivationChance": 0.1,
+			"userAttackStatStageChange": 1,
+			"userDefenseStatStageChange": 1
+		}
+	},
 	"HIDDEN_POWER_BUG": {
 		"moveId": "HIDDEN_POWER_BUG",
 		"isSuperMega": false,

@@ -449,8 +449,8 @@ class MovesProvider {
 				moveName: ominousWindPlusMoveName,
 				buffs: {
 					buffActivationChance: 0.1,
-					userAttackStatStageChange: 1,
-					userDefenseStatStageChange: 1,
+					attackerAttackStatStageChange: 1,
+					attackerDefenseStatStageChange: 1,
 				},
 			};
 		}

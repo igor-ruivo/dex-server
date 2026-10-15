@@ -53,13 +53,16 @@ export const parseMaxBattleEntries = (
 	lines: ReadonlyArray<string>,
 	matcher: PokemonMatcher
 ): Array<IEntry> => {
-	const tier = maxBattleTier(lines.join(' '));
+	// the tier is the one the sentence that introduces a name speaks of ("…debut in five-star Max Battles!"), and holds until the
+	// next sentence that introduces others: "…debut in GO Pass: Into the Wild!" names no tier, so its Pokémon have none
+	let tier = maxBattleTier(lines.join(' '));
 	const found: Array<{
 		entry: IEntry;
 		starred: boolean;
 		announcedShiny: boolean;
 	}> = [];
 	for (const line of lines) {
+		const foundBefore = found.length;
 		for (const match of line.matchAll(MAX_NAME)) {
 			const form = match[1].toLowerCase() as MaxForm;
 			const name = match[2]
@@ -91,6 +94,10 @@ export const parseMaxBattleEntries = (
 				starred: after === '*',
 				announcedShiny: /\bshiny\s*$/i.test(before),
 			});
+		}
+		// a line that names no one is an introduction (not a footnote): the tier it speaks of, if any, is the one of what follows
+		if (found.length === foundBefore && !line.startsWith('*')) {
+			tier = maxBattleTier(line);
 		}
 	}
 	const usesAsterisks = found.some((f) => f.starred);
@@ -190,6 +197,27 @@ export const parseTieredMaxBattleEntries = (
 	}
 	return out;
 };
+
+/**
+ * The lines of text of the blocks of a section, headings included, with a line break (<br>) also starting a new line: a heading
+ * and the names under it often share one paragraph ("<strong>One-Star Max Battles</strong><br>Ralts*").
+ */
+export const maxBattleHeadedLinesOf = (
+	bodies: ReadonlyArray<Element>
+): Array<string> =>
+	bodies.flatMap((body) => {
+		const blocks = Array.from(
+			body.querySelectorAll('li, p, h1, h2, h3, h4, h5, h6')
+		);
+		return (blocks.length > 0 ? blocks : [body]).flatMap((block) => {
+			const copy = block.cloneNode(true) as Element;
+			copy.querySelectorAll('br').forEach((br) => br.replaceWith('\n'));
+			return (copy.textContent ?? '')
+				.split('\n')
+				.map((line) => line.replace(/\s+/g, ' ').trim())
+				.filter(Boolean);
+		});
+	});
 
 /** Adds Max Pokémon to a list: the same species in the same form is kept once (and shiny if any of its mentions says so). */
 export const mergeMaxEntries = (

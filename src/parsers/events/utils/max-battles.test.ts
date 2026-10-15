@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 
 import type { IEntry } from '../../types/events';
 import {
+	maxBattleHeadedLinesOf,
 	maxBattleLinesOf,
 	maxBattleTier,
 	maxFormOfTitle,
@@ -46,6 +47,45 @@ const DYNAMAX_DEBUT = `<div class="_containerBlock_1p4ol_2"><div class="_headlin
 const FEATURED = `<div class="_containerBlock_1p4ol_2"><div class="_headlineWrapper_1p4ol_37"><h2>Featured Pokémon</h2></div><div class="_markdown_13f4f_273"><p>The following Pokémon will appear in six-star Max Battles!</p>
 <ul><li>Gigantamax Cinderace</li></ul>
 <p>For the first time in Pokémon GO, you’ll be able to encounter Shiny Gigantamax Cinderace—if you’re lucky!</p></div></div>`;
+
+describe('the tier of a Dynamax debut', () => {
+	it('is the one of the sentence that introduces a name: a debut in GO Pass has none', () => {
+		const lines = [
+			'The following Pokémon will make its Pokémon GO Dynamax debut in five-star Max Battles!',
+			'Dynamax Regidrago*',
+			'The following Pokémon will make its Pokémon GO Dynamax debut in GO Pass: Into the Wild!',
+			'Dynamax Meltan*',
+			'*If you’re lucky, you may encounter a Shiny one!',
+		];
+		expect(
+			parseMaxBattleEntries(lines, matcher).map((e) => [e.speciesId, e.tier])
+		).toEqual([
+			['regidrago', '5'],
+			['meltan', undefined],
+		]);
+	});
+});
+
+describe('Max Battle sections by tier, as the page lays them out', () => {
+	const SECTION = `<div><div><h2>Max Battles</h2></div><div><p>The following Dynamax Pokémon will appear in Max Battles. Pokémon appearing in five-star Max Battles will also be featured in an hour of Max Battles from 6:00 p.m. to 7:00 p.m. local time for one day each on the following schedule.</p>
+<p><strong>One-Star Max Battles</strong><br>Ralts*</p>
+<p><strong>Five-Star Max Battles: Wednesday, November 11</strong><br>Registeel*</p>
+<p><strong>Five-Star Max Battles: Friday, November 13</strong><br>Latias*<br>Latios*</p></div></div>`;
+
+	it('splits a heading from the names that share its paragraph with a line break', () => {
+		const section = new JSDOM(SECTION).window.document.body.firstElementChild!;
+		const lines = maxBattleHeadedLinesOf(Array.from(section.children).slice(1));
+		expect(lines).toContain('One-Star Max Battles');
+		expect(lines).toContain('Ralts*');
+		const entries = parseTieredMaxBattleEntries(lines, matcher, 2026);
+		expect(entries.map((e) => [e.speciesId, e.tier, e.window?.label])).toEqual([
+			['ralts', '1', undefined],
+			['registeel', '5', 'Wednesday, November 11'],
+			['latias', '5', 'Friday, November 13'],
+			['latios', '5', 'Friday, November 13'],
+		]);
+	});
+});
 
 describe('Max Battle sections by tier', () => {
 	const lines = [

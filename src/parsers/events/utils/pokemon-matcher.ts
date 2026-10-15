@@ -221,6 +221,22 @@ class PokemonMatcher {
 			return null;
 		}
 		if (finalResults.length === 1) {
+			// a form word alone is not a Pokémon: "Defense" in "increase a Pokémon's HP, Attack, or Defense" is no Deoxys, so the
+			// text has to name the species too (not only the form that just one species has)
+			const speciesWords = new Set(
+				ndfNormalized(finalResults[0].speciesName)
+					.replaceAll('(', '')
+					.replaceAll(')', '')
+					.split(' ')
+			);
+			const namesSpecies = currP
+				.replaceAll('(', '')
+				.replaceAll(')', '')
+				.split(' ')
+				.some((word) => word !== form && speciesWords.has(word));
+			if (!namesSpecies) {
+				return null;
+			}
 			return {
 				speciesId: finalResults[0].speciesId,
 				shiny: false,
@@ -513,6 +529,9 @@ const hasStar = (fragment: { text: string; after: string }): boolean => {
 const AVATAR_ITEM =
 	/\b(?:pants|shirts?|t-shirts?|tees?|ties?|bow ties?|jackets?|coats?|dress(?:es)?|skirts?|shorts|shoes|sneakers|boots|socks|gloves|scarf|scarves|hoodies?|sweaters?|vests?|ponchos?|capes?|outfits?|leggings|overalls|backpacks?|avatar(?: items?)?|poses?)\b/i;
 
+/** A Pokémon "wearing" an item ("Pikachu wearing a batik shirt") is a real encounter whatever the item is: the matcher cuts the name at "wearing". */
+const WEARING = /\bwearing\b/i;
+
 /** The word that makes a phrase about a shiny. "If you're lucky" alone does not: it also introduces Special Backgrounds. */
 const SHINY_WORD = /\bshiny\b/i;
 /** A remark such as "If you're lucky, they may be Shiny!", which refers to Pokémon named before it. */
@@ -629,7 +648,9 @@ export const extractPokemonSpeciesIdsFromElements = (
 			return node
 				.split(/,|and more|\band\b|might even encounter/)
 				.map((piece) => piece.trim())
-				.filter((piece) => piece && !AVATAR_ITEM.test(piece))
+				.filter(
+					(piece) => piece && (WEARING.test(piece) || !AVATAR_ITEM.test(piece))
+				)
 				.map((text) => {
 					const at = node.indexOf(text, from);
 					if (at >= 0) from = at + text.length;

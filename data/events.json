@@ -110,13 +110,62 @@
 				"speciesId": "regidrago",
 				"kind": "dynamax",
 				"shiny": true,
-				"tier": "5"
+				"tier": "5",
+				"window": {
+					"label": "Thursday, November 12",
+					"start": 1794506400000,
+					"end": 1794510000000
+				}
 			},
 			{
 				"speciesId": "meltan",
 				"kind": "dynamax",
+				"shiny": true
+			},
+			{
+				"speciesId": "ralts",
+				"kind": "dynamax",
 				"shiny": true,
-				"tier": "5"
+				"tier": "1"
+			},
+			{
+				"speciesId": "machop",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "2"
+			},
+			{
+				"speciesId": "registeel",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5",
+				"window": {
+					"label": "Wednesday, November 11",
+					"start": 1794420000000,
+					"end": 1794423600000
+				}
+			},
+			{
+				"speciesId": "latias",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5",
+				"window": {
+					"label": "Friday, November 13",
+					"start": 1794592800000,
+					"end": 1794596400000
+				}
+			},
+			{
+				"speciesId": "latios",
+				"kind": "dynamax",
+				"shiny": true,
+				"tier": "5",
+				"window": {
+					"label": "Friday, November 13",
+					"start": 1794592800000,
+					"end": 1794596400000
+				}
 			}
 		],
 		"bonuses": {
@@ -936,11 +985,6 @@
 			{
 				"speciesId": "meltan",
 				"shiny": true,
-				"kind": ""
-			},
-			{
-				"speciesId": "deoxys_defense",
-				"shiny": false,
 				"kind": ""
 			}
 		],
@@ -21942,6 +21986,11 @@
 				"kind": ""
 			},
 			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
+			{
 				"speciesId": "oddish",
 				"shiny": true,
 				"kind": ""
@@ -21990,6 +22039,11 @@
 		"raids": [],
 		"eggs": [],
 		"researches": [
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			},
 			{
 				"speciesId": "oddish",
 				"shiny": true,

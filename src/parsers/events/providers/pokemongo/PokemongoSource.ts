@@ -14,6 +14,7 @@ import type {
 } from '../../../types/events';
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import {
+	maxBattleHeadedLinesOf,
 	maxBattleTier,
 	maxFormOfTitle,
 	mergeMaxEntries,
@@ -575,14 +576,7 @@ class PokemonGoSource implements IEventSource {
 				.filter(Boolean);
 		});
 		// a section that lists plain names under a heading per tier ("Five-Star Max Battles: Wednesday, November 11") is read first
-		const headedLines = sectionBodies.slice(1).flatMap((body) => {
-			const blocks = Array.from(
-				body.querySelectorAll('li, p, h1, h2, h3, h4, h5, h6')
-			);
-			return (blocks.length > 0 ? blocks : [body])
-				.map((block) => (block.textContent ?? '').replace(/\s+/g, ' ').trim())
-				.filter(Boolean);
-		});
+		const headedLines = maxBattleHeadedLinesOf(sectionBodies.slice(1));
 		let entries = EVENT_SECTION_TYPES.MAX_BATTLES.some((x) => x === sectionType)
 			? parseTieredMaxBattleEntries(headedLines, matcher, year)
 			: [];

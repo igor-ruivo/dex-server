@@ -506,6 +506,13 @@ const hasStar = (fragment: { text: string; after: string }): boolean => {
 	return sameClause.includes('*');
 };
 
+/**
+ * Avatar clothing and items: a name next to one of these is the name of an item ("Duraludon Pants avatar item", "Pikachu Tee"),
+ * not a Pokémon. Headwear and glasses are not here: a Pokémon "wearing" a hat or goggles is a real encounter.
+ */
+const AVATAR_ITEM =
+	/\b(?:pants|shirts?|t-shirts?|tees?|ties?|bow ties?|jackets?|coats?|dress(?:es)?|skirts?|shorts|shoes|sneakers|boots|socks|gloves|scarf|scarves|hoodies?|sweaters?|vests?|ponchos?|capes?|outfits?|leggings|overalls|backpacks?|avatar(?: items?)?|poses?)\b/i;
+
 /** The word that makes a phrase about a shiny. "If you're lucky" alone does not: it also introduces Special Backgrounds. */
 const SHINY_WORD = /\bshiny\b/i;
 /** A remark such as "If you're lucky, they may be Shiny!", which refers to Pokémon named before it. */
@@ -622,7 +629,7 @@ export const extractPokemonSpeciesIdsFromElements = (
 			return node
 				.split(/,|and more|\band\b|might even encounter/)
 				.map((piece) => piece.trim())
-				.filter(Boolean)
+				.filter((piece) => piece && !AVATAR_ITEM.test(piece))
 				.map((text) => {
 					const at = node.indexOf(text, from);
 					if (at >= 0) from = at + text.length;

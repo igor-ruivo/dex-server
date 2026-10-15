@@ -2,6 +2,18 @@ import type { AvailableLocales } from '../services/gamemaster-translator';
 import type { GameMasterData } from '../types/pokemon';
 import type { RichBlock } from './rich-text';
 
+/**
+ * When an entry is on offer if that is not the whole event: a Max Battle boss that has its own day ("Five-Star Max Battles:
+ * Wednesday, November 11"), a raid or an egg with its own dates…
+ */
+export interface IEntryWindow {
+	/** The words the page uses for it ("Wednesday, November 11"), in English. */
+	label: string;
+	/** The start and the end of the window, as event dates are (local time), when the page gives the hours and the year is known. */
+	start?: number | undefined;
+	end?: number | undefined;
+}
+
 export interface IEntry {
 	speciesId: string;
 	shiny: boolean;
@@ -9,6 +21,8 @@ export interface IEntry {
 	kind?: string;
 	/** The Max Battle tier ("5" for a five-star battle), for the entries of `maxBattles`. */
 	tier?: string | undefined;
+	/** Set when the entry is only on offer inside part of the event (see `IEntryWindow`); absent for the whole event. */
+	window?: IEntryWindow | undefined;
 	comment?: Partial<Record<AvailableLocales, string>> | undefined;
 }
 

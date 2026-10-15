@@ -18,6 +18,7 @@ import {
 	maxFormOfTitle,
 	mergeMaxEntries,
 	parseMaxBattleEntries,
+	parseTieredMaxBattleEntries,
 } from '../../utils/max-battles';
 import { parseMilestoneSection } from '../../utils/milestones';
 import { parseEventDateRange } from '../../utils/normalization';
@@ -80,6 +81,8 @@ const EVENT_SECTION_TYPES = {
 		'Increased Incense Encounters',
 	],
 	FEATURED: ['Featured Pokémon'],
+	/** Lists its Pokémon by plain name under a heading per tier, so no "Dynamax" is needed next to a name. */
+	MAX_BATTLES: ['Max Battles'],
 	/** A GO Pass post's tiers of bonuses (what ranks of the pass earn), read as the season page's milestone cards are. */
 	MILESTONES: ['Major Milestone Bonuses'],
 	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
@@ -492,7 +495,8 @@ class PokemonGoSource implements IEventSource {
 				this.domain,
 				parser.getTitle().toLocaleLowerCase().includes('community day'),
 				parser.getTitle().toLocaleLowerCase().includes('raid day'),
-				parser.getTitle().toLocaleLowerCase()
+				parser.getTitle().toLocaleLowerCase(),
+				new Date(startDate).getUTCFullYear()
 			);
 			const event = buildEventObject(
 				post,
@@ -551,7 +555,8 @@ class PokemonGoSource implements IEventSource {
 		eventData: EventBlock,
 		gameMasterPokemon: GameMasterData,
 		domain: Array<GameMasterPokemon>,
-		title?: string
+		title?: string,
+		year?: number
 	): boolean {
 		const isFeatured = EVENT_SECTION_TYPES.FEATURED.some(
 			(x) => x === sectionType
@@ -569,7 +574,21 @@ class PokemonGoSource implements IEventSource {
 				.map((block) => (block.textContent ?? '').replace(/\s+/g, ' ').trim())
 				.filter(Boolean);
 		});
-		let entries = parseMaxBattleEntries(lines, matcher);
+		// a section that lists plain names under a heading per tier ("Five-Star Max Battles: Wednesday, November 11") is read first
+		const headedLines = sectionBodies.slice(1).flatMap((body) => {
+			const blocks = Array.from(
+				body.querySelectorAll('li, p, h1, h2, h3, h4, h5, h6')
+			);
+			return (blocks.length > 0 ? blocks : [body])
+				.map((block) => (block.textContent ?? '').replace(/\s+/g, ' ').trim())
+				.filter(Boolean);
+		});
+		let entries = EVENT_SECTION_TYPES.MAX_BATTLES.some((x) => x === sectionType)
+			? parseTieredMaxBattleEntries(headedLines, matcher, year)
+			: [];
+		if (entries.length === 0) {
+			entries = parseMaxBattleEntries(lines, matcher);
+		}
 		const form = title ? maxFormOfTitle(title) : undefined;
 		if (entries.length === 0 && isFeatured && form) {
 			const tier = maxBattleTier(lines.join(' '));
@@ -596,7 +615,8 @@ class PokemonGoSource implements IEventSource {
 		domain: Array<GameMasterPokemon>,
 		isCommunityDay: boolean,
 		isRaidDay: boolean,
-		title?: string
+		title?: string,
+		year?: number
 	): void {
 		if (
 			this.processMaxBattleSection(
@@ -605,7 +625,8 @@ class PokemonGoSource implements IEventSource {
 				eventData,
 				gameMasterPokemon,
 				domain,
-				title
+				title,
+				year
 			)
 		) {
 			return;
@@ -804,7 +825,8 @@ class PokemonGoSource implements IEventSource {
 		domain: Array<GameMasterPokemon>,
 		isCommunityDay: boolean,
 		isRaidDay: boolean,
-		title?: string
+		title?: string,
+		year?: number
 	): EventBlock {
 		const eventBlock = this.createEmptyEventBlock();
 
@@ -841,7 +863,8 @@ class PokemonGoSource implements IEventSource {
 				domain,
 				isCommunityDay,
 				isRaidDay,
-				title
+				title,
+				year
 			);
 
 			// The same section also has rewards (rare candy, a Lucky Egg…) next to the Pokémon taken from it above: they are kept as

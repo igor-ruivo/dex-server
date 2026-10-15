@@ -8,6 +8,7 @@ import {
 	maxFormOfTitle,
 	mergeMaxEntries,
 	parseMaxBattleEntries,
+	parseTieredMaxBattleEntries,
 } from './max-battles';
 import type PokemonMatcher from './pokemon-matcher';
 
@@ -45,6 +46,60 @@ const DYNAMAX_DEBUT = `<div class="_containerBlock_1p4ol_2"><div class="_headlin
 const FEATURED = `<div class="_containerBlock_1p4ol_2"><div class="_headlineWrapper_1p4ol_37"><h2>Featured Pokémon</h2></div><div class="_markdown_13f4f_273"><p>The following Pokémon will appear in six-star Max Battles!</p>
 <ul><li>Gigantamax Cinderace</li></ul>
 <p>For the first time in Pokémon GO, you’ll be able to encounter Shiny Gigantamax Cinderace—if you’re lucky!</p></div></div>`;
+
+describe('Max Battle sections by tier', () => {
+	const lines = [
+		'The following Dynamax Pokémon will appear in Max Battles. Pokémon appearing in five-star Max Battles will also be featured in an hour of Max Battles from 6:00 p.m. to 7:00 p.m. local time for one day each on the following schedule.',
+		'One-Star Max Battles',
+		'Ralts*',
+		'Two-Star Max Battles',
+		'Machop*',
+		'Five-Star Max Battles: Wednesday, November 11',
+		'Registeel*',
+		'Five-Star Max Battles: Thursday, November 12',
+		'Regidrago*',
+		'Five-Star Max Battles: Friday, November 13',
+		'Latias*',
+		'Latios*',
+		'*If you’re lucky, you may encounter a Shiny one!',
+	];
+
+	it('reads the plain names under each tier heading, with the tier, the form and the shiny asterisk', () => {
+		const entries = parseTieredMaxBattleEntries(lines, matcher, 2026);
+		expect(entries.map((e) => [e.speciesId, e.tier, e.kind, e.shiny])).toEqual([
+			['ralts', '1', 'dynamax', true],
+			['machop', '2', 'dynamax', true],
+			['registeel', '5', 'dynamax', true],
+			['regidrago', '5', 'dynamax', true],
+			['latias', '5', 'dynamax', true],
+			['latios', '5', 'dynamax', true],
+		]);
+	});
+
+	it('keeps the day of a heading as the entry window, with the hours of the intro', () => {
+		const [ralts, , registeel, , latias] = parseTieredMaxBattleEntries(
+			lines,
+			matcher,
+			2026
+		);
+		expect(ralts.window).toBeUndefined();
+		expect(registeel.window).toEqual({
+			label: 'Wednesday, November 11',
+			start: Date.UTC(2026, 10, 11, 18, 0),
+			end: Date.UTC(2026, 10, 11, 19, 0),
+		});
+		expect(latias.window?.label).toBe('Friday, November 13');
+	});
+
+	it('keeps only the label when the year is not known, and reads nothing without a tier heading', () => {
+		expect(parseTieredMaxBattleEntries(lines, matcher)[2].window).toEqual({
+			label: 'Wednesday, November 11',
+		});
+		expect(parseTieredMaxBattleEntries(['Ralts*', 'Machop*'], matcher)).toEqual(
+			[]
+		);
+	});
+});
 
 describe('Max Battle sections', () => {
 	it('reads the Dynamax debut: each name with its form, its tier and the shiny asterisk, without the region text', () => {

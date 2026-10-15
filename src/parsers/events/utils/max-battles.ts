@@ -1,4 +1,5 @@
-import type { IEntry } from '../../types/events';
+import type { IEntry, IEntryWindow } from '../../types/events';
+import { parseDateFromString } from './normalization';
 import type PokemonMatcher from './pokemon-matcher';
 
 /** A Max Pokémon: the Dynamax form every Max Battle boss has, or the rarer Gigantamax one. */
@@ -108,6 +109,88 @@ export const parseMaxBattleEntries = (
 	return out;
 };
 
+/** "Five-Star Max Battles", "Five-Star Max Battles: Wednesday, November 11": the tier, then the day the tier's Pokémon are on. */
+const TIER_HEADING =
+	/^(one|two|three|four|five|six|[1-6])[\s-]*star\s+max\s+battles?\s*(?:[:\-–—]\s*(.+?))?\s*$/i;
+/** "from 6:00 p.m. to 7:00 p.m.": the hours a section gives for its days. */
+const HOURS =
+	/from\s+(\d{1,2}:\d{2}\s*[ap]\.?m\.?)\s+to\s+(\d{1,2}:\d{2}\s*[ap]\.?m\.?)/i;
+const compactTime = (time: string): string =>
+	time.replace(/\./g, '').replace(/\s+/g, ' ').toLowerCase();
+
+/** The window of a day ("Wednesday, November 11") with the section's hours, when both and the year are known. */
+const windowOf = (
+	label: string,
+	hours: RegExpExecArray | null,
+	year: number | undefined
+): IEntryWindow => {
+	if (!hours || !year) {
+		return { label };
+	}
+	const day = `${label.replace(/^[A-Za-z]+day,\s*/, '')}, ${year}`;
+	const start = parseDateFromString(`${day}, at ${compactTime(hours[1])}`);
+	const end = parseDateFromString(`${day}, at ${compactTime(hours[2])}`);
+	return isNaN(start) || isNaN(end) ? { label } : { label, start, end };
+};
+
+/**
+ * The Max Pokémon of a section that lists them under a heading for each tier ("One-Star Max Battles" / "Ralts*", "Five-Star Max
+ * Battles: Wednesday, November 11" / "Registeel*"), by plain name: the tier is the heading's, the form is Dynamax unless the
+ * name says Gigantamax, an asterisk after a name makes it shiny, and a day in a heading is kept as the entry's `window` (with the
+ * hours of the intro, "from 6:00 p.m. to 7:00 p.m.", and the year, when they are known). Nothing when there is no tier heading.
+ */
+export const parseTieredMaxBattleEntries = (
+	lines: ReadonlyArray<string>,
+	matcher: PokemonMatcher,
+	year?: number
+): Array<IEntry> => {
+	const hours = HOURS.exec(lines.join(' '));
+	let tier: string | undefined;
+	let window: IEntryWindow | undefined;
+	const out: Array<IEntry> = [];
+	for (const line of lines) {
+		const heading = TIER_HEADING.exec(line);
+		if (heading) {
+			const word = heading[1].toLowerCase();
+			tier = TIER_WORDS[word] ?? word;
+			window = heading[2]
+				? windowOf(heading[2].trim(), hours, year)
+				: undefined;
+			continue;
+		}
+		// a footnote ("*If you're lucky…") or a sentence is not a name; before the first heading nothing is
+		if (!tier || line.startsWith('*') || line.split(/\s+/).length > 5) {
+			continue;
+		}
+		const name = line
+			.replace(/\*/g, '')
+			.replace(/^\s*(?:shiny\s+)?(?:dynamax|gigantamax)\s+/i, '')
+			.trim();
+		const species = name ? matcher.matchPokemonFromText([name])[0] : undefined;
+		if (!species?.speciesId) {
+			continue;
+		}
+		const kind: MaxForm = /gigantamax/i.test(line) ? 'gigantamax' : 'dynamax';
+		const existing = out.find(
+			(e) =>
+				e.speciesId === species.speciesId && e.kind === kind && e.tier === tier
+		);
+		const shiny = line.includes('*');
+		if (existing) {
+			existing.shiny ||= shiny;
+			continue;
+		}
+		out.push({
+			speciesId: species.speciesId,
+			kind,
+			shiny,
+			tier,
+			...(window ? { window } : {}),
+		});
+	}
+	return out;
+};
+
 /** Adds Max Pokémon to a list: the same species in the same form is kept once (and shiny if any of its mentions says so). */
 export const mergeMaxEntries = (
 	list: Array<IEntry>,
@@ -124,6 +207,7 @@ export const mergeMaxEntries = (
 				existing.shiny = true;
 			}
 			existing.tier ??= entry.tier;
+			existing.window ??= entry.window;
 		}
 	}
 };

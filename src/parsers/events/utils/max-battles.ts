@@ -125,33 +125,44 @@ const HOURS =
 const compactTime = (time: string): string =>
 	time.replace(/\./g, '').replace(/\s+/g, ' ').toLowerCase();
 
-/** The window of a day ("Wednesday, November 11") with the section's hours, when both and the year are known. */
-const windowOf = (
-	label: string,
-	hours: RegExpExecArray | null,
-	year: number | undefined
-): IEntryWindow => {
-	if (!hours || !year) {
+/**
+ * The window a heading's own text gives ("Wednesday, November 11": that whole day; "Wednesday, November 11, from 6:00 p.m. to
+ * 7:00 p.m.": those hours). Nothing outside the heading is read, so a sentence somewhere else in the section never gives it
+ * hours. The year is not in the text: it is the event's, and without it only the label is kept.
+ */
+const windowOf = (label: string, year: number | undefined): IEntryWindow => {
+	if (!year) {
 		return { label };
 	}
-	const day = `${label.replace(/^[A-Za-z]+day,\s*/, '')}, ${year}`;
-	const start = parseDateFromString(`${day}, at ${compactTime(hours[1])}`);
-	const end = parseDateFromString(`${day}, at ${compactTime(hours[2])}`);
-	return isNaN(start) || isNaN(end) ? { label } : { label, start, end };
+	const hours = HOURS.exec(label);
+	const day = `${label
+		.replace(HOURS, '')
+		.replace(/^[A-Za-z]+day,\s*/, '')
+		.replace(/[\s,]+$/, '')}, ${year}`;
+	const start = parseDateFromString(
+		`${day}, at ${hours ? compactTime(hours[1]) : '12:00 am'}`
+	);
+	const end = parseDateFromString(
+		`${day}, at ${hours ? compactTime(hours[2]) : '11:59 pm'}`
+	);
+	if (isNaN(start) || isNaN(end)) {
+		return { label };
+	}
+	// no hours in the heading: the window is the day, and the consumer must not show a time of day
+	return hours ? { label, start, end } : { label, start, end, allDay: true };
 };
 
 /**
  * The Max Pokémon of a section that lists them under a heading for each tier ("One-Star Max Battles" / "Ralts*", "Five-Star Max
  * Battles: Wednesday, November 11" / "Registeel*"), by plain name: the tier is the heading's, the form is Dynamax unless the
- * name says Gigantamax, an asterisk after a name makes it shiny, and a day in a heading is kept as the entry's `window` (with the
- * hours of the intro, "from 6:00 p.m. to 7:00 p.m.", and the year, when they are known). Nothing when there is no tier heading.
+ * name says Gigantamax, an asterisk after a name makes it shiny, and a day in a heading is kept as the entry's `window` (read from
+ * the heading alone, see `windowOf`). Nothing when there is no tier heading.
  */
 export const parseTieredMaxBattleEntries = (
 	lines: ReadonlyArray<string>,
 	matcher: PokemonMatcher,
 	year?: number
 ): Array<IEntry> => {
-	const hours = HOURS.exec(lines.join(' '));
 	let tier: string | undefined;
 	let window: IEntryWindow | undefined;
 	const out: Array<IEntry> = [];
@@ -160,9 +171,7 @@ export const parseTieredMaxBattleEntries = (
 		if (heading) {
 			const word = heading[1].toLowerCase();
 			tier = TIER_WORDS[word] ?? word;
-			window = heading[2]
-				? windowOf(heading[2].trim(), hours, year)
-				: undefined;
+			window = heading[2] ? windowOf(heading[2].trim(), year) : undefined;
 			continue;
 		}
 		// a footnote ("*If you're lucky…") or a sentence is not a name; before the first heading nothing is

@@ -12,6 +12,11 @@ export interface IEntryWindow {
 	/** The start and the end of the window, as event dates are (local time), when the page gives the hours and the year is known. */
 	start?: number | undefined;
 	end?: number | undefined;
+	/**
+	 * True when the page names only the day, no hours: `start` and `end` are then the two ends of that day, and no time of day should
+	 * be shown. Absent when the page gives the hours.
+	 */
+	allDay?: boolean | undefined;
 }
 
 export interface IEntry {

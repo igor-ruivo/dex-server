@@ -113,8 +113,9 @@
 				"tier": "5",
 				"window": {
 					"label": "Thursday, November 12",
-					"start": 1794506400000,
-					"end": 1794510000000
+					"start": 1794441600000,
+					"end": 1794527940000,
+					"allDay": true
 				}
 			},
 			{
@@ -141,8 +142,9 @@
 				"tier": "5",
 				"window": {
 					"label": "Wednesday, November 11",
-					"start": 1794420000000,
-					"end": 1794423600000
+					"start": 1794355200000,
+					"end": 1794441540000,
+					"allDay": true
 				}
 			},
 			{
@@ -152,8 +154,9 @@
 				"tier": "5",
 				"window": {
 					"label": "Friday, November 13",
-					"start": 1794592800000,
-					"end": 1794596400000
+					"start": 1794528000000,
+					"end": 1794614340000,
+					"allDay": true
 				}
 			},
 			{
@@ -163,8 +166,9 @@
 				"tier": "5",
 				"window": {
 					"label": "Friday, November 13",
-					"start": 1794592800000,
-					"end": 1794596400000
+					"start": 1794528000000,
+					"end": 1794614340000,
+					"allDay": true
 				}
 			}
 		],
@@ -985,7 +989,7 @@
 			{
 				"speciesId": "meltan",
 				"shiny": true,
-				"kind": ""
+				"kind": "dynamax"
 			}
 		],
 		"incenses": [],

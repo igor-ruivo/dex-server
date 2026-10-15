@@ -15,6 +15,7 @@ import type {
 import type { GameMasterData, GameMasterPokemon } from '../../../types/pokemon';
 import {
 	maxBattleHeadedLinesOf,
+	maxBattleLinesOf,
 	maxBattleTier,
 	maxFormOfTitle,
 	mergeMaxEntries,
@@ -744,6 +745,19 @@ class PokemonGoSource implements IEventSource {
 				new PokemonMatcher(gameMasterPokemon, domain)
 			);
 
+			// A Pokémon the text calls "Dynamax X" / "Gigantamax X" (a GO Pass's "encounter with Dynamax Meltan") is that Max Pokémon,
+			// not the plain species: its form is the entry's kind.
+			const maxForms = new Map(
+				parseMaxBattleEntries(
+					sectionBodies.flatMap(maxBattleLinesOf),
+					new PokemonMatcher(gameMasterPokemon, domain)
+				).map((e) => [e.speciesId, e.kind])
+			);
+			const researchPkm = parsedPkm.map((p) => {
+				const form = maxForms.get(p.speciesId);
+				return form ? { ...p, kind: form } : p;
+			});
+
 			// For now, assume featured pokémons are always related to researches. Their "you might encounter a Shiny one" is about
 			// the wild, not about the research encounters, so they join the list as non-shiny: a research section that really
 			// says so makes them shiny (see `mergeEntries`).
@@ -754,8 +768,8 @@ class PokemonGoSource implements IEventSource {
 				mergeEntries(
 					eventData.researches,
 					isFeatured
-						? parsedPkm.map((p) => ({ ...p, shiny: false }))
-						: parsedPkm
+						? researchPkm.map((p) => ({ ...p, shiny: false }))
+						: researchPkm
 				);
 			}
 

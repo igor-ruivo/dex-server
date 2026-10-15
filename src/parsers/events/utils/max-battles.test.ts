@@ -116,7 +116,7 @@ describe('Max Battle sections by tier', () => {
 		]);
 	});
 
-	it('keeps the day of a heading as the entry window, with the hours of the intro', () => {
+	it('keeps the day of a heading as the entry window: the whole day, since only the heading is read (not the hours of the intro)', () => {
 		const [ralts, , registeel, , latias] = parseTieredMaxBattleEntries(
 			lines,
 			matcher,
@@ -125,10 +125,27 @@ describe('Max Battle sections by tier', () => {
 		expect(ralts.window).toBeUndefined();
 		expect(registeel.window).toEqual({
 			label: 'Wednesday, November 11',
+			start: Date.UTC(2026, 10, 11, 0, 0),
+			end: Date.UTC(2026, 10, 11, 23, 59),
+			allDay: true,
+		});
+		expect(latias.window?.label).toBe('Friday, November 13');
+	});
+
+	it('reads the hours from the heading when it gives them', () => {
+		const [entry] = parseTieredMaxBattleEntries(
+			[
+				'Five-Star Max Battles: Wednesday, November 11, from 6:00 p.m. to 7:00 p.m.',
+				'Registeel*',
+			],
+			matcher,
+			2026
+		);
+		expect(entry.window).toMatchObject({
 			start: Date.UTC(2026, 10, 11, 18, 0),
 			end: Date.UTC(2026, 10, 11, 19, 0),
 		});
-		expect(latias.window?.label).toBe('Friday, November 13');
+		expect(entry.window?.allDay).toBeUndefined();
 	});
 
 	it('keeps only the label when the year is not known, and reads nothing without a tier heading', () => {

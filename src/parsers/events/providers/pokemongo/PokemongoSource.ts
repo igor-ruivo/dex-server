@@ -90,6 +90,10 @@ const EVENT_SECTION_TYPES = {
 	DEBUT: ['Pokémon Debut', 'Mega-Evolved Pokémon Debut'],
 };
 
+/** The egg distance a text names ("from 2 km Eggs" gives "2"), as an egg entry's kind; none when it names no distance. */
+const eggDistanceOf = (text: string): string | undefined =>
+	/(?<![\d.])(1|2|5|7|10|12)\s*-?\s*km\s+eggs?\b/i.exec(text)?.[1];
+
 /**
  * Adds parsed Pokémon to a list: one already there keeps its place and can only gain the shiny flag (the same species named
  * by two sections is shiny if either says so), so the order the sections come in never decides it.
@@ -701,7 +705,13 @@ class PokemonGoSource implements IEventSource {
 					(p) => !eventData.eggs.some((w) => w.speciesId === p.speciesId)
 				);
 
-				eventData.eggs.push(...parsedPkm);
+				// "Sandile will hatch much more frequently from 2 km Eggs": the distance of the egg is the entry's kind
+				const distance = eggDistanceOf(
+					sectionBodies.map((b) => b.textContent ?? '').join(' ')
+				);
+				eventData.eggs.push(
+					...parsedPkm.map((p) => (distance ? { ...p, kind: distance } : p))
+				);
 				return;
 			}
 

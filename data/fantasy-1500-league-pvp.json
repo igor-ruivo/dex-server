@@ -1,0 +1,12011 @@
+{
+	"melmetal": {
+		"speciesId": "melmetal",
+		"moveset": [
+			"THUNDER_SHOCK",
+			"DOUBLE_IRON_BASH",
+			"DYNAMIC_PUNCH"
+		],
+		"lead": 95.3,
+		"switch": 93.1,
+		"charger": 100,
+		"closer": 98,
+		"consistency": 94,
+		"attacker": 89.1,
+		"score": 97.4,
+		"rank": 1,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 904
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 729
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 606
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 585
+			},
+			{
+				"opponent": "forretress",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 299
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 446
+			},
+			{
+				"opponent": "altaria",
+				"rating": 452
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 453
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 461
+			}
+		]
+	},
+	"mimikyu": {
+		"speciesId": "mimikyu",
+		"moveset": [
+			"SHADOW_CLAW",
+			"SHADOW_SNEAK",
+			"PLAY_ROUGH"
+		],
+		"lead": 90.6,
+		"switch": 100,
+		"charger": 96.7,
+		"closer": 100,
+		"consistency": 94.2,
+		"attacker": 75.1,
+		"score": 95.9,
+		"rank": 2,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 808
+			},
+			{
+				"opponent": "florges",
+				"rating": 742
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 691
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 686
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 644
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 270
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 427
+			},
+			{
+				"opponent": "forretress",
+				"rating": 437
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 460
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 470
+			}
+		]
+	},
+	"stunfisk_galarian": {
+		"speciesId": "stunfisk_galarian",
+		"moveset": [
+			"MUD_SHOT",
+			"ROCK_SLIDE",
+			"EARTHQUAKE"
+		],
+		"lead": 100,
+		"switch": 99.1,
+		"charger": 96.7,
+		"closer": 98.4,
+		"consistency": 79.7,
+		"attacker": 67,
+		"score": 94.8,
+		"rank": 3,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "melmetal",
+				"rating": 700
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 700
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 590
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 572
+			},
+			{
+				"opponent": "forretress",
+				"rating": 558
+			}
+		],
+		"counters": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 196
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 343
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 400
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 411
+			},
+			{
+				"opponent": "altaria",
+				"rating": 456
+			}
+		]
+	},
+	"forretress": {
+		"speciesId": "forretress",
+		"moveset": [
+			"VOLT_SWITCH",
+			"SAND_TOMB",
+			"ROCK_TOMB"
+		],
+		"lead": 87.2,
+		"switch": 78.9,
+		"charger": 89.6,
+		"closer": 87.1,
+		"consistency": 97.8,
+		"attacker": 100,
+		"score": 94.2,
+		"rank": 4,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 691
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 660
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 656
+			},
+			{
+				"opponent": "florges",
+				"rating": 621
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 562
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 115
+			},
+			{
+				"opponent": "altaria",
+				"rating": 195
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 379
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 441
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 476
+			}
+		]
+	},
+	"doublade": {
+		"speciesId": "doublade",
+		"moveset": [
+			"SHADOW_CLAW",
+			"SACRED_SWORD",
+			"IRON_HEAD"
+		],
+		"lead": 90.6,
+		"switch": 95.8,
+		"charger": 96.7,
+		"closer": 81.9,
+		"consistency": 86.8,
+		"attacker": 94.3,
+		"score": 93.1,
+		"rank": 5,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 844
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 674
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 603
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 575
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 556
+			}
+		],
+		"counters": [
+			{
+				"opponent": "forretress",
+				"rating": 316
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 340
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 354
+			},
+			{
+				"opponent": "altaria",
+				"rating": 387
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 429
+			}
+		]
+	},
+	"registeel": {
+		"speciesId": "registeel",
+		"moveset": [
+			"LOCK_ON",
+			"FLASH_CANNON",
+			"FOCUS_BLAST"
+		],
+		"lead": 77.3,
+		"switch": 92.8,
+		"charger": 88.8,
+		"closer": 100,
+		"consistency": 92.7,
+		"attacker": 76.1,
+		"score": 91.9,
+		"rank": 6,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 848
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 732
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 662
+			},
+			{
+				"opponent": "florges",
+				"rating": 655
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 562
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 347
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 380
+			},
+			{
+				"opponent": "forretress",
+				"rating": 398
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 462
+			}
+		]
+	},
+	"corviknight": {
+		"speciesId": "corviknight",
+		"moveset": [
+			"SAND_ATTACK",
+			"AIR_CUTTER",
+			"IRON_HEAD"
+		],
+		"lead": 86.9,
+		"switch": 85.8,
+		"charger": 91.3,
+		"closer": 88.8,
+		"consistency": 88,
+		"attacker": 82.9,
+		"score": 89.1,
+		"rank": 7,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 710
+			},
+			{
+				"opponent": "florges",
+				"rating": 626
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 623
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 530
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 516
+			}
+		],
+		"counters": [
+			{
+				"opponent": "forretress",
+				"rating": 339
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 360
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 393
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 407
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 409
+			}
+		]
+	},
+	"turtonator": {
+		"speciesId": "turtonator",
+		"moveset": [
+			"INCINERATE",
+			"DRAGON_CLAW",
+			"OVERHEAT"
+		],
+		"lead": 80.7,
+		"switch": 67.7,
+		"charger": 86.6,
+		"closer": 96.3,
+		"consistency": 87.2,
+		"attacker": 74.8,
+		"score": 89,
+		"rank": 8,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 884
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 646
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 592
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 553
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 553
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 284
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 287
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 313
+			},
+			{
+				"opponent": "altaria",
+				"rating": 420
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 438
+			}
+		]
+	},
+	"corviknight_shadow": {
+		"speciesId": "corviknight_shadow",
+		"moveset": [
+			"SAND_ATTACK",
+			"AIR_CUTTER",
+			"IRON_HEAD"
+		],
+		"lead": 80.2,
+		"switch": 86.4,
+		"charger": 88.7,
+		"closer": 91.8,
+		"consistency": 88,
+		"attacker": 77.7,
+		"score": 87.7,
+		"rank": 9,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 676
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 606
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 606
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 583
+			},
+			{
+				"opponent": "florges",
+				"rating": 530
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 261
+			},
+			{
+				"opponent": "forretress",
+				"rating": 339
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 375
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 384
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 393
+			}
+		]
+	},
+	"empoleon": {
+		"speciesId": "empoleon",
+		"moveset": [
+			"METAL_SOUND",
+			"HYDRO_CANNON",
+			"DRILL_PECK"
+		],
+		"lead": 70.8,
+		"switch": 75.3,
+		"charger": 89.9,
+		"closer": 88,
+		"consistency": 100,
+		"attacker": 82.1,
+		"score": 87.3,
+		"rank": 10,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 872
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 831
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 639
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 635
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 528
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 95
+			},
+			{
+				"opponent": "forretress",
+				"rating": 343
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 353
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 355
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 395
+			}
+		]
+	},
+	"forretress_shadow": {
+		"speciesId": "forretress_shadow",
+		"moveset": [
+			"VOLT_SWITCH",
+			"SAND_TOMB",
+			"ROCK_TOMB"
+		],
+		"lead": 85.5,
+		"switch": 75.6,
+		"charger": 87.8,
+		"closer": 88,
+		"consistency": 97.8,
+		"attacker": 73.8,
+		"score": 87,
+		"rank": 11,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "corviknight",
+				"rating": 660
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 660
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 636
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 613
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 546
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 92
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 215
+			},
+			{
+				"opponent": "altaria",
+				"rating": 224
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 314
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 411
+			}
+		]
+	},
+	"aegislash_shield": {
+		"speciesId": "aegislash_shield",
+		"moveset": [
+			"AEGISLASH_CHARGE_PSYCHO_CUT",
+			"SHADOW_BALL",
+			"GYRO_BALL"
+		],
+		"lead": 76.4,
+		"switch": 31.9,
+		"charger": 79.7,
+		"closer": 95.4,
+		"consistency": 100,
+		"attacker": 65.2,
+		"score": 86.2,
+		"rank": 12,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 643
+			},
+			{
+				"opponent": "florges",
+				"rating": 640
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 561
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 546
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 79
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 87
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 107
+			},
+			{
+				"opponent": "altaria",
+				"rating": 387
+			},
+			{
+				"opponent": "forretress",
+				"rating": 496
+			}
+		]
+	},
+	"steelix_shadow": {
+		"speciesId": "steelix_shadow",
+		"moveset": [
+			"THUNDER_FANG",
+			"PSYCHIC_FANGS",
+			"CRUNCH"
+		],
+		"lead": 87.8,
+		"switch": 54.1,
+		"charger": 83.7,
+		"closer": 75.3,
+		"consistency": 84.8,
+		"attacker": 86.2,
+		"score": 85.5,
+		"rank": 13,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 698
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 662
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 646
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 603
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 539
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 309
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 396
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 413
+			},
+			{
+				"opponent": "florges",
+				"rating": 413
+			}
+		]
+	},
+	"empoleon_shadow": {
+		"speciesId": "empoleon_shadow",
+		"moveset": [
+			"METAL_SOUND",
+			"HYDRO_CANNON",
+			"DRILL_PECK"
+		],
+		"lead": 68.7,
+		"switch": 78.6,
+		"charger": 92.9,
+		"closer": 83.3,
+		"consistency": 100,
+		"attacker": 66,
+		"score": 84.7,
+		"rank": 14,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 872
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 831
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 778
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 639
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 504
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 393
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 420
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 453
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 453
+			}
+		]
+	},
+	"orthworm": {
+		"speciesId": "orthworm",
+		"moveset": [
+			"MUD_SLAP",
+			"ROCK_TOMB",
+			"IRON_HEAD"
+		],
+		"lead": 82.5,
+		"switch": 71.4,
+		"charger": 88,
+		"closer": 72.3,
+		"consistency": 100,
+		"attacker": 77.9,
+		"score": 84.6,
+		"rank": 15,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 766
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 713
+			},
+			{
+				"opponent": "florges",
+				"rating": 668
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 643
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 516
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 235
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 326
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 355
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 362
+			},
+			{
+				"opponent": "forretress",
+				"rating": 429
+			}
+		]
+	},
+	"excadrill_shadow": {
+		"speciesId": "excadrill_shadow",
+		"moveset": [
+			"MUD_SHOT",
+			"DRILL_RUN",
+			"ROCK_SLIDE"
+		],
+		"lead": 80.1,
+		"switch": 79.4,
+		"charger": 95.1,
+		"closer": 82,
+		"consistency": 94.3,
+		"attacker": 28.7,
+		"score": 81.5,
+		"rank": 16,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 867
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 835
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 803
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 714
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 525
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 290
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 295
+			},
+			{
+				"opponent": "florges",
+				"rating": 368
+			},
+			{
+				"opponent": "forretress",
+				"rating": 386
+			}
+		]
+	},
+	"weezing_galarian": {
+		"speciesId": "weezing_galarian",
+		"moveset": [
+			"FAIRY_WIND",
+			"SLUDGE",
+			"OVERHEAT"
+		],
+		"lead": 72.5,
+		"switch": 42.8,
+		"charger": 87.5,
+		"closer": 85,
+		"consistency": 87.3,
+		"attacker": 54.9,
+		"score": 81.4,
+		"rank": 17,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "azumarill",
+				"rating": 801
+			},
+			{
+				"opponent": "florges",
+				"rating": 728
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 715
+			},
+			{
+				"opponent": "forretress",
+				"rating": 620
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 538
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 110
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 168
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 483
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 489
+			}
+		]
+	},
+	"heatran_shadow": {
+		"speciesId": "heatran_shadow",
+		"moveset": [
+			"FIRE_SPIN",
+			"MAGMA_STORM",
+			"EARTH_POWER"
+		],
+		"lead": 73.6,
+		"switch": 61,
+		"charger": 92.7,
+		"closer": 71.4,
+		"consistency": 95.1,
+		"attacker": 55.1,
+		"score": 81.2,
+		"rank": 18,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 936
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 886
+			},
+			{
+				"opponent": "forretress",
+				"rating": 795
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 563
+			},
+			{
+				"opponent": "florges",
+				"rating": 522
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 299
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 299
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 343
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 383
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 434
+			}
+		]
+	},
+	"bronzong": {
+		"speciesId": "bronzong",
+		"moveset": [
+			"METAL_SOUND",
+			"PSYSHOCK",
+			"BULLDOZE"
+		],
+		"lead": 75.6,
+		"switch": 70.4,
+		"charger": 80.8,
+		"closer": 73.9,
+		"consistency": 99.1,
+		"attacker": 81.6,
+		"score": 81,
+		"rank": 19,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 912
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 666
+			},
+			{
+				"opponent": "florges",
+				"rating": 612
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 591
+			},
+			{
+				"opponent": "altaria",
+				"rating": 566
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 308
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 325
+			},
+			{
+				"opponent": "forretress",
+				"rating": 339
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 356
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 472
+			}
+		]
+	},
+	"excadrill": {
+		"speciesId": "excadrill",
+		"moveset": [
+			"MUD_SHOT",
+			"DRILL_RUN",
+			"ROCK_SLIDE"
+		],
+		"lead": 77.5,
+		"switch": 91.3,
+		"charger": 91,
+		"closer": 79.4,
+		"consistency": 94.3,
+		"attacker": 38,
+		"score": 80.7,
+		"rank": 20,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 867
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 750
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 610
+			},
+			{
+				"opponent": "forretress",
+				"rating": 553
+			},
+			{
+				"opponent": "florges",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 177
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 276
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 416
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 465
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 489
+			}
+		]
+	},
+	"registeel_shadow": {
+		"speciesId": "registeel_shadow",
+		"moveset": [
+			"LOCK_ON",
+			"FLASH_CANNON",
+			"FOCUS_BLAST"
+		],
+		"lead": 71.8,
+		"switch": 62,
+		"charger": 82.8,
+		"closer": 85.9,
+		"consistency": 92.7,
+		"attacker": 56.7,
+		"score": 80.7,
+		"rank": 21,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 696
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 669
+			},
+			{
+				"opponent": "florges",
+				"rating": 633
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 610
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			},
+			{
+				"opponent": "forretress",
+				"rating": 312
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 386
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 406
+			}
+		]
+	},
+	"tinkaton": {
+		"speciesId": "tinkaton",
+		"moveset": [
+			"FAIRY_WIND",
+			"GIGATON_HAMMER",
+			"BULLDOZE"
+		],
+		"lead": 74.8,
+		"switch": 68.6,
+		"charger": 81.1,
+		"closer": 76.3,
+		"consistency": 80.2,
+		"attacker": 83.1,
+		"score": 80.6,
+		"rank": 22,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 790
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 705
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 659
+			},
+			{
+				"opponent": "altaria",
+				"rating": 631
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 510
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 290
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 299
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 308
+			},
+			{
+				"opponent": "forretress",
+				"rating": 308
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 414
+			}
+		]
+	},
+	"jirachi": {
+		"speciesId": "jirachi",
+		"moveset": [
+			"CONFUSION",
+			"DOOM_DESIRE",
+			"AURA_SPHERE"
+		],
+		"lead": 76.5,
+		"switch": 68,
+		"charger": 84.1,
+		"closer": 78.6,
+		"consistency": 100,
+		"attacker": 56.7,
+		"score": 80.2,
+		"rank": 23,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 736
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 651
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 635
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 612
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 527
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 317
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 375
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 376
+			},
+			{
+				"opponent": "forretress",
+				"rating": 386
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 451
+			}
+		]
+	},
+	"steelix": {
+		"speciesId": "steelix",
+		"moveset": [
+			"THUNDER_FANG",
+			"PSYCHIC_FANGS",
+			"CRUNCH"
+		],
+		"lead": 80.2,
+		"switch": 57.7,
+		"charger": 81.9,
+		"closer": 71.1,
+		"consistency": 84.8,
+		"attacker": 78.2,
+		"score": 80.2,
+		"rank": 24,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 619
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 591
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 555
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 555
+			},
+			{
+				"opponent": "forretress",
+				"rating": 551
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 122
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 274
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 321
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 418
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 443
+			}
+		]
+	},
+	"togetic": {
+		"speciesId": "togetic",
+		"moveset": [
+			"FAIRY_WIND",
+			"HEAT_WAVE",
+			"DRAINING_KISS"
+		],
+		"lead": 75,
+		"switch": 72,
+		"charger": 82.3,
+		"closer": 81.7,
+		"consistency": 95.8,
+		"attacker": 58.2,
+		"score": 79.7,
+		"rank": 25,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 731
+			},
+			{
+				"opponent": "florges",
+				"rating": 581
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 565
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 552
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 516
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 304
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 407
+			},
+			{
+				"opponent": "forretress",
+				"rating": 460
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 485
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 491
+			}
+		]
+	},
+	"sandslash_alolan": {
+		"speciesId": "sandslash_alolan",
+		"moveset": [
+			"POWDER_SNOW",
+			"ICE_PUNCH",
+			"DRILL_RUN"
+		],
+		"lead": 67.6,
+		"switch": 78.9,
+		"charger": 85.9,
+		"closer": 76.8,
+		"consistency": 100,
+		"attacker": 59,
+		"score": 79.3,
+		"rank": 26,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "mawile_shadow",
+				"rating": 876
+			},
+			{
+				"opponent": "altaria",
+				"rating": 836
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 608
+			},
+			{
+				"opponent": "florges",
+				"rating": 572
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 540
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 163
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 289
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 372
+			},
+			{
+				"opponent": "forretress",
+				"rating": 468
+			}
+		]
+	},
+	"wormadam_trash": {
+		"speciesId": "wormadam_trash",
+		"moveset": [
+			"SUCKER_PUNCH",
+			"BUG_BUZZ",
+			"IRON_HEAD"
+		],
+		"lead": 67.4,
+		"switch": 52.3,
+		"charger": 74,
+		"closer": 76.3,
+		"consistency": 91.9,
+		"attacker": 81,
+		"score": 78.4,
+		"rank": 27,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 751
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 737
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 711
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 629
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 507
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 311
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 382
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 383
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 395
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 450
+			}
+		]
+	},
+	"heatran": {
+		"speciesId": "heatran",
+		"moveset": [
+			"FIRE_SPIN",
+			"MAGMA_STORM",
+			"EARTH_POWER"
+		],
+		"lead": 72.2,
+		"switch": 57.6,
+		"charger": 87.8,
+		"closer": 67.8,
+		"consistency": 95.1,
+		"attacker": 53.8,
+		"score": 78.1,
+		"rank": 28,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 889
+			},
+			{
+				"opponent": "forretress",
+				"rating": 836
+			},
+			{
+				"opponent": "florges",
+				"rating": 575
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 504
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 504
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 190
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 250
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 330
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 345
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 373
+			}
+		]
+	},
+	"sandslash_alolan_shadow": {
+		"speciesId": "sandslash_alolan_shadow",
+		"moveset": [
+			"POWDER_SNOW",
+			"ICE_PUNCH",
+			"DRILL_RUN"
+		],
+		"lead": 64,
+		"switch": 66.8,
+		"charger": 82.4,
+		"closer": 81.7,
+		"consistency": 100,
+		"attacker": 58,
+		"score": 78.1,
+		"rank": 29,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 876
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 876
+			},
+			{
+				"opponent": "altaria",
+				"rating": 836
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 704
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 536
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 299
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 353
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 386
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 444
+			}
+		]
+	},
+	"klefki": {
+		"speciesId": "klefki",
+		"moveset": [
+			"ASTONISH",
+			"FOUL_PLAY",
+			"DRAINING_KISS"
+		],
+		"lead": 72.5,
+		"switch": 65.9,
+		"charger": 79.2,
+		"closer": 76.1,
+		"consistency": 95.9,
+		"attacker": 67,
+		"score": 77.5,
+		"rank": 30,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togekiss",
+				"rating": 611
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 598
+			},
+			{
+				"opponent": "altaria",
+				"rating": 572
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 547
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 305
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 400
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 414
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 418
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 420
+			}
+		]
+	},
+	"perrserker": {
+		"speciesId": "perrserker",
+		"moveset": [
+			"SHADOW_CLAW",
+			"CLOSE_COMBAT",
+			"TRAILBLAZE"
+		],
+		"lead": 65.6,
+		"switch": 38.5,
+		"charger": 85.5,
+		"closer": 75.4,
+		"consistency": 100,
+		"attacker": 50.5,
+		"score": 77.5,
+		"rank": 31,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 693
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 575
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 567
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 563
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 171
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 286
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 333
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 401
+			},
+			{
+				"opponent": "forretress",
+				"rating": 472
+			}
+		]
+	},
+	"skarmory": {
+		"speciesId": "skarmory",
+		"moveset": [
+			"AIR_SLASH",
+			"BRAVE_BIRD",
+			"DRILL_RUN"
+		],
+		"lead": 67.1,
+		"switch": 57.4,
+		"charger": 85.1,
+		"closer": 74.6,
+		"consistency": 76.6,
+		"attacker": 64.2,
+		"score": 77.2,
+		"rank": 32,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "mawile_shadow",
+				"rating": 731
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 677
+			},
+			{
+				"opponent": "florges",
+				"rating": 615
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 611
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 541
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 157
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 359
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 382
+			},
+			{
+				"opponent": "forretress",
+				"rating": 425
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 453
+			}
+		]
+	},
+	"primarina": {
+		"speciesId": "primarina",
+		"moveset": [
+			"WATERFALL",
+			"MOONBLAST",
+			"HYDRO_CANNON"
+		],
+		"lead": 68.1,
+		"switch": 60.4,
+		"charger": 85.9,
+		"closer": 76.6,
+		"consistency": 90.9,
+		"attacker": 45,
+		"score": 77.1,
+		"rank": 33,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 888
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 816
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 656
+			},
+			{
+				"opponent": "altaria",
+				"rating": 647
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 642
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 267
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 308
+			},
+			{
+				"opponent": "forretress",
+				"rating": 425
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 453
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 468
+			}
+		]
+	},
+	"skarmory_shadow": {
+		"speciesId": "skarmory_shadow",
+		"moveset": [
+			"AIR_SLASH",
+			"BRAVE_BIRD",
+			"DRILL_RUN"
+		],
+		"lead": 60.4,
+		"switch": 51.3,
+		"charger": 86.4,
+		"closer": 77.3,
+		"consistency": 76.6,
+		"attacker": 59.3,
+		"score": 76.7,
+		"rank": 34,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "mawile_shadow",
+				"rating": 648
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 636
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 599
+			},
+			{
+				"opponent": "florges",
+				"rating": 590
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 188
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 303
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 404
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 421
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 423
+			}
+		]
+	},
+	"klang": {
+		"speciesId": "klang",
+		"moveset": [
+			"METAL_SOUND",
+			"VICE_GRIP",
+			"THUNDERBOLT"
+		],
+		"lead": 70.5,
+		"switch": 52.9,
+		"charger": 79.3,
+		"closer": 73.9,
+		"consistency": 93.6,
+		"attacker": 67.8,
+		"score": 76.6,
+		"rank": 35,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "azumarill",
+				"rating": 656
+			},
+			{
+				"opponent": "florges",
+				"rating": 604
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 588
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 584
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 560
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 183
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 366
+			},
+			{
+				"opponent": "forretress",
+				"rating": 406
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 446
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 453
+			}
+		]
+	},
+	"magnemite_shadow": {
+		"speciesId": "magnemite_shadow",
+		"moveset": [
+			"VOLT_SWITCH",
+			"MAGNET_BOMB",
+			"DISCHARGE"
+		],
+		"lead": 75.9,
+		"switch": 51.1,
+		"charger": 87.4,
+		"closer": 57.5,
+		"consistency": 100,
+		"attacker": 41.4,
+		"score": 75.6,
+		"rank": 36,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 844
+			},
+			{
+				"opponent": "florges",
+				"rating": 827
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 777
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 694
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 110
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 229
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 263
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 420
+			},
+			{
+				"opponent": "forretress",
+				"rating": 484
+			}
+		]
+	},
+	"togekiss": {
+		"speciesId": "togekiss",
+		"moveset": [
+			"PECK",
+			"PSYSHOCK",
+			"AURA_SPHERE"
+		],
+		"lead": 60.5,
+		"switch": 64.4,
+		"charger": 84.9,
+		"closer": 72.8,
+		"consistency": 100,
+		"attacker": 46.8,
+		"score": 75.2,
+		"rank": 37,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 691
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 656
+			},
+			{
+				"opponent": "altaria",
+				"rating": 639
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 521
+			},
+			{
+				"opponent": "florges",
+				"rating": 521
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 280
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 294
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 299
+			},
+			{
+				"opponent": "forretress",
+				"rating": 351
+			}
+		]
+	},
+	"magnezone": {
+		"speciesId": "magnezone",
+		"moveset": [
+			"VOLT_SWITCH",
+			"WILD_CHARGE",
+			"MIRROR_SHOT"
+		],
+		"lead": 72.7,
+		"switch": 52.5,
+		"charger": 89.4,
+		"closer": 64.1,
+		"consistency": 61.2,
+		"attacker": 65.8,
+		"score": 75.1,
+		"rank": 38,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 857
+			},
+			{
+				"opponent": "forretress",
+				"rating": 843
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 803
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 700
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 583
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 137
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 145
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 195
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 327
+			},
+			{
+				"opponent": "altaria",
+				"rating": 474
+			}
+		]
+	},
+	"altaria": {
+		"speciesId": "altaria",
+		"moveset": [
+			"DRAGON_BREATH",
+			"MOONBLAST",
+			"FLAMETHROWER"
+		],
+		"lead": 71,
+		"switch": 38.6,
+		"charger": 75.7,
+		"closer": 75.4,
+		"consistency": 95.8,
+		"attacker": 61.1,
+		"score": 75,
+		"rank": 39,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 804
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 579
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 576
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 547
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "florges",
+				"rating": 118
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 310
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 368
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 487
+			}
+		]
+	},
+	"magneton_shadow": {
+		"speciesId": "magneton_shadow",
+		"moveset": [
+			"THUNDER_SHOCK",
+			"DISCHARGE",
+			"MAGNET_BOMB"
+		],
+		"lead": 72.2,
+		"switch": 58,
+		"charger": 85.5,
+		"closer": 66.4,
+		"consistency": 100,
+		"attacker": 34.7,
+		"score": 74.6,
+		"rank": 40,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 900
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 852
+			},
+			{
+				"opponent": "florges",
+				"rating": 852
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 663
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 615
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 247
+			},
+			{
+				"opponent": "forretress",
+				"rating": 375
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 411
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 431
+			}
+		]
+	},
+	"azumarill": {
+		"speciesId": "azumarill",
+		"moveset": [
+			"BUBBLE",
+			"ICE_BEAM",
+			"PLAY_ROUGH"
+		],
+		"lead": 69.3,
+		"switch": 62.5,
+		"charger": 71.8,
+		"closer": 74.6,
+		"consistency": 93.1,
+		"attacker": 72.2,
+		"score": 74.4,
+		"rank": 41,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 712
+			},
+			{
+				"opponent": "altaria",
+				"rating": 646
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 599
+			},
+			{
+				"opponent": "florges",
+				"rating": 526
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 502
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 299
+			},
+			{
+				"opponent": "forretress",
+				"rating": 312
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 321
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 340
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 376
+			}
+		]
+	},
+	"tapu_fini": {
+		"speciesId": "tapu_fini",
+		"moveset": [
+			"WATER_GUN",
+			"SURF",
+			"NATURES_MADNESS"
+		],
+		"lead": 62.2,
+		"switch": 43.5,
+		"charger": 78.9,
+		"closer": 77.7,
+		"consistency": 98.8,
+		"attacker": 50.2,
+		"score": 74.4,
+		"rank": 42,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 676
+			},
+			{
+				"opponent": "altaria",
+				"rating": 652
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 623
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 571
+			},
+			{
+				"opponent": "florges",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "forretress",
+				"rating": 191
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 260
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 266
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 413
+			}
+		]
+	},
+	"magnezone_shadow": {
+		"speciesId": "magnezone_shadow",
+		"moveset": [
+			"VOLT_SWITCH",
+			"WILD_CHARGE",
+			"MIRROR_SHOT"
+		],
+		"lead": 75.3,
+		"switch": 63.8,
+		"charger": 93.4,
+		"closer": 64.5,
+		"consistency": 61.2,
+		"attacker": 50.7,
+		"score": 74.3,
+		"rank": 43,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 848
+			},
+			{
+				"opponent": "forretress",
+				"rating": 818
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 740
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 602
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 529
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 146
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 203
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 236
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 387
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 428
+			}
+		]
+	},
+	"metagross": {
+		"speciesId": "metagross",
+		"moveset": [
+			"SHADOW_CLAW",
+			"METEOR_MASH",
+			"EARTHQUAKE"
+		],
+		"lead": 55.1,
+		"switch": 68.3,
+		"charger": 88.1,
+		"closer": 73.3,
+		"consistency": 98.2,
+		"attacker": 38.8,
+		"score": 74.3,
+		"rank": 44,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 701
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 668
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 644
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 581
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 567
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 226
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 345
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 370
+			}
+		]
+	},
+	"aggron": {
+		"speciesId": "aggron",
+		"moveset": [
+			"METAL_SOUND",
+			"METEOR_BEAM",
+			"BRICK_BREAK"
+		],
+		"lead": 73.3,
+		"switch": 65.2,
+		"charger": 76.9,
+		"closer": 62.4,
+		"consistency": 83.1,
+		"attacker": 69.9,
+		"score": 74.1,
+		"rank": 45,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 830
+			},
+			{
+				"opponent": "altaria",
+				"rating": 759
+			},
+			{
+				"opponent": "florges",
+				"rating": 650
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 575
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 556
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 294
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 304
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 390
+			},
+			{
+				"opponent": "forretress",
+				"rating": 398
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 424
+			}
+		]
+	},
+	"kingambit": {
+		"speciesId": "kingambit",
+		"moveset": [
+			"LOW_KICK",
+			"FOUL_PLAY",
+			"IRON_HEAD"
+		],
+		"lead": 61.4,
+		"switch": 38.8,
+		"charger": 76.2,
+		"closer": 78.6,
+		"consistency": 91.6,
+		"attacker": 56.7,
+		"score": 74.1,
+		"rank": 46,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 875
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 834
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 701
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 669
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 592
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 84
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 250
+			},
+			{
+				"opponent": "forretress",
+				"rating": 351
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 395
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 400
+			}
+		]
+	},
+	"zekrom_shadow": {
+		"speciesId": "zekrom_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"FUSION_BOLT",
+			"CRUNCH"
+		],
+		"lead": 64.2,
+		"switch": 42.9,
+		"charger": 84.5,
+		"closer": 75.6,
+		"consistency": 96.7,
+		"attacker": 31.8,
+		"score": 73.9,
+		"rank": 47,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 869
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 752
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 677
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 537
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 136
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 159
+			},
+			{
+				"opponent": "florges",
+				"rating": 159
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 386
+			}
+		]
+	},
+	"aggron_shadow": {
+		"speciesId": "aggron_shadow",
+		"moveset": [
+			"METAL_SOUND",
+			"METEOR_BEAM",
+			"BRICK_BREAK"
+		],
+		"lead": 67.1,
+		"switch": 69.1,
+		"charger": 86.7,
+		"closer": 61.9,
+		"consistency": 83.1,
+		"attacker": 45.3,
+		"score": 73.5,
+		"rank": 48,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 853
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 617
+			},
+			{
+				"opponent": "altaria",
+				"rating": 617
+			},
+			{
+				"opponent": "florges",
+				"rating": 608
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 518
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 270
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 302
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 322
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 376
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 448
+			}
+		]
+	},
+	"gholdengo": {
+		"speciesId": "gholdengo",
+		"moveset": [
+			"HEX",
+			"SHADOW_BALL",
+			"POWER_GEM"
+		],
+		"lead": 69.6,
+		"switch": 53.8,
+		"charger": 78.6,
+		"closer": 73.2,
+		"consistency": 100,
+		"attacker": 39.3,
+		"score": 73.2,
+		"rank": 49,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 921
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 679
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 635
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 530
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 508
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 345
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 360
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 406
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 414
+			},
+			{
+				"opponent": "forretress",
+				"rating": 445
+			}
+		]
+	},
+	"dragonite_shadow": {
+		"speciesId": "dragonite_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"THUNDER_PUNCH",
+			"SUPER_POWER"
+		],
+		"lead": 64.4,
+		"switch": 41.6,
+		"charger": 85.2,
+		"closer": 70,
+		"consistency": 78.4,
+		"attacker": 38.6,
+		"score": 72.9,
+		"rank": 50,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 765
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 730
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 615
+			},
+			{
+				"opponent": "altaria",
+				"rating": 553
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 504
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 159
+			},
+			{
+				"opponent": "forretress",
+				"rating": 191
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 468
+			}
+		]
+	},
+	"lucario": {
+		"speciesId": "lucario",
+		"moveset": [
+			"FORCE_PALM",
+			"AURA_SPHERE",
+			"SHADOW_BALL"
+		],
+		"lead": 65.3,
+		"switch": 34.3,
+		"charger": 82.3,
+		"closer": 65,
+		"consistency": 92.9,
+		"attacker": 48.7,
+		"score": 72.9,
+		"rank": 51,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 889
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 853
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 761
+			},
+			{
+				"opponent": "forretress",
+				"rating": 752
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 659
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 155
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 225
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 243
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 476
+			}
+		]
+	},
+	"gabite_shadow": {
+		"speciesId": "gabite_shadow",
+		"moveset": [
+			"MUD_SHOT",
+			"TWISTER",
+			"DIG"
+		],
+		"lead": 68.7,
+		"switch": 40,
+		"charger": 80.6,
+		"closer": 73.2,
+		"consistency": 93.3,
+		"attacker": 31.6,
+		"score": 72.3,
+		"rank": 52,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 848
+			},
+			{
+				"opponent": "forretress",
+				"rating": 753
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 731
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 666
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 575
+			}
+		],
+		"counters": [
+			{
+				"opponent": "florges",
+				"rating": 140
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 213
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 277
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 488
+			}
+		]
+	},
+	"togedemaru": {
+		"speciesId": "togedemaru",
+		"moveset": [
+			"THUNDER_SHOCK",
+			"FELL_STINGER",
+			"WILD_CHARGE"
+		],
+		"lead": 76.1,
+		"switch": 42,
+		"charger": 88.7,
+		"closer": 64.6,
+		"consistency": 44.7,
+		"attacker": 63.2,
+		"score": 72.1,
+		"rank": 53,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 920
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 883
+			},
+			{
+				"opponent": "forretress",
+				"rating": 829
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 825
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 695
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 119
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 163
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 165
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 247
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 291
+			}
+		]
+	},
+	"shiinotic_shadow": {
+		"speciesId": "shiinotic_shadow",
+		"moveset": [
+			"ASTONISH",
+			"MOONBLAST",
+			"SEED_BOMB"
+		],
+		"lead": 63.4,
+		"switch": 44.7,
+		"charger": 81.7,
+		"closer": 62.9,
+		"consistency": 87.2,
+		"attacker": 53.6,
+		"score": 72,
+		"rank": 54,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 792
+			},
+			{
+				"opponent": "altaria",
+				"rating": 666
+			},
+			{
+				"opponent": "forretress",
+				"rating": 581
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 573
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 556
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 213
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 326
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 404
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 428
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 495
+			}
+		]
+	},
+	"gabite": {
+		"speciesId": "gabite",
+		"moveset": [
+			"MUD_SHOT",
+			"TWISTER",
+			"DIG"
+		],
+		"lead": 69.1,
+		"switch": 43.7,
+		"charger": 76,
+		"closer": 72.8,
+		"consistency": 93.3,
+		"attacker": 40.1,
+		"score": 71.7,
+		"rank": 55,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 871
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 806
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 715
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 640
+			},
+			{
+				"opponent": "forretress",
+				"rating": 609
+			}
+		],
+		"counters": [
+			{
+				"opponent": "florges",
+				"rating": 131
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 177
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 323
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 401
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 457
+			}
+		]
+	},
+	"dedenne": {
+		"speciesId": "dedenne",
+		"moveset": [
+			"THUNDER_SHOCK",
+			"DISCHARGE",
+			"PLAY_ROUGH"
+		],
+		"lead": 61.1,
+		"switch": 40.5,
+		"charger": 75.9,
+		"closer": 72,
+		"consistency": 85.3,
+		"attacker": 57.5,
+		"score": 71.6,
+		"rank": 56,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 827
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 793
+			},
+			{
+				"opponent": "altaria",
+				"rating": 672
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 650
+			},
+			{
+				"opponent": "forretress",
+				"rating": 518
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 265
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 342
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 406
+			}
+		]
+	},
+	"latias": {
+		"speciesId": "latias",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AURA_SPHERE",
+			"MIST_BALL"
+		],
+		"lead": 68.1,
+		"switch": 38.2,
+		"charger": 80.9,
+		"closer": 67.4,
+		"consistency": 82.6,
+		"attacker": 39.8,
+		"score": 71.6,
+		"rank": 57,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 841
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 677
+			},
+			{
+				"opponent": "forretress",
+				"rating": 668
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 658
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 605
+			}
+		],
+		"counters": [
+			{
+				"opponent": "florges",
+				"rating": 104
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 185
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 255
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 343
+			}
+		]
+	},
+	"shiinotic": {
+		"speciesId": "shiinotic",
+		"moveset": [
+			"ASTONISH",
+			"MOONBLAST",
+			"SEED_BOMB"
+		],
+		"lead": 66.2,
+		"switch": 45,
+		"charger": 75.8,
+		"closer": 67.4,
+		"consistency": 87.2,
+		"attacker": 58,
+		"score": 71.5,
+		"rank": 58,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 707
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 650
+			},
+			{
+				"opponent": "florges",
+				"rating": 581
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 581
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 556
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 283
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 352
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 370
+			},
+			{
+				"opponent": "forretress",
+				"rating": 410
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 420
+			}
+		]
+	},
+	"ferrothorn": {
+		"speciesId": "ferrothorn",
+		"moveset": [
+			"BULLET_SEED",
+			"POWER_WHIP",
+			"THUNDER"
+		],
+		"lead": 66.4,
+		"switch": 38.8,
+		"charger": 69.4,
+		"closer": 72.8,
+		"consistency": 94.5,
+		"attacker": 57.7,
+		"score": 71.1,
+		"rank": 59,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 746
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 714
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 601
+			},
+			{
+				"opponent": "florges",
+				"rating": 582
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 531
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 66
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 265
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 325
+			},
+			{
+				"opponent": "forretress",
+				"rating": 339
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 376
+			}
+		]
+	},
+	"kingdra": {
+		"speciesId": "kingdra",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SURF",
+			"SWIFT"
+		],
+		"lead": 65.6,
+		"switch": 40.1,
+		"charger": 80.8,
+		"closer": 62.6,
+		"consistency": 85.6,
+		"attacker": 43,
+		"score": 70.8,
+		"rank": 60,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 894
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 627
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 542
+			},
+			{
+				"opponent": "forretress",
+				"rating": 533
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 529
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 273
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 349
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 386
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 414
+			}
+		]
+	},
+	"shelgon": {
+		"speciesId": "shelgon",
+		"moveset": [
+			"DRAGON_BREATH",
+			"TWISTER",
+			"FLAMETHROWER"
+		],
+		"lead": 64.4,
+		"switch": 33.4,
+		"charger": 79,
+		"closer": 69.3,
+		"consistency": 96.5,
+		"attacker": 31.6,
+		"score": 70.2,
+		"rank": 61,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 833
+			},
+			{
+				"opponent": "forretress",
+				"rating": 707
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 678
+			},
+			{
+				"opponent": "altaria",
+				"rating": 670
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 577
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "florges",
+				"rating": 104
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 202
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 479
+			}
+		]
+	},
+	"shelgon_shadow": {
+		"speciesId": "shelgon_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"TWISTER",
+			"FLAMETHROWER"
+		],
+		"lead": 63.1,
+		"switch": 33.2,
+		"charger": 79,
+		"closer": 70.4,
+		"consistency": 96.5,
+		"attacker": 31,
+		"score": 70.2,
+		"rank": 62,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 800
+			},
+			{
+				"opponent": "forretress",
+				"rating": 654
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 634
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 536
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 516
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 94
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "florges",
+				"rating": 104
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 468
+			}
+		]
+	},
+	"probopass": {
+		"speciesId": "probopass",
+		"moveset": [
+			"ROCK_THROW",
+			"ROCK_SLIDE",
+			"MAGNET_BOMB"
+		],
+		"lead": 64.5,
+		"switch": 42.3,
+		"charger": 68.9,
+		"closer": 69.7,
+		"consistency": 95.9,
+		"attacker": 63.2,
+		"score": 69.8,
+		"rank": 63,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 899
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 571
+			},
+			{
+				"opponent": "forretress",
+				"rating": 567
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 529
+			},
+			{
+				"opponent": "florges",
+				"rating": 525
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 208
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 340
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 463
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 467
+			}
+		]
+	},
+	"florges": {
+		"speciesId": "florges",
+		"moveset": [
+			"FAIRY_WIND",
+			"CHILLING_WATER",
+			"MOONBLAST"
+		],
+		"lead": 59.4,
+		"switch": 50.4,
+		"charger": 75.5,
+		"closer": 72.1,
+		"consistency": 81.1,
+		"attacker": 45.5,
+		"score": 69.6,
+		"rank": 64,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 913
+			},
+			{
+				"opponent": "altaria",
+				"rating": 881
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 631
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 595
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 586
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 209
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 257
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 301
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 373
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 462
+			}
+		]
+	},
+	"revavroom": {
+		"speciesId": "revavroom",
+		"moveset": [
+			"METAL_SOUND",
+			"OVERHEAT",
+			"GYRO_BALL"
+		],
+		"lead": 46.5,
+		"switch": 47.9,
+		"charger": 81.4,
+		"closer": 78.6,
+		"consistency": 87.1,
+		"attacker": 34.4,
+		"score": 69.6,
+		"rank": 65,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 701
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 638
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 550
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 525
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 508
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 113
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 116
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 181
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 373
+			}
+		]
+	},
+	"kingdra_shadow": {
+		"speciesId": "kingdra_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SURF",
+			"SWIFT"
+		],
+		"lead": 66.8,
+		"switch": 44.4,
+		"charger": 78.9,
+		"closer": 64.5,
+		"consistency": 85.6,
+		"attacker": 34.4,
+		"score": 69.4,
+		"rank": 66,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 877
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 639
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 588
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 584
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 140
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 308
+			},
+			{
+				"opponent": "forretress",
+				"rating": 414
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 423
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 462
+			}
+		]
+	},
+	"magnemite": {
+		"speciesId": "magnemite",
+		"moveset": [
+			"VOLT_SWITCH",
+			"MAGNET_BOMB",
+			"DISCHARGE"
+		],
+		"lead": 69.4,
+		"switch": 52.3,
+		"charger": 75.1,
+		"closer": 56.1,
+		"consistency": 100,
+		"attacker": 45.8,
+		"score": 69.3,
+		"rank": 67,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 883
+			},
+			{
+				"opponent": "florges",
+				"rating": 827
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 727
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 716
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 222
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 359
+			},
+			{
+				"opponent": "forretress",
+				"rating": 410
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 464
+			}
+		]
+	},
+	"zygarde": {
+		"speciesId": "zygarde",
+		"moveset": [
+			"DRAGON_TAIL",
+			"CRUNCH",
+			"BULLDOZE"
+		],
+		"lead": 62.4,
+		"switch": 35.2,
+		"charger": 72.7,
+		"closer": 66,
+		"consistency": 93.4,
+		"attacker": 55.6,
+		"score": 69.3,
+		"rank": 68,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 827
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 571
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 571
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 560
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 530
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 250
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 270
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 343
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 473
+			}
+		]
+	},
+	"dugtrio_alolan_shadow": {
+		"speciesId": "dugtrio_alolan_shadow",
+		"moveset": [
+			"MUD_SLAP",
+			"IRON_HEAD",
+			"MUD_BOMB"
+		],
+		"lead": 71.1,
+		"switch": 40.2,
+		"charger": 75.7,
+		"closer": 49.2,
+		"consistency": 91.9,
+		"attacker": 52.5,
+		"score": 69.2,
+		"rank": 69,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 922
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 816
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 811
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 750
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 544
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 163
+			},
+			{
+				"opponent": "forretress",
+				"rating": 347
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 353
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 415
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 496
+			}
+		]
+	},
+	"magneton": {
+		"speciesId": "magneton",
+		"moveset": [
+			"VOLT_SWITCH",
+			"MAGNET_BOMB",
+			"DISCHARGE"
+		],
+		"lead": 68.2,
+		"switch": 55.3,
+		"charger": 74.7,
+		"closer": 57.3,
+		"consistency": 100,
+		"attacker": 46.3,
+		"score": 69.2,
+		"rank": 70,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 889
+			},
+			{
+				"opponent": "florges",
+				"rating": 836
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 736
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 573
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 521
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 188
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 208
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 355
+			},
+			{
+				"opponent": "forretress",
+				"rating": 386
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 457
+			}
+		]
+	},
+	"bastiodon": {
+		"speciesId": "bastiodon",
+		"moveset": [
+			"SMACK_DOWN",
+			"STONE_EDGE",
+			"FLAMETHROWER"
+		],
+		"lead": 54.6,
+		"switch": 25.8,
+		"charger": 62.7,
+		"closer": 71.1,
+		"consistency": 100,
+		"attacker": 66.8,
+		"score": 69.1,
+		"rank": 71,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 820
+			},
+			{
+				"opponent": "altaria",
+				"rating": 758
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 669
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 633
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 597
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 72
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 174
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 263
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 401
+			}
+		]
+	},
+	"latias_shadow": {
+		"speciesId": "latias_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AURA_SPHERE",
+			"MIST_BALL"
+		],
+		"lead": 63.7,
+		"switch": 35.3,
+		"charger": 79.5,
+		"closer": 68.1,
+		"consistency": 82.6,
+		"attacker": 30.8,
+		"score": 69.1,
+		"rank": 72,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 800
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 752
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 621
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 606
+			},
+			{
+				"opponent": "forretress",
+				"rating": 601
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 81
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 294
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 353
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 438
+			}
+		]
+	},
+	"morgrem": {
+		"speciesId": "morgrem",
+		"moveset": [
+			"SUCKER_PUNCH",
+			"FOUL_PLAY",
+			"PLAY_ROUGH"
+		],
+		"lead": 61,
+		"switch": 47.4,
+		"charger": 76.8,
+		"closer": 63.8,
+		"consistency": 89.3,
+		"attacker": 46.6,
+		"score": 69.1,
+		"rank": 73,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 945
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 738
+			},
+			{
+				"opponent": "altaria",
+				"rating": 561
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 540
+			},
+			{
+				"opponent": "forretress",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 223
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 304
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 378
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 453
+			}
+		]
+	},
+	"mawile": {
+		"speciesId": "mawile",
+		"moveset": [
+			"FAIRY_WIND",
+			"VICE_GRIP",
+			"IRON_HEAD"
+		],
+		"lead": 56,
+		"switch": 37,
+		"charger": 71.3,
+		"closer": 73.5,
+		"consistency": 87.4,
+		"attacker": 51.8,
+		"score": 69,
+		"rank": 74,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togekiss",
+				"rating": 827
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 777
+			},
+			{
+				"opponent": "florges",
+				"rating": 710
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 600
+			},
+			{
+				"opponent": "altaria",
+				"rating": 537
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 236
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 297
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 297
+			}
+		]
+	},
+	"altaria_shadow": {
+		"speciesId": "altaria_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"MOONBLAST",
+			"FLAMETHROWER"
+		],
+		"lead": 55.4,
+		"switch": 36.2,
+		"charger": 75.8,
+		"closer": 71.6,
+		"consistency": 95.8,
+		"attacker": 38.3,
+		"score": 68.8,
+		"rank": 75,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 775
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 681
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 630
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 514
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 507
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 174
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 349
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 444
+			}
+		]
+	},
+	"dragonite": {
+		"speciesId": "dragonite",
+		"moveset": [
+			"DRAGON_BREATH",
+			"THUNDER_PUNCH",
+			"SUPER_POWER"
+		],
+		"lead": 64.7,
+		"switch": 33.1,
+		"charger": 79.5,
+		"closer": 64.3,
+		"consistency": 78.4,
+		"attacker": 34.9,
+		"score": 68.7,
+		"rank": 76,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 800
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 654
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 601
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 601
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 539
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 81
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 140
+			},
+			{
+				"opponent": "forretress",
+				"rating": 191
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 226
+			},
+			{
+				"opponent": "florges",
+				"rating": 236
+			}
+		]
+	},
+	"reshiram_shadow": {
+		"speciesId": "reshiram_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"FUSION_FLARE",
+			"DRACO_METEOR"
+		],
+		"lead": 47.3,
+		"switch": 45.2,
+		"charger": 90.5,
+		"closer": 69,
+		"consistency": 84.6,
+		"attacker": 22.5,
+		"score": 68.7,
+		"rank": 77,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 925
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 845
+			},
+			{
+				"opponent": "forretress",
+				"rating": 831
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 771
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 714
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 119
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 136
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 219
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 250
+			}
+		]
+	},
+	"palkia_shadow": {
+		"speciesId": "palkia_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AQUA_TAIL",
+			"DRACO_METEOR"
+		],
+		"lead": 58.8,
+		"switch": 66.2,
+		"charger": 86.9,
+		"closer": 58.6,
+		"consistency": 77.7,
+		"attacker": 30.3,
+		"score": 68.3,
+		"rank": 78,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 835
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 725
+			},
+			{
+				"opponent": "registeel",
+				"rating": 580
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 545
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 515
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 276
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 336
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 415
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 424
+			}
+		]
+	},
+	"bastiodon_shadow": {
+		"speciesId": "bastiodon_shadow",
+		"moveset": [
+			"SMACK_DOWN",
+			"STONE_EDGE",
+			"FLAMETHROWER"
+		],
+		"lead": 54.6,
+		"switch": 25.2,
+		"charger": 61.9,
+		"closer": 70,
+		"consistency": 100,
+		"attacker": 65.5,
+		"score": 68.2,
+		"rank": 79,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 741
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 690
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 669
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 589
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 72
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 157
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 306
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 439
+			}
+		]
+	},
+	"clefable": {
+		"speciesId": "clefable",
+		"moveset": [
+			"FAIRY_WIND",
+			"MOONBLAST",
+			"METEOR_MASH"
+		],
+		"lead": 56,
+		"switch": 37.7,
+		"charger": 73,
+		"closer": 71.3,
+		"consistency": 93.7,
+		"attacker": 43,
+		"score": 68.2,
+		"rank": 80,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 860
+			},
+			{
+				"opponent": "altaria",
+				"rating": 727
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 619
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 574
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 530
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 200
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 205
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 280
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 294
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 322
+			}
+		]
+	},
+	"dragalge": {
+		"speciesId": "dragalge",
+		"moveset": [
+			"ACID",
+			"AQUA_TAIL",
+			"OUTRAGE"
+		],
+		"lead": 57.6,
+		"switch": 51.4,
+		"charger": 73.9,
+		"closer": 67.1,
+		"consistency": 80.9,
+		"attacker": 52.5,
+		"score": 68.2,
+		"rank": 81,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 853
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 681
+			},
+			{
+				"opponent": "altaria",
+				"rating": 676
+			},
+			{
+				"opponent": "florges",
+				"rating": 575
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 548
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 229
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 237
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 267
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 271
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 316
+			}
+		]
+	},
+	"ninetales_alolan_shadow": {
+		"speciesId": "ninetales_alolan_shadow",
+		"moveset": [
+			"POWDER_SNOW",
+			"WEATHER_BALL_ICE",
+			"CHILLING_WATER"
+		],
+		"lead": 54.2,
+		"switch": 32.3,
+		"charger": 76.9,
+		"closer": 63.8,
+		"consistency": 99.7,
+		"attacker": 44.3,
+		"score": 68.2,
+		"rank": 82,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 923
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 923
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 852
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 780
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 508
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 234
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 303
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 353
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 395
+			}
+		]
+	},
+	"sandshrew_alolan": {
+		"speciesId": "sandshrew_alolan",
+		"moveset": [
+			"POWDER_SNOW",
+			"NIGHT_SLASH",
+			"GYRO_BALL"
+		],
+		"lead": 57.1,
+		"switch": 48.3,
+		"charger": 74.5,
+		"closer": 64.3,
+		"consistency": 83.9,
+		"attacker": 55.6,
+		"score": 68.2,
+		"rank": 83,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 822
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 822
+			},
+			{
+				"opponent": "florges",
+				"rating": 724
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 712
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 527
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 267
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 294
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 329
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 490
+			}
+		]
+	},
+	"goodra": {
+		"speciesId": "goodra",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AQUA_TAIL",
+			"THUNDER_PUNCH"
+		],
+		"lead": 61.1,
+		"switch": 55.5,
+		"charger": 76.7,
+		"closer": 58.2,
+		"consistency": 94.3,
+		"attacker": 45.8,
+		"score": 68.1,
+		"rank": 84,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "corviknight",
+				"rating": 585
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 581
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 572
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 555
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 202
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 321
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 446
+			},
+			{
+				"opponent": "forretress",
+				"rating": 453
+			}
+		]
+	},
+	"hakamo_o": {
+		"speciesId": "hakamo_o",
+		"moveset": [
+			"DRAGON_TAIL",
+			"BRICK_BREAK",
+			"ROCK_TOMB"
+		],
+		"lead": 61.9,
+		"switch": 33.7,
+		"charger": 74.4,
+		"closer": 54.2,
+		"consistency": 97.5,
+		"attacker": 56.7,
+		"score": 68.1,
+		"rank": 85,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 850
+			},
+			{
+				"opponent": "forretress",
+				"rating": 717
+			},
+			{
+				"opponent": "altaria",
+				"rating": 705
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 588
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 163
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 315
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 404
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 456
+			}
+		]
+	},
+	"ferrothorn_shadow": {
+		"speciesId": "ferrothorn_shadow",
+		"moveset": [
+			"BULLET_SEED",
+			"POWER_WHIP",
+			"THUNDER"
+		],
+		"lead": 57.1,
+		"switch": 30.4,
+		"charger": 62,
+		"closer": 76.3,
+		"consistency": 94.5,
+		"attacker": 46.6,
+		"score": 68,
+		"rank": 86,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "azumarill",
+				"rating": 687
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 667
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 652
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 562
+			},
+			{
+				"opponent": "florges",
+				"rating": 535
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 182
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 343
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 369
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 413
+			},
+			{
+				"opponent": "forretress",
+				"rating": 472
+			}
+		]
+	},
+	"scizor_shadow": {
+		"speciesId": "scizor_shadow",
+		"moveset": [
+			"FURY_CUTTER",
+			"NIGHT_SLASH",
+			"TRAILBLAZE"
+		],
+		"lead": 59.1,
+		"switch": 55.3,
+		"charger": 80.5,
+		"closer": 55.6,
+		"consistency": 96.8,
+		"attacker": 39.8,
+		"score": 68,
+		"rank": 87,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 804
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 785
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 709
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 652
+			},
+			{
+				"opponent": "florges",
+				"rating": 552
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 294
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 310
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 322
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 366
+			}
+		]
+	},
+	"weezing_galarian_shadow": {
+		"speciesId": "weezing_galarian_shadow",
+		"moveset": [
+			"FAIRY_WIND",
+			"SLUDGE",
+			"BRUTAL_SWING"
+		],
+		"lead": 56,
+		"switch": 54.1,
+		"charger": 75.6,
+		"closer": 65.7,
+		"consistency": 83.8,
+		"attacker": 47.9,
+		"score": 68,
+		"rank": 88,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "azumarill",
+				"rating": 762
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 762
+			},
+			{
+				"opponent": "altaria",
+				"rating": 741
+			},
+			{
+				"opponent": "florges",
+				"rating": 663
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 650
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 85
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 212
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 243
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 340
+			}
+		]
+	},
+	"metang_shadow": {
+		"speciesId": "metang_shadow",
+		"moveset": [
+			"FURY_CUTTER",
+			"PSYSHOCK",
+			"GYRO_BALL"
+		],
+		"lead": 62,
+		"switch": 38.8,
+		"charger": 72.2,
+		"closer": 64.1,
+		"consistency": 94,
+		"attacker": 46.3,
+		"score": 67.6,
+		"rank": 89,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togekiss",
+				"rating": 658
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 631
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 631
+			},
+			{
+				"opponent": "florges",
+				"rating": 569
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 252
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 328
+			},
+			{
+				"opponent": "forretress",
+				"rating": 359
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 363
+			}
+		]
+	},
+	"dragonair_shadow": {
+		"speciesId": "dragonair_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"WRAP",
+			"AQUA_TAIL"
+		],
+		"lead": 59.4,
+		"switch": 70.1,
+		"charger": 81.5,
+		"closer": 54.2,
+		"consistency": 96.9,
+		"attacker": 34.9,
+		"score": 67.5,
+		"rank": 90,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 807
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 633
+			},
+			{
+				"opponent": "forretress",
+				"rating": 606
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 551
+			},
+			{
+				"opponent": "altaria",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 310
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 345
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 428
+			}
+		]
+	},
+	"carbink": {
+		"speciesId": "carbink",
+		"moveset": [
+			"ROCK_THROW",
+			"ROCK_SLIDE",
+			"MOONBLAST"
+		],
+		"lead": 57.9,
+		"switch": 29.2,
+		"charger": 60.7,
+		"closer": 68.1,
+		"consistency": 94.3,
+		"attacker": 64.5,
+		"score": 66.9,
+		"rank": 91,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 793
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 773
+			},
+			{
+				"opponent": "altaria",
+				"rating": 761
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 623
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 141
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 181
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 218
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 439
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 446
+			}
+		]
+	},
+	"ninetales_alolan": {
+		"speciesId": "ninetales_alolan",
+		"moveset": [
+			"POWDER_SNOW",
+			"WEATHER_BALL_ICE",
+			"CHILLING_WATER"
+		],
+		"lead": 59.3,
+		"switch": 46.8,
+		"charger": 72.7,
+		"closer": 59.8,
+		"consistency": 99.7,
+		"attacker": 47.1,
+		"score": 66.7,
+		"rank": 92,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 923
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 816
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 688
+			},
+			{
+				"opponent": "florges",
+				"rating": 580
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 576
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 244
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 271
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 326
+			},
+			{
+				"opponent": "forretress",
+				"rating": 339
+			}
+		]
+	},
+	"lairon": {
+		"speciesId": "lairon",
+		"moveset": [
+			"METAL_SOUND",
+			"ROCK_TOMB",
+			"BODY_SLAM"
+		],
+		"lead": 54.2,
+		"switch": 29.8,
+		"charger": 71.5,
+		"closer": 62.7,
+		"consistency": 95.9,
+		"attacker": 54.4,
+		"score": 66.5,
+		"rank": 93,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 855
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 754
+			},
+			{
+				"opponent": "altaria",
+				"rating": 610
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 580
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 95
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 177
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 193
+			},
+			{
+				"opponent": "forretress",
+				"rating": 277
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 485
+			}
+		]
+	},
+	"vibrava_shadow": {
+		"speciesId": "vibrava_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SAND_TOMB",
+			"BULLDOZE"
+		],
+		"lead": 60.4,
+		"switch": 39.8,
+		"charger": 77,
+		"closer": 54.9,
+		"consistency": 97,
+		"attacker": 36.5,
+		"score": 66.4,
+		"rank": 94,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 775
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 740
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 700
+			},
+			{
+				"opponent": "forretress",
+				"rating": 665
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 625
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 129
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 182
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 200
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 296
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 354
+			}
+		]
+	},
+	"dugtrio_alolan": {
+		"speciesId": "dugtrio_alolan",
+		"moveset": [
+			"MUD_SLAP",
+			"IRON_HEAD",
+			"MUD_BOMB"
+		],
+		"lead": 62.5,
+		"switch": 53.8,
+		"charger": 74.2,
+		"closer": 53,
+		"consistency": 91.9,
+		"attacker": 45.3,
+		"score": 66.2,
+		"rank": 95,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 911
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 861
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 827
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 794
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 733
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 190
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 341
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 398
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 414
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 429
+			}
+		]
+	},
+	"hydreigon_shadow": {
+		"speciesId": "hydreigon_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BRUTAL_SWING",
+			"FLY"
+		],
+		"lead": 57.4,
+		"switch": 52.9,
+		"charger": 83.1,
+		"closer": 55.8,
+		"consistency": 93.5,
+		"attacker": 25.9,
+		"score": 66.2,
+		"rank": 96,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 935
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 827
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 724
+			},
+			{
+				"opponent": "altaria",
+				"rating": 607
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 573
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 191
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 311
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 330
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 417
+			}
+		]
+	},
+	"metagross_shadow": {
+		"speciesId": "metagross_shadow",
+		"moveset": [
+			"SHADOW_CLAW",
+			"METEOR_MASH",
+			"EARTHQUAKE"
+		],
+		"lead": 52.6,
+		"switch": 38.5,
+		"charger": 74.3,
+		"closer": 68.1,
+		"consistency": 98.2,
+		"attacker": 33.1,
+		"score": 66.2,
+		"rank": 97,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tinkaton",
+				"rating": 822
+			},
+			{
+				"opponent": "altaria",
+				"rating": 764
+			},
+			{
+				"opponent": "florges",
+				"rating": 610
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 548
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 186
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 188
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 364
+			},
+			{
+				"opponent": "forretress",
+				"rating": 449
+			}
+		]
+	},
+	"mawile_shadow": {
+		"speciesId": "mawile_shadow",
+		"moveset": [
+			"FAIRY_WIND",
+			"VICE_GRIP",
+			"IRON_HEAD"
+		],
+		"lead": 60.8,
+		"switch": 43.1,
+		"charger": 73.8,
+		"closer": 59.3,
+		"consistency": 87.4,
+		"attacker": 39.8,
+		"score": 65.9,
+		"rank": 98,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 869
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 827
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 714
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 680
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 600
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 247
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 250
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 273
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 328
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 382
+			}
+		]
+	},
+	"pawniard": {
+		"speciesId": "pawniard",
+		"moveset": [
+			"FURY_CUTTER",
+			"NIGHT_SLASH",
+			"IRON_HEAD"
+		],
+		"lead": 54.5,
+		"switch": 61.7,
+		"charger": 78.3,
+		"closer": 58.6,
+		"consistency": 85.7,
+		"attacker": 37.5,
+		"score": 65.9,
+		"rank": 99,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 726
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 659
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 617
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 575
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 525
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 223
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 267
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 294
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 315
+			}
+		]
+	},
+	"latios": {
+		"speciesId": "latios",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AURA_SPHERE",
+			"LUSTER_PURGE"
+		],
+		"lead": 62.2,
+		"switch": 34.7,
+		"charger": 75.9,
+		"closer": 63.3,
+		"consistency": 82.6,
+		"attacker": 28.2,
+		"score": 65.8,
+		"rank": 100,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 799
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 750
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 617
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 602
+			},
+			{
+				"opponent": "forretress",
+				"rating": 588
+			}
+		],
+		"counters": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 81
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 297
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 336
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 415
+			}
+		]
+	},
+	"probopass_shadow": {
+		"speciesId": "probopass_shadow",
+		"moveset": [
+			"ROCK_THROW",
+			"ROCK_SLIDE",
+			"MAGNET_BOMB"
+		],
+		"lead": 60.5,
+		"switch": 30.4,
+		"charger": 64.6,
+		"closer": 65.2,
+		"consistency": 95.9,
+		"attacker": 60.6,
+		"score": 65.8,
+		"rank": 101,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 794
+			},
+			{
+				"opponent": "altaria",
+				"rating": 710
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 651
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 617
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 116
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 157
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 263
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 393
+			},
+			{
+				"opponent": "forretress",
+				"rating": 449
+			}
+		]
+	},
+	"sandshrew_alolan_shadow": {
+		"speciesId": "sandshrew_alolan_shadow",
+		"moveset": [
+			"POWDER_SNOW",
+			"NIGHT_SLASH",
+			"GYRO_BALL"
+		],
+		"lead": 57.1,
+		"switch": 41.7,
+		"charger": 73.2,
+		"closer": 61.3,
+		"consistency": 83.9,
+		"attacker": 45.5,
+		"score": 65.8,
+		"rank": 102,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 854
+			},
+			{
+				"opponent": "florges",
+				"rating": 692
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 677
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 551
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 535
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 303
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 340
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 343
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 365
+			}
+		]
+	},
+	"garchomp_shadow": {
+		"speciesId": "garchomp_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"TWISTER",
+			"SAND_TOMB"
+		],
+		"lead": 56.8,
+		"switch": 32.3,
+		"charger": 72.3,
+		"closer": 59.3,
+		"consistency": 99.6,
+		"attacker": 43.2,
+		"score": 65.5,
+		"rank": 103,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 773
+			},
+			{
+				"opponent": "forretress",
+				"rating": 710
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 638
+			},
+			{
+				"opponent": "altaria",
+				"rating": 579
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "empoleon",
+				"rating": 151
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 172
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 260
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 343
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 404
+			}
+		]
+	},
+	"vibrava": {
+		"speciesId": "vibrava",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SAND_TOMB",
+			"BULLDOZE"
+		],
+		"lead": 56,
+		"switch": 40,
+		"charger": 75.2,
+		"closer": 56.5,
+		"consistency": 97,
+		"attacker": 40.6,
+		"score": 65.4,
+		"rank": 104,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 807
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 771
+			},
+			{
+				"opponent": "forretress",
+				"rating": 763
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 712
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 681
+			}
+		],
+		"counters": [
+			{
+				"opponent": "empoleon",
+				"rating": 168
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 182
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 273
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 308
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 351
+			}
+		]
+	},
+	"flygon": {
+		"speciesId": "flygon",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SAND_TOMB",
+			"TWISTER"
+		],
+		"lead": 57,
+		"switch": 36.1,
+		"charger": 68.9,
+		"closer": 57.5,
+		"consistency": 99.6,
+		"attacker": 57.7,
+		"score": 65.2,
+		"rank": 105,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 820
+			},
+			{
+				"opponent": "forretress",
+				"rating": 764
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 716
+			},
+			{
+				"opponent": "altaria",
+				"rating": 660
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 624
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 283
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 331
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 393
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 469
+			}
+		]
+	},
+	"metang": {
+		"speciesId": "metang",
+		"moveset": [
+			"FURY_CUTTER",
+			"PSYSHOCK",
+			"GYRO_BALL"
+		],
+		"lead": 59,
+		"switch": 35.9,
+		"charger": 66.8,
+		"closer": 62.2,
+		"consistency": 94,
+		"attacker": 55.1,
+		"score": 65.2,
+		"rank": 106,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 693
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 670
+			},
+			{
+				"opponent": "florges",
+				"rating": 616
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 523
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 235
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 310
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 335
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 485
+			}
+		]
+	},
+	"flygon_shadow": {
+		"speciesId": "flygon_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SAND_TOMB",
+			"TWISTER"
+		],
+		"lead": 56,
+		"switch": 32.2,
+		"charger": 73.2,
+		"closer": 57,
+		"consistency": 99.6,
+		"attacker": 43,
+		"score": 65.1,
+		"rank": 107,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 788
+			},
+			{
+				"opponent": "forretress",
+				"rating": 752
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 660
+			},
+			{
+				"opponent": "altaria",
+				"rating": 576
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 540
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 151
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 256
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 333
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 395
+			}
+		]
+	},
+	"scizor": {
+		"speciesId": "scizor",
+		"moveset": [
+			"FURY_CUTTER",
+			"NIGHT_SLASH",
+			"TRAILBLAZE"
+		],
+		"lead": 55,
+		"switch": 48.8,
+		"charger": 73.6,
+		"closer": 55.3,
+		"consistency": 96.8,
+		"attacker": 47.9,
+		"score": 65,
+		"rank": 108,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "ferrothorn",
+				"rating": 780
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 738
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 666
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 561
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 528
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 287
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 315
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 333
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 400
+			}
+		]
+	},
+	"genesect": {
+		"speciesId": "genesect",
+		"moveset": [
+			"FURY_CUTTER",
+			"X_SCISSOR",
+			"MAGNET_BOMB"
+		],
+		"lead": 54.3,
+		"switch": 33.2,
+		"charger": 73.8,
+		"closer": 58.2,
+		"consistency": 100,
+		"attacker": 39.3,
+		"score": 64.9,
+		"rank": 109,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 845
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 770
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 695
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 650
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 630
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 140
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 216
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 258
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 287
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 325
+			}
+		]
+	},
+	"garchomp": {
+		"speciesId": "garchomp",
+		"moveset": [
+			"DRAGON_TAIL",
+			"TWISTER",
+			"SAND_TOMB"
+		],
+		"lead": 58.3,
+		"switch": 33.8,
+		"charger": 72.5,
+		"closer": 55.1,
+		"consistency": 99.6,
+		"attacker": 41.4,
+		"score": 64.8,
+		"rank": 110,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 821
+			},
+			{
+				"opponent": "forretress",
+				"rating": 769
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 690
+			},
+			{
+				"opponent": "altaria",
+				"rating": 662
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 599
+			}
+		],
+		"counters": [
+			{
+				"opponent": "empoleon",
+				"rating": 127
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 266
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 297
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 337
+			}
+		]
+	},
+	"kartana": {
+		"speciesId": "kartana",
+		"moveset": [
+			"FURY_CUTTER",
+			"LEAF_BLADE",
+			"SACRED_SWORD"
+		],
+		"lead": 59.6,
+		"switch": 44.4,
+		"charger": 79.7,
+		"closer": 58.4,
+		"consistency": 100,
+		"attacker": 19.4,
+		"score": 64.8,
+		"rank": 111,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon",
+				"rating": 765
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 765
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 765
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 708
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 651
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 236
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 258
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 392
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 472
+			}
+		]
+	},
+	"wigglytuff": {
+		"speciesId": "wigglytuff",
+		"moveset": [
+			"CHARM",
+			"ICY_WIND",
+			"SWIFT"
+		],
+		"lead": 60.5,
+		"switch": 38.9,
+		"charger": 67.8,
+		"closer": 59.6,
+		"consistency": 99.4,
+		"attacker": 46.8,
+		"score": 64.8,
+		"rank": 112,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 704
+			},
+			{
+				"opponent": "florges",
+				"rating": 652
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 616
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 605
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 582
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 145
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 195
+			},
+			{
+				"opponent": "forretress",
+				"rating": 289
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 334
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 340
+			}
+		]
+	},
+	"giratina_altered_shadow": {
+		"speciesId": "giratina_altered_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"DRAGON_CLAW",
+			"SHADOW_SNEAK"
+		],
+		"lead": 57.6,
+		"switch": 35.9,
+		"charger": 69.1,
+		"closer": 64.1,
+		"consistency": 100,
+		"attacker": 37.3,
+		"score": 64.7,
+		"rank": 113,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 682
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 603
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 562
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 562
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 509
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 126
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 280
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 383
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 393
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 458
+			}
+		]
+	},
+	"aromatisse": {
+		"speciesId": "aromatisse",
+		"moveset": [
+			"FAIRY_WIND",
+			"MOONBLAST",
+			"PSYSHOCK"
+		],
+		"lead": 55.6,
+		"switch": 44.1,
+		"charger": 69.7,
+		"closer": 66.7,
+		"consistency": 83.2,
+		"attacker": 39.1,
+		"score": 64.6,
+		"rank": 114,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 733
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 724
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 583
+			},
+			{
+				"opponent": "florges",
+				"rating": 564
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 557
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 210
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 213
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 219
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 294
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 340
+			}
+		]
+	},
+	"guzzlord": {
+		"speciesId": "guzzlord",
+		"moveset": [
+			"DRAGON_TAIL",
+			"BRUTAL_SWING",
+			"SLUDGE_BOMB"
+		],
+		"lead": 55.3,
+		"switch": 41.7,
+		"charger": 74.5,
+		"closer": 53,
+		"consistency": 95.2,
+		"attacker": 41.7,
+		"score": 64.3,
+		"rank": 115,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 694
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 650
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 637
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 584
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 138
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 301
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 357
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 390
+			}
+		]
+	},
+	"latios_shadow": {
+		"speciesId": "latios_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AURA_SPHERE",
+			"LUSTER_PURGE"
+		],
+		"lead": 48.2,
+		"switch": 32.3,
+		"charger": 78,
+		"closer": 66.2,
+		"consistency": 82.6,
+		"attacker": 26.1,
+		"score": 64.3,
+		"rank": 116,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 752
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 732
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 691
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 641
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 182
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 198
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 315
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 376
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 470
+			}
+		]
+	},
+	"aron": {
+		"speciesId": "aron",
+		"moveset": [
+			"METAL_SOUND",
+			"ROCK_TOMB",
+			"IRON_HEAD"
+		],
+		"lead": 62.5,
+		"switch": 28.9,
+		"charger": 66,
+		"closer": 57.3,
+		"consistency": 100,
+		"attacker": 47.6,
+		"score": 64.2,
+		"rank": 117,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian",
+				"rating": 862
+			},
+			{
+				"opponent": "florges",
+				"rating": 720
+			},
+			{
+				"opponent": "altaria",
+				"rating": 669
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 598
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 95
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 226
+			},
+			{
+				"opponent": "forretress",
+				"rating": 285
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 316
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 379
+			}
+		]
+	},
+	"kommo_o": {
+		"speciesId": "kommo_o",
+		"moveset": [
+			"DRAGON_TAIL",
+			"CLANGING_SCALES",
+			"UPPER_HAND"
+		],
+		"lead": 57.9,
+		"switch": 29.5,
+		"charger": 71.9,
+		"closer": 61.3,
+		"consistency": 77.5,
+		"attacker": 33.1,
+		"score": 63.5,
+		"rank": 118,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 825
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 683
+			},
+			{
+				"opponent": "altaria",
+				"rating": 655
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 533
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 528
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 127
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 293
+			},
+			{
+				"opponent": "forretress",
+				"rating": 468
+			}
+		]
+	},
+	"escavalier": {
+		"speciesId": "escavalier",
+		"moveset": [
+			"BUG_BITE",
+			"DRILL_RUN",
+			"RAZOR_SHELL"
+		],
+		"lead": 62.4,
+		"switch": 40.7,
+		"charger": 72.5,
+		"closer": 65.9,
+		"consistency": 73.6,
+		"attacker": 34.7,
+		"score": 63.4,
+		"rank": 119,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "melmetal",
+				"rating": 662
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 657
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 620
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 560
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 518
+			}
+		],
+		"counters": [
+			{
+				"opponent": "turtonator",
+				"rating": 119
+			},
+			{
+				"opponent": "forretress",
+				"rating": 191
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 229
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 300
+			}
+		]
+	},
+	"tinkatuff": {
+		"speciesId": "tinkatuff",
+		"moveset": [
+			"FAIRY_WIND",
+			"PLAY_ROUGH",
+			"FLASH_CANNON"
+		],
+		"lead": 60.5,
+		"switch": 45.5,
+		"charger": 65.4,
+		"closer": 60.8,
+		"consistency": 91.3,
+		"attacker": 45.5,
+		"score": 63.4,
+		"rank": 120,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togekiss",
+				"rating": 701
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 657
+			},
+			{
+				"opponent": "altaria",
+				"rating": 654
+			},
+			{
+				"opponent": "florges",
+				"rating": 630
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 510
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 266
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 275
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 284
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 365
+			}
+		]
+	},
+	"zweilous": {
+		"speciesId": "zweilous",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BODY_SLAM",
+			"DARK_PULSE"
+		],
+		"lead": 56.8,
+		"switch": 33.7,
+		"charger": 69.5,
+		"closer": 59.4,
+		"consistency": 87.8,
+		"attacker": 40.4,
+		"score": 63.4,
+		"rank": 121,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 839
+			},
+			{
+				"opponent": "forretress",
+				"rating": 660
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 567
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 560
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 212
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 396
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 407
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 444
+			}
+		]
+	},
+	"dragonair": {
+		"speciesId": "dragonair",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AQUA_TAIL",
+			"DRAGON_PULSE"
+		],
+		"lead": 56.7,
+		"switch": 54.7,
+		"charger": 74.6,
+		"closer": 50.7,
+		"consistency": 84.7,
+		"attacker": 36.7,
+		"score": 63,
+		"rank": 122,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 838
+			},
+			{
+				"opponent": "forretress",
+				"rating": 649
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 649
+			},
+			{
+				"opponent": "altaria",
+				"rating": 633
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 205
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 315
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 430
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 491
+			}
+		]
+	},
+	"appletun": {
+		"speciesId": "appletun",
+		"moveset": [
+			"ASTONISH",
+			"ENERGY_BALL",
+			"OUTRAGE"
+		],
+		"lead": 53.6,
+		"switch": 38.3,
+		"charger": 65,
+		"closer": 63.6,
+		"consistency": 92.7,
+		"attacker": 45.3,
+		"score": 62.7,
+		"rank": 123,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 621
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 574
+			},
+			{
+				"opponent": "forretress",
+				"rating": 518
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 518
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 202
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 216
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 236
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 280
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 473
+			}
+		]
+	},
+	"noivern": {
+		"speciesId": "noivern",
+		"moveset": [
+			"BITE",
+			"HEAT_WAVE",
+			"HURRICANE"
+		],
+		"lead": 52.6,
+		"switch": 36.1,
+		"charger": 71,
+		"closer": 60.8,
+		"consistency": 83.3,
+		"attacker": 34.4,
+		"score": 62.6,
+		"rank": 124,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 809
+			},
+			{
+				"opponent": "lucario",
+				"rating": 746
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 686
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 543
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 340
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 404
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 473
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 489
+			}
+		]
+	},
+	"grimmsnarl": {
+		"speciesId": "grimmsnarl",
+		"moveset": [
+			"SUCKER_PUNCH",
+			"FOUL_PLAY",
+			"DRAINING_KISS"
+		],
+		"lead": 57.4,
+		"switch": 41.9,
+		"charger": 70.9,
+		"closer": 52,
+		"consistency": 97.5,
+		"attacker": 34.1,
+		"score": 62.3,
+		"rank": 125,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "aegislash_shield",
+				"rating": 939
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 815
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 695
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 650
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 522
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 250
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 260
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 383
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 406
+			}
+		]
+	},
+	"slurpuff": {
+		"speciesId": "slurpuff",
+		"moveset": [
+			"FAIRY_WIND",
+			"DRAINING_KISS",
+			"ENERGY_BALL"
+		],
+		"lead": 51.3,
+		"switch": 38.2,
+		"charger": 65.8,
+		"closer": 64.6,
+		"consistency": 96.4,
+		"attacker": 39.1,
+		"score": 62.3,
+		"rank": 126,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 841
+			},
+			{
+				"opponent": "altaria",
+				"rating": 741
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 651
+			},
+			{
+				"opponent": "florges",
+				"rating": 636
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 539
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 205
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 212
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 226
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 250
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 380
+			}
+		]
+	},
+	"sylveon": {
+		"speciesId": "sylveon",
+		"moveset": [
+			"FAIRY_WIND",
+			"PSYSHOCK",
+			"DRAINING_KISS"
+		],
+		"lead": 49.4,
+		"switch": 34.7,
+		"charger": 69.3,
+		"closer": 58.7,
+		"consistency": 94.3,
+		"attacker": 39.8,
+		"score": 62.1,
+		"rank": 127,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 730
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 707
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 588
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 550
+			},
+			{
+				"opponent": "florges",
+				"rating": 519
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 163
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 210
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 236
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 258
+			}
+		]
+	},
+	"hydreigon": {
+		"speciesId": "hydreigon",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BRUTAL_SWING",
+			"FLY"
+		],
+		"lead": 52.6,
+		"switch": 48,
+		"charger": 73.3,
+		"closer": 51.3,
+		"consistency": 93.5,
+		"attacker": 31.6,
+		"score": 61.3,
+		"rank": 128,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 853
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 754
+			},
+			{
+				"opponent": "forretress",
+				"rating": 650
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 633
+			},
+			{
+				"opponent": "altaria",
+				"rating": 581
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 168
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 177
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 284
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 313
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 318
+			}
+		]
+	},
+	"axew_shadow": {
+		"speciesId": "axew_shadow",
+		"moveset": [
+			"SCRATCH",
+			"AQUA_TAIL",
+			"DRAGON_CLAW"
+		],
+		"lead": 53.4,
+		"switch": 67.4,
+		"charger": 79.8,
+		"closer": 50.6,
+		"consistency": 85.2,
+		"attacker": 19.4,
+		"score": 61.1,
+		"rank": 129,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 764
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 661
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 623
+			},
+			{
+				"opponent": "altaria",
+				"rating": 541
+			},
+			{
+				"opponent": "lucario",
+				"rating": 524
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 303
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 333
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 349
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 369
+			}
+		]
+	},
+	"zweilous_shadow": {
+		"speciesId": "zweilous_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BODY_SLAM",
+			"DARK_PULSE"
+		],
+		"lead": 52,
+		"switch": 38.2,
+		"charger": 71.5,
+		"closer": 56,
+		"consistency": 87.8,
+		"attacker": 27.4,
+		"score": 60.7,
+		"rank": 130,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 810
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 653
+			},
+			{
+				"opponent": "forretress",
+				"rating": 607
+			},
+			{
+				"opponent": "altaria",
+				"rating": 603
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 557
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 149
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 188
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 237
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 357
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 436
+			}
+		]
+	},
+	"noivern_shadow": {
+		"speciesId": "noivern_shadow",
+		"moveset": [
+			"BITE",
+			"HEAT_WAVE",
+			"HURRICANE"
+		],
+		"lead": 55.3,
+		"switch": 33.7,
+		"charger": 72.2,
+		"closer": 61,
+		"consistency": 83.3,
+		"attacker": 18.3,
+		"score": 60.6,
+		"rank": 131,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "forretress",
+				"rating": 765
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 710
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 666
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 543
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 507
+			}
+		],
+		"counters": [
+			{
+				"opponent": "empoleon",
+				"rating": 192
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 225
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 390
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 447
+			}
+		]
+	},
+	"whimsicott": {
+		"speciesId": "whimsicott",
+		"moveset": [
+			"FAIRY_WIND",
+			"SEED_BOMB",
+			"MOONBLAST"
+		],
+		"lead": 50.6,
+		"switch": 34,
+		"charger": 63,
+		"closer": 64.1,
+		"consistency": 81.6,
+		"attacker": 41.9,
+		"score": 60.6,
+		"rank": 132,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 919
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 911
+			},
+			{
+				"opponent": "altaria",
+				"rating": 699
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 567
+			},
+			{
+				"opponent": "florges",
+				"rating": 550
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 219
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 236
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 297
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 343
+			}
+		]
+	},
+	"lairon_shadow": {
+		"speciesId": "lairon_shadow",
+		"moveset": [
+			"METAL_SOUND",
+			"ROCK_TOMB",
+			"BODY_SLAM"
+		],
+		"lead": 53.9,
+		"switch": 30.2,
+		"charger": 63.9,
+		"closer": 55.3,
+		"consistency": 95.9,
+		"attacker": 45.3,
+		"score": 60.4,
+		"rank": 133,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 724
+			},
+			{
+				"opponent": "florges",
+				"rating": 622
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 593
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 555
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 188
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 206
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 301
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 364
+			}
+		]
+	},
+	"celesteela": {
+		"speciesId": "celesteela",
+		"moveset": [
+			"AIR_SLASH",
+			"BODY_SLAM",
+			"IRON_HEAD"
+		],
+		"lead": 50.8,
+		"switch": 35.5,
+		"charger": 63.7,
+		"closer": 58.4,
+		"consistency": 88.7,
+		"attacker": 44,
+		"score": 60.1,
+		"rank": 134,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 738
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 676
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 634
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 573
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 530
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 140
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 261
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 293
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 390
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 463
+			}
+		]
+	},
+	"aron_shadow": {
+		"speciesId": "aron_shadow",
+		"moveset": [
+			"METAL_SOUND",
+			"ROCK_TOMB",
+			"IRON_HEAD"
+		],
+		"lead": 54.2,
+		"switch": 27.7,
+		"charger": 63,
+		"closer": 55.3,
+		"consistency": 100,
+		"attacker": 42.7,
+		"score": 60,
+		"rank": 135,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "altaria",
+				"rating": 688
+			},
+			{
+				"opponent": "florges",
+				"rating": 661
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 586
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 578
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 511
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 113
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 247
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 418
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 471
+			}
+		]
+	},
+	"axew": {
+		"speciesId": "axew",
+		"moveset": [
+			"SCRATCH",
+			"AQUA_TAIL",
+			"DRAGON_CLAW"
+		],
+		"lead": 50.3,
+		"switch": 60.2,
+		"charger": 77.1,
+		"closer": 47.8,
+		"consistency": 85.2,
+		"attacker": 23.5,
+		"score": 59.6,
+		"rank": 136,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 797
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 615
+			},
+			{
+				"opponent": "forretress",
+				"rating": 586
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 541
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 533
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 276
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 308
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 331
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 332
+			}
+		]
+	},
+	"regidrago": {
+		"speciesId": "regidrago",
+		"moveset": [
+			"DRAGON_BREATH",
+			"DRAGON_ENERGY",
+			"VICE_GRIP"
+		],
+		"lead": 54,
+		"switch": 32.9,
+		"charger": 65.3,
+		"closer": 56.3,
+		"consistency": 83.5,
+		"attacker": 34.4,
+		"score": 59.4,
+		"rank": 137,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 848
+			},
+			{
+				"opponent": "altaria",
+				"rating": 678
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 632
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 626
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 541
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 180
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 340
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 342
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 456
+			}
+		]
+	},
+	"sliggoo": {
+		"speciesId": "sliggoo",
+		"moveset": [
+			"DRAGON_BREATH",
+			"BODY_SLAM",
+			"DRAGON_PULSE"
+		],
+		"lead": 53.4,
+		"switch": 32,
+		"charger": 62.6,
+		"closer": 54.6,
+		"consistency": 87.4,
+		"attacker": 44,
+		"score": 59.1,
+		"rank": 138,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 855
+			},
+			{
+				"opponent": "altaria",
+				"rating": 714
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 593
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 542
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 519
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 170
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 328
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 333
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 345
+			}
+		]
+	},
+	"escavalier_shadow": {
+		"speciesId": "escavalier_shadow",
+		"moveset": [
+			"BUG_BITE",
+			"DRILL_RUN",
+			"RAZOR_SHELL"
+		],
+		"lead": 51.9,
+		"switch": 32.2,
+		"charger": 65.3,
+		"closer": 64.5,
+		"consistency": 73.6,
+		"attacker": 34.4,
+		"score": 59,
+		"rank": 139,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "jirachi",
+				"rating": 717
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 662
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 625
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 587
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 188
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 306
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 471
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 488
+			}
+		]
+	},
+	"haxorus_shadow": {
+		"speciesId": "haxorus_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"NIGHT_SLASH",
+			"SURF"
+		],
+		"lead": 44.5,
+		"switch": 31.4,
+		"charger": 76.7,
+		"closer": 53.5,
+		"consistency": 88.7,
+		"attacker": 18.6,
+		"score": 58.8,
+		"rank": 140,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 728
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 723
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 655
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 558
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 533
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 140
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 168
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 296
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 312
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 491
+			}
+		]
+	},
+	"giratina_origin": {
+		"speciesId": "giratina_origin",
+		"moveset": [
+			"DRAGON_TAIL",
+			"OMINOUS_WIND",
+			"SHADOW_BALL"
+		],
+		"lead": 53.9,
+		"switch": 30.5,
+		"charger": 66,
+		"closer": 57.5,
+		"consistency": 81.5,
+		"attacker": 25.9,
+		"score": 58.6,
+		"rank": 141,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 853
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 610
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 568
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 561
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 551
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 166
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 372
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 386
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 445
+			}
+		]
+	},
+	"salamence_shadow": {
+		"speciesId": "salamence_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"FLY",
+			"BRUTAL_SWING"
+		],
+		"lead": 45.1,
+		"switch": 40.4,
+		"charger": 74.2,
+		"closer": 53.9,
+		"consistency": 83.7,
+		"attacker": 22,
+		"score": 58.6,
+		"rank": 142,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 880
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 743
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 688
+			},
+			{
+				"opponent": "lucario",
+				"rating": 636
+			},
+			{
+				"opponent": "altaria",
+				"rating": 547
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 140
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 168
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 250
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 258
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 303
+			}
+		]
+	},
+	"rapidash_galarian": {
+		"speciesId": "rapidash_galarian",
+		"moveset": [
+			"FAIRY_WIND",
+			"BODY_SLAM",
+			"WILD_CHARGE"
+		],
+		"lead": 48.9,
+		"switch": 25.5,
+		"charger": 67.8,
+		"closer": 56.8,
+		"consistency": 84.6,
+		"attacker": 26.4,
+		"score": 58.5,
+		"rank": 143,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 816
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 638
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 638
+			},
+			{
+				"opponent": "altaria",
+				"rating": 625
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 589
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 92
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 172
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 188
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 433
+			}
+		]
+	},
+	"salamence": {
+		"speciesId": "salamence",
+		"moveset": [
+			"DRAGON_TAIL",
+			"FLY",
+			"BRUTAL_SWING"
+		],
+		"lead": 49.3,
+		"switch": 37.6,
+		"charger": 72.4,
+		"closer": 51.8,
+		"consistency": 83.7,
+		"attacker": 23,
+		"score": 58.4,
+		"rank": 144,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 918
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 790
+			},
+			{
+				"opponent": "lucario",
+				"rating": 696
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 542
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 504
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 202
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 315
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 372
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 420
+			}
+		]
+	},
+	"honedge": {
+		"speciesId": "honedge",
+		"moveset": [
+			"PSYCHO_CUT",
+			"IRON_HEAD",
+			"GYRO_BALL"
+		],
+		"lead": 50,
+		"switch": 33.1,
+		"charger": 60.4,
+		"closer": 56.8,
+		"consistency": 100,
+		"attacker": 39.1,
+		"score": 58.1,
+		"rank": 145,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togekiss",
+				"rating": 720
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 584
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 555
+			},
+			{
+				"opponent": "florges",
+				"rating": 525
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 177
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 188
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 240
+			},
+			{
+				"opponent": "forretress",
+				"rating": 265
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 455
+			}
+		]
+	},
+	"fraxure_shadow": {
+		"speciesId": "fraxure_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"AQUA_TAIL",
+			"NIGHT_SLASH"
+		],
+		"lead": 52.5,
+		"switch": 52.6,
+		"charger": 71,
+		"closer": 48.1,
+		"consistency": 100,
+		"attacker": 19.4,
+		"score": 57.9,
+		"rank": 146,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 805
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 766
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 538
+			},
+			{
+				"opponent": "goodra",
+				"rating": 538
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 529
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 168
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 244
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 303
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 369
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 372
+			}
+		]
+	},
+	"dialga_shadow": {
+		"speciesId": "dialga_shadow",
+		"moveset": [
+			"DRAGON_BREATH",
+			"IRON_HEAD",
+			"THUNDER"
+		],
+		"lead": 43.2,
+		"switch": 27.9,
+		"charger": 68.1,
+		"closer": 55.4,
+		"consistency": 96.5,
+		"attacker": 24.3,
+		"score": 57.4,
+		"rank": 147,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 679
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 650
+			},
+			{
+				"opponent": "altaria",
+				"rating": 641
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 617
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 580
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 156
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 188
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 308
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 372
+			}
+		]
+	},
+	"klinklang": {
+		"speciesId": "klinklang",
+		"moveset": [
+			"METAL_SOUND",
+			"MIRROR_SHOT",
+			"FLASH_CANNON"
+		],
+		"lead": 48.3,
+		"switch": 24.3,
+		"charger": 60.8,
+		"closer": 58.2,
+		"consistency": 67.5,
+		"attacker": 47.4,
+		"score": 57.3,
+		"rank": 148,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 697
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 673
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 528
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 519
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 514
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 95
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 116
+			},
+			{
+				"opponent": "forretress",
+				"rating": 144
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 210
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 359
+			}
+		]
+	},
+	"snubbull_shadow": {
+		"speciesId": "snubbull_shadow",
+		"moveset": [
+			"BITE",
+			"BRICK_BREAK",
+			"CRUNCH"
+		],
+		"lead": 55.6,
+		"switch": 43.2,
+		"charger": 67.6,
+		"closer": 40,
+		"consistency": 85,
+		"attacker": 32.1,
+		"score": 57.2,
+		"rank": 149,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 841
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 714
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 700
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 573
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 242
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 286
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 343
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 390
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 425
+			}
+		]
+	},
+	"fraxure": {
+		"speciesId": "fraxure",
+		"moveset": [
+			"DRAGON_TAIL",
+			"AQUA_TAIL",
+			"NIGHT_SLASH"
+		],
+		"lead": 46.8,
+		"switch": 44.6,
+		"charger": 71.5,
+		"closer": 43.6,
+		"consistency": 100,
+		"attacker": 23.8,
+		"score": 56.6,
+		"rank": 150,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 805
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 538
+			},
+			{
+				"opponent": "latias",
+				"rating": 538
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 521
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 191
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 253
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 311
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 366
+			}
+		]
+	},
+	"bisharp": {
+		"speciesId": "bisharp",
+		"moveset": [
+			"SNARL",
+			"DARK_PULSE",
+			"IRON_HEAD"
+		],
+		"lead": 42.9,
+		"switch": 36.7,
+		"charger": 72,
+		"closer": 51.8,
+		"consistency": 92.1,
+		"attacker": 18.1,
+		"score": 56.4,
+		"rank": 151,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "jirachi",
+				"rating": 900
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 795
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 633
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 595
+			},
+			{
+				"opponent": "aegislash_shield",
+				"rating": 580
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 319
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 322
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 343
+			}
+		]
+	},
+	"dachsbun": {
+		"speciesId": "dachsbun",
+		"moveset": [
+			"CHARM",
+			"PSYCHIC_FANGS",
+			"PLAY_ROUGH"
+		],
+		"lead": 51.3,
+		"switch": 35,
+		"charger": 59.4,
+		"closer": 47.4,
+		"consistency": 77.5,
+		"attacker": 47.1,
+		"score": 55.6,
+		"rank": 152,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 848
+			},
+			{
+				"opponent": "altaria",
+				"rating": 687
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 669
+			},
+			{
+				"opponent": "florges",
+				"rating": 566
+			},
+			{
+				"opponent": "lucario",
+				"rating": 508
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 195
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 198
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 276
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 316
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 355
+			}
+		]
+	},
+	"durant": {
+		"speciesId": "durant",
+		"moveset": [
+			"BUG_BITE",
+			"X_SCISSOR",
+			"IRON_HEAD"
+		],
+		"lead": 45.7,
+		"switch": 31.4,
+		"charger": 60.9,
+		"closer": 55.1,
+		"consistency": 93.5,
+		"attacker": 29.7,
+		"score": 55.6,
+		"rank": 153,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 660
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 565
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 550
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 515
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 515
+			}
+		],
+		"counters": [
+			{
+				"opponent": "forretress",
+				"rating": 191
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 203
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 229
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 247
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 260
+			}
+		]
+	},
+	"mr_mime": {
+		"speciesId": "mr_mime",
+		"moveset": [
+			"PSYWAVE",
+			"SHADOW_BALL",
+			"PSYCHIC"
+		],
+		"lead": 46.8,
+		"switch": 29.8,
+		"charger": 62.5,
+		"closer": 50.2,
+		"consistency": 92.8,
+		"attacker": 28.4,
+		"score": 55.1,
+		"rank": 154,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 855
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 788
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 633
+			},
+			{
+				"opponent": "altaria",
+				"rating": 600
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 522
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 156
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 325
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 359
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 375
+			}
+		]
+	},
+	"comfey": {
+		"speciesId": "comfey",
+		"moveset": [
+			"VINE_WHIP",
+			"DRAINING_KISS",
+			"GRASS_KNOT"
+		],
+		"lead": 43.9,
+		"switch": 37,
+		"charger": 61.5,
+		"closer": 50.9,
+		"consistency": 98.7,
+		"attacker": 30.5,
+		"score": 54.9,
+		"rank": 155,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 723
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 661
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 600
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 580
+			},
+			{
+				"opponent": "altaria",
+				"rating": 528
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 136
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 233
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 280
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 316
+			}
+		]
+	},
+	"druddigon": {
+		"speciesId": "druddigon",
+		"moveset": [
+			"DRAGON_TAIL",
+			"NIGHT_SLASH",
+			"ROCK_TOMB"
+		],
+		"lead": 46.2,
+		"switch": 40,
+		"charger": 66.4,
+		"closer": 43.4,
+		"consistency": 95.5,
+		"attacker": 25.9,
+		"score": 54.7,
+		"rank": 156,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 824
+			},
+			{
+				"opponent": "forretress",
+				"rating": 636
+			},
+			{
+				"opponent": "latias",
+				"rating": 611
+			},
+			{
+				"opponent": "altaria",
+				"rating": 585
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 547
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 127
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 218
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 308
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 316
+			}
+		]
+	},
+	"dipplin": {
+		"speciesId": "dipplin",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SEED_BOMB",
+			"OUTRAGE"
+		],
+		"lead": 45.9,
+		"switch": 24.7,
+		"charger": 62.8,
+		"closer": 48.1,
+		"consistency": 79.7,
+		"attacker": 33.4,
+		"score": 54.5,
+		"rank": 157,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 829
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 731
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 715
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 666
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 613
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 138
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 296
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 376
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 380
+			}
+		]
+	},
+	"snubbull": {
+		"speciesId": "snubbull",
+		"moveset": [
+			"BITE",
+			"BRICK_BREAK",
+			"CRUNCH"
+		],
+		"lead": 51.6,
+		"switch": 40.4,
+		"charger": 62.4,
+		"closer": 38.4,
+		"consistency": 85,
+		"attacker": 37.3,
+		"score": 54.5,
+		"rank": 158,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 841
+			},
+			{
+				"opponent": "lucario",
+				"rating": 764
+			},
+			{
+				"opponent": "sandslash_alolan",
+				"rating": 750
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 573
+			},
+			{
+				"opponent": "altaria",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 233
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 256
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 302
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 328
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 340
+			}
+		]
+	},
+	"arctibax": {
+		"speciesId": "arctibax",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AVALANCHE",
+			"DRAGON_CLAW"
+		],
+		"lead": 47.3,
+		"switch": 34.3,
+		"charger": 61.6,
+		"closer": 52.5,
+		"consistency": 96.8,
+		"attacker": 20.4,
+		"score": 54.2,
+		"rank": 159,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 758
+			},
+			{
+				"opponent": "altaria",
+				"rating": 692
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 615
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 612
+			},
+			{
+				"opponent": "scizor_shadow",
+				"rating": 523
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 126
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 345
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 376
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 377
+			}
+		]
+	},
+	"flapple": {
+		"speciesId": "flapple",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SEED_BOMB",
+			"DRAGON_PULSE"
+		],
+		"lead": 49.1,
+		"switch": 31.4,
+		"charger": 64.7,
+		"closer": 44.8,
+		"consistency": 83.8,
+		"attacker": 23,
+		"score": 54,
+		"rank": 160,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 739
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 688
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 658
+			},
+			{
+				"opponent": "altaria",
+				"rating": 585
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 508
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 140
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 316
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 360
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 366
+			}
+		]
+	},
+	"haxorus": {
+		"speciesId": "haxorus",
+		"moveset": [
+			"DRAGON_TAIL",
+			"NIGHT_SLASH",
+			"SURF"
+		],
+		"lead": 45.4,
+		"switch": 38.9,
+		"charger": 65.1,
+		"closer": 47.3,
+		"consistency": 88.7,
+		"attacker": 17.8,
+		"score": 53,
+		"rank": 161,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "magneton_shadow",
+				"rating": 820
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 762
+			},
+			{
+				"opponent": "magnemite_shadow",
+				"rating": 742
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 558
+			},
+			{
+				"opponent": "latias",
+				"rating": 558
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 130
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 248
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 308
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 333
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 415
+			}
+		]
+	},
+	"zygarde_10": {
+		"speciesId": "zygarde_10",
+		"moveset": [
+			"DRAGON_TAIL",
+			"CRUNCH",
+			"EARTHQUAKE"
+		],
+		"lead": 36.9,
+		"switch": 20.7,
+		"charger": 65.5,
+		"closer": 49.7,
+		"consistency": 80.8,
+		"attacker": 22.5,
+		"score": 52.6,
+		"rank": 162,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 790
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 790
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 719
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 663
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 505
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 120
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 159
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 264
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 373
+			}
+		]
+	},
+	"drampa": {
+		"speciesId": "drampa",
+		"moveset": [
+			"DRAGON_BREATH",
+			"SWIFT",
+			"DRAGON_PULSE"
+		],
+		"lead": 45.1,
+		"switch": 27.6,
+		"charger": 65.3,
+		"closer": 36.5,
+		"consistency": 85.8,
+		"attacker": 23.3,
+		"score": 51.7,
+		"rank": 163,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 852
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 630
+			},
+			{
+				"opponent": "altaria",
+				"rating": 595
+			},
+			{
+				"opponent": "forretress",
+				"rating": 578
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 526
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 168
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 246
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 287
+			}
+		]
+	},
+	"hydrapple": {
+		"speciesId": "hydrapple",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SEED_BOMB",
+			"OUTRAGE"
+		],
+		"lead": 41.7,
+		"switch": 26.2,
+		"charger": 58.7,
+		"closer": 46.9,
+		"consistency": 79.7,
+		"attacker": 26.9,
+		"score": 50.9,
+		"rank": 164,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 834
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 694
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 683
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 676
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 606
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 145
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 277
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 340
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 406
+			}
+		]
+	},
+	"hatterene": {
+		"speciesId": "hatterene",
+		"moveset": [
+			"PSYCHO_CUT",
+			"PSYSHOCK",
+			"POWER_WHIP"
+		],
+		"lead": 46.5,
+		"switch": 32.9,
+		"charger": 58.8,
+		"closer": 43.3,
+		"consistency": 94.6,
+		"attacker": 19.9,
+		"score": 50.7,
+		"rank": 165,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 916
+			},
+			{
+				"opponent": "weezing_galarian",
+				"rating": 807
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 598
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 578
+			},
+			{
+				"opponent": "altaria",
+				"rating": 572
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 85
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 196
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 212
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 240
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 299
+			}
+		]
+	},
+	"rayquaza": {
+		"speciesId": "rayquaza",
+		"moveset": [
+			"DRAGON_TAIL",
+			"BREAKING_SWIPE",
+			"DRAGON_ASCENT"
+		],
+		"lead": 34.8,
+		"switch": 16.2,
+		"charger": 56.1,
+		"closer": 56.1,
+		"consistency": 100,
+		"attacker": 16.5,
+		"score": 49.6,
+		"rank": 166,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 782
+			},
+			{
+				"opponent": "forretress",
+				"rating": 760
+			},
+			{
+				"opponent": "perrserker",
+				"rating": 704
+			},
+			{
+				"opponent": "lucario",
+				"rating": 639
+			},
+			{
+				"opponent": "altaria",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 107
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 120
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 123
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 262
+			}
+		]
+	},
+	"exeggutor_alolan_shadow": {
+		"speciesId": "exeggutor_alolan_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SEED_BOMB",
+			"DRACO_METEOR"
+		],
+		"lead": 42.3,
+		"switch": 26.7,
+		"charger": 67.6,
+		"closer": 34.4,
+		"consistency": 72.2,
+		"attacker": 21.7,
+		"score": 48.8,
+		"rank": 167,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 759
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 645
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 629
+			},
+			{
+				"opponent": "forretress",
+				"rating": 564
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 515
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 123
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 158
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 170
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 339
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 497
+			}
+		]
+	},
+	"spritzee": {
+		"speciesId": "spritzee",
+		"moveset": [
+			"CHARM",
+			"DRAINING_KISS",
+			"THUNDERBOLT"
+		],
+		"lead": 44.9,
+		"switch": 24.4,
+		"charger": 46.9,
+		"closer": 46.9,
+		"consistency": 100,
+		"attacker": 38,
+		"score": 48.5,
+		"rank": 168,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 943
+			},
+			{
+				"opponent": "altaria",
+				"rating": 750
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 687
+			},
+			{
+				"opponent": "lucario",
+				"rating": 625
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 610
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 145
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 167
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 186
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 191
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 429
+			}
+		]
+	},
+	"gardevoir_shadow": {
+		"speciesId": "gardevoir_shadow",
+		"moveset": [
+			"CONFUSION",
+			"TRIPLE_AXEL",
+			"SHADOW_BALL"
+		],
+		"lead": 43.7,
+		"switch": 31.9,
+		"charger": 57.3,
+		"closer": 32.3,
+		"consistency": 90.7,
+		"attacker": 25.1,
+		"score": 47.9,
+		"rank": 169,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 826
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 750
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 692
+			},
+			{
+				"opponent": "lucario",
+				"rating": 586
+			},
+			{
+				"opponent": "altaria",
+				"rating": 567
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 180
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 181
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 206
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 369
+			}
+		]
+	},
+	"varoom": {
+		"speciesId": "varoom",
+		"moveset": [
+			"METAL_SOUND",
+			"GYRO_BALL",
+			"GUNK_SHOT"
+		],
+		"lead": 41.1,
+		"switch": 28.5,
+		"charger": 51.4,
+		"closer": 43.6,
+		"consistency": 90,
+		"attacker": 30.8,
+		"score": 47.9,
+		"rank": 170,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "florges",
+				"rating": 704
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 641
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 604
+			},
+			{
+				"opponent": "dedenne",
+				"rating": 575
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 529
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 113
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 136
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 220
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 369
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 372
+			}
+		]
+	},
+	"baxcalibur": {
+		"speciesId": "baxcalibur",
+		"moveset": [
+			"DRAGON_BREATH",
+			"GLAIVE_RUSH",
+			"AVALANCHE"
+		],
+		"lead": 37.4,
+		"switch": 20,
+		"charger": 53,
+		"closer": 47.4,
+		"consistency": 95,
+		"attacker": 20.4,
+		"score": 47.5,
+		"rank": 171,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "dedenne",
+				"rating": 728
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 677
+			},
+			{
+				"opponent": "empoleon_shadow",
+				"rating": 590
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 562
+			},
+			{
+				"opponent": "altaria",
+				"rating": 543
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 244
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 369
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 400
+			}
+		]
+	},
+	"drakloak": {
+		"speciesId": "drakloak",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SHADOW_BALL",
+			"OUTRAGE"
+		],
+		"lead": 31.8,
+		"switch": 23.1,
+		"charger": 58.2,
+		"closer": 48.1,
+		"consistency": 90.4,
+		"attacker": 15.5,
+		"score": 47.4,
+		"rank": 172,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togedemaru",
+				"rating": 823
+			},
+			{
+				"opponent": "registeel",
+				"rating": 545
+			},
+			{
+				"opponent": "excadrill",
+				"rating": 517
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 510
+			},
+			{
+				"opponent": "empoleon",
+				"rating": 503
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 60
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 116
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 119
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 167
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 406
+			}
+		]
+	},
+	"tatsugiri_curly": {
+		"speciesId": "tatsugiri_curly",
+		"moveset": [
+			"TAKE_DOWN",
+			"SURF",
+			"OUTRAGE"
+		],
+		"lead": 33.2,
+		"switch": 21.9,
+		"charger": 53.9,
+		"closer": 48,
+		"consistency": 92.1,
+		"attacker": 20.4,
+		"score": 47.1,
+		"rank": 173,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 802
+			},
+			{
+				"opponent": "varoom",
+				"rating": 610
+			},
+			{
+				"opponent": "snubbull",
+				"rating": 532
+			},
+			{
+				"opponent": "klinklang",
+				"rating": 518
+			},
+			{
+				"opponent": "revavroom",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 154
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 165
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 222
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 410
+			}
+		]
+	},
+	"tatsugiri_droopy": {
+		"speciesId": "tatsugiri_droopy",
+		"moveset": [
+			"TAKE_DOWN",
+			"SURF",
+			"OUTRAGE"
+		],
+		"lead": 33.2,
+		"switch": 21.9,
+		"charger": 53.9,
+		"closer": 48,
+		"consistency": 92.1,
+		"attacker": 20.4,
+		"score": 47.1,
+		"rank": 174,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 802
+			},
+			{
+				"opponent": "varoom",
+				"rating": 610
+			},
+			{
+				"opponent": "snubbull",
+				"rating": 532
+			},
+			{
+				"opponent": "klinklang",
+				"rating": 518
+			},
+			{
+				"opponent": "revavroom",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 154
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 165
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 222
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 410
+			}
+		]
+	},
+	"tatsugiri_stretchy": {
+		"speciesId": "tatsugiri_stretchy",
+		"moveset": [
+			"TAKE_DOWN",
+			"SURF",
+			"OUTRAGE"
+		],
+		"lead": 33.2,
+		"switch": 21.9,
+		"charger": 53.9,
+		"closer": 48,
+		"consistency": 92.1,
+		"attacker": 20.4,
+		"score": 47.1,
+		"rank": 175,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 802
+			},
+			{
+				"opponent": "varoom",
+				"rating": 610
+			},
+			{
+				"opponent": "snubbull",
+				"rating": 532
+			},
+			{
+				"opponent": "klinklang",
+				"rating": 518
+			},
+			{
+				"opponent": "revavroom",
+				"rating": 513
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 154
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 165
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 222
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 410
+			}
+		]
+	},
+	"floette": {
+		"speciesId": "floette",
+		"moveset": [
+			"VINE_WHIP",
+			"DAZZLING_GLEAM",
+			"PSYCHIC"
+		],
+		"lead": 36.5,
+		"switch": 24.1,
+		"charger": 49.7,
+		"closer": 48.5,
+		"consistency": 100,
+		"attacker": 23.8,
+		"score": 46.9,
+		"rank": 176,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 726
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 675
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 667
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 570
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 562
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 76
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 136
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 200
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 276
+			}
+		]
+	},
+	"exeggutor_alolan": {
+		"speciesId": "exeggutor_alolan",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SEED_BOMB",
+			"DRACO_METEOR"
+		],
+		"lead": 42.2,
+		"switch": 26.2,
+		"charger": 61.6,
+		"closer": 35.8,
+		"consistency": 72.2,
+		"attacker": 19.6,
+		"score": 46.6,
+		"rank": 177,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 759
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 667
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 633
+			},
+			{
+				"opponent": "togedemaru",
+				"rating": 618
+			},
+			{
+				"opponent": "excadrill_shadow",
+				"rating": 541
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 126
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 152
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 287
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 415
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 420
+			}
+		]
+	},
+	"frigibax": {
+		"speciesId": "frigibax",
+		"moveset": [
+			"DRAGON_BREATH",
+			"AVALANCHE",
+			"DRAGON_CLAW"
+		],
+		"lead": 37.4,
+		"switch": 23.8,
+		"charger": 52.8,
+		"closer": 44.6,
+		"consistency": 96.8,
+		"attacker": 19.1,
+		"score": 46.6,
+		"rank": 178,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 714
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 661
+			},
+			{
+				"opponent": "altaria",
+				"rating": 610
+			},
+			{
+				"opponent": "steelix_shadow",
+				"rating": 533
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 533
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 351
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 383
+			}
+		]
+	},
+	"diancie": {
+		"speciesId": "diancie",
+		"moveset": [
+			"ROCK_THROW",
+			"ROCK_SLIDE",
+			"MOONBLAST"
+		],
+		"lead": 41.6,
+		"switch": 21.9,
+		"charger": 44.6,
+		"closer": 45,
+		"consistency": 94.3,
+		"attacker": 40.1,
+		"score": 46.5,
+		"rank": 179,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 707
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 617
+			},
+			{
+				"opponent": "togetic",
+				"rating": 612
+			},
+			{
+				"opponent": "altaria",
+				"rating": 606
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 556
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 116
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 154
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 223
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 369
+			}
+		]
+	},
+	"tyrantrum_shadow": {
+		"speciesId": "tyrantrum_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"CRUNCH",
+			"ROCK_TOMB"
+		],
+		"lead": 32.9,
+		"switch": 19.5,
+		"charger": 58.5,
+		"closer": 36.6,
+		"consistency": 94.6,
+		"attacker": 18.3,
+		"score": 45.5,
+		"rank": 180,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 866
+			},
+			{
+				"opponent": "heatran",
+				"rating": 741
+			},
+			{
+				"opponent": "jirachi",
+				"rating": 676
+			},
+			{
+				"opponent": "altaria",
+				"rating": 517
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 517
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 123
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 143
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 305
+			}
+		]
+	},
+	"gardevoir": {
+		"speciesId": "gardevoir",
+		"moveset": [
+			"CONFUSION",
+			"TRIPLE_AXEL",
+			"SHADOW_BALL"
+		],
+		"lead": 40.2,
+		"switch": 31.6,
+		"charger": 52.5,
+		"closer": 34.9,
+		"consistency": 90.7,
+		"attacker": 23.3,
+		"score": 45.4,
+		"rank": 181,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "latias",
+				"rating": 759
+			},
+			{
+				"opponent": "lucario",
+				"rating": 653
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 629
+			},
+			{
+				"opponent": "altaria",
+				"rating": 615
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 591
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 154
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 160
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 293
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 341
+			}
+		]
+	},
+	"tyrunt": {
+		"speciesId": "tyrunt",
+		"moveset": [
+			"DRAGON_TAIL",
+			"ROCK_TOMB",
+			"STOMP"
+		],
+		"lead": 38.6,
+		"switch": 26.4,
+		"charger": 54.8,
+		"closer": 32.6,
+		"consistency": 94.6,
+		"attacker": 19.1,
+		"score": 44.8,
+		"rank": 182,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "togedemaru",
+				"rating": 655
+			},
+			{
+				"opponent": "altaria",
+				"rating": 624
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 538
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 531
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 515
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 184
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 186
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 193
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 321
+			}
+		]
+	},
+	"tyrantrum": {
+		"speciesId": "tyrantrum",
+		"moveset": [
+			"DRAGON_TAIL",
+			"ROCK_TOMB",
+			"CRUNCH"
+		],
+		"lead": 29.8,
+		"switch": 23.2,
+		"charger": 54.9,
+		"closer": 38.9,
+		"consistency": 94.6,
+		"attacker": 21.5,
+		"score": 44.7,
+		"rank": 183,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "heatran_shadow",
+				"rating": 741
+			},
+			{
+				"opponent": "skarmory",
+				"rating": 573
+			},
+			{
+				"opponent": "magnezone_shadow",
+				"rating": 560
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 521
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 517
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 120
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 156
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 255
+			}
+		]
+	},
+	"ribombee": {
+		"speciesId": "ribombee",
+		"moveset": [
+			"FAIRY_WIND",
+			"DRAINING_KISS",
+			"BUG_BUZZ"
+		],
+		"lead": 35.7,
+		"switch": 25.9,
+		"charger": 53.4,
+		"closer": 37.3,
+		"consistency": 88.1,
+		"attacker": 19.9,
+		"score": 44.5,
+		"rank": 184,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 828
+			},
+			{
+				"opponent": "altaria",
+				"rating": 684
+			},
+			{
+				"opponent": "lucario",
+				"rating": 684
+			},
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 583
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 548
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 191
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 230
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 255
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 270
+			}
+		]
+	},
+	"granbull_shadow": {
+		"speciesId": "granbull_shadow",
+		"moveset": [
+			"CHARM",
+			"CLOSE_COMBAT",
+			"CRUNCH"
+		],
+		"lead": 44.6,
+		"switch": 24.1,
+		"charger": 45.2,
+		"closer": 33.9,
+		"consistency": 96.7,
+		"attacker": 31.8,
+		"score": 44.4,
+		"rank": 185,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 852
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 787
+			},
+			{
+				"opponent": "lucario",
+				"rating": 715
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 564
+			},
+			{
+				"opponent": "altaria",
+				"rating": 517
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 171
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 188
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 190
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 202
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 467
+			}
+		]
+	},
+	"ferroseed": {
+		"speciesId": "ferroseed",
+		"moveset": [
+			"METAL_CLAW",
+			"IRON_HEAD",
+			"RETURN"
+		],
+		"lead": 36.9,
+		"switch": 25.3,
+		"charger": 43,
+		"closer": 42.2,
+		"consistency": 90.9,
+		"attacker": 31.3,
+		"score": 43.2,
+		"rank": 186,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "clefable",
+				"rating": 735
+			},
+			{
+				"opponent": "aromatisse",
+				"rating": 726
+			},
+			{
+				"opponent": "florges",
+				"rating": 651
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 584
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 525
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 106
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 197
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 223
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 336
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 343
+			}
+		]
+	},
+	"tyrunt_shadow": {
+		"speciesId": "tyrunt_shadow",
+		"moveset": [
+			"DRAGON_TAIL",
+			"ROCK_TOMB",
+			"STOMP"
+		],
+		"lead": 34.8,
+		"switch": 28.6,
+		"charger": 54.9,
+		"closer": 29.9,
+		"consistency": 94.6,
+		"attacker": 17.6,
+		"score": 42.9,
+		"rank": 187,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "turtonator",
+				"rating": 875
+			},
+			{
+				"opponent": "forretress",
+				"rating": 569
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 542
+			},
+			{
+				"opponent": "altaria",
+				"rating": 531
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 519
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 121
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 123
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 148
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 220
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 230
+			}
+		]
+	},
+	"duraludon": {
+		"speciesId": "duraludon",
+		"moveset": [
+			"DRAGON_TAIL",
+			"DRAGON_CLAW",
+			"FLASH_CANNON"
+		],
+		"lead": 32.2,
+		"switch": 16.7,
+		"charger": 46.6,
+		"closer": 42.6,
+		"consistency": 88.7,
+		"attacker": 18.1,
+		"score": 42.1,
+		"rank": 188,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 709
+			},
+			{
+				"opponent": "turtonator",
+				"rating": 614
+			},
+			{
+				"opponent": "ferrothorn",
+				"rating": 557
+			},
+			{
+				"opponent": "magneton_shadow",
+				"rating": 557
+			},
+			{
+				"opponent": "genesect",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 60
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 116
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 119
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 310
+			}
+		]
+	},
+	"granbull": {
+		"speciesId": "granbull",
+		"moveset": [
+			"CHARM",
+			"CLOSE_COMBAT",
+			"CRUNCH"
+		],
+		"lead": 38.9,
+		"switch": 20.2,
+		"charger": 39.6,
+		"closer": 40.5,
+		"consistency": 96.7,
+		"attacker": 31.6,
+		"score": 42,
+		"rank": 189,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "giratina_altered_shadow",
+				"rating": 830
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 697
+			},
+			{
+				"opponent": "lucario",
+				"rating": 679
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 651
+			},
+			{
+				"opponent": "altaria",
+				"rating": 546
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 136
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 165
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 166
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 173
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 383
+			}
+		]
+	},
+	"dragapult": {
+		"speciesId": "dragapult",
+		"moveset": [
+			"DRAGON_TAIL",
+			"SHADOW_BALL",
+			"OUTRAGE"
+		],
+		"lead": 22,
+		"switch": 17.1,
+		"charger": 52.1,
+		"closer": 45.5,
+		"consistency": 90.4,
+		"attacker": 14.5,
+		"score": 41.8,
+		"rank": 190,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "axew_shadow",
+				"rating": 839
+			},
+			{
+				"opponent": "celesteela",
+				"rating": 643
+			},
+			{
+				"opponent": "durant",
+				"rating": 643
+			},
+			{
+				"opponent": "ferrothorn_shadow",
+				"rating": 565
+			},
+			{
+				"opponent": "heatran",
+				"rating": 526
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 60
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 102
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 119
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 120
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 167
+			}
+		]
+	},
+	"swirlix": {
+		"speciesId": "swirlix",
+		"moveset": [
+			"TACKLE",
+			"DRAINING_KISS",
+			"ENERGY_BALL"
+		],
+		"lead": 30.6,
+		"switch": 20,
+		"charger": 43.4,
+		"closer": 38.4,
+		"consistency": 97.8,
+		"attacker": 23.5,
+		"score": 40.5,
+		"rank": 191,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "hakamo_o",
+				"rating": 706
+			},
+			{
+				"opponent": "altaria",
+				"rating": 696
+			},
+			{
+				"opponent": "goodra",
+				"rating": 617
+			},
+			{
+				"opponent": "guzzlord",
+				"rating": 593
+			},
+			{
+				"opponent": "gabite_shadow",
+				"rating": 544
+			}
+		],
+		"counters": [
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 116
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 135
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 174
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 337
+			}
+		]
+	},
+	"ferroseed_shadow": {
+		"speciesId": "ferroseed_shadow",
+		"moveset": [
+			"METAL_CLAW",
+			"IRON_HEAD",
+			"GYRO_BALL"
+		],
+		"lead": 35.2,
+		"switch": 20.7,
+		"charger": 36.7,
+		"closer": 40.1,
+		"consistency": 100,
+		"attacker": 29.7,
+		"score": 40.3,
+		"rank": 192,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "clefable",
+				"rating": 697
+			},
+			{
+				"opponent": "aromatisse",
+				"rating": 697
+			},
+			{
+				"opponent": "whimsicott",
+				"rating": 693
+			},
+			{
+				"opponent": "florges",
+				"rating": 689
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 596
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 126
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 206
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 210
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 308
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 372
+			}
+		]
+	},
+	"naganadel": {
+		"speciesId": "naganadel",
+		"moveset": [
+			"POISON_JAB",
+			"DRAGON_CLAW",
+			"SLUDGE_BOMB"
+		],
+		"lead": 33.4,
+		"switch": 18.9,
+		"charger": 43.9,
+		"closer": 29.3,
+		"consistency": 100,
+		"attacker": 22,
+		"score": 39.1,
+		"rank": 193,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "whimsicott",
+				"rating": 861
+			},
+			{
+				"opponent": "azumarill",
+				"rating": 804
+			},
+			{
+				"opponent": "tapu_fini",
+				"rating": 747
+			},
+			{
+				"opponent": "dedenne",
+				"rating": 700
+			},
+			{
+				"opponent": "togekiss",
+				"rating": 661
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 78
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 103
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 181
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 187
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 369
+			}
+		]
+	},
+	"meltan": {
+		"speciesId": "meltan",
+		"moveset": [
+			"THUNDER_SHOCK",
+			"FLASH_CANNON",
+			"THUNDERBOLT"
+		],
+		"lead": 24,
+		"switch": 15.5,
+		"charger": 35.7,
+		"closer": 39.8,
+		"consistency": 87.4,
+		"attacker": 16.3,
+		"score": 35.6,
+		"rank": 194,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "tapu_fini",
+				"rating": 673
+			},
+			{
+				"opponent": "ninetales_alolan",
+				"rating": 636
+			},
+			{
+				"opponent": "clefable",
+				"rating": 628
+			},
+			{
+				"opponent": "mawile",
+				"rating": 611
+			},
+			{
+				"opponent": "mawile_shadow",
+				"rating": 512
+			}
+		],
+		"counters": [
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 40
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 95
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 176
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 308
+			}
+		]
+	},
+	"stakataka": {
+		"speciesId": "stakataka",
+		"moveset": [
+			"TAKE_DOWN",
+			"STONE_EDGE",
+			"BULLDOZE"
+		],
+		"lead": 30,
+		"switch": 16.2,
+		"charger": 34.4,
+		"closer": 34.2,
+		"consistency": 100,
+		"attacker": 25.3,
+		"score": 35.6,
+		"rank": 195,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "wigglytuff",
+				"rating": 645
+			},
+			{
+				"opponent": "altaria",
+				"rating": 596
+			},
+			{
+				"opponent": "bastiodon",
+				"rating": 537
+			},
+			{
+				"opponent": "weezing_galarian_shadow",
+				"rating": 510
+			},
+			{
+				"opponent": "tinkatuff",
+				"rating": 505
+			}
+		],
+		"counters": [
+			{
+				"opponent": "mimikyu",
+				"rating": 116
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 142
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 143
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 143
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 145
+			}
+		]
+	},
+	"flabebe": {
+		"speciesId": "flabebe",
+		"moveset": [
+			"VINE_WHIP",
+			"DAZZLING_GLEAM",
+			"PSYCHIC"
+		],
+		"lead": 19.1,
+		"switch": 12.5,
+		"charger": 30.4,
+		"closer": 33.2,
+		"consistency": 100,
+		"attacker": 12.9,
+		"score": 30.2,
+		"rank": 196,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "morgrem",
+				"rating": 701
+			},
+			{
+				"opponent": "hakamo_o",
+				"rating": 659
+			},
+			{
+				"opponent": "kingdra",
+				"rating": 617
+			},
+			{
+				"opponent": "gabite",
+				"rating": 571
+			},
+			{
+				"opponent": "goodra",
+				"rating": 542
+			}
+		],
+		"counters": [
+			{
+				"opponent": "melmetal",
+				"rating": 58
+			},
+			{
+				"opponent": "corviknight",
+				"rating": 76
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 95
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 116
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 186
+			}
+		]
+	},
+	"clefairy": {
+		"speciesId": "clefairy",
+		"moveset": [
+			"ZEN_HEADBUTT",
+			"MOONBLAST",
+			"DISARMING_VOICE"
+		],
+		"lead": 14.3,
+		"switch": 11,
+		"charger": 14.8,
+		"closer": 19.8,
+		"consistency": 94.9,
+		"attacker": 13.4,
+		"score": 19.2,
+		"rank": 197,
+		"rankChange": 0,
+		"matchups": [
+			{
+				"opponent": "kommo_o",
+				"rating": 560
+			},
+			{
+				"opponent": "dipplin",
+				"rating": 525
+			},
+			{
+				"opponent": "hydrapple",
+				"rating": 506
+			}
+		],
+		"counters": [
+			{
+				"opponent": "corviknight",
+				"rating": 80
+			},
+			{
+				"opponent": "tinkaton",
+				"rating": 88
+			},
+			{
+				"opponent": "stunfisk_galarian",
+				"rating": 107
+			},
+			{
+				"opponent": "melmetal",
+				"rating": 113
+			},
+			{
+				"opponent": "mimikyu",
+				"rating": 172
+			}
+		]
+	}
+}

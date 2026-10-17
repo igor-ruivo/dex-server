@@ -1,6 +1,7 @@
 import type HttpDataFetcher from '../../../services/data-fetcher';
 import type GameMasterTranslator from '../../../services/gamemaster-translator';
 import { AvailableLocales } from '../../../services/gamemaster-translator';
+import { PVPOKE_MOVES_URL } from '../../../teams/config';
 import type {
 	GameMasterData,
 	GameMasterMovesType,
@@ -8,7 +9,9 @@ import type {
 	PvEMove,
 	PvPMove,
 } from '../../../types/pokemon';
+import type { PvPokeMove } from '../../../types/teams';
 import { expandHiddenPower } from './hidden-power';
+import { applyPvPokeMoveOverrides } from './pvpoke-move-overrides';
 
 const normalizedMoveName = (moveName: string) => {
 	return moveName
@@ -456,8 +459,14 @@ class MovesProvider {
 		}
 
 		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
-		return expandHiddenPower(movesDictionary, (locale, type) =>
+		const expandedMoves = expandHiddenPower(movesDictionary, (locale, type) =>
 			this.translatorService.getRawString(locale, `pokemon_type_${type}`)
+		);
+
+		// The Game Master lags behind PvPoke on PvP balance changes, so PvPoke's numbers win wherever both know the move.
+		return applyPvPokeMoveOverrides(
+			expandedMoves,
+			await this.dataFetcher.fetchJson<Array<PvPokeMove>>(PVPOKE_MOVES_URL)
 		);
 	}
 

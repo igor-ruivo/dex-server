@@ -14,6 +14,7 @@ import MaxBattlesParser, {
 	markMaxShiny,
 } from '../parsers/events/providers/pokebattler/MaxBattlesParser';
 import MovesProvider from '../parsers/events/providers/pokeminers/MovesProvider';
+import GblSeasonParser from '../parsers/events/providers/pokemongo/GblSeasonParser';
 import PokemonGoSource from '../parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from '../parsers/events/providers/pokemongo/SeasonParser';
 import GameMasterParser, {
@@ -156,6 +157,15 @@ const generateData = async () => {
 			gameTranslations.translations
 		);
 		const seasonData = await seasonParser.fetchSeasonData(pokemonDictionary);
+
+		// Step 6b: the latest "GO Battle League: <season>" post — reward encounters, attack changes and availability. Any Pokémon or
+		// move name it has that cannot be resolved fails the run.
+		const gblSeason = await new GblSeasonParser(
+			dataFetcher,
+			pokemonDictionary,
+			domains.allDomain,
+			moves
+		).fetchLatestSeason();
 
 		// Step 7: LeekDuck integration
 		const leekduckEventsParser = new EventsParser(
@@ -327,6 +337,10 @@ const generateData = async () => {
 		await fs.writeFile(
 			path.join(dataDir, 'season.json'),
 			JSON.stringify(seasonData, null, '\t')
+		);
+		await fs.writeFile(
+			path.join(dataDir, 'gbl-season.json'),
+			JSON.stringify(gblSeason, null, '	')
 		);
 		await fs.writeFile(
 			path.join(dataDir, 'moves.json'),

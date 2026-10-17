@@ -230,6 +230,19 @@ class HttpDataFetcher implements IDataFetcher {
 		return response.text();
 	}
 
+	/** The raw bytes of a file (a picture); throws on a non-2xx response, like `fetchJson`. */
+	async fetchBytes(url: string) {
+		const response = await this.fetchWithLimitAndRetry(url);
+
+		if (!response.ok) {
+			throw new Error(
+				`Failed to fetch data: ${response.status} ${response.statusText} — ${url}`
+			);
+		}
+
+		return Buffer.from(await response.arrayBuffer());
+	}
+
 	getSkippedFetches() {
 		return this.skippedFetches;
 	}

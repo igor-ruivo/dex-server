@@ -1,0 +1,740 @@
+{
+	"slug": "go-battle-league-twilight-trails",
+	"name": "Twilight Trails",
+	"rankUpEncounters": [
+		{
+			"speciesId": "toxtricity",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "dondozo",
+			"shiny": true,
+			"rank": 2000
+		},
+		{
+			"speciesId": "kingdra",
+			"shiny": true,
+			"rank": 2500
+		},
+		{
+			"speciesId": "duraludon",
+			"shiny": true,
+			"rank": 2750
+		},
+		{
+			"speciesId": "pikachu",
+			"shiny": true,
+			"rank": 3000
+		}
+	],
+	"standardEncounters": [
+		{
+			"speciesId": "vulpix",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "bellsprout",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "swablu",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "inkay",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "mareanie",
+			"shiny": true,
+			"rank": 1
+		},
+		{
+			"speciesId": "voltorb_hisuian",
+			"shiny": true,
+			"rank": 6
+		},
+		{
+			"speciesId": "audino",
+			"shiny": true,
+			"rank": 6
+		},
+		{
+			"speciesId": "snorlax",
+			"shiny": true,
+			"rank": 11
+		},
+		{
+			"speciesId": "dratini",
+			"shiny": true,
+			"rank": 11
+		},
+		{
+			"speciesId": "beldum",
+			"shiny": true,
+			"rank": 11
+		},
+		{
+			"speciesId": "frillish",
+			"shiny": true,
+			"rank": 11
+		},
+		{
+			"speciesId": "honedge",
+			"shiny": true,
+			"rank": 16
+		},
+		{
+			"speciesId": "mimikyu",
+			"shiny": false,
+			"rank": 16
+		},
+		{
+			"speciesId": "cramorant",
+			"shiny": false,
+			"rank": 16
+		},
+		{
+			"speciesId": "morpeko_full_belly",
+			"shiny": true,
+			"rank": 16
+		}
+	],
+	"legendarySurprise": {
+		"rank": 20
+	},
+	"attackChanges": [
+		{
+			"moveId": "AIR_CUTTER",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 45,
+					"to": 60
+				},
+				{
+					"kind": "buffChance",
+					"arena": "pvp",
+					"direction": "nerf",
+					"chance": "decreased",
+					"target": "user",
+					"stat": "attack",
+					"effect": "raise",
+					"stages": 1
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "BULLDOZE",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 45,
+					"to": 80
+				},
+				{
+					"kind": "buffChance",
+					"arena": "pvp",
+					"direction": "buff",
+					"chance": "guaranteed",
+					"target": "opponent",
+					"stat": "defense",
+					"effect": "lower",
+					"stages": 1
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "BODY_SLAM",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 55,
+					"to": 65
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "SAND_TOMB",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 40,
+					"to": 55
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "BRINE",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 60,
+					"to": 100
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "BUBBLE_BEAM",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 25,
+					"to": 50
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "MIRROR_COAT",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 60,
+					"to": 75
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "HIGH_HORSEPOWER",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "CHARGE_BEAM",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 5,
+					"to": 6
+				}
+			]
+		},
+		{
+			"moveId": "BLAZE_KICK",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "IRON_HEAD",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 70,
+					"to": 85
+				}
+			]
+		},
+		{
+			"moveId": "DRAINING_KISS",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 60,
+					"to": 80
+				},
+				{
+					"kind": "buffChance",
+					"arena": "pvp",
+					"direction": "buff",
+					"chance": "guaranteed",
+					"target": "user",
+					"stat": "defense",
+					"effect": "raise",
+					"stages": 1
+				}
+			]
+		},
+		{
+			"moveId": "POISON_FANG",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 45,
+					"to": 50
+				}
+			]
+		},
+		{
+			"moveId": "LUNGE",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 60,
+					"to": 70
+				}
+			]
+		},
+		{
+			"moveId": "BITE",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "nerf",
+					"from": 4,
+					"to": 2
+				},
+				{
+					"kind": "energyGain",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "INFESTATION",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 6,
+					"to": 10
+				}
+			]
+		},
+		{
+			"moveId": "TAKE_DOWN",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 5,
+					"to": 14
+				},
+				{
+					"kind": "energyGain",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "SCRATCH",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "nerf",
+					"from": 4,
+					"to": 3
+				},
+				{
+					"kind": "energyGain",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "MOONBLAST",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "nerf",
+					"from": 110,
+					"to": 90
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "SHADOW_BALL",
+			"verdict": "nerf",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "nerf",
+					"from": 100,
+					"to": 90
+				}
+			]
+		},
+		{
+			"moveId": "DARK_PULSE",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "PSYCHO_BOOST",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 70,
+					"to": 85
+				},
+				{
+					"kind": "power",
+					"arena": "pve",
+					"direction": "buff",
+					"from": 70,
+					"to": 130
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pve",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "RAGE_FIST",
+			"verdict": "adjusted",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 50,
+					"to": 55
+				},
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "nerf",
+					"change": "increased"
+				}
+			]
+		},
+		{
+			"moveId": "MAGNET_BOMB",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "DOUBLE_IRON_BASH",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 55,
+					"to": 70
+				}
+			]
+		},
+		{
+			"moveId": "SHADOW_FORCE",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "energyCost",
+					"arena": "pvp",
+					"direction": "buff",
+					"change": "decreased"
+				}
+			]
+		},
+		{
+			"moveId": "LOW_KICK",
+			"verdict": "buff",
+			"changes": [
+				{
+					"kind": "power",
+					"arena": "pvp",
+					"direction": "buff",
+					"from": 5,
+					"to": 6
+				}
+			]
+		}
+	],
+	"attackAvailability": [
+		{
+			"speciesId": "volbeat",
+			"moveId": "INFESTATION"
+		},
+		{
+			"speciesId": "illumise",
+			"moveId": "INFESTATION"
+		},
+		{
+			"speciesId": "volbeat",
+			"moveId": "LUNGE"
+		},
+		{
+			"speciesId": "arbok",
+			"moveId": "BRUTAL_SWING"
+		},
+		{
+			"speciesId": "aerodactyl",
+			"moveId": "BRUTAL_SWING"
+		},
+		{
+			"speciesId": "muk_alolan",
+			"moveId": "BRUTAL_SWING"
+		},
+		{
+			"speciesId": "greninja",
+			"moveId": "BRUTAL_SWING"
+		},
+		{
+			"speciesId": "ariados",
+			"moveId": "FOUL_PLAY"
+		},
+		{
+			"speciesId": "darkrai",
+			"moveId": "FOUL_PLAY"
+		},
+		{
+			"speciesId": "grafaiai",
+			"moveId": "FOUL_PLAY"
+		},
+		{
+			"speciesId": "victreebel",
+			"moveId": "SUCKER_PUNCH"
+		},
+		{
+			"speciesId": "darkrai",
+			"moveId": "SUCKER_PUNCH"
+		},
+		{
+			"speciesId": "audino",
+			"moveId": "CHARGE_BEAM"
+		},
+		{
+			"speciesId": "raichu",
+			"moveId": "VOLT_TACKLE"
+		},
+		{
+			"speciesId": "raichu_alolan",
+			"moveId": "VOLT_TACKLE"
+		},
+		{
+			"speciesId": "grimmsnarl",
+			"moveId": "DRAINING_KISS"
+		},
+		{
+			"speciesId": "aggron",
+			"moveId": "BRICK_BREAK"
+		},
+		{
+			"speciesId": "zeraora",
+			"moveId": "DYNAMIC_PUNCH"
+		},
+		{
+			"speciesId": "deoxys_defense",
+			"moveId": "LOW_KICK"
+		},
+		{
+			"speciesId": "kingambit",
+			"moveId": "LOW_KICK"
+		},
+		{
+			"speciesId": "gallade",
+			"moveId": "SACRED_SWORD"
+		},
+		{
+			"speciesId": "houndoom",
+			"moveId": "INCINERATE"
+		},
+		{
+			"speciesId": "mismagius",
+			"moveId": "MYSTICAL_FIRE"
+		},
+		{
+			"speciesId": "crobat",
+			"moveId": "GUST"
+		},
+		{
+			"speciesId": "flamigo",
+			"moveId": "PECK"
+		},
+		{
+			"speciesId": "chandelure",
+			"moveId": "ASTONISH"
+		},
+		{
+			"speciesId": "illumise",
+			"moveId": "SHADOW_BALL"
+		},
+		{
+			"speciesId": "cofagrigus",
+			"moveId": "ENERGY_BALL"
+		},
+		{
+			"speciesId": "houndoom",
+			"moveId": "TRAILBLAZE"
+		},
+		{
+			"speciesId": "skarmory",
+			"moveId": "DRILL_RUN"
+		},
+		{
+			"speciesId": "bombirdier",
+			"moveId": "DRILL_RUN"
+		},
+		{
+			"speciesId": "lugia",
+			"moveId": "EARTH_POWER"
+		},
+		{
+			"speciesId": "miltank",
+			"moveId": "HIGH_HORSEPOWER"
+		},
+		{
+			"speciesId": "nidoking",
+			"moveId": "AVALANCHE"
+		},
+		{
+			"speciesId": "muk_alolan",
+			"moveId": "ICE_PUNCH"
+		},
+		{
+			"speciesId": "ursaluna",
+			"moveId": "SCRATCH"
+		},
+		{
+			"speciesId": "grafaiai",
+			"moveId": "SCRATCH"
+		},
+		{
+			"speciesId": "zoroark_hisuian",
+			"moveId": "SWIFT"
+		},
+		{
+			"speciesId": "toxtricity",
+			"moveId": "SWIFT"
+		},
+		{
+			"speciesId": "arbok",
+			"moveId": "WRAP"
+		},
+		{
+			"speciesId": "snorlax",
+			"moveId": "PSYWAVE"
+		}
+	]
+}

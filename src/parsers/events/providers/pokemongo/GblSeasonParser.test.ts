@@ -14,6 +14,7 @@ import {
 	findLatestGblSlug,
 	gblPictureUrls,
 	parseGblSeason,
+	seasonNameOf,
 } from './GblSeasonParser';
 
 /** The real "GO Battle League: Twilight Trails" post (saved as a fixture) against the real Pokémon and moves. */
@@ -51,6 +52,15 @@ const shinyByUrl = new Map(
 		url,
 		hasShinySparkle(readPicture(pictureFiles[i])),
 	])
+);
+
+const ptBrHtml = fs.readFileSync(
+	path.join(
+		__dirname,
+		'__fixtures__',
+		'go-battle-league-twilight-trails-pt_br.html'
+	),
+	'utf8'
 );
 
 const parse = (source = html) =>
@@ -147,7 +157,9 @@ describe('parseGblSeason (Twilight Trails)', () => {
 
 	it('names the season and the post', () => {
 		expect(season.slug).toBe('go-battle-league-twilight-trails');
-		expect(season.name).toBe('Twilight Trails');
+		expect(season.name.en).toBe('Twilight Trails');
+		// a language without a post of its own shows the English name
+		expect(season.name.pt_br).toBe('Twilight Trails');
 		// the post's own picture, found as the other news posts' are
 		expect(season.imageUrl).toMatch(
 			/^https:\/\/lh3\.googleusercontent\.com\/jRv78WS9N3uii/
@@ -200,11 +212,73 @@ describe('parseGblSeason (Twilight Trails)', () => {
 		expect(verdict('SHADOW_BALL')).toBe('nerf');
 		expect(verdict('MOONBLAST')).toBe('adjusted');
 		expect(verdict('BULLDOZE')).toBe('adjusted');
+		// one direction per bullet point of the English post: Air Cutter gains power but loses a chance, then costs more
 		expect(
-			season.attackChanges
-				.find((c) => c.moveId === 'PSYCHO_BOOST')
-				?.changes.filter((c) => c.arena === 'pve')
-		).toHaveLength(2);
+			season.attackChanges.find((c) => c.moveId === 'AIR_CUTTER')?.directions
+		).toEqual(['mixed', 'nerf']);
+	});
+
+	it('keeps the English wording of the changes of each move, the old value struck through', () => {
+		const airCutter = season.attackChanges.find(
+			(c) => c.moveId === 'AIR_CUTTER'
+		);
+		expect(airCutter?.text.en[0].runs).toEqual([
+			{ text: 'Trainer Battles: ' },
+			{ text: '45', strike: true },
+			{
+				text: ' → 60 power and decreased chance to increase user’s Attack by one stage.',
+			},
+		]);
+		expect(airCutter?.text.en[1].runs).toEqual([
+			{ text: 'Energy cost increased' },
+		]);
+		// a language without a post of its own shows the English text
+		expect(airCutter?.text.de).toEqual(airCutter?.text.en);
+	});
+
+	it('takes the wording of each language from its own post', () => {
+		const localized = parseGblSeason({
+			slug: 'go-battle-league-twilight-trails',
+			html,
+			localizedHtml: { pt_br: ptBrHtml },
+			shinyOf: () => true,
+			gameMaster,
+			domain: getDomains(gameMaster).allDomain,
+			moves,
+		});
+		const airCutter = localized.attackChanges.find(
+			(c) => c.moveId === 'AIR_CUTTER'
+		);
+		expect(airCutter?.text.pt_br[0].runs).toEqual([
+			{ text: 'Batalhas de Treinador: ' },
+			{ text: '45', strike: true },
+			{
+				text: ' → 60 pontos e menor chance de aumentar o ataque do usuário em um estágio.',
+			},
+		]);
+		expect(airCutter?.text.pt_br[1].runs[0].text).toBe(
+			'Aumento do custo de energia'
+		);
+		// the other languages are untouched
+		expect(airCutter?.text.fr).toEqual(airCutter?.text.en);
+	});
+
+	it('shows the English text for a language whose post does not have the same moves', () => {
+		const localized = parseGblSeason({
+			slug: 'go-battle-league-twilight-trails',
+			html,
+			localizedHtml: {
+				pt_br:
+					'<div><h2>Liga de Batalha GO: X</h2><div id="rewards"></div></div>',
+			},
+			shinyOf: () => true,
+			gameMaster,
+			domain: getDomains(gameMaster).allDomain,
+			moves,
+		});
+		expect(localized.attackChanges[0].text.pt_br).toEqual(
+			localized.attackChanges[0].text.en
+		);
 	});
 
 	it('reads which Pokémon learn which moves, once per pair', () => {
@@ -251,6 +325,52 @@ describe('parseGblSeason (Twilight Trails)', () => {
 				html.replace('Energy cost decreased</li>', 'Glows in the dark</li>')
 			)
 		).toThrow(/Unrecognised attack change/);
+	});
+});
+
+describe('seasonNameOf', () => {
+	const post = (heading: string) =>
+		`<div><h2>${heading}</h2><div id="rewards"></div></div>`;
+
+	it('reads the season from the heading of a post, however its language writes it', () => {
+		expect(seasonNameOf(post('GO Battle League: Twilight Trails'))).toBe(
+			'Twilight Trails'
+		);
+		expect(
+			seasonNameOf(post('Liga de Batalha GO: Trilhas do Entardecer'))
+		).toBe('Trilhas do Entardecer');
+		expect(
+			seasonNameOf(post('Ligue Combat GO : Sentiers crépusculaires'))
+		).toBe('Sentiers crépusculaires');
+		expect(seasonNameOf(post('GO बैटल लीग - संध्या की सैर'))).toBe(
+			'संध्या की सैर'
+		);
+		expect(seasonNameOf(post('「GOバトルリーグ：黄昏の旅路」の最新情報'))).toBe(
+			'黄昏の旅路'
+		);
+		expect(seasonNameOf(post('GO對戰聯盟：黃昏之旅'))).toBe('黃昏之旅');
+	});
+
+	it('has none for a missing post or a heading without a season', () => {
+		expect(seasonNameOf(undefined)).toBeUndefined();
+		expect(seasonNameOf('')).toBeUndefined();
+		expect(seasonNameOf(post('Rewards'))).toBeUndefined();
+	});
+
+	it('is used for each language that has a post', () => {
+		const season = parseGblSeason({
+			slug: 'go-battle-league-twilight-trails',
+			html,
+			localizedHtml: {
+				pt_br: post('Liga de Batalha GO: Trilhas do Entardecer'),
+			},
+			shinyOf: () => true,
+			gameMaster,
+			domain: getDomains(gameMaster).allDomain,
+			moves,
+		});
+		expect(season.name.pt_br).toBe('Trilhas do Entardecer');
+		expect(season.name.de).toBe('Twilight Trails');
 	});
 });
 

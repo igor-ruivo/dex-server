@@ -1,6 +1,22 @@
 {
 	"slug": "go-battle-league-twilight-trails",
-	"name": "Twilight Trails",
+	"name": {
+		"en": "Twilight Trails",
+		"pt_br": "Trilhas do Entardecer",
+		"de": "Abendgoldpfade",
+		"es": "Caminos Crepusculares",
+		"es-MX": "Caminos Crepusculares",
+		"fr": "Sentiers crépusculaires",
+		"hi": "संध्या की सैर",
+		"id": "Jejak Senja",
+		"it": "Sentieri crepuscolari",
+		"ja": "黄昏の旅路",
+		"ko": "황혼의 여정",
+		"ru": "Twilight Trails",
+		"th": "เส้นทางสนธยา",
+		"tr": "Akşamüstü Keyfi",
+		"zh-Hant": "黃昏之旅"
+	},
 	"imageUrl": "https://lh3.googleusercontent.com/jRv78WS9N3uii-wL4KWowwz66OMwl8MNaind313_aKu-Ual_uwqlGOdLxYuP7oIbxRtV_14D89swp-MhKOhErE3cAOKStefEs61NuO1YtFug=s0-e365",
 	"rankUpEncounters": [
 		{
@@ -113,463 +129,8717 @@
 		{
 			"moveId": "AIR_CUTTER",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 45,
-					"to": 60
-				},
-				{
-					"kind": "buffChance",
-					"arena": "pvp",
-					"direction": "nerf",
-					"chance": "decreased",
-					"target": "user",
-					"stat": "attack",
-					"effect": "raise",
-					"stages": 1
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"mixed",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 power and decreased chance to increase user’s Attack by one stage."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 pontos e menor chance de aumentar o ataque do usuário em um estágio."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 60 statt 45 Schaden und verringerte Chance, den Angriffs-Wert des Anwenders um eine Stufe zu heben"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 de daño y menor probabilidad de aumentar el ataque del usuario en un tramo."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 de potencia y menor probabilidad de aumentar el Ataque del usuario en una etapa."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combat de Dresseurs : "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 de puissance et réduction des chances d’augmenter l’Attaque du lanceur d’un niveau"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 पावर और उपयोगकर्ता के अटैक को एक स्टेज बढ़ाने की संभावना कम हो जाती है।\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 dan peluang yang lebih kecil untuk meningkatkan Serangan pengguna sebesar satu tingkat."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 danni e minori possibilità di aumentare l’attacco dell’utente di un livello."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力45",
+								"strike": true
+							},
+							{
+								"text": " → 威力60、ポケモンの「こうげき」が1段階上がる確率が減少します"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 위력 60, 사용 포켓몬의 공격이 한 단계 증가할 확률이 감소합니다."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 power and decreased chance to increase user’s Attack by one stage."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 และโอกาสลดลงที่จะเพิ่มพลังโจมตีของผู้ใช้ขึ้นหนึ่งขั้น"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 60 güç, kullanıcının Saldırısını bir kademe artırma şansı azaltıldı"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "45威力",
+								"strike": true
+							},
+							{
+								"text": " → 60威力，且使用此招式的寶可夢，攻擊增加1階段的機率降低"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BULLDOZE",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 45,
-					"to": 80
-				},
-				{
-					"kind": "buffChance",
-					"arena": "pvp",
-					"direction": "buff",
-					"chance": "guaranteed",
-					"target": "opponent",
-					"stat": "defense",
-					"effect": "lower",
-					"stages": 1
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 power and guaranteed chance to decrease the opponent’s Defense by one stage."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 pontos e chance garantida de reduzir a defesa do oponente em um estágio."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 80 statt 45 Schaden und garantierte Chance, den Verteidigungs-Wert des Gegners um eine Stufe zu senken"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 de daño y garantía de reducir la defensa del oponente en un tramo."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 de potencia y probabilidad garantizada de disminuir la Defensa del oponente en una etapa."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combat de Dresseurs : "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 de puissance et diminue désormais la Défense de l’adversaire d’un niveau"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 पावर और प्रतिद्वंदी के डिफ़ेंस को एक स्टेज कम करने के मौके की गारंटी।\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 dan jaminan peluang untuk mengurangi Pertahanan lawan sebesar satu tingkat."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 danni e riduzione garantita della difesa dell’avversario di un livello."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力45",
+								"strike": true
+							},
+							{
+								"text": " → 威力80、相手のポケモンの「ぼうぎょ」を必ず1段階下げます"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 위력 80, 상대의 방어가 반드시 한 단계 감소합니다."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 power and guaranteed chance to decrease the opponent’s Defense by one stage."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 และรับประกันโอกาสที่จะลดพลังป้องกันของคู่ต่อสู้ลงหนึ่งขั้น"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 80 güç, rakibin Savunmasını bir kademe düşürme garantili olasılığı."
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "45威力",
+								"strike": true
+							},
+							{
+								"text": " → 80威力，且對手寶可夢的防禦必定降低1階段"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BODY_SLAM",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 55,
-					"to": 65
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 65 statt 55 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 पावर\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力55",
+								"strike": true
+							},
+							{
+								"text": " → 威力65"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 위력 65"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 65 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "55威力",
+								"strike": true
+							},
+							{
+								"text": " → 65威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "SAND_TOMB",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 40,
-					"to": 55
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 55 statt 40 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 पावर\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力40",
+								"strike": true
+							},
+							{
+								"text": " → 威力55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 위력 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "40",
+								"strike": true
+							},
+							{
+								"text": " → 55 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "40威力",
+								"strike": true
+							},
+							{
+								"text": " → 55威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BRINE",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 60,
-					"to": 100
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 100 statt 60 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 पावर\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力60",
+								"strike": true
+							},
+							{
+								"text": " → 威力100"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 위력 100"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 100 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "60威力",
+								"strike": true
+							},
+							{
+								"text": " → 100威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BUBBLE_BEAM",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 25,
-					"to": 50
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 50 statt 25 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 शक्ति\nऊर्जा लागत में वृद्धि हुई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力25",
+								"strike": true
+							},
+							{
+								"text": " → 威力50"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 위력 50"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "25",
+								"strike": true
+							},
+							{
+								"text": " → 50 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "25威力",
+								"strike": true
+							},
+							{
+								"text": " → 50威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "MIRROR_COAT",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 60,
-					"to": 75
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 75 statt 60 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie diminué"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 पावर\nऊर्जा लागत में कमी आई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力60",
+								"strike": true
+							},
+							{
+								"text": " → 威力75\n*「スペシャルアタック」を打つためのメーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 위력 75"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 75 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "60威力",
+								"strike": true
+							},
+							{
+								"text": " → 75威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "HIGH_HORSEPOWER",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "* Diminution du coût en énergie"
+							}
+						]
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "एनर्जी लागत में कमी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされやすくなります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "스페셜 어택 사용을 위한 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "พลังงานที่ใช้ลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "能量條所需的花費減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "CHARGE_BEAM",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 5,
-					"to": 6
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 6 statt 5 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 पावर"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力5",
+								"strike": true
+							},
+							{
+								"text": " → 威力6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 위력 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "5威力",
+								"strike": true
+							},
+							{
+								"text": " → 6威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BLAZE_KICK",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "* Diminution du coût en énergie"
+							}
+						]
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "एनर्जी लागत में कमी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされやすくなります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "스페셜 어택 사용을 위한 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "พลังงานที่ใช้ลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "能量條所需的花費減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "IRON_HEAD",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 70,
-					"to": 85
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 85 statt 70 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 पावर"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力70",
+								"strike": true
+							},
+							{
+								"text": " → 威力85"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 위력 85"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "70威力",
+								"strike": true
+							},
+							{
+								"text": " → 85威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "DRAINING_KISS",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 60,
-					"to": 80
-				},
-				{
-					"kind": "buffChance",
-					"arena": "pvp",
-					"direction": "buff",
-					"chance": "guaranteed",
-					"target": "user",
-					"stat": "defense",
-					"effect": "raise",
-					"stages": 1
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 power and guaranteed chance to raise the user’s Defense one stage."
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 pontos e chance garantida de aumentar a defesa do usuário em um estágio."
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 80 statt 60 Schaden und garantierte Chance, den Verteidigungs-Wert des Anwenders um eine Stufe zu heben"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 de daño y garantía de aumentar la defensa del usuario en un tramo."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 de potencia y probabilidad garantizada de aumentar la Defensa del usuario una etapa."
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 de puissance et augmente désormais la Défense du lanceur d’un niveau"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 पावर और उपयोगकर्ता के डिफ़ेंस को एक स्टेज बढ़ाने के मौके की गारंटी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 dan jaminan peluang untuk meningkatkan Pertahanan pengguna sebesar satu tingkat."
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 danni e aumento garantito della difesa dell’utente di un livello."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力60",
+								"strike": true
+							},
+							{
+								"text": " → 威力80、使用するポケモンのぼうぎょが必ず1段階上がります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 위력 80, 사용 포켓몬의 방어가 반드시 한 단계 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 power and guaranteed chance to raise the user’s Defense one stage."
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 และรับประกันโอกาสที่จะเพิ่มพลังป้องกันของผู้ใช้ขึ้นหนึ่งขั้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 80 güç ve kullanıcının Savunmasını bir kademe yükseltmesi garantili."
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "60威力",
+								"strike": true
+							},
+							{
+								"text": " → 80威力，且使用此招式的寶可夢的防禦必定增加1階段"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "POISON_FANG",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 45,
-					"to": 50
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 50 statt 45 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力45",
+								"strike": true
+							},
+							{
+								"text": " → 威力50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " →50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "45",
+								"strike": true
+							},
+							{
+								"text": " → 50"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "45威力",
+								"strike": true
+							},
+							{
+								"text": " → 50威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "LUNGE",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 60,
-					"to": 70
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 70 statt 60 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力60",
+								"strike": true
+							},
+							{
+								"text": " → 威力70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "60",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "60威力",
+								"strike": true
+							},
+							{
+								"text": " → 70威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "BITE",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "nerf",
-					"from": 4,
-					"to": 2
-				},
-				{
-					"kind": "energyGain",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"nerf",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento da geração de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 2 statt 4 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energieerzeugung wurde erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Generación de energía aumentada"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de generación de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combat de Dresseurs : "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Génération d’énergie augmentée"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 शक्ति\nऊर्जा उत्पादन में वृद्धि"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Parameter energi menjadi mudah terisi"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento della generazione di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力4",
+								"strike": true
+							},
+							{
+								"text": " → 威力2"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "メーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 위력 2"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 충전이 쉬워집니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "การสร้างพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 2 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji üretimi artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "4威力",
+								"strike": true
+							},
+							{
+								"text": " → 2威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "集滿能量所需的時間減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "INFESTATION",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 6,
-					"to": 10
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 10 statt 6 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 शक्ति"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力6",
+								"strike": true
+							},
+							{
+								"text": " → 威力10"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 위력 10"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "6",
+								"strike": true
+							},
+							{
+								"text": " → 10 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "6威力",
+								"strike": true
+							},
+							{
+								"text": " → 10威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "TAKE_DOWN",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 5,
-					"to": 14
-				},
-				{
-					"kind": "energyGain",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento da geração de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 14 statt 5 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energieerzeugung wurde erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Generación de energía aumentada"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de generación de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combat de Dresseurs : "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Génération d’énergie augmentée"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 पावर\nऊर्जा उत्पादन में वृद्धि"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Parameter energi menjadi mudah terisi"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento della generazione di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力5",
+								"strike": true
+							},
+							{
+								"text": " → 威力14"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "メーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 위력 14"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 충전이 쉬워집니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "การสร้างพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 14 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji üretimi artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "5威力",
+								"strike": true
+							},
+							{
+								"text": " → 14威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "集滿能量所需的時間減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "SCRATCH",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "nerf",
-					"from": 4,
-					"to": 3
-				},
-				{
-					"kind": "energyGain",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"nerf",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento da geração de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 3 statt 4 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energieerzeugung wurde erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Generación de energía aumentada"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de generación de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combat de Dresseurs : "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Génération d’énergie augmentée"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 पावर\nऊर्जा उत्पादन में वृद्धि"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Parameter energi menjadi mudah terisi"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento della generazione di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力4",
+								"strike": true
+							},
+							{
+								"text": " → 威力3"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "メーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 위력 3"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 충전이 쉬워집니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy generation increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "การสร้างพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "4",
+								"strike": true
+							},
+							{
+								"text": " → 3 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji üretimi artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "4威力",
+								"strike": true
+							},
+							{
+								"text": " → 3威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "集滿能量所需的時間減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "MOONBLAST",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "nerf",
-					"from": 110,
-					"to": 90
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"nerf",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 90 statt 110 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie diminué"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 शक्ति\nऊर्जा लागत में कमी आई"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力110",
+								"strike": true
+							},
+							{
+								"text": " → 威力90\n*「スペシャルアタック」を打つためのメーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 위력 90"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "110",
+								"strike": true
+							},
+							{
+								"text": " → 90 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "110威力",
+								"strike": true
+							},
+							{
+								"text": " → 90威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "SHADOW_BALL",
 			"verdict": "nerf",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "nerf",
-					"from": 100,
-					"to": 90
-				}
-			]
+			"directions": [
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 90 statt 100 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 पावर"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力100",
+								"strike": true
+							},
+							{
+								"text": " → 威力90"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 위력 90"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "100",
+								"strike": true
+							},
+							{
+								"text": " → 90 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "100威力",
+								"strike": true
+							},
+							{
+								"text": " → 90威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "DARK_PULSE",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "* Diminution du coût en énergie"
+							}
+						]
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "एनर्जी लागत में कमी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされやすくなります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "스페셜 어택 사용을 위한 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "พลังงานที่ใช้ลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "能量條所需的花費減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "PSYCHO_BOOST",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 70,
-					"to": 85
-				},
-				{
-					"kind": "power",
-					"arena": "pve",
-					"direction": "buff",
-					"from": 70,
-					"to": 130
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pve",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff",
+				"buff",
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Gyms and raids: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased in Gyms and Raid Battles"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Ginásios e Reides: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo energia em Ginásios e Batalhas de Reide"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 85 statt 70 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Arenakämpfe und Raid-Kämpfe: 130 statt 70 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden in Arenakämpfen und Raid-Kämpfe gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Gimnasios e incursiones: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido en Gimnasios e incursiones"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de potencia"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Gimnasios e incursiones: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 de potencia"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "El costo de energía se ha reducido en los gimnasios y combates de incursiones"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Arènes et Raids : "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie diminué dans les Combats d’Arène et de Raid."
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 शक्ति"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "जिम और रेड: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 पावर\nजिम और रेड बैटल में ऊर्जा लागत कम हो गई है।"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Gym dan Raid: Kekuatan "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang di Gym dan Pertarungan Raid"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Palestre e raid: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia nelle Palestre e nei raid"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力70",
+								"strike": true
+							},
+							{
+								"text": " → 威力85"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ジムと「レイドバトル」："
+							},
+							{
+								"text": "威力70",
+								"strike": true
+							},
+							{
+								"text": " → 威力130"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ジムと「レイドバトル」において、「スペシャルアタック」を打つためのメーターがチャージされやすくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "*트레이너 배틀: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 위력 85"
+							}
+						]
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "체육관 및 레이드배틀: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 위력 130"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "체육관 및 레이드배틀에서 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Gyms and raids: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased in Gyms and Raid Battles"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ยิมและการตีบอส: ความแรง "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานลดลงในยิมและแบตเทิลตีบอส"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 85 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Spor Salonları ve Akınlar: "
+							},
+							{
+								"text": "70",
+								"strike": true
+							},
+							{
+								"text": " → 130 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Spor Salonları ve Akın Maçlarında enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "70威力",
+								"strike": true
+							},
+							{
+								"text": " → 85威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "道館與團體戰： "
+							},
+							{
+								"text": "70威力",
+								"strike": true
+							},
+							{
+								"text": " → 130威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "挑戰道館與團體戰時，消耗的能量減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "RAGE_FIST",
 			"verdict": "adjusted",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 50,
-					"to": 55
-				},
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "nerf",
-					"change": "increased"
-				}
-			]
+			"directions": [
+				"buff",
+				"nerf"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 pontos"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 55 statt 50 Schaden"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden erhöht."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía aumentado"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 de daño"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento de costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 de puissance"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coût en énergie augmenté"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 पावर\nऊर्जा लागत में वृद्धि"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi meningkat"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 danni"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Aumento del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力50",
+								"strike": true
+							},
+							{
+								"text": " → 威力55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされにくくなります"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 위력 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "게이지 소모량이 증가합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 power"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost increased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ค่าพลังงานเพิ่มขึ้น"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "50",
+								"strike": true
+							},
+							{
+								"text": " → 55 güç"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti artırıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "50威力",
+								"strike": true
+							},
+							{
+								"text": " → 55威力"
+							}
+						],
+						"level": 0
+					},
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "消耗的能量增加"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "MAGNET_BOMB",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "* Diminution du coût en énergie"
+							}
+						]
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "एनर्जी लागत में कमी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされやすくなります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "스페셜 어택 사용을 위한 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "พลังงานที่ใช้ลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "能量條所需的花費減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "DOUBLE_IRON_BASH",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 55,
-					"to": 70
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 70 statt 55 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 पावर"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力55",
+								"strike": true
+							},
+							{
+								"text": " → 威力70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 위력 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "55",
+								"strike": true
+							},
+							{
+								"text": " → 70 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "55威力",
+								"strike": true
+							},
+							{
+								"text": " → 70威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "SHADOW_FORCE",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "energyCost",
-					"arena": "pvp",
-					"direction": "buff",
-					"change": "decreased"
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuição do custo de energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Die Energiekosten wurden gesenkt."
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Coste de energía reducido"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Disminución del costo de energía"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "note",
+						"runs": [
+							{
+								"text": "* Diminution du coût en énergie"
+							}
+						]
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "एनर्जी लागत में कमी"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Konsumsi energi berkurang"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Diminuzione del consumo di energia"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "「スペシャルアタック」を打つためのメーターがチャージされやすくなります。"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "스페셜 어택 사용을 위한 게이지 소모량이 감소합니다."
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Energy cost decreased"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "พลังงานที่ใช้ลดลง"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Enerji maliyeti azaltıldı"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "能量條所需的花費減少"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		},
 		{
 			"moveId": "LOW_KICK",
 			"verdict": "buff",
-			"changes": [
-				{
-					"kind": "power",
-					"arena": "pvp",
-					"direction": "buff",
-					"from": 5,
-					"to": 6
-				}
-			]
+			"directions": [
+				"buff"
+			],
+			"text": {
+				"en": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"pt_br": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Batalhas de Treinador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 pontos"
+							}
+						],
+						"level": 0
+					}
+				],
+				"de": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainerkämpfe: 6 statt 5 Schaden"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"es-MX": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combates de Entrenador: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de daño"
+							}
+						],
+						"level": 0
+					}
+				],
+				"fr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Combats de Dresseurs : "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 de puissance"
+							}
+						],
+						"level": 0
+					}
+				],
+				"hi": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "ट्रेनर बैटल: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 पावर"
+							}
+						],
+						"level": 0
+					}
+				],
+				"id": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Pertarungan Pelatih: Kekuatan "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"it": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Sfide Allenatore: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 danni"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ja": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "トレーナーバトル："
+							},
+							{
+								"text": "威力5",
+								"strike": true
+							},
+							{
+								"text": " → 威力6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ko": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "트레이너 배틀: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 위력 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"ru": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Trainer Battles: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 power"
+							}
+						],
+						"level": 0
+					}
+				],
+				"th": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "เทรนเนอร์แบตเทิล: ความแรง "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6"
+							}
+						],
+						"level": 0
+					}
+				],
+				"tr": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "Eğitmen Maçları: "
+							},
+							{
+								"text": "5",
+								"strike": true
+							},
+							{
+								"text": " → 6 güç"
+							}
+						],
+						"level": 0
+					}
+				],
+				"zh-Hant": [
+					{
+						"kind": "item",
+						"runs": [
+							{
+								"text": "訓練家對戰："
+							},
+							{
+								"text": "5威力",
+								"strike": true
+							},
+							{
+								"text": " → 6威力"
+							}
+						],
+						"level": 0
+					}
+				]
+			}
 		}
 	],
 	"attackAvailability": [

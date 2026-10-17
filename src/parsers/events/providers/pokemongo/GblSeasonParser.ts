@@ -13,11 +13,14 @@ import type {
 	GameMasterPokemon,
 	IGameMasterMove,
 } from '../../../types/pokemon';
+import type { RichBlock } from '../../../types/rich-text';
 import {
 	attackChangeVerdict,
+	bulletDirection,
 	parseAttackChange,
 } from '../../utils/gbl-attack-changes';
 import PokemonMatcher from '../../utils/pokemon-matcher';
+import { parseRichBlocks } from '../../utils/rich-text';
 import { hasShinySparkle } from '../../utils/shiny-sparkle';
 
 const SITE = 'https://pokemongo.com';
@@ -186,30 +189,54 @@ export const gblPictureUrls = (html: string): Array<string> => {
 
 interface RawAttackChange {
 	name: string;
-	/** The bullet points of the move's changes. */
-	lines: Array<string>;
+	/** The bullet points of the move's changes (a paragraph in a language that writes them so), with their formatting. */
+	blocks: Array<RichBlock>;
 }
 
-/** A section of "name, then its bullet points" cards: the changes each move gets. */
+/** A section of "name, then its changes" cards: the changes each move gets. */
 const readAttackChanges = (section: Element): Array<RawAttackChange> => {
-	const cards: Array<RawAttackChange> = [];
+	const cards: Array<{ name: string; content: Array<Element> }> = [];
 	for (const child of Array.from(section.children).slice(1)) {
 		const name = textOf(child.querySelector('h2, h3'));
 		if (name) {
-			cards.push({ name, lines: [] });
-			continue;
+			cards.push({ name, content: [] });
+		} else {
+			cards[cards.length - 1]?.content.push(child);
 		}
-		cards[cards.length - 1]?.lines.push(
-			...Array.from(child.querySelectorAll('li')).map(textOf).filter(Boolean)
-		);
 	}
-	return cards;
+	return cards.map(({ name, content }) => ({
+		name,
+		blocks: parseRichBlocks(content),
+	}));
+};
+
+const blockText = (block: RichBlock) =>
+	block.runs.map((run) => run.text).join('');
+
+/**
+ * The season's name from a post: its first heading is "<the league>: <the season>" ("Liga de Batalha GO: Trilhas do Entardecer",
+ * "GO Battle League - …", "「GOバトルリーグ：黄昏の旅路」の最新情報"), so the name is what follows the first colon or dash, up to a closing
+ * quote. Undefined when the post is missing or its heading is not of that form.
+ */
+export const seasonNameOf = (html: string | undefined): string | undefined => {
+	if (!html) {
+		return undefined;
+	}
+	const heading = textOf(
+		documentOf(html)
+			.getElementById('rewards')
+			?.parentElement?.querySelector('h2')
+	);
+	const name = /^[^:：]*?(?::|：| - )s*([^」”"]+)/.exec(heading)?.[1]?.trim();
+	return name ?? undefined;
 };
 
 interface GblSeasonInput {
 	slug: string;
 	/** The post's html, in English: the app translates what it shows, and the Pokémon and the figures are the same in every language. */
 	html: string;
+	/** The post's html in the other languages, for the season's name in each (a language without one shows the English name). */
+	localizedHtml?: Partial<Record<AvailableLocales, string>>;
 	/** Whether the post's picture (by its address) carries the shiny sparkle, i.e. the Pokémon can be shiny. */
 	shinyOf: (imageUrl: string) => boolean;
 	gameMaster: GameMasterData;
@@ -225,6 +252,7 @@ interface GblSeasonInput {
 export const parseGblSeason = ({
 	slug,
 	html,
+	localizedHtml = {},
 	shinyOf,
 	gameMaster,
 	domain,
@@ -284,19 +312,50 @@ export const parseGblSeason = ({
 		'standard encounters'
 	);
 
-	const cards = readAttackChanges(sectionByHeading(/^Attack Changes$/i));
+	const changesSection = sectionByHeading(/^Attack Changes$/i);
+	const cards = readAttackChanges(changesSection);
 	if (cards.length === 0) {
 		throw new Error(`The post "${slug}" lists no attack changes`);
 	}
-	const attackChanges: Array<IGblAttackChange> = cards.map((card) => {
-		const changes = card.lines.flatMap(parseAttackChange);
-		if (changes.length === 0) {
+	// each language's own post: its wording of every move's changes, found at the same place and checked to have the same moves
+	const changesIndex = Array.from(sections.children).indexOf(changesSection);
+	const localCards = new Map<AvailableLocales, Array<RawAttackChange>>();
+	for (const locale of Object.values(AvailableLocales)) {
+		const localHtml = localizedHtml[locale];
+		if (locale === AvailableLocales.en || !localHtml) {
+			continue;
+		}
+		const section =
+			documentOf(localHtml).getElementById('rewards')?.parentElement?.children[
+				changesIndex
+			];
+		const localized = section ? readAttackChanges(section) : [];
+		if (localized.length === cards.length) {
+			localCards.set(locale, localized);
+		} else {
+			console.log(
+				`[GblSeasonParser] ${locale} attack changes do not line up with the English ones (${localized.length} moves, not ${cards.length}) — showing the English text.`
+			);
+		}
+	}
+	const attackChanges: Array<IGblAttackChange> = cards.map((card, i) => {
+		// what each bullet point of the English post does, to label the move and to colour the bullet
+		const perBullet = card.blocks.map((block) =>
+			parseAttackChange(blockText(block))
+		);
+		if (perBullet.length === 0) {
 			throw new Error(`The attack changes of "${card.name}" are empty`);
 		}
 		return {
 			moveId: moveId(card.name),
-			verdict: attackChangeVerdict(changes),
-			changes,
+			verdict: attackChangeVerdict(perBullet.flat()),
+			directions: perBullet.map(bulletDirection),
+			text: Object.fromEntries(
+				Object.values(AvailableLocales).map((locale) => {
+					const blocks = localCards.get(locale)?.[i]?.blocks;
+					return [locale, blocks?.length ? blocks : card.blocks];
+				})
+			) as IGblAttackChange['text'],
 		};
 	});
 
@@ -335,12 +394,15 @@ export const parseGblSeason = ({
 		throw new Error(`The post "${slug}" lists no attack availability updates`);
 	}
 
-	// the first heading of the post is the season's name ("GO Battle League: Twilight Trails")
-	const name = textOf(sections.querySelector('h2')).replace(
-		/^GO Battle League:\s*/i,
-		''
-	);
-	if (!name) {
+	const name = Object.fromEntries(
+		Object.values(AvailableLocales).map((locale) => [
+			locale,
+			locale === AvailableLocales.en
+				? seasonNameOf(html)
+				: (seasonNameOf(localizedHtml[locale]) ?? seasonNameOf(html)),
+		])
+	) as Record<AvailableLocales, string | undefined>;
+	if (!name[AvailableLocales.en]) {
 		throw new Error(`The post "${slug}" has no season name`);
 	}
 	// the post's picture is found as the other news posts' is (see PokemonGoNewsParser.getImgUrl)
@@ -351,7 +413,7 @@ export const parseGblSeason = ({
 	}
 	return {
 		slug,
-		name,
+		name: name as IGblSeason['name'],
 		imageUrl,
 		rankUpEncounters: rankUp,
 		standardEncounters: standard,
@@ -386,9 +448,21 @@ class GblSeasonParser {
 				shiny.set(url, hasShinySparkle(await this.dataFetcher.fetchBytes(url)));
 			})
 		);
+		// the season's name in the other languages: their posts' headings
+		const localizedHtml: Partial<Record<AvailableLocales, string>> = {};
+		await Promise.all(
+			Object.values(AvailableLocales)
+				.filter((locale) => locale !== AvailableLocales.en)
+				.map(async (locale) => {
+					localizedHtml[locale] = await this.dataFetcher.fetchText(
+						`${SITE}/${locale}/news/${slug}`
+					);
+				})
+		);
 		return parseGblSeason({
 			slug,
 			html,
+			localizedHtml,
 			shinyOf: (url) => shiny.get(url) ?? false,
 			gameMaster: this.gameMaster,
 			domain: this.domain,

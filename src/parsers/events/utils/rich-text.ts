@@ -43,12 +43,17 @@ const absolute = (href: string | null): string | undefined => {
 	return href.startsWith('/') ? `${SITE}${href}` : undefined;
 };
 
-type Style = { bold: boolean; italic: boolean; href: string | undefined };
+type Style = {
+	bold: boolean;
+	italic: boolean;
+	strike: boolean;
+	href: string | undefined;
+};
 
 /** The runs of the text inside a node, each with the bold / italic / link it is under. Whitespace is collapsed as in a page. */
 const inlineRuns = (
 	nodes: ReadonlyArray<Node>,
-	style: Style = { bold: false, italic: false, href: undefined }
+	style: Style = { bold: false, italic: false, strike: false, href: undefined }
 ): Array<RichRun> => {
 	const runs: Array<RichRun> = [];
 	for (const node of nodes) {
@@ -59,6 +64,7 @@ const inlineRuns = (
 					text,
 					...(style.bold ? { bold: true as const } : {}),
 					...(style.italic ? { italic: true as const } : {}),
+					...(style.strike ? { strike: true as const } : {}),
 					...(style.href ? { href: style.href } : {}),
 				});
 			}
@@ -80,6 +86,8 @@ const inlineRuns = (
 			...inlineRuns(Array.from(el.childNodes), {
 				bold: style.bold || tag === 'STRONG' || tag === 'B',
 				italic: style.italic || tag === 'EM' || tag === 'I',
+				strike:
+					style.strike || tag === 'DEL' || tag === 'S' || tag === 'STRIKE',
 				href:
 					tag === 'A'
 						? (absolute(el.getAttribute('href')) ?? style.href)
@@ -99,6 +107,7 @@ const tidy = (runs: ReadonlyArray<RichRun>): Array<RichRun> => {
 			last &&
 			!!last.bold === !!run.bold &&
 			!!last.italic === !!run.italic &&
+			!!last.strike === !!run.strike &&
 			last.href === run.href
 		) {
 			last.text += run.text;

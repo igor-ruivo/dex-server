@@ -1,4 +1,6 @@
+import type { AvailableLocales } from '../services/gamemaster-translator';
 import type { IEntry } from './events';
+import type { RichBlock } from './rich-text';
 
 /** Whether a change makes a move better or worse. */
 export type GblChangeDirection = 'buff' | 'nerf';
@@ -39,7 +41,10 @@ export type GblChange = { direction: GblChangeDirection } & (
 export interface IGblAttackChange {
 	moveId: string;
 	verdict: GblVerdict;
-	changes: Array<GblChange>;
+	/** How each bullet point of the English post reads (a language can split or join them, so another language's count may differ). */
+	directions: Array<GblChangeDirection | 'mixed'>;
+	/** The move's changes exactly as the post words them in each language (an old value struck through: "<del>45</del> → 60 power"). */
+	text: Record<AvailableLocales, Array<RichBlock>>;
 }
 
 /**
@@ -60,8 +65,8 @@ export interface IGblAttackAvailability {
 export interface IGblSeason {
 	/** The post's address after `/news/` (`go-battle-league-twilight-trails`); the post exists in every language at the same address. */
 	slug: string;
-	/** The season's name ("Twilight Trails"), in English. */
-	name: string;
+	/** The season's name ("Twilight Trails"), as each language's post writes it ("Trilhas do Entardecer"); the English one where a post has none. */
+	name: Record<AvailableLocales, string>;
 	/** The post's own picture, as the news posts' (the one at the top of the article). */
 	imageUrl: string;
 	/** The Pokémon met once per season when reaching a rank, in the order of the ranks. */

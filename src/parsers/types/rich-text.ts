@@ -1,8 +1,10 @@
-/** A stretch of text with the same look: what a post writes in bold or italics, or as a link, keeps it. */
+/** A stretch of text with the same look: what a post writes in bold, italics or struck through (an old value), or as a link, keeps it. */
 export interface RichRun {
 	text: string;
 	bold?: true;
 	italic?: true;
+	/** Struck through: the value a change replaces ("<del>45</del> → 60 power"). */
+	strike?: true;
 	/** Where a link goes (an absolute URL). */
 	href?: string;
 }

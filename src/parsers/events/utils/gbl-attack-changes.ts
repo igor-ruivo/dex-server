@@ -52,11 +52,9 @@ const statEffect = (
  * so that a change the page words in a new way is never filed under the wrong label or dropped.
  */
 export const parseAttackChange = (line: string): Array<GblChange> => {
-	const text = line
-		.replace(/[’‘]/g, "'")
-		.replace(/\s+/g, ' ')
-		.replace(/\.$/, '')
-		.trim();
+	// the line as the post words it, tidied; `text` is the same with plain apostrophes, to be matched
+	const original = line.replace(/\s+/g, ' ').replace(/\.$/, '').trim();
+	const text = original.replace(/[’‘]/g, "'");
 	const unknown = () => new Error(`Unrecognised attack change: "${line}"`);
 
 	const energy = ENERGY.exec(text);
@@ -126,3 +124,11 @@ export const attackChangeVerdict = (
 		? 'nerf'
 		: 'adjusted';
 };
+
+/** What one bullet point does: for the better, for the worse, or both ("more power and a higher energy cost"). */
+export const bulletDirection = (
+	changes: ReadonlyArray<GblChange>
+): GblChangeDirection | 'mixed' =>
+	changes.every((change) => change.direction === changes[0].direction)
+		? changes[0].direction
+		: 'mixed';

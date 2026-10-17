@@ -62,6 +62,8 @@ export interface IGblSeason {
 	slug: string;
 	/** The season's name ("Twilight Trails"), in English. */
 	name: string;
+	/** The post's own picture, as the news posts' (the one at the top of the article). */
+	imageUrl: string;
 	/** The Pokémon met once per season when reaching a rank, in the order of the ranks. */
 	rankUpEncounters: Array<IGblEncounter>;
 	/** The Pokémon met in reward encounters all season, from the lowest rank up. */

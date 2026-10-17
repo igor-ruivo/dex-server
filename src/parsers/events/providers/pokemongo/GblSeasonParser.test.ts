@@ -148,6 +148,10 @@ describe('parseGblSeason (Twilight Trails)', () => {
 	it('names the season and the post', () => {
 		expect(season.slug).toBe('go-battle-league-twilight-trails');
 		expect(season.name).toBe('Twilight Trails');
+		// the post's own picture, found as the other news posts' are
+		expect(season.imageUrl).toMatch(
+			/^https:\/\/lh3\.googleusercontent\.com\/jRv78WS9N3uii/
+		);
 	});
 
 	it('reads the reward encounters, with the rank each is met at', () => {

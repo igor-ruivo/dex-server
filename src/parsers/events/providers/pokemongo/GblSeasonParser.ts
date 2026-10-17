@@ -343,9 +343,16 @@ export const parseGblSeason = ({
 	if (!name) {
 		throw new Error(`The post "${slug}" has no season name`);
 	}
+	// the post's picture is found as the other news posts' is (see PokemonGoNewsParser.getImgUrl)
+	const imageUrl =
+		doc.querySelector('article>div>div>picture>img')?.getAttribute('src') ?? '';
+	if (!imageUrl) {
+		throw new Error(`The post "${slug}" has no picture`);
+	}
 	return {
 		slug,
 		name,
+		imageUrl,
 		rankUpEncounters: rankUp,
 		standardEncounters: standard,
 		legendarySurprise: { rank: SURPRISE_RANK },

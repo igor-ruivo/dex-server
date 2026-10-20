@@ -1,5 +1,3990 @@
 [
 	{
+		"id": "go-pass-november-2026-0",
+		"url": {
+			"en": "https://pokemongo.com/en/news/go-pass-november-2026",
+			"pt_br": "https://pokemongo.com/pt_br/news/go-pass-november-2026",
+			"de": "https://pokemongo.com/de/news/go-pass-november-2026",
+			"es": "https://pokemongo.com/es/news/go-pass-november-2026",
+			"es-MX": "https://pokemongo.com/es-MX/news/go-pass-november-2026",
+			"fr": "https://pokemongo.com/fr/news/go-pass-november-2026",
+			"hi": "https://pokemongo.com/hi/news/go-pass-november-2026",
+			"id": "https://pokemongo.com/id/news/go-pass-november-2026",
+			"it": "https://pokemongo.com/it/news/go-pass-november-2026",
+			"ja": "https://pokemongo.com/ja/news/go-pass-november-2026",
+			"ko": "https://pokemongo.com/ko/news/go-pass-november-2026",
+			"ru": "https://pokemongo.com/en/news/go-pass-november-2026",
+			"th": "https://pokemongo.com/th/news/go-pass-november-2026",
+			"tr": "https://pokemongo.com/tr/news/go-pass-november-2026",
+			"zh-Hant": "https://pokemongo.com/zh-Hant/news/go-pass-november-2026"
+		},
+		"title": {
+			"en": "Earn PokéCoins for progressing in GO Pass: November!",
+			"pt_br": "Ganhe Pokémoedas ao avançar no Passe GO: novembro",
+			"de": "Steigt beim GO-Pass: November auf und verdient PokéMünzen!",
+			"es": "¡Ganad Pokémonedas por avanzar en el Pase de GO de noviembre!",
+			"es-MX": "¡Ganen Pokémonedas al avanzar en el Pase de GO: noviembre!",
+			"fr": "Progressez dans le Passe GO : novembre pour amasser des PokéPièces !",
+			"hi": "GO पास: नवंबर में प्रगति करने पर पोकेकॉइन कमाएँ!",
+			"id": "Dapatkan PokéCoin dengan menyelesaikan tugas-tugas di Tiket GO: November!",
+			"it": "Guadagna Pokémonete mentre avanzi nel biglietto GO di novembre.",
+			"ja": "「GOパス：11月」を進めてポケコインを獲得しよう",
+			"ko": "\"GO패스: 11월\"을 진행하며 포켓코인을 받아 보세요!",
+			"ru": "Earn PokéCoins for progressing in GO Pass: November!",
+			"th": "รับโปเกคอยน์เมื่อคืบหน้าในบัตรผ่าน GO: พฤศจิกายน!",
+			"tr": "GO Bileti: Kasım'da ilerledikçe PokéPara kazanın!",
+			"zh-Hant": "透過「GO Pass：11月」獲得寶可幣吧！"
+		},
+		"subtitle": {
+			"en": "GO Pass: November",
+			"pt_br": "Passe GO: novembro",
+			"de": "GO-Pass: November",
+			"es": "Pase de GO de noviembre",
+			"es-MX": "Pase de GO: noviembre",
+			"fr": "Passe GO : novembre",
+			"hi": "GO पास : नवंबर",
+			"id": "Tiket GO: November",
+			"it": "Biglietto GO di novembre",
+			"ja": "GOパス：11月",
+			"ko": "GO패스: 11월",
+			"ru": "GO Pass: November",
+			"th": "บัตรผ่าน GO: พฤศจิกายน",
+			"tr": "GO Bileti: Kasım",
+			"zh-Hant": "GO Pass：11月"
+		},
+		"startDate": 1793700000000,
+		"endDate": 1796119200000,
+		"dateRanges": [
+			{
+				"start": 1793700000000,
+				"end": 1796119200000
+			}
+		],
+		"imageUrl": "https://lh3.googleusercontent.com/2H2wVXVBCkoOjc8Swmtz67KAxNbWQMwkqSezJmyAOFnzlfervIkFR-rJJ6nZfqWtZmG4eXJwD7-Is2-TdjJXH2q2nAPFAk8lj7Lz_5TWtTYo=s0-e365",
+		"source": "pokemongo",
+		"wild": [],
+		"raids": [],
+		"eggs": [],
+		"researches": [
+			{
+				"speciesId": "groudon",
+				"shiny": true,
+				"kind": ""
+			}
+		],
+		"incenses": [],
+		"lures": [],
+		"maxBattles": [],
+		"bonuses": {
+			"en": [],
+			"pt_br": [],
+			"de": [],
+			"es": [],
+			"es-MX": [],
+			"fr": [],
+			"hi": [],
+			"id": [],
+			"it": [],
+			"ja": [],
+			"ko": [],
+			"ru": [],
+			"th": [],
+			"tr": [],
+			"zh-Hant": []
+		},
+		"bonusBlocks": {
+			"en": [],
+			"pt_br": [],
+			"de": [],
+			"es": [],
+			"es-MX": [],
+			"fr": [],
+			"hi": [],
+			"id": [],
+			"it": [],
+			"ja": [],
+			"ko": [],
+			"ru": [],
+			"th": [],
+			"tr": [],
+			"zh-Hant": []
+		},
+		"milestoneBonuses": {
+			"en": {
+				"title": "Major Milestone Bonuses",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Reach Major Milestones on your GO Pass to unlock the following bonuses."
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Tier 1",
+						"rank": "Rank 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "One additional Candy for trading Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Open up to 40 Gifts per day."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receive up to 125 Gifts per day from spinning PokéStops and Gym Photo Discs."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Hold 10 more Gifts in your Item Bag."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 3",
+						"rank": "Rank 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× Daily Adventure Incense duration."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 4",
+						"rank": "Rank 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Increased Stardust and XP from hatching Eggs."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Upgrade to the GO Pass Deluxe to strengthen the following bonus."
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Open up to 50 Gifts per day."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receive up to 150 Gifts per day from spinning PokéStops and Gym Photo Discs."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Hold up to 20 more Gifts in your Item Bag."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"pt_br": {
+				"title": "Bônus de Conquista Principal",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Alcance Conquistas Principais no seu Passe GO para desbloquear os seguintes bônus:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bônus do nível 1",
+						"rank": "Ranque 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Um Doce adicional ao trocar Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Treinadoras e Treinadores no nível 31 e superiores receberão um Doce GG ao trocar Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bônus do nível 2",
+						"rank": "Ranque 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abra até 40 presentes por dia."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receba até 125 presentes por dia ao girar fotodiscos em Ginásios e Poképaradas."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Acumule mais 10 presentes na Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bônus do nível 3",
+						"rank": "Ranque 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× mais duração do Incenso de Aventura Diário."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bônus do nível 4",
+						"rank": "Ranque 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Aumento de PE e Poeira Estelar ao chocar Ovos."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bônus do nível 2",
+						"rank": "Ranque 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Faça upgrade para o Passe GO Deluxe para incrementar os seguintes bônus:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abra até 50 presentes por dia."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receba até 150 presentes por dia ao girar fotodiscos em Ginásios e Poképaradas."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Acumule até mais 20 presentes na Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"de": {
+				"title": "Boni für große Meilensteine",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Bei großen Meilensteinen schaltet ihr mit dem GO-Pass die folgenden Boni frei:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bonus für Rang 1",
+						"rank": "Stufe 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "ein zusätzliches Bonbon beim Tauschen"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "ein garantiertes Bonbon XL beim Tauschen (für Trainer ab Level 31)"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus für Rang 2",
+						"rank": "Stufe 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 40 Geschenke pro Tag öffnen"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 125 Geschenke pro Tag von PokéStops und Arenen erhalten"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 10 zusätzliche Geschenke im Item-Beutel aufbewahren"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus für Rang 3",
+						"rank": "Stufe 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "doppelte Wirkungszeit für Täglichen Abenteuerrauch"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus für Rang 4",
+						"rank": "Stufe 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "mehr Schlüpf-Sternenstaub und Schlüpf-EP"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus für Rang 2",
+						"rank": "Stufe 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Mit dem Upgrade auf den GO-Pass-Deluxe winken die folgenden erhöhten Boni:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 50 Geschenke pro Tag öffnen"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 150 Geschenke pro Tag von PokéStops und Arenen erhalten"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "bis zu 20 zusätzliche Geschenke im Item-Beutel aufbewahren"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"es": {
+				"title": "Bonus de hitos principales",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Llegad a hitos principales en el Pase de GO para desbloquear los bonus siguientes:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bonus de Nivel 1",
+						"rank": "rango 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Un Caramelo adicional por intercambiar Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Los Entrenadores de nivel 31 y superior recibirán un Caramelo ++ garantizado por intercambiar Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus de Nivel 2",
+						"rank": "rango 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abrid hasta 40 regalos al día."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Recibid hasta 125 regalos al día al girar fotodiscos de Poképaradas y Gimnasios."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Conservad 10 regalos más en la Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus de Nivel 3",
+						"rank": "rango 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "El doble de duración del Incienso de aventura diaria."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus de Nivel 4",
+						"rank": "rango 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Más Polvo Estelar y PX por eclosionar Huevos."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus de Nivel 2",
+						"rank": "rango 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Mejorad al Pase de GO deluxe para potenciar los bonus siguientes:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abrid hasta 50 regalos al día."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Recibid hasta 150 regalos al día al girar fotodiscos de Poképaradas y Gimnasios."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Conservad hasta 20 regalos más en la Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"es-MX": {
+				"title": "Bonificaciones de objetivo principal",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Lleguen a objetivos principales en el Pase de GO para desbloquear las bonificaciones siguientes:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bonificaciones de nivel 1",
+						"rank": "rango 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Un Caramelo adicional por intercambiar Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Los Entrenadores de nivel 31 y superior recibirán un Caramelo XL garantizado por intercambiar Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonificaciones de nivel 2",
+						"rank": "rango 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abran hasta 40 regalos al día."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Reciban hasta 125 regalos al día al girar fotodiscos de Poképaradas y Gimnasios."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Conserven 10 regalos más en la Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonificaciones de nivel 3",
+						"rank": "rango 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "El doble de duración del Incienso de aventura diaria."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonificaciones de nivel 4",
+						"rank": "rango 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Más Polvo Estrella y EXP por eclosionar Huevos."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonificaciones de nivel 2",
+						"rank": "rango 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Adquieran el Pase de GO Deluxe para potenciar las bonificaciones siguientes:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Abran hasta 50 regalos al día."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Reciban hasta 150 regalos al día al girar fotodiscos de Poképaradas y Gimnasios."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Conserven hasta 20 regalos más en la Bolsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"fr": {
+				"title": "Bonus d’Échelon majeur",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Atteignez les Échelons majeurs pour bénéficier des bonus suivants avec le Passe GO."
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Échelon 1",
+						"rank": "rang 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1 Bonbon supplémentaire lors des échanges de Pokémon"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1 Bonbon L garanti lors des échanges de Pokémon (pour les Dresseurs et Dresseuses de niveau 31 et plus)"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Échelon 2",
+						"rank": "rang 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité d’ouvrir jusqu’à 40 Cadeaux par jour"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité de recevoir jusqu’à 125 Cadeaux par jour en faisant tourner des PhotoDisques"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité de détenir jusqu’à 10 Cadeaux de plus dans le Sac d’objets"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Échelon 3",
+						"rank": "rang 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Durée de l’Encens d’aventure quotidienne ×2"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Échelon 4",
+						"rank": "rang 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Augmentation des PX et Poussières Étoiles d’éclosion"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Échelon 2",
+						"rank": "rang 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Achetez le Passe GO deluxe pour accéder aux bonus améliorés suivants."
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité d’ouvrir jusqu’à 50 Cadeaux par jour"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité de recevoir jusqu’à 150 Cadeaux par jour en faisant tourner des PhotoDisques"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilité de détenir jusqu’à 20 Cadeaux de plus dans le Sac d’objets"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"hi": {
+				"title": "बड़ा माइल्स्टोन बोनस",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "अपने GO पास पर बड़े माइल्स्टोन हासिल करें और निम्नलिखित बोनस अनलॉक करें।"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "रैंक 1 से शुरू होने वाला टियर 1 बोनस",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "पोकेमॉन का आदान-प्रदान करने पर एक अतिरिक्त कैंडी मिलेगी।"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "लेवल 31 और उससे ऊपर के ट्रेनर्स को पोकेमॉन का ट्रेड करने पर एक कैंडी XL अवश्य मिलेगी।"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "रैंक 25 से शुरू होने वाला टियर 2 बोनस",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "प्रतिदिन अधिकतम 40 गिफ़्ट खोलें।"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "पोकेस्टॉप और जिम फोटो डिस्क को घुमाकर प्रतिदिन 125 तक गिफ़्ट पाएँ।"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "अपने आइटम बैग में 10 और गिफ़्ट रखें।"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "रैंक 50 से शुरू होने वाला टियर 3 बोनस",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× दैनिक एडवेंचर इंसेंस की अवधि।\nरैंक 75 से शुरू होने वाला टियर 4 बोनस"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "अंडे हैच करने पर मिलने वाले स्टारडस्ट और XP में वृद्धि।"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "रैंक 25 से शुरू होने वाला टियर 2 बोनस",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "GO पास डीलक्स में अपग्रेड करने से आपको निम्नलिखित बोनस का लाभ और भी अधिक मिलेगा।"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "प्रतिदिन अधिकतम 50 गिफ़्ट खोलें।"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "पोकेस्टॉप और जिम फोटो डिस्क को घुमाकर प्रतिदिन 150 तक गिफ़्ट पाएँ।"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "आप अपने आइटम बैग में 20 और गिफ़्ट रख सकते हैं।"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"id": {
+				"title": "Bonus Milestone Mayor",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Capai Milestone Mayor di Tiket GO untuk membuka bonus berikut:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bonus Tingkat 1",
+						"rank": "Rank 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Satu Permen tambahan untuk pertukaran Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Pelatih level 31 ke atas akan mendapatkan satu jaminan Permen XL saat bertukar Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus Tingkat 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Buka hingga 40 Hadiah per hari."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Dapatkan hingga 125 Hadiah per hari dari memutar Disk Foto di PokéStop dan Gym."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Simpan 10 Hadiah tambahan di Tas Item Anda."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus Tingkat 3",
+						"rank": "Rank 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Durasi Pewangi Harian ×2.\nBonus Tingkat 4 Mulai dari Rank 75"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Peningkatan Debu Bintang dan XP dari menetaskan Telur."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus Tingkat 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Tingkatkan ke Tiket GO Luks untuk meningkatkan bonus berikut:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Buka hingga 50 Hadiah per hari."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Dapatkan hingga 150 Hadiah per hari dari memutar Disk Foto di PokéStop dan Gym."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Simpan hingga 20 Hadiah tambahan di Tas Item Anda."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"it": {
+				"title": "Bonus dell'obiettivo principale",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Raggiungi un obiettivo principale del biglietto GO per sbloccare i seguenti bonus:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Bonus dell’obiettivo 1",
+						"rank": "livello 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Una caramella aggiuntiva scambiando Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Una caramella L garantita scambiando Pokémon per gli Allenatori e le Allenatrici a partire dal livello 31."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus dell’obiettivo 2",
+						"rank": "livello 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di aprire fino a 40 pacchi amicizia al giorno."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di ricevere fino a 125 pacchi amicizia al giorno facendo girare i dischi foto dei Pokéstop o delle Palestre."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di conservare 10 pacchi amicizia extra nella Borsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus dell’obiettivo 3",
+						"rank": "livello 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Durata aroma avventura giornaliera raddoppiata."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus dell’obiettivo 4",
+						"rank": "livello 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "PE e polvere di stelle extra facendo schiudere le Uova."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Bonus dell’obiettivo 2",
+						"rank": "livello 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Effettua l’upgrade al biglietto GO deluxe per potenziare i seguenti bonus:"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di aprire fino a 50 pacchi amicizia al giorno."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di ricevere fino a 150 pacchi amicizia al giorno facendo girare i dischi foto dei Pokéstop o delle Palestre."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Possibilità di conservare 20 pacchi amicizia extra nella Borsa."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"ja": {
+				"title": "「メジャーマイルストーン」のボーナス",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "「GOパス」の「メジャーマイルストーン」を達成すると、以下のボーナスが手に入ります。"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "ティア1ボーナス（ランク1で開始）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "ポケモン交換でもらえる「ポケモンのアメ」が1個追加"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "レベル31以上のトレーナーは、ポケモンを交換すると「アメXL」を必ず獲得"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "ティア2ボーナス（ランク25で開始）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1日にギフトを最大40個まで開封できる"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1日にポケストップやジムのフォトディスクからギフトを最大125個まで入手可能"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "道具バッグの中にギフトを所持できる上限が10個増加"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "ティア3ボーナス（ランク50で開始）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "「おさんぽおこう」の効果時間が2倍\nティア4ボーナス（ランク75で開始）"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "タマゴをかえしたときにもらえる「ほしのすな」とXPが増加"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "ティア2ボーナス（ランク25で開始）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "「GOパスデラックス」にアップグレードすると、以下のボーナスが強化されます。"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1日にギフトを最大50個まで開けることが可能"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "1日にポケストップやジムのフォトディスクからギフトを最大150個まで入手可能"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "道具バッグの中にギフトを所持できる上限が20個増加"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"ko": {
+				"title": "메이저 마일스톤 보너스",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "“GO패스”의 “메이저 마일스톤”을 달성하면 다음 보너스가 잠금 해제됩니다."
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "랭크 1부터 제공되는 티어 1 보너스",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "포켓몬을 교환했을 때 “포켓몬의 사탕” 1개 추가 획득"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "레벨 31 이상의 트레이너가 포켓몬을 교환하면 “포켓몬의 사탕XL” 1개 확정 획득"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "랭크 25부터 제공되는 티어 2 보너스",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "하루에 선물 최대 40개 열기"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "포켓스톱 또는 체육관의 포토디스크를 돌려 하루에 선물 최대 125개 획득"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "도구 가방에 선물 최대 10개 추가 보관"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "랭크 50부터 제공되는 티어 3 보너스",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "“산책향로” 지속 시간 2배\n랭크 75부터 제공되는 티어 4 보너스"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "알이 부화했을 때 받을 수 있는 “별의모래”와 XP 증가"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "랭크 25부터 제공되는 티어 2 보너스",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "“GO패스 디럭스”로 업그레이드하면 보너스가 다음과 같이 강화됩니다."
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "하루에 선물 최대 50개 열기"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "포켓스톱 또는 체육관의 포토디스크를 돌려 하루에 선물 최대 150개 획득"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "도구 가방에 선물 최대 20개 추가 보관"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"ru": {
+				"title": "Major Milestone Bonuses",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Reach Major Milestones on your GO Pass to unlock the following bonuses."
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "Tier 1",
+						"rank": "Rank 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "One additional Candy for trading Pokémon."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Trainers level 31 and above will receive one guaranteed Candy XL when trading Pokémon."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Open up to 40 Gifts per day."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receive up to 125 Gifts per day from spinning PokéStops and Gym Photo Discs."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Hold 10 more Gifts in your Item Bag."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 3",
+						"rank": "Rank 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× Daily Adventure Incense duration."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 4",
+						"rank": "Rank 75",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Increased Stardust and XP from hatching Eggs."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "Tier 2",
+						"rank": "Rank 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Upgrade to the GO Pass Deluxe to strengthen the following bonus."
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Open up to 50 Gifts per day."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Receive up to 150 Gifts per day from spinning PokéStops and Gym Photo Discs."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Hold up to 20 more Gifts in your Item Bag."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"th": {
+				"title": "โบนัสความสำเร็จขั้นใหญ่",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "ไปถึงความสำเร็จขั้นใหญ่ในบัตรผ่าน GO ของคุณเพื่อปลดล็อกโบนัสต่อไปนี้"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "โบนัส Tier 1",
+						"rank": "เริ่มตั้งแต่ระดับ 1",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "ลูกอมเพิ่ม 1 เม็ดจากการแลกเปลี่ยนโปเกมอน"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "เทรนเนอร์ตั้งแต่เลเวล 31 ขึ้นไปจะได้รับประกันลูกอม XL 1 เม็ดจากการแลกเปลี่ยนโปเกมอน"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "โบนัส Tier 2",
+						"rank": "เริ่มตั้งแต่ระดับ 25",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "เปิดของขวัญได้สูงสุดถึง 40 ชิ้นต่อวัน"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "รับของขวัญสูงสุดถึง 125 ชิ้นต่อวันจากการหมุนเสาโปเกสต็อปและแผ่นภาพยิม"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "สามารถเก็บของขวัญได้เพิ่มอีก 10 ชิ้นในกระเป๋าเก็บไอเท็มของคุณ"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "โบนัส Tier 3",
+						"rank": "เริ่มตั้งแต่ระดับ 50",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× ระยะเวลาเครื่องหอมรายวัน\nโบนัส Tier 4 เริ่มตั้งแต่ระดับ 75"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "เพิ่มสตาร์ดัสต์และ XP จากการฟักไข่"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "โบนัส Tier 2",
+						"rank": "เริ่มตั้งแต่ระดับ 25",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "อัปเกรดเป็นบัตรผ่าน GO Deluxe เพื่อเสริมความแข็งแกร่งให้กับโบนัสต่อไปนี้"
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "เปิดของขวัญได้สูงสุดถึง 50 ชิ้นต่อวัน"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "รับของขวัญสูงสุดถึง 150 ชิ้นต่อวันจากการหมุนเสาโปเกสต็อปและแผ่นภาพยิม"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "สามารถเก็บของขวัญได้เพิ่มอีกสูงสุด 20 ชิ้นในกระเป๋าเก็บไอเท็มของคุณ"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"tr": {
+				"title": "Büyük Aşama Bonusları",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "Aşağıdaki bonusları açmak için GO Biletinizde Büyük Aşamalara ulaşın:"
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "1. Kademe Bonusu (1. Rütbeden itibaren)",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Pokémon takası karşılığında 1 ek Şeker."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Eğitmen seviyesi 31 ve üzerinde olan Eğitmenler Pokémon takas ederken garantili bir Büyük Şeker alacak."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "2. Kademe Bonusu (25. Rütbeden itibaren)",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Günde en fazla 40 Hediye açın."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "PokéDurakları Spor Salonlarındaki Fotoğraf Disklerini döndüğünüzde günlük en fazla 125 Hediye alın."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Eşya Çantanızda ek 10 Hediye taşıyın."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "3. Kademe Bonusu (50. Rütbeden itibaren)",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "2× Günlük Macera Tütsüsü süresi."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Kademe Bonusu (75. Rütbeden itibaren)"
+									}
+								],
+								"level": 0,
+								"ordered": true
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Yumurta çatlattığınızda daha fazla Yıldız Tozu ve TP."
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "2. Kademe Bonusu (25. Rütbeden itibaren)",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "Aşağıdaki bonusları güçlendirmek için Lüks GO Biletine yükseltin."
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Günde en fazla 50 Hediye açın."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "PokéDurak ve Spor Salonu Fotoğraf Disklerini döndürerek günde en fazla 150 Hediye alın."
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "Eşya Çantanızda ek 20 Hediye taşıyın."
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			},
+			"zh-Hant": {
+				"title": "主里程碑獎勵加碼內容",
+				"intro": [
+					{
+						"kind": "text",
+						"runs": [
+							{
+								"text": "只要達成「GO Pass」的主里程碑，即可解鎖下列獎勵加碼內容："
+							}
+						]
+					}
+				],
+				"tiers": [
+					{
+						"tier": "第1階段（1級）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "交換寶可夢時獲得額外1顆糖果。"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "等級31以上的訓練家交換寶可夢時，必定獲得1顆糖果XL。"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "第2階段（25級）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "每日可開啟最多40個友情禮物。"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "旋轉寶可補給站或道館的轉盤時，每日可獲得最多125個友情禮物。"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "包包內可多存放10個友情禮物。"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "第3階段（50級）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "散步小薰香的效果持續時間加倍。\n第4階段（75級）"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "孵蛋獲得的星星沙子與XP增加。"
+									}
+								],
+								"level": 0
+							}
+						]
+					},
+					{
+						"tier": "第2階段（25級）",
+						"rank": "",
+						"blocks": [
+							{
+								"kind": "text",
+								"runs": [
+									{
+										"text": "升級至「GO Pass豪華版」的訓練家將升級至下列獎勵加碼內容："
+									}
+								]
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "每日可開啟最多50個友情禮物。"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "旋轉寶可補給站或道館的轉盤時，每日可獲得最多150個友情禮物。"
+									}
+								],
+								"level": 0
+							},
+							{
+								"kind": "item",
+								"runs": [
+									{
+										"text": "包包內可多存放20個友情禮物。"
+									}
+								],
+								"level": 0
+							}
+						]
+					}
+				]
+			}
+		},
+		"rewardBlocks": {
+			"en": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Complete Pass Tasks to rank up your GO Pass to earn the following rewards."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encounter with Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéCoins"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Lucky Egg"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Rare Candy XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Stardust"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "And even more goodies!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Trainers who upgrade to the GO Pass Deluxe can also earn the following rewards."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1,000 additional PokéCoins for a total of 1,400 PokéCoins"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "One Super Incubator"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Additional encounters with even more Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "And even more goodies!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*You might even encounter a Shiny one—if you’re lucky!"
+						}
+					]
+				}
+			],
+			"pt_br": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Conclua as Tarefas de Passe para subir de Ranque no Passe GO e ganhar as seguintes recompensas:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encontro com Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 Pokémoedas"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Ovo da Sorte"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Doce Raro GG"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Poeira Estelar"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "E muito mais!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Treinadoras e Treinadores que fizerem o upgrade para o Passe GO Deluxe também poderão ganhar as seguintes recompensas:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1.000 Pokémoedas adicionais, em um total de 1.400"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Uma Superincubadora"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encontros adicionais com ainda mais Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "E muito mais!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*Com sorte, você pode até encontrar um Pokémon Brilhante!"
+						}
+					]
+				}
+			],
+			"de": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Schließt Pass-Aufgaben ab, um beim GO-Pass aufzusteigen und diese Belohnungen zu erhalten:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Begegnung mit Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéMünzen"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Glücks-Ei"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Sonderbonbons XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Sternenstaub"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "und noch mehr Belohnungen"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Mit einem Upgrade auf den GO-Pass-Deluxe bekommt ihr außerdem:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1000 zusätzliche PokéMünzen (also insgesamt 1400 PokéMünzen)"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "eine Super-Brutmaschine"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "weitere Begegnungen mit noch mehr Pokémon"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "und noch mehr Belohnungen"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Mit Glück begegnet ihr sogar einem Schillernden Exemplar!"
+						}
+					],
+					"level": 0
+				}
+			],
+			"es": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Completad las tareas del Pase para subir de nivel vuestro Pase de GO y ganar las recompensas siguientes."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encuentro con Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 Pokémonedas"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Un Huevo Suerte"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Un Caramelo Raro ++"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Polvo Estelar"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "¡Y muchas más sorpresas!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Los Entrenadores que mejoren al Pase de GO deluxe también podrán ganar las recompensas siguientes."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1000 Pokémonedas adicionales hasta un total de 1400 Pokémonedas"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Una superincubadora"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encuentros adicionales con más Pokémon"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "¡Y muchas más sorpresas!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*Y si tenéis suerte, ¡podréis encontraros con uno variocolor!"
+						}
+					]
+				}
+			],
+			"es-MX": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Completen las tareas del pase para subir de nivel su Pase de GO y conseguir las siguientes recompensas:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encuentro con Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 Pokémonedas"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Huevo Suerte"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Caramelo raro XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Polvo Estrella"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "¡Y muchas más sorpresas!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Los Entrenadores que adquieran el Pase de GO Deluxe también podrán obtener las siguientes recompensas:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1000 Pokémonedas adicionales (para un total de 1400 Pokémonedas)"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Una Superincubadora"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "¡Encuentros adicionales con aún más Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "¡Y muchas más sorpresas!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*Incluso podrían encontrarse con uno brillante, ¡si tienen suerte!"
+						}
+					]
+				}
+			],
+			"fr": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Accomplissez les tâches de Passe et montez de rang pour obtenir les récompenses suivantes du Passe GO."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Une rencontre avec Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéPièces"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Un Œuf Chance"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Des Super Bonbons L"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Des Poussières Étoiles"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Et bien d’autres surprises !"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Achetez le Passe GO deluxe et obtenez également les récompenses suivantes."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1 000 PokéPièces supplémentaires, pour un total de 1 400"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Un Super-Incubateur"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Des rencontres avec davantage de Pokémon"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Et bien d’autres surprises !"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "* Si la chance vous sourit, vous pourriez même en rencontrer un chromatique."
+						}
+					]
+				}
+			],
+			"hi": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "अपने GO पास को रैंक अप करने और निम्नलिखित रिवॉर्ड अर्जित करने के लिए पास टास्क पूरे करें।"
+						}
+					]
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "ग्राउडॉन से मुलाकात",
+							"italic": true
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 पोकेकॉइन"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "लकी एग"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "रेयर कैंडी XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "स्टारडस्ट"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "और भी कई शानदार चीजें!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "जो ट्रेनर GO पास डीलक्स में अपग्रेड करते हैं, वे निम्नलिखित रिवॉर्ड भी अर्जित कर सकते हैं।"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "कुल 1,400 पोकेकॉइन्स के लिए 1,000 अतिरिक्त पोकेकॉइन।"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "एक सुपर इन्क्यूबेटर"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "और भी अधिक पोकेमॉन के साथ अतिरिक्त मुलाकात!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "और भी कई शानदार चीजें!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*अगर आपकी किस्मत अच्छी रही तो आपको एक शाइनी पोकेमॉन भी मिल सकता है!"
+						}
+					]
+				}
+			],
+			"id": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Selesaikan Tugas Tiket untuk meningkatkan Rank Tiket GO agar bisa mendapatkan hadiah berikut:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Pertemuan dengan Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéCoin"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Telur Kebahagiaan"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Permen Langka XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Debu Bintang"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Dan banyak lagi hadiah lainnya!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Pelatih yang meningkatkan ke Tiket GO Luks juga dapat memperoleh hadiah berikut:"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1.000 PokéCoin tambahan, sehingga total 1.400 PokéCoin"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Satu Mesin Penetas Super"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Pertemuan tambahan dengan lebih banyak Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Dan banyak lagi hadiah lainnya!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*Anda bahkan akan bertemu dengan Pokémon Bersinar, jika beruntung!"
+						}
+					]
+				}
+			],
+			"it": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Completa le missioni biglietto per salire di livello nel biglietto GO e ricevere le seguenti ricompense."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Incontro con Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 Pokémonete"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Fortunuovo"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Caramelle Rare L"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Polvere di stelle"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "E perfino altre chicche!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Gli Allenatori e le Allenatrici che effettuano l’upgrade al biglietto GO deluxe possono ricevere anche le seguenti ricompense."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1.000 Pokémonete aggiuntive, per un totale di 1.400 Pokémonete"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Una Superincubatrice"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Incontri aggiuntivi con ancora più Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "E perfino altre chicche!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*Con un po’ di fortuna, potresti persino incontrarne uno cromatico!"
+						}
+					]
+				}
+			],
+			"ja": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "パスのタスクを達成して「GOパス」のランクを上げると、以下のリワードを受け取ることができます。"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "「グラードン」*と出会える"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400ポケコイン"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "「しあわせタマゴ」"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "「ふしぎなアメXL」"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "「ほしのすな」"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "他にも盛りだくさん！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "「GOパスデラックス」にアップグレードすると、以下のリワードを追加で受け取ることができます。"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "追加の1,000ポケコイン（合計1,400ポケコイン）"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "「スーパーふかそうち」1個"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "さらにポケモンと出会える！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "他にも盛りだくさん！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*運が良ければ、色違いのポケモンとも出会えるかも？！"
+						}
+					]
+				}
+			],
+			"ko": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "패스 태스크를 완료하여 “GO패스”의 랭크를 올리면 다음 리워드를 획득할 수 있습니다."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "“그란돈”과의 만남*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 포켓코인"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "행복의알"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "이상한사탕XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "별의모래"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "그 외 더 많은 보너스!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "“GO패스 디럭스”로 업그레이드하면 다음 리워드도 획득할 수 있습니다."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "추가 보너스 1,000 포켓코인(총 1,400 포켓코인)"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "“슈퍼 부화장치” 1개"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "더 많은 포켓몬과의 추가 만남"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "그 외 더 많은 보너스!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*운이 좋으면 색이 다른 포켓몬을 만날 수도 있습니다!"
+						}
+					]
+				}
+			],
+			"ru": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Complete Pass Tasks to rank up your GO Pass to earn the following rewards."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Encounter with Groudon*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéCoins"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Lucky Egg"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Rare Candy XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Stardust"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "And even more goodies!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Trainers who upgrade to the GO Pass Deluxe can also earn the following rewards."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1,000 additional PokéCoins for a total of 1,400 PokéCoins"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "One Super Incubator"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Additional encounters with even more Pokémon!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "And even more goodies!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*You might even encounter a Shiny one—if you’re lucky!"
+						}
+					]
+				}
+			],
+			"th": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "ทำภารกิจบัตรผ่านให้เสร็จสิ้นเพื่อเลื่อนระดับบัตรผ่าน GO ของคุณแล้วรับรางวัลต่อไปนี้"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "การเผชิญหน้ากับกราดอน*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 โปเกคอยน์"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "ไข่แห่งความสุข"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "ลูกอมประหลาด XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "สตาร์ดัสต์"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "และอื่น ๆ อีกมากมาย!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "เทรนเนอร์ที่อัปเกรดเป็นบัตรผ่าน GO Deluxe จะได้รับรางวัลต่อไปนี้ด้วย"
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "โปเกคอยน์เพิ่มเติม 1,000 โปเกคอยน์รวมเป็น 1,400 โปเกคอยน์"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "เครื่องฟักไข่ชั้นเยี่ยม"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "เผชิญหน้าเพิ่มเติมกับโปเกมอนมากยิ่งขึ้น!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "และอื่น ๆ อีกมากมาย!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*คุณอาจเจอตัวสีแตกต่างก็ได้ หากโชคดีนะ!"
+						}
+					]
+				}
+			],
+			"tr": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Bilet Görevlerini tamamlayıp GO Biletinizde sıralamanızı yükseltin, aşağıdaki ödülleri kazanın."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Groudon ile karşılaşmalar!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400 PokéPara"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Şans Yumurtası"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Büyük Nadir Şeker"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Yıldız Tozu"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Daha pek çok ödül!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Lüks GO Biletine yükseltme yapan Eğitmenler aşağıdaki ödülleri de kazanabilirler."
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Ek 1.000 PokéPara, toplam 1.400 PokéPara"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1 Süper Kuluçka Makinesi"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Daha fazla Pokémon’la ek karşılaşmalar"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "Daha pek çok ödül!"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "Şanslıysanız Parlak formlarla da karşılaşabilirsiniz!"
+						}
+					]
+				}
+			],
+			"zh-Hant": [
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "只要完成「Pass課題」來提升「GO Pass」級別，即可解鎖下列獎勵："
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "與「固拉多」相遇的機會*"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "400寶可幣"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "幸運蛋"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "神奇糖果XL"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "星星沙子"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "以及其他豐富的獎勵！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "text",
+					"runs": [
+						{
+							"text": "持有「GO Pass豪華版」的訓練家可以額外解鎖下列獎勵："
+						}
+					]
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "額外1,000寶可幣，共計1,400寶可幣"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "1個超級孵化器"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "額外遇見寶可夢的機會！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "item",
+					"runs": [
+						{
+							"text": "以及其他豐富的獎勵！"
+						}
+					],
+					"level": 0
+				},
+				{
+					"kind": "note",
+					"runs": [
+						{
+							"text": "*運氣好的話，還有機會遇見異色寶可夢喔！"
+						}
+					]
+				}
+			]
+		},
+		"availableLocales": [
+			"en",
+			"pt_br",
+			"de",
+			"es",
+			"es-MX",
+			"fr",
+			"hi",
+			"id",
+			"it",
+			"ja",
+			"ko",
+			"th",
+			"tr",
+			"zh-Hant"
+		]
+	},
+	{
 		"id": "into-the-wild-2026-0",
 		"url": {
 			"en": "https://pokemongo.com/en/news/into-the-wild-2026",
@@ -22434,2054 +26419,6 @@
 		"availableLocales": [
 			"en",
 			"id"
-		]
-	},
-	{
-		"id": "gigantamax-cinderace-max-battle-day-2026-0",
-		"url": {
-			"en": "https://pokemongo.com/en/news/gigantamax-cinderace-max-battle-day-2026",
-			"pt_br": "https://pokemongo.com/pt_br/news/gigantamax-cinderace-max-battle-day-2026",
-			"de": "https://pokemongo.com/de/news/gigantamax-cinderace-max-battle-day-2026",
-			"es": "https://pokemongo.com/es/news/gigantamax-cinderace-max-battle-day-2026",
-			"es-MX": "https://pokemongo.com/es-MX/news/gigantamax-cinderace-max-battle-day-2026",
-			"fr": "https://pokemongo.com/fr/news/gigantamax-cinderace-max-battle-day-2026",
-			"hi": "https://pokemongo.com/hi/news/gigantamax-cinderace-max-battle-day-2026",
-			"id": "https://pokemongo.com/id/news/gigantamax-cinderace-max-battle-day-2026",
-			"it": "https://pokemongo.com/it/news/gigantamax-cinderace-max-battle-day-2026",
-			"ja": "https://pokemongo.com/ja/news/gigantamax-cinderace-max-battle-day-2026",
-			"ko": "https://pokemongo.com/ko/news/gigantamax-cinderace-max-battle-day-2026",
-			"ru": "https://pokemongo.com/en/news/gigantamax-cinderace-max-battle-day-2026",
-			"th": "https://pokemongo.com/th/news/gigantamax-cinderace-max-battle-day-2026",
-			"tr": "https://pokemongo.com/tr/news/gigantamax-cinderace-max-battle-day-2026",
-			"zh-Hant": "https://pokemongo.com/zh-Hant/news/gigantamax-cinderace-max-battle-day-2026"
-		},
-		"title": {
-			"en": "Fireball of fury as Gigantamax Cinderace storms into Max Battle Day!",
-			"pt_br": "Uma bola de fogo furiosa enquanto o Cinderace Gigamax chega com tudo ao Dia de Batalhas Max!",
-			"de": "Gigadynamax-Liberlo läutet den Dyna-Kampftag mit einem lodernden Feuerball ein!",
-			"es": "¡Una bola de fuego furiosa como Cinderace Gigamax llega cual tormenta el Día de Combates Max!",
-			"es-MX": "¡Bola de fuego de furia mientras Cinderace Gigamax irrumpe en el Día de Combates Max!",
-			"fr": "Pyrobut Gigamax débarque comme une boule de feu dans la Journée Combat Dynamax !",
-			"hi": "मैक्स बैटल दिवस में जायगैंटामैक्स सिंडरएस क्रोध के गोले के रूप में प्रवेश करता है!",
-			"id": "Bola api amarah saat Cinderace Gigantamax menerjang ke Hari Pertarungan Max!",
-			"it": "Cinderace Gigamax arriva come una furia nella giornata Lotte Dynamax sulla sua enorme palla infuocata.",
-			"ja": "「マックスバトルデイ」で、「キョダイマックスエースバーン」がキョダイ火炎ボールをシュート！",
-			"ko": "\"맥스배틀 데이\"에 \"거다이맥스 에이스번\"이 거대한 불꽃 볼을 슛!",
-			"ru": "Fireball of fury as Gigantamax Cinderace storms into Max Battle Day!",
-			"th": "ลูกไฟแห่งความพิโรธ เมื่อเอสเบิร์นกิกะแมกซ์บุกตะลุยเข้าสู่วันแบตเทิลแมกซ์!",
-			"tr": "Gigantamaks Cinderace Maksi Maç Gününe geliyor ve ortalık alev alıyor!",
-			"zh-Hant": "超極巨化「閃焰王牌」將乘著超極巨火焰球在「極巨對戰日」火爆登場！"
-		},
-		"subtitle": {
-			"en": "Gigantamax Cinderace Max Battle Day",
-			"pt_br": "Dia de Batalhas Max: Cinderace Gigamax",
-			"de": "Dyna-Kampftag mit Gigadynamax-Liberlo",
-			"es": "Día de Combates Max de Cinderace Gigamax",
-			"es-MX": "Día de Combates Max de Cinderace Gigamax",
-			"fr": "Journée Combat Dynamax Pyrobut Gigamax",
-			"hi": "जायगैंटामैक्स सिंडरएस मैक्स बैटल दिवस",
-			"id": "Hari Pertarungan Max Cinderace Gigantamax",
-			"it": "Giornata Lotte Dynamax dedicata a Cinderace Gigamax",
-			"ja": "「キョダイマックスエースバーン」の「マックスバトルデイ」",
-			"ko": "거다이맥스 에이스번 맥스배틀 데이",
-			"ru": "Gigantamax Cinderace Max Battle Day",
-			"th": "วันแบตเทิลแมกซ์เอสเบิร์นกิกะแมกซ์",
-			"tr": "Gigantamaks Cinderace Maksi Maç Günü",
-			"zh-Hant": "超極巨化閃焰王牌極巨對戰日"
-		},
-		"startDate": 1791036000000,
-		"endDate": 1791046800000,
-		"dateRanges": [
-			{
-				"start": 1791036000000,
-				"end": 1791046800000
-			}
-		],
-		"imageUrl": "https://lh3.googleusercontent.com/WT8oI0oxsVj0AVZ1qD58MMbCPc8di-ajTXg2IBD3OcFshTR025JQIKbJnlMYVUBw96yMdeyMlosgQliCxVxgyTCJPtiN53G05HUMcdshAw=s0-e365",
-		"source": "pokemongo",
-		"wild": [],
-		"raids": [],
-		"eggs": [],
-		"researches": [],
-		"incenses": [],
-		"lures": [],
-		"maxBattles": [
-			{
-				"speciesId": "cinderace",
-				"kind": "gigantamax",
-				"shiny": true,
-				"tier": "6"
-			}
-		],
-		"bonuses": {
-			"en": [
-				"The following bonuses will be active during the event.",
-				"Max Particle collection limit increased to 1,600",
-				"All Power Spots will host Gigantamax Battles",
-				"Power Spots will refresh more frequently",
-				"Additional Power Spots will be active",
-				"8× Max Particles from Power Spots",
-				"Up to three Special Trades for the day",
-				"From October 2 at 5:00 p.m. to October 3 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20",
-				"The following bonuses will be active on October 3, 2026, from 12:00 a.m. to 5:00 p.m. local time.",
-				"2× Max Particles from exploring*",
-				"1/4 Adventuring distance to receive Max Particles**",
-				"*Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect.",
-				"**For these bonuses to apply, Trainers must first collect all Max Particles available in the Nearby menu."
-			],
-			"pt_br": [
-				"Os seguintes bônus estarão ativos durante o evento:",
-				"Limite de coleta de Partículas Max aumentado para 1.600",
-				"Todos os Pontos de Energia terão Batalhas Gigamax",
-				"Os Pontos de Energia serão atualizados com mais frequência",
-				"Pontos de Energia adicionais estarão ativos",
-				"8× mais Partículas Max em Pontos de Energia",
-				"Até três trocas especiais no dia",
-				"De 2 de outubro, às 17h PDT (21h no horário de Brasília), a 3 de outubro, às 20h PDT (0h do dia 4 de outubro no horário de Brasília), o limite diário de Reides a Distância aumentará de 10 para 20",
-				"Os bônus a seguir estarão ativos em 3 de outubro de 2026, das 0h às 17h (horário local).",
-				"2× mais Partículas Max ao explorar*",
-				"1/4 da distância de aventura para receber Partículas Max**",
-				"*Vocês podem coletar Partículas Max diariamente pelo menu Proximidades, explorando o mundo. A Sincroaventura ajuda a garantir que a distância percorrida seja contabilizada. Confiram o menu Proximidades para encontrar o ícone que indica quando as Partículas Max podem ser coletadas.",
-				"**Para que esses bônus entrem em vigor, Treinadoras e Treinadores precisam primeiro coletar todas as Partículas Max disponíveis no menu Proximidades."
-			],
-			"de": [
-				"Die folgenden Boni sind während des Events aktiv:",
-				"Sammel-Limit für Dyna-Partikel auf 1600 erhöht",
-				"Gigadynamax-Kämpfe bei allen Kraftquellen",
-				"Kraftquellen erneuern sich häufiger.",
-				"Zusätzliche Kraftquellen sind aktiv.",
-				"8-mal so viele Dyna-Partikel von Kraftquellen",
-				"Bis zu drei Spezial-Tausche an diesem Tag",
-				"Vom 3. Oktober um 2 Uhr bis 4. Oktober um 5 Uhr (MESZ) wird das Fern-Raid-Limit von 10 auf 20 angehoben.",
-				"Die folgenden Boni sind am 3. Oktober 2026 von 0 bis 17 Uhr (Ortszeit) aktiv:",
-				"Doppelt so viele Dyna-Partikel durch Gehen*",
-				"Geviertelte Laufdistanz für Dyna-Partikel**",
-				"* Ihr könnt jeden Tag Dyna-Partikel durch Gehen verdienen und diese im Menü „In der Nähe“ einsammeln, wenn das entsprechende Symbol angezeigt wird. Denkt auch daran, Abenteuer-Sync zu aktivieren, damit euch so viele Meter wie möglich angerechnet werden!",
-				"** Um diese Boni nutzen zu können, müsst ihr zunächst alle im Menü „In der Nähe“ verfügbaren Dyna-Partikel einsammeln."
-			],
-			"es": [
-				"Los bonus siguientes estarán activos durante el evento.",
-				"Límite de Partículas Max aumentado a 1600",
-				"En todos los nodos energéticos se celebrarán Combates Gigamax",
-				"Los nodos energéticos se actualizarán con más frecuencia",
-				"Habrá más nodos energéticos activos",
-				"Ocho veces más de Partículas Max en los nodos energéticos",
-				"Hasta tres intercambios especiales al día",
-				"Del 3 de octubre a las 2:00 CEST (2 de octubre a las 17:00 PDT), al 4 de octubre a las 5:00 CEST (3 de octubre a las 20:00 PDT), el límite diario de incursiones remotas aumentará de 10 a 20",
-				"Los bonus siguientes estarán activos el 2 de octubre de 2026 de 00:00 a 17:00 en la hora local.",
-				"Doble de Partículas Max por explorar*",
-				"1/4 de distancia para recibir Partículas Max**",
-				"*Los Entrenadores podrán recoger Partículas Max en el menú Cerca cada día al salir a explorar. ¡La Sincroaventura os ayudará a sumar distancia! No perdáis de vista el menú Cerca ni el icono que os muestra cuándo podréis recoger Partículas Max.",
-				"**Para que estos bonus se activen, debéis recoger todas las Partículas Max disponibles en el menú Cerca."
-			],
-			"es-MX": [
-				"Las siguientes bonificaciones estarán activas durante el evento:",
-				"El límite de recolección de Partículas Max aumentó a 1600.",
-				"Todos los Nodos Energéticos albergarán Combates Max",
-				"Los Nodos Energéticos se actualizarán con mayor frecuencia",
-				"Se activarán Nodos Energéticos adicionales",
-				"Se obtendrán 8 veces más Partículas Max en los Nodos Energéticos",
-				"Hasta tres Intercambios Especiales por día",
-				"Del 2 de octubre a las 19:00 CST al 3 de octubre a las 22:00 CST (17:00-20:00 PDT, GMT -7), el límite diario de Incursiones Remotas aumentará de 10 a 20.",
-				"Las siguientes bonificaciones estarán activas el 3 de octubre de 2026, de 00:00 a 17:00 hora local:",
-				"Se obtendrán 2 veces más Partículas Max al explorar*",
-				"Se requiere recorrer 1/4 de la distancia de aventura para obtener Partículas Max**",
-				"*Los Entrenadores pueden recolectar Partículas Max a través del menú Cerca cada día mientras exploran. ¡La Sincroaventura puede ayudar a garantizar que la distancia cuente! Estén atentos al menú Cerca para ver el ícono que se muestra cuando las Partículas Max están listas para recolectarse.",
-				"**Para que estas bonificaciones se activen, deberán recolectar todas las Partículas Max disponibles en el menú Cerca."
-			],
-			"fr": [
-				"Les bonus suivants seront actifs pendant l’évènement.",
-				"Limite de collecte de Particules Max portée à 1 600",
-				"Combats G-Max dans toutes les Sources d’Énergie",
-				"Actualisation des Sources d’Énergie plus fréquente",
-				"Davantage de Sources d’Énergie actives",
-				"Particules Max ×8 dans les Sources d’Énergie",
-				"Jusqu’à 3 Échanges spéciaux pendant la même journée",
-				"Limite de Raids à distance augmentée de 10 à 20 du 2 octobre à 17h au 3 octobre à 20h PDT (GMT−7)",
-				"Ces bonus seront actifs le 3 octobre 2026 de minuit à 17h, heures locales.",
-				"Particules Max ×2 durant l’exploration*",
-				"Distance à parcourir divisée par 4 pour recevoir des Particules Max**",
-				"* Chaque jour, au fil de votre exploration, vous pouvez collecter des Particules Max depuis le menu À proximité. Le Suivi d’exploration permet de vous assurer que la distance parcourue est bien comptabilisée. Consultez régulièrement le menu À proximité, l’icône indiquant que des Particules Max peuvent être collectées est susceptible d’y apparaître.",
-				"** Pour profiter de ces bonus, vous devrez d’abord collecter toutes les Particules Max disponibles dans le menu À proximité."
-			],
-			"hi": [
-				"इस इवेंट के दौरान निम्नलिखित बोनस सक्रिय रहेंगे।",
-				"मैक्स पार्टिकल कलेक्शन की अधिकतम सीमा बढ़ाकर 1,600 कर दी गई है।",
-				"सभी पावर स्पॉट में जायगैंटामैक्स बैटल आयोजित किए जाएंगे",
-				"पावर स्पॉट अधिक बार रिफ़्रेश होंगे",
-				"अतिरिक्त पावर स्पॉट सक्रिय रहेंगे",
-				"पावर स्पॉट से 8 गुना मैक्स पार्टिकल",
-				"दिन भर में अधिकतम तीन विशेष सौदे।",
-				"2 अक्टूबर शाम 5:00 बजे से 3 अक्टूबर शाम 8:00 बजे पीडीटी (जीएमटी -7) तक, रिमोट रेड की दैनिक सीमा 10 से बढ़कर 20 हो जाएगी।",
-				"निम्नलिखित बोनस 3 अक्टूबर, 2026 को स्थानीय समयानुसार रात 12:00 बजे से शाम 5:00 बजे तक सक्रिय रहेंगे।",
-				"अन्वेषण से 2 गुना मैक्स पार्टिकल*",
-				"मैक्स पार्टिकल पाने के लिए 1/4 एडवेंचर की दूरी**",
-				"*ट्रेनर प्रतिदिन एक्सप्लोर करके नियरबाय मेनू के माध्यम से मैक्स पार्टिकल एकत्र कर सकते हैं। एडवेंचर मोड यह सुनिश्चित करने में मदद कर सकता है कि आपकी दूरी भी गिनी जाए! मैक्स पार्टिकल कब एकत्र करने के लिए तैयार होंगे, यह दिखाने वाले आइकन के लिए नियरबाय मेनू पर नज़र रखें।",
-				"**इन बोनस का लाभ उठाने के लिए, ट्रेनर्स को सबसे पहले नियरबाय मेनू में उपलब्ध सभी मैक्स पार्टिकल को एकत्रित करना होगा।"
-			],
-			"id": [
-				"Bonus berikut ini akan aktif selama event berlangsung:",
-				"Batas pengumpulan Partikel Max ditingkatkan menjadi 1.600",
-				"Semua Power Spot akan menyelenggarakan Pertarungan Gigantamax",
-				"Power Spot akan lebih sering diperbarui",
-				"Power Spot tambahan akan aktif",
-				"Partikel Max ×8 dari Power Spot",
-				"Hingga tiga Pertukaran Spesial untuk hari tersebut",
-				"Mulai tanggal 3 Oktober, pukul 07.00 hingga 4 Oktober, pukul 10.00 WIB, batas Raid Jarak Jauh harian akan meningkat dari 10 menjadi 20",
-				"Bonus berikut ini akan aktif pada tanggal 3 Oktober 2026, pukul 00.00 hingga 17.00 waktu setempat.",
-				"Partikel Max ×2 dengan menjelajah*",
-				"1/4 Jarak petualangan untuk menerima Partikel Max**",
-				"*Pelatih dapat mengumpulkan Partikel Max melalui menu Sekitar setiap hari dengan melakukan penjelajahan. Sinkronisasi Petualangan akan memastikan jarak Anda diperhitungkan! Perhatikan ikon di menu Sekitar yang akan menunjukkan saat Partikel Max siap dikumpulkan.",
-				"**Agar bonus ini berlaku, Pelatih harus terlebih dahulu mengumpulkan semua Partikel Max yang tersedia di menu Sekitar."
-			],
-			"it": [
-				"Durante l’evento saranno attivi i seguenti bonus.",
-				"Il limite per collezionare le particelle Dynamax è salito a 1.600",
-				"Tutti i punti energetici ospiteranno Lotte G-Max",
-				"I punti energetici si aggiorneranno più frequentemente",
-				"Saranno attivi ulteriori punti energetici",
-				"Particelle Dynamax dai punti energetici ottuplicate",
-				"Fino a tre scambi speciali al giorno",
-				"Dalle 02:00 CEST del 3 ottobre alle 05:00 CEST del 4 ottobre (dalle 17:00 PDT del 2 ottobre alle 20:00 PDT del 3 ottobre) (GMT −7), il limite giornaliero dei raid da remoto passerà da 10 a 20",
-				"I seguenti bonus saranno attivi dalle 00:00 alle 17:00 del 3 ottobre 2026 (ora locale).",
-				"Particelle Dynamax raddoppiate andando in esplorazione*",
-				"Distanza da percorrere ridotta del 75% per ricevere particelle Dynamax**",
-				"*Gli Allenatori e le Allenatrici possono collezionare le particelle Dynamax attraverso il menu Dintorni ogni giorno andando in esplorazione. Sincroavventura si rivelerà uno strumento utile per avere la certezza che ogni distanza venga calcolata. Nel menu Dintorni, tieni d'occhio l'icona che mostra quando le particelle Dynamax sono pronte per essere collezionate.",
-				"**Affinché gli Allenatori e le Allenatrici possano utilizzare questi bonus, dovranno prima collezionare tutte le particelle Dynamax disponibili nel menu Dintorni."
-			],
-			"ja": [
-				"イベント期間中には以下のボーナスが有効になります。",
-				"「マックス粒子」を集められる上限が1,600までに増加",
-				"すべての「パワースポット」で「キョダイマックスポケモン」が登場",
-				"「パワースポット」の更新間隔が短縮",
-				"追加の「パワースポット」が出現",
-				"「パワースポット」で得られる「マックス粒子」の量が8倍",
-				"「特別な交換」が1日に3回まで可能に",
-				"日本時間2026年10月3日09:00から2026年10月4日12:00まで、1日あたりの「リモートレイド」の上限が10回から20回までに増加します。",
-				"日本時間2026年10月3日00:00から17:00まで、以下のボーナスが発生します。",
-				"探索して得られる「マックス粒子」が2倍*",
-				"「マックス粒子」を受け取れる探索距離が1/4**",
-				"*毎日の探索で、「付近のようす」メニューから「マックス粒子」を入手できます。「いつでも冒険モード」を使用して歩行距離を記録しましょう！「マックス粒子」が受け取れるようになると、「付近のようす」メニューにアイコンが付きます。",
-				"**このボーナスを発生させるためには、「付近のようす」メニューで受け取れる「マックス粒子」をすべて受け取る必要があります。"
-			],
-			"ko": [
-				"이벤트 기간 중 다음 보너스가 활성화됩니다.",
-				"“맥스 파티클”의 수집 상한 1,600개로 증가",
-				"모든 파워스폿에서 거다이맥스 포켓몬이 등장",
-				"파워스폿 갱신 기간 단축",
-				"파워스폿 추가 등장",
-				"파워스폿에서 받을 수 있는 “맥스 파티클” 8배",
-				"일일 특별한 교환 횟수 최대 3회",
-				"한국시간 10월 3일 09:00부터 10월 4일 12:00까지 일일 리모트 레이드배틀 상한이 10회에서 20회로 증가",
-				"한국시간 2026년 10월 3일 00:00부터 17:00까지 다음 보너스가 활성화됩니다.",
-				"탐험에서 받을 수 있는 “맥스 파티클” 2배*",
-				"“맥스 파티클”을 받을 수 있는 모험 거리 1/4로 감소**",
-				"*매일 탐험하면서 \"근처\" 메뉴에서 \"맥스 파티클\"을 받을 수 있습니다. \"언제나 모험 모드\"가 거리 측정에 도움이 됩니다! \"맥스 파티클\"을 받을 수 있을 때는 \"근처\" 메뉴에 아이콘이 표시됩니다.",
-				"**이 보너스를 적용받으려면 먼저 \"근처\" 메뉴에서 받을 수 있는 \"맥스 파티클\"을 모두 받아야 합니다."
-			],
-			"ru": [
-				"The following bonuses will be active during the event.",
-				"Max Particle collection limit increased to 1,600",
-				"All Power Spots will host Gigantamax Battles",
-				"Power Spots will refresh more frequently",
-				"Additional Power Spots will be active",
-				"8× Max Particles from Power Spots",
-				"Up to three Special Trades for the day",
-				"From October 2 at 5:00 p.m. to October 3 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20",
-				"The following bonuses will be active on October 3, 2026, from 12:00 a.m. to 5:00 p.m. local time.",
-				"2× Max Particles from exploring*",
-				"1/4 Adventuring distance to receive Max Particles**",
-				"*Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect.",
-				"**For these bonuses to apply, Trainers must first collect all Max Particles available in the Nearby menu."
-			],
-			"th": [
-				"โบนัสต่อไปนี้จะเปิดใช้งานในระหว่างอีเวนต์",
-				"ขีดจำกัดการรวบรวมอนุภาคแมกซ์เพิ่มเป็น 1,600",
-				"พาวเวอร์สป็อตทั้งหมดจะมีแบตเทิลกิกะแมกซ์",
-				"พาวเวอร์สป็อตจะรีเฟรชถี่ขึ้น",
-				"พาวเวอร์สป็อตเพิ่มเติมจะเปิดให้ใช้งาน",
-				"8× อนุภาคแมกซ์จากพาวเวอร์สป็อต",
-				"แลกเปลี่ยนแบบพิเศษเพิ่มเติมสูงสุด 3 ครั้งในวันนั้น",
-				"ตั้งแต่วันที่ 3 ตุลาคม เวลา 07.00 น. ถึงวันที่ 4 ตุลาคม เวลา 10.00 น. ตามเวลาไทย ขีดจำกัดตีบอสระยะไกลรายวันจะเพิ่มจาก 10 เป็น 20",
-				"โบนัสต่อไปนี้จะเปิดใช้งานในวันที่ 3 ตุลาคม 2026 ตั้งแต่เวลา 00.00 น. ถึง 17.00 น. ตามเวลาไทย",
-				"2× อนุภาคแมกซ์จากการสำรวจ*",
-				"รับอนุภาคแมกซ์จากระยะทางการผจญภัย 1/4**",
-				"*เทรนเนอร์สามารถรวบรวมอนุภาคแมกซ์ได้ผ่าน \"เมนูใกล้เคียง\" ทุกวันโดยการสำรวจ แอดเวนเจอร์ซิงค์จะช่วยให้แน่ใจว่าระยะทางของคุณไม่เสียเปล่า! จับตาดู \"เมนูใกล้เคียง\" เพื่อหาไอคอนที่จะปรากฏขึ้นเมื่ออนุภาคแมกซ์พร้อมให้รวบรวมแล้ว",
-				"**เพื่อให้โบนัสเหล่านี้ใช้งานได้ เทรนเนอร์จะต้องรวบรวมอนุภาคแมกซ์ทั้งหมดที่มีอยู่ใน \"เมนูใกล้เคียง\" ก่อน"
-			],
-			"tr": [
-				"Etkinlik süresince aşağıdaki bonuslar aktif olacak:",
-				"Maksi Parçacık toplama limiti 1.600’e yükseltildi",
-				"Tüm Güç Noktalarında Gigantamaks Maçları olacak",
-				"Güç Noktaları daha sık yenilenecek",
-				"Ek Güç Noktaları aktif olacak",
-				"Güç Noktalarından 8 kat Maksi Parçacık",
-				"Gün içinde en fazla üç Özel Takas",
-				"2 Ekim 17.00 - 3 Ekim 20.00 (PDT, GMT -7) arasında günlük Uzak Akın sınırı 10’dan 20’ye çıkarılacak",
-				"Aşağıdaki bonuslar 3 Ekim 2026 tarihinde yerel saatle 00.00 - 17.00 arasında aktif olacak:",
-				"Keşiften 2× Maksi Parçacık*",
-				"Maksi Parçacık almak için 1/4 macera mesafesi **",
-				"*Eğitmenler her gün keşif yaparak Yakında menüsü aracılığıyla Maksi Parçacıkları toplayabilirler. Mesafenizin sayıldığından emin olmak için Macera Senkronizasyonu özelliğini kullanabilirsiniz! Maksi Parçacıkların toplanmaya hazır olduğunu gösteren simgeyi görmek için Yakında menüsünü takip edin.",
-				"**Bu bonusların geçerli olması için Eğitmenlerin öncelikle Yakında menüsünde bulunan tüm Maksi Parçacıkları toplaması gerekir."
-			],
-			"zh-Hant": [
-				"下列獎勵加碼內容將於活動期間生效。",
-				"每日蒐集極巨粒子的上限增加至1,600",
-				"超極巨化對戰會出現在所有能量點",
-				"能量點會更常刷新",
-				"地圖上將出現額外能量點",
-				"可從能量點獲得的極巨粒子增加為8倍",
-				"每日最多可以進行3次特殊交換",
-				"台灣時間10月3日08:00～10月4日11:00期間，遠距團體戰的參加上限將從10次增加至20次",
-				"下列獎勵加碼內容將於台灣時間2026年10月3日00:00～17:00期間生效。",
-				"探索時蒐集的極巨粒子加倍*",
-				"獲得極巨粒子的探索距離縮短為1/4**",
-				"*訓練家可於每日四處探險，並從「看看附近」選單蒐集極巨粒子。開啟「時時刻刻冒險」模式即可時時追蹤你的行走距離！記得留意「看看附近」選單的圖示，並在達成行走目標時蒐集極巨粒子吧！",
-				"**訓練家必須先蒐集所有可從「看看附近」選單獲得的極巨粒子，這些獎勵加碼內容才會生效。"
-			]
-		},
-		"bonusBlocks": {
-			"en": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "The following bonuses will be active during the event."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Max Particle collection limit increased to 1,600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "All Power Spots will host Gigantamax Battles"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Power Spots will refresh more frequently"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Additional Power Spots will be active"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "8× Max Particles from Power Spots"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Up to three Special Trades for the day"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "From October 2 at 5:00 p.m. to October 3 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "The following bonuses will be active on October 3, 2026, from 12:00 a.m. to 5:00 p.m. local time."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2× Max Particles from exploring*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "1/4 Adventuring distance to receive Max Particles**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**For these bonuses to apply, Trainers must first collect all Max Particles available in the Nearby menu."
-						}
-					]
-				}
-			],
-			"pt_br": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Os seguintes bônus estarão ativos durante o evento:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Limite de coleta de Partículas Max aumentado para 1.600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Todos os Pontos de Energia terão Batalhas Gigamax"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Os Pontos de Energia serão atualizados com mais frequência"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Pontos de Energia adicionais estarão ativos"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "8× mais Partículas Max em Pontos de Energia"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Até três trocas especiais no dia"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "De 2 de outubro, às 17h PDT (21h no horário de Brasília), a 3 de outubro, às 20h PDT (0h do dia 4 de outubro no horário de Brasília), o limite diário de Reides a Distância aumentará de 10 para 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Os bônus a seguir estarão ativos em 3 de outubro de 2026, das 0h às 17h (horário local)."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2× mais Partículas Max ao explorar*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "1/4 da distância de aventura para receber Partículas Max**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Vocês podem coletar Partículas Max diariamente pelo menu Proximidades, explorando o mundo. A Sincroaventura ajuda a garantir que a distância percorrida seja contabilizada. Confiram o menu Proximidades para encontrar o ícone que indica quando as Partículas Max podem ser coletadas."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Para que esses bônus entrem em vigor, Treinadoras e Treinadores precisam primeiro coletar todas as Partículas Max disponíveis no menu Proximidades."
-						}
-					]
-				}
-			],
-			"de": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Die folgenden Boni sind während des Events aktiv:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Sammel-Limit für Dyna-Partikel auf 1600 erhöht"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Gigadynamax-Kämpfe bei allen Kraftquellen"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Kraftquellen erneuern sich häufiger."
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Zusätzliche Kraftquellen sind aktiv."
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "8-mal so viele Dyna-Partikel von Kraftquellen"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Bis zu drei Spezial-Tausche an diesem Tag"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Vom 3. Oktober um 2 Uhr bis 4. Oktober um 5 Uhr (MESZ) wird das Fern-Raid-Limit von 10 auf 20 angehoben."
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Die folgenden Boni sind am 3. Oktober 2026 von 0 bis 17 Uhr (Ortszeit) aktiv:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Doppelt so viele Dyna-Partikel durch Gehen*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Geviertelte Laufdistanz für Dyna-Partikel**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "* Ihr könnt jeden Tag Dyna-Partikel durch Gehen verdienen und diese im Menü „In der Nähe“ einsammeln, wenn das entsprechende Symbol angezeigt wird. Denkt auch daran, Abenteuer-Sync zu aktivieren, damit euch so viele Meter wie möglich angerechnet werden!"
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "** Um diese Boni nutzen zu können, müsst ihr zunächst alle im Menü „In der Nähe“ verfügbaren Dyna-Partikel einsammeln."
-						}
-					]
-				}
-			],
-			"es": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Los bonus siguientes estarán activos durante el evento."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Límite de Partículas Max aumentado a 1600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "En todos los nodos energéticos se celebrarán Combates Gigamax"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Los nodos energéticos se actualizarán con más frecuencia"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Habrá más nodos energéticos activos"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Ocho veces más de Partículas Max en los nodos energéticos"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Hasta tres intercambios especiales al día"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Del 3 de octubre a las 2:00 CEST (2 de octubre a las 17:00 PDT), al 4 de octubre a las 5:00 CEST (3 de octubre a las 20:00 PDT), el límite diario de incursiones remotas aumentará de 10 a 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Los bonus siguientes estarán activos el 2 de octubre de 2026 de 00:00 a 17:00 en la hora local."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Doble de Partículas Max por explorar*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "1/4 de distancia para recibir Partículas Max**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Los Entrenadores podrán recoger Partículas Max en el menú Cerca cada día al salir a explorar. ¡La Sincroaventura os ayudará a sumar distancia! No perdáis de vista el menú Cerca ni el icono que os muestra cuándo podréis recoger Partículas Max."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Para que estos bonus se activen, debéis recoger todas las Partículas Max disponibles en el menú Cerca."
-						}
-					]
-				}
-			],
-			"es-MX": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Las siguientes bonificaciones estarán activas durante el evento:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "El límite de recolección de Partículas Max aumentó a 1600."
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Todos los Nodos Energéticos albergarán Combates Max"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Los Nodos Energéticos se actualizarán con mayor frecuencia"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Se activarán Nodos Energéticos adicionales"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Se obtendrán 8 veces más Partículas Max en los Nodos Energéticos"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Hasta tres Intercambios Especiales por día"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Del 2 de octubre a las 19:00 CST al 3 de octubre a las 22:00 CST (17:00-20:00 PDT, GMT -7), el límite diario de Incursiones Remotas aumentará de 10 a 20."
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Las siguientes bonificaciones estarán activas el 3 de octubre de 2026, de 00:00 a 17:00 hora local:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Se obtendrán 2 veces más Partículas Max al explorar*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Se requiere recorrer 1/4 de la distancia de aventura para obtener Partículas Max**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Los Entrenadores pueden recolectar Partículas Max a través del menú Cerca cada día mientras exploran. ¡La Sincroaventura puede ayudar a garantizar que la distancia cuente! Estén atentos al menú Cerca para ver el ícono que se muestra cuando las Partículas Max están listas para recolectarse."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Para que estas bonificaciones se activen, deberán recolectar todas las Partículas Max disponibles en el menú Cerca."
-						}
-					]
-				}
-			],
-			"fr": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Les bonus suivants seront actifs pendant l’évènement."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Limite de collecte de Particules Max portée à 1 600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Combats G-Max dans toutes les Sources d’Énergie"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Actualisation des Sources d’Énergie plus fréquente"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Davantage de Sources d’Énergie actives"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Particules Max ×8 dans les Sources d’Énergie"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Jusqu’à 3 Échanges spéciaux pendant la même journée"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Limite de Raids à distance augmentée de 10 à 20 du 2 octobre à 17h au 3 octobre à 20h PDT (GMT−7)"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Ces bonus seront actifs le 3 octobre 2026 de minuit à 17h, heures locales."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Particules Max ×2 durant l’exploration*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Distance à parcourir divisée par 4 pour recevoir des Particules Max**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "* Chaque jour, au fil de votre exploration, vous pouvez collecter des Particules Max depuis le menu À proximité. Le Suivi d’exploration permet de vous assurer que la distance parcourue est bien comptabilisée. Consultez régulièrement le menu À proximité, l’icône indiquant que des Particules Max peuvent être collectées est susceptible d’y apparaître."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "** Pour profiter de ces bonus, vous devrez d’abord collecter toutes les Particules Max disponibles dans le menu À proximité."
-						}
-					]
-				}
-			],
-			"hi": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "इस इवेंट के दौरान निम्नलिखित बोनस सक्रिय रहेंगे।"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "मैक्स पार्टिकल कलेक्शन की अधिकतम सीमा बढ़ाकर 1,600 कर दी गई है।"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "सभी पावर स्पॉट में जायगैंटामैक्स बैटल आयोजित किए जाएंगे"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "पावर स्पॉट अधिक बार रिफ़्रेश होंगे"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "अतिरिक्त पावर स्पॉट सक्रिय रहेंगे"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "पावर स्पॉट से 8 गुना मैक्स पार्टिकल"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "दिन भर में अधिकतम तीन विशेष सौदे।"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2 अक्टूबर शाम 5:00 बजे से 3 अक्टूबर शाम 8:00 बजे पीडीटी (जीएमटी -7) तक, रिमोट रेड की दैनिक सीमा 10 से बढ़कर 20 हो जाएगी।"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "निम्नलिखित बोनस 3 अक्टूबर, 2026 को स्थानीय समयानुसार रात 12:00 बजे से शाम 5:00 बजे तक सक्रिय रहेंगे।"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "अन्वेषण से 2 गुना मैक्स पार्टिकल*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "मैक्स पार्टिकल पाने के लिए 1/4 एडवेंचर की दूरी**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*ट्रेनर प्रतिदिन एक्सप्लोर करके नियरबाय मेनू के माध्यम से मैक्स पार्टिकल एकत्र कर सकते हैं। एडवेंचर मोड यह सुनिश्चित करने में मदद कर सकता है कि आपकी दूरी भी गिनी जाए! मैक्स पार्टिकल कब एकत्र करने के लिए तैयार होंगे, यह दिखाने वाले आइकन के लिए नियरबाय मेनू पर नज़र रखें।"
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**इन बोनस का लाभ उठाने के लिए, ट्रेनर्स को सबसे पहले नियरबाय मेनू में उपलब्ध सभी मैक्स पार्टिकल को एकत्रित करना होगा।"
-						}
-					]
-				}
-			],
-			"id": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Bonus berikut ini akan aktif selama event berlangsung:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Batas pengumpulan Partikel Max ditingkatkan menjadi 1.600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Semua Power Spot akan menyelenggarakan Pertarungan Gigantamax"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Power Spot akan lebih sering diperbarui"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Power Spot tambahan akan aktif"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Partikel Max ×8 dari Power Spot"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Hingga tiga Pertukaran Spesial untuk hari tersebut"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Mulai tanggal 3 Oktober, pukul 07.00 hingga 4 Oktober, pukul 10.00 WIB, batas Raid Jarak Jauh harian akan meningkat dari 10 menjadi 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Bonus berikut ini akan aktif pada tanggal 3 Oktober 2026, pukul 00.00 hingga 17.00 waktu setempat."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Partikel Max ×2 dengan menjelajah*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "1/4 Jarak petualangan untuk menerima Partikel Max**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Pelatih dapat mengumpulkan Partikel Max melalui menu Sekitar setiap hari dengan melakukan penjelajahan. Sinkronisasi Petualangan akan memastikan jarak Anda diperhitungkan! Perhatikan ikon di menu Sekitar yang akan menunjukkan saat Partikel Max siap dikumpulkan."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Agar bonus ini berlaku, Pelatih harus terlebih dahulu mengumpulkan semua Partikel Max yang tersedia di menu Sekitar."
-						}
-					]
-				}
-			],
-			"it": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Durante l’evento saranno attivi i seguenti bonus."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Il limite per collezionare le particelle Dynamax è salito a 1.600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Tutti i punti energetici ospiteranno Lotte G-Max"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "I punti energetici si aggiorneranno più frequentemente"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Saranno attivi ulteriori punti energetici"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Particelle Dynamax dai punti energetici ottuplicate"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Fino a tre scambi speciali al giorno"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Dalle 02:00 CEST del 3 ottobre alle 05:00 CEST del 4 ottobre (dalle 17:00 PDT del 2 ottobre alle 20:00 PDT del 3 ottobre) (GMT −7), il limite giornaliero dei raid da remoto passerà da 10 a 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "I seguenti bonus saranno attivi dalle 00:00 alle 17:00 del 3 ottobre 2026 (ora locale)."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Particelle Dynamax raddoppiate andando in esplorazione*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Distanza da percorrere ridotta del 75% per ricevere particelle Dynamax**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Gli Allenatori e le Allenatrici possono collezionare le particelle Dynamax attraverso il menu Dintorni ogni giorno andando in esplorazione. Sincroavventura si rivelerà uno strumento utile per avere la certezza che ogni distanza venga calcolata. Nel menu Dintorni, tieni d'occhio l'icona che mostra quando le particelle Dynamax sono pronte per essere collezionate."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Affinché gli Allenatori e le Allenatrici possano utilizzare questi bonus, dovranno prima collezionare tutte le particelle Dynamax disponibili nel menu Dintorni."
-						}
-					]
-				}
-			],
-			"ja": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "イベント期間中には以下のボーナスが有効になります。"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "「マックス粒子」を集められる上限が1,600までに増加"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "すべての「パワースポット」で「キョダイマックスポケモン」が登場"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "「パワースポット」の更新間隔が短縮"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "追加の「パワースポット」が出現"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "「パワースポット」で得られる「マックス粒子」の量が8倍"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "「特別な交換」が1日に3回まで可能に"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "日本時間2026年10月3日09:00から2026年10月4日12:00まで、1日あたりの「リモートレイド」の上限が10回から20回までに増加します。"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "日本時間2026年10月3日00:00から17:00まで、以下のボーナスが発生します。"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "探索して得られる「マックス粒子」が2倍*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "「マックス粒子」を受け取れる探索距離が1/4**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*毎日の探索で、「付近のようす」メニューから「マックス粒子」を入手できます。「いつでも冒険モード」を使用して歩行距離を記録しましょう！「マックス粒子」が受け取れるようになると、「付近のようす」メニューにアイコンが付きます。"
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**このボーナスを発生させるためには、「付近のようす」メニューで受け取れる「マックス粒子」をすべて受け取る必要があります。"
-						}
-					]
-				}
-			],
-			"ko": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "이벤트 기간 중 다음 보너스가 활성화됩니다."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "“맥스 파티클”의 수집 상한 1,600개로 증가"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "모든 파워스폿에서 거다이맥스 포켓몬이 등장"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "파워스폿 갱신 기간 단축"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "파워스폿 추가 등장"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "파워스폿에서 받을 수 있는 “맥스 파티클” 8배"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "일일 특별한 교환 횟수 최대 3회"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "한국시간 10월 3일 09:00부터 10월 4일 12:00까지 일일 리모트 레이드배틀 상한이 10회에서 20회로 증가"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "한국시간 2026년 10월 3일 00:00부터 17:00까지 다음 보너스가 활성화됩니다."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "탐험에서 받을 수 있는 “맥스 파티클” 2배*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "“맥스 파티클”을 받을 수 있는 모험 거리 1/4로 감소**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*매일 탐험하면서 \"근처\" 메뉴에서 \"맥스 파티클\"을 받을 수 있습니다. \"언제나 모험 모드\"가 거리 측정에 도움이 됩니다! \"맥스 파티클\"을 받을 수 있을 때는 \"근처\" 메뉴에 아이콘이 표시됩니다."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**이 보너스를 적용받으려면 먼저 \"근처\" 메뉴에서 받을 수 있는 \"맥스 파티클\"을 모두 받아야 합니다."
-						}
-					]
-				}
-			],
-			"ru": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "The following bonuses will be active during the event."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Max Particle collection limit increased to 1,600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "All Power Spots will host Gigantamax Battles"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Power Spots will refresh more frequently"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Additional Power Spots will be active"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "8× Max Particles from Power Spots"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Up to three Special Trades for the day"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "From October 2 at 5:00 p.m. to October 3 at 8:00 p.m. PDT (GMT −7), the daily Remote Raid limit will increase from 10 to 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "The following bonuses will be active on October 3, 2026, from 12:00 a.m. to 5:00 p.m. local time."
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2× Max Particles from exploring*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "1/4 Adventuring distance to receive Max Particles**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Trainers can collect Max Particles via the Nearby menu each day by exploring. Adventure Sync can help make sure your distance counts! Keep an eye on the Nearby menu for the icon that shows when Max Particles are ready to collect."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**For these bonuses to apply, Trainers must first collect all Max Particles available in the Nearby menu."
-						}
-					]
-				}
-			],
-			"th": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "โบนัสต่อไปนี้จะเปิดใช้งานในระหว่างอีเวนต์"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "ขีดจำกัดการรวบรวมอนุภาคแมกซ์เพิ่มเป็น 1,600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "พาวเวอร์สป็อตทั้งหมดจะมีแบตเทิลกิกะแมกซ์"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "พาวเวอร์สป็อตจะรีเฟรชถี่ขึ้น"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "พาวเวอร์สป็อตเพิ่มเติมจะเปิดให้ใช้งาน"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "8× อนุภาคแมกซ์จากพาวเวอร์สป็อต"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "แลกเปลี่ยนแบบพิเศษเพิ่มเติมสูงสุด 3 ครั้งในวันนั้น"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "ตั้งแต่วันที่ 3 ตุลาคม เวลา 07.00 น. ถึงวันที่ 4 ตุลาคม เวลา 10.00 น. ตามเวลาไทย ขีดจำกัดตีบอสระยะไกลรายวันจะเพิ่มจาก 10 เป็น 20"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "โบนัสต่อไปนี้จะเปิดใช้งานในวันที่ 3 ตุลาคม 2026 ตั้งแต่เวลา 00.00 น. ถึง 17.00 น. ตามเวลาไทย"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2× อนุภาคแมกซ์จากการสำรวจ*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "รับอนุภาคแมกซ์จากระยะทางการผจญภัย 1/4**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*เทรนเนอร์สามารถรวบรวมอนุภาคแมกซ์ได้ผ่าน \"เมนูใกล้เคียง\" ทุกวันโดยการสำรวจ แอดเวนเจอร์ซิงค์จะช่วยให้แน่ใจว่าระยะทางของคุณไม่เสียเปล่า! จับตาดู \"เมนูใกล้เคียง\" เพื่อหาไอคอนที่จะปรากฏขึ้นเมื่ออนุภาคแมกซ์พร้อมให้รวบรวมแล้ว"
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**เพื่อให้โบนัสเหล่านี้ใช้งานได้ เทรนเนอร์จะต้องรวบรวมอนุภาคแมกซ์ทั้งหมดที่มีอยู่ใน \"เมนูใกล้เคียง\" ก่อน"
-						}
-					]
-				}
-			],
-			"tr": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Etkinlik süresince aşağıdaki bonuslar aktif olacak:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Maksi Parçacık toplama limiti 1.600’e yükseltildi"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Tüm Güç Noktalarında Gigantamaks Maçları olacak"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Güç Noktaları daha sık yenilenecek"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Ek Güç Noktaları aktif olacak"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Güç Noktalarından 8 kat Maksi Parçacık"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Gün içinde en fazla üç Özel Takas"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "2 Ekim 17.00 - 3 Ekim 20.00 (PDT, GMT -7) arasında günlük Uzak Akın sınırı 10’dan 20’ye çıkarılacak"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "Aşağıdaki bonuslar 3 Ekim 2026 tarihinde yerel saatle 00.00 - 17.00 arasında aktif olacak:"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Keşiften 2× Maksi Parçacık*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "Maksi Parçacık almak için 1/4 macera mesafesi **"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*Eğitmenler her gün keşif yaparak Yakında menüsü aracılığıyla Maksi Parçacıkları toplayabilirler. Mesafenizin sayıldığından emin olmak için Macera Senkronizasyonu özelliğini kullanabilirsiniz! Maksi Parçacıkların toplanmaya hazır olduğunu gösteren simgeyi görmek için Yakında menüsünü takip edin."
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**Bu bonusların geçerli olması için Eğitmenlerin öncelikle Yakında menüsünde bulunan tüm Maksi Parçacıkları toplaması gerekir."
-						}
-					]
-				}
-			],
-			"zh-Hant": [
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "下列獎勵加碼內容將於活動期間生效。"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "每日蒐集極巨粒子的上限增加至1,600"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "超極巨化對戰會出現在所有能量點"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "能量點會更常刷新"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "地圖上將出現額外能量點"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "可從能量點獲得的極巨粒子增加為8倍"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "每日最多可以進行3次特殊交換"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "台灣時間10月3日08:00～10月4日11:00期間，遠距團體戰的參加上限將從10次增加至20次"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "text",
-					"runs": [
-						{
-							"text": "下列獎勵加碼內容將於台灣時間2026年10月3日00:00～17:00期間生效。"
-						}
-					]
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "探索時蒐集的極巨粒子加倍*"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "item",
-					"runs": [
-						{
-							"text": "獲得極巨粒子的探索距離縮短為1/4**"
-						}
-					],
-					"level": 0
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "*訓練家可於每日四處探險，並從「看看附近」選單蒐集極巨粒子。開啟「時時刻刻冒險」模式即可時時追蹤你的行走距離！記得留意「看看附近」選單的圖示，並在達成行走目標時蒐集極巨粒子吧！"
-						}
-					]
-				},
-				{
-					"kind": "note",
-					"runs": [
-						{
-							"text": "**訓練家必須先蒐集所有可從「看看附近」選單獲得的極巨粒子，這些獎勵加碼內容才會生效。"
-						}
-					]
-				}
-			]
-		},
-		"availableLocales": [
-			"en",
-			"pt_br",
-			"de",
-			"es",
-			"es-MX",
-			"fr",
-			"hi",
-			"id",
-			"it",
-			"ja",
-			"ko",
-			"th",
-			"tr",
-			"zh-Hant"
 		]
 	}
 ]

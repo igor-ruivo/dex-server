@@ -58,5 +58,100 @@
 		],
 		"imgUrl": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
 		"rawUrl": "https://leekduck.com/events/raidhour20261028/"
+	},
+	{
+		"title": {
+			"en": "Giratina (Altered Forme): Raid Hour",
+			"pt_br": "Giratina (Altered Forme): hora de Reides",
+			"de": "Giratina (Altered Forme): Raid-Stunde",
+			"es": "Giratina (Altered Forme): Hora de Incursiones",
+			"es-MX": "Giratina (Altered Forme): Hora de Incursiones",
+			"fr": "Giratina (Altered Forme): Heure de Raids",
+			"hi": "Giratina (Altered Forme): Raid Hour",
+			"id": "Giratina (Altered Forme): Jam Raid",
+			"it": "Giratina (Altered Forme): Ora dei raid",
+			"ja": "Giratina (Altered Forme): レイドアワー",
+			"ko": "Giratina (Altered Forme): 레이드 아워",
+			"ru": "Giratina (Altered Forme): Рейдовый час",
+			"th": "Giratina (Altered Forme): ชั่วโมงตีบอส",
+			"tr": "Giratina (Altered Forme): Akın Saati",
+			"zh-Hant": "Giratina (Altered Forme): 團體戰時間"
+		},
+		"date": 1793815200000,
+		"dateEnd": 1793818800000,
+		"raids": [
+			{
+				"speciesId": "giratina_altered",
+				"kind": "5",
+				"shiny": true
+			}
+		],
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
+		"rawUrl": "https://leekduck.com/events/raidhour20261104/"
+	},
+	{
+		"title": {
+			"en": "Cresselia and Darkrai: Raid Hour",
+			"pt_br": "Cresselia e Darkrai: hora de Reides",
+			"de": "Cresselia und Darkrai: Raid-Stunde",
+			"es": "Cresselia y Darkrai: Hora de Incursiones",
+			"es-MX": "Cresselia y Darkrai: Hora de Incursiones",
+			"fr": "Cresselia et Darkrai: Heure de Raids",
+			"hi": "Cresselia और Darkrai: Raid Hour",
+			"id": "Cresselia dan Darkrai: Jam Raid",
+			"it": "Cresselia e Darkrai: Ora dei raid",
+			"ja": "CresseliaとDarkrai: レイドアワー",
+			"ko": "Cresselia 및 Darkrai: 레이드 아워",
+			"ru": "Cresselia и Darkrai: Рейдовый час",
+			"th": "Cresselia และ Darkrai: ชั่วโมงตีบอส",
+			"tr": "Cresselia ve Darkrai: Akın Saati",
+			"zh-Hant": "Cresselia、Darkrai: 團體戰時間"
+		},
+		"date": 1795024800000,
+		"dateEnd": 1795028400000,
+		"raids": [
+			{
+				"speciesId": "cresselia",
+				"kind": "5",
+				"shiny": true
+			},
+			{
+				"speciesId": "darkrai",
+				"kind": "5",
+				"shiny": true
+			}
+		],
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
+		"rawUrl": "https://leekduck.com/events/raidhour20261118/"
+	},
+	{
+		"title": {
+			"en": "Deoxys (Normal, Defense, Attack, and Speed Formes): Raid Hour",
+			"pt_br": "Deoxys (Normal, Defense, Attack, e Speed Formes): hora de Reides",
+			"de": "Deoxys (Normal, Defense, Attack, und Speed Formes): Raid-Stunde",
+			"es": "Deoxys (Normal, Defense, Attack, y Speed Formes): Hora de Incursiones",
+			"es-MX": "Deoxys (Normal, Defense, Attack, y Speed Formes): Hora de Incursiones",
+			"fr": "Deoxys (Normal, Defense, Attack, et Speed Formes): Heure de Raids",
+			"hi": "Deoxys (Normal, Defense, Attack, और Speed Formes): Raid Hour",
+			"id": "Deoxys (Normal, Defense, Attack, dan Speed Formes): Jam Raid",
+			"it": "Deoxys (Normal, Defense, Attack, e Speed Formes): Ora dei raid",
+			"ja": "Deoxys (Normal, Defense, Attack,とSpeed Formes): レイドアワー",
+			"ko": "Deoxys (Normal, Defense, Attack, 및 Speed Formes): 레이드 아워",
+			"ru": "Deoxys (Normal, Defense, Attack, и Speed Formes): Рейдовый час",
+			"th": "Deoxys (Normal, Defense, Attack, และ Speed Formes): ชั่วโมงตีบอส",
+			"tr": "Deoxys (Normal, Defense, Attack, ve Speed Formes): Akın Saati",
+			"zh-Hant": "Deoxys (Normal, Defense, Attack,、Speed Formes): 團體戰時間"
+		},
+		"date": 1795629600000,
+		"dateEnd": 1795633200000,
+		"raids": [
+			{
+				"speciesId": "deoxys",
+				"kind": "5",
+				"shiny": true
+			}
+		],
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/raidhour.jpg",
+		"rawUrl": "https://leekduck.com/events/raidhour20261125/"
 	}
 ]

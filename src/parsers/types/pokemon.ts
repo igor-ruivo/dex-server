@@ -104,6 +104,7 @@ export enum PokemonForms {
 	//New
 	FullBelly = 'Full Belly',
 	Hangry = 'Hangry',
+	Core = 'Core',
 	White = 'White',
 	Black = 'Black',
 	Combat = 'Combat',

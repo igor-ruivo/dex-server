@@ -102,6 +102,37 @@ const shinyNameKey = (name: string): string =>
 		.replace(/\s+/g, ' ')
 		.trim();
 
+/**
+ * "Deoxys (Normal, Defense, Attack, and Speed Formes)" → "Deoxys, Deoxys (Defense), Deoxys (Attack), Deoxys (Speed)": a title that
+ * lists several Formes of one species names each of them as a Pokémon of its own, the Normal one being the species itself. A single
+ * Forme ("Landorus (Incarnate Forme)") is left as it is.
+ */
+export const expandFormeList = (names: string): string =>
+	names.replace(
+		/([^,()]+?)\s*\(([^()]*?)\s+Formes?\)/g,
+		(whole, before: string, list: string) => {
+			const formes = list
+				.split(/\s*,\s*(?:and\s+)?|\s+and\s+/)
+				.map((forme) => forme.trim())
+				.filter(Boolean);
+			if (formes.length < 2) {
+				return whole;
+			}
+			// "Tornadus and Deoxys (…)": only the last name before the parenthesis is the species the Formes belong to
+			const others = before.split(/\band\b/);
+			const species = others.pop()!.trim();
+			const prefix = others.length > 0 ? `${others.join('and').trim()}, ` : '';
+			return (
+				prefix +
+				formes
+					.map((forme) =>
+						/^normal$/i.test(forme) ? species : `${species} (${forme})`
+					)
+					.join(', ')
+			);
+		}
+	);
+
 class EventsParser {
 	constructor(
 		private readonly dataFetcher: HttpDataFetcher,
@@ -539,7 +570,7 @@ class EventsParser {
 			domainToUse = this.domains.nonMegaNonShadowDomain;
 		}
 
-		const names = rawPkmName
+		const names = expandFormeList(rawPkmName)
 			.replaceAll(', ', ',')
 			.replaceAll(' and ', ',')
 			.split(',');

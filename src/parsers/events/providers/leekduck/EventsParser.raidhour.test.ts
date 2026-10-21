@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 import { describe, expect, it, vi } from 'vitest';
 
-import EventsParser from './EventsParser';
+import EventsParser, { expandFormeList } from './EventsParser';
 
 // The matcher is exercised by its own tests: here it just turns a name into its species id.
 vi.mock('../../utils/pokemon-matcher', () => ({
@@ -64,7 +64,42 @@ describe('Raid Hours', () => {
 		expect(result?.date).toBe(5);
 	});
 
+	it('takes every Forme a title lists as a Pokémon of its own', () => {
+		expect(
+			parse(
+				'Deoxys (Normal, Defense, Attack, and Speed Formes) Raid Hour'
+			)?.raids.map((raid) => raid.speciesId)
+		).toEqual([
+			'deoxys',
+			'deoxys_(defense)',
+			'deoxys_(attack)',
+			'deoxys_(speed)',
+		]);
+	});
+
 	it('marks a Mega Raid Hour as Mega raids', () => {
 		expect(parse('Mega Latias Raid Hour')?.raids[0].kind).toBe('mega');
+	});
+});
+
+describe('expandFormeList', () => {
+	it.each([
+		[
+			'Deoxys (Normal, Defense, Attack, and Speed Formes)',
+			'Deoxys, Deoxys (Defense), Deoxys (Attack), Deoxys (Speed)',
+		],
+		[
+			'Yveltal and Deoxys (Normal and Speed Formes)',
+			'Yveltal, Deoxys, Deoxys (Speed)',
+		],
+		// one Forme, or none: left for the matcher
+		['Landorus (Incarnate Forme)', 'Landorus (Incarnate Forme)'],
+		[
+			'Giratina (Altered Forme) and Yveltal',
+			'Giratina (Altered Forme) and Yveltal',
+		],
+		['Yveltal', 'Yveltal'],
+	])('%s', (title, expanded) => {
+		expect(expandFormeList(title)).toBe(expanded);
 	});
 });

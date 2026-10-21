@@ -161,7 +161,6 @@ export const POKEMON_CONFIG = {
 		'ditto',
 		'shedinja',
 		'spewpa',
-		'aegislash_blade',
 		'chandelure_mega',
 	]),
 
@@ -349,10 +348,6 @@ export const POKEMON_CONFIG = {
 		[
 			'zamazenta_crowned_shield',
 			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/889_f2.png',
-		],
-		[
-			'aegislash_blade',
-			'https://assets.pokemon.com/assets/cms2/img/pokedex/full/681_f2.png',
 		],
 		[
 			'aegislash_shield',

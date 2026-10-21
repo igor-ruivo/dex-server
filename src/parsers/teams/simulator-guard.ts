@@ -18,11 +18,11 @@ import { PVPOKE_SRC_URL } from './config';
  */
 export const VERIFIED_SIMULATOR_SOURCES: Record<string, string> = {
 	'js/battle/Battle.js':
-		'5b5a981aa8f552f425bf415b0b56726c8fbe66e17437d8f209d993f3d4a2bdb9',
+		'65765dc0214710f6587b4e5d5a07a7bf8d2639090be6a5a59270650d6d5225b4',
 	'js/battle/actions/ActionLogic.js':
-		'3847c2329c86b6bfe843f06d4b1c3b680155eb2ef8bdce65706727712cdf94e4',
+		'9a5a7bb28a01c115e18e5b904646f5fb18bf1b17c2bf8757d2d90144ef7d0e30',
 	'js/pokemon/Pokemon.js':
-		'3270783ce337ba748a2596a5ae9ae71d9fe07c2a6b6facfe32ffbd6c14139927',
+		'03b97fa3cc74ddc4b65ce6f3bf0c374d245f4687b79635bdd8aded5c74aaf776',
 	'js/battle/DamageCalculator.js':
 		'557b9345367a272e7822b47d346b67ae05d4124050e9d3876fb2446246915f31',
 	'js/battle/rankers/TeamRanker.js':
@@ -37,6 +37,8 @@ const KNOWN_FORM_TRIGGERS = new Set([
 	'activate_charged',
 	'charged_move',
 	'charged_move_damage',
+	'battle_start',
+	'hp',
 	'none',
 ]);
 const KNOWN_FORM_EFFECTS = new Set(['protect']);

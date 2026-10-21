@@ -56480,46 +56480,6 @@
 		"isMythical": false,
 		"isBeast": false
 	},
-	"aegislash_blade": {
-		"dex": 681,
-		"speciesId": "aegislash_blade",
-		"speciesName": "Aegislash (Blade)",
-		"types": [
-			"Steel",
-			"Ghost"
-		],
-		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/681_f2.png",
-		"goImageUrl": "681.fBLADE.icon.png",
-		"shinyGoImageUrl": "681.fBLADE.s.icon.png",
-		"baseStats": {
-			"atk": 272,
-			"def": 97,
-			"hp": 155
-		},
-		"fastMoves": [
-			"PSYCHO_CUT",
-			"AIR_SLASH"
-		],
-		"chargedMoves": [
-			"FLASH_CANNON",
-			"GYRO_BALL",
-			"SHADOW_BALL"
-		],
-		"extraChargedMoves": [],
-		"eliteMoves": [],
-		"legacyMoves": [],
-		"isShadow": false,
-		"isMega": false,
-		"isSuperMega": false,
-		"family": {
-			"id": "FAMILY_HONEDGE",
-			"parent": "doublade"
-		},
-		"form": "Blade",
-		"isLegendary": false,
-		"isMythical": false,
-		"isBeast": false
-	},
 	"aegislash_shield": {
 		"dex": 681,
 		"speciesId": "aegislash_shield",
@@ -62314,6 +62274,42 @@
 		"isMythical": false,
 		"isBeast": false,
 		"nonShadowSpecies": "palossand"
+	},
+	"minior_core": {
+		"dex": 774,
+		"speciesId": "minior_core",
+		"speciesName": "Minior (Core)",
+		"types": [
+			"Rock",
+			"Flying"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/774.png",
+		"goImageUrl": "774.fCORE.icon.png",
+		"shinyGoImageUrl": "774.fCORE.s.icon.png",
+		"baseStats": {
+			"atk": 218,
+			"def": 131,
+			"hp": 155
+		},
+		"fastMoves": [
+			"ROLLOUT",
+			"TAKE_DOWN"
+		],
+		"chargedMoves": [
+			"POWER_GEM",
+			"ANCIENT_POWER",
+			"ACROBATICS"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"form": "Core",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
 	},
 	"komala": {
 		"dex": 775,

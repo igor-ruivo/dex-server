@@ -217,11 +217,14 @@ class TeamBuilderParser {
 				);
 			}
 			// A Shadow shares its normal form's spreads (same base stats), and a battle-only alternate form
-			// (Mimikyu Busted, Morpeko Hangry…) its original form's.
+			// (Mimikyu Busted, Morpeko Hangry…) its original form's. A form that is its own original but isn't
+			// released (Minior Meteor) borrows from the form that changes into it (Minior Core).
 			const source = [
 				speciesId,
 				this.gameMaster[speciesId]?.nonShadowSpecies,
 				raw.originalFormId,
+				rawPokemon.find((p) => p.formChange?.alternativeFormId === speciesId)
+					?.speciesId,
 			].find((id) => id && bestIvSpreads[id]?.bestIvSpreads);
 			if (!source) {
 				throw new Error(

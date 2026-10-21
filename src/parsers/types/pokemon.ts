@@ -198,6 +198,8 @@ export interface PokemonFormChange {
 	alternativeFormId?: string;
 	defaultFormId?: string;
 	resetOnSwitch?: boolean;
+	amount?: number;
+	animationTime?: number;
 }
 
 export type GameMasterPokemon = Omit<

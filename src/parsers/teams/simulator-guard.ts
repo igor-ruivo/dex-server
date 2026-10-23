@@ -22,7 +22,7 @@ export const VERIFIED_SIMULATOR_SOURCES: Record<string, string> = {
 	'js/battle/actions/ActionLogic.js':
 		'9a5a7bb28a01c115e18e5b904646f5fb18bf1b17c2bf8757d2d90144ef7d0e30',
 	'js/pokemon/Pokemon.js':
-		'03b97fa3cc74ddc4b65ce6f3bf0c374d245f4687b79635bdd8aded5c74aaf776',
+		'10893308f8e8b408d396d19e541d7482c9657dd9c07fd6c8c9bf8f783669c47d',
 	'js/battle/DamageCalculator.js':
 		'557b9345367a272e7822b47d346b67ae05d4124050e9d3876fb2446246915f31',
 	'js/battle/rankers/TeamRanker.js':

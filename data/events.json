@@ -11469,6 +11469,11 @@
 				"speciesId": "greavard",
 				"shiny": false,
 				"kind": ""
+			},
+			{
+				"speciesId": "sinistea",
+				"shiny": true,
+				"kind": ""
 			}
 		],
 		"incenses": [],
@@ -11623,7 +11628,13 @@
 			}
 		],
 		"eggs": [],
-		"researches": [],
+		"researches": [
+			{
+				"speciesId": "pikachu",
+				"shiny": true,
+				"kind": ""
+			}
+		],
 		"incenses": [],
 		"lures": [],
 		"maxBattles": [],
@@ -13198,7 +13209,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Complete as Tarefas de Passe para subir de Ranque no Passe GO e ganhar as recompensas a seguir."
+							"text": "Conclua as Tarefas de Passe para subir de Ranque no Passe GO e ganhar as recompensas a seguir."
 						}
 					]
 				},
@@ -13251,7 +13262,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Treinadoras e Treinadores que fizerem o upgrade para o Passe GO Deluxe também poderão ganhar as recompensas a seguir."
+							"text": "Treinadoras e Treinadores que fizerem o upgrade para o Passe GO Deluxe também poderão ganhar as recompensas a seguir:"
 						}
 					]
 				},
@@ -13520,7 +13531,7 @@
 					"kind": "item",
 					"runs": [
 						{
-							"text": "Caramelo Raro ++"
+							"text": "Caramelos Raros ++"
 						}
 					],
 					"level": 0
@@ -13800,7 +13811,7 @@
 					"kind": "item",
 					"runs": [
 						{
-							"text": "इवेंट-थीम वाले पोकेमॉन के साथ मुलाकात"
+							"text": "इवेंट-थीम वाले पोकेमॉन के साथ मुलाकातें"
 						}
 					],
 					"level": 0
@@ -14573,7 +14584,7 @@
 					"kind": "item",
 					"runs": [
 						{
-							"text": "บัตรแบตเทิลพรีเมียมโปเกมอน"
+							"text": "บัตรแบตเทิลพรีเมียม"
 						}
 					],
 					"level": 0

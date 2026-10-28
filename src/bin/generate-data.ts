@@ -17,6 +17,7 @@ import MovesProvider from '../parsers/events/providers/pokeminers/MovesProvider'
 import GblSeasonParser from '../parsers/events/providers/pokemongo/GblSeasonParser';
 import PokemonGoSource from '../parsers/events/providers/pokemongo/PokemongoSource';
 import SeasonParser from '../parsers/events/providers/pokemongo/SeasonParser';
+import { ALWAYS_SHIPPED_EXTRA_CAPS } from '../parsers/pokemon/config/pokemon-config';
 import GameMasterParser, {
 	getDomains,
 } from '../parsers/pokemon/game-master-parser';
@@ -100,7 +101,8 @@ const generateData = async () => {
 		const pvpData = await pvpParser.parse();
 
 		// Every rotating / custom cup's CP cap: one with a cap the three leagues don't have (a Little Cup's 500) needs its own tied
-		// rank-1 spreads too, so the leagues are known before the species metadata is computed.
+		// rank-1 spreads too, so the leagues are known before the species metadata is computed. The always-shipped caps (500) are
+		// added whether or not a cup currently uses them.
 		const leagueMetadata = pvpParser.getLeagueMetadata();
 
 		// Step 4a: Precompute every species' tied-for-rank-1 IV spread(s) per
@@ -114,7 +116,10 @@ const generateData = async () => {
 		// by the same speciesId either way.
 		const speciesSearchMetadata = computeSpeciesSearchMetadata(
 			pokemonDictionary,
-			leagueMetadata.map(({ cpCap }) => cpCap)
+			[
+				...ALWAYS_SHIPPED_EXTRA_CAPS,
+				...leagueMetadata.map(({ cpCap }) => cpCap),
+			]
 		);
 
 		// Step 4b: Teams view — PvPoke's team-builder inputs (move table, default

@@ -42,6 +42,10 @@ const dynamicLeagueIds = [
 	['willpower', 1500],
 ] as const;
 
+/** CP caps beyond Great / Ultra / Master whose best IV spreads always ship, with or without a current cup at that cap: a Little Cup's 500 is a
+ *  cap players keep Pokémon for whether or not one is running. */
+export const ALWAYS_SHIPPED_EXTRA_CAPS: ReadonlyArray<number> = [500];
+
 export const Leagues: Record<string, string> = {
 	great: rankingUrl('all', 1500),
 	ultra: rankingUrl('all', 2500),

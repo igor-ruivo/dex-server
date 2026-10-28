@@ -95,6 +95,63 @@
 	},
 	{
 		"title": {
+			"en": "Grookey, Scorbunny, and Sobble: Pokémon Spotlight Hour",
+			"pt_br": "Grookey, Scorbunny, e Sobble: Hora do Pokémon em destaque",
+			"de": "Grookey, Scorbunny, und Sobble: Pokémon-Rampenlicht-Stunde",
+			"es": "Grookey, Scorbunny, y Sobble: Hora del Pokémon Destacado",
+			"es-MX": "Grookey, Scorbunny, y Sobble: Hora del Pokémon Destacado",
+			"fr": "Grookey, Scorbunny, et Sobble: Heure du Pokémon vedette",
+			"hi": "Grookey, Scorbunny, और Sobble: Pokémon Spotlight Hour",
+			"id": "Grookey, Scorbunny, dan Sobble: Jam Sorotan Pokémon",
+			"it": "Grookey, Scorbunny, e Sobble: Ora del Pokémon in primo piano",
+			"ja": "Grookey, Scorbunny,とSobble: スポットライトアワー",
+			"ko": "Grookey, Scorbunny, 및 Sobble: 스포트라이트 아워",
+			"ru": "Grookey, Scorbunny, и Sobble: Час Покемона под софитами",
+			"th": "Grookey, Scorbunny, และ Sobble: Pokémon Spotlight Hour",
+			"tr": "Grookey, Scorbunny, ve Sobble: Yıldız Pokémon Saati",
+			"zh-Hant": "Grookey, Scorbunny,、Sobble: 寶可夢聚焦時刻"
+		},
+		"date": 1795111200000,
+		"dateEnd": 1795114800000,
+		"pokemons": [
+			{
+				"speciesId": "grookey",
+				"kind": "5",
+				"shiny": true
+			},
+			{
+				"speciesId": "scorbunny",
+				"kind": "5",
+				"shiny": true
+			},
+			{
+				"speciesId": "sobble",
+				"kind": "5",
+				"shiny": true
+			}
+		],
+		"bonus": {
+			"en": "2× Catch Candy",
+			"pt_br": "2× Doces ao capturar",
+			"de": "2× Fang-Bonbons",
+			"es": "2× Caramelos por captura",
+			"es-MX": "2× Caramelos por captura",
+			"fr": "2× Bonbons de capture",
+			"hi": "2× कैच कैंडी",
+			"id": "2× Permen Tangkap",
+			"it": "2× Caramelle da cattura",
+			"ja": "2× キャッチアメ",
+			"ko": "2× 포획 사탕",
+			"ru": "2× Конфеты за поимку",
+			"th": "2× ลูกอมจากการจับ",
+			"tr": "2× Yakalama Şekeri",
+			"zh-Hant": "2× 捕捉糖果"
+		},
+		"imgUrl": "https://cdn.leekduck.com/assets/img/events/pokemonspotlighthour.jpg",
+		"rawUrl": "https://leekduck.com/events/pokemonspotlighthour2026-11-19/"
+	},
+	{
+		"title": {
 			"en": "Noibat: Pokémon Spotlight Hour",
 			"pt_br": "Noibat: Hora do Pokémon em destaque",
 			"de": "Noibat: Pokémon-Rampenlicht-Stunde",

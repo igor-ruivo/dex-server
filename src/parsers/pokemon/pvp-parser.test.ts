@@ -23,6 +23,7 @@ describe('PvPoke ranking formats', () => {
 			'coupedusillage',
 			'fantasy',
 			'gymbreakers',
+			'halloweenmega',
 			'laic2027',
 			'ligaultra',
 			'little',
@@ -69,6 +70,12 @@ describe('PvPoke ranking formats', () => {
 				{
 					title: 'Gymbreakers',
 					cup: 'gymbreakers',
+					cp: 1500,
+					showFormat: true,
+				},
+				{
+					title: 'Devon Fable Cup',
+					cup: 'fable',
 					cp: 1500,
 					showFormat: true,
 				},

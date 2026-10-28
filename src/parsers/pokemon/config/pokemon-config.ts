@@ -17,10 +17,9 @@ const dynamicLeagueIds = [
 	['colormega', 1500],
 	['copadiluvio', 1500],
 	['coupedusillage', 10000],
-	// Not live on PvPoke yet — will be the Great League (1500 CP) edition once
-	// it rotates in. If a different-cp edition (Ultra/Master) ever needs to
-	// coexist, add it as its own separate entry rather than changing this one.
 	['fantasy', 1500],
+	// A named cup's Mega variant: PvPoke appends `mega` onto the cup's format name (like `colormega`).
+	['halloweenmega', 1500],
 	['ligaultra', 2500],
 	['little', 500],
 	// PvPoke's yearly Latin America International Championship cup — the id
@@ -116,7 +115,7 @@ export const LeagueDefinitions: Record<LeagueKey, PvPLeagueDefinition> =
 	);
 
 export const BLACKLISTED_PVP_FORMAT =
-	/battle[\s_-]*frontier|gymbreakers|devon[\s_-]*trail/i;
+	/battle[\s_-]*frontier|gymbreakers|devon[\s_-]*(trail|fable)/i;
 
 export const getActiveLeagueDefinitions = (
 	formats: ReadonlyArray<PVPokeFormat>,

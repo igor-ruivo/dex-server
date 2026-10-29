@@ -63,7 +63,7 @@
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 136,
 		"dpsRank": 6,
-		"tdoRank": 64
+		"tdoRank": 63
 	},
 	"shaymin_sky": {
 		"fastMove": "MAGICAL_LEAF",
@@ -173,7 +173,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 118,
 		"dpsRank": 16,
-		"tdoRank": 53
+		"tdoRank": 52
 	},
 	"gallade_mega": {
 		"fastMove": "PSYCHO_CUT",
@@ -195,7 +195,7 @@
 		"fastMoveDmg": 21,
 		"chargedMoveDmg": 111,
 		"dpsRank": 18,
-		"tdoRank": 52
+		"tdoRank": 51
 	},
 	"exeggutor_shadow": {
 		"fastMove": "BULLET_SEED",
@@ -206,7 +206,7 @@
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 255,
 		"dpsRank": 19,
-		"tdoRank": 66
+		"tdoRank": 65
 	},
 	"exeggutor_alolan_shadow": {
 		"fastMove": "BULLET_SEED",
@@ -217,7 +217,7 @@
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 252,
 		"dpsRank": 20,
-		"tdoRank": 63
+		"tdoRank": 62
 	},
 	"porygon_z_shadow": {
 		"fastMove": "LOCK_ON",
@@ -228,7 +228,7 @@
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 239,
 		"dpsRank": 21,
-		"tdoRank": 74
+		"tdoRank": 73
 	},
 	"victreebel_shadow": {
 		"fastMove": "MAGICAL_LEAF",
@@ -272,7 +272,7 @@
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 114,
 		"dpsRank": 25,
-		"tdoRank": 61
+		"tdoRank": 60
 	},
 	"decidueye": {
 		"fastMove": "MAGICAL_LEAF",
@@ -393,7 +393,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 101,
 		"dpsRank": 36,
-		"tdoRank": 60
+		"tdoRank": 59
 	},
 	"vileplume_shadow": {
 		"fastMove": "RAZOR_LEAF",
@@ -525,7 +525,7 @@
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 207,
 		"dpsRank": 48,
-		"tdoRank": 54
+		"tdoRank": 53
 	},
 	"enamorus_incarnate": {
 		"fastMove": "FAIRY_WIND",
@@ -536,7 +536,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 106,
 		"dpsRank": 49,
-		"tdoRank": 68
+		"tdoRank": 67
 	},
 	"gallade_shadow": {
 		"fastMove": "PSYCHO_CUT",
@@ -569,18 +569,7 @@
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 213,
 		"dpsRank": 52,
-		"tdoRank": 62
-	},
-	"chandelure_mega": {
-		"fastMove": "FIRE_SPIN",
-		"chargedMove": "ENERGY_BALL",
-		"dps": 21.539320441641728,
-		"tdo": 691.07880558806,
-		"speciesId": "chandelure_mega",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 125,
-		"dpsRank": 53,
-		"tdoRank": 49
+		"tdoRank": 61
 	},
 	"exeggutor_alolan": {
 		"fastMove": "BULLET_SEED",
@@ -590,8 +579,8 @@
 		"speciesId": "exeggutor_alolan",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 210,
-		"dpsRank": 54,
-		"tdoRank": 59
+		"dpsRank": 53,
+		"tdoRank": 58
 	},
 	"brambleghast": {
 		"fastMove": "BULLET_SEED",
@@ -601,8 +590,19 @@
 		"speciesId": "brambleghast",
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 104,
-		"dpsRank": 55,
+		"dpsRank": 54,
 		"tdoRank": 150
+	},
+	"chandelure_mega": {
+		"fastMove": "FIRE_SPIN",
+		"chargedMove": "ENERGY_BALL",
+		"dps": 21.41018622007928,
+		"tdo": 559.1996378913649,
+		"speciesId": "chandelure_mega",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 125,
+		"dpsRank": 55,
+		"tdoRank": 76
 	},
 	"porygon_z": {
 		"fastMove": "LOCK_ON",
@@ -613,7 +613,7 @@
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 199,
 		"dpsRank": 56,
-		"tdoRank": 70
+		"tdoRank": 69
 	},
 	"gogoat": {
 		"fastMove": "VINE_WHIP",
@@ -657,7 +657,7 @@
 		"fastMoveDmg": 15,
 		"chargedMoveDmg": 77,
 		"dpsRank": 60,
-		"tdoRank": 50
+		"tdoRank": 49
 	},
 	"volcarona": {
 		"fastMove": "BUG_BITE",
@@ -690,7 +690,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 107,
 		"dpsRank": 63,
-		"tdoRank": 67
+		"tdoRank": 66
 	},
 	"abomasnow_mega": {
 		"fastMove": "LEAFAGE",
@@ -723,7 +723,7 @@
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 62,
 		"dpsRank": 66,
-		"tdoRank": 55
+		"tdoRank": 54
 	},
 	"victreebel": {
 		"fastMove": "MAGICAL_LEAF",
@@ -756,7 +756,7 @@
 		"fastMoveDmg": 10,
 		"chargedMoveDmg": 79,
 		"dpsRank": 69,
-		"tdoRank": 57
+		"tdoRank": 56
 	},
 	"groudon": {
 		"fastMove": "MUD_SHOT",
@@ -789,7 +789,7 @@
 		"fastMoveDmg": 19,
 		"chargedMoveDmg": 71,
 		"dpsRank": 72,
-		"tdoRank": 58
+		"tdoRank": 57
 	},
 	"meganium": {
 		"fastMove": "VINE_WHIP",
@@ -844,7 +844,7 @@
 		"fastMoveDmg": 11,
 		"chargedMoveDmg": 101,
 		"dpsRank": 77,
-		"tdoRank": 71
+		"tdoRank": 70
 	},
 	"ursaluna_shadow": {
 		"fastMove": "SCRATCH",
@@ -921,7 +921,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 84,
 		"dpsRank": 84,
-		"tdoRank": 56
+		"tdoRank": 55
 	},
 	"porygon2_shadow": {
 		"fastMove": "LOCK_ON",
@@ -965,7 +965,7 @@
 		"fastMoveDmg": 20,
 		"chargedMoveDmg": 103,
 		"dpsRank": 88,
-		"tdoRank": 69
+		"tdoRank": 68
 	},
 	"sirfetchd": {
 		"fastMove": "FURY_CUTTER",
@@ -1053,7 +1053,7 @@
 		"fastMoveDmg": 2,
 		"chargedMoveDmg": 172,
 		"dpsRank": 96,
-		"tdoRank": 51
+		"tdoRank": 50
 	},
 	"hydrapple": {
 		"fastMove": "BULLET_SEED",
@@ -1108,7 +1108,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 89,
 		"dpsRank": 101,
-		"tdoRank": 73
+		"tdoRank": 72
 	},
 	"kleavor": {
 		"fastMove": "FURY_CUTTER",
@@ -1350,7 +1350,7 @@
 		"fastMoveDmg": 13,
 		"chargedMoveDmg": 52,
 		"dpsRank": 123,
-		"tdoRank": 65
+		"tdoRank": 64
 	},
 	"ampharos_shadow": {
 		"fastMove": "VOLT_SWITCH",
@@ -1394,7 +1394,7 @@
 		"fastMoveDmg": 3,
 		"chargedMoveDmg": 75,
 		"dpsRank": 127,
-		"tdoRank": 75
+		"tdoRank": 74
 	},
 	"whimsicott": {
 		"fastMove": "RAZOR_LEAF",
@@ -1493,7 +1493,7 @@
 		"fastMoveDmg": 12,
 		"chargedMoveDmg": 51,
 		"dpsRank": 136,
-		"tdoRank": 76
+		"tdoRank": 75
 	},
 	"cherrim_overcast": {
 		"fastMove": "RAZOR_LEAF",
@@ -1790,7 +1790,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 74,
 		"dpsRank": 163,
-		"tdoRank": 72
+		"tdoRank": 71
 	},
 	"eldegoss": {
 		"fastMove": "RAZOR_LEAF",

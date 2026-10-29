@@ -1,15 +1,4 @@
 {
-	"chandelure_mega": {
-		"fastMove": "HEX",
-		"chargedMove": "OMINOUS_WIND_PLUS",
-		"dps": 37.03311700458574,
-		"tdo": 1188.1898658814562,
-		"speciesId": "chandelure_mega",
-		"fastMoveDmg": 14,
-		"chargedMoveDmg": 290,
-		"dpsRank": 1,
-		"tdoRank": 4
-	},
 	"necrozma_dawn_wings": {
 		"fastMove": "PSYCHO_CUT",
 		"chargedMove": "MOONGEIST_BEAM",
@@ -18,8 +7,19 @@
 		"speciesId": "necrozma_dawn_wings",
 		"fastMoveDmg": 4,
 		"chargedMoveDmg": 319,
-		"dpsRank": 2,
+		"dpsRank": 1,
 		"tdoRank": 2
+	},
+	"chandelure_mega": {
+		"fastMove": "HEX",
+		"chargedMove": "OMINOUS_WIND_PLUS",
+		"dps": 36.38520247834245,
+		"tdo": 950.3229837118973,
+		"speciesId": "chandelure_mega",
+		"fastMoveDmg": 14,
+		"chargedMoveDmg": 290,
+		"dpsRank": 2,
+		"tdoRank": 9
 	},
 	"gengar_mega": {
 		"fastMove": "LICK",
@@ -30,7 +30,7 @@
 		"fastMoveDmg": 9,
 		"chargedMoveDmg": 173,
 		"dpsRank": 3,
-		"tdoRank": 9
+		"tdoRank": 8
 	},
 	"mewtwo_mega_y": {
 		"fastMove": "PSYCHO_CUT",
@@ -173,7 +173,7 @@
 		"fastMoveDmg": 8,
 		"chargedMoveDmg": 129,
 		"dpsRank": 16,
-		"tdoRank": 5
+		"tdoRank": 4
 	},
 	"dragapult": {
 		"fastMove": "ASTONISH",
@@ -338,7 +338,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 162,
 		"dpsRank": 31,
-		"tdoRank": 8
+		"tdoRank": 7
 	},
 	"giratina_origin": {
 		"fastMove": "SHADOW_CLAW",
@@ -349,7 +349,7 @@
 		"fastMoveDmg": 7,
 		"chargedMoveDmg": 160,
 		"dpsRank": 32,
-		"tdoRank": 7
+		"tdoRank": 6
 	},
 	"raikou_shadow": {
 		"fastMove": "THUNDER_SHOCK",
@@ -635,7 +635,7 @@
 		"fastMoveDmg": 6,
 		"chargedMoveDmg": 135,
 		"dpsRank": 58,
-		"tdoRank": 6
+		"tdoRank": 5
 	},
 	"espeon": {
 		"fastMove": "CONFUSION",

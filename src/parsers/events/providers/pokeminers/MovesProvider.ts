@@ -458,6 +458,30 @@ class MovesProvider {
 			};
 		}
 
+		const nightShadePlusMoveName: Partial<Record<AvailableLocales, string>> =
+			{};
+		Object.values(AvailableLocales).forEach((locale) => {
+			nightShadePlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0265')}+`;
+		});
+
+		if (!movesDictionary.NIGHT_SHADE_PLUS) {
+			movesDictionary.NIGHT_SHADE_PLUS = {
+				moveId: 'NIGHT_SHADE_PLUS',
+				vId: '0265',
+				type: 'ghost',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 55,
+				pvePower: 160,
+				pvpEnergy: -45,
+				pveEnergy: -100,
+				pvpCooldown: 0,
+				pveCooldown: 2.5,
+				moveName: nightShadePlusMoveName,
+			};
+		}
+
 		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
 		const expandedMoves = expandHiddenPower(movesDictionary, (locale, type) =>
 			this.translatorService.getRawString(locale, `pokemon_type_${type}`)

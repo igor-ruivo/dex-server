@@ -4,6 +4,7 @@ import type {
 	BestIvLevel,
 	BestIvSpreads,
 	PerLevelPatterns,
+	SuperMegaBestIvLevel,
 } from '../parsers/types/species-search-metadata';
 import { ivsKeyForCap } from '../parsers/types/teams';
 import { cpm, MAX_LEVEL } from './utils';
@@ -343,11 +344,14 @@ export const tiedTop1PurifiedPatterns = (
 
 /* ---- per-species / whole-dictionary orchestration -------------------------- */
 
-/** `50`/`51` (Best Buddy) — the only two level ceilings any go-pokedex
- *  caller ever evaluates against. Literal (not `MAX_LEVEL + 1`): TS widens
+/** `50`/`51` (Best Buddy) — the level ceilings every species ships spreads for. Literal (not `MAX_LEVEL + 1`): TS widens
  *  arithmetic on literal types to plain `number`, which `BestIvLevel` (a
  *  50 | 51 union) would then reject. */
 export const BEST_IV_LEVELS: ReadonlyArray<BestIvLevel> = [MAX_LEVEL, 51];
+
+/** A Super Max Mega's level ceiling (50, plus the 2 levels of Super Max). Only a Super Max Mega ships spreads for it, on top
+ *  of {@link BEST_IV_LEVELS}: a few species are all it costs. */
+export const SUPER_MEGA_BEST_IV_LEVEL: SuperMegaBestIvLevel = 52;
 
 /** Great (1500) / Ultra (2500) / Master (uncapped) — the only three CP caps
  *  Mass Delete's bulk sweeps (`findBadIvCarveOuts`, `findTradeableSpeciesData`)
@@ -371,9 +375,9 @@ export const extraCaps = (caps: ReadonlyArray<number>): Array<number> =>
 		.sort((a, b) => a - b);
 
 const computeSpreadsAcrossLeaguesAndLevels = (
-	stats: PokemonStats,
 	compute: (cap: number, level: number) => Array<BadIvPattern>,
-	otherCaps: ReadonlyArray<number>
+	otherCaps: ReadonlyArray<number>,
+	levels: ReadonlyArray<number>
 ): BestIvSpreads => {
 	const leagues: Array<[string, number]> = [
 		...(Object.entries(LEAGUE_CAPS) as Array<[LeagueKey, number]>),
@@ -386,7 +390,7 @@ const computeSpreadsAcrossLeaguesAndLevels = (
 		leagues.map(([league, cap]) => [
 			league,
 			Object.fromEntries(
-				BEST_IV_LEVELS.map((level) => [`level${level}`, compute(cap, level)])
+				levels.map((level) => [`level${level}`, compute(cap, level)])
 			) as PerLevelPatterns,
 		])
 	) as BestIvSpreads;
@@ -400,13 +404,14 @@ const computeSpreadsAcrossLeaguesAndLevels = (
  */
 export const computeBestIvSpreads = (
 	stats: PokemonStats,
-	otherCaps: ReadonlyArray<number> = []
+	otherCaps: ReadonlyArray<number> = [],
+	isSuperMega = false
 ): BestIvSpreads =>
 	computeSpreadsAcrossLeaguesAndLevels(
-		stats,
 		(cap, level) =>
 			tiedTop1Patterns(stats.atk, stats.def, stats.hp, cap, level),
-		otherCaps
+		otherCaps,
+		isSuperMega ? [...BEST_IV_LEVELS, SUPER_MEGA_BEST_IV_LEVEL] : BEST_IV_LEVELS
 	);
 
 /**
@@ -421,7 +426,6 @@ export const computeBestIvSpreadsPurified = (
 	otherCaps: ReadonlyArray<number> = []
 ): BestIvSpreads =>
 	computeSpreadsAcrossLeaguesAndLevels(
-		stats,
 		(cap, level) =>
 			tiedTop1PurifiedPatterns(
 				stats.atk,
@@ -430,7 +434,8 @@ export const computeBestIvSpreadsPurified = (
 				cap,
 				(level - 1) * 2
 			),
-		otherCaps
+		otherCaps,
+		BEST_IV_LEVELS
 	);
 
 /** One species' IV-spread half of `SpeciesSearchMetadata` — the other half
@@ -470,7 +475,11 @@ export const computeBestIvSpreadsForAllSpecies = (
 	const result: Record<string, BestIvSpreadFields> = {};
 	for (const pokemon of Object.values(gameMasterPokemon)) {
 		result[pokemon.speciesId] = {
-			bestIvSpreads: computeBestIvSpreads(pokemon.baseStats, otherCaps),
+			bestIvSpreads: computeBestIvSpreads(
+				pokemon.baseStats,
+				otherCaps,
+				pokemon.isSuperMega
+			),
 			...(pokemon.isShadow || pokemon.isMega
 				? {
 						bestIvSpreadsPurified: computeBestIvSpreadsPurified(

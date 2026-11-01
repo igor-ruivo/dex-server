@@ -124,6 +124,13 @@ export interface TeamBuilderData {
 	 * fed the best possible spread and the results are the team at its ceiling.
 	 */
 	ivs: Record<string, Partial<Record<string, BestIvs>>>;
+	/**
+	 * `ivs` for a Super Max Mega, whose level ceiling is 52 (50, plus the two levels of Super Max) rather than 50: the same
+	 * rank-1 rule (best stat product at the cap, ties to the highest Attack, then Defense, then HP), the same keys, but taken
+	 * up to level 52, and so the level up to it. Only the ranked species that are Super Max Megas have an entry — everyone
+	 * else is rated from `ivs`. Never a Best Buddy build.
+	 */
+	superMegaIvs: Record<string, Partial<Record<string, BestIvs>>>;
 	forms: Record<string, TeamBuilderForm>;
 	/**
 	 * The moves each ranked species can use, from PvPoke's own data (its move pools, with the Return / Frustration PvPoke adds):

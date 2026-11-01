@@ -15,14 +15,20 @@ export interface BadIvPattern {
 	S: number;
 }
 
-/** The only two level ceilings ("50" or "51"/Best Buddy) any consumer ever
- *  evaluates against. */
+/** The level ceilings every species ships spreads for: 50, or 51 for a Best Buddy. */
 export type BestIvLevel = 50 | 51;
+
+/** The level ceiling of a Super Max Mega (`isSuperMega`): 50 plus the two levels of Super Max. */
+export type SuperMegaBestIvLevel = 52;
 
 export type PerLevelPatterns = Record<
 	`level${BestIvLevel}`,
 	Array<BadIvPattern>
->;
+> & {
+	/** Only for a Super Max Mega, the one kind of Pokémon whose ceiling reaches 52. Once that ceiling is 52 the best spread
+	 *  can differ from level 50's wherever the species fits a capped league's CP at level 50, so it has a table of its own. */
+	level52?: Array<BadIvPattern>;
+};
 
 /** Tied-for-rank-1 (best stat product) raw IV patterns, per league (Great /
  *  Ultra / Master) and per level ceiling — everything Mass Delete's bulk

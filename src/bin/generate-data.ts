@@ -4,7 +4,6 @@ import path from 'path';
 import { augmentGameMasterWithFamilyRelations } from '../computations/family-relations-calculator';
 import RaidDpsCalculator from '../computations/raid-dps-calculator';
 import { computeSpeciesSearchMetadata } from '../computations/species-search-metadata-calculator';
-import { assertSuperMegasAlwaysCapBound } from '../computations/super-mega-guard';
 import BossesParser from '../parsers/events/providers/leekduck/BossesParser';
 import EggsParser from '../parsers/events/providers/leekduck/EggsParser';
 import EventsParser from '../parsers/events/providers/leekduck/EventsParser';
@@ -88,10 +87,6 @@ const generateData = async () => {
 		// look-alike dexes) or via speciesId string surgery (`_shadow`
 		// append/strip) — both gone now that it's just data on each species.
 		augmentGameMasterWithFamilyRelations(pokemonDictionary);
-
-		// Fail the run (and so raise the daily alert) if a Super Max Mega could ever reach level 50 in a capped league: go-pokedex
-		// reuses the ordinary level-50 best spreads for them on that assumption (see super-mega-guard.ts).
-		assertSuperMegasAlwaysCapBound(pokemonDictionary);
 
 		// Initialize domains
 		const domains = getDomains(pokemonDictionary);

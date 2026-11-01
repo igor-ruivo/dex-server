@@ -1,4 +1,7 @@
-import { calculateCP } from '../../computations/best-iv-spread-calculator';
+import {
+	calculateCP,
+	SUPER_MEGA_BEST_IV_LEVEL,
+} from '../../computations/best-iv-spread-calculator';
 import { MAX_LEVEL } from '../../computations/utils';
 import { POKEMON_CONFIG } from '../pokemon/config/pokemon-config';
 import type { IDataFetcher } from '../services/data-fetcher';
@@ -47,19 +50,21 @@ const LEAGUE_CP_CAPS: Record<TeamLeague, number> = {
  * The rank-1 spread to rate a species with, from the tied-for-best (stat product) patterns
  * `species-search-metadata.json` already computes: level-50 only (Best Buddy is ignored, like
  * PvPoke), and on a tie the highest numbers win — Attack first, then Defense, then HP. The level is
- * the highest one at which that spread still fits the league's CP cap.
+ * the highest one at which that spread still fits the league's CP cap, up to `maxLevel` (the level ceiling the patterns
+ * were computed for: 50, or 52 for a Super Max Mega).
  */
 export const pickBestIvs = (
 	patterns: ReadonlyArray<BadIvPattern>,
 	baseStats: { atk: number; def: number; hp: number },
-	cpCap: number
+	cpCap: number,
+	maxLevel: number = MAX_LEVEL
 ): BestIvs | undefined => {
 	const best = [...patterns].sort(
 		(a, b) => b.A - a.A || b.D - a.D || b.S - a.S
 	)[0];
 	if (!best) return undefined;
 
-	for (let index = (MAX_LEVEL - 1) * 2; index >= 0; index--) {
+	for (let index = (maxLevel - 1) * 2; index >= 0; index--) {
 		if (
 			calculateCP(
 				baseStats.atk,
@@ -198,6 +203,7 @@ class TeamBuilderParser {
 	): Omit<TeamBuilderData, 'simulator'> {
 		const rawById = new Map(rawPokemon.map((p) => [p.speciesId, p]));
 		const ivs: TeamBuilderData['ivs'] = {};
+		const superMegaIvs: TeamBuilderData['superMegaIvs'] = {};
 		const forms: Record<string, TeamBuilderForm> = {};
 		const pools: TeamBuilderData['pools'] = {};
 
@@ -257,6 +263,36 @@ class TeamBuilderParser {
 				if (picked) entry[ivsKeyForCap(cap)] = picked;
 			}
 			ivs[speciesId] = entry;
+
+			// A Super Max Mega's level ceiling is 52, which can change its best spread wherever it fits a capped league's CP at
+			// level 50 — so it gets its own, from the level-52 patterns species-search-metadata ships for it alone.
+			if (this.gameMaster[speciesId]?.isSuperMega) {
+				const superEntry: TeamBuilderData['superMegaIvs'][string] = {};
+				for (const key of [
+					...TEAM_LEAGUES,
+					...otherCaps.map((cap) => ivsKeyForCap(cap)),
+				]) {
+					const patterns = (
+						spreads as Record<string, PerLevelPatterns | undefined>
+					)[key]?.level52;
+					if (!patterns) {
+						throw new Error(
+							`No level-${SUPER_MEGA_BEST_IV_LEVEL} best IV spreads for Super Max Mega ${speciesId} (${key}) in species-search-metadata`
+						);
+					}
+					const cap = TEAM_LEAGUES.includes(key as TeamLeague)
+						? LEAGUE_CP_CAPS[key as TeamLeague]
+						: Number(key.replace('cap-', ''));
+					const picked = pickBestIvs(
+						patterns,
+						raw.baseStats,
+						cap,
+						SUPER_MEGA_BEST_IV_LEVEL
+					);
+					if (picked) superEntry[key] = picked;
+				}
+				superMegaIvs[speciesId] = superEntry;
+			}
 			const pool = this.gameMaster[speciesId];
 			pools[speciesId] = {
 				fast: [...(pool?.fastMoves ?? raw.fastMoves)],
@@ -311,6 +347,7 @@ class TeamBuilderParser {
 		return {
 			moves,
 			ivs,
+			superMegaIvs,
 			forms,
 			pools,
 			excludedThreats: rawPokemon

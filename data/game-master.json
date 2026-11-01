@@ -28159,14 +28159,17 @@
 			"SHADOW_SNEAK",
 			"DAZZLING_GLEAM",
 			"DRAIN_PUNCH",
+			"NIGHT_SHADE_PLUS",
 			"RETURN"
 		],
-		"extraChargedMoves": [],
+		"extraChargedMoves": [
+			"NIGHT_SHADE_PLUS"
+		],
 		"eliteMoves": [],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": true,
-		"isSuperMega": false,
+		"isSuperMega": true,
 		"form": "Mega",
 		"isLegendary": false,
 		"isMythical": false,
@@ -51421,7 +51424,7 @@
 		"shinyGoImageUrl": "609.fMEGA.s.icon.png",
 		"baseStats": {
 			"atk": 335,
-			"def": 182,
+			"def": 227,
 			"hp": 155
 		},
 		"fastMoves": [

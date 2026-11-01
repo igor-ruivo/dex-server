@@ -10889,6 +10889,36 @@
 			"attackerDefenseStatStageChange": 1
 		}
 	},
+	"NIGHT_SHADE_PLUS": {
+		"moveId": "NIGHT_SHADE_PLUS",
+		"vId": "0265",
+		"type": "ghost",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 55,
+		"pvePower": 160,
+		"pvpEnergy": -45,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 2.5,
+		"moveName": {
+			"en": "Night Shade+",
+			"pt_br": "Sombra Noturna+",
+			"de": "Nachtnebel+",
+			"es": "Tinieblas+",
+			"es-MX": "Tinieblas+",
+			"fr": "Ombre Nocturne+",
+			"hi": "नाइट शेड+",
+			"id": "Bayangan Malam+",
+			"it": "Ombra Notturna+",
+			"ja": "ナイトヘッド+",
+			"ko": "나이트헤드+",
+			"ru": "Ночная Тень+",
+			"th": "ไนทเฉด+",
+			"tr": "Gece Gölgesi+",
+			"zh-Hant": "黑夜魔影+"
+		}
+	},
 	"HIDDEN_POWER_BUG": {
 		"moveId": "HIDDEN_POWER_BUG",
 		"isSuperMega": false,

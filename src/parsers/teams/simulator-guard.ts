@@ -28,7 +28,7 @@ export const VERIFIED_SIMULATOR_SOURCES: Record<string, string> = {
 	'js/battle/rankers/TeamRanker.js':
 		'e5e7b41014a1db8e46bebd0ab52f406670904f6d0c5495a11229dfed99eac42e',
 	'js/interface/TeamInterface.js':
-		'948da83d483601877465b702e92f78b9d09746399694beee32274739696e0869',
+		'10dc1bc3576ef69f083d10c16358a8cc1b802e26ce0fdedc1926a65ebf9bb633',
 };
 
 /** Mechanics the simulator port knows how to run. Anything else in PvPoke's data is flagged. */

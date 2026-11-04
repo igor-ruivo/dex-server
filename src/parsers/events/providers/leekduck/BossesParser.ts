@@ -41,8 +41,8 @@ const isExclusive = (entry: ILeekduckManifestRaidEntry) =>
 
 // Mirrors what the entries currently shown on leekduck.com/raid-bosses/ would
 // be: every non location-locked rotation running right now, or (during a gap
-// between rotations) the soonest upcoming one, same fallback LeekDuck's own
-// selector uses.
+// between rotations) the one that most recently ended — what the page keeps
+// showing — else the soonest upcoming one.
 function selectCurrentRaidEntries(
 	entries: Array<ILeekduckManifestRaidEntry>,
 	nowMs: number
@@ -54,6 +54,17 @@ function selectCurrentRaidEntries(
 	);
 	if (active.length > 0) {
 		return active;
+	}
+
+	// Between rotations LeekDuck keeps showing the one that just ended until the
+	// next regular rotation is published (the only "upcoming" entry is often an
+	// unrelated event page with no tier-1/3 bosses — or, for Shadow raids,
+	// nothing at all), so the most recently ended rotation is the best answer.
+	const ended = candidates
+		.filter((e) => e.end_timestamp * 1000 < nowMs)
+		.sort((a, b) => b.end_timestamp - a.end_timestamp);
+	if (ended.length > 0) {
+		return [ended[0]];
 	}
 
 	const upcoming = candidates

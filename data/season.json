@@ -494,7 +494,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Alcance marcos importantes no seu Passe GO para desbloquear os seguintes bônus. Uma vez desbloqueados, esses bônus durarão até o Passe GO atual terminar."
+							"text": "Alcancem Conquistas Principais no seu Passe GO para desbloquear os bônus a seguir. Após o desbloqueio, esses bônus ficarão ativos até o término do Passe GO atual."
 						}
 					]
 				}
@@ -559,7 +559,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "O dobro de duração do Incenso de Aventura Diário"
+									"text": "2× mais duração do Incenso de Aventura Diário"
 								}
 							],
 							"level": 0
@@ -594,7 +594,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Bei großen Meilensteinen schaltet ihr mit dem GO-Pass die folgenden Boni frei. Diese Boni bleiben aktiv, bis der aktuelle GO-Pass endet!"
+							"text": "Erreicht große Meilensteine beim GO-Pass, um die folgenden Boni freizuschalten, die während der restlichen Dauer des aktuellen GO-Passes aktiv bleiben:"
 						}
 					]
 				}
@@ -659,7 +659,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "Doppelte Wirkungszeit des Täglichen Abenteuerrauchs"
+									"text": "doppelte Wirkungszeit für Täglichen Abenteuerrauch"
 								}
 							],
 							"level": 0
@@ -694,7 +694,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Llegad a hitos principales en el Pase de GO para desbloquear los bonus siguientes. ¡Una vez desbloqueados, estos bonus estarán disponibles hasta que el Pase de GO finalice!"
+							"text": "Alcanzad los hitos principales de vuestro Pase de GO para desbloquear los siguientes bonus. Una vez desbloqueados, estarán activos hasta que termine el Pase de GO actual."
 						}
 					]
 				}
@@ -794,7 +794,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Alcancen hitos principales en el Pase de GO para desbloquear las siguientes bonificaciones. ¡Una vez desbloqueadas, estas bonificaciones estarán disponibles hasta que el Pase de GO finalice!"
+							"text": "Alcancen objetivo importantes en su Pase de GO para desbloquear las siguientes bonificaciones. ¡Una vez desbloqueadas, estas bonificaciones permanecerán activas hasta que finalice el Pase de GO actual!"
 						}
 					]
 				}
@@ -894,7 +894,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Atteignez les Échelons majeurs du Passe GO pour profiter des bonus qui suivent. Une fois débloqués, vous bénéficierez de ces bonus jusqu’à la fin du Passe GO."
+							"text": "Atteignez les Échelons majeurs du Passe GO pour profiter des bonus qui suivent. Une fois débloqués, ces bonus resteront actifs jusqu’à la fin du Passe GO."
 						}
 					]
 				}
@@ -959,7 +959,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "Durée de l’Encens d’aventure quotidienne ×2"
+									"text": "Durée de l’Encens d’aventure quotidienne doublée"
 								}
 							],
 							"level": 0
@@ -1278,7 +1278,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "Polvere di stelle e PE extra facendo schiudere le Uova"
+									"text": "PE e polvere di stelle extra facendo schiudere le Uova"
 								}
 							],
 							"level": 0
@@ -1694,15 +1694,15 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Aşağıdaki bonusların kilidini açmak için GO Biletinizde Büyük Aşamalara ulaşın. Bu bonusların kilidi açıldığında mevcut GO Biletiniz sona erene kadar geçerli olur!"
+							"text": "GO Biletinizde Büyük Aşamalara ulaşarak aşağıdaki bonusların kilidini açın. Kilidi açıldıktan sonra bu bonuslar mevcut GO Biletiniz sona erene kadar geçerli olacaktır!"
 						}
 					]
 				}
 			],
 			"tiers": [
 				{
-					"tier": "Katman 1",
-					"rank": "Rütbe 1",
+					"tier": "Kademe 1",
+					"rank": "1. Rütbe",
 					"colors": [
 						"#9043B7",
 						"#543D98"
@@ -1729,8 +1729,8 @@
 					]
 				},
 				{
-					"tier": "Katman 2",
-					"rank": "Rütbe 25",
+					"tier": "Kademe 2",
+					"rank": "25. Rütbe",
 					"colors": [
 						"#B77143",
 						"#98583D"
@@ -1748,8 +1748,8 @@
 					]
 				},
 				{
-					"tier": "Katman 3",
-					"rank": "Rütbe 50",
+					"tier": "Kademe 3",
+					"rank": "50. Rütbe",
 					"colors": [
 						"#A6A6A6",
 						"#8D8D8D"
@@ -1767,8 +1767,8 @@
 					]
 				},
 				{
-					"tier": "Katman 4",
-					"rank": "Rütbe 75",
+					"tier": "Kademe 4",
+					"rank": "75. Rütbe",
 					"colors": [
 						"#C9AC56",
 						"#C3953E"

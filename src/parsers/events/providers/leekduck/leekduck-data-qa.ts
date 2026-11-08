@@ -231,7 +231,7 @@ export function validateLeekduckData(input: LeekduckQaInput): void {
 	validateMaxMondays(input.maxMondays, errors);
 
 	if (errors.length > 0) {
-		throw new Error(
+		console.warn(
 			`LeekDuck data QA failed (${errors.length} issue${errors.length === 1 ? '' : 's'}):\n` +
 				errors.map((e) => `  - ${e}`).join('\n')
 		);

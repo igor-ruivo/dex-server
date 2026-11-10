@@ -28,6 +28,7 @@ const dynamicLeagueIds = [
 	// blacklisted (see BLACKLISTED_PVP_FORMAT's own history) as a guess that
 	// it was some kind of internal/test format — confirmed legitimate.
 	['laic2027', 1500],
+	['laic2027gbl', 1500],
 	['mega', 1500],
 	['mega', 2500],
 	['mega', 10000],

@@ -482,6 +482,33 @@ class MovesProvider {
 			};
 		}
 
+		const moonBlastPlusMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			moonBlastPlusMoveName[locale] =
+				`${this.translatorService.getRawString(locale, 'move_name_0087')}+`;
+		});
+
+		if (!movesDictionary.MOONBLAST_PLUS) {
+			movesDictionary.MOONBLAST_PLUS = {
+				moveId: 'MOONBLAST_PLUS',
+				vId: '0087',
+				type: 'fairy',
+				isFast: false,
+				isSuperMega: true,
+				pvpPower: 80,
+				pvePower: 160,
+				pvpEnergy: -50,
+				pveEnergy: -100,
+				pvpCooldown: 0,
+				pveCooldown: 4.0,
+				moveName: moonBlastPlusMoveName,
+				buffs: {
+					buffActivationChance: 0.1,
+					targetAttackStatStageChange: -1,
+				},
+			};
+		}
+
 		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
 		const expandedMoves = expandHiddenPower(movesDictionary, (locale, type) =>
 			this.translatorService.getRawString(locale, `pokemon_type_${type}`)

@@ -10919,6 +10919,40 @@
 			"zh-Hant": "黑夜魔影+"
 		}
 	},
+	"MOONBLAST_PLUS": {
+		"moveId": "MOONBLAST_PLUS",
+		"vId": "0087",
+		"type": "fairy",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 80,
+		"pvePower": 160,
+		"pvpEnergy": -50,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"moveName": {
+			"en": "Moonblast+",
+			"pt_br": "Explosão Lunar+",
+			"de": "Mondgewalt+",
+			"es": "Fuerza Lunar+",
+			"es-MX": "Fuerza Lunar+",
+			"fr": "Pouvoir Lunaire+",
+			"hi": "मून लाट+",
+			"id": "Moon Force+",
+			"it": "Forza Lunare+",
+			"ja": "ムーンフォース+",
+			"ko": "문포스+",
+			"ru": "Лунный Удар+",
+			"th": "มูนฟอรซ+",
+			"tr": "Ay Patlaması+",
+			"zh-Hant": "月亮之力+"
+		},
+		"buffs": {
+			"buffActivationChance": 0.1,
+			"targetAttackStatStageChange": -1
+		}
+	},
 	"HIDDEN_POWER_BUG": {
 		"moveId": "HIDDEN_POWER_BUG",
 		"isSuperMega": false,

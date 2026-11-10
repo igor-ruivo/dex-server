@@ -322,6 +322,54 @@ class PokemonMatcher {
 	 * Handles special-case Pokémon names that don't match standard forms.
 	 */
 	private handleSpecialCases(currP: string, raidLevel: string): IEntry | null {
+		if (
+			currP.includes('zamazenta') &&
+			currP.includes('hero') &&
+			!currP.includes('shield')
+		) {
+			return {
+				speciesId: 'zamazenta_hero',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
+		if (
+			currP.includes('zacian') &&
+			currP.includes('hero') &&
+			!currP.includes('sword')
+		) {
+			return {
+				speciesId: 'zacian_hero',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
+		if (
+			currP.includes('zamazenta') &&
+			currP.includes('shield') &&
+			!currP.includes('hero')
+		) {
+			return {
+				speciesId: 'zamazenta_crowned_shield',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
+		if (
+			currP.includes('zacian') &&
+			currP.includes('sword') &&
+			!currP.includes('hero')
+		) {
+			return {
+				speciesId: 'zacian_crowned_sword',
+				shiny: false,
+				kind: raidLevel,
+			};
+		}
+
 		const specialCases: Record<string, string> = {
 			giratina: 'giratina_altered',
 			zacian: 'zacian_hero',

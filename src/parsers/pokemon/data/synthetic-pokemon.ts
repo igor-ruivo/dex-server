@@ -46,33 +46,4 @@ export const SYNTHETIC_POKEMON: Array<BasePokemon> = [
 			evolutions: ['shiinotic_shadow'],
 		},
 	},
-	{
-		dex: 36,
-		speciesId: 'clefable_mega',
-		speciesName: 'Clefable (Mega)',
-		baseStats: {
-			atk: 253,
-			def: 205,
-			hp: 216,
-		},
-		types: ['fairy', 'flying'],
-		fastMoves: ['CHARGE_BEAM', 'POUND', 'ZEN_HEADBUTT', 'CHARM', 'FAIRY_WIND'],
-		chargedMoves: [
-			'DAZZLING_GLEAM',
-			'METEOR_MASH',
-			'MOONBLAST',
-			'PSYCHIC',
-			'SWIFT',
-			'DRAINING_KISS',
-		],
-		extraChargedMoves: ['MOONBLAST_PLUS'],
-		eliteMoves: ['POUND'],
-		legacyMoves: [],
-		released: true,
-		tags: ['mega', 'supermega'],
-		family: {
-			id: 'FAMILY_CLEFAIRY',
-			parent: 'clefairy',
-		},
-	},
 ];

@@ -120,7 +120,7 @@ export const LeagueDefinitions: Record<LeagueKey, PvPLeagueDefinition> =
 	);
 
 export const BLACKLISTED_PVP_FORMAT =
-	/battle[\s_-]*frontier|gymbreakers|devon[\s_-]*(trail|fable)/i;
+	/battle[\s_-]*frontier|gymbreakers|devon[\s_-]*(trail|fable)|laic2027(?!gbl)/i;
 
 export const getActiveLeagueDefinitions = (
 	formats: ReadonlyArray<PVPokeFormat>,

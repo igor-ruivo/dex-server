@@ -428080,7 +428080,7 @@
 		}
 	},
 	"sliggoo": {
-		"searchFormId": "705",
+		"searchFormId": "705&!steel",
 		"bestIvSpreads": {
 			"great": {
 				"level50": [
@@ -428148,8 +428148,77 @@
 			}
 		}
 	},
+	"sliggoo_hisuian": {
+		"searchFormId": "705&steel",
+		"bestIvSpreads": {
+			"great": {
+				"level50": [
+					{
+						"A": 0,
+						"D": 12,
+						"S": 15
+					}
+				],
+				"level51": [
+					{
+						"A": 0,
+						"D": 12,
+						"S": 15
+					}
+				]
+			},
+			"ultra": {
+				"level50": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				],
+				"level51": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				]
+			},
+			"master": {
+				"level50": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				],
+				"level51": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				]
+			},
+			"cap-500": {
+				"level50": [
+					{
+						"A": 0,
+						"D": 15,
+						"S": 13
+					}
+				],
+				"level51": [
+					{
+						"A": 0,
+						"D": 15,
+						"S": 13
+					}
+				]
+			}
+		}
+	},
 	"goodra": {
-		"searchFormId": "706",
+		"searchFormId": "706&!steel",
 		"bestIvSpreads": {
 			"great": {
 				"level50": [
@@ -428212,6 +428281,75 @@
 						"A": 5,
 						"D": 15,
 						"S": 12
+					}
+				]
+			}
+		}
+	},
+	"goodra_hisuian": {
+		"searchFormId": "706&steel",
+		"bestIvSpreads": {
+			"great": {
+				"level50": [
+					{
+						"A": 0,
+						"D": 14,
+						"S": 14
+					}
+				],
+				"level51": [
+					{
+						"A": 0,
+						"D": 14,
+						"S": 14
+					}
+				]
+			},
+			"ultra": {
+				"level50": [
+					{
+						"A": 0,
+						"D": 15,
+						"S": 11
+					}
+				],
+				"level51": [
+					{
+						"A": 0,
+						"D": 15,
+						"S": 11
+					}
+				]
+			},
+			"master": {
+				"level50": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				],
+				"level51": [
+					{
+						"A": 15,
+						"D": 15,
+						"S": 15
+					}
+				]
+			},
+			"cap-500": {
+				"level50": [
+					{
+						"A": 0,
+						"D": 6,
+						"S": 13
+					}
+				],
+				"level51": [
+					{
+						"A": 0,
+						"D": 6,
+						"S": 13
 					}
 				]
 			}

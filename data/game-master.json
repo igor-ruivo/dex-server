@@ -57998,6 +57998,50 @@
 		"isMythical": false,
 		"isBeast": false
 	},
+	"sliggoo_hisuian": {
+		"dex": 705,
+		"speciesId": "sliggoo_hisuian",
+		"speciesName": "Sliggoo (Hisuian)",
+		"types": [
+			"Dragon",
+			"Steel"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/705_f2.png",
+		"goImageUrl": "705.fHISUIAN.icon.png",
+		"shinyGoImageUrl": "705.fHISUIAN.s.icon.png",
+		"baseStats": {
+			"atk": 153,
+			"def": 190,
+			"hp": 151
+		},
+		"fastMoves": [
+			"WATER_GUN",
+			"TACKLE"
+		],
+		"chargedMoves": [
+			"DRAGON_PULSE",
+			"SLUDGE_WAVE",
+			"WATER_PULSE",
+			"HEAVY_SLAM"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_GOOMY",
+			"parent": "goomy",
+			"evolutions": [
+				"goodra"
+			]
+		},
+		"form": "Hisuian",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
 	"goodra": {
 		"dex": 706,
 		"speciesId": "goodra",
@@ -58038,6 +58082,48 @@
 			"parent": "sliggoo"
 		},
 		"form": "",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false
+	},
+	"goodra_hisuian": {
+		"dex": 706,
+		"speciesId": "goodra_hisuian",
+		"speciesName": "Goodra (Hisuian)",
+		"types": [
+			"Dragon",
+			"Steel"
+		],
+		"imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/706_f2.png",
+		"goImageUrl": "706.fHISUIAN.icon.png",
+		"shinyGoImageUrl": "706.fHISUIAN.s.icon.png",
+		"baseStats": {
+			"atk": 211,
+			"def": 255,
+			"hp": 190
+		},
+		"fastMoves": [
+			"WATER_GUN",
+			"DRAGON_TAIL",
+			"IRON_TAIL"
+		],
+		"chargedMoves": [
+			"DRACO_METEOR",
+			"SLUDGE_WAVE",
+			"HYDRO_PUMP",
+			"HEAVY_SLAM"
+		],
+		"extraChargedMoves": [],
+		"eliteMoves": [],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": false,
+		"isSuperMega": false,
+		"family": {
+			"id": "FAMILY_GOOMY",
+			"parent": "sliggoo"
+		},
+		"form": "Hisuian",
 		"isLegendary": false,
 		"isMythical": false,
 		"isBeast": false

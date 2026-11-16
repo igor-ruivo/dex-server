@@ -18,7 +18,7 @@ import { PVPOKE_SRC_URL } from './config';
  */
 export const VERIFIED_SIMULATOR_SOURCES: Record<string, string> = {
 	'js/battle/Battle.js':
-		'65765dc0214710f6587b4e5d5a07a7bf8d2639090be6a5a59270650d6d5225b4',
+		'93d7315b6f85294db87f23f6486ff14e1e65a39f3cd11f3875075b4c29db9a89',
 	'js/battle/actions/ActionLogic.js':
 		'9a5a7bb28a01c115e18e5b904646f5fb18bf1b17c2bf8757d2d90144ef7d0e30',
 	'js/pokemon/Pokemon.js':

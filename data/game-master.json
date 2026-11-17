@@ -40851,10 +40851,13 @@
 			"WILD_CHARGE",
 			"ZAP_CANNON",
 			"MIRROR_SHOT",
+			"MAGNET_BOMB",
 			"RETURN"
 		],
 		"extraChargedMoves": [],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"MAGNET_BOMB"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
@@ -40896,10 +40899,13 @@
 			"WILD_CHARGE",
 			"ZAP_CANNON",
 			"MIRROR_SHOT",
+			"MAGNET_BOMB",
 			"FRUSTRATION"
 		],
 		"extraChargedMoves": [],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"MAGNET_BOMB"
+		],
 		"legacyMoves": [],
 		"isShadow": true,
 		"isMega": false,

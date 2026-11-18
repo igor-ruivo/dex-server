@@ -494,7 +494,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Alcancem Conquistas Principais no seu Passe GO para desbloquear os bônus a seguir. Após o desbloqueio, esses bônus ficarão ativos até o término do Passe GO atual."
+							"text": "Alcance marcos importantes no seu Passe GO para desbloquear os seguintes bônus. Uma vez desbloqueados, esses bônus durarão até o Passe GO atual terminar."
 						}
 					]
 				}
@@ -559,7 +559,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "2× mais duração do Incenso de Aventura Diário"
+									"text": "O dobro de duração do Incenso de Aventura Diário"
 								}
 							],
 							"level": 0
@@ -594,7 +594,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Erreicht große Meilensteine beim GO-Pass, um die folgenden Boni freizuschalten, die während der restlichen Dauer des aktuellen GO-Passes aktiv bleiben:"
+							"text": "Bei großen Meilensteinen schaltet ihr mit dem GO-Pass die folgenden Boni frei. Diese Boni bleiben aktiv, bis der aktuelle GO-Pass endet!"
 						}
 					]
 				}
@@ -659,7 +659,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "doppelte Wirkungszeit für Täglichen Abenteuerrauch"
+									"text": "Doppelte Wirkungszeit des Täglichen Abenteuerrauchs"
 								}
 							],
 							"level": 0
@@ -694,7 +694,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Alcanzad los hitos principales de vuestro Pase de GO para desbloquear los siguientes bonus. Una vez desbloqueados, estarán activos hasta que termine el Pase de GO actual."
+							"text": "Llegad a hitos principales en el Pase de GO para desbloquear los bonus siguientes. ¡Una vez desbloqueados, estos bonus estarán disponibles hasta que el Pase de GO finalice!"
 						}
 					]
 				}
@@ -794,7 +794,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Alcancen objetivo importantes en su Pase de GO para desbloquear las siguientes bonificaciones. ¡Una vez desbloqueadas, estas bonificaciones permanecerán activas hasta que finalice el Pase de GO actual!"
+							"text": "Alcancen hitos principales en el Pase de GO para desbloquear las siguientes bonificaciones. ¡Una vez desbloqueadas, estas bonificaciones estarán disponibles hasta que el Pase de GO finalice!"
 						}
 					]
 				}
@@ -894,7 +894,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "Atteignez les Échelons majeurs du Passe GO pour profiter des bonus qui suivent. Une fois débloqués, ces bonus resteront actifs jusqu’à la fin du Passe GO."
+							"text": "Atteignez les Échelons majeurs du Passe GO pour profiter des bonus qui suivent. Une fois débloqués, vous bénéficierez de ces bonus jusqu’à la fin du Passe GO."
 						}
 					]
 				}
@@ -959,7 +959,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "Durée de l’Encens d’aventure quotidienne doublée"
+									"text": "Durée de l’Encens d’aventure quotidienne ×2"
 								}
 							],
 							"level": 0
@@ -1694,15 +1694,15 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "GO Biletinizde Büyük Aşamalara ulaşarak aşağıdaki bonusların kilidini açın. Kilidi açıldıktan sonra bu bonuslar mevcut GO Biletiniz sona erene kadar geçerli olacaktır!"
+							"text": "Aşağıdaki bonusların kilidini açmak için GO Biletinizde Büyük Aşamalara ulaşın. Bu bonusların kilidi açıldığında mevcut GO Biletiniz sona erene kadar geçerli olur!"
 						}
 					]
 				}
 			],
 			"tiers": [
 				{
-					"tier": "Kademe 1",
-					"rank": "1. Rütbe",
+					"tier": "Katman 1",
+					"rank": "Rütbe 1",
 					"colors": [
 						"#9043B7",
 						"#543D98"
@@ -1729,8 +1729,8 @@
 					]
 				},
 				{
-					"tier": "Kademe 2",
-					"rank": "25. Rütbe",
+					"tier": "Katman 2",
+					"rank": "Rütbe 25",
 					"colors": [
 						"#B77143",
 						"#98583D"
@@ -1748,8 +1748,8 @@
 					]
 				},
 				{
-					"tier": "Kademe 3",
-					"rank": "50. Rütbe",
+					"tier": "Katman 3",
+					"rank": "Rütbe 50",
 					"colors": [
 						"#A6A6A6",
 						"#8D8D8D"
@@ -1767,8 +1767,8 @@
 					]
 				},
 				{
-					"tier": "Kademe 4",
-					"rank": "75. Rütbe",
+					"tier": "Katman 4",
+					"rank": "Rütbe 75",
 					"colors": [
 						"#C9AC56",
 						"#C3953E"
@@ -1794,7 +1794,7 @@
 					"kind": "text",
 					"runs": [
 						{
-							"text": "達成「GO Pass」主里程碑即可解鎖以下獎勵加碼內容。解鎖後，獎勵加碼內容將生效至當前的「GO Pass」結束為止！"
+							"text": "達成「GO Pass」主里程碑即可解鎖以下獎勵加碼內容。 解鎖後，獎勵加碼內容將生效至當前的「GO Pass」結束為止！"
 						}
 					]
 				}
@@ -1829,7 +1829,7 @@
 					]
 				},
 				{
-					"tier": "第2階段",
+					"tier": "第2段",
 					"rank": "25級",
 					"colors": [
 						"#B77143",
@@ -1859,7 +1859,7 @@
 							"kind": "item",
 							"runs": [
 								{
-									"text": "散步小薰香持續時間加倍"
+									"text": "散步小薰香持續時間加倍。"
 								}
 							],
 							"level": 0

@@ -165,7 +165,7 @@ export const POKEMON_CONFIG = {
 		'ditto',
 		'shedinja',
 		'spewpa',
-		'chandelure_mega',
+		'clefable_mega',
 	]),
 
 	// Pokemon that should be excluded

@@ -10919,6 +10919,70 @@
 			"zh-Hant": "黑夜魔影+"
 		}
 	},
+	"MOONBLAST_PLUS": {
+		"moveId": "MOONBLAST_PLUS",
+		"vId": "0087",
+		"type": "fairy",
+		"isFast": false,
+		"isSuperMega": true,
+		"pvpPower": 80,
+		"pvePower": 160,
+		"pvpEnergy": -50,
+		"pveEnergy": -100,
+		"pvpCooldown": 0,
+		"pveCooldown": 4,
+		"moveName": {
+			"en": "Moonblast+",
+			"pt_br": "Explosão Lunar+",
+			"de": "Mondgewalt+",
+			"es": "Fuerza Lunar+",
+			"es-MX": "Fuerza Lunar+",
+			"fr": "Pouvoir Lunaire+",
+			"hi": "मून लाट+",
+			"id": "Moon Force+",
+			"it": "Forza Lunare+",
+			"ja": "ムーンフォース+",
+			"ko": "문포스+",
+			"ru": "Лунный Удар+",
+			"th": "มูนฟอรซ+",
+			"tr": "Ay Patlaması+",
+			"zh-Hant": "月亮之力+"
+		},
+		"buffs": {
+			"buffActivationChance": 0.1,
+			"targetAttackStatStageChange": -1
+		}
+	},
+	"KOWTOW_CLEAVE": {
+		"moveId": "KOWTOW_CLEAVE",
+		"vId": "-1",
+		"type": "dark",
+		"isFast": false,
+		"isSuperMega": false,
+		"pvpPower": 75,
+		"pvePower": 85,
+		"pvpEnergy": -40,
+		"pveEnergy": -50,
+		"pvpCooldown": 0,
+		"pveCooldown": 2,
+		"moveName": {
+			"en": "Kowtow Cleave",
+			"pt_br": "Kowtow Cleave",
+			"de": "Kowtow Cleave",
+			"es": "Kowtow Cleave",
+			"es-MX": "Kowtow Cleave",
+			"fr": "Kowtow Cleave",
+			"hi": "Kowtow Cleave",
+			"id": "Kowtow Cleave",
+			"it": "Kowtow Cleave",
+			"ja": "Kowtow Cleave",
+			"ko": "Kowtow Cleave",
+			"ru": "Kowtow Cleave",
+			"th": "Kowtow Cleave",
+			"tr": "Kowtow Cleave",
+			"zh-Hant": "Kowtow Cleave"
+		}
+	},
 	"HIDDEN_POWER_BUG": {
 		"moveId": "HIDDEN_POWER_BUG",
 		"isSuperMega": false,

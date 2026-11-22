@@ -55,6 +55,26 @@ export const currentMaxBattleBosses = (
 		if (!tier) {
 			continue;
 		}
+
+		if (boss.pokemonId === 'ETERNATUS_ETERNAMAX_FORM') {
+			const eternatusSpeciesId = 'eternatus';
+			const eternatusKind = 'gigantamax';
+
+			if (
+				!entries.some(
+					(e) => e.speciesId === eternatusSpeciesId && e.kind === eternatusKind
+				)
+			) {
+				entries.push({
+					speciesId: eternatusSpeciesId,
+					kind: eternatusKind,
+					tier,
+					shiny: false,
+				});
+			}
+			continue;
+		}
+
 		const speciesId = speciesIdOf(boss.pokemonId, dictionary);
 		if (!speciesId) {
 			// a boss the game master does not know is a mismatch to look at, not something to publish without

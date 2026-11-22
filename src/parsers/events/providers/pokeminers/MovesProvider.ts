@@ -509,6 +509,28 @@ class MovesProvider {
 			};
 		}
 
+		const kowtowCleaveMoveName: Partial<Record<AvailableLocales, string>> = {};
+		Object.values(AvailableLocales).forEach((locale) => {
+			kowtowCleaveMoveName[locale] = normalizedMoveName('KOWTOW_CLEAVE');
+		});
+
+		if (!movesDictionary.KOWTOW_CLEAVE) {
+			movesDictionary.KOWTOW_CLEAVE = {
+				moveId: 'KOWTOW_CLEAVE',
+				vId: '-1',
+				type: 'dark',
+				isFast: false,
+				isSuperMega: false,
+				pvpPower: 75,
+				pvePower: 85,
+				pvpEnergy: -40,
+				pveEnergy: -50,
+				pvpCooldown: 0,
+				pveCooldown: 2.0,
+				moveName: kowtowCleaveMoveName,
+			};
+		}
+
 		// One Hidden Power per type, as PvPoke and every Pokémon's move pool list them
 		const expandedMoves = expandHiddenPower(movesDictionary, (locale, type) =>
 			this.translatorService.getRawString(locale, `pokemon_type_${type}`)

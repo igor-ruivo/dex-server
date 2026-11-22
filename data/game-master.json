@@ -3816,7 +3816,61 @@
 		"form": "",
 		"isLegendary": false,
 		"isMythical": false,
-		"isBeast": false
+		"isBeast": false,
+		"megaFormsIds": [
+			"clefable_mega"
+		]
+	},
+	"clefable_mega": {
+		"dex": 36,
+		"speciesId": "clefable_mega",
+		"speciesName": "Clefable (Mega)",
+		"types": [
+			"Fairy"
+		],
+		"imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/036_f2.png",
+		"goImageUrl": "36.fMEGA.icon.png",
+		"shinyGoImageUrl": "36.fMEGA.s.icon.png",
+		"baseStats": {
+			"atk": 253,
+			"def": 205,
+			"hp": 216
+		},
+		"fastMoves": [
+			"CHARGE_BEAM",
+			"POUND",
+			"ZEN_HEADBUTT",
+			"CHARM",
+			"FAIRY_WIND"
+		],
+		"chargedMoves": [
+			"DAZZLING_GLEAM",
+			"METEOR_MASH",
+			"MOONBLAST",
+			"PSYCHIC",
+			"SWIFT",
+			"DRAINING_KISS",
+			"MOONBLAST_PLUS"
+		],
+		"extraChargedMoves": [
+			"MOONBLAST_PLUS"
+		],
+		"eliteMoves": [
+			"POUND"
+		],
+		"legacyMoves": [],
+		"isShadow": false,
+		"isMega": true,
+		"isSuperMega": true,
+		"family": {
+			"id": "FAMILY_CLEFAIRY",
+			"parent": "clefairy"
+		},
+		"form": "Mega",
+		"isLegendary": false,
+		"isMythical": false,
+		"isBeast": false,
+		"baseSpecies": "clefable"
 	},
 	"vulpix": {
 		"dex": 37,
@@ -70666,10 +70720,13 @@
 			"IRON_HEAD",
 			"X_SCISSOR",
 			"FOCUS_BLAST",
-			"FOUL_PLAY"
+			"FOUL_PLAY",
+			"KOWTOW_CLEAVE"
 		],
 		"extraChargedMoves": [],
-		"eliteMoves": [],
+		"eliteMoves": [
+			"KOWTOW_CLEAVE"
+		],
 		"legacyMoves": [],
 		"isShadow": false,
 		"isMega": false,
